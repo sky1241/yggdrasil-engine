@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>YGGDRASIL — 794 Symboles × 7 Strates</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a0f; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; }
+canvas { display: block; }
+
+#legend {
+  position: fixed; top: 15px; right: 15px; z-index: 10;
+  background: rgba(0,0,0,0.85); padding: 15px; border: 1px solid #333;
+  font-size: 11px; min-width: 200px;
+}
+#legend h3 { color: #f90; margin-bottom: 8px; font-size: 13px; }
+.legend-row { display: flex; align-items: center; margin: 4px 0; }
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
+.legend-label { color: #aaa; flex: 1; }
+.legend-count { color: #666; margin-left: 8px; }
+
+#title-bar {
+  position: fixed; top: 15px; left: 15px; z-index: 10;
+  background: rgba(0,0,0,0.85); padding: 15px; border: 1px solid #333;
+  font-size: 11px; max-width: 380px;
+}
+#title-bar h2 { color: #4ade80; margin-bottom: 5px; font-size: 15px; }
+#title-bar .sub { color: #666; font-size: 10px; }
+
+#hover-info {
+  position: fixed; bottom: 15px; left: 15px; z-index: 10;
+  background: rgba(0,0,0,0.92); padding: 12px 15px; border: 1px solid #f90;
+  font-size: 12px; display: none; max-width: 350px;
+}
+#hover-info .sym { font-size: 22px; margin-right: 10px; }
+#hover-info .name { color: #fff; }
+#hover-info .domain { color: #888; }
+#hover-info .strate-tag { 
+  display: inline-block; padding: 1px 6px; border-radius: 3px; 
+  font-size: 10px; margin-left: 5px; 
+}
+
+#controls {
+  position: fixed; bottom: 15px; right: 15px; z-index: 10;
+  background: rgba(0,0,0,0.85); padding: 10px; border: 1px solid #333;
+  font-size: 10px;
+}
+#controls label { color: #888; display: block; margin: 3px 0; }
+#controls input[type=range] { width: 120px; }
+</style>
+</head>
+<body>
+
+<div id="title-bar">
+  <h2>🌳 YGGDRASIL</h2>
+  <div>794 symboles · 7 strates · 52 domaines</div>
+  <div class="sub">Hiérarchie arithmétique (Post 1944) × Science of Science</div>
+</div>
+
+<div id="legend"></div>
+
+<div id="hover-info">
+  <span class="sym"></span>
+  <span class="name"></span><br>
+  <span class="domain"></span>
+  <span class="strate-tag"></span>
+</div>
+
+<div id="controls">
+  <label>Rotation: <input type="range" id="speed" min="0" max="100" value="30"></label>
+  <label>Taille symboles: <input type="range" id="symsize" min="1" max="20" value="8"></label>
+  <label><input type="checkbox" id="showPlanes" checked> Plans strates</label>
+  <label><input type="checkbox" id="showLabels" checked> Labels centres</label>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ═══════════════════════════════════════════
+// YGGDRASIL 3D CUBE — Three.js Engine
+// ═══════════════════════════════════════════
+
+const STRATE_COLORS = [
+  new THREE.Color(74/255, 222/255, 128/255),   // S0 SOL — vert
+  new THREE.Color(96/255, 165/255, 250/255),    // S1 HALTING — bleu
+  new THREE.Color(167/255, 139/255, 250/255),   // S2 LIMITE — violet
+  new THREE.Color(244/255, 114/255, 182/255),   // S3 MOTIF — rose
+  new THREE.Color(251/255, 191/255, 36/255),    // S4 CIEL — jaune
+  new THREE.Color(251/255, 146/255, 60/255),    // S5 HYP — orange
+  new THREE.Color(239/255, 68/255, 68/255),     // S6 PLAFOND — rouge
+];
+
+const STRATE_NAMES = [
+  "S0 · SOL", "S1 · HALTING", "S2 · LIMITE", 
+  "S3 · MOTIF", "S4 · CIEL", "S5 · HYP ω₁ᶜᵏ", "S6 · PLAFOND"
+];
+
+const STRATE_CENTERS = ["=", "K", "∅'", "PH", "ω", "ω₁ᶜᵏ", "BB(n)"];
+
+let scene, camera, renderer, cubeGroup;
+let symbolSprites = [];
+let planesMeshes = [];
+let centerLabels = [];
+let mouse = new THREE.Vector2();
+let raycaster = new THREE.Raycaster();
+let data = null;
+let time = 0;
+
+// ── Init ──
+async function init() {
+  // Scene
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0a0a0f);
+  scene.fog = new THREE.FogExp2(0x0a0a0f, 0.08);
+
+  // Camera
+  camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100);
+  camera.position.set(4, 2.5, 4);
+  camera.lookAt(0, 0, 0);
+
+  // Renderer
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  // Cube group (everything rotates together)
+  cubeGroup = new THREE.Group();
+  scene.add(cubeGroup);
+
+  // Load data
+  try {
+    const resp = await fetch('data.json');
+    data = await resp.json();
+  } catch(e) {
+    // Fallback: load from embedded
+    console.warn('Could not load data.json, using inline data');
+    data = null;
+  }
+
+  if (data) {
+    buildCube(data);
+    buildLegend(data);
+    updateTitleBar(data);
+  }
+
+  // Wireframe cube
+  const cubeGeo = new THREE.BoxGeometry(3.2, 3.2, 3.2);
+  const cubeEdges = new THREE.EdgesGeometry(cubeGeo);
+  const cubeLine = new THREE.LineSegments(cubeEdges, 
+    new THREE.LineBasicMaterial({ color: 0x4ade80, opacity: 0.3, transparent: true }));
+  cubeGroup.add(cubeLine);
+
+  // Ambient light
+  scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+
+  // Events
+  window.addEventListener('resize', onResize);
+  renderer.domElement.addEventListener('mousemove', onMouseMove);
+
+  // Go
+  animate();
+}
+
+function buildCube(data) {
+  const strateCount = data.strates.length;
+  
+  // ── Strate planes ──
+  data.strates.forEach((strate, i) => {
+    const y = strate.y || (-1.4 + i * 0.4);
+    const color = STRATE_COLORS[i];
+    
+    // Transparent plane
+    const planeGeo = new THREE.PlaneGeometry(3, 3);
+    const planeMat = new THREE.MeshBasicMaterial({
+      color: color,
+      transparent: true,
+      opacity: 0.06,
+      side: THREE.DoubleSide,
+      depthWrite: false,
+    });
+    const plane = new THREE.Mesh(planeGeo, planeMat);
+    plane.rotation.x = -Math.PI / 2;
+    plane.position.y = y;
+    cubeGroup.add(plane);
+    planesMeshes.push(plane);
+
+    // Plane border
+    const borderGeo = new THREE.EdgesGeometry(planeGeo);
+    const borderMat = new THREE.LineBasicMaterial({ color: color, opacity: 0.25, transparent: true });
+    const border = new THREE.LineSegments(borderGeo, borderMat);
+    border.rotation.x = -Math.PI / 2;
+    border.position.y = y;
+    cubeGroup.add(border);
+
+    // Center label
+    const label = makeTextSprite(STRATE_CENTERS[i], color, 0.35);
+    label.position.set(0, y, 0);
+    cubeGroup.add(label);
+    centerLabels.push(label);
+  });
+
+  // ── Symbols as points ──
+  data.symbols.forEach((sym, idx) => {
+    const strateData = data.strates[sym.strate];
+    const y = strateData.y || (-1.4 + sym.strate * 0.4);
+    const color = STRATE_COLORS[sym.strate];
+    
+    // Position: use px/pz from data, spread within the plane
+    const x = (sym.px || (Math.random() * 2 - 1)) * 1.3;
+    const z = (sym.pz || (Math.random() * 2 - 1)) * 1.3;
+    
+    // Create sprite
+    const spriteMat = new THREE.SpriteMaterial({
+      map: makeCircleTexture(color),
+      transparent: true,
+      opacity: sym.is_center ? 1.0 : 0.7,
+      depthWrite: false,
+    });
+    const sprite = new THREE.Sprite(spriteMat);
+    sprite.position.set(x, y, z);
+    
+    const baseScale = sym.is_center ? 0.12 : 0.04;
+    sprite.scale.set(baseScale, baseScale, 1);
+    
+    // Store metadata for hover
+    sprite.userData = {
+      symbol: sym.s,
+      from: sym.from,
+      domain: sym.domain,
+      strate: sym.strate,
+      isCenter: sym.is_center,
+      baseScale: baseScale,
+      baseY: y,
+      orbitRadius: Math.sqrt(x*x + z*z),
+      orbitAngle: Math.atan2(z, x),
+      orbitSpeed: 0.1 + Math.random() * 0.3,
+    };
+    
+    cubeGroup.add(sprite);
+    symbolSprites.push(sprite);
+  });
+}
+
+function makeCircleTexture(color) {
+  const size = 64;
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  
+  // Glow
+  const gradient = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+  gradient.addColorStop(0, `rgba(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)},1)`);
+  gradient.addColorStop(0.4, `rgba(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)},0.6)`);
+  gradient.addColorStop(1, `rgba(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)},0)`);
+  
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, size, size);
+  
+  const tex = new THREE.CanvasTexture(canvas);
+  return tex;
+}
+
+function makeTextSprite(text, color, size) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 256;
+  canvas.height = 128;
+  const ctx = canvas.getContext('2d');
+  
+  ctx.font = 'bold 60px Courier New';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  
+  // Glow effect
+  ctx.shadowColor = `rgb(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)})`;
+  ctx.shadowBlur = 20;
+  ctx.fillStyle = `rgb(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)})`;
+  ctx.fillText(text, 128, 64);
+  
+  const tex = new THREE.CanvasTexture(canvas);
+  const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
+  const sprite = new THREE.Sprite(mat);
+  sprite.scale.set(size * 2, size, 1);
+  return sprite;
+}
+
+function buildLegend(data) {
+  const el = document.getElementById('legend');
+  el.innerHTML = '<h3>⬡ STRATES</h3>';
+  
+  data.strates.forEach((s, i) => {
+    const c = STRATE_COLORS[i];
+    const rgb = `rgb(${Math.round(c.r*255)},${Math.round(c.g*255)},${Math.round(c.b*255)})`;
+    el.innerHTML += `
+      <div class="legend-row">
+        <div class="legend-dot" style="background:${rgb}"></div>
+        <span class="legend-label">${STRATE_NAMES[i]}</span>
+        <span class="legend-count">${s.count}</span>
+      </div>`;
+  });
+  
+  const total = data.strates.reduce((a, s) => a + s.count, 0);
+  el.innerHTML += `<div style="margin-top:8px;color:#f90;font-size:10px">TOTAL: ${total} symboles</div>`;
+}
+
+function updateTitleBar(data) {
+  const total = data.strates.reduce((a, s) => a + s.count, 0);
+  const domains = [...new Set(data.symbols.map(s => s.domain))].length;
+  document.querySelector('#title-bar div:not(.sub)').textContent = 
+    `${total} symboles · 7 strates · ${domains} domaines`;
+}
+
+// ── Animation ──
+function animate() {
+  requestAnimationFrame(animate);
+  time += 0.016;
+  
+  const speed = document.getElementById('speed').value / 3000;
+  const symSize = document.getElementById('symsize').value / 10;
+  const showPlanes = document.getElementById('showPlanes').checked;
+  const showLabels = document.getElementById('showLabels').checked;
+  
+  // Rotate cube
+  cubeGroup.rotation.y += speed;
+  
+  // Gentle camera bob
+  camera.position.y = 2.5 + Math.sin(time * 0.3) * 0.2;
+  camera.lookAt(0, 0, 0);
+  
+  // Animate symbols (gentle orbital motion within their strate)
+  symbolSprites.forEach(sprite => {
+    const ud = sprite.userData;
+    if (!ud.isCenter && ud.orbitRadius > 0.1) {
+      const angle = ud.orbitAngle + time * ud.orbitSpeed * 0.1;
+      sprite.position.x = Math.cos(angle) * ud.orbitRadius;
+      sprite.position.z = Math.sin(angle) * ud.orbitRadius;
+    }
+    // Scale
+    sprite.scale.set(ud.baseScale * symSize, ud.baseScale * symSize, 1);
+  });
+  
+  // Toggle planes
+  planesMeshes.forEach(p => p.visible = showPlanes);
+  centerLabels.forEach(l => l.visible = showLabels);
+  
+  // Raycast for hover
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(symbolSprites);
+  const hoverEl = document.getElementById('hover-info');
+  
+  if (intersects.length > 0) {
+    const hit = intersects[0].object;
+    const ud = hit.userData;
+    if (ud.symbol) {
+      const c = STRATE_COLORS[ud.strate];
+      const rgb = `rgb(${Math.round(c.r*255)},${Math.round(c.g*255)},${Math.round(c.b*255)})`;
+      hoverEl.querySelector('.sym').textContent = ud.symbol;
+      hoverEl.querySelector('.name').textContent = ud.from;
+      hoverEl.querySelector('.domain').textContent = ud.domain;
+      const tag = hoverEl.querySelector('.strate-tag');
+      tag.textContent = STRATE_NAMES[ud.strate];
+      tag.style.background = rgb;
+      tag.style.color = '#000';
+      hoverEl.style.display = 'block';
+      hoverEl.style.borderColor = rgb;
+    }
+  } else {
+    hoverEl.style.display = 'none';
+  }
+  
+  renderer.render(scene, camera);
+}
+
+function onMouseMove(e) {
+  mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+}
+
+function onResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+// ── Launch ──
+init();
+</script>
+</body>
+</html>

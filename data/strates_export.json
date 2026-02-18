@@ -1,0 +1,5677 @@
+{
+  "meta": {
+    "total_symbols": 794
+  },
+  "strates": [
+    {
+      "id": 0,
+      "name": "SOL · Δ⁰₀ · Décidable",
+      "short": "Δ⁰₀ SOL",
+      "formula": "R(x) — tout se calcule en temps fini",
+      "desc": "Arithmétique, algèbre, analyse, physique, chimie — toute formule calculable.",
+      "color": [
+        74,
+        222,
+        128
+      ],
+      "yr": -0.44,
+      "opacity": 0.18,
+      "symbols": [
+        {
+          "s": "+",
+          "from": "Addition",
+          "domain": "arithmétique",
+          "px": -1.3644,
+          "pz": -1.3566
+        },
+        {
+          "s": "−",
+          "from": "Soustraction",
+          "domain": "arithmétique",
+          "px": -1.2507,
+          "pz": -1.3566
+        },
+        {
+          "s": "×",
+          "from": "Multiplication",
+          "domain": "arithmétique",
+          "px": -1.137,
+          "pz": -1.3566
+        },
+        {
+          "s": "÷",
+          "from": "Division",
+          "domain": "arithmétique",
+          "px": -1.0233,
+          "pz": -1.3566
+        },
+        {
+          "s": "=",
+          "from": "Égalité (Recorde 1557)",
+          "domain": "arithmétique",
+          "px": -0.9096,
+          "pz": -1.3566
+        },
+        {
+          "s": "≠",
+          "from": "Inégalité",
+          "domain": "arithmétique",
+          "px": -0.7959,
+          "pz": -1.3566
+        },
+        {
+          "s": "<",
+          "from": "Inférieur strict",
+          "domain": "arithmétique",
+          "px": -0.6822,
+          "pz": -1.3566
+        },
+        {
+          "s": ">",
+          "from": "Supérieur strict",
+          "domain": "arithmétique",
+          "px": -0.5685,
+          "pz": -1.3566
+        },
+        {
+          "s": "≤",
+          "from": "Inférieur ou égal",
+          "domain": "arithmétique",
+          "px": -0.4548,
+          "pz": -1.3566
+        },
+        {
+          "s": "≥",
+          "from": "Supérieur ou égal",
+          "domain": "arithmétique",
+          "px": -0.3411,
+          "pz": -1.3566
+        },
+        {
+          "s": "≈",
+          "from": "Approximativement égal",
+          "domain": "arithmétique",
+          "px": -0.2274,
+          "pz": -1.3566
+        },
+        {
+          "s": "≡",
+          "from": "Identique / congruence",
+          "domain": "arithmétique",
+          "px": -0.1137,
+          "pz": -1.3566
+        },
+        {
+          "s": "∝",
+          "from": "Proportionnel à",
+          "domain": "arithmétique",
+          "px": 0.0,
+          "pz": -1.3566
+        },
+        {
+          "s": "±",
+          "from": "Plus ou moins",
+          "domain": "arithmétique",
+          "px": 0.1137,
+          "pz": -1.3566
+        },
+        {
+          "s": "√",
+          "from": "Racine carrée",
+          "domain": "arithmétique",
+          "px": 0.2274,
+          "pz": -1.3566
+        },
+        {
+          "s": "∛",
+          "from": "Racine cubique",
+          "domain": "arithmétique",
+          "px": 0.3411,
+          "pz": -1.3566
+        },
+        {
+          "s": "!",
+          "from": "Factorielle n!",
+          "domain": "combinatoire",
+          "px": 0.4548,
+          "pz": -1.3566
+        },
+        {
+          "s": "ⁿ",
+          "from": "Puissance / exposant",
+          "domain": "arithmétique",
+          "px": 0.5685,
+          "pz": -1.3566
+        },
+        {
+          "s": "%",
+          "from": "Pourcentage",
+          "domain": "arithmétique",
+          "px": 0.6822,
+          "pz": -1.3566
+        },
+        {
+          "s": "mod",
+          "from": "Modulo",
+          "domain": "arithmétique",
+          "px": 0.7959,
+          "pz": -1.3566
+        },
+        {
+          "s": "⌊x⌋",
+          "from": "Partie entière inférieure",
+          "domain": "arithmétique",
+          "px": 0.9096,
+          "pz": -1.3566
+        },
+        {
+          "s": "⌈x⌉",
+          "from": "Partie entière supérieure",
+          "domain": "arithmétique",
+          "px": 1.0233,
+          "pz": -1.3566
+        },
+        {
+          "s": "|x|",
+          "from": "Valeur absolue",
+          "domain": "arithmétique",
+          "px": 1.137,
+          "pz": -1.3566
+        },
+        {
+          "s": "∞",
+          "from": "Infini potentiel (Wallis)",
+          "domain": "analyse",
+          "px": 1.2507,
+          "pz": -1.3566
+        },
+        {
+          "s": "ℕ",
+          "from": "Nombres naturels",
+          "domain": "nombres",
+          "px": 1.3644,
+          "pz": -1.3566
+        },
+        {
+          "s": "ℤ",
+          "from": "Entiers relatifs",
+          "domain": "nombres",
+          "px": -1.3644,
+          "pz": -1.2274
+        },
+        {
+          "s": "ℚ",
+          "from": "Rationnels",
+          "domain": "nombres",
+          "px": -1.2507,
+          "pz": -1.2274
+        },
+        {
+          "s": "ℝ",
+          "from": "Réels",
+          "domain": "nombres",
+          "px": -1.137,
+          "pz": -1.2274
+        },
+        {
+          "s": "ℂ",
+          "from": "Complexes",
+          "domain": "nombres",
+          "px": -1.0233,
+          "pz": -1.2274
+        },
+        {
+          "s": "ℍ",
+          "from": "Quaternions (Hamilton)",
+          "domain": "nombres",
+          "px": -0.9096,
+          "pz": -1.2274
+        },
+        {
+          "s": "𝕆",
+          "from": "Octonions",
+          "domain": "nombres",
+          "px": -0.7959,
+          "pz": -1.2274
+        },
+        {
+          "s": "ℙ",
+          "from": "Nombres premiers",
+          "domain": "nombres",
+          "px": -0.6822,
+          "pz": -1.2274
+        },
+        {
+          "s": "𝔽ₚ",
+          "from": "Corps fini à p éléments",
+          "domain": "algèbre",
+          "px": -0.5685,
+          "pz": -1.2274
+        },
+        {
+          "s": "π",
+          "from": "Pi ~3.14159 (Archimède)",
+          "domain": "géométrie",
+          "px": -0.4548,
+          "pz": -1.2274
+        },
+        {
+          "s": "e",
+          "from": "Euler ~2.71828",
+          "domain": "analyse",
+          "px": -0.3411,
+          "pz": -1.2274
+        },
+        {
+          "s": "i",
+          "from": "Unité imaginaire √(-1)",
+          "domain": "complexes",
+          "px": -0.2274,
+          "pz": -1.2274
+        },
+        {
+          "s": "φ",
+          "from": "Nombre d'or (1+√5)/2",
+          "domain": "nombres",
+          "px": -0.1137,
+          "pz": -1.2274
+        },
+        {
+          "s": "γₑ",
+          "from": "Constante Euler-Mascheroni",
+          "domain": "analyse",
+          "px": 0.0,
+          "pz": -1.2274
+        },
+        {
+          "s": "0",
+          "from": "Zéro (Brahmagupta 628)",
+          "domain": "arithmétique",
+          "px": 0.1137,
+          "pz": -1.2274
+        },
+        {
+          "s": "1",
+          "from": "Unité",
+          "domain": "arithmétique",
+          "px": 0.2274,
+          "pz": -1.2274
+        },
+        {
+          "s": "2",
+          "from": "Deux — seul premier pair",
+          "domain": "arithmétique",
+          "px": 0.3411,
+          "pz": -1.2274
+        },
+        {
+          "s": "3",
+          "from": "Trois — plus petit premier impair",
+          "domain": "arithmétique",
+          "px": 0.4548,
+          "pz": -1.2274
+        },
+        {
+          "s": "4",
+          "from": "Quatre — premier carré >1",
+          "domain": "arithmétique",
+          "px": 0.5685,
+          "pz": -1.2274
+        },
+        {
+          "s": "5",
+          "from": "Cinq — base pentagonale",
+          "domain": "arithmétique",
+          "px": 0.6822,
+          "pz": -1.2274
+        },
+        {
+          "s": "6",
+          "from": "Six — premier nombre parfait (1+2+3)",
+          "domain": "arithmétique",
+          "px": 0.7959,
+          "pz": -1.2274
+        },
+        {
+          "s": "7",
+          "from": "Sept — premier mersenne (2³-1)",
+          "domain": "arithmétique",
+          "px": 0.9096,
+          "pz": -1.2274
+        },
+        {
+          "s": "8",
+          "from": "Huit — premier cube >1 (2³)",
+          "domain": "arithmétique",
+          "px": 1.0233,
+          "pz": -1.2274
+        },
+        {
+          "s": "9",
+          "from": "Neuf — premier carré impair >1 (3²)",
+          "domain": "arithmétique",
+          "px": 1.137,
+          "pz": -1.2274
+        },
+        {
+          "s": "c",
+          "from": "Vitesse lumière 299792458 m/s",
+          "domain": "relativité",
+          "px": 1.2507,
+          "pz": -1.2274
+        },
+        {
+          "s": "G",
+          "from": "Constante gravitationnelle",
+          "domain": "gravitation",
+          "px": 1.3644,
+          "pz": -1.2274
+        },
+        {
+          "s": "ℏ",
+          "from": "Planck réduite h/2π",
+          "domain": "quantique",
+          "px": -1.3644,
+          "pz": -1.0982
+        },
+        {
+          "s": "h",
+          "from": "Constante de Planck",
+          "domain": "quantique",
+          "px": -1.2507,
+          "pz": -1.0982
+        },
+        {
+          "s": "kB",
+          "from": "Constante de Boltzmann",
+          "domain": "thermo",
+          "px": -1.137,
+          "pz": -1.0982
+        },
+        {
+          "s": "NA",
+          "from": "Nombre d'Avogadro",
+          "domain": "chimie",
+          "px": -1.0233,
+          "pz": -1.0982
+        },
+        {
+          "s": "R",
+          "from": "Constante gaz parfaits",
+          "domain": "thermo",
+          "px": -0.9096,
+          "pz": -1.0982
+        },
+        {
+          "s": "e⁻",
+          "from": "Charge élémentaire",
+          "domain": "électromagn",
+          "px": -0.7959,
+          "pz": -1.0982
+        },
+        {
+          "s": "μ₀",
+          "from": "Perméabilité du vide",
+          "domain": "électromagn",
+          "px": -0.6822,
+          "pz": -1.0982
+        },
+        {
+          "s": "ε₀",
+          "from": "Permittivité du vide",
+          "domain": "électromagn",
+          "px": -0.5685,
+          "pz": -1.0982
+        },
+        {
+          "s": "σ_SB",
+          "from": "Constante Stefan-Boltzmann",
+          "domain": "thermo",
+          "px": -0.4548,
+          "pz": -1.0982
+        },
+        {
+          "s": "α_fs",
+          "from": "Constante structure fine ~1/137",
+          "domain": "quantique",
+          "px": -0.3411,
+          "pz": -1.0982
+        },
+        {
+          "s": "mₑ",
+          "from": "Masse électron",
+          "domain": "particules",
+          "px": -0.2274,
+          "pz": -1.0982
+        },
+        {
+          "s": "mₚ",
+          "from": "Masse proton",
+          "domain": "particules",
+          "px": -0.1137,
+          "pz": -1.0982
+        },
+        {
+          "s": "mₙ",
+          "from": "Masse neutron",
+          "domain": "particules",
+          "px": 0.0,
+          "pz": -1.0982
+        },
+        {
+          "s": "H₀",
+          "from": "Constante de Hubble",
+          "domain": "cosmologie",
+          "px": 0.1137,
+          "pz": -1.0982
+        },
+        {
+          "s": "T_CMB",
+          "from": "Température CMB ~2.725K",
+          "domain": "cosmologie",
+          "px": 0.2274,
+          "pz": -1.0982
+        },
+        {
+          "s": "∈",
+          "from": "Appartenance (Cantor)",
+          "domain": "ensembles",
+          "px": 0.3411,
+          "pz": -1.0982
+        },
+        {
+          "s": "∉",
+          "from": "Non-appartenance",
+          "domain": "ensembles",
+          "px": 0.4548,
+          "pz": -1.0982
+        },
+        {
+          "s": "∅",
+          "from": "Ensemble vide",
+          "domain": "ensembles",
+          "px": 0.5685,
+          "pz": -1.0982
+        },
+        {
+          "s": "∪",
+          "from": "Union",
+          "domain": "ensembles",
+          "px": 0.6822,
+          "pz": -1.0982
+        },
+        {
+          "s": "∩",
+          "from": "Intersection",
+          "domain": "ensembles",
+          "px": 0.7959,
+          "pz": -1.0982
+        },
+        {
+          "s": "⊂",
+          "from": "Inclusion stricte",
+          "domain": "ensembles",
+          "px": 0.9096,
+          "pz": -1.0982
+        },
+        {
+          "s": "⊆",
+          "from": "Inclusion large",
+          "domain": "ensembles",
+          "px": 1.0233,
+          "pz": -1.0982
+        },
+        {
+          "s": "⊃",
+          "from": "Sur-ensemble strict",
+          "domain": "ensembles",
+          "px": 1.137,
+          "pz": -1.0982
+        },
+        {
+          "s": "⊇",
+          "from": "Sur-ensemble large",
+          "domain": "ensembles",
+          "px": 1.2507,
+          "pz": -1.0982
+        },
+        {
+          "s": "∖",
+          "from": "Différence ensembliste",
+          "domain": "ensembles",
+          "px": 1.3644,
+          "pz": -1.0982
+        },
+        {
+          "s": "△",
+          "from": "Différence symétrique",
+          "domain": "ensembles",
+          "px": -1.3644,
+          "pz": -0.969
+        },
+        {
+          "s": "𝒫(A)",
+          "from": "Ensemble des parties",
+          "domain": "ensembles",
+          "px": -1.2507,
+          "pz": -0.969
+        },
+        {
+          "s": "A×B",
+          "from": "Produit cartésien",
+          "domain": "ensembles",
+          "px": -1.137,
+          "pz": -0.969
+        },
+        {
+          "s": "|A|",
+          "from": "Cardinal d'un ensemble",
+          "domain": "ensembles",
+          "px": -1.0233,
+          "pz": -0.969
+        },
+        {
+          "s": "ℵ₀",
+          "from": "Cardinal dénombrable (Cantor)",
+          "domain": "ensembles",
+          "px": -0.9096,
+          "pz": -0.969
+        },
+        {
+          "s": "ℵ₁",
+          "from": "Premier indénombrable",
+          "domain": "ensembles",
+          "px": -0.7959,
+          "pz": -0.969
+        },
+        {
+          "s": "𝔠",
+          "from": "Cardinal du continu",
+          "domain": "ensembles",
+          "px": -0.6822,
+          "pz": -0.969
+        },
+        {
+          "s": "ℶ",
+          "from": "Nombre de Beth",
+          "domain": "ensembles",
+          "px": -0.5685,
+          "pz": -0.969
+        },
+        {
+          "s": "Aᶜ",
+          "from": "Complément ensemble",
+          "domain": "ensembles",
+          "px": -0.4548,
+          "pz": -0.969
+        },
+        {
+          "s": "⊔",
+          "from": "Union disjointe (coproduct)",
+          "domain": "ensembles",
+          "px": -0.3411,
+          "pz": -0.969
+        },
+        {
+          "s": "κ",
+          "from": "Cardinal inaccessible (Hausdorff 1908)",
+          "domain": "ensembles",
+          "px": -0.2274,
+          "pz": -0.969
+        },
+        {
+          "s": "cf",
+          "from": "Cofinalité (König, théorie cardinaux)",
+          "domain": "ensembles",
+          "px": -0.1137,
+          "pz": -0.969
+        },
+        {
+          "s": "Card",
+          "from": "Classe des cardinaux",
+          "domain": "ensembles",
+          "px": 0.0,
+          "pz": -0.969
+        },
+        {
+          "s": "∧",
+          "from": "ET logique (conjonction)",
+          "domain": "logique",
+          "px": 0.1137,
+          "pz": -0.969
+        },
+        {
+          "s": "∨",
+          "from": "OU logique (disjonction)",
+          "domain": "logique",
+          "px": 0.2274,
+          "pz": -0.969
+        },
+        {
+          "s": "¬",
+          "from": "Négation",
+          "domain": "logique",
+          "px": 0.3411,
+          "pz": -0.969
+        },
+        {
+          "s": "→",
+          "from": "Implication",
+          "domain": "logique",
+          "px": 0.4548,
+          "pz": -0.969
+        },
+        {
+          "s": "↔",
+          "from": "Bi-implication",
+          "domain": "logique",
+          "px": 0.5685,
+          "pz": -0.969
+        },
+        {
+          "s": "⊤",
+          "from": "Vrai (tautologie)",
+          "domain": "logique",
+          "px": 0.6822,
+          "pz": -0.969
+        },
+        {
+          "s": "⊥₀",
+          "from": "Faux (contradiction)",
+          "domain": "logique",
+          "px": 0.7959,
+          "pz": -0.969
+        },
+        {
+          "s": "⊕",
+          "from": "OU exclusif (XOR)",
+          "domain": "logique",
+          "px": 0.9096,
+          "pz": -0.969
+        },
+        {
+          "s": "⊨",
+          "from": "Satisfaction / modèle",
+          "domain": "logique",
+          "px": 1.0233,
+          "pz": -0.969
+        },
+        {
+          "s": "⊩",
+          "from": "Forcing (Cohen)",
+          "domain": "logique",
+          "px": 1.137,
+          "pz": -0.969
+        },
+        {
+          "s": "∴",
+          "from": "Donc / par conséquent",
+          "domain": "logique",
+          "px": 1.2507,
+          "pz": -0.969
+        },
+        {
+          "s": "∵",
+          "from": "Parce que",
+          "domain": "logique",
+          "px": 1.3644,
+          "pz": -0.969
+        },
+        {
+          "s": "⟹",
+          "from": "Implique (méta)",
+          "domain": "logique",
+          "px": -1.3644,
+          "pz": -0.8398
+        },
+        {
+          "s": "⟺",
+          "from": "Ssi (si et seulement si)",
+          "domain": "logique",
+          "px": -1.2507,
+          "pz": -0.8398
+        },
+        {
+          "s": "∄",
+          "from": "N'existe pas (¬∃)",
+          "domain": "logique",
+          "px": -1.137,
+          "pz": -0.8398
+        },
+        {
+          "s": "∃!",
+          "from": "Quantificateur existence unique",
+          "domain": "logique",
+          "px": -1.0233,
+          "pz": -0.8398
+        },
+        {
+          "s": "ZFC",
+          "from": "Zermelo-Fraenkel + Choix (Zermelo 1908, Fraenkel 1922)",
+          "domain": "logique",
+          "px": -0.9096,
+          "pz": -0.8398
+        },
+        {
+          "s": "ZF",
+          "from": "Zermelo-Fraenkel sans Choix",
+          "domain": "logique",
+          "px": -0.7959,
+          "pz": -0.8398
+        },
+        {
+          "s": "CH",
+          "from": "Hypothèse du Continu (Cantor 1878, indép. Cohen 1963)",
+          "domain": "logique",
+          "px": -0.6822,
+          "pz": -0.8398
+        },
+        {
+          "s": "GCH",
+          "from": "Hypothèse Continu Généralisée",
+          "domain": "logique",
+          "px": -0.5685,
+          "pz": -0.8398
+        },
+        {
+          "s": "Con",
+          "from": "Consistance Con(T) — Gödel 2ème incomplétude 1931",
+          "domain": "logique",
+          "px": -0.4548,
+          "pz": -0.8398
+        },
+        {
+          "s": "V=L",
+          "from": "Axiome Constructibilité (Gödel 1938)",
+          "domain": "logique",
+          "px": -0.3411,
+          "pz": -0.8398
+        },
+        {
+          "s": "□",
+          "from": "Nécessité (logique modale, Kripke 1963)",
+          "domain": "logique",
+          "px": -0.2274,
+          "pz": -0.8398
+        },
+        {
+          "s": "◇",
+          "from": "Possibilité (logique modale, Kripke 1963)",
+          "domain": "logique",
+          "px": -0.1137,
+          "pz": -0.8398
+        },
+        {
+          "s": "⊩_forc",
+          "from": "Forcing (Cohen 1963, indép. CH)",
+          "domain": "logique",
+          "px": 0.0,
+          "pz": -0.8398
+        },
+        {
+          "s": "∫",
+          "from": "Intégrale (Leibniz 1675)",
+          "domain": "analyse",
+          "px": 0.1137,
+          "pz": -0.8398
+        },
+        {
+          "s": "∬",
+          "from": "Intégrale double",
+          "domain": "analyse",
+          "px": 0.2274,
+          "pz": -0.8398
+        },
+        {
+          "s": "∭",
+          "from": "Intégrale triple",
+          "domain": "analyse",
+          "px": 0.3411,
+          "pz": -0.8398
+        },
+        {
+          "s": "∮",
+          "from": "Intégrale de contour",
+          "domain": "analyse",
+          "px": 0.4548,
+          "pz": -0.8398
+        },
+        {
+          "s": "∂",
+          "from": "Dérivée partielle",
+          "domain": "analyse",
+          "px": 0.5685,
+          "pz": -0.8398
+        },
+        {
+          "s": "d/dx",
+          "from": "Dérivée totale",
+          "domain": "analyse",
+          "px": 0.6822,
+          "pz": -0.8398
+        },
+        {
+          "s": "dx",
+          "from": "Différentielle (Leibniz)",
+          "domain": "analyse",
+          "px": 0.7959,
+          "pz": -0.8398
+        },
+        {
+          "s": "f'",
+          "from": "Dérivée notation Lagrange",
+          "domain": "analyse",
+          "px": 0.9096,
+          "pz": -0.8398
+        },
+        {
+          "s": "ẋ",
+          "from": "Dérivée temporelle Newton",
+          "domain": "analyse",
+          "px": 1.0233,
+          "pz": -0.8398
+        },
+        {
+          "s": "∇",
+          "from": "Nabla / gradient (Hamilton)",
+          "domain": "analyse",
+          "px": 1.137,
+          "pz": -0.8398
+        },
+        {
+          "s": "∇²",
+          "from": "Laplacien",
+          "domain": "analyse",
+          "px": 1.2507,
+          "pz": -0.8398
+        },
+        {
+          "s": "∇×",
+          "from": "Rotationnel (curl)",
+          "domain": "analyse",
+          "px": 1.3644,
+          "pz": -0.8398
+        },
+        {
+          "s": "∇·",
+          "from": "Divergence",
+          "domain": "analyse",
+          "px": -1.3644,
+          "pz": -0.7106
+        },
+        {
+          "s": "Δ",
+          "from": "Laplacien / variation",
+          "domain": "analyse",
+          "px": -1.2507,
+          "pz": -0.7106
+        },
+        {
+          "s": "δ",
+          "from": "Dirac delta δ(x)",
+          "domain": "analyse",
+          "px": -1.137,
+          "pz": -0.7106
+        },
+        {
+          "s": "lim",
+          "from": "Limite (Cauchy/Weierstrass)",
+          "domain": "analyse",
+          "px": -1.0233,
+          "pz": -0.7106
+        },
+        {
+          "s": "sup",
+          "from": "Supremum / borne supérieure",
+          "domain": "analyse",
+          "px": -0.9096,
+          "pz": -0.7106
+        },
+        {
+          "s": "inf",
+          "from": "Infimum / borne inférieure",
+          "domain": "analyse",
+          "px": -0.7959,
+          "pz": -0.7106
+        },
+        {
+          "s": "max",
+          "from": "Maximum",
+          "domain": "analyse",
+          "px": -0.6822,
+          "pz": -0.7106
+        },
+        {
+          "s": "min",
+          "from": "Minimum",
+          "domain": "analyse",
+          "px": -0.5685,
+          "pz": -0.7106
+        },
+        {
+          "s": "Σ",
+          "from": "Sommation finie",
+          "domain": "analyse",
+          "px": -0.4548,
+          "pz": -0.7106
+        },
+        {
+          "s": "Π",
+          "from": "Produit fini",
+          "domain": "analyse",
+          "px": -0.3411,
+          "pz": -0.7106
+        },
+        {
+          "s": "O(n)",
+          "from": "Grand-O Landau complexité",
+          "domain": "analyse",
+          "px": -0.2274,
+          "pz": -0.7106
+        },
+        {
+          "s": "o(n)",
+          "from": "Petit-o Landau",
+          "domain": "analyse",
+          "px": -0.1137,
+          "pz": -0.7106
+        },
+        {
+          "s": "Θ(n)",
+          "from": "Theta Landau",
+          "domain": "analyse",
+          "px": 0.0,
+          "pz": -0.7106
+        },
+        {
+          "s": "ε",
+          "from": "Epsilon voisinage",
+          "domain": "analyse",
+          "px": 0.1137,
+          "pz": -0.7106
+        },
+        {
+          "s": "sin",
+          "from": "Sinus",
+          "domain": "trigonométrie",
+          "px": 0.2274,
+          "pz": -0.7106
+        },
+        {
+          "s": "cos",
+          "from": "Cosinus",
+          "domain": "trigonométrie",
+          "px": 0.3411,
+          "pz": -0.7106
+        },
+        {
+          "s": "tan",
+          "from": "Tangente",
+          "domain": "trigonométrie",
+          "px": 0.4548,
+          "pz": -0.7106
+        },
+        {
+          "s": "cot",
+          "from": "Cotangente",
+          "domain": "trigonométrie",
+          "px": 0.5685,
+          "pz": -0.7106
+        },
+        {
+          "s": "sec",
+          "from": "Sécante",
+          "domain": "trigonométrie",
+          "px": 0.6822,
+          "pz": -0.7106
+        },
+        {
+          "s": "csc",
+          "from": "Cosécante",
+          "domain": "trigonométrie",
+          "px": 0.7959,
+          "pz": -0.7106
+        },
+        {
+          "s": "arcsin",
+          "from": "Arc sinus",
+          "domain": "trigonométrie",
+          "px": 0.9096,
+          "pz": -0.7106
+        },
+        {
+          "s": "arccos",
+          "from": "Arc cosinus",
+          "domain": "trigonométrie",
+          "px": 1.0233,
+          "pz": -0.7106
+        },
+        {
+          "s": "arctan",
+          "from": "Arc tangente",
+          "domain": "trigonométrie",
+          "px": 1.137,
+          "pz": -0.7106
+        },
+        {
+          "s": "sinh",
+          "from": "Sinus hyperbolique",
+          "domain": "trigonométrie",
+          "px": 1.2507,
+          "pz": -0.7106
+        },
+        {
+          "s": "cosh",
+          "from": "Cosinus hyperbolique",
+          "domain": "trigonométrie",
+          "px": 1.3644,
+          "pz": -0.7106
+        },
+        {
+          "s": "tanh",
+          "from": "Tangente hyperbolique",
+          "domain": "trigonométrie",
+          "px": -1.3644,
+          "pz": -0.5814
+        },
+        {
+          "s": "ln",
+          "from": "Logarithme naturel",
+          "domain": "analyse",
+          "px": -1.2507,
+          "pz": -0.5814
+        },
+        {
+          "s": "log",
+          "from": "Logarithme (Napier 1614)",
+          "domain": "analyse",
+          "px": -1.137,
+          "pz": -0.5814
+        },
+        {
+          "s": "log₂",
+          "from": "Logarithme base 2",
+          "domain": "information",
+          "px": -1.0233,
+          "pz": -0.5814
+        },
+        {
+          "s": "exp",
+          "from": "Exponentielle",
+          "domain": "analyse",
+          "px": -0.9096,
+          "pz": -0.5814
+        },
+        {
+          "s": "Γ",
+          "from": "Fonction Gamma d'Euler",
+          "domain": "analyse",
+          "px": -0.7959,
+          "pz": -0.5814
+        },
+        {
+          "s": "B",
+          "from": "Fonction Bêta B(x,y)",
+          "domain": "analyse",
+          "px": -0.6822,
+          "pz": -0.5814
+        },
+        {
+          "s": "ζ",
+          "from": "Zeta de Riemann ζ(s)",
+          "domain": "nb premiers",
+          "px": -0.5685,
+          "pz": -0.5814
+        },
+        {
+          "s": "ξ",
+          "from": "Xi — fonction de Riemann complétée",
+          "domain": "nb premiers",
+          "px": -0.4548,
+          "pz": -0.5814
+        },
+        {
+          "s": "η",
+          "from": "Eta de Dedekind / Dirichlet",
+          "domain": "nb premiers",
+          "px": -0.3411,
+          "pz": -0.5814
+        },
+        {
+          "s": "L(s,χ)",
+          "from": "Fonction L de Dirichlet",
+          "domain": "nb premiers",
+          "px": -0.2274,
+          "pz": -0.5814
+        },
+        {
+          "s": "Ai",
+          "from": "Fonction d'Airy",
+          "domain": "analyse",
+          "px": -0.1137,
+          "pz": -0.5814
+        },
+        {
+          "s": "Bi",
+          "from": "Fonction d'Airy 2ème espèce",
+          "domain": "analyse",
+          "px": 0.0,
+          "pz": -0.5814
+        },
+        {
+          "s": "Jₙ",
+          "from": "Fonction de Bessel 1ère",
+          "domain": "analyse",
+          "px": 0.1137,
+          "pz": -0.5814
+        },
+        {
+          "s": "Yₙ",
+          "from": "Fonction de Bessel 2ème",
+          "domain": "analyse",
+          "px": 0.2274,
+          "pz": -0.5814
+        },
+        {
+          "s": "Pₙ",
+          "from": "Polynômes de Legendre",
+          "domain": "analyse",
+          "px": 0.3411,
+          "pz": -0.5814
+        },
+        {
+          "s": "Yₗₘ",
+          "from": "Harmoniques sphériques",
+          "domain": "analyse",
+          "px": 0.4548,
+          "pz": -0.5814
+        },
+        {
+          "s": "Hₙ",
+          "from": "Polynômes de Hermite",
+          "domain": "analyse",
+          "px": 0.5685,
+          "pz": -0.5814
+        },
+        {
+          "s": "Lₙ",
+          "from": "Polynômes de Laguerre",
+          "domain": "analyse",
+          "px": 0.6822,
+          "pz": -0.5814
+        },
+        {
+          "s": "Tₙ",
+          "from": "Polynômes de Tchebychev",
+          "domain": "analyse",
+          "px": 0.7959,
+          "pz": -0.5814
+        },
+        {
+          "s": "erf",
+          "from": "Fonction d'erreur",
+          "domain": "probabilités",
+          "px": 0.9096,
+          "pz": -0.5814
+        },
+        {
+          "s": "erfc",
+          "from": "Complémentaire erreur",
+          "domain": "probabilités",
+          "px": 1.0233,
+          "pz": -0.5814
+        },
+        {
+          "s": "Φ",
+          "from": "CDF normale standard",
+          "domain": "probabilités",
+          "px": 1.137,
+          "pz": -0.5814
+        },
+        {
+          "s": "W(x)",
+          "from": "Fonction W de Lambert",
+          "domain": "analyse",
+          "px": 1.2507,
+          "pz": -0.5814
+        },
+        {
+          "s": "Li(x)",
+          "from": "Logarithme intégral",
+          "domain": "nb premiers",
+          "px": 1.3644,
+          "pz": -0.5814
+        },
+        {
+          "s": "Si(x)",
+          "from": "Sinus intégral",
+          "domain": "analyse",
+          "px": -1.3644,
+          "pz": -0.4522
+        },
+        {
+          "s": "Ci(x)",
+          "from": "Cosinus intégral",
+          "domain": "analyse",
+          "px": -1.2507,
+          "pz": -0.4522
+        },
+        {
+          "s": "Ei(x)",
+          "from": "Exponentielle intégrale",
+          "domain": "analyse",
+          "px": -1.137,
+          "pz": -0.4522
+        },
+        {
+          "s": "det",
+          "from": "Déterminant",
+          "domain": "algèbre lin",
+          "px": -1.0233,
+          "pz": -0.4522
+        },
+        {
+          "s": "tr",
+          "from": "Trace d'une matrice",
+          "domain": "algèbre lin",
+          "px": -0.9096,
+          "pz": -0.4522
+        },
+        {
+          "s": "rank",
+          "from": "Rang d'une matrice",
+          "domain": "algèbre lin",
+          "px": -0.7959,
+          "pz": -0.4522
+        },
+        {
+          "s": "dim",
+          "from": "Dimension espace vectoriel",
+          "domain": "algèbre lin",
+          "px": -0.6822,
+          "pz": -0.4522
+        },
+        {
+          "s": "span",
+          "from": "Espace engendré",
+          "domain": "algèbre lin",
+          "px": -0.5685,
+          "pz": -0.4522
+        },
+        {
+          "s": "A⁻¹",
+          "from": "Matrice inverse",
+          "domain": "algèbre lin",
+          "px": -0.4548,
+          "pz": -0.4522
+        },
+        {
+          "s": "Aᵀ",
+          "from": "Transposée",
+          "domain": "algèbre lin",
+          "px": -0.3411,
+          "pz": -0.4522
+        },
+        {
+          "s": "A†",
+          "from": "Adjoint / conjugué transposé",
+          "domain": "algèbre lin",
+          "px": -0.2274,
+          "pz": -0.4522
+        },
+        {
+          "s": "⊗",
+          "from": "Produit tensoriel",
+          "domain": "algèbre lin",
+          "px": -0.1137,
+          "pz": -0.4522
+        },
+        {
+          "s": "⊕ₐ",
+          "from": "Somme directe",
+          "domain": "algèbre lin",
+          "px": 0.0,
+          "pz": -0.4522
+        },
+        {
+          "s": "‖v‖",
+          "from": "Norme d'un vecteur",
+          "domain": "algèbre lin",
+          "px": 0.1137,
+          "pz": -0.4522
+        },
+        {
+          "s": "⟨u,v⟩",
+          "from": "Produit scalaire",
+          "domain": "algèbre lin",
+          "px": 0.2274,
+          "pz": -0.4522
+        },
+        {
+          "s": "u×v",
+          "from": "Produit vectoriel",
+          "domain": "algèbre lin",
+          "px": 0.3411,
+          "pz": -0.4522
+        },
+        {
+          "s": "λ",
+          "from": "Valeur propre (eigenvalue)",
+          "domain": "algèbre lin",
+          "px": 0.4548,
+          "pz": -0.4522
+        },
+        {
+          "s": "Iₙ",
+          "from": "Matrice identité n×n",
+          "domain": "algèbre lin",
+          "px": 0.5685,
+          "pz": -0.4522
+        },
+        {
+          "s": "diag",
+          "from": "Matrice diagonale",
+          "domain": "algèbre lin",
+          "px": 0.6822,
+          "pz": -0.4522
+        },
+        {
+          "s": "⊙",
+          "from": "Produit de Hadamard",
+          "domain": "algèbre lin",
+          "px": 0.7959,
+          "pz": -0.4522
+        },
+        {
+          "s": "Gal",
+          "from": "Groupe de Galois",
+          "domain": "algèbre",
+          "px": 0.9096,
+          "pz": -0.4522
+        },
+        {
+          "s": "Aut",
+          "from": "Automorphismes",
+          "domain": "algèbre",
+          "px": 1.0233,
+          "pz": -0.4522
+        },
+        {
+          "s": "Hom",
+          "from": "Homomorphismes",
+          "domain": "algèbre",
+          "px": 1.137,
+          "pz": -0.4522
+        },
+        {
+          "s": "End",
+          "from": "Endomorphismes",
+          "domain": "algèbre",
+          "px": 1.2507,
+          "pz": -0.4522
+        },
+        {
+          "s": "Ker",
+          "from": "Noyau (morphisme/application linéaire)",
+          "domain": "algèbre",
+          "px": 1.3644,
+          "pz": -0.4522
+        },
+        {
+          "s": "Im",
+          "from": "Image (morphisme/application linéaire)",
+          "domain": "algèbre",
+          "px": -1.3644,
+          "pz": -0.323
+        },
+        {
+          "s": "≅",
+          "from": "Isomorphe",
+          "domain": "algèbre",
+          "px": -1.2507,
+          "pz": -0.323
+        },
+        {
+          "s": "⊲",
+          "from": "Sous-groupe normal",
+          "domain": "algèbre",
+          "px": -1.137,
+          "pz": -0.323
+        },
+        {
+          "s": "G/H",
+          "from": "Groupe quotient",
+          "domain": "algèbre",
+          "px": -1.0233,
+          "pz": -0.323
+        },
+        {
+          "s": "⋊",
+          "from": "Produit semi-direct",
+          "domain": "algèbre",
+          "px": -0.9096,
+          "pz": -0.323
+        },
+        {
+          "s": "GL(n)",
+          "from": "Groupe linéaire général",
+          "domain": "algèbre",
+          "px": -0.7959,
+          "pz": -0.323
+        },
+        {
+          "s": "SL(n)",
+          "from": "Groupe linéaire spécial",
+          "domain": "algèbre",
+          "px": -0.6822,
+          "pz": -0.323
+        },
+        {
+          "s": "SO(n)",
+          "from": "Groupe orthogonal spécial",
+          "domain": "algèbre",
+          "px": -0.5685,
+          "pz": -0.323
+        },
+        {
+          "s": "SU(n)",
+          "from": "Groupe unitaire spécial",
+          "domain": "algèbre",
+          "px": -0.4548,
+          "pz": -0.323
+        },
+        {
+          "s": "U(1)",
+          "from": "Groupe unitaire",
+          "domain": "algèbre",
+          "px": -0.3411,
+          "pz": -0.323
+        },
+        {
+          "s": "SU(2)",
+          "from": "Symétrie spin / isospin",
+          "domain": "particules",
+          "px": -0.2274,
+          "pz": -0.323
+        },
+        {
+          "s": "SU(3)",
+          "from": "Chromodynamique quantique",
+          "domain": "particules",
+          "px": -0.1137,
+          "pz": -0.323
+        },
+        {
+          "s": "Sₙ",
+          "from": "Groupe symétrique",
+          "domain": "algèbre",
+          "px": 0.0,
+          "pz": -0.323
+        },
+        {
+          "s": "Zₙ",
+          "from": "Groupe cyclique ℤ/nℤ",
+          "domain": "algèbre",
+          "px": 0.1137,
+          "pz": -0.323
+        },
+        {
+          "s": "⟨g⟩",
+          "from": "Groupe engendré par g",
+          "domain": "algèbre",
+          "px": 0.2274,
+          "pz": -0.323
+        },
+        {
+          "s": "[G:H]",
+          "from": "Indice sous-groupe",
+          "domain": "algèbre",
+          "px": 0.3411,
+          "pz": -0.323
+        },
+        {
+          "s": "R[x]",
+          "from": "Anneau de polynômes",
+          "domain": "algèbre",
+          "px": 0.4548,
+          "pz": -0.323
+        },
+        {
+          "s": "I⊲R",
+          "from": "Idéal dans anneau",
+          "domain": "algèbre",
+          "px": 0.5685,
+          "pz": -0.323
+        },
+        {
+          "s": "F*/F",
+          "from": "Extension de corps",
+          "domain": "algèbre",
+          "px": 0.6822,
+          "pz": -0.323
+        },
+        {
+          "s": "Spec",
+          "from": "Spectre anneau (Grothendieck, géom algébrique)",
+          "domain": "algèbre",
+          "px": 0.7959,
+          "pz": -0.323
+        },
+        {
+          "s": "Ob(C)",
+          "from": "Objets d'une catégorie",
+          "domain": "catégories",
+          "px": 0.9096,
+          "pz": -0.323
+        },
+        {
+          "s": "Mor",
+          "from": "Morphismes",
+          "domain": "catégories",
+          "px": 1.0233,
+          "pz": -0.323
+        },
+        {
+          "s": "∘",
+          "from": "Composition morphismes",
+          "domain": "catégories",
+          "px": 1.137,
+          "pz": -0.323
+        },
+        {
+          "s": "Funct",
+          "from": "Foncteur",
+          "domain": "catégories",
+          "px": 1.2507,
+          "pz": -0.323
+        },
+        {
+          "s": "Nat",
+          "from": "Transformation naturelle",
+          "domain": "catégories",
+          "px": 1.3644,
+          "pz": -0.323
+        },
+        {
+          "s": "≃",
+          "from": "Équivalence catégorielle",
+          "domain": "catégories",
+          "px": -1.3644,
+          "pz": -0.1938
+        },
+        {
+          "s": "lim←",
+          "from": "Limite projective",
+          "domain": "catégories",
+          "px": -1.2507,
+          "pz": -0.1938
+        },
+        {
+          "s": "colim→",
+          "from": "Colimite / limite inductive",
+          "domain": "catégories",
+          "px": -1.137,
+          "pz": -0.1938
+        },
+        {
+          "s": "Yoneda",
+          "from": "Lemme de Yoneda",
+          "domain": "catégories",
+          "px": -1.0233,
+          "pz": -0.1938
+        },
+        {
+          "s": "Adj",
+          "from": "Adjonction foncteurs",
+          "domain": "catégories",
+          "px": -0.9096,
+          "pz": -0.1938
+        },
+        {
+          "s": "Set",
+          "from": "Catégorie des ensembles",
+          "domain": "catégories",
+          "px": -0.7959,
+          "pz": -0.1938
+        },
+        {
+          "s": "Top",
+          "from": "Catégorie espaces topologiques",
+          "domain": "catégories",
+          "px": -0.6822,
+          "pz": -0.1938
+        },
+        {
+          "s": "Grp",
+          "from": "Catégorie des groupes",
+          "domain": "catégories",
+          "px": -0.5685,
+          "pz": -0.1938
+        },
+        {
+          "s": "Ab",
+          "from": "Catégorie groupes abéliens",
+          "domain": "catégories",
+          "px": -0.4548,
+          "pz": -0.1938
+        },
+        {
+          "s": "Vect",
+          "from": "Catégorie espaces vectoriels",
+          "domain": "catégories",
+          "px": -0.3411,
+          "pz": -0.1938
+        },
+        {
+          "s": "↪",
+          "from": "Injection / monomorphisme",
+          "domain": "catégories",
+          "px": -0.2274,
+          "pz": -0.1938
+        },
+        {
+          "s": "↠",
+          "from": "Surjection / épimorphisme",
+          "domain": "catégories",
+          "px": -0.1137,
+          "pz": -0.1938
+        },
+        {
+          "s": "τ_top",
+          "from": "Topologie sur X",
+          "domain": "topologie",
+          "px": 0.0,
+          "pz": -0.1938
+        },
+        {
+          "s": "π₁",
+          "from": "Groupe fondamental",
+          "domain": "topologie",
+          "px": 0.1137,
+          "pz": -0.1938
+        },
+        {
+          "s": "πₙ",
+          "from": "n-ième groupe d'homotopie",
+          "domain": "topologie",
+          "px": 0.2274,
+          "pz": -0.1938
+        },
+        {
+          "s": "Hₙ_top",
+          "from": "n-ième groupe d'homologie",
+          "domain": "topologie",
+          "px": 0.3411,
+          "pz": -0.1938
+        },
+        {
+          "s": "Hⁿ",
+          "from": "n-ième groupe cohomologie",
+          "domain": "topologie",
+          "px": 0.4548,
+          "pz": -0.1938
+        },
+        {
+          "s": "χ",
+          "from": "Caractéristique d'Euler",
+          "domain": "topologie",
+          "px": 0.5685,
+          "pz": -0.1938
+        },
+        {
+          "s": "g_top",
+          "from": "Genre d'une surface",
+          "domain": "topologie",
+          "px": 0.6822,
+          "pz": -0.1938
+        },
+        {
+          "s": "∼",
+          "from": "Homotopie / équivalence",
+          "domain": "topologie",
+          "px": 0.7959,
+          "pz": -0.1938
+        },
+        {
+          "s": "S¹",
+          "from": "Cercle (1-sphère)",
+          "domain": "topologie",
+          "px": 0.9096,
+          "pz": -0.1938
+        },
+        {
+          "s": "Sⁿ",
+          "from": "n-sphère",
+          "domain": "topologie",
+          "px": 1.0233,
+          "pz": -0.1938
+        },
+        {
+          "s": "T²",
+          "from": "Tore",
+          "domain": "topologie",
+          "px": 1.137,
+          "pz": -0.1938
+        },
+        {
+          "s": "RP²",
+          "from": "Plan projectif réel",
+          "domain": "topologie",
+          "px": 1.2507,
+          "pz": -0.1938
+        },
+        {
+          "s": "K_bot",
+          "from": "Bouteille de Klein",
+          "domain": "topologie",
+          "px": 1.3644,
+          "pz": -0.1938
+        },
+        {
+          "s": "∂X",
+          "from": "Bord topologique",
+          "domain": "topologie",
+          "px": -1.3644,
+          "pz": -0.0646
+        },
+        {
+          "s": "cl(A)",
+          "from": "Adhérence / fermeture",
+          "domain": "topologie",
+          "px": -1.2507,
+          "pz": -0.0646
+        },
+        {
+          "s": "int(A)",
+          "from": "Intérieur topologique",
+          "domain": "topologie",
+          "px": -1.137,
+          "pz": -0.0646
+        },
+        {
+          "s": "gμν",
+          "from": "Tenseur métrique (Einstein)",
+          "domain": "géom diff",
+          "px": -1.0233,
+          "pz": -0.0646
+        },
+        {
+          "s": "Rμν",
+          "from": "Tenseur de Ricci",
+          "domain": "géom diff",
+          "px": -0.9096,
+          "pz": -0.0646
+        },
+        {
+          "s": "Rμνρσ",
+          "from": "Tenseur de Riemann",
+          "domain": "géom diff",
+          "px": -0.7959,
+          "pz": -0.0646
+        },
+        {
+          "s": "R_sc",
+          "from": "Courbure scalaire",
+          "domain": "géom diff",
+          "px": -0.6822,
+          "pz": -0.0646
+        },
+        {
+          "s": "Tμν",
+          "from": "Tenseur énergie-impulsion",
+          "domain": "géom diff",
+          "px": -0.5685,
+          "pz": -0.0646
+        },
+        {
+          "s": "Γᵢⱼₖ",
+          "from": "Symboles de Christoffel",
+          "domain": "géom diff",
+          "px": -0.4548,
+          "pz": -0.0646
+        },
+        {
+          "s": "∧_ext",
+          "from": "Produit extérieur / wedge (formes diff)",
+          "domain": "géom diff",
+          "px": -0.3411,
+          "pz": -0.0646
+        },
+        {
+          "s": "dω",
+          "from": "Dérivée extérieure",
+          "domain": "géom diff",
+          "px": -0.2274,
+          "pz": -0.0646
+        },
+        {
+          "s": "★",
+          "from": "Opérateur de Hodge",
+          "domain": "géom diff",
+          "px": -0.1137,
+          "pz": -0.0646
+        },
+        {
+          "s": "£_X",
+          "from": "Dérivée de Lie",
+          "domain": "géom diff",
+          "px": 0.0,
+          "pz": -0.0646
+        },
+        {
+          "s": "ωₐ",
+          "from": "Forme de connexion",
+          "domain": "géom diff",
+          "px": 0.1137,
+          "pz": -0.0646
+        },
+        {
+          "s": "Fₐᵦ",
+          "from": "Tenseur de courbure (jauge)",
+          "domain": "géom diff",
+          "px": 0.2274,
+          "pz": -0.0646
+        },
+        {
+          "s": "d_ext",
+          "from": "Dérivée extérieure (Cartan 1899)",
+          "domain": "géom diff",
+          "px": 0.3411,
+          "pz": -0.0646
+        },
+        {
+          "s": "≡_mod",
+          "from": "Congruence modulo n",
+          "domain": "nb théorie",
+          "px": 0.4548,
+          "pz": -0.0646
+        },
+        {
+          "s": "gcd",
+          "from": "Plus grand commun diviseur",
+          "domain": "nb théorie",
+          "px": 0.5685,
+          "pz": -0.0646
+        },
+        {
+          "s": "lcm",
+          "from": "Plus petit commun multiple",
+          "domain": "nb théorie",
+          "px": 0.6822,
+          "pz": -0.0646
+        },
+        {
+          "s": "φ_Eul",
+          "from": "Indicatrice d'Euler φ(n)",
+          "domain": "nb théorie",
+          "px": 0.7959,
+          "pz": -0.0646
+        },
+        {
+          "s": "μ_Mob",
+          "from": "Fonction de Möbius μ(n)",
+          "domain": "nb théorie",
+          "px": 0.9096,
+          "pz": -0.0646
+        },
+        {
+          "s": "π(x)",
+          "from": "Fonction de comptage premiers",
+          "domain": "nb théorie",
+          "px": 1.0233,
+          "pz": -0.0646
+        },
+        {
+          "s": "σ(n)",
+          "from": "Somme des diviseurs",
+          "domain": "nb théorie",
+          "px": 1.137,
+          "pz": -0.0646
+        },
+        {
+          "s": "τ(n)",
+          "from": "Nombre de diviseurs",
+          "domain": "nb théorie",
+          "px": 1.2507,
+          "pz": -0.0646
+        },
+        {
+          "s": "Λ(n)",
+          "from": "Fonction de von Mangoldt",
+          "domain": "nb théorie",
+          "px": 1.3644,
+          "pz": -0.0646
+        },
+        {
+          "s": "(a/p)",
+          "from": "Symbole de Legendre",
+          "domain": "nb théorie",
+          "px": -1.3644,
+          "pz": 0.0646
+        },
+        {
+          "s": "ℓ-adic",
+          "from": "Nombres ℓ-adiques",
+          "domain": "nb théorie",
+          "px": -1.2507,
+          "pz": 0.0646
+        },
+        {
+          "s": "ℤₚ",
+          "from": "Entiers p-adiques",
+          "domain": "nb théorie",
+          "px": -1.137,
+          "pz": 0.0646
+        },
+        {
+          "s": "Fₙ",
+          "from": "Nombre de Fibonacci",
+          "domain": "nb théorie",
+          "px": -1.0233,
+          "pz": 0.0646
+        },
+        {
+          "s": "Bₙ",
+          "from": "Nombre de Bernoulli",
+          "domain": "nb théorie",
+          "px": -0.9096,
+          "pz": 0.0646
+        },
+        {
+          "s": "Cl(K)",
+          "from": "Groupe de classes idéales (Dedekind)",
+          "domain": "nb théorie",
+          "px": -0.7959,
+          "pz": 0.0646
+        },
+        {
+          "s": "Cₙ",
+          "from": "Nombre de Catalan",
+          "domain": "combinatoire",
+          "px": -0.6822,
+          "pz": 0.0646
+        },
+        {
+          "s": "C(n,k)",
+          "from": "Coefficient binomial",
+          "domain": "combinatoire",
+          "px": -0.5685,
+          "pz": 0.0646
+        },
+        {
+          "s": "χ_chrom",
+          "from": "Nombre chromatique (coloration graphe)",
+          "domain": "combinatoire",
+          "px": -0.4548,
+          "pz": 0.0646
+        },
+        {
+          "s": "Kₙ",
+          "from": "Graphe complet à n sommets",
+          "domain": "combinatoire",
+          "px": -0.3411,
+          "pz": 0.0646
+        },
+        {
+          "s": "P(A)",
+          "from": "Probabilité événement A",
+          "domain": "probabilités",
+          "px": -0.2274,
+          "pz": 0.0646
+        },
+        {
+          "s": "E[X]",
+          "from": "Espérance",
+          "domain": "probabilités",
+          "px": -0.1137,
+          "pz": 0.0646
+        },
+        {
+          "s": "Var",
+          "from": "Variance",
+          "domain": "probabilités",
+          "px": 0.0,
+          "pz": 0.0646
+        },
+        {
+          "s": "σ_std",
+          "from": "Écart-type",
+          "domain": "probabilités",
+          "px": 0.1137,
+          "pz": 0.0646
+        },
+        {
+          "s": "Cov",
+          "from": "Covariance",
+          "domain": "probabilités",
+          "px": 0.2274,
+          "pz": 0.0646
+        },
+        {
+          "s": "Cor",
+          "from": "Corrélation",
+          "domain": "probabilités",
+          "px": 0.3411,
+          "pz": 0.0646
+        },
+        {
+          "s": "μ_moy",
+          "from": "Moyenne",
+          "domain": "probabilités",
+          "px": 0.4548,
+          "pz": 0.0646
+        },
+        {
+          "s": "σ²",
+          "from": "Variance (notation)",
+          "domain": "probabilités",
+          "px": 0.5685,
+          "pz": 0.0646
+        },
+        {
+          "s": "χ²",
+          "from": "Test chi-carré Pearson",
+          "domain": "statistiques",
+          "px": 0.6822,
+          "pz": 0.0646
+        },
+        {
+          "s": "t",
+          "from": "Distribution de Student",
+          "domain": "statistiques",
+          "px": 0.7959,
+          "pz": 0.0646
+        },
+        {
+          "s": "F_dist",
+          "from": "Distribution de Fisher",
+          "domain": "statistiques",
+          "px": 0.9096,
+          "pz": 0.0646
+        },
+        {
+          "s": "N(μ,σ²)",
+          "from": "Distribution normale",
+          "domain": "probabilités",
+          "px": 1.0233,
+          "pz": 0.0646
+        },
+        {
+          "s": "Bin",
+          "from": "Distribution binomiale",
+          "domain": "probabilités",
+          "px": 1.137,
+          "pz": 0.0646
+        },
+        {
+          "s": "Poi",
+          "from": "Distribution de Poisson",
+          "domain": "probabilités",
+          "px": 1.2507,
+          "pz": 0.0646
+        },
+        {
+          "s": "Exp_d",
+          "from": "Distribution exponentielle",
+          "domain": "probabilités",
+          "px": 1.3644,
+          "pz": 0.0646
+        },
+        {
+          "s": "Bayes",
+          "from": "Théorème Bayes P(A|B)",
+          "domain": "probabilités",
+          "px": -1.3644,
+          "pz": 0.1938
+        },
+        {
+          "s": "𝟙",
+          "from": "Indicatrice / caractéristique",
+          "domain": "probabilités",
+          "px": -1.2507,
+          "pz": 0.1938
+        },
+        {
+          "s": "⊥_ind",
+          "from": "Indépendance stochastique (X⊥Y)",
+          "domain": "probabilités",
+          "px": -1.137,
+          "pz": 0.1938
+        },
+        {
+          "s": "H(X)",
+          "from": "Entropie Shannon",
+          "domain": "information",
+          "px": -1.0233,
+          "pz": 0.1938
+        },
+        {
+          "s": "I(X;Y)",
+          "from": "Information mutuelle",
+          "domain": "information",
+          "px": -0.9096,
+          "pz": 0.1938
+        },
+        {
+          "s": "D_KL",
+          "from": "Divergence Kullback-Leibler",
+          "domain": "information",
+          "px": -0.7959,
+          "pz": 0.1938
+        },
+        {
+          "s": "C_Sh",
+          "from": "Capacité canal Shannon",
+          "domain": "information",
+          "px": -0.6822,
+          "pz": 0.1938
+        },
+        {
+          "s": "H_Ren",
+          "from": "Entropie de Rényi",
+          "domain": "information",
+          "px": -0.5685,
+          "pz": 0.1938
+        },
+        {
+          "s": "F",
+          "from": "Force Newton F=ma",
+          "domain": "mécanique",
+          "px": -0.4548,
+          "pz": 0.1938
+        },
+        {
+          "s": "m",
+          "from": "Masse",
+          "domain": "mécanique",
+          "px": -0.3411,
+          "pz": 0.1938
+        },
+        {
+          "s": "a_acc",
+          "from": "Accélération",
+          "domain": "mécanique",
+          "px": -0.2274,
+          "pz": 0.1938
+        },
+        {
+          "s": "v",
+          "from": "Vitesse",
+          "domain": "mécanique",
+          "px": -0.1137,
+          "pz": 0.1938
+        },
+        {
+          "s": "p_mom",
+          "from": "Quantité de mouvement p=mv",
+          "domain": "mécanique",
+          "px": 0.0,
+          "pz": 0.1938
+        },
+        {
+          "s": "E_cin",
+          "from": "Énergie cinétique ½mv²",
+          "domain": "mécanique",
+          "px": 0.1137,
+          "pz": 0.1938
+        },
+        {
+          "s": "V_pot",
+          "from": "Énergie potentielle",
+          "domain": "mécanique",
+          "px": 0.2274,
+          "pz": 0.1938
+        },
+        {
+          "s": "W_trav",
+          "from": "Travail W=F·d",
+          "domain": "mécanique",
+          "px": 0.3411,
+          "pz": 0.1938
+        },
+        {
+          "s": "P_puis",
+          "from": "Puissance P=W/t",
+          "domain": "mécanique",
+          "px": 0.4548,
+          "pz": 0.1938
+        },
+        {
+          "s": "τ_couple",
+          "from": "Couple / torque τ=r×F",
+          "domain": "mécanique",
+          "px": 0.5685,
+          "pz": 0.1938
+        },
+        {
+          "s": "L_ang",
+          "from": "Moment angulaire L=r×p",
+          "domain": "mécanique",
+          "px": 0.6822,
+          "pz": 0.1938
+        },
+        {
+          "s": "I_iner",
+          "from": "Moment d'inertie",
+          "domain": "mécanique",
+          "px": 0.7959,
+          "pz": 0.1938
+        },
+        {
+          "s": "ω_ang",
+          "from": "Vitesse angulaire",
+          "domain": "mécanique",
+          "px": 0.9096,
+          "pz": 0.1938
+        },
+        {
+          "s": "θ",
+          "from": "Angle",
+          "domain": "géométrie",
+          "px": 1.0233,
+          "pz": 0.1938
+        },
+        {
+          "s": "g_grav",
+          "from": "Accélération gravité ~9.81",
+          "domain": "gravitation",
+          "px": 1.137,
+          "pz": 0.1938
+        },
+        {
+          "s": "ρ_dens",
+          "from": "Densité volumique",
+          "domain": "mécanique",
+          "px": 1.2507,
+          "pz": 0.1938
+        },
+        {
+          "s": "P_pres",
+          "from": "Pression",
+          "domain": "fluides",
+          "px": 1.3644,
+          "pz": 0.1938
+        },
+        {
+          "s": "ℒ",
+          "from": "Lagrangien L=T-V",
+          "domain": "mécanique analytique",
+          "px": -1.3644,
+          "pz": 0.323
+        },
+        {
+          "s": "ℋ",
+          "from": "Hamiltonien classique",
+          "domain": "mécanique analytique",
+          "px": -1.2507,
+          "pz": 0.323
+        },
+        {
+          "s": "S_act",
+          "from": "Action S=∫ℒdt",
+          "domain": "mécanique analytique",
+          "px": -1.137,
+          "pz": 0.323
+        },
+        {
+          "s": "δS=0",
+          "from": "Principe moindre action",
+          "domain": "mécanique analytique",
+          "px": -1.0233,
+          "pz": 0.323
+        },
+        {
+          "s": "{f,g}",
+          "from": "Crochet de Poisson",
+          "domain": "mécanique analytique",
+          "px": -0.9096,
+          "pz": 0.323
+        },
+        {
+          "s": "q",
+          "from": "Coordonnée généralisée",
+          "domain": "mécanique analytique",
+          "px": -0.7959,
+          "pz": 0.323
+        },
+        {
+          "s": "p_gen",
+          "from": "Impulsion généralisée",
+          "domain": "mécanique analytique",
+          "px": -0.6822,
+          "pz": 0.323
+        },
+        {
+          "s": "E_em",
+          "from": "Champ électrique E",
+          "domain": "électromagn",
+          "px": -0.5685,
+          "pz": 0.323
+        },
+        {
+          "s": "B_em",
+          "from": "Champ magnétique B",
+          "domain": "électromagn",
+          "px": -0.4548,
+          "pz": 0.323
+        },
+        {
+          "s": "V_pot_em",
+          "from": "Potentiel électrique V",
+          "domain": "électromagn",
+          "px": -0.3411,
+          "pz": 0.323
+        },
+        {
+          "s": "A_em",
+          "from": "Potentiel vecteur A",
+          "domain": "électromagn",
+          "px": -0.2274,
+          "pz": 0.323
+        },
+        {
+          "s": "J_em",
+          "from": "Densité de courant J",
+          "domain": "électromagn",
+          "px": -0.1137,
+          "pz": 0.323
+        },
+        {
+          "s": "ρ_ch",
+          "from": "Densité de charge ρ",
+          "domain": "électromagn",
+          "px": 0.0,
+          "pz": 0.323
+        },
+        {
+          "s": "Φ_B",
+          "from": "Flux magnétique",
+          "domain": "électromagn",
+          "px": 0.1137,
+          "pz": 0.323
+        },
+        {
+          "s": "Fμν",
+          "from": "Tenseur électromagnétique",
+          "domain": "électromagn",
+          "px": 0.2274,
+          "pz": 0.323
+        },
+        {
+          "s": "Aμ",
+          "from": "Quadri-potentiel",
+          "domain": "électromagn",
+          "px": 0.3411,
+          "pz": 0.323
+        },
+        {
+          "s": "S_ent",
+          "from": "Entropie S=k·ln(W)",
+          "domain": "thermo",
+          "px": 0.4548,
+          "pz": 0.323
+        },
+        {
+          "s": "T_temp",
+          "from": "Température",
+          "domain": "thermo",
+          "px": 0.5685,
+          "pz": 0.323
+        },
+        {
+          "s": "U_int",
+          "from": "Énergie interne",
+          "domain": "thermo",
+          "px": 0.6822,
+          "pz": 0.323
+        },
+        {
+          "s": "Q_chal",
+          "from": "Chaleur",
+          "domain": "thermo",
+          "px": 0.7959,
+          "pz": 0.323
+        },
+        {
+          "s": "W_therm",
+          "from": "Travail thermodynamique",
+          "domain": "thermo",
+          "px": 0.9096,
+          "pz": 0.323
+        },
+        {
+          "s": "F_helm",
+          "from": "Énergie libre Helmholtz F=U-TS",
+          "domain": "thermo",
+          "px": 1.0233,
+          "pz": 0.323
+        },
+        {
+          "s": "G_gibb",
+          "from": "Enthalpie libre Gibbs G=H-TS",
+          "domain": "thermo",
+          "px": 1.137,
+          "pz": 0.323
+        },
+        {
+          "s": "H_enth",
+          "from": "Enthalpie H=U+PV",
+          "domain": "thermo",
+          "px": 1.2507,
+          "pz": 0.323
+        },
+        {
+          "s": "Z_part",
+          "from": "Fonction de partition Z",
+          "domain": "mécanique stat",
+          "px": 1.3644,
+          "pz": 0.323
+        },
+        {
+          "s": "β_inv",
+          "from": "Température inverse 1/kT",
+          "domain": "mécanique stat",
+          "px": -1.3644,
+          "pz": 0.4522
+        },
+        {
+          "s": "ds²",
+          "from": "Intervalle espace-temps",
+          "domain": "relativité",
+          "px": -1.2507,
+          "pz": 0.4522
+        },
+        {
+          "s": "γ_lor",
+          "from": "Facteur Lorentz 1/√(1-v²/c²)",
+          "domain": "relativité",
+          "px": -1.137,
+          "pz": 0.4522
+        },
+        {
+          "s": "η_μν",
+          "from": "Métrique de Minkowski",
+          "domain": "relativité",
+          "px": -1.0233,
+          "pz": 0.4522
+        },
+        {
+          "s": "Gμν",
+          "from": "Tenseur d'Einstein Gμν=Rμν-½gμνR",
+          "domain": "relativité",
+          "px": -0.9096,
+          "pz": 0.4522
+        },
+        {
+          "s": "Λ_cos",
+          "from": "Constante cosmologique",
+          "domain": "relativité",
+          "px": -0.7959,
+          "pz": 0.4522
+        },
+        {
+          "s": "rs",
+          "from": "Rayon de Schwarzschild",
+          "domain": "relativité",
+          "px": -0.6822,
+          "pz": 0.4522
+        },
+        {
+          "s": "ψ",
+          "from": "Fonction d'onde",
+          "domain": "quantique",
+          "px": -0.5685,
+          "pz": 0.4522
+        },
+        {
+          "s": "Ĥ",
+          "from": "Opérateur hamiltonien",
+          "domain": "quantique",
+          "px": -0.4548,
+          "pz": 0.4522
+        },
+        {
+          "s": "⟨ψ|",
+          "from": "Bra (Dirac)",
+          "domain": "quantique",
+          "px": -0.3411,
+          "pz": 0.4522
+        },
+        {
+          "s": "|ψ⟩",
+          "from": "Ket (Dirac)",
+          "domain": "quantique",
+          "px": -0.2274,
+          "pz": 0.4522
+        },
+        {
+          "s": "⟨ψ|ψ⟩",
+          "from": "Produit scalaire bra-ket",
+          "domain": "quantique",
+          "px": -0.1137,
+          "pz": 0.4522
+        },
+        {
+          "s": "⟨Â⟩",
+          "from": "Valeur moyenne observable",
+          "domain": "quantique",
+          "px": 0.0,
+          "pz": 0.4522
+        },
+        {
+          "s": "ΔxΔp",
+          "from": "Heisenberg ΔxΔp≥ℏ/2",
+          "domain": "quantique",
+          "px": 0.1137,
+          "pz": 0.4522
+        },
+        {
+          "s": "[Â,B̂]",
+          "from": "Commutateur quantique",
+          "domain": "quantique",
+          "px": 0.2274,
+          "pz": 0.4522
+        },
+        {
+          "s": "ρ_dm",
+          "from": "Matrice densité",
+          "domain": "quantique",
+          "px": 0.3411,
+          "pz": 0.4522
+        },
+        {
+          "s": "Û",
+          "from": "Opérateur unitaire évolution",
+          "domain": "quantique",
+          "px": 0.4548,
+          "pz": 0.4522
+        },
+        {
+          "s": "σₓ",
+          "from": "Matrice Pauli σx",
+          "domain": "quantique",
+          "px": 0.5685,
+          "pz": 0.4522
+        },
+        {
+          "s": "σᵧ",
+          "from": "Matrice Pauli σy",
+          "domain": "quantique",
+          "px": 0.6822,
+          "pz": 0.4522
+        },
+        {
+          "s": "σ_z",
+          "from": "Matrice Pauli σz",
+          "domain": "quantique",
+          "px": 0.7959,
+          "pz": 0.4522
+        },
+        {
+          "s": "|0⟩",
+          "from": "Qubit état 0",
+          "domain": "quantique",
+          "px": 0.9096,
+          "pz": 0.4522
+        },
+        {
+          "s": "|1⟩",
+          "from": "Qubit état 1",
+          "domain": "quantique",
+          "px": 1.0233,
+          "pz": 0.4522
+        },
+        {
+          "s": "H_gate",
+          "from": "Porte Hadamard",
+          "domain": "quantique",
+          "px": 1.137,
+          "pz": 0.4522
+        },
+        {
+          "s": "CNOT",
+          "from": "Porte CNOT",
+          "domain": "quantique",
+          "px": 1.2507,
+          "pz": 0.4522
+        },
+        {
+          "s": "ℒ_QFT",
+          "from": "Lagrangien densité QFT",
+          "domain": "QFT",
+          "px": 1.3644,
+          "pz": 0.4522
+        },
+        {
+          "s": "ψ̄",
+          "from": "Spineur adjoint de Dirac",
+          "domain": "QFT",
+          "px": -1.3644,
+          "pz": 0.5814
+        },
+        {
+          "s": "γμ",
+          "from": "Matrices gamma Dirac",
+          "domain": "QFT",
+          "px": -1.2507,
+          "pz": 0.5814
+        },
+        {
+          "s": "Dμ",
+          "from": "Dérivée covariante jauge",
+          "domain": "QFT",
+          "px": -1.137,
+          "pz": 0.5814
+        },
+        {
+          "s": "Aμ_YM",
+          "from": "Champ de jauge Yang-Mills",
+          "domain": "QFT",
+          "px": -1.0233,
+          "pz": 0.5814
+        },
+        {
+          "s": "φ_Higgs",
+          "from": "Champ de Higgs",
+          "domain": "QFT",
+          "px": -0.9096,
+          "pz": 0.5814
+        },
+        {
+          "s": "v_Higgs",
+          "from": "VEV Higgs ~246 GeV",
+          "domain": "QFT",
+          "px": -0.7959,
+          "pz": 0.5814
+        },
+        {
+          "s": "αₛ",
+          "from": "Constante couplage fort",
+          "domain": "QFT",
+          "px": -0.6822,
+          "pz": 0.5814
+        },
+        {
+          "s": "g_w",
+          "from": "Couplage faible",
+          "domain": "QFT",
+          "px": -0.5685,
+          "pz": 0.5814
+        },
+        {
+          "s": "θ_W",
+          "from": "Angle de Weinberg",
+          "domain": "QFT",
+          "px": -0.4548,
+          "pz": 0.5814
+        },
+        {
+          "s": "CKM",
+          "from": "Matrice CKM (quarks)",
+          "domain": "QFT",
+          "px": -0.3411,
+          "pz": 0.5814
+        },
+        {
+          "s": "PMNS",
+          "from": "Matrice PMNS (neutrinos)",
+          "domain": "QFT",
+          "px": -0.2274,
+          "pz": 0.5814
+        },
+        {
+          "s": "ν_visc",
+          "from": "Viscosité cinématique",
+          "domain": "fluides",
+          "px": -0.1137,
+          "pz": 0.5814
+        },
+        {
+          "s": "η_visc",
+          "from": "Viscosité dynamique",
+          "domain": "fluides",
+          "px": 0.0,
+          "pz": 0.5814
+        },
+        {
+          "s": "Re",
+          "from": "Nombre de Reynolds",
+          "domain": "fluides",
+          "px": 0.1137,
+          "pz": 0.5814
+        },
+        {
+          "s": "Ma",
+          "from": "Nombre de Mach",
+          "domain": "fluides",
+          "px": 0.2274,
+          "pz": 0.5814
+        },
+        {
+          "s": "Fr",
+          "from": "Nombre de Froude",
+          "domain": "fluides",
+          "px": 0.3411,
+          "pz": 0.5814
+        },
+        {
+          "s": "NS",
+          "from": "Équations Navier-Stokes",
+          "domain": "fluides",
+          "px": 0.4548,
+          "pz": 0.5814
+        },
+        {
+          "s": "mol",
+          "from": "Mole (unité)",
+          "domain": "chimie",
+          "px": 0.5685,
+          "pz": 0.5814
+        },
+        {
+          "s": "pH",
+          "from": "Potentiel hydrogène -log[H+]",
+          "domain": "chimie",
+          "px": 0.6822,
+          "pz": 0.5814
+        },
+        {
+          "s": "Kₑq",
+          "from": "Constante d'équilibre",
+          "domain": "chimie",
+          "px": 0.7959,
+          "pz": 0.5814
+        },
+        {
+          "s": "ΔG",
+          "from": "Enthalpie libre réaction",
+          "domain": "chimie",
+          "px": 0.9096,
+          "pz": 0.5814
+        },
+        {
+          "s": "ΔH",
+          "from": "Enthalpie réaction",
+          "domain": "chimie",
+          "px": 1.0233,
+          "pz": 0.5814
+        },
+        {
+          "s": "E°",
+          "from": "Potentiel standard Nernst",
+          "domain": "chimie",
+          "px": 1.137,
+          "pz": 0.5814
+        },
+        {
+          "s": "E=mc²",
+          "from": "Einstein 1905",
+          "domain": "relativité",
+          "px": 1.2507,
+          "pz": 0.5814
+        },
+        {
+          "s": "F=ma",
+          "from": "Newton 1687",
+          "domain": "mécanique",
+          "px": 1.3644,
+          "pz": 0.5814
+        },
+        {
+          "s": "eⁱᵖ+1=0",
+          "from": "Identité d'Euler",
+          "domain": "analyse",
+          "px": -1.3644,
+          "pz": 0.7106
+        },
+        {
+          "s": "Res",
+          "from": "Résidu analyse complexe (Cauchy 1825)",
+          "domain": "analyse",
+          "px": -1.2507,
+          "pz": 0.7106
+        },
+        {
+          "s": "a²+b²=c²",
+          "from": "Pythagore",
+          "domain": "géométrie",
+          "px": -1.137,
+          "pz": 0.7106
+        },
+        {
+          "s": "S=kln W",
+          "from": "Boltzmann",
+          "domain": "thermo",
+          "px": -1.0233,
+          "pz": 0.7106
+        },
+        {
+          "s": "Hψ=Eψ",
+          "from": "Schrödinger",
+          "domain": "quantique",
+          "px": -0.9096,
+          "pz": 0.7106
+        },
+        {
+          "s": "Gμν=8πGTμν",
+          "from": "Einstein field equations",
+          "domain": "relativité",
+          "px": -0.7959,
+          "pz": 0.7106
+        },
+        {
+          "s": "∇·E=ρ/ε₀",
+          "from": "Maxwell (Gauss)",
+          "domain": "électromagn",
+          "px": -0.6822,
+          "pz": 0.7106
+        },
+        {
+          "s": "∇·B=0",
+          "from": "Maxwell (pas de monopôle)",
+          "domain": "électromagn",
+          "px": -0.5685,
+          "pz": 0.7106
+        },
+        {
+          "s": "PV=nRT",
+          "from": "Loi gaz parfaits",
+          "domain": "thermo",
+          "px": -0.4548,
+          "pz": 0.7106
+        },
+        {
+          "s": "P",
+          "from": "Classe P temps poly",
+          "domain": "complexité",
+          "px": -0.3411,
+          "pz": 0.7106
+        },
+        {
+          "s": "L_log",
+          "from": "Espace logarithmique",
+          "domain": "complexité",
+          "px": -0.2274,
+          "pz": 0.7106
+        },
+        {
+          "s": "NC",
+          "from": "Nick's Class — parallélisme efficace (NC⊆P)",
+          "domain": "complexité",
+          "px": -0.1137,
+          "pz": 0.7106
+        },
+        {
+          "s": "AC",
+          "from": "Circuit complexity",
+          "domain": "complexité",
+          "px": 0.0,
+          "pz": 0.7106
+        },
+        {
+          "s": "SC",
+          "from": "Steve's Class",
+          "domain": "complexité",
+          "px": 0.1137,
+          "pz": 0.7106
+        },
+        {
+          "s": "RSA",
+          "from": "Rivest-Shamir-Adleman",
+          "domain": "crypto",
+          "px": 0.2274,
+          "pz": 0.7106
+        },
+        {
+          "s": "AES",
+          "from": "Advanced Encryption Standard",
+          "domain": "crypto",
+          "px": 0.3411,
+          "pz": 0.7106
+        },
+        {
+          "s": "ECC",
+          "from": "Elliptic Curve Cryptography",
+          "domain": "crypto",
+          "px": 0.4548,
+          "pz": 0.7106
+        },
+        {
+          "s": "SHA",
+          "from": "Secure Hash Algorithm",
+          "domain": "crypto",
+          "px": 0.5685,
+          "pz": 0.7106
+        },
+        {
+          "s": "ZKP",
+          "from": "Zero-Knowledge Proof",
+          "domain": "crypto",
+          "px": 0.6822,
+          "pz": 0.7106
+        },
+        {
+          "s": "x",
+          "from": "Coordonnée x",
+          "domain": "géométrie",
+          "px": 0.7959,
+          "pz": 0.7106
+        },
+        {
+          "s": "y",
+          "from": "Coordonnée y",
+          "domain": "géométrie",
+          "px": 0.9096,
+          "pz": 0.7106
+        },
+        {
+          "s": "z",
+          "from": "Coordonnée z",
+          "domain": "géométrie",
+          "px": 1.0233,
+          "pz": 0.7106
+        },
+        {
+          "s": "r",
+          "from": "Rayon polaire/sphérique",
+          "domain": "géométrie",
+          "px": 1.137,
+          "pz": 0.7106
+        },
+        {
+          "s": "∠",
+          "from": "Angle",
+          "domain": "géométrie",
+          "px": 1.2507,
+          "pz": 0.7106
+        },
+        {
+          "s": "⊥_geom",
+          "from": "Perpendiculaire",
+          "domain": "géométrie",
+          "px": 1.3644,
+          "pz": 0.7106
+        },
+        {
+          "s": "∥",
+          "from": "Parallèle",
+          "domain": "géométrie",
+          "px": -1.3644,
+          "pz": 0.8398
+        },
+        {
+          "s": "≅_geom",
+          "from": "Congruence géométrique",
+          "domain": "géométrie",
+          "px": -1.2507,
+          "pz": 0.8398
+        },
+        {
+          "s": "∼_geom",
+          "from": "Similitude",
+          "domain": "géométrie",
+          "px": -1.137,
+          "pz": 0.8398
+        },
+        {
+          "s": "ℱ",
+          "from": "Transformée de Fourier",
+          "domain": "signal",
+          "px": -1.0233,
+          "pz": 0.8398
+        },
+        {
+          "s": "ℱ⁻¹",
+          "from": "Transformée inverse Fourier",
+          "domain": "signal",
+          "px": -0.9096,
+          "pz": 0.8398
+        },
+        {
+          "s": "ℒ_Lap",
+          "from": "Transformée de Laplace",
+          "domain": "signal",
+          "px": -0.7959,
+          "pz": 0.8398
+        },
+        {
+          "s": "Z_tr",
+          "from": "Transformée en Z (discret)",
+          "domain": "signal",
+          "px": -0.6822,
+          "pz": 0.8398
+        },
+        {
+          "s": "DFT",
+          "from": "Transformée de Fourier discrète",
+          "domain": "signal",
+          "px": -0.5685,
+          "pz": 0.8398
+        },
+        {
+          "s": "FFT",
+          "from": "Fast Fourier Transform (Cooley-Tukey 1965)",
+          "domain": "signal",
+          "px": -0.4548,
+          "pz": 0.8398
+        },
+        {
+          "s": "∗_conv",
+          "from": "Convolution f∗g",
+          "domain": "signal",
+          "px": -0.3411,
+          "pz": 0.8398
+        },
+        {
+          "s": "⊛",
+          "from": "Corrélation croisée",
+          "domain": "signal",
+          "px": -0.2274,
+          "pz": 0.8398
+        },
+        {
+          "s": "δ_Dir",
+          "from": "Peigne de Dirac (échantillonnage)",
+          "domain": "signal",
+          "px": -0.1137,
+          "pz": 0.8398
+        },
+        {
+          "s": "Nyquist",
+          "from": "Critère Nyquist-Shannon fₛ≥2B",
+          "domain": "signal",
+          "px": 0.0,
+          "pz": 0.8398
+        },
+        {
+          "s": "ODE",
+          "from": "Équation diff ordinaire dy/dx=f(x,y)",
+          "domain": "EDP",
+          "px": 0.1137,
+          "pz": 0.8398
+        },
+        {
+          "s": "PDE",
+          "from": "Équation aux dérivées partielles",
+          "domain": "EDP",
+          "px": 0.2274,
+          "pz": 0.8398
+        },
+        {
+          "s": "G_Grn",
+          "from": "Fonction de Green",
+          "domain": "EDP",
+          "px": 0.3411,
+          "pz": 0.8398
+        },
+        {
+          "s": "∂²u/∂t²",
+          "from": "Équation des ondes",
+          "domain": "EDP",
+          "px": 0.4548,
+          "pz": 0.8398
+        },
+        {
+          "s": "∂u/∂t",
+          "from": "Équation de la chaleur",
+          "domain": "EDP",
+          "px": 0.5685,
+          "pz": 0.8398
+        },
+        {
+          "s": "Sturm",
+          "from": "Problème Sturm-Liouville",
+          "domain": "EDP",
+          "px": 0.6822,
+          "pz": 0.8398
+        },
+        {
+          "s": "DNA",
+          "from": "Acide désoxyribonucléique (Watson-Crick 1953)",
+          "domain": "biologie",
+          "px": 0.7959,
+          "pz": 0.8398
+        },
+        {
+          "s": "RNA",
+          "from": "Acide ribonucléique",
+          "domain": "biologie",
+          "px": 0.9096,
+          "pz": 0.8398
+        },
+        {
+          "s": "ATP",
+          "from": "Adénosine triphosphate (énergie cellulaire)",
+          "domain": "biologie",
+          "px": 1.0233,
+          "pz": 0.8398
+        },
+        {
+          "s": "Km",
+          "from": "Constante Michaelis-Menten (enzymologie)",
+          "domain": "biologie",
+          "px": 1.137,
+          "pz": 0.8398
+        },
+        {
+          "s": "Vmax",
+          "from": "Vitesse max réaction enzymatique",
+          "domain": "biologie",
+          "px": 1.2507,
+          "pz": 0.8398
+        },
+        {
+          "s": "LV",
+          "from": "Équations Lotka-Volterra (prédateur-proie)",
+          "domain": "biologie",
+          "px": 1.3644,
+          "pz": 0.8398
+        },
+        {
+          "s": "HW",
+          "from": "Hardy-Weinberg p²+2pq+q²=1",
+          "domain": "biologie",
+          "px": -1.3644,
+          "pz": 0.969
+        },
+        {
+          "s": "R₀",
+          "from": "Taux reproduction base (épidémiologie)",
+          "domain": "biologie",
+          "px": -1.2507,
+          "pz": 0.969
+        },
+        {
+          "s": "SIR",
+          "from": "Modèle SIR (Susceptible-Infecté-Rétabli)",
+          "domain": "biologie",
+          "px": -1.137,
+          "pz": 0.969
+        },
+        {
+          "s": "logist",
+          "from": "Équation logistique dN/dt=rN(1-N/K)",
+          "domain": "biologie",
+          "px": -1.0233,
+          "pz": 0.969
+        },
+        {
+          "s": "U_util",
+          "from": "Fonction d'utilité",
+          "domain": "économie",
+          "px": -0.9096,
+          "pz": 0.969
+        },
+        {
+          "s": "S_D",
+          "from": "Offre et demande (Marshall)",
+          "domain": "économie",
+          "px": -0.7959,
+          "pz": 0.969
+        },
+        {
+          "s": "Nash",
+          "from": "Équilibre de Nash (1950)",
+          "domain": "économie",
+          "px": -0.6822,
+          "pz": 0.969
+        },
+        {
+          "s": "Pareto",
+          "from": "Optimum de Pareto",
+          "domain": "économie",
+          "px": -0.5685,
+          "pz": 0.969
+        },
+        {
+          "s": "π_payoff",
+          "from": "Fonction de payoff (jeux)",
+          "domain": "économie",
+          "px": -0.4548,
+          "pz": 0.969
+        },
+        {
+          "s": "BS",
+          "from": "Black-Scholes (pricing options 1973)",
+          "domain": "finance",
+          "px": -0.3411,
+          "pz": 0.969
+        },
+        {
+          "s": "σ_vol",
+          "from": "Volatilité (finance)",
+          "domain": "finance",
+          "px": -0.2274,
+          "pz": 0.969
+        },
+        {
+          "s": "VaR",
+          "from": "Value at Risk",
+          "domain": "finance",
+          "px": -0.1137,
+          "pz": 0.969
+        },
+        {
+          "s": "CAPM",
+          "from": "Capital Asset Pricing Model (Sharpe)",
+          "domain": "finance",
+          "px": 0.0,
+          "pz": 0.969
+        },
+        {
+          "s": "GDP",
+          "from": "Produit intérieur brut Y=C+I+G+NX",
+          "domain": "économie",
+          "px": 0.1137,
+          "pz": 0.969
+        },
+        {
+          "s": "∇L",
+          "from": "Gradient de la loss (descente de gradient)",
+          "domain": "ML",
+          "px": 0.2274,
+          "pz": 0.969
+        },
+        {
+          "s": "σ_sigm",
+          "from": "Sigmoïde σ(x)=1/(1+e⁻ˣ)",
+          "domain": "ML",
+          "px": 0.3411,
+          "pz": 0.969
+        },
+        {
+          "s": "softmax",
+          "from": "Softmax eˣⁱ/Σeˣʲ",
+          "domain": "ML",
+          "px": 0.4548,
+          "pz": 0.969
+        },
+        {
+          "s": "ReLU",
+          "from": "Rectified Linear Unit max(0,x)",
+          "domain": "ML",
+          "px": 0.5685,
+          "pz": 0.969
+        },
+        {
+          "s": "CE",
+          "from": "Cross-entropy loss -Σp·log(q)",
+          "domain": "ML",
+          "px": 0.6822,
+          "pz": 0.969
+        },
+        {
+          "s": "SGD",
+          "from": "Stochastic Gradient Descent",
+          "domain": "ML",
+          "px": 0.7959,
+          "pz": 0.969
+        },
+        {
+          "s": "BP",
+          "from": "Backpropagation (Rumelhart 1986)",
+          "domain": "ML",
+          "px": 0.9096,
+          "pz": 0.969
+        },
+        {
+          "s": "Attn",
+          "from": "Attention Softmax(QKᵀ/√d)V (Vaswani 2017)",
+          "domain": "ML",
+          "px": 1.0233,
+          "pz": 0.969
+        },
+        {
+          "s": "GAN",
+          "from": "Generative Adversarial Network (Goodfellow 2014)",
+          "domain": "ML",
+          "px": 1.137,
+          "pz": 0.969
+        },
+        {
+          "s": "VC_dim",
+          "from": "Dimension VC (Vapnik-Chervonenkis)",
+          "domain": "ML",
+          "px": 1.2507,
+          "pz": 0.969
+        },
+        {
+          "s": "PAC",
+          "from": "Probably Approximately Correct (Valiant 1984)",
+          "domain": "ML",
+          "px": 1.3644,
+          "pz": 0.969
+        },
+        {
+          "s": "σ_xs",
+          "from": "Section efficace (barn)",
+          "domain": "nucléaire",
+          "px": -1.3644,
+          "pz": 1.0982
+        },
+        {
+          "s": "τ_decay",
+          "from": "Temps de vie demi-vie",
+          "domain": "nucléaire",
+          "px": -1.2507,
+          "pz": 1.0982
+        },
+        {
+          "s": "λ_decay",
+          "from": "Constante de désintégration",
+          "domain": "nucléaire",
+          "px": -1.137,
+          "pz": 1.0982
+        },
+        {
+          "s": "A_mass",
+          "from": "Nombre de masse",
+          "domain": "nucléaire",
+          "px": -1.0233,
+          "pz": 1.0982
+        },
+        {
+          "s": "Z_at",
+          "from": "Numéro atomique",
+          "domain": "nucléaire",
+          "px": -0.9096,
+          "pz": 1.0982
+        },
+        {
+          "s": "β_decay",
+          "from": "Désintégration bêta",
+          "domain": "nucléaire",
+          "px": -0.7959,
+          "pz": 1.0982
+        },
+        {
+          "s": "α_decay",
+          "from": "Désintégration alpha",
+          "domain": "nucléaire",
+          "px": -0.6822,
+          "pz": 1.0982
+        },
+        {
+          "s": "Feyn",
+          "from": "Diagrammes de Feynman (propagateur)",
+          "domain": "QFT",
+          "px": -0.5685,
+          "pz": 1.0982
+        },
+        {
+          "s": "n_refr",
+          "from": "Indice de réfraction",
+          "domain": "optique",
+          "px": -0.4548,
+          "pz": 1.0982
+        },
+        {
+          "s": "Snell",
+          "from": "Loi Snell-Descartes n₁sinθ₁=n₂sinθ₂",
+          "domain": "optique",
+          "px": -0.3411,
+          "pz": 1.0982
+        },
+        {
+          "s": "λ_wave",
+          "from": "Longueur d'onde",
+          "domain": "optique",
+          "px": -0.2274,
+          "pz": 1.0982
+        },
+        {
+          "s": "ν_freq",
+          "from": "Fréquence",
+          "domain": "optique",
+          "px": -0.1137,
+          "pz": 1.0982
+        },
+        {
+          "s": "E=hν",
+          "from": "Énergie photon (Planck 1900)",
+          "domain": "quantique",
+          "px": 0.0,
+          "pz": 1.0982
+        },
+        {
+          "s": "Ψ_wav",
+          "from": "Fonction d'onde (Schrödinger 1926)",
+          "domain": "quantique",
+          "px": 0.1137,
+          "pz": 1.0982
+        },
+        {
+          "s": "M☉",
+          "from": "Masse solaire ~2×10³⁰ kg",
+          "domain": "astronomie",
+          "px": 0.2274,
+          "pz": 1.0982
+        },
+        {
+          "s": "L☉",
+          "from": "Luminosité solaire ~3.8×10²⁶ W",
+          "domain": "astronomie",
+          "px": 0.3411,
+          "pz": 1.0982
+        },
+        {
+          "s": "pc",
+          "from": "Parsec ~3.26 années-lumière",
+          "domain": "astronomie",
+          "px": 0.4548,
+          "pz": 1.0982
+        },
+        {
+          "s": "z_red",
+          "from": "Redshift cosmologique",
+          "domain": "cosmologie",
+          "px": 0.5685,
+          "pz": 1.0982
+        },
+        {
+          "s": "Ω_m",
+          "from": "Densité matière Ωm~0.3",
+          "domain": "cosmologie",
+          "px": 0.6822,
+          "pz": 1.0982
+        },
+        {
+          "s": "Ω_Λ",
+          "from": "Densité énergie noire ΩΛ~0.7",
+          "domain": "cosmologie",
+          "px": 0.7959,
+          "pz": 1.0982
+        },
+        {
+          "s": "FLRW",
+          "from": "Métrique Friedmann-Lemaître-Robertson-Walker",
+          "domain": "cosmologie",
+          "px": 0.9096,
+          "pz": 1.0982
+        },
+        {
+          "s": "a(t)",
+          "from": "Facteur d'échelle cosmologique",
+          "domain": "cosmologie",
+          "px": 1.0233,
+          "pz": 1.0982
+        },
+        {
+          "s": "H(s)",
+          "from": "Fonction de transfert",
+          "domain": "contrôle",
+          "px": 1.137,
+          "pz": 1.0982
+        },
+        {
+          "s": "PID",
+          "from": "Contrôleur Proportionnel-Intégral-Dérivé",
+          "domain": "contrôle",
+          "px": 1.2507,
+          "pz": 1.0982
+        },
+        {
+          "s": "Bode",
+          "from": "Diagramme de Bode (gain/phase)",
+          "domain": "contrôle",
+          "px": 1.3644,
+          "pz": 1.0982
+        },
+        {
+          "s": "Nyq_st",
+          "from": "Critère stabilité Nyquist",
+          "domain": "contrôle",
+          "px": -1.3644,
+          "pz": 1.2274
+        },
+        {
+          "s": "DFA",
+          "from": "Automate fini déterministe",
+          "domain": "automates",
+          "px": -1.2507,
+          "pz": 1.2274
+        },
+        {
+          "s": "NFA",
+          "from": "Automate fini non-déterministe",
+          "domain": "automates",
+          "px": -1.137,
+          "pz": 1.2274
+        },
+        {
+          "s": "CFG",
+          "from": "Grammaire hors-contexte (Chomsky)",
+          "domain": "automates",
+          "px": -1.0233,
+          "pz": 1.2274
+        },
+        {
+          "s": "PDA",
+          "from": "Automate à pile",
+          "domain": "automates",
+          "px": -0.9096,
+          "pz": 1.2274
+        },
+        {
+          "s": "TM",
+          "from": "Machine de Turing (1936)",
+          "domain": "automates",
+          "px": -0.7959,
+          "pz": 1.2274
+        },
+        {
+          "s": "UTM",
+          "from": "Machine de Turing universelle",
+          "domain": "automates",
+          "px": -0.6822,
+          "pz": 1.2274
+        },
+        {
+          "s": "λ_calc",
+          "from": "Lambda-calcul (Church 1936)",
+          "domain": "automates",
+          "px": -0.5685,
+          "pz": 1.2274
+        },
+        {
+          "s": "Reg",
+          "from": "Langages réguliers (Kleene)",
+          "domain": "automates",
+          "px": -0.4548,
+          "pz": 1.2274
+        },
+        {
+          "s": "CFL",
+          "from": "Langages hors-contexte",
+          "domain": "automates",
+          "px": -0.3411,
+          "pz": 1.2274
+        },
+        {
+          "s": "Chom",
+          "from": "Hiérarchie de Chomsky (4 niveaux)",
+          "domain": "automates",
+          "px": -0.2274,
+          "pz": 1.2274
+        },
+        {
+          "s": "PR",
+          "from": "Fonctions primitives récursives (Gödel-Herbrand 1934)",
+          "domain": "calculabilité",
+          "px": -0.1137,
+          "pz": 1.2274
+        },
+        {
+          "s": "Ack",
+          "from": "Fonction Ackermann (non PR, totale récursive, 1928)",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": 1.2274
+        },
+        {
+          "s": "μ_mes",
+          "from": "Mesure abstraite",
+          "domain": "mesure",
+          "px": 0.1137,
+          "pz": 1.2274
+        },
+        {
+          "s": "σ(F)",
+          "from": "σ-algèbre (tribu)",
+          "domain": "mesure",
+          "px": 0.2274,
+          "pz": 1.2274
+        },
+        {
+          "s": "λ_Leb",
+          "from": "Mesure de Lebesgue (1902)",
+          "domain": "mesure",
+          "px": 0.3411,
+          "pz": 1.2274
+        },
+        {
+          "s": "Lp",
+          "from": "Espaces Lp (Riesz 1910)",
+          "domain": "mesure",
+          "px": 0.4548,
+          "pz": 1.2274
+        },
+        {
+          "s": "a.e.",
+          "from": "Presque partout (almost everywhere)",
+          "domain": "mesure",
+          "px": 0.5685,
+          "pz": 1.2274
+        },
+        {
+          "s": "dμ",
+          "from": "Intégration par rapport à μ",
+          "domain": "mesure",
+          "px": 0.6822,
+          "pz": 1.2274
+        },
+        {
+          "s": "RN",
+          "from": "Radon-Nikodym dν/dμ (1930)",
+          "domain": "mesure",
+          "px": 0.7959,
+          "pz": 1.2274
+        },
+        {
+          "s": "W(t)",
+          "from": "Mouvement brownien (Wiener 1923)",
+          "domain": "stochastique",
+          "px": 0.9096,
+          "pz": 1.2274
+        },
+        {
+          "s": "dW",
+          "from": "Incréments browniens",
+          "domain": "stochastique",
+          "px": 1.0233,
+          "pz": 1.2274
+        },
+        {
+          "s": "Itô",
+          "from": "Intégrale d'Itô (1944)",
+          "domain": "stochastique",
+          "px": 1.137,
+          "pz": 1.2274
+        },
+        {
+          "s": "SDE",
+          "from": "Équation diff. stochastique",
+          "domain": "stochastique",
+          "px": 1.2507,
+          "pz": 1.2274
+        },
+        {
+          "s": "E[·|F]",
+          "from": "Espérance conditionnelle (filtration)",
+          "domain": "stochastique",
+          "px": 1.3644,
+          "pz": 1.2274
+        },
+        {
+          "s": "Mart",
+          "from": "Martingale (Doob 1953)",
+          "domain": "stochastique",
+          "px": -1.3644,
+          "pz": 1.3566
+        },
+        {
+          "s": "argmin",
+          "from": "Argument du minimum",
+          "domain": "optimisation",
+          "px": -1.2507,
+          "pz": 1.3566
+        },
+        {
+          "s": "argmax",
+          "from": "Argument du maximum",
+          "domain": "optimisation",
+          "px": -1.137,
+          "pz": 1.3566
+        },
+        {
+          "s": "L_lag",
+          "from": "Lagrangien (Lagrange 1788)",
+          "domain": "optimisation",
+          "px": -1.0233,
+          "pz": 1.3566
+        },
+        {
+          "s": "KKT",
+          "from": "Conditions KKT (Karush-Kuhn-Tucker 1951)",
+          "domain": "optimisation",
+          "px": -0.9096,
+          "pz": 1.3566
+        },
+        {
+          "s": "LP",
+          "from": "Programmation linéaire (Dantzig 1947)",
+          "domain": "optimisation",
+          "px": -0.7959,
+          "pz": 1.3566
+        },
+        {
+          "s": "∇f=0",
+          "from": "Condition de stationnarité",
+          "domain": "optimisation",
+          "px": -0.6822,
+          "pz": 1.3566
+        },
+        {
+          "s": "H_Hilb",
+          "from": "Espace de Hilbert (1906)",
+          "domain": "analyse fonctionnelle",
+          "px": -0.5685,
+          "pz": 1.3566
+        },
+        {
+          "s": "B_Ban",
+          "from": "Espace de Banach (1920)",
+          "domain": "analyse fonctionnelle",
+          "px": -0.4548,
+          "pz": 1.3566
+        },
+        {
+          "s": "⟨·,·⟩_H",
+          "from": "Produit scalaire Hilbert",
+          "domain": "analyse fonctionnelle",
+          "px": -0.3411,
+          "pz": 1.3566
+        },
+        {
+          "s": "X*",
+          "from": "Dual topologique",
+          "domain": "analyse fonctionnelle",
+          "px": -0.2274,
+          "pz": 1.3566
+        },
+        {
+          "s": "L²",
+          "from": "Espace L² (carré intégrable)",
+          "domain": "analyse fonctionnelle",
+          "px": -0.1137,
+          "pz": 1.3566
+        },
+        {
+          "s": "HB",
+          "from": "Hahn-Banach (1929)",
+          "domain": "analyse fonctionnelle",
+          "px": 0.0,
+          "pz": 1.3566
+        },
+        {
+          "s": "ℓ²",
+          "from": "Espace suites carré-sommables",
+          "domain": "analyse fonctionnelle",
+          "px": 0.1137,
+          "pz": 1.3566
+        },
+        {
+          "s": "W^k,p",
+          "from": "Espace Sobolev (Sobolev 1938, PDE)",
+          "domain": "analyse fonctionnelle",
+          "px": 0.2274,
+          "pz": 1.3566
+        },
+        {
+          "s": "NL",
+          "from": "Non-det espace log (NL⊆P, Savitch)",
+          "domain": "complexité",
+          "px": 0.3411,
+          "pz": 1.3566
+        },
+        {
+          "s": "L_lang",
+          "from": "Classe L espace log déterministe (L⊆NL⊆P)",
+          "domain": "complexité",
+          "px": 0.4548,
+          "pz": 1.3566
+        },
+        {
+          "s": "DTIME",
+          "from": "Temps déterministe DTIME(f(n))",
+          "domain": "complexité",
+          "px": 0.5685,
+          "pz": 1.3566
+        },
+        {
+          "s": "NTIME",
+          "from": "Temps non-déterministe NTIME(f(n))",
+          "domain": "complexité",
+          "px": 0.6822,
+          "pz": 1.3566
+        },
+        {
+          "s": "DSPACE",
+          "from": "Espace déterministe DSPACE(f(n))",
+          "domain": "complexité",
+          "px": 0.7959,
+          "pz": 1.3566
+        },
+        {
+          "s": "NSPACE",
+          "from": "Espace non-déterministe NSPACE(f(n))",
+          "domain": "complexité",
+          "px": 0.9096,
+          "pz": 1.3566
+        },
+        {
+          "s": "AC⁰",
+          "from": "Circuits profondeur constante taille poly",
+          "domain": "complexité",
+          "px": 1.0233,
+          "pz": 1.3566
+        },
+        {
+          "s": "TC⁰",
+          "from": "Threshold circuits (majorité)",
+          "domain": "complexité",
+          "px": 1.137,
+          "pz": 1.3566
+        },
+        {
+          "s": "Ord",
+          "from": "Classe des ordinaux (von Neumann)",
+          "domain": "ordinaux",
+          "px": 1.2507,
+          "pz": 1.3566
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "NUAGE 1 · Σ⁰₁ · Halting Problem",
+      "short": "Σ⁰₁ HALTING",
+      "formula": "∃y R(x, y) — il existe, mais on sait pas quand",
+      "desc": "Semi-décidable. On peut dire oui, jamais non.",
+      "color": [
+        96,
+        165,
+        250
+      ],
+      "yr": -0.26,
+      "opacity": 0.16,
+      "symbols": [
+        {
+          "s": "∃",
+          "from": "Quantificateur existentiel",
+          "domain": "logique",
+          "px": -1.1843,
+          "pz": -1.1843
+        },
+        {
+          "s": "K",
+          "from": "Halting set K={e:φₑ(e)↓}",
+          "domain": "calculabilité",
+          "px": -0.7106,
+          "pz": -1.1843
+        },
+        {
+          "s": "φₑ",
+          "from": "e-ième fonction partielle",
+          "domain": "calculabilité",
+          "px": -0.2369,
+          "pz": -1.1843
+        },
+        {
+          "s": "↓",
+          "from": "Converge (s'arrête)",
+          "domain": "calculabilité",
+          "px": 0.2369,
+          "pz": -1.1843
+        },
+        {
+          "s": "↑",
+          "from": "Diverge (boucle infinie)",
+          "domain": "calculabilité",
+          "px": 0.7106,
+          "pz": -1.1843
+        },
+        {
+          "s": "Wₑ",
+          "from": "e-ième ensemble r.e.",
+          "domain": "calculabilité",
+          "px": 1.1843,
+          "pz": -1.1843
+        },
+        {
+          "s": "μy",
+          "from": "Opérateur μ recherche",
+          "domain": "calculabilité",
+          "px": -1.1843,
+          "pz": -0.7106
+        },
+        {
+          "s": "≤ₘ",
+          "from": "Réduction many-one",
+          "domain": "calculabilité",
+          "px": -0.7106,
+          "pz": -0.7106
+        },
+        {
+          "s": "≤ₜ",
+          "from": "Réduction Turing",
+          "domain": "calculabilité",
+          "px": -0.2369,
+          "pz": -0.7106
+        },
+        {
+          "s": "RE",
+          "from": "Récursivement énumérable",
+          "domain": "calculabilité",
+          "px": 0.2369,
+          "pz": -0.7106
+        },
+        {
+          "s": "coRE",
+          "from": "Complément de RE",
+          "domain": "calculabilité",
+          "px": 0.7106,
+          "pz": -0.7106
+        },
+        {
+          "s": "NP",
+          "from": "Non-déterministe polynomial",
+          "domain": "complexité",
+          "px": 1.1843,
+          "pz": -0.7106
+        },
+        {
+          "s": "coNP",
+          "from": "Complément de NP",
+          "domain": "complexité",
+          "px": -1.1843,
+          "pz": -0.2369
+        },
+        {
+          "s": "SAT",
+          "from": "Satisfiabilité Cook 1971",
+          "domain": "complexité",
+          "px": -0.7106,
+          "pz": -0.2369
+        },
+        {
+          "s": "3SAT",
+          "from": "3-SAT NP-complet",
+          "domain": "complexité",
+          "px": -0.2369,
+          "pz": -0.2369
+        },
+        {
+          "s": "3COL",
+          "from": "3-coloration graphe",
+          "domain": "complexité",
+          "px": 0.2369,
+          "pz": -0.2369
+        },
+        {
+          "s": "TSP",
+          "from": "Voyageur de commerce",
+          "domain": "complexité",
+          "px": 0.7106,
+          "pz": -0.2369
+        },
+        {
+          "s": "CLIQUE",
+          "from": "Problème de la clique",
+          "domain": "complexité",
+          "px": 1.1843,
+          "pz": -0.2369
+        },
+        {
+          "s": "SUBSET",
+          "from": "Subset Sum",
+          "domain": "complexité",
+          "px": -1.1843,
+          "pz": 0.2369
+        },
+        {
+          "s": "HAM",
+          "from": "Chemin hamiltonien",
+          "domain": "complexité",
+          "px": -0.7106,
+          "pz": 0.2369
+        },
+        {
+          "s": "ILP",
+          "from": "Integer Linear Programming",
+          "domain": "complexité",
+          "px": -0.2369,
+          "pz": 0.2369
+        },
+        {
+          "s": "BQP",
+          "from": "Bounded-error Quantum Poly",
+          "domain": "quantique",
+          "px": 0.2369,
+          "pz": 0.2369
+        },
+        {
+          "s": "NP-C",
+          "from": "NP-Complet (Cook-Levin 1971)",
+          "domain": "complexité",
+          "px": 0.7106,
+          "pz": 0.2369
+        },
+        {
+          "s": "NP-H",
+          "from": "NP-Hard",
+          "domain": "complexité",
+          "px": 1.1843,
+          "pz": 0.2369
+        },
+        {
+          "s": "VERTEX",
+          "from": "Vertex Cover (Karp 1972)",
+          "domain": "complexité",
+          "px": -1.1843,
+          "pz": 0.7106
+        },
+        {
+          "s": "SETCOV",
+          "from": "Set Cover (Karp 1972)",
+          "domain": "complexité",
+          "px": -0.7106,
+          "pz": 0.7106
+        },
+        {
+          "s": "KNAP",
+          "from": "Knapsack / Sac à dos",
+          "domain": "complexité",
+          "px": -0.2369,
+          "pz": 0.7106
+        },
+        {
+          "s": "PART",
+          "from": "Partition (Karp 1972)",
+          "domain": "complexité",
+          "px": 0.2369,
+          "pz": 0.7106
+        },
+        {
+          "s": "MAXCUT",
+          "from": "Maximum Cut (Karp 1972)",
+          "domain": "complexité",
+          "px": 0.7106,
+          "pz": 0.7106
+        },
+        {
+          "s": "3DM",
+          "from": "3-Dimensional Matching (Karp)",
+          "domain": "complexité",
+          "px": 1.1843,
+          "pz": 0.7106
+        },
+        {
+          "s": "GI",
+          "from": "Graph Isomorphism (NP, non NP-complet connu)",
+          "domain": "complexité",
+          "px": -1.1843,
+          "pz": 1.1843
+        },
+        {
+          "s": "Ladner",
+          "from": "Ladner: si P≠NP ∃ NP-intermédiaire (1975)",
+          "domain": "complexité",
+          "px": -0.7106,
+          "pz": 1.1843
+        },
+        {
+          "s": "Cook",
+          "from": "Théorème Cook-Levin: SAT est NP-complet (1971)",
+          "domain": "complexité",
+          "px": -0.2369,
+          "pz": 1.1843
+        },
+        {
+          "s": "Σ⁰₁",
+          "from": "Classe Σ⁰₁ (r.e.) de la hiérarchie",
+          "domain": "calculabilité",
+          "px": 0.2369,
+          "pz": 1.1843
+        },
+        {
+          "s": "Π⁰₁",
+          "from": "Classe Π⁰₁ (co-r.e.)",
+          "domain": "calculabilité",
+          "px": 0.7106,
+          "pz": 1.1843
+        },
+        {
+          "s": "P/poly",
+          "from": "P avec conseil polynomial (circuits)",
+          "domain": "complexité",
+          "px": 1.1843,
+          "pz": 1.1843
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "NUAGE 2 · Σ⁰₂ · Limite",
+      "short": "Σ⁰₂ LIMITE",
+      "formula": "∃y ∀z R(x,y,z) — deviner, corriger, jamais sûr",
+      "desc": "Ensembles limites. TOT, FIN, COF.",
+      "color": [
+        167,
+        139,
+        250
+      ],
+      "yr": -0.1,
+      "opacity": 0.14,
+      "symbols": [
+        {
+          "s": "∀",
+          "from": "Quantificateur universel",
+          "domain": "logique",
+          "px": -1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "∃∀",
+          "from": "Alternance Σ⁰₂",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "TOT",
+          "from": "{e : φₑ totale} Π₂-complet",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": -1.0659
+        },
+        {
+          "s": "FIN",
+          "from": "{e : Wₑ fini} Σ₂-complet",
+          "domain": "calculabilité",
+          "px": 0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "∅'",
+          "from": "Turing jump ∅'",
+          "domain": "calculabilité",
+          "px": 1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "∅''",
+          "from": "Double saut ∅''",
+          "domain": "calculabilité",
+          "px": -1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "Δ⁰₂",
+          "from": "Σ⁰₂ ∩ Π⁰₂ (limit computable)",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "BPP",
+          "from": "Bounded-error Probabilistic (⊆ Σ₂∩Π₂)",
+          "domain": "complexité",
+          "px": 0.0,
+          "pz": -0.3553
+        },
+        {
+          "s": "SZK",
+          "from": "Statistical Zero Knowledge (⊆ AM∩coAM)",
+          "domain": "crypto",
+          "px": 0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "RP",
+          "from": "Randomized Polynomial (one-sided error)",
+          "domain": "complexité",
+          "px": 1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "coRP",
+          "from": "Complement RP",
+          "domain": "complexité",
+          "px": -1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "ZPP",
+          "from": "Zero-error Probabilistic (=RP∩coRP)",
+          "domain": "complexité",
+          "px": -0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "Post",
+          "from": "Théorème Post: Σ⁰ₙ↔∅⁽ⁿ⁾ (hiérarchie=sauts)",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": 0.3553
+        },
+        {
+          "s": "Lim",
+          "from": "Shoenfield Limit Lemma (Δ⁰₂=limit computable)",
+          "domain": "calculabilité",
+          "px": 0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "Low",
+          "from": "Degré Low: A'=∅' (faible complexité)",
+          "domain": "calculabilité",
+          "px": 1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "High",
+          "from": "Degré High: A'=∅'' (forte complexité)",
+          "domain": "calculabilité",
+          "px": -1.137,
+          "pz": 1.0659
+        },
+        {
+          "s": "INF",
+          "from": "{e : Wₑ infini} Π₂-complet",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": 1.0659
+        },
+        {
+          "s": "Σ⁰₂",
+          "from": "Classe Σ⁰₂ de la hiérarchie",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": 1.0659
+        },
+        {
+          "s": "Π⁰₂",
+          "from": "Classe Π⁰₂ de la hiérarchie",
+          "domain": "calculabilité",
+          "px": 0.5685,
+          "pz": 1.0659
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "NUAGE n · Σ⁰ₙ · Motif",
+      "short": "Σ⁰ₙ MOTIF",
+      "formula": "∃∀∃∀… n alternances",
+      "desc": "Chaque alternance = un étage. Post 1944.",
+      "color": [
+        244,
+        114,
+        182
+      ],
+      "yr": 0.06,
+      "opacity": 0.13,
+      "symbols": [
+        {
+          "s": "Σ⁰ₙ",
+          "from": "n-ième existentiel",
+          "domain": "calculabilité",
+          "px": -1.3028,
+          "pz": -1.292
+        },
+        {
+          "s": "Π⁰ₙ",
+          "from": "n-ième universel",
+          "domain": "calculabilité",
+          "px": -1.0659,
+          "pz": -1.292
+        },
+        {
+          "s": "Δ⁰ₙ",
+          "from": "Σ⁰ₙ ∩ Π⁰ₙ",
+          "domain": "calculabilité",
+          "px": -0.829,
+          "pz": -1.292
+        },
+        {
+          "s": "∅⁽ⁿ⁾",
+          "from": "n-ième saut Turing",
+          "domain": "calculabilité",
+          "px": -0.5922,
+          "pz": -1.292
+        },
+        {
+          "s": "ΣₖP",
+          "from": "k-ième niveau PH existentiel",
+          "domain": "complexité",
+          "px": -0.3553,
+          "pz": -1.292
+        },
+        {
+          "s": "ΠₖP",
+          "from": "k-ième niveau PH universel",
+          "domain": "complexité",
+          "px": -0.1184,
+          "pz": -1.292
+        },
+        {
+          "s": "ΔₖP",
+          "from": "k-ième niveau PH déterministe (P^Σₖ₋₁)",
+          "domain": "complexité",
+          "px": 0.1184,
+          "pz": -1.292
+        },
+        {
+          "s": "PH",
+          "from": "Polynomial Hierarchy ∪ₖΣₖP",
+          "domain": "complexité",
+          "px": 0.3553,
+          "pz": -1.292
+        },
+        {
+          "s": "#P",
+          "from": "Comptage — Valiant 1979",
+          "domain": "complexité",
+          "px": 0.5922,
+          "pz": -1.292
+        },
+        {
+          "s": "MA",
+          "from": "Merlin-Arthur",
+          "domain": "complexité",
+          "px": 0.829,
+          "pz": -1.292
+        },
+        {
+          "s": "AM",
+          "from": "Arthur-Merlin (Babai 1985)",
+          "domain": "complexité",
+          "px": 1.0659,
+          "pz": -1.292
+        },
+        {
+          "s": "PP",
+          "from": "Probabilistic Polynomial",
+          "domain": "complexité",
+          "px": 1.3028,
+          "pz": -1.292
+        },
+        {
+          "s": "⊕P",
+          "from": "Parité — Parity-P",
+          "domain": "complexité",
+          "px": -1.3028,
+          "pz": -1.0336
+        },
+        {
+          "s": "Σ₂P",
+          "from": "2ème niveau existentiel PH",
+          "domain": "complexité",
+          "px": -1.0659,
+          "pz": -1.0336
+        },
+        {
+          "s": "Π₂P",
+          "from": "2ème niveau universel PH",
+          "domain": "complexité",
+          "px": -0.829,
+          "pz": -1.0336
+        },
+        {
+          "s": "Toda",
+          "from": "Théorème Toda: PH ⊆ P^#P (1991)",
+          "domain": "complexité",
+          "px": -0.5922,
+          "pz": -1.0336
+        },
+        {
+          "s": "QMA",
+          "from": "Quantum Merlin-Arthur",
+          "domain": "quantique",
+          "px": -0.3553,
+          "pz": -1.0336
+        },
+        {
+          "s": "#SAT",
+          "from": "Compter solutions SAT (#P-complet)",
+          "domain": "complexité",
+          "px": -0.1184,
+          "pz": -1.0336
+        },
+        {
+          "s": "GapP",
+          "from": "Fonctions de gap (différence de #P)",
+          "domain": "complexité",
+          "px": 0.1184,
+          "pz": -1.0336
+        },
+        {
+          "s": "C₌P",
+          "from": "Exact counting complexity",
+          "domain": "complexité",
+          "px": 0.3553,
+          "pz": -1.0336
+        },
+        {
+          "s": "COF",
+          "from": "{e : Wₑ cofini} Σ₃-complet",
+          "domain": "calculabilité",
+          "px": 0.5922,
+          "pz": -1.0336
+        },
+        {
+          "s": "REC",
+          "from": "{e : Wₑ récursif} Σ₃-complet",
+          "domain": "calculabilité",
+          "px": 0.829,
+          "pz": -1.0336
+        },
+        {
+          "s": "FermatWiles",
+          "from": "Dernier théorème Fermat / modularité (Wiles 1995, BCDT 2001)",
+          "domain": "nb théorie",
+          "px": 1.0659,
+          "pz": -1.0336
+        },
+        {
+          "s": "Milnor_K",
+          "from": "Conjecture Milnor K-théorie — K^M_n(F)/2 ≅ H^n(F,ℤ/2) (Voevodsky 2003)",
+          "domain": "algèbre",
+          "px": 1.3028,
+          "pz": -1.0336
+        },
+        {
+          "s": "BlochKato",
+          "from": "Conjecture Bloch-Kato norm residue — K^M_n(F)/ℓ ≅ H^n(F,μ_ℓ^⊗n) (Rost-Voevodsky 2011)",
+          "domain": "algèbre",
+          "px": -1.3028,
+          "pz": -0.7752
+        },
+        {
+          "s": "SatoTate",
+          "from": "Conjecture Sato-Tate — distribution Frobenius courbes elliptiques (Taylor et al. 2011)",
+          "domain": "nb théorie",
+          "px": -1.0659,
+          "pz": -0.7752
+        },
+        {
+          "s": "KazhLusz",
+          "from": "Conjecture Kazhdan-Lusztig — multiplicités modules Verma (Beilinson-Bernstein 1981)",
+          "domain": "algèbre",
+          "px": -0.829,
+          "pz": -0.7752
+        },
+        {
+          "s": "KadSinger",
+          "from": "Kadison-Singer — extension états purs B(H) (Marcus-Spielman-Srivastava 2013)",
+          "domain": "analyse fonctionnelle",
+          "px": -0.5922,
+          "pz": -0.7752
+        },
+        {
+          "s": "VirtHaken",
+          "from": "Virtual Haken — 3-variétés hyperboliques (Agol 2012, Wise, Kahn-Markovic)",
+          "domain": "topologie",
+          "px": -0.3553,
+          "pz": -0.7752
+        },
+        {
+          "s": "KakeyaFin",
+          "from": "Kakeya corps finis — Besicovitch sets F_q^n (Dvir 2008, méthode polynomiale)",
+          "domain": "combinatoire",
+          "px": -0.1184,
+          "pz": -0.7752
+        },
+        {
+          "s": "Onsager_c",
+          "from": "Conjecture Onsager — Euler C^α conservation énergie ssi α>1/3 (Isett 2018, BDSV 2019)",
+          "domain": "analyse",
+          "px": 0.1184,
+          "pz": -0.7752
+        },
+        {
+          "s": "Poinc3",
+          "from": "Conjecture Poincaré dim 3 — toute 3-variété simplement connexe fermée ≅ S³ (Perelman 2003, flot de Ricci)",
+          "domain": "topologie",
+          "px": 0.3553,
+          "pz": -0.7752
+        },
+        {
+          "s": "Geomtrz",
+          "from": "Géométrisation Thurston — toute 3-variété se décompose en 8 géométries (Perelman 2003)",
+          "domain": "topologie",
+          "px": 0.5922,
+          "pz": -0.7752
+        },
+        {
+          "s": "hCobord",
+          "from": "h-cobordism theorem — dim ≥ 6 (Smale 1962, Fields Medal). Implique Poincaré généralisé dim ≥ 5.",
+          "domain": "topologie",
+          "px": 0.829,
+          "pz": -0.7752
+        },
+        {
+          "s": "Freed4",
+          "from": "Freedman theorem — classification topologique 4-variétés simplement connexes fermées (1982, Fields Medal)",
+          "domain": "topologie",
+          "px": 1.0659,
+          "pz": -0.7752
+        },
+        {
+          "s": "SmithConj",
+          "from": "Smith conjecture — action Zₚ sur S³ a point fixe = nœud trivial (Morgan-Bass 1984)",
+          "domain": "topologie",
+          "px": 1.3028,
+          "pz": -0.7752
+        },
+        {
+          "s": "ExoticS7",
+          "from": "Sphères exotiques Milnor — S⁷ admet 28 structures diff. non-standard (Milnor 1956, Kervaire-Milnor 1963)",
+          "domain": "topologie",
+          "px": -1.3028,
+          "pz": -0.5168
+        },
+        {
+          "s": "Surgery",
+          "from": "Théorie chirurgie — classification variétés dim ≥ 5 (Browder-Novikov-Sullivan-Wall 1960s)",
+          "domain": "topologie",
+          "px": -1.0659,
+          "pz": -0.5168
+        },
+        {
+          "s": "Mordell",
+          "from": "Conjecture Mordell — courbe genre ≥ 2 sur ℚ a nombre fini de points rationnels (Faltings 1983, Fields Medal)",
+          "domain": "nb théorie",
+          "px": -0.829,
+          "pz": -0.5168
+        },
+        {
+          "s": "WeilConj",
+          "from": "Conjectures Weil — fonctions zêta variétés /F_q: rationalité (Dwork), fonctionnalité, RH (Deligne 1974, Fields Medal)",
+          "domain": "nb théorie",
+          "px": -0.5922,
+          "pz": -0.5168
+        },
+        {
+          "s": "CatalanM",
+          "from": "Conjecture Catalan — x^p - y^q = 1 ⟹ 3²-2³=1 seule solution (Mihailescu 2002)",
+          "domain": "nb théorie",
+          "px": -0.3553,
+          "pz": -0.5168
+        },
+        {
+          "s": "GoldWeak",
+          "from": "Goldbach faible (ternaire) — tout impair > 5 somme de 3 premiers (Helfgott 2013)",
+          "domain": "nb théorie",
+          "px": -0.1184,
+          "pz": -0.5168
+        },
+        {
+          "s": "BddGaps",
+          "from": "Bounded prime gaps — lim inf (pₙ₊₁-pₙ) < ∞ (Zhang 2013: 7×10⁷, Maynard 2013: 600, Polymath8: 246)",
+          "domain": "nb théorie",
+          "px": 0.1184,
+          "pz": -0.5168
+        },
+        {
+          "s": "GrossZag",
+          "from": "Formule Gross-Zagier — hauteur point Heegner = L'(E,1) (1986). Clé pour BSD rang 1.",
+          "domain": "nb théorie",
+          "px": 0.3553,
+          "pz": -0.5168
+        },
+        {
+          "s": "HerbRibet",
+          "from": "Herbrand-Ribet — p|Bₖ ⟺ p|#Cl(ℚ(ζₚ))_χ (Herbrand 1932 →, Ribet 1976 ←). Lien Bernoulli/corps cyclotomiques.",
+          "domain": "nb théorie",
+          "px": 0.5922,
+          "pz": -0.5168
+        },
+        {
+          "s": "IwasMain",
+          "from": "Iwasawa Main Conjecture — structure Λ-modules sur tours cyclotomiques (Mazur-Wiles 1984)",
+          "domain": "nb théorie",
+          "px": 0.829,
+          "pz": -0.5168
+        },
+        {
+          "s": "SerreMod",
+          "from": "Conjecture Serre modularité — repr. Galois irréd. impaires mod p sont modulaires (Khare-Wintenberger 2009)",
+          "domain": "nb théorie",
+          "px": 1.0659,
+          "pz": -0.5168
+        },
+        {
+          "s": "LaffFnF",
+          "from": "Langlands pour corps de fonctions GL_n (Laurent Lafforgue 2002, Fields Medal)",
+          "domain": "nb théorie",
+          "px": 1.3028,
+          "pz": -0.5168
+        },
+        {
+          "s": "CFSG",
+          "from": "Classification groupes finis simples — 18 familles + 26 sporadiques (~1983, ~10000 pages, Gorenstein program)",
+          "domain": "algèbre",
+          "px": -1.3028,
+          "pz": -0.2584
+        },
+        {
+          "s": "Moonshine",
+          "from": "Monstrous Moonshine — j(τ) et Monster group (Conway-Norton 1979, prouvé Borcherds 1992, Fields Medal)",
+          "domain": "algèbre",
+          "px": -1.0659,
+          "pz": -0.2584
+        },
+        {
+          "s": "QuilSusl",
+          "from": "Conjecture Serre (Quillen-Suslin) — modules proj. sur k[x₁..xₙ] sont libres (Quillen, Suslin 1976)",
+          "domain": "algèbre",
+          "px": -0.829,
+          "pz": -0.2584
+        },
+        {
+          "s": "Bieberbach",
+          "from": "Théorème de Branges (ex-conj. Bieberbach) — |aₙ| ≤ n pour fonctions univalentes (De Branges 1985, Acta Math)",
+          "domain": "analyse",
+          "px": -0.5922,
+          "pz": -0.2584
+        },
+        {
+          "s": "CarlesonL2",
+          "from": "Convergence p.p. séries Fourier L² — (Carleson 1966, Abel Prize 2006). Étendu Lᵖ p>1 (Hunt 1968).",
+          "domain": "analyse",
+          "px": -0.3553,
+          "pz": -0.2584
+        },
+        {
+          "s": "KatoSqrt",
+          "from": "Conjecture Kato racine carrée — √(div A grad) a domaine H¹ (Auscher-Hofmann-Lacey-McIntosh-Tchamitchian 2001)",
+          "domain": "analyse",
+          "px": -0.1184,
+          "pz": -0.2584
+        },
+        {
+          "s": "CoronaTh",
+          "from": "Théorème Corona — Spec maximal H^∞ dense dans le spectre (Carleson 1962)",
+          "domain": "analyse",
+          "px": 0.1184,
+          "pz": -0.2584
+        },
+        {
+          "s": "CalabiYau",
+          "from": "Conjecture Calabi — existence métrique Kähler Ricci-plate si c₁=0 (Yau 1978, Fields Medal)",
+          "domain": "géom diff",
+          "px": 0.3553,
+          "pz": -0.2584
+        },
+        {
+          "s": "PosMass",
+          "from": "Positive mass theorem — masse ADM ≥ 0 (Schoen-Yau 1979, Witten 1981). Fondamental en RG.",
+          "domain": "géom diff",
+          "px": 0.5922,
+          "pz": -0.2584
+        },
+        {
+          "s": "Kepler",
+          "from": "Conjecture Kepler — empilement sphères densité max π/(3√2) = FCC/HCP (Hales 2005, Flyspeck 2014 vérifié formellement)",
+          "domain": "géométrie",
+          "px": 0.829,
+          "pz": -0.2584
+        },
+        {
+          "s": "Willmore",
+          "from": "Conjecture Willmore — min ∫H²dA pour tores immergés = 2π² (Marques-Neves 2014, min-max)",
+          "domain": "géom diff",
+          "px": 1.0659,
+          "pz": -0.2584
+        },
+        {
+          "s": "AtiyahSing",
+          "from": "Théorème index Atiyah-Singer — ind(D) = ∫ch(σ)Td(M) (1963, généralisé K-théorie). Pont analyse↔topologie.",
+          "domain": "géom diff",
+          "px": 1.3028,
+          "pz": -0.2584
+        },
+        {
+          "s": "FourColor",
+          "from": "Théorème 4 couleurs — tout graphe planaire 4-coloriable (Appel-Haken 1976, Robertson et al. 1997, Gonthier 2005 Coq)",
+          "domain": "combinatoire",
+          "px": -1.3028,
+          "pz": 0.0
+        },
+        {
+          "s": "RobSeym",
+          "from": "Graph Minor Theorem — tout ensemble infini de graphes a mineur (Robertson-Seymour 1983-2004, 20 papers)",
+          "domain": "combinatoire",
+          "px": -1.0659,
+          "pz": 0.0
+        },
+        {
+          "s": "GreenTao",
+          "from": "Green-Tao — les premiers contiennent des PA de longueur arbitraire (2004). Utilise Szemerédi + transference.",
+          "domain": "combinatoire",
+          "px": -0.829,
+          "pz": 0.0
+        },
+        {
+          "s": "DensHJ",
+          "from": "Density Hales-Jewett — version densité du théorème HJ (Polymath1, 2009/2012)",
+          "domain": "combinatoire",
+          "px": -0.5922,
+          "pz": 0.0
+        },
+        {
+          "s": "Kneser",
+          "from": "Conjecture Kneser — χ(KG(n,k)) = n-2k+2 (Lovász 1978, topologie de Borsuk-Ulam appliquée aux graphes)",
+          "domain": "combinatoire",
+          "px": -0.3553,
+          "pz": 0.0
+        },
+        {
+          "s": "SLE_thm",
+          "from": "SLE/percolation — invariance conforme percolation critique sur réseau triangulaire (Smirnov 2001, Fields Medal 2010)",
+          "domain": "probabilités",
+          "px": -0.1184,
+          "pz": 0.0
+        },
+        {
+          "s": "ParisHarr",
+          "from": "Paris-Harrington — variante Ramsey indépendante de PA (1977). Premier exemple 'naturel' d'indépendance.",
+          "domain": "logique",
+          "px": 0.1184,
+          "pz": 0.0
+        },
+        {
+          "s": "DPRM",
+          "from": "Théorème DPRM — ensembles r.e. = ensembles diophantiens (Davis-Putnam-Robinson 1961, Matiyasevich 1970). H10 négatif.",
+          "domain": "logique",
+          "px": 0.3553,
+          "pz": 0.0
+        },
+        {
+          "s": "Hironaka",
+          "from": "Résolution des singularités en car. 0 — tout variété admet désingularisation (Hironaka 1964, Fields Medal)",
+          "domain": "géom algébrique",
+          "px": 0.5922,
+          "pz": 0.0
+        },
+        {
+          "s": "FundLemma",
+          "from": "Lemme fondamental Langlands-Shelstad — identité orbitale pour endoscopie (Ngô Bảo Châu 2008, Fields Medal 2010)",
+          "domain": "nb théorie",
+          "px": 0.829,
+          "pz": 0.0
+        },
+        {
+          "s": "Szemer",
+          "from": "Théorème Szemerédi — tout ensemble de densité positive dans ℕ contient des PA de longueur k (1975, Abel Prize 2012). Preuve ergodique Furstenberg 1977.",
+          "domain": "combinatoire",
+          "px": 1.0659,
+          "pz": 0.0
+        },
+        {
+          "s": "RothAP",
+          "from": "Théorème Roth — tout ensemble dense dans ℕ contient des 3-AP (1953, Fields Medal). Méthode cercle de Hardy-Littlewood.",
+          "domain": "combinatoire",
+          "px": 1.3028,
+          "pz": 0.0
+        },
+        {
+          "s": "MostowRig",
+          "from": "Mostow rigidity — variétés hyperboliques fermées dim ≥ 3 isométriques ssi π₁ isomorphes (1968)",
+          "domain": "géom diff",
+          "px": -1.3028,
+          "pz": 0.2584
+        },
+        {
+          "s": "MargSup",
+          "from": "Margulis superrigidité — réseaux dans groupes de Lie rang ≥ 2 sont arithmétiques (1975, Fields Medal)",
+          "domain": "géom diff",
+          "px": -1.0659,
+          "pz": 0.2584
+        },
+        {
+          "s": "Oppenh",
+          "from": "Conjecture Oppenheim — forme quadratique irrationnelle indéfinie ≥3 var. prend valeurs denses (Margulis 1987, flots unipotents)",
+          "domain": "nb théorie",
+          "px": -0.829,
+          "pz": 0.2584
+        },
+        {
+          "s": "Ratner",
+          "from": "Théorèmes Ratner — classification mesures/orbites invariantes unipotentes sur espaces homogènes (1990-91)",
+          "domain": "géom diff",
+          "px": -0.5922,
+          "pz": 0.2584
+        },
+        {
+          "s": "Tameness",
+          "from": "Marden Tameness — variétés hyperboliques de volume infini sont topologiquement apprivoisées (Agol 2004, Calegari-Gabai 2004)",
+          "domain": "topologie",
+          "px": -0.3553,
+          "pz": 0.2584
+        },
+        {
+          "s": "EndLam",
+          "from": "Ending Lamination — 3-var. hyperbolique déterminée par end invariants (Brock-Canary-Minsky 2012, Thurston conjecture)",
+          "domain": "topologie",
+          "px": -0.1184,
+          "pz": 0.2584
+        },
+        {
+          "s": "DiffSph",
+          "from": "1/4-pinched differentiable sphere theorem — variété courbure 1/4-pincée est difféomorphe à Sⁿ (Brendle-Schoen 2009)",
+          "domain": "géom diff",
+          "px": 0.1184,
+          "pz": 0.2584
+        },
+        {
+          "s": "FeitThomp",
+          "from": "Odd order theorem — tout groupe fini d'ordre impair est résoluble (Feit-Thompson 1963, 255 pages). Premier pas vers CFSG.",
+          "domain": "algèbre",
+          "px": 0.3553,
+          "pz": 0.2584
+        },
+        {
+          "s": "Vinogr3P",
+          "from": "Vinogradov — tout impair suffisamment grand est somme de 3 premiers (1937). Méthode cercle. Rendu effectif par Helfgott (GoldWeak).",
+          "domain": "nb théorie",
+          "px": 0.5922,
+          "pz": 0.2584
+        },
+        {
+          "s": "PNT",
+          "from": "Prime Number Theorem — π(x) ~ x/ln(x) (Hadamard & de la Vallée-Poussin 1896, indépendamment). Preuve élémentaire Erdős-Selberg 1949.",
+          "domain": "nb théorie",
+          "px": 0.829,
+          "pz": 0.2584
+        },
+        {
+          "s": "Waring",
+          "from": "Problème de Waring — tout entier = somme de g(k) puissances k-ièmes (Hilbert 1909). g(2)=4 Lagrange, g(3)=9 Wieferich-Kempner.",
+          "domain": "nb théorie",
+          "px": 1.0659,
+          "pz": 0.2584
+        },
+        {
+          "s": "QRecip",
+          "from": "Loi réciprocité quadratique — (p/q)(q/p) = (-1)^{(p-1)(q-1)/4} (Gauss 1801, ~240 preuves connues). Généralisée par Artin, Langlands.",
+          "domain": "nb théorie",
+          "px": 1.3028,
+          "pz": 0.2584
+        },
+        {
+          "s": "Dirichlet",
+          "from": "Théorème Dirichlet — infinité premiers dans progressions arithmétiques a+nd, pgcd(a,d)=1 (1837). Utilise L-fonctions.",
+          "domain": "nb théorie",
+          "px": -1.3028,
+          "pz": 0.5168
+        },
+        {
+          "s": "Viaz8",
+          "from": "Sphere packing dim 8 — réseau E₈ est empilement le plus dense en ℝ⁸ (Viazovska 2016, Fields Medal 2022). Formes modulaires.",
+          "domain": "géométrie",
+          "px": -1.0659,
+          "pz": 0.5168
+        },
+        {
+          "s": "Viaz24",
+          "from": "Sphere packing dim 24 — réseau de Leech est optimal en ℝ²⁴ (Cohn-Kumar-Miller-Radchenko-Viazovska 2016).",
+          "domain": "géométrie",
+          "px": -0.829,
+          "pz": 0.5168
+        },
+        {
+          "s": "DblBubble",
+          "from": "Double bubble conjecture — double bulle standard minimise l'aire dans ℝ³ (Hutchings-Morgan-Ritoré-Ros 2002).",
+          "domain": "géométrie",
+          "px": -0.5922,
+          "pz": 0.5168
+        },
+        {
+          "s": "Einstein",
+          "from": "Einstein problem / monotuile apériodique — existence d'une tuile unique pavant le plan seulement apériodiquement (Smith-Myers-Kaplan-Goodman-Strauss 2023).",
+          "domain": "géométrie",
+          "px": -0.3553,
+          "pz": 0.5168
+        },
+        {
+          "s": "BrauerH0",
+          "from": "Brauer Height Zero Conjecture — hauteur zéro des caractères dans blocs (Malle-Navarro-Schaeffer Fry-Tiep 2024, Annals of Math).",
+          "domain": "algèbre",
+          "px": -0.1184,
+          "pz": 0.5168
+        },
+        {
+          "s": "Nagata",
+          "from": "Conjecture Nagata — automorphisme sauvage de k[x,y,z] n'est pas apprivoisé (Shestakov-Umirbaev 2003).",
+          "domain": "algèbre",
+          "px": 0.1184,
+          "pz": 0.5168
+        },
+        {
+          "s": "ErdDiscrep",
+          "from": "Erdős discrepancy problem — toute suite ±1 a sous-sommes partielles non-bornées (Tao 2015). Utilise analyse de Fourier entropique.",
+          "domain": "combinatoire",
+          "px": 0.3553,
+          "pz": 0.5168
+        },
+        {
+          "s": "GuthKatz",
+          "from": "Erdős distinct distances — n points dans ℝ² déterminent Ω(n/log n) distances distinctes (Guth-Katz 2010). Polynomial partitioning.",
+          "domain": "combinatoire",
+          "px": 0.5922,
+          "pz": 0.5168
+        },
+        {
+          "s": "RamseyExp",
+          "from": "Ramsey diagonal upper bound — R(k,k) ≤ (4-ε)^k, première amélioration exponentielle depuis 1935 (Campos-Griffiths-Morris-Sahasrabudhe 2023).",
+          "domain": "combinatoire",
+          "px": 0.829,
+          "pz": 0.5168
+        },
+        {
+          "s": "BGS",
+          "from": "Baker-Gill-Solovay — ∃ oracle A: P^A=NP^A, ∃ oracle B: P^B≠NP^B (1975). Relativisation ne peut séparer P de NP.",
+          "domain": "complexité",
+          "px": 1.0659,
+          "pz": 0.5168
+        },
+        {
+          "s": "NatProof",
+          "from": "Razborov-Rudich Natural Proofs barrier — si OWF existent, pas de preuve 'naturelle' de P≠NP (1997). Combinatorialisation bloquée.",
+          "domain": "complexité",
+          "px": 1.3028,
+          "pz": 0.5168
+        },
+        {
+          "s": "Algebriz",
+          "from": "Aaronson-Wigderson Algebrization — généralise relativisation, toute preuve P≠NP doit être non-algébrisante (2009).",
+          "domain": "complexité",
+          "px": -1.3028,
+          "pz": 0.7752
+        },
+        {
+          "s": "ImmSzel",
+          "from": "Immerman-Szelepcsényi — NL = co-NL (1987). Non-déterminisme spatial fermé sous complémentation.",
+          "domain": "complexité",
+          "px": -1.0659,
+          "pz": 0.7752
+        },
+        {
+          "s": "SipLaut",
+          "from": "Sipser-Lautemann — BPP ⊆ Σ₂P ∩ Π₂P (1983). Randomisation contenue dans PH niveau 2.",
+          "domain": "complexité",
+          "px": -0.829,
+          "pz": 0.7752
+        },
+        {
+          "s": "Perm#P",
+          "from": "Valiant permanent — Permanent est #P-complet (1979). Comptage ≠ décision, lien matrices/complexité.",
+          "domain": "complexité",
+          "px": -0.5922,
+          "pz": 0.7752
+        },
+        {
+          "s": "ImpWig",
+          "from": "Impagliazzo-Wigderson — P = BPP si E requiert circuits expo (STOC 1997). Dureté → dérandomisation.",
+          "domain": "complexité",
+          "px": -0.3553,
+          "pz": 0.7752
+        },
+        {
+          "s": "ImpPad",
+          "from": "Impagliazzo-Paturi SETH — ETH: 3-SAT pas en 2^{o(n)}, SETH: k-SAT pas en 2^{(1-ε)n} (1999). Base complexité fine.",
+          "domain": "complexité",
+          "px": -0.1184,
+          "pz": 0.7752
+        },
+        {
+          "s": "BirkErg",
+          "from": "Birkhoff ergodic theorem — moyenne temporelle = moyenne spatiale p.p. (1931). Fondement théorie ergodique.",
+          "domain": "probabilités",
+          "px": 0.1184,
+          "pz": 0.7752
+        },
+        {
+          "s": "CLT",
+          "from": "Central Limit Theorem — (Sₙ-nμ)/σ√n → N(0,1) (Lindeberg 1922, Lévy, Feller). Universalité gaussienne.",
+          "domain": "probabilités",
+          "px": 0.3553,
+          "pz": 0.7752
+        },
+        {
+          "s": "SLLN",
+          "from": "Strong Law Large Numbers — X̄ₙ → μ p.s. (Kolmogorov 1930). Convergence presque sûre des moyennes.",
+          "domain": "probabilités",
+          "px": 0.5922,
+          "pz": 0.7752
+        },
+        {
+          "s": "Donsker",
+          "from": "Donsker invariance principle — marche aléatoire renormalisée → mouvement brownien (1951). CLT fonctionnel.",
+          "domain": "probabilités",
+          "px": 0.829,
+          "pz": 0.7752
+        },
+        {
+          "s": "LDP",
+          "from": "Large Deviations Principle — P(S̄ₙ∈A) ~ e^{-nI(A)} (Cramér 1938, Varadhan 1966). Taux exponentiels.",
+          "domain": "probabilités",
+          "px": 1.0659,
+          "pz": 0.7752
+        },
+        {
+          "s": "OrnIsm",
+          "from": "Ornstein isomorphism — shifts de Bernoulli isomorphes ssi même entropie (Ornstein 1970). Classification systèmes aléatoires.",
+          "domain": "probabilités",
+          "px": 1.3028,
+          "pz": 0.7752
+        },
+        {
+          "s": "DeGNM",
+          "from": "De Giorgi-Nash-Moser — solutions équations elliptiques div-forme à coefficients L^∞ sont Hölder (1957-58-60). Résout Hilbert 19ème.",
+          "domain": "EDP",
+          "px": -1.3028,
+          "pz": 1.0336
+        },
+        {
+          "s": "NashEmb",
+          "from": "Nash embedding theorem — toute variété riemannienne se plonge isométriquement dans ℝ^N (1956). Schéma itératif Nash-Moser.",
+          "domain": "géom diff",
+          "px": -1.0659,
+          "pz": 1.0336
+        },
+        {
+          "s": "KAM",
+          "from": "KAM theorem — tores quasi-périodiques persistent sous petites perturbations hamiltoniennes (Kolmogorov 1954, Arnold 1963, Moser 1962).",
+          "domain": "mécanique analytique",
+          "px": -0.829,
+          "pz": 1.0336
+        },
+        {
+          "s": "deRham",
+          "from": "de Rham theorem — cohomologie de de Rham ≅ cohomologie singulière (1931). Pont analyse ↔ topologie.",
+          "domain": "topologie",
+          "px": -0.5922,
+          "pz": 1.0336
+        },
+        {
+          "s": "BottPer",
+          "from": "Bott periodicity — K-théorie topologique est périodique: π_{n+2}(U) ≅ π_n(U), π_{n+8}(O) ≅ π_n(O) (1959).",
+          "domain": "topologie",
+          "px": -0.3553,
+          "pz": 1.0336
+        },
+        {
+          "s": "Uniformiz",
+          "from": "Uniformization theorem — toute surface de Riemann simplement connexe ≅ S², ℂ ou 𝔻 (Koebe-Poincaré 1907).",
+          "domain": "analyse",
+          "px": -0.1184,
+          "pz": 1.0336
+        },
+        {
+          "s": "GrotRR",
+          "from": "Grothendieck-Riemann-Roch — ch(f_!(F)) = f_*(ch(F)·Td(T_f)) en K-théorie (1957). Généralise Hirzebruch-RR.",
+          "domain": "géom algébrique",
+          "px": 0.1184,
+          "pz": 1.0336
+        },
+        {
+          "s": "ClassFT",
+          "from": "Class Field Theory — abélianisation Gal(K^ab/K) ≅ C_K (Takagi 1920, Artin 1927). Réciprocité non-abélienne = Langlands.",
+          "domain": "nb théorie",
+          "px": 0.3553,
+          "pz": 1.0336
+        },
+        {
+          "s": "GodelInc",
+          "from": "Gödel incompleteness — (1) toute théorie cohérente contenant PA a énoncés indécidables, (2) ne peut prouver sa propre cohérence (1931).",
+          "domain": "logique",
+          "px": 0.5922,
+          "pz": 1.0336
+        },
+        {
+          "s": "NoetherSy",
+          "from": "Noether theorem — toute symétrie continue d'un lagrangien donne une loi de conservation (1918). Pont algèbre ↔ physique.",
+          "domain": "algèbre",
+          "px": 0.829,
+          "pz": 1.0336
+        },
+        {
+          "s": "Shannon2",
+          "from": "Shannon coding theorems — (1) source coding: H(X) bits suffisent, (2) channel: capacité C atteignable (1948). Fondement théorie info.",
+          "domain": "information",
+          "px": 1.0659,
+          "pz": 1.0336
+        },
+        {
+          "s": "MIP*RE",
+          "from": "MIP* = RE — prouveurs quantiques intriqués = langages r.e. (Ji-Natarajan-Vidick-Wright-Yuen 2020). Réfute Connes embedding, résout Tsirelson.",
+          "domain": "quantique",
+          "px": 1.3028,
+          "pz": 1.0336
+        },
+        {
+          "s": "WillACC",
+          "from": "Williams — NEXP ⊄ ACC⁰ circuits de taille poly (2011). Première borne inférieure circuits avec portes MODm depuis Razborov-Smolensky 87.",
+          "domain": "complexité",
+          "px": -1.3028,
+          "pz": 1.292
+        },
+        {
+          "s": "RazMono",
+          "from": "Razborov — circuits monotones pour CLIQUE exigent taille super-polynomiale 2^{Ω(n^{1/6})} (1985). Méthode d'approximation.",
+          "domain": "complexité",
+          "px": -1.0659,
+          "pz": 1.292
+        },
+        {
+          "s": "RazSmol",
+          "from": "Razborov-Smolensky — AC⁰[p] ne contient pas MOD_q pour p≠q premiers (1987). Bornes inférieures circuits à profondeur constante.",
+          "domain": "complexité",
+          "px": -0.829,
+          "pz": 1.292
+        },
+        {
+          "s": "HasAC0",
+          "from": "Håstad switching lemma — PARITY ∉ AC⁰, circuits profondeur d taille 2^{Ω(n^{1/(d-1)})} nécessaires (1987). Tight pour AC⁰.",
+          "domain": "complexité",
+          "px": -0.5922,
+          "pz": 1.292
+        },
+        {
+          "s": "BorelDet",
+          "from": "Borel determinacy — tout jeu de Gale-Stewart à gain Borel est déterminé (Martin 1975). Nécessite remplacement (Friedman 71).",
+          "domain": "descriptive",
+          "px": -0.3553,
+          "pz": 1.292
+        },
+        {
+          "s": "CohenInd",
+          "from": "Cohen forcing — CH est indépendant de ZFC: ni prouvable ni réfutable (Cohen 1963, Fields 1966). Méthode du forcing.",
+          "domain": "ensembles",
+          "px": -0.1184,
+          "pz": 1.292
+        },
+        {
+          "s": "BuchiMSO",
+          "from": "Büchi theorem — L est ω-régulier ssi définissable en MSO sur ω (Büchi 1962). Pont logique ↔ automates sur mots infinis.",
+          "domain": "automates",
+          "px": 0.1184,
+          "pz": 1.292
+        },
+        {
+          "s": "MyhNer",
+          "from": "Myhill-Nerode — L régulier ssi nombre fini de classes d'équivalence (Myhill 1957, Nerode 1958). Caractérisation algébrique réguliers.",
+          "domain": "automates",
+          "px": 0.3553,
+          "pz": 1.292
+        },
+        {
+          "s": "RabinS2S",
+          "from": "Rabin theorem — S2S (théorie monadique 2 successeurs) est décidable (Rabin 1969). Automates d'arbres, implique de nombreux résultats.",
+          "domain": "automates",
+          "px": 0.5922,
+          "pz": 1.292
+        },
+        {
+          "s": "DoobMart",
+          "from": "Doob martingale convergence — toute surmartingale bornée dans L¹ converge p.s. (Doob 1953). Fondement probabilités modernes.",
+          "domain": "stochastique",
+          "px": 0.829,
+          "pz": 1.292
+        },
+        {
+          "s": "BaireCat",
+          "from": "Baire category theorem — espace métrique complet n'est pas union dénombrable de fermés d'intérieur vide (Baire 1899). Base Banach-Steinhaus/open mapping.",
+          "domain": "analyse fonctionnelle",
+          "px": 1.0659,
+          "pz": 1.292
+        },
+        {
+          "s": "BanOpen",
+          "from": "Banach open mapping + closed graph — surjection continue entre Banach est ouverte; graphe fermé implique continuité (Banach 1932).",
+          "domain": "analyse fonctionnelle",
+          "px": 1.3028,
+          "pz": 1.292
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "CIEL · AH = ∪ₙ Σ⁰ₙ",
+      "short": "AH CIEL",
+      "formula": "Tout le ciel arithmétique",
+      "desc": "L'union de tous les nuages. Tarski.",
+      "color": [
+        251,
+        191,
+        36
+      ],
+      "yr": 0.2,
+      "opacity": 0.13,
+      "symbols": [
+        {
+          "s": "AH",
+          "from": "Hiérarchie arithmétique",
+          "domain": "calculabilité",
+          "px": -1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "∪ₙ",
+          "from": "Union tous niveaux",
+          "domain": "ensembles",
+          "px": -0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "ω_ord",
+          "from": "Premier ordinal infini ω",
+          "domain": "ordinaux",
+          "px": 0.0,
+          "pz": -1.0659
+        },
+        {
+          "s": "Th(ℕ)",
+          "from": "Théorie complète de ℕ",
+          "domain": "logique",
+          "px": 0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "∅⁽ω⁾",
+          "from": "ω-ième saut",
+          "domain": "calculabilité",
+          "px": 1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "PSPACE",
+          "from": "Espace polynomial (Savitch: =NPSPACE)",
+          "domain": "complexité",
+          "px": -1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "QIP",
+          "from": "Quantum Interactive Proof (=PSPACE)",
+          "domain": "quantique",
+          "px": -0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "EXPTIME",
+          "from": "Temps exponentiel (⊋ P strict)",
+          "domain": "complexité",
+          "px": 0.0,
+          "pz": -0.3553
+        },
+        {
+          "s": "NEXP",
+          "from": "Non-det exponentiel",
+          "domain": "complexité",
+          "px": 0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "EXPSPACE",
+          "from": "Espace exponentiel (=NEXPSPACE Savitch)",
+          "domain": "complexité",
+          "px": 1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "AP",
+          "from": "Alternating Polynomial time (=PSPACE)",
+          "domain": "complexité",
+          "px": -1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "TQBF",
+          "from": "True QBF — PSPACE-complet",
+          "domain": "complexité",
+          "px": -0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "IP_eq",
+          "from": "IP=PSPACE (théorème Shamir 1992)",
+          "domain": "complexité",
+          "px": 0.0,
+          "pz": 0.3553
+        },
+        {
+          "s": "2-EXP",
+          "from": "2-EXPTIME doublement exponentiel",
+          "domain": "complexité",
+          "px": 0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "ELEM",
+          "from": "ELEMENTARY ∪ₖ k-EXPTIME",
+          "domain": "complexité",
+          "px": 1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "E",
+          "from": "DTIME(2^O(n)) temps exp linéaire",
+          "domain": "complexité",
+          "px": -1.137,
+          "pz": 1.0659
+        },
+        {
+          "s": "NE",
+          "from": "NTIME(2^O(n))",
+          "domain": "complexité",
+          "px": -0.5685,
+          "pz": 1.0659
+        },
+        {
+          "s": "Tarski",
+          "from": "Indéfinissabilité vérité (Tarski 1936)",
+          "domain": "logique",
+          "px": 0.0,
+          "pz": 1.0659
+        },
+        {
+          "s": "ε₀_ord",
+          "from": "Ordinal ε₀ = ω^ω^ω^… (Gentzen)",
+          "domain": "ordinaux",
+          "px": 0.5685,
+          "pz": 1.0659
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "HYPERARITHMÉTIQUE",
+      "short": "HYP ω₁ᶜᵏ",
+      "formula": "∅⁽α⁾ pour α < ω₁^CK",
+      "desc": "Kleene, Church-Kleene. Le transfini.",
+      "color": [
+        251,
+        146,
+        60
+      ],
+      "yr": 0.34,
+      "opacity": 0.16,
+      "symbols": [
+        {
+          "s": "ω₁ᶜᵏ",
+          "from": "Ordinal Church-Kleene",
+          "domain": "ordinaux",
+          "px": -1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "∅⁽α⁾",
+          "from": "Saut transfinite α",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "Δ¹₁",
+          "from": "Analytique Δ¹₁",
+          "domain": "descriptive",
+          "px": 0.0,
+          "pz": -1.0659
+        },
+        {
+          "s": "Σ¹₁",
+          "from": "Analytique existentiel",
+          "domain": "descriptive",
+          "px": 0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "Π¹₁",
+          "from": "Co-analytique",
+          "domain": "descriptive",
+          "px": 1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "O_Kl",
+          "from": "O de Kleene",
+          "domain": "calculabilité",
+          "px": -1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "HYP",
+          "from": "Hyperarithmétique",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "WO",
+          "from": "Bons ordres (Π¹₁-complet)",
+          "domain": "descriptive",
+          "px": 0.0,
+          "pz": -0.3553
+        },
+        {
+          "s": "Σ¹ₙ",
+          "from": "Hiérarchie projective",
+          "domain": "descriptive",
+          "px": 0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "Π¹ₙ",
+          "from": "Hiérarchie projective dual",
+          "domain": "descriptive",
+          "px": 1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "Det",
+          "from": "Déterminance (Martin)",
+          "domain": "ensembles",
+          "px": -1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "²E",
+          "from": "Fonctionnel type-2 Kleene (caractérise HYP)",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "KP",
+          "from": "Kripke-Platek set theory",
+          "domain": "logique",
+          "px": 0.0,
+          "pz": 0.3553
+        },
+        {
+          "s": "Lα",
+          "from": "Niveaux constructibles admissibles Lω₁ᶜᵏ",
+          "domain": "ensembles",
+          "px": 0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "Borel",
+          "from": "Hiérarchie de Borel (⊂ Δ¹₁)",
+          "domain": "descriptive",
+          "px": 1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "AD",
+          "from": "Axiome de Déterminance",
+          "domain": "ensembles",
+          "px": -1.137,
+          "pz": 1.0659
+        },
+        {
+          "s": "Wadge",
+          "from": "Degrés de Wadge (raffinement de la hiérarchie)",
+          "domain": "descriptive",
+          "px": -0.5685,
+          "pz": 1.0659
+        },
+        {
+          "s": "Spect",
+          "from": "Théorème Spector-Gandy (Π¹₁ = HYP en ω₁ᶜᵏ)",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": 1.0659
+        },
+        {
+          "s": "Σ⁰_α",
+          "from": "Niveau Borel transfinite Σ⁰α",
+          "domain": "descriptive",
+          "px": 0.5685,
+          "pz": 1.0659
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "PLAFOND · Turing 1936",
+      "short": "∞ PLAFOND",
+      "formula": "∄ M décidant l'arrêt — Prouvé.",
+      "desc": "Gödel · Church · Turing. BB(n). Le mur.",
+      "color": [
+        239,
+        68,
+        68
+      ],
+      "yr": 0.46,
+      "opacity": 0.24,
+      "symbols": [
+        {
+          "s": "Ω_Ch",
+          "from": "Constante de Chaitin",
+          "domain": "information",
+          "px": -1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "BB(n)",
+          "from": "Busy Beaver",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "⊥",
+          "from": "Bottom / indécidable",
+          "domain": "logique",
+          "px": 0.0,
+          "pz": -1.0659
+        },
+        {
+          "s": "G_God",
+          "from": "Phrase de Gödel",
+          "domain": "logique",
+          "px": 0.5685,
+          "pz": -1.0659
+        },
+        {
+          "s": "⊢",
+          "from": "Prouvabilité",
+          "domain": "logique",
+          "px": 1.137,
+          "pz": -1.0659
+        },
+        {
+          "s": "⊬",
+          "from": "Non-prouvable dans S",
+          "domain": "logique",
+          "px": -1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "K(x)",
+          "from": "Complexité Kolmogorov",
+          "domain": "information",
+          "px": -0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "HALT",
+          "from": "Problème de l'arrêt",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": -0.3553
+        },
+        {
+          "s": "H10",
+          "from": "Hilbert 10th problem indécidable (Matiyasevich 1970, DPRM)",
+          "domain": "calculabilité",
+          "px": 0.5685,
+          "pz": -0.3553
+        },
+        {
+          "s": "Σ(n)",
+          "from": "Busy Beaver score — max 1s sur bande (Radó 1962)",
+          "domain": "calculabilité",
+          "px": 1.137,
+          "pz": -0.3553
+        },
+        {
+          "s": "WP_grp",
+          "from": "Word Problem groupes (Novikov 1955, Boone 1959)",
+          "domain": "calculabilité",
+          "px": -1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "PCP",
+          "from": "Post Correspondence Problem (Post 1946)",
+          "domain": "calculabilité",
+          "px": -0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "Rice",
+          "from": "Théorème de Rice (propriété sémantique indécidable)",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": 0.3553
+        },
+        {
+          "s": "ETM",
+          "from": "Emptiness {⟨M⟩ : L(M)=∅} indécidable",
+          "domain": "calculabilité",
+          "px": 0.5685,
+          "pz": 0.3553
+        },
+        {
+          "s": "EQTM",
+          "from": "Equivalence {⟨M₁,M₂⟩ : L(M₁)=L(M₂)} indécidable",
+          "domain": "calculabilité",
+          "px": 1.137,
+          "pz": 0.3553
+        },
+        {
+          "s": "S(n)",
+          "from": "Maximum shifts function — max steps (Radó 1962)",
+          "domain": "calculabilité",
+          "px": -1.137,
+          "pz": 1.0659
+        },
+        {
+          "s": "Entsch",
+          "from": "Entscheidungsproblem (Hilbert 1928, réfuté Turing/Church 1936)",
+          "domain": "logique",
+          "px": -0.5685,
+          "pz": 1.0659
+        },
+        {
+          "s": "Diag",
+          "from": "Argument diagonal Cantor/Turing",
+          "domain": "calculabilité",
+          "px": 0.0,
+          "pz": 1.0659
+        },
+        {
+          "s": "Kolm",
+          "from": "Incompressibilité Kolmogorov (pas d'algo pour trouver le plus court)",
+          "domain": "information",
+          "px": 0.5685,
+          "pz": 1.0659
+        },
+        {
+          "s": "Wang",
+          "from": "Wang tiling problem indécidable (Berger 1966, Memoirs AMS)",
+          "domain": "calculabilité",
+          "px": 1.137,
+          "pz": 1.0659
+        }
+      ]
+    }
+  ]
+}
