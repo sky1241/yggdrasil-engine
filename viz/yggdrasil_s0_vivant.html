@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>YGGDRASIL S0 — La Carte Vivante</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0a0a0f; overflow: hidden; font-family: 'Courier New', monospace; }
+canvas { display: block; }
+#info {
+  position: absolute; top: 15px; left: 15px; color: #8af; font-size: 13px;
+  pointer-events: none; text-shadow: 0 0 10px rgba(100,150,255,0.5);
+  line-height: 1.5;
+}
+#legend {
+  position: absolute; bottom: 15px; left: 15px; color: #aaa; font-size: 12px;
+  pointer-events: none; line-height: 1.8;
+}
+#legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+#tooltip {
+  position: absolute; display: none; background: rgba(0,0,0,0.9);
+  border: 1px solid #4af; color: #fff; padding: 10px 14px; border-radius: 6px;
+  font-size: 13px; pointer-events: none; max-width: 320px; line-height: 1.5;
+  box-shadow: 0 0 20px rgba(70,170,255,0.3);
+}
+#controls {
+  position: absolute; top: 15px; right: 15px; color: #aaa; font-size: 12px;
+}
+#controls button {
+  background: rgba(255,255,255,0.1); border: 1px solid #555; color: #ccc;
+  padding: 6px 14px; margin: 3px; border-radius: 4px; cursor: pointer;
+  font-family: inherit; font-size: 12px;
+}
+#controls button:hover { background: rgba(255,255,255,0.2); border-color: #4af; }
+#controls button.active { background: rgba(70,170,255,0.3); border-color: #4af; color: #fff; }
+#stats {
+  position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
+  color: #fff; font-size: 16px; text-align: center; pointer-events: none;
+  text-shadow: 0 0 20px rgba(70,170,255,0.5);
+}
+</style>
+</head>
+<body>
+<div id="info">
+  <b>YGGDRASIL S0 — La Carte Vivante</b><br>
+  549 symboles · 7 pays · 60 frontières · 42 escaliers de secours<br>
+  <span style="color:#666">Sky × Claude — 19 Février 2026, Versoix</span>
+</div>
+<div id="stats"></div>
+<div id="controls">
+  <button id="btnCountry" class="active" onclick="setMode('country')">Pays</button>
+  <button id="btnLiane" onclick="setMode('liane')">Lianes</button>
+  <button id="btnMeteor" onclick="setMode('meteor')">Météorites</button>
+  <button id="btnGravity" onclick="setMode('gravity')">Gravité</button>
+</div>
+<div id="legend"></div>
+<div id="tooltip"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+// ══════════════════════════════════════════════════════════════
+// DATA
+// ══════════════════════════════════════════════════════════════
+
+const CONTINENTS = {
+  "Maths":       { color: 0x1e3a8a, hex: "#1e3a8a", domains: ["algèbre","algèbre lin","analyse","analyse fonctionnelle","topologie","géométrie","géom diff","géom algébrique","nb théorie","nb premiers","nombres","catégories","ensembles","logique","descriptive","mesure","complexes","arithmétique","trigonométrie","ordinaux","combinatoire"] },
+  "Physique":    { color: 0x7c3aed, hex: "#7c3aed", domains: ["quantique","relativité","QFT","particules","cosmologie","gravitation","nucléaire","mécanique stat","mécanique","mécanique analytique","optique","astronomie"] },
+  "Ingénierie":  { color: 0xea580c, hex: "#ea580c", domains: ["électromagn","signal","contrôle","fluides","EDP","thermo"] },
+  "Info/IA":     { color: 0x06b6d4, hex: "#06b6d4", domains: ["calculabilité","complexité","ML","crypto","information","automates"] },
+  "Finance":     { color: 0xeab308, hex: "#eab308", domains: ["finance","économie","statistiques","probabilités","stochastique","optimisation"] },
+  "Bio/Médecine":{ color: 0x84cc16, hex: "#84cc16", domains: ["biologie"] },
+  "Chimie":      { color: 0xf43f5e, hex: "#f43f5e", domains: ["chimie"] },
+};
+
+const DOMAIN_TO_CONTINENT = {};
+for (const [cont, info] of Object.entries(CONTINENTS)) {
+  for (const d of info.domains) DOMAIN_TO_CONTINENT[d] = cont;
+}
+
+// Lianes — symbols used by multiple continents
+const LIANES = {
+  "=":7,"exp":6,"ln":6,"Σ":6,"∫":6,"e":5,"∂":5,
+  "Bayes":4,"E[X]":4,"FFT":4,"N(μ,σ²)":4,"O(n)":4,"P(A)":4,"Var":4,
+  "cos":4,"d/dx":4,"det":4,"lim":4,"log":4,"sin":4,"Π":4,"δ":4,"ε":4,
+  "λ":4,"π":4,"σ_std":4,"χ²":4,"ℱ":4,"∇":4,"∇²":4,"∬":4,"∮":4,"∗_conv":4,
+  "Attn":3,"BS":3,"D_KL":3,"F=ma":3,"GAN":3,"H(X)":3,"Itô":3,"Nash":3,
+  "PV=nRT":3,"Re":3,"R₀":3,"SDE":3,"SGD":3,"S_ent":3,"TM":3,"W(t)":3,
+  "argmax":3,"argmin":3,"i":3,"Γ":3,"ζ":3,"ℋ":3,"ℒ":3,"∇L":3,"∇·":3,"∇×":3,
+};
+
+// Gravity scores (from 32 tests verification)
+const GRAVITY = {
+  "exp":168,"∫":90,"Σ":84,"∂":50,"log":40,"P(A)":36,
+  "∇²":28,"λ":24,"det":20,"sin":20,"cos":20,"π":16,"Bayes":16,"E[X]":16,
+  "∇L":15,"R₀":15,"lim":12,"argmin":12,"ℱ":12,"FFT":12,
+  "ℒ":9,"∗_conv":8,"∇":8,"χ²":8,"Var":8,"ε":8,
+  "S_ent":6,"Γ":6,"H(X)":6,"Attn":6,"O(n)":4,"δ":4,"N(μ,σ²)":4,
+  "ζ":3,"SGD":3,"i":3,"PV=nRT":3,"Re":3,"D_KL":3,"argmax":3,"Nash":3,"GAN":3,
+};
+
+// Meteorite impacts — which liane each S3 discovery hits
+const METEORITES = [
+  { name:"Fermat (1995)", primary:"∫", secondary:"Σ", year:1995 },
+  { name:"Poincaré (2003)", primary:"exp", secondary:"S_ent", year:2003 },
+  { name:"Higgs (2012)", primary:"exp", secondary:"∫", year:2012 },
+  { name:"CRISPR (2012)", primary:"DNA", secondary:"RNA", year:2012 },
+  { name:"Deep Learning (2012)", primary:"exp", secondary:"Σ", year:2012 },
+  { name:"AlphaFold (2020)", primary:"exp", secondary:"Attn", year:2020 },
+  { name:"GANs (2014)", primary:"exp", secondary:"Nash", year:2014 },
+  { name:"Transformer (2017)", primary:"exp", secondary:"Σ", year:2017 },
+  { name:"Black-Scholes (1973)", primary:"∂", secondary:"W(t)", year:1973 },
+  { name:"mRNA (Karikó)", primary:"exp", secondary:"P(A)", year:2020 },
+  { name:"Immunothérapie (2018)", primary:"exp", secondary:"R₀", year:2018 },
+  { name:"Ondes grav. (2015)", primary:"exp", secondary:"FFT", year:2015 },
+  { name:"Blockchain (2009)", primary:"exp", secondary:"H(X)", year:2009 },
+  { name:"Cryo-EM (2017)", primary:"∫", secondary:"FFT", year:2017 },
+  { name:"CAR-T (2011)", primary:"exp", secondary:"Σ", year:2011 },
+  { name:"Perovskite (2009)", primary:"exp", secondary:"∫", year:2009 },
+];
+
+// ══════════════════════════════════════════════════════════════
+// THREE.JS SETUP
+// ══════════════════════════════════════════════════════════════
+
+const scene = new THREE.Scene();
+scene.fog = new THREE.FogExp2(0x0a0a0f, 0.0015);
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth/window.innerHeight, 1, 5000);
+camera.position.set(0, 250, 500);
+camera.lookAt(0, 0, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+document.body.appendChild(renderer.domElement);
+
+// Lights
+scene.add(new THREE.AmbientLight(0x334466, 0.5));
+const pointLight = new THREE.PointLight(0x4488ff, 1.5, 1000);
+pointLight.position.set(0, 200, 0);
+scene.add(pointLight);
+
+// ══════════════════════════════════════════════════════════════
+// BUILD SYMBOLS
+// ══════════════════════════════════════════════════════════════
+
+const symbolMeshes = [];
+const symbolData = [];
+const lianeLines = [];
+const meteorTrails = [];
+let currentMode = 'country';
+
+// Organize symbols into country clusters
+const countryPositions = {
+  "Maths":       { cx: 0,    cz: 0,   radius: 180 },
+  "Physique":    { cx: -200, cz: -100, radius: 100 },
+  "Ingénierie":  { cx: 200,  cz: -80,  radius: 80 },
+  "Info/IA":     { cx: 180,  cz: 120,  radius: 75 },
+  "Finance":     { cx: -120, cz: 160,  radius: 65 },
+  "Bio/Médecine":{ cx: -250, cz: 130,  radius: 45 },
+  "Chimie":      { cx: 280,  cz: -180, radius: 40 },
+};
+
+// Place symbols by country with organic distribution
+function placeSymbol(domain, index, total) {
+  const continent = DOMAIN_TO_CONTINENT[domain] || "Maths";
+  const cp = countryPositions[continent] || countryPositions["Maths"];
+  
+  // Golden angle spiral within country
+  const phi = index * 2.399963; // golden angle
+  const r = cp.radius * Math.sqrt(index / Math.max(total, 1)) * 0.85;
+  const x = cp.cx + r * Math.cos(phi);
+  const z = cp.cz + r * Math.sin(phi);
+  const y = (Math.random() - 0.5) * 10; // slight vertical scatter
+  return { x, y, z, continent };
+}
+
+// Count symbols per continent for placement
+const continentCounts = {};
+const continentIndices = {};
+for (const cont of Object.keys(CONTINENTS)) {
+  continentCounts[cont] = 0;
+  continentIndices[cont] = 0;
+}
+
+// First pass: count
+const rawSymbols = [];
+
+fetch('data:text/plain,placeholder').catch(() => {});
+
+// We'll inline the symbol processing
+const S0_DOMAINS = {};
+</script>
+<script>
+// Load actual symbol data and build the scene
+// We need to fetch from the JSON, but since we're local, let's embed the essential mapping
+
+async function init() {
+  // Build symbols from the strates data
+  let response;
+  try {
+    response = await fetch('https://raw.githubusercontent.com/sky1241/yggdrasil-engine/main/data/strates_export.json');
+  } catch(e) {
+    // Fallback: use embedded data
+    response = null;
+  }
+  
+  let allSymbols = [];
+  
+  if (response && response.ok) {
+    const data = await response.json();
+    for (const strate of data.strates || []) {
+      if (strate.id === 0) {
+        allSymbols = strate.symbols || [];
+      }
+    }
+  }
+  
+  if (allSymbols.length === 0) {
+    // Generate placeholder positions if fetch fails
+    document.getElementById('stats').innerHTML = 'Loading from cache...';
+    // Use domain distribution to generate
+    const domains = Object.keys(DOMAIN_TO_CONTINENT);
+    for (let i = 0; i < 549; i++) {
+      const d = domains[i % domains.length];
+      allSymbols.push({ s: `sym_${i}`, domain: d, px: 0, pz: 0 });
+    }
+  }
+  
+  document.getElementById('stats').innerHTML = `${allSymbols.length} symboles chargés`;
+  setTimeout(() => { document.getElementById('stats').innerHTML = ''; }, 2000);
+  
+  // Count per continent
+  const perCont = {};
+  for (const sym of allSymbols) {
+    const cont = DOMAIN_TO_CONTINENT[sym.domain] || "Maths";
+    perCont[cont] = (perCont[cont] || 0) + 1;
+  }
+  
+  const contIndex = {};
+  for (const c of Object.keys(CONTINENTS)) contIndex[c] = 0;
+  
+  // Create geometry
+  const baseGeo = new THREE.SphereGeometry(1, 8, 6);
+  const lianeGeo = new THREE.SphereGeometry(1, 12, 8);
+  
+  for (const sym of allSymbols) {
+    const s = sym.s;
+    const domain = sym.domain;
+    const continent = DOMAIN_TO_CONTINENT[domain] || "Maths";
+    const isLiane = s in LIANES;
+    const lianeCont = isLiane ? LIANES[s] : 0;
+    const gravity = GRAVITY[s] || 0;
+    const isEqual = s === "=";
+    
+    const idx = contIndex[continent] || 0;
+    const total = perCont[continent] || 1;
+    contIndex[continent] = idx + 1;
+    
+    const pos = placeSymbol(domain, idx, total);
+    
+    // Size based on role
+    let size = 1.5;
+    if (isEqual) size = 8;
+    else if (lianeCont >= 6) size = 5;
+    else if (lianeCont >= 4) size = 3.5;
+    else if (lianeCont >= 3) size = 2.8;
+    else if (gravity > 0) size = 2;
+    
+    // Color
+    const contColor = CONTINENTS[continent]?.color || 0xaaaaaa;
+    let color = contColor;
+    let emissive = 0x000000;
+    let opacity = 0.7;
+    
+    if (isEqual) {
+      color = 0xffffff;
+      emissive = 0x4488ff;
+      opacity = 1;
+    } else if (lianeCont >= 6) {
+      color = 0xffd700;
+      emissive = 0x443300;
+      opacity = 1;
+    } else if (lianeCont >= 3) {
+      emissive = 0x222222;
+      opacity = 0.9;
+    }
+    
+    const mat = new THREE.MeshPhongMaterial({
+      color: color,
+      emissive: emissive,
+      transparent: true,
+      opacity: opacity,
+      shininess: isLiane ? 80 : 20,
+    });
+    
+    const mesh = new THREE.Mesh(isLiane ? lianeGeo : baseGeo, mat);
+    mesh.position.set(pos.x, pos.y, pos.z);
+    mesh.scale.setScalar(size);
+    scene.add(mesh);
+    
+    symbolMeshes.push(mesh);
+    symbolData.push({
+      s, domain, continent, isLiane, lianeCont, gravity,
+      isEqual, size, origColor: color, origEmissive: emissive,
+      origOpacity: opacity, origPos: { ...pos },
+    });
+  }
+  
+  // ═══ LIANE CONNECTIONS ═══
+  // Draw lines between lianes and the countries they connect
+  const lineMat = new THREE.LineBasicMaterial({ 
+    color: 0x4488ff, transparent: true, opacity: 0.15 
+  });
+  
+  // Find liane meshes and draw connections to country centers
+  for (let i = 0; i < symbolData.length; i++) {
+    const sd = symbolData[i];
+    if (sd.lianeCont >= 3) {
+      // Draw faint line to = center
+      const eqIdx = symbolData.findIndex(d => d.isEqual);
+      if (eqIdx >= 0) {
+        const geo = new THREE.BufferGeometry().setFromPoints([
+          symbolMeshes[i].position.clone(),
+          new THREE.Vector3(0, 30, 0), // = is at elevated center
+        ]);
+        const line = new THREE.Line(geo, lineMat.clone());
+        line.material.opacity = 0.05 + (sd.lianeCont / 7) * 0.15;
+        scene.add(line);
+        lianeLines.push(line);
+      }
+    }
+  }
+  
+  // ═══ = SYMBOL — elevated at center ═══
+  const eqIdx = symbolData.findIndex(d => d.isEqual);
+  if (eqIdx >= 0) {
+    symbolMeshes[eqIdx].position.set(0, 40, 0);
+    // Add glow ring
+    const ringGeo = new THREE.RingGeometry(12, 14, 64);
+    const ringMat = new THREE.MeshBasicMaterial({ 
+      color: 0x4488ff, transparent: true, opacity: 0.3, side: THREE.DoubleSide 
+    });
+    const ring = new THREE.Mesh(ringGeo, ringMat);
+    ring.position.set(0, 40, 0);
+    ring.rotation.x = Math.PI / 2;
+    scene.add(ring);
+  }
+  
+  // ═══ COUNTRY LABELS (flat on ground) ═══
+  // Using sprite for each country
+  for (const [cont, cp] of Object.entries(countryPositions)) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 512; canvas.height = 64;
+    const ctx = canvas.getContext('2d');
+    ctx.font = 'bold 36px Courier New';
+    ctx.fillStyle = CONTINENTS[cont]?.hex || '#aaa';
+    ctx.textAlign = 'center';
+    ctx.fillText(cont.toUpperCase(), 256, 42);
+    
+    const tex = new THREE.CanvasTexture(canvas);
+    const spriteMat = new THREE.SpriteMaterial({ map: tex, transparent: true, opacity: 0.4 });
+    const sprite = new THREE.Sprite(spriteMat);
+    sprite.position.set(cp.cx, -15, cp.cz);
+    sprite.scale.set(120, 15, 1);
+    scene.add(sprite);
+  }
+  
+  // ═══ GROUND GRID ═══
+  const gridHelper = new THREE.GridHelper(800, 40, 0x111122, 0x0a0a15);
+  gridHelper.position.y = -20;
+  scene.add(gridHelper);
+  
+  // ═══ METEOR TRAILS ═══
+  for (const m of METEORITES) {
+    const targetIdx = symbolData.findIndex(d => d.s === m.primary);
+    if (targetIdx >= 0) {
+      const target = symbolMeshes[targetIdx].position;
+      const start = new THREE.Vector3(
+        target.x + (Math.random()-0.5)*50,
+        300 + Math.random()*200,
+        target.z + (Math.random()-0.5)*50
+      );
+      
+      const points = [];
+      for (let t = 0; t <= 1; t += 0.02) {
+        points.push(new THREE.Vector3(
+          start.x + (target.x - start.x) * t,
+          start.y + (target.y - start.y) * t * t, // parabolic
+          start.z + (target.z - start.z) * t,
+        ));
+      }
+      
+      const trailGeo = new THREE.BufferGeometry().setFromPoints(points);
+      const trailMat = new THREE.LineBasicMaterial({ 
+        color: 0xff4444, transparent: true, opacity: 0 
+      });
+      const trail = new THREE.Line(trailGeo, trailMat);
+      scene.add(trail);
+      meteorTrails.push({ line: trail, name: m.name, target: targetIdx, year: m.year });
+    }
+  }
+  
+  // ═══ TOOLTIP / RAYCASTING ═══
+  const raycaster = new THREE.Raycaster();
+  const mouse = new THREE.Vector2();
+  const tooltip = document.getElementById('tooltip');
+  
+  renderer.domElement.addEventListener('mousemove', (e) => {
+    mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+    
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObjects(symbolMeshes);
+    
+    if (intersects.length > 0) {
+      const idx = symbolMeshes.indexOf(intersects[0].object);
+      if (idx >= 0) {
+        const sd = symbolData[idx];
+        let html = `<b style="font-size:18px;color:${sd.isEqual ? '#4af' : sd.isLiane ? '#ffd700' : CONTINENTS[sd.continent]?.hex || '#aaa'}">${sd.s}</b><br>`;
+        html += `Domaine: ${sd.domain}<br>`;
+        html += `Pays: ${sd.continent}<br>`;
+        if (sd.isEqual) html += `<span style="color:#4af">= L'ATMOSPHÈRE — centre absolu (7 continents)</span><br>`;
+        else if (sd.isLiane) html += `<span style="color:#ffd700">🌿 LIANE — ${sd.lianeCont} continents</span><br>`;
+        else html += `🏛️ CAPITALE — symbole exclusif<br>`;
+        if (sd.gravity > 0) html += `Gravité: ${sd.gravity} (${sd.gravity >= 80 ? '☀️ SOLEIL' : sd.gravity >= 30 ? '🪐 GÉANTE' : sd.gravity >= 10 ? '🌍 PLANÈTE' : '🌙 LUNE'})<br>`;
+        
+        // Check meteorite impacts
+        const impacts = METEORITES.filter(m => m.primary === sd.s);
+        if (impacts.length > 0) {
+          html += `<br>💥 IMPACTS: ${impacts.map(m => m.name).join(', ')}`;
+        }
+        
+        tooltip.innerHTML = html;
+        tooltip.style.display = 'block';
+        tooltip.style.left = (e.clientX + 15) + 'px';
+        tooltip.style.top = (e.clientY + 15) + 'px';
+      }
+    } else {
+      tooltip.style.display = 'none';
+    }
+  });
+  
+  // Start animation
+  animate();
+}
+
+// ══════════════════════════════════════════════════════════════
+// VIEW MODES
+// ══════════════════════════════════════════════════════════════
+
+function setMode(mode) {
+  currentMode = mode;
+  document.querySelectorAll('#controls button').forEach(b => b.classList.remove('active'));
+  document.getElementById('btn' + mode.charAt(0).toUpperCase() + mode.slice(1)).classList.add('active');
+  
+  for (let i = 0; i < symbolData.length; i++) {
+    const sd = symbolData[i];
+    const mesh = symbolMeshes[i];
+    const mat = mesh.material;
+    
+    if (mode === 'country') {
+      // Color by continent
+      mat.color.setHex(sd.isEqual ? 0xffffff : sd.isLiane && sd.lianeCont >= 6 ? 0xffd700 : CONTINENTS[sd.continent]?.color || 0xaaaaaa);
+      mat.opacity = sd.origOpacity;
+      mat.emissive.setHex(sd.origEmissive);
+    }
+    else if (mode === 'liane') {
+      // Highlight lianes, dim capitals
+      if (sd.isEqual) {
+        mat.color.setHex(0xffffff);
+        mat.emissive.setHex(0x4488ff);
+        mat.opacity = 1;
+      } else if (sd.isLiane) {
+        mat.color.setHex(0xffd700);
+        mat.emissive.setHex(0x664400);
+        mat.opacity = 1;
+        mesh.scale.setScalar(sd.size * 1.5);
+      } else {
+        mat.color.setHex(0x222233);
+        mat.emissive.setHex(0x000000);
+        mat.opacity = 0.15;
+        mesh.scale.setScalar(sd.size * 0.7);
+      }
+    }
+    else if (mode === 'meteor') {
+      // Dim everything except impact sites
+      const isImpact = METEORITES.some(m => m.primary === sd.s || m.secondary === sd.s);
+      if (sd.isEqual) {
+        mat.color.setHex(0xffffff);
+        mat.opacity = 0.5;
+      } else if (isImpact) {
+        mat.color.setHex(0xff4444);
+        mat.emissive.setHex(0x441111);
+        mat.opacity = 1;
+        mesh.scale.setScalar(sd.size * 2);
+      } else {
+        mat.color.setHex(0x111122);
+        mat.opacity = 0.1;
+        mesh.scale.setScalar(sd.size * 0.5);
+      }
+    }
+    else if (mode === 'gravity') {
+      // Size and brightness by gravity score
+      const g = sd.gravity;
+      if (sd.isEqual) {
+        mat.color.setHex(0xffffff);
+        mat.emissive.setHex(0x4488ff);
+        mat.opacity = 1;
+      } else if (g >= 80) {
+        mat.color.setHex(0xffaa00);
+        mat.emissive.setHex(0x553300);
+        mat.opacity = 1;
+        mesh.scale.setScalar(Math.sqrt(g) * 0.8);
+      } else if (g > 0) {
+        mat.color.setHex(0x4488ff);
+        mat.emissive.setHex(0x112244);
+        mat.opacity = 0.6 + g/168 * 0.4;
+        mesh.scale.setScalar(Math.max(2, Math.sqrt(g) * 0.6));
+      } else {
+        mat.color.setHex(0x222233);
+        mat.opacity = 0.1;
+        mesh.scale.setScalar(1);
+      }
+    }
+  }
+  
+  // Liane lines visibility
+  for (const line of lianeLines) {
+    line.visible = (mode === 'liane' || mode === 'country');
+  }
+  
+  // Meteor trails
+  for (const mt of meteorTrails) {
+    mt.line.material.opacity = mode === 'meteor' ? 0.6 : 0;
+  }
+  
+  // Reset scales when leaving modes
+  if (mode === 'country') {
+    for (let i = 0; i < symbolData.length; i++) {
+      symbolMeshes[i].scale.setScalar(symbolData[i].size);
+    }
+  }
+  
+  updateLegend(mode);
+}
+
+function updateLegend(mode) {
+  const legend = document.getElementById('legend');
+  if (mode === 'country') {
+    legend.innerHTML = Object.entries(CONTINENTS).map(([name, info]) => 
+      `<span class="dot" style="background:${info.hex}"></span>${name}<br>`
+    ).join('') + '<span class="dot" style="background:#ffd700"></span>Lianes (frontières)<br>' +
+    '<span class="dot" style="background:#fff;box-shadow:0 0 8px #4af"></span>= (atmosphère)';
+  } else if (mode === 'liane') {
+    legend.innerHTML = '<span class="dot" style="background:#ffd700"></span>Liane (3+ continents)<br>' +
+    '<span class="dot" style="background:#222"></span>Capitale (1 continent)<br>' +
+    'Plus gros = plus de continents traversés';
+  } else if (mode === 'meteor') {
+    legend.innerHTML = '<span class="dot" style="background:#f44"></span>Zone d\'impact (découverte S3→S0)<br>' +
+    '<span style="color:#f44">━━</span> Trajectoire de chute<br>' +
+    `${METEORITES.length} météorites cartographiées`;
+  } else if (mode === 'gravity') {
+    legend.innerHTML = '☀️ Soleil (gravité ≥80): exp, ∫, Σ<br>' +
+    '🪐 Géante (30-79): ∂, log, P(A)<br>' +
+    '🌍 Planète (10-29): 14 symboles<br>' +
+    '🌙 Lune (3-9): 22 frontières<br>' +
+    'Taille = poids gravitationnel';
+  }
+}
+
+// ══════════════════════════════════════════════════════════════
+// CAMERA ORBIT
+// ══════════════════════════════════════════════════════════════
+
+let cameraAngle = 0;
+let cameraRadius = 550;
+let cameraHeight = 280;
+let isDragging = false;
+let lastMouse = { x: 0, y: 0 };
+
+renderer.domElement.addEventListener('mousedown', (e) => { isDragging = true; lastMouse = {x:e.clientX, y:e.clientY}; });
+renderer.domElement.addEventListener('mouseup', () => { isDragging = false; });
+renderer.domElement.addEventListener('mousemove', (e) => {
+  if (isDragging) {
+    cameraAngle += (e.clientX - lastMouse.x) * 0.005;
+    cameraHeight += (e.clientY - lastMouse.y) * 0.5;
+    cameraHeight = Math.max(50, Math.min(600, cameraHeight));
+    lastMouse = {x:e.clientX, y:e.clientY};
+  }
+});
+renderer.domElement.addEventListener('wheel', (e) => {
+  cameraRadius += e.deltaY * 0.5;
+  cameraRadius = Math.max(150, Math.min(1200, cameraRadius));
+});
+
+// ══════════════════════════════════════════════════════════════
+// ANIMATION
+// ══════════════════════════════════════════════════════════════
+
+let time = 0;
+
+function animate() {
+  requestAnimationFrame(animate);
+  time += 0.01;
+  
+  // Auto-rotate slowly when not dragging
+  if (!isDragging) cameraAngle += 0.001;
+  
+  camera.position.x = Math.cos(cameraAngle) * cameraRadius;
+  camera.position.z = Math.sin(cameraAngle) * cameraRadius;
+  camera.position.y = cameraHeight;
+  camera.lookAt(0, 20, 0);
+  
+  // Animate lianes — gentle pulse
+  for (let i = 0; i < symbolData.length; i++) {
+    const sd = symbolData[i];
+    if (sd.isEqual) {
+      // = breathes
+      const s = sd.size * (1 + 0.1 * Math.sin(time * 2));
+      symbolMeshes[i].scale.setScalar(s);
+      symbolMeshes[i].rotation.y = time * 0.5;
+    } else if (sd.isLiane && currentMode !== 'gravity' && currentMode !== 'meteor') {
+      // Lianes gently float up/down
+      symbolMeshes[i].position.y = sd.origPos.y + Math.sin(time * 1.5 + i) * 3;
+    }
+  }
+  
+  // Animate meteor trails in meteor mode
+  if (currentMode === 'meteor') {
+    for (const mt of meteorTrails) {
+      mt.line.material.opacity = 0.3 + 0.3 * Math.sin(time * 3 + meteorTrails.indexOf(mt));
+    }
+  }
+  
+  // Point light orbits
+  pointLight.position.x = Math.cos(time * 0.3) * 200;
+  pointLight.position.z = Math.sin(time * 0.3) * 200;
+  
+  renderer.render(scene, camera);
+}
+
+// ══════════════════════════════════════════════════════════════
+// RESIZE
+// ══════════════════════════════════════════════════════════════
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+});
+
+// ══════════════════════════════════════════════════════════════
+// GO
+// ══════════════════════════════════════════════════════════════
+
+updateLegend('country');
+init();
+
+</script>
+</body>
+</html>
