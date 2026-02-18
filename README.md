@@ -62,3 +62,31 @@ python server.py
 ## Auteur
 
 Sky — Versoix, CH — 2025-2026
+
+
+---
+
+## 🌿 LIANES — Les Escaliers de Secours
+
+> "Perelman n'a pas pris l'ascenseur central. Il a pris la liane entropie."
+
+Les symboles S0 utilisés par PLUSIEURS corps de métier sont les **lianes** — les escaliers de secours vers S3.
+
+### Distribution
+
+| Type | Count | Description |
+|------|-------|-------------|
+| 🌿🌿🌿 Universelle | 5 | 6+ continents (=, exp, ln, Σ, ∫) |
+| 🌿🌿 Majeure | 29 | 4-5 continents |
+| 🌿 Liane | 26 | 3 continents |
+| 🌱 Pont | 9 | 2 continents |
+| · Local | 480 | 1 continent |
+
+### Validation: 9/10 découvertes S3 utilisent des lianes multi-continents
+
+Seule exception: CRISPR (pont biologique pur, pas mathématique).
+
+```bash
+python engine/lianes.py
+# → Analyse complète + export JSON
+```
