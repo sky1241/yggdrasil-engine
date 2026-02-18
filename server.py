@@ -47,6 +47,11 @@ def data():
     return send_from_directory("viz", "data.json")
 
 
+@app.route("/three.min.js")
+def threejs():
+    return send_from_directory("viz", "three.min.js")
+
+
 @app.route("/api/stats")
 def stats():
     return jsonify(db.stats())
@@ -107,7 +112,7 @@ def hole_search():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
-    print(f"\n🌳 YGGDRASIL ENGINE v0.1.0")
-    print(f"   {len(db.symbols)} symboles × 7 strates")
+    print(f"\n[YGGDRASIL] ENGINE v0.1.0")
+    print(f"   {len(db.symbols)} symboles x 7 strates")
     print(f"   http://localhost:{port}\n")
     app.run(host="0.0.0.0", port=port, debug=True)

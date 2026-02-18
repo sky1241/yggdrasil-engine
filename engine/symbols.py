@@ -146,16 +146,38 @@ class SymbolDatabase:
         }
     
     def export_viz_json(self, filepath=None) -> dict:
-        """Exporte les données pour la visualisation 3D."""
+        """Exporte les données pour la visualisation 3D.
+        Garde les positions px/pz originales (spectrales) et ajoute le continent."""
+        from engine.holes import CONTINENTS
+
+        # Build domain -> continent lookup
+        continent_order = [
+            ("Mathématiques Pures", "#1e3a8a"),
+            ("Physique Fondamentale", "#7c3aed"),
+            ("Ingénierie & Électricité", "#ea580c"),
+            ("Informatique & IA", "#06b6d4"),
+            ("Finance & Économie", "#eab308"),
+            ("Biologie & Médecine", "#84cc16"),
+            ("Chimie", "#f43f5e"),
+        ]
+        domain_to_continent = {}
+        for ci, (cname, _color) in enumerate(continent_order):
+            for dom in CONTINENTS.get(cname, []):
+                domain_to_continent[dom] = ci
+
         viz_data = {
             "meta": {
                 "total": len(self.symbols),
                 "strate_counts": [len(self._by_strate[i]) for i in range(7)],
             },
             "strates": [],
+            "continents": [
+                {"name": name, "color": color}
+                for name, color in continent_order
+            ],
             "symbols": [],
         }
-        
+
         for i in range(7):
             viz_data["strates"].append({
                 "id": i,
@@ -163,17 +185,19 @@ class SymbolDatabase:
                 "center": STRATE_CENTERS[i],
                 "color": list(STRATE_COLORS[i]),
                 "count": len(self._by_strate[i]),
-                "y": -1.4 + i * 0.4,  # hauteur dans le cube
+                "y": -1.4 + i * 0.4,
             })
-        
+
         for sym in self.symbols:
-            viz_data["symbols"].append(sym.to_dict())
-        
+            d = sym.to_dict()
+            d["continent"] = domain_to_continent.get(sym.domain, -1)
+            viz_data["symbols"].append(d)
+
         if filepath:
             with open(filepath, 'w', encoding='utf-8') as f:
                 json.dump(viz_data, f, ensure_ascii=False, indent=2)
             print(f"[YGGDRASIL] Exported viz data to {filepath}")
-        
+
         return viz_data
 
 

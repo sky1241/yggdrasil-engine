@@ -2,372 +2,507 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>YGGDRASIL — 794 Symboles × 7 Strates</title>
+<title>YGGDRASIL — La Pluie</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: #0a0a0f; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; }
-canvas { display: block; }
+body { background: #080810; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; }
+canvas { display: block; position: fixed; top: 0; left: 0; }
+
+#title-bar {
+  position: fixed; top: 12px; left: 15px; z-index: 10;
+  font-size: 11px; max-width: 500px;
+}
+#title-bar h2 { color: #4ade80; font-size: 16px; letter-spacing: 2px; }
+#title-bar .stats { color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+#title-bar .sub { color: #444; font-size: 9px; margin-top: 1px; }
 
 #legend {
   position: fixed; top: 15px; right: 15px; z-index: 10;
-  background: rgba(0,0,0,0.85); padding: 15px; border: 1px solid #333;
-  font-size: 11px; min-width: 200px;
+  font-size: 10px;
 }
-#legend h3 { color: #f90; margin-bottom: 8px; font-size: 13px; }
-.legend-row { display: flex; align-items: center; margin: 4px 0; }
-.legend-dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; flex-shrink: 0; }
-.legend-label { color: #aaa; flex: 1; }
-.legend-count { color: #666; margin-left: 8px; }
-
-#title-bar {
-  position: fixed; top: 15px; left: 15px; z-index: 10;
-  background: rgba(0,0,0,0.85); padding: 15px; border: 1px solid #333;
-  font-size: 11px; max-width: 380px;
-}
-#title-bar h2 { color: #4ade80; margin-bottom: 5px; font-size: 15px; }
-#title-bar .sub { color: #666; font-size: 10px; }
+.legend-row { display: flex; align-items: center; margin: 3px 0; cursor: default; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; flex-shrink: 0; }
+.legend-label { color: #666; }
+.legend-count { color: #444; margin-left: 6px; }
+.legend-sep { border-top: 1px solid #333; margin: 6px 0; }
 
 #hover-info {
-  position: fixed; bottom: 15px; left: 15px; z-index: 10;
-  background: rgba(0,0,0,0.92); padding: 12px 15px; border: 1px solid #f90;
-  font-size: 12px; display: none; max-width: 350px;
+  position: fixed; bottom: 60px; left: 15px; z-index: 10;
+  background: rgba(0,0,0,0.88); padding: 12px 18px; border-left: 3px solid #f90;
+  font-size: 11px; display: none; max-width: 400px;
 }
-#hover-info .sym { font-size: 22px; margin-right: 10px; }
-#hover-info .name { color: #fff; }
-#hover-info .domain { color: #888; }
-#hover-info .strate-tag { 
-  display: inline-block; padding: 1px 6px; border-radius: 3px; 
-  font-size: 10px; margin-left: 5px; 
+#hover-info .strate-name { font-size: 14px; font-weight: bold; margin-bottom: 4px; }
+#hover-info .strate-desc { color: #888; font-size: 10px; margin-bottom: 4px; }
+#hover-info .sym-char { font-size: 28px; margin-right: 8px; vertical-align: middle; }
+#hover-info .sym-name { color: #ccc; }
+#hover-info .sym-domain { color: #666; font-size: 10px; }
+#hover-info .sym-meta { color: #444; font-size: 9px; margin-top: 4px; }
+#hover-info .continent-tag {
+  display: inline-block; padding: 1px 6px; border-radius: 3px;
+  font-size: 9px; margin-top: 4px;
+}
+
+#bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+  background: rgba(0,0,0,0.7); padding: 6px 15px;
+  font-size: 9px; color: #444; display: flex; justify-content: space-between;
+  border-top: 1px solid #1a1a2e;
 }
 
 #controls {
-  position: fixed; bottom: 15px; right: 15px; z-index: 10;
-  background: rgba(0,0,0,0.85); padding: 10px; border: 1px solid #333;
-  font-size: 10px;
+  position: fixed; bottom: 40px; right: 15px; z-index: 10;
+  font-size: 9px;
 }
-#controls label { color: #888; display: block; margin: 3px 0; }
-#controls input[type=range] { width: 120px; }
+#controls label { color: #555; display: block; margin: 2px 0; }
+#controls input[type=range] { width: 100px; vertical-align: middle; }
+#controls input[type=checkbox] { vertical-align: middle; }
+#controls .color-mode { margin-top: 6px; padding-top: 6px; border-top: 1px solid #333; }
+#controls .color-mode span { color: #888; font-size: 10px; }
+#controls .mode-btn {
+  background: none; border: 1px solid #444; color: #888; padding: 2px 8px;
+  font-family: 'Courier New', monospace; font-size: 9px; cursor: pointer; margin: 2px 2px;
+}
+#controls .mode-btn.active { border-color: #4ade80; color: #4ade80; }
+#controls .mode-btn:hover { border-color: #666; color: #aaa; }
+
+#strate-indicator {
+  position: fixed; top: 15px; right: 220px; z-index: 10;
+  font-size: 10px; color: #555; text-align: right;
+}
 </style>
 </head>
 <body>
 
 <div id="title-bar">
-  <h2>🌳 YGGDRASIL</h2>
-  <div>794 symboles · 7 strates · 52 domaines</div>
-  <div class="sub">Hiérarchie arithmétique (Post 1944) × Science of Science</div>
+  <h2>Yggdrasil &middot; La Pluie</h2>
+  <div class="stats"></div>
+  <div class="sub">Hierarchie arithmetique (Post 1944) &times; Science of Science</div>
 </div>
 
+<div id="strate-indicator"></div>
 <div id="legend"></div>
 
 <div id="hover-info">
-  <span class="sym"></span>
-  <span class="name"></span><br>
-  <span class="domain"></span>
-  <span class="strate-tag"></span>
+  <div class="strate-name"></div>
+  <div class="strate-desc"></div>
+  <hr style="border:none;border-top:1px solid #333;margin:6px 0">
+  <span class="sym-char"></span>
+  <span class="sym-name"></span><br>
+  <span class="sym-domain"></span>
+  <div class="sym-meta"></div>
+  <div class="continent-tag"></div>
 </div>
 
 <div id="controls">
-  <label>Rotation: <input type="range" id="speed" min="0" max="100" value="30"></label>
-  <label>Taille symboles: <input type="range" id="symsize" min="1" max="20" value="8"></label>
+  <label>Rotation: <input type="range" id="speed" min="0" max="100" value="20"></label>
+  <label>Taille: <input type="range" id="symsize" min="1" max="30" value="12"></label>
   <label><input type="checkbox" id="showPlanes" checked> Plans strates</label>
   <label><input type="checkbox" id="showLabels" checked> Labels centres</label>
+  <div class="color-mode">
+    <span>Couleur:</span><br>
+    <button class="mode-btn active" id="modeStrate" onclick="setColorMode('strate')">Strate</button>
+    <button class="mode-btn" id="modeContinent" onclick="setColorMode('continent')">Continent</button>
+  </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<div id="bottom-bar">
+  <span id="bb-left">0x0f</span>
+  <span id="bb-center">structuree directement exploitable</span>
+  <span id="bb-right"></span>
+</div>
+
+<script src="three.min.js"></script>
 <script>
-// ═══════════════════════════════════════════
-// YGGDRASIL 3D CUBE — Three.js Engine
-// ═══════════════════════════════════════════
+// ═══════════════════════════════════════════════════════════════
+// YGGDRASIL · LA PLUIE — 794 symboles en orbites spectrales
+// ═══════════════════════════════════════════════════════════════
+
+if (typeof THREE === 'undefined') {
+  document.body.innerHTML = '<div style="color:red;padding:40px;font-size:18px">Three.js failed to load.</div>';
+}
 
 const STRATE_COLORS = [
-  new THREE.Color(74/255, 222/255, 128/255),   // S0 SOL — vert
-  new THREE.Color(96/255, 165/255, 250/255),    // S1 HALTING — bleu
-  new THREE.Color(167/255, 139/255, 250/255),   // S2 LIMITE — violet
-  new THREE.Color(244/255, 114/255, 182/255),   // S3 MOTIF — rose
-  new THREE.Color(251/255, 191/255, 36/255),    // S4 CIEL — jaune
-  new THREE.Color(251/255, 146/255, 60/255),    // S5 HYP — orange
-  new THREE.Color(239/255, 68/255, 68/255),     // S6 PLAFOND — rouge
+  [74, 222, 128],   // S0 SOL
+  [96, 165, 250],   // S1 HALTING
+  [167, 139, 250],  // S2 LIMITE
+  [244, 114, 182],  // S3 MOTIF
+  [251, 191, 36],   // S4 CIEL
+  [251, 146, 60],   // S5 HYP
+  [239, 68, 68],    // S6 PLAFOND
 ];
 
-const STRATE_NAMES = [
-  "S0 · SOL", "S1 · HALTING", "S2 · LIMITE", 
-  "S3 · MOTIF", "S4 · CIEL", "S5 · HYP ω₁ᶜᵏ", "S6 · PLAFOND"
+const CONTINENT_COLORS = [
+  [30, 58, 138],    // Maths Pures — bleu fonce
+  [124, 58, 237],   // Physique — violet
+  [234, 88, 12],    // Ingenierie — orange
+  [6, 182, 212],    // Info & IA — cyan
+  [234, 179, 8],    // Finance — jaune
+  [132, 204, 22],   // Bio & Med — vert lime
+  [244, 63, 94],    // Chimie — rouge clair
 ];
 
-const STRATE_CENTERS = ["=", "K", "∅'", "PH", "ω", "ω₁ᶜᵏ", "BB(n)"];
+const CONTINENT_NAMES = [
+  "Maths Pures", "Physique", "Ingenierie",
+  "Info & IA", "Finance", "Bio & Med", "Chimie"
+];
+
+const STRATE_SHORT = ["SOL", "K", "FIN", "COF", "Th(N)", "O_KiL", "HALT"];
 
 let scene, camera, renderer, cubeGroup;
-let symbolSprites = [];
+let symbolMeshes = [];
 let planesMeshes = [];
 let centerLabels = [];
-let mouse = new THREE.Vector2();
+let mouse = new THREE.Vector2(-9, -9);
 let raycaster = new THREE.Raycaster();
 let data = null;
 let time = 0;
+let textureCache = {};
+let colorMode = 'strate'; // 'strate' or 'continent'
 
-// ── Init ──
+// ── Color mode toggle ──
+function setColorMode(mode) {
+  colorMode = mode;
+  document.getElementById('modeStrate').classList.toggle('active', mode === 'strate');
+  document.getElementById('modeContinent').classList.toggle('active', mode === 'continent');
+
+  // Rebuild all symbol sprites with new colors
+  symbolMeshes.forEach((sprite, i) => {
+    const sym = data.symbols[i];
+    const rgb = getSymbolColor(sym);
+    const tex = makeSymbolTexture(sym.s, rgb, sym.is_center);
+    sprite.material.map = tex;
+    sprite.material.needsUpdate = true;
+  });
+
+  buildLegend(data);
+}
+
+function getSymbolColor(sym) {
+  if (colorMode === 'continent' && sym.continent >= 0) {
+    return CONTINENT_COLORS[sym.continent];
+  }
+  return STRATE_COLORS[sym.strate];
+}
+
 async function init() {
-  // Scene
   scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x0a0a0f);
-  scene.fog = new THREE.FogExp2(0x0a0a0f, 0.08);
+  scene.background = new THREE.Color(0x080810);
 
-  // Camera
-  camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 100);
-  camera.position.set(4, 2.5, 4);
+  camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100);
+  camera.position.set(5, 3.5, 5);
   camera.lookAt(0, 0, 0);
 
-  // Renderer
-  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   document.body.appendChild(renderer.domElement);
 
-  // Cube group (everything rotates together)
   cubeGroup = new THREE.Group();
   scene.add(cubeGroup);
 
-  // Load data
-  try {
-    const resp = await fetch('data.json');
-    data = await resp.json();
-  } catch(e) {
-    // Fallback: load from embedded
-    console.warn('Could not load data.json, using inline data');
-    data = null;
-  }
+  const resp = await fetch('data.json');
+  if (!resp.ok) { document.body.innerHTML = '<div style="color:red;padding:40px">FETCH FAILED</div>'; return; }
+  data = await resp.json();
 
-  if (data) {
-    buildCube(data);
-    buildLegend(data);
-    updateTitleBar(data);
-  }
+  buildStrates(data);
+  buildSymbols(data);
+  buildWireframe();
+  buildLegend(data);
+  updateUI(data);
 
-  // Wireframe cube
-  const cubeGeo = new THREE.BoxGeometry(3.2, 3.2, 3.2);
-  const cubeEdges = new THREE.EdgesGeometry(cubeGeo);
-  const cubeLine = new THREE.LineSegments(cubeEdges, 
-    new THREE.LineBasicMaterial({ color: 0x4ade80, opacity: 0.3, transparent: true }));
-  cubeGroup.add(cubeLine);
+  scene.add(new THREE.AmbientLight(0xffffff, 0.3));
 
-  // Ambient light
-  scene.add(new THREE.AmbientLight(0xffffff, 0.5));
-
-  // Events
   window.addEventListener('resize', onResize);
   renderer.domElement.addEventListener('mousemove', onMouseMove);
 
-  // Go
   animate();
 }
 
-function buildCube(data) {
-  const strateCount = data.strates.length;
-  
-  // ── Strate planes ──
+// ── Build strate planes ──
+function buildStrates(data) {
   data.strates.forEach((strate, i) => {
-    const y = strate.y || (-1.4 + i * 0.4);
-    const color = STRATE_COLORS[i];
-    
-    // Transparent plane
-    const planeGeo = new THREE.PlaneGeometry(3, 3);
-    const planeMat = new THREE.MeshBasicMaterial({
-      color: color,
-      transparent: true,
-      opacity: 0.06,
-      side: THREE.DoubleSide,
-      depthWrite: false,
+    const y = strate.y;
+    const c = STRATE_COLORS[i];
+    const color = new THREE.Color(c[0]/255, c[1]/255, c[2]/255);
+
+    const geo = new THREE.PlaneGeometry(3.4, 3.4);
+    const mat = new THREE.MeshBasicMaterial({
+      color: color, transparent: true, opacity: 0.08 + (i * 0.01),
+      side: THREE.DoubleSide, depthWrite: false,
     });
-    const plane = new THREE.Mesh(planeGeo, planeMat);
+    const plane = new THREE.Mesh(geo, mat);
     plane.rotation.x = -Math.PI / 2;
     plane.position.y = y;
     cubeGroup.add(plane);
     planesMeshes.push(plane);
 
-    // Plane border
-    const borderGeo = new THREE.EdgesGeometry(planeGeo);
-    const borderMat = new THREE.LineBasicMaterial({ color: color, opacity: 0.25, transparent: true });
-    const border = new THREE.LineSegments(borderGeo, borderMat);
+    // Grid
+    const gridGeo = new THREE.PlaneGeometry(3.4, 3.4, 8, 8);
+    const gridMat = new THREE.MeshBasicMaterial({
+      color: color, transparent: true, opacity: 0.04, wireframe: true, depthWrite: false,
+    });
+    const grid = new THREE.Mesh(gridGeo, gridMat);
+    grid.rotation.x = -Math.PI / 2;
+    grid.position.y = y;
+    cubeGroup.add(grid);
+    planesMeshes.push(grid);
+
+    // Border
+    const edges = new THREE.EdgesGeometry(geo);
+    const borderMat = new THREE.LineBasicMaterial({ color: color, opacity: 0.35, transparent: true });
+    const border = new THREE.LineSegments(edges, borderMat);
     border.rotation.x = -Math.PI / 2;
     border.position.y = y;
     cubeGroup.add(border);
+    planesMeshes.push(border);
 
     // Center label
-    const label = makeTextSprite(STRATE_CENTERS[i], color, 0.35);
-    label.position.set(0, y, 0);
+    const label = makeTextSprite(STRATE_SHORT[i], c, 0.5);
+    label.position.set(0, y + 0.01, 0);
     cubeGroup.add(label);
     centerLabels.push(label);
   });
+}
 
-  // ── Symbols as points ──
-  data.symbols.forEach((sym, idx) => {
+// ── Build symbols as TEXT sprites ──
+function buildSymbols(data) {
+  data.symbols.forEach((sym) => {
+    const rgb = getSymbolColor(sym);
     const strateData = data.strates[sym.strate];
-    const y = strateData.y || (-1.4 + sym.strate * 0.4);
-    const color = STRATE_COLORS[sym.strate];
-    
-    // Position: use px/pz from data, spread within the plane
-    const x = (sym.px || (Math.random() * 2 - 1)) * 1.3;
-    const z = (sym.pz || (Math.random() * 2 - 1)) * 1.3;
-    
-    // Create sprite
-    const spriteMat = new THREE.SpriteMaterial({
-      map: makeCircleTexture(color),
-      transparent: true,
-      opacity: sym.is_center ? 1.0 : 0.7,
-      depthWrite: false,
+    const y = strateData.y;
+
+    const x = (sym.px || (Math.random() * 2 - 1)) * 1.4;
+    const z = (sym.pz || (Math.random() * 2 - 1)) * 1.4;
+
+    const tex = makeSymbolTexture(sym.s, rgb, sym.is_center);
+    const mat = new THREE.SpriteMaterial({
+      map: tex, transparent: true, depthWrite: false,
+      opacity: sym.is_center ? 1.0 : 0.85,
     });
-    const sprite = new THREE.Sprite(spriteMat);
-    sprite.position.set(x, y, z);
-    
-    const baseScale = sym.is_center ? 0.12 : 0.04;
+    const sprite = new THREE.Sprite(mat);
+    sprite.position.set(x, y + (Math.random() - 0.5) * 0.02, z);
+
+    const baseScale = sym.is_center ? 0.22 : 0.09;
     sprite.scale.set(baseScale, baseScale, 1);
-    
-    // Store metadata for hover
+
     sprite.userData = {
       symbol: sym.s,
       from: sym.from,
       domain: sym.domain,
       strate: sym.strate,
+      continent: sym.continent,
+      strateName: strateData.name,
       isCenter: sym.is_center,
       baseScale: baseScale,
       baseY: y,
       orbitRadius: Math.sqrt(x*x + z*z),
       orbitAngle: Math.atan2(z, x),
-      orbitSpeed: 0.1 + Math.random() * 0.3,
+      orbitSpeed: 0.05 + Math.random() * 0.15,
     };
-    
+
     cubeGroup.add(sprite);
-    symbolSprites.push(sprite);
+    symbolMeshes.push(sprite);
   });
 }
 
-function makeCircleTexture(color) {
-  const size = 64;
+// ── Create texture for a symbol character ──
+function makeSymbolTexture(char, rgb, isCenter) {
+  const key = char + '_' + rgb.join(',') + '_' + isCenter;
+  if (textureCache[key]) return textureCache[key];
+
+  const size = 128;
   const canvas = document.createElement('canvas');
   canvas.width = size;
   canvas.height = size;
   const ctx = canvas.getContext('2d');
-  
-  // Glow
-  const gradient = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
-  gradient.addColorStop(0, `rgba(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)},1)`);
-  gradient.addColorStop(0.4, `rgba(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)},0.6)`);
-  gradient.addColorStop(1, `rgba(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)},0)`);
-  
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, size, size);
-  
+  const r = rgb[0], g = rgb[1], b = rgb[2];
+
+  if (isCenter) {
+    const grad = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+    grad.addColorStop(0, `rgba(${r},${g},${b},0.4)`);
+    grad.addColorStop(0.5, `rgba(${r},${g},${b},0.1)`);
+    grad.addColorStop(1, `rgba(${r},${g},${b},0)`);
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, size, size);
+  }
+
+  ctx.font = isCenter ? 'bold 64px Courier New' : '48px Courier New';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.shadowColor = `rgb(${r},${g},${b})`;
+  ctx.shadowBlur = isCenter ? 25 : 12;
+  ctx.fillStyle = `rgba(${r},${g},${b},${isCenter ? 1.0 : 0.9})`;
+  ctx.fillText(char, size/2, size/2);
+  ctx.shadowBlur = isCenter ? 15 : 6;
+  ctx.fillText(char, size/2, size/2);
+
   const tex = new THREE.CanvasTexture(canvas);
+  textureCache[key] = tex;
   return tex;
 }
 
-function makeTextSprite(text, color, size) {
+// ── Center label sprite ──
+function makeTextSprite(text, rgb, scale) {
   const canvas = document.createElement('canvas');
-  canvas.width = 256;
-  canvas.height = 128;
+  canvas.width = 512;
+  canvas.height = 256;
   const ctx = canvas.getContext('2d');
-  
-  ctx.font = 'bold 60px Courier New';
+  const r = rgb[0], g = rgb[1], b = rgb[2];
+
+  ctx.font = 'bold 90px Courier New';
   ctx.textAlign = 'center';
   ctx.textBaseline = 'middle';
-  
-  // Glow effect
-  ctx.shadowColor = `rgb(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)})`;
+  ctx.shadowColor = `rgb(${r},${g},${b})`;
+  ctx.shadowBlur = 40;
+  ctx.fillStyle = `rgba(${r},${g},${b},0.9)`;
+  ctx.fillText(text, 256, 128);
   ctx.shadowBlur = 20;
-  ctx.fillStyle = `rgb(${Math.round(color.r*255)},${Math.round(color.g*255)},${Math.round(color.b*255)})`;
-  ctx.fillText(text, 128, 64);
-  
+  ctx.fillText(text, 256, 128);
+
   const tex = new THREE.CanvasTexture(canvas);
   const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
   const sprite = new THREE.Sprite(mat);
-  sprite.scale.set(size * 2, size, 1);
+  sprite.scale.set(scale * 2, scale, 1);
   return sprite;
 }
 
-function buildLegend(data) {
-  const el = document.getElementById('legend');
-  el.innerHTML = '<h3>⬡ STRATES</h3>';
-  
-  data.strates.forEach((s, i) => {
-    const c = STRATE_COLORS[i];
-    const rgb = `rgb(${Math.round(c.r*255)},${Math.round(c.g*255)},${Math.round(c.b*255)})`;
-    el.innerHTML += `
-      <div class="legend-row">
-        <div class="legend-dot" style="background:${rgb}"></div>
-        <span class="legend-label">${STRATE_NAMES[i]}</span>
-        <span class="legend-count">${s.count}</span>
-      </div>`;
-  });
-  
-  const total = data.strates.reduce((a, s) => a + s.count, 0);
-  el.innerHTML += `<div style="margin-top:8px;color:#f90;font-size:10px">TOTAL: ${total} symboles</div>`;
+// ── Wireframe cube ──
+function buildWireframe() {
+  const geo = new THREE.BoxGeometry(3.6, 2.8, 3.6);
+  const edges = new THREE.EdgesGeometry(geo);
+  const mat = new THREE.LineBasicMaterial({ color: 0x4ade80, opacity: 0.15, transparent: true });
+  const line = new THREE.LineSegments(edges, mat);
+  line.position.y = -0.2;
+  cubeGroup.add(line);
+
+  const axisGeo = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(0, -1.6, 0),
+    new THREE.Vector3(0, 1.2, 0)
+  ]);
+  const axisMat = new THREE.LineBasicMaterial({ color: 0x4ade80, opacity: 0.1, transparent: true });
+  cubeGroup.add(new THREE.Line(axisGeo, axisMat));
 }
 
-function updateTitleBar(data) {
-  const total = data.strates.reduce((a, s) => a + s.count, 0);
+// ── Legend (switches between strate and continent) ──
+function buildLegend(data) {
+  const el = document.getElementById('legend');
+  let html = '';
+
+  if (colorMode === 'strate') {
+    data.strates.forEach((s, i) => {
+      const c = STRATE_COLORS[i];
+      html += `<div class="legend-row">
+        <div class="legend-dot" style="background:rgb(${c[0]},${c[1]},${c[2]})"></div>
+        <span class="legend-label">S${i} ${STRATE_SHORT[i]}</span>
+        <span class="legend-count">${s.count}</span>
+      </div>`;
+    });
+  } else {
+    // Count symbols per continent
+    const counts = new Array(7).fill(0);
+    data.symbols.forEach(s => { if (s.continent >= 0) counts[s.continent]++; });
+    const unclassified = data.symbols.filter(s => s.continent < 0).length;
+
+    CONTINENT_NAMES.forEach((name, i) => {
+      const c = CONTINENT_COLORS[i];
+      html += `<div class="legend-row">
+        <div class="legend-dot" style="background:rgb(${c[0]},${c[1]},${c[2]})"></div>
+        <span class="legend-label">${name}</span>
+        <span class="legend-count">${counts[i]}</span>
+      </div>`;
+    });
+    if (unclassified > 0) {
+      html += `<div class="legend-row">
+        <div class="legend-dot" style="background:#555"></div>
+        <span class="legend-label">Non classe</span>
+        <span class="legend-count">${unclassified}</span>
+      </div>`;
+    }
+  }
+  el.innerHTML = html;
+}
+
+function updateUI(data) {
+  const total = data.meta.total;
   const domains = [...new Set(data.symbols.map(s => s.domain))].length;
-  document.querySelector('#title-bar div:not(.sub)').textContent = 
-    `${total} symboles · 7 strates · ${domains} domaines`;
+  document.querySelector('#title-bar .stats').textContent =
+    `${total} SYMBOLES \u00B7 ${domains} DOMAINES \u00B7 ORBITES SPECTRALES`;
+
+  const now = new Date();
+  document.getElementById('bb-right').textContent =
+    `${now.toLocaleDateString('fr-FR')} \u00B7 ${total} sym`;
+  document.getElementById('strate-indicator').textContent = 'PLAFOND \u2192 HALT';
 }
 
 // ── Animation ──
 function animate() {
   requestAnimationFrame(animate);
   time += 0.016;
-  
-  const speed = document.getElementById('speed').value / 3000;
+
+  const speed = document.getElementById('speed').value / 5000;
   const symSize = document.getElementById('symsize').value / 10;
   const showPlanes = document.getElementById('showPlanes').checked;
   const showLabels = document.getElementById('showLabels').checked;
-  
-  // Rotate cube
+
   cubeGroup.rotation.y += speed;
-  
-  // Gentle camera bob
-  camera.position.y = 2.5 + Math.sin(time * 0.3) * 0.2;
-  camera.lookAt(0, 0, 0);
-  
-  // Animate symbols (gentle orbital motion within their strate)
-  symbolSprites.forEach(sprite => {
+  camera.position.y = 3.5 + Math.sin(time * 0.2) * 0.3;
+  camera.lookAt(0, -0.2, 0);
+
+  symbolMeshes.forEach(sprite => {
     const ud = sprite.userData;
     if (!ud.isCenter && ud.orbitRadius > 0.1) {
-      const angle = ud.orbitAngle + time * ud.orbitSpeed * 0.1;
+      const angle = ud.orbitAngle + time * ud.orbitSpeed * 0.08;
       sprite.position.x = Math.cos(angle) * ud.orbitRadius;
       sprite.position.z = Math.sin(angle) * ud.orbitRadius;
     }
-    // Scale
-    sprite.scale.set(ud.baseScale * symSize, ud.baseScale * symSize, 1);
+    sprite.position.y = ud.baseY + Math.sin(time * 0.5 + ud.orbitAngle) * 0.015;
+    const s = ud.baseScale * symSize;
+    sprite.scale.set(s, s, 1);
   });
-  
-  // Toggle planes
+
   planesMeshes.forEach(p => p.visible = showPlanes);
   centerLabels.forEach(l => l.visible = showLabels);
-  
-  // Raycast for hover
+
+  // Raycast hover
   raycaster.setFromCamera(mouse, camera);
-  const intersects = raycaster.intersectObjects(symbolSprites);
+  const intersects = raycaster.intersectObjects(symbolMeshes);
   const hoverEl = document.getElementById('hover-info');
-  
+
   if (intersects.length > 0) {
-    const hit = intersects[0].object;
-    const ud = hit.userData;
+    const ud = intersects[0].object.userData;
     if (ud.symbol) {
-      const c = STRATE_COLORS[ud.strate];
-      const rgb = `rgb(${Math.round(c.r*255)},${Math.round(c.g*255)},${Math.round(c.b*255)})`;
-      hoverEl.querySelector('.sym').textContent = ud.symbol;
-      hoverEl.querySelector('.name').textContent = ud.from;
-      hoverEl.querySelector('.domain').textContent = ud.domain;
-      const tag = hoverEl.querySelector('.strate-tag');
-      tag.textContent = STRATE_NAMES[ud.strate];
-      tag.style.background = rgb;
-      tag.style.color = '#000';
+      const sc = STRATE_COLORS[ud.strate];
+      const srgb = `rgb(${sc[0]},${sc[1]},${sc[2]})`;
+      hoverEl.querySelector('.strate-name').textContent = ud.strateName;
+      hoverEl.querySelector('.strate-name').style.color = srgb;
+      hoverEl.querySelector('.strate-desc').textContent =
+        `S${ud.strate} \u00B7 ${data.strates[ud.strate].count} symboles`;
+      hoverEl.querySelector('.sym-char').textContent = ud.symbol;
+      hoverEl.querySelector('.sym-char').style.color = srgb;
+      hoverEl.querySelector('.sym-name').textContent = ud.from;
+      hoverEl.querySelector('.sym-domain').textContent = ud.domain;
+      hoverEl.querySelector('.sym-meta').textContent =
+        `strate ${ud.strate} \u00B7 ${ud.isCenter ? 'CENTRE' : 'symbole'}`;
+
+      // Continent tag
+      const cTag = hoverEl.querySelector('.continent-tag');
+      if (ud.continent >= 0) {
+        const cc = CONTINENT_COLORS[ud.continent];
+        cTag.textContent = CONTINENT_NAMES[ud.continent];
+        cTag.style.background = `rgb(${cc[0]},${cc[1]},${cc[2]})`;
+        cTag.style.color = '#fff';
+        cTag.style.display = 'inline-block';
+      } else {
+        cTag.style.display = 'none';
+      }
+
       hoverEl.style.display = 'block';
-      hoverEl.style.borderColor = rgb;
+      hoverEl.style.borderColor = srgb;
     }
   } else {
     hoverEl.style.display = 'none';
   }
-  
+
   renderer.render(scene, camera);
 }
 
@@ -382,7 +517,6 @@ function onResize() {
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
-// ── Launch ──
 init();
 </script>
 </body>
