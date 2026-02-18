@@ -76,7 +76,7 @@ canvas { display: block; position: fixed; top: 0; left: 0; }
 <div id="title-bar">
   <h2>Yggdrasil &middot; La Pluie</h2>
   <div class="stats"></div>
-  <div class="sub">Hierarchie arithmetique (Post 1944) &times; Science of Science</div>
+  <div class="sub">Post 1944 &times; Science of Science &times; Lianes &times; Météorites</div>
 </div>
 
 <div id="strate-indicator"></div>
@@ -97,6 +97,11 @@ canvas { display: block; position: fixed; top: 0; left: 0; }
   <label>Rotation: <input type="range" id="speed" min="0" max="100" value="20"></label>
   <label>Taille: <input type="range" id="symsize" min="1" max="30" value="12"></label>
   <label><input type="checkbox" id="showPlanes" checked> Plans strates</label>
+  
+  <label><input type="checkbox" id="showOxygen" checked onchange="showOxygen=this.checked"> Oxygène (=→tous)</label>
+  <label><input type="checkbox" id="showLianeVert" checked onchange="showLianes=this.checked"> Lianes verticales</label>
+  <label><input type="checkbox" id="showMeteor" onchange="showMeteors=this.checked"> 💥 Météorites S3→S0</label>
+
   <label><input type="checkbox" id="showLabels" checked> Labels centres</label>
   <div class="color-mode">
     <span>Couleur:</span><br>
@@ -145,6 +150,45 @@ const CONTINENT_NAMES = [
   "Maths Pures", "Physique", "Ingenierie",
   "Info & IA", "Finance", "Bio & Med", "Chimie"
 ];
+
+
+// ── LIANES — symbols crossing multiple continents ──
+const LIANES = {
+  "=":7,"exp":6,"ln":6,"Σ":6,"∫":6,"e":5,"∂":5,
+  "Bayes":4,"E[X]":4,"FFT":4,"N(μ,σ²)":4,"O(n)":4,"P(A)":4,"Var":4,
+  "cos":4,"d/dx":4,"det":4,"lim":4,"log":4,"sin":4,"Π":4,"δ":4,"ε":4,
+  "λ":4,"π":4,"σ_std":4,"χ²":4,"ℱ":4,"∇":4,"∇²":4,"∬":4,"∮":4,"∗_conv":4,
+  "Attn":3,"BS":3,"D_KL":3,"F=ma":3,"GAN":3,"H(X)":3,"Itô":3,"Nash":3,
+  "PV=nRT":3,"Re":3,"R₀":3,"SDE":3,"SGD":3,"S_ent":3,"TM":3,"W(t)":3,
+  "argmax":3,"argmin":3,"i":3,"Γ":3,"ζ":3,"ℋ":3,"ℒ":3,"∇L":3,"∇·":3,"∇×":3,
+};
+
+const GRAVITY = {
+  "exp":168,"∫":90,"Σ":84,"∂":50,"log":40,"P(A)":36,
+  "∇²":28,"λ":24,"det":20,"sin":20,"cos":20,"π":16,"Bayes":16,"E[X]":16,
+  "∇L":15,"R₀":15,"lim":12,"argmin":12,"ℱ":12,"FFT":12,
+  "ℒ":9,"∗_conv":8,"∇":8,"χ²":8,"Var":8,"ε":8,
+  "S_ent":6,"Γ":6,"H(X)":6,"Attn":6,"O(n)":4,"δ":4,"N(μ,σ²)":4,
+  "ζ":3,"SGD":3,"i":3,"PV=nRT":3,"Re":3,"D_KL":3,"argmax":3,"Nash":3,"GAN":3,
+};
+
+const METEORS = [
+  {n:"Fermat",p:"∫",s:"Σ"},{n:"Poincaré",p:"exp",s:"S_ent"},
+  {n:"Higgs",p:"exp",s:"∫"},{n:"Deep Learning",p:"exp",s:"Σ"},
+  {n:"AlphaFold",p:"exp",s:"Attn"},{n:"GANs",p:"exp",s:"Nash"},
+  {n:"Transformer",p:"exp",s:"Σ"},{n:"Black-Scholes",p:"∂",s:"W(t)"},
+  {n:"mRNA",p:"exp",s:"P(A)"},{n:"Immunothérapie",p:"exp",s:"R₀"},
+  {n:"Ondes grav.",p:"exp",s:"FFT"},{n:"Blockchain",p:"exp",s:"H(X)"},
+  {n:"Cryo-EM",p:"∫",s:"FFT"},{n:"CAR-T",p:"exp",s:"Σ"},
+  {n:"Perovskite",p:"exp",s:"∫"},{n:"Optogénétique",p:"exp",s:"λ"},
+];
+
+let oxygenLines = [];
+let lianeVerticals = [];
+let meteorTrails = [];
+let showOxygen = true;
+let showLianes = true;
+let showMeteors = false;
 
 const STRATE_SHORT = ["SOL", "K", "FIN", "COF", "Th(N)", "O_KiL", "HALT"];
 
@@ -207,6 +251,9 @@ async function init() {
   buildStrates(data);
   buildSymbols(data);
   buildWireframe();
+  buildOxygen(data);
+  buildLianeVerticals(data);
+  buildMeteorTrails(data);
   buildLegend(data);
   updateUI(data);
 
@@ -366,6 +413,158 @@ function makeTextSprite(text, rgb, scale) {
   return sprite;
 }
 
+
+// ── OXYGEN: every S0 symbol connected to = ──
+function buildOxygen(data) {
+  // Find = position
+  const eqSym = data.symbols.find(s => s.s === '=');
+  if (!eqSym) return;
+  const eqStrate = data.strates[eqSym.strate];
+  const eqY = eqStrate.y;
+  const eqX = (eqSym.px || 0) * 1.4;
+  const eqZ = (eqSym.pz || 0) * 1.4;
+
+  const s0Symbols = data.symbols.filter(s => s.strate === 0 && s.s !== '=');
+  
+  s0Symbols.forEach(sym => {
+    const sx = (sym.px || 0) * 1.4;
+    const sz = (sym.pz || 0) * 1.4;
+    const isLiane = sym.s in LIANES;
+    const lc = LIANES[sym.s] || 0;
+    
+    // Opacity: lianes stronger, capitals fainter
+    let opacity = 0.02; // baseline: everyone breathes oxygen
+    if (lc >= 6) opacity = 0.15;
+    else if (lc >= 4) opacity = 0.08;
+    else if (lc >= 3) opacity = 0.05;
+    
+    const color = isLiane ? 0xffd700 : 0x4ade80;
+    
+    const geo = new THREE.BufferGeometry().setFromPoints([
+      new THREE.Vector3(sx, eqY, sz),
+      new THREE.Vector3(eqX, eqY, eqZ),
+    ]);
+    const mat = new THREE.LineBasicMaterial({
+      color: color, transparent: true, opacity: opacity, depthWrite: false,
+    });
+    const line = new THREE.Line(geo, mat);
+    cubeGroup.add(line);
+    oxygenLines.push(line);
+  });
+}
+
+// ── LIANE VERTICALS: escaliers S0 → strates supérieures ──
+function buildLianeVerticals(data) {
+  const lianeSymbols = data.symbols.filter(s => s.strate === 0 && s.s in LIANES && s.s !== '=');
+  
+  lianeSymbols.forEach(sym => {
+    const sx = (sym.px || 0) * 1.4;
+    const sz = (sym.pz || 0) * 1.4;
+    const lc = LIANES[sym.s] || 0;
+    const grav = GRAVITY[sym.s] || 0;
+    
+    // How high does this liane reach?
+    // Higher gravity = reaches higher strates
+    let maxStrateIdx = 1; // at least S1
+    if (grav >= 80) maxStrateIdx = 5;  // soleils reach near top
+    else if (grav >= 30) maxStrateIdx = 4;
+    else if (grav >= 10) maxStrateIdx = 3;
+    else if (grav >= 3) maxStrateIdx = 2;
+    
+    const s0y = data.strates[0].y;
+    const topY = data.strates[Math.min(maxStrateIdx, data.strates.length - 1)].y;
+    
+    // Build vertical line with segments
+    const points = [];
+    const steps = 20;
+    for (let i = 0; i <= steps; i++) {
+      const t = i / steps;
+      // Slight spiral as it goes up
+      const angle = t * Math.PI * 0.5;
+      const drift = 0.05 * Math.sin(angle * 3);
+      points.push(new THREE.Vector3(
+        sx + drift,
+        s0y + (topY - s0y) * t,
+        sz + drift
+      ));
+    }
+    
+    const geo = new THREE.BufferGeometry().setFromPoints(points);
+    
+    // Color: gold for big lianes, dimmer for small
+    let opacity = 0.08 + (lc / 7) * 0.2;
+    let color = grav >= 80 ? 0xffaa00 : grav >= 30 ? 0xffd700 : 0x88aaff;
+    
+    const mat = new THREE.LineBasicMaterial({
+      color: color, transparent: true, opacity: opacity, depthWrite: false,
+    });
+    const line = new THREE.Line(geo, mat);
+    cubeGroup.add(line);
+    lianeVerticals.push({ line, sym: sym.s, grav, maxStrate: maxStrateIdx });
+    
+    // Small glow at the top endpoint
+    if (grav >= 30) {
+      const dotGeo = new THREE.SphereGeometry(0.015, 8, 6);
+      const dotMat = new THREE.MeshBasicMaterial({
+        color: color, transparent: true, opacity: opacity * 1.5,
+      });
+      const dot = new THREE.Mesh(dotGeo, dotMat);
+      dot.position.set(sx, topY, sz);
+      cubeGroup.add(dot);
+    }
+  });
+}
+
+// ── METEOR TRAILS: S3 discoveries falling to S0 ──
+function buildMeteorTrails(data) {
+  const s3y = data.strates[3] ? data.strates[3].y : 0;
+  const s0y = data.strates[0].y;
+  
+  METEORS.forEach((m, mi) => {
+    const target = data.symbols.find(s => s.s === m.p && s.strate === 0);
+    if (!target) return;
+    
+    const tx = (target.px || 0) * 1.4;
+    const tz = (target.pz || 0) * 1.4;
+    
+    // Start from above S3, slightly offset
+    const startX = tx + (Math.sin(mi * 2.1)) * 0.3;
+    const startZ = tz + (Math.cos(mi * 1.7)) * 0.3;
+    const startY = s3y + 0.3;
+    
+    const points = [];
+    const steps = 30;
+    for (let i = 0; i <= steps; i++) {
+      const t = i / steps;
+      // Curved descent
+      points.push(new THREE.Vector3(
+        startX + (tx - startX) * t,
+        startY + (s0y - startY) * t * t, // parabolic
+        startZ + (tz - startZ) * t,
+      ));
+    }
+    
+    const geo = new THREE.BufferGeometry().setFromPoints(points);
+    const mat = new THREE.LineBasicMaterial({
+      color: 0xff4444, transparent: true, opacity: 0, depthWrite: false,
+    });
+    const line = new THREE.Line(geo, mat);
+    cubeGroup.add(line);
+    
+    // Impact glow at S0
+    const glowGeo = new THREE.SphereGeometry(0.04, 12, 8);
+    const glowMat = new THREE.MeshBasicMaterial({
+      color: 0xff4444, transparent: true, opacity: 0,
+    });
+    const glow = new THREE.Mesh(glowGeo, glowMat);
+    glow.position.set(tx, s0y, tz);
+    cubeGroup.add(glow);
+    
+    meteorTrails.push({ line, glow, name: m.n, sym: m.p });
+  });
+}
+
+
 // ── Wireframe cube ──
 function buildWireframe() {
   const geo = new THREE.BoxGeometry(3.6, 2.8, 3.6);
@@ -463,6 +662,31 @@ function animate() {
   planesMeshes.forEach(p => p.visible = showPlanes);
   centerLabels.forEach(l => l.visible = showLabels);
 
+
+  // Oxygen lines visibility
+  oxygenLines.forEach(l => l.visible = showOxygen && showPlanes);
+  
+  // Liane verticals: gentle pulse
+  lianeVerticals.forEach((lv, i) => {
+    lv.line.visible = showLianes;
+    if (showLianes) {
+      const pulse = 0.7 + 0.3 * Math.sin(time * 1.5 + i * 0.5);
+      lv.line.material.opacity = (0.08 + (lv.grav / 168) * 0.2) * pulse;
+    }
+  });
+  
+  // Meteor trails: animate
+  meteorTrails.forEach((mt, i) => {
+    mt.line.visible = showMeteors;
+    mt.glow.visible = showMeteors;
+    if (showMeteors) {
+      const pulse = 0.3 + 0.4 * Math.sin(time * 3 + i * 0.7);
+      mt.line.material.opacity = pulse;
+      mt.glow.material.opacity = pulse * 0.8;
+      mt.glow.scale.setScalar(1 + 0.3 * Math.sin(time * 4 + i));
+    }
+  });
+
   // Raycast hover
   raycaster.setFromCamera(mouse, camera);
   const intersects = raycaster.intersectObjects(symbolMeshes);
@@ -483,6 +707,17 @@ function animate() {
       hoverEl.querySelector('.sym-domain').textContent = ud.domain;
       hoverEl.querySelector('.sym-meta').textContent =
         `strate ${ud.strate} \u00B7 ${ud.isCenter ? 'CENTRE' : 'symbole'}`;
+
+
+      // Liane & gravity info
+      const lianeInfo = LIANES[ud.symbol];
+      const gravInfo = GRAVITY[ud.symbol];
+      let extraMeta = '';
+      if (lianeInfo) extraMeta += ` · 🌿 LIANE ${lianeInfo} continents`;
+      if (gravInfo) extraMeta += ` · gravité ${gravInfo}`;
+      const meteorHits = METEORS.filter(m => m.p === ud.symbol);
+      if (meteorHits.length) extraMeta += ` · 💥 ${meteorHits.map(m=>m.n).join(', ')}`;
+      hoverEl.querySelector('.sym-meta').textContent += extraMeta;
 
       // Continent tag
       const cTag = hoverEl.querySelector('.continent-tag');
