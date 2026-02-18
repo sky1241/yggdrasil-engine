@@ -1,0 +1,608 @@
+{
+  "meta": {
+    "date": "2026-02-18T23:45",
+    "total_tests": 32,
+    "testable": 29,
+    "confirmed": 28,
+    "ratio": "97%"
+  },
+  "results": {
+    "1": {
+      "name": "Fermat (Wiles 1995)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "Gal",
+        "ζ",
+        "∫",
+        "Σ",
+        "det",
+        "λ",
+        "∂",
+        "lim",
+        "log"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Gal (Galois) + courbes elliptiques → nb théorie"
+    },
+    "2": {
+      "name": "Classification Groupes Finis (1983)",
+      "pattern": "P2 (Dense)",
+      "lianes": [
+        "det",
+        "λ",
+        "Σ",
+        "∫"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Pas de liane inter-domaine — croissance INTERNE pure"
+    },
+    "3": {
+      "name": "Higgs (2012)",
+      "pattern": "P3 (Théorie×Outil)",
+      "lianes": [
+        "ℒ",
+        "∂",
+        "∫",
+        "exp",
+        "Σ",
+        "π",
+        "ψ",
+        "λ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "ℒ (Lagrangien) = Physique+Maths+Ingénierie"
+    },
+    "4": {
+      "name": "CRISPR (Doudna & Charpentier 2012)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "DNA",
+        "RNA"
+      ],
+      "max_continents": 1,
+      "has_liane_3plus": false,
+      "liane_clé": "PAS de liane S0 mathématique — pont biologique pur"
+    },
+    "5": {
+      "name": "Dark Matter (non résolu)",
+      "pattern": "P4 (Trou ouvert)",
+      "lianes": [
+        "gμν",
+        "ψ",
+        "∫",
+        "Σ",
+        "ℒ",
+        "∇²",
+        "exp"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Trou ouvert — les lianes EXISTENT mais personne n'a trouvé la combinaison"
+    },
+    "6": {
+      "name": "Deep Learning (AlexNet 2012)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "∇L",
+        "exp",
+        "σ_sigm",
+        "∗_conv",
+        "Σ",
+        "argmin",
+        "log",
+        "SGD",
+        "BP"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "∇L + SGD + exp = gradient descent traverse IA+Maths+Finance"
+    },
+    "7": {
+      "name": "Graphène (2004)",
+      "pattern": "P5 (Anti-signal)",
+      "lianes": [
+        "∂",
+        "∫",
+        "ψ",
+        "exp"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Lianes universelles présentes MAIS pont semi-conducteur stagne"
+    },
+    "8": {
+      "name": "Poincaré (Perelman 2003)",
+      "pattern": "P1+P4 (Pont+Catalyseur)",
+      "lianes": [
+        "S_ent",
+        "∂",
+        "∫",
+        "∇",
+        "Γ",
+        "exp",
+        "lim",
+        "gμν",
+        "∇²"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "S_ent (entropie Boltzmann) = Physique→Géométrie = PORTE DÉROBÉE"
+    },
+    "9": {
+      "name": "Immunothérapie (Nobel 2018)",
+      "pattern": "P1+P3",
+      "lianes": [
+        "R₀",
+        "exp",
+        "P(A)",
+        "log",
+        "Σ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "R₀ = Bio+Finance+Maths. exp = universel."
+    },
+    "10": {
+      "name": "Ondes gravitationnelles (LIGO 2015)",
+      "pattern": "P3 (Théorie×Outil)",
+      "lianes": [
+        "gμν",
+        "∂",
+        "∫",
+        "sin",
+        "cos",
+        "ℱ",
+        "FFT",
+        "∇²",
+        "exp"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "FFT = Ingénierie+IA+Physique+Finance. Fourier comme escalier de secours."
+    },
+    "11": {
+      "name": "Supraconducteurs HT (Bednorz 1986)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "ψ",
+        "∂",
+        "∫",
+        "exp",
+        "Σ",
+        "∇²"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "∂ et ∫ universels. ψ = Physique+Maths."
+    },
+    "12": {
+      "name": "Quantum×Crypto (en transition)",
+      "pattern": "P4 (Trou ouvert)",
+      "lianes": [
+        "ψ",
+        "Ĥ",
+        "exp",
+        "log",
+        "H(X)",
+        "π"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "H(X) (entropie Shannon) = IA+Physique+Finance"
+    },
+    "13": {
+      "name": "Microbiome×Psychiatrie (en formation)",
+      "pattern": "P1 (en cours)",
+      "lianes": [
+        "R₀",
+        "P(A)",
+        "Bayes",
+        "exp",
+        "χ²"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Bayes (4 continents) + χ² (4 continents) = outils statistiques"
+    },
+    "14": {
+      "name": "Théorie des cordes (anti-signal)",
+      "pattern": "P5 (Anti-signal)",
+      "lianes": [
+        "ℒ",
+        "∂",
+        "∫",
+        "exp",
+        "Σ",
+        "π",
+        "ψ",
+        "gμν"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "TOUTES les lianes majeures sont là — mais SUSY↔LHC s'effondre"
+    },
+    "15": {
+      "name": "AlphaFold (Nobel 2024)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "Attn",
+        "∇L",
+        "exp",
+        "argmin",
+        "E[X]",
+        "softmax",
+        "Σ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Attn (3 continents: IA+Bio+Finance) = le Transformer comme escalier"
+    },
+    "16": {
+      "name": "Blockchain (Bitcoin 2009)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "H(X)",
+        "log",
+        "exp",
+        "P(A)",
+        "O(n)"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "H(X) (entropie) = IA+Physique+Finance. Hash = pont crypto→finance."
+    },
+    "17": {
+      "name": "Exoplanètes (1995)",
+      "pattern": "P2 (Dense)",
+      "lianes": [
+        "sin",
+        "cos",
+        "ℱ",
+        "∫",
+        "Σ",
+        "FFT",
+        "exp"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Pas de liane inter-domaine nécessaire — croissance interne"
+    },
+    "18": {
+      "name": "Isolants topologiques (2005)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "ψ",
+        "Ĥ",
+        "det",
+        "∫",
+        "exp",
+        "π",
+        "i"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "det (4 continents) + i (3 continents) = algèbre→topologie→physique"
+    },
+    "19": {
+      "name": "Fusion nucléaire (trou ouvert)",
+      "pattern": "P4 (Trou ouvert)",
+      "lianes": [
+        "∂",
+        "∫",
+        "∇²",
+        "exp",
+        "Σ",
+        "PV=nRT",
+        "Re"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "PV=nRT (3 continents) + Re (3 continents) = thermodynamique×fluides"
+    },
+    "20": {
+      "name": "Économie comportementale (Kahneman)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "E[X]",
+        "P(A)",
+        "Bayes",
+        "log",
+        "Var",
+        "N(μ,σ²)"
+      ],
+      "max_continents": 4,
+      "has_liane_3plus": true,
+      "liane_clé": "E[X] + P(A) + Bayes = Maths+Finance+IA+Bio (4 continents chacun)"
+    },
+    "21": {
+      "name": "CAR-T Cell Therapy (2011)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "R₀",
+        "exp",
+        "P(A)",
+        "log",
+        "Σ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "exp (6 continents) = croissance exponentielle modélisée partout"
+    },
+    "22": {
+      "name": "mRNA Vaccines (Karikó, Nobel 2023)",
+      "pattern": "P4 (Trou+Catalyseur)",
+      "lianes": [
+        "RNA",
+        "exp",
+        "P(A)"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Trou PERCEPTUEL — pas technique. exp présent mais le blocage est social."
+    },
+    "23": {
+      "name": "Transformer (Vaswani 2017)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "Attn",
+        "exp",
+        "softmax",
+        "∇L",
+        "Σ",
+        "det",
+        "∗_conv",
+        "sin",
+        "cos"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Attn (3) + exp (6) + sin/cos (4) = positional encoding emprunte à la trigonométrie"
+    },
+    "24": {
+      "name": "Perovskite Solar (Miyasaka 2009)",
+      "pattern": "P3 (Théorie×Outil)",
+      "lianes": [
+        "exp",
+        "∫",
+        "∂",
+        "ε",
+        "λ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "exp + ∫ + ∂ = lianes universelles (5-6 continents)"
+    },
+    "25": {
+      "name": "Optogénétique (Deisseroth 2005)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "exp",
+        "sin",
+        "cos",
+        "λ",
+        "ψ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "λ (longueur d'onde, 4 continents) = optique→neuroscience"
+    },
+    "26": {
+      "name": "Gene Drives (Esvelt 2014)",
+      "pattern": "P1 (Pont+frein éthique)",
+      "lianes": [
+        "P(A)",
+        "R₀",
+        "exp",
+        "log"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "R₀ (3 continents) = reproduction number traverse Bio+Finance+Maths"
+    },
+    "27": {
+      "name": "Quantum ML (en transition)",
+      "pattern": "P2 (Dense)",
+      "lianes": [
+        "ψ",
+        "Ĥ",
+        "exp",
+        "∇L",
+        "argmin",
+        "E[X]",
+        "det",
+        "λ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Pas de pont unique — les 2 domaines partagent DÉJÀ les mêmes lianes"
+    },
+    "28": {
+      "name": "Single-cell RNA-seq (10X Genomics 2015)",
+      "pattern": "P3 (Théorie×Outil)",
+      "lianes": [
+        "log",
+        "exp",
+        "Σ",
+        "P(A)",
+        "Bayes",
+        "D_KL"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "D_KL (3 continents: IA+Physique+Finance) = divergence pour clustering cellulaire"
+    },
+    "29": {
+      "name": "GANs (Goodfellow 2014)",
+      "pattern": "P1 (Pont)",
+      "lianes": [
+        "∇L",
+        "argmin",
+        "argmax",
+        "E[X]",
+        "log",
+        "exp",
+        "Nash",
+        "GAN"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Nash (3 continents: Finance+IA+Bio) = game theory→deep learning"
+    },
+    "30": {
+      "name": "Gut-Brain Axis (en formation)",
+      "pattern": "P1 (en cours)",
+      "lianes": [
+        "R₀",
+        "P(A)",
+        "Bayes",
+        "exp",
+        "χ²",
+        "Var"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "Bayes (4) + χ² (4) + Var (4) = lianes statistiques multi-continents"
+    },
+    "31": {
+      "name": "Cryo-EM (Nobel 2017)",
+      "pattern": "P3 (Théorie×Outil)",
+      "lianes": [
+        "ℱ",
+        "FFT",
+        "∫",
+        "exp",
+        "sin",
+        "cos",
+        "∇²"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "FFT (4 continents) + ℱ (4 continents) = Fourier = LIANE MAJEURE"
+    },
+    "32": {
+      "name": "Poincaré — Millennium (Perelman 2003)",
+      "pattern": "P1+P4 (Pont quadruple)",
+      "lianes": [
+        "S_ent",
+        "∂",
+        "∫",
+        "∇",
+        "Γ",
+        "exp",
+        "lim",
+        "gμν",
+        "∇²",
+        "ε",
+        "δ"
+      ],
+      "max_continents": 6,
+      "has_liane_3plus": true,
+      "liane_clé": "S_ent (3) = PORTE DÉROBÉE thermodynamique → géométrie"
+    }
+  },
+  "top_lianes": [
+    {
+      "symbol": "exp",
+      "continents": 6,
+      "used_in_n_tests": 28
+    },
+    {
+      "symbol": "∫",
+      "continents": 6,
+      "used_in_n_tests": 15
+    },
+    {
+      "symbol": "Σ",
+      "continents": 6,
+      "used_in_n_tests": 14
+    },
+    {
+      "symbol": "∂",
+      "continents": 5,
+      "used_in_n_tests": 10
+    },
+    {
+      "symbol": "log",
+      "continents": 4,
+      "used_in_n_tests": 10
+    },
+    {
+      "symbol": "P(A)",
+      "continents": 4,
+      "used_in_n_tests": 9
+    },
+    {
+      "symbol": "ψ",
+      "continents": 2,
+      "used_in_n_tests": 9
+    },
+    {
+      "symbol": "∇²",
+      "continents": 4,
+      "used_in_n_tests": 7
+    },
+    {
+      "symbol": "λ",
+      "continents": 4,
+      "used_in_n_tests": 6
+    },
+    {
+      "symbol": "det",
+      "continents": 4,
+      "used_in_n_tests": 5
+    },
+    {
+      "symbol": "sin",
+      "continents": 4,
+      "used_in_n_tests": 5
+    },
+    {
+      "symbol": "cos",
+      "continents": 4,
+      "used_in_n_tests": 5
+    },
+    {
+      "symbol": "∇L",
+      "continents": 3,
+      "used_in_n_tests": 5
+    },
+    {
+      "symbol": "R₀",
+      "continents": 3,
+      "used_in_n_tests": 5
+    },
+    {
+      "symbol": "gμν",
+      "continents": 2,
+      "used_in_n_tests": 5
+    },
+    {
+      "symbol": "π",
+      "continents": 4,
+      "used_in_n_tests": 4
+    },
+    {
+      "symbol": "Bayes",
+      "continents": 4,
+      "used_in_n_tests": 4
+    },
+    {
+      "symbol": "E[X]",
+      "continents": 4,
+      "used_in_n_tests": 4
+    },
+    {
+      "symbol": "argmin",
+      "continents": 3,
+      "used_in_n_tests": 4
+    },
+    {
+      "symbol": "lim",
+      "continents": 4,
+      "used_in_n_tests": 3
+    }
+  ]
+}
