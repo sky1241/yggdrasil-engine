@@ -1,0 +1,951 @@
+{
+  "meta": {
+    "date": "2026-02-18",
+    "hypothesis": "Les symboles S0 multi-continents sont les escaliers de secours vers S3",
+    "s0_total": 549,
+    "s3_total": 132
+  },
+  "stats": {
+    "universelles": 5,
+    "majeures": 29,
+    "lianes": 26,
+    "ponts": 9,
+    "locaux": 480
+  },
+  "lianes": [
+    {
+      "symbol": "=",
+      "domain": "arithmétique",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA",
+        "Finance & Économie",
+        "Biologie & Médecine",
+        "Chimie"
+      ],
+      "n_continents": 7,
+      "type": "🌿🌿🌿 LIANE UNIVERSELLE"
+    },
+    {
+      "symbol": "exp",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine",
+        "Chimie"
+      ],
+      "n_continents": 6,
+      "type": "🌿🌿🌿 LIANE UNIVERSELLE"
+    },
+    {
+      "symbol": "ln",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine",
+        "Chimie"
+      ],
+      "n_continents": 6,
+      "type": "🌿🌿🌿 LIANE UNIVERSELLE"
+    },
+    {
+      "symbol": "Σ",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 6,
+      "type": "🌿🌿🌿 LIANE UNIVERSELLE"
+    },
+    {
+      "symbol": "∫",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Finance & Économie",
+        "Biologie & Médecine",
+        "Chimie"
+      ],
+      "n_continents": 6,
+      "type": "🌿🌿🌿 LIANE UNIVERSELLE"
+    },
+    {
+      "symbol": "e",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 5,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∂",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Finance & Économie",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 5,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "Bayes",
+      "domain": "probabilités",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "E[X]",
+      "domain": "probabilités",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "FFT",
+      "domain": "signal",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA",
+        "Physique Fondamentale",
+        "Finance & Économie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "N(μ,σ²)",
+      "domain": "probabilités",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Biologie & Médecine",
+        "Physique Fondamentale"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "O(n)",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Informatique & IA",
+        "Finance & Économie",
+        "Ingénierie & Électricité"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "P(A)",
+      "domain": "probabilités",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "Var",
+      "domain": "probabilités",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "cos",
+      "domain": "trigonométrie",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "d/dx",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Finance & Économie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "det",
+      "domain": "algèbre lin",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "lim",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Finance & Économie",
+        "Ingénierie & Électricité"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "log",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Informatique & IA",
+        "Finance & Économie",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "sin",
+      "domain": "trigonométrie",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "Π",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Finance & Économie",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "δ",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Finance & Économie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "ε",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Finance & Économie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "λ",
+      "domain": "algèbre lin",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Informatique & IA",
+        "Finance & Économie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "π",
+      "domain": "géométrie",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "σ_std",
+      "domain": "probabilités",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Physique Fondamentale",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "χ²",
+      "domain": "statistiques",
+      "continents": [
+        "Mathématiques Pures",
+        "Finance & Économie",
+        "Biologie & Médecine",
+        "Physique Fondamentale"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "ℱ",
+      "domain": "signal",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∇",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∇²",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Chimie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∗_conv",
+      "domain": "signal",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA",
+        "Physique Fondamentale",
+        "Mathématiques Pures"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∞",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Informatique & IA",
+        "Finance & Économie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∬",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Chimie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "∮",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Chimie"
+      ],
+      "n_continents": 4,
+      "type": "🌿🌿 LIANE MAJEURE"
+    },
+    {
+      "symbol": "Attn",
+      "domain": "ML",
+      "continents": [
+        "Informatique & IA",
+        "Biologie & Médecine",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "BS",
+      "domain": "finance",
+      "continents": [
+        "Finance & Économie",
+        "Mathématiques Pures",
+        "Physique Fondamentale"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "D_KL",
+      "domain": "information",
+      "continents": [
+        "Informatique & IA",
+        "Physique Fondamentale",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "F=ma",
+      "domain": "mécanique",
+      "continents": [
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "GAN",
+      "domain": "ML",
+      "continents": [
+        "Informatique & IA",
+        "Biologie & Médecine",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "H(X)",
+      "domain": "information",
+      "continents": [
+        "Informatique & IA",
+        "Physique Fondamentale",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "Itô",
+      "domain": "stochastique",
+      "continents": [
+        "Finance & Économie",
+        "Physique Fondamentale",
+        "Mathématiques Pures"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "Nash",
+      "domain": "économie",
+      "continents": [
+        "Finance & Économie",
+        "Informatique & IA",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "PV=nRT",
+      "domain": "thermo",
+      "continents": [
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Chimie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "Re",
+      "domain": "fluides",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Physique Fondamentale",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "R₀",
+      "domain": "biologie",
+      "continents": [
+        "Biologie & Médecine",
+        "Finance & Économie",
+        "Mathématiques Pures"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "SDE",
+      "domain": "stochastique",
+      "continents": [
+        "Finance & Économie",
+        "Physique Fondamentale",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "SGD",
+      "domain": "ML",
+      "continents": [
+        "Informatique & IA",
+        "Finance & Économie",
+        "Biologie & Médecine"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "S_ent",
+      "domain": "thermo",
+      "continents": [
+        "Physique Fondamentale",
+        "Chimie",
+        "Informatique & IA"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "TM",
+      "domain": "automates",
+      "continents": [
+        "Informatique & IA",
+        "Mathématiques Pures",
+        "Physique Fondamentale"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "W(t)",
+      "domain": "stochastique",
+      "continents": [
+        "Finance & Économie",
+        "Physique Fondamentale",
+        "Mathématiques Pures"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "argmax",
+      "domain": "optimisation",
+      "continents": [
+        "Mathématiques Pures",
+        "Informatique & IA",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "argmin",
+      "domain": "optimisation",
+      "continents": [
+        "Mathématiques Pures",
+        "Informatique & IA",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "i",
+      "domain": "complexes",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "Γ",
+      "domain": "analyse",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Ingénierie & Électricité"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "ζ",
+      "domain": "nb premiers",
+      "continents": [
+        "Mathématiques Pures",
+        "Physique Fondamentale",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "ℋ",
+      "domain": "mécanique analytique",
+      "continents": [
+        "Physique Fondamentale",
+        "Mathématiques Pures",
+        "Informatique & IA"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "ℒ",
+      "domain": "mécanique analytique",
+      "continents": [
+        "Physique Fondamentale",
+        "Mathématiques Pures",
+        "Ingénierie & Électricité"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "∇L",
+      "domain": "ML",
+      "continents": [
+        "Informatique & IA",
+        "Mathématiques Pures",
+        "Finance & Économie"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "∇·",
+      "domain": "analyse",
+      "continents": [
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Mathématiques Pures"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "∇×",
+      "domain": "analyse",
+      "continents": [
+        "Physique Fondamentale",
+        "Ingénierie & Électricité",
+        "Mathématiques Pures"
+      ],
+      "n_continents": 3,
+      "type": "🌿 LIANE"
+    },
+    {
+      "symbol": "CFG",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "CFL",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "Chom",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "DFA",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "NFA",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "PDA",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "Reg",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "UTM",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    },
+    {
+      "symbol": "λ_calc",
+      "domain": "automates",
+      "continents": [
+        "Ingénierie & Électricité",
+        "Informatique & IA"
+      ],
+      "n_continents": 2,
+      "type": "🌱 PONT"
+    }
+  ],
+  "discoveries_check": {
+    "Poincaré (Perelman 2003)": {
+      "lianes_used": [
+        "S_ent",
+        "∂",
+        "∫",
+        "∇",
+        "Γ",
+        "exp",
+        "lim",
+        "gμν"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "Fermat (Wiles 1995)": {
+      "lianes_used": [
+        "Gal",
+        "ζ",
+        "∫",
+        "Σ",
+        "det",
+        "λ"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "GANs (Goodfellow 2014)": {
+      "lianes_used": [
+        "∇L",
+        "argmin",
+        "argmax",
+        "E[X]",
+        "log",
+        "exp",
+        "Nash"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "CRISPR (Doudna & Charpentier 2012)": {
+      "lianes_used": [
+        "DNA",
+        "RNA"
+      ],
+      "has_multi_continent_liane": false,
+      "max_continents": 1
+    },
+    "AlphaFold (2020)": {
+      "lianes_used": [
+        "Attn",
+        "∇L",
+        "exp",
+        "argmin",
+        "E[X]"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "mRNA Vaccines (Karikó)": {
+      "lianes_used": [
+        "RNA",
+        "exp"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "Higgs (2012)": {
+      "lianes_used": [
+        "ℒ",
+        "φ_Higgs",
+        "∂",
+        "∫",
+        "exp",
+        "Σ"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "Immunothérapie CAR-T": {
+      "lianes_used": [
+        "R₀",
+        "exp",
+        "P(A)"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "Black-Scholes (1973)": {
+      "lianes_used": [
+        "∂",
+        "∫",
+        "W(t)",
+        "exp",
+        "N(μ,σ²)",
+        "S_ent",
+        "Itô"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    },
+    "Transformers (Vaswani 2017)": {
+      "lianes_used": [
+        "Attn",
+        "exp",
+        "softmax",
+        "∇L",
+        "Σ",
+        "det"
+      ],
+      "has_multi_continent_liane": true,
+      "max_continents": 6
+    }
+  },
+  "bridge_matrix": {
+    "Mathématiques Pures × Physique Fondamentale": 38,
+    "Finance & Économie × Mathématiques Pures": 31,
+    "Ingénierie & Électricité × Physique Fondamentale": 27,
+    "Informatique & IA × Mathématiques Pures": 26,
+    "Finance & Économie × Physique Fondamentale": 25,
+    "Ingénierie & Électricité × Mathématiques Pures": 24,
+    "Finance & Économie × Informatique & IA": 24,
+    "Informatique & IA × Physique Fondamentale": 21,
+    "Biologie & Médecine × Finance & Économie": 21,
+    "Informatique & IA × Ingénierie & Électricité": 20,
+    "Biologie & Médecine × Mathématiques Pures": 16,
+    "Biologie & Médecine × Informatique & IA": 14,
+    "Biologie & Médecine × Physique Fondamentale": 13,
+    "Finance & Économie × Ingénierie & Électricité": 10,
+    "Chimie × Physique Fondamentale": 9,
+    "Chimie × Mathématiques Pures": 7,
+    "Biologie & Médecine × Ingénierie & Électricité": 6,
+    "Chimie × Ingénierie & Électricité": 6,
+    "Chimie × Informatique & IA": 4,
+    "Chimie × Finance & Économie": 4,
+    "Biologie & Médecine × Chimie": 4
+  }
+}
