@@ -228,7 +228,47 @@ function frame(){
   
   const pv2=bv().map(v=>project(v[0],v[1],v[2]));
   CE.forEach(e=>{ctx.beginPath();ctx.moveTo(pv2[e[0]].x,pv2[e[0]].y);ctx.lineTo(pv2[e[1]].x,pv2[e[1]].y);ctx.strokeStyle=isC2?'rgba(249,115,22,0.15)':'rgba(60,200,100,0.2)';ctx.lineWidth=1;ctx.stroke()});
-  
+
+  // ═══ SPINE: ligne verticale reliant tous les centres ═══
+  const centers3D=[];
+  currentST.forEach((st,si)=>{
+    if(activeS>=0&&si!==activeS)return;
+    const y=st.yr*BOX.h;
+    const cSym=st.sy.find(s=>s[3]===1);
+    if(cSym)centers3D.push({x:cSym[1],y,z:cSym[2],si,col:st.c})
+  });
+  if(centers3D.length>1){
+    ctx.beginPath();
+    const p0=project(centers3D[0].x,centers3D[0].y,centers3D[0].z);
+    ctx.moveTo(p0.x,p0.y);
+    for(let ci=1;ci<centers3D.length;ci++){
+      const pi=project(centers3D[ci].x,centers3D[ci].y,centers3D[ci].z);
+      ctx.lineTo(pi.x,pi.y);
+    }
+    ctx.strokeStyle='rgba(255,255,255,0.3)';
+    ctx.lineWidth=1.5;
+    ctx.setLineDash([4,4]);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+  // ═══ SPHÈRES: points autour de chaque centre ═══
+  const SPH_N=20,SPH_R=0.22;
+  centers3D.forEach(c=>{
+    const pc=project(c.x,c.y,c.z);
+    for(let j=0;j<SPH_N;j++){
+      const phi=Math.acos(1-2*(j+0.5)/SPH_N);
+      const theta=Math.PI*(1+Math.sqrt(5))*j+time*2;
+      const sx=c.x+Math.sin(phi)*Math.cos(theta)*SPH_R;
+      const sy=c.y+Math.cos(phi)*SPH_R;
+      const sz=c.z+Math.sin(phi)*Math.sin(theta)*SPH_R;
+      const pp=project(sx,sy,sz);
+      ctx.beginPath();ctx.moveTo(pc.x,pc.y);ctx.lineTo(pp.x,pp.y);
+      ctx.strokeStyle=rgba(c.col,0.12);ctx.lineWidth=0.5;ctx.stroke();
+      ctx.beginPath();ctx.arc(pp.x,pp.y,1.8,0,Math.PI*2);
+      ctx.fillStyle=rgba(c.col,0.45);ctx.fill();
+    }
+  });
+
   const bot=project(0,-BOX.h/2-0.35,0),top2=project(0,BOX.h/2+0.35,0);
   ctx.font='500 8px "JetBrains Mono",monospace';ctx.textAlign='center';
   ctx.fillStyle='rgba(74,222,128,0.3)';ctx.fillText(isC2?'▼ SOL — RH':'▼ SOL — =',bot.x,bot.y);
