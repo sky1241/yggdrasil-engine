@@ -1,0 +1,2452 @@
+{
+  "meta": {
+    "total": 235,
+    "strate_counts": [
+      137,
+      23,
+      10,
+      12,
+      10,
+      17,
+      26
+    ]
+  },
+  "strates": [
+    {
+      "id": 0,
+      "name": "SOL · Δ⁰₀ · Décidable",
+      "center": "RH",
+      "color": [
+        74,
+        222,
+        128
+      ],
+      "count": 137,
+      "y": -1.4
+    },
+    {
+      "id": 1,
+      "name": "NUAGE 1 · Σ⁰₁ · Semi-décidable",
+      "center": "P≠NP",
+      "color": [
+        59,
+        130,
+        246
+      ],
+      "count": 23,
+      "y": -1.0
+    },
+    {
+      "id": 2,
+      "name": "NUAGE 2 · Σ⁰₂ · Limite",
+      "center": "E_lb",
+      "color": [
+        167,
+        139,
+        250
+      ],
+      "count": 10,
+      "y": -0.6
+    },
+    {
+      "id": 3,
+      "name": "NUAGE n · Σ⁰ₙ · Motif",
+      "center": "PH_inf",
+      "color": [
+        236,
+        72,
+        153
+      ],
+      "count": 12,
+      "y": -0.2
+    },
+    {
+      "id": 4,
+      "name": "CIEL · AH · Union infinie",
+      "center": "PSPACE≠EXP",
+      "color": [
+        245,
+        158,
+        11
+      ],
+      "count": 10,
+      "y": 0.2
+    },
+    {
+      "id": 5,
+      "name": "HYPERARITHMÉTIQUE",
+      "center": "Large_c",
+      "color": [
+        249,
+        115,
+        22
+      ],
+      "count": 17,
+      "y": 0.6
+    },
+    {
+      "id": 6,
+      "name": "PLAFOND · Turing 1936",
+      "center": "BB5",
+      "color": [
+        239,
+        68,
+        68
+      ],
+      "count": 26,
+      "y": 1.0
+    }
+  ],
+  "symbols": [
+    {
+      "s": "RH",
+      "from": "Hypothèse de Riemann — ζ(s)=0 → Re(s)=½ (1859)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.3888,
+      "pz": -0.145,
+      "is_center": true,
+      "status": "conjecture"
+    },
+    {
+      "s": "NS_reg",
+      "from": "Navier-Stokes existence et régularité 3D",
+      "domain": "fluides",
+      "strate": 0,
+      "px": -0.3327,
+      "pz": 0.2288,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "YM_gap",
+      "from": "Yang-Mills mass gap (existence + gap >0)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.381,
+      "pz": -0.0657,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Hodge",
+      "from": "Conjecture de Hodge (classes cohomologie algébriques)",
+      "domain": "géom diff",
+      "strate": 0,
+      "px": -0.3752,
+      "pz": 0.0346,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BSD",
+      "from": "Birch et Swinnerton-Dyer (rang courbes elliptiques)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.3342,
+      "pz": -0.151,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Goldbach",
+      "from": "Tout pair >2 = somme 2 premiers (1742)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.3922,
+      "pz": -0.2322,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Twin_p",
+      "from": "∞ paires premiers jumeaux p, p+2",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.394,
+      "pz": -0.2463,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Collatz",
+      "from": "Conjecture Syracuse/Collatz (1937)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.4488,
+      "pz": -0.2196,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ABC",
+      "from": "Conjecture ABC (Masser-Oesterlé 1985)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.4247,
+      "pz": -0.2263,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Legendre",
+      "from": "∃ premier entre n² et (n+1)²",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.4766,
+      "pz": -0.2196,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Cramér",
+      "from": "Gaps entre premiers O(log²p) (1936)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.5312,
+      "pz": -0.3067,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Lehmer",
+      "from": "Mesure de Mahler minimale (1933)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.5563,
+      "pz": -0.2995,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Beal",
+      "from": "Conjecture Beal — Aˣ+Bʸ=Cᶻ → gcd>1 (1993)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.5457,
+      "pz": -0.3176,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Buny",
+      "from": "Conjecture Bunyakovsky (polynômes irréductibles → ∞ premiers, 1857)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.5622,
+      "pz": -0.3366,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ErdStraus",
+      "from": "Conjecture Erdős-Straus — 4/n = 1/x+1/y+1/z (1948)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.5887,
+      "pz": -0.3674,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Brocard",
+      "from": "Problème Brocard — n!+1 = m² (1876, seuls n=4,5,7 connus)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.6009,
+      "pz": -0.3588,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Lindelöf",
+      "from": "Hypothèse Lindelöf — ζ(½+it) = O(t^ε) (impliquée par RH)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.6274,
+      "pz": -0.3616,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Langlands",
+      "from": "Programme de Langlands (1967, partiellement prouvé)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.6452,
+      "pz": -0.4132,
+      "is_center": false,
+      "status": "programme"
+    },
+    {
+      "s": "Funct_L",
+      "from": "Fonctorialité de Langlands (non prouvé en général)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.6843,
+      "pz": -0.4092,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Sendov",
+      "from": "Conjecture Sendov (zéros polynômes, 1959, prouvé n>8 Tao)",
+      "domain": "analyse",
+      "strate": 0,
+      "px": 0.3201,
+      "pz": 0.1466,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Kakeya",
+      "from": "Conjecture Kakeya (dimension Besicovitch sets = n)",
+      "domain": "analyse",
+      "strate": 0,
+      "px": 0.4442,
+      "pz": 0.2502,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "InvSub",
+      "from": "Invariant Subspace Problem (tout opérateur sur Hilbert?)",
+      "domain": "analyse fonctionnelle",
+      "strate": 0,
+      "px": 0.289,
+      "pz": 0.3028,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Schanuel",
+      "from": "Conjecture Schanuel (transcendance, implique Lindemann)",
+      "domain": "analyse",
+      "strate": 0,
+      "px": 0.5887,
+      "pz": 0.3184,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Pompeiu",
+      "from": "Problème de Pompeiu (domaines sans propriété, 1929)",
+      "domain": "analyse",
+      "strate": 0,
+      "px": 0.7405,
+      "pz": 0.4872,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Jacobian",
+      "from": "Conjecture Jacobienne (Keller 1939)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.3906,
+      "pz": 0.0407,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Inv_Gal",
+      "from": "Problème inverse de Galois (tout groupe fini = Gal?)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.4667,
+      "pz": 0.0955,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Köthe",
+      "from": "Conjecture Köthe (nil idéal à gauche → nil bilatère)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.5885,
+      "pz": 0.1283,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Dixmier",
+      "from": "Conjecture Dixmier (endomorphisme algèbre Weyl = automorphisme)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.6739,
+      "pz": 0.1626,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Kaplansky",
+      "from": "Conjectures Kaplansky (unit, zero divisor, idempotent group rings)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.7966,
+      "pz": 0.2197,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Poinc4",
+      "from": "Poincaré lisse dim 4 (dim 3 = Perelman 2003)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.3207,
+      "pz": -0.2751,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "AndrCurt",
+      "from": "Conjecture Andrews-Curtis (présentations triviales, 1965)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.4182,
+      "pz": -0.3385,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Zeeman",
+      "from": "Conjecture Zeeman (contractible 2-complex × I collapsible)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.4967,
+      "pz": -0.3183,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Borel_c",
+      "from": "Conjecture Borel (variétés asphériques rigides)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.6063,
+      "pz": -0.3982,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Novikov_c",
+      "from": "Conjecture Novikov (invariance classes de Pontryagin supérieures)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.6292,
+      "pz": -0.4653,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Hopf_c",
+      "from": "Conjecture Hopf (courbure positive → χ>0 en dim paire)",
+      "domain": "géom diff",
+      "strate": 0,
+      "px": -0.5291,
+      "pz": 0.0783,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Chern_c",
+      "from": "Conjecture Chern (variétés affines plates → χ=0)",
+      "domain": "géom diff",
+      "strate": 0,
+      "px": -0.6782,
+      "pz": 0.0029,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Yau_c",
+      "from": "Conjectures de Yau (géométrie kählérienne, partiellement ouvert)",
+      "domain": "géom diff",
+      "strate": 0,
+      "px": -0.8648,
+      "pz": -0.0184,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Hadwiger",
+      "from": "Hadwiger — χ(G)≥k → Kₖ mineur (1943)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1247,
+      "pz": 0.3926,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Recon",
+      "from": "Reconstruction graphe (Kelly-Ulam 1941)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.12,
+      "pz": 0.4075,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Frankl",
+      "from": "Conjecture union-closed (Frankl 1979, partiellement Gilmer 2022)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.0847,
+      "pz": 0.4876,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "EFL",
+      "from": "Conjecture Erdős-Faber-Lovász (χ sur hypergraphes linéaires)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.115,
+      "pz": 0.5344,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "GracTree",
+      "from": "Conjecture graceful tree (Ringel-Kotzig 1967)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1476,
+      "pz": 0.6195,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Cycle2c",
+      "from": "Cycle double cover conjecture (Szegedy 1979)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1191,
+      "pz": 0.6202,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Barnette",
+      "from": "Conjecture Barnette (polytope simple 3-connexe biparti → hamiltonien)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1059,
+      "pz": 0.6782,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "SLE_univ",
+      "from": "Universalité SLE (convergence modèles discrets → SLE, partiel)",
+      "domain": "probabilités",
+      "strate": 0,
+      "px": -0.3088,
+      "pz": -0.2514,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "KPZ_univ",
+      "from": "Universalité KPZ (exposants croissance, Kardar-Parisi-Zhang 1986)",
+      "domain": "stochastique",
+      "strate": 0,
+      "px": 0.1492,
+      "pz": -0.3632,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Str_th",
+      "from": "Théorie des cordes (non vérifiée expérimentalement)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.4903,
+      "pz": -0.0461,
+      "is_center": false,
+      "status": "théorie"
+    },
+    {
+      "s": "SUSY",
+      "from": "Supersymétrie (non détectée au LHC)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.5166,
+      "pz": -0.0219,
+      "is_center": false,
+      "status": "théorie"
+    },
+    {
+      "s": "DM",
+      "from": "Matière noire (observée indirectement, nature inconnue)",
+      "domain": "cosmologie",
+      "strate": 0,
+      "px": -0.0861,
+      "pz": 0.3617,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "DE",
+      "from": "Énergie noire (nature inconnue, Λ ou dynamique?)",
+      "domain": "cosmologie",
+      "strate": 0,
+      "px": -0.16,
+      "pz": 0.5368,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Grav_q",
+      "from": "Gravité quantique (pas de théorie unifiée)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.6022,
+      "pz": -0.0146,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "LQG",
+      "from": "Loop Quantum Gravity (Rovelli-Smolin, non vérifié)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.6653,
+      "pz": -0.0106,
+      "is_center": false,
+      "status": "théorie"
+    },
+    {
+      "s": "Multivers",
+      "from": "Hypothèse multivers (non testable?)",
+      "domain": "cosmologie",
+      "strate": 0,
+      "px": -0.243,
+      "pz": 0.6585,
+      "is_center": false,
+      "status": "théorie"
+    },
+    {
+      "s": "Prot_d",
+      "from": "Décroissance du proton (prédite GUT, non observée)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.7052,
+      "pz": 0.0121,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Magn_m",
+      "from": "Monopôle magnétique (Dirac 1931, non détecté)",
+      "domain": "électromagn",
+      "strate": 0,
+      "px": 0.3599,
+      "pz": -0.1505,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "CP_strong",
+      "from": "Problème CP fort (pourquoi θ~0? axion?)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.7909,
+      "pz": 0.0112,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "ν_mass",
+      "from": "Masse neutrinos (Majorana/Dirac? mécanisme inconnu)",
+      "domain": "quantique",
+      "strate": 0,
+      "px": -0.2216,
+      "pz": -0.3513,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Hier_pb",
+      "from": "Problème de hiérarchie (masse Higgs vs Planck)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.8312,
+      "pz": -0.0146,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Axion",
+      "from": "Axion (particule hypothétique, solution CP fort)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.8816,
+      "pz": -0.0209,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Cosm_inf",
+      "from": "Inflation cosmique (Guth 1981, mécanisme exact ouvert)",
+      "domain": "cosmologie",
+      "strate": 0,
+      "px": -0.3788,
+      "pz": 0.7974,
+      "is_center": false,
+      "status": "théorie"
+    },
+    {
+      "s": "Baryon",
+      "from": "Baryogénèse (asymétrie matière/antimatière, mécanisme inconnu)",
+      "domain": "cosmologie",
+      "strate": 0,
+      "px": -0.4278,
+      "pz": 0.9203,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Penrose",
+      "from": "Censure cosmique (Penrose 1969, singularités nues interdites?)",
+      "domain": "relativité",
+      "strate": 0,
+      "px": -0.1056,
+      "pz": -0.3488,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BH_info",
+      "from": "Paradoxe information trou noir (Hawking, non résolu)",
+      "domain": "quantique",
+      "strate": 0,
+      "px": -0.3234,
+      "pz": -0.5381,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "QC_adv",
+      "from": "Avantage quantique prouvable (au-delà échantillonnage)",
+      "domain": "quantique",
+      "strate": 0,
+      "px": -0.3743,
+      "pz": -0.7641,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "AdS/CFT",
+      "from": "Correspondance AdS/CFT (Maldacena 1997, non prouvé)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 0.9454,
+      "pz": -0.0072,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Confinement",
+      "from": "Confinement quarks (QCD, non prouvé analytiquement)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 1.0741,
+      "pz": 0.0366,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "OWF_ex",
+      "from": "Existence one-way functions (base crypto, non prouvé)",
+      "domain": "crypto",
+      "strate": 0,
+      "px": -0.1841,
+      "pz": 0.3483,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Abio",
+      "from": "Abiogénèse (origine de la vie, mécanisme inconnu)",
+      "domain": "biologie",
+      "strate": 0,
+      "px": 0.2227,
+      "pz": 0.2961,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Consc",
+      "from": "Problème difficile conscience (Chalmers 1995)",
+      "domain": "biologie",
+      "strate": 0,
+      "px": 0.2923,
+      "pz": 0.5112,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Prot_fold",
+      "from": "Protein folding (AlphaFold partiel, théorie manque)",
+      "domain": "biologie",
+      "strate": 0,
+      "px": 0.3525,
+      "pz": 0.7941,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "RNA_w",
+      "from": "Hypothèse monde ARN (origine réplication, non prouvé)",
+      "domain": "biologie",
+      "strate": 0,
+      "px": 0.3849,
+      "pz": 0.96,
+      "is_center": false,
+      "status": "théorie"
+    },
+    {
+      "s": "L≠NL",
+      "from": "Conjecture L≠NL",
+      "domain": "complexité",
+      "strate": 0,
+      "px": -0.0031,
+      "pz": 0.3664,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Norm_π",
+      "from": "π est-il nombre normal? (distribution uniforme chiffres)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.6607,
+      "pz": -0.4025,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Norm_e",
+      "from": "e est-il nombre normal? (distribution uniforme chiffres)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7093,
+      "pz": -0.4457,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Gilbreath",
+      "from": "Conjecture Gilbreath (différences itérées des premiers)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7449,
+      "pz": -0.4254,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Grimm",
+      "from": "Conjecture Grimm (composés consécutifs → facteurs distincts)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7388,
+      "pz": -0.4964,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Pillai",
+      "from": "Conjecture Pillai (|aˣ-bʸ|→∞ sauf fini, généralise Catalan)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7646,
+      "pz": -0.5178,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Hilb16",
+      "from": "16ème problème Hilbert (cycles limites systèmes polynomiaux)",
+      "domain": "systèmes dynamiques",
+      "strate": 0,
+      "px": 0.2048,
+      "pz": -0.3494,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "MovSofa",
+      "from": "Moving sofa problem (Gerver 1992 borne sup, Romik)",
+      "domain": "géométrie",
+      "strate": 0,
+      "px": -0.3652,
+      "pz": -0.0539,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "LonelyR",
+      "from": "Lonely runner conjecture (Wills 1968, prouvé k≤7)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1451,
+      "pz": 0.759,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ChromPlane",
+      "from": "Nombre chromatique du plan (4≤χ≤7, Hadwiger-Nelson)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1083,
+      "pz": 0.7701,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Irr_π",
+      "from": "Mesure d'irrationalité de π (μ(π)=2?, borne Salikhov 7.103)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7836,
+      "pz": -0.5107,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Wein_c",
+      "from": "Conjecture Weinstein (orbites périodiques sur variétés symplectiques)",
+      "domain": "systèmes dynamiques",
+      "strate": 0,
+      "px": 0.337,
+      "pz": -0.4319,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Smale14",
+      "from": "Problèmes de Smale restants (18 problèmes, plusieurs ouverts)",
+      "domain": "systèmes dynamiques",
+      "strate": 0,
+      "px": 0.4026,
+      "pz": -0.5773,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Arrow_t",
+      "from": "Flèche du temps (pourquoi entropie croît? fondement ouvert)",
+      "domain": "stat mech",
+      "strate": 0,
+      "px": -0.0185,
+      "pz": -0.354,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Meas_pb",
+      "from": "Problème de la mesure QM (effondrement vs many-worlds vs...)",
+      "domain": "quantique",
+      "strate": 0,
+      "px": -0.3878,
+      "pz": -1.015,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Turbulence",
+      "from": "Turbulence complète (pas de théorie fermée, Feynman unsolved)",
+      "domain": "fluides",
+      "strate": 0,
+      "px": -0.7213,
+      "pz": 0.48,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "γ_irr",
+      "from": "Euler-Mascheroni γ irrationnel? (conjecturé, ouvert depuis 1734)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7496,
+      "pz": -0.5679,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Mersenne∞",
+      "from": "Nombres de Mersenne premiers infinis? (Lenstra-Pomerance-Wagstaff)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7606,
+      "pz": -0.5376,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Wieferich∞",
+      "from": "Infiniment de premiers Wieferich? (2^(p-1)≡1 mod p², seulement 1093 et 3511 connus)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.7925,
+      "pz": -0.605,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Carmichael",
+      "from": "Conjecture Carmichael — φ(n)=k a toujours ≥2 solutions (1907)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.8654,
+      "pz": -0.554,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ErdRecip",
+      "from": "Conjecture Erdős — somme 1/p diverge si A contient progressions arith. (partiel Green-Tao)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.8213,
+      "pz": -0.625,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "SophGerm∞",
+      "from": "Infiniment de premiers Sophie Germain? (p et 2p+1 premiers)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.8812,
+      "pz": -0.6664,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Waring_g",
+      "from": "Conjecture Waring — g(k) exact pour tout k (Hilbert prouvé existence, formule exacte partielle)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.8826,
+      "pz": -0.6442,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Odd_perf",
+      "from": "Existe-t-il un nombre parfait impair? (ouvert depuis l'antiquité)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.882,
+      "pz": -0.6703,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "ErdGyar",
+      "from": "Conjecture Erdős–Gyárfás — cycles longueur 2^k dans graphes cubiques",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1283,
+      "pz": 0.8543,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Third23",
+      "from": "Conjecture 1/3-2/3 — tout poset non total a comparaison entre 1/3 et 2/3 (Kislitsyn 1968)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1416,
+      "pz": 0.9331,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "CycleDbl",
+      "from": "Cycle double cover — tout graphe sans pont a couverture double par cycles (Szekeres/Seymour)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1387,
+      "pz": 1.0123,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Tutte5fl",
+      "from": "Conjecture Tutte 5-flow — tout graphe sans pont a 5-flow non-nul",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1152,
+      "pz": 1.0463,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Burnside",
+      "from": "Burnside borné — B(m,n) fini? (ouvert m=2,n=5 par exemple)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.8784,
+      "pz": 0.2438,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "AndrCurtis",
+      "from": "Conjecture Andrews-Curtis — présentation triviale réductible (1965, potentiellement faux)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 0.9462,
+      "pz": 0.34,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "CasasAlv",
+      "from": "Conjecture Casas-Alvero — polynôme partageant racine avec toutes ses dérivées (2001)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 1.0357,
+      "pz": 0.3977,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "CherlinZ",
+      "from": "Conjecture Cherlin-Zilber — groupes simples ω-stables sont algébriques (1970s)",
+      "domain": "algèbre",
+      "strate": 0,
+      "px": 1.0796,
+      "pz": 0.4692,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Thomson",
+      "from": "Problème Thomson — configuration optimale N points sur sphère (ouvert N>5)",
+      "domain": "géométrie",
+      "strate": 0,
+      "px": -0.6894,
+      "pz": -0.1359,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "EilGanea",
+      "from": "Conjecture Eilenberg-Ganea — cd(G)=2 implique gd(G)=2? (1957)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.7212,
+      "pz": -0.4387,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Smooth4P",
+      "from": "Poincaré lisse dim 4 — S⁴ topologique admet une unique structure lisse? (ouvert)",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.8486,
+      "pz": -0.531,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Brennan",
+      "from": "Conjecture Brennan — intégrales puissances dérivée applications conformes (1978)",
+      "domain": "analyse",
+      "strate": 0,
+      "px": 0.8567,
+      "pz": 0.578,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Lehmer_M",
+      "from": "Conjecture Lehmer — mesure de Mahler ≥ constante pour non-cyclotomiques (1933)",
+      "domain": "analyse",
+      "strate": 0,
+      "px": 0.9093,
+      "pz": 0.7181,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PosOp",
+      "from": "Conjecture opérateur courbure positive — variété compacte ≅ espace forme (Hamilton dim 4, ouvert dim>4)",
+      "domain": "géom diff",
+      "strate": 0,
+      "px": -1.0193,
+      "pz": -0.0627,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "GromovSC",
+      "from": "Questions Gromov courbure scalaire — 101 problèmes (2019+, programme actif)",
+      "domain": "géom diff",
+      "strate": 0,
+      "px": -1.1293,
+      "pz": -0.0623,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "PercolSq",
+      "from": "Seuil percolation carré — forme analytique exacte? (pc≈0.5927, pas de formule fermée)",
+      "domain": "probabilités",
+      "strate": 0,
+      "px": -0.5539,
+      "pz": -0.646,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Mandel_loc",
+      "from": "Ensemble Mandelbrot localement connexe? (MLC conjecture, Douady-Hubbard)",
+      "domain": "systèmes dynamiques",
+      "strate": 0,
+      "px": 0.563,
+      "pz": -0.6702,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Lepton_u",
+      "from": "Universalité leptonique — pourquoi 3 familles? masse neutrinos (BSM physics)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 1.0674,
+      "pz": 0.0442,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "CC_prob",
+      "from": "Problème constante cosmologique — pourquoi Λ≈10⁻¹²² en unités Planck? (fine-tuning)",
+      "domain": "cosmologie",
+      "strate": 0,
+      "px": -0.5422,
+      "pz": 0.9688,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "P≠NP",
+      "from": "Conjecture P≠NP (Cook 1971, Clay $1M)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.338,
+      "pz": -0.2071,
+      "is_center": true,
+      "status": "conjecture"
+    },
+    {
+      "s": "P=NP",
+      "from": "Question ouverte P=NP (Cook 1971)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.2954,
+      "pz": -0.304,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "NP≠coNP",
+      "from": "Conjecture NP≠coNP",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.266,
+      "pz": -0.3818,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "P≠PSPACE",
+      "from": "Conjecture P≠PSPACE (seconde en notoriété après P≠NP)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.143,
+      "pz": -0.4616,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "NP∩coNP",
+      "from": "NP∩coNP = P ? (ouvert, lié à factoring/LP)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.0677,
+      "pz": -0.5308,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "UGC",
+      "from": "Unique Games Conjecture (Khot 2002, inapproximabilité optimale)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.1052,
+      "pz": -0.5631,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ETH",
+      "from": "Exponential Time Hypothesis (Impagliazzo-Paturi 2001)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.1941,
+      "pz": -0.5727,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "SETH",
+      "from": "Strong ETH — SAT ne se résout pas en 2^(1-ε)n",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.3481,
+      "pz": -0.5581,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "GI∈P",
+      "from": "Graph Isomorphism ∈ P ? (quasi-poly Babai 2015, poly ouvert)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.5236,
+      "pz": -0.4766,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Factor∈P",
+      "from": "Factorisation ∈ P ? (classique, pas quantique)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.6338,
+      "pz": -0.3715,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "BH_conj",
+      "from": "Berman-Hartmanis — tous NP-complets isomorphes (1977)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.7803,
+      "pz": -0.219,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "VP≠VNP",
+      "from": "Conjecture Valiant VP≠VNP (permanent vs déterminant, 1979)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.7993,
+      "pz": -0.0718,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Nat_barrier",
+      "from": "Natural proofs barrier (Razborov-Rudich 1997, limite technique)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.8773,
+      "pz": 0.0872,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "NP/poly",
+      "from": "NP ⊄ P/poly ? (conjecture, Karp-Lipton: sinon PH collapse)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.8799,
+      "pz": 0.2618,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "OWF",
+      "from": "One-Way Functions existent? (base crypto, impliqué par P≠NP?)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.8161,
+      "pz": 0.4611,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "NC≠P",
+      "from": "NC ≠ P ? (parallélisme ne résout pas tout)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.7101,
+      "pz": 0.6429,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "L≠P",
+      "from": "L ≠ P ? (espace log ≠ temps poly)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.5488,
+      "pz": 0.8698,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "RP=P",
+      "from": "RP = P ? (dérandomisation one-sided)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.3723,
+      "pz": 0.9726,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BPP=P",
+      "from": "BPP = P ? (dérandomisation two-sided, conjecture standard)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": 0.1839,
+      "pz": 1.1116,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "L=RL",
+      "from": "L = RL ? (dérandomisation espace log, Reingold: SL=L)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.0671,
+      "pz": 1.1464,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "NL≠P",
+      "from": "NL ≠ P ? (non-det espace log ≠ temps poly)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.3702,
+      "pz": 1.125,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "3SUM",
+      "from": "3SUM conjecture — pas de algo sous-quadratique (fine-grained complexity)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.5528,
+      "pz": 1.0639,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "APSP",
+      "from": "APSP conjecture — all-pairs shortest path cubique (fine-grained)",
+      "domain": "complexité",
+      "strate": 1,
+      "px": -0.8251,
+      "pz": 0.9302,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "E_lb",
+      "from": "Circuit lower bounds pour E (Williams: NEXP⊄ACC⁰, reste ouvert circuits généraux)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": -0.353,
+      "pz": -0.2429,
+      "is_center": true,
+      "status": "open"
+    },
+    {
+      "s": "MCSP",
+      "from": "Minimum Circuit Size Problem — NP-complet? (Kabanets-Cai-Chen, ouvert)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": -0.2061,
+      "pz": -0.4714,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Derand",
+      "from": "Dérandomisation complète Σ₂ (PRG vs circuits, Nisan-Wigderson framework)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.0207,
+      "pz": -0.601,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "NW_hyp",
+      "from": "Hypothèse Nisan-Wigderson (dureté worst-case → dérandomisation)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.3604,
+      "pz": -0.5826,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "IW_hyp",
+      "from": "Impagliazzo-Wigderson: E dur ↔ BPP=P (2002, partiel)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.6211,
+      "pz": -0.3531,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Imp_5w",
+      "from": "5 mondes d'Impagliazzo (Algorithmica→Cryptomania, lequel est le nôtre?)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.8692,
+      "pz": -0.0376,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "AC⁰_lb",
+      "from": "Lower bounds AC⁰[p] pour tout p premier (au-delà Razborov-Smolensky)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.8329,
+      "pz": 0.4243,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Log_depth",
+      "from": "Formula lower bounds — log-depth circuits pour explicit functions (Karchmer-Wigderson)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.5822,
+      "pz": 0.8999,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "NC_SETH",
+      "from": "NC-SETH — Circuit-SAT on NC circuits pas en (2-ε)ⁿ? (Aaronson, fine-grained)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": 0.0966,
+      "pz": 1.1124,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PRG_exist",
+      "from": "PRG inconditionnels existent? (pseudo-random generators sans hypothèse)",
+      "domain": "complexité",
+      "strate": 2,
+      "px": -0.5221,
+      "pz": 1.0957,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "PH_inf",
+      "from": "PH ne collapse pas (∞ niveaux, Stockmeyer, conjecture fondamentale)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": -0.2951,
+      "pz": -0.2549,
+      "is_center": true,
+      "status": "conjecture"
+    },
+    {
+      "s": "FP≠#P",
+      "from": "FP≠#P (compter est plus dur que décider, Valiant)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": -0.2524,
+      "pz": -0.3895,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PH⊂PP",
+      "from": "PH ⊊ PP ? (Toda: PH⊆P^#P, mais PP⊆PSPACE)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": -0.0406,
+      "pz": -0.5508,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "TC⁰=NC¹",
+      "from": "TC⁰ = NC¹ ? (threshold vs log-depth, ouvert)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.1945,
+      "pz": -0.6128,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "ΣₖP_sep",
+      "from": "Séparations strictes ΣₖP ⊊ Σₖ₊₁P pour tout k",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.4996,
+      "pz": -0.5273,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "AM=MA",
+      "from": "AM = MA ? (ordre interaction Arthur-Merlin, conjecture)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.6938,
+      "pz": -0.3289,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "#P_perm",
+      "from": "Permanent lower bound — perm ∉ NC ? (Valiant 1979, borne super-poly ouverte)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.8157,
+      "pz": -0.0226,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PH≠PSPACE",
+      "from": "PH ≠ PSPACE — PH n'a pas de problème complet (si oui, collapse)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.8183,
+      "pz": 0.3885,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "#P_approx",
+      "from": "#P approximation — FPRAS pour tout #P? (Jerrum-Sinclair partiel)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.6625,
+      "pz": 0.7568,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "⊕P_NP",
+      "from": "⊕P vs NP — parité vs non-déterminisme (Toda: PH⊆BP⊕P)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": 0.3067,
+      "pz": 1.017,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "QSuprem",
+      "from": "Quantum supremacy formelle — échantillonnage impossible si PH ne collapse pas (Aaronson-Arkhipov 2011)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": -0.1339,
+      "pz": 1.1369,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "FewP",
+      "from": "FewP = P ? — NP avec peu de témoins (Cai-Hemachandra)",
+      "domain": "complexité",
+      "strate": 3,
+      "px": -0.6511,
+      "pz": 1.0925,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PSPACE≠EXP",
+      "from": "PSPACE ≠ EXPTIME ? (conjecture, hiérarchie espace)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.2525,
+      "pz": -0.3192,
+      "is_center": true,
+      "status": "conjecture"
+    },
+    {
+      "s": "NEXP_lb",
+      "from": "NEXP lower bounds au-delà ACC⁰ (Williams 2010+, ouvert circuits généraux)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.4549,
+      "pz": -0.2712,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Derandom_space",
+      "from": "RL=L ? (dérandomisation espace log, Reingold undirected)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.6127,
+      "pz": -0.2031,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Cons_PA",
+      "from": "Con(PA) dans systèmes plus faibles (ouvert au-delà Gentzen ε₀)",
+      "domain": "logique",
+      "strate": 4,
+      "px": 0.1342,
+      "pz": 0.3413,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Goldbach_eff",
+      "from": "Goldbach effectif — borne calculable pour exceptions",
+      "domain": "nb théorie",
+      "strate": 4,
+      "px": -0.4183,
+      "pz": -0.056,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "QIP_c",
+      "from": "QIP(2) = QIP ? (nombre tours quantique interactif)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.8023,
+      "pz": -0.065,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "EXP≠NEXP",
+      "from": "EXP ≠ NEXP ? (non-déterminisme exponentiel)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.9277,
+      "pz": 0.0734,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Vaught",
+      "from": "Conjecture Vaught — nombre modèles dénombrables: ω ou ≤ℵ₀ (1961)",
+      "domain": "logique",
+      "strate": 4,
+      "px": -0.4267,
+      "pz": 0.7151,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BQP_PSPACE",
+      "from": "BQP ⊊ PSPACE ? (quantique < espace poly, conjecture)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.9717,
+      "pz": 0.3517,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "NEXP⊄P/poly",
+      "from": "NEXP ⊄ P/poly ? (conjecture, impliquerait EXP≠NEXP)",
+      "domain": "complexité",
+      "strate": 4,
+      "px": 0.9449,
+      "pz": 0.6656,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Large_c",
+      "from": "Cardinaux larges (hiérarchie consistance, non résolu dans ZFC)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.348,
+      "pz": -0.2534,
+      "is_center": true,
+      "status": "open"
+    },
+    {
+      "s": "V=Ult",
+      "from": "V = Ultimate L (Woodin, programme en cours)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.2701,
+      "pz": -0.3602,
+      "is_center": false,
+      "status": "programme"
+    },
+    {
+      "s": "Ω-conj",
+      "from": "Ω-conjecture (Woodin, base de Ω-logique)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.207,
+      "pz": -0.4507,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "HOD_conj",
+      "from": "HOD conjecture (Woodin — V proche de HOD sous grands cardinaux?)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.061,
+      "pz": -0.5369,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "InnerM",
+      "from": "Inner Model Problem (modèle intérieur pour supercompact)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.1198,
+      "pz": -0.5584,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Det_proj",
+      "from": "Déterminance projective (PD, prouvé sous grands cardinaux, force exacte?)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.3595,
+      "pz": -0.5655,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Σ²₁_abs",
+      "from": "Σ²₁-absoluteness (invariance modèles de forcing)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.5144,
+      "pz": -0.4861,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "AD_UA",
+      "from": "AD implique Ultrapower Axiom? (Goldberg, ouvert au-delà ℵω)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.6656,
+      "pz": -0.3563,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PCF_conj",
+      "from": "Conjectures PCF (Shelah, arithmétique cardinale singulière)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.8093,
+      "pz": -0.1139,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "MM++",
+      "from": "Martin's Maximum++ (extension axiomes de forcing, implications?)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.8953,
+      "pz": 0.1209,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "PFA_sc",
+      "from": "PFA a force de consistance d'un supercompact? (problème majeur ouvert)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.8137,
+      "pz": 0.4327,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "MSC",
+      "from": "Mouse Set Conjecture — déf. ordinale → mouse? (Sargsyan, AD+)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.754,
+      "pz": 0.6768,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Reinh",
+      "from": "Cardinal Reinhardt — inconsistant avec AC? (ouvert sans AC, Berkeley)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.5429,
+      "pz": 0.8615,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "UltraExact",
+      "from": "Cardinaux ultraexacting (Aguilera-Bagaria-Goldberg 2024, vs HOD conjecture)",
+      "domain": "logique",
+      "strate": 5,
+      "px": 0.2385,
+      "pz": 1.0525,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Kunen_bound",
+      "from": "Seuil exact Kunen inconsistency — où commence l'inconsistance? (ouvert)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.0782,
+      "pz": 1.1227,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Borel_det∞",
+      "from": "Déterminance Borélienne infinie (au-delà ZFC?)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.372,
+      "pz": 1.1526,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Martin_conj",
+      "from": "Martin's conjecture — degrés Turing, fonctions régressives (Slaman-Steel, partiel 2024)",
+      "domain": "logique",
+      "strate": 5,
+      "px": -0.7388,
+      "pz": 1.0257,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BB5",
+      "from": "BB(5) = 47176870 ? (bb5.org 2024, vérification formelle en cours)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.0008,
+      "pz": 0.3955,
+      "is_center": true,
+      "status": "open"
+    },
+    {
+      "s": "BB6",
+      "from": "BB(6) — valeur inconnue, BB(n) indépendant ZFC pour n≥~7",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.0663,
+      "pz": 0.4486,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Skolem_pb",
+      "from": "Problème de Skolem — suite récurrence linéaire atteint 0? (Skolem 1934, décidable ordre≤4 seulement)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.1108,
+      "pz": 0.5445,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Positivity",
+      "from": "Positivity Problem — suite LRS toujours ≥0? (Ouaknine-Worrell, décidable ordre≤5)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.1449,
+      "pz": 0.5547,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Mort_mat",
+      "from": "Mortalité matrices — produit→0? (indécidable dim≥3 Paterson 1970, dim 2 ouvert)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.1984,
+      "pz": 0.6068,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "PCPH",
+      "from": "PCP sur entiers — variante Post Correspondence Problem sur ℤ",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.276,
+      "pz": 0.6949,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Inf_chess",
+      "from": "Infinite chess — mat forcé sur échiquier ℤ×ℤ? (Brumleve-Hamkins-Schlicht 2012, ouvert)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.3439,
+      "pz": 0.6841,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Free_mat",
+      "from": "Freeness matrices 3×3 — semi-groupe engendré libre? (Klarner-Birget-Satterfield 1991, indéc dim≥3)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.4422,
+      "pz": 0.7851,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Orbit_gen",
+      "from": "Orbit Problem généralisé — point atteint par itération matrice? (Kannan-Lipton partiel)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.548,
+      "pz": 0.7933,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Con_ZFC",
+      "from": "Con(ZFC) — consistance ZFC non prouvable dans ZFC (Gödel 1931)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -0.3621,
+      "pz": 0.1404,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "CH_ind",
+      "from": "CH indépendant ZFC (Gödel 1940/Cohen 1963, quel axiome adopter?)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -0.5129,
+      "pz": 0.1923,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "SH",
+      "from": "Hypothèse de Suslin — caractérisation ℝ? (indépendant ZFC, Suslin 1920)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -0.5997,
+      "pz": 0.12,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Kaplansky_ZFC",
+      "from": "Conjecture Kaplansky — homomorphisme Banach C(X) continu? (indépendant ZFC, Dales-Solovay 1976)",
+      "domain": "analyse fonctionnelle",
+      "strate": 6,
+      "px": 0.3283,
+      "pz": 0.243,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Whitehead",
+      "from": "Problème Whitehead — tout groupe abélien Whitehead libre? (indépendant ZFC, Shelah 1974)",
+      "domain": "algèbre",
+      "strate": 6,
+      "px": 0.3953,
+      "pz": -0.1584,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Borel_mz",
+      "from": "Conjecture Borel mesure zéro — tout strong measure zero dénombrable? (indépendant ZFC)",
+      "domain": "théorie mesure",
+      "strate": 6,
+      "px": -0.3211,
+      "pz": -0.24,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "NormMoore",
+      "from": "Normal Moore Space — tout espace Moore normal métrisable? (indépendant ZFC)",
+      "domain": "topologie",
+      "strate": 6,
+      "px": 0.0635,
+      "pz": -0.4208,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Calkin",
+      "from": "Automorphismes extérieurs algèbre Calkin (Farah/Phillips-Weaver, indépendant ZFC)",
+      "domain": "analyse fonctionnelle",
+      "strate": 6,
+      "px": 0.4082,
+      "pz": 0.7071,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Friedman",
+      "from": "Théorèmes de Friedman — énoncés finis indépendants PA/ZFC (TREE(3))",
+      "domain": "logique",
+      "strate": 6,
+      "px": -0.718,
+      "pz": 0.1119,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "ParisH",
+      "from": "Paris-Harrington — Ramsey renforcé indépendant PA (Paris-Harrington 1977)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -0.8317,
+      "pz": 0.0288,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Goodstein",
+      "from": "Goodstein theorem — suite→0 prouvable dans PA? (non, Kirby-Paris 1982)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -0.9479,
+      "pz": -0.1147,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Kruskal_ind",
+      "from": "Kruskal tree theorem — indépendant PA et prédicativisme (fini form)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -1.0671,
+      "pz": -0.259,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Chaitin_Ω",
+      "from": "Ω de Chaitin — probabilité arrêt, réel non calculable (Chaitin 1975, valeur exacte?)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.645,
+      "pz": 0.7793,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "K_bound",
+      "from": "Borne Kolmogorov — complexité K(x) non calculable, quelle borne par théorie? (Chaitin)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.7412,
+      "pz": 0.8335,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Σ¹₂_det",
+      "from": "Déterminance Σ¹₂ sans grands cardinaux (ouvert)",
+      "domain": "logique",
+      "strate": 6,
+      "px": -1.0955,
+      "pz": -0.3392,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "SpectGap",
+      "from": "Spectral gap undecidability — gapped/gapless indécidable pour Hamiltoniens 2D (Cubitt-Perez-Garcia-Wolf, Nature 2015)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.8423,
+      "pz": 0.8219,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "H10_Q",
+      "from": "Hilbert 10th sur ℚ — décidabilité Diophantine over rationals? (Mazur-Poonen, ouvert majeur)",
+      "domain": "calculabilité",
+      "strate": 6,
+      "px": -0.9793,
+      "pz": 0.8168,
+      "is_center": false,
+      "status": "open"
+    },
+    {
+      "s": "Littlewood",
+      "from": "Conjecture Littlewood — inf n·‖nα‖·‖nβ‖=0 (c.1930, Einsiedler-Katok-Lindenstrauss 2006: exceptions dim Hausdorff 0)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.8916,
+      "pz": -0.6899,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ErdTuran_ab",
+      "from": "Conjecture Erdős-Turán bases additives — base ordre 2 a f(n) non borné (1941)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.8958,
+      "pz": -0.7009,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Singmaster",
+      "from": "Conjecture Singmaster — multiplicité bornée dans triangle Pascal (1971)",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.9284,
+      "pz": -0.7238,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ErdHajnal",
+      "from": "Conjecture Erdős-Hajnal — H-free → clique/stable poly(n) (1977/1989, toujours ouverte)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.0798,
+      "pz": 1.0646,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ErdSzek",
+      "from": "Conjecture Erdős-Szekeres — 2^(n-2)+1 points suffisent pour n-gone convexe (1935)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.1055,
+      "pz": 1.1607,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "ErdSelf",
+      "from": "Conjecture Erdős-Selfridge — covering system moduli distincts contient modulus pair (1950)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.0811,
+      "pz": 1.1749,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Turan_bfp",
+      "from": "Turán brick factory problem — crossing number K(m,n) = Zarankiewicz? (1952, ouvert)",
+      "domain": "combinatoire",
+      "strate": 0,
+      "px": 0.0793,
+      "pz": 1.2733,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Furst_x2x3",
+      "from": "Conjecture Furstenberg ×2,×3 — seules mesures ergodiques = Lebesgue ou atomiques (1967, rigidité mesure)",
+      "domain": "systèmes dynamiques",
+      "strate": 0,
+      "px": 0.6535,
+      "pz": -0.7152,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "QUE",
+      "from": "Quantum Unique Ergodicity — fonctions propres → Lebesgue (Rudnick-Sarnak 1994, Lindenstrauss 2006 arithmétique)",
+      "domain": "systèmes dynamiques",
+      "strate": 0,
+      "px": 0.8212,
+      "pz": -0.81,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Tate_c",
+      "from": "Conjecture Tate — cycles algébriques ↔ classes Galois-invariantes ℓ-adiques (Tate 1963, analogue Hodge)",
+      "domain": "géom algébrique",
+      "strate": 0,
+      "px": -0.3896,
+      "pz": 0.1862,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Groth_std",
+      "from": "Conjectures standard Grothendieck — Lefschetz, Künneth, Hodge standard pour motifs (1968, ouvertes en général)",
+      "domain": "géom algébrique",
+      "strate": 0,
+      "px": -0.5002,
+      "pz": 0.1902,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "GrotPeriod",
+      "from": "Conjecture périodes Grothendieck — deg.transc(périodes) = dim groupe Galois motivique (Kontsevich-Zagier)",
+      "domain": "géom algébrique",
+      "strate": 0,
+      "px": -0.6526,
+      "pz": 0.1914,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Sect_conj",
+      "from": "Section conjecture Grothendieck — points rationnels ↔ sections π₁ (lettre à Faltings 1983)",
+      "domain": "géom algébrique",
+      "strate": 0,
+      "px": -0.8451,
+      "pz": 0.2694,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Haldane",
+      "from": "Conjecture Haldane — chaîne Heisenberg antiferro spin entier est gappée (1983, Nobel 2016, non prouvé rigoureusement)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 1.1645,
+      "pz": 0.1338,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "AreaLaw",
+      "from": "Area law conjecture — entropie intrication ∝ surface frontière (prouvé 1D Hastings 2007, ouvert dim>1)",
+      "domain": "QFT",
+      "strate": 0,
+      "px": 1.2192,
+      "pz": 0.1425,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BaumConnes",
+      "from": "Conjecture Baum-Connes (1982) — assembly map μ: K_*^top(G) → K_*(C*_r(G)) isomorphisme. Prouvée a-T-ménables (Higson-Kasparov 2001), hyperboliques (Lafforgue 2012). Contre-ex. avec coeff. (Higson-Lafforgue-Skandalis 2002). Ouverte en général.",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 0.9912,
+      "pz": -0.5068,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "FarrellJones",
+      "from": "Conjecture Farrell-Jones (1993) — assembly map K/L-théorie algébrique. Pas de contre-exemples. Implique Novikov, Borel. Prouvée CAT(0), hyperboliques (Bartels-Lück-Reich).",
+      "domain": "topologie",
+      "strate": 0,
+      "px": 1.0323,
+      "pz": -0.538,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Artin_prim",
+      "from": "Conjecture Artin racine primitive (1927) — tout non-carré est racine primitive mod p pour inf. primes. Hooley 1967: conditionnel GRH.",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.9721,
+      "pz": -0.7424,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Selberg_ev",
+      "from": "Conjecture Selberg valeur propre (1965) — λ₁ ≥ 1/4 pour Γ(N) congruence. Selberg: ≥3/16. Kim-Sarnak 2003: ≥975/4096≈0.238. Impliquée par Ramanujan généralisée.",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.97,
+      "pz": -0.8048,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "GenRam",
+      "from": "Conjecture Ramanujan généralisée — paramètres Satake tempérés pour formes automorphes cuspidales GL_n. Deligne: prouvée GL_2 holomorphe. Ouverte Maass forms et GL_n, n>2. Implique Selberg.",
+      "domain": "nb théorie",
+      "strate": 0,
+      "px": -0.9854,
+      "pz": -0.8379,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "BeilSoule",
+      "from": "Conjecture Beilinson-Soulé (vanishing) — H^p_mot(X,ℤ(q))=0 pour p<0, q≥0. Connue corps finis. Centrale théorie motivique, t-structure sur motifs.",
+      "domain": "géom algébrique",
+      "strate": 0,
+      "px": -0.9592,
+      "pz": 0.2244,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Mahler_vol",
+      "from": "Conjecture Mahler (1939) — produit volumique |K||K°| minimisé par hypercubes (sym) ou simplexes (non-sym). Prouvée n=2 (Mahler), n=3 (Iriyeh-Shibata 2020). Hanner polytopes = minima locaux.",
+      "domain": "géométrie",
+      "strate": 0,
+      "px": -0.9468,
+      "pz": -0.3013,
+      "is_center": false,
+      "status": "conjecture"
+    },
+    {
+      "s": "Abundance",
+      "from": "Abundance conjecture (MMP) — K_X nef ⟹ K_X semi-ample. Prouvée dim ≤ 3. Compléterait classification birationnelle. Birkar-Cascini-Hacon-McKernan 2010 (cas log general type).",
+      "domain": "géom algébrique",
+      "strate": 0,
+      "px": -1.0872,
+      "pz": 0.267,
+      "is_center": false,
+      "status": "conjecture"
+    }
+  ]
+}
