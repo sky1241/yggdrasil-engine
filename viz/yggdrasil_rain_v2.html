@@ -43,7 +43,7 @@ canvas{display:block;position:fixed;top:0;left:0;z-index:1}
   <div class="sd" id="sd"></div>
   <div class="sl" id="sl"></div>
 </div>
-<div id="cube-switch"><label><input type="checkbox" id="toggleC2" onchange="switchCube(this.checked)"> C2 · Conjectures</label></div>
+<div id="cube-switch"><label><input type="checkbox" id="toggleC2" onchange="switchCube(this.checked)"> C2 · Conjectures</label> <label><input type="checkbox" id="toggleC3" onchange="switchC3(this.checked)"> C3 · Fusion</label></div>
 <div id="legend"></div>
 <div id="hint"><kbd>drag</kbd> rotation · <kbd>scroll</kbd> zoom · <kbd>légende</kbd> focus · <kbd>espace</kbd> pause</div>
 <script>
@@ -51,7 +51,7 @@ const ST_C1=[{"n":"SOL · Δ⁰₀ · Décidable","sh":"Δ⁰₀ SOL","f":"R(x) 
 const CTR_C1=['=','K','FIN','COF','Th(ℕ)','O_Kl','HALT'];
 const ST_C2=[{"n":"SOL · Δ⁰₀ · Décidable","sh":"Δ⁰₀ SOL","f":"R(x) — tout se calcule en temps fini","de":"Conjectures calculables. Hypothèses ouvertes sur objets décidables.","c":[74,222,128],"yr":-0.44,"op":0.18,"sy":[["RH",0,0,1,"nb théorie"],["NS_reg",-0.364,0.289,0,"fluides"],["YM_gap",0.353,-0.035,0,"QFT"],["Hodge",-0.398,0.04,0,"géom diff"],["BSD",-0.348,-0.177,0,"nb théorie"],["Goldbach",-0.624,-0.322,0,"nb théorie"],["Twin_p",-0.808,-0.423,0,"nb théorie"],["Collatz",-1.034,-0.549,0,"nb théorie"],["ABC",-0.322,-0.173,0,"nb théorie"],["Legendre",-0.567,-0.309,0,"nb théorie"],["Cramér",-0.696,-0.384,0,"nb théorie"],["Lehmer",-0.916,-0.512,0,"nb théorie"],["Beal",-0.384,-0.217,0,"nb théorie"],["Buny",-0.498,-0.286,0,"nb théorie"],["ErdStraus",-0.714,-0.415,0,"nb théorie"],["Brocard",-0.971,-0.572,0,"nb théorie"],["Lindelöf",-0.385,-0.23,0,"nb théorie"],["Langlands",-0.522,-0.315,0,"nb théorie"],["Funct_L",-0.764,-0.468,0,"nb théorie"],["Sendov",0.442,0.225,0,"analyse"],["Kakeya",0.5,0.276,0,"analyse"],["InvSub",0.324,0.374,0,"analyse fonctionnelle"],["Schanuel",0.786,0.469,0,"analyse"],["Pompeiu",0.901,0.579,0,"analyse"],["Jacobian",0.371,0.07,0,"algèbre"],["Inv_Gal",0.726,0.153,0,"algèbre"],["Köthe",0.828,0.194,0,"algèbre"],["Dixmier",0.994,0.256,0,"algèbre"],["Kaplansky",0.354,0.1,0,"algèbre"],["Poinc4",0.394,-0.313,0,"topologie"],["AndrCurt",0.541,-0.41,0,"topologie"],["Zeeman",0.758,-0.549,0,"topologie"],["Borel_c",0.939,-0.649,0,"topologie"],["Novikov_c",0.373,-0.246,0,"topologie"],["Hopf_c",-0.744,0.05,0,"géom diff"],["Chern_c",-0.858,0.029,0,"géom diff"],["Yau_c",-1.109,0.0,0,"géom diff"],["Hadwiger",0.12,0.485,0,"combinatoire"],["Recon",0.156,0.663,0,"combinatoire"],["Frankl",0.206,0.922,0,"combinatoire"],["EFL",0.229,1.09,0,"combinatoire"],["GracTree",0.093,0.468,0,"combinatoire"],["Cycle2c",0.106,0.568,0,"combinatoire"],["Barnette",0.142,0.819,0,"combinatoire"],["SLE_univ",-0.292,-0.276,0,"probabilités"],["KPZ_univ",0.151,-0.331,0,"stochastique"],["Str_th",0.61,-0.052,0,"QFT"],["SUSY",0.806,-0.058,0,"QFT"],["DM",-0.129,0.379,0,"cosmologie"],["DE",-0.242,0.64,0,"cosmologie"],["Grav_q",1.074,-0.061,0,"QFT"],["LQG",0.416,-0.018,0,"QFT"],["Multivers",-0.319,0.764,0,"cosmologie"],["Prot_d",0.618,-0.018,0,"QFT"],["Magn_m",0.498,-0.146,0,"électromagn"],["CP_strong",0.907,-0.013,0,"QFT"],["ν_mass",-0.232,-0.397,0,"quantique"],["Hier_pb",1.041,0.0,0,"QFT"],["Axion",0.481,0.007,0,"QFT"],["Cosm_inf",-0.432,0.945,0,"cosmologie"],["Baryon",-0.186,0.375,0,"cosmologie"],["Penrose",-0.075,-0.523,0,"relativité"],["BH_info",-0.315,-0.608,0,"quantique"],["QC_adv",-0.37,-0.81,0,"quantique"],["AdS/CFT",0.693,0.02,0,"QFT"],["Confinement",0.941,0.04,0,"QFT"],["OWF_ex",-0.321,0.37,0,"crypto"],["Abio",0.197,0.338,0,"biologie"],["Consc",0.265,0.511,0,"biologie"],["Prot_fold",0.352,0.77,0,"biologie"],["RNA_w",0.391,0.983,0,"biologie"],["L≠NL",-0.055,0.384,0,"complexité"],["Norm_π",-1.003,-0.621,0,"nb théorie"],["Norm_e",-0.43,-0.27,0,"nb théorie"],["Gilbreath",-0.529,-0.336,0,"nb théorie"],["Grimm",-0.764,-0.491,0,"nb théorie"],["Pillai",-0.906,-0.59,0,"nb théorie"],["Hilb16",0.297,-0.421,0,"systèmes dynamiques"],["MovSofa",-0.425,-0.08,0,"géométrie"],["LonelyR",0.169,1.044,0,"combinatoire"],["ChromPlane",0.058,0.39,0,"combinatoire"],["Irr_π",-0.377,-0.248,0,"nb théorie"],["Wein_c",0.372,-0.492,0,"systèmes dynamiques"],["Smale14",0.563,-0.696,0,"systèmes dynamiques"],["Arrow_t",0.073,-0.506,0,"stat mech"],["Meas_pb",-0.4,-1.005,0,"quantique"],["Turbulence",-0.513,0.33,0,"fluides"],["γ_irr",-0.624,-0.416,0,"nb théorie"],["Mersenne∞",-0.731,-0.493,0,"nb théorie"],["Wieferich∞",-0.848,-0.579,0,"nb théorie"],["Carmichael",-0.295,-0.204,0,"nb théorie"],["ErdRecip",-0.483,-0.338,0,"nb théorie"],["SophGerm∞",-0.737,-0.521,0,"nb théorie"],["Waring_g",-0.937,-0.671,0,"nb théorie"],["Odd_perf",-0.345,-0.25,0,"nb théorie"],["ErdGyar",0.079,0.576,0,"combinatoire"],["Third23",0.107,0.852,0,"combinatoire"],["CycleDbl",0.135,1.182,0,"combinatoire"],["Tutte5fl",0.045,0.443,0,"combinatoire"],["Burnside",0.712,0.218,0,"algèbre"],["AndrCurtis",0.897,0.296,0,"algèbre"],["CasasAlv",0.954,0.339,0,"algèbre"],["CherlinZ",0.448,0.17,0,"algèbre"],["Thomson",-0.671,-0.173,0,"géométrie"],["EilGanea",0.565,-0.354,0,"topologie"],["Smooth4P",0.72,-0.429,0,"topologie"],["Brennan",0.383,0.265,0,"analyse"],["Lehmer_M",0.474,0.351,0,"analyse"],["PosOp",-0.428,-0.014,0,"géom diff"],["GromovSC",-0.65,-0.043,0,"géom diff"],["PercolSq",-0.486,-0.561,0,"probabilités"],["Mandel_loc",0.765,-0.882,0,"systèmes dynamiques"],["Lepton_u",1.056,0.06,0,"QFT"],["CC_prob",-0.314,0.581,0,"cosmologie"],["Littlewood",-0.486,-0.356,0,"nb théorie"],["ErdTuran_ab",-0.767,-0.568,0,"nb théorie"],["Singmaster",-0.933,-0.7,0,"nb théorie"],["ErdHajnal",0.056,0.621,0,"combinatoire"],["ErdSzek",0.071,0.902,0,"combinatoire"],["ErdSelf",0.074,1.117,0,"combinatoire"],["Turan_bfp",0.021,0.377,0,"combinatoire"],["Furst_x2x3",0.331,-0.357,0,"systèmes dynamiques"],["QUE",0.469,-0.474,0,"systèmes dynamiques"],["Tate_c",-0.454,0.184,0,"géom algébrique"],["Groth_std",-0.625,0.23,0,"géom algébrique"],["GrotPeriod",-0.75,0.248,0,"géom algébrique"],["Sect_conj",-1.025,0.301,0,"géom algébrique"],["Haldane",0.353,0.025,0,"QFT"],["AreaLaw",0.735,0.063,0,"QFT"],["BaumConnes",1.016,-0.576,0,"topologie"],["FarrellJones",0.44,-0.237,0,"topologie"],["Artin_prim",-0.323,-0.245,0,"nb théorie"],["Selberg_ev",-0.46,-0.353,0,"nb théorie"],["GenRam",-0.749,-0.581,0,"nb théorie"],["BeilSoule",-0.504,0.13,0,"géom algébrique"],["Mahler_vol",-0.765,-0.253,0,"géométrie"],["Abundance",-0.642,0.143,0,"géom algébrique"]],"shells":[0.4,0.5,0.6,0.7,0.8,0.9]},{"n":"NUAGE 1 · Σ⁰₁ · Halting Problem","sh":"Σ⁰₁ HALTING","f":"∃y R(x, y) — il existe, mais on sait pas quand","de":"Semi-décidable. Conjectures d'existence.","c":[96,165,250],"yr":-0.26,"op":0.16,"sy":[["P≠NP",0,0,1,"complexité"],["P=NP",-0.213,-0.293,0,"complexité"],["NP≠coNP",-0.299,-0.64,0,"complexité"],["P≠PSPACE",-0.226,-0.9,0,"complexité"],["NP∩coNP",-0.056,-1.032,0,"complexité"],["UGC",0.059,-0.431,0,"complexité"],["ETH",0.215,-0.633,0,"complexité"],["SETH",0.416,-0.727,0,"complexité"],["GI∈P",0.761,-0.885,0,"complexité"],["Factor∈P",0.334,-0.264,0,"complexité"],["BH_conj",0.54,-0.28,0,"complexité"],["VP≠VNP",0.851,-0.251,0,"complexité"],["Nat_barrier",1.136,-0.109,0,"complexité"],["NP/poly",0.384,0.037,0,"complexité"],["OWF",0.601,0.177,0,"complexité"],["NC≠P",0.86,0.446,0,"complexité"],["L≠P",0.884,0.699,0,"complexité"],["RP=P",0.28,0.325,0,"complexité"],["BPP=P",0.329,0.576,0,"complexité"],["L=RL",0.261,0.769,0,"complexité"],["NL≠P",0.143,1.041,0,"complexité"],["3SUM",-0.022,0.41,0,"complexité"],["APSP",-0.165,0.656,0,"complexité"]],"shells":[0.4,0.6,0.7,0.8,0.9,1.0]},{"n":"NUAGE 2 · Σ⁰₂ · Limite","sh":"Σ⁰₂ LIMITE","f":"∃y ∀z R(x,y,z) — deviner, corriger, jamais sûr","de":"Ensembles limites. Conjectures de convergence.","c":[167,139,250],"yr":-0.1,"op":0.14,"sy":[["E_lb",-0.23,-0.317,0,"complexité"],["MCSP",-0.114,-0.599,0,"complexité"],["Derand",0.2,-0.778,0,"complexité"],["NW_hyp",0.716,-0.866,0,"complexité"],["IW_hyp",0.354,-0.167,0,"complexité"],["Imp_5w",0.733,0.0,0,"complexité"],["AC⁰_lb",0.855,0.402,0,"complexité"],["Log_depth",0.652,0.788,0,"complexité"],["NC_SETH",0.098,0.38,0,"complexité"],["PRG_exist",-0.129,0.678,0,"complexité"]],"shells":[0.4,0.6,0.7,0.8,0.9,1.0]},{"n":"NUAGE n · Σ⁰ₙ · Motif","sh":"Σ⁰ₙ MOTIF","f":"∃∀∃∀… n alternances","de":"Alternances quantificateurs. Conjectures structurelles.","c":[244,114,182],"yr":0.06,"op":0.13,"sy":[["PH_inf",0.331,-0.203,0,"complexité"],["FP≠#P",0.533,-0.263,0,"complexité"],["PH⊂PP",0.895,-0.343,0,"complexité"],["TC⁰=NC¹",1.071,-0.302,0,"complexité"],["ΣₖP_sep",0.428,-0.079,0,"complexité"],["AM=MA",0.708,-0.065,0,"complexité"],["#P_perm",0.935,0.0,0,"complexité"],["PH≠PSPACE",1.04,0.096,0,"complexité"],["#P_approx",0.361,0.067,0,"complexité"],["⊕P_NP",0.623,0.176,0,"complexité"],["QSuprem",0.809,0.31,0,"complexité"],["FewP",0.981,0.484,0,"complexité"],["GeomLang",0.0,0.481,0,"géom algébrique"],["Kakeya3D",-0.0,-0.471,0,"géométrie"],["Zimmer",-0.527,0.0,0,"géom diff"]],"shells":[0.4,0.5,0.6,0.7,0.9,1.0]},{"n":"CIEL · AH = ∪ₙ Σ⁰ₙ","sh":"AH CIEL","f":"Tout le ciel arithmétique","de":"Conjectures au-delà de la hiérarchie finie.","c":[251,191,36],"yr":0.2,"op":0.13,"sy":[["PSPACE≠EXP",0.273,-0.246,0,"complexité"],["NEXP_lb",0.556,-0.321,0,"complexité"],["Derandom_space",0.809,-0.263,0,"complexité"],["Cons_PA",0.105,0.494,0,"logique"],["Goldbach_eff",-0.197,-0.342,0,"nb théorie"],["QIP_c",1.039,-0.109,0,"complexité"],["EXP≠NEXP",0.428,0.045,0,"complexité"],["Vaught",-0.323,0.559,0,"logique"],["BQP_PSPACE",0.59,0.192,0,"complexité"],["NEXP⊄P/poly",0.723,0.417,0,"complexité"]],"shells":[0.4,0.5,0.6,0.8,0.9,1.0]},{"n":"HYPERARITHMÉTIQUE","sh":"HYP ω₁ᶜᵏ","f":"∅⁽α⁾ pour α < ω₁^CK","de":"Transfini. Conjectures hyperarithmétiques.","c":[251,146,60],"yr":0.34,"op":0.16,"sy":[["Large_c",-0.303,-0.418,0,"logique"],["V=Ult",-0.235,-0.606,0,"logique"],["Ω-conj",-0.105,-0.939,0,"logique"],["HOD_conj",0.163,-1.097,0,"logique"],["InnerM",0.142,-0.33,0,"logique"],["Det_proj",0.463,-0.59,0,"logique"],["Σ²₁_abs",0.751,-0.567,0,"logique"],["AD_UA",1.096,-0.448,0,"logique"],["PCF_conj",0.512,-0.067,0,"logique"],["MM++",0.717,0.093,0,"logique"],["PFA_sc",0.759,0.31,0,"logique"],["MSC",0.876,0.661,0,"logique"],["Reinh",0.24,0.306,0,"logique"],["UltraExact",0.254,0.59,0,"logique"],["Kunen_bound",0.118,0.792,0,"logique"],["Borel_det∞",-0.119,1.072,0,"logique"],["Martin_conj",-0.191,0.492,0,"logique"]],"shells":[0.4,0.5,0.6,0.7,0.8,0.9]},{"n":"PLAFOND · Turing 1936","sh":"∞ PLAFOND","f":"∄ M décidant l'arrêt — Prouvé.","de":"Indécidable. Conjectures sur les limites absolues.","c":[239,68,68],"yr":0.46,"op":0.24,"sy":[["BB5",0,0,1,"calculabilité"],["BB6",-0.062,0.393,0,"calculabilité"],["Skolem_pb",-0.151,0.695,0,"calculabilité"],["Positivity",-0.232,0.84,0,"calculabilité"],["Mort_mat",-0.348,1.029,0,"calculabilité"],["PCPH",-0.195,0.485,0,"calculabilité"],["Inf_chess",-0.318,0.678,0,"calculabilité"],["Free_mat",-0.423,0.783,0,"calculabilité"],["Orbit_gen",-0.597,0.97,0,"calculabilité"],["Con_ZFC",-0.353,0.135,0,"logique"],["CH_ind",-0.6,0.169,0,"logique"],["SH",-0.948,0.176,0,"logique"],["Kaplansky_ZFC",0.353,0.286,0,"analyse fonctionnelle"],["Whitehead",0.448,0.0,0,"algèbre"],["Borel_mz",-0.242,-0.42,0,"théorie mesure"],["NormMoore",0.18,-0.312,0,"topologie"],["Calkin",0.338,0.585,0,"analyse fonctionnelle"],["Friedman",-1.096,0.101,0,"logique"],["ParisH",-0.503,0.0,0,"logique"],["Goodstein",-0.596,-0.055,0,"logique"],["Kruskal_ind",-0.947,-0.175,0,"logique"],["Chaitin_Ω",-0.208,0.299,0,"calculabilité"],["K_bound",-0.372,0.475,0,"calculabilité"],["Σ¹₂_det",-1.075,-0.303,0,"logique"],["SpectGap",-0.602,0.685,0,"calculabilité"],["H10_Q",-0.738,0.75,0,"calculabilité"]],"shells":[0.4,0.5,0.6,0.7,0.9,1.0]}];
 const CTR_C2=['RH','P≠NP','ACE','Collatz','SCH','AD?','BB5'];
-let currentST=ST_C1,currentCTR=CTR_C1,isC2=false;
+let currentST=ST_C1,currentCTR=CTR_C1,isC2=false,isC3=false;
 
 const cv=document.getElementById('c'),ctx=cv.getContext('2d');
 let W,H;function resize(){W=cv.width=innerWidth;H=cv.height=innerHeight}resize();addEventListener('resize',resize);
@@ -95,7 +95,10 @@ function showInfo(i){
   document.getElementById('sn').style.color=`rgb(${s.c})`;
   document.getElementById('sf').textContent=s.f;
   document.getElementById('sd').textContent=s.de;
-  document.getElementById('sl').textContent=`☉ ${currentCTR[i]} · ${s.shells.length} couches naturelles · ${s.sy.length} symboles`
+  const cnt=isC3?(s.sy.length+ST_C2[i].sy.length):s.sy.length;
+  document.getElementById('sl').textContent=isC3
+    ?`☉ ${currentCTR[i]} + ${CTR_C2[i]} · C1+C2 · ${cnt} symboles`
+    :`☉ ${currentCTR[i]} · ${s.shells.length} couches naturelles · ${s.sy.length} symboles`
 }
 
 function switchCube(toC2){
@@ -107,6 +110,27 @@ function switchCube(toC2){
   currentST.forEach((s,i)=>{
     const d=document.createElement('div');d.className='li';
     d.innerHTML=`<div class="ld" style="color:rgb(${s.c});background:rgb(${s.c})"></div><div class="ll">${s.sh}</div><div class="lc">${s.sy.length}</div>`;
+    d.addEventListener('click',()=>{activeS=activeS===i?-1:i;document.querySelectorAll('.li').forEach((el,j)=>el.classList.toggle('act',j===activeS));if(activeS>=0)showInfo(activeS)});
+    d.addEventListener('mouseenter',()=>showInfo(i));
+    legEl.appendChild(d)
+  });
+  activeS=-1;showInfo(0)
+}
+
+function switchC3(toC3){
+  isC3=toC3;
+  document.getElementById('toggleC2').disabled=toC3;
+  if(toC3){
+    isC2=false;document.getElementById('toggleC2').checked=false;
+    currentST=ST_C1;currentCTR=CTR_C1;
+    document.querySelector('#hud .sub').textContent='763 symboles · C1+C2 · 7 strates fusionnées';
+  }else{
+    document.querySelector('#hud .sub').textContent='525 symboles · 8257 concepts OpenAlex · orbites spectrales';
+  }
+  legEl.innerHTML='';
+  currentST.forEach((s,i)=>{
+    const d=document.createElement('div');d.className='li';
+    d.innerHTML=`<div class="ld" style="color:rgb(${s.c});background:rgb(${s.c})"></div><div class="ll">${s.sh}</div><div class="lc">${isC3?(s.sy.length+ST_C2[i].sy.length):s.sy.length}</div>`;
     d.addEventListener('click',()=>{activeS=activeS===i?-1:i;document.querySelectorAll('.li').forEach((el,j)=>el.classList.toggle('act',j===activeS));if(activeS>=0)showInfo(activeS)});
     d.addEventListener('mouseenter',()=>showInfo(i));
     legEl.appendChild(d)
@@ -153,7 +177,16 @@ function frame(){
       drawOrbitRing(y,r,si,dissolve,rot);
     });
   });
-  
+  if(isC3){
+    ST_C2.forEach((st,si)=>{
+      const y=st.yr*BOX.h;
+      const dissolve=si/6;
+      const rot=time*(0.3-si*0.035);
+      if(activeS>=0&&si!==activeS)return;
+      st.shells.forEach(r=>{drawOrbitRing(y,r,si,dissolve,rot)});
+    });
+  }
+
   const items=[];
   
   currentST.forEach((st,si)=>{
@@ -178,7 +211,23 @@ function frame(){
       items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:st.c,sop,isCentre})
     });
   });
-  
+  if(isC3){
+    ST_C2.forEach((st,si)=>{
+      const y=st.yr*BOX.h;
+      let sop=0.85;
+      if(activeS>=0){sop=si===activeS?1:0.04}
+      const rot=time*(0.3-si*0.035);
+      const cr=Math.cos(rot),sr=Math.sin(rot);
+      st.sy.forEach(sym=>{
+        const isCentre=sym[3]===1;
+        let ox=sym[1],oz=sym[2];
+        if(!isCentre){const rx=ox*cr-oz*sr;const rz=ox*sr+oz*cr;ox=rx;oz=rz;}
+        const pp=project(ox,y,oz);
+        items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:st.c,sop:sop*0.55,isCentre,isC2src:true})
+      });
+    });
+  }
+
   items.sort((a,b)=>a.z-b.z);
   let ns=null,nd=22;
   
@@ -227,7 +276,7 @@ function frame(){
   }
   
   const pv2=bv().map(v=>project(v[0],v[1],v[2]));
-  CE.forEach(e=>{ctx.beginPath();ctx.moveTo(pv2[e[0]].x,pv2[e[0]].y);ctx.lineTo(pv2[e[1]].x,pv2[e[1]].y);ctx.strokeStyle=isC2?'rgba(249,115,22,0.15)':'rgba(60,200,100,0.2)';ctx.lineWidth=1;ctx.stroke()});
+  CE.forEach(e=>{ctx.beginPath();ctx.moveTo(pv2[e[0]].x,pv2[e[0]].y);ctx.lineTo(pv2[e[1]].x,pv2[e[1]].y);ctx.strokeStyle=isC3?'rgba(200,160,60,0.2)':isC2?'rgba(249,115,22,0.15)':'rgba(60,200,100,0.2)';ctx.lineWidth=1;ctx.stroke()});
 
   // ═══ SPINE: ligne verticale reliant tous les centres ═══
   const centers3D=[];
@@ -245,11 +294,49 @@ function frame(){
       const pi=project(centers3D[ci].x,centers3D[ci].y,centers3D[ci].z);
       ctx.lineTo(pi.x,pi.y);
     }
-    ctx.strokeStyle='rgba(255,255,255,0.3)';
+    ctx.strokeStyle=isC3?'rgba(60,200,100,0.4)':'rgba(255,255,255,0.3)';
     ctx.lineWidth=1.5;
     ctx.setLineDash([4,4]);
     ctx.stroke();
     ctx.setLineDash([]);
+  }
+  if(isC3){
+    const c2centers=[];
+    ST_C2.forEach((st,si)=>{
+      if(activeS>=0&&si!==activeS)return;
+      const y=st.yr*BOX.h;
+      const cSym=st.sy.find(s=>s[3]===1);
+      if(cSym)c2centers.push({x:cSym[1],y,z:cSym[2],si,col:st.c})
+    });
+    if(c2centers.length>1){
+      ctx.beginPath();
+      const p0=project(c2centers[0].x,c2centers[0].y,c2centers[0].z);
+      ctx.moveTo(p0.x,p0.y);
+      for(let ci=1;ci<c2centers.length;ci++){
+        const pi=project(c2centers[ci].x,c2centers[ci].y,c2centers[ci].z);
+        ctx.lineTo(pi.x,pi.y);
+      }
+      ctx.strokeStyle='rgba(249,115,22,0.4)';
+      ctx.lineWidth=1.5;
+      ctx.setLineDash([4,4]);
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+    c2centers.forEach(c=>{
+      const pc=project(c.x,c.y,c.z);
+      for(let j=0;j<SPH_N;j++){
+        const phi=Math.acos(1-2*(j+0.5)/SPH_N);
+        const theta=Math.PI*(1+Math.sqrt(5))*j+time*2;
+        const sx=c.x+Math.sin(phi)*Math.cos(theta)*SPH_R;
+        const sy=c.y+Math.cos(phi)*SPH_R;
+        const sz=c.z+Math.sin(phi)*Math.sin(theta)*SPH_R;
+        const pp=project(sx,sy,sz);
+        ctx.beginPath();ctx.moveTo(pc.x,pc.y);ctx.lineTo(pp.x,pp.y);
+        ctx.strokeStyle=rgba(c.col,0.08);ctx.lineWidth=0.5;ctx.stroke();
+        ctx.beginPath();ctx.arc(pp.x,pp.y,1.8,0,Math.PI*2);
+        ctx.fillStyle=rgba(c.col,0.3);ctx.fill();
+      }
+    });
   }
   // ═══ SPHÈRES: points autour de chaque centre ═══
   const SPH_N=20,SPH_R=0.22;
@@ -271,8 +358,8 @@ function frame(){
 
   const bot=project(0,-BOX.h/2-0.35,0),top2=project(0,BOX.h/2+0.35,0);
   ctx.font='500 8px "JetBrains Mono",monospace';ctx.textAlign='center';
-  ctx.fillStyle='rgba(74,222,128,0.3)';ctx.fillText(isC2?'▼ SOL — RH':'▼ SOL — =',bot.x,bot.y);
-  ctx.fillStyle='rgba(239,68,68,0.3)';ctx.fillText(isC2?'▲ PLAFOND — BB5':'▲ PLAFOND — HALT',top2.x,top2.y);
+  ctx.fillStyle='rgba(74,222,128,0.3)';ctx.fillText(isC3?'▼ SOL — = + RH':isC2?'▼ SOL — RH':'▼ SOL — =',bot.x,bot.y);
+  ctx.fillStyle='rgba(239,68,68,0.3)';ctx.fillText(isC3?'▲ PLAFOND — HALT + BB5':isC2?'▲ PLAFOND — BB5':'▲ PLAFOND — HALT',top2.x,top2.y);
 }
 
 showInfo(0);frame();
