@@ -35,7 +35,7 @@ canvas{display:block;position:fixed;top:0;left:0;z-index:1}
 <canvas id="c"></canvas>
 <div id="hud">
   <h1>Yggdrasil · La Pluie</h1>
-  <div class="sub">525 symboles · 8257 concepts OpenAlex · orbites spectrales</div>
+  <div class="sub">794 symboles · 466 concepts OpenAlex · orbites spectrales</div>
 </div>
 <div id="info">
   <div class="sn" id="sn">—</div>
@@ -105,7 +105,7 @@ function switchCube(toC2){
   isC2=toC2;currentST=toC2?ST_C2:ST_C1;currentCTR=toC2?CTR_C2:CTR_C1;
   document.querySelector('#hud .sub').textContent=toC2
     ?'238 conjectures · 25 domaines · 7 strates'
-    :'525 symboles · 8257 concepts OpenAlex · orbites spectrales';
+    :'794 symboles · 466 concepts OpenAlex · orbites spectrales';
   legEl.innerHTML='';
   currentST.forEach((s,i)=>{
     const d=document.createElement('div');d.className='li';
@@ -123,9 +123,9 @@ function switchC3(toC3){
   if(toC3){
     isC2=false;document.getElementById('toggleC2').checked=false;
     currentST=ST_C1;currentCTR=CTR_C1;
-    document.querySelector('#hud .sub').textContent='763 symboles · C1+C2 · 7 strates fusionnées';
+    document.querySelector('#hud .sub').textContent='794 symboles · C1+C2 · 466 concepts OpenAlex';
   }else{
-    document.querySelector('#hud .sub').textContent='525 symboles · 8257 concepts OpenAlex · orbites spectrales';
+    document.querySelector('#hud .sub').textContent='794 symboles · 466 concepts OpenAlex · orbites spectrales';
   }
   legEl.innerHTML='';
   currentST.forEach((s,i)=>{
