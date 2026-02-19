@@ -1,0 +1,309 @@
+{
+  "idea": "Yggdrasil Engine — Cartographie de 524 symboles mathématiques × 250M papers OpenAlex",
+  "domain": "science",
+  "family": "baobab",
+  "family_name": "Baobab",
+  "family_emoji": "🌳",
+  "date": "2026-02-19",
+  "phase": "CROISSANCE",
+  "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
+  "scale": {
+    "lines": 2249,
+    "factor": 1.0,
+    "category": "arbre",
+    "height_px": 400,
+    "data_mb": 1.2,
+    "density": 1.2,
+    "trunk_width": 1.4,
+    "label": "🌳 Baobab (2249 lignes Python + viz HTML)"
+  },
+  "stats": {
+    "total_files": 15,
+    "total_code_lines": 2249,
+    "data_weight_mb": 1.2,
+    "languages": {
+      "Python": 2249,
+      "HTML": 368,
+      "JSON": 5
+    },
+    "biggest_file": {
+      "path": "engine/verify_32tests.py",
+      "lines": 519,
+      "lang": "Python"
+    }
+  },
+  "nodes": [
+    {
+      "id": "M1",
+      "level": "R",
+      "depth": -5,
+      "label": "Post 1944 — Hiérarchie Arithmétique (7 strates S0→S6)",
+      "status": "done",
+      "entry": "engine/symbols.py:22:STRATE_NAMES",
+      "confidence": 100,
+      "depends": [],
+      "desc": "Loi fondamentale : Δ⁰₀ → Σ⁰₁ → Σ⁰₂ → Σ⁰ₙ → AH → HYP → PLAFOND"
+    },
+    {
+      "id": "M2",
+      "level": "R",
+      "depth": -5,
+      "label": "Gödel 1931 + Turing 1936 + Church — Incompletude & Indécidabilité",
+      "status": "done",
+      "entry": "docs/VERIFICATION_32TESTS.md",
+      "confidence": 100,
+      "depends": [],
+      "desc": "Les murs : ce qui est prouvable (C1) vs ce qui ne l'est pas (C2)"
+    },
+    {
+      "id": "M3",
+      "level": "R",
+      "depth": -5,
+      "label": "Wang & Barabási 2013 / Uzzi 2013 / Wu 2019 — Science of Science",
+      "status": "done",
+      "entry": "engine/scisci.py:1",
+      "confidence": 95,
+      "depends": [],
+      "desc": "Fitness, atypicality z-scores, disruption index — formules validées"
+    },
+    {
+      "id": "P1",
+      "level": "R",
+      "depth": -4,
+      "label": "OpenAlex API — 250M+ papers, 65K concepts, clé gratuite",
+      "status": "wip",
+      "entry": "engine/openalex.py:14:BASE_URL",
+      "confidence": 70,
+      "depends": [],
+      "desc": "Rate limit 100K req/jour. API key requise depuis fév 2026. Module existe mais mapping pas fait."
+    },
+    {
+      "id": "P2",
+      "level": "R",
+      "depth": -4,
+      "label": "524 symboles C1 prouvés + 238 symboles C2 conjectures = 762 total",
+      "status": "done",
+      "entry": "data/strates_export.json",
+      "confidence": 100,
+      "depends": [],
+      "desc": "Données validées par publications scientifiques. 7 strates × 7 continents."
+    },
+    {
+      "id": "A1",
+      "level": "R",
+      "depth": -3,
+      "label": "32 tests de validation — 28/29 = 97% confirmé",
+      "status": "done",
+      "entry": "engine/verify_32tests.py:1",
+      "confidence": 97,
+      "depends": ["M1", "M3"],
+      "desc": "Cross-validation lianes × découvertes majeures 2010-2025"
+    },
+    {
+      "id": "A2",
+      "level": "R",
+      "depth": -3,
+      "label": "Lianes — symboles S0 utilisés par 3+ continents",
+      "status": "done",
+      "entry": "engine/lianes.py:1",
+      "confidence": 95,
+      "depends": ["M1", "P2"],
+      "desc": "60 lianes identifiées. exp=universel (6 continents, 28/32 tests)"
+    },
+    {
+      "id": "A3",
+      "level": "R",
+      "depth": -2,
+      "label": "Concept IDs OpenAlex — mapper 524 symboles → concept_ids",
+      "status": "todo",
+      "entry": "engine/openalex.py:33:search_concept",
+      "confidence": 30,
+      "depends": ["P1", "P2"],
+      "desc": "LE PIVOT. Chaque symbole doit avoir son ID OpenAlex + works_count réel."
+    },
+    {
+      "id": "R1",
+      "level": "R",
+      "depth": -1,
+      "label": "Python + urllib (pas de deps externes)",
+      "status": "done",
+      "entry": "requirements.txt",
+      "confidence": 100,
+      "depends": [],
+      "desc": "Stack minimale. Flask pour server.py."
+    },
+    {
+      "id": "S0",
+      "level": "S",
+      "depth": 0,
+      "label": "SOL — data/openalex_map.json (symbole → concept → papers)",
+      "status": "todo",
+      "entry": "~",
+      "confidence": 0,
+      "depends": ["A3"],
+      "desc": "Le fichier pivot. Interface entre le moteur et la viz."
+    },
+    {
+      "id": "T1",
+      "level": "T",
+      "depth": 1,
+      "label": "Tronc — engine/openalex.py (mapping batch 524 symboles)",
+      "status": "wip",
+      "entry": "engine/openalex.py:1",
+      "confidence": 40,
+      "depends": ["S0", "R1"],
+      "desc": "Les fonctions existent (search_concept, get_co_occurrence, batch). Jamais exécutées sur les 524."
+    },
+    {
+      "id": "T2",
+      "level": "T",
+      "depth": 1,
+      "label": "Tronc — engine/holes.py (détection trous structurels)",
+      "status": "done",
+      "entry": "engine/holes.py:1",
+      "confidence": 85,
+      "depends": ["A2"],
+      "desc": "3 types de trous (A=technique, B=conceptuel, C=perceptuel). Formules implémentées."
+    },
+    {
+      "id": "B1",
+      "level": "B",
+      "depth": 2,
+      "label": "Branche — Matrice co-occurrence (concept × concept)",
+      "status": "todo",
+      "entry": "engine/openalex.py:93:batch_co_occurrences",
+      "confidence": 20,
+      "depends": ["T1", "A3"],
+      "desc": "La PLUIE. Chaque goutte = un paper qui connecte deux concepts."
+    },
+    {
+      "id": "B2",
+      "level": "B",
+      "depth": 2,
+      "label": "Branche — Timeline par strate (papers/année/strate)",
+      "status": "todo",
+      "entry": "engine/openalex.py:62:get_concept_works_by_year",
+      "confidence": 20,
+      "depends": ["T1", "A3"],
+      "desc": "Évolution temporelle : quelles strates sont actives ?"
+    },
+    {
+      "id": "B3",
+      "level": "B",
+      "depth": 2,
+      "label": "Branche — Détection trous réels via OpenAlex",
+      "status": "todo",
+      "entry": "engine/openalex.py:138:search_structural_hole",
+      "confidence": 15,
+      "depends": ["B1", "T2"],
+      "desc": "Appliquer les scores de holes.py sur les vrais chiffres OpenAlex"
+    },
+    {
+      "id": "b1",
+      "level": "b",
+      "depth": 3,
+      "label": "Rameau — Top 10 papers par symbole",
+      "status": "todo",
+      "entry": "~",
+      "confidence": 10,
+      "depends": ["B1"],
+      "desc": "Pour chaque symbole, les 10 papers les plus cités"
+    },
+    {
+      "id": "b2",
+      "level": "b",
+      "depth": 3,
+      "label": "Rameau — Lianes × papers (cross-continent citations)",
+      "status": "todo",
+      "entry": "~",
+      "confidence": 10,
+      "depends": ["B1", "A2"],
+      "desc": "Vérifier si exp, ∫, Σ sont vraiment les ponts dans les données réelles"
+    },
+    {
+      "id": "F1",
+      "level": "F",
+      "depth": 4,
+      "label": "Feuille — Viz 3D avec popups papers (La Pluie enrichie)",
+      "status": "todo",
+      "entry": "viz/yggdrasil_rain_v2.html",
+      "confidence": 5,
+      "depends": ["S0", "b1"],
+      "desc": "Cliquer sur un symbole → voir ses vrais papers OpenAlex"
+    },
+    {
+      "id": "F2",
+      "level": "F",
+      "depth": 4,
+      "label": "Feuille — Corriger le sous-titre (remplacer 8257 par le vrai chiffre)",
+      "status": "todo",
+      "entry": "viz/yggdrasil_rain_v2.html:38",
+      "confidence": 5,
+      "depends": ["T1"],
+      "desc": "Le 8257 est un placeholder. Le vrai chiffre viendra du mapping."
+    },
+    {
+      "id": "C1",
+      "level": "C",
+      "depth": 5,
+      "label": "Cime — Tests unitaires mapping OpenAlex",
+      "status": "todo",
+      "entry": "tests/test_engine.py",
+      "confidence": 5,
+      "depends": ["T1", "B1"],
+      "desc": "Valider que le mapping est reproductible"
+    }
+  ],
+  "build_order": [
+    {
+      "phase": 0,
+      "name": "Mycorhizes — lois fondamentales",
+      "ids": ["M1", "M2", "M3"],
+      "action": "FAIT. Post, Gödel, Turing, Science of Science — tout est en place.",
+      "bio": "Sans mycorhizes, rien ne pousse. Les lois sont là depuis le début."
+    },
+    {
+      "phase": 1,
+      "name": "Radicelles — contraintes API + données validées",
+      "ids": ["P1", "P2", "A1", "A2"],
+      "action": "FAIT sauf clé API. Obtenir une clé OpenAlex gratuite sur openalex.org/settings/api",
+      "bio": "Filtrent tout ce qui entre. Les 524 symboles sont validés. L'API est documentée."
+    },
+    {
+      "phase": 2,
+      "name": "Pivot — mapper 524 symboles → concept_ids OpenAlex",
+      "ids": ["A3"],
+      "action": "PROCHAIN. Script batch : pour chaque symbole, chercher son concept OpenAlex, stocker l'ID + works_count.",
+      "bio": "Le pivot est la décision architecturale qui lock-in tout le reste. Si le mapping est mauvais, tout croule."
+    },
+    {
+      "phase": 3,
+      "name": "SOL + Tronc — fichier pivot + mapping batch",
+      "ids": ["S0", "T1"],
+      "action": "Générer data/openalex_map.json avec les vrais chiffres. Consolider le tronc (baobab = remplir avant d'étendre).",
+      "bio": "Le tronc du baobab est un réservoir. Il accumule les données avant de pousser des branches."
+    },
+    {
+      "phase": 4,
+      "name": "Branches — co-occurrences, timelines, trous",
+      "ids": ["B1", "B2", "B3"],
+      "action": "Matrice de co-occurrence entre concepts. Timelines par strate. Détecter les vrais trous structurels.",
+      "bio": "Le baobab a peu de branches mais chacune est massive."
+    },
+    {
+      "phase": 5,
+      "name": "Rameaux + Feuilles — enrichir la viz",
+      "ids": ["b1", "b2", "F1", "F2"],
+      "action": "Top papers par symbole. Lianes cross-citations. Popups dans la viz 3D. Corriger le sous-titre.",
+      "bio": "Feuilles = 5% de la masse, 100% de l'énergie perçue."
+    },
+    {
+      "phase": 6,
+      "name": "Cime — tests et reproductibilité",
+      "ids": ["C1"],
+      "action": "Tests unitaires pour le mapping. Le mapping doit être reproductible.",
+      "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
+    }
+  ],
+  "next_step": "Phase 2 : Obtenir clé API OpenAlex + script de mapping batch 524 symboles → concept_ids"
+}
