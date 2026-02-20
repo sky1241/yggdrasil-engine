@@ -1,0 +1,551 @@
+[
+  {
+    "year": 1965,
+    "cfsg": 1,
+    "gt": 84,
+    "sg": 1,
+    "cfsg_gt": 1,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1966,
+    "cfsg": 1,
+    "gt": 97,
+    "sg": 1,
+    "cfsg_gt": 1,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1967,
+    "cfsg": 4,
+    "gt": 64,
+    "sg": 0,
+    "cfsg_gt": 4,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1968,
+    "cfsg": 8,
+    "gt": 79,
+    "sg": 0,
+    "cfsg_gt": 7,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1969,
+    "cfsg": 13,
+    "gt": 62,
+    "sg": 1,
+    "cfsg_gt": 10,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1970,
+    "cfsg": 12,
+    "gt": 71,
+    "sg": 0,
+    "cfsg_gt": 10,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1971,
+    "cfsg": 15,
+    "gt": 75,
+    "sg": 2,
+    "cfsg_gt": 14,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1972,
+    "cfsg": 8,
+    "gt": 69,
+    "sg": 0,
+    "cfsg_gt": 8,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1973,
+    "cfsg": 18,
+    "gt": 81,
+    "sg": 0,
+    "cfsg_gt": 17,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1974,
+    "cfsg": 20,
+    "gt": 77,
+    "sg": 0,
+    "cfsg_gt": 18,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1975,
+    "cfsg": 12,
+    "gt": 86,
+    "sg": 1,
+    "cfsg_gt": 12,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1976,
+    "cfsg": 14,
+    "gt": 91,
+    "sg": 3,
+    "cfsg_gt": 12,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1977,
+    "cfsg": 12,
+    "gt": 71,
+    "sg": 0,
+    "cfsg_gt": 8,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1978,
+    "cfsg": 6,
+    "gt": 64,
+    "sg": 1,
+    "cfsg_gt": 5,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1979,
+    "cfsg": 16,
+    "gt": 74,
+    "sg": 1,
+    "cfsg_gt": 12,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1980,
+    "cfsg": 8,
+    "gt": 71,
+    "sg": 0,
+    "cfsg_gt": 4,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1981,
+    "cfsg": 13,
+    "gt": 76,
+    "sg": 1,
+    "cfsg_gt": 8,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1982,
+    "cfsg": 13,
+    "gt": 83,
+    "sg": 1,
+    "cfsg_gt": 11,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1983,
+    "cfsg": 14,
+    "gt": 71,
+    "sg": 1,
+    "cfsg_gt": 7,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1984,
+    "cfsg": 7,
+    "gt": 78,
+    "sg": 0,
+    "cfsg_gt": 7,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1985,
+    "cfsg": 13,
+    "gt": 78,
+    "sg": 1,
+    "cfsg_gt": 12,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1986,
+    "cfsg": 18,
+    "gt": 96,
+    "sg": 4,
+    "cfsg_gt": 17,
+    "cfsg_sg": 2,
+    "gt_sg": 4
+  },
+  {
+    "year": 1987,
+    "cfsg": 13,
+    "gt": 84,
+    "sg": 1,
+    "cfsg_gt": 11,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1988,
+    "cfsg": 11,
+    "gt": 81,
+    "sg": 5,
+    "cfsg_gt": 9,
+    "cfsg_sg": 3,
+    "gt_sg": 4
+  },
+  {
+    "year": 1989,
+    "cfsg": 15,
+    "gt": 85,
+    "sg": 0,
+    "cfsg_gt": 14,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1990,
+    "cfsg": 13,
+    "gt": 87,
+    "sg": 1,
+    "cfsg_gt": 10,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1991,
+    "cfsg": 13,
+    "gt": 89,
+    "sg": 0,
+    "cfsg_gt": 11,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 1992,
+    "cfsg": 11,
+    "gt": 87,
+    "sg": 2,
+    "cfsg_gt": 11,
+    "cfsg_sg": 2,
+    "gt_sg": 2
+  },
+  {
+    "year": 1993,
+    "cfsg": 19,
+    "gt": 108,
+    "sg": 5,
+    "cfsg_gt": 17,
+    "cfsg_sg": 4,
+    "gt_sg": 4
+  },
+  {
+    "year": 1994,
+    "cfsg": 20,
+    "gt": 107,
+    "sg": 3,
+    "cfsg_gt": 19,
+    "cfsg_sg": 3,
+    "gt_sg": 3
+  },
+  {
+    "year": 1995,
+    "cfsg": 28,
+    "gt": 118,
+    "sg": 2,
+    "cfsg_gt": 25,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1996,
+    "cfsg": 23,
+    "gt": 138,
+    "sg": 5,
+    "cfsg_gt": 22,
+    "cfsg_sg": 2,
+    "gt_sg": 4
+  },
+  {
+    "year": 1997,
+    "cfsg": 23,
+    "gt": 111,
+    "sg": 2,
+    "cfsg_gt": 20,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 1998,
+    "cfsg": 21,
+    "gt": 117,
+    "sg": 5,
+    "cfsg_gt": 20,
+    "cfsg_sg": 3,
+    "gt_sg": 4
+  },
+  {
+    "year": 1999,
+    "cfsg": 28,
+    "gt": 112,
+    "sg": 6,
+    "cfsg_gt": 26,
+    "cfsg_sg": 2,
+    "gt_sg": 2
+  },
+  {
+    "year": 2000,
+    "cfsg": 25,
+    "gt": 111,
+    "sg": 2,
+    "cfsg_gt": 25,
+    "cfsg_sg": 1,
+    "gt_sg": 2
+  },
+  {
+    "year": 2001,
+    "cfsg": 28,
+    "gt": 120,
+    "sg": 3,
+    "cfsg_gt": 26,
+    "cfsg_sg": 3,
+    "gt_sg": 2
+  },
+  {
+    "year": 2002,
+    "cfsg": 53,
+    "gt": 174,
+    "sg": 8,
+    "cfsg_gt": 50,
+    "cfsg_sg": 3,
+    "gt_sg": 5
+  },
+  {
+    "year": 2003,
+    "cfsg": 27,
+    "gt": 159,
+    "sg": 5,
+    "cfsg_gt": 24,
+    "cfsg_sg": 3,
+    "gt_sg": 4
+  },
+  {
+    "year": 2004,
+    "cfsg": 34,
+    "gt": 176,
+    "sg": 5,
+    "cfsg_gt": 30,
+    "cfsg_sg": 2,
+    "gt_sg": 2
+  },
+  {
+    "year": 2005,
+    "cfsg": 34,
+    "gt": 160,
+    "sg": 9,
+    "cfsg_gt": 32,
+    "cfsg_sg": 4,
+    "gt_sg": 5
+  },
+  {
+    "year": 2006,
+    "cfsg": 46,
+    "gt": 175,
+    "sg": 4,
+    "cfsg_gt": 44,
+    "cfsg_sg": 1,
+    "gt_sg": 2
+  },
+  {
+    "year": 2007,
+    "cfsg": 53,
+    "gt": 217,
+    "sg": 13,
+    "cfsg_gt": 46,
+    "cfsg_sg": 8,
+    "gt_sg": 9
+  },
+  {
+    "year": 2008,
+    "cfsg": 47,
+    "gt": 188,
+    "sg": 10,
+    "cfsg_gt": 42,
+    "cfsg_sg": 5,
+    "gt_sg": 5
+  },
+  {
+    "year": 2009,
+    "cfsg": 55,
+    "gt": 229,
+    "sg": 10,
+    "cfsg_gt": 45,
+    "cfsg_sg": 2,
+    "gt_sg": 5
+  },
+  {
+    "year": 2010,
+    "cfsg": 55,
+    "gt": 253,
+    "sg": 9,
+    "cfsg_gt": 51,
+    "cfsg_sg": 4,
+    "gt_sg": 6
+  },
+  {
+    "year": 2011,
+    "cfsg": 54,
+    "gt": 228,
+    "sg": 6,
+    "cfsg_gt": 47,
+    "cfsg_sg": 3,
+    "gt_sg": 2
+  },
+  {
+    "year": 2012,
+    "cfsg": 50,
+    "gt": 232,
+    "sg": 9,
+    "cfsg_gt": 43,
+    "cfsg_sg": 4,
+    "gt_sg": 5
+  },
+  {
+    "year": 2013,
+    "cfsg": 82,
+    "gt": 248,
+    "sg": 11,
+    "cfsg_gt": 72,
+    "cfsg_sg": 4,
+    "gt_sg": 6
+  },
+  {
+    "year": 2014,
+    "cfsg": 60,
+    "gt": 246,
+    "sg": 3,
+    "cfsg_gt": 58,
+    "cfsg_sg": 1,
+    "gt_sg": 3
+  },
+  {
+    "year": 2015,
+    "cfsg": 79,
+    "gt": 242,
+    "sg": 6,
+    "cfsg_gt": 69,
+    "cfsg_sg": 2,
+    "gt_sg": 5
+  },
+  {
+    "year": 2016,
+    "cfsg": 72,
+    "gt": 239,
+    "sg": 12,
+    "cfsg_gt": 68,
+    "cfsg_sg": 6,
+    "gt_sg": 6
+  },
+  {
+    "year": 2017,
+    "cfsg": 60,
+    "gt": 228,
+    "sg": 6,
+    "cfsg_gt": 57,
+    "cfsg_sg": 1,
+    "gt_sg": 3
+  },
+  {
+    "year": 2018,
+    "cfsg": 74,
+    "gt": 244,
+    "sg": 4,
+    "cfsg_gt": 62,
+    "cfsg_sg": 2,
+    "gt_sg": 2
+  },
+  {
+    "year": 2019,
+    "cfsg": 69,
+    "gt": 226,
+    "sg": 7,
+    "cfsg_gt": 61,
+    "cfsg_sg": 2,
+    "gt_sg": 2
+  },
+  {
+    "year": 2020,
+    "cfsg": 52,
+    "gt": 233,
+    "sg": 3,
+    "cfsg_gt": 48,
+    "cfsg_sg": 0,
+    "gt_sg": 0
+  },
+  {
+    "year": 2021,
+    "cfsg": 64,
+    "gt": 253,
+    "sg": 6,
+    "cfsg_gt": 58,
+    "cfsg_sg": 3,
+    "gt_sg": 4
+  },
+  {
+    "year": 2022,
+    "cfsg": 60,
+    "gt": 251,
+    "sg": 6,
+    "cfsg_gt": 52,
+    "cfsg_sg": 4,
+    "gt_sg": 4
+  },
+  {
+    "year": 2023,
+    "cfsg": 56,
+    "gt": 281,
+    "sg": 5,
+    "cfsg_gt": 50,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 2024,
+    "cfsg": 33,
+    "gt": 152,
+    "sg": 1,
+    "cfsg_gt": 26,
+    "cfsg_sg": 1,
+    "gt_sg": 1
+  },
+  {
+    "year": 2025,
+    "cfsg": 45,
+    "gt": 724,
+    "sg": 4,
+    "cfsg_gt": 36,
+    "cfsg_sg": 2,
+    "gt_sg": 2
+  }
+]

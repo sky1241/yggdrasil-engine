@@ -1,0 +1,326 @@
+[
+  {
+    "year": 1990,
+    "crispr": 51,
+    "cas9": 26,
+    "gedit": 18,
+    "crispr_cas9": 24,
+    "crispr_gedit": 9,
+    "triple": 5
+  },
+  {
+    "year": 1991,
+    "crispr": 57,
+    "cas9": 33,
+    "gedit": 17,
+    "crispr_cas9": 30,
+    "crispr_gedit": 9,
+    "triple": 4
+  },
+  {
+    "year": 1992,
+    "crispr": 62,
+    "cas9": 30,
+    "gedit": 22,
+    "crispr_cas9": 27,
+    "crispr_gedit": 11,
+    "triple": 3
+  },
+  {
+    "year": 1993,
+    "crispr": 51,
+    "cas9": 22,
+    "gedit": 29,
+    "crispr_cas9": 21,
+    "crispr_gedit": 11,
+    "triple": 1
+  },
+  {
+    "year": 1994,
+    "crispr": 83,
+    "cas9": 40,
+    "gedit": 29,
+    "crispr_cas9": 37,
+    "crispr_gedit": 12,
+    "triple": 4
+  },
+  {
+    "year": 1995,
+    "crispr": 75,
+    "cas9": 34,
+    "gedit": 20,
+    "crispr_cas9": 29,
+    "crispr_gedit": 7,
+    "triple": 1
+  },
+  {
+    "year": 1996,
+    "crispr": 71,
+    "cas9": 23,
+    "gedit": 34,
+    "crispr_cas9": 21,
+    "crispr_gedit": 15,
+    "triple": 1
+  },
+  {
+    "year": 1997,
+    "crispr": 49,
+    "cas9": 17,
+    "gedit": 39,
+    "crispr_cas9": 8,
+    "crispr_gedit": 17,
+    "triple": 5
+  },
+  {
+    "year": 1998,
+    "crispr": 54,
+    "cas9": 5,
+    "gedit": 27,
+    "crispr_cas9": 2,
+    "crispr_gedit": 10,
+    "triple": 0
+  },
+  {
+    "year": 1999,
+    "crispr": 39,
+    "cas9": 7,
+    "gedit": 36,
+    "crispr_cas9": 3,
+    "crispr_gedit": 11,
+    "triple": 1
+  },
+  {
+    "year": 2000,
+    "crispr": 44,
+    "cas9": 7,
+    "gedit": 37,
+    "crispr_cas9": 5,
+    "crispr_gedit": 10,
+    "triple": 2
+  },
+  {
+    "year": 2001,
+    "crispr": 68,
+    "cas9": 7,
+    "gedit": 51,
+    "crispr_cas9": 4,
+    "crispr_gedit": 18,
+    "triple": 1
+  },
+  {
+    "year": 2002,
+    "crispr": 62,
+    "cas9": 19,
+    "gedit": 54,
+    "crispr_cas9": 11,
+    "crispr_gedit": 16,
+    "triple": 5
+  },
+  {
+    "year": 2003,
+    "crispr": 88,
+    "cas9": 20,
+    "gedit": 68,
+    "crispr_cas9": 9,
+    "crispr_gedit": 27,
+    "triple": 4
+  },
+  {
+    "year": 2004,
+    "crispr": 90,
+    "cas9": 11,
+    "gedit": 74,
+    "crispr_cas9": 5,
+    "crispr_gedit": 23,
+    "triple": 0
+  },
+  {
+    "year": 2005,
+    "crispr": 95,
+    "cas9": 27,
+    "gedit": 90,
+    "crispr_cas9": 13,
+    "crispr_gedit": 32,
+    "triple": 5
+  },
+  {
+    "year": 2006,
+    "crispr": 115,
+    "cas9": 16,
+    "gedit": 91,
+    "crispr_cas9": 10,
+    "crispr_gedit": 45,
+    "triple": 2
+  },
+  {
+    "year": 2007,
+    "crispr": 109,
+    "cas9": 24,
+    "gedit": 87,
+    "crispr_cas9": 14,
+    "crispr_gedit": 21,
+    "triple": 1
+  },
+  {
+    "year": 2008,
+    "crispr": 129,
+    "cas9": 17,
+    "gedit": 136,
+    "crispr_cas9": 10,
+    "crispr_gedit": 44,
+    "triple": 3
+  },
+  {
+    "year": 2009,
+    "crispr": 161,
+    "cas9": 24,
+    "gedit": 138,
+    "crispr_cas9": 19,
+    "crispr_gedit": 41,
+    "triple": 4
+  },
+  {
+    "year": 2010,
+    "crispr": 196,
+    "cas9": 36,
+    "gedit": 169,
+    "crispr_cas9": 30,
+    "crispr_gedit": 53,
+    "triple": 4
+  },
+  {
+    "year": 2011,
+    "crispr": 235,
+    "cas9": 45,
+    "gedit": 244,
+    "crispr_cas9": 35,
+    "crispr_gedit": 77,
+    "triple": 5
+  },
+  {
+    "year": 2012,
+    "crispr": 360,
+    "cas9": 75,
+    "gedit": 335,
+    "crispr_cas9": 63,
+    "crispr_gedit": 129,
+    "triple": 8
+  },
+  {
+    "year": 2013,
+    "crispr": 719,
+    "cas9": 235,
+    "gedit": 674,
+    "crispr_cas9": 231,
+    "crispr_gedit": 358,
+    "triple": 134
+  },
+  {
+    "year": 2014,
+    "crispr": 1187,
+    "cas9": 557,
+    "gedit": 1018,
+    "crispr_cas9": 548,
+    "crispr_gedit": 666,
+    "triple": 391
+  },
+  {
+    "year": 2015,
+    "crispr": 1910,
+    "cas9": 917,
+    "gedit": 1419,
+    "crispr_cas9": 906,
+    "crispr_gedit": 1054,
+    "triple": 665
+  },
+  {
+    "year": 2016,
+    "crispr": 2994,
+    "cas9": 1464,
+    "gedit": 2017,
+    "crispr_cas9": 1445,
+    "crispr_gedit": 1592,
+    "triple": 1038
+  },
+  {
+    "year": 2017,
+    "crispr": 3690,
+    "cas9": 1690,
+    "gedit": 2264,
+    "crispr_cas9": 1679,
+    "crispr_gedit": 1848,
+    "triple": 1192
+  },
+  {
+    "year": 2018,
+    "crispr": 4645,
+    "cas9": 2025,
+    "gedit": 2636,
+    "crispr_cas9": 2000,
+    "crispr_gedit": 2147,
+    "triple": 1378
+  },
+  {
+    "year": 2019,
+    "crispr": 5235,
+    "cas9": 2216,
+    "gedit": 2890,
+    "crispr_cas9": 2191,
+    "crispr_gedit": 2420,
+    "triple": 1482
+  },
+  {
+    "year": 2020,
+    "crispr": 5715,
+    "cas9": 2298,
+    "gedit": 2979,
+    "crispr_cas9": 2263,
+    "crispr_gedit": 2479,
+    "triple": 1506
+  },
+  {
+    "year": 2021,
+    "crispr": 5782,
+    "cas9": 2327,
+    "gedit": 3256,
+    "crispr_cas9": 2289,
+    "crispr_gedit": 2696,
+    "triple": 1548
+  },
+  {
+    "year": 2022,
+    "crispr": 5976,
+    "cas9": 2361,
+    "gedit": 3167,
+    "crispr_cas9": 2336,
+    "crispr_gedit": 2655,
+    "triple": 1515
+  },
+  {
+    "year": 2023,
+    "crispr": 7174,
+    "cas9": 2428,
+    "gedit": 3429,
+    "crispr_cas9": 2400,
+    "crispr_gedit": 2865,
+    "triple": 1538
+  },
+  {
+    "year": 2024,
+    "crispr": 6282,
+    "cas9": 1740,
+    "gedit": 2945,
+    "crispr_cas9": 1727,
+    "crispr_gedit": 2315,
+    "triple": 1095
+  },
+  {
+    "year": 2025,
+    "crispr": 5413,
+    "cas9": 1285,
+    "gedit": 2740,
+    "crispr_cas9": 1245,
+    "crispr_gedit": 1765,
+    "triple": 741
+  }
+]

@@ -1,0 +1,262 @@
+[
+  {
+    "year": 2000,
+    "pf": 947,
+    "dl": 46,
+    "psp": 124,
+    "pf_dl": 0,
+    "psp_dl": 1,
+    "pf_psp": 25,
+    "triple": 0
+  },
+  {
+    "year": 2001,
+    "pf": 1047,
+    "dl": 53,
+    "psp": 151,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 46,
+    "triple": 0
+  },
+  {
+    "year": 2002,
+    "pf": 1081,
+    "dl": 145,
+    "psp": 184,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 40,
+    "triple": 0
+  },
+  {
+    "year": 2003,
+    "pf": 1179,
+    "dl": 89,
+    "psp": 224,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 45,
+    "triple": 0
+  },
+  {
+    "year": 2004,
+    "pf": 1316,
+    "dl": 82,
+    "psp": 249,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 54,
+    "triple": 0
+  },
+  {
+    "year": 2005,
+    "pf": 1325,
+    "dl": 103,
+    "psp": 290,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 46,
+    "triple": 0
+  },
+  {
+    "year": 2006,
+    "pf": 1398,
+    "dl": 114,
+    "psp": 326,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 56,
+    "triple": 0
+  },
+  {
+    "year": 2007,
+    "pf": 1459,
+    "dl": 127,
+    "psp": 336,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 55,
+    "triple": 0
+  },
+  {
+    "year": 2008,
+    "pf": 1427,
+    "dl": 125,
+    "psp": 412,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 82,
+    "triple": 0
+  },
+  {
+    "year": 2009,
+    "pf": 1406,
+    "dl": 194,
+    "psp": 343,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 62,
+    "triple": 0
+  },
+  {
+    "year": 2010,
+    "pf": 1598,
+    "dl": 271,
+    "psp": 355,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 60,
+    "triple": 0
+  },
+  {
+    "year": 2011,
+    "pf": 1559,
+    "dl": 290,
+    "psp": 353,
+    "pf_dl": 0,
+    "psp_dl": 1,
+    "pf_psp": 53,
+    "triple": 0
+  },
+  {
+    "year": 2012,
+    "pf": 1526,
+    "dl": 375,
+    "psp": 365,
+    "pf_dl": 0,
+    "psp_dl": 2,
+    "pf_psp": 47,
+    "triple": 0
+  },
+  {
+    "year": 2013,
+    "pf": 1544,
+    "dl": 583,
+    "psp": 387,
+    "pf_dl": 0,
+    "psp_dl": 0,
+    "pf_psp": 46,
+    "triple": 0
+  },
+  {
+    "year": 2014,
+    "pf": 1452,
+    "dl": 1139,
+    "psp": 316,
+    "pf_dl": 0,
+    "psp_dl": 1,
+    "pf_psp": 46,
+    "triple": 0
+  },
+  {
+    "year": 2015,
+    "pf": 1398,
+    "dl": 2505,
+    "psp": 326,
+    "pf_dl": 1,
+    "psp_dl": 4,
+    "pf_psp": 40,
+    "triple": 0
+  },
+  {
+    "year": 2016,
+    "pf": 1357,
+    "dl": 4890,
+    "psp": 313,
+    "pf_dl": 0,
+    "psp_dl": 9,
+    "pf_psp": 36,
+    "triple": 0
+  },
+  {
+    "year": 2017,
+    "pf": 1356,
+    "dl": 10476,
+    "psp": 344,
+    "pf_dl": 1,
+    "psp_dl": 27,
+    "pf_psp": 42,
+    "triple": 1
+  },
+  {
+    "year": 2018,
+    "pf": 1302,
+    "dl": 18841,
+    "psp": 315,
+    "pf_dl": 3,
+    "psp_dl": 15,
+    "pf_psp": 44,
+    "triple": 1
+  },
+  {
+    "year": 2019,
+    "pf": 1250,
+    "dl": 28618,
+    "psp": 357,
+    "pf_dl": 0,
+    "psp_dl": 42,
+    "pf_psp": 32,
+    "triple": 0
+  },
+  {
+    "year": 2020,
+    "pf": 1293,
+    "dl": 37247,
+    "psp": 388,
+    "pf_dl": 2,
+    "psp_dl": 48,
+    "pf_psp": 25,
+    "triple": 1
+  },
+  {
+    "year": 2021,
+    "pf": 1296,
+    "dl": 46822,
+    "psp": 460,
+    "pf_dl": 5,
+    "psp_dl": 71,
+    "pf_psp": 54,
+    "triple": 4
+  },
+  {
+    "year": 2022,
+    "pf": 1171,
+    "dl": 52935,
+    "psp": 421,
+    "pf_dl": 8,
+    "psp_dl": 80,
+    "pf_psp": 45,
+    "triple": 4
+  },
+  {
+    "year": 2023,
+    "pf": 1080,
+    "dl": 62130,
+    "psp": 449,
+    "pf_dl": 1,
+    "psp_dl": 44,
+    "pf_psp": 55,
+    "triple": 1
+  },
+  {
+    "year": 2024,
+    "pf": 822,
+    "dl": 47719,
+    "psp": 271,
+    "pf_dl": 1,
+    "psp_dl": 38,
+    "pf_psp": 21,
+    "triple": 1
+  },
+  {
+    "year": 2025,
+    "pf": 1687,
+    "dl": 52245,
+    "psp": 455,
+    "pf_dl": 15,
+    "psp_dl": 65,
+    "pf_psp": 120,
+    "triple": 8
+  }
+]

@@ -1,0 +1,551 @@
+[
+  {
+    "year": 1965,
+    "higgs": 11,
+    "sm": 7,
+    "lhc": 61,
+    "higgs_sm": 5,
+    "higgs_lhc": 1,
+    "triple": 0
+  },
+  {
+    "year": 1966,
+    "higgs": 6,
+    "sm": 1,
+    "lhc": 44,
+    "higgs_sm": 0,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1967,
+    "higgs": 4,
+    "sm": 4,
+    "lhc": 61,
+    "higgs_sm": 0,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1968,
+    "higgs": 10,
+    "sm": 6,
+    "lhc": 77,
+    "higgs_sm": 1,
+    "higgs_lhc": 1,
+    "triple": 0
+  },
+  {
+    "year": 1969,
+    "higgs": 11,
+    "sm": 2,
+    "lhc": 82,
+    "higgs_sm": 0,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1970,
+    "higgs": 15,
+    "sm": 6,
+    "lhc": 110,
+    "higgs_sm": 2,
+    "higgs_lhc": 2,
+    "triple": 1
+  },
+  {
+    "year": 1971,
+    "higgs": 11,
+    "sm": 4,
+    "lhc": 121,
+    "higgs_sm": 0,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1972,
+    "higgs": 24,
+    "sm": 12,
+    "lhc": 116,
+    "higgs_sm": 1,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1973,
+    "higgs": 44,
+    "sm": 18,
+    "lhc": 146,
+    "higgs_sm": 3,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1974,
+    "higgs": 53,
+    "sm": 9,
+    "lhc": 122,
+    "higgs_sm": 1,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1975,
+    "higgs": 64,
+    "sm": 12,
+    "lhc": 154,
+    "higgs_sm": 2,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1976,
+    "higgs": 70,
+    "sm": 27,
+    "lhc": 126,
+    "higgs_sm": 3,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1977,
+    "higgs": 87,
+    "sm": 32,
+    "lhc": 158,
+    "higgs_sm": 9,
+    "higgs_lhc": 0,
+    "triple": 0
+  },
+  {
+    "year": 1978,
+    "higgs": 138,
+    "sm": 36,
+    "lhc": 164,
+    "higgs_sm": 11,
+    "higgs_lhc": 1,
+    "triple": 0
+  },
+  {
+    "year": 1979,
+    "higgs": 163,
+    "sm": 66,
+    "lhc": 196,
+    "higgs_sm": 25,
+    "higgs_lhc": 3,
+    "triple": 0
+  },
+  {
+    "year": 1980,
+    "higgs": 224,
+    "sm": 91,
+    "lhc": 192,
+    "higgs_sm": 30,
+    "higgs_lhc": 1,
+    "triple": 0
+  },
+  {
+    "year": 1981,
+    "higgs": 232,
+    "sm": 102,
+    "lhc": 218,
+    "higgs_sm": 33,
+    "higgs_lhc": 1,
+    "triple": 0
+  },
+  {
+    "year": 1982,
+    "higgs": 245,
+    "sm": 107,
+    "lhc": 223,
+    "higgs_sm": 34,
+    "higgs_lhc": 3,
+    "triple": 1
+  },
+  {
+    "year": 1983,
+    "higgs": 250,
+    "sm": 96,
+    "lhc": 326,
+    "higgs_sm": 29,
+    "higgs_lhc": 4,
+    "triple": 1
+  },
+  {
+    "year": 1984,
+    "higgs": 316,
+    "sm": 134,
+    "lhc": 307,
+    "higgs_sm": 41,
+    "higgs_lhc": 6,
+    "triple": 2
+  },
+  {
+    "year": 1985,
+    "higgs": 317,
+    "sm": 162,
+    "lhc": 407,
+    "higgs_sm": 54,
+    "higgs_lhc": 14,
+    "triple": 4
+  },
+  {
+    "year": 1986,
+    "higgs": 334,
+    "sm": 210,
+    "lhc": 329,
+    "higgs_sm": 72,
+    "higgs_lhc": 7,
+    "triple": 1
+  },
+  {
+    "year": 1987,
+    "higgs": 327,
+    "sm": 196,
+    "lhc": 404,
+    "higgs_sm": 72,
+    "higgs_lhc": 10,
+    "triple": 4
+  },
+  {
+    "year": 1988,
+    "higgs": 353,
+    "sm": 201,
+    "lhc": 434,
+    "higgs_sm": 80,
+    "higgs_lhc": 18,
+    "triple": 6
+  },
+  {
+    "year": 1989,
+    "higgs": 421,
+    "sm": 309,
+    "lhc": 581,
+    "higgs_sm": 111,
+    "higgs_lhc": 21,
+    "triple": 7
+  },
+  {
+    "year": 1990,
+    "higgs": 503,
+    "sm": 391,
+    "lhc": 589,
+    "higgs_sm": 149,
+    "higgs_lhc": 44,
+    "triple": 18
+  },
+  {
+    "year": 1991,
+    "higgs": 511,
+    "sm": 377,
+    "lhc": 490,
+    "higgs_sm": 144,
+    "higgs_lhc": 38,
+    "triple": 17
+  },
+  {
+    "year": 1992,
+    "higgs": 589,
+    "sm": 460,
+    "lhc": 716,
+    "higgs_sm": 193,
+    "higgs_lhc": 53,
+    "triple": 30
+  },
+  {
+    "year": 1993,
+    "higgs": 630,
+    "sm": 424,
+    "lhc": 687,
+    "higgs_sm": 183,
+    "higgs_lhc": 55,
+    "triple": 27
+  },
+  {
+    "year": 1994,
+    "higgs": 673,
+    "sm": 513,
+    "lhc": 850,
+    "higgs_sm": 218,
+    "higgs_lhc": 63,
+    "triple": 26
+  },
+  {
+    "year": 1995,
+    "higgs": 636,
+    "sm": 559,
+    "lhc": 1001,
+    "higgs_sm": 220,
+    "higgs_lhc": 60,
+    "triple": 22
+  },
+  {
+    "year": 1996,
+    "higgs": 645,
+    "sm": 537,
+    "lhc": 1121,
+    "higgs_sm": 210,
+    "higgs_lhc": 79,
+    "triple": 36
+  },
+  {
+    "year": 1997,
+    "higgs": 676,
+    "sm": 490,
+    "lhc": 1098,
+    "higgs_sm": 197,
+    "higgs_lhc": 87,
+    "triple": 30
+  },
+  {
+    "year": 1998,
+    "higgs": 751,
+    "sm": 529,
+    "lhc": 1175,
+    "higgs_sm": 210,
+    "higgs_lhc": 121,
+    "triple": 57
+  },
+  {
+    "year": 1999,
+    "higgs": 775,
+    "sm": 592,
+    "lhc": 1280,
+    "higgs_sm": 233,
+    "higgs_lhc": 128,
+    "triple": 53
+  },
+  {
+    "year": 2000,
+    "higgs": 751,
+    "sm": 568,
+    "lhc": 1258,
+    "higgs_sm": 213,
+    "higgs_lhc": 133,
+    "triple": 50
+  },
+  {
+    "year": 2001,
+    "higgs": 887,
+    "sm": 665,
+    "lhc": 1416,
+    "higgs_sm": 273,
+    "higgs_lhc": 169,
+    "triple": 76
+  },
+  {
+    "year": 2002,
+    "higgs": 871,
+    "sm": 638,
+    "lhc": 2021,
+    "higgs_sm": 276,
+    "higgs_lhc": 169,
+    "triple": 73
+  },
+  {
+    "year": 2003,
+    "higgs": 850,
+    "sm": 666,
+    "lhc": 1810,
+    "higgs_sm": 259,
+    "higgs_lhc": 196,
+    "triple": 72
+  },
+  {
+    "year": 2004,
+    "higgs": 910,
+    "sm": 708,
+    "lhc": 1918,
+    "higgs_sm": 288,
+    "higgs_lhc": 217,
+    "triple": 97
+  },
+  {
+    "year": 2005,
+    "higgs": 980,
+    "sm": 705,
+    "lhc": 2021,
+    "higgs_sm": 278,
+    "higgs_lhc": 237,
+    "triple": 111
+  },
+  {
+    "year": 2006,
+    "higgs": 930,
+    "sm": 740,
+    "lhc": 2258,
+    "higgs_sm": 270,
+    "higgs_lhc": 236,
+    "triple": 91
+  },
+  {
+    "year": 2007,
+    "higgs": 1179,
+    "sm": 956,
+    "lhc": 2685,
+    "higgs_sm": 364,
+    "higgs_lhc": 347,
+    "triple": 138
+  },
+  {
+    "year": 2008,
+    "higgs": 1303,
+    "sm": 1057,
+    "lhc": 3126,
+    "higgs_sm": 435,
+    "higgs_lhc": 437,
+    "triple": 217
+  },
+  {
+    "year": 2009,
+    "higgs": 1256,
+    "sm": 1023,
+    "lhc": 2913,
+    "higgs_sm": 412,
+    "higgs_lhc": 373,
+    "triple": 170
+  },
+  {
+    "year": 2010,
+    "higgs": 1388,
+    "sm": 1070,
+    "lhc": 3712,
+    "higgs_sm": 426,
+    "higgs_lhc": 497,
+    "triple": 221
+  },
+  {
+    "year": 2011,
+    "higgs": 1558,
+    "sm": 1287,
+    "lhc": 4457,
+    "higgs_sm": 526,
+    "higgs_lhc": 587,
+    "triple": 286
+  },
+  {
+    "year": 2012,
+    "higgs": 2254,
+    "sm": 1635,
+    "lhc": 4779,
+    "higgs_sm": 811,
+    "higgs_lhc": 911,
+    "triple": 449
+  },
+  {
+    "year": 2013,
+    "higgs": 2742,
+    "sm": 1694,
+    "lhc": 5042,
+    "higgs_sm": 878,
+    "higgs_lhc": 1078,
+    "triple": 465
+  },
+  {
+    "year": 2014,
+    "higgs": 2396,
+    "sm": 1500,
+    "lhc": 4409,
+    "higgs_sm": 782,
+    "higgs_lhc": 864,
+    "triple": 371
+  },
+  {
+    "year": 2015,
+    "higgs": 2682,
+    "sm": 1641,
+    "lhc": 4869,
+    "higgs_sm": 887,
+    "higgs_lhc": 1044,
+    "triple": 454
+  },
+  {
+    "year": 2016,
+    "higgs": 2684,
+    "sm": 1736,
+    "lhc": 5335,
+    "higgs_sm": 882,
+    "higgs_lhc": 1075,
+    "triple": 465
+  },
+  {
+    "year": 2017,
+    "higgs": 2291,
+    "sm": 1571,
+    "lhc": 4980,
+    "higgs_sm": 723,
+    "higgs_lhc": 853,
+    "triple": 384
+  },
+  {
+    "year": 2018,
+    "higgs": 2039,
+    "sm": 1463,
+    "lhc": 4024,
+    "higgs_sm": 680,
+    "higgs_lhc": 690,
+    "triple": 308
+  },
+  {
+    "year": 2019,
+    "higgs": 1767,
+    "sm": 1302,
+    "lhc": 4111,
+    "higgs_sm": 555,
+    "higgs_lhc": 590,
+    "triple": 263
+  },
+  {
+    "year": 2020,
+    "higgs": 1525,
+    "sm": 1172,
+    "lhc": 3083,
+    "higgs_sm": 484,
+    "higgs_lhc": 485,
+    "triple": 221
+  },
+  {
+    "year": 2021,
+    "higgs": 1779,
+    "sm": 1402,
+    "lhc": 3108,
+    "higgs_sm": 555,
+    "higgs_lhc": 548,
+    "triple": 265
+  },
+  {
+    "year": 2022,
+    "higgs": 2408,
+    "sm": 1880,
+    "lhc": 3799,
+    "higgs_sm": 842,
+    "higgs_lhc": 775,
+    "triple": 356
+  },
+  {
+    "year": 2023,
+    "higgs": 2359,
+    "sm": 1785,
+    "lhc": 3243,
+    "higgs_sm": 767,
+    "higgs_lhc": 610,
+    "triple": 328
+  },
+  {
+    "year": 2024,
+    "higgs": 1618,
+    "sm": 982,
+    "lhc": 2663,
+    "higgs_sm": 368,
+    "higgs_lhc": 442,
+    "triple": 214
+  },
+  {
+    "year": 2025,
+    "higgs": 2264,
+    "sm": 5282,
+    "lhc": 3190,
+    "higgs_sm": 1336,
+    "higgs_lhc": 681,
+    "triple": 545
+  }
+]
