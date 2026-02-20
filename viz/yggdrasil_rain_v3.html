@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>YGGDRASIL — La Pluie · Orbites Naturelles</title>
+<title>YGGDRASIL — La Pluie · Planètes</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
@@ -29,20 +29,6 @@ canvas{display:block;position:fixed;top:0;left:0;z-index:1}
 #cube-switch input{vertical-align:middle;accent-color:#f97316}
 #cube-switch label{cursor:pointer}
 #hint{position:fixed;bottom:20px;right:20px;z-index:10;font-size:9px;color:#222;letter-spacing:1px;text-align:right;line-height:1.9}
-#cont-filters{position:fixed;top:100px;left:22px;z-index:10;display:flex;flex-direction:column;gap:3px}
-#cont-filters label{font-size:10px;color:#556;cursor:pointer;display:flex;align-items:center;gap:6px;padding:2px 0;letter-spacing:0.5px;transition:color 0.2s}
-#cont-filters label:hover{color:#99a}
-#cont-filters input[type=checkbox]{display:none}
-.cf-dot{width:8px;height:8px;border-radius:50%;border:1.5px solid;opacity:0.5;transition:opacity 0.2s,box-shadow 0.2s}
-#cont-filters input:checked+.cf-dot{opacity:1;box-shadow:0 0 6px currentColor}
-#metiers{position:fixed;bottom:24px;left:24px;z-index:10;max-width:320px;background:rgba(6,6,12,0.92);border:1px solid #222;border-radius:5px;padding:14px 16px;display:none;font-size:10px;line-height:1.7}
-#metiers .mt-title{font-size:15px;font-weight:700;margin-bottom:2px}
-#metiers .mt-sub{font-size:9px;color:#445;margin-bottom:8px}
-#metiers .mt-sep{border:none;border-top:1px solid #222;margin:6px 0}
-#metiers .mt-label{font-size:9px;color:#556;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-#metiers ul{list-style:none;padding:0;margin:0}
-#metiers li{color:#778;font-size:10px;padding:1px 0}
-#metiers li::before{content:'→ ';color:#334}
 </style>
 </head>
 <body>
@@ -58,22 +44,6 @@ canvas{display:block;position:fixed;top:0;left:0;z-index:1}
   <div class="sl" id="sl"></div>
 </div>
 <div id="cube-switch"><label><input type="checkbox" id="toggleC2" onchange="switchCube(this.checked)"> C2 · Conjectures</label> <label><input type="checkbox" id="toggleC3" onchange="switchC3(this.checked)"> C3 · Fusion</label></div>
-<div id="cont-filters">
-  <label><input type="checkbox" data-cont="MATHS" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#ffcc00;border-color:#ffcc00"></span>MATHS</label>
-  <label><input type="checkbox" data-cont="PHYSIQUE" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#3bc9db;border-color:#3bc9db"></span>PHYSIQUE</label>
-  <label><input type="checkbox" data-cont="CHIMIE" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#fab005;border-color:#fab005"></span>CHIMIE</label>
-  <label><input type="checkbox" data-cont="BIO" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#69db7c;border-color:#69db7c"></span>BIO</label>
-  <label><input type="checkbox" data-cont="IA/CS" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#da77f2;border-color:#da77f2"></span>IA/CS</label>
-  <label><input type="checkbox" data-cont="FINANCE" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#ff8e72;border-color:#ff8e72"></span>FINANCE</label>
-  <label><input type="checkbox" data-cont="INGÉNIERIE" onchange="toggleContinent(this)"><span class="cf-dot" style="color:#748ffc;border-color:#748ffc"></span>INGÉNIERIE</label>
-</div>
-<div id="metiers">
-  <div class="mt-title" id="mt-title"></div>
-  <div class="mt-sub" id="mt-sub"></div>
-  <hr class="mt-sep">
-  <div class="mt-label">Métiers visés</div>
-  <ul id="mt-list"></ul>
-</div>
 <div id="legend"></div>
 <div id="hint"><kbd>drag</kbd> rotation · <kbd>scroll</kbd> zoom · <kbd>légende</kbd> focus · <kbd>espace</kbd> pause</div>
 <script>
@@ -83,32 +53,41 @@ const ST_C2=[{"n":"SOL · Δ⁰₀ · Décidable","sh":"Δ⁰₀ SOL","f":"R(x) 
 const CTR_C2=["RH","P≠NP","ACE","Collatz","SCH","AD?","BB5"];
 let currentST=ST_C1,currentCTR=CTR_C1,isC2=false,isC3=false;
 
-// ═══ CONTINENT FILTERS ═══
-const CONT_MAP={"MATHS":["mathématique","algèbre","analyse","topologie","géométrie","algèbre lin","combinatoire","nb théorie","ensembles","géom diff","géom algébrique","analyse fonctionnelle","catégories","mesure","trigonométrie","nombres","EDP","optimisation","complexes","ordinaux","arithmétique","logique","nb premiers","probabilités"],"PHYSIQUE":["quantique","mécanique","relativité","cosmologie","QFT","nucléaire","optique","particules","gravitation","mécanique analytique","électromagn"],"CHIMIE":["chimie","thermo","fluides","mécanique stat"],"BIO":["biologie"],"IA/CS":["ML","complexité","automates","calculabilité","crypto","information"],"FINANCE":["finance","économie","statistiques","stochastique"],"INGÉNIERIE":["signal","contrôle","astronomie"]};
-const CONT_COLORS={"MATHS":[255,204,0],"PHYSIQUE":[59,201,219],"IA/CS":[218,119,242],"CHIMIE":[250,176,5],"FINANCE":[255,142,114],"INGÉNIERIE":[116,143,252],"BIO":[105,219,124]};
-const CONT_COUNTS={"MATHS":3687,"PHYSIQUE":771,"IA/CS":250,"CHIMIE":180,"FINANCE":157,"INGÉNIERIE":129,"BIO":11};
-const CONT_DOMS={"MATHS":24,"PHYSIQUE":11,"CHIMIE":4,"BIO":1,"IA/CS":6,"FINANCE":4,"INGÉNIERIE":3};
-const METIERS={"MATHS":["Mathématicien","Statisticien","Actuaire","Cryptographe","Analyste quantitatif","Chercheur en maths pures"],"PHYSIQUE":["Physicien","Ingénieur nucléaire","Astrophysicien","Physicien des particules","Ingénieur optique","Cosmologiste"],"CHIMIE":["Chimiste","Ingénieur thermique","Ingénieur fluides","Ingénieur procédés","Thermodynamicien"],"BIO":["Biologiste","Bioinformaticien","Généticien","Biologiste moléculaire","Biotechnologiste"],"IA/CS":["Ingénieur ML","Chercheur IA","Cryptographe","Développeur blockchain","Ingénieur sécurité","Data scientist"],"FINANCE":["Trader quantitatif","Risk manager","Actuaire","Analyste financier","Quant developer","Économiste"],"INGÉNIERIE":["Ingénieur signal","Ingénieur contrôle","Ingénieur télécom","Ingénieur automatisme","Ingénieur aérospatial"]};
-const domToCont={};for(const[c,ds]of Object.entries(CONT_MAP))for(const d of ds)domToCont[d]=c;
-let activeFilters=[];
-function toggleContinent(el){
-  const c=el.getAttribute('data-cont');
-  if(el.checked){if(!activeFilters.includes(c))activeFilters.push(c);}
-  else{activeFilters=activeFilters.filter(x=>x!==c);}
-  updateMetiersPanel();
+// ═══ PLANET LAYOUT — Continent circles at each strate ═══
+const CONTINENT_MAP={"MATHS":["mathématique","algèbre","analyse","topologie","géométrie","algèbre lin","combinatoire","nb théorie","ensembles","géom diff","géom algébrique","analyse fonctionnelle","catégories","mesure","trigonométrie","nombres","EDP","optimisation","complexes","ordinaux","arithmétique","logique","nb premiers","probabilités"],"PHYSIQUE":["quantique","mécanique","relativité","cosmologie","QFT","nucléaire","optique","particules","gravitation","mécanique analytique","électromagn"],"CHIMIE":["chimie","thermo","fluides","mécanique stat"],"BIO":["biologie"],"IA/CS":["ML","complexité","automates","calculabilité","crypto","information"],"FINANCE":["finance","économie","statistiques","stochastique"],"INGÉNIERIE":["signal","contrôle","astronomie"]};
+const PLANET_COLORS={"MATHS":"#ffcc00","PHYSIQUE":"#3bc9db","IA/CS":"#da77f2","CHIMIE":"#fab005","FINANCE":"#ff8e72","INGÉNIERIE":"#748ffc","BIO":"#69db7c"};
+const PLANET_ORDER=["INGÉNIERIE","PHYSIQUE","CHIMIE","FINANCE","IA/CS","BIO"];
+const ALL_CONTS=["MATHS",...PLANET_ORDER];
+const PHI=(1+Math.sqrt(5))/2;
+const PSCALE=0.9;
+function hexRgb(h){return[parseInt(h.slice(1,3),16),parseInt(h.slice(3,5),16),parseInt(h.slice(5,7),16)];}
+const PLANET_RGB={};for(const[n,c]of Object.entries(PLANET_COLORS))PLANET_RGB[n]=hexRgb(c);
+const domToCont={};for(const[c,doms]of Object.entries(CONTINENT_MAP))for(const d of doms)domToCont[d]=c;
+const S0C={MATHS:3687,PHYSIQUE:771,"IA/CS":250,CHIMIE:180,FINANCE:157,"INGÉNIERIE":129,BIO:11};
+const PLANET_LAYOUT={};
+PLANET_LAYOUT.MATHS={cx:0,cz:0,r:PSCALE};
+PLANET_ORDER.forEach((name,i)=>{const a=-Math.PI/2+(i/6)*Math.PI*2;const r=Math.sqrt(S0C[name]/S0C.MATHS)*PSCALE;PLANET_LAYOUT[name]={cx:Math.cos(a)*(PSCALE+r),cz:Math.sin(a)*(PSCALE+r),r:r};});
+function recomputePositions(stArr){
+  for(const st of stArr){
+    const groups={};
+    for(const sym of st.sy){
+      if(sym[3]===1){sym[1]=0;sym[2]=0;continue;}
+      const cont=domToCont[sym[4]]||'MATHS';
+      (groups[cont]=groups[cont]||[]).push(sym);
+    }
+    for(const[cont,syms]of Object.entries(groups)){
+      const lay=PLANET_LAYOUT[cont]||PLANET_LAYOUT.MATHS;
+      for(let i=0;i<syms.length;i++){
+        const t=(i+0.5)/syms.length;
+        const r=Math.sqrt(t)*lay.r*0.88;
+        const theta=2*Math.PI*PHI*i;
+        syms[i][1]=lay.cx+r*Math.cos(theta);
+        syms[i][2]=lay.cz+r*Math.sin(theta);
+      }
+    }
+  }
 }
-function updateMetiersPanel(){
-  const mp=document.getElementById('metiers');
-  if(activeFilters.length===0){mp.style.display='none';return;}
-  const last=activeFilters[activeFilters.length-1];
-  const col=CONT_COLORS[last];
-  document.getElementById('mt-title').textContent=last;
-  document.getElementById('mt-title').style.color=`rgb(${col})`;
-  document.getElementById('mt-sub').textContent=(CONT_COUNTS[last]||0)+' symboles · '+(CONT_DOMS[last]||0)+' domaines';
-  const ul=document.getElementById('mt-list');ul.innerHTML='';
-  (METIERS[last]||[]).forEach(m=>{const li=document.createElement('li');li.textContent=m;li.style.color=`rgb(${col})`;ul.appendChild(li);});
-  mp.style.display='block';
-}
+recomputePositions(ST_C1);recomputePositions(ST_C2);
 
 const cv=document.getElementById('c'),ctx=cv.getContext('2d');
 let W,H;function resize(){W=cv.width=innerWidth;H=cv.height=innerHeight}resize();addEventListener('resize',resize);
@@ -195,22 +174,20 @@ function switchC3(toC3){
   activeS=-1;showInfo(0)
 }
 
-function drawOrbitRing(y,radius,si,dissolve,rot){
-  const segs=40;
-  ctx.beginPath();
+function drawPlanetCircle(y,contName,opacity,rot){
+  const lay=PLANET_LAYOUT[contName];if(!lay||lay.r<0.01)return;
+  const segs=36,col=PLANET_RGB[contName];
   const cr=Math.cos(rot),sr=Math.sin(rot);
+  ctx.beginPath();
   for(let i=0;i<=segs;i++){
     const t=(i/segs)*Math.PI*2;
-    const wobble=dissolve*(Math.sin(t*(3+si))*0.04);
-    const r=radius+wobble;
-    const ox=Math.cos(t)*r,oz=Math.sin(t)*r;
+    const ox=lay.cx+Math.cos(t)*lay.r,oz=lay.cz+Math.sin(t)*lay.r;
     const rx=ox*cr-oz*sr,rz=ox*sr+oz*cr;
     const p=project(rx,y,rz);
     if(i===0)ctx.moveTo(p.x,p.y);else ctx.lineTo(p.x,p.y);
   }
-  ctx.strokeStyle=rgba(currentST[si].c,Math.max(0.04,0.15-dissolve*0.08));
-  ctx.lineWidth=0.8;
-  ctx.stroke();
+  ctx.strokeStyle=`rgba(${col[0]},${col[1]},${col[2]},${opacity})`;
+  ctx.lineWidth=1;ctx.stroke();
 }
 
 function frame(){
@@ -224,23 +201,21 @@ function frame(){
   
   if(autoRot)yaw+=yawSpd;
   
-  // Draw orbit rings for each strate
+  // Draw planet circles for each strate
   currentST.forEach((st,si)=>{
     const y=st.yr*BOX.h;
-    const dissolve=si/6;
     const rot=time*(0.3-si*0.035);
     if(activeS>=0&&si!==activeS)return;
-    st.shells.forEach(r=>{
-      drawOrbitRing(y,r,si,dissolve,rot);
-    });
+    const baseOp=si===0?0.35:Math.max(0.06,0.2-si*0.025);
+    for(const cn of ALL_CONTS)drawPlanetCircle(y,cn,baseOp,rot);
   });
   if(isC3){
     ST_C2.forEach((st,si)=>{
       const y=st.yr*BOX.h;
-      const dissolve=si/6;
       const rot=time*(0.3-si*0.035);
       if(activeS>=0&&si!==activeS)return;
-      st.shells.forEach(r=>{drawOrbitRing(y,r,si,dissolve,rot)});
+      const baseOp=si===0?0.25:Math.max(0.04,0.15-si*0.02);
+      for(const cn of ALL_CONTS)drawPlanetCircle(y,cn,baseOp,rot);
     });
   }
 
@@ -265,9 +240,8 @@ function frame(){
       let ox=sym[1],oz=sym[2];
       if(!isCentre){const rx=ox*cr-oz*sr;const rz=ox*sr+oz*cr;ox=rx;oz=rz;}
       const pp=project(ox,y,oz);
-      let symCol=st.c,symSop=sop;
-      if(si===0&&activeFilters.length>0){const sc2=domToCont[sym[4]];if(sc2&&activeFilters.includes(sc2)){symCol=CONT_COLORS[sc2];}else{symSop=sop*0.06;}}
-      items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:symCol,sop:symSop,isCentre})
+      const symCol=PLANET_RGB[domToCont[sym[4]]]||st.c;
+      items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:symCol,sop,isCentre})
     });
   });
   if(isC3){
@@ -282,7 +256,8 @@ function frame(){
         let ox=sym[1],oz=sym[2];
         if(!isCentre){const rx=ox*cr-oz*sr;const rz=ox*sr+oz*cr;ox=rx;oz=rz;}
         const pp=project(ox,y,oz);
-        items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:st.c,sop:sop*0.55,isCentre,isC2src:true})
+        const symCol2=PLANET_RGB[domToCont[sym[4]]]||st.c;
+        items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:symCol2,sop:sop*0.55,isCentre,isC2src:true})
       });
     });
   }
@@ -311,15 +286,16 @@ function frame(){
         ctx.font=`700 ${bs*0.7}px "JetBrains Mono",monospace`;
         ctx.fillText(it.sym[0],it.px,it.py);
       }else{
-        const bs=Math.max(5,Math.min(11,7.5*(it.pf/sc)));
-        ctx.font=`500 ${bs}px "JetBrains Mono",monospace`;
-        ctx.textAlign='center';ctx.textBaseline='middle';
+        const dotR=Math.max(0.8,Math.min(2.5,1.8*(it.pf/sc)));
         const dx=mouseX-it.px,dy=mouseY-it.py,dist=Math.sqrt(dx*dx+dy*dy);
-        if(dist<18&&dist<nd){nd=dist;ns=it}
-        if(dist<18){ctx.shadowColor=`rgb(${it.col})`;ctx.shadowBlur=10}
-        ctx.fillStyle=rgba(it.col,it.sop*0.8);
-        ctx.fillText(it.sym[0],it.px,it.py);
-        ctx.shadowBlur=0;
+        if(dist<14&&dist<nd){nd=dist;ns=it}
+        if(dist<14){
+          ctx.beginPath();ctx.arc(it.px,it.py,dotR*3,0,Math.PI*2);
+          ctx.fillStyle=rgba(it.col,Math.min(1,it.sop*1.2));ctx.fill();
+        }else{
+          ctx.beginPath();ctx.arc(it.px,it.py,dotR,0,Math.PI*2);
+          ctx.fillStyle=rgba(it.col,it.sop*0.7);ctx.fill();
+        }
       }
     }
   });

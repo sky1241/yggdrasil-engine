@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>YGGDRASIL — La Pluie en Planètes</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0a12;overflow:hidden;height:100vh;width:100vw;font-family:'Courier New',monospace;color:#ccc}
+canvas{display:block;position:fixed;top:0;left:0}
+#controls{position:fixed;top:14px;right:14px;z-index:10;background:rgba(0,0,0,0.55);padding:10px 12px;border-radius:6px;display:flex;flex-direction:column;gap:6px;min-width:190px}
+#controls label{font-size:10px;color:#888;cursor:pointer;display:flex;align-items:center;gap:5px}
+#controls input[type=checkbox]{accent-color:#ffcc00}
+#controls input[type=range]{width:100%;accent-color:#ffaa00}
+#yearLabel{font-size:18px;font-weight:bold;color:#ffaa00;text-align:center}
+#info{position:fixed;bottom:14px;left:14px;z-index:10;background:rgba(0,0,0,0.88);padding:12px;border-radius:6px;border:1px solid #333;display:none;max-width:420px;font-size:11px;line-height:1.6}
+#tooltip{position:fixed;z-index:20;background:rgba(0,0,0,0.92);padding:5px 9px;border-radius:4px;font-size:10px;line-height:1.5;pointer-events:none;display:none;border:1px solid #555;max-width:300px}
+#bar{position:fixed;bottom:8px;left:50%;transform:translateX(-50%);z-index:10;font-size:12px;color:rgba(255,255,255,0.2);white-space:nowrap}
+#loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);font-size:14px;color:#ffcc00}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="loading">Chargement de 5185 symboles…</div>
+<div id="controls" style="display:none">
+  <div id="yearLabel">2025</div>
+  <input type="range" id="yearSlider" min="300" max="2025" step="10" value="2025">
+  <label><input type="checkbox" id="cbLabels" checked> Labels</label>
+  <label><input type="checkbox" id="cbPonts" checked> Ponts</label>
+  <label><input type="checkbox" id="cbNoms"> Noms symboles</label>
+  <label><input type="checkbox" id="cbAnimer"> Animer</label>
+  <label style="font-size:9px;color:#555">Vitesse <input type="range" id="speedSlider" min="1" max="20" value="5" style="width:80px"></label>
+</div>
+<div id="info"></div>
+<div id="tooltip"></div>
+<div id="bar"></div>
+<script>
+(async function(){
+
+/* ═══ CONFIG ═══ */
+var CONTINENT_DEFS=[
+  {name:"MATHS",color:"#ffcc00",capitale:"=",domains:["mathématique","algèbre","analyse","topologie","géométrie","algèbre lin","combinatoire","nb théorie","ensembles","géom diff","géom algébrique","analyse fonctionnelle","catégories","mesure","trigonométrie","nombres","EDP","optimisation","complexes","ordinaux","arithmétique","logique","nb premiers","probabilités"]},
+  {name:"INGÉNIERIE",color:"#748ffc",capitale:"Δt",domains:["signal","contrôle","astronomie"]},
+  {name:"PHYSIQUE",color:"#3bc9db",capitale:"ℏ",domains:["quantique","mécanique","relativité","cosmologie","QFT","nucléaire","optique","particules","gravitation","mécanique analytique","électromagn"]},
+  {name:"CHIMIE",color:"#fab005",capitale:"mol",domains:["chimie","thermo","fluides","mécanique stat"]},
+  {name:"FINANCE",color:"#ff8e72",capitale:"$",domains:["finance","économie","statistiques","stochastique"]},
+  {name:"IA/CS",color:"#da77f2",capitale:"NP",domains:["ML","complexité","automates","calculabilité","crypto","information"]},
+  {name:"BIO",color:"#69db7c",capitale:"DNA",domains:["biologie"]}
+];
+
+var DFY={"trigonométrie":300,"nombres":800,"nb théorie":1093,"arithmétique":1557,"analyse":1614,"optique":1621,"astronomie":1609,"probabilités":1654,"mécanique":1687,"gravitation":1687,"EDP":1747,"fluides":1755,"optimisation":1788,"mécanique analytique":1788,"chimie":1789,"complexes":1799,"statistiques":1805,"thermo":1824,"algèbre lin":1850,"contrôle":1868,"mécanique stat":1877,"logique":1878,"ordinaux":1883,"géom diff":1899,"quantique":1900,"mesure":1902,"analyse fonctionnelle":1906,"ensembles":1908,"nucléaire":1911,"stochastique":1923,"calculabilité":1928,"particules":1928,"électromagn":1931,"combinatoire":1935,"automates":1936,"algèbre":1939,"géométrie":1939,"catégories":1945,"information":1948,"économie":1950,"biologie":1953,"complexité":1956,"topologie":1957,"géom algébrique":1963,"signal":1965,"finance":1973,"crypto":1976,"cosmologie":1981,"QFT":1983,"ML":1984,"nb premiers":1800,"mathématique":1700};
+
+var GOLDEN=(1+Math.sqrt(5))/2;
+
+/* ═══ LOAD DATA ═══ */
+var rawData;
+try{rawData=await fetch('../data/strates_export_v2.json').then(function(r){if(!r.ok)throw r.status;return r.json()});}
+catch(e){rawData=await fetch('data/strates_export_v2.json').then(function(r){return r.json()});}
+var s0=rawData.strates[0].symbols;
+
+/* ═══ BUILD CONTINENTS ═══ */
+function hexRgb(h){return{r:parseInt(h.slice(1,3),16),g:parseInt(h.slice(3,5),16),b:parseInt(h.slice(5,7),16)};}
+
+var domToCont={};
+for(var ci=0;ci<CONTINENT_DEFS.length;ci++){
+  var def=CONTINENT_DEFS[ci];
+  def.rgb=hexRgb(def.color);
+  def.domainGroups={};def.domainOrder=[];def.totalSymbols=0;
+  for(var di=0;di<def.domains.length;di++) domToCont[def.domains[di]]=ci;
+}
+
+for(var si=0;si<s0.length;si++){
+  var sym=s0[si],contIdx=domToCont[sym.domain];
+  if(contIdx===undefined)continue;
+  var ct=CONTINENT_DEFS[contIdx];
+  if(!ct.domainGroups[sym.domain]){ct.domainGroups[sym.domain]=[];ct.domainOrder.push(sym.domain);}
+  ct.domainGroups[sym.domain].push(sym);
+  ct.totalSymbols++;
+}
+for(var ci=0;ci<CONTINENT_DEFS.length;ci++){
+  CONTINENT_DEFS[ci].domainOrder.sort(function(a,b){return(DFY[a]||1700)-(DFY[b]||1700);});
+}
+
+var mathsDef=CONTINENT_DEFS[0];
+var planetDefs=CONTINENT_DEFS.slice(1);
+console.log('Total S0:',s0.length);
+for(var ci=0;ci<CONTINENT_DEFS.length;ci++) console.log(' ',CONTINENT_DEFS[ci].name,':',CONTINENT_DEFS[ci].totalSymbols);
+
+/* ═══ CANVAS & UI ═══ */
+var cv=document.getElementById('c'),ctx=cv.getContext('2d');
+var yearSlider=document.getElementById('yearSlider');
+var yearLabel=document.getElementById('yearLabel');
+var cbLabels=document.getElementById('cbLabels');
+var cbPonts=document.getElementById('cbPonts');
+var cbNoms=document.getElementById('cbNoms');
+var cbAnimer=document.getElementById('cbAnimer');
+var speedSlider=document.getElementById('speedSlider');
+var infoEl=document.getElementById('info');
+var tooltipEl=document.getElementById('tooltip');
+var barEl=document.getElementById('bar');
+
+var W,H,cx,cy,sc;
+var mx=-9999,my=-9999;
+cv.addEventListener('mousemove',function(e){mx=e.clientX;my=e.clientY;});
+cv.addEventListener('mouseleave',function(){mx=-9999;my=-9999;});
+
+/* ═══ POSITIONED SYMBOLS ═══ */
+var posSymbols=[];
+var contLayouts=[];
+
+function computePositions(){
+  W=cv.width=innerWidth;H=cv.height=innerHeight;
+  cx=W/2;cy=H/2;sc=Math.min(W,H);
+  posSymbols=[];contLayouts=[];
+
+  var mathsR=sc*0.22;
+
+  // MATHS center
+  contLayouts.push({name:"MATHS",cx:cx,cy:cy,r:mathsR,color:mathsDef.color,rgb:mathsDef.rgb,capitale:"=",cont:mathsDef});
+  placeInCircle(mathsDef,cx,cy,mathsR);
+
+  // 6 planets
+  for(var p=0;p<planetDefs.length;p++){
+    var pl=planetDefs[p];
+    if(pl.totalSymbols===0)continue;
+    var angle=-Math.PI/2+p*(Math.PI/3);
+    var plR=Math.sqrt(pl.totalSymbols/mathsDef.totalSymbols)*mathsR;
+    var dist=mathsR+plR;
+    var pcx=cx+Math.cos(angle)*dist;
+    var pcy=cy+Math.sin(angle)*dist;
+    contLayouts.push({name:pl.name,cx:pcx,cy:pcy,r:plR,angle:angle,color:pl.color,rgb:pl.rgb,capitale:pl.capitale,cont:pl});
+    placeInCircle(pl,pcx,pcy,plR);
+  }
+}
+
+function placeInCircle(cont,centerX,centerY,radius){
+  var total=cont.totalSymbols;
+  if(total===0)return;
+  var angleOffset=-Math.PI/2;
+
+  for(var di=0;di<cont.domainOrder.length;di++){
+    var domName=cont.domainOrder[di];
+    var syms=cont.domainGroups[domName];
+    var sectorAngle=(syms.length/total)*2*Math.PI;
+    var fy=DFY[domName]||1700;
+
+    for(var i=0;i<syms.length;i++){
+      var t=(i+0.5)/syms.length;
+      var r=(0.15+Math.sqrt(t)*0.75)*radius;
+      var frac=(GOLDEN*i)%1;
+      var theta=angleOffset+frac*sectorAngle;
+      var x=centerX+r*Math.cos(theta);
+      var y=centerY+r*Math.sin(theta);
+      var distNorm=r/radius;
+      posSymbols.push({
+        x:x,y:y,sym:syms[i],domain:domName,contName:cont.name,
+        rgb:cont.rgb,color:cont.color,yearThreshold:fy,
+        baseOp:0.3+(1-distNorm)*0.5,
+        size:1.5+(1-distNorm)*1
+      });
+    }
+    angleOffset+=sectorAngle;
+  }
+}
+
+/* ═══ SYMBOL BUFFER (offscreen canvas for perf) ═══ */
+var bufCv=document.createElement('canvas');
+var bufCtx=bufCv.getContext('2d');
+var bufYear=-1,bufNoms=false;
+
+function renderBuffer(year,showNoms){
+  bufCv.width=W;bufCv.height=H;
+  if(showNoms){bufCtx.textAlign='center';bufCtx.textBaseline='middle';}
+
+  for(var i=0;i<posSymbols.length;i++){
+    var pt=posSymbols[i];
+    if(year<pt.yearThreshold)continue;
+    var age=year-pt.yearThreshold;
+    var growth=Math.min(1,age/50);
+    var opacity=pt.baseOp*growth;
+    var r=pt.rgb.r,g=pt.rgb.g,b=pt.rgb.b;
+    var rgba='rgba('+r+','+g+','+b+','+opacity+')';
+
+    if(showNoms){
+      var fs=Math.round(6+(pt.baseOp-0.3)*4);
+      bufCtx.font=fs+'px Courier New';
+      bufCtx.fillStyle=rgba;
+      bufCtx.fillText(pt.sym.s,pt.x,pt.y);
+    }else{
+      bufCtx.fillStyle=rgba;
+      var s=pt.size;
+      bufCtx.fillRect(pt.x-s*0.5,pt.y-s*0.5,s,s);
+    }
+  }
+  bufYear=year;bufNoms=showNoms;
+}
+
+/* ═══ DRAW LOOP ═══ */
+function draw(){
+  // Animation
+  if(cbAnimer.checked){
+    var y=parseInt(yearSlider.value)+parseInt(speedSlider.value);
+    if(y>2025)y=300;
+    yearSlider.value=y;yearLabel.textContent=y;
+  }
+
+  var year=parseInt(yearSlider.value);
+  var showNoms=cbNoms.checked;
+  var showLabels=cbLabels.checked;
+  var showPonts=cbPonts.checked;
+
+  // Redraw buffer if needed
+  if(year!==bufYear||showNoms!==bufNoms) renderBuffer(year,showNoms);
+
+  ctx.clearRect(0,0,W,H);
+
+  // ═══ LUEUR DORÉE ═══
+  var glowR=sc*0.4;
+  var glow=ctx.createRadialGradient(cx,cy,0,cx,cy,glowR);
+  glow.addColorStop(0,'rgba(255,204,0,0.05)');
+  glow.addColorStop(1,'transparent');
+  ctx.fillStyle=glow;
+  ctx.beginPath();ctx.arc(cx,cy,glowR,0,Math.PI*2);ctx.fill();
+
+  // ═══ COMPOSITE SYMBOLS ═══
+  ctx.drawImage(bufCv,0,0);
+
+  // ═══ HOVER DETECTION (on symbols) ═══
+  var hovPt=null,hovDist=400;
+  if(mx>0){
+    for(var i=0;i<posSymbols.length;i++){
+      var pt=posSymbols[i];
+      if(year<pt.yearThreshold)continue;
+      var dx=mx-pt.x,dy=my-pt.y;
+      var d2=dx*dx+dy*dy;
+      if(d2<hovDist&&d2<225){hovDist=d2;hovPt=pt;}
+    }
+  }
+
+  // ═══ CONTINENT CIRCLES + LABELS ═══
+  var hovCont=null,visContCount=0,totalVisible=0;
+
+  for(var ci=0;ci<contLayouts.length;ci++){
+    var cl=contLayouts[ci],cont=cl.cont;
+    var visCount=0;
+    for(var di=0;di<cont.domainOrder.length;di++){
+      var dom=cont.domainOrder[di];
+      if(year>=(DFY[dom]||1700)) visCount+=cont.domainGroups[dom].length;
+    }
+    if(visCount===0)continue;
+    totalVisible+=visCount;visContCount++;
+
+    var r=cl.rgb.r,g=cl.rgb.g,b=cl.rgb.b;
+
+    // Circle stroke
+    ctx.beginPath();ctx.arc(cl.cx,cl.cy,cl.r,0,Math.PI*2);
+    ctx.strokeStyle='rgba('+r+','+g+','+b+',0.35)';ctx.lineWidth=1.5;ctx.stroke();
+
+    // Hover on continent
+    if(mx>0){var dx=mx-cl.cx,dy=my-cl.cy;if(dx*dx+dy*dy<cl.r*cl.r)hovCont=cl;}
+
+    // Capitale
+    if(cl.name==="MATHS"){
+      ctx.fillStyle='#ffcc00';ctx.font='bold 28px Courier New';
+      ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillText('=',cx,cy);
+    }else{
+      var capS=Math.max(10,Math.min(20,cl.r*0.35));
+      ctx.fillStyle=cl.color;ctx.font='bold '+capS+'px Courier New';
+      ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillText(cl.capitale,cl.cx,cl.cy);
+    }
+
+    // Labels
+    if(showLabels){
+      if(cl.name==="MATHS"){
+        ctx.fillStyle=cl.color+'77';ctx.font='12px Courier New';
+        ctx.textAlign='center';ctx.textBaseline='bottom';
+        ctx.fillText('MATHS',cx,cy-cl.r+18);
+        ctx.fillStyle=cl.color+'44';ctx.font='9px Courier New';ctx.textBaseline='top';
+        ctx.fillText(visCount+' sym \u00b7 '+cont.domainOrder.length+' dom',cx,cy+cl.r-18);
+      }else if(cl.angle!==undefined){
+        var nx=Math.cos(cl.angle),ny=Math.sin(cl.angle);
+        var ld=cl.r+16,lx=cl.cx+nx*ld,ly=cl.cy+ny*ld;
+        var fs=Math.max(9,Math.min(13,cl.r*0.3));
+        ctx.fillStyle=cl.color+'BB';ctx.font=fs+'px Courier New';
+        ctx.textAlign='center';ctx.textBaseline='middle';
+        ctx.fillText(cl.name,lx,ly);
+        ctx.fillStyle=cl.color+'55';ctx.font='8px Courier New';
+        ctx.fillText(visCount+' sym',lx,ly+fs+2);
+      }
+    }
+  }
+
+  // ═══ PONTS ═══
+  if(showPonts&&contLayouts.length>1){
+    var ml=contLayouts[0];
+    for(var i=1;i<contLayouts.length;i++){
+      var cl=contLayouts[i];
+      if(cl.angle===undefined)continue;
+      // Check visible
+      var hasVis=false;
+      for(var di=0;di<cl.cont.domainOrder.length;di++){
+        if(year>=(DFY[cl.cont.domainOrder[di]]||1700)){hasVis=true;break;}
+      }
+      if(!hasVis)continue;
+
+      // Line MATHS → planet
+      var dx=cl.cx-ml.cx,dy=cl.cy-ml.cy;
+      var dist=Math.sqrt(dx*dx+dy*dy);
+      if(dist<1)continue;
+      var nx=dx/dist,ny=dy/dist;
+      var bx=ml.cx+nx*ml.r,by=ml.cy+ny*ml.r;
+      var ex=cl.cx-nx*cl.r,ey=cl.cy-ny*cl.r;
+      ctx.beginPath();ctx.moveTo(bx,by);ctx.lineTo(ex,ey);
+      ctx.strokeStyle='rgba('+cl.rgb.r+','+cl.rgb.g+','+cl.rgb.b+',0.25)';
+      ctx.lineWidth=1.5;ctx.stroke();
+
+      // Contact dot
+      ctx.beginPath();ctx.arc(bx,by,2.5,0,Math.PI*2);
+      ctx.fillStyle=cl.color;ctx.fill();
+
+      // Planet-planet
+      for(var j=i+1;j<contLayouts.length;j++){
+        var cl2=contLayouts[j];
+        if(cl2.angle===undefined)continue;
+        var hasVis2=false;
+        for(var di=0;di<cl2.cont.domainOrder.length;di++){
+          if(year>=(DFY[cl2.cont.domainOrder[di]]||1700)){hasVis2=true;break;}
+        }
+        if(!hasVis2)continue;
+        var dx2=cl.cx-cl2.cx,dy2=cl.cy-cl2.cy;
+        var dist2=Math.sqrt(dx2*dx2+dy2*dy2);
+        var sumR=cl.r+cl2.r;
+        if(dist2<sumR*1.5){
+          var overlap=1-dist2/(sumR*1.5);
+          ctx.save();ctx.setLineDash([4,6]);
+          ctx.beginPath();ctx.moveTo(cl.cx,cl.cy);ctx.lineTo(cl2.cx,cl2.cy);
+          ctx.strokeStyle='rgba(255,255,255,'+(0.08+overlap*0.2)+')';
+          ctx.lineWidth=1;ctx.stroke();ctx.setLineDash([]);ctx.restore();
+        }else if(Math.abs(i-j)===1){
+          ctx.save();ctx.setLineDash([3,8]);
+          ctx.beginPath();ctx.moveTo(cl.cx,cl.cy);ctx.lineTo(cl2.cx,cl2.cy);
+          ctx.strokeStyle='rgba(255,50,50,0.05)';ctx.lineWidth=1;ctx.stroke();
+          ctx.setLineDash([]);ctx.restore();
+        }
+      }
+    }
+  }
+
+  // ═══ HOVERED POINT HIGHLIGHT ═══
+  if(hovPt){
+    var r=hovPt.rgb.r,g=hovPt.rgb.g,b=hovPt.rgb.b;
+    ctx.beginPath();ctx.arc(hovPt.x,hovPt.y,5,0,Math.PI*2);
+    ctx.fillStyle='rgba('+r+','+g+','+b+',0.9)';ctx.fill();
+    ctx.strokeStyle='#fff';ctx.lineWidth=1;ctx.stroke();
+
+    // Symbol name next to highlight
+    ctx.fillStyle='#fff';ctx.font='bold 11px Courier New';
+    ctx.textAlign='left';ctx.textBaseline='middle';
+    ctx.fillText(hovPt.sym.s,hovPt.x+9,hovPt.y);
+
+    tooltipEl.innerHTML='<span style="font-weight:bold;color:'+hovPt.color+'">'+hovPt.sym.s+'</span> <span style="color:#666">\u00b7</span> '+hovPt.domain+'<br><span style="color:#777">'+(hovPt.sym.from||hovPt.contName)+'</span>';
+    tooltipEl.style.display='block';
+    tooltipEl.style.left=Math.min(mx+15,W-200)+'px';
+    tooltipEl.style.top=(my-30)+'px';
+    infoEl.style.display='none';
+  }else if(hovCont&&!hovPt){
+    tooltipEl.style.display='none';
+    // Continent info panel
+    var cont=hovCont.cont;
+    var domList=[];
+    for(var di=0;di<cont.domainOrder.length;di++){
+      var dom=cont.domainOrder[di];
+      var fy=DFY[dom]||1700;
+      var count=cont.domainGroups[dom].length;
+      if(year>=fy) domList.push('<span style="color:'+hovCont.color+'">'+dom+'</span> ('+count+')');
+      else domList.push('<span style="color:#444">'+dom+' ('+count+', '+fy+')</span>');
+    }
+    infoEl.innerHTML='<span style="font-size:14px;font-weight:bold;color:'+hovCont.color+'">'+hovCont.name+'</span> <span style="color:#666">\u00b7 capitale: <span style="color:'+hovCont.color+'">'+hovCont.capitale+'</span></span><br>Symboles: '+cont.totalSymbols+'<br><br><span style="color:#888">'+domList.join(' \u00b7 ')+'</span>';
+    infoEl.style.display='block';
+  }else{
+    tooltipEl.style.display='none';
+    infoEl.style.display='none';
+  }
+
+  // ═══ BAR ═══
+  barEl.textContent=year+' \u00b7 '+visContCount+' continents \u00b7 '+totalVisible+' symboles \u00b7 = centre absolu';
+
+  requestAnimationFrame(draw);
+}
+
+/* ═══ INIT ═══ */
+computePositions();
+addEventListener('resize',function(){computePositions();bufYear=-1;});
+yearSlider.addEventListener('input',function(){yearLabel.textContent=yearSlider.value;});
+cbNoms.addEventListener('change',function(){bufYear=-1;});
+
+document.getElementById('loading').style.display='none';
+document.getElementById('controls').style.display='flex';
+draw();
+
+})();
+</script>
+</body>
+</html>
