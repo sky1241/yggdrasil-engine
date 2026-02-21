@@ -1,0 +1,4470 @@
+{
+  "meta": {
+    "date": "2026-02-21",
+    "method": "unified_geo+passepartout",
+    "geo_count": 300,
+    "key_count": 69
+  },
+  "centroids": {
+    "math": {
+      "px": 0.1939524658573595,
+      "pz": -0.16042720030349036,
+      "n": 2636
+    },
+    "physique": {
+      "px": 0.7578071910112363,
+      "pz": 0.3259465168539327,
+      "n": 445
+    },
+    "ingenierie": {
+      "px": 0.06277082255561311,
+      "pz": 0.1251295913088463,
+      "n": 1933
+    },
+    "chimie": {
+      "px": -0.0853655963302751,
+      "pz": 0.7691336009174286,
+      "n": 5232
+    },
+    "info": {
+      "px": 0.04315742887249733,
+      "pz": -0.48163445732349847,
+      "n": 949
+    },
+    "transversal": {
+      "px": 0.015829935622317586,
+      "pz": 0.008539484978540785,
+      "n": 1864
+    },
+    "bio": {
+      "px": -0.42034825338459036,
+      "pz": 0.27481276951362144,
+      "n": 5983
+    },
+    "humaines": {
+      "px": -0.23758456501403163,
+      "pz": -0.47958035547240363,
+      "n": 1069
+    },
+    "terre": {
+      "px": -0.21238769771529,
+      "pz": 0.27133980667838287,
+      "n": 1138
+    }
+  },
+  "inter_distances": {
+    "bio↔chimie": 0.5971,
+    "bio↔humaines": 0.7762,
+    "bio↔info": 0.8872,
+    "bio↔ingenierie": 0.5058,
+    "bio↔math": 0.7529,
+    "bio↔physique": 1.1793,
+    "bio↔terre": 0.208,
+    "bio↔transversal": 0.511,
+    "chimie↔humaines": 1.258,
+    "chimie↔info": 1.2574,
+    "chimie↔ingenierie": 0.6608,
+    "chimie↔math": 0.9706,
+    "chimie↔physique": 0.9526,
+    "chimie↔terre": 0.5137,
+    "chimie↔transversal": 0.7673,
+    "humaines↔info": 0.2807,
+    "humaines↔ingenierie": 0.6752,
+    "humaines↔math": 0.5367,
+    "humaines↔physique": 1.2805,
+    "humaines↔terre": 0.7513,
+    "humaines↔transversal": 0.55,
+    "info↔ingenierie": 0.6071,
+    "info↔math": 0.3548,
+    "info↔physique": 1.0784,
+    "info↔terre": 0.7952,
+    "info↔transversal": 0.4909,
+    "ingenierie↔math": 0.3142,
+    "ingenierie↔physique": 0.7235,
+    "ingenierie↔terre": 0.3116,
+    "ingenierie↔transversal": 0.1257,
+    "math↔physique": 0.7446,
+    "math↔terre": 0.5929,
+    "math↔transversal": 0.2455,
+    "physique↔terre": 0.9717,
+    "physique↔transversal": 0.807,
+    "terre↔transversal": 0.3481
+  },
+  "geo": [
+    {
+      "s": "p_gen",
+      "from": "Impulsion généralisée",
+      "px": -0.6822,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.9612,
+      "ratio": 0.1849,
+      "type": "geo"
+    },
+    {
+      "s": "q",
+      "from": "Coordonnée généralisée",
+      "px": -0.7959,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.8919,
+      "ratio": 0.2437,
+      "type": "geo"
+    },
+    {
+      "s": "{f,g}",
+      "from": "Crochet de Poisson",
+      "px": -0.9096,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.8316,
+      "ratio": 0.2948,
+      "type": "geo"
+    },
+    {
+      "s": "δS=0",
+      "from": "Principe moindre action",
+      "px": -1.0233,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.7788,
+      "ratio": 0.3396,
+      "type": "geo"
+    },
+    {
+      "s": "S_act",
+      "from": "Action S=∫ℒdt",
+      "px": -1.137,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.7322,
+      "ratio": 0.3791,
+      "type": "geo"
+    },
+    {
+      "s": "Nuclear astrophysics",
+      "from": "Nuclear astrophysics",
+      "px": 0.0797,
+      "pz": 0.6819,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.7203,
+      "ratio": 0.2438,
+      "type": "geo"
+    },
+    {
+      "s": "Astrophysics",
+      "from": "Astrophysics",
+      "px": 0.0727,
+      "pz": 0.6573,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.7102,
+      "ratio": 0.2544,
+      "type": "geo"
+    },
+    {
+      "s": "Astrophysical plasma",
+      "from": "Astrophysical plasma",
+      "px": 0.0672,
+      "pz": 0.6415,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.703,
+      "ratio": 0.262,
+      "type": "geo"
+    },
+    {
+      "s": "Levi-Civita connecti",
+      "from": "Levi-Civita connection",
+      "px": 0.7612,
+      "pz": 0.2757,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.6922,
+      "ratio": 0.0704,
+      "type": "geo"
+    },
+    {
+      "s": "Shock waves in astro",
+      "from": "Shock waves in astrophysics",
+      "px": 0.0832,
+      "pz": 0.6518,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6914,
+      "ratio": 0.2741,
+      "type": "geo"
+    },
+    {
+      "s": "ℋ",
+      "from": "Hamiltonien classique",
+      "px": -1.2507,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.6909,
+      "ratio": 0.4141,
+      "type": "geo"
+    },
+    {
+      "s": "Geodesics in general",
+      "from": "Geodesics in general relativity",
+      "px": 0.6956,
+      "pz": 0.3265,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.6784,
+      "ratio": 0.089,
+      "type": "geo"
+    },
+    {
+      "s": "arctan",
+      "from": "Arc tangente",
+      "px": -0.4201,
+      "pz": 0.1983,
+      "home": "math",
+      "alien": "bio",
+      "score": 0.6719,
+      "ratio": 0.1076,
+      "type": "geo"
+    },
+    {
+      "s": "Megamaser",
+      "from": "Megamaser",
+      "px": 0.1161,
+      "pz": 0.6861,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6705,
+      "ratio": 0.2961,
+      "type": "geo"
+    },
+    {
+      "s": "ℒ",
+      "from": "Lagrangien L=T-V",
+      "px": -1.3644,
+      "pz": 0.323,
+      "home": "physique",
+      "alien": "bio",
+      "score": 0.654,
+      "ratio": 0.4454,
+      "type": "geo"
+    },
+    {
+      "s": "Computational astrop",
+      "from": "Computational astrophysics",
+      "px": 0.1464,
+      "pz": 0.7117,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6379,
+      "ratio": 0.3303,
+      "type": "geo"
+    },
+    {
+      "s": "Trigonometric polyno",
+      "from": "Trigonometric polynomial",
+      "px": -0.3433,
+      "pz": 0.2081,
+      "home": "math",
+      "alien": "bio",
+      "score": 0.6351,
+      "ratio": 0.1564,
+      "type": "geo"
+    },
+    {
+      "s": "μ_mes",
+      "from": "Mesure abstraite",
+      "px": 0.1137,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.6218,
+      "ratio": 0.3594,
+      "type": "geo"
+    },
+    {
+      "s": "pc",
+      "from": "Parsec ~3.26 années-lumière",
+      "px": 0.0357,
+      "pz": 0.5309,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6134,
+      "ratio": 0.356,
+      "type": "geo"
+    },
+    {
+      "s": "Perovskite (structur",
+      "from": "Perovskite (structure)",
+      "px": 0.0762,
+      "pz": 0.1692,
+      "home": "chimie",
+      "alien": "ingenierie",
+      "score": 0.6118,
+      "ratio": 0.0742,
+      "type": "geo"
+    },
+    {
+      "s": "Intracluster medium",
+      "from": "Intracluster medium",
+      "px": 0.134,
+      "pz": 0.646,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6108,
+      "ratio": 0.3588,
+      "type": "geo"
+    },
+    {
+      "s": "M☉",
+      "from": "Masse solaire ~2×10³⁰ kg",
+      "px": 0.1447,
+      "pz": 0.6627,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6074,
+      "ratio": 0.3624,
+      "type": "geo"
+    },
+    {
+      "s": "Primary (astronomy)",
+      "from": "Primary (astronomy)",
+      "px": 0.1157,
+      "pz": 0.6117,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.6064,
+      "ratio": 0.3633,
+      "type": "geo"
+    },
+    {
+      "s": "Gauss–Bonnet theorem",
+      "from": "Gauss–Bonnet theorem",
+      "px": 0.6349,
+      "pz": 0.3642,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.6048,
+      "ratio": 0.1878,
+      "type": "geo"
+    },
+    {
+      "s": "Isometry (Riemannian",
+      "from": "Isometry (Riemannian geometry)",
+      "px": 0.724,
+      "pz": 0.206,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.6006,
+      "ratio": 0.1934,
+      "type": "geo"
+    },
+    {
+      "s": "Sagittarius A*",
+      "from": "Sagittarius A*",
+      "px": 0.0959,
+      "pz": 0.5776,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5978,
+      "ratio": 0.3724,
+      "type": "geo"
+    },
+    {
+      "s": "Scalar curvature",
+      "from": "Scalar curvature",
+      "px": 0.6252,
+      "pz": 0.3679,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5928,
+      "ratio": 0.2039,
+      "type": "geo"
+    },
+    {
+      "s": "σ(F)",
+      "from": "σ-algèbre (tribu)",
+      "px": 0.2274,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.5827,
+      "ratio": 0.3997,
+      "type": "geo"
+    },
+    {
+      "s": "Electric network",
+      "from": "Electric network",
+      "px": 0.6384,
+      "pz": 0.2582,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5772,
+      "ratio": 0.2249,
+      "type": "geo"
+    },
+    {
+      "s": "Polynomial interpola",
+      "from": "Polynomial interpolation",
+      "px": 0.6307,
+      "pz": 0.267,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5739,
+      "ratio": 0.2293,
+      "type": "geo"
+    },
+    {
+      "s": "Fₐᵦ",
+      "from": "Tenseur de courbure (jauge)",
+      "px": 0.6321,
+      "pz": 0.4441,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5726,
+      "ratio": 0.2311,
+      "type": "geo"
+    },
+    {
+      "s": "Metric connection",
+      "from": "Metric connection",
+      "px": 0.627,
+      "pz": 0.2704,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5714,
+      "ratio": 0.2326,
+      "type": "geo"
+    },
+    {
+      "s": "Virial mass",
+      "from": "Virial mass",
+      "px": 0.1357,
+      "pz": 0.6052,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5681,
+      "ratio": 0.4036,
+      "type": "geo"
+    },
+    {
+      "s": "ωₐ",
+      "from": "Forme de connexion",
+      "px": 0.6076,
+      "pz": 0.3164,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5671,
+      "ratio": 0.2384,
+      "type": "geo"
+    },
+    {
+      "s": "Orbital motion",
+      "from": "Orbital motion",
+      "px": 0.1313,
+      "pz": 0.5947,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5639,
+      "ratio": 0.408,
+      "type": "geo"
+    },
+    {
+      "s": "Differential (mechan",
+      "from": "Differential (mechanical device)",
+      "px": 0.1507,
+      "pz": 0.6251,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5634,
+      "ratio": 0.4086,
+      "type": "geo"
+    },
+    {
+      "s": "Kyphosis",
+      "from": "Kyphosis",
+      "px": 0.6789,
+      "pz": 0.1924,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.552,
+      "ratio": 0.2586,
+      "type": "geo"
+    },
+    {
+      "s": "Earth's orbit",
+      "from": "Earth's orbit",
+      "px": 0.0879,
+      "pz": 0.5265,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5464,
+      "ratio": 0.4264,
+      "type": "geo"
+    },
+    {
+      "s": "Inverse quadratic in",
+      "from": "Inverse quadratic interpolation",
+      "px": 0.6329,
+      "pz": 0.2291,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5441,
+      "ratio": 0.2693,
+      "type": "geo"
+    },
+    {
+      "s": "Gaussian curvature",
+      "from": "Gaussian curvature",
+      "px": 0.6349,
+      "pz": 0.224,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5414,
+      "ratio": 0.273,
+      "type": "geo"
+    },
+    {
+      "s": "∧_ext",
+      "from": "Produit extérieur / wedge (formes diff)",
+      "px": 0.5839,
+      "pz": 0.3802,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5411,
+      "ratio": 0.2733,
+      "type": "geo"
+    },
+    {
+      "s": "cos",
+      "from": "Cosinus",
+      "px": -0.4007,
+      "pz": 0.0937,
+      "home": "math",
+      "alien": "bio",
+      "score": 0.5408,
+      "ratio": 0.2817,
+      "type": "geo"
+    },
+    {
+      "s": "Differential geometr",
+      "from": "Differential geometry of curves",
+      "px": 0.5983,
+      "pz": 0.2806,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5383,
+      "ratio": 0.2771,
+      "type": "geo"
+    },
+    {
+      "s": "λ_Leb",
+      "from": "Mesure de Lebesgue (1902)",
+      "px": 0.3411,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.5352,
+      "ratio": 0.4486,
+      "type": "geo"
+    },
+    {
+      "s": "Stellar collision",
+      "from": "Stellar collision",
+      "px": 0.1995,
+      "pz": 0.6894,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5296,
+      "ratio": 0.444,
+      "type": "geo"
+    },
+    {
+      "s": "sin",
+      "from": "Sinus",
+      "px": -0.2515,
+      "pz": 0.2194,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.5271,
+      "ratio": 0.1111,
+      "type": "geo"
+    },
+    {
+      "s": "Riemannian submersio",
+      "from": "Riemannian submersion",
+      "px": 0.6015,
+      "pz": 0.2498,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5207,
+      "ratio": 0.3007,
+      "type": "geo"
+    },
+    {
+      "s": "Polytrope",
+      "from": "Polytrope",
+      "px": 0.1485,
+      "pz": 0.5817,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5205,
+      "ratio": 0.4535,
+      "type": "geo"
+    },
+    {
+      "s": "Gaussian quadrature",
+      "from": "Gaussian quadrature",
+      "px": 0.5774,
+      "pz": 0.3021,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5191,
+      "ratio": 0.3029,
+      "type": "geo"
+    },
+    {
+      "s": "Astrophysical jet",
+      "from": "Astrophysical jet",
+      "px": 0.0547,
+      "pz": 0.4708,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.5152,
+      "ratio": 0.4591,
+      "type": "geo"
+    },
+    {
+      "s": "Tangent",
+      "from": "Tangent",
+      "px": -0.3258,
+      "pz": 0.1125,
+      "home": "math",
+      "alien": "bio",
+      "score": 0.512,
+      "ratio": 0.32,
+      "type": "geo"
+    },
+    {
+      "s": "Wireless broadband",
+      "from": "Wireless broadband",
+      "px": -0.1628,
+      "pz": -0.3703,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.5109,
+      "ratio": 0.2433,
+      "type": "geo"
+    },
+    {
+      "s": "Holonomy",
+      "from": "Holonomy",
+      "px": 0.5609,
+      "pz": 0.3544,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5103,
+      "ratio": 0.3147,
+      "type": "geo"
+    },
+    {
+      "s": "Information geometry",
+      "from": "Information geometry",
+      "px": 0.6663,
+      "pz": 0.1666,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5065,
+      "ratio": 0.3198,
+      "type": "geo"
+    },
+    {
+      "s": "Earthing system",
+      "from": "Earthing system",
+      "px": 0.5559,
+      "pz": 0.3988,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5047,
+      "ratio": 0.3222,
+      "type": "geo"
+    },
+    {
+      "s": "Motion interpolation",
+      "from": "Motion interpolation",
+      "px": 0.6121,
+      "pz": 0.2166,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.5037,
+      "ratio": 0.3236,
+      "type": "geo"
+    },
+    {
+      "s": "Gait cycle",
+      "from": "Gait cycle",
+      "px": 0.6256,
+      "pz": 0.4886,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4971,
+      "ratio": 0.3128,
+      "type": "geo"
+    },
+    {
+      "s": "Gaussian orbital",
+      "from": "Gaussian orbital",
+      "px": 0.1671,
+      "pz": 0.5892,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4959,
+      "ratio": 0.4794,
+      "type": "geo"
+    },
+    {
+      "s": "Proofs of trigonomet",
+      "from": "Proofs of trigonometric identities",
+      "px": -0.3134,
+      "pz": 0.2387,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.4954,
+      "ratio": 0.1644,
+      "type": "geo"
+    },
+    {
+      "s": "Automation",
+      "from": "Automation",
+      "px": -0.3506,
+      "pz": -0.3516,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4925,
+      "ratio": 0.2706,
+      "type": "geo"
+    },
+    {
+      "s": "Galaxy group",
+      "from": "Galaxy group",
+      "px": 0.0884,
+      "pz": 0.4837,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4897,
+      "ratio": 0.4859,
+      "type": "geo"
+    },
+    {
+      "s": "R_sc",
+      "from": "Courbure scalaire",
+      "px": 0.5446,
+      "pz": 0.3549,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4876,
+      "ratio": 0.3452,
+      "type": "geo"
+    },
+    {
+      "s": "Flatness (cosmology)",
+      "from": "Flatness (cosmology)",
+      "px": 0.5522,
+      "pz": 0.3135,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4865,
+      "ratio": 0.3467,
+      "type": "geo"
+    },
+    {
+      "s": "Geomagnetic storm",
+      "from": "Geomagnetic storm",
+      "px": 0.1293,
+      "pz": 0.5268,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4852,
+      "ratio": 0.4906,
+      "type": "geo"
+    },
+    {
+      "s": "Lp",
+      "from": "Espaces Lp (Riesz 1910)",
+      "px": 0.4548,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.4837,
+      "ratio": 0.5016,
+      "type": "geo"
+    },
+    {
+      "s": "sinh",
+      "from": "Sinus hyperbolique",
+      "px": -0.2651,
+      "pz": 0.1775,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.481,
+      "ratio": 0.1888,
+      "type": "geo"
+    },
+    {
+      "s": "In-space propulsion ",
+      "from": "In-space propulsion technologies",
+      "px": 0.5737,
+      "pz": 0.3838,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4797,
+      "ratio": 0.337,
+      "type": "geo"
+    },
+    {
+      "s": "Underwater glider",
+      "from": "Underwater glider",
+      "px": -0.1222,
+      "pz": -0.3755,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4786,
+      "ratio": 0.2912,
+      "type": "geo"
+    },
+    {
+      "s": "Stellar black hole",
+      "from": "Stellar black hole",
+      "px": 0.0998,
+      "pz": 0.4852,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4756,
+      "ratio": 0.5007,
+      "type": "geo"
+    },
+    {
+      "s": "Magnetic reconnectio",
+      "from": "Magnetic reconnection",
+      "px": 0.5532,
+      "pz": 0.2856,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4735,
+      "ratio": 0.3641,
+      "type": "geo"
+    },
+    {
+      "s": "Dominion",
+      "from": "Dominion",
+      "px": -0.1928,
+      "pz": -0.3297,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4727,
+      "ratio": 0.2998,
+      "type": "geo"
+    },
+    {
+      "s": "Stability theorem",
+      "from": "Stability theorem",
+      "px": 0.0308,
+      "pz": 0.6649,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.4701,
+      "ratio": 0.2886,
+      "type": "geo"
+    },
+    {
+      "s": "Rμνρσ",
+      "from": "Tenseur de Riemann",
+      "px": 0.5472,
+      "pz": 0.281,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.461,
+      "ratio": 0.3809,
+      "type": "geo"
+    },
+    {
+      "s": "Vibrating wire",
+      "from": "Vibrating wire",
+      "px": -0.2833,
+      "pz": -0.3092,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4607,
+      "ratio": 0.3177,
+      "type": "geo"
+    },
+    {
+      "s": "Differential form",
+      "from": "Differential form",
+      "px": -0.2647,
+      "pz": 0.1582,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.4606,
+      "ratio": 0.2232,
+      "type": "geo"
+    },
+    {
+      "s": "Ground effect (cars)",
+      "from": "Ground effect (cars)",
+      "px": 0.6161,
+      "pz": 0.5339,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4588,
+      "ratio": 0.3658,
+      "type": "geo"
+    },
+    {
+      "s": "L☉",
+      "from": "Luminosité solaire ~3.8×10²⁶ W",
+      "px": 0.2257,
+      "pz": 0.6661,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4583,
+      "ratio": 0.5189,
+      "type": "geo"
+    },
+    {
+      "s": "cosh",
+      "from": "Cosinus hyperbolique",
+      "px": -0.3323,
+      "pz": 0.0615,
+      "home": "math",
+      "alien": "bio",
+      "score": 0.4487,
+      "ratio": 0.4041,
+      "type": "geo"
+    },
+    {
+      "s": "Tμν",
+      "from": "Tenseur énergie-impulsion",
+      "px": 0.5599,
+      "pz": 0.2389,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4474,
+      "ratio": 0.3992,
+      "type": "geo"
+    },
+    {
+      "s": "Aircraft industry",
+      "from": "Aircraft industry",
+      "px": 0.5646,
+      "pz": 0.4474,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4466,
+      "ratio": 0.3826,
+      "type": "geo"
+    },
+    {
+      "s": "Self-reconfiguring m",
+      "from": "Self-reconfiguring modular robot",
+      "px": -0.3864,
+      "pz": -0.323,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4453,
+      "ratio": 0.3405,
+      "type": "geo"
+    },
+    {
+      "s": "Digital cross connec",
+      "from": "Digital cross connect system",
+      "px": -0.2399,
+      "pz": -0.3014,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4451,
+      "ratio": 0.3407,
+      "type": "geo"
+    },
+    {
+      "s": "L(s,χ)",
+      "from": "Fonction L de Dirichlet",
+      "px": -0.2274,
+      "pz": -0.5814,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.4445,
+      "ratio": 0.1718,
+      "type": "geo"
+    },
+    {
+      "s": "Bernstein polynomial",
+      "from": "Bernstein polynomial",
+      "px": 0.6257,
+      "pz": 0.1534,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4415,
+      "ratio": 0.4071,
+      "type": "geo"
+    },
+    {
+      "s": "South Atlantic Anoma",
+      "from": "South Atlantic Anomaly",
+      "px": 0.5492,
+      "pz": 0.3723,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4401,
+      "ratio": 0.3917,
+      "type": "geo"
+    },
+    {
+      "s": "Visual attention",
+      "from": "Visual attention",
+      "px": 0.0469,
+      "pz": -0.0538,
+      "home": "humaines",
+      "alien": "ingenierie",
+      "score": 0.4383,
+      "ratio": 0.3508,
+      "type": "geo"
+    },
+    {
+      "s": "Conformal geometry",
+      "from": "Conformal geometry",
+      "px": -0.1245,
+      "pz": 0.1856,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.4381,
+      "ratio": 0.2611,
+      "type": "geo"
+    },
+    {
+      "s": "Atomic orbital",
+      "from": "Atomic orbital",
+      "px": 0.1556,
+      "pz": 0.5242,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4363,
+      "ratio": 0.5419,
+      "type": "geo"
+    },
+    {
+      "s": "Twist",
+      "from": "Twist",
+      "px": 0.513,
+      "pz": 0.3344,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4348,
+      "ratio": 0.416,
+      "type": "geo"
+    },
+    {
+      "s": "Galactic tide",
+      "from": "Galactic tide",
+      "px": 0.2212,
+      "pz": 0.6318,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4345,
+      "ratio": 0.5439,
+      "type": "geo"
+    },
+    {
+      "s": "Bernard–Soulier synd",
+      "from": "Bernard–Soulier syndrome",
+      "px": 0.0234,
+      "pz": 0.0678,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.4339,
+      "ratio": 0.142,
+      "type": "geo"
+    },
+    {
+      "s": "f(R) gravity",
+      "from": "f(R) gravity",
+      "px": 0.5311,
+      "pz": 0.2789,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4333,
+      "ratio": 0.4181,
+      "type": "geo"
+    },
+    {
+      "s": "Forest road",
+      "from": "Forest road",
+      "px": -0.5319,
+      "pz": -0.3843,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.4327,
+      "ratio": 0.4242,
+      "type": "geo"
+    },
+    {
+      "s": "a.e.",
+      "from": "Presque partout (almost everywhere)",
+      "px": 0.5685,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.4315,
+      "ratio": 0.5555,
+      "type": "geo"
+    },
+    {
+      "s": "Customised Applicati",
+      "from": "Customised Applications for Mobile networks Enhanced Logic",
+      "px": -0.2987,
+      "pz": -0.2897,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4304,
+      "ratio": 0.3625,
+      "type": "geo"
+    },
+    {
+      "s": "Totally geodesic",
+      "from": "Totally geodesic",
+      "px": 0.5113,
+      "pz": 0.3283,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4296,
+      "ratio": 0.423,
+      "type": "geo"
+    },
+    {
+      "s": "Hybrid system",
+      "from": "Hybrid system",
+      "px": 0.5659,
+      "pz": 0.2118,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4287,
+      "ratio": 0.4243,
+      "type": "geo"
+    },
+    {
+      "s": "Municipal wireless n",
+      "from": "Municipal wireless network",
+      "px": -0.1386,
+      "pz": -0.3271,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4272,
+      "ratio": 0.3672,
+      "type": "geo"
+    },
+    {
+      "s": "★",
+      "from": "Opérateur de Hodge",
+      "px": 0.5369,
+      "pz": 0.2571,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4258,
+      "ratio": 0.4282,
+      "type": "geo"
+    },
+    {
+      "s": "Avionics",
+      "from": "Avionics",
+      "px": 0.5589,
+      "pz": 0.4822,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4241,
+      "ratio": 0.4138,
+      "type": "geo"
+    },
+    {
+      "s": "η",
+      "from": "Eta de Dedekind / Dirichlet",
+      "px": -0.3411,
+      "pz": -0.5814,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.4223,
+      "ratio": 0.2133,
+      "type": "geo"
+    },
+    {
+      "s": "Constant curvature",
+      "from": "Constant curvature",
+      "px": 0.5458,
+      "pz": 0.2344,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4195,
+      "ratio": 0.4367,
+      "type": "geo"
+    },
+    {
+      "s": "Projective different",
+      "from": "Projective differential geometry",
+      "px": 0.6114,
+      "pz": 0.151,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4185,
+      "ratio": 0.438,
+      "type": "geo"
+    },
+    {
+      "s": "Geometric analysis",
+      "from": "Geometric analysis",
+      "px": 0.5512,
+      "pz": 0.2246,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.4184,
+      "ratio": 0.4381,
+      "type": "geo"
+    },
+    {
+      "s": "Rehabilitation robot",
+      "from": "Rehabilitation robotics",
+      "px": -0.0895,
+      "pz": -0.3833,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.4182,
+      "ratio": 0.3111,
+      "type": "geo"
+    },
+    {
+      "s": "Ion thruster",
+      "from": "Ion thruster",
+      "px": 0.5571,
+      "pz": 0.4907,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4179,
+      "ratio": 0.4223,
+      "type": "geo"
+    },
+    {
+      "s": "Aerospace",
+      "from": "Aerospace",
+      "px": 0.5738,
+      "pz": 0.5393,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4136,
+      "ratio": 0.4283,
+      "type": "geo"
+    },
+    {
+      "s": "LPWAN",
+      "from": "LPWAN",
+      "px": -0.1789,
+      "pz": -0.2983,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4113,
+      "ratio": 0.3908,
+      "type": "geo"
+    },
+    {
+      "s": "Mitochondrion",
+      "from": "Mitochondrion",
+      "px": -0.2051,
+      "pz": -0.2871,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4071,
+      "ratio": 0.3971,
+      "type": "geo"
+    },
+    {
+      "s": "Galaxy groups and cl",
+      "from": "Galaxy groups and clusters",
+      "px": 0.232,
+      "pz": 0.6275,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.4064,
+      "ratio": 0.5734,
+      "type": "geo"
+    },
+    {
+      "s": "Traction motor",
+      "from": "Traction motor",
+      "px": 0.5692,
+      "pz": 0.547,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.4045,
+      "ratio": 0.4409,
+      "type": "geo"
+    },
+    {
+      "s": "Robotics",
+      "from": "Robotics",
+      "px": -0.2218,
+      "pz": -0.2807,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.4034,
+      "ratio": 0.4025,
+      "type": "geo"
+    },
+    {
+      "s": "Vect",
+      "from": "Catégorie espaces vectoriels",
+      "px": -0.1489,
+      "pz": -0.4196,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.403,
+      "ratio": 0.2491,
+      "type": "geo"
+    },
+    {
+      "s": "Rapid plasma reagin",
+      "from": "Rapid plasma reagin",
+      "px": 0.1705,
+      "pz": 0.7717,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.4029,
+      "ratio": 0.3904,
+      "type": "geo"
+    },
+    {
+      "s": "Nyq_st",
+      "from": "Critère stabilité Nyquist",
+      "px": 0.1196,
+      "pz": 0.6849,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.4006,
+      "ratio": 0.3939,
+      "type": "geo"
+    },
+    {
+      "s": "Enterprise private n",
+      "from": "Enterprise private network",
+      "px": -0.2895,
+      "pz": -0.2689,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.398,
+      "ratio": 0.4105,
+      "type": "geo"
+    },
+    {
+      "s": "Regulatory agency",
+      "from": "Regulatory agency",
+      "px": -0.2094,
+      "pz": -0.2792,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3949,
+      "ratio": 0.4152,
+      "type": "geo"
+    },
+    {
+      "s": "DNA ligase",
+      "from": "DNA ligase",
+      "px": 0.0099,
+      "pz": 0.2049,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3947,
+      "ratio": 0.2196,
+      "type": "geo"
+    },
+    {
+      "s": "Adj",
+      "from": "Adjonction foncteurs",
+      "px": -0.2181,
+      "pz": -0.3597,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3943,
+      "ratio": 0.2654,
+      "type": "geo"
+    },
+    {
+      "s": "HSPA14",
+      "from": "HSPA14",
+      "px": -0.0123,
+      "pz": 0.056,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3943,
+      "ratio": 0.2204,
+      "type": "geo"
+    },
+    {
+      "s": "Galaxy cluster",
+      "from": "Galaxy cluster",
+      "px": 0.2191,
+      "pz": 0.5918,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.3939,
+      "ratio": 0.5865,
+      "type": "geo"
+    },
+    {
+      "s": "d_ext",
+      "from": "Dérivée extérieure (Cartan 1899)",
+      "px": 0.5161,
+      "pz": 0.2612,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3935,
+      "ratio": 0.4716,
+      "type": "geo"
+    },
+    {
+      "s": "Mechanoreceptor",
+      "from": "Mechanoreceptor",
+      "px": -0.1666,
+      "pz": -0.2935,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3935,
+      "ratio": 0.4172,
+      "type": "geo"
+    },
+    {
+      "s": "Aerodynamic drag",
+      "from": "Aerodynamic drag",
+      "px": 0.5547,
+      "pz": 0.5383,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3925,
+      "ratio": 0.4574,
+      "type": "geo"
+    },
+    {
+      "s": "Liouville equation",
+      "from": "Liouville equation",
+      "px": 0.5687,
+      "pz": 0.178,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3906,
+      "ratio": 0.4755,
+      "type": "geo"
+    },
+    {
+      "s": "Maser",
+      "from": "Maser",
+      "px": 0.2079,
+      "pz": 0.8567,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3896,
+      "ratio": 0.4104,
+      "type": "geo"
+    },
+    {
+      "s": "Numerical control",
+      "from": "Numerical control",
+      "px": -0.0809,
+      "pz": -0.3522,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.3887,
+      "ratio": 0.3597,
+      "type": "geo"
+    },
+    {
+      "s": "Dipeptidyl peptidase",
+      "from": "Dipeptidyl peptidase-4",
+      "px": -0.009,
+      "pz": 0.1912,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3882,
+      "ratio": 0.2324,
+      "type": "geo"
+    },
+    {
+      "s": "Automatic test patte",
+      "from": "Automatic test pattern generation",
+      "px": -0.2855,
+      "pz": -0.2631,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3882,
+      "ratio": 0.4251,
+      "type": "geo"
+    },
+    {
+      "s": "Developmental roboti",
+      "from": "Developmental robotics",
+      "px": -0.1868,
+      "pz": -0.2827,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3881,
+      "ratio": 0.4252,
+      "type": "geo"
+    },
+    {
+      "s": "Mobile wireless",
+      "from": "Mobile wireless",
+      "px": 0.0037,
+      "pz": -0.3222,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.3861,
+      "ratio": 0.364,
+      "type": "geo"
+    },
+    {
+      "s": "gμν",
+      "from": "Tenseur métrique (Einstein)",
+      "px": 0.5972,
+      "pz": 0.1428,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3851,
+      "ratio": 0.4828,
+      "type": "geo"
+    },
+    {
+      "s": "∘",
+      "from": "Composition morphismes",
+      "px": -0.1938,
+      "pz": -0.3632,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3842,
+      "ratio": 0.2842,
+      "type": "geo"
+    },
+    {
+      "s": "Reverse Transcriptio",
+      "from": "Reverse Transcription Loop-mediated Isothermal Amplification",
+      "px": -0.0238,
+      "pz": 0.1745,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3825,
+      "ratio": 0.2436,
+      "type": "geo"
+    },
+    {
+      "s": "Supermassive black h",
+      "from": "Supermassive black hole",
+      "px": 0.1992,
+      "pz": 0.5487,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.3824,
+      "ratio": 0.5985,
+      "type": "geo"
+    },
+    {
+      "s": "dμ",
+      "from": "Intégration par rapport à μ",
+      "px": 0.6822,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.3808,
+      "ratio": 0.6076,
+      "type": "geo"
+    },
+    {
+      "s": "Hall effect sensor",
+      "from": "Hall effect sensor",
+      "px": -0.0075,
+      "pz": -0.3205,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.3798,
+      "ratio": 0.3744,
+      "type": "geo"
+    },
+    {
+      "s": "Solar physics",
+      "from": "Solar physics",
+      "px": 0.2331,
+      "pz": 0.6059,
+      "home": "physique",
+      "alien": "chimie",
+      "score": 0.3794,
+      "ratio": 0.6017,
+      "type": "geo"
+    },
+    {
+      "s": "Sociology of the Int",
+      "from": "Sociology of the Internet",
+      "px": -0.1966,
+      "pz": -0.2746,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.379,
+      "ratio": 0.4387,
+      "type": "geo"
+    },
+    {
+      "s": "Autonomous system (m",
+      "from": "Autonomous system (mathematics)",
+      "px": -0.2314,
+      "pz": -0.2651,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3787,
+      "ratio": 0.4391,
+      "type": "geo"
+    },
+    {
+      "s": "Rough set",
+      "from": "Rough set",
+      "px": 0.6117,
+      "pz": 0.1248,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3787,
+      "ratio": 0.4915,
+      "type": "geo"
+    },
+    {
+      "s": "Precision agricultur",
+      "from": "Precision agriculture",
+      "px": -0.7026,
+      "pz": -0.5354,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3786,
+      "ratio": 0.4961,
+      "type": "geo"
+    },
+    {
+      "s": "Aircraft noise",
+      "from": "Aircraft noise",
+      "px": 0.5172,
+      "pz": 0.4238,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3779,
+      "ratio": 0.4777,
+      "type": "geo"
+    },
+    {
+      "s": "FlexRay",
+      "from": "FlexRay",
+      "px": -0.2422,
+      "pz": -0.2624,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3778,
+      "ratio": 0.4405,
+      "type": "geo"
+    },
+    {
+      "s": "Linear interpolation",
+      "from": "Linear interpolation",
+      "px": 0.5368,
+      "pz": 0.2107,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3773,
+      "ratio": 0.4933,
+      "type": "geo"
+    },
+    {
+      "s": "Lagrange polynomial",
+      "from": "Lagrange polynomial",
+      "px": 0.5872,
+      "pz": 0.1464,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3749,
+      "ratio": 0.4966,
+      "type": "geo"
+    },
+    {
+      "s": "Trigonometric interp",
+      "from": "Trigonometric interpolation",
+      "px": -0.188,
+      "pz": 0.1021,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.3742,
+      "ratio": 0.3689,
+      "type": "geo"
+    },
+    {
+      "s": "Electromechanical co",
+      "from": "Electromechanical coupling coefficient",
+      "px": 0.5055,
+      "pz": 0.2603,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3738,
+      "ratio": 0.498,
+      "type": "geo"
+    },
+    {
+      "s": "Numerical cognition",
+      "from": "Numerical cognition",
+      "px": 0.4971,
+      "pz": 0.2769,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3734,
+      "ratio": 0.4985,
+      "type": "geo"
+    },
+    {
+      "s": "c-jun",
+      "from": "c-jun",
+      "px": -0.044,
+      "pz": 0.1261,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3723,
+      "ratio": 0.2639,
+      "type": "geo"
+    },
+    {
+      "s": "Agricultural polluti",
+      "from": "Agricultural pollution",
+      "px": -0.6714,
+      "pz": -0.4557,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3717,
+      "ratio": 0.5053,
+      "type": "geo"
+    },
+    {
+      "s": "Ab",
+      "from": "Catégorie groupes abéliens",
+      "px": -0.2667,
+      "pz": -0.331,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3713,
+      "ratio": 0.3082,
+      "type": "geo"
+    },
+    {
+      "s": "↠",
+      "from": "Surjection / épimorphisme",
+      "px": -0.1796,
+      "pz": -0.362,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.371,
+      "ratio": 0.3089,
+      "type": "geo"
+    },
+    {
+      "s": "Receiver autonomous ",
+      "from": "Receiver autonomous integrity monitoring",
+      "px": -0.2053,
+      "pz": -0.2677,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3709,
+      "ratio": 0.4507,
+      "type": "geo"
+    },
+    {
+      "s": "ξ",
+      "from": "Xi — fonction de Riemann complétée",
+      "px": -0.4548,
+      "pz": -0.5814,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3702,
+      "ratio": 0.3102,
+      "type": "geo"
+    },
+    {
+      "s": "Omnidirectional ante",
+      "from": "Omnidirectional antenna",
+      "px": -0.1724,
+      "pz": -0.2781,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3689,
+      "ratio": 0.4537,
+      "type": "geo"
+    },
+    {
+      "s": "Synchronization netw",
+      "from": "Synchronization networks",
+      "px": 0.5169,
+      "pz": 0.2336,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3675,
+      "ratio": 0.5064,
+      "type": "geo"
+    },
+    {
+      "s": "Black-body radiation",
+      "from": "Black-body radiation",
+      "px": 0.589,
+      "pz": 0.6545,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3654,
+      "ratio": 0.4949,
+      "type": "geo"
+    },
+    {
+      "s": "Waveguide",
+      "from": "Waveguide",
+      "px": 0.1186,
+      "pz": 0.6496,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3646,
+      "ratio": 0.4482,
+      "type": "geo"
+    },
+    {
+      "s": "Tropical agriculture",
+      "from": "Tropical agriculture",
+      "px": -0.6507,
+      "pz": -0.4132,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3646,
+      "ratio": 0.5148,
+      "type": "geo"
+    },
+    {
+      "s": "Radio frequency powe",
+      "from": "Radio frequency power transmission",
+      "px": -0.164,
+      "pz": -0.279,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3639,
+      "ratio": 0.461,
+      "type": "geo"
+    },
+    {
+      "s": "Cash flow",
+      "from": "Cash flow",
+      "px": 0.0747,
+      "pz": -0.2164,
+      "home": "humaines",
+      "alien": "math",
+      "score": 0.3636,
+      "ratio": 0.3226,
+      "type": "geo"
+    },
+    {
+      "s": "Male gender",
+      "from": "Male gender",
+      "px": 0.0539,
+      "pz": -0.1616,
+      "home": "humaines",
+      "alien": "math",
+      "score": 0.3625,
+      "ratio": 0.3247,
+      "type": "geo"
+    },
+    {
+      "s": "Bilinear interpolati",
+      "from": "Bilinear interpolation",
+      "px": 0.5679,
+      "pz": 0.1594,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3624,
+      "ratio": 0.5133,
+      "type": "geo"
+    },
+    {
+      "s": "Illness behavior",
+      "from": "Illness behavior",
+      "px": 0.0755,
+      "pz": -0.2196,
+      "home": "humaines",
+      "alien": "math",
+      "score": 0.3621,
+      "ratio": 0.3254,
+      "type": "geo"
+    },
+    {
+      "s": "Exponential map (Rie",
+      "from": "Exponential map (Riemannian geometry)",
+      "px": 0.5303,
+      "pz": 0.208,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3621,
+      "ratio": 0.5137,
+      "type": "geo"
+    },
+    {
+      "s": "Photodetector",
+      "from": "Photodetector",
+      "px": -0.2948,
+      "pz": -0.247,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3618,
+      "ratio": 0.4641,
+      "type": "geo"
+    },
+    {
+      "s": "Magnetic susceptibil",
+      "from": "Magnetic susceptibility",
+      "px": 0.2265,
+      "pz": 0.7946,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3608,
+      "ratio": 0.454,
+      "type": "geo"
+    },
+    {
+      "s": "Metal–semiconductor ",
+      "from": "Metal–semiconductor junction",
+      "px": 0.0783,
+      "pz": 0.3353,
+      "home": "chimie",
+      "alien": "ingenierie",
+      "score": 0.3605,
+      "ratio": 0.4545,
+      "type": "geo"
+    },
+    {
+      "s": "Operations support s",
+      "from": "Operations support system",
+      "px": -0.1291,
+      "pz": -0.2935,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3594,
+      "ratio": 0.4677,
+      "type": "geo"
+    },
+    {
+      "s": "Plasma oscillation",
+      "from": "Plasma oscillation",
+      "px": 0.1655,
+      "pz": 0.6873,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3557,
+      "ratio": 0.4617,
+      "type": "geo"
+    },
+    {
+      "s": "Hardware-in-the-loop",
+      "from": "Hardware-in-the-loop simulation",
+      "px": -0.3602,
+      "pz": -0.2437,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3553,
+      "ratio": 0.4737,
+      "type": "geo"
+    },
+    {
+      "s": "Autonomous robot",
+      "from": "Autonomous robot",
+      "px": -0.0781,
+      "pz": -0.327,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.3552,
+      "ratio": 0.415,
+      "type": "geo"
+    },
+    {
+      "s": "Propulsion",
+      "from": "Propulsion",
+      "px": 0.514,
+      "pz": 0.497,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.355,
+      "ratio": 0.5094,
+      "type": "geo"
+    },
+    {
+      "s": "Rich Internet applic",
+      "from": "Rich Internet application",
+      "px": -0.1093,
+      "pz": -0.3022,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3543,
+      "ratio": 0.4752,
+      "type": "geo"
+    },
+    {
+      "s": "Circulating tumor DN",
+      "from": "Circulating tumor DNA",
+      "px": -0.3034,
+      "pz": 0.9333,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.3534,
+      "ratio": 0.4081,
+      "type": "geo"
+    },
+    {
+      "s": "Aerodynamic heating",
+      "from": "Aerodynamic heating",
+      "px": 0.5396,
+      "pz": 0.5867,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3528,
+      "ratio": 0.5123,
+      "type": "geo"
+    },
+    {
+      "s": "Least-squares functi",
+      "from": "Least-squares function approximation",
+      "px": 0.5213,
+      "pz": 0.2138,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3526,
+      "ratio": 0.5265,
+      "type": "geo"
+    },
+    {
+      "s": "Yoneda",
+      "from": "Lemme de Yoneda",
+      "px": -0.1522,
+      "pz": -0.3693,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3516,
+      "ratio": 0.345,
+      "type": "geo"
+    },
+    {
+      "s": "Repopulation",
+      "from": "Repopulation",
+      "px": 0.4817,
+      "pz": 0.2818,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.35,
+      "ratio": 0.53,
+      "type": "geo"
+    },
+    {
+      "s": "Hidden node problem",
+      "from": "Hidden node problem",
+      "px": 0.0676,
+      "pz": -0.3005,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.3464,
+      "ratio": 0.4294,
+      "type": "geo"
+    },
+    {
+      "s": "Beef industry",
+      "from": "Beef industry",
+      "px": -0.6537,
+      "pz": -0.3852,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3461,
+      "ratio": 0.5394,
+      "type": "geo"
+    },
+    {
+      "s": "Aeroelasticity",
+      "from": "Aeroelasticity",
+      "px": 0.5021,
+      "pz": 0.4683,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3437,
+      "ratio": 0.525,
+      "type": "geo"
+    },
+    {
+      "s": "Effusive eruption",
+      "from": "Effusive eruption",
+      "px": -0.2147,
+      "pz": 0.955,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3436,
+      "ratio": 0.3312,
+      "type": "geo"
+    },
+    {
+      "s": "Mercalli intensity s",
+      "from": "Mercalli intensity scale",
+      "px": 0.1016,
+      "pz": 0.7439,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3429,
+      "ratio": 0.3325,
+      "type": "geo"
+    },
+    {
+      "s": "Arbitrary-precision ",
+      "from": "Arbitrary-precision arithmetic",
+      "px": 0.0917,
+      "pz": -0.2604,
+      "home": "humaines",
+      "alien": "math",
+      "score": 0.3427,
+      "ratio": 0.3615,
+      "type": "geo"
+    },
+    {
+      "s": "Mart",
+      "from": "Martingale (Doob 1953)",
+      "px": -1.3644,
+      "pz": 1.3566,
+      "home": "math",
+      "alien": "chimie",
+      "score": 0.3425,
+      "ratio": 0.6472,
+      "type": "geo"
+    },
+    {
+      "s": "Bicubic interpolatio",
+      "from": "Bicubic interpolation",
+      "px": 0.5984,
+      "pz": 0.1145,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3414,
+      "ratio": 0.5415,
+      "type": "geo"
+    },
+    {
+      "s": "Rμν",
+      "from": "Tenseur de Ricci",
+      "px": 0.515,
+      "pz": 0.2136,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3405,
+      "ratio": 0.5428,
+      "type": "geo"
+    },
+    {
+      "s": "Social control theor",
+      "from": "Social control theory",
+      "px": 0.0919,
+      "pz": 0.6124,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3405,
+      "ratio": 0.4847,
+      "type": "geo"
+    },
+    {
+      "s": "Animal agriculture",
+      "from": "Animal agriculture",
+      "px": -0.7487,
+      "pz": -0.4928,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3399,
+      "ratio": 0.5477,
+      "type": "geo"
+    },
+    {
+      "s": "Shield volcano",
+      "from": "Shield volcano",
+      "px": -0.2369,
+      "pz": 0.9352,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3399,
+      "ratio": 0.3384,
+      "type": "geo"
+    },
+    {
+      "s": "Ext functor",
+      "from": "Ext functor",
+      "px": -0.1475,
+      "pz": -0.3648,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3399,
+      "ratio": 0.3667,
+      "type": "geo"
+    },
+    {
+      "s": "Fundamental theorem ",
+      "from": "Fundamental theorem of Riemannian geometry",
+      "px": 0.4641,
+      "pz": 0.3078,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3393,
+      "ratio": 0.5444,
+      "type": "geo"
+    },
+    {
+      "s": "Trigonometry",
+      "from": "Trigonometry",
+      "px": -0.2053,
+      "pz": 0.0735,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.3392,
+      "ratio": 0.4278,
+      "type": "geo"
+    },
+    {
+      "s": "Space-based radar",
+      "from": "Space-based radar",
+      "px": 0.51,
+      "pz": 0.529,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3388,
+      "ratio": 0.5317,
+      "type": "geo"
+    },
+    {
+      "s": "Electrical network",
+      "from": "Electrical network",
+      "px": 0.4703,
+      "pz": 0.2914,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3375,
+      "ratio": 0.5467,
+      "type": "geo"
+    },
+    {
+      "s": "Heterojunction bipol",
+      "from": "Heterojunction bipolar transistor",
+      "px": 0.0959,
+      "pz": 0.3475,
+      "home": "chimie",
+      "alien": "ingenierie",
+      "score": 0.3371,
+      "ratio": 0.4899,
+      "type": "geo"
+    },
+    {
+      "s": "dω",
+      "from": "Dérivée extérieure",
+      "px": 0.4818,
+      "pz": 0.2662,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.336,
+      "ratio": 0.5487,
+      "type": "geo"
+    },
+    {
+      "s": "Ion trap",
+      "from": "Ion trap",
+      "px": 0.2867,
+      "pz": 0.8858,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3359,
+      "ratio": 0.4917,
+      "type": "geo"
+    },
+    {
+      "s": "Hydrolase",
+      "from": "Hydrolase",
+      "px": -0.0662,
+      "pz": 0.1311,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3349,
+      "ratio": 0.3378,
+      "type": "geo"
+    },
+    {
+      "s": "Interdigital transdu",
+      "from": "Interdigital transducer",
+      "px": -0.1863,
+      "pz": -0.2559,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3348,
+      "ratio": 0.5041,
+      "type": "geo"
+    },
+    {
+      "s": "Sharecropping",
+      "from": "Sharecropping",
+      "px": -0.7006,
+      "pz": -0.4148,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3342,
+      "ratio": 0.5552,
+      "type": "geo"
+    },
+    {
+      "s": "Tree (set theory)",
+      "from": "Tree (set theory)",
+      "px": -0.1539,
+      "pz": -0.7116,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3336,
+      "ratio": 0.3784,
+      "type": "geo"
+    },
+    {
+      "s": "Computational physic",
+      "from": "Computational physics",
+      "px": 0.5258,
+      "pz": 0.1925,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3332,
+      "ratio": 0.5525,
+      "type": "geo"
+    },
+    {
+      "s": "arccos",
+      "from": "Arc cosinus",
+      "px": -0.2743,
+      "pz": 0.0543,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.3331,
+      "ratio": 0.4381,
+      "type": "geo"
+    },
+    {
+      "s": "Simplicial approxima",
+      "from": "Simplicial approximation theorem",
+      "px": 0.4902,
+      "pz": 0.2478,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3331,
+      "ratio": 0.5527,
+      "type": "geo"
+    },
+    {
+      "s": "Somatic evolution in",
+      "from": "Somatic evolution in cancer",
+      "px": -0.2592,
+      "pz": 1.0987,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.3321,
+      "ratio": 0.4438,
+      "type": "geo"
+    },
+    {
+      "s": "Smooth surface",
+      "from": "Smooth surface",
+      "px": 0.5331,
+      "pz": 0.1809,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3307,
+      "ratio": 0.5558,
+      "type": "geo"
+    },
+    {
+      "s": "Pyroclastic rock",
+      "from": "Pyroclastic rock",
+      "px": -0.2509,
+      "pz": 0.9491,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3287,
+      "ratio": 0.3602,
+      "type": "geo"
+    },
+    {
+      "s": "Rainfed agriculture",
+      "from": "Rainfed agriculture",
+      "px": -0.6877,
+      "pz": -0.3895,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3276,
+      "ratio": 0.5639,
+      "type": "geo"
+    },
+    {
+      "s": "Autonomously replica",
+      "from": "Autonomously replicating sequence",
+      "px": -0.2439,
+      "pz": -0.2355,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3269,
+      "ratio": 0.5158,
+      "type": "geo"
+    },
+    {
+      "s": "Magnetic cloud",
+      "from": "Magnetic cloud",
+      "px": 0.2165,
+      "pz": 0.7127,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3267,
+      "ratio": 0.5056,
+      "type": "geo"
+    },
+    {
+      "s": "Lung cancer surgery",
+      "from": "Lung cancer surgery",
+      "px": -0.3178,
+      "pz": 1.0168,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.3264,
+      "ratio": 0.4535,
+      "type": "geo"
+    },
+    {
+      "s": "Genetic relationship",
+      "from": "Genetic relationship",
+      "px": -0.0722,
+      "pz": 0.1291,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3248,
+      "ratio": 0.3578,
+      "type": "geo"
+    },
+    {
+      "s": "Exoglycosidase",
+      "from": "Exoglycosidase",
+      "px": -0.064,
+      "pz": 0.1666,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3246,
+      "ratio": 0.3582,
+      "type": "geo"
+    },
+    {
+      "s": "Algal bloom",
+      "from": "Algal bloom",
+      "px": 0.1963,
+      "pz": 0.6858,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.324,
+      "ratio": 0.5096,
+      "type": "geo"
+    },
+    {
+      "s": "Mechatronics",
+      "from": "Mechatronics",
+      "px": -0.0311,
+      "pz": -0.2951,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.324,
+      "ratio": 0.4663,
+      "type": "geo"
+    },
+    {
+      "s": "Epithelial cell adhe",
+      "from": "Epithelial cell adhesion molecule",
+      "px": -0.0384,
+      "pz": 0.2202,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3238,
+      "ratio": 0.3598,
+      "type": "geo"
+    },
+    {
+      "s": "Electroluminescence",
+      "from": "Electroluminescence",
+      "px": 0.2772,
+      "pz": 0.8067,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3237,
+      "ratio": 0.5102,
+      "type": "geo"
+    },
+    {
+      "s": "ζ",
+      "from": "Zeta de Riemann ζ(s)",
+      "px": -0.5685,
+      "pz": -0.5814,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3234,
+      "ratio": 0.3975,
+      "type": "geo"
+    },
+    {
+      "s": "Business simulation",
+      "from": "Business simulation",
+      "px": -0.3565,
+      "pz": -0.0405,
+      "home": "math",
+      "alien": "bio",
+      "score": 0.3229,
+      "ratio": 0.5711,
+      "type": "geo"
+    },
+    {
+      "s": "arcsin",
+      "from": "Arc sinus",
+      "px": -0.307,
+      "pz": 0.0431,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.322,
+      "ratio": 0.4569,
+      "type": "geo"
+    },
+    {
+      "s": "Breeder (animal)",
+      "from": "Breeder (animal)",
+      "px": -0.7029,
+      "pz": -0.395,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3219,
+      "ratio": 0.5716,
+      "type": "geo"
+    },
+    {
+      "s": "Plasma stability",
+      "from": "Plasma stability",
+      "px": 0.2126,
+      "pz": 0.7015,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3218,
+      "ratio": 0.5131,
+      "type": "geo"
+    },
+    {
+      "s": "Semiconductor indust",
+      "from": "Semiconductor industry",
+      "px": 0.043,
+      "pz": 0.3495,
+      "home": "chimie",
+      "alien": "ingenierie",
+      "score": 0.3216,
+      "ratio": 0.5133,
+      "type": "geo"
+    },
+    {
+      "s": "κ",
+      "from": "Cardinal inaccessible (Hausdorff 1908)",
+      "px": -0.1121,
+      "pz": -0.6929,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3204,
+      "ratio": 0.403,
+      "type": "geo"
+    },
+    {
+      "s": "Field-effect transis",
+      "from": "Field-effect transistor",
+      "px": 0.2817,
+      "pz": 0.8029,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3188,
+      "ratio": 0.5175,
+      "type": "geo"
+    },
+    {
+      "s": "Low frequency",
+      "from": "Low frequency",
+      "px": 0.278,
+      "pz": 0.7952,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3188,
+      "ratio": 0.5176,
+      "type": "geo"
+    },
+    {
+      "s": "∪",
+      "from": "Union",
+      "px": -0.1043,
+      "pz": -0.6862,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3184,
+      "ratio": 0.4068,
+      "type": "geo"
+    },
+    {
+      "s": "Helmholtz coil",
+      "from": "Helmholtz coil",
+      "px": 0.5068,
+      "pz": 0.5778,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3178,
+      "ratio": 0.5608,
+      "type": "geo"
+    },
+    {
+      "s": "Communications satel",
+      "from": "Communications satellite",
+      "px": 0.5535,
+      "pz": 0.6974,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3166,
+      "ratio": 0.5623,
+      "type": "geo"
+    },
+    {
+      "s": "Electromagnetic envi",
+      "from": "Electromagnetic environment",
+      "px": 0.273,
+      "pz": 0.78,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3163,
+      "ratio": 0.5213,
+      "type": "geo"
+    },
+    {
+      "s": "Γᵢⱼₖ",
+      "from": "Symboles de Christoffel",
+      "px": 0.4448,
+      "pz": 0.3218,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3158,
+      "ratio": 0.5759,
+      "type": "geo"
+    },
+    {
+      "s": "∖",
+      "from": "Différence ensembliste",
+      "px": -0.1805,
+      "pz": -0.7687,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3153,
+      "ratio": 0.4126,
+      "type": "geo"
+    },
+    {
+      "s": "Viable system model",
+      "from": "Viable system model",
+      "px": -0.1947,
+      "pz": -0.2433,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3145,
+      "ratio": 0.5343,
+      "type": "geo"
+    },
+    {
+      "s": "Acoustic sensor",
+      "from": "Acoustic sensor",
+      "px": -0.17,
+      "pz": -0.2524,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3144,
+      "ratio": 0.5344,
+      "type": "geo"
+    },
+    {
+      "s": "Interval arithmetic",
+      "from": "Interval arithmetic",
+      "px": 0.6101,
+      "pz": 0.0879,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3142,
+      "ratio": 0.5781,
+      "type": "geo"
+    },
+    {
+      "s": "Electromagnetic spec",
+      "from": "Electromagnetic spectrum",
+      "px": 0.4943,
+      "pz": 0.5378,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3138,
+      "ratio": 0.5663,
+      "type": "geo"
+    },
+    {
+      "s": "Background selection",
+      "from": "Background selection",
+      "px": -0.0666,
+      "pz": 0.1773,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3135,
+      "ratio": 0.3802,
+      "type": "geo"
+    },
+    {
+      "s": "Teleconnection",
+      "from": "Teleconnection",
+      "px": 0.5016,
+      "pz": 0.2126,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3132,
+      "ratio": 0.5794,
+      "type": "geo"
+    },
+    {
+      "s": "Ka band",
+      "from": "Ka band",
+      "px": 0.5512,
+      "pz": 0.703,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3124,
+      "ratio": 0.5682,
+      "type": "geo"
+    },
+    {
+      "s": "dW",
+      "from": "Incréments browniens",
+      "px": 1.0233,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3118,
+      "ratio": 0.5813,
+      "type": "geo"
+    },
+    {
+      "s": "Quasi-Monte Carlo me",
+      "from": "Quasi-Monte Carlo method",
+      "px": 0.5538,
+      "pz": 0.1432,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3115,
+      "ratio": 0.5817,
+      "type": "geo"
+    },
+    {
+      "s": "Plasma Cell Myeloma",
+      "from": "Plasma Cell Myeloma",
+      "px": -0.3518,
+      "pz": 0.9738,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.3115,
+      "ratio": 0.4784,
+      "type": "geo"
+    },
+    {
+      "s": "Regulatory authority",
+      "from": "Regulatory authority",
+      "px": -0.3095,
+      "pz": -0.2169,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3114,
+      "ratio": 0.5387,
+      "type": "geo"
+    },
+    {
+      "s": "Itô",
+      "from": "Intégrale d'Itô (1944)",
+      "px": 1.137,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3106,
+      "ratio": 0.5828,
+      "type": "geo"
+    },
+    {
+      "s": "Higher category theo",
+      "from": "Higher category theory",
+      "px": -0.1727,
+      "pz": -0.3234,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3105,
+      "ratio": 0.4215,
+      "type": "geo"
+    },
+    {
+      "s": "H-infinity methods i",
+      "from": "H-infinity methods in control theory",
+      "px": 0.2234,
+      "pz": 0.6999,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3104,
+      "ratio": 0.5302,
+      "type": "geo"
+    },
+    {
+      "s": "Aerospace materials",
+      "from": "Aerospace materials",
+      "px": 0.4823,
+      "pz": 0.384,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3103,
+      "ratio": 0.5711,
+      "type": "geo"
+    },
+    {
+      "s": "Adjoint functors",
+      "from": "Adjoint functors",
+      "px": -0.1591,
+      "pz": -0.3333,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3101,
+      "ratio": 0.4223,
+      "type": "geo"
+    },
+    {
+      "s": "Millimetre wave",
+      "from": "Millimetre wave",
+      "px": 0.5117,
+      "pz": 0.6152,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.31,
+      "ratio": 0.5714,
+      "type": "geo"
+    },
+    {
+      "s": "Wireless ad hoc netw",
+      "from": "Wireless ad hoc network",
+      "px": -0.2279,
+      "pz": -0.231,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3098,
+      "ratio": 0.5412,
+      "type": "geo"
+    },
+    {
+      "s": "Open Shortest Path F",
+      "from": "Open Shortest Path First",
+      "px": -0.1398,
+      "pz": -0.2633,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3094,
+      "ratio": 0.5418,
+      "type": "geo"
+    },
+    {
+      "s": "Radiation pattern",
+      "from": "Radiation pattern",
+      "px": 0.5246,
+      "pz": 0.6526,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3093,
+      "ratio": 0.5725,
+      "type": "geo"
+    },
+    {
+      "s": "Pastoralism",
+      "from": "Pastoralism",
+      "px": -0.8217,
+      "pz": -0.5134,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3089,
+      "ratio": 0.5889,
+      "type": "geo"
+    },
+    {
+      "s": "Corium",
+      "from": "Corium",
+      "px": -0.2854,
+      "pz": 0.9589,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3089,
+      "ratio": 0.3988,
+      "type": "geo"
+    },
+    {
+      "s": "W(t)",
+      "from": "Mouvement brownien (Wiener 1923)",
+      "px": 0.9096,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3087,
+      "ratio": 0.5854,
+      "type": "geo"
+    },
+    {
+      "s": "Geomagnetic secular ",
+      "from": "Geomagnetic secular variation",
+      "px": 0.318,
+      "pz": 0.8554,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.3085,
+      "ratio": 0.5332,
+      "type": "geo"
+    },
+    {
+      "s": "Leaky wave antenna",
+      "from": "Leaky wave antenna",
+      "px": -0.0676,
+      "pz": -0.2951,
+      "home": "ingenierie",
+      "alien": "info",
+      "score": 0.3078,
+      "ratio": 0.4931,
+      "type": "geo"
+    },
+    {
+      "s": "Scoria",
+      "from": "Scoria",
+      "px": -0.2654,
+      "pz": 1.0016,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3074,
+      "ratio": 0.4016,
+      "type": "geo"
+    },
+    {
+      "s": "Naval architecture",
+      "from": "Naval architecture",
+      "px": 0.1988,
+      "pz": -0.1555,
+      "home": "ingenierie",
+      "alien": "math",
+      "score": 0.3073,
+      "ratio": 0.0222,
+      "type": "geo"
+    },
+    {
+      "s": "Perlite",
+      "from": "Perlite",
+      "px": -0.2618,
+      "pz": 1.0105,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3064,
+      "ratio": 0.4036,
+      "type": "geo"
+    },
+    {
+      "s": "Rhyolite",
+      "from": "Rhyolite",
+      "px": -0.2627,
+      "pz": 1.01,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.3062,
+      "ratio": 0.404,
+      "type": "geo"
+    },
+    {
+      "s": "SDE",
+      "from": "Équation diff. stochastique",
+      "px": 1.2507,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3061,
+      "ratio": 0.589,
+      "type": "geo"
+    },
+    {
+      "s": "Internal auditory me",
+      "from": "Internal auditory meatus",
+      "px": -0.0824,
+      "pz": 0.1315,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.3056,
+      "ratio": 0.3959,
+      "type": "geo"
+    },
+    {
+      "s": "Ecological farming",
+      "from": "Ecological farming",
+      "px": -0.7903,
+      "pz": -0.4581,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.3048,
+      "ratio": 0.5944,
+      "type": "geo"
+    },
+    {
+      "s": "Monochromatic electr",
+      "from": "Monochromatic electromagnetic plane wave",
+      "px": 0.0893,
+      "pz": -0.473,
+      "home": "math",
+      "alien": "info",
+      "score": 0.3043,
+      "ratio": 0.1424,
+      "type": "geo"
+    },
+    {
+      "s": "Control system secur",
+      "from": "Control system security",
+      "px": -0.1968,
+      "pz": -0.2378,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.3042,
+      "ratio": 0.5495,
+      "type": "geo"
+    },
+    {
+      "s": "⊔",
+      "from": "Union disjointe (coproduct)",
+      "px": -0.214,
+      "pz": -0.8128,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3037,
+      "ratio": 0.4342,
+      "type": "geo"
+    },
+    {
+      "s": "Trilinear interpolat",
+      "from": "Trilinear interpolation",
+      "px": 0.5209,
+      "pz": 0.1783,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3031,
+      "ratio": 0.593,
+      "type": "geo"
+    },
+    {
+      "s": "Natural transformati",
+      "from": "Natural transformation",
+      "px": -0.2428,
+      "pz": -0.2822,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.303,
+      "ratio": 0.4355,
+      "type": "geo"
+    },
+    {
+      "s": "Mohs surgery",
+      "from": "Mohs surgery",
+      "px": -0.3653,
+      "pz": 0.8928,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.3026,
+      "ratio": 0.4933,
+      "type": "geo"
+    },
+    {
+      "s": "Affine geometry of c",
+      "from": "Affine geometry of curves",
+      "px": 0.0604,
+      "pz": 0.1373,
+      "home": "math",
+      "alien": "ingenierie",
+      "score": 0.3023,
+      "ratio": 0.038,
+      "type": "geo"
+    },
+    {
+      "s": "Aᶜ",
+      "from": "Complément ensemble",
+      "px": -0.1246,
+      "pz": -0.7496,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.3022,
+      "ratio": 0.437,
+      "type": "geo"
+    },
+    {
+      "s": "∥",
+      "from": "Parallèle",
+      "px": 0.0657,
+      "pz": 0.1138,
+      "home": "math",
+      "alien": "ingenierie",
+      "score": 0.3021,
+      "ratio": 0.0387,
+      "type": "geo"
+    },
+    {
+      "s": "Gabor wavelet",
+      "from": "Gabor wavelet",
+      "px": 0.1845,
+      "pz": -0.1685,
+      "home": "ingenierie",
+      "alien": "math",
+      "score": 0.302,
+      "ratio": 0.0391,
+      "type": "geo"
+    },
+    {
+      "s": "tan",
+      "from": "Tangente",
+      "px": -0.2762,
+      "pz": 0.0301,
+      "home": "math",
+      "alien": "terre",
+      "score": 0.3013,
+      "ratio": 0.4919,
+      "type": "geo"
+    },
+    {
+      "s": "X-ray",
+      "from": "X-ray",
+      "px": 0.5407,
+      "pz": 0.7096,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3011,
+      "ratio": 0.5839,
+      "type": "geo"
+    },
+    {
+      "s": "Concave function",
+      "from": "Concave function",
+      "px": 0.0749,
+      "pz": 0.1301,
+      "home": "math",
+      "alien": "ingenierie",
+      "score": 0.3011,
+      "ratio": 0.0417,
+      "type": "geo"
+    },
+    {
+      "s": "Skid (aerodynamics)",
+      "from": "Skid (aerodynamics)",
+      "px": 0.5093,
+      "pz": 0.6325,
+      "home": "ingenierie",
+      "alien": "physique",
+      "score": 0.3011,
+      "ratio": 0.5839,
+      "type": "geo"
+    },
+    {
+      "s": "Mean curvature flow",
+      "from": "Mean curvature flow",
+      "px": 0.5298,
+      "pz": 0.1655,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.301,
+      "ratio": 0.5957,
+      "type": "geo"
+    },
+    {
+      "s": "Magmatic water",
+      "from": "Magmatic water",
+      "px": -0.2925,
+      "pz": 0.9792,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.301,
+      "ratio": 0.4141,
+      "type": "geo"
+    },
+    {
+      "s": "RN",
+      "from": "Radon-Nikodym dν/dμ (1930)",
+      "px": 0.7959,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.3005,
+      "ratio": 0.5964,
+      "type": "geo"
+    },
+    {
+      "s": "Image sensor",
+      "from": "Image sensor",
+      "px": -0.1384,
+      "pz": -0.2596,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.2999,
+      "ratio": 0.5558,
+      "type": "geo"
+    },
+    {
+      "s": "Aquaculture of tilap",
+      "from": "Aquaculture of tilapia",
+      "px": -0.6895,
+      "pz": -0.3491,
+      "home": "terre",
+      "alien": "humaines",
+      "score": 0.2998,
+      "ratio": 0.601,
+      "type": "geo"
+    },
+    {
+      "s": "TLR3",
+      "from": "TLR3",
+      "px": -0.0882,
+      "pz": 0.0989,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.2996,
+      "ratio": 0.4077,
+      "type": "geo"
+    },
+    {
+      "s": "Hamilton–Jacobi–Bell",
+      "from": "Hamilton–Jacobi–Bellman equation",
+      "px": 0.0853,
+      "pz": 0.5845,
+      "home": "ingenierie",
+      "alien": "chimie",
+      "score": 0.2996,
+      "ratio": 0.5467,
+      "type": "geo"
+    },
+    {
+      "s": "E[·|F]",
+      "from": "Espérance conditionnelle (filtration)",
+      "px": 1.3644,
+      "pz": 1.2274,
+      "home": "math",
+      "alien": "physique",
+      "score": 0.299,
+      "ratio": 0.5985,
+      "type": "geo"
+    },
+    {
+      "s": "Polytope",
+      "from": "Polytope",
+      "px": 0.0556,
+      "pz": 0.1396,
+      "home": "math",
+      "alien": "ingenierie",
+      "score": 0.2989,
+      "ratio": 0.0489,
+      "type": "geo"
+    },
+    {
+      "s": "Blood irradiation th",
+      "from": "Blood irradiation therapy",
+      "px": -0.3112,
+      "pz": 1.1439,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.2988,
+      "ratio": 0.4995,
+      "type": "geo"
+    },
+    {
+      "s": "Damnation",
+      "from": "Damnation",
+      "px": -0.0745,
+      "pz": 0.1778,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.2987,
+      "ratio": 0.4093,
+      "type": "geo"
+    },
+    {
+      "s": "Constructive set the",
+      "from": "Constructive set theory",
+      "px": -0.1633,
+      "pz": -0.7937,
+      "home": "math",
+      "alien": "humaines",
+      "score": 0.2985,
+      "ratio": 0.4439,
+      "type": "geo"
+    },
+    {
+      "s": "Phreatomagmatic erup",
+      "from": "Phreatomagmatic eruption",
+      "px": -0.307,
+      "pz": 0.9595,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.2977,
+      "ratio": 0.4206,
+      "type": "geo"
+    },
+    {
+      "s": "Genital tract",
+      "from": "Genital tract",
+      "px": -0.0373,
+      "pz": 0.2475,
+      "home": "bio",
+      "alien": "ingenierie",
+      "score": 0.2976,
+      "ratio": 0.4116,
+      "type": "geo"
+    },
+    {
+      "s": "Autonomous consumpti",
+      "from": "Autonomous consumption",
+      "px": -0.2199,
+      "pz": -0.2272,
+      "home": "ingenierie",
+      "alien": "humaines",
+      "score": 0.297,
+      "ratio": 0.5601,
+      "type": "geo"
+    },
+    {
+      "s": "Magmatism",
+      "from": "Magmatism",
+      "px": -0.2133,
+      "pz": 1.0903,
+      "home": "terre",
+      "alien": "chimie",
+      "score": 0.2969,
+      "ratio": 0.4221,
+      "type": "geo"
+    },
+    {
+      "s": "Slow manifold",
+      "from": "Slow manifold",
+      "px": 0.0799,
+      "pz": 0.1262,
+      "home": "math",
+      "alien": "ingenierie",
+      "score": 0.2968,
+      "ratio": 0.0556,
+      "type": "geo"
+    },
+    {
+      "s": "Tuberous sclerosis",
+      "from": "Tuberous sclerosis",
+      "px": -0.338,
+      "pz": 1.1036,
+      "home": "bio",
+      "alien": "chimie",
+      "score": 0.2966,
+      "ratio": 0.5033,
+      "type": "geo"
+    },
+    {
+      "s": "Enumerative combinat",
+      "from": "Enumerative combinatorics",
+      "px": 0.0892,
+      "pz": -0.4579,
+      "home": "math",
+      "alien": "info",
+      "score": 0.2966,
+      "ratio": 0.1642,
+      "type": "geo"
+    }
+  ],
+  "key": [
+    {
+      "s": "=",
+      "from": "Égalité (Recorde 1557)",
+      "px": -0.9096,
+      "pz": -1.3566,
+      "home": "math",
+      "continents": [
+        "bio",
+        "chimie",
+        "humaines",
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 7,
+      "score": 1.0,
+      "type": "key"
+    },
+    {
+      "s": "exp",
+      "from": "Exponentielle",
+      "px": 0.2007,
+      "pz": -0.1956,
+      "home": "math",
+      "continents": [
+        "bio",
+        "chimie",
+        "humaines",
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 6,
+      "score": 0.8571428571428571,
+      "type": "key"
+    },
+    {
+      "s": "ln",
+      "from": "Logarithme naturel",
+      "px": 0.2093,
+      "pz": -0.2045,
+      "home": "math",
+      "continents": [
+        "bio",
+        "chimie",
+        "humaines",
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 6,
+      "score": 0.8571428571428571,
+      "type": "key"
+    },
+    {
+      "s": "Σ",
+      "from": "Sommation finie",
+      "px": 0.3132,
+      "pz": -0.2794,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 6,
+      "score": 0.8571428571428571,
+      "type": "key"
+    },
+    {
+      "s": "∫",
+      "from": "Intégrale (Leibniz 1675)",
+      "px": 0.229,
+      "pz": -0.1451,
+      "home": "math",
+      "continents": [
+        "bio",
+        "chimie",
+        "humaines",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 6,
+      "score": 0.8571428571428571,
+      "type": "key"
+    },
+    {
+      "s": "e",
+      "from": "Euler ~2.71828",
+      "px": 0.3115,
+      "pz": -0.1515,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 5,
+      "score": 0.7142857142857143,
+      "type": "key"
+    },
+    {
+      "s": "∂",
+      "from": "Dérivée partielle",
+      "px": 0.3498,
+      "pz": -0.0949,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 5,
+      "score": 0.7142857142857143,
+      "type": "key"
+    },
+    {
+      "s": "Bayes",
+      "from": "Théorème Bayes P(A|B)",
+      "px": 0.181,
+      "pz": -0.1964,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "E[X]",
+      "from": "Espérance",
+      "px": -0.0386,
+      "pz": -0.2781,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "FFT",
+      "from": "Fast Fourier Transform (Cooley-Tukey 1965)",
+      "px": 0.2456,
+      "pz": -0.0382,
+      "home": "ingenierie",
+      "continents": [
+        "humaines",
+        "info",
+        "ingenierie",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "N(μ,σ²)",
+      "from": "Distribution normale",
+      "px": 0.0283,
+      "pz": -0.1887,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "O(n)",
+      "from": "Grand-O Landau complexité",
+      "px": 0.2693,
+      "pz": -0.1189,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "info",
+        "ingenierie",
+        "math"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "P(A)",
+      "from": "Probabilité événement A",
+      "px": -0.0842,
+      "pz": -0.1324,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "Var",
+      "from": "Variance",
+      "px": 0.1526,
+      "pz": -0.3226,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "cos",
+      "from": "Cosinus",
+      "px": -0.4007,
+      "pz": 0.0937,
+      "home": "math",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "d/dx",
+      "from": "Dérivée totale",
+      "px": 0.4447,
+      "pz": -0.1643,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "det",
+      "from": "Déterminant",
+      "px": 0.3475,
+      "pz": -0.3077,
+      "home": "math",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "lim",
+      "from": "Limite (Cauchy/Weierstrass)",
+      "px": 0.4245,
+      "pz": -0.2018,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "log",
+      "from": "Logarithme (Napier 1614)",
+      "px": 0.3667,
+      "pz": -0.1053,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "sin",
+      "from": "Sinus",
+      "px": -0.2515,
+      "pz": 0.2194,
+      "home": "math",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "Π",
+      "from": "Produit fini",
+      "px": 0.3651,
+      "pz": -0.1644,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "δ",
+      "from": "Dirac delta δ(x)",
+      "px": 0.3384,
+      "pz": -0.1192,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "ε",
+      "from": "Epsilon voisinage",
+      "px": 0.2719,
+      "pz": -0.1303,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "λ",
+      "from": "Valeur propre (eigenvalue)",
+      "px": 0.2469,
+      "pz": -0.2247,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "π",
+      "from": "Pi ~3.14159 (Archimède)",
+      "px": 0.1339,
+      "pz": 0.0336,
+      "home": "math",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "σ_std",
+      "from": "Écart-type",
+      "px": 0.0616,
+      "pz": -0.2099,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "χ²",
+      "from": "Test chi-carré Pearson",
+      "px": -0.0644,
+      "pz": -0.2567,
+      "home": "transversal",
+      "continents": [
+        "bio",
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "ℱ",
+      "from": "Transformée de Fourier",
+      "px": 0.0829,
+      "pz": 0.1578,
+      "home": "ingenierie",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "∇",
+      "from": "Nabla / gradient (Hamilton)",
+      "px": 0.3359,
+      "pz": -0.1048,
+      "home": "math",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "∇²",
+      "from": "Laplacien",
+      "px": 0.4308,
+      "pz": -0.112,
+      "home": "math",
+      "continents": [
+        "chimie",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "∗_conv",
+      "from": "Convolution f∗g",
+      "px": 0.0491,
+      "pz": -0.0513,
+      "home": "ingenierie",
+      "continents": [
+        "info",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "∞",
+      "from": "Infini potentiel (Wallis)",
+      "px": 0.32,
+      "pz": -0.1046,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "∬",
+      "from": "Intégrale double",
+      "px": 0.3136,
+      "pz": 0.0008,
+      "home": "math",
+      "continents": [
+        "chimie",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "∮",
+      "from": "Intégrale de contour",
+      "px": 0.2034,
+      "pz": -0.1924,
+      "home": "math",
+      "continents": [
+        "chimie",
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 4,
+      "score": 0.5714285714285714,
+      "type": "key"
+    },
+    {
+      "s": "Attn",
+      "from": "Attention Softmax(QKᵀ/√d)V (Vaswani 2017)",
+      "px": -0.1962,
+      "pz": -0.5661,
+      "home": "info",
+      "continents": [
+        "bio",
+        "humaines",
+        "info"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "BS",
+      "from": "Black-Scholes (pricing options 1973)",
+      "px": -0.2523,
+      "pz": -0.3039,
+      "home": "humaines",
+      "continents": [
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "D_KL",
+      "from": "Divergence Kullback-Leibler",
+      "px": 0.3199,
+      "pz": -0.7802,
+      "home": "info",
+      "continents": [
+        "humaines",
+        "info",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "F=ma",
+      "from": "Newton 1687",
+      "px": 0.8212,
+      "pz": 0.0663,
+      "home": "physique",
+      "continents": [
+        "bio",
+        "ingenierie",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "GAN",
+      "from": "Generative Adversarial Network (Goodfellow 2014)",
+      "px": -0.3441,
+      "pz": -0.5192,
+      "home": "info",
+      "continents": [
+        "bio",
+        "humaines",
+        "info"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "H(X)",
+      "from": "Entropie Shannon",
+      "px": 0.335,
+      "pz": -0.56,
+      "home": "info",
+      "continents": [
+        "humaines",
+        "info",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "Itô",
+      "from": "Intégrale d'Itô (1944)",
+      "px": 1.137,
+      "pz": 1.2274,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "Nash",
+      "from": "Équilibre de Nash (1950)",
+      "px": -0.2907,
+      "pz": -0.4027,
+      "home": "humaines",
+      "continents": [
+        "bio",
+        "humaines",
+        "info"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "PV=nRT",
+      "from": "Loi gaz parfaits",
+      "px": 0.1946,
+      "pz": 0.3086,
+      "home": "ingenierie",
+      "continents": [
+        "chimie",
+        "ingenierie",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "Re",
+      "from": "Nombre de Reynolds",
+      "px": 0.1991,
+      "pz": 0.3407,
+      "home": "ingenierie",
+      "continents": [
+        "bio",
+        "ingenierie",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "R₀",
+      "from": "Taux reproduction base (épidémiologie)",
+      "px": -0.1931,
+      "pz": 0.1636,
+      "home": "bio",
+      "continents": [
+        "bio",
+        "humaines",
+        "math"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "SDE",
+      "from": "Équation diff. stochastique",
+      "px": 1.2507,
+      "pz": 1.2274,
+      "home": "math",
+      "continents": [
+        "bio",
+        "humaines",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "SGD",
+      "from": "Stochastic Gradient Descent",
+      "px": -0.1649,
+      "pz": -0.483,
+      "home": "info",
+      "continents": [
+        "bio",
+        "humaines",
+        "info"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "S_ent",
+      "from": "Entropie S=k·ln(W)",
+      "px": 0.1373,
+      "pz": 0.1669,
+      "home": "ingenierie",
+      "continents": [
+        "chimie",
+        "info",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "TM",
+      "from": "Machine de Turing (1936)",
+      "px": 0.1978,
+      "pz": -0.9324,
+      "home": "info",
+      "continents": [
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "W(t)",
+      "from": "Mouvement brownien (Wiener 1923)",
+      "px": 0.9096,
+      "pz": 1.2274,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "argmax",
+      "from": "Argument du maximum",
+      "px": 0.1524,
+      "pz": -0.697,
+      "home": "info",
+      "continents": [
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "argmin",
+      "from": "Argument du minimum",
+      "px": 0.1669,
+      "pz": -0.6592,
+      "home": "info",
+      "continents": [
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "i",
+      "from": "Unité imaginaire √(-1)",
+      "px": -0.2274,
+      "pz": -1.2274,
+      "home": "math",
+      "continents": [
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "Γ",
+      "from": "Fonction Gamma d'Euler",
+      "px": 0.4281,
+      "pz": -0.1235,
+      "home": "math",
+      "continents": [
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "ζ",
+      "from": "Zeta de Riemann ζ(s)",
+      "px": -0.5685,
+      "pz": -0.5814,
+      "home": "math",
+      "continents": [
+        "humaines",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "ℋ",
+      "from": "Hamiltonien classique",
+      "px": -1.2507,
+      "pz": 0.323,
+      "home": "physique",
+      "continents": [
+        "info",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "ℒ",
+      "from": "Lagrangien L=T-V",
+      "px": -1.3644,
+      "pz": 0.323,
+      "home": "physique",
+      "continents": [
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "∇L",
+      "from": "Gradient de la loss (descente de gradient)",
+      "px": -0.253,
+      "pz": -0.5284,
+      "home": "info",
+      "continents": [
+        "humaines",
+        "info",
+        "math"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "∇·",
+      "from": "Divergence",
+      "px": 0.3484,
+      "pz": -0.1845,
+      "home": "math",
+      "continents": [
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "∇×",
+      "from": "Rotationnel (curl)",
+      "px": 0.3518,
+      "pz": 0.0114,
+      "home": "math",
+      "continents": [
+        "ingenierie",
+        "math",
+        "physique"
+      ],
+      "n_continents": 3,
+      "score": 0.42857142857142855,
+      "type": "key"
+    },
+    {
+      "s": "CFG",
+      "from": "Grammaire hors-contexte (Chomsky)",
+      "px": 0.3166,
+      "pz": -0.8119,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "CFL",
+      "from": "Langages hors-contexte",
+      "px": 0.24,
+      "pz": -1.0083,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "Chom",
+      "from": "Hiérarchie de Chomsky (4 niveaux)",
+      "px": 0.396,
+      "pz": -0.8536,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "DFA",
+      "from": "Automate fini déterministe",
+      "px": 0.2379,
+      "pz": -0.9512,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "NFA",
+      "from": "Automate fini non-déterministe",
+      "px": 0.2918,
+      "pz": -0.7322,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "PDA",
+      "from": "Automate à pile",
+      "px": 0.2333,
+      "pz": -0.8805,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "Reg",
+      "from": "Langages réguliers (Kleene)",
+      "px": 0.2761,
+      "pz": -0.7846,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "UTM",
+      "from": "Machine de Turing universelle",
+      "px": 0.3587,
+      "pz": -0.8898,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    },
+    {
+      "s": "λ_calc",
+      "from": "Lambda-calcul (Church 1936)",
+      "px": 0.408,
+      "pz": -0.9029,
+      "home": "info",
+      "continents": [
+        "info",
+        "ingenierie"
+      ],
+      "n_continents": 2,
+      "score": 0.2857142857142857,
+      "type": "key"
+    }
+  ]
+}
