@@ -84,11 +84,11 @@ if os.path.exists(esc_path):
     # All key (passe-partout)
     for e in esc_data.get('key', []):
         esc_key_set.add(e['s'])
-    # Route data (all 300 geo + 69 key + centroids)
+    # Route data: names + metadata (positions looked up from ST_C1 in JS for perfect alignment)
     for e in esc_data.get('geo', [])[:300]:
-        esc_rte_geo.append([round(e['px'], 4), round(e['pz'], 4), e['alien'], round(e['score'], 3)])
+        esc_rte_geo.append([e['s'], e['alien'], round(e['score'], 3)])
     for e in esc_data.get('key', []):
-        esc_rte_key.append([round(e['px'], 4), round(e['pz'], 4), e['home'], e['continents'], e['n_continents']])
+        esc_rte_key.append([e['s'], e['home'], e['continents'], e['n_continents']])
     for name, c in esc_data.get('centroids', {}).items():
         esc_centroids[name] = [round(c['px'], 4), round(c['pz'], 4)]
     print(f"  Geo: {len(esc_geo_set)} glow, {len(esc_rte_geo)} routes")
@@ -232,47 +232,89 @@ print(f"  Routes: {len(rte_geo_js):,} + {len(rte_key_js):,} + {len(rte_c_js):,} 
 print("[7] Generating HTML...")
 
 # Route rendering JS (injected via {route_render_js} — literal braces, not f-string)
-route_render_js = """  // ═══ ROUTES at S0 ═══
-  if(showRte && currentST.length > 0) {
+# COLONNES MONTANTES: cables go vertically from S0 (concept) up to S1 (centroid junction)
+route_render_js = """  // ═══ COLONNES MONTANTES en L — positions from ST_C1 for perfect alignment ═══
+  if(showRte && currentST.length > 1) {
     const rot0 = time * 0.3;
     const cr0 = Math.cos(rot0), sr0 = Math.sin(rot0);
     const y0 = currentST[0].yr * BOX.h;
+    const y1 = currentST[1].yr * BOX.h;
     const rp = (px, pz) => [px*cr0 - pz*sr0, px*sr0 + pz*cr0];
 
-    // Geo routes (orange arcs concept → alien centroid)
-    for (const g of RTE_GEO) {
-      const ac = RTE_C[g[2]];
-      if (!ac) continue;
+    // Build S0 position lookup from actual viz data (guarantees alignment with dots)
+    if (!window._s0pos) window._s0pos = {};
+    const s0 = currentST[0].sy;
+    window._s0pos = {};
+    for (let i = 0; i < s0.length; i++) {
+      const sym = s0[i];
+      if (sym[5] !== undefined && !cubeVisible(sym[5])) continue;
+      window._s0pos[sym[0]] = [sym[1], sym[2]];
+    }
+    const S0P = window._s0pos;
+
+    // ── 1. Borniers at S1 ──
+    for (const [cid, cp] of Object.entries(RTE_C)) {
       if (hasDomFilter) {
-        const acont = CONTINENTS.find(c => c.id === g[2]);
-        if (acont && !acont.doms.some(d => activeDomains.has(d))) continue;
+        const cont = CONTINENTS.find(c => c.id === cid);
+        if (cont && !cont.doms.some(d => activeDomains.has(d))) continue;
       }
-      const [rx, rz] = rp(g[0], g[1]);
-      const [ax, az] = rp(ac[0], ac[1]);
-      const dist = Math.sqrt((ax-rx)**2 + (az-rz)**2);
-      const arcH = dist * 0.15;
-      ctx.beginPath();
-      for (let i = 0; i <= 16; i++) {
-        const t = i / 16;
-        const x = rx + (ax-rx)*t;
-        const z = rz + (az-rz)*t;
-        const ay = y0 + arcH * 4 * t * (1-t);
-        const p = project(x, ay, z);
-        if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
-      }
-      ctx.strokeStyle = `rgba(255,107,53,${Math.min(0.5, g[3] * 0.6)})`;
-      ctx.lineWidth = Math.max(0.4, g[3] * 1.2);
-      ctx.stroke();
+      const [cx, cz] = rp(cp[0], cp[1]);
+      const p = project(cx, y1, cz);
+      ctx.beginPath(); ctx.arc(p.x, p.y, 14, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(255,255,255,0.05)'; ctx.fill();
+      ctx.beginPath(); ctx.arc(p.x, p.y, 7, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(255,255,255,0.12)'; ctx.fill();
+      ctx.beginPath(); ctx.arc(p.x, p.y, 3.5, 0, Math.PI*2);
+      ctx.fillStyle = 'rgba(255,255,255,0.6)'; ctx.fill();
     }
 
-    // Key routes (cyan dashed arcs concept → each continent)
-    ctx.setLineDash([3, 4]);
+    // ── 2. Geo: L-wiring (green column + orange horizontal → bornier) ──
+    // RTE_GEO: [name, alien_continent, score]
+    for (const g of RTE_GEO) {
+      const pos = S0P[g[0]];
+      if (!pos) continue; // concept not visible (filtered by cube)
+      const ac = RTE_C[g[1]];
+      if (!ac) continue;
+      if (hasDomFilter) {
+        const acont = CONTINENTS.find(c => c.id === g[1]);
+        if (acont && !acont.doms.some(d => activeDomains.has(d))) continue;
+      }
+      const [rx, rz] = rp(pos[0], pos[1]);
+      const [ax, az] = rp(ac[0], ac[1]);
+      const alpha = Math.min(0.4, g[2]*0.45);
+      const lw = Math.max(0.4, g[2]*0.9);
+      // Vertical column S0→S1
+      const pb = project(rx, y0, rz);
+      const pt = project(rx, y1, rz);
+      ctx.beginPath(); ctx.moveTo(pb.x, pb.y); ctx.lineTo(pt.x, pt.y);
+      ctx.strokeStyle = `rgba(100,255,160,${alpha})`;
+      ctx.lineWidth = lw; ctx.stroke();
+      // Horizontal@S1 → bornier
+      const pc = project(ax, y1, az);
+      ctx.beginPath(); ctx.moveTo(pt.x, pt.y); ctx.lineTo(pc.x, pc.y);
+      ctx.strokeStyle = `rgba(255,107,53,${alpha*0.8})`;
+      ctx.lineWidth = lw*0.7; ctx.stroke();
+    }
+
+    // ── 3. Key: L-wiring (gold column + cyan horizontal → borniers) ──
+    // RTE_KEY: [name, home_continent, continents, n_continents]
     for (const k of RTE_KEY) {
-      const [rx, rz] = rp(k[0], k[1]);
-      const conts = k[3];
-      const nc = k[4];
+      const pos = S0P[k[0]];
+      if (!pos) continue;
+      const [rx, rz] = rp(pos[0], pos[1]);
+      const conts = k[2];
+      const nc = k[3];
+      const alpha = Math.min(0.35, 0.08+nc*0.04);
+      // Vertical column
+      const pb = project(rx, y0, rz);
+      const pt = project(rx, y1, rz);
+      ctx.beginPath(); ctx.moveTo(pb.x, pb.y); ctx.lineTo(pt.x, pt.y);
+      ctx.strokeStyle = `rgba(255,220,80,${alpha})`;
+      ctx.lineWidth = 0.6; ctx.stroke();
+      // Horizontal@S1 → each continent bornier
+      ctx.setLineDash([3, 4]);
       for (const cont of conts) {
-        if (cont === k[2]) continue;
+        if (cont === k[1]) continue;
         if (hasDomFilter) {
           const ccont = CONTINENTS.find(c => c.id === cont);
           if (ccont && !ccont.doms.some(d => activeDomains.has(d))) continue;
@@ -280,23 +322,13 @@ route_render_js = """  // ═══ ROUTES at S0 ═══
         const cc = RTE_C[cont];
         if (!cc) continue;
         const [ax, az] = rp(cc[0], cc[1]);
-        const dist = Math.sqrt((ax-rx)**2 + (az-rz)**2);
-        const arcH = dist * 0.12;
-        ctx.beginPath();
-        for (let i = 0; i <= 12; i++) {
-          const t = i / 12;
-          const x = rx + (ax-rx)*t;
-          const z = rz + (az-rz)*t;
-          const ay = y0 + arcH * 4 * t * (1-t);
-          const p = project(x, ay, z);
-          if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
-        }
-        ctx.strokeStyle = `rgba(53,212,255,${Math.min(0.4, 0.1 + nc * 0.04)})`;
-        ctx.lineWidth = 0.6;
-        ctx.stroke();
+        const pc = project(ax, y1, az);
+        ctx.beginPath(); ctx.moveTo(pt.x, pt.y); ctx.lineTo(pc.x, pc.y);
+        ctx.strokeStyle = `rgba(53,212,255,${alpha*0.8})`;
+        ctx.lineWidth = 0.5; ctx.stroke();
       }
+      ctx.setLineDash([]);
     }
-    ctx.setLineDash([]);
   }
 """
 
