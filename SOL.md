@@ -109,7 +109,10 @@ La validation doit évoluer: P2 est valide pour les percées matures.
   - 21 domains OVER-CITED, 23 UNDER-CITED, 40 BALANCED
   - Export: data/cross_physarum_wc.json (59KB)
 - [x] Identifier: concepts isolés, ponts cachés, vides fertiles (P4)
-- [ ] Viz 3D routes escaliers entre strates
+- [x] Viz 3D routes escaliers entre strates
+  - Three.js: 7 strates, 150 lianes geo + 69 passe-partout
+  - Cross-analysis overlay: isolés/ponts/voids P4
+  - viz/yggdrasil_escaliers_3d.html (57KB)
 - [ ] Ajuster validation: accepter P2 pour percées matures (>10K papers)
 - [ ] Pipeline v2: ajouter détection automatique du lifecycle stage
 - [ ] Intégrer MICR (moteur inverse contraintes) dans repo 3d-printer
