@@ -233,7 +233,8 @@ print("[7] Generating HTML...")
 
 # Route rendering JS (injected via {route_render_js} — literal braces, not f-string)
 # COLONNES MONTANTES: cables go vertically from S0 (concept) up to S1 (centroid junction)
-route_render_js = """  // ═══ COLONNES MONTANTES en L — positions from ST_C1 for perfect alignment ═══
+route_render_js = """  // ═══ ROUTES MONTAGNE: diagonale directe concept@S0 → bornier@S1 ═══
+  // Couleur = continent cible. Escaliers = cercle pulsant (FORME, pas couleur)
   if(showRte && currentST.length > 1) {
     const rot0 = time * 0.3;
     const cr0 = Math.cos(rot0), sr0 = Math.sin(rot0);
@@ -241,8 +242,14 @@ route_render_js = """  // ═══ COLONNES MONTANTES en L — positions from S
     const y1 = currentST[1].yr * BOX.h;
     const rp = (px, pz) => [px*cr0 - pz*sr0, px*sr0 + pz*cr0];
 
-    // Build S0 position lookup from actual viz data (guarantees alignment with dots)
-    if (!window._s0pos) window._s0pos = {};
+    // Continent colors for routes
+    const CONT_COL = {
+      chimie:[255,160,50], bio:[80,200,100], terre:[100,180,140],
+      physique:[80,140,255], ingenierie:[180,180,200], math:[160,100,220],
+      info:[100,160,255], humaines:[220,80,100], transversal:[180,180,180]
+    };
+
+    // Build S0 position lookup from actual viz data
     const s0 = currentST[0].sy;
     window._s0pos = {};
     for (let i = 0; i < s0.length; i++) {
@@ -252,51 +259,49 @@ route_render_js = """  // ═══ COLONNES MONTANTES en L — positions from S
     }
     const S0P = window._s0pos;
 
-    // ── 1. Borniers at S1 ──
+    // ── 1. Borniers at S1 (sommets de montagne) ──
     for (const [cid, cp] of Object.entries(RTE_C)) {
       if (hasDomFilter) {
         const cont = CONTINENTS.find(c => c.id === cid);
         if (cont && !cont.doms.some(d => activeDomains.has(d))) continue;
       }
+      const cc = CONT_COL[cid] || [180,180,180];
       const [cx, cz] = rp(cp[0], cp[1]);
       const p = project(cx, y1, cz);
-      ctx.beginPath(); ctx.arc(p.x, p.y, 14, 0, Math.PI*2);
-      ctx.fillStyle = 'rgba(255,255,255,0.05)'; ctx.fill();
-      ctx.beginPath(); ctx.arc(p.x, p.y, 7, 0, Math.PI*2);
-      ctx.fillStyle = 'rgba(255,255,255,0.12)'; ctx.fill();
-      ctx.beginPath(); ctx.arc(p.x, p.y, 3.5, 0, Math.PI*2);
-      ctx.fillStyle = 'rgba(255,255,255,0.6)'; ctx.fill();
+      // Halo continent color
+      ctx.beginPath(); ctx.arc(p.x, p.y, 18, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${cc[0]},${cc[1]},${cc[2]},0.08)`; ctx.fill();
+      ctx.beginPath(); ctx.arc(p.x, p.y, 9, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${cc[0]},${cc[1]},${cc[2]},0.25)`; ctx.fill();
+      ctx.beginPath(); ctx.arc(p.x, p.y, 4, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(255,255,255,0.85)`; ctx.fill();
     }
 
-    // ── 2. Geo: L-wiring (green column + orange horizontal → bornier) ──
+    // ── 2. Geo routes: diagonal concept@S0 → bornier@S1 (montagne) ──
     // RTE_GEO: [name, alien_continent, score]
     for (const g of RTE_GEO) {
       const pos = S0P[g[0]];
-      if (!pos) continue; // concept not visible (filtered by cube)
+      if (!pos) continue;
       const ac = RTE_C[g[1]];
       if (!ac) continue;
       if (hasDomFilter) {
         const acont = CONTINENTS.find(c => c.id === g[1]);
         if (acont && !acont.doms.some(d => activeDomains.has(d))) continue;
       }
+      const cc = CONT_COL[g[1]] || [180,180,180];
+      const isEsc = ESC_GEO.has(g[0]);
+      const alpha = isEsc ? Math.min(0.5, 0.2+g[2]*0.4) : Math.min(0.3, 0.08+g[2]*0.25);
+      const lw = isEsc ? 1.2 : 0.5;
       const [rx, rz] = rp(pos[0], pos[1]);
       const [ax, az] = rp(ac[0], ac[1]);
-      const alpha = Math.min(0.4, g[2]*0.45);
-      const lw = Math.max(0.4, g[2]*0.9);
-      // Vertical column S0→S1
       const pb = project(rx, y0, rz);
-      const pt = project(rx, y1, rz);
-      ctx.beginPath(); ctx.moveTo(pb.x, pb.y); ctx.lineTo(pt.x, pt.y);
-      ctx.strokeStyle = `rgba(100,255,160,${alpha})`;
-      ctx.lineWidth = lw; ctx.stroke();
-      // Horizontal@S1 → bornier
       const pc = project(ax, y1, az);
-      ctx.beginPath(); ctx.moveTo(pt.x, pt.y); ctx.lineTo(pc.x, pc.y);
-      ctx.strokeStyle = `rgba(255,107,53,${alpha*0.8})`;
-      ctx.lineWidth = lw*0.7; ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(pb.x, pb.y); ctx.lineTo(pc.x, pc.y);
+      ctx.strokeStyle = `rgba(${cc[0]},${cc[1]},${cc[2]},${alpha})`;
+      ctx.lineWidth = lw; ctx.stroke();
     }
 
-    // ── 3. Key: L-wiring (gold column + cyan horizontal → borniers) ──
+    // ── 3. Key routes: diagonal concept@S0 → each bornier@S1 (montagne) ──
     // RTE_KEY: [name, home_continent, continents, n_continents]
     for (const k of RTE_KEY) {
       const pos = S0P[k[0]];
@@ -304,30 +309,25 @@ route_render_js = """  // ═══ COLONNES MONTANTES en L — positions from S
       const [rx, rz] = rp(pos[0], pos[1]);
       const conts = k[2];
       const nc = k[3];
-      const alpha = Math.min(0.35, 0.08+nc*0.04);
-      // Vertical column
+      const isEsc = ESC_KEY.has(k[0]);
+      const alpha = isEsc ? Math.min(0.45, 0.15+nc*0.05) : Math.min(0.25, 0.06+nc*0.03);
+      const lw = isEsc ? 1.0 : 0.4;
       const pb = project(rx, y0, rz);
-      const pt = project(rx, y1, rz);
-      ctx.beginPath(); ctx.moveTo(pb.x, pb.y); ctx.lineTo(pt.x, pt.y);
-      ctx.strokeStyle = `rgba(255,220,80,${alpha})`;
-      ctx.lineWidth = 0.6; ctx.stroke();
-      // Horizontal@S1 → each continent bornier
-      ctx.setLineDash([3, 4]);
       for (const cont of conts) {
         if (cont === k[1]) continue;
         if (hasDomFilter) {
           const ccont = CONTINENTS.find(c => c.id === cont);
           if (ccont && !ccont.doms.some(d => activeDomains.has(d))) continue;
         }
-        const cc = RTE_C[cont];
-        if (!cc) continue;
-        const [ax, az] = rp(cc[0], cc[1]);
+        const cc2 = RTE_C[cont];
+        if (!cc2) continue;
+        const ccol = CONT_COL[cont] || [180,180,180];
+        const [ax, az] = rp(cc2[0], cc2[1]);
         const pc = project(ax, y1, az);
-        ctx.beginPath(); ctx.moveTo(pt.x, pt.y); ctx.lineTo(pc.x, pc.y);
-        ctx.strokeStyle = `rgba(53,212,255,${alpha*0.8})`;
-        ctx.lineWidth = 0.5; ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(pb.x, pb.y); ctx.lineTo(pc.x, pc.y);
+        ctx.strokeStyle = `rgba(${ccol[0]},${ccol[1]},${ccol[2]},${alpha})`;
+        ctx.lineWidth = lw; ctx.stroke();
       }
-      ctx.setLineDash([]);
     }
   }
 """
@@ -752,22 +752,32 @@ function frame(){{
         const dx=mouseX-it.px,dy=mouseY-it.py,dist=Math.sqrt(dx*dx+dy*dy);
         if(dist<14&&dist<nd){{nd=dist;ns=it}}
 
-        // Escalier glow
+        // Escalier = cercle pulsant (FORME distincte des routes)
         if(it.isEsc){{
           const isGeo=ESC_GEO.has(it.sym[0]);
-          const glowCol=isGeo?[100,255,160]:[255,220,80]; // green for geo, gold for key
-          ctx.beginPath();ctx.arc(it.px,it.py,dotR*5,0,Math.PI*2);
-          ctx.fillStyle=rgba(glowCol,it.sop*0.15);ctx.fill();
-          ctx.beginPath();ctx.arc(it.px,it.py,dotR*2.5,0,Math.PI*2);
-          ctx.fillStyle=rgba(glowCol,it.sop*0.4);ctx.fill();
+          const pulse=0.7+0.3*Math.sin(time*80+(it.px*0.1));
+          const r1=dotR*4*pulse;
+          const r2=dotR*2.5;
+          // Cercle pointille pulsant
+          ctx.save();
+          ctx.setLineDash(isGeo?[3,3]:[2,4]);
+          ctx.beginPath();ctx.arc(it.px,it.py,r1,0,Math.PI*2);
+          ctx.strokeStyle=isGeo?`rgba(100,255,160,${{it.sop*0.5*pulse}})`:`rgba(255,220,80,${{it.sop*0.5*pulse}})`;
+          ctx.lineWidth=1.2;ctx.stroke();
+          ctx.setLineDash([]);
+          // Halo interieur
+          ctx.beginPath();ctx.arc(it.px,it.py,r2,0,Math.PI*2);
+          ctx.fillStyle=isGeo?`rgba(100,255,160,${{it.sop*0.12}})`:`rgba(255,220,80,${{it.sop*0.12}})`;
+          ctx.fill();
+          ctx.restore();
         }}
 
         if(dist<14){{
           ctx.beginPath();ctx.arc(it.px,it.py,dotR*3.5,0,Math.PI*2);
           ctx.fillStyle=rgba(it.col,Math.min(1,it.sop*1.3));ctx.fill();
         }}else{{
-          ctx.beginPath();ctx.arc(it.px,it.py,it.isEsc?dotR*1.8:dotR,0,Math.PI*2);
-          ctx.fillStyle=rgba(it.col,it.sop*(it.isEsc?0.9:0.65));ctx.fill();
+          ctx.beginPath();ctx.arc(it.px,it.py,it.isEsc?dotR*1.5:dotR,0,Math.PI*2);
+          ctx.fillStyle=rgba(it.col,it.sop*(it.isEsc?0.85:0.65));ctx.fill();
         }}
       }}
     }}
@@ -792,6 +802,16 @@ function frame(){{
     ctx.strokeStyle=rgba(c,0.3);ctx.lineWidth=0.5;
     ctx.beginPath();ctx.moveTo(ns.px-20,ns.py);ctx.lineTo(ns.px+20,ns.py);ctx.stroke();
     ctx.beginPath();ctx.moveTo(ns.px,ns.py-20);ctx.lineTo(ns.px,ns.py+20);ctx.stroke();
+    // Tooltip flottant pres du curseur
+    const ttLines=[s[0]];
+    ttLines.push(s[4]+(contInfo?' \u2022 '+contInfo.name:''));
+    if(s[6]>0)ttLines.push(s[6].toLocaleString()+' papers');
+    ttLines.push(stName+(ns.isC2?' (C2)':' (C1)'));
+    if(ESC_GEO.has(s[0]))ttLines.push('\U0001F33F Escalier geographique');
+    if(ESC_KEY.has(s[0]))ttLines.push('\U0001F511 Passe-partout');
+    showTT(mouseX,mouseY,ttLines[0],ttLines.slice(1).join('<br>'));
+  }}else{{
+    hideTT();
   }}
 
   // \u2550\u2550\u2550 Central axis line (white, visible) \u2550\u2550\u2550
