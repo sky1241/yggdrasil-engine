@@ -1,29 +1,29 @@
 {
-  "test_id": 75,
-  "type": "pour",
+  "test_id": 49,
+  "type": "contre",
   "pair": [
-    "organoid",
-    "disease model"
+    "algebraic geometry",
+    "mollusc"
   ],
-  "timestamp": "2026-02-21T00:12:37.813778Z",
+  "timestamp": "2026-02-21T00:13:47.740630Z",
   "pipeline": "openalex+scisci+mycelium",
   "openalex_ids": [
-    "https://openalex.org/C31695470",
-    "https://openalex.org/C2779250428"
+    "https://openalex.org/C68363185",
+    "https://openalex.org/C6702695"
   ],
   "concept_a": {
-    "id": "https://openalex.org/C31695470",
-    "display_name": "Organoid",
-    "works_count": 28485,
-    "cited_by_count": 491668,
+    "id": "https://openalex.org/C68363185",
+    "display_name": "Algebraic geometry",
+    "works_count": 28004,
+    "cited_by_count": 285178,
     "level": 2
   },
   "concept_b": {
-    "id": "https://openalex.org/C2779250428",
-    "display_name": "Model for End-Stage Liver Disease",
-    "works_count": 3531,
-    "cited_by_count": 103456,
-    "level": 4
+    "id": "https://openalex.org/C6702695",
+    "display_name": "Whorl (mollusc)",
+    "works_count": 21050,
+    "cited_by_count": 49851,
+    "level": 3
   },
   "timeline": {
     "1975": 0,
@@ -81,8 +81,8 @@
   "co_total": 0,
   "scisci_metrics": {
     "co_strength": 0.0,
-    "expected_co": 0.4,
-    "z_score": -0.4,
+    "expected_co": 2.36,
+    "z_score": -1.54,
     "fitness": 0,
     "growth_ratio": Infinity,
     "peak_year": null,
@@ -107,5 +107,5 @@
     "P4": 85,
     "P5": 15
   },
-  "validated": false
+  "validated": true
 }

@@ -1,0 +1,14 @@
+{
+  "date": "2026-02-21T00:13:57.462416",
+  "total_tests": 100,
+  "total_valid": 87,
+  "grand_pct": 87.0,
+  "pour": {
+    "valid": 41,
+    "total": 50
+  },
+  "contre": {
+    "valid": 46,
+    "total": 50
+  }
+}
