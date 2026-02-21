@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
 gen_viz_v3.py — Generates yggdrasil_rain_v3.html
-Uses spectral positions from strates_export_v2.json.
-95 domain colors, interactive legend with filters.
+Spectral positions + 97 domain colors + 9 continent filters + sub-domain toggles.
 """
 import json, colorsys, re, os
 
@@ -45,9 +44,7 @@ print(f"Total C1: {total_c1}, C2: {total_c2}")
 print(f"Domains: {n_domains}")
 
 # ── Generate domain colors ──
-# Group domains by scientific family for better color coherence
 FAMILY_HUES = {
-    # Math: blue-purple (220-280)
     'algèbre': 230, 'algèbre lin': 225, 'topologie': 250, 'géométrie': 215,
     'géom diff': 210, 'géom algébrique': 245, 'nb théorie': 260, 'combinatoire': 270,
     'probabilités': 235, 'statistiques': 240, 'analyse': 220, 'analyse fonctionnelle': 228,
@@ -57,41 +54,31 @@ FAMILY_HUES = {
     'arithmétique': 268, 'descriptive': 272, 'nombres': 264, 'nb premiers': 266,
     'ordinaux': 278, 'complexes': 232, 'mesure': 226, 'stochastique': 236,
     'mécanique analytique': 208,
-    # Physics: cyan-teal (170-200)
     'quantique': 185, 'mécanique': 175, 'thermo': 178, 'mécanique stat': 182,
     'fluides': 190, 'relativité': 188, 'cosmologie': 195, 'électromagn': 172,
     'nucléaire': 168, 'particules': 180, 'QFT': 192, 'optique': 176,
     'gravitation': 198,
-    # CS/AI: violet-magenta (290-330)
     'informatique': 290, 'ML': 310, 'crypto': 295, 'signal': 300,
     'information': 305, 'vision': 315, 'NLP': 320, 'robotique': 325,
     'télécommunications': 298, 'contrôle': 302,
-    # Chemistry: orange-yellow (30-60)
     'chimie': 35, 'chimie organique': 42, 'polymères': 48, 'électrochimie': 28,
     'nanotechnologie': 55, 'matériaux': 25,
-    # Biology: green (90-140)
     'biologie': 120, 'écologie': 105, 'évolution': 130, 'immunologie': 100,
     'génomique': 135, 'oncologie': 95, 'bioinformatique': 140,
-    # Medicine: red-pink (340-360, 0-20)
     'médecine': 350, 'neurosciences': 345, 'biomédical': 355,
     'pharmacologie': 5, 'épidémiologie': 10, 'psychologie': 340,
-    # Earth: brown-olive (60-90)
     'géosciences': 70, 'climatologie': 80, 'sismologie': 65, 'volcanologie': 62,
     'océanographie': 85, 'agronomie': 75, 'environnement': 88,
-    # Engineering: steel blue (200-220)
     'ingénierie': 200, 'aérospatiale': 202, 'énergie': 197,
-    # Social: warm (15-30)
     'économie': 18, 'finance': 22, 'linguistique': 335, 'anthropologie': 330,
     'sociologie': 338, 'science politique': 15, 'démographie': 12,
     'droit': 8, 'éducation': 332, 'histoire': 20,
-    # General: neutral
     'science générale': 160, 'astronomie': 193,
 }
 
 domain_colors = {}
 for i, (domain, count) in enumerate(sorted_domains):
     hue = FAMILY_HUES.get(domain, (i * 360 / n_domains) % 360)
-    # Vary saturation/lightness by rank within same hue family
     sat = 0.70 + 0.12 * ((i % 3) / 2)
     lit = 0.52 + 0.08 * ((i % 5) / 4)
     r, g, b = colorsys.hls_to_rgb(hue / 360, lit, sat)
@@ -131,22 +118,34 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
 #info .sf{{font-size:12px;color:#8af;margin-bottom:5px}}
 #info .sd{{font-size:10.5px;color:#667;line-height:1.5}}
 #info .sl{{font-size:9px;color:#3a3a4a;margin-top:6px}}
-#dom-panel{{position:fixed;top:50%;right:12px;transform:translateY(-50%);z-index:10;max-height:80vh;overflow-y:auto;
-  display:flex;flex-direction:column;gap:0px;pointer-events:all;padding:4px;
+#cont-panel{{position:fixed;top:12px;right:12px;z-index:10;pointer-events:all;
+  display:flex;flex-direction:column;gap:2px;max-height:94vh;overflow-y:auto;
   scrollbar-width:thin;scrollbar-color:#222 transparent}}
-#dom-panel::-webkit-scrollbar{{width:3px}}
-#dom-panel::-webkit-scrollbar-thumb{{background:#333;border-radius:2px}}
-.di{{display:flex;align-items:center;gap:6px;padding:2px 8px 2px 5px;border-radius:3px;cursor:pointer;
-  transition:all 0.2s;border:1px solid transparent;opacity:0.6}}
-.di:hover{{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.06);opacity:1}}
-.di.act{{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12);opacity:1}}
-.di.dim{{opacity:0.15}}
-.dd{{width:7px;height:7px;border-radius:50%;flex-shrink:0}}
-.dn{{font-size:8px;letter-spacing:0.4px;color:#556;transition:color 0.2s;white-space:nowrap;max-width:120px;overflow:hidden;text-overflow:ellipsis}}
-.di.act .dn,.di:hover .dn{{color:#99a}}
-.dc{{font-size:7px;color:#334;margin-left:auto;padding-left:4px}}
-#dom-reset{{font-size:8px;color:#445;letter-spacing:1px;text-align:center;padding:4px 0;cursor:pointer;border-top:1px solid #1a1a22;margin-top:2px}}
-#dom-reset:hover{{color:#8af}}
+#cont-panel::-webkit-scrollbar{{width:3px}}
+#cont-panel::-webkit-scrollbar-thumb{{background:#333;border-radius:2px}}
+.cb{{display:flex;align-items:center;gap:6px;padding:4px 10px;border-radius:4px;cursor:pointer;
+  transition:all 0.15s;border:1px solid rgba(255,255,255,0.04);user-select:none}}
+.cb:hover{{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08)}}
+.cb.act{{border-color:rgba(255,255,255,0.15)}}
+.cb.dim{{opacity:0.2}}
+.cb-icon{{font-size:11px;flex-shrink:0}}
+.cb-name{{font-size:8.5px;letter-spacing:0.5px;color:#556;transition:color 0.15s;white-space:nowrap}}
+.cb.act .cb-name,.cb:hover .cb-name{{color:#bbc}}
+.cb-count{{font-size:7px;color:#334;margin-left:auto;padding-left:6px}}
+.sub-doms{{display:none;flex-direction:column;gap:0px;padding:0 0 2px 20px}}
+.sub-doms.open{{display:flex}}
+.sd-item{{display:flex;align-items:center;gap:5px;padding:1px 8px 1px 4px;border-radius:3px;cursor:pointer;
+  transition:all 0.15s;border:1px solid transparent;opacity:0.5}}
+.sd-item:hover{{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.06);opacity:1}}
+.sd-item.act{{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);opacity:1}}
+.sd-item.dim{{opacity:0.12}}
+.sd-dot{{width:6px;height:6px;border-radius:50%;flex-shrink:0}}
+.sd-name{{font-size:7.5px;color:#445;letter-spacing:0.3px;white-space:nowrap;max-width:105px;overflow:hidden;text-overflow:ellipsis}}
+.sd-item.act .sd-name,.sd-item:hover .sd-name{{color:#88a}}
+.sd-cnt{{font-size:6.5px;color:#2a2a35;margin-left:auto;padding-left:3px}}
+#cont-reset{{font-size:8px;color:#445;letter-spacing:1.5px;text-align:center;padding:5px 0;cursor:pointer;
+  border-top:1px solid #1a1a22;margin-top:3px}}
+#cont-reset:hover{{color:#8af}}
 #strate-legend{{position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:10;display:flex;flex-direction:column;gap:1px;pointer-events:all}}
 .si{{display:flex;align-items:center;gap:6px;padding:3px 8px;border-radius:3px;cursor:pointer;transition:all 0.2s;border:1px solid transparent}}
 .si:hover{{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.06)}}
@@ -164,7 +163,7 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
 <canvas id="c"></canvas>
 <div id="hud">
   <h1>Yggdrasil · La Pluie v3</h1>
-  <div class="sub">{total_c1} symboles · {n_domains} domaines · positions spectrales</div>
+  <div class="sub">{total_c1} symboles · {n_domains} domaines · 9 continents</div>
 </div>
 <div id="info">
   <div class="sn" id="sn">—</div>
@@ -177,8 +176,8 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
   <label><input type="checkbox" id="toggleC3" onchange="switchMode()"> C3 Fusion</label>
 </div>
 <div id="strate-legend"></div>
-<div id="dom-panel"></div>
-<div id="hint"><kbd>drag</kbd> rotation · <kbd>scroll</kbd> zoom · <kbd>clic</kbd> domaine · <kbd>shift+clic</kbd> solo · <kbd>espace</kbd> pause</div>
+<div id="cont-panel"></div>
+<div id="hint"><kbd>drag</kbd> rotation · <kbd>scroll</kbd> zoom · <kbd>clic</kbd> continent · <kbd>clic</kbd> domaine · <kbd>espace</kbd> pause</div>
 <script>
 {ST_C1_LINE}
 {CTR_C1_LINE}
@@ -188,8 +187,37 @@ let currentST=ST_C1,currentCTR=CTR_C1,isC2=false,isC3=false;
 {dc_js}
 {dl_js}
 
+// ═══ Continent → Domains mapping ═══
+const CONTINENTS=[
+  {{id:'chimie',icon:'\U0001F7E0',name:'CHIMIE & MAT\u00c9RIAUX',
+    doms:['chimie','chimie organique','polym\u00e8res','nanotechnologie','\u00e9lectrochimie','mat\u00e9riaux']}},
+  {{id:'bio',icon:'\U0001F7E2',name:'BIO & M\u00c9DECINE',
+    doms:['biologie','m\u00e9decine','immunologie','pharmacologie','g\u00e9nomique','biom\u00e9dical','oncologie','bioinformatique','neurosciences']}},
+  {{id:'terre',icon:'\U0001F30D',name:'TERRE & VIVANT',
+    doms:['g\u00e9osciences','climatologie','oc\u00e9anographie','\u00e9cologie','environnement','sismologie','volcanologie','agronomie','\u00e9volution']}},
+  {{id:'physique',icon:'\U0001F535',name:'PHYSIQUE',
+    doms:['m\u00e9canique','quantique','relativit\u00e9','particules','QFT','nucl\u00e9aire','cosmologie','m\u00e9canique stat','astronomie']}},
+  {{id:'ingenierie',icon:'\u2699\uFE0F',name:'ING\u00c9NIERIE & TECHNO',
+    doms:['ing\u00e9nierie','a\u00e9rospatiale','\u00e9lectromagn','optique','signal','t\u00e9l\u00e9communications','robotique','\u00e9nergie','fluides','thermo','contr\u00f4le']}},
+  {{id:'math',icon:'\U0001F7E3',name:'MATH PURE',
+    doms:['alg\u00e8bre','analyse','topologie','g\u00e9om\u00e9trie','EDP','probabilit\u00e9s','combinatoire','nb th\u00e9orie',
+      'ensembles','cat\u00e9gories','syst\u00e8mes dynamiques','alg\u00e8bre lin','analyse fonctionnelle',
+      'g\u00e9om alg\u00e9brique','g\u00e9om diff','analyse num\u00e9rique','trigonom\u00e9trie']}},
+  {{id:'info',icon:'\U0001F4BB',name:'INFO & MATH DISCR\u00c8TE',
+    doms:['informatique','complexit\u00e9','calculabilit\u00e9','automates','logique','crypto','optimisation','ML','vision','information','NLP']}},
+  {{id:'humaines',icon:'\U0001F534',name:'SCIENCES HUMAINES',
+    doms:['\u00e9conomie','finance','sociologie','psychologie','linguistique','\u00e9ducation','histoire','anthropologie','science politique','d\u00e9mographie','droit']}},
+  {{id:'transversal',icon:'\u25C7',name:'TRANSVERSAL',
+    doms:['science g\u00e9n\u00e9rale','statistiques']}}
+];
+
+// Build reverse map: domain → continent id
+const DOM_TO_CONT={{}};
+CONTINENTS.forEach(c=>c.doms.forEach(d=>DOM_TO_CONT[d]=c.id));
+
 // ═══ State ═══
 const activeDomains=new Set();
+let activeContinent=null; // null = all visible
 let activeS=-1;
 
 // ═══ Canvas ═══
@@ -216,39 +244,88 @@ function project(x,y,z){{
 }}
 function rgba(c,a){{return`rgba(${{c[0]}},${{c[1]}},${{c[2]}},${{a}})`}}
 
-// ═══ Domain panel ═══
-const domPanel=document.getElementById('dom-panel');
-function buildDomPanel(){{
-  domPanel.innerHTML='';
-  DL.forEach(([name,count])=>{{
-    const el=document.createElement('div');el.className='di';el.dataset.dom=name;
-    const c=DC[name]||[128,128,128];
-    el.innerHTML=`<div class="dd" style="background:rgb(${{c[0]}},${{c[1]}},${{c[2]}})"></div><div class="dn">${{name}}</div><div class="dc">${{count}}</div>`;
-    el.addEventListener('click',e=>{{
-      if(e.shiftKey){{
-        // Solo mode
-        if(activeDomains.size===1&&activeDomains.has(name)){{activeDomains.clear()}}
-        else{{activeDomains.clear();activeDomains.add(name)}}
+// ═══ Continent panel ═══
+const contPanel=document.getElementById('cont-panel');
+function domCountInContinent(cont){{
+  let total=0;
+  cont.doms.forEach(d=>{{const found=DL.find(x=>x[0]===d);if(found)total+=found[1]}});
+  return total;
+}}
+
+function buildContPanel(){{
+  contPanel.innerHTML='';
+  CONTINENTS.forEach(cont=>{{
+    const total=domCountInContinent(cont);
+    // Continent button
+    const btn=document.createElement('div');btn.className='cb';btn.dataset.cont=cont.id;
+    btn.innerHTML=`<span class="cb-icon">${{cont.icon}}</span><span class="cb-name">${{cont.name}}</span><span class="cb-count">${{total}}</span>`;
+    btn.addEventListener('click',()=>{{
+      if(activeContinent===cont.id){{
+        // Deselect continent
+        activeContinent=null;activeDomains.clear();
       }}else{{
-        if(activeDomains.has(name))activeDomains.delete(name);else activeDomains.add(name);
+        // Select this continent
+        activeContinent=cont.id;
+        activeDomains.clear();
+        cont.doms.forEach(d=>activeDomains.add(d));
       }}
-      updateDomUI();
+      updateContUI();
     }});
-    domPanel.appendChild(el);
+    contPanel.appendChild(btn);
+
+    // Sub-domains container
+    const subDiv=document.createElement('div');subDiv.className='sub-doms';subDiv.dataset.cont=cont.id;
+    cont.doms.forEach(d=>{{
+      const found=DL.find(x=>x[0]===d);
+      const cnt=found?found[1]:0;
+      if(cnt===0)return; // skip domains not in data
+      const c=DC[d]||[128,128,128];
+      const el=document.createElement('div');el.className='sd-item';el.dataset.dom=d;
+      el.innerHTML=`<div class="sd-dot" style="background:rgb(${{c[0]}},${{c[1]}},${{c[2]}})"></div><span class="sd-name">${{d}}</span><span class="sd-cnt">${{cnt}}</span>`;
+      el.addEventListener('click',e=>{{
+        e.stopPropagation();
+        if(activeDomains.size===1&&activeDomains.has(d)){{
+          // Back to full continent
+          activeDomains.clear();
+          const cc=CONTINENTS.find(x=>x.id===activeContinent);
+          if(cc)cc.doms.forEach(dd=>activeDomains.add(dd));
+        }}else{{
+          // Solo this domain
+          activeDomains.clear();activeDomains.add(d);
+        }}
+        updateContUI();
+      }});
+      subDiv.appendChild(el);
+    }});
+    contPanel.appendChild(subDiv);
   }});
-  const reset=document.createElement('div');reset.id='dom-reset';reset.textContent='TOUS';
-  reset.addEventListener('click',()=>{{activeDomains.clear();updateDomUI()}});
-  domPanel.appendChild(reset);
+  // TOUT reset
+  const reset=document.createElement('div');reset.id='cont-reset';reset.textContent='TOUT';
+  reset.addEventListener('click',()=>{{activeContinent=null;activeDomains.clear();updateContUI()}});
+  contPanel.appendChild(reset);
 }}
-function updateDomUI(){{
-  const hasFilter=activeDomains.size>0;
-  domPanel.querySelectorAll('.di').forEach(el=>{{
+
+function updateContUI(){{
+  const hasFilter=activeContinent!==null;
+  // Update continent buttons
+  contPanel.querySelectorAll('.cb').forEach(el=>{{
+    const cid=el.dataset.cont;
+    el.classList.toggle('act',cid===activeContinent);
+    el.classList.toggle('dim',hasFilter&&cid!==activeContinent);
+  }});
+  // Show/hide sub-domains
+  contPanel.querySelectorAll('.sub-doms').forEach(el=>{{
+    el.classList.toggle('open',el.dataset.cont===activeContinent);
+  }});
+  // Update sub-domain items
+  contPanel.querySelectorAll('.sd-item').forEach(el=>{{
     const d=el.dataset.dom;
+    const isSolo=activeDomains.size===1;
     el.classList.toggle('act',activeDomains.has(d));
-    el.classList.toggle('dim',hasFilter&&!activeDomains.has(d));
+    el.classList.toggle('dim',isSolo&&!activeDomains.has(d));
   }});
 }}
-buildDomPanel();
+buildContPanel();
 
 // ═══ Strate legend (left) ═══
 const strateLeg=document.getElementById('strate-legend');
@@ -321,7 +398,7 @@ function frame(){{
       const dom=sym[4];
       const domCol=DC[dom]||st.c;
       let finalOp=sop;
-      if(hasDomFilter&&!activeDomains.has(dom))finalOp*=0.04;
+      if(hasDomFilter&&!activeDomains.has(dom))finalOp*=0.03;
       items.push({{type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:domCol,sop:finalOp,isCentre}});
     }});
   }});
@@ -342,7 +419,7 @@ function frame(){{
         const dom=sym[4];
         const domCol=DC[dom]||st.c;
         let finalOp=sop;
-        if(hasDomFilter&&!activeDomains.has(dom))finalOp*=0.04;
+        if(hasDomFilter&&!activeDomains.has(dom))finalOp*=0.03;
         items.push({{type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:domCol,sop:finalOp,isCentre,isC2:true}});
       }});
     }});
@@ -389,9 +466,11 @@ function frame(){{
   if(ns){{
     const s=ns.sym;
     const c=ns.col;
+    const contId=DOM_TO_CONT[s[4]]||'';
+    const contInfo=CONTINENTS.find(x=>x.id===contId);
     document.getElementById('sn').textContent=s[0];
     document.getElementById('sn').style.color=`rgb(${{c[0]}},${{c[1]}},${{c[2]}})`;
-    document.getElementById('sf').textContent=s[4];
+    document.getElementById('sf').textContent=s[4]+(contInfo?' · '+contInfo.icon+' '+contInfo.name:'');
     document.getElementById('sf').style.color=`rgb(${{c[0]}},${{c[1]}},${{c[2]}})`;
     const stName=currentST[ns.si]?.sh||'';
     document.getElementById('sd').textContent=stName;
