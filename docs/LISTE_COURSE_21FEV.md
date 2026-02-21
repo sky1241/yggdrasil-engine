@@ -29,38 +29,30 @@
 - [x] Prompt handoff V2 écrit → docs/PROMPT_ESCALIERS_V2.md
 - [x] Commit git (5 fichiers, 12,574 lignes)
 
+## ✅ FAIT PAR SESSION 3 (Claude Opus 4.6, 21 fév après-midi)
+
+- [x] Push git (token renouvelé par Sky)
+- [x] Ajouter works_count dans strates_export_v2.json (549 originaux → wc=0, 20700 minés déjà OK)
+- [x] Implémenter Q1 par domaine dans le code de La Pluie v3 (16,382 vivant / 4,846 musée)
+- [x] Rewire les checkboxes C1/C2/C3 Fusion → radio vivant/musée/fusion
+- [x] Virer les 13 suspects de S0 C1 → tous reclassés C2 puis déplacés S3
+- [x] Fix bug: Hagen-Poiseuille flow domain "droit" → "fluides" (2 concepts corrigés)
+- [x] Déplacer 19 C2 de S0 vers S3 (8 originaux + 11 suspects reclassés)
+- [x] Poincaré conjecture: C2 → C1 (résolu par Perelman 2003)
+- [x] Intégrer escaliers spectraux dans La Pluie v3 (toggle: 200 geo glow vert + 69 key glow or)
+- [x] Mettre à jour SOL.md avec les nouvelles décisions
+- [x] Script cleanup_s0.py créé (reproductible)
+- [x] Commit + push: 4d7b233
+
 ## ❌ PAS FAIT (pour le prochain Claude)
 
-- [ ] Push git (token expiré, Sky doit renouveler)
-- [ ] Ajouter works_count dans strates_export_v2.json (croiser avec mined_concepts.json)
-- [ ] Implémenter Q1 par domaine dans le code de La Pluie v3
-- [ ] Rewire les checkboxes C1/C2/C3 Fusion → vivant/musée/fusion
-- [ ] Virer les 13 suspects de S0 C1:
-      - Black hole information paradox → S3 C2
-      - Homotopy hypothesis → S3 C2
-      - Non-standard cosmology → S0 C2
-      - Unparticle physics → S0 C2
-      - Multiple chemical sensitivity → S0 C2
-      - Group selection → S0 C2
-      - International Linear Collider → S0 C2
-      - Neocolonialism → S0 C2
-      - Creative class → S0 C2
-      - Bertrand paradox (economics) → S0 C2
-      - Ridge push → S0 C2
-      - Phylogenetic nomenclature → S0 C2
-      - Superselection → S0 C2
-- [ ] Fix bug: Hagen-Poiseuille flow domain "droit" → "fluides"
-- [ ] Déplacer 8 C2 de S0 vers leur vraie strate
-- [ ] Poincaré conjecture: C2 → C1 (résolu par Perelman 2003)
 - [ ] Croiser flux Physarum (mycelium) × works_count (nœuds) → lister contradictions
 - [ ] Identifier: concepts isolés, ponts cachés, vides fertiles (P4)
-- [ ] Intégrer escaliers spectraux dans La Pluie v3 (layer toggle)
 - [ ] Viz 3D routes escaliers entre strates
-- [ ] Mettre à jour SOL.md avec les nouvelles décisions
 
 ## 🧠 DÉCISIONS PRISES (ne pas remettre en question)
 
-1. S0 = sol solide, 99.90% propre — on construit dessus
+1. S0 = sol solide, 100% C1 (21,228 symboles) — on construit dessus
 2. Vivant = works_count >= Q1 de son domaine (pas seuil fixe)
 3. 2 types d'escaliers: géographique (position spectrale) + passe-partout (multi-continent)
 4. Les contradictions entre couches = le vrai signal
