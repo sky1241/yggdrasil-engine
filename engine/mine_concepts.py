@@ -1,11 +1,11 @@
 """
-YGGDRASIL ENGINE — Phase 3 : MINAGE
-Extraire ~4,000+ concepts math/physique/CS des 65K concepts OpenAlex.
+YGGDRASIL ENGINE — Phase 3 : MINAGE v2
+Extraire ~8,000-15,000 concepts TOUTES SCIENCES des 65K concepts OpenAlex.
 Auto-classifier en strates S0-S6 + tags C1/C2.
 
-Entrée  : E:/openalex/data/concepts/ (snapshot gzip)
+Entrée  : D:/openalex/data/concepts/ (snapshot gzip)
 Sortie  : data/mined_concepts.json (concepts classifiés)
-          data/strates_export_v2.json (794 originaux + ~4,000 minés)
+          data/strates_export_v2.json (794 originaux + minés)
 """
 import gzip
 import json
@@ -15,19 +15,19 @@ from pathlib import Path
 from collections import defaultdict, Counter
 
 ROOT = Path(__file__).parent.parent
-CONCEPTS_DIR = Path("E:/openalex/data/concepts")
+CONCEPTS_DIR = Path("D:/openalex/data/concepts")
 STRATES_FILE = ROOT / "data" / "strates_export.json"
 OUTPUT_MINED = ROOT / "data" / "mined_concepts.json"
 OUTPUT_STRATES_V2 = ROOT / "data" / "strates_export_v2.json"
 
 # ═══════════════════════════════════════════════════════════
-# FILTRES : ce qui EST math/physique/CS
+# FILTRES : ce qui EST science (TOUTES SCIENCES)
 # ═══════════════════════════════════════════════════════════
 
-# Keywords that indicate math/physics/CS content
+# Keywords that indicate scientific content
 # Checked against BOTH display_name AND description
 INCLUDE_KEYWORDS = [
-    # Pure math
+    # ── Pure math ──
     'mathematic', 'algebra', 'algebraic', 'topology', 'topological',
     'geometry', 'geometric', 'geometrical', 'arithmetic', 'arithmetical',
     'calculus', 'number theory', 'combinatoric', 'combinatorial',
@@ -62,7 +62,7 @@ INCLUDE_KEYWORDS = [
     'projective geometry', 'affine geometry', 'euclidean geometry',
     'non-euclidean', 'hyperbolic geometry',
 
-    # Logic & Computability
+    # ── Logic & Computability ──
     'mathematical logic', 'formal logic', 'predicate logic',
     'propositional logic', 'modal logic', 'first-order logic',
     'computability', 'computable', 'recursive function',
@@ -74,7 +74,7 @@ INCLUDE_KEYWORDS = [
     'coding theory', 'error-correcting', 'cryptograph',
     'lambda calculus', 'type theory', 'proof theory',
 
-    # Physics math
+    # ── Physics ──
     'quantum mechanics', 'quantum field', 'quantum computing',
     'quantum information', 'quantum entanglement', 'quantum state',
     'hamiltonian', 'lagrangian', 'schrodinger', 'schrödinger',
@@ -94,8 +94,12 @@ INCLUDE_KEYWORDS = [
     'optics', 'photon', 'laser',
     'boson', 'fermion', 'quark', 'lepton', 'neutrino',
     'feynman', 'dirac equation', 'klein-gordon',
+    'plasma', 'semiconductor', 'magnetism', 'magnetic',
+    'acoustic', 'ultrasound', 'piezoelectric',
+    'crystal', 'crystallograph', 'lattice',
+    'spectroscop', 'diffraction', 'interferometr',
 
-    # Applied math / CS theory
+    # ── Applied math / CS theory ──
     'algorithm', 'data structure', 'sorting algorithm',
     'machine learning', 'neural network', 'deep learning',
     'artificial intelligence',
@@ -106,8 +110,14 @@ INCLUDE_KEYWORDS = [
     'monte carlo', 'simulation',
     'information retrieval', 'data compression',
     'boolean satisfiability', 'constraint satisfaction',
+    'computer vision', 'natural language processing',
+    'robotics', 'autonomous', 'computer graphics',
+    'database', 'distributed system', 'operating system',
+    'compiler', 'programming language', 'software engineer',
+    'network protocol', 'internet', 'wireless',
+    'parallel computing', 'cloud computing', 'blockchain',
 
-    # Named math objects with high relevance
+    # ── Named math objects ──
     'hilbert space', 'banach space', 'sobolev space',
     'lebesgue', 'hausdorff', 'cantor set',
     'mandelbrot', 'fractal', 'self-similar',
@@ -115,69 +125,119 @@ INCLUDE_KEYWORDS = [
     'euler characteristic', 'betti number',
     'gaussian', 'poisson', 'exponential distribution',
     'normal distribution', 'binomial distribution',
+
+    # ── Médecine & Biologie ──
+    'epidemiolog', 'pandemic', 'endemic', 'pathogen',
+    'pharmacolog', 'drug discovery', 'clinical trial',
+    'bioinformatic', 'computational biology', 'systems biology',
+    'genomic', 'proteomics', 'metabolomics', 'transcriptomics',
+    'neuroscien', 'neurolog', 'brain imaging', 'cognitive science',
+    'biostatistic', 'survival analysis', 'cox regression',
+    'medical imaging', 'mri', 'ct scan', 'tomograph',
+    'immunolog', 'antibod', 'antigen', 'vaccine',
+    'cell biology', 'molecular biology', 'microbiology',
+    'genetics', 'genetic', 'gene expression', 'dna', 'rna',
+    'biochemistr', 'enzyme', 'protein', 'amino acid',
+    'ecology', 'ecosystem', 'biodiversity', 'population dynamics',
+    'evolution', 'evolutionary', 'natural selection', 'phylogenet',
+    'anatomy', 'physiolog', 'patholog',
+    'virology', 'bacteriology', 'parasitolog',
+    'oncolog', 'cardiolog', 'endocrinol',
+    'toxicolog', 'radiolog', 'anesthesi',
+    'biomedical', 'biotechnolog', 'tissue engineering',
+    'stem cell', 'regenerative', 'prosthetic',
+    'surgery', 'surgical', 'transplant',
+    'psychiatr', 'psychopharmacol',
+    'public health', 'global health', 'health policy',
+    'nutrition', 'dietetic',
+    'veterinary', 'zoolog', 'entomolog', 'botan',
+
+    # ── Chimie ──
+    'chemistry', 'chemical', 'molecule', 'molecular',
+    'organic chemistry', 'inorganic chemistry', 'physical chemistry',
+    'polymer', 'catalys', 'electrochemist',
+    'spectroscop', 'chromatograph', 'mass spectrometry',
+    'nanomaterial', 'nanotechnolog', 'nanoparticle',
+    'chemical reaction', 'reaction kinetics', 'thermochemist',
+    'photochemist', 'surface chemistry', 'colloid',
+    'analytical chemistry', 'synthesis', 'reagent',
+
+    # ── Sciences de la Terre ──
+    'geology', 'geological', 'geophysic', 'geochemist',
+    'seismolog', 'seismic', 'earthquake', 'tectonic',
+    'climatolog', 'climate', 'meteorolog', 'atmospheric',
+    'oceanograph', 'hydrology', 'hydrogeolog',
+    'volcanol', 'volcanic', 'magma', 'lava',
+    'mineralog', 'petrograph', 'petrology',
+    'paleontolog', 'fossil', 'stratigraphy',
+    'glaciolog', 'permafrost', 'ice sheet',
+    'remote sensing', 'gis', 'geographic information',
+    'geodesy', 'cartograph',
+    'soil science', 'pedology',
+    'marine biology', 'limnolog',
+
+    # ── Sciences sociales quantitatives ──
+    'economics', 'economic', 'econometric', 'macroeconomic', 'microeconomic',
+    'game theory', 'utility ', 'market equilibrium',
+    'finance', 'financial', 'black-scholes', 'option pricing',
+    'portfolio', 'risk management', 'actuarial',
+    'demography', 'demographic', 'population',
+    'psychometrics', 'cognitive psychology', 'behavioral',
+    'sociometry', 'social network', 'network analysis',
+    'linguistics', 'computational linguistics', 'phonetics',
+    'anthropolog', 'ethnograph',
+
+    # ── Ingénierie ──
+    'engineering', 'mechanical', 'electrical', 'electronic',
+    'civil engineering', 'structural', 'materials science',
+    'aerospace', 'aerodynamic', 'propulsion',
+    'chemical engineering', 'process engineering',
+    'biomedical engineering', 'biomechanic',
+    'telecommunication', 'antenna', 'radar',
+    'power system', 'renewable energy', 'solar cell',
+    'nuclear engineering', 'reactor', 'fusion energy',
+    'robotics', 'mechatronics', 'automation',
+    'manufacturing', 'industrial engineering',
+    'hydraulic', 'pneumatic', 'thermodynamic',
+
+    # ── Agronomie & Environnement ──
+    'agronomy', 'agriculture', 'crop science', 'plant science',
+    'forestry', 'silviculture', 'agroecolog',
+    'environmental science', 'pollution', 'remediation',
+    'sustainability', 'renewable resource',
+    'aquaculture', 'fisheries science',
 ]
 
 # ═══════════════════════════════════════════════════════════
-# FILTRES : ce qui N'EST PAS math (même si keywords matchent)
+# FILTRES : BRUIT PUR — aucun rapport avec la science
 # ═══════════════════════════════════════════════════════════
 EXCLUDE_KEYWORDS = [
-    # Medicine / Biology
-    'disease', 'syndrome', 'therapy', 'treatment', 'clinical',
-    'patient', 'surgery', 'surgical', 'diagnosis', 'symptom',
-    'gene ', 'genetic', 'protein', 'cell ', 'tissue', 'organ ',
-    'species', 'bacteria', 'virus', 'infection', 'immune',
-    'cancer', 'tumor', 'tumour', 'carcinoma', 'leukemia',
-    'pharma', 'drug ', 'dosage', 'toxicity', 'receptor',
-    'neuroscience', 'cognitive', 'brain ', 'cortex',
-    'blood ', 'cardiac', 'pulmonary', 'renal', 'hepat',
-    'dental', 'oral ', 'veterinary', 'nursing',
-    'embryo', 'fetal', 'pregnancy', 'obstetric',
-    'anatomy', 'physiolog', 'patholog',
-    'enzyme', 'metaboli', 'biosynthesis', 'dna ',
-    'genome', 'transcription', 'ribosom', 'chromosome',
-    'phylogenet', 'taxonomy', 'ecology', 'ecosystem',
-    'plant ', 'animal ', 'insect', 'bird ', 'fish ',
+    # Cuisine / Mode / Loisirs
+    'cooking', 'food preparation', 'recipe',
+    'fashion', 'textile design', 'clothing design',
+    'sport', 'athletic', 'fitness', 'bodybuilding',
+    'tourism', 'hospitality', 'hotel management',
+    'photography', 'camera obscura',
+    'hairstyl', 'cosmetolog', 'manicur',
 
-    # Social sciences
-    'archaeology', 'archeolog', 'excavat',
-    'marketing', 'advertising', 'consumer',
-    'management', 'leadership', 'organizational',
-    'education', 'pedagogy', 'curriculum', 'classroom',
-    'literature', 'literary', 'novel ', 'poetry',
-    'art ', 'artistic', 'music', 'musical', 'cinema',
-    'religion', 'theological', 'spiritual',
-    'politics', 'political', 'democracy', 'election',
-    'law ', 'legal', 'court', 'jurisprud',
-    'psychology', 'psycholog', 'personality', 'emotion',
-    'sociology', 'sociolog', 'social ',
-    'linguistics', 'language ', 'grammar', 'syntax',
-    'history', 'historical', 'medieval', 'ancient ',
-    'geography', 'geographic', 'climate', 'weather',
-    'agriculture', 'crop ', 'soil ', 'irrigation',
+    # Arts / Divertissement pur
+    'cinema', 'film genre', 'screenplay',
+    'popular music', 'rock music', 'jazz music', 'hip hop',
+    'painting style', 'sculpture',
+    'video game', 'board game', 'card game',
+    'dance style', 'choreograph', 'ballet',
+    'comic book', 'manga', 'anime',
 
-    # Earth sciences
-    'geology', 'geological', 'mineral', 'seismic',
-    'oceanograph', 'marine ', 'coastal',
-    'volcanic', 'earthquake', 'tectonic',
+    # Religion / Spiritualité pure
+    'theological', 'sermon', 'worship',
+    'astrology', 'horoscope', 'zodiac',
 
-    # Engineering (too applied)
-    'civil engineering', 'structural engineering',
-    'mechanical engineering', 'electrical engineering',
-    'chemical engineering', 'biomedical engineering',
-    'manufacturing', 'industrial',
-    'construction', 'building ', 'architect',
-    'automotive', 'aerospace', 'aircraft',
-
-    # Other noise
-    'cooking', 'food ', 'nutrition',
-    'fashion', 'textile', 'clothing',
-    'sport', 'athletic', 'fitness',
-    'tourism', 'hospitality',
-    'photography', 'camera', 'film ',
-    'geodesy', 'cartograph', 'surveying',
-    'dentistry', 'ophthalmol', 'dermatol',
-    'forestry', 'fishery', 'aquaculture',
-    'accounting', 'auditing', 'taxation',
+    # Administration / Bureaucratie
+    'public administration', 'bureaucrac',
+    'library science', 'archival',
+    'real estate', 'property management',
+    'human resources', 'personnel management',
+    'office management', 'secretarial',
 ]
 
 # ═══════════════════════════════════════════════════════════
@@ -186,18 +246,148 @@ EXCLUDE_KEYWORDS = [
 DOMAIN_RULES = [
     # (keywords_in_name_or_desc, domain_name)
     # Order matters — first match wins
+    # ── MORE SPECIFIC domains first ──
+
+    # Médecine & Bio spécialisés
+    (['epidemiolog', 'pandemic', 'endemic', 'sir model',
+      'disease spread', 'contact tracing', 'herd immunity'], 'épidémiologie'),
+    (['pharmacolog', 'drug discovery', 'drug design', 'pharmaceutical',
+      'pharmacokinetic', 'pharmacodynamic', 'dosimetry'], 'pharmacologie'),
+    (['bioinformatic', 'computational biology', 'systems biology',
+      'sequence alignment', 'gene network', 'protein folding'], 'bioinformatique'),
+    (['neuroscien', 'neurolog', 'brain imaging', 'cognitive neuroscience',
+      'neural pathway', 'synapse', 'neurotransmitter',
+      'eeg', 'fmri', 'connectome'], 'neurosciences'),
+    (['genomic', 'proteomics', 'metabolomics', 'transcriptomics',
+      'gene expression', 'dna sequencing', 'crispr'], 'génomique'),
+    (['immunolog', 'antibod', 'antigen', 'vaccine',
+      'immune system', 'autoimmun', 'cytokine'], 'immunologie'),
+    (['oncolog', 'cancer', 'tumor', 'metastasis',
+      'chemotherapy', 'radiation therapy'], 'oncologie'),
+    (['biomedical engineering', 'biomechanic', 'prosthetic',
+      'medical imaging', 'mri', 'ct scan', 'tomograph',
+      'tissue engineering', 'biocompatib'], 'biomédical'),
+    (['medical', 'clinical', 'surgery', 'surgical',
+      'cardiolog', 'endocrinol', 'radiolog',
+      'anesthesi', 'psychiatr', 'patholog',
+      'diagnosis', 'treatment', 'patient',
+      'public health', 'global health'], 'médecine'),
+
+    # Biologie
+    (['ecology', 'ecosystem', 'biodiversity', 'habitat',
+      'conservation biology', 'species richness'], 'écologie'),
+    (['evolution', 'evolutionary', 'natural selection', 'phylogenet',
+      'speciation', 'adaptation', 'darwinian'], 'évolution'),
+    (['cell biology', 'molecular biology', 'microbiology',
+      'virology', 'bacteriology', 'parasitolog',
+      'biochemistr', 'enzyme', 'protein', 'amino acid',
+      'dna', 'rna', 'genetics', 'genetic',
+      'stem cell', 'regenerative', 'biotechnolog',
+      'zoolog', 'entomolog', 'botan',
+      'anatomy', 'physiolog', 'veterinary',
+      'biology', 'population dynamics', 'lotka-volterra',
+      'mathematical biology'], 'biologie'),
+
+    # Sciences de la Terre
+    (['seismolog', 'seismic', 'earthquake', 'tectonic',
+      'lithosphere', 'mantle', 'richter'], 'sismologie'),
+    (['climatolog', 'climate change', 'global warming',
+      'greenhouse', 'carbon cycle', 'paleoclimate',
+      'meteorolog', 'atmospheric', 'weather forecast'], 'climatologie'),
+    (['volcanol', 'volcanic', 'magma', 'lava', 'eruption',
+      'pyroclastic'], 'volcanologie'),
+    (['oceanograph', 'marine science', 'ocean current',
+      'deep sea', 'coral reef', 'marine biology', 'limnolog'], 'océanographie'),
+    (['geology', 'geological', 'geophysic', 'geochemist',
+      'mineralog', 'petrograph', 'petrology',
+      'paleontolog', 'fossil', 'stratigraphy',
+      'glaciolog', 'permafrost', 'ice sheet',
+      'hydrology', 'hydrogeolog',
+      'soil science', 'pedology',
+      'remote sensing', 'gis', 'geographic information',
+      'geodesy', 'cartograph'], 'géosciences'),
+
+    # Chimie spécialisée
+    (['nanomaterial', 'nanotechnolog', 'nanoparticle',
+      'nanoscale', 'quantum dot'], 'nanotechnologie'),
+    (['polymer', 'macromolecule', 'copolymer',
+      'polymerization'], 'polymères'),
+    (['organic chemistry', 'organic compound', 'aromatic',
+      'alkane', 'alkene', 'functional group'], 'chimie organique'),
+    (['electrochemist', 'electrolysis', 'galvanic',
+      'battery', 'fuel cell', 'corrosion'], 'électrochimie'),
+    (['chemistry', 'chemical', 'molecule', 'molecular',
+      'inorganic chemistry', 'physical chemistry',
+      'catalys', 'spectroscop', 'chromatograph',
+      'mass spectrometry', 'chemical reaction',
+      'reaction kinetics', 'thermochemist',
+      'photochemist', 'surface chemistry', 'colloid',
+      'analytical chemistry', 'synthesis', 'reagent'], 'chimie'),
+
+    # Ingénierie
+    (['aerospace', 'aerodynamic', 'propulsion', 'aircraft',
+      'rocket', 'satellite', 'orbital mechanics'], 'aérospatiale'),
+    (['telecommunication', 'antenna', 'radar', 'wireless',
+      'network protocol', 'internet', '5g', 'fiber optic'], 'télécommunications'),
+    (['power system', 'renewable energy', 'solar cell', 'wind turbine',
+      'photovoltaic', 'nuclear energy', 'energy storage',
+      'smart grid', 'power plant'], 'énergie'),
+    (['materials science', 'metallurg', 'ceramic', 'composite',
+      'alloy', 'crystal structure', 'semiconductor',
+      'superconductor', 'thin film'], 'matériaux'),
+    (['robotics', 'mechatronics', 'automation', 'autonomous',
+      'actuator', 'sensor', 'embedded system'], 'robotique'),
+    (['civil engineering', 'structural engineering', 'construction',
+      'geotechnical', 'bridge', 'concrete',
+      'mechanical engineering', 'electrical engineering',
+      'electronic', 'chemical engineering',
+      'manufacturing', 'industrial engineering',
+      'hydraulic', 'pneumatic', 'engineering'], 'ingénierie'),
+
+    # Agronomie & Environnement
+    (['agronomy', 'agriculture', 'crop science', 'plant science',
+      'forestry', 'silviculture', 'agroecolog',
+      'aquaculture', 'fisheries', 'irrigation'], 'agronomie'),
+    (['environmental science', 'pollution', 'remediation',
+      'sustainability', 'waste management',
+      'ecotoxicolog', 'environmental impact'], 'environnement'),
+
+    # Sciences sociales quantitatives
+    (['demography', 'demographic', 'population growth',
+      'mortality rate', 'fertility rate', 'census'], 'démographie'),
+    (['psychometrics', 'cognitive psychology', 'behavioral',
+      'psychology', 'psycholog', 'perception',
+      'memory', 'attention', 'learning theory'], 'psychologie'),
+    (['sociometry', 'social network', 'network analysis',
+      'sociology', 'sociolog', 'social structure'], 'sociologie'),
+    (['linguistics', 'computational linguistics', 'phonetics',
+      'morphology', 'language ', 'grammar', 'syntax',
+      'natural language processing', 'nlp'], 'linguistique'),
+    (['anthropolog', 'ethnograph', 'cultural',
+      'archaeology', 'archeolog'], 'anthropologie'),
+    (['political science', 'political', 'governance',
+      'democracy', 'election', 'voting theory',
+      'international relations'], 'science politique'),
+    (['education', 'pedagogy', 'curriculum',
+      'learning analytics', 'educational'], 'éducation'),
+    (['history', 'historical', 'historiograph',
+      'medieval', 'ancient '], 'histoire'),
+    (['law ', 'legal', 'jurisprud',
+      'constitutional', 'criminal law'], 'droit'),
+
+    # ── DOMAINES ORIGINAUX (math/physique/CS) ──
     (['topology', 'topological', 'homotopy', 'homology', 'cohomology',
       'manifold', 'fiber bundle', 'knot theory', 'braid'], 'topologie'),
+    (['linear algebra', 'matrix', 'matrices', 'eigenvalue', 'eigenvector',
+      'determinant', 'vector space', 'linear map', 'tensor product'], 'algèbre lin'),
     (['algebra', 'algebraic', 'group theory', 'ring ', 'module ',
       'lie group', 'lie algebra', 'representation theory',
       'galois', 'field extension', 'ideal '], 'algèbre'),
-    (['linear algebra', 'matrix', 'matrices', 'eigenvalue', 'eigenvector',
-      'determinant', 'vector space', 'linear map', 'tensor product'], 'algèbre lin'),
-    (['geometry', 'geometric', 'euclidean', 'projective', 'affine',
-      'convex ', 'polyhedr', 'polygon', 'polytope'], 'géométrie'),
     (['differential geometry', 'riemannian', 'curvature', 'geodesic',
       'connection ', 'christoffel', 'ricci'], 'géom diff'),
     (['algebraic geometry', 'scheme', 'sheaf', 'variety', 'divisor'], 'géom algébrique'),
+    (['geometry', 'geometric', 'euclidean', 'projective', 'affine',
+      'convex ', 'polyhedr', 'polygon', 'polytope'], 'géométrie'),
     (['number theory', 'prime number', 'diophantine', 'modular form',
       'elliptic curve', 'l-function', 'zeta function', 'continued fraction',
       'algebraic number', 'quadratic form'], 'nb théorie'),
@@ -209,13 +399,13 @@ DOMAIN_RULES = [
       'probability distribution', 'expected value'], 'probabilités'),
     (['statistic', 'regression', 'hypothesis test', 'estimation',
       'confidence interval', 'bayesian', 'likelihood', 'anova',
-      'correlation', 'variance'], 'statistiques'),
+      'correlation', 'variance', 'biostatistic'], 'statistiques'),
+    (['functional analysis', 'hilbert space', 'banach space', 'operator theory',
+      'spectral theory', 'sobolev', 'distribution '], 'analyse fonctionnelle'),
     (['mathematical analysis', 'calculus', 'limit ', 'continuity',
       'derivative', 'integral', 'series ', 'convergence',
       'real analysis', 'complex analysis', 'measure theory',
       'lebesgue', 'fourier', 'taylor series'], 'analyse'),
-    (['functional analysis', 'hilbert space', 'banach space', 'operator theory',
-      'spectral theory', 'sobolev', 'distribution '], 'analyse fonctionnelle'),
     (['differential equation', 'ode', 'pde', 'partial differential',
       'boundary value', 'initial value', 'wave equation',
       'heat equation', 'laplace equation', 'navier-stokes',
@@ -244,11 +434,11 @@ DOMAIN_RULES = [
       'wave function', 'hamiltonian', 'uncertainty principle'], 'quantique'),
     (['classical mechanics', 'newtonian', 'lagrangian', 'analytical mechanics',
       'rigid body', 'celestial mechanics'], 'mécanique'),
+    (['statistical mechanics', 'ising model', 'phase transition',
+      'mean field'], 'mécanique stat'),
     (['thermodynamic', 'entropy', 'temperature', 'heat ',
       'boltzmann', 'partition function', 'free energy',
       'carnot', 'second law'], 'thermo'),
-    (['statistical mechanics', 'ising model', 'phase transition',
-      'mean field'], 'mécanique stat'),
     (['fluid mechanics', 'fluid dynamics', 'navier-stokes',
       'turbulence', 'viscosity', 'reynolds'], 'fluides'),
     (['general relativity', 'special relativity', 'spacetime',
@@ -275,27 +465,33 @@ DOMAIN_RULES = [
       'sampling'], 'signal'),
     (['cryptograph', 'encryption', 'cipher', 'rsa',
       'public key', 'hash function', 'digital signature'], 'crypto'),
+    (['computer vision', 'image processing', 'object detection',
+      'pattern recognition', 'image segmentation'], 'vision'),
+    (['natural language processing', 'text mining', 'sentiment analysis',
+      'machine translation', 'speech recognition'], 'NLP'),
     (['machine learning', 'deep learning', 'neural network',
       'artificial intelligence', 'classification', 'clustering',
       'reinforcement learning', 'supervised', 'unsupervised'], 'ML'),
-    (['biology', 'population dynamics', 'lotka-volterra',
-      'epidemiolog', 'sir model', 'mathematical biology'], 'biologie'),
-    (['chemistry', 'chemical kinetics', 'reaction rate',
-      'equilibrium constant', 'molecular'], 'chimie'),
-    (['economics', 'economic', 'game theory', 'utility ',
+    (['computer science', 'algorithm', 'data structure',
+      'programming language', 'compiler', 'software',
+      'database', 'distributed system', 'operating system',
+      'computer graphics', 'parallel computing',
+      'cloud computing', 'blockchain'], 'informatique'),
+    (['economics', 'economic', 'econometric',
+      'macroeconomic', 'microeconomic',
       'market equilibrium', 'general equilibrium'], 'économie'),
-    (['finance', 'black-scholes', 'option pricing',
-      'portfolio', 'risk '], 'finance'),
+    (['finance', 'financial', 'black-scholes', 'option pricing',
+      'portfolio', 'risk ', 'actuarial'], 'finance'),
     (['control theory', 'feedback', 'pid ', 'stability',
       'controllability', 'observability'], 'contrôle'),
     (['astronomy', 'astrophysic', 'stellar', 'galax',
-      'planetary', 'orbit'], 'astronomie'),
+      'planetary', 'orbit', 'exoplanet'], 'astronomie'),
     (['trigonometr', 'sine', 'cosine', 'tangent',
       'trigonometric'], 'trigonométrie'),
     (['dynamical system', 'chaos', 'attractor', 'bifurcation',
-      'lyapunov', 'ergodic'], 'stochastique'),
+      'lyapunov', 'ergodic'], 'systèmes dynamiques'),
     (['numerical', 'approximation', 'interpolation',
-      'quadrature', 'finite difference', 'runge-kutta'], 'analyse'),
+      'quadrature', 'finite difference', 'runge-kutta'], 'analyse numérique'),
 ]
 
 # ═══════════════════════════════════════════════════════════
@@ -385,24 +581,30 @@ def detect_domain(name_lower, desc_lower):
     for keywords, domain in DOMAIN_RULES:
         if any(kw in text for kw in keywords):
             return domain
-    return 'mathématique'  # Generic fallback
+    return 'science générale'  # Generic fallback
 
 
 def is_math_concept(concept):
-    """Filter: is this concept math/physics/CS related?"""
+    """Filter: is this concept scientifically relevant?
+    v2: accepte TOUTES les sciences, rejette uniquement le bruit pur."""
     name = concept.get('display_name', '').lower()
     desc = (concept.get('description') or '').lower()
     text = name + ' ' + desc
 
-    # Must NOT match exclude keywords
+    # Reject pure noise
     if any(ex in text for ex in EXCLUDE_KEYWORDS):
-        # Exception: if it has a very strong math signal, keep it
-        strong_math = ['theorem', 'conjecture', 'algebra', 'topology',
-                       'geometry', 'calculus', 'equation', 'mathematical',
-                       'hilbert', 'banach', 'riemann', 'fourier',
-                       'quantum mechanics', 'quantum field',
-                       'computability', 'complexity class']
-        if not any(sm in text for sm in strong_math):
+        # Exception: if it has ANY scientific signal, keep it
+        strong_science = ['theorem', 'conjecture', 'algebra', 'topology',
+                          'geometry', 'calculus', 'equation', 'mathematical',
+                          'hilbert', 'banach', 'riemann', 'fourier',
+                          'quantum', 'computability', 'complexity class',
+                          'molecule', 'chemical', 'reaction',
+                          'cell ', 'protein', 'gene', 'dna',
+                          'epidemic', 'vaccine', 'clinical trial',
+                          'geology', 'seismic', 'climate',
+                          'engineering', 'algorithm', 'neural',
+                          'ecology', 'species', 'evolution']
+        if not any(sm in text for sm in strong_science):
             return False
 
     # Must match at least one include keyword
@@ -432,7 +634,7 @@ def load_existing_symbols():
 
 def run():
     print("=" * 60)
-    print("YGGDRASIL — Phase 3 : MINAGE — 65K → symboles math")
+    print("YGGDRASIL -- Phase 3 : MINAGE v2 -- 65K -> TOUTES SCIENCES")
     print("=" * 60)
 
     # Load concepts
@@ -441,10 +643,10 @@ def run():
     print(f"  -> {len(concepts)} concepts loaded")
 
     # Filter math concepts
-    print("\n[2/5] Filtering math/physics/CS concepts...")
+    print("\n[2/5] Filtering ALL science concepts...")
     math_concepts = [c for c in concepts if is_math_concept(c)]
     math_concepts.sort(key=lambda x: -x.get('works_count', 0))
-    print(f"  -> {len(math_concepts)} math-related concepts found")
+    print(f"  -> {len(math_concepts)} science-related concepts found")
 
     # Load existing symbols to avoid duplicates
     print("\n[3/5] Loading existing 794 symbols...")

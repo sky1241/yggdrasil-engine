@@ -151,10 +151,17 @@ for i, strate in enumerate(v2['strates']):
 
         for sym in mined_syms:
             name = sym['s']
-            concept = MINED_LOOKUP.get(name, {})
-            depth = estimate_mined_depth(concept) if concept else 8
-            all_with_depth.append((sym, depth, True))
-            mined_count += 1
+            # Use spectral positions if available
+            if sym.get('spectral'):
+                px_s = round(sym['px'], 3)
+                pz_s = round(sym['pz'], 3)
+                c1_symbols.append([name, px_s, pz_s, 0, sym['domain']])
+                mined_count += 1
+            else:
+                concept = MINED_LOOKUP.get(name, {})
+                depth = estimate_mined_depth(concept) if concept else 8
+                all_with_depth.append((sym, depth, True))
+                mined_count += 1
 
         # Group by (depth, domain) for angular spreading
         groups = defaultdict(list)

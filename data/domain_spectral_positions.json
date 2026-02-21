@@ -1,0 +1,427 @@
+{
+  "EDP": {
+    "px": 0.27,
+    "pz": -0.0876,
+    "papers": 4253777
+  },
+  "ML": {
+    "px": -0.2569,
+    "pz": -0.5048,
+    "papers": 978340
+  },
+  "QFT": {
+    "px": 0.9537,
+    "pz": -0.1609,
+    "papers": 107774
+  },
+  "agronomie": {
+    "px": -0.7717,
+    "pz": -0.3696,
+    "papers": 3818749
+  },
+  "algèbre": {
+    "px": 0.1317,
+    "pz": -0.199,
+    "papers": 11261205
+  },
+  "algèbre lin": {
+    "px": 0.2269,
+    "pz": -0.1957,
+    "papers": 2357713
+  },
+  "analyse": {
+    "px": 0.3289,
+    "pz": -0.1608,
+    "papers": 4405271
+  },
+  "analyse fonctionnelle": {
+    "px": 0.0,
+    "pz": -0.1052,
+    "papers": 1781129
+  },
+  "analyse numérique": {
+    "px": 0.5398,
+    "pz": 0.1736,
+    "papers": 584536
+  },
+  "anthropologie": {
+    "px": -0.4378,
+    "pz": -0.9033,
+    "papers": 1183211
+  },
+  "astronomie": {
+    "px": 0.1656,
+    "pz": 0.588,
+    "papers": 1302964
+  },
+  "automates": {
+    "px": 0.2919,
+    "pz": -0.8867,
+    "papers": 223183
+  },
+  "aérospatiale": {
+    "px": 0.4513,
+    "pz": 0.5117,
+    "papers": 1081427
+  },
+  "bioinformatique": {
+    "px": -0.7923,
+    "pz": 0.2188,
+    "papers": 1665145
+  },
+  "biologie": {
+    "px": -0.2772,
+    "pz": 0.2085,
+    "papers": 45153763
+  },
+  "biomédical": {
+    "px": -0.4686,
+    "pz": 0.5545,
+    "papers": 2103004
+  },
+  "calculabilité": {
+    "px": 0.0166,
+    "pz": -0.5997,
+    "papers": 44180
+  },
+  "catégories": {
+    "px": -0.1429,
+    "pz": -0.3005,
+    "papers": 451660
+  },
+  "chimie": {
+    "px": -0.0832,
+    "pz": 0.7597,
+    "papers": 51991786
+  },
+  "chimie organique": {
+    "px": -0.3489,
+    "pz": 0.9412,
+    "papers": 2343917
+  },
+  "climatologie": {
+    "px": -0.0253,
+    "pz": 0.2331,
+    "papers": 4061436
+  },
+  "combinatoire": {
+    "px": 0.238,
+    "pz": -0.4113,
+    "papers": 2100328
+  },
+  "complexité": {
+    "px": 0.3639,
+    "pz": -0.7826,
+    "papers": 118988
+  },
+  "contrôle": {
+    "px": 0.1798,
+    "pz": 0.5971,
+    "papers": 177928
+  },
+  "cosmologie": {
+    "px": 0.4396,
+    "pz": 0.0988,
+    "papers": 351205
+  },
+  "crypto": {
+    "px": 0.0786,
+    "pz": -0.4993,
+    "papers": 417124
+  },
+  "droit": {
+    "px": 0.0769,
+    "pz": -0.6661,
+    "papers": 1316393
+  },
+  "démographie": {
+    "px": -0.9402,
+    "pz": -0.2399,
+    "papers": 1993930
+  },
+  "ensembles": {
+    "px": -0.0667,
+    "pz": -0.7262,
+    "papers": 299957
+  },
+  "environnement": {
+    "px": -0.2791,
+    "pz": 0.2669,
+    "papers": 14669516
+  },
+  "finance": {
+    "px": -0.1809,
+    "pz": -0.2862,
+    "papers": 2997250
+  },
+  "fluides": {
+    "px": 0.1892,
+    "pz": 0.4495,
+    "papers": 396643
+  },
+  "génomique": {
+    "px": -0.9195,
+    "pz": 0.2203,
+    "papers": 1952533
+  },
+  "géom algébrique": {
+    "px": 0.2404,
+    "pz": -0.2374,
+    "papers": 261676
+  },
+  "géom diff": {
+    "px": 0.5416,
+    "pz": 0.2641,
+    "papers": 137765
+  },
+  "géométrie": {
+    "px": 0.1073,
+    "pz": 0.055,
+    "papers": 8998113
+  },
+  "géosciences": {
+    "px": -0.1823,
+    "pz": 0.1598,
+    "papers": 20672035
+  },
+  "histoire": {
+    "px": -0.3469,
+    "pz": -0.7598,
+    "papers": 618478
+  },
+  "immunologie": {
+    "px": -1.0,
+    "pz": 0.6362,
+    "papers": 2727957
+  },
+  "information": {
+    "px": 0.318,
+    "pz": -0.6291,
+    "papers": 173919
+  },
+  "informatique": {
+    "px": -0.0191,
+    "pz": -0.336,
+    "papers": 10723765
+  },
+  "ingénierie": {
+    "px": -0.0258,
+    "pz": -0.0168,
+    "papers": 32968162
+  },
+  "linguistique": {
+    "px": -0.1732,
+    "pz": -0.627,
+    "papers": 8317553
+  },
+  "logique": {
+    "px": 0.1507,
+    "pz": -0.7804,
+    "papers": 317132
+  },
+  "matériaux": {
+    "px": 0.0428,
+    "pz": 0.4842,
+    "papers": 3815894
+  },
+  "mécanique": {
+    "px": 0.8764,
+    "pz": 0.1032,
+    "papers": 759423
+  },
+  "mécanique stat": {
+    "px": 0.8313,
+    "pz": 0.7575,
+    "papers": 166144
+  },
+  "médecine": {
+    "px": -0.8273,
+    "pz": 0.4693,
+    "papers": 17348575
+  },
+  "nanotechnologie": {
+    "px": -0.0937,
+    "pz": 1.0,
+    "papers": 2209611
+  },
+  "nb théorie": {
+    "px": 0.3562,
+    "pz": -0.7764,
+    "papers": 152706
+  },
+  "neurosciences": {
+    "px": -0.6783,
+    "pz": -0.0753,
+    "papers": 2376715
+  },
+  "nucléaire": {
+    "px": 0.6527,
+    "pz": 0.8501,
+    "papers": 4934250
+  },
+  "océanographie": {
+    "px": -0.3854,
+    "pz": 0.3727,
+    "papers": 994860
+  },
+  "oncologie": {
+    "px": -0.4334,
+    "pz": 0.9834,
+    "papers": 1417636
+  },
+  "optimisation": {
+    "px": 0.2252,
+    "pz": -0.6127,
+    "papers": 1428406
+  },
+  "optique": {
+    "px": 0.2112,
+    "pz": 0.3845,
+    "papers": 8518349
+  },
+  "particules": {
+    "px": 0.9213,
+    "pz": 0.4693,
+    "papers": 1125742
+  },
+  "pharmacologie": {
+    "px": -0.9653,
+    "pz": 0.8334,
+    "papers": 2410898
+  },
+  "polymères": {
+    "px": -0.1341,
+    "pz": 0.9882,
+    "papers": 2633214
+  },
+  "probabilités": {
+    "px": 0.0679,
+    "pz": -0.2159,
+    "papers": 3480765
+  },
+  "psychologie": {
+    "px": -0.0787,
+    "pz": -0.3175,
+    "papers": 1585435
+  },
+  "quantique": {
+    "px": 0.8135,
+    "pz": 0.2374,
+    "papers": 1200431
+  },
+  "relativité": {
+    "px": 0.9537,
+    "pz": 0.2708,
+    "papers": 551109
+  },
+  "robotique": {
+    "px": -0.2024,
+    "pz": -0.182,
+    "papers": 1717670
+  },
+  "science générale": {
+    "px": 0.0246,
+    "pz": 0.0267,
+    "papers": 39156399
+  },
+  "science politique": {
+    "px": -0.4449,
+    "pz": -0.9033,
+    "papers": 723788
+  },
+  "signal": {
+    "px": 0.1288,
+    "pz": -0.0295,
+    "papers": 4078371
+  },
+  "sismologie": {
+    "px": 0.1079,
+    "pz": 0.4545,
+    "papers": 763049
+  },
+  "sociologie": {
+    "px": 0.073,
+    "pz": -0.4658,
+    "papers": 1561044
+  },
+  "statistiques": {
+    "px": -0.0748,
+    "pz": -0.3121,
+    "papers": 2815353
+  },
+  "systèmes dynamiques": {
+    "px": 0.3896,
+    "pz": 0.1535,
+    "papers": 421151
+  },
+  "thermo": {
+    "px": 0.16,
+    "pz": 0.2494,
+    "papers": 2337383
+  },
+  "topologie": {
+    "px": 0.2265,
+    "pz": -0.0488,
+    "papers": 2715683
+  },
+  "trigonométrie": {
+    "px": -0.2517,
+    "pz": 0.0381,
+    "papers": 886424
+  },
+  "télécommunications": {
+    "px": -0.1027,
+    "pz": -0.1303,
+    "papers": 8116611
+  },
+  "vision": {
+    "px": -0.0688,
+    "pz": -0.4765,
+    "papers": 2372223
+  },
+  "volcanologie": {
+    "px": -0.3944,
+    "pz": 1.0,
+    "papers": 325458
+  },
+  "écologie": {
+    "px": -0.254,
+    "pz": 0.3976,
+    "papers": 4787966
+  },
+  "économie": {
+    "px": -0.2769,
+    "pz": -0.4687,
+    "papers": 14587468
+  },
+  "éducation": {
+    "px": -0.3112,
+    "pz": -0.7971,
+    "papers": 3053059
+  },
+  "électrochimie": {
+    "px": 0.1719,
+    "pz": 0.9845,
+    "papers": 1131022
+  },
+  "électromagn": {
+    "px": 0.3836,
+    "pz": 0.701,
+    "papers": 7274625
+  },
+  "énergie": {
+    "px": -0.0541,
+    "pz": 0.0,
+    "papers": 1085360
+  },
+  "épidémiologie": {
+    "px": -1.0,
+    "pz": -0.159,
+    "papers": 993162
+  },
+  "évolution": {
+    "px": -0.3092,
+    "pz": 0.1399,
+    "papers": 22380009
+  }
+}
