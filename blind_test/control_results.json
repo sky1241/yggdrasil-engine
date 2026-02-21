@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "date": "2026-02-21 23:11:51",
+    "random_seed": 2015,
+    "n_random_pairs": 50,
+    "n_breakthrough_scores": 12
+  },
+  "breakthrough_scores": [
+    83.464371,
+    3.926289,
+    99.43401,
+    583.270573,
+    346.296077,
+    282.751841,
+    108.619995,
+    7.705545,
+    441.931066,
+    81.309261,
+    243.101215,
+    324.781116
+  ],
+  "random_scores": [
+    28.059129,
+    66.946136,
+    11.257289,
+    23.132472,
+    0.038698,
+    0.294495,
+    10.375952,
+    0.0,
+    0.253589,
+    0.802408,
+    90.881132,
+    7.8e-05,
+    0.037442,
+    14.783933,
+    1.483717,
+    168.697083,
+    0.0,
+    0.011139,
+    0.158821,
+    0.444194,
+    13.551949,
+    0.407602,
+    0.005815,
+    1.663841,
+    166.195356,
+    2.907516,
+    8.6778,
+    13.159592,
+    0.298256,
+    13.69174,
+    0.110477,
+    0.259518,
+    27.470916,
+    5.307324,
+    35.426713,
+    8.028345,
+    0.585596,
+    0.721812,
+    1.934662,
+    16.368783,
+    0.30905,
+    0.216931,
+    188.771508,
+    14.992065,
+    0.010311,
+    105.282221,
+    6.90768,
+    0.105622,
+    13.952911,
+    0.057373
+  ],
+  "random_pairs": [
+    {
+      "pair": "C54355233|C136764020",
+      "name_a": "Genetics",
+      "name_b": "World Wide Web",
+      "p4_score": 28.059129
+    },
+    {
+      "pair": "C126322002|C10138342",
+      "name_a": "Internal medicine",
+      "name_b": "Finance",
+      "p4_score": 66.946136
+    },
+    {
+      "pair": "C2778137410|C111472728",
+      "name_a": "Government (linguistics)",
+      "name_b": "Epistemology",
+      "p4_score": 11.257289
+    },
+    {
+      "pair": "C15708023|C23123220",
+      "name_a": "Humanities",
+      "name_b": "Information retrieval",
+      "p4_score": 23.132472
+    },
+    {
+      "pair": "C198352243|C2781291010",
+      "name_a": "Line (geometry)",
+      "name_b": "Period (music)",
+      "p4_score": 0.038698
+    },
+    {
+      "pair": "C12713177|C184779094",
+      "name_a": "Perspective (graphical)",
+      "name_b": "Atomic physics",
+      "p4_score": 0.294495
+    },
+    {
+      "pair": "C9652623|C41895202",
+      "name_a": "Field (mathematics)",
+      "name_b": "Linguistics",
+      "p4_score": 10.375952
+    },
+    {
+      "pair": "C191897082|C2776781215",
+      "name_a": "Metallurgy",
+      "name_b": "Triacetin",
+      "p4_score": 0.0
+    },
+    {
+      "pair": "C26517878|C107826830",
+      "name_a": "Key (lock)",
+      "name_b": "Environmental resource management",
+      "p4_score": 0.253589
+    },
+    {
+      "pair": "C151730666|C134018914",
+      "name_a": "Paleontology",
+      "name_b": "Endocrinology",
+      "p4_score": 0.802408
+    },
+    {
+      "pair": "C203014093|C134018914",
+      "name_a": "Immunology",
+      "name_b": "Endocrinology",
+      "p4_score": 90.881132
+    },
+    {
+      "pair": "C191897082|C2909186138",
+      "name_a": "Metallurgy",
+      "name_b": "Hyperlactatemia",
+      "p4_score": 7.8e-05
+    },
+    {
+      "pair": "C82706917|C192209626",
+      "name_a": "Plasma",
+      "name_b": "Focus (optics)",
+      "p4_score": 0.037442
+    },
+    {
+      "pair": "C54355233|C19417346",
+      "name_a": "Genetics",
+      "name_b": "Pedagogy",
+      "p4_score": 14.783933
+    },
+    {
+      "pair": "C182306322|C52119013",
+      "name_a": "Order (exchange)",
+      "name_b": "Art history",
+      "p4_score": 1.483717
+    },
+    {
+      "pair": "C18903297|C59822182",
+      "name_a": "Ecology",
+      "name_b": "Botany",
+      "p4_score": 168.697083
+    },
+    {
+      "pair": "C2779645999|C27206212",
+      "name_a": "Frugality",
+      "name_b": "Theology",
+      "p4_score": 0.0
+    },
+    {
+      "pair": "C198531522|C2780791683",
+      "name_a": "Sample (material)",
+      "name_b": "Action (physics)",
+      "p4_score": 0.011139
+    },
+    {
+      "pair": "C2778112365|C134121241",
+      "name_a": "Sequence (biology)",
+      "name_b": "Yield (engineering)",
+      "p4_score": 0.158821
+    },
+    {
+      "pair": "C2777855551|C99454951",
+      "name_a": "Subject (documents)",
+      "name_b": "Environmental health",
+      "p4_score": 0.444194
+    },
+    {
+      "pair": "C136764020|C77805123",
+      "name_a": "World Wide Web",
+      "name_b": "Social psychology",
+      "p4_score": 13.551949
+    },
+    {
+      "pair": "C2778137410|C145148216",
+      "name_a": "Government (linguistics)",
+      "name_b": "Ion",
+      "p4_score": 0.407602
+    },
+    {
+      "pair": "C12713177|C1965285",
+      "name_a": "Perspective (graphical)",
+      "name_b": "Earth science",
+      "p4_score": 0.005815
+    },
+    {
+      "pair": "C61797465|C10138342",
+      "name_a": "Term (time)",
+      "name_b": "Finance",
+      "p4_score": 1.663841
+    },
+    {
+      "pair": "C104317684|C59822182",
+      "name_a": "Gene",
+      "name_b": "Botany",
+      "p4_score": 166.195356
+    },
+    {
+      "pair": "C18762648|C169760540",
+      "name_a": "Work (physics)",
+      "name_b": "Neuroscience",
+      "p4_score": 2.907516
+    },
+    {
+      "pair": "C177264268|C136764020",
+      "name_a": "Set (abstract data type)",
+      "name_b": "World Wide Web",
+      "p4_score": 8.6778
+    },
+    {
+      "pair": "C94625758|C169760540",
+      "name_a": "Politics",
+      "name_b": "Neuroscience",
+      "p4_score": 13.159592
+    },
+    {
+      "pair": "C2779343474|C54355233",
+      "name_a": "Context (archaeology)",
+      "name_b": "Genetics",
+      "p4_score": 0.298256
+    },
+    {
+      "pair": "C199539241|C25343380",
+      "name_a": "Law",
+      "name_b": "Relation (database)",
+      "p4_score": 13.69174
+    },
+    {
+      "pair": "C26517878|C27206212",
+      "name_a": "Key (lock)",
+      "name_b": "Theology",
+      "p4_score": 0.110477
+    },
+    {
+      "pair": "C2778112365|C97355855",
+      "name_a": "Sequence (biology)",
+      "name_b": "Thermodynamics",
+      "p4_score": 0.259518
+    },
+    {
+      "pair": "C151730666|C171250308",
+      "name_a": "Paleontology",
+      "name_b": "Nanotechnology",
+      "p4_score": 27.470916
+    },
+    {
+      "pair": "C2779134260|C97355855",
+      "name_a": "Disease",
+      "name_b": "Thermodynamics",
+      "p4_score": 5.307324
+    },
+    {
+      "pair": "C98045186|C2524010",
+      "name_a": "Process (computing)",
+      "name_b": "Geometry",
+      "p4_score": 35.426713
+    },
+    {
+      "pair": "C55493867|C94625758",
+      "name_a": "Biochemistry",
+      "name_b": "Politics",
+      "p4_score": 8.028345
+    },
+    {
+      "pair": "C177264268|C198531522",
+      "name_a": "Set (abstract data type)",
+      "name_b": "Sample (material)",
+      "p4_score": 0.585596
+    },
+    {
+      "pair": "C116915560|C76155785",
+      "name_a": "Nuclear engineering",
+      "name_b": "Telecommunications",
+      "p4_score": 0.721812
+    },
+    {
+      "pair": "C78519656|C168167062",
+      "name_a": "Mechanical engineering",
+      "name_b": "Component (thermodynamics)",
+      "p4_score": 1.934662
+    },
+    {
+      "pair": "C94625758|C134018914",
+      "name_a": "Politics",
+      "name_b": "Endocrinology",
+      "p4_score": 16.368783
+    },
+    {
+      "pair": "C90673727|C171250308",
+      "name_a": "Product (mathematics)",
+      "name_b": "Nanotechnology",
+      "p4_score": 0.30905
+    },
+    {
+      "pair": "C124101348|C198352243",
+      "name_a": "Data mining",
+      "name_b": "Line (geometry)",
+      "p4_score": 0.216931
+    },
+    {
+      "pair": "C54355233|C134018914",
+      "name_a": "Genetics",
+      "name_b": "Endocrinology",
+      "p4_score": 188.771508
+    },
+    {
+      "pair": "C98045186|C76155785",
+      "name_a": "Process (computing)",
+      "name_b": "Telecommunications",
+      "p4_score": 14.992065
+    },
+    {
+      "pair": "C133074676|C2780791683",
+      "name_a": "Fusible alloy",
+      "name_b": "Action (physics)",
+      "p4_score": 0.010311
+    },
+    {
+      "pair": "C126322002|C134306372",
+      "name_a": "Internal medicine",
+      "name_b": "Mathematical analysis",
+      "p4_score": 105.282221
+    },
+    {
+      "pair": "C55493867|C119599485",
+      "name_a": "Biochemistry",
+      "name_b": "Electrical engineering",
+      "p4_score": 6.90768
+    },
+    {
+      "pair": "C11413529|C58642233",
+      "name_a": "Algorithm",
+      "name_b": "Taxonomy (biology)",
+      "p4_score": 0.105622
+    },
+    {
+      "pair": "C159985019|C105702510",
+      "name_a": "Composite material",
+      "name_b": "Anatomy",
+      "p4_score": 13.952911
+    },
+    {
+      "pair": "C184779094|C168167062",
+      "name_a": "Atomic physics",
+      "name_b": "Component (thermodynamics)",
+      "p4_score": 0.057373
+    }
+  ],
+  "test": {
+    "method": "Mann-Whitney U",
+    "U_statistic": 539.0,
+    "p_value_two_sided": 2.142e-05,
+    "p_value_greater": 1.071e-05,
+    "effect_size_r": 0.8983,
+    "cohens_d": 1.5317,
+    "verdict": "SIGNAL DETECTED (p < 0.05)"
+  },
+  "summary": {
+    "breakthrough_mean": 217.215947,
+    "breakthrough_median": 175.860605,
+    "random_mean": 21.30074,
+    "random_median": 1.799252
+  }
+}
