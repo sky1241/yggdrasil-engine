@@ -104,8 +104,11 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 6. Le mycelium Physarum fait le tri vivant/mort sur les CONNEXIONS — le works_count sur les NŒUDS
 
 ## TODO
-- [ ] Croiser flux Physarum (mycelium) × works_count → lister contradictions
-- [ ] Identifier: concepts isolés, ponts cachés, vides fertiles (P4)
+- [x] Croiser flux Physarum (mycelium) × works_count → lister contradictions
+  - 806 isolated hubs, 1220 hidden bridges, 1567 P4 voids
+  - 21 domains OVER-CITED, 23 UNDER-CITED, 40 BALANCED
+  - Export: data/cross_physarum_wc.json (59KB)
+- [x] Identifier: concepts isolés, ponts cachés, vides fertiles (P4)
 - [ ] Viz 3D routes escaliers entre strates
 - [ ] Ajuster validation: accepter P2 pour percées matures (>10K papers)
 - [ ] Pipeline v2: ajouter détection automatique du lifecycle stage

@@ -1,0 +1,2660 @@
+{
+  "meta": {
+    "date": "2026-02-21",
+    "n_isolated": 806,
+    "n_bridges": 1220,
+    "n_voids": 1567,
+    "n_domains_over": 21,
+    "n_domains_under": 23
+  },
+  "isolated_hubs": [
+    {
+      "s": "Biology",
+      "from": "Biology",
+      "domain": "évolution",
+      "wc": 33399772,
+      "struct": 0.0755,
+      "px": -0.2638,
+      "pz": 0.1766
+    },
+    {
+      "s": "Large Helical Device",
+      "from": "Large Helical Device",
+      "domain": "nucléaire",
+      "wc": 7325289,
+      "struct": 0.0397,
+      "px": 0.6647,
+      "pz": 0.8734
+    },
+    {
+      "s": "Ocrelizumab",
+      "from": "Ocrelizumab",
+      "domain": "immunologie",
+      "wc": 17455992,
+      "struct": 0.0323,
+      "px": -1.2123,
+      "pz": 0.5753
+    },
+    {
+      "s": "Typhoid vaccine",
+      "from": "Typhoid vaccine",
+      "domain": "immunologie",
+      "wc": 16129067,
+      "struct": 0.0326,
+      "px": -1.0509,
+      "pz": 0.6988
+    },
+    {
+      "s": "Component (thermodyn",
+      "from": "Component (thermodynamics)",
+      "domain": "thermo",
+      "wc": 11366794,
+      "struct": 0.0493,
+      "px": 0.1749,
+      "pz": 0.3032
+    },
+    {
+      "s": "Internal medicine",
+      "from": "Internal medicine",
+      "domain": "médecine",
+      "wc": 13605556,
+      "struct": 0.0418,
+      "px": -0.841,
+      "pz": 0.4598
+    },
+    {
+      "s": "Environmental scienc",
+      "from": "Environmental science",
+      "domain": "environnement",
+      "wc": 23294288,
+      "struct": 0.0364,
+      "px": -0.3054,
+      "pz": 0.3445
+    },
+    {
+      "s": "Optics",
+      "from": "Optics",
+      "domain": "optique",
+      "wc": 15283324,
+      "struct": 0.0424,
+      "px": 0.2263,
+      "pz": 0.4225
+    },
+    {
+      "s": "Focus (optics)",
+      "from": "Focus (optics)",
+      "domain": "optique",
+      "wc": 15002494,
+      "struct": 0.0424,
+      "px": 0.2621,
+      "pz": 0.3126
+    },
+    {
+      "s": "MEDLINE",
+      "from": "MEDLINE",
+      "domain": "médecine",
+      "wc": 10744699,
+      "struct": 0.0411,
+      "px": -0.7242,
+      "pz": 0.6068
+    },
+    {
+      "s": "Law and economics",
+      "from": "Law and economics",
+      "domain": "droit",
+      "wc": 2980780,
+      "struct": 0.0653,
+      "px": 0.0129,
+      "pz": -0.6309
+    },
+    {
+      "s": "Classical mechanics",
+      "from": "Classical mechanics",
+      "domain": "mécanique",
+      "wc": 1358030,
+      "struct": 0.0702,
+      "px": 0.7931,
+      "pz": -0.0113
+    },
+    {
+      "s": "Nuclear physics",
+      "from": "Nuclear physics",
+      "domain": "nucléaire",
+      "wc": 2356278,
+      "struct": 0.0398,
+      "px": 0.6143,
+      "pz": 0.911
+    },
+    {
+      "s": "Gynecology",
+      "from": "Gynecology",
+      "domain": "médecine",
+      "wc": 4988072,
+      "struct": 0.0415,
+      "px": -0.7316,
+      "pz": 0.5226
+    },
+    {
+      "s": "Domain (mathematical",
+      "from": "Domain (mathematical analysis)",
+      "domain": "algèbre lin",
+      "wc": 2224611,
+      "struct": 0.0846,
+      "px": 0.2403,
+      "pz": -0.2882
+    },
+    {
+      "s": "Immunology",
+      "from": "Immunology",
+      "domain": "immunologie",
+      "wc": 4713672,
+      "struct": 0.0327,
+      "px": -0.9412,
+      "pz": 0.662
+    },
+    {
+      "s": "Endocrinology",
+      "from": "Endocrinology",
+      "domain": "médecine",
+      "wc": 4586380,
+      "struct": 0.0416,
+      "px": -0.9137,
+      "pz": 0.4525
+    },
+    {
+      "s": "Position (finance)",
+      "from": "Position (finance)",
+      "domain": "finance",
+      "wc": 6325648,
+      "struct": 0.083,
+      "px": -0.1833,
+      "pz": -0.3772
+    },
+    {
+      "s": "Public health",
+      "from": "Public health",
+      "domain": "médecine",
+      "wc": 4166595,
+      "struct": 0.0416,
+      "px": -0.9072,
+      "pz": 0.3581
+    },
+    {
+      "s": "Pathology",
+      "from": "Pathology",
+      "domain": "médecine",
+      "wc": 4011595,
+      "struct": 0.0415,
+      "px": -0.9334,
+      "pz": 0.5219
+    },
+    {
+      "s": "Cardiology",
+      "from": "Cardiology",
+      "domain": "médecine",
+      "wc": 3340034,
+      "struct": 0.0411,
+      "px": -0.7071,
+      "pz": 0.5665
+    },
+    {
+      "s": "Environmental health",
+      "from": "Environmental health",
+      "domain": "médecine",
+      "wc": 2949618,
+      "struct": 0.0416,
+      "px": -0.8047,
+      "pz": 0.4827
+    },
+    {
+      "s": "Function (biology)",
+      "from": "Function (biology)",
+      "domain": "évolution",
+      "wc": 3735578,
+      "struct": 0.0738,
+      "px": -0.2918,
+      "pz": 0.1091
+    },
+    {
+      "s": "Mathematics educatio",
+      "from": "Mathematics education",
+      "domain": "éducation",
+      "wc": 3283106,
+      "struct": 0.0726,
+      "px": -0.4409,
+      "pz": -0.8623
+    },
+    {
+      "s": "Oncology",
+      "from": "Oncology",
+      "domain": "oncologie",
+      "wc": 2546370,
+      "struct": 0.0561,
+      "px": -0.4184,
+      "pz": 0.9875
+    },
+    {
+      "s": "Tree (set theory)",
+      "from": "Tree (set theory)",
+      "domain": "ensembles",
+      "wc": 667493,
+      "struct": 0.0435,
+      "px": -0.1539,
+      "pz": -0.7116
+    },
+    {
+      "s": "Proteogenomics",
+      "from": "Proteogenomics",
+      "domain": "génomique",
+      "wc": 18510784,
+      "struct": 0.0278,
+      "px": -0.9827,
+      "pz": 0.1045
+    },
+    {
+      "s": "Clinical trial",
+      "from": "Clinical trial",
+      "domain": "médecine",
+      "wc": 2462190,
+      "struct": 0.0415,
+      "px": -0.7939,
+      "pz": 0.4198
+    },
+    {
+      "s": "Anesthesia",
+      "from": "Anesthesia",
+      "domain": "médecine",
+      "wc": 2422411,
+      "struct": 0.0416,
+      "px": -0.91,
+      "pz": 0.4177
+    },
+    {
+      "s": "Mathematical optimiz",
+      "from": "Mathematical optimization",
+      "domain": "optimisation",
+      "wc": 1452844,
+      "struct": 0.0382,
+      "px": 0.2641,
+      "pz": -0.6654
+    },
+    {
+      "s": "Computer vision",
+      "from": "Computer vision",
+      "domain": "vision",
+      "wc": 4071976,
+      "struct": 0.0555,
+      "px": -0.1154,
+      "pz": -0.4019
+    },
+    {
+      "s": "Radiology",
+      "from": "Radiology",
+      "domain": "biomédical",
+      "wc": 3342593,
+      "struct": 0.0454,
+      "px": -0.5002,
+      "pz": 0.507
+    },
+    {
+      "s": "Laser",
+      "from": "Laser",
+      "domain": "optique",
+      "wc": 2792252,
+      "struct": 0.0428,
+      "px": 0.1711,
+      "pz": 0.3013
+    },
+    {
+      "s": "Economic history",
+      "from": "Economic history",
+      "domain": "histoire",
+      "wc": 1610518,
+      "struct": 0.0324,
+      "px": -0.3405,
+      "pz": -0.7168
+    },
+    {
+      "s": "Agronomy",
+      "from": "Agronomy",
+      "domain": "agronomie",
+      "wc": 3670220,
+      "struct": 0.0357,
+      "px": -0.664,
+      "pz": -0.2948
+    },
+    {
+      "s": "Algebra over a field",
+      "from": "Algebra over a field",
+      "domain": "algèbre lin",
+      "wc": 980879,
+      "struct": 0.0845,
+      "px": 0.1275,
+      "pz": -0.2404
+    },
+    {
+      "s": "Psychiatry",
+      "from": "Psychiatry",
+      "domain": "médecine",
+      "wc": 2041977,
+      "struct": 0.0416,
+      "px": -0.8598,
+      "pz": 0.5508
+    },
+    {
+      "s": "Animal science",
+      "from": "Animal science",
+      "domain": "trigonométrie",
+      "wc": 1487017,
+      "struct": 0.0225,
+      "px": -0.1076,
+      "pz": 0.0071
+    },
+    {
+      "s": "Oceanography",
+      "from": "Oceanography",
+      "domain": "océanographie",
+      "wc": 1370295,
+      "struct": 0.0266,
+      "px": -0.3624,
+      "pz": 0.6299
+    },
+    {
+      "s": "Deformation (meteoro",
+      "from": "Deformation (meteorology)",
+      "domain": "climatologie",
+      "wc": 3280998,
+      "struct": 0.0653,
+      "px": 0.0967,
+      "pz": 0.054
+    },
+    {
+      "s": "Signal processing",
+      "from": "Signal processing",
+      "domain": "EDP",
+      "wc": 1762911,
+      "struct": 0.0727,
+      "px": 0.2508,
+      "pz": -0.203
+    },
+    {
+      "s": "Center (category the",
+      "from": "Center (category theory)",
+      "domain": "catégories",
+      "wc": 833694,
+      "struct": 0.0243,
+      "px": -0.0206,
+      "pz": -0.3954
+    },
+    {
+      "s": "Antibody",
+      "from": "Antibody",
+      "domain": "immunologie",
+      "wc": 1759446,
+      "struct": 0.0328,
+      "px": -0.8647,
+      "pz": 0.546
+    },
+    {
+      "s": "Cognitive psychology",
+      "from": "Cognitive psychology",
+      "domain": "psychologie",
+      "wc": 1734139,
+      "struct": 0.0695,
+      "px": -0.0319,
+      "pz": -0.2599
+    },
+    {
+      "s": "Meteorology",
+      "from": "Meteorology",
+      "domain": "climatologie",
+      "wc": 2787787,
+      "struct": 0.0649,
+      "px": -0.1109,
+      "pz": 0.2993
+    },
+    {
+      "s": "Epidemiology",
+      "from": "Epidemiology",
+      "domain": "épidémiologie",
+      "wc": 2543994,
+      "struct": 0.0764,
+      "px": -0.8599,
+      "pz": -0.2347
+    },
+    {
+      "s": "Vegetation (patholog",
+      "from": "Vegetation (pathology)",
+      "domain": "médecine",
+      "wc": 1502310,
+      "struct": 0.0415,
+      "px": -0.7949,
+      "pz": 0.3853
+    },
+    {
+      "s": "Nanotechnology",
+      "from": "Nanotechnology",
+      "domain": "nanotechnologie",
+      "wc": 3232035,
+      "struct": 0.0641,
+      "px": -0.1052,
+      "pz": 0.9856
+    },
+    {
+      "s": "Pharmacology",
+      "from": "Pharmacology",
+      "domain": "pharmacologie",
+      "wc": 3288518,
+      "struct": 0.0188,
+      "px": -1.0567,
+      "pz": 0.9338
+    },
+    {
+      "s": "Clinical Practice",
+      "from": "Clinical Practice",
+      "domain": "médecine",
+      "wc": 1472731,
+      "struct": 0.0413,
+      "px": -0.8273,
+      "pz": 0.5838
+    }
+  ],
+  "hidden_bridges": [
+    {
+      "s": "Cartan subalgebra",
+      "from": "Cartan subalgebra",
+      "domain": "algèbre",
+      "wc": 1978,
+      "struct": 0.598,
+      "px": 0.0923,
+      "pz": -0.0724
+    },
+    {
+      "s": "Hodge structure",
+      "from": "Hodge structure",
+      "domain": "algèbre",
+      "wc": 1788,
+      "struct": 0.5971,
+      "px": 0.2001,
+      "pz": -0.1789
+    },
+    {
+      "s": "Heyting algebra",
+      "from": "Heyting algebra",
+      "domain": "algèbre",
+      "wc": 559,
+      "struct": 0.5968,
+      "px": 0.1446,
+      "pz": -0.2392
+    },
+    {
+      "s": "Canonical bundle",
+      "from": "Canonical bundle",
+      "domain": "algèbre",
+      "wc": 1553,
+      "struct": 0.5968,
+      "px": 0.1589,
+      "pz": -0.1251
+    },
+    {
+      "s": "Approximate string m",
+      "from": "Approximate string matching",
+      "domain": "algèbre",
+      "wc": 1970,
+      "struct": 0.5967,
+      "px": 0.144,
+      "pz": -0.0128
+    },
+    {
+      "s": "Krull dimension",
+      "from": "Krull dimension",
+      "domain": "algèbre",
+      "wc": 1331,
+      "struct": 0.5966,
+      "px": 0.0292,
+      "pz": -0.1729
+    },
+    {
+      "s": "Wreath product",
+      "from": "Wreath product",
+      "domain": "algèbre",
+      "wc": 2243,
+      "struct": 0.5966,
+      "px": 0.1198,
+      "pz": -0.1499
+    },
+    {
+      "s": "Ideal class group",
+      "from": "Ideal class group",
+      "domain": "algèbre",
+      "wc": 1642,
+      "struct": 0.5965,
+      "px": 0.0592,
+      "pz": -0.2107
+    },
+    {
+      "s": "Newton polygon",
+      "from": "Newton polygon",
+      "domain": "algèbre",
+      "wc": 475,
+      "struct": 0.5965,
+      "px": 0.0295,
+      "pz": -0.0488
+    },
+    {
+      "s": "Flat module",
+      "from": "Flat module",
+      "domain": "algèbre",
+      "wc": 1460,
+      "struct": 0.5965,
+      "px": 0.1678,
+      "pz": -0.2499
+    },
+    {
+      "s": "Endomorphism ring",
+      "from": "Endomorphism ring",
+      "domain": "algèbre",
+      "wc": 1365,
+      "struct": 0.5965,
+      "px": 0.1687,
+      "pz": -0.1922
+    },
+    {
+      "s": "Schubert calculus",
+      "from": "Schubert calculus",
+      "domain": "algèbre",
+      "wc": 1013,
+      "struct": 0.5965,
+      "px": 0.1293,
+      "pz": -0.1584
+    },
+    {
+      "s": "Ring laser gyroscope",
+      "from": "Ring laser gyroscope",
+      "domain": "algèbre",
+      "wc": 1977,
+      "struct": 0.5965,
+      "px": 0.0961,
+      "pz": -0.2208
+    },
+    {
+      "s": "Witt algebra",
+      "from": "Witt algebra",
+      "domain": "algèbre",
+      "wc": 552,
+      "struct": 0.5964,
+      "px": 0.1323,
+      "pz": -0.1374
+    },
+    {
+      "s": "Quartic plane curve",
+      "from": "Quartic plane curve",
+      "domain": "algèbre",
+      "wc": 926,
+      "struct": 0.5964,
+      "px": 0.0152,
+      "pz": -0.2943
+    },
+    {
+      "s": "Borel subgroup",
+      "from": "Borel subgroup",
+      "domain": "algèbre",
+      "wc": 620,
+      "struct": 0.5964,
+      "px": 0.2336,
+      "pz": -0.2303
+    },
+    {
+      "s": "Boolean prime ideal ",
+      "from": "Boolean prime ideal theorem",
+      "domain": "algèbre",
+      "wc": 961,
+      "struct": 0.5964,
+      "px": 0.1509,
+      "pz": -0.1703
+    },
+    {
+      "s": "Commentz-Walter algo",
+      "from": "Commentz-Walter algorithm",
+      "domain": "algèbre",
+      "wc": 549,
+      "struct": 0.5964,
+      "px": 0.2034,
+      "pz": -0.3005
+    },
+    {
+      "s": "Kac–Moody algebra",
+      "from": "Kac–Moody algebra",
+      "domain": "algèbre",
+      "wc": 979,
+      "struct": 0.5964,
+      "px": 0.1819,
+      "pz": -0.1487
+    },
+    {
+      "s": "Quantum Turing machi",
+      "from": "Quantum Turing machine",
+      "domain": "algèbre",
+      "wc": 2230,
+      "struct": 0.5963,
+      "px": 0.0994,
+      "pz": -0.1159
+    },
+    {
+      "s": "Schur's lemma",
+      "from": "Schur's lemma",
+      "domain": "algèbre",
+      "wc": 530,
+      "struct": 0.5963,
+      "px": 0.2495,
+      "pz": -0.2697
+    },
+    {
+      "s": "Gynodioecy",
+      "from": "Gynodioecy",
+      "domain": "algèbre",
+      "wc": 1009,
+      "struct": 0.5963,
+      "px": 0.2142,
+      "pz": -0.0893
+    },
+    {
+      "s": "Pinch point",
+      "from": "Pinch point",
+      "domain": "algèbre",
+      "wc": 644,
+      "struct": 0.5963,
+      "px": 0.0654,
+      "pz": -0.0553
+    },
+    {
+      "s": "Semisimple Lie algeb",
+      "from": "Semisimple Lie algebra",
+      "domain": "algèbre",
+      "wc": 1217,
+      "struct": 0.5963,
+      "px": 0.1831,
+      "pz": -0.1774
+    },
+    {
+      "s": "Central simple algeb",
+      "from": "Central simple algebra",
+      "domain": "algèbre",
+      "wc": 1014,
+      "struct": 0.5963,
+      "px": 0.119,
+      "pz": -0.1512
+    },
+    {
+      "s": "Algebraic number the",
+      "from": "Algebraic number theory",
+      "domain": "algèbre",
+      "wc": 1261,
+      "struct": 0.5963,
+      "px": 0.1526,
+      "pz": -0.2749
+    },
+    {
+      "s": "Generalized Kac–Mood",
+      "from": "Generalized Kac–Moody algebra",
+      "domain": "algèbre",
+      "wc": 2070,
+      "struct": 0.5963,
+      "px": 0.1226,
+      "pz": -0.3055
+    },
+    {
+      "s": "Concurrent data stru",
+      "from": "Concurrent data structure",
+      "domain": "algèbre",
+      "wc": 1986,
+      "struct": 0.5963,
+      "px": 0.1622,
+      "pz": -0.1931
+    },
+    {
+      "s": "Algebraic geometry a",
+      "from": "Algebraic geometry and analytic geometry",
+      "domain": "algèbre",
+      "wc": 1066,
+      "struct": 0.5963,
+      "px": 0.2239,
+      "pz": -0.1334
+    },
+    {
+      "s": "Verma module",
+      "from": "Verma module",
+      "domain": "algèbre",
+      "wc": 1469,
+      "struct": 0.5963,
+      "px": 0.126,
+      "pz": -0.1172
+    },
+    {
+      "s": "Algebraic combinator",
+      "from": "Algebraic combinatorics",
+      "domain": "algèbre",
+      "wc": 794,
+      "struct": 0.5962,
+      "px": 0.1979,
+      "pz": -0.1545
+    },
+    {
+      "s": "k-medoids",
+      "from": "k-medoids",
+      "domain": "algèbre",
+      "wc": 939,
+      "struct": 0.5962,
+      "px": 0.0522,
+      "pz": -0.1693
+    },
+    {
+      "s": "Algebraic element",
+      "from": "Algebraic element",
+      "domain": "algèbre",
+      "wc": 1005,
+      "struct": 0.5962,
+      "px": 0.1208,
+      "pz": -0.3054
+    },
+    {
+      "s": "N = 2 superconformal",
+      "from": "N = 2 superconformal algebra",
+      "domain": "algèbre",
+      "wc": 915,
+      "struct": 0.5962,
+      "px": 0.0868,
+      "pz": -0.1894
+    },
+    {
+      "s": "Representation theor",
+      "from": "Representation theory of Hopf algebras",
+      "domain": "algèbre",
+      "wc": 2110,
+      "struct": 0.5962,
+      "px": 0.1477,
+      "pz": -0.273
+    },
+    {
+      "s": "Algebraic semantics",
+      "from": "Algebraic semantics",
+      "domain": "algèbre",
+      "wc": 1491,
+      "struct": 0.5962,
+      "px": 0.0656,
+      "pz": -0.1925
+    },
+    {
+      "s": "Displacement mapping",
+      "from": "Displacement mapping",
+      "domain": "algèbre",
+      "wc": 1872,
+      "struct": 0.5962,
+      "px": -0.0319,
+      "pz": -0.2091
+    },
+    {
+      "s": "Bicyclic semigroup",
+      "from": "Bicyclic semigroup",
+      "domain": "algèbre",
+      "wc": 2111,
+      "struct": 0.5962,
+      "px": 0.0673,
+      "pz": -0.1141
+    },
+    {
+      "s": "Codes for electromag",
+      "from": "Codes for electromagnetic scattering by cylinders",
+      "domain": "algèbre",
+      "wc": 2151,
+      "struct": 0.5962,
+      "px": 0.0553,
+      "pz": -0.1222
+    },
+    {
+      "s": "Hyperelliptic curve",
+      "from": "Hyperelliptic curve",
+      "domain": "algèbre",
+      "wc": 1720,
+      "struct": 0.5962,
+      "px": 0.0641,
+      "pz": -0.1555
+    },
+    {
+      "s": "Radiosity (computer ",
+      "from": "Radiosity (computer graphics)",
+      "domain": "algèbre",
+      "wc": 1157,
+      "struct": 0.5962,
+      "px": 0.1559,
+      "pz": -0.2511
+    },
+    {
+      "s": "Casimir element",
+      "from": "Casimir element",
+      "domain": "algèbre",
+      "wc": 1573,
+      "struct": 0.5962,
+      "px": 0.1685,
+      "pz": -0.2536
+    },
+    {
+      "s": "Debye–Waller factor",
+      "from": "Debye–Waller factor",
+      "domain": "algèbre",
+      "wc": 1333,
+      "struct": 0.5962,
+      "px": 0.1255,
+      "pz": -0.2947
+    },
+    {
+      "s": "Compact quantum grou",
+      "from": "Compact quantum group",
+      "domain": "algèbre",
+      "wc": 1534,
+      "struct": 0.5962,
+      "px": 0.111,
+      "pz": -0.2241
+    },
+    {
+      "s": "Stone's representati",
+      "from": "Stone's representation theorem for Boolean algebras",
+      "domain": "algèbre",
+      "wc": 1833,
+      "struct": 0.5962,
+      "px": 0.1202,
+      "pz": -0.2474
+    },
+    {
+      "s": "Elementary algebra",
+      "from": "Elementary algebra",
+      "domain": "algèbre",
+      "wc": 1544,
+      "struct": 0.5961,
+      "px": 0.2184,
+      "pz": -0.2547
+    },
+    {
+      "s": "Integral domain",
+      "from": "Integral domain",
+      "domain": "algèbre",
+      "wc": 1914,
+      "struct": 0.5961,
+      "px": 0.0346,
+      "pz": -0.2182
+    },
+    {
+      "s": "Resolution of singul",
+      "from": "Resolution of singularities",
+      "domain": "algèbre",
+      "wc": 1316,
+      "struct": 0.5961,
+      "px": 0.2271,
+      "pz": -0.1531
+    },
+    {
+      "s": "Abelian extension",
+      "from": "Abelian extension",
+      "domain": "algèbre",
+      "wc": 2027,
+      "struct": 0.5961,
+      "px": 0.0687,
+      "pz": -0.2057
+    },
+    {
+      "s": "Injective module",
+      "from": "Injective module",
+      "domain": "algèbre",
+      "wc": 1886,
+      "struct": 0.5961,
+      "px": 0.0908,
+      "pz": -0.1452
+    }
+  ],
+  "fertile_voids": [
+    {
+      "s": "Wind hybrid power sy",
+      "from": "Wind hybrid power systems",
+      "domain": "énergie",
+      "wc": 9478,
+      "degree": 0.0004,
+      "px": 0.0433,
+      "pz": -0.0386
+    },
+    {
+      "s": "Australian populatio",
+      "from": "Australian population",
+      "domain": "démographie",
+      "wc": 8995,
+      "degree": 0.0004,
+      "px": -0.8582,
+      "pz": -0.3041
+    },
+    {
+      "s": "Genomic island",
+      "from": "Genomic island",
+      "domain": "génomique",
+      "wc": 7205,
+      "degree": 0.0004,
+      "px": -0.8659,
+      "pz": 0.1721
+    },
+    {
+      "s": "D region",
+      "from": "D region",
+      "domain": "climatologie",
+      "wc": 6832,
+      "degree": 0.0004,
+      "px": 0.01,
+      "pz": 0.1464
+    },
+    {
+      "s": "Behavioral ecology",
+      "from": "Behavioral ecology",
+      "domain": "écologie",
+      "wc": 6626,
+      "degree": 0.0004,
+      "px": -0.2171,
+      "pz": 0.3119
+    },
+    {
+      "s": "Exposome",
+      "from": "Exposome",
+      "domain": "écologie",
+      "wc": 6437,
+      "degree": 0.0004,
+      "px": -0.2451,
+      "pz": 0.4392
+    },
+    {
+      "s": "Urban climatology",
+      "from": "Urban climatology",
+      "domain": "climatologie",
+      "wc": 6406,
+      "degree": 0.0004,
+      "px": 0.01,
+      "pz": 0.2104
+    },
+    {
+      "s": "Ceilometer",
+      "from": "Ceilometer",
+      "domain": "climatologie",
+      "wc": 6298,
+      "degree": 0.0004,
+      "px": -0.0003,
+      "pz": 0.2977
+    },
+    {
+      "s": "Rank abundance curve",
+      "from": "Rank abundance curve",
+      "domain": "écologie",
+      "wc": 5406,
+      "degree": 0.0004,
+      "px": -0.2525,
+      "pz": 0.3886
+    },
+    {
+      "s": "Bottom-up proteomics",
+      "from": "Bottom-up proteomics",
+      "domain": "génomique",
+      "wc": 5347,
+      "degree": 0.0004,
+      "px": -0.8992,
+      "pz": 0.2874
+    },
+    {
+      "s": "Spinplasmonics",
+      "from": "Spinplasmonics",
+      "domain": "nanotechnologie",
+      "wc": 5338,
+      "degree": 0.0004,
+      "px": -0.1984,
+      "pz": 0.8834
+    },
+    {
+      "s": "Thermophotovoltaic",
+      "from": "Thermophotovoltaic",
+      "domain": "énergie",
+      "wc": 5215,
+      "degree": 0.0004,
+      "px": -0.0644,
+      "pz": -0.0123
+    },
+    {
+      "s": "Aerodynamic center",
+      "from": "Aerodynamic center",
+      "domain": "aérospatiale",
+      "wc": 5191,
+      "degree": 0.0004,
+      "px": 0.366,
+      "pz": 0.5146
+    },
+    {
+      "s": "Special populations",
+      "from": "Special populations",
+      "domain": "démographie",
+      "wc": 5137,
+      "degree": 0.0004,
+      "px": -0.8962,
+      "pz": -0.2406
+    },
+    {
+      "s": "Hadley cell",
+      "from": "Hadley cell",
+      "domain": "climatologie",
+      "wc": 5093,
+      "degree": 0.0004,
+      "px": -0.149,
+      "pz": 0.3608
+    },
+    {
+      "s": "Biological oceanogra",
+      "from": "Biological oceanography",
+      "domain": "océanographie",
+      "wc": 4863,
+      "degree": 0.0004,
+      "px": -0.5483,
+      "pz": 0.279
+    },
+    {
+      "s": "Quantum tomography",
+      "from": "Quantum tomography",
+      "domain": "biomédical",
+      "wc": 4781,
+      "degree": 0.0004,
+      "px": -0.4713,
+      "pz": 0.551
+    },
+    {
+      "s": "Radial immunodiffusi",
+      "from": "Radial immunodiffusion",
+      "domain": "immunologie",
+      "wc": 4774,
+      "degree": 0.0004,
+      "px": -1.0217,
+      "pz": 0.6975
+    },
+    {
+      "s": "Protein function pre",
+      "from": "Protein function prediction",
+      "domain": "bioinformatique",
+      "wc": 4712,
+      "degree": 0.0004,
+      "px": -0.7667,
+      "pz": 0.2035
+    },
+    {
+      "s": "Antitoxin",
+      "from": "Antitoxin",
+      "domain": "immunologie",
+      "wc": 4705,
+      "degree": 0.0004,
+      "px": -1.0043,
+      "pz": 0.5635
+    },
+    {
+      "s": "Air Pollution Index",
+      "from": "Air Pollution Index",
+      "domain": "environnement",
+      "wc": 4701,
+      "degree": 0.0004,
+      "px": -0.2676,
+      "pz": 0.3413
+    },
+    {
+      "s": "Payment for ecosyste",
+      "from": "Payment for ecosystem services",
+      "domain": "écologie",
+      "wc": 4687,
+      "degree": 0.0004,
+      "px": -0.2444,
+      "pz": 0.3717
+    },
+    {
+      "s": "Engine room",
+      "from": "Engine room",
+      "domain": "aérospatiale",
+      "wc": 4574,
+      "degree": 0.0004,
+      "px": 0.4318,
+      "pz": 0.3552
+    },
+    {
+      "s": "Logistic distributio",
+      "from": "Logistic distribution",
+      "domain": "géosciences",
+      "wc": 4558,
+      "degree": 0.0004,
+      "px": -0.0766,
+      "pz": 0.0891
+    },
+    {
+      "s": "Convective available",
+      "from": "Convective available potential energy",
+      "domain": "climatologie",
+      "wc": 4550,
+      "degree": 0.0004,
+      "px": -0.0873,
+      "pz": 0.1813
+    },
+    {
+      "s": "Polio vaccine",
+      "from": "Polio vaccine",
+      "domain": "immunologie",
+      "wc": 4529,
+      "degree": 0.0004,
+      "px": -0.9385,
+      "pz": 0.7751
+    },
+    {
+      "s": "Economic mobility",
+      "from": "Economic mobility",
+      "domain": "économie",
+      "wc": 4507,
+      "degree": 0.0004,
+      "px": -0.2449,
+      "pz": -0.5355
+    },
+    {
+      "s": "Seismic migration",
+      "from": "Seismic migration",
+      "domain": "sismologie",
+      "wc": 4442,
+      "degree": 0.0004,
+      "px": 0.1471,
+      "pz": 0.6395
+    },
+    {
+      "s": "Viral phylodynamics",
+      "from": "Viral phylodynamics",
+      "domain": "épidémiologie",
+      "wc": 4378,
+      "degree": 0.0004,
+      "px": -0.9475,
+      "pz": -0.2612
+    },
+    {
+      "s": "Derived demand",
+      "from": "Derived demand",
+      "domain": "économie",
+      "wc": 4351,
+      "degree": 0.0004,
+      "px": -0.1957,
+      "pz": -0.3373
+    },
+    {
+      "s": "AM/FM/GIS",
+      "from": "AM/FM/GIS",
+      "domain": "géosciences",
+      "wc": 4320,
+      "degree": 0.0004,
+      "px": -0.1112,
+      "pz": 0.2004
+    },
+    {
+      "s": "Economic strategy",
+      "from": "Economic strategy",
+      "domain": "économie",
+      "wc": 4289,
+      "degree": 0.0004,
+      "px": -0.2114,
+      "pz": -0.4504
+    },
+    {
+      "s": "Innovation economics",
+      "from": "Innovation economics",
+      "domain": "économie",
+      "wc": 4285,
+      "degree": 0.0004,
+      "px": -0.2501,
+      "pz": -0.508
+    },
+    {
+      "s": "Social ecology",
+      "from": "Social ecology",
+      "domain": "écologie",
+      "wc": 4238,
+      "degree": 0.0004,
+      "px": -0.2189,
+      "pz": 0.2424
+    },
+    {
+      "s": "Magnetic memory",
+      "from": "Magnetic memory",
+      "domain": "psychologie",
+      "wc": 4225,
+      "degree": 0.0004,
+      "px": 0.0029,
+      "pz": -0.2758
+    },
+    {
+      "s": "Social intuitionism",
+      "from": "Social intuitionism",
+      "domain": "psychologie",
+      "wc": 4170,
+      "degree": 0.0004,
+      "px": -0.1106,
+      "pz": -0.3599
+    },
+    {
+      "s": "Logistic map",
+      "from": "Logistic map",
+      "domain": "géosciences",
+      "wc": 4125,
+      "degree": 0.0004,
+      "px": -0.2029,
+      "pz": 0.302
+    },
+    {
+      "s": "Roadway noise",
+      "from": "Roadway noise",
+      "domain": "aérospatiale",
+      "wc": 4054,
+      "degree": 0.0004,
+      "px": 0.3784,
+      "pz": 0.4815
+    },
+    {
+      "s": "Cost–utility analysi",
+      "from": "Cost–utility analysis",
+      "domain": "finance",
+      "wc": 4044,
+      "degree": 0.0004,
+      "px": -0.0881,
+      "pz": -0.3574
+    },
+    {
+      "s": "Electron beam-induce",
+      "from": "Electron beam-induced current",
+      "domain": "matériaux",
+      "wc": 4036,
+      "degree": 0.0004,
+      "px": 0.1569,
+      "pz": 0.4855
+    },
+    {
+      "s": "Cloud base",
+      "from": "Cloud base",
+      "domain": "climatologie",
+      "wc": 4031,
+      "degree": 0.0004,
+      "px": -0.0049,
+      "pz": 0.3141
+    },
+    {
+      "s": "Volunteered geograph",
+      "from": "Volunteered geographic information",
+      "domain": "géosciences",
+      "wc": 4016,
+      "degree": 0.0004,
+      "px": -0.1513,
+      "pz": 0.1443
+    },
+    {
+      "s": "Price policy",
+      "from": "Price policy",
+      "domain": "économie",
+      "wc": 4005,
+      "degree": 0.0004,
+      "px": -0.2496,
+      "pz": -0.4646
+    },
+    {
+      "s": "Reverse vaccinology",
+      "from": "Reverse vaccinology",
+      "domain": "génomique",
+      "wc": 4004,
+      "degree": 0.0004,
+      "px": -0.6704,
+      "pz": 0.27
+    },
+    {
+      "s": "Computational genomi",
+      "from": "Computational genomics",
+      "domain": "génomique",
+      "wc": 3946,
+      "degree": 0.0004,
+      "px": -0.8015,
+      "pz": 0.0736
+    },
+    {
+      "s": "Radiogenomics",
+      "from": "Radiogenomics",
+      "domain": "génomique",
+      "wc": 3931,
+      "degree": 0.0004,
+      "px": -0.9264,
+      "pz": 0.248
+    },
+    {
+      "s": "Recombinase Polymera",
+      "from": "Recombinase Polymerase Amplification",
+      "domain": "polymères",
+      "wc": 3916,
+      "degree": 0.0004,
+      "px": -0.1562,
+      "pz": 0.9183
+    },
+    {
+      "s": "Economic appraisal",
+      "from": "Economic appraisal",
+      "domain": "économie",
+      "wc": 3912,
+      "degree": 0.0004,
+      "px": -0.2738,
+      "pz": -0.5377
+    },
+    {
+      "s": "Antibody microarray",
+      "from": "Antibody microarray",
+      "domain": "immunologie",
+      "wc": 3906,
+      "degree": 0.0004,
+      "px": -1.0135,
+      "pz": 0.7288
+    },
+    {
+      "s": "Microbicides for sex",
+      "from": "Microbicides for sexually transmitted diseases",
+      "domain": "pharmacologie",
+      "wc": 3888,
+      "degree": 0.0004,
+      "px": -0.9488,
+      "pz": 0.8394
+    },
+    {
+      "s": "Geopark",
+      "from": "Geopark",
+      "domain": "géosciences",
+      "wc": 3840,
+      "degree": 0.0004,
+      "px": -0.1839,
+      "pz": 0.075
+    },
+    {
+      "s": "Pneumococcal polysac",
+      "from": "Pneumococcal polysaccharide vaccine",
+      "domain": "immunologie",
+      "wc": 3816,
+      "degree": 0.0004,
+      "px": -0.9749,
+      "pz": 0.6511
+    },
+    {
+      "s": "HIV Antigens",
+      "from": "HIV Antigens",
+      "domain": "immunologie",
+      "wc": 3803,
+      "degree": 0.0004,
+      "px": -1.0534,
+      "pz": 0.6289
+    },
+    {
+      "s": "Stock market predict",
+      "from": "Stock market prediction",
+      "domain": "finance",
+      "wc": 3797,
+      "degree": 0.0004,
+      "px": -0.1219,
+      "pz": -0.1931
+    },
+    {
+      "s": "Memory protection",
+      "from": "Memory protection",
+      "domain": "psychologie",
+      "wc": 3782,
+      "degree": 0.0004,
+      "px": -0.0596,
+      "pz": -0.3228
+    },
+    {
+      "s": "Intraoperative MRI",
+      "from": "Intraoperative MRI",
+      "domain": "biomédical",
+      "wc": 3772,
+      "degree": 0.0004,
+      "px": -0.5804,
+      "pz": 0.4623
+    },
+    {
+      "s": "Coated paper",
+      "from": "Coated paper",
+      "domain": "polymères",
+      "wc": 3771,
+      "degree": 0.0004,
+      "px": -0.246,
+      "pz": 1.0537
+    },
+    {
+      "s": "Web Coverage Service",
+      "from": "Web Coverage Service",
+      "domain": "géosciences",
+      "wc": 3747,
+      "degree": 0.0004,
+      "px": -0.1382,
+      "pz": 0.087
+    },
+    {
+      "s": "Tectonic subsidence",
+      "from": "Tectonic subsidence",
+      "domain": "sismologie",
+      "wc": 3694,
+      "degree": 0.0004,
+      "px": 0.1255,
+      "pz": 0.3048
+    },
+    {
+      "s": "Acrylic polymer",
+      "from": "Acrylic polymer",
+      "domain": "polymères",
+      "wc": 3685,
+      "degree": 0.0004,
+      "px": -0.0243,
+      "pz": 0.7686
+    },
+    {
+      "s": "Evolutionism",
+      "from": "Evolutionism",
+      "domain": "évolution",
+      "wc": 3683,
+      "degree": 0.0004,
+      "px": -0.3501,
+      "pz": 0.0567
+    },
+    {
+      "s": "Subalpine forest",
+      "from": "Subalpine forest",
+      "domain": "écologie",
+      "wc": 3673,
+      "degree": 0.0004,
+      "px": -0.0814,
+      "pz": 0.4124
+    },
+    {
+      "s": "Biometeorology",
+      "from": "Biometeorology",
+      "domain": "climatologie",
+      "wc": 3668,
+      "degree": 0.0004,
+      "px": -0.0061,
+      "pz": 0.0294
+    },
+    {
+      "s": "Information cascade",
+      "from": "Information cascade",
+      "domain": "psychologie",
+      "wc": 3623,
+      "degree": 0.0004,
+      "px": -0.0071,
+      "pz": -0.381
+    },
+    {
+      "s": "Semiconductor nanost",
+      "from": "Semiconductor nanostructures",
+      "domain": "matériaux",
+      "wc": 3560,
+      "degree": 0.0004,
+      "px": 0.1237,
+      "pz": 0.6362
+    },
+    {
+      "s": "Human development th",
+      "from": "Human development theory",
+      "domain": "économie",
+      "wc": 3555,
+      "degree": 0.0004,
+      "px": -0.2776,
+      "pz": -0.53
+    },
+    {
+      "s": "Ecological resilienc",
+      "from": "Ecological resilience",
+      "domain": "écologie",
+      "wc": 3502,
+      "degree": 0.0004,
+      "px": -0.2836,
+      "pz": 0.4518
+    },
+    {
+      "s": "Financial networks",
+      "from": "Financial networks",
+      "domain": "finance",
+      "wc": 3491,
+      "degree": 0.0004,
+      "px": -0.0582,
+      "pz": -0.1727
+    },
+    {
+      "s": "Overall equipment ef",
+      "from": "Overall equipment effectiveness",
+      "domain": "ingénierie",
+      "wc": 3461,
+      "degree": 0.0004,
+      "px": -0.0674,
+      "pz": -0.0289
+    },
+    {
+      "s": "Measles-Mumps-Rubell",
+      "from": "Measles-Mumps-Rubella Vaccine",
+      "domain": "immunologie",
+      "wc": 3451,
+      "degree": 0.0004,
+      "px": -0.9014,
+      "pz": 0.5151
+    },
+    {
+      "s": "Molluscicide",
+      "from": "Molluscicide",
+      "domain": "agronomie",
+      "wc": 3440,
+      "degree": 0.0004,
+      "px": -0.7539,
+      "pz": -0.2659
+    },
+    {
+      "s": "Lawrence Kohlberg's ",
+      "from": "Lawrence Kohlberg's stages of moral development",
+      "domain": "évolution",
+      "wc": 3431,
+      "degree": 0.0004,
+      "px": -0.3513,
+      "pz": 0.1619
+    },
+    {
+      "s": "Crevasse",
+      "from": "Crevasse",
+      "domain": "géosciences",
+      "wc": 3414,
+      "degree": 0.0004,
+      "px": -0.286,
+      "pz": 0.1632
+    },
+    {
+      "s": "Nitrile rubber",
+      "from": "Nitrile rubber",
+      "domain": "polymères",
+      "wc": 3410,
+      "degree": 0.0004,
+      "px": -0.0198,
+      "pz": 0.9446
+    },
+    {
+      "s": "Mixed economy",
+      "from": "Mixed economy",
+      "domain": "économie",
+      "wc": 3409,
+      "degree": 0.0004,
+      "px": -0.2414,
+      "pz": -0.4955
+    },
+    {
+      "s": "Prophylactic Surgery",
+      "from": "Prophylactic Surgery",
+      "domain": "médecine",
+      "wc": 3395,
+      "degree": 0.0004,
+      "px": -0.8024,
+      "pz": 0.5166
+    },
+    {
+      "s": "Spamming",
+      "from": "Spamming",
+      "domain": "ingénierie",
+      "wc": 3385,
+      "degree": 0.0004,
+      "px": 0.0359,
+      "pz": -0.0256
+    },
+    {
+      "s": "Cladogenesis",
+      "from": "Cladogenesis",
+      "domain": "évolution",
+      "wc": 3375,
+      "degree": 0.0004,
+      "px": -0.2921,
+      "pz": 0.0962
+    },
+    {
+      "s": "Marine larval ecolog",
+      "from": "Marine larval ecology",
+      "domain": "écologie",
+      "wc": 3355,
+      "degree": 0.0004,
+      "px": -0.1623,
+      "pz": 0.3738
+    },
+    {
+      "s": "Living cationic poly",
+      "from": "Living cationic polymerization",
+      "domain": "polymères",
+      "wc": 3353,
+      "degree": 0.0004,
+      "px": -0.1258,
+      "pz": 0.919
+    },
+    {
+      "s": "Chinese agriculture",
+      "from": "Chinese agriculture",
+      "domain": "agronomie",
+      "wc": 3337,
+      "degree": 0.0004,
+      "px": -0.739,
+      "pz": -0.2365
+    },
+    {
+      "s": "History of political",
+      "from": "History of political thought",
+      "domain": "évolution",
+      "wc": 3325,
+      "degree": 0.0004,
+      "px": -0.273,
+      "pz": 0.1869
+    },
+    {
+      "s": "Transplanted kidney",
+      "from": "Transplanted kidney",
+      "domain": "médecine",
+      "wc": 3323,
+      "degree": 0.0004,
+      "px": -0.9535,
+      "pz": 0.5375
+    },
+    {
+      "s": "Monte Carlo methods ",
+      "from": "Monte Carlo methods for option pricing",
+      "domain": "finance",
+      "wc": 3292,
+      "degree": 0.0004,
+      "px": -0.254,
+      "pz": -0.3227
+    },
+    {
+      "s": "Envelope detector",
+      "from": "Envelope detector",
+      "domain": "ingénierie",
+      "wc": 3285,
+      "degree": 0.0004,
+      "px": -0.0661,
+      "pz": 0.0349
+    },
+    {
+      "s": "Built-in self-test",
+      "from": "Built-in self-test",
+      "domain": "ingénierie",
+      "wc": 3281,
+      "degree": 0.0004,
+      "px": -0.0497,
+      "pz": -0.0876
+    },
+    {
+      "s": "Safety climate",
+      "from": "Safety climate",
+      "domain": "psychologie",
+      "wc": 3272,
+      "degree": 0.0004,
+      "px": 0.0104,
+      "pz": -0.228
+    },
+    {
+      "s": "Eye surgery",
+      "from": "Eye surgery",
+      "domain": "médecine",
+      "wc": 3263,
+      "degree": 0.0004,
+      "px": -0.9016,
+      "pz": 0.4826
+    },
+    {
+      "s": "Basophil activation",
+      "from": "Basophil activation",
+      "domain": "immunologie",
+      "wc": 3252,
+      "degree": 0.0004,
+      "px": -1.0499,
+      "pz": 0.6719
+    },
+    {
+      "s": "Clinical epidemiolog",
+      "from": "Clinical epidemiology",
+      "domain": "épidémiologie",
+      "wc": 3251,
+      "degree": 0.0004,
+      "px": -1.0427,
+      "pz": -0.0365
+    },
+    {
+      "s": "Liquid-based cytolog",
+      "from": "Liquid-based cytology",
+      "domain": "médecine",
+      "wc": 3234,
+      "degree": 0.0004,
+      "px": -0.8182,
+      "pz": 0.4555
+    },
+    {
+      "s": "Quantum fluid",
+      "from": "Quantum fluid",
+      "domain": "matériaux",
+      "wc": 3217,
+      "degree": 0.0004,
+      "px": 0.1251,
+      "pz": 0.534
+    },
+    {
+      "s": "Cancer immunology",
+      "from": "Cancer immunology",
+      "domain": "immunologie",
+      "wc": 3195,
+      "degree": 0.0004,
+      "px": -0.9441,
+      "pz": 0.6064
+    },
+    {
+      "s": "Genetic network",
+      "from": "Genetic network",
+      "domain": "génomique",
+      "wc": 3183,
+      "degree": 0.0004,
+      "px": -0.7801,
+      "pz": 0.1882
+    },
+    {
+      "s": "Internal dosimetry",
+      "from": "Internal dosimetry",
+      "domain": "pharmacologie",
+      "wc": 3154,
+      "degree": 0.0004,
+      "px": -0.9836,
+      "pz": 0.8234
+    },
+    {
+      "s": "Laser peening",
+      "from": "Laser peening",
+      "domain": "optique",
+      "wc": 3135,
+      "degree": 0.0004,
+      "px": 0.2992,
+      "pz": 0.3378
+    },
+    {
+      "s": "Verification",
+      "from": "Verification",
+      "domain": "ingénierie",
+      "wc": 3113,
+      "degree": 0.0004,
+      "px": -0.1477,
+      "pz": -0.0512
+    },
+    {
+      "s": "Economic anthropolog",
+      "from": "Economic anthropology",
+      "domain": "anthropologie",
+      "wc": 3109,
+      "degree": 0.0004,
+      "px": -0.5209,
+      "pz": -0.77
+    },
+    {
+      "s": "Unlicensed assistive",
+      "from": "Unlicensed assistive personnel",
+      "domain": "géosciences",
+      "wc": 3089,
+      "degree": 0.0004,
+      "px": -0.157,
+      "pz": 0.1665
+    },
+    {
+      "s": "Bioprocess engineeri",
+      "from": "Bioprocess engineering",
+      "domain": "ingénierie",
+      "wc": 3065,
+      "degree": 0.0004,
+      "px": 0.0116,
+      "pz": 0.0066
+    }
+  ],
+  "domain_contradictions": {
+    "combinatoire": {
+      "n_concepts": 53,
+      "avg_wc": 135637.0,
+      "avg_structural": 0.09,
+      "wc_rank": 0.735,
+      "struct_rank": 0.627,
+      "gap": 0.108,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "sismologie": {
+      "n_concepts": 115,
+      "avg_wc": 24363.0,
+      "avg_structural": 0.0864,
+      "wc_rank": 0.12,
+      "struct_rank": 0.614,
+      "gap": -0.494,
+      "interpretation": "UNDER-CITED"
+    },
+    "épidémiologie": {
+      "n_concepts": 45,
+      "avg_wc": 137336.0,
+      "avg_structural": 0.0764,
+      "wc_rank": 0.747,
+      "struct_rank": 0.554,
+      "gap": 0.193,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "ingénierie": {
+      "n_concepts": 657,
+      "avg_wc": 242624.0,
+      "avg_structural": 0.2794,
+      "wc_rank": 0.928,
+      "struct_rank": 0.94,
+      "gap": -0.012,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "finance": {
+      "n_concepts": 231,
+      "avg_wc": 63784.0,
+      "avg_structural": 0.0831,
+      "wc_rank": 0.398,
+      "struct_rank": 0.566,
+      "gap": -0.169,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "géométrie": {
+      "n_concepts": 204,
+      "avg_wc": 184939.0,
+      "avg_structural": 0.1551,
+      "wc_rank": 0.831,
+      "struct_rank": 0.867,
+      "gap": -0.036,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "matériaux": {
+      "n_concepts": 124,
+      "avg_wc": 74002.0,
+      "avg_structural": 0.0962,
+      "wc_rank": 0.446,
+      "struct_rank": 0.663,
+      "gap": -0.217,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "biologie": {
+      "n_concepts": 4397,
+      "avg_wc": 59122.0,
+      "avg_structural": 0.4835,
+      "wc_rank": 0.373,
+      "struct_rank": 0.976,
+      "gap": -0.602,
+      "interpretation": "UNDER-CITED"
+    },
+    "science générale": {
+      "n_concepts": 1754,
+      "avg_wc": 101762.0,
+      "avg_structural": 0.0961,
+      "wc_rank": 0.578,
+      "struct_rank": 0.651,
+      "gap": -0.072,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "QFT": {
+      "n_concepts": 9,
+      "avg_wc": 29885.0,
+      "avg_structural": 0.0318,
+      "wc_rank": 0.181,
+      "struct_rank": 0.193,
+      "gap": -0.012,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "volcanologie": {
+      "n_concepts": 79,
+      "avg_wc": 12606.0,
+      "avg_structural": 0.0476,
+      "wc_rank": 0.024,
+      "struct_rank": 0.337,
+      "gap": -0.313,
+      "interpretation": "UNDER-CITED"
+    },
+    "géom algébrique": {
+      "n_concepts": 64,
+      "avg_wc": 20315.0,
+      "avg_structural": 0.0564,
+      "wc_rank": 0.084,
+      "struct_rank": 0.398,
+      "gap": -0.313,
+      "interpretation": "UNDER-CITED"
+    },
+    "aérospatiale": {
+      "n_concepts": 52,
+      "avg_wc": 38054.0,
+      "avg_structural": 0.1268,
+      "wc_rank": 0.229,
+      "struct_rank": 0.747,
+      "gap": -0.518,
+      "interpretation": "UNDER-CITED"
+    },
+    "probabilités": {
+      "n_concepts": 263,
+      "avg_wc": 69553.0,
+      "avg_structural": 0.1533,
+      "wc_rank": 0.422,
+      "struct_rank": 0.855,
+      "gap": -0.434,
+      "interpretation": "UNDER-CITED"
+    },
+    "vision": {
+      "n_concepts": 24,
+      "avg_wc": 259167.0,
+      "avg_structural": 0.0554,
+      "wc_rank": 0.94,
+      "struct_rank": 0.373,
+      "gap": 0.566,
+      "interpretation": "OVER-CITED"
+    },
+    "anthropologie": {
+      "n_concepts": 46,
+      "avg_wc": 111199.0,
+      "avg_structural": 0.0206,
+      "wc_rank": 0.639,
+      "struct_rank": 0.024,
+      "gap": 0.614,
+      "interpretation": "OVER-CITED"
+    },
+    "médecine": {
+      "n_concepts": 816,
+      "avg_wc": 98660.0,
+      "avg_structural": 0.0415,
+      "wc_rank": 0.566,
+      "struct_rank": 0.277,
+      "gap": 0.289,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "électrochimie": {
+      "n_concepts": 24,
+      "avg_wc": 85146.0,
+      "avg_structural": 0.0299,
+      "wc_rank": 0.482,
+      "struct_rank": 0.157,
+      "gap": 0.325,
+      "interpretation": "OVER-CITED"
+    },
+    "oncologie": {
+      "n_concepts": 65,
+      "avg_wc": 64513.0,
+      "avg_structural": 0.0559,
+      "wc_rank": 0.41,
+      "struct_rank": 0.386,
+      "gap": 0.024,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "calculabilité": {
+      "n_concepts": 11,
+      "avg_wc": 5952.0,
+      "avg_structural": 0.0005,
+      "wc_rank": 0.0,
+      "struct_rank": 0.0,
+      "gap": 0.0,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "analyse fonctionnelle": {
+      "n_concepts": 49,
+      "avg_wc": 91274.0,
+      "avg_structural": 0.1997,
+      "wc_rank": 0.518,
+      "struct_rank": 0.916,
+      "gap": -0.398,
+      "interpretation": "UNDER-CITED"
+    },
+    "bioinformatique": {
+      "n_concepts": 17,
+      "avg_wc": 344871.0,
+      "avg_structural": 0.0427,
+      "wc_rank": 0.964,
+      "struct_rank": 0.301,
+      "gap": 0.663,
+      "interpretation": "OVER-CITED"
+    },
+    "science politique": {
+      "n_concepts": 37,
+      "avg_wc": 59330.0,
+      "avg_structural": 0.0285,
+      "wc_rank": 0.386,
+      "struct_rank": 0.133,
+      "gap": 0.253,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "catégories": {
+      "n_concepts": 16,
+      "avg_wc": 86938.0,
+      "avg_structural": 0.0246,
+      "wc_rank": 0.494,
+      "struct_rank": 0.072,
+      "gap": 0.422,
+      "interpretation": "OVER-CITED"
+    },
+    "chimie organique": {
+      "n_concepts": 61,
+      "avg_wc": 97047.0,
+      "avg_structural": 0.0304,
+      "wc_rank": 0.554,
+      "struct_rank": 0.181,
+      "gap": 0.373,
+      "interpretation": "OVER-CITED"
+    },
+    "robotique": {
+      "n_concepts": 92,
+      "avg_wc": 47738.0,
+      "avg_structural": 0.0632,
+      "wc_rank": 0.313,
+      "struct_rank": 0.422,
+      "gap": -0.108,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "quantique": {
+      "n_concepts": 109,
+      "avg_wc": 35467.0,
+      "avg_structural": 0.3524,
+      "wc_rank": 0.217,
+      "struct_rank": 0.964,
+      "gap": -0.747,
+      "interpretation": "UNDER-CITED"
+    },
+    "fluides": {
+      "n_concepts": 40,
+      "avg_wc": 29820.0,
+      "avg_structural": 0.0516,
+      "wc_rank": 0.169,
+      "struct_rank": 0.361,
+      "gap": -0.193,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "nb théorie": {
+      "n_concepts": 41,
+      "avg_wc": 6124.0,
+      "avg_structural": 0.0285,
+      "wc_rank": 0.012,
+      "struct_rank": 0.12,
+      "gap": -0.108,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "optique": {
+      "n_concepts": 190,
+      "avg_wc": 228074.0,
+      "avg_structural": 0.0425,
+      "wc_rank": 0.904,
+      "struct_rank": 0.289,
+      "gap": 0.614,
+      "interpretation": "OVER-CITED"
+    },
+    "psychologie": {
+      "n_concepts": 99,
+      "avg_wc": 45715.0,
+      "avg_structural": 0.0694,
+      "wc_rank": 0.301,
+      "struct_rank": 0.47,
+      "gap": -0.169,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "algèbre lin": {
+      "n_concepts": 287,
+      "avg_wc": 27390.0,
+      "avg_structural": 0.0847,
+      "wc_rank": 0.145,
+      "struct_rank": 0.578,
+      "gap": -0.434,
+      "interpretation": "UNDER-CITED"
+    },
+    "agronomie": {
+      "n_concepts": 54,
+      "avg_wc": 201852.0,
+      "avg_structural": 0.0356,
+      "wc_rank": 0.88,
+      "struct_rank": 0.229,
+      "gap": 0.651,
+      "interpretation": "OVER-CITED"
+    },
+    "droit": {
+      "n_concepts": 31,
+      "avg_wc": 104142.0,
+      "avg_structural": 0.0652,
+      "wc_rank": 0.602,
+      "struct_rank": 0.458,
+      "gap": 0.145,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "ML": {
+      "n_concepts": 80,
+      "avg_wc": 111613.0,
+      "avg_structural": 0.0903,
+      "wc_rank": 0.651,
+      "struct_rank": 0.639,
+      "gap": 0.012,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "biomédical": {
+      "n_concepts": 104,
+      "avg_wc": 95921.0,
+      "avg_structural": 0.0451,
+      "wc_rank": 0.53,
+      "struct_rank": 0.325,
+      "gap": 0.205,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "relativité": {
+      "n_concepts": 53,
+      "avg_wc": 23717.0,
+      "avg_structural": 0.1021,
+      "wc_rank": 0.108,
+      "struct_rank": 0.687,
+      "gap": -0.578,
+      "interpretation": "UNDER-CITED"
+    },
+    "automates": {
+      "n_concepts": 35,
+      "avg_wc": 19890.0,
+      "avg_structural": 0.0733,
+      "wc_rank": 0.06,
+      "struct_rank": 0.53,
+      "gap": -0.47,
+      "interpretation": "UNDER-CITED"
+    },
+    "évolution": {
+      "n_concepts": 195,
+      "avg_wc": 242354.0,
+      "avg_structural": 0.0742,
+      "wc_rank": 0.916,
+      "struct_rank": 0.542,
+      "gap": 0.373,
+      "interpretation": "OVER-CITED"
+    },
+    "particules": {
+      "n_concepts": 80,
+      "avg_wc": 42647.0,
+      "avg_structural": 0.1282,
+      "wc_rank": 0.265,
+      "struct_rank": 0.759,
+      "gap": -0.494,
+      "interpretation": "UNDER-CITED"
+    },
+    "pharmacologie": {
+      "n_concepts": 60,
+      "avg_wc": 121131.0,
+      "avg_structural": 0.0188,
+      "wc_rank": 0.687,
+      "struct_rank": 0.012,
+      "gap": 0.675,
+      "interpretation": "OVER-CITED"
+    },
+    "optimisation": {
+      "n_concepts": 128,
+      "avg_wc": 25911.0,
+      "avg_structural": 0.0382,
+      "wc_rank": 0.133,
+      "struct_rank": 0.253,
+      "gap": -0.12,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "crypto": {
+      "n_concepts": 61,
+      "avg_wc": 14426.0,
+      "avg_structural": 0.0282,
+      "wc_rank": 0.048,
+      "struct_rank": 0.108,
+      "gap": -0.06,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "cosmologie": {
+      "n_concepts": 19,
+      "avg_wc": 54590.0,
+      "avg_structural": 0.142,
+      "wc_rank": 0.361,
+      "struct_rank": 0.795,
+      "gap": -0.434,
+      "interpretation": "UNDER-CITED"
+    },
+    "mécanique": {
+      "n_concepts": 21,
+      "avg_wc": 73101.0,
+      "avg_structural": 0.07,
+      "wc_rank": 0.434,
+      "struct_rank": 0.482,
+      "gap": -0.048,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "informatique": {
+      "n_concepts": 470,
+      "avg_wc": 105689.0,
+      "avg_structural": 0.4967,
+      "wc_rank": 0.614,
+      "struct_rank": 0.988,
+      "gap": -0.373,
+      "interpretation": "UNDER-CITED"
+    },
+    "géosciences": {
+      "n_concepts": 327,
+      "avg_wc": 209484.0,
+      "avg_structural": 0.1059,
+      "wc_rank": 0.892,
+      "struct_rank": 0.699,
+      "gap": 0.193,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "complexité": {
+      "n_concepts": 9,
+      "avg_wc": 33389.0,
+      "avg_structural": 0.0293,
+      "wc_rank": 0.205,
+      "struct_rank": 0.145,
+      "gap": 0.06,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "ensembles": {
+      "n_concepts": 9,
+      "avg_wc": 95974.0,
+      "avg_structural": 0.0434,
+      "wc_rank": 0.542,
+      "struct_rank": 0.313,
+      "gap": 0.229,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "environnement": {
+      "n_concepts": 58,
+      "avg_wc": 478874.0,
+      "avg_structural": 0.0368,
+      "wc_rank": 1.0,
+      "struct_rank": 0.241,
+      "gap": 0.759,
+      "interpretation": "OVER-CITED"
+    },
+    "contrôle": {
+      "n_concepts": 25,
+      "avg_wc": 27910.0,
+      "avg_structural": 0.0569,
+      "wc_rank": 0.157,
+      "struct_rank": 0.41,
+      "gap": -0.253,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "électromagn": {
+      "n_concepts": 207,
+      "avg_wc": 107179.0,
+      "avg_structural": 0.2041,
+      "wc_rank": 0.627,
+      "struct_rank": 0.928,
+      "gap": -0.301,
+      "interpretation": "UNDER-CITED"
+    },
+    "géom diff": {
+      "n_concepts": 34,
+      "avg_wc": 12858.0,
+      "avg_structural": 0.023,
+      "wc_rank": 0.036,
+      "struct_rank": 0.048,
+      "gap": -0.012,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "énergie": {
+      "n_concepts": 38,
+      "avg_wc": 86979.0,
+      "avg_structural": 0.1189,
+      "wc_rank": 0.506,
+      "struct_rank": 0.723,
+      "gap": -0.217,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "linguistique": {
+      "n_concepts": 162,
+      "avg_wc": 324506.0,
+      "avg_structural": 0.1821,
+      "wc_rank": 0.952,
+      "struct_rank": 0.904,
+      "gap": 0.048,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "trigonométrie": {
+      "n_concepts": 10,
+      "avg_wc": 159336.0,
+      "avg_structural": 0.023,
+      "wc_rank": 0.759,
+      "struct_rank": 0.06,
+      "gap": 0.699,
+      "interpretation": "OVER-CITED"
+    },
+    "topologie": {
+      "n_concepts": 275,
+      "avg_wc": 30692.0,
+      "avg_structural": 0.1425,
+      "wc_rank": 0.193,
+      "struct_rank": 0.819,
+      "gap": -0.627,
+      "interpretation": "UNDER-CITED"
+    },
+    "génomique": {
+      "n_concepts": 73,
+      "avg_wc": 459789.0,
+      "avg_structural": 0.0279,
+      "wc_rank": 0.988,
+      "struct_rank": 0.096,
+      "gap": 0.892,
+      "interpretation": "OVER-CITED"
+    },
+    "astronomie": {
+      "n_concepts": 29,
+      "avg_wc": 74931.0,
+      "avg_structural": 0.1753,
+      "wc_rank": 0.458,
+      "struct_rank": 0.88,
+      "gap": -0.422,
+      "interpretation": "UNDER-CITED"
+    },
+    "éducation": {
+      "n_concepts": 19,
+      "avg_wc": 198302.0,
+      "avg_structural": 0.0725,
+      "wc_rank": 0.867,
+      "struct_rank": 0.518,
+      "gap": 0.349,
+      "interpretation": "OVER-CITED"
+    },
+    "polymères": {
+      "n_concepts": 235,
+      "avg_wc": 38470.0,
+      "avg_structural": 0.1365,
+      "wc_rank": 0.241,
+      "struct_rank": 0.771,
+      "gap": -0.53,
+      "interpretation": "UNDER-CITED"
+    },
+    "nucléaire": {
+      "n_concepts": 28,
+      "avg_wc": 361409.0,
+      "avg_structural": 0.0396,
+      "wc_rank": 0.976,
+      "struct_rank": 0.265,
+      "gap": 0.711,
+      "interpretation": "OVER-CITED"
+    },
+    "climatologie": {
+      "n_concepts": 145,
+      "avg_wc": 116569.0,
+      "avg_structural": 0.0651,
+      "wc_rank": 0.675,
+      "struct_rank": 0.446,
+      "gap": 0.229,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "algèbre": {
+      "n_concepts": 453,
+      "avg_wc": 132665.0,
+      "avg_structural": 0.596,
+      "wc_rank": 0.723,
+      "struct_rank": 1.0,
+      "gap": -0.277,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "signal": {
+      "n_concepts": 82,
+      "avg_wc": 190756.0,
+      "avg_structural": 0.0984,
+      "wc_rank": 0.843,
+      "struct_rank": 0.675,
+      "gap": 0.169,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "logique": {
+      "n_concepts": 37,
+      "avg_wc": 22943.0,
+      "avg_structural": 0.1159,
+      "wc_rank": 0.096,
+      "struct_rank": 0.711,
+      "gap": -0.614,
+      "interpretation": "UNDER-CITED"
+    },
+    "systèmes dynamiques": {
+      "n_concepts": 31,
+      "avg_wc": 38999.0,
+      "avg_structural": 0.0861,
+      "wc_rank": 0.253,
+      "struct_rank": 0.602,
+      "gap": -0.349,
+      "interpretation": "UNDER-CITED"
+    },
+    "EDP": {
+      "n_concepts": 334,
+      "avg_wc": 43723.0,
+      "avg_structural": 0.0725,
+      "wc_rank": 0.289,
+      "struct_rank": 0.506,
+      "gap": -0.217,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "neurosciences": {
+      "n_concepts": 123,
+      "avg_wc": 51967.0,
+      "avg_structural": 0.1402,
+      "wc_rank": 0.325,
+      "struct_rank": 0.783,
+      "gap": -0.458,
+      "interpretation": "UNDER-CITED"
+    },
+    "histoire": {
+      "n_concepts": 10,
+      "avg_wc": 168225.0,
+      "avg_structural": 0.0324,
+      "wc_rank": 0.783,
+      "struct_rank": 0.205,
+      "gap": 0.578,
+      "interpretation": "OVER-CITED"
+    },
+    "information": {
+      "n_concepts": 16,
+      "avg_wc": 20296.0,
+      "avg_structural": 0.021,
+      "wc_rank": 0.072,
+      "struct_rank": 0.036,
+      "gap": 0.036,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "chimie": {
+      "n_concepts": 4746,
+      "avg_wc": 53885.0,
+      "avg_structural": 0.31,
+      "wc_rank": 0.349,
+      "struct_rank": 0.952,
+      "gap": -0.602,
+      "interpretation": "UNDER-CITED"
+    },
+    "sociologie": {
+      "n_concepts": 18,
+      "avg_wc": 175275.0,
+      "avg_structural": 0.0703,
+      "wc_rank": 0.795,
+      "struct_rank": 0.494,
+      "gap": 0.301,
+      "interpretation": "OVER-CITED"
+    },
+    "télécommunications": {
+      "n_concepts": 378,
+      "avg_wc": 53571.0,
+      "avg_structural": 0.1494,
+      "wc_rank": 0.337,
+      "struct_rank": 0.843,
+      "gap": -0.506,
+      "interpretation": "UNDER-CITED"
+    },
+    "écologie": {
+      "n_concepts": 149,
+      "avg_wc": 113857.0,
+      "avg_structural": 0.1809,
+      "wc_rank": 0.663,
+      "struct_rank": 0.892,
+      "gap": -0.229,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "nanotechnologie": {
+      "n_concepts": 35,
+      "avg_wc": 164670.0,
+      "avg_structural": 0.0642,
+      "wc_rank": 0.771,
+      "struct_rank": 0.434,
+      "gap": 0.337,
+      "interpretation": "OVER-CITED"
+    },
+    "thermo": {
+      "n_concepts": 122,
+      "avg_wc": 124972.0,
+      "avg_structural": 0.0491,
+      "wc_rank": 0.699,
+      "struct_rank": 0.349,
+      "gap": 0.349,
+      "interpretation": "OVER-CITED"
+    },
+    "analyse numérique": {
+      "n_concepts": 34,
+      "avg_wc": 42881.0,
+      "avg_structural": 0.03,
+      "wc_rank": 0.277,
+      "struct_rank": 0.169,
+      "gap": 0.108,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "immunologie": {
+      "n_concepts": 268,
+      "avg_wc": 182172.0,
+      "avg_structural": 0.0326,
+      "wc_rank": 0.807,
+      "struct_rank": 0.217,
+      "gap": 0.59,
+      "interpretation": "OVER-CITED"
+    },
+    "économie": {
+      "n_concepts": 366,
+      "avg_wc": 183082.0,
+      "avg_structural": 0.1471,
+      "wc_rank": 0.819,
+      "struct_rank": 0.831,
+      "gap": -0.012,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "océanographie": {
+      "n_concepts": 12,
+      "avg_wc": 126903.0,
+      "avg_structural": 0.0269,
+      "wc_rank": 0.711,
+      "struct_rank": 0.084,
+      "gap": 0.627,
+      "interpretation": "OVER-CITED"
+    },
+    "statistiques": {
+      "n_concepts": 105,
+      "avg_wc": 102226.0,
+      "avg_structural": 0.1423,
+      "wc_rank": 0.59,
+      "struct_rank": 0.807,
+      "gap": -0.217,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "démographie": {
+      "n_concepts": 32,
+      "avg_wc": 194588.0,
+      "avg_structural": 0.1199,
+      "wc_rank": 0.855,
+      "struct_rank": 0.735,
+      "gap": 0.12,
+      "interpretation": "ÉQUILIBRÉ"
+    },
+    "analyse": {
+      "n_concepts": 180,
+      "avg_wc": 77420.0,
+      "avg_structural": 0.086,
+      "wc_rank": 0.47,
+      "struct_rank": 0.59,
+      "gap": -0.12,
+      "interpretation": "ÉQUILIBRÉ"
+    }
+  },
+  "domain_structural": {
+    "EDP": 0.1193,
+    "ML": 0.1495,
+    "algèbre": 0.9918,
+    "algèbre lin": 0.1395,
+    "analyse": 0.1421,
+    "analyse fonctionnelle": 0.3308,
+    "analyse numérique": 0.0494,
+    "astronomie": 0.2913,
+    "aérospatiale": 0.2108,
+    "biologie": 0.8032,
+    "chimie": 0.514,
+    "chimie organique": 0.0498,
+    "climatologie": 0.1073,
+    "combinatoire": 0.1492,
+    "cosmologie": 0.236,
+    "environnement": 0.0591,
+    "finance": 0.1372,
+    "fluides": 0.085,
+    "géométrie": 0.2567,
+    "géosciences": 0.1742,
+    "informatique": 0.8264,
+    "ingénierie": 0.4636,
+    "linguistique": 0.3026,
+    "matériaux": 0.1593,
+    "mécanique": 0.116,
+    "médecine": 0.0679,
+    "nanotechnologie": 0.1058,
+    "nucléaire": 0.0654,
+    "optimisation": 0.0629,
+    "optique": 0.0699,
+    "particules": 0.2131,
+    "polymères": 0.2263,
+    "probabilités": 0.2539,
+    "psychologie": 0.1143,
+    "quantique": 0.5867,
+    "relativité": 0.1695,
+    "robotique": 0.1042,
+    "science générale": 0.158,
+    "signal": 0.1621,
+    "sociologie": 0.1162,
+    "statistiques": 0.2357,
+    "systèmes dynamiques": 0.1429,
+    "thermo": 0.0808,
+    "topologie": 0.236,
+    "télécommunications": 0.2474,
+    "vision": 0.0913,
+    "écologie": 0.3002,
+    "économie": 0.2441,
+    "électrochimie": 0.0493,
+    "électromagn": 0.3394,
+    "évolution": 0.1213,
+    "éducation": 0.1204,
+    "QFT": 0.0526,
+    "agronomie": 0.0588,
+    "anthropologie": 0.0338,
+    "ensembles": 0.0716,
+    "science politique": 0.047,
+    "trigonométrie": 0.036,
+    "bioinformatique": 0.0705,
+    "biomédical": 0.0746,
+    "crypto": 0.0461,
+    "droit": 0.1078,
+    "démographie": 0.1993,
+    "génomique": 0.0459,
+    "géom algébrique": 0.0927,
+    "logique": 0.1925,
+    "nb théorie": 0.0468,
+    "neurosciences": 0.233,
+    "sismologie": 0.1429,
+    "énergie": 0.1961,
+    "information": 0.0342,
+    "oncologie": 0.0925,
+    "automates": 0.1214,
+    "immunologie": 0.0535,
+    "pharmacologie": 0.0308,
+    "contrôle": 0.0939,
+    "histoire": 0.0533,
+    "mécanique stat": 0.0372,
+    "océanographie": 0.0438,
+    "volcanologie": 0.0785,
+    "épidémiologie": 0.1268,
+    "catégories": 0.0395,
+    "complexité": 0.0481,
+    "géom diff": 0.0377
+  }
+}
