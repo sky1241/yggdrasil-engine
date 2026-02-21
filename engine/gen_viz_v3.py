@@ -72,16 +72,28 @@ print("[3] Loading escaliers spectraux...")
 esc_path = os.path.join(ROOT, 'data', 'escaliers_unified.json')
 esc_geo_set = set()
 esc_key_set = set()
+esc_rte_geo = []
+esc_rte_key = []
+esc_centroids = {}
 if os.path.exists(esc_path):
     with open(esc_path, encoding='utf-8') as f:
         esc_data = json.load(f)
-    # Top 200 geo by score
+    # Top 200 geo by score (for glow)
     for e in esc_data.get('geo', [])[:200]:
         esc_geo_set.add(e['s'])
     # All key (passe-partout)
     for e in esc_data.get('key', []):
         esc_key_set.add(e['s'])
-    print(f"  Geo: {len(esc_geo_set)}, Key: {len(esc_key_set)}")
+    # Route data (all 300 geo + 69 key + centroids)
+    for e in esc_data.get('geo', [])[:300]:
+        esc_rte_geo.append([round(e['px'], 4), round(e['pz'], 4), e['alien'], round(e['score'], 3)])
+    for e in esc_data.get('key', []):
+        esc_rte_key.append([round(e['px'], 4), round(e['pz'], 4), e['home'], e['continents'], e['n_continents']])
+    for name, c in esc_data.get('centroids', {}).items():
+        esc_centroids[name] = [round(c['px'], 4), round(c['pz'], 4)]
+    print(f"  Geo: {len(esc_geo_set)} glow, {len(esc_rte_geo)} routes")
+    print(f"  Key: {len(esc_key_set)} glow, {len(esc_rte_key)} routes")
+    print(f"  Centroids: {len(esc_centroids)}")
 else:
     print(f"  ⚠️ {esc_path} not found, skipping escaliers")
 
@@ -207,13 +219,86 @@ ST_C2_LINE = "const ST_C2=" + json.dumps(st_c2, ensure_ascii=False, separators=(
 # Escalier sets as JS
 esc_geo_js = "const ESC_GEO=new Set(" + json.dumps(sorted(esc_geo_set), ensure_ascii=False) + ");"
 esc_key_js = "const ESC_KEY=new Set(" + json.dumps(sorted(esc_key_set), ensure_ascii=False) + ");"
+rte_geo_js = "const RTE_GEO=" + json.dumps(esc_rte_geo, ensure_ascii=False, separators=(',', ':')) + ";"
+rte_key_js = "const RTE_KEY=" + json.dumps(esc_rte_key, ensure_ascii=False, separators=(',', ':')) + ";"
+rte_c_js = "const RTE_C=" + json.dumps(esc_centroids, ensure_ascii=False, separators=(',', ':')) + ";"
 
 print(f"  ST_C1: {len(ST_C1_LINE):,} chars, ST_C2: {len(ST_C2_LINE):,} chars")
+print(f"  Routes: {len(rte_geo_js):,} + {len(rte_key_js):,} + {len(rte_c_js):,} chars")
 
 # ══════════════════════════════════════════════════════════
 # 7. Generate HTML
 # ══════════════════════════════════════════════════════════
 print("[7] Generating HTML...")
+
+# Route rendering JS (injected via {route_render_js} — literal braces, not f-string)
+route_render_js = """  // ═══ ROUTES at S0 ═══
+  if(showRte && currentST.length > 0) {
+    const rot0 = time * 0.3;
+    const cr0 = Math.cos(rot0), sr0 = Math.sin(rot0);
+    const y0 = currentST[0].yr * BOX.h;
+    const rp = (px, pz) => [px*cr0 - pz*sr0, px*sr0 + pz*cr0];
+
+    // Geo routes (orange arcs concept → alien centroid)
+    for (const g of RTE_GEO) {
+      const ac = RTE_C[g[2]];
+      if (!ac) continue;
+      if (hasDomFilter) {
+        const acont = CONTINENTS.find(c => c.id === g[2]);
+        if (acont && !acont.doms.some(d => activeDomains.has(d))) continue;
+      }
+      const [rx, rz] = rp(g[0], g[1]);
+      const [ax, az] = rp(ac[0], ac[1]);
+      const dist = Math.sqrt((ax-rx)**2 + (az-rz)**2);
+      const arcH = dist * 0.15;
+      ctx.beginPath();
+      for (let i = 0; i <= 16; i++) {
+        const t = i / 16;
+        const x = rx + (ax-rx)*t;
+        const z = rz + (az-rz)*t;
+        const ay = y0 + arcH * 4 * t * (1-t);
+        const p = project(x, ay, z);
+        if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+      }
+      ctx.strokeStyle = `rgba(255,107,53,${Math.min(0.5, g[3] * 0.6)})`;
+      ctx.lineWidth = Math.max(0.4, g[3] * 1.2);
+      ctx.stroke();
+    }
+
+    // Key routes (cyan dashed arcs concept → each continent)
+    ctx.setLineDash([3, 4]);
+    for (const k of RTE_KEY) {
+      const [rx, rz] = rp(k[0], k[1]);
+      const conts = k[3];
+      const nc = k[4];
+      for (const cont of conts) {
+        if (cont === k[2]) continue;
+        if (hasDomFilter) {
+          const ccont = CONTINENTS.find(c => c.id === cont);
+          if (ccont && !ccont.doms.some(d => activeDomains.has(d))) continue;
+        }
+        const cc = RTE_C[cont];
+        if (!cc) continue;
+        const [ax, az] = rp(cc[0], cc[1]);
+        const dist = Math.sqrt((ax-rx)**2 + (az-rz)**2);
+        const arcH = dist * 0.12;
+        ctx.beginPath();
+        for (let i = 0; i <= 12; i++) {
+          const t = i / 12;
+          const x = rx + (ax-rx)*t;
+          const z = rz + (az-rz)*t;
+          const ay = y0 + arcH * 4 * t * (1-t);
+          const p = project(x, ay, z);
+          if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+        }
+        ctx.strokeStyle = `rgba(53,212,255,${Math.min(0.4, 0.1 + nc * 0.04)})`;
+        ctx.lineWidth = 0.6;
+        ctx.stroke();
+      }
+    }
+    ctx.setLineDash([]);
+  }
+"""
 
 v3_html = f'''<!DOCTYPE html>
 <html lang="fr">
@@ -298,6 +383,7 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
   <div class="ctrl-sep"></div>
   <div class="ctrl-row">
     <label><input type="checkbox" id="toggleEsc" onchange="toggleEsc()"> \U0001F33F Escaliers</label>
+    <label><input type="checkbox" id="toggleRte" onchange="toggleRte()"> \U0001F30F Routes</label>
     <label><input type="checkbox" id="toggleC2" onchange="toggleC2mode()"> C2 Conjectures</label>
   </div>
 </div>
@@ -314,10 +400,14 @@ let currentST=ST_C1,currentCTR=CTR_C1;
 {dl_js}
 {esc_geo_js}
 {esc_key_js}
+{rte_geo_js}
+{rte_key_js}
+{rte_c_js}
 
 // \u2550\u2550\u2550 State \u2550\u2550\u2550
 let cubeMode='vivant'; // 'vivant','musee','fusion'
 let showEsc=false;
+let showRte=false;
 let showC2=false;
 const activeDomains=new Set();
 let activeContinent=null;
@@ -380,6 +470,7 @@ function switchCube(){{
   activeS=-1;buildStrateLegend();
 }}
 function toggleEsc(){{showEsc=document.getElementById('toggleEsc').checked}}
+function toggleRte(){{showRte=document.getElementById('toggleRte').checked}}
 function toggleC2mode(){{
   showC2=document.getElementById('toggleC2').checked;
   activeS=-1;buildStrateLegend();
@@ -551,6 +642,8 @@ function frame(){{
   items.sort((a,b)=>a.z-b.z);
   const sc0=CAM.scale*zoom/CAM.dist;
   let ns=null,nd=18;
+
+{route_render_js}
 
   items.forEach(it=>{{
     if(it.type==='p'){{

@@ -2,831 +2,477 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Yggdrasil — Escaliers Spectraux 3D</title>
+<title>Yggdrasil — Escaliers 3D</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&family=Crimson+Pro:wght@300;400;600&display=swap');
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  background: #0a0a0f;
-  color: #e0e0e0;
-  font-family: 'JetBrains Mono', monospace;
-  overflow: hidden;
-  height: 100vh;
-}
-
-#canvas3d {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  cursor: grab;
-}
-#canvas3d:active { cursor: grabbing; }
-
-/* Controls panel */
-#controls {
-  position: fixed;
-  top: 16px; left: 16px;
-  z-index: 10;
-  background: rgba(10,10,15,0.92);
-  border: 1px solid rgba(100,255,180,0.15);
-  border-radius: 8px;
-  padding: 14px 18px;
-  width: 260px;
-  backdrop-filter: blur(12px);
-}
-
-#controls h1 {
-  font-family: 'Crimson Pro', serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #7fffd4;
-  letter-spacing: 2px;
-  margin-bottom: 4px;
-}
-
-#controls .subtitle {
-  font-size: 9px;
-  color: #666;
-  margin-bottom: 12px;
-  letter-spacing: 1px;
-}
-
-.ctrl-group {
-  margin-bottom: 10px;
-}
-
-.ctrl-group label {
-  font-size: 10px;
-  color: #888;
-  letter-spacing: 0.5px;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.toggle-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 5px;
-  cursor: pointer;
-  font-size: 11px;
-}
-
-.toggle-row input[type="checkbox"] {
-  accent-color: #7fffd4;
-  cursor: pointer;
-}
-
-.toggle-row .dot {
-  width: 8px; height: 8px;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.legend-geo { background: #4ade80; box-shadow: 0 0 6px #4ade80; }
-.legend-key { background: #fbbf24; box-shadow: 0 0 6px #fbbf24; }
-.legend-iso { background: #f87171; box-shadow: 0 0 6px #f87171; }
-.legend-brg { background: #38bdf8; box-shadow: 0 0 6px #38bdf8; }
-.legend-vds { background: #c084fc; box-shadow: 0 0 6px #c084fc; }
-.legend-up  { background: #94a3b8; }
-
-/* Stats */
-#stats {
-  position: fixed;
-  bottom: 16px; left: 16px;
-  z-index: 10;
-  font-size: 9px;
-  color: #555;
-  letter-spacing: 0.5px;
-}
-
-/* Tooltip */
-#tooltip {
-  position: fixed;
-  z-index: 20;
-  pointer-events: none;
-  background: rgba(10,10,20,0.95);
-  border: 1px solid rgba(100,255,180,0.3);
-  border-radius: 6px;
-  padding: 8px 12px;
-  font-size: 11px;
-  line-height: 1.5;
-  display: none;
-  max-width: 280px;
-  backdrop-filter: blur(8px);
-}
-
-#tooltip .tt-sym {
-  font-size: 16px;
-  color: #7fffd4;
-  font-family: 'Crimson Pro', serif;
-}
-
-#tooltip .tt-type {
-  font-size: 9px;
-  color: #888;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-/* Strate labels */
-#strate-labels {
-  position: fixed;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.strate-label {
-  font-size: 9px;
-  color: #555;
-  text-align: right;
-  padding: 2px 8px;
-  border-right: 2px solid transparent;
-  transition: all 0.2s;
-  letter-spacing: 0.5px;
-}
-
-.strate-label.active {
-  color: #7fffd4;
-  border-right-color: #7fffd4;
-}
-
-/* Continent legend */
-#continent-legend {
-  position: fixed;
-  bottom: 16px;
-  right: 16px;
-  z-index: 10;
-  font-size: 9px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 12px;
-  max-width: 300px;
-}
-
-.cont-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  color: #666;
-}
-
-.cont-dot {
-  width: 6px; height: 6px;
-  border-radius: 50%;
-}
+*{margin:0;padding:0;box-sizing:border-box}
+body{overflow:hidden;background:#0a0a12;font-family:'Segoe UI',system-ui,sans-serif;color:#e0e0e0}
+canvas{display:block}
+#panel{position:fixed;top:10px;left:10px;background:rgba(10,10,18,0.92);border:1px solid #333;border-radius:8px;padding:12px 16px;z-index:10;min-width:220px;backdrop-filter:blur(8px)}
+#panel h3{font-size:14px;color:#4ade80;margin-bottom:10px;letter-spacing:1px}
+.lbl{display:flex;align-items:center;gap:6px;font-size:12px;cursor:pointer;padding:2px 0}
+.lbl:hover{color:#fff}
+.lbl input{accent-color:#4ade80}
+.sep{height:1px;background:#333;margin:8px 0}
+#info{position:fixed;top:10px;right:10px;text-align:right;z-index:10}
+#info h2{font-size:16px;color:#4ade80;margin-bottom:4px}
+#info .sub{font-size:11px;color:#888}
+#tt{position:fixed;display:none;background:rgba(10,10,18,0.95);border:1px solid #555;border-radius:6px;padding:8px 12px;font-size:12px;pointer-events:none;z-index:20;max-width:300px;backdrop-filter:blur(4px)}
+.tn{font-weight:bold;color:#fff;font-size:13px}
+.tf{color:#aaa;font-size:11px}
+.td{color:#4ade80;font-size:11px;margin-top:3px}
+.tr{color:#fa8;font-size:11px;margin-top:2px}
+#legend{position:fixed;bottom:10px;left:10px;background:rgba(10,10,18,0.85);border:1px solid #333;border-radius:6px;padding:8px 12px;font-size:11px;z-index:10}
+.lr{display:flex;align-items:center;gap:6px;margin:2px 0}
+.ld{width:10px;height:10px;border-radius:50%;display:inline-block}
 </style>
 </head>
 <body>
 
-<canvas id="canvas3d"></canvas>
-
-<div id="controls">
-  <h1>YGGDRASIL</h1>
-  <div class="subtitle">ESCALIERS SPECTRAUX · 3D</div>
-
-  <div class="ctrl-group">
-    <label>COUCHES</label>
-    <div class="toggle-row" onclick="toggleLayer('geo')">
-      <input type="checkbox" id="chk-geo" checked>
-      <span class="dot legend-geo"></span>
-      <span>Lianes géographiques <small style="color:#666">(150)</small></span>
-    </div>
-    <div class="toggle-row" onclick="toggleLayer('key')">
-      <input type="checkbox" id="chk-key" checked>
-      <span class="dot legend-key"></span>
-      <span>Passe-partout <small style="color:#666">(69)</small></span>
-    </div>
-    <div class="toggle-row" onclick="toggleLayer('up')">
-      <input type="checkbox" id="chk-up" checked>
-      <span class="dot legend-up"></span>
-      <span>Strates S1–S6 <small style="color:#666">(296)</small></span>
-    </div>
-  </div>
-
-  <div class="ctrl-group">
-    <label>CROSS-ANALYSIS</label>
-    <div class="toggle-row" onclick="toggleLayer('iso')">
-      <input type="checkbox" id="chk-iso">
-      <span class="dot legend-iso"></span>
-      <span>Isolés <small style="color:#666">(20)</small></span>
-    </div>
-    <div class="toggle-row" onclick="toggleLayer('brg')">
-      <input type="checkbox" id="chk-brg">
-      <span class="dot legend-brg"></span>
-      <span>Ponts cachés <small style="color:#666">(20)</small></span>
-    </div>
-    <div class="toggle-row" onclick="toggleLayer('vds')">
-      <input type="checkbox" id="chk-vds">
-      <span class="dot legend-vds"></span>
-      <span>Vides P4 <small style="color:#666">(30)</small></span>
-    </div>
-  </div>
-
-  <div class="ctrl-group">
-    <label>PLANS STRATES</label>
-    <div class="toggle-row" onclick="toggleLayer('planes')">
-      <input type="checkbox" id="chk-planes" checked>
-      <span>Afficher plans</span>
-    </div>
-  </div>
+<div id="panel">
+  <h3>🌿 ESCALIERS 3D</h3>
+  <label class="lbl"><input type="checkbox" id="chk-planes" checked onchange="tog('planes')"> Strate planes</label>
+  <label class="lbl"><input type="checkbox" id="chk-grid" checked onchange="tog('grid')"> Grille S0</label>
+  <label class="lbl"><input type="checkbox" id="chk-centroids" checked onchange="tog('centroids')"> Centroïdes (9)</label>
+  <div class="sep"></div>
+  <label class="lbl"><input type="checkbox" id="chk-geo" checked onchange="tog('geo')"> 🌿 Geo escaliers (300)</label>
+  <label class="lbl"><input type="checkbox" id="chk-key" checked onchange="tog('key')"> 🔑 Key escaliers (69)</label>
+  <label class="lbl"><input type="checkbox" id="chk-upper" checked onchange="tog('upper')"> S1-S6 symboles (296)</label>
+  <div class="sep"></div>
+  <label class="lbl"><input type="checkbox" id="chk-georte" checked onchange="tog('georte')"> 🌿 Geo routes (orange)</label>
+  <label class="lbl"><input type="checkbox" id="chk-keyrte" checked onchange="tog('keyrte')"> 🔑 Key routes (cyan)</label>
 </div>
 
-<div id="strate-labels"></div>
-
-<div id="continent-legend"></div>
-
-<div id="tooltip">
-  <div class="tt-sym" id="tt-sym"></div>
-  <div class="tt-type" id="tt-type"></div>
-  <div id="tt-info"></div>
+<div id="info">
+  <h2>YGGDRASIL — Escaliers 3D</h2>
+  <div class="sub">300 geo 🌿 + 69 key 🔑 + 296 S1-S6</div>
+  <div class="sub">9 continents · 7 strates</div>
 </div>
 
-<div id="stats"></div>
+<div id="tt"></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<div id="legend">
+  <div class="lr"><span class="ld" style="background:#4ade80"></span> Geo escalier (vert)</div>
+  <div class="lr"><span class="ld" style="background:#fbbf24"></span> Key escalier (or)</div>
+  <div class="lr"><span class="ld" style="background:#ff6b35"></span> Geo route → alien</div>
+  <div class="lr"><span class="ld" style="background:#35d4ff"></span> Key route → continents</div>
+  <div class="lr"><span class="ld" style="background:#a78bfa"></span> S1-S6 symbole</div>
+  <div class="lr"><span class="ld" style="background:#ff6b6b"></span> C2 conjecture</div>
+</div>
+
+<script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
 <script>
-// ═══════════════════════════════════════
-// DATA (inline from cross_physarum_wc + escaliers)
-// ═══════════════════════════════════════
-</script>
-<script>
-// Data will be injected below
-const D = {"centroids":{"math":{"px":0.19,"pz":-0.16},"physique":{"px":0.76,"pz":0.33},"ingenierie":{"px":0.06,"pz":0.13},"chimie":{"px":-0.09,"pz":0.77},"info":{"px":0.04,"pz":-0.48},"transversal":{"px":0.02,"pz":0.01},"bio":{"px":-0.42,"pz":0.27},"humaines":{"px":-0.24,"pz":-0.48},"terre":{"px":-0.21,"pz":0.27}},"geo":[{"s":"p_gen","px":-0.68,"pz":0.32,"home":"physique","alien":"bio","sc":0.96},{"s":"q","px":-0.8,"pz":0.32,"home":"physique","alien":"bio","sc":0.89},{"s":"{f,g}","px":-0.91,"pz":0.32,"home":"physique","alien":"bio","sc":0.83},{"s":"δS=0","px":-1.02,"pz":0.32,"home":"physique","alien":"bio","sc":0.78},{"s":"S_act","px":-1.14,"pz":0.32,"home":"physique","alien":"bio","sc":0.73},{"s":"Nuclear astroph","px":0.08,"pz":0.68,"home":"physique","alien":"chimie","sc":0.72},{"s":"Astrophysics","px":0.07,"pz":0.66,"home":"physique","alien":"chimie","sc":0.71},{"s":"Astrophysical p","px":0.07,"pz":0.64,"home":"physique","alien":"chimie","sc":0.7},{"s":"Levi-Civita con","px":0.76,"pz":0.28,"home":"math","alien":"physique","sc":0.69},{"s":"Shock waves in ","px":0.08,"pz":0.65,"home":"physique","alien":"chimie","sc":0.69},{"s":"ℋ","px":-1.25,"pz":0.32,"home":"physique","alien":"bio","sc":0.69},{"s":"Geodesics in ge","px":0.7,"pz":0.33,"home":"math","alien":"physique","sc":0.68},{"s":"arctan","px":-0.42,"pz":0.2,"home":"math","alien":"bio","sc":0.67},{"s":"Megamaser","px":0.12,"pz":0.69,"home":"physique","alien":"chimie","sc":0.67},{"s":"ℒ","px":-1.36,"pz":0.32,"home":"physique","alien":"bio","sc":0.65},{"s":"Computational a","px":0.15,"pz":0.71,"home":"physique","alien":"chimie","sc":0.64},{"s":"Trigonometric p","px":-0.34,"pz":0.21,"home":"math","alien":"bio","sc":0.64},{"s":"μ_mes","px":0.11,"pz":1.23,"home":"math","alien":"chimie","sc":0.62},{"s":"pc","px":0.04,"pz":0.53,"home":"physique","alien":"chimie","sc":0.61},{"s":"Perovskite (str","px":0.08,"pz":0.17,"home":"chimie","alien":"ingenierie","sc":0.61},{"s":"Intracluster me","px":0.13,"pz":0.65,"home":"physique","alien":"chimie","sc":0.61},{"s":"M☉","px":0.14,"pz":0.66,"home":"physique","alien":"chimie","sc":0.61},{"s":"Primary (astron","px":0.12,"pz":0.61,"home":"physique","alien":"chimie","sc":0.61},{"s":"Gauss–Bonnet th","px":0.64,"pz":0.36,"home":"math","alien":"physique","sc":0.6},{"s":"Isometry (Riema","px":0.72,"pz":0.21,"home":"math","alien":"physique","sc":0.6},{"s":"Sagittarius A*","px":0.1,"pz":0.58,"home":"physique","alien":"chimie","sc":0.6},{"s":"Scalar curvatur","px":0.62,"pz":0.37,"home":"math","alien":"physique","sc":0.59},{"s":"σ(F)","px":0.23,"pz":1.23,"home":"math","alien":"chimie","sc":0.58},{"s":"Electric networ","px":0.64,"pz":0.26,"home":"math","alien":"physique","sc":0.58},{"s":"Polynomial inte","px":0.63,"pz":0.27,"home":"math","alien":"physique","sc":0.57},{"s":"Fₐᵦ","px":0.63,"pz":0.44,"home":"math","alien":"physique","sc":0.57},{"s":"Metric connecti","px":0.63,"pz":0.27,"home":"math","alien":"physique","sc":0.57},{"s":"Virial mass","px":0.14,"pz":0.6,"home":"physique","alien":"chimie","sc":0.57},{"s":"ωₐ","px":0.61,"pz":0.32,"home":"math","alien":"physique","sc":0.57},{"s":"Orbital motion","px":0.13,"pz":0.59,"home":"physique","alien":"chimie","sc":0.56},{"s":"Differential (m","px":0.15,"pz":0.62,"home":"physique","alien":"chimie","sc":0.56},{"s":"Kyphosis","px":0.68,"pz":0.19,"home":"math","alien":"physique","sc":0.55},{"s":"Earth's orbit","px":0.09,"pz":0.53,"home":"physique","alien":"chimie","sc":0.55},{"s":"Inverse quadrat","px":0.63,"pz":0.23,"home":"math","alien":"physique","sc":0.54},{"s":"Gaussian curvat","px":0.64,"pz":0.22,"home":"math","alien":"physique","sc":0.54},{"s":"∧_ext","px":0.58,"pz":0.38,"home":"math","alien":"physique","sc":0.54},{"s":"cos","px":-0.4,"pz":0.09,"home":"math","alien":"bio","sc":0.54},{"s":"Differential ge","px":0.6,"pz":0.28,"home":"math","alien":"physique","sc":0.54},{"s":"λ_Leb","px":0.34,"pz":1.23,"home":"math","alien":"chimie","sc":0.54},{"s":"Stellar collisi","px":0.2,"pz":0.69,"home":"physique","alien":"chimie","sc":0.53},{"s":"sin","px":-0.25,"pz":0.22,"home":"math","alien":"terre","sc":0.53},{"s":"Riemannian subm","px":0.6,"pz":0.25,"home":"math","alien":"physique","sc":0.52},{"s":"Polytrope","px":0.15,"pz":0.58,"home":"physique","alien":"chimie","sc":0.52},{"s":"Gaussian quadra","px":0.58,"pz":0.3,"home":"math","alien":"physique","sc":0.52},{"s":"Astrophysical j","px":0.06,"pz":0.47,"home":"physique","alien":"chimie","sc":0.52},{"s":"Tangent","px":-0.33,"pz":0.11,"home":"math","alien":"bio","sc":0.51},{"s":"Wireless broadb","px":-0.16,"pz":-0.37,"home":"ingenierie","alien":"humaines","sc":0.51},{"s":"Holonomy","px":0.56,"pz":0.35,"home":"math","alien":"physique","sc":0.51},{"s":"Information geo","px":0.67,"pz":0.17,"home":"math","alien":"physique","sc":0.51},{"s":"Earthing system","px":0.56,"pz":0.4,"home":"math","alien":"physique","sc":0.5},{"s":"Motion interpol","px":0.61,"pz":0.22,"home":"math","alien":"physique","sc":0.5},{"s":"Gait cycle","px":0.63,"pz":0.49,"home":"ingenierie","alien":"physique","sc":0.5},{"s":"Gaussian orbita","px":0.17,"pz":0.59,"home":"physique","alien":"chimie","sc":0.5},{"s":"Proofs of trigo","px":-0.31,"pz":0.24,"home":"math","alien":"terre","sc":0.5},{"s":"Automation","px":-0.35,"pz":-0.35,"home":"ingenierie","alien":"humaines","sc":0.49},{"s":"Galaxy group","px":0.09,"pz":0.48,"home":"physique","alien":"chimie","sc":0.49},{"s":"R_sc","px":0.55,"pz":0.35,"home":"math","alien":"physique","sc":0.49},{"s":"Flatness (cosmo","px":0.55,"pz":0.31,"home":"math","alien":"physique","sc":0.49},{"s":"Geomagnetic sto","px":0.13,"pz":0.53,"home":"physique","alien":"chimie","sc":0.49},{"s":"Lp","px":0.46,"pz":1.23,"home":"math","alien":"chimie","sc":0.48},{"s":"sinh","px":-0.27,"pz":0.18,"home":"math","alien":"terre","sc":0.48},{"s":"In-space propul","px":0.57,"pz":0.38,"home":"ingenierie","alien":"physique","sc":0.48},{"s":"Underwater glid","px":-0.12,"pz":-0.38,"home":"ingenierie","alien":"humaines","sc":0.48},{"s":"Stellar black h","px":0.1,"pz":0.48,"home":"physique","alien":"chimie","sc":0.48},{"s":"Magnetic reconn","px":0.55,"pz":0.29,"home":"math","alien":"physique","sc":0.47},{"s":"Dominion","px":-0.19,"pz":-0.33,"home":"ingenierie","alien":"humaines","sc":0.47},{"s":"Stability theor","px":0.03,"pz":0.67,"home":"ingenierie","alien":"chimie","sc":0.47},{"s":"Rμνρσ","px":0.55,"pz":0.28,"home":"math","alien":"physique","sc":0.46},{"s":"Vibrating wire","px":-0.28,"pz":-0.31,"home":"ingenierie","alien":"humaines","sc":0.46},{"s":"Differential fo","px":-0.27,"pz":0.16,"home":"math","alien":"terre","sc":0.46},{"s":"Ground effect (","px":0.62,"pz":0.53,"home":"ingenierie","alien":"physique","sc":0.46},{"s":"L☉","px":0.23,"pz":0.67,"home":"physique","alien":"chimie","sc":0.46},{"s":"cosh","px":-0.33,"pz":0.06,"home":"math","alien":"bio","sc":0.45},{"s":"Tμν","px":0.56,"pz":0.24,"home":"math","alien":"physique","sc":0.45},{"s":"Aircraft indust","px":0.56,"pz":0.45,"home":"ingenierie","alien":"physique","sc":0.45},{"s":"Self-reconfigur","px":-0.39,"pz":-0.32,"home":"ingenierie","alien":"humaines","sc":0.45},{"s":"Digital cross c","px":-0.24,"pz":-0.3,"home":"ingenierie","alien":"humaines","sc":0.45},{"s":"L(s,χ)","px":-0.23,"pz":-0.58,"home":"math","alien":"humaines","sc":0.44},{"s":"Bernstein polyn","px":0.63,"pz":0.15,"home":"math","alien":"physique","sc":0.44},{"s":"South Atlantic ","px":0.55,"pz":0.37,"home":"ingenierie","alien":"physique","sc":0.44},{"s":"Visual attentio","px":0.05,"pz":-0.05,"home":"humaines","alien":"ingenierie","sc":0.44},{"s":"Conformal geome","px":-0.12,"pz":0.19,"home":"math","alien":"terre","sc":0.44},{"s":"Atomic orbital","px":0.16,"pz":0.52,"home":"physique","alien":"chimie","sc":0.44},{"s":"Twist","px":0.51,"pz":0.33,"home":"math","alien":"physique","sc":0.43},{"s":"Galactic tide","px":0.22,"pz":0.63,"home":"physique","alien":"chimie","sc":0.43},{"s":"Bernard–Soulier","px":0.02,"pz":0.07,"home":"bio","alien":"ingenierie","sc":0.43},{"s":"f(R) gravity","px":0.53,"pz":0.28,"home":"math","alien":"physique","sc":0.43},{"s":"Forest road","px":-0.53,"pz":-0.38,"home":"terre","alien":"humaines","sc":0.43},{"s":"a.e.","px":0.57,"pz":1.23,"home":"math","alien":"chimie","sc":0.43},{"s":"Customised Appl","px":-0.3,"pz":-0.29,"home":"ingenierie","alien":"humaines","sc":0.43},{"s":"Totally geodesi","px":0.51,"pz":0.33,"home":"math","alien":"physique","sc":0.43},{"s":"Hybrid system","px":0.57,"pz":0.21,"home":"math","alien":"physique","sc":0.43},{"s":"Municipal wirel","px":-0.14,"pz":-0.33,"home":"ingenierie","alien":"humaines","sc":0.43},{"s":"★","px":0.54,"pz":0.26,"home":"math","alien":"physique","sc":0.43},{"s":"Avionics","px":0.56,"pz":0.48,"home":"ingenierie","alien":"physique","sc":0.42},{"s":"η","px":-0.34,"pz":-0.58,"home":"math","alien":"humaines","sc":0.42},{"s":"Constant curvat","px":0.55,"pz":0.23,"home":"math","alien":"physique","sc":0.42},{"s":"Projective diff","px":0.61,"pz":0.15,"home":"math","alien":"physique","sc":0.42},{"s":"Geometric analy","px":0.55,"pz":0.23,"home":"math","alien":"physique","sc":0.42},{"s":"Rehabilitation ","px":-0.09,"pz":-0.38,"home":"ingenierie","alien":"info","sc":0.42},{"s":"Ion thruster","px":0.56,"pz":0.49,"home":"ingenierie","alien":"physique","sc":0.42},{"s":"Aerospace","px":0.57,"pz":0.54,"home":"ingenierie","alien":"physique","sc":0.41},{"s":"LPWAN","px":-0.18,"pz":-0.3,"home":"ingenierie","alien":"humaines","sc":0.41},{"s":"Mitochondrion","px":-0.2,"pz":-0.29,"home":"ingenierie","alien":"humaines","sc":0.41},{"s":"Galaxy groups a","px":0.23,"pz":0.63,"home":"physique","alien":"chimie","sc":0.41},{"s":"Traction motor","px":0.57,"pz":0.55,"home":"ingenierie","alien":"physique","sc":0.4},{"s":"Robotics","px":-0.22,"pz":-0.28,"home":"ingenierie","alien":"humaines","sc":0.4},{"s":"Vect","px":-0.15,"pz":-0.42,"home":"math","alien":"humaines","sc":0.4},{"s":"Rapid plasma re","px":0.17,"pz":0.77,"home":"ingenierie","alien":"chimie","sc":0.4},{"s":"Nyq_st","px":0.12,"pz":0.69,"home":"ingenierie","alien":"chimie","sc":0.4},{"s":"Enterprise priv","px":-0.29,"pz":-0.27,"home":"ingenierie","alien":"humaines","sc":0.4},{"s":"Regulatory agen","px":-0.21,"pz":-0.28,"home":"ingenierie","alien":"humaines","sc":0.39},{"s":"DNA ligase","px":0.01,"pz":0.2,"home":"bio","alien":"ingenierie","sc":0.39},{"s":"Adj","px":-0.22,"pz":-0.36,"home":"math","alien":"humaines","sc":0.39},{"s":"HSPA14","px":-0.01,"pz":0.06,"home":"bio","alien":"ingenierie","sc":0.39},{"s":"Galaxy cluster","px":0.22,"pz":0.59,"home":"physique","alien":"chimie","sc":0.39},{"s":"d_ext","px":0.52,"pz":0.26,"home":"math","alien":"physique","sc":0.39},{"s":"Mechanoreceptor","px":-0.17,"pz":-0.29,"home":"ingenierie","alien":"humaines","sc":0.39},{"s":"Aerodynamic dra","px":0.56,"pz":0.54,"home":"ingenierie","alien":"physique","sc":0.39},{"s":"Liouville equat","px":0.57,"pz":0.18,"home":"math","alien":"physique","sc":0.39},{"s":"Maser","px":0.21,"pz":0.86,"home":"ingenierie","alien":"chimie","sc":0.39},{"s":"Numerical contr","px":-0.08,"pz":-0.35,"home":"ingenierie","alien":"info","sc":0.39},{"s":"Dipeptidyl pept","px":-0.01,"pz":0.19,"home":"bio","alien":"ingenierie","sc":0.39},{"s":"Automatic test ","px":-0.28,"pz":-0.26,"home":"ingenierie","alien":"humaines","sc":0.39},{"s":"Developmental r","px":-0.19,"pz":-0.28,"home":"ingenierie","alien":"humaines","sc":0.39},{"s":"Mobile wireless","px":0.0,"pz":-0.32,"home":"ingenierie","alien":"info","sc":0.39},{"s":"gμν","px":0.6,"pz":0.14,"home":"math","alien":"physique","sc":0.39},{"s":"∘","px":-0.19,"pz":-0.36,"home":"math","alien":"humaines","sc":0.38},{"s":"Reverse Transcr","px":-0.02,"pz":0.17,"home":"bio","alien":"ingenierie","sc":0.38},{"s":"Supermassive bl","px":0.2,"pz":0.55,"home":"physique","alien":"chimie","sc":0.38},{"s":"dμ","px":0.68,"pz":1.23,"home":"math","alien":"chimie","sc":0.38},{"s":"Hall effect sen","px":-0.01,"pz":-0.32,"home":"ingenierie","alien":"info","sc":0.38},{"s":"Solar physics","px":0.23,"pz":0.61,"home":"physique","alien":"chimie","sc":0.38},{"s":"Sociology of th","px":-0.2,"pz":-0.28,"home":"ingenierie","alien":"humaines","sc":0.38},{"s":"Autonomous syst","px":-0.23,"pz":-0.27,"home":"ingenierie","alien":"humaines","sc":0.38},{"s":"Rough set","px":0.61,"pz":0.12,"home":"math","alien":"physique","sc":0.38},{"s":"Precision agric","px":-0.7,"pz":-0.54,"home":"terre","alien":"humaines","sc":0.38},{"s":"Aircraft noise","px":0.52,"pz":0.42,"home":"ingenierie","alien":"physique","sc":0.38},{"s":"FlexRay","px":-0.24,"pz":-0.26,"home":"ingenierie","alien":"humaines","sc":0.38},{"s":"Linear interpol","px":0.54,"pz":0.21,"home":"math","alien":"physique","sc":0.38},{"s":"Lagrange polyno","px":0.59,"pz":0.15,"home":"math","alien":"physique","sc":0.37},{"s":"Trigonometric i","px":-0.19,"pz":0.1,"home":"math","alien":"terre","sc":0.37},{"s":"Electromechanic","px":0.51,"pz":0.26,"home":"math","alien":"physique","sc":0.37},{"s":"Numerical cogni","px":0.5,"pz":0.28,"home":"math","alien":"physique","sc":0.37},{"s":"c-jun","px":-0.04,"pz":0.13,"home":"bio","alien":"ingenierie","sc":0.37}],"key":[{"s":"=","px":-0.91,"pz":-1.36,"home":"math","nc":7,"sc":1.0},{"s":"exp","px":0.2,"pz":-0.2,"home":"math","nc":6,"sc":0.86},{"s":"ln","px":0.21,"pz":-0.2,"home":"math","nc":6,"sc":0.86},{"s":"Σ","px":0.31,"pz":-0.28,"home":"math","nc":6,"sc":0.86},{"s":"∫","px":0.23,"pz":-0.14,"home":"math","nc":6,"sc":0.86},{"s":"e","px":0.31,"pz":-0.15,"home":"math","nc":5,"sc":0.71},{"s":"∂","px":0.35,"pz":-0.1,"home":"math","nc":5,"sc":0.71},{"s":"Bayes","px":0.18,"pz":-0.2,"home":"math","nc":4,"sc":0.57},{"s":"E[X]","px":-0.04,"pz":-0.28,"home":"math","nc":4,"sc":0.57},{"s":"FFT","px":0.25,"pz":-0.04,"home":"ingenierie","nc":4,"sc":0.57},{"s":"N(μ,σ²)","px":0.03,"pz":-0.19,"home":"math","nc":4,"sc":0.57},{"s":"O(n)","px":0.27,"pz":-0.12,"home":"math","nc":4,"sc":0.57},{"s":"P(A)","px":-0.08,"pz":-0.13,"home":"math","nc":4,"sc":0.57},{"s":"Var","px":0.15,"pz":-0.32,"home":"math","nc":4,"sc":0.57},{"s":"cos","px":-0.4,"pz":0.09,"home":"math","nc":4,"sc":0.57},{"s":"d/dx","px":0.45,"pz":-0.16,"home":"math","nc":4,"sc":0.57},{"s":"det","px":0.35,"pz":-0.31,"home":"math","nc":4,"sc":0.57},{"s":"lim","px":0.42,"pz":-0.2,"home":"math","nc":4,"sc":0.57},{"s":"log","px":0.37,"pz":-0.1,"home":"math","nc":4,"sc":0.57},{"s":"sin","px":-0.25,"pz":0.22,"home":"math","nc":4,"sc":0.57},{"s":"Π","px":0.36,"pz":-0.16,"home":"math","nc":4,"sc":0.57},{"s":"δ","px":0.34,"pz":-0.12,"home":"math","nc":4,"sc":0.57},{"s":"ε","px":0.27,"pz":-0.13,"home":"math","nc":4,"sc":0.57},{"s":"λ","px":0.25,"pz":-0.23,"home":"math","nc":4,"sc":0.57},{"s":"π","px":0.13,"pz":0.03,"home":"math","nc":4,"sc":0.57},{"s":"σ_std","px":0.06,"pz":-0.21,"home":"math","nc":4,"sc":0.57},{"s":"χ²","px":-0.06,"pz":-0.26,"home":"transversal","nc":4,"sc":0.57},{"s":"ℱ","px":0.08,"pz":0.16,"home":"ingenierie","nc":4,"sc":0.57},{"s":"∇","px":0.34,"pz":-0.1,"home":"math","nc":4,"sc":0.57},{"s":"∇²","px":0.43,"pz":-0.11,"home":"math","nc":4,"sc":0.57},{"s":"∗_conv","px":0.05,"pz":-0.05,"home":"ingenierie","nc":4,"sc":0.57},{"s":"∞","px":0.32,"pz":-0.1,"home":"math","nc":4,"sc":0.57},{"s":"∬","px":0.31,"pz":0.0,"home":"math","nc":4,"sc":0.57},{"s":"∮","px":0.2,"pz":-0.19,"home":"math","nc":4,"sc":0.57},{"s":"Attn","px":-0.2,"pz":-0.57,"home":"info","nc":3,"sc":0.43},{"s":"BS","px":-0.25,"pz":-0.3,"home":"humaines","nc":3,"sc":0.43},{"s":"D_KL","px":0.32,"pz":-0.78,"home":"info","nc":3,"sc":0.43},{"s":"F=ma","px":0.82,"pz":0.07,"home":"physique","nc":3,"sc":0.43},{"s":"GAN","px":-0.34,"pz":-0.52,"home":"info","nc":3,"sc":0.43},{"s":"H(X)","px":0.34,"pz":-0.56,"home":"info","nc":3,"sc":0.43},{"s":"Itô","px":1.14,"pz":1.23,"home":"math","nc":3,"sc":0.43},{"s":"Nash","px":-0.29,"pz":-0.4,"home":"humaines","nc":3,"sc":0.43},{"s":"PV=nRT","px":0.2,"pz":0.31,"home":"ingenierie","nc":3,"sc":0.43},{"s":"Re","px":0.2,"pz":0.34,"home":"ingenierie","nc":3,"sc":0.43},{"s":"R₀","px":-0.19,"pz":0.16,"home":"bio","nc":3,"sc":0.43},{"s":"SDE","px":1.25,"pz":1.23,"home":"math","nc":3,"sc":0.43},{"s":"SGD","px":-0.17,"pz":-0.48,"home":"info","nc":3,"sc":0.43},{"s":"S_ent","px":0.14,"pz":0.17,"home":"ingenierie","nc":3,"sc":0.43},{"s":"TM","px":0.2,"pz":-0.93,"home":"info","nc":3,"sc":0.43},{"s":"W(t)","px":0.91,"pz":1.23,"home":"math","nc":3,"sc":0.43},{"s":"argmax","px":0.15,"pz":-0.7,"home":"info","nc":3,"sc":0.43},{"s":"argmin","px":0.17,"pz":-0.66,"home":"info","nc":3,"sc":0.43},{"s":"i","px":-0.23,"pz":-1.23,"home":"math","nc":3,"sc":0.43},{"s":"Γ","px":0.43,"pz":-0.12,"home":"math","nc":3,"sc":0.43},{"s":"ζ","px":-0.57,"pz":-0.58,"home":"math","nc":3,"sc":0.43},{"s":"ℋ","px":-1.25,"pz":0.32,"home":"physique","nc":3,"sc":0.43},{"s":"ℒ","px":-1.36,"pz":0.32,"home":"physique","nc":3,"sc":0.43},{"s":"∇L","px":-0.25,"pz":-0.53,"home":"info","nc":3,"sc":0.43},{"s":"∇·","px":0.35,"pz":-0.18,"home":"math","nc":3,"sc":0.43},{"s":"∇×","px":0.35,"pz":0.01,"home":"math","nc":3,"sc":0.43},{"s":"CFG","px":0.32,"pz":-0.81,"home":"info","nc":2,"sc":0.29},{"s":"CFL","px":0.24,"pz":-1.01,"home":"info","nc":2,"sc":0.29},{"s":"Chom","px":0.4,"pz":-0.85,"home":"info","nc":2,"sc":0.29},{"s":"DFA","px":0.24,"pz":-0.95,"home":"info","nc":2,"sc":0.29},{"s":"NFA","px":0.29,"pz":-0.73,"home":"info","nc":2,"sc":0.29},{"s":"PDA","px":0.23,"pz":-0.88,"home":"info","nc":2,"sc":0.29},{"s":"Reg","px":0.28,"pz":-0.79,"home":"info","nc":2,"sc":0.29},{"s":"UTM","px":0.36,"pz":-0.89,"home":"info","nc":2,"sc":0.29},{"s":"λ_calc","px":0.41,"pz":-0.9,"home":"info","nc":2,"sc":0.29}],"iso":[{"s":"Biology","px":-0.26,"pz":0.18,"d":"évolution"},{"s":"Large Helical D","px":0.66,"pz":0.87,"d":"nucléaire"},{"s":"Ocrelizumab","px":-1.21,"pz":0.58,"d":"immunologie"},{"s":"Typhoid vaccine","px":-1.05,"pz":0.7,"d":"immunologie"},{"s":"Component (ther","px":0.17,"pz":0.3,"d":"thermo"},{"s":"Internal medici","px":-0.84,"pz":0.46,"d":"médecine"},{"s":"Environmental s","px":-0.31,"pz":0.34,"d":"environnemen"},{"s":"Optics","px":0.23,"pz":0.42,"d":"optique"},{"s":"Focus (optics)","px":0.26,"pz":0.31,"d":"optique"},{"s":"MEDLINE","px":-0.72,"pz":0.61,"d":"médecine"},{"s":"Law and economi","px":0.01,"pz":-0.63,"d":"droit"},{"s":"Classical mecha","px":0.79,"pz":-0.01,"d":"mécanique"},{"s":"Nuclear physics","px":0.61,"pz":0.91,"d":"nucléaire"},{"s":"Gynecology","px":-0.73,"pz":0.52,"d":"médecine"},{"s":"Domain (mathema","px":0.24,"pz":-0.29,"d":"algèbre lin"},{"s":"Immunology","px":-0.94,"pz":0.66,"d":"immunologie"},{"s":"Endocrinology","px":-0.91,"pz":0.45,"d":"médecine"},{"s":"Position (finan","px":-0.18,"pz":-0.38,"d":"finance"},{"s":"Public health","px":-0.91,"pz":0.36,"d":"médecine"},{"s":"Pathology","px":-0.93,"pz":0.52,"d":"médecine"}],"brg":[{"s":"Cartan subalgeb","px":0.09,"pz":-0.07,"d":"algèbre"},{"s":"Hodge structure","px":0.2,"pz":-0.18,"d":"algèbre"},{"s":"Heyting algebra","px":0.14,"pz":-0.24,"d":"algèbre"},{"s":"Canonical bundl","px":0.16,"pz":-0.13,"d":"algèbre"},{"s":"Approximate str","px":0.14,"pz":-0.01,"d":"algèbre"},{"s":"Krull dimension","px":0.03,"pz":-0.17,"d":"algèbre"},{"s":"Wreath product","px":0.12,"pz":-0.15,"d":"algèbre"},{"s":"Ideal class gro","px":0.06,"pz":-0.21,"d":"algèbre"},{"s":"Newton polygon","px":0.03,"pz":-0.05,"d":"algèbre"},{"s":"Flat module","px":0.17,"pz":-0.25,"d":"algèbre"},{"s":"Endomorphism ri","px":0.17,"pz":-0.19,"d":"algèbre"},{"s":"Schubert calcul","px":0.13,"pz":-0.16,"d":"algèbre"},{"s":"Ring laser gyro","px":0.1,"pz":-0.22,"d":"algèbre"},{"s":"Witt algebra","px":0.13,"pz":-0.14,"d":"algèbre"},{"s":"Quartic plane c","px":0.02,"pz":-0.29,"d":"algèbre"},{"s":"Borel subgroup","px":0.23,"pz":-0.23,"d":"algèbre"},{"s":"Boolean prime i","px":0.15,"pz":-0.17,"d":"algèbre"},{"s":"Commentz-Walter","px":0.2,"pz":-0.3,"d":"algèbre"},{"s":"Kac–Moody algeb","px":0.18,"pz":-0.15,"d":"algèbre"},{"s":"Quantum Turing ","px":0.1,"pz":-0.12,"d":"algèbre"}],"vds":[{"s":"Wind hybrid pow","px":0.04,"pz":-0.04,"d":"énergie"},{"s":"Australian popu","px":-0.86,"pz":-0.3,"d":"démographie"},{"s":"Genomic island","px":-0.87,"pz":0.17,"d":"génomique"},{"s":"D region","px":0.01,"pz":0.15,"d":"climatologie"},{"s":"Behavioral ecol","px":-0.22,"pz":0.31,"d":"écologie"},{"s":"Exposome","px":-0.25,"pz":0.44,"d":"écologie"},{"s":"Urban climatolo","px":0.01,"pz":0.21,"d":"climatologie"},{"s":"Ceilometer","px":-0.0,"pz":0.3,"d":"climatologie"},{"s":"Rank abundance ","px":-0.25,"pz":0.39,"d":"écologie"},{"s":"Bottom-up prote","px":-0.9,"pz":0.29,"d":"génomique"},{"s":"Spinplasmonics","px":-0.2,"pz":0.88,"d":"nanotechnolo"},{"s":"Thermophotovolt","px":-0.06,"pz":-0.01,"d":"énergie"},{"s":"Aerodynamic cen","px":0.37,"pz":0.51,"d":"aérospatiale"},{"s":"Special populat","px":-0.9,"pz":-0.24,"d":"démographie"},{"s":"Hadley cell","px":-0.15,"pz":0.36,"d":"climatologie"},{"s":"Biological ocea","px":-0.55,"pz":0.28,"d":"océanographi"},{"s":"Quantum tomogra","px":-0.47,"pz":0.55,"d":"biomédical"},{"s":"Radial immunodi","px":-1.02,"pz":0.7,"d":"immunologie"},{"s":"Protein functio","px":-0.77,"pz":0.2,"d":"bioinformati"},{"s":"Antitoxin","px":-1.0,"pz":0.56,"d":"immunologie"},{"s":"Air Pollution I","px":-0.27,"pz":0.34,"d":"environnemen"},{"s":"Payment for eco","px":-0.24,"pz":0.37,"d":"écologie"},{"s":"Engine room","px":0.43,"pz":0.36,"d":"aérospatiale"},{"s":"Logistic distri","px":-0.08,"pz":0.09,"d":"géosciences"},{"s":"Convective avai","px":-0.09,"pz":0.18,"d":"climatologie"},{"s":"Polio vaccine","px":-0.94,"pz":0.78,"d":"immunologie"},{"s":"Economic mobili","px":-0.24,"pz":-0.54,"d":"économie"},{"s":"Seismic migrati","px":0.15,"pz":0.64,"d":"sismologie"},{"s":"Viral phylodyna","px":-0.95,"pz":-0.26,"d":"épidémiologi"},{"s":"Derived demand","px":-0.2,"pz":-0.34,"d":"économie"}],"up":[{"s":"∃","px":-1.18,"pz":-1.18,"st":1},{"s":"K","px":-0.71,"pz":-1.18,"st":1},{"s":"φₑ","px":-0.24,"pz":-1.18,"st":1},{"s":"↓","px":0.24,"pz":-1.18,"st":1},{"s":"↑","px":0.71,"pz":-1.18,"st":1},{"s":"Wₑ","px":1.18,"pz":-1.18,"st":1},{"s":"μy","px":-1.18,"pz":-0.71,"st":1},{"s":"≤ₘ","px":-0.71,"pz":-0.71,"st":1},{"s":"≤ₜ","px":-0.24,"pz":-0.71,"st":1},{"s":"RE","px":0.24,"pz":-0.71,"st":1},{"s":"coRE","px":0.71,"pz":-0.71,"st":1},{"s":"NP","px":1.18,"pz":-0.71,"st":1},{"s":"coNP","px":-1.18,"pz":-0.24,"st":1},{"s":"SAT","px":-0.71,"pz":-0.24,"st":1},{"s":"3SAT","px":-0.24,"pz":-0.24,"st":1},{"s":"3COL","px":0.24,"pz":-0.24,"st":1},{"s":"TSP","px":0.71,"pz":-0.24,"st":1},{"s":"CLIQUE","px":1.18,"pz":-0.24,"st":1},{"s":"SUBSET","px":-1.18,"pz":0.24,"st":1},{"s":"HAM","px":-0.71,"pz":0.24,"st":1},{"s":"ILP","px":-0.24,"pz":0.24,"st":1},{"s":"BQP","px":0.24,"pz":0.24,"st":1},{"s":"NP-C","px":0.71,"pz":0.24,"st":1},{"s":"NP-H","px":1.18,"pz":0.24,"st":1},{"s":"VERTEX","px":-1.18,"pz":0.71,"st":1},{"s":"SETCOV","px":-0.71,"pz":0.71,"st":1},{"s":"KNAP","px":-0.24,"pz":0.71,"st":1},{"s":"PART","px":0.24,"pz":0.71,"st":1},{"s":"MAXCUT","px":0.71,"pz":0.71,"st":1},{"s":"3DM","px":1.18,"pz":0.71,"st":1},{"s":"GI","px":-1.18,"pz":1.18,"st":1},{"s":"Ladner","px":-0.71,"pz":1.18,"st":1},{"s":"Cook","px":-0.24,"pz":1.18,"st":1},{"s":"Σ⁰₁","px":0.24,"pz":1.18,"st":1},{"s":"Π⁰₁","px":0.71,"pz":1.18,"st":1},{"s":"P/poly","px":1.18,"pz":1.18,"st":1},{"s":"Computabil","px":0.0,"pz":0.42,"st":1},{"s":"Recursivel","px":0.28,"pz":-0.31,"st":1},{"s":"Recursivel","px":-0.42,"pz":0.04,"st":1},{"s":"∀","px":-1.14,"pz":-1.07,"st":2},{"s":"∃∀","px":-0.57,"pz":-1.07,"st":2},{"s":"TOT","px":0.0,"pz":-1.07,"st":2},{"s":"FIN","px":0.57,"pz":-1.07,"st":2},{"s":"∅'","px":1.14,"pz":-1.07,"st":2},{"s":"∅''","px":-1.14,"pz":-0.35,"st":2},{"s":"Δ⁰₂","px":-0.57,"pz":-0.35,"st":2},{"s":"BPP","px":0.0,"pz":-0.35,"st":2},{"s":"SZK","px":0.57,"pz":-0.35,"st":2},{"s":"RP","px":1.14,"pz":-0.35,"st":2},{"s":"coRP","px":-1.14,"pz":0.35,"st":2},{"s":"ZPP","px":-0.57,"pz":0.35,"st":2},{"s":"Post","px":0.0,"pz":0.35,"st":2},{"s":"Lim","px":0.57,"pz":0.35,"st":2},{"s":"Low","px":1.14,"pz":0.35,"st":2},{"s":"High","px":-1.14,"pz":1.07,"st":2},{"s":"INF","px":-0.57,"pz":1.07,"st":2},{"s":"Σ⁰₂","px":0.0,"pz":1.07,"st":2},{"s":"Π⁰₂","px":0.57,"pz":1.07,"st":2},{"s":"Σ⁰ₙ","px":-1.3,"pz":-1.29,"st":3},{"s":"Π⁰ₙ","px":-1.07,"pz":-1.29,"st":3},{"s":"Δ⁰ₙ","px":-0.83,"pz":-1.29,"st":3},{"s":"∅⁽ⁿ⁾","px":-0.59,"pz":-1.29,"st":3},{"s":"ΣₖP","px":-0.35,"pz":-1.29,"st":3},{"s":"ΠₖP","px":-0.12,"pz":-1.29,"st":3},{"s":"ΔₖP","px":0.12,"pz":-1.29,"st":3},{"s":"PH","px":0.35,"pz":-1.29,"st":3},{"s":"#P","px":0.59,"pz":-1.29,"st":3},{"s":"MA","px":0.83,"pz":-1.29,"st":3},{"s":"AM","px":1.07,"pz":-1.29,"st":3},{"s":"PP","px":1.3,"pz":-1.29,"st":3},{"s":"⊕P","px":-1.3,"pz":-1.03,"st":3},{"s":"Σ₂P","px":-1.07,"pz":-1.03,"st":3},{"s":"Π₂P","px":-0.83,"pz":-1.03,"st":3},{"s":"Toda","px":-0.59,"pz":-1.03,"st":3},{"s":"QMA","px":-0.35,"pz":-1.03,"st":3},{"s":"#SAT","px":-0.12,"pz":-1.03,"st":3},{"s":"GapP","px":0.12,"pz":-1.03,"st":3},{"s":"C₌P","px":0.35,"pz":-1.03,"st":3},{"s":"COF","px":0.59,"pz":-1.03,"st":3},{"s":"REC","px":0.83,"pz":-1.03,"st":3},{"s":"FermatWile","px":1.07,"pz":-1.03,"st":3},{"s":"Milnor_K","px":1.3,"pz":-1.03,"st":3},{"s":"BlochKato","px":-1.3,"pz":-0.78,"st":3},{"s":"SatoTate","px":-1.07,"pz":-0.78,"st":3},{"s":"KazhLusz","px":-0.83,"pz":-0.78,"st":3},{"s":"KadSinger","px":-0.59,"pz":-0.78,"st":3},{"s":"VirtHaken","px":-0.35,"pz":-0.78,"st":3},{"s":"KakeyaFin","px":-0.12,"pz":-0.78,"st":3},{"s":"Onsager_c","px":0.12,"pz":-0.78,"st":3},{"s":"Poinc3","px":0.35,"pz":-0.78,"st":3},{"s":"Geomtrz","px":0.59,"pz":-0.78,"st":3},{"s":"hCobord","px":0.83,"pz":-0.78,"st":3},{"s":"Freed4","px":1.07,"pz":-0.78,"st":3},{"s":"SmithConj","px":1.3,"pz":-0.78,"st":3},{"s":"ExoticS7","px":-1.3,"pz":-0.52,"st":3},{"s":"Surgery","px":-1.07,"pz":-0.52,"st":3},{"s":"Mordell","px":-0.83,"pz":-0.52,"st":3},{"s":"WeilConj","px":-0.59,"pz":-0.52,"st":3},{"s":"CatalanM","px":-0.35,"pz":-0.52,"st":3},{"s":"GoldWeak","px":-0.12,"pz":-0.52,"st":3},{"s":"BddGaps","px":0.12,"pz":-0.52,"st":3},{"s":"GrossZag","px":0.35,"pz":-0.52,"st":3},{"s":"HerbRibet","px":0.59,"pz":-0.52,"st":3},{"s":"IwasMain","px":0.83,"pz":-0.52,"st":3},{"s":"SerreMod","px":1.07,"pz":-0.52,"st":3},{"s":"LaffFnF","px":1.3,"pz":-0.52,"st":3},{"s":"CFSG","px":-1.3,"pz":-0.26,"st":3},{"s":"Moonshine","px":-1.07,"pz":-0.26,"st":3},{"s":"QuilSusl","px":-0.83,"pz":-0.26,"st":3},{"s":"Bieberbach","px":-0.59,"pz":-0.26,"st":3},{"s":"CarlesonL2","px":-0.35,"pz":-0.26,"st":3},{"s":"KatoSqrt","px":-0.12,"pz":-0.26,"st":3},{"s":"CoronaTh","px":0.12,"pz":-0.26,"st":3},{"s":"CalabiYau","px":0.35,"pz":-0.26,"st":3},{"s":"PosMass","px":0.59,"pz":-0.26,"st":3},{"s":"Kepler","px":0.83,"pz":-0.26,"st":3},{"s":"Willmore","px":1.07,"pz":-0.26,"st":3},{"s":"AtiyahSing","px":1.3,"pz":-0.26,"st":3},{"s":"FourColor","px":-1.3,"pz":0.0,"st":3},{"s":"RobSeym","px":-1.07,"pz":0.0,"st":3},{"s":"GreenTao","px":-0.83,"pz":0.0,"st":3},{"s":"DensHJ","px":-0.59,"pz":0.0,"st":3},{"s":"Kneser","px":-0.35,"pz":0.0,"st":3},{"s":"SLE_thm","px":-0.12,"pz":0.0,"st":3},{"s":"ParisHarr","px":0.12,"pz":0.0,"st":3},{"s":"DPRM","px":0.35,"pz":0.0,"st":3},{"s":"Hironaka","px":0.59,"pz":0.0,"st":3},{"s":"FundLemma","px":0.83,"pz":0.0,"st":3},{"s":"Szemer","px":1.07,"pz":0.0,"st":3},{"s":"RothAP","px":1.3,"pz":0.0,"st":3},{"s":"MostowRig","px":-1.3,"pz":0.26,"st":3},{"s":"MargSup","px":-1.07,"pz":0.26,"st":3},{"s":"Oppenh","px":-0.83,"pz":0.26,"st":3},{"s":"Ratner","px":-0.59,"pz":0.26,"st":3},{"s":"Tameness","px":-0.35,"pz":0.26,"st":3},{"s":"EndLam","px":-0.12,"pz":0.26,"st":3},{"s":"DiffSph","px":0.12,"pz":0.26,"st":3},{"s":"FeitThomp","px":0.35,"pz":0.26,"st":3},{"s":"Vinogr3P","px":0.59,"pz":0.26,"st":3},{"s":"PNT","px":0.83,"pz":0.26,"st":3},{"s":"Waring","px":1.07,"pz":0.26,"st":3},{"s":"QRecip","px":1.3,"pz":0.26,"st":3},{"s":"Dirichlet","px":-1.3,"pz":0.52,"st":3},{"s":"Viaz8","px":-1.07,"pz":0.52,"st":3},{"s":"Viaz24","px":-0.83,"pz":0.52,"st":3},{"s":"DblBubble","px":-0.59,"pz":0.52,"st":3},{"s":"Einstein","px":-0.35,"pz":0.52,"st":3},{"s":"BrauerH0","px":-0.12,"pz":0.52,"st":3},{"s":"Nagata","px":0.12,"pz":0.52,"st":3},{"s":"ErdDiscrep","px":0.35,"pz":0.52,"st":3},{"s":"GuthKatz","px":0.59,"pz":0.52,"st":3},{"s":"RamseyExp","px":0.83,"pz":0.52,"st":3},{"s":"BGS","px":1.07,"pz":0.52,"st":3},{"s":"NatProof","px":1.3,"pz":0.52,"st":3},{"s":"Algebriz","px":-1.3,"pz":0.78,"st":3},{"s":"ImmSzel","px":-1.07,"pz":0.78,"st":3},{"s":"SipLaut","px":-0.83,"pz":0.78,"st":3},{"s":"Perm#P","px":-0.59,"pz":0.78,"st":3},{"s":"ImpWig","px":-0.35,"pz":0.78,"st":3},{"s":"ImpPad","px":-0.12,"pz":0.78,"st":3},{"s":"BirkErg","px":0.12,"pz":0.78,"st":3},{"s":"CLT","px":0.35,"pz":0.78,"st":3},{"s":"SLLN","px":0.59,"pz":0.78,"st":3},{"s":"Donsker","px":0.83,"pz":0.78,"st":3},{"s":"LDP","px":1.07,"pz":0.78,"st":3},{"s":"OrnIsm","px":1.3,"pz":0.78,"st":3},{"s":"DeGNM","px":-1.3,"pz":1.03,"st":3},{"s":"NashEmb","px":-1.07,"pz":1.03,"st":3},{"s":"KAM","px":-0.83,"pz":1.03,"st":3},{"s":"deRham","px":-0.59,"pz":1.03,"st":3},{"s":"BottPer","px":-0.35,"pz":1.03,"st":3},{"s":"Uniformiz","px":-0.12,"pz":1.03,"st":3},{"s":"GrotRR","px":0.12,"pz":1.03,"st":3},{"s":"ClassFT","px":0.35,"pz":1.03,"st":3},{"s":"GodelInc","px":0.59,"pz":1.03,"st":3},{"s":"NoetherSy","px":0.83,"pz":1.03,"st":3},{"s":"Shannon2","px":1.07,"pz":1.03,"st":3},{"s":"MIP*RE","px":1.3,"pz":1.03,"st":3},{"s":"WillACC","px":-1.3,"pz":1.29,"st":3},{"s":"RazMono","px":-1.07,"pz":1.29,"st":3},{"s":"RazSmol","px":-0.83,"pz":1.29,"st":3},{"s":"HasAC0","px":-0.59,"pz":1.29,"st":3},{"s":"BorelDet","px":-0.35,"pz":1.29,"st":3},{"s":"CohenInd","px":-0.12,"pz":1.29,"st":3},{"s":"BuchiMSO","px":0.12,"pz":1.29,"st":3},{"s":"MyhNer","px":0.35,"pz":1.29,"st":3},{"s":"RabinS2S","px":0.59,"pz":1.29,"st":3},{"s":"DoobMart","px":0.83,"pz":1.29,"st":3},{"s":"BaireCat","px":1.07,"pz":1.29,"st":3},{"s":"BanOpen","px":1.3,"pz":1.29,"st":3},{"s":"Conjecture","px":-0.46,"pz":-0.26,"st":3},{"s":"Sequence m","px":0.17,"pz":0.5,"st":3},{"s":"Riemann hy","px":0.22,"pz":-0.49,"st":3},{"s":"Time value","px":-0.49,"pz":0.21,"st":3},{"s":"Mirror sym","px":0.5,"pz":0.17,"st":3},{"s":"Collatz co","px":-0.26,"pz":-0.47,"st":3},{"s":"NP-complet","px":-0.13,"pz":0.52,"st":3},{"s":"Poincaré c","px":0.45,"pz":-0.3,"st":3},{"s":"Induced su","px":-0.53,"pz":-0.08,"st":3},{"s":"Cosmologic","px":0.34,"pz":0.42,"st":3},{"s":"Beal's con","px":0.04,"pz":-0.54,"st":3},{"s":"Cosmic cen","px":-0.39,"pz":0.37,"st":3},{"s":"Subgraph i","px":0.54,"pz":-0.01,"st":3},{"s":"Learning w","px":-0.41,"pz":-0.36,"st":3},{"s":"Goldbach's","px":0.06,"pz":0.54,"st":3},{"s":"Hodge conj","px":0.32,"pz":-0.44,"st":3},{"s":"Lonely run","px":-0.53,"pz":0.1,"st":3},{"s":"Traveling ","px":0.47,"pz":0.28,"st":3},{"s":"Langlands ","px":-0.15,"pz":-0.52,"st":3},{"s":"Sato–Tate ","px":-0.24,"pz":0.49,"st":3},{"s":"abc conjec","px":0.51,"pz":-0.2,"st":3},{"s":"Elliott–Ha","px":-0.51,"pz":-0.2,"st":3},{"s":"Black hole","px":0.02,"pz":-0.08,"st":3},{"s":"Homotopy h","px":0.22,"pz":0.0,"st":3},{"s":"Convergenc","px":0.21,"pz":-0.12,"st":3},{"s":"Expected u","px":0.02,"pz":-0.33,"st":3},{"s":"Phylogenet","px":-0.32,"pz":0.13,"st":3},{"s":"Permanent ","px":-0.26,"pz":-0.48,"st":3},{"s":"Non-standa","px":-0.17,"pz":0.27,"st":3},{"s":"Neocolonia","px":-0.38,"pz":-0.46,"st":3},{"s":"Internatio","px":-0.4,"pz":0.2,"st":3},{"s":"Creative c","px":-0.38,"pz":-0.44,"st":3},{"s":"Life-cycle","px":0.33,"pz":-0.03,"st":3},{"s":"Superselec","px":-0.49,"pz":-0.91,"st":3},{"s":"Group sele","px":-0.26,"pz":0.11,"st":3},{"s":"Unparticle","px":1.04,"pz":0.48,"st":3},{"s":"RNA world ","px":-0.26,"pz":0.15,"st":3},{"s":"Ozone ther","px":-0.41,"pz":0.29,"st":3},{"s":"Pollution ","px":-0.32,"pz":0.18,"st":3},{"s":"Random wal","px":-0.19,"pz":-0.32,"st":3},{"s":"Multiple c","px":-0.8,"pz":0.47,"st":3},{"s":"Ridge push","px":0.13,"pz":0.54,"st":3},{"s":"Bertrand p","px":-0.1,"pz":-0.57,"st":3},{"s":"AH","px":-1.14,"pz":-1.07,"st":4},{"s":"∪ₙ","px":-0.57,"pz":-1.07,"st":4},{"s":"ω_ord","px":0.0,"pz":-1.07,"st":4},{"s":"Th(ℕ)","px":0.57,"pz":-1.07,"st":4},{"s":"∅⁽ω⁾","px":1.14,"pz":-1.07,"st":4},{"s":"PSPACE","px":-1.14,"pz":-0.35,"st":4},{"s":"QIP","px":-0.57,"pz":-0.35,"st":4},{"s":"EXPTIME","px":0.0,"pz":-0.35,"st":4},{"s":"NEXP","px":0.57,"pz":-0.35,"st":4},{"s":"EXPSPACE","px":1.14,"pz":-0.35,"st":4},{"s":"AP","px":-1.14,"pz":0.35,"st":4},{"s":"TQBF","px":-0.57,"pz":0.35,"st":4},{"s":"IP_eq","px":0.0,"pz":0.35,"st":4},{"s":"2-EXP","px":0.57,"pz":0.35,"st":4},{"s":"ELEM","px":1.14,"pz":0.35,"st":4},{"s":"E","px":-1.14,"pz":1.07,"st":4},{"s":"NE","px":-0.57,"pz":1.07,"st":4},{"s":"Tarski","px":0.0,"pz":1.07,"st":4},{"s":"ε₀_ord","px":0.57,"pz":1.07,"st":4},{"s":"Polynomial","px":-0.02,"pz":-0.39,"st":4},{"s":"ω₁ᶜᵏ","px":-1.14,"pz":-1.07,"st":5},{"s":"∅⁽α⁾","px":-0.57,"pz":-1.07,"st":5},{"s":"Δ¹₁","px":0.0,"pz":-1.07,"st":5},{"s":"Σ¹₁","px":0.57,"pz":-1.07,"st":5},{"s":"Π¹₁","px":1.14,"pz":-1.07,"st":5},{"s":"O_Kl","px":-1.14,"pz":-0.35,"st":5},{"s":"HYP","px":-0.57,"pz":-0.35,"st":5},{"s":"WO","px":0.0,"pz":-0.35,"st":5},{"s":"Σ¹ₙ","px":0.57,"pz":-0.35,"st":5},{"s":"Π¹ₙ","px":1.14,"pz":-0.35,"st":5},{"s":"Det","px":-1.14,"pz":0.35,"st":5},{"s":"²E","px":-0.57,"pz":0.35,"st":5},{"s":"KP","px":0.0,"pz":0.35,"st":5},{"s":"Lα","px":0.57,"pz":0.35,"st":5},{"s":"Borel","px":1.14,"pz":0.35,"st":5},{"s":"AD","px":-1.14,"pz":1.07,"st":5},{"s":"Wadge","px":-0.57,"pz":1.07,"st":5},{"s":"Spect","px":0.0,"pz":1.07,"st":5},{"s":"Σ⁰_α","px":0.57,"pz":1.07,"st":5},{"s":"Ω_Ch","px":-1.14,"pz":-1.07,"st":6},{"s":"BB(n)","px":-0.57,"pz":-1.07,"st":6},{"s":"⊥","px":0.0,"pz":-1.07,"st":6},{"s":"G_God","px":0.57,"pz":-1.07,"st":6},{"s":"⊢","px":1.14,"pz":-1.07,"st":6},{"s":"⊬","px":-1.14,"pz":-0.35,"st":6},{"s":"K(x)","px":-0.57,"pz":-0.35,"st":6},{"s":"HALT","px":0.0,"pz":-0.35,"st":6},{"s":"H10","px":0.57,"pz":-0.35,"st":6},{"s":"Σ(n)","px":1.14,"pz":-0.35,"st":6},{"s":"WP_grp","px":-1.14,"pz":0.35,"st":6},{"s":"PCP","px":-0.57,"pz":0.35,"st":6},{"s":"Rice","px":0.0,"pz":0.35,"st":6},{"s":"ETM","px":0.57,"pz":0.35,"st":6},{"s":"EQTM","px":1.14,"pz":0.35,"st":6},{"s":"S(n)","px":-1.14,"pz":1.07,"st":6},{"s":"Entsch","px":-0.57,"pz":1.07,"st":6},{"s":"Diag","px":0.0,"pz":1.07,"st":6},{"s":"Kolm","px":0.57,"pz":1.07,"st":6},{"s":"Wang","px":1.14,"pz":1.07,"st":6},{"s":"Halting pr","px":-0.25,"pz":0.3,"st":6},{"s":"Undecidabl","px":0.39,"pz":-0.05,"st":6},{"s":"Kolmogorov","px":-0.32,"pz":-0.23,"st":6},{"s":"Gödel's in","px":0.09,"pz":0.39,"st":6}]};
+'use strict';
 
-// ═══════════════════════════════════════
-// CONFIGURATION
-// ═══════════════════════════════════════
-const SCALE = 200;           // spectral coords → world
-const STRATE_GAP = 80;       // vertical distance between strates
-const STRATE_NAMES = [
-  'S0 · SOL · Δ⁰₀',
-  'S1 · NUAGE 1 · Σ⁰₁',
-  'S2 · NUAGE 2 · Σ⁰₂',
-  'S3 · NUAGE n · Σ⁰ₙ',
-  'S4 · CIEL · AH',
-  'S5 · HYPERARITHMÉTIQUE',
-  'S6 · PLAFOND · Turing'
-];
+// ═══════════════════════════════════════════════
+// DATA (generated from escaliers_unified.json)
+// ═══════════════════════════════════════════════
+const D = {"c":{"math":[0.194,-0.1604],"physique":[0.7578,0.3259],"ingenierie":[0.0628,0.1251],"chimie":[-0.0854,0.7691],"info":[0.0432,-0.4816],"transversal":[0.0158,0.0085],"bio":[-0.4203,0.2748],"humaines":[-0.2376,-0.4796],"terre":[-0.2124,0.2713]},"g":[{"s":"p_gen","f":"Impulsion généralisée","px":-0.6822,"pz":0.323,"home":"physique","alien":"bio","sc":0.961},{"s":"q","f":"Coordonnée généralisée","px":-0.7959,"pz":0.323,"home":"physique","alien":"bio","sc":0.892},{"s":"{f,g}","f":"Crochet de Poisson","px":-0.9096,"pz":0.323,"home":"physique","alien":"bio","sc":0.832},{"s":"δS=0","f":"Principe moindre action","px":-1.0233,"pz":0.323,"home":"physique","alien":"bio","sc":0.779},{"s":"S_act","f":"Action S=∫ℒdt","px":-1.137,"pz":0.323,"home":"physique","alien":"bio","sc":0.732},{"s":"Nuclear astrophysics","f":"Nuclear astrophysics","px":0.0797,"pz":0.6819,"home":"physique","alien":"chimie","sc":0.72},{"s":"Astrophysics","f":"Astrophysics","px":0.0727,"pz":0.6573,"home":"physique","alien":"chimie","sc":0.71},{"s":"Astrophysical plasma","f":"Astrophysical plasma","px":0.0672,"pz":0.6415,"home":"physique","alien":"chimie","sc":0.703},{"s":"Levi-Civita connecti","f":"Levi-Civita connection","px":0.7612,"pz":0.2757,"home":"math","alien":"physique","sc":0.692},{"s":"Shock waves in astro","f":"Shock waves in astrophysics","px":0.0832,"pz":0.6518,"home":"physique","alien":"chimie","sc":0.691},{"s":"ℋ","f":"Hamiltonien classique","px":-1.2507,"pz":0.323,"home":"physique","alien":"bio","sc":0.691},{"s":"Geodesics in general","f":"Geodesics in general relativity","px":0.6956,"pz":0.3265,"home":"math","alien":"physique","sc":0.678},{"s":"arctan","f":"Arc tangente","px":-0.4201,"pz":0.1983,"home":"math","alien":"bio","sc":0.672},{"s":"Megamaser","f":"Megamaser","px":0.1161,"pz":0.6861,"home":"physique","alien":"chimie","sc":0.67},{"s":"ℒ","f":"Lagrangien L=T-V","px":-1.3644,"pz":0.323,"home":"physique","alien":"bio","sc":0.654},{"s":"Computational astrop","f":"Computational astrophysics","px":0.1464,"pz":0.7117,"home":"physique","alien":"chimie","sc":0.638},{"s":"Trigonometric polyno","f":"Trigonometric polynomial","px":-0.3433,"pz":0.2081,"home":"math","alien":"bio","sc":0.635},{"s":"μ_mes","f":"Mesure abstraite","px":0.1137,"pz":1.2274,"home":"math","alien":"chimie","sc":0.622},{"s":"pc","f":"Parsec ~3.26 années-lumière","px":0.0357,"pz":0.5309,"home":"physique","alien":"chimie","sc":0.613},{"s":"Perovskite (structur","f":"Perovskite (structure)","px":0.0762,"pz":0.1692,"home":"chimie","alien":"ingenierie","sc":0.612},{"s":"Intracluster medium","f":"Intracluster medium","px":0.134,"pz":0.646,"home":"physique","alien":"chimie","sc":0.611},{"s":"M☉","f":"Masse solaire ~2×10³⁰ kg","px":0.1447,"pz":0.6627,"home":"physique","alien":"chimie","sc":0.607},{"s":"Primary (astronomy)","f":"Primary (astronomy)","px":0.1157,"pz":0.6117,"home":"physique","alien":"chimie","sc":0.606},{"s":"Gauss–Bonnet theorem","f":"Gauss–Bonnet theorem","px":0.6349,"pz":0.3642,"home":"math","alien":"physique","sc":0.605},{"s":"Isometry (Riemannian","f":"Isometry (Riemannian geometry)","px":0.724,"pz":0.206,"home":"math","alien":"physique","sc":0.601},{"s":"Sagittarius A*","f":"Sagittarius A*","px":0.0959,"pz":0.5776,"home":"physique","alien":"chimie","sc":0.598},{"s":"Scalar curvature","f":"Scalar curvature","px":0.6252,"pz":0.3679,"home":"math","alien":"physique","sc":0.593},{"s":"σ(F)","f":"σ-algèbre (tribu)","px":0.2274,"pz":1.2274,"home":"math","alien":"chimie","sc":0.583},{"s":"Electric network","f":"Electric network","px":0.6384,"pz":0.2582,"home":"math","alien":"physique","sc":0.577},{"s":"Polynomial interpola","f":"Polynomial interpolation","px":0.6307,"pz":0.267,"home":"math","alien":"physique","sc":0.574},{"s":"Fₐᵦ","f":"Tenseur de courbure (jauge)","px":0.6321,"pz":0.4441,"home":"math","alien":"physique","sc":0.573},{"s":"Metric connection","f":"Metric connection","px":0.627,"pz":0.2704,"home":"math","alien":"physique","sc":0.571},{"s":"Virial mass","f":"Virial mass","px":0.1357,"pz":0.6052,"home":"physique","alien":"chimie","sc":0.568},{"s":"ωₐ","f":"Forme de connexion","px":0.6076,"pz":0.3164,"home":"math","alien":"physique","sc":0.567},{"s":"Orbital motion","f":"Orbital motion","px":0.1313,"pz":0.5947,"home":"physique","alien":"chimie","sc":0.564},{"s":"Differential (mechan","f":"Differential (mechanical device)","px":0.1507,"pz":0.6251,"home":"physique","alien":"chimie","sc":0.563},{"s":"Kyphosis","f":"Kyphosis","px":0.6789,"pz":0.1924,"home":"math","alien":"physique","sc":0.552},{"s":"Earth's orbit","f":"Earth's orbit","px":0.0879,"pz":0.5265,"home":"physique","alien":"chimie","sc":0.546},{"s":"Inverse quadratic in","f":"Inverse quadratic interpolation","px":0.6329,"pz":0.2291,"home":"math","alien":"physique","sc":0.544},{"s":"Gaussian curvature","f":"Gaussian curvature","px":0.6349,"pz":0.224,"home":"math","alien":"physique","sc":0.541},{"s":"∧_ext","f":"Produit extérieur / wedge (formes diff)","px":0.5839,"pz":0.3802,"home":"math","alien":"physique","sc":0.541},{"s":"cos","f":"Cosinus","px":-0.4007,"pz":0.0937,"home":"math","alien":"bio","sc":0.541},{"s":"Differential geometr","f":"Differential geometry of curves","px":0.5983,"pz":0.2806,"home":"math","alien":"physique","sc":0.538},{"s":"λ_Leb","f":"Mesure de Lebesgue (1902)","px":0.3411,"pz":1.2274,"home":"math","alien":"chimie","sc":0.535},{"s":"Stellar collision","f":"Stellar collision","px":0.1995,"pz":0.6894,"home":"physique","alien":"chimie","sc":0.53},{"s":"sin","f":"Sinus","px":-0.2515,"pz":0.2194,"home":"math","alien":"terre","sc":0.527},{"s":"Riemannian submersio","f":"Riemannian submersion","px":0.6015,"pz":0.2498,"home":"math","alien":"physique","sc":0.521},{"s":"Polytrope","f":"Polytrope","px":0.1485,"pz":0.5817,"home":"physique","alien":"chimie","sc":0.52},{"s":"Gaussian quadrature","f":"Gaussian quadrature","px":0.5774,"pz":0.3021,"home":"math","alien":"physique","sc":0.519},{"s":"Astrophysical jet","f":"Astrophysical jet","px":0.0547,"pz":0.4708,"home":"physique","alien":"chimie","sc":0.515},{"s":"Tangent","f":"Tangent","px":-0.3258,"pz":0.1125,"home":"math","alien":"bio","sc":0.512},{"s":"Wireless broadband","f":"Wireless broadband","px":-0.1628,"pz":-0.3703,"home":"ingenierie","alien":"humaines","sc":0.511},{"s":"Holonomy","f":"Holonomy","px":0.5609,"pz":0.3544,"home":"math","alien":"physique","sc":0.51},{"s":"Information geometry","f":"Information geometry","px":0.6663,"pz":0.1666,"home":"math","alien":"physique","sc":0.506},{"s":"Earthing system","f":"Earthing system","px":0.5559,"pz":0.3988,"home":"math","alien":"physique","sc":0.505},{"s":"Motion interpolation","f":"Motion interpolation","px":0.6121,"pz":0.2166,"home":"math","alien":"physique","sc":0.504},{"s":"Gait cycle","f":"Gait cycle","px":0.6256,"pz":0.4886,"home":"ingenierie","alien":"physique","sc":0.497},{"s":"Gaussian orbital","f":"Gaussian orbital","px":0.1671,"pz":0.5892,"home":"physique","alien":"chimie","sc":0.496},{"s":"Proofs of trigonomet","f":"Proofs of trigonometric identities","px":-0.3134,"pz":0.2387,"home":"math","alien":"terre","sc":0.495},{"s":"Automation","f":"Automation","px":-0.3506,"pz":-0.3516,"home":"ingenierie","alien":"humaines","sc":0.492},{"s":"Galaxy group","f":"Galaxy group","px":0.0884,"pz":0.4837,"home":"physique","alien":"chimie","sc":0.49},{"s":"R_sc","f":"Courbure scalaire","px":0.5446,"pz":0.3549,"home":"math","alien":"physique","sc":0.488},{"s":"Flatness (cosmology)","f":"Flatness (cosmology)","px":0.5522,"pz":0.3135,"home":"math","alien":"physique","sc":0.486},{"s":"Geomagnetic storm","f":"Geomagnetic storm","px":0.1293,"pz":0.5268,"home":"physique","alien":"chimie","sc":0.485},{"s":"Lp","f":"Espaces Lp (Riesz 1910)","px":0.4548,"pz":1.2274,"home":"math","alien":"chimie","sc":0.484},{"s":"sinh","f":"Sinus hyperbolique","px":-0.2651,"pz":0.1775,"home":"math","alien":"terre","sc":0.481},{"s":"In-space propulsion ","f":"In-space propulsion technologies","px":0.5737,"pz":0.3838,"home":"ingenierie","alien":"physique","sc":0.48},{"s":"Underwater glider","f":"Underwater glider","px":-0.1222,"pz":-0.3755,"home":"ingenierie","alien":"humaines","sc":0.479},{"s":"Stellar black hole","f":"Stellar black hole","px":0.0998,"pz":0.4852,"home":"physique","alien":"chimie","sc":0.476},{"s":"Magnetic reconnectio","f":"Magnetic reconnection","px":0.5532,"pz":0.2856,"home":"math","alien":"physique","sc":0.473},{"s":"Dominion","f":"Dominion","px":-0.1928,"pz":-0.3297,"home":"ingenierie","alien":"humaines","sc":0.473},{"s":"Stability theorem","f":"Stability theorem","px":0.0308,"pz":0.6649,"home":"ingenierie","alien":"chimie","sc":0.47},{"s":"Rμνρσ","f":"Tenseur de Riemann","px":0.5472,"pz":0.281,"home":"math","alien":"physique","sc":0.461},{"s":"Vibrating wire","f":"Vibrating wire","px":-0.2833,"pz":-0.3092,"home":"ingenierie","alien":"humaines","sc":0.461},{"s":"Differential form","f":"Differential form","px":-0.2647,"pz":0.1582,"home":"math","alien":"terre","sc":0.461},{"s":"Ground effect (cars)","f":"Ground effect (cars)","px":0.6161,"pz":0.5339,"home":"ingenierie","alien":"physique","sc":0.459},{"s":"L☉","f":"Luminosité solaire ~3.8×10²⁶ W","px":0.2257,"pz":0.6661,"home":"physique","alien":"chimie","sc":0.458},{"s":"cosh","f":"Cosinus hyperbolique","px":-0.3323,"pz":0.0615,"home":"math","alien":"bio","sc":0.449},{"s":"Tμν","f":"Tenseur énergie-impulsion","px":0.5599,"pz":0.2389,"home":"math","alien":"physique","sc":0.447},{"s":"Aircraft industry","f":"Aircraft industry","px":0.5646,"pz":0.4474,"home":"ingenierie","alien":"physique","sc":0.447},{"s":"Self-reconfiguring m","f":"Self-reconfiguring modular robot","px":-0.3864,"pz":-0.323,"home":"ingenierie","alien":"humaines","sc":0.445},{"s":"Digital cross connec","f":"Digital cross connect system","px":-0.2399,"pz":-0.3014,"home":"ingenierie","alien":"humaines","sc":0.445},{"s":"L(s,χ)","f":"Fonction L de Dirichlet","px":-0.2274,"pz":-0.5814,"home":"math","alien":"humaines","sc":0.445},{"s":"Bernstein polynomial","f":"Bernstein polynomial","px":0.6257,"pz":0.1534,"home":"math","alien":"physique","sc":0.442},{"s":"South Atlantic Anoma","f":"South Atlantic Anomaly","px":0.5492,"pz":0.3723,"home":"ingenierie","alien":"physique","sc":0.44},{"s":"Visual attention","f":"Visual attention","px":0.0469,"pz":-0.0538,"home":"humaines","alien":"ingenierie","sc":0.438},{"s":"Conformal geometry","f":"Conformal geometry","px":-0.1245,"pz":0.1856,"home":"math","alien":"terre","sc":0.438},{"s":"Atomic orbital","f":"Atomic orbital","px":0.1556,"pz":0.5242,"home":"physique","alien":"chimie","sc":0.436},{"s":"Twist","f":"Twist","px":0.513,"pz":0.3344,"home":"math","alien":"physique","sc":0.435},{"s":"Galactic tide","f":"Galactic tide","px":0.2212,"pz":0.6318,"home":"physique","alien":"chimie","sc":0.434},{"s":"Bernard–Soulier synd","f":"Bernard–Soulier syndrome","px":0.0234,"pz":0.0678,"home":"bio","alien":"ingenierie","sc":0.434},{"s":"f(R) gravity","f":"f(R) gravity","px":0.5311,"pz":0.2789,"home":"math","alien":"physique","sc":0.433},{"s":"Forest road","f":"Forest road","px":-0.5319,"pz":-0.3843,"home":"terre","alien":"humaines","sc":0.433},{"s":"a.e.","f":"Presque partout (almost everywhere)","px":0.5685,"pz":1.2274,"home":"math","alien":"chimie","sc":0.431},{"s":"Customised Applicati","f":"Customised Applications for Mobile networks Enhanced Logic","px":-0.2987,"pz":-0.2897,"home":"ingenierie","alien":"humaines","sc":0.43},{"s":"Totally geodesic","f":"Totally geodesic","px":0.5113,"pz":0.3283,"home":"math","alien":"physique","sc":0.43},{"s":"Hybrid system","f":"Hybrid system","px":0.5659,"pz":0.2118,"home":"math","alien":"physique","sc":0.429},{"s":"Municipal wireless n","f":"Municipal wireless network","px":-0.1386,"pz":-0.3271,"home":"ingenierie","alien":"humaines","sc":0.427},{"s":"★","f":"Opérateur de Hodge","px":0.5369,"pz":0.2571,"home":"math","alien":"physique","sc":0.426},{"s":"Avionics","f":"Avionics","px":0.5589,"pz":0.4822,"home":"ingenierie","alien":"physique","sc":0.424},{"s":"η","f":"Eta de Dedekind / Dirichlet","px":-0.3411,"pz":-0.5814,"home":"math","alien":"humaines","sc":0.422},{"s":"Constant curvature","f":"Constant curvature","px":0.5458,"pz":0.2344,"home":"math","alien":"physique","sc":0.419},{"s":"Projective different","f":"Projective differential geometry","px":0.6114,"pz":0.151,"home":"math","alien":"physique","sc":0.418},{"s":"Geometric analysis","f":"Geometric analysis","px":0.5512,"pz":0.2246,"home":"math","alien":"physique","sc":0.418},{"s":"Rehabilitation robot","f":"Rehabilitation robotics","px":-0.0895,"pz":-0.3833,"home":"ingenierie","alien":"info","sc":0.418},{"s":"Ion thruster","f":"Ion thruster","px":0.5571,"pz":0.4907,"home":"ingenierie","alien":"physique","sc":0.418},{"s":"Aerospace","f":"Aerospace","px":0.5738,"pz":0.5393,"home":"ingenierie","alien":"physique","sc":0.414},{"s":"LPWAN","f":"LPWAN","px":-0.1789,"pz":-0.2983,"home":"ingenierie","alien":"humaines","sc":0.411},{"s":"Mitochondrion","f":"Mitochondrion","px":-0.2051,"pz":-0.2871,"home":"ingenierie","alien":"humaines","sc":0.407},{"s":"Galaxy groups and cl","f":"Galaxy groups and clusters","px":0.232,"pz":0.6275,"home":"physique","alien":"chimie","sc":0.406},{"s":"Traction motor","f":"Traction motor","px":0.5692,"pz":0.547,"home":"ingenierie","alien":"physique","sc":0.405},{"s":"Robotics","f":"Robotics","px":-0.2218,"pz":-0.2807,"home":"ingenierie","alien":"humaines","sc":0.403},{"s":"Vect","f":"Catégorie espaces vectoriels","px":-0.1489,"pz":-0.4196,"home":"math","alien":"humaines","sc":0.403},{"s":"Rapid plasma reagin","f":"Rapid plasma reagin","px":0.1705,"pz":0.7717,"home":"ingenierie","alien":"chimie","sc":0.403},{"s":"Nyq_st","f":"Critère stabilité Nyquist","px":0.1196,"pz":0.6849,"home":"ingenierie","alien":"chimie","sc":0.401},{"s":"Enterprise private n","f":"Enterprise private network","px":-0.2895,"pz":-0.2689,"home":"ingenierie","alien":"humaines","sc":0.398},{"s":"Regulatory agency","f":"Regulatory agency","px":-0.2094,"pz":-0.2792,"home":"ingenierie","alien":"humaines","sc":0.395},{"s":"DNA ligase","f":"DNA ligase","px":0.0099,"pz":0.2049,"home":"bio","alien":"ingenierie","sc":0.395},{"s":"Adj","f":"Adjonction foncteurs","px":-0.2181,"pz":-0.3597,"home":"math","alien":"humaines","sc":0.394},{"s":"HSPA14","f":"HSPA14","px":-0.0123,"pz":0.056,"home":"bio","alien":"ingenierie","sc":0.394},{"s":"Galaxy cluster","f":"Galaxy cluster","px":0.2191,"pz":0.5918,"home":"physique","alien":"chimie","sc":0.394},{"s":"d_ext","f":"Dérivée extérieure (Cartan 1899)","px":0.5161,"pz":0.2612,"home":"math","alien":"physique","sc":0.394},{"s":"Mechanoreceptor","f":"Mechanoreceptor","px":-0.1666,"pz":-0.2935,"home":"ingenierie","alien":"humaines","sc":0.394},{"s":"Aerodynamic drag","f":"Aerodynamic drag","px":0.5547,"pz":0.5383,"home":"ingenierie","alien":"physique","sc":0.393},{"s":"Liouville equation","f":"Liouville equation","px":0.5687,"pz":0.178,"home":"math","alien":"physique","sc":0.391},{"s":"Maser","f":"Maser","px":0.2079,"pz":0.8567,"home":"ingenierie","alien":"chimie","sc":0.39},{"s":"Numerical control","f":"Numerical control","px":-0.0809,"pz":-0.3522,"home":"ingenierie","alien":"info","sc":0.389},{"s":"Dipeptidyl peptidase","f":"Dipeptidyl peptidase-4","px":-0.009,"pz":0.1912,"home":"bio","alien":"ingenierie","sc":0.388},{"s":"Automatic test patte","f":"Automatic test pattern generation","px":-0.2855,"pz":-0.2631,"home":"ingenierie","alien":"humaines","sc":0.388},{"s":"Developmental roboti","f":"Developmental robotics","px":-0.1868,"pz":-0.2827,"home":"ingenierie","alien":"humaines","sc":0.388},{"s":"Mobile wireless","f":"Mobile wireless","px":0.0037,"pz":-0.3222,"home":"ingenierie","alien":"info","sc":0.386},{"s":"gμν","f":"Tenseur métrique (Einstein)","px":0.5972,"pz":0.1428,"home":"math","alien":"physique","sc":0.385},{"s":"∘","f":"Composition morphismes","px":-0.1938,"pz":-0.3632,"home":"math","alien":"humaines","sc":0.384},{"s":"Reverse Transcriptio","f":"Reverse Transcription Loop-mediated Isothermal Amplification","px":-0.0238,"pz":0.1745,"home":"bio","alien":"ingenierie","sc":0.383},{"s":"Supermassive black h","f":"Supermassive black hole","px":0.1992,"pz":0.5487,"home":"physique","alien":"chimie","sc":0.382},{"s":"dμ","f":"Intégration par rapport à μ","px":0.6822,"pz":1.2274,"home":"math","alien":"chimie","sc":0.381},{"s":"Hall effect sensor","f":"Hall effect sensor","px":-0.0075,"pz":-0.3205,"home":"ingenierie","alien":"info","sc":0.38},{"s":"Solar physics","f":"Solar physics","px":0.2331,"pz":0.6059,"home":"physique","alien":"chimie","sc":0.379},{"s":"Sociology of the Int","f":"Sociology of the Internet","px":-0.1966,"pz":-0.2746,"home":"ingenierie","alien":"humaines","sc":0.379},{"s":"Autonomous system (m","f":"Autonomous system (mathematics)","px":-0.2314,"pz":-0.2651,"home":"ingenierie","alien":"humaines","sc":0.379},{"s":"Rough set","f":"Rough set","px":0.6117,"pz":0.1248,"home":"math","alien":"physique","sc":0.379},{"s":"Precision agricultur","f":"Precision agriculture","px":-0.7026,"pz":-0.5354,"home":"terre","alien":"humaines","sc":0.379},{"s":"Aircraft noise","f":"Aircraft noise","px":0.5172,"pz":0.4238,"home":"ingenierie","alien":"physique","sc":0.378},{"s":"FlexRay","f":"FlexRay","px":-0.2422,"pz":-0.2624,"home":"ingenierie","alien":"humaines","sc":0.378},{"s":"Linear interpolation","f":"Linear interpolation","px":0.5368,"pz":0.2107,"home":"math","alien":"physique","sc":0.377},{"s":"Lagrange polynomial","f":"Lagrange polynomial","px":0.5872,"pz":0.1464,"home":"math","alien":"physique","sc":0.375},{"s":"Trigonometric interp","f":"Trigonometric interpolation","px":-0.188,"pz":0.1021,"home":"math","alien":"terre","sc":0.374},{"s":"Electromechanical co","f":"Electromechanical coupling coefficient","px":0.5055,"pz":0.2603,"home":"math","alien":"physique","sc":0.374},{"s":"Numerical cognition","f":"Numerical cognition","px":0.4971,"pz":0.2769,"home":"math","alien":"physique","sc":0.373},{"s":"c-jun","f":"c-jun","px":-0.044,"pz":0.1261,"home":"bio","alien":"ingenierie","sc":0.372},{"s":"Agricultural polluti","f":"Agricultural pollution","px":-0.6714,"pz":-0.4557,"home":"terre","alien":"humaines","sc":0.372},{"s":"Ab","f":"Catégorie groupes abéliens","px":-0.2667,"pz":-0.331,"home":"math","alien":"humaines","sc":0.371},{"s":"↠","f":"Surjection / épimorphisme","px":-0.1796,"pz":-0.362,"home":"math","alien":"humaines","sc":0.371},{"s":"Receiver autonomous ","f":"Receiver autonomous integrity monitoring","px":-0.2053,"pz":-0.2677,"home":"ingenierie","alien":"humaines","sc":0.371},{"s":"ξ","f":"Xi — fonction de Riemann complétée","px":-0.4548,"pz":-0.5814,"home":"math","alien":"humaines","sc":0.37},{"s":"Omnidirectional ante","f":"Omnidirectional antenna","px":-0.1724,"pz":-0.2781,"home":"ingenierie","alien":"humaines","sc":0.369},{"s":"Synchronization netw","f":"Synchronization networks","px":0.5169,"pz":0.2336,"home":"math","alien":"physique","sc":0.367},{"s":"Black-body radiation","f":"Black-body radiation","px":0.589,"pz":0.6545,"home":"ingenierie","alien":"physique","sc":0.365},{"s":"Waveguide","f":"Waveguide","px":0.1186,"pz":0.6496,"home":"ingenierie","alien":"chimie","sc":0.365},{"s":"Tropical agriculture","f":"Tropical agriculture","px":-0.6507,"pz":-0.4132,"home":"terre","alien":"humaines","sc":0.365},{"s":"Radio frequency powe","f":"Radio frequency power transmission","px":-0.164,"pz":-0.279,"home":"ingenierie","alien":"humaines","sc":0.364},{"s":"Cash flow","f":"Cash flow","px":0.0747,"pz":-0.2164,"home":"humaines","alien":"math","sc":0.364},{"s":"Male gender","f":"Male gender","px":0.0539,"pz":-0.1616,"home":"humaines","alien":"math","sc":0.362},{"s":"Bilinear interpolati","f":"Bilinear interpolation","px":0.5679,"pz":0.1594,"home":"math","alien":"physique","sc":0.362},{"s":"Illness behavior","f":"Illness behavior","px":0.0755,"pz":-0.2196,"home":"humaines","alien":"math","sc":0.362},{"s":"Exponential map (Rie","f":"Exponential map (Riemannian geometry)","px":0.5303,"pz":0.208,"home":"math","alien":"physique","sc":0.362},{"s":"Photodetector","f":"Photodetector","px":-0.2948,"pz":-0.247,"home":"ingenierie","alien":"humaines","sc":0.362},{"s":"Magnetic susceptibil","f":"Magnetic susceptibility","px":0.2265,"pz":0.7946,"home":"ingenierie","alien":"chimie","sc":0.361},{"s":"Metal–semiconductor ","f":"Metal–semiconductor junction","px":0.0783,"pz":0.3353,"home":"chimie","alien":"ingenierie","sc":0.36},{"s":"Operations support s","f":"Operations support system","px":-0.1291,"pz":-0.2935,"home":"ingenierie","alien":"humaines","sc":0.359},{"s":"Plasma oscillation","f":"Plasma oscillation","px":0.1655,"pz":0.6873,"home":"ingenierie","alien":"chimie","sc":0.356},{"s":"Hardware-in-the-loop","f":"Hardware-in-the-loop simulation","px":-0.3602,"pz":-0.2437,"home":"ingenierie","alien":"humaines","sc":0.355},{"s":"Autonomous robot","f":"Autonomous robot","px":-0.0781,"pz":-0.327,"home":"ingenierie","alien":"info","sc":0.355},{"s":"Propulsion","f":"Propulsion","px":0.514,"pz":0.497,"home":"ingenierie","alien":"physique","sc":0.355},{"s":"Rich Internet applic","f":"Rich Internet application","px":-0.1093,"pz":-0.3022,"home":"ingenierie","alien":"humaines","sc":0.354},{"s":"Circulating tumor DN","f":"Circulating tumor DNA","px":-0.3034,"pz":0.9333,"home":"bio","alien":"chimie","sc":0.353},{"s":"Aerodynamic heating","f":"Aerodynamic heating","px":0.5396,"pz":0.5867,"home":"ingenierie","alien":"physique","sc":0.353},{"s":"Least-squares functi","f":"Least-squares function approximation","px":0.5213,"pz":0.2138,"home":"math","alien":"physique","sc":0.353},{"s":"Yoneda","f":"Lemme de Yoneda","px":-0.1522,"pz":-0.3693,"home":"math","alien":"humaines","sc":0.352},{"s":"Repopulation","f":"Repopulation","px":0.4817,"pz":0.2818,"home":"math","alien":"physique","sc":0.35},{"s":"Hidden node problem","f":"Hidden node problem","px":0.0676,"pz":-0.3005,"home":"ingenierie","alien":"info","sc":0.346},{"s":"Beef industry","f":"Beef industry","px":-0.6537,"pz":-0.3852,"home":"terre","alien":"humaines","sc":0.346},{"s":"Aeroelasticity","f":"Aeroelasticity","px":0.5021,"pz":0.4683,"home":"ingenierie","alien":"physique","sc":0.344},{"s":"Effusive eruption","f":"Effusive eruption","px":-0.2147,"pz":0.955,"home":"terre","alien":"chimie","sc":0.344},{"s":"Mercalli intensity s","f":"Mercalli intensity scale","px":0.1016,"pz":0.7439,"home":"terre","alien":"chimie","sc":0.343},{"s":"Arbitrary-precision ","f":"Arbitrary-precision arithmetic","px":0.0917,"pz":-0.2604,"home":"humaines","alien":"math","sc":0.343},{"s":"Mart","f":"Martingale (Doob 1953)","px":-1.3644,"pz":1.3566,"home":"math","alien":"chimie","sc":0.343},{"s":"Bicubic interpolatio","f":"Bicubic interpolation","px":0.5984,"pz":0.1145,"home":"math","alien":"physique","sc":0.341},{"s":"Rμν","f":"Tenseur de Ricci","px":0.515,"pz":0.2136,"home":"math","alien":"physique","sc":0.341},{"s":"Social control theor","f":"Social control theory","px":0.0919,"pz":0.6124,"home":"ingenierie","alien":"chimie","sc":0.341},{"s":"Animal agriculture","f":"Animal agriculture","px":-0.7487,"pz":-0.4928,"home":"terre","alien":"humaines","sc":0.34},{"s":"Shield volcano","f":"Shield volcano","px":-0.2369,"pz":0.9352,"home":"terre","alien":"chimie","sc":0.34},{"s":"Ext functor","f":"Ext functor","px":-0.1475,"pz":-0.3648,"home":"math","alien":"humaines","sc":0.34},{"s":"Fundamental theorem ","f":"Fundamental theorem of Riemannian geometry","px":0.4641,"pz":0.3078,"home":"math","alien":"physique","sc":0.339},{"s":"Trigonometry","f":"Trigonometry","px":-0.2053,"pz":0.0735,"home":"math","alien":"terre","sc":0.339},{"s":"Space-based radar","f":"Space-based radar","px":0.51,"pz":0.529,"home":"ingenierie","alien":"physique","sc":0.339},{"s":"Electrical network","f":"Electrical network","px":0.4703,"pz":0.2914,"home":"math","alien":"physique","sc":0.338},{"s":"Heterojunction bipol","f":"Heterojunction bipolar transistor","px":0.0959,"pz":0.3475,"home":"chimie","alien":"ingenierie","sc":0.337},{"s":"dω","f":"Dérivée extérieure","px":0.4818,"pz":0.2662,"home":"math","alien":"physique","sc":0.336},{"s":"Ion trap","f":"Ion trap","px":0.2867,"pz":0.8858,"home":"ingenierie","alien":"chimie","sc":0.336},{"s":"Hydrolase","f":"Hydrolase","px":-0.0662,"pz":0.1311,"home":"bio","alien":"ingenierie","sc":0.335},{"s":"Interdigital transdu","f":"Interdigital transducer","px":-0.1863,"pz":-0.2559,"home":"ingenierie","alien":"humaines","sc":0.335},{"s":"Sharecropping","f":"Sharecropping","px":-0.7006,"pz":-0.4148,"home":"terre","alien":"humaines","sc":0.334},{"s":"Tree (set theory)","f":"Tree (set theory)","px":-0.1539,"pz":-0.7116,"home":"math","alien":"humaines","sc":0.334},{"s":"Computational physic","f":"Computational physics","px":0.5258,"pz":0.1925,"home":"math","alien":"physique","sc":0.333},{"s":"arccos","f":"Arc cosinus","px":-0.2743,"pz":0.0543,"home":"math","alien":"terre","sc":0.333},{"s":"Simplicial approxima","f":"Simplicial approximation theorem","px":0.4902,"pz":0.2478,"home":"math","alien":"physique","sc":0.333},{"s":"Somatic evolution in","f":"Somatic evolution in cancer","px":-0.2592,"pz":1.0987,"home":"bio","alien":"chimie","sc":0.332},{"s":"Smooth surface","f":"Smooth surface","px":0.5331,"pz":0.1809,"home":"math","alien":"physique","sc":0.331},{"s":"Pyroclastic rock","f":"Pyroclastic rock","px":-0.2509,"pz":0.9491,"home":"terre","alien":"chimie","sc":0.329},{"s":"Rainfed agriculture","f":"Rainfed agriculture","px":-0.6877,"pz":-0.3895,"home":"terre","alien":"humaines","sc":0.328},{"s":"Autonomously replica","f":"Autonomously replicating sequence","px":-0.2439,"pz":-0.2355,"home":"ingenierie","alien":"humaines","sc":0.327},{"s":"Magnetic cloud","f":"Magnetic cloud","px":0.2165,"pz":0.7127,"home":"ingenierie","alien":"chimie","sc":0.327},{"s":"Lung cancer surgery","f":"Lung cancer surgery","px":-0.3178,"pz":1.0168,"home":"bio","alien":"chimie","sc":0.326},{"s":"Genetic relationship","f":"Genetic relationship","px":-0.0722,"pz":0.1291,"home":"bio","alien":"ingenierie","sc":0.325},{"s":"Exoglycosidase","f":"Exoglycosidase","px":-0.064,"pz":0.1666,"home":"bio","alien":"ingenierie","sc":0.325},{"s":"Algal bloom","f":"Algal bloom","px":0.1963,"pz":0.6858,"home":"ingenierie","alien":"chimie","sc":0.324},{"s":"Mechatronics","f":"Mechatronics","px":-0.0311,"pz":-0.2951,"home":"ingenierie","alien":"info","sc":0.324},{"s":"Epithelial cell adhe","f":"Epithelial cell adhesion molecule","px":-0.0384,"pz":0.2202,"home":"bio","alien":"ingenierie","sc":0.324},{"s":"Electroluminescence","f":"Electroluminescence","px":0.2772,"pz":0.8067,"home":"ingenierie","alien":"chimie","sc":0.324},{"s":"ζ","f":"Zeta de Riemann ζ(s)","px":-0.5685,"pz":-0.5814,"home":"math","alien":"humaines","sc":0.323},{"s":"Business simulation","f":"Business simulation","px":-0.3565,"pz":-0.0405,"home":"math","alien":"bio","sc":0.323},{"s":"arcsin","f":"Arc sinus","px":-0.307,"pz":0.0431,"home":"math","alien":"terre","sc":0.322},{"s":"Breeder (animal)","f":"Breeder (animal)","px":-0.7029,"pz":-0.395,"home":"terre","alien":"humaines","sc":0.322},{"s":"Plasma stability","f":"Plasma stability","px":0.2126,"pz":0.7015,"home":"ingenierie","alien":"chimie","sc":0.322},{"s":"Semiconductor indust","f":"Semiconductor industry","px":0.043,"pz":0.3495,"home":"chimie","alien":"ingenierie","sc":0.322},{"s":"κ","f":"Cardinal inaccessible (Hausdorff 1908)","px":-0.1121,"pz":-0.6929,"home":"math","alien":"humaines","sc":0.32},{"s":"Field-effect transis","f":"Field-effect transistor","px":0.2817,"pz":0.8029,"home":"ingenierie","alien":"chimie","sc":0.319},{"s":"Low frequency","f":"Low frequency","px":0.278,"pz":0.7952,"home":"ingenierie","alien":"chimie","sc":0.319},{"s":"∪","f":"Union","px":-0.1043,"pz":-0.6862,"home":"math","alien":"humaines","sc":0.318},{"s":"Helmholtz coil","f":"Helmholtz coil","px":0.5068,"pz":0.5778,"home":"ingenierie","alien":"physique","sc":0.318},{"s":"Communications satel","f":"Communications satellite","px":0.5535,"pz":0.6974,"home":"ingenierie","alien":"physique","sc":0.317},{"s":"Electromagnetic envi","f":"Electromagnetic environment","px":0.273,"pz":0.78,"home":"ingenierie","alien":"chimie","sc":0.316},{"s":"Γᵢⱼₖ","f":"Symboles de Christoffel","px":0.4448,"pz":0.3218,"home":"math","alien":"physique","sc":0.316},{"s":"∖","f":"Différence ensembliste","px":-0.1805,"pz":-0.7687,"home":"math","alien":"humaines","sc":0.315},{"s":"Viable system model","f":"Viable system model","px":-0.1947,"pz":-0.2433,"home":"ingenierie","alien":"humaines","sc":0.315},{"s":"Acoustic sensor","f":"Acoustic sensor","px":-0.17,"pz":-0.2524,"home":"ingenierie","alien":"humaines","sc":0.314},{"s":"Interval arithmetic","f":"Interval arithmetic","px":0.6101,"pz":0.0879,"home":"math","alien":"physique","sc":0.314},{"s":"Electromagnetic spec","f":"Electromagnetic spectrum","px":0.4943,"pz":0.5378,"home":"ingenierie","alien":"physique","sc":0.314},{"s":"Background selection","f":"Background selection","px":-0.0666,"pz":0.1773,"home":"bio","alien":"ingenierie","sc":0.314},{"s":"Teleconnection","f":"Teleconnection","px":0.5016,"pz":0.2126,"home":"math","alien":"physique","sc":0.313},{"s":"Ka band","f":"Ka band","px":0.5512,"pz":0.703,"home":"ingenierie","alien":"physique","sc":0.312},{"s":"dW","f":"Incréments browniens","px":1.0233,"pz":1.2274,"home":"math","alien":"physique","sc":0.312},{"s":"Quasi-Monte Carlo me","f":"Quasi-Monte Carlo method","px":0.5538,"pz":0.1432,"home":"math","alien":"physique","sc":0.311},{"s":"Plasma Cell Myeloma","f":"Plasma Cell Myeloma","px":-0.3518,"pz":0.9738,"home":"bio","alien":"chimie","sc":0.311},{"s":"Regulatory authority","f":"Regulatory authority","px":-0.3095,"pz":-0.2169,"home":"ingenierie","alien":"humaines","sc":0.311},{"s":"Itô","f":"Intégrale d'Itô (1944)","px":1.137,"pz":1.2274,"home":"math","alien":"physique","sc":0.311},{"s":"Higher category theo","f":"Higher category theory","px":-0.1727,"pz":-0.3234,"home":"math","alien":"humaines","sc":0.31},{"s":"H-infinity methods i","f":"H-infinity methods in control theory","px":0.2234,"pz":0.6999,"home":"ingenierie","alien":"chimie","sc":0.31},{"s":"Aerospace materials","f":"Aerospace materials","px":0.4823,"pz":0.384,"home":"ingenierie","alien":"physique","sc":0.31},{"s":"Adjoint functors","f":"Adjoint functors","px":-0.1591,"pz":-0.3333,"home":"math","alien":"humaines","sc":0.31},{"s":"Millimetre wave","f":"Millimetre wave","px":0.5117,"pz":0.6152,"home":"ingenierie","alien":"physique","sc":0.31},{"s":"Wireless ad hoc netw","f":"Wireless ad hoc network","px":-0.2279,"pz":-0.231,"home":"ingenierie","alien":"humaines","sc":0.31},{"s":"Open Shortest Path F","f":"Open Shortest Path First","px":-0.1398,"pz":-0.2633,"home":"ingenierie","alien":"humaines","sc":0.309},{"s":"Radiation pattern","f":"Radiation pattern","px":0.5246,"pz":0.6526,"home":"ingenierie","alien":"physique","sc":0.309},{"s":"Pastoralism","f":"Pastoralism","px":-0.8217,"pz":-0.5134,"home":"terre","alien":"humaines","sc":0.309},{"s":"Corium","f":"Corium","px":-0.2854,"pz":0.9589,"home":"terre","alien":"chimie","sc":0.309},{"s":"W(t)","f":"Mouvement brownien (Wiener 1923)","px":0.9096,"pz":1.2274,"home":"math","alien":"physique","sc":0.309},{"s":"Geomagnetic secular ","f":"Geomagnetic secular variation","px":0.318,"pz":0.8554,"home":"ingenierie","alien":"chimie","sc":0.308},{"s":"Leaky wave antenna","f":"Leaky wave antenna","px":-0.0676,"pz":-0.2951,"home":"ingenierie","alien":"info","sc":0.308},{"s":"Scoria","f":"Scoria","px":-0.2654,"pz":1.0016,"home":"terre","alien":"chimie","sc":0.307},{"s":"Naval architecture","f":"Naval architecture","px":0.1988,"pz":-0.1555,"home":"ingenierie","alien":"math","sc":0.307},{"s":"Perlite","f":"Perlite","px":-0.2618,"pz":1.0105,"home":"terre","alien":"chimie","sc":0.306},{"s":"Rhyolite","f":"Rhyolite","px":-0.2627,"pz":1.01,"home":"terre","alien":"chimie","sc":0.306},{"s":"SDE","f":"Équation diff. stochastique","px":1.2507,"pz":1.2274,"home":"math","alien":"physique","sc":0.306},{"s":"Internal auditory me","f":"Internal auditory meatus","px":-0.0824,"pz":0.1315,"home":"bio","alien":"ingenierie","sc":0.306},{"s":"Ecological farming","f":"Ecological farming","px":-0.7903,"pz":-0.4581,"home":"terre","alien":"humaines","sc":0.305},{"s":"Monochromatic electr","f":"Monochromatic electromagnetic plane wave","px":0.0893,"pz":-0.473,"home":"math","alien":"info","sc":0.304},{"s":"Control system secur","f":"Control system security","px":-0.1968,"pz":-0.2378,"home":"ingenierie","alien":"humaines","sc":0.304},{"s":"⊔","f":"Union disjointe (coproduct)","px":-0.214,"pz":-0.8128,"home":"math","alien":"humaines","sc":0.304},{"s":"Trilinear interpolat","f":"Trilinear interpolation","px":0.5209,"pz":0.1783,"home":"math","alien":"physique","sc":0.303},{"s":"Natural transformati","f":"Natural transformation","px":-0.2428,"pz":-0.2822,"home":"math","alien":"humaines","sc":0.303},{"s":"Mohs surgery","f":"Mohs surgery","px":-0.3653,"pz":0.8928,"home":"bio","alien":"chimie","sc":0.303},{"s":"Affine geometry of c","f":"Affine geometry of curves","px":0.0604,"pz":0.1373,"home":"math","alien":"ingenierie","sc":0.302},{"s":"Aᶜ","f":"Complément ensemble","px":-0.1246,"pz":-0.7496,"home":"math","alien":"humaines","sc":0.302},{"s":"∥","f":"Parallèle","px":0.0657,"pz":0.1138,"home":"math","alien":"ingenierie","sc":0.302},{"s":"Gabor wavelet","f":"Gabor wavelet","px":0.1845,"pz":-0.1685,"home":"ingenierie","alien":"math","sc":0.302},{"s":"tan","f":"Tangente","px":-0.2762,"pz":0.0301,"home":"math","alien":"terre","sc":0.301},{"s":"X-ray","f":"X-ray","px":0.5407,"pz":0.7096,"home":"ingenierie","alien":"physique","sc":0.301},{"s":"Concave function","f":"Concave function","px":0.0749,"pz":0.1301,"home":"math","alien":"ingenierie","sc":0.301},{"s":"Skid (aerodynamics)","f":"Skid (aerodynamics)","px":0.5093,"pz":0.6325,"home":"ingenierie","alien":"physique","sc":0.301},{"s":"Mean curvature flow","f":"Mean curvature flow","px":0.5298,"pz":0.1655,"home":"math","alien":"physique","sc":0.301},{"s":"Magmatic water","f":"Magmatic water","px":-0.2925,"pz":0.9792,"home":"terre","alien":"chimie","sc":0.301},{"s":"RN","f":"Radon-Nikodym dν/dμ (1930)","px":0.7959,"pz":1.2274,"home":"math","alien":"physique","sc":0.3},{"s":"Image sensor","f":"Image sensor","px":-0.1384,"pz":-0.2596,"home":"ingenierie","alien":"humaines","sc":0.3},{"s":"Aquaculture of tilap","f":"Aquaculture of tilapia","px":-0.6895,"pz":-0.3491,"home":"terre","alien":"humaines","sc":0.3},{"s":"TLR3","f":"TLR3","px":-0.0882,"pz":0.0989,"home":"bio","alien":"ingenierie","sc":0.3},{"s":"Hamilton–Jacobi–Bell","f":"Hamilton–Jacobi–Bellman equation","px":0.0853,"pz":0.5845,"home":"ingenierie","alien":"chimie","sc":0.3},{"s":"E[·|F]","f":"Espérance conditionnelle (filtration)","px":1.3644,"pz":1.2274,"home":"math","alien":"physique","sc":0.299},{"s":"Polytope","f":"Polytope","px":0.0556,"pz":0.1396,"home":"math","alien":"ingenierie","sc":0.299},{"s":"Blood irradiation th","f":"Blood irradiation therapy","px":-0.3112,"pz":1.1439,"home":"bio","alien":"chimie","sc":0.299},{"s":"Damnation","f":"Damnation","px":-0.0745,"pz":0.1778,"home":"bio","alien":"ingenierie","sc":0.299},{"s":"Constructive set the","f":"Constructive set theory","px":-0.1633,"pz":-0.7937,"home":"math","alien":"humaines","sc":0.298},{"s":"Phreatomagmatic erup","f":"Phreatomagmatic eruption","px":-0.307,"pz":0.9595,"home":"terre","alien":"chimie","sc":0.298},{"s":"Genital tract","f":"Genital tract","px":-0.0373,"pz":0.2475,"home":"bio","alien":"ingenierie","sc":0.298},{"s":"Autonomous consumpti","f":"Autonomous consumption","px":-0.2199,"pz":-0.2272,"home":"ingenierie","alien":"humaines","sc":0.297},{"s":"Magmatism","f":"Magmatism","px":-0.2133,"pz":1.0903,"home":"terre","alien":"chimie","sc":0.297},{"s":"Slow manifold","f":"Slow manifold","px":0.0799,"pz":0.1262,"home":"math","alien":"ingenierie","sc":0.297},{"s":"Tuberous sclerosis","f":"Tuberous sclerosis","px":-0.338,"pz":1.1036,"home":"bio","alien":"chimie","sc":0.297},{"s":"Enumerative combinat","f":"Enumerative combinatorics","px":0.0892,"pz":-0.4579,"home":"math","alien":"info","sc":0.297}],"k":[{"s":"=","f":"Égalité (Recorde 1557)","px":-0.9096,"pz":-1.3566,"home":"math","nc":7,"sc":1.0,"conts":["bio","chimie","humaines","info","ingenierie","math","physique"]},{"s":"exp","f":"Exponentielle","px":0.2007,"pz":-0.1956,"home":"math","nc":6,"sc":0.857,"conts":["bio","chimie","humaines","info","math","physique"]},{"s":"ln","f":"Logarithme naturel","px":0.2093,"pz":-0.2045,"home":"math","nc":6,"sc":0.857,"conts":["bio","chimie","humaines","info","math","physique"]},{"s":"Σ","f":"Sommation finie","px":0.3132,"pz":-0.2794,"home":"math","nc":6,"sc":0.857,"conts":["bio","humaines","info","ingenierie","math","physique"]},{"s":"∫","f":"Intégrale (Leibniz 1675)","px":0.229,"pz":-0.1451,"home":"math","nc":6,"sc":0.857,"conts":["bio","chimie","humaines","ingenierie","math","physique"]},{"s":"e","f":"Euler ~2.71828","px":0.3115,"pz":-0.1515,"home":"math","nc":5,"sc":0.714,"conts":["bio","humaines","info","math","physique"]},{"s":"∂","f":"Dérivée partielle","px":0.3498,"pz":-0.0949,"home":"math","nc":5,"sc":0.714,"conts":["bio","humaines","ingenierie","math","physique"]},{"s":"Bayes","f":"Théorème Bayes P(A|B)","px":0.181,"pz":-0.1964,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","info","math"]},{"s":"E[X]","f":"Espérance","px":-0.0386,"pz":-0.2781,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","info","math"]},{"s":"FFT","f":"Fast Fourier Transform (Cooley-Tukey 1965)","px":0.2456,"pz":-0.0382,"home":"ingenierie","nc":4,"sc":0.571,"conts":["humaines","info","ingenierie","physique"]},{"s":"N(μ,σ²)","f":"Distribution normale","px":0.0283,"pz":-0.1887,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","math","physique"]},{"s":"O(n)","f":"Grand-O Landau complexité","px":0.2693,"pz":-0.1189,"home":"math","nc":4,"sc":0.571,"conts":["humaines","info","ingenierie","math"]},{"s":"P(A)","f":"Probabilité événement A","px":-0.0842,"pz":-0.1324,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","info","math"]},{"s":"Var","f":"Variance","px":0.1526,"pz":-0.3226,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","info","math"]},{"s":"cos","f":"Cosinus","px":-0.4007,"pz":0.0937,"home":"math","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"d/dx","f":"Dérivée totale","px":0.4447,"pz":-0.1643,"home":"math","nc":4,"sc":0.571,"conts":["humaines","ingenierie","math","physique"]},{"s":"det","f":"Déterminant","px":0.3475,"pz":-0.3077,"home":"math","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"lim","f":"Limite (Cauchy/Weierstrass)","px":0.4245,"pz":-0.2018,"home":"math","nc":4,"sc":0.571,"conts":["humaines","ingenierie","math","physique"]},{"s":"log","f":"Logarithme (Napier 1614)","px":0.3667,"pz":-0.1053,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","info","math"]},{"s":"sin","f":"Sinus","px":-0.2515,"pz":0.2194,"home":"math","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"Π","f":"Produit fini","px":0.3651,"pz":-0.1644,"home":"math","nc":4,"sc":0.571,"conts":["humaines","info","math","physique"]},{"s":"δ","f":"Dirac delta δ(x)","px":0.3384,"pz":-0.1192,"home":"math","nc":4,"sc":0.571,"conts":["humaines","ingenierie","math","physique"]},{"s":"ε","f":"Epsilon voisinage","px":0.2719,"pz":-0.1303,"home":"math","nc":4,"sc":0.571,"conts":["humaines","ingenierie","math","physique"]},{"s":"λ","f":"Valeur propre (eigenvalue)","px":0.2469,"pz":-0.2247,"home":"math","nc":4,"sc":0.571,"conts":["humaines","info","math","physique"]},{"s":"π","f":"Pi ~3.14159 (Archimède)","px":0.1339,"pz":0.0336,"home":"math","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"σ_std","f":"Écart-type","px":0.0616,"pz":-0.2099,"home":"math","nc":4,"sc":0.571,"conts":["bio","humaines","math","physique"]},{"s":"χ²","f":"Test chi-carré Pearson","px":-0.0644,"pz":-0.2567,"home":"transversal","nc":4,"sc":0.571,"conts":["bio","humaines","math","physique"]},{"s":"ℱ","f":"Transformée de Fourier","px":0.0829,"pz":0.1578,"home":"ingenierie","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"∇","f":"Nabla / gradient (Hamilton)","px":0.3359,"pz":-0.1048,"home":"math","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"∇²","f":"Laplacien","px":0.4308,"pz":-0.112,"home":"math","nc":4,"sc":0.571,"conts":["chimie","ingenierie","math","physique"]},{"s":"∗_conv","f":"Convolution f∗g","px":0.0491,"pz":-0.0513,"home":"ingenierie","nc":4,"sc":0.571,"conts":["info","ingenierie","math","physique"]},{"s":"∞","f":"Infini potentiel (Wallis)","px":0.32,"pz":-0.1046,"home":"math","nc":4,"sc":0.571,"conts":["humaines","info","math","physique"]},{"s":"∬","f":"Intégrale double","px":0.3136,"pz":0.0008,"home":"math","nc":4,"sc":0.571,"conts":["chimie","ingenierie","math","physique"]},{"s":"∮","f":"Intégrale de contour","px":0.2034,"pz":-0.1924,"home":"math","nc":4,"sc":0.571,"conts":["chimie","ingenierie","math","physique"]},{"s":"Attn","f":"Attention Softmax(QKᵀ/√d)V (Vaswani 2017)","px":-0.1962,"pz":-0.5661,"home":"info","nc":3,"sc":0.429,"conts":["bio","humaines","info"]},{"s":"BS","f":"Black-Scholes (pricing options 1973)","px":-0.2523,"pz":-0.3039,"home":"humaines","nc":3,"sc":0.429,"conts":["humaines","math","physique"]},{"s":"D_KL","f":"Divergence Kullback-Leibler","px":0.3199,"pz":-0.7802,"home":"info","nc":3,"sc":0.429,"conts":["humaines","info","physique"]},{"s":"F=ma","f":"Newton 1687","px":0.8212,"pz":0.0663,"home":"physique","nc":3,"sc":0.429,"conts":["bio","ingenierie","physique"]},{"s":"GAN","f":"Generative Adversarial Network (Goodfellow 2014)","px":-0.3441,"pz":-0.5192,"home":"info","nc":3,"sc":0.429,"conts":["bio","humaines","info"]},{"s":"H(X)","f":"Entropie Shannon","px":0.335,"pz":-0.56,"home":"info","nc":3,"sc":0.429,"conts":["humaines","info","physique"]},{"s":"Itô","f":"Intégrale d'Itô (1944)","px":1.137,"pz":1.2274,"home":"math","nc":3,"sc":0.429,"conts":["humaines","math","physique"]},{"s":"Nash","f":"Équilibre de Nash (1950)","px":-0.2907,"pz":-0.4027,"home":"humaines","nc":3,"sc":0.429,"conts":["bio","humaines","info"]},{"s":"PV=nRT","f":"Loi gaz parfaits","px":0.1946,"pz":0.3086,"home":"ingenierie","nc":3,"sc":0.429,"conts":["chimie","ingenierie","physique"]},{"s":"Re","f":"Nombre de Reynolds","px":0.1991,"pz":0.3407,"home":"ingenierie","nc":3,"sc":0.429,"conts":["bio","ingenierie","physique"]},{"s":"R₀","f":"Taux reproduction base (épidémiologie)","px":-0.1931,"pz":0.1636,"home":"bio","nc":3,"sc":0.429,"conts":["bio","humaines","math"]},{"s":"SDE","f":"Équation diff. stochastique","px":1.2507,"pz":1.2274,"home":"math","nc":3,"sc":0.429,"conts":["bio","humaines","physique"]},{"s":"SGD","f":"Stochastic Gradient Descent","px":-0.1649,"pz":-0.483,"home":"info","nc":3,"sc":0.429,"conts":["bio","humaines","info"]},{"s":"S_ent","f":"Entropie S=k·ln(W)","px":0.1373,"pz":0.1669,"home":"ingenierie","nc":3,"sc":0.429,"conts":["chimie","info","physique"]},{"s":"TM","f":"Machine de Turing (1936)","px":0.1978,"pz":-0.9324,"home":"info","nc":3,"sc":0.429,"conts":["info","math","physique"]},{"s":"W(t)","f":"Mouvement brownien (Wiener 1923)","px":0.9096,"pz":1.2274,"home":"math","nc":3,"sc":0.429,"conts":["humaines","math","physique"]},{"s":"argmax","f":"Argument du maximum","px":0.1524,"pz":-0.697,"home":"info","nc":3,"sc":0.429,"conts":["humaines","info","math"]},{"s":"argmin","f":"Argument du minimum","px":0.1669,"pz":-0.6592,"home":"info","nc":3,"sc":0.429,"conts":["humaines","info","math"]},{"s":"i","f":"Unité imaginaire √(-1)","px":-0.2274,"pz":-1.2274,"home":"math","nc":3,"sc":0.429,"conts":["ingenierie","math","physique"]},{"s":"Γ","f":"Fonction Gamma d'Euler","px":0.4281,"pz":-0.1235,"home":"math","nc":3,"sc":0.429,"conts":["ingenierie","math","physique"]},{"s":"ζ","f":"Zeta de Riemann ζ(s)","px":-0.5685,"pz":-0.5814,"home":"math","nc":3,"sc":0.429,"conts":["humaines","math","physique"]},{"s":"ℋ","f":"Hamiltonien classique","px":-1.2507,"pz":0.323,"home":"physique","nc":3,"sc":0.429,"conts":["info","math","physique"]},{"s":"ℒ","f":"Lagrangien L=T-V","px":-1.3644,"pz":0.323,"home":"physique","nc":3,"sc":0.429,"conts":["ingenierie","math","physique"]},{"s":"∇L","f":"Gradient de la loss (descente de gradient)","px":-0.253,"pz":-0.5284,"home":"info","nc":3,"sc":0.429,"conts":["humaines","info","math"]},{"s":"∇·","f":"Divergence","px":0.3484,"pz":-0.1845,"home":"math","nc":3,"sc":0.429,"conts":["ingenierie","math","physique"]},{"s":"∇×","f":"Rotationnel (curl)","px":0.3518,"pz":0.0114,"home":"math","nc":3,"sc":0.429,"conts":["ingenierie","math","physique"]},{"s":"CFG","f":"Grammaire hors-contexte (Chomsky)","px":0.3166,"pz":-0.8119,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"CFL","f":"Langages hors-contexte","px":0.24,"pz":-1.0083,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"Chom","f":"Hiérarchie de Chomsky (4 niveaux)","px":0.396,"pz":-0.8536,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"DFA","f":"Automate fini déterministe","px":0.2379,"pz":-0.9512,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"NFA","f":"Automate fini non-déterministe","px":0.2918,"pz":-0.7322,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"PDA","f":"Automate à pile","px":0.2333,"pz":-0.8805,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"Reg","f":"Langages réguliers (Kleene)","px":0.2761,"pz":-0.7846,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"UTM","f":"Machine de Turing universelle","px":0.3587,"pz":-0.8898,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]},{"s":"λ_calc","f":"Lambda-calcul (Church 1936)","px":0.408,"pz":-0.9029,"home":"info","nc":2,"sc":0.286,"conts":["info","ingenierie"]}],"u":[{"s":"∃","f":"Quantificateur existentiel","px":-1.1843,"pz":-1.1843,"st":1,"dom":"logique"},{"s":"K","f":"Halting set K={e:φₑ(e)↓}","px":-0.7106,"pz":-1.1843,"st":1,"dom":"calculabilité"},{"s":"φₑ","f":"e-ième fonction partielle","px":-0.2369,"pz":-1.1843,"st":1,"dom":"calculabilité"},{"s":"↓","f":"Converge (s'arrête)","px":0.2369,"pz":-1.1843,"st":1,"dom":"calculabilité"},{"s":"↑","f":"Diverge (boucle infinie)","px":0.7106,"pz":-1.1843,"st":1,"dom":"calculabilité"},{"s":"Wₑ","f":"e-ième ensemble r.e.","px":1.1843,"pz":-1.1843,"st":1,"dom":"calculabilité"},{"s":"μy","f":"Opérateur μ recherche","px":-1.1843,"pz":-0.7106,"st":1,"dom":"calculabilité"},{"s":"≤ₘ","f":"Réduction many-one","px":-0.7106,"pz":-0.7106,"st":1,"dom":"calculabilité"},{"s":"≤ₜ","f":"Réduction Turing","px":-0.2369,"pz":-0.7106,"st":1,"dom":"calculabilité"},{"s":"RE","f":"Récursivement énumérable","px":0.2369,"pz":-0.7106,"st":1,"dom":"calculabilité"},{"s":"coRE","f":"Complément de RE","px":0.7106,"pz":-0.7106,"st":1,"dom":"calculabilité"},{"s":"NP","f":"Non-déterministe polynomial","px":1.1843,"pz":-0.7106,"st":1,"dom":"complexité"},{"s":"coNP","f":"Complément de NP","px":-1.1843,"pz":-0.2369,"st":1,"dom":"complexité"},{"s":"SAT","f":"Satisfiabilité Cook 1971","px":-0.7106,"pz":-0.2369,"st":1,"dom":"complexité"},{"s":"3SAT","f":"3-SAT NP-complet","px":-0.2369,"pz":-0.2369,"st":1,"dom":"complexité"},{"s":"3COL","f":"3-coloration graphe","px":0.2369,"pz":-0.2369,"st":1,"dom":"complexité"},{"s":"TSP","f":"Voyageur de commerce","px":0.7106,"pz":-0.2369,"st":1,"dom":"complexité"},{"s":"CLIQUE","f":"Problème de la clique","px":1.1843,"pz":-0.2369,"st":1,"dom":"complexité"},{"s":"SUBSET","f":"Subset Sum","px":-1.1843,"pz":0.2369,"st":1,"dom":"complexité"},{"s":"HAM","f":"Chemin hamiltonien","px":-0.7106,"pz":0.2369,"st":1,"dom":"complexité"},{"s":"ILP","f":"Integer Linear Programming","px":-0.2369,"pz":0.2369,"st":1,"dom":"complexité"},{"s":"BQP","f":"Bounded-error Quantum Poly","px":0.2369,"pz":0.2369,"st":1,"dom":"quantique"},{"s":"NP-C","f":"NP-Complet (Cook-Levin 1971)","px":0.7106,"pz":0.2369,"st":1,"dom":"complexité"},{"s":"NP-H","f":"NP-Hard","px":1.1843,"pz":0.2369,"st":1,"dom":"complexité"},{"s":"VERTEX","f":"Vertex Cover (Karp 1972)","px":-1.1843,"pz":0.7106,"st":1,"dom":"complexité"},{"s":"SETCOV","f":"Set Cover (Karp 1972)","px":-0.7106,"pz":0.7106,"st":1,"dom":"complexité"},{"s":"KNAP","f":"Knapsack / Sac à dos","px":-0.2369,"pz":0.7106,"st":1,"dom":"complexité"},{"s":"PART","f":"Partition (Karp 1972)","px":0.2369,"pz":0.7106,"st":1,"dom":"complexité"},{"s":"MAXCUT","f":"Maximum Cut (Karp 1972)","px":0.7106,"pz":0.7106,"st":1,"dom":"complexité"},{"s":"3DM","f":"3-Dimensional Matching (Karp)","px":1.1843,"pz":0.7106,"st":1,"dom":"complexité"},{"s":"GI","f":"Graph Isomorphism (NP, non NP-complet connu)","px":-1.1843,"pz":1.1843,"st":1,"dom":"complexité"},{"s":"Ladner","f":"Ladner: si P≠NP ∃ NP-intermédiaire (1975)","px":-0.7106,"pz":1.1843,"st":1,"dom":"complexité"},{"s":"Cook","f":"Théorème Cook-Levin: SAT est NP-complet (1971)","px":-0.2369,"pz":1.1843,"st":1,"dom":"complexité"},{"s":"Σ⁰₁","f":"Classe Σ⁰₁ (r.e.) de la hiérarchie","px":0.2369,"pz":1.1843,"st":1,"dom":"calculabilité"},{"s":"Π⁰₁","f":"Classe Π⁰₁ (co-r.e.)","px":0.7106,"pz":1.1843,"st":1,"dom":"calculabilité"},{"s":"P/poly","f":"P avec conseil polynomial (circuits)","px":1.1843,"pz":1.1843,"st":1,"dom":"complexité"},{"s":"Computability theory","f":"Computability theory","px":0.002,"pz":0.42,"st":1,"dom":"algèbre"},{"s":"Recursively enumerab","f":"Recursively enumerable language","px":0.2833,"pz":-0.3123,"st":1,"dom":"linguistique"},{"s":"Recursively enumerab","f":"Recursively enumerable set","px":-0.4215,"pz":0.0391,"st":1,"dom":"logique"},{"s":"∀","f":"Quantificateur universel","px":-1.137,"pz":-1.0659,"st":2,"dom":"logique"},{"s":"∃∀","f":"Alternance Σ⁰₂","px":-0.5685,"pz":-1.0659,"st":2,"dom":"calculabilité"},{"s":"TOT","f":"{e : φₑ totale} Π₂-complet","px":0.0,"pz":-1.0659,"st":2,"dom":"calculabilité"},{"s":"FIN","f":"{e : Wₑ fini} Σ₂-complet","px":0.5685,"pz":-1.0659,"st":2,"dom":"calculabilité"},{"s":"∅'","f":"Turing jump ∅'","px":1.137,"pz":-1.0659,"st":2,"dom":"calculabilité"},{"s":"∅''","f":"Double saut ∅''","px":-1.137,"pz":-0.3553,"st":2,"dom":"calculabilité"},{"s":"Δ⁰₂","f":"Σ⁰₂ ∩ Π⁰₂ (limit computable)","px":-0.5685,"pz":-0.3553,"st":2,"dom":"calculabilité"},{"s":"BPP","f":"Bounded-error Probabilistic (⊆ Σ₂∩Π₂)","px":0.0,"pz":-0.3553,"st":2,"dom":"complexité"},{"s":"SZK","f":"Statistical Zero Knowledge (⊆ AM∩coAM)","px":0.5685,"pz":-0.3553,"st":2,"dom":"crypto"},{"s":"RP","f":"Randomized Polynomial (one-sided error)","px":1.137,"pz":-0.3553,"st":2,"dom":"complexité"},{"s":"coRP","f":"Complement RP","px":-1.137,"pz":0.3553,"st":2,"dom":"complexité"},{"s":"ZPP","f":"Zero-error Probabilistic (=RP∩coRP)","px":-0.5685,"pz":0.3553,"st":2,"dom":"complexité"},{"s":"Post","f":"Théorème Post: Σ⁰ₙ↔∅⁽ⁿ⁾ (hiérarchie=sauts)","px":0.0,"pz":0.3553,"st":2,"dom":"calculabilité"},{"s":"Lim","f":"Shoenfield Limit Lemma (Δ⁰₂=limit computable)","px":0.5685,"pz":0.3553,"st":2,"dom":"calculabilité"},{"s":"Low","f":"Degré Low: A'=∅' (faible complexité)","px":1.137,"pz":0.3553,"st":2,"dom":"calculabilité"},{"s":"High","f":"Degré High: A'=∅'' (forte complexité)","px":-1.137,"pz":1.0659,"st":2,"dom":"calculabilité"},{"s":"INF","f":"{e : Wₑ infini} Π₂-complet","px":-0.5685,"pz":1.0659,"st":2,"dom":"calculabilité"},{"s":"Σ⁰₂","f":"Classe Σ⁰₂ de la hiérarchie","px":0.0,"pz":1.0659,"st":2,"dom":"calculabilité"},{"s":"Π⁰₂","f":"Classe Π⁰₂ de la hiérarchie","px":0.5685,"pz":1.0659,"st":2,"dom":"calculabilité"},{"s":"Σ⁰ₙ","f":"n-ième existentiel","px":-1.3028,"pz":-1.292,"st":3,"dom":"calculabilité"},{"s":"Π⁰ₙ","f":"n-ième universel","px":-1.0659,"pz":-1.292,"st":3,"dom":"calculabilité"},{"s":"Δ⁰ₙ","f":"Σ⁰ₙ ∩ Π⁰ₙ","px":-0.829,"pz":-1.292,"st":3,"dom":"calculabilité"},{"s":"∅⁽ⁿ⁾","f":"n-ième saut Turing","px":-0.5922,"pz":-1.292,"st":3,"dom":"calculabilité"},{"s":"ΣₖP","f":"k-ième niveau PH existentiel","px":-0.3553,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"ΠₖP","f":"k-ième niveau PH universel","px":-0.1184,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"ΔₖP","f":"k-ième niveau PH déterministe (P^Σₖ₋₁)","px":0.1184,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"PH","f":"Polynomial Hierarchy ∪ₖΣₖP","px":0.3553,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"#P","f":"Comptage — Valiant 1979","px":0.5922,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"MA","f":"Merlin-Arthur","px":0.829,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"AM","f":"Arthur-Merlin (Babai 1985)","px":1.0659,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"PP","f":"Probabilistic Polynomial","px":1.3028,"pz":-1.292,"st":3,"dom":"complexité"},{"s":"⊕P","f":"Parité — Parity-P","px":-1.3028,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"Σ₂P","f":"2ème niveau existentiel PH","px":-1.0659,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"Π₂P","f":"2ème niveau universel PH","px":-0.829,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"Toda","f":"Théorème Toda: PH ⊆ P^#P (1991)","px":-0.5922,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"QMA","f":"Quantum Merlin-Arthur","px":-0.3553,"pz":-1.0336,"st":3,"dom":"quantique"},{"s":"#SAT","f":"Compter solutions SAT (#P-complet)","px":-0.1184,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"GapP","f":"Fonctions de gap (différence de #P)","px":0.1184,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"C₌P","f":"Exact counting complexity","px":0.3553,"pz":-1.0336,"st":3,"dom":"complexité"},{"s":"COF","f":"{e : Wₑ cofini} Σ₃-complet","px":0.5922,"pz":-1.0336,"st":3,"dom":"calculabilité"},{"s":"REC","f":"{e : Wₑ récursif} Σ₃-complet","px":0.829,"pz":-1.0336,"st":3,"dom":"calculabilité"},{"s":"FermatWiles","f":"Dernier théorème Fermat / modularité (Wiles 1995, BCDT 2001)","px":1.0659,"pz":-1.0336,"st":3,"dom":"nb théorie"},{"s":"Milnor_K","f":"Conjecture Milnor K-théorie — K^M_n(F)/2 ≅ H^n(F,ℤ/2) (Voevodsky 2003)","px":1.3028,"pz":-1.0336,"st":3,"dom":"algèbre"},{"s":"BlochKato","f":"Conjecture Bloch-Kato norm residue — K^M_n(F)/ℓ ≅ H^n(F,μ_ℓ^⊗n) (Rost-Voevodsky 2011)","px":-1.3028,"pz":-0.7752,"st":3,"dom":"algèbre"},{"s":"SatoTate","f":"Conjecture Sato-Tate — distribution Frobenius courbes elliptiques (Taylor et al. 2011)","px":-1.0659,"pz":-0.7752,"st":3,"dom":"nb théorie"},{"s":"KazhLusz","f":"Conjecture Kazhdan-Lusztig — multiplicités modules Verma (Beilinson-Bernstein 1981)","px":-0.829,"pz":-0.7752,"st":3,"dom":"algèbre"},{"s":"KadSinger","f":"Kadison-Singer — extension états purs B(H) (Marcus-Spielman-Srivastava 2013)","px":-0.5922,"pz":-0.7752,"st":3,"dom":"analyse fonctionnelle"},{"s":"VirtHaken","f":"Virtual Haken — 3-variétés hyperboliques (Agol 2012, Wise, Kahn-Markovic)","px":-0.3553,"pz":-0.7752,"st":3,"dom":"topologie"},{"s":"KakeyaFin","f":"Kakeya corps finis — Besicovitch sets F_q^n (Dvir 2008, méthode polynomiale)","px":-0.1184,"pz":-0.7752,"st":3,"dom":"combinatoire"},{"s":"Onsager_c","f":"Conjecture Onsager — Euler C^α conservation énergie ssi α>1/3 (Isett 2018, BDSV 2019)","px":0.1184,"pz":-0.7752,"st":3,"dom":"analyse"},{"s":"Poinc3","f":"Conjecture Poincaré dim 3 — toute 3-variété simplement connexe fermée ≅ S³ (Perelman 2003, flot de Ricci)","px":0.3553,"pz":-0.7752,"st":3,"dom":"topologie"},{"s":"Geomtrz","f":"Géométrisation Thurston — toute 3-variété se décompose en 8 géométries (Perelman 2003)","px":0.5922,"pz":-0.7752,"st":3,"dom":"topologie"},{"s":"hCobord","f":"h-cobordism theorem — dim ≥ 6 (Smale 1962, Fields Medal). Implique Poincaré généralisé dim ≥ 5.","px":0.829,"pz":-0.7752,"st":3,"dom":"topologie"},{"s":"Freed4","f":"Freedman theorem — classification topologique 4-variétés simplement connexes fermées (1982, Fields Medal)","px":1.0659,"pz":-0.7752,"st":3,"dom":"topologie"},{"s":"SmithConj","f":"Smith conjecture — action Zₚ sur S³ a point fixe = nœud trivial (Morgan-Bass 1984)","px":1.3028,"pz":-0.7752,"st":3,"dom":"topologie"},{"s":"ExoticS7","f":"Sphères exotiques Milnor — S⁷ admet 28 structures diff. non-standard (Milnor 1956, Kervaire-Milnor 1963)","px":-1.3028,"pz":-0.5168,"st":3,"dom":"topologie"},{"s":"Surgery","f":"Théorie chirurgie — classification variétés dim ≥ 5 (Browder-Novikov-Sullivan-Wall 1960s)","px":-1.0659,"pz":-0.5168,"st":3,"dom":"topologie"},{"s":"Mordell","f":"Conjecture Mordell — courbe genre ≥ 2 sur ℚ a nombre fini de points rationnels (Faltings 1983, Fields Medal)","px":-0.829,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"WeilConj","f":"Conjectures Weil — fonctions zêta variétés /F_q: rationalité (Dwork), fonctionnalité, RH (Deligne 1974, Fields Medal)","px":-0.5922,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"CatalanM","f":"Conjecture Catalan — x^p - y^q = 1 ⟹ 3²-2³=1 seule solution (Mihailescu 2002)","px":-0.3553,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"GoldWeak","f":"Goldbach faible (ternaire) — tout impair > 5 somme de 3 premiers (Helfgott 2013)","px":-0.1184,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"BddGaps","f":"Bounded prime gaps — lim inf (pₙ₊₁-pₙ) < ∞ (Zhang 2013: 7×10⁷, Maynard 2013: 600, Polymath8: 246)","px":0.1184,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"GrossZag","f":"Formule Gross-Zagier — hauteur point Heegner = L'(E,1) (1986). Clé pour BSD rang 1.","px":0.3553,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"HerbRibet","f":"Herbrand-Ribet — p|Bₖ ⟺ p|#Cl(ℚ(ζₚ))_χ (Herbrand 1932 →, Ribet 1976 ←). Lien Bernoulli/corps cyclotomiques.","px":0.5922,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"IwasMain","f":"Iwasawa Main Conjecture — structure Λ-modules sur tours cyclotomiques (Mazur-Wiles 1984)","px":0.829,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"SerreMod","f":"Conjecture Serre modularité — repr. Galois irréd. impaires mod p sont modulaires (Khare-Wintenberger 2009)","px":1.0659,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"LaffFnF","f":"Langlands pour corps de fonctions GL_n (Laurent Lafforgue 2002, Fields Medal)","px":1.3028,"pz":-0.5168,"st":3,"dom":"nb théorie"},{"s":"CFSG","f":"Classification groupes finis simples — 18 familles + 26 sporadiques (~1983, ~10000 pages, Gorenstein program)","px":-1.3028,"pz":-0.2584,"st":3,"dom":"algèbre"},{"s":"Moonshine","f":"Monstrous Moonshine — j(τ) et Monster group (Conway-Norton 1979, prouvé Borcherds 1992, Fields Medal)","px":-1.0659,"pz":-0.2584,"st":3,"dom":"algèbre"},{"s":"QuilSusl","f":"Conjecture Serre (Quillen-Suslin) — modules proj. sur k[x₁..xₙ] sont libres (Quillen, Suslin 1976)","px":-0.829,"pz":-0.2584,"st":3,"dom":"algèbre"},{"s":"Bieberbach","f":"Théorème de Branges (ex-conj. Bieberbach) — |aₙ| ≤ n pour fonctions univalentes (De Branges 1985, Acta Math)","px":-0.5922,"pz":-0.2584,"st":3,"dom":"analyse"},{"s":"CarlesonL2","f":"Convergence p.p. séries Fourier L² — (Carleson 1966, Abel Prize 2006). Étendu Lᵖ p>1 (Hunt 1968).","px":-0.3553,"pz":-0.2584,"st":3,"dom":"analyse"},{"s":"KatoSqrt","f":"Conjecture Kato racine carrée — √(div A grad) a domaine H¹ (Auscher-Hofmann-Lacey-McIntosh-Tchamitchian 2001)","px":-0.1184,"pz":-0.2584,"st":3,"dom":"analyse"},{"s":"CoronaTh","f":"Théorème Corona — Spec maximal H^∞ dense dans le spectre (Carleson 1962)","px":0.1184,"pz":-0.2584,"st":3,"dom":"analyse"},{"s":"CalabiYau","f":"Conjecture Calabi — existence métrique Kähler Ricci-plate si c₁=0 (Yau 1978, Fields Medal)","px":0.3553,"pz":-0.2584,"st":3,"dom":"géom diff"},{"s":"PosMass","f":"Positive mass theorem — masse ADM ≥ 0 (Schoen-Yau 1979, Witten 1981). Fondamental en RG.","px":0.5922,"pz":-0.2584,"st":3,"dom":"géom diff"},{"s":"Kepler","f":"Conjecture Kepler — empilement sphères densité max π/(3√2) = FCC/HCP (Hales 2005, Flyspeck 2014 vérifié formellement)","px":0.829,"pz":-0.2584,"st":3,"dom":"géométrie"},{"s":"Willmore","f":"Conjecture Willmore — min ∫H²dA pour tores immergés = 2π² (Marques-Neves 2014, min-max)","px":1.0659,"pz":-0.2584,"st":3,"dom":"géom diff"},{"s":"AtiyahSing","f":"Théorème index Atiyah-Singer — ind(D) = ∫ch(σ)Td(M) (1963, généralisé K-théorie). Pont analyse↔topologie.","px":1.3028,"pz":-0.2584,"st":3,"dom":"géom diff"},{"s":"FourColor","f":"Théorème 4 couleurs — tout graphe planaire 4-coloriable (Appel-Haken 1976, Robertson et al. 1997, Gonthier 2005 Coq)","px":-1.3028,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"RobSeym","f":"Graph Minor Theorem — tout ensemble infini de graphes a mineur (Robertson-Seymour 1983-2004, 20 papers)","px":-1.0659,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"GreenTao","f":"Green-Tao — les premiers contiennent des PA de longueur arbitraire (2004). Utilise Szemerédi + transference.","px":-0.829,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"DensHJ","f":"Density Hales-Jewett — version densité du théorème HJ (Polymath1, 2009/2012)","px":-0.5922,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"Kneser","f":"Conjecture Kneser — χ(KG(n,k)) = n-2k+2 (Lovász 1978, topologie de Borsuk-Ulam appliquée aux graphes)","px":-0.3553,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"SLE_thm","f":"SLE/percolation — invariance conforme percolation critique sur réseau triangulaire (Smirnov 2001, Fields Medal 2010)","px":-0.1184,"pz":0.0,"st":3,"dom":"probabilités"},{"s":"ParisHarr","f":"Paris-Harrington — variante Ramsey indépendante de PA (1977). Premier exemple 'naturel' d'indépendance.","px":0.1184,"pz":0.0,"st":3,"dom":"logique"},{"s":"DPRM","f":"Théorème DPRM — ensembles r.e. = ensembles diophantiens (Davis-Putnam-Robinson 1961, Matiyasevich 1970). H10 négatif.","px":0.3553,"pz":0.0,"st":3,"dom":"logique"},{"s":"Hironaka","f":"Résolution des singularités en car. 0 — tout variété admet désingularisation (Hironaka 1964, Fields Medal)","px":0.5922,"pz":0.0,"st":3,"dom":"géom algébrique"},{"s":"FundLemma","f":"Lemme fondamental Langlands-Shelstad — identité orbitale pour endoscopie (Ngô Bảo Châu 2008, Fields Medal 2010)","px":0.829,"pz":0.0,"st":3,"dom":"nb théorie"},{"s":"Szemer","f":"Théorème Szemerédi — tout ensemble de densité positive dans ℕ contient des PA de longueur k (1975, Abel Prize 2012). Preuve ergodique Furstenberg 1977.","px":1.0659,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"RothAP","f":"Théorème Roth — tout ensemble dense dans ℕ contient des 3-AP (1953, Fields Medal). Méthode cercle de Hardy-Littlewood.","px":1.3028,"pz":0.0,"st":3,"dom":"combinatoire"},{"s":"MostowRig","f":"Mostow rigidity — variétés hyperboliques fermées dim ≥ 3 isométriques ssi π₁ isomorphes (1968)","px":-1.3028,"pz":0.2584,"st":3,"dom":"géom diff"},{"s":"MargSup","f":"Margulis superrigidité — réseaux dans groupes de Lie rang ≥ 2 sont arithmétiques (1975, Fields Medal)","px":-1.0659,"pz":0.2584,"st":3,"dom":"géom diff"},{"s":"Oppenh","f":"Conjecture Oppenheim — forme quadratique irrationnelle indéfinie ≥3 var. prend valeurs denses (Margulis 1987, flots unipotents)","px":-0.829,"pz":0.2584,"st":3,"dom":"nb théorie"},{"s":"Ratner","f":"Théorèmes Ratner — classification mesures/orbites invariantes unipotentes sur espaces homogènes (1990-91)","px":-0.5922,"pz":0.2584,"st":3,"dom":"géom diff"},{"s":"Tameness","f":"Marden Tameness — variétés hyperboliques de volume infini sont topologiquement apprivoisées (Agol 2004, Calegari-Gabai 2004)","px":-0.3553,"pz":0.2584,"st":3,"dom":"topologie"},{"s":"EndLam","f":"Ending Lamination — 3-var. hyperbolique déterminée par end invariants (Brock-Canary-Minsky 2012, Thurston conjecture)","px":-0.1184,"pz":0.2584,"st":3,"dom":"topologie"},{"s":"DiffSph","f":"1/4-pinched differentiable sphere theorem — variété courbure 1/4-pincée est difféomorphe à Sⁿ (Brendle-Schoen 2009)","px":0.1184,"pz":0.2584,"st":3,"dom":"géom diff"},{"s":"FeitThomp","f":"Odd order theorem — tout groupe fini d'ordre impair est résoluble (Feit-Thompson 1963, 255 pages). Premier pas vers CFSG.","px":0.3553,"pz":0.2584,"st":3,"dom":"algèbre"},{"s":"Vinogr3P","f":"Vinogradov — tout impair suffisamment grand est somme de 3 premiers (1937). Méthode cercle. Rendu effectif par Helfgott (GoldWeak).","px":0.5922,"pz":0.2584,"st":3,"dom":"nb théorie"},{"s":"PNT","f":"Prime Number Theorem — π(x) ~ x/ln(x) (Hadamard & de la Vallée-Poussin 1896, indépendamment). Preuve élémentaire Erdős-Selberg 1949.","px":0.829,"pz":0.2584,"st":3,"dom":"nb théorie"},{"s":"Waring","f":"Problème de Waring — tout entier = somme de g(k) puissances k-ièmes (Hilbert 1909). g(2)=4 Lagrange, g(3)=9 Wieferich-Kempner.","px":1.0659,"pz":0.2584,"st":3,"dom":"nb théorie"},{"s":"QRecip","f":"Loi réciprocité quadratique — (p/q)(q/p) = (-1)^{(p-1)(q-1)/4} (Gauss 1801, ~240 preuves connues). Généralisée par Artin, Langlands.","px":1.3028,"pz":0.2584,"st":3,"dom":"nb théorie"},{"s":"Dirichlet","f":"Théorème Dirichlet — infinité premiers dans progressions arithmétiques a+nd, pgcd(a,d)=1 (1837). Utilise L-fonctions.","px":-1.3028,"pz":0.5168,"st":3,"dom":"nb théorie"},{"s":"Viaz8","f":"Sphere packing dim 8 — réseau E₈ est empilement le plus dense en ℝ⁸ (Viazovska 2016, Fields Medal 2022). Formes modulaires.","px":-1.0659,"pz":0.5168,"st":3,"dom":"géométrie"},{"s":"Viaz24","f":"Sphere packing dim 24 — réseau de Leech est optimal en ℝ²⁴ (Cohn-Kumar-Miller-Radchenko-Viazovska 2016).","px":-0.829,"pz":0.5168,"st":3,"dom":"géométrie"},{"s":"DblBubble","f":"Double bubble conjecture — double bulle standard minimise l'aire dans ℝ³ (Hutchings-Morgan-Ritoré-Ros 2002).","px":-0.5922,"pz":0.5168,"st":3,"dom":"géométrie"},{"s":"Einstein","f":"Einstein problem / monotuile apériodique — existence d'une tuile unique pavant le plan seulement apériodiquement (Smith-Myers-Kaplan-Goodman-Strauss 2023).","px":-0.3553,"pz":0.5168,"st":3,"dom":"géométrie"},{"s":"BrauerH0","f":"Brauer Height Zero Conjecture — hauteur zéro des caractères dans blocs (Malle-Navarro-Schaeffer Fry-Tiep 2024, Annals of Math).","px":-0.1184,"pz":0.5168,"st":3,"dom":"algèbre"},{"s":"Nagata","f":"Conjecture Nagata — automorphisme sauvage de k[x,y,z] n'est pas apprivoisé (Shestakov-Umirbaev 2003).","px":0.1184,"pz":0.5168,"st":3,"dom":"algèbre"},{"s":"ErdDiscrep","f":"Erdős discrepancy problem — toute suite ±1 a sous-sommes partielles non-bornées (Tao 2015). Utilise analyse de Fourier entropique.","px":0.3553,"pz":0.5168,"st":3,"dom":"combinatoire"},{"s":"GuthKatz","f":"Erdős distinct distances — n points dans ℝ² déterminent Ω(n/log n) distances distinctes (Guth-Katz 2010). Polynomial partitioning.","px":0.5922,"pz":0.5168,"st":3,"dom":"combinatoire"},{"s":"RamseyExp","f":"Ramsey diagonal upper bound — R(k,k) ≤ (4-ε)^k, première amélioration exponentielle depuis 1935 (Campos-Griffiths-Morris-Sahasrabudhe 2023).","px":0.829,"pz":0.5168,"st":3,"dom":"combinatoire"},{"s":"BGS","f":"Baker-Gill-Solovay — ∃ oracle A: P^A=NP^A, ∃ oracle B: P^B≠NP^B (1975). Relativisation ne peut séparer P de NP.","px":1.0659,"pz":0.5168,"st":3,"dom":"complexité"},{"s":"NatProof","f":"Razborov-Rudich Natural Proofs barrier — si OWF existent, pas de preuve 'naturelle' de P≠NP (1997). Combinatorialisation bloquée.","px":1.3028,"pz":0.5168,"st":3,"dom":"complexité"},{"s":"Algebriz","f":"Aaronson-Wigderson Algebrization — généralise relativisation, toute preuve P≠NP doit être non-algébrisante (2009).","px":-1.3028,"pz":0.7752,"st":3,"dom":"complexité"},{"s":"ImmSzel","f":"Immerman-Szelepcsényi — NL = co-NL (1987). Non-déterminisme spatial fermé sous complémentation.","px":-1.0659,"pz":0.7752,"st":3,"dom":"complexité"},{"s":"SipLaut","f":"Sipser-Lautemann — BPP ⊆ Σ₂P ∩ Π₂P (1983). Randomisation contenue dans PH niveau 2.","px":-0.829,"pz":0.7752,"st":3,"dom":"complexité"},{"s":"Perm#P","f":"Valiant permanent — Permanent est #P-complet (1979). Comptage ≠ décision, lien matrices/complexité.","px":-0.5922,"pz":0.7752,"st":3,"dom":"complexité"},{"s":"ImpWig","f":"Impagliazzo-Wigderson — P = BPP si E requiert circuits expo (STOC 1997). Dureté → dérandomisation.","px":-0.3553,"pz":0.7752,"st":3,"dom":"complexité"},{"s":"ImpPad","f":"Impagliazzo-Paturi SETH — ETH: 3-SAT pas en 2^{o(n)}, SETH: k-SAT pas en 2^{(1-ε)n} (1999). Base complexité fine.","px":-0.1184,"pz":0.7752,"st":3,"dom":"complexité"},{"s":"BirkErg","f":"Birkhoff ergodic theorem — moyenne temporelle = moyenne spatiale p.p. (1931). Fondement théorie ergodique.","px":0.1184,"pz":0.7752,"st":3,"dom":"probabilités"},{"s":"CLT","f":"Central Limit Theorem — (Sₙ-nμ)/σ√n → N(0,1) (Lindeberg 1922, Lévy, Feller). Universalité gaussienne.","px":0.3553,"pz":0.7752,"st":3,"dom":"probabilités"},{"s":"SLLN","f":"Strong Law Large Numbers — X̄ₙ → μ p.s. (Kolmogorov 1930). Convergence presque sûre des moyennes.","px":0.5922,"pz":0.7752,"st":3,"dom":"probabilités"},{"s":"Donsker","f":"Donsker invariance principle — marche aléatoire renormalisée → mouvement brownien (1951). CLT fonctionnel.","px":0.829,"pz":0.7752,"st":3,"dom":"probabilités"},{"s":"LDP","f":"Large Deviations Principle — P(S̄ₙ∈A) ~ e^{-nI(A)} (Cramér 1938, Varadhan 1966). Taux exponentiels.","px":1.0659,"pz":0.7752,"st":3,"dom":"probabilités"},{"s":"OrnIsm","f":"Ornstein isomorphism — shifts de Bernoulli isomorphes ssi même entropie (Ornstein 1970). Classification systèmes aléatoires.","px":1.3028,"pz":0.7752,"st":3,"dom":"probabilités"},{"s":"DeGNM","f":"De Giorgi-Nash-Moser — solutions équations elliptiques div-forme à coefficients L^∞ sont Hölder (1957-58-60). Résout Hilbert 19ème.","px":-1.3028,"pz":1.0336,"st":3,"dom":"EDP"},{"s":"NashEmb","f":"Nash embedding theorem — toute variété riemannienne se plonge isométriquement dans ℝ^N (1956). Schéma itératif Nash-Moser.","px":-1.0659,"pz":1.0336,"st":3,"dom":"géom diff"},{"s":"KAM","f":"KAM theorem — tores quasi-périodiques persistent sous petites perturbations hamiltoniennes (Kolmogorov 1954, Arnold 1963, Moser 1962).","px":-0.829,"pz":1.0336,"st":3,"dom":"mécanique analytique"},{"s":"deRham","f":"de Rham theorem — cohomologie de de Rham ≅ cohomologie singulière (1931). Pont analyse ↔ topologie.","px":-0.5922,"pz":1.0336,"st":3,"dom":"topologie"},{"s":"BottPer","f":"Bott periodicity — K-théorie topologique est périodique: π_{n+2}(U) ≅ π_n(U), π_{n+8}(O) ≅ π_n(O) (1959).","px":-0.3553,"pz":1.0336,"st":3,"dom":"topologie"},{"s":"Uniformiz","f":"Uniformization theorem — toute surface de Riemann simplement connexe ≅ S², ℂ ou 𝔻 (Koebe-Poincaré 1907).","px":-0.1184,"pz":1.0336,"st":3,"dom":"analyse"},{"s":"GrotRR","f":"Grothendieck-Riemann-Roch — ch(f_!(F)) = f_*(ch(F)·Td(T_f)) en K-théorie (1957). Généralise Hirzebruch-RR.","px":0.1184,"pz":1.0336,"st":3,"dom":"géom algébrique"},{"s":"ClassFT","f":"Class Field Theory — abélianisation Gal(K^ab/K) ≅ C_K (Takagi 1920, Artin 1927). Réciprocité non-abélienne = Langlands.","px":0.3553,"pz":1.0336,"st":3,"dom":"nb théorie"},{"s":"GodelInc","f":"Gödel incompleteness — (1) toute théorie cohérente contenant PA a énoncés indécidables, (2) ne peut prouver sa propre cohérence (1931).","px":0.5922,"pz":1.0336,"st":3,"dom":"logique"},{"s":"NoetherSy","f":"Noether theorem — toute symétrie continue d'un lagrangien donne une loi de conservation (1918). Pont algèbre ↔ physique.","px":0.829,"pz":1.0336,"st":3,"dom":"algèbre"},{"s":"Shannon2","f":"Shannon coding theorems — (1) source coding: H(X) bits suffisent, (2) channel: capacité C atteignable (1948). Fondement théorie info.","px":1.0659,"pz":1.0336,"st":3,"dom":"information"},{"s":"MIP*RE","f":"MIP* = RE — prouveurs quantiques intriqués = langages r.e. (Ji-Natarajan-Vidick-Wright-Yuen 2020). Réfute Connes embedding, résout Tsirelson.","px":1.3028,"pz":1.0336,"st":3,"dom":"quantique"},{"s":"WillACC","f":"Williams — NEXP ⊄ ACC⁰ circuits de taille poly (2011). Première borne inférieure circuits avec portes MODm depuis Razborov-Smolensky 87.","px":-1.3028,"pz":1.292,"st":3,"dom":"complexité"},{"s":"RazMono","f":"Razborov — circuits monotones pour CLIQUE exigent taille super-polynomiale 2^{Ω(n^{1/6})} (1985). Méthode d'approximation.","px":-1.0659,"pz":1.292,"st":3,"dom":"complexité"},{"s":"RazSmol","f":"Razborov-Smolensky — AC⁰[p] ne contient pas MOD_q pour p≠q premiers (1987). Bornes inférieures circuits à profondeur constante.","px":-0.829,"pz":1.292,"st":3,"dom":"complexité"},{"s":"HasAC0","f":"Håstad switching lemma — PARITY ∉ AC⁰, circuits profondeur d taille 2^{Ω(n^{1/(d-1)})} nécessaires (1987). Tight pour AC⁰.","px":-0.5922,"pz":1.292,"st":3,"dom":"complexité"},{"s":"BorelDet","f":"Borel determinacy — tout jeu de Gale-Stewart à gain Borel est déterminé (Martin 1975). Nécessite remplacement (Friedman 71).","px":-0.3553,"pz":1.292,"st":3,"dom":"descriptive"},{"s":"CohenInd","f":"Cohen forcing — CH est indépendant de ZFC: ni prouvable ni réfutable (Cohen 1963, Fields 1966). Méthode du forcing.","px":-0.1184,"pz":1.292,"st":3,"dom":"ensembles"},{"s":"BuchiMSO","f":"Büchi theorem — L est ω-régulier ssi définissable en MSO sur ω (Büchi 1962). Pont logique ↔ automates sur mots infinis.","px":0.1184,"pz":1.292,"st":3,"dom":"automates"},{"s":"MyhNer","f":"Myhill-Nerode — L régulier ssi nombre fini de classes d'équivalence (Myhill 1957, Nerode 1958). Caractérisation algébrique réguliers.","px":0.3553,"pz":1.292,"st":3,"dom":"automates"},{"s":"RabinS2S","f":"Rabin theorem — S2S (théorie monadique 2 successeurs) est décidable (Rabin 1969). Automates d'arbres, implique de nombreux résultats.","px":0.5922,"pz":1.292,"st":3,"dom":"automates"},{"s":"DoobMart","f":"Doob martingale convergence — toute surmartingale bornée dans L¹ converge p.s. (Doob 1953). Fondement probabilités modernes.","px":0.829,"pz":1.292,"st":3,"dom":"stochastique"},{"s":"BaireCat","f":"Baire category theorem — espace métrique complet n'est pas union dénombrable de fermés d'intérieur vide (Baire 1899). Base Banach-Steinhaus/open mapping.","px":1.0659,"pz":1.292,"st":3,"dom":"analyse fonctionnelle"},{"s":"BanOpen","f":"Banach open mapping + closed graph — surjection continue entre Banach est ouverte; graphe fermé implique continuité (Banach 1932).","px":1.3028,"pz":1.292,"st":3,"dom":"analyse fonctionnelle"},{"s":"Conjecture","f":"Conjecture","px":-0.4635,"pz":-0.2566,"st":3,"dom":"science générale","c2":true},{"s":"Sequence motif","f":"Sequence motif","px":0.1687,"pz":0.5031,"st":3,"dom":"biologie","c2":true},{"s":"Riemann hypothesis","f":"Riemann hypothesis","px":0.2158,"pz":-0.4857,"st":3,"dom":"nb théorie","c2":true},{"s":"Time value of money","f":"Time value of money","px":-0.488,"pz":0.2127,"st":3,"dom":"science générale","c2":true},{"s":"Mirror symmetry","f":"Mirror symmetry","px":0.5044,"pz":0.1731,"st":3,"dom":"topologie","c2":true},{"s":"Collatz conjecture","f":"Collatz conjecture","px":-0.2554,"pz":-0.4691,"st":3,"dom":"science générale","c2":true},{"s":"NP-complete","f":"NP-complete","px":-0.1288,"pz":0.5192,"st":3,"dom":"complexité"},{"s":"Poincaré conjecture","f":"Poincaré conjecture","px":0.4464,"pz":-0.2963,"st":3,"dom":"topologie"},{"s":"Induced subgraph iso","f":"Induced subgraph isomorphism problem","px":-0.5302,"pz":-0.0831,"st":3,"dom":"complexité"},{"s":"Cosmological constan","f":"Cosmological constant problem","px":0.3353,"pz":0.4201,"st":3,"dom":"cosmologie","c2":true},{"s":"Beal's conjecture","f":"Beal's conjecture","px":0.0366,"pz":-0.5371,"st":3,"dom":"nb théorie","c2":true},{"s":"Cosmic censorship hy","f":"Cosmic censorship hypothesis","px":-0.3904,"pz":0.3719,"st":3,"dom":"relativité","c2":true},{"s":"Subgraph isomorphism","f":"Subgraph isomorphism problem","px":0.5399,"pz":-0.0105,"st":3,"dom":"complexité"},{"s":"Learning with errors","f":"Learning with errors","px":-0.4058,"pz":-0.3575,"st":3,"dom":"EDP"},{"s":"Goldbach's conjectur","f":"Goldbach's conjecture","px":0.0579,"pz":0.5386,"st":3,"dom":"science générale","c2":true},{"s":"Hodge conjecture","f":"Hodge conjecture","px":0.3216,"pz":-0.4369,"st":3,"dom":"science générale","c2":true},{"s":"Lonely runner conjec","f":"Lonely runner conjecture","px":-0.5331,"pz":0.1051,"st":3,"dom":"science générale","c2":true},{"s":"Traveling purchaser ","f":"Traveling purchaser problem","px":0.4647,"pz":0.283,"st":3,"dom":"complexité"},{"s":"Langlands program","f":"Langlands program","px":-0.1517,"pz":-0.5234,"st":3,"dom":"géométrie","c2":true},{"s":"Sato–Tate conjecture","f":"Sato–Tate conjecture","px":-0.242,"pz":0.4892,"st":3,"dom":"science générale","c2":true},{"s":"abc conjecture","f":"abc conjecture","px":0.5097,"pz":-0.1975,"st":3,"dom":"nb théorie","c2":true},{"s":"Elliott–Halberstam c","f":"Elliott–Halberstam conjecture","px":-0.51,"pz":-0.1989,"st":3,"dom":"nb théorie","c2":true},{"s":"Black hole informati","f":"Black hole information paradox","px":0.023,"pz":-0.0779,"st":3,"dom":"science générale","c2":true},{"s":"Homotopy hypothesis","f":"Homotopy hypothesis","px":0.2164,"pz":0.0033,"st":3,"dom":"topologie","c2":true},{"s":"Convergence (economi","f":"Convergence (economics)","px":0.211,"pz":-0.1198,"st":3,"dom":"analyse","c2":true},{"s":"Expected utility hyp","f":"Expected utility hypothesis","px":0.0214,"pz":-0.3294,"st":3,"dom":"statistiques","c2":true},{"s":"Phylogenetic nomencl","f":"Phylogenetic nomenclature","px":-0.3159,"pz":0.1323,"st":3,"dom":"évolution","c2":true},{"s":"Permanent income hyp","f":"Permanent income hypothesis","px":-0.2561,"pz":-0.4846,"st":3,"dom":"économie","c2":true},{"s":"Non-standard cosmolo","f":"Non-standard cosmology","px":-0.167,"pz":0.2691,"st":3,"dom":"biologie","c2":true},{"s":"Neocolonialism","f":"Neocolonialism","px":-0.3767,"pz":-0.4551,"st":3,"dom":"économie","c2":true},{"s":"International Linear","f":"International Linear Collider","px":-0.3958,"pz":0.2002,"st":3,"dom":"biologie","c2":true},{"s":"Creative class","f":"Creative class","px":-0.3813,"pz":-0.4404,"st":3,"dom":"économie","c2":true},{"s":"Life-cycle hypothesi","f":"Life-cycle hypothesis","px":0.3307,"pz":-0.0323,"st":3,"dom":"EDP","c2":true},{"s":"Superselection","f":"Superselection","px":-0.4953,"pz":-0.9122,"st":3,"dom":"science politique","c2":true},{"s":"Group selection","f":"Group selection","px":-0.2626,"pz":0.112,"st":3,"dom":"évolution","c2":true},{"s":"Unparticle physics","f":"Unparticle physics","px":1.0393,"pz":0.4773,"st":3,"dom":"particules","c2":true},{"s":"RNA world hypothesis","f":"RNA world hypothesis","px":-0.2631,"pz":0.1459,"st":3,"dom":"biologie","c2":true},{"s":"Ozone therapy","f":"Ozone therapy","px":-0.4107,"pz":0.2885,"st":3,"dom":"biologie","c2":true},{"s":"Pollution haven hypo","f":"Pollution haven hypothesis","px":-0.323,"pz":0.177,"st":3,"dom":"environnement","c2":true},{"s":"Random walk hypothes","f":"Random walk hypothesis","px":-0.1873,"pz":-0.3223,"st":3,"dom":"finance","c2":true},{"s":"Multiple chemical se","f":"Multiple chemical sensitivity","px":-0.802,"pz":0.4702,"st":3,"dom":"médecine","c2":true},{"s":"Ridge push","f":"Ridge push","px":0.1293,"pz":0.5391,"st":3,"dom":"sismologie","c2":true},{"s":"Bertrand paradox (ec","f":"Bertrand paradox (economics)","px":-0.1042,"pz":-0.5677,"st":3,"dom":"économie","c2":true},{"s":"AH","f":"Hiérarchie arithmétique","px":-1.137,"pz":-1.0659,"st":4,"dom":"calculabilité"},{"s":"∪ₙ","f":"Union tous niveaux","px":-0.5685,"pz":-1.0659,"st":4,"dom":"ensembles"},{"s":"ω_ord","f":"Premier ordinal infini ω","px":0.0,"pz":-1.0659,"st":4,"dom":"ordinaux"},{"s":"Th(ℕ)","f":"Théorie complète de ℕ","px":0.5685,"pz":-1.0659,"st":4,"dom":"logique"},{"s":"∅⁽ω⁾","f":"ω-ième saut","px":1.137,"pz":-1.0659,"st":4,"dom":"calculabilité"},{"s":"PSPACE","f":"Espace polynomial (Savitch: =NPSPACE)","px":-1.137,"pz":-0.3553,"st":4,"dom":"complexité"},{"s":"QIP","f":"Quantum Interactive Proof (=PSPACE)","px":-0.5685,"pz":-0.3553,"st":4,"dom":"quantique"},{"s":"EXPTIME","f":"Temps exponentiel (⊋ P strict)","px":0.0,"pz":-0.3553,"st":4,"dom":"complexité"},{"s":"NEXP","f":"Non-det exponentiel","px":0.5685,"pz":-0.3553,"st":4,"dom":"complexité"},{"s":"EXPSPACE","f":"Espace exponentiel (=NEXPSPACE Savitch)","px":1.137,"pz":-0.3553,"st":4,"dom":"complexité"},{"s":"AP","f":"Alternating Polynomial time (=PSPACE)","px":-1.137,"pz":0.3553,"st":4,"dom":"complexité"},{"s":"TQBF","f":"True QBF — PSPACE-complet","px":-0.5685,"pz":0.3553,"st":4,"dom":"complexité"},{"s":"IP_eq","f":"IP=PSPACE (théorème Shamir 1992)","px":0.0,"pz":0.3553,"st":4,"dom":"complexité"},{"s":"2-EXP","f":"2-EXPTIME doublement exponentiel","px":0.5685,"pz":0.3553,"st":4,"dom":"complexité"},{"s":"ELEM","f":"ELEMENTARY ∪ₖ k-EXPTIME","px":1.137,"pz":0.3553,"st":4,"dom":"complexité"},{"s":"E","f":"DTIME(2^O(n)) temps exp linéaire","px":-1.137,"pz":1.0659,"st":4,"dom":"complexité"},{"s":"NE","f":"NTIME(2^O(n))","px":-0.5685,"pz":1.0659,"st":4,"dom":"complexité"},{"s":"Tarski","f":"Indéfinissabilité vérité (Tarski 1936)","px":0.0,"pz":1.0659,"st":4,"dom":"logique"},{"s":"ε₀_ord","f":"Ordinal ε₀ = ω^ω^ω^… (Gentzen)","px":0.5685,"pz":1.0659,"st":4,"dom":"ordinaux"},{"s":"Polynomial hierarchy","f":"Polynomial hierarchy","px":-0.0179,"pz":-0.3868,"st":4,"dom":"complexité"},{"s":"ω₁ᶜᵏ","f":"Ordinal Church-Kleene","px":-1.137,"pz":-1.0659,"st":5,"dom":"ordinaux"},{"s":"∅⁽α⁾","f":"Saut transfinite α","px":-0.5685,"pz":-1.0659,"st":5,"dom":"calculabilité"},{"s":"Δ¹₁","f":"Analytique Δ¹₁","px":0.0,"pz":-1.0659,"st":5,"dom":"descriptive"},{"s":"Σ¹₁","f":"Analytique existentiel","px":0.5685,"pz":-1.0659,"st":5,"dom":"descriptive"},{"s":"Π¹₁","f":"Co-analytique","px":1.137,"pz":-1.0659,"st":5,"dom":"descriptive"},{"s":"O_Kl","f":"O de Kleene","px":-1.137,"pz":-0.3553,"st":5,"dom":"calculabilité"},{"s":"HYP","f":"Hyperarithmétique","px":-0.5685,"pz":-0.3553,"st":5,"dom":"calculabilité"},{"s":"WO","f":"Bons ordres (Π¹₁-complet)","px":0.0,"pz":-0.3553,"st":5,"dom":"descriptive"},{"s":"Σ¹ₙ","f":"Hiérarchie projective","px":0.5685,"pz":-0.3553,"st":5,"dom":"descriptive"},{"s":"Π¹ₙ","f":"Hiérarchie projective dual","px":1.137,"pz":-0.3553,"st":5,"dom":"descriptive"},{"s":"Det","f":"Déterminance (Martin)","px":-1.137,"pz":0.3553,"st":5,"dom":"ensembles"},{"s":"²E","f":"Fonctionnel type-2 Kleene (caractérise HYP)","px":-0.5685,"pz":0.3553,"st":5,"dom":"calculabilité"},{"s":"KP","f":"Kripke-Platek set theory","px":0.0,"pz":0.3553,"st":5,"dom":"logique"},{"s":"Lα","f":"Niveaux constructibles admissibles Lω₁ᶜᵏ","px":0.5685,"pz":0.3553,"st":5,"dom":"ensembles"},{"s":"Borel","f":"Hiérarchie de Borel (⊂ Δ¹₁)","px":1.137,"pz":0.3553,"st":5,"dom":"descriptive"},{"s":"AD","f":"Axiome de Déterminance","px":-1.137,"pz":1.0659,"st":5,"dom":"ensembles"},{"s":"Wadge","f":"Degrés de Wadge (raffinement de la hiérarchie)","px":-0.5685,"pz":1.0659,"st":5,"dom":"descriptive"},{"s":"Spect","f":"Théorème Spector-Gandy (Π¹₁ = HYP en ω₁ᶜᵏ)","px":0.0,"pz":1.0659,"st":5,"dom":"calculabilité"},{"s":"Σ⁰_α","f":"Niveau Borel transfinite Σ⁰α","px":0.5685,"pz":1.0659,"st":5,"dom":"descriptive"},{"s":"Ω_Ch","f":"Constante de Chaitin","px":-1.137,"pz":-1.0659,"st":6,"dom":"information"},{"s":"BB(n)","f":"Busy Beaver","px":-0.5685,"pz":-1.0659,"st":6,"dom":"calculabilité"},{"s":"⊥","f":"Bottom / indécidable","px":0.0,"pz":-1.0659,"st":6,"dom":"logique"},{"s":"G_God","f":"Phrase de Gödel","px":0.5685,"pz":-1.0659,"st":6,"dom":"logique"},{"s":"⊢","f":"Prouvabilité","px":1.137,"pz":-1.0659,"st":6,"dom":"logique"},{"s":"⊬","f":"Non-prouvable dans S","px":-1.137,"pz":-0.3553,"st":6,"dom":"logique"},{"s":"K(x)","f":"Complexité Kolmogorov","px":-0.5685,"pz":-0.3553,"st":6,"dom":"information"},{"s":"HALT","f":"Problème de l'arrêt","px":0.0,"pz":-0.3553,"st":6,"dom":"calculabilité"},{"s":"H10","f":"Hilbert 10th problem indécidable (Matiyasevich 1970, DPRM)","px":0.5685,"pz":-0.3553,"st":6,"dom":"calculabilité"},{"s":"Σ(n)","f":"Busy Beaver score — max 1s sur bande (Radó 1962)","px":1.137,"pz":-0.3553,"st":6,"dom":"calculabilité"},{"s":"WP_grp","f":"Word Problem groupes (Novikov 1955, Boone 1959)","px":-1.137,"pz":0.3553,"st":6,"dom":"calculabilité"},{"s":"PCP","f":"Post Correspondence Problem (Post 1946)","px":-0.5685,"pz":0.3553,"st":6,"dom":"calculabilité"},{"s":"Rice","f":"Théorème de Rice (propriété sémantique indécidable)","px":0.0,"pz":0.3553,"st":6,"dom":"calculabilité"},{"s":"ETM","f":"Emptiness {⟨M⟩ : L(M)=∅} indécidable","px":0.5685,"pz":0.3553,"st":6,"dom":"calculabilité"},{"s":"EQTM","f":"Equivalence {⟨M₁,M₂⟩ : L(M₁)=L(M₂)} indécidable","px":1.137,"pz":0.3553,"st":6,"dom":"calculabilité"},{"s":"S(n)","f":"Maximum shifts function — max steps (Radó 1962)","px":-1.137,"pz":1.0659,"st":6,"dom":"calculabilité"},{"s":"Entsch","f":"Entscheidungsproblem (Hilbert 1928, réfuté Turing/Church 1936)","px":-0.5685,"pz":1.0659,"st":6,"dom":"logique"},{"s":"Diag","f":"Argument diagonal Cantor/Turing","px":0.0,"pz":1.0659,"st":6,"dom":"calculabilité"},{"s":"Kolm","f":"Incompressibilité Kolmogorov (pas d'algo pour trouver le plus court)","px":0.5685,"pz":1.0659,"st":6,"dom":"information"},{"s":"Wang","f":"Wang tiling problem indécidable (Berger 1966, Memoirs AMS)","px":1.137,"pz":1.0659,"st":6,"dom":"calculabilité"},{"s":"Halting problem","f":"Halting problem","px":-0.2495,"pz":0.299,"st":6,"dom":"calculabilité"},{"s":"Undecidable problem","f":"Undecidable problem","px":0.3882,"pz":-0.0522,"st":6,"dom":"informatique"},{"s":"Kolmogorov complexit","f":"Kolmogorov complexity","px":-0.3233,"pz":-0.2249,"st":6,"dom":"informatique"},{"s":"Gödel's incompletene","f":"Gödel's incompleteness theorems","px":0.0869,"pz":0.3863,"st":6,"dom":"logique"}]};
 
-const CONTINENT_COLORS = {
-  math:        0x7fffd4,
-  physique:    0xff6b6b,
-  ingenierie:  0xfbbf24,
-  chimie:      0x4ade80,
-  info:        0x38bdf8,
-  transversal: 0xc084fc,
-  bio:         0xff9f43,
-  humaines:    0xf472b6,
-  terre:       0xa78bfa
+// ═══════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════
+const SCALE = 200;
+const GAP = 80;
+
+const CC = {
+  math:0xb450ff, physique:0x3c78ff, ingenierie:0xb4b43c,
+  chimie:0xffa500, info:0x00b4dc, transversal:0x787878,
+  bio:0x00c850, humaines:0xdc3c3c, terre:0x64b464
+};
+const CN = {
+  math:'MATH', physique:'PHYSIQUE', ingenierie:'INGÉNIERIE',
+  chimie:'CHIMIE', info:'INFO', transversal:'TRANSVERSAL',
+  bio:'BIO', humaines:'HUMAINES', terre:'TERRE'
 };
 
-// ═══════════════════════════════════════
-// THREE.JS SETUP
-// ═══════════════════════════════════════
-const canvas = document.getElementById('canvas3d');
-const renderer = new THREE.WebGLRenderer({
-  canvas, antialias: true, alpha: true
-});
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-renderer.setSize(window.innerWidth, window.innerHeight);
-
-const scene = new THREE.Scene();
-scene.fog = new THREE.FogExp2(0x0a0a0f, 0.0008);
-
-const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 1, 5000);
-camera.position.set(350, 350, 350);
-camera.lookAt(0, STRATE_GAP * 3, 0);
-
-// Ambient + directional light
-scene.add(new THREE.AmbientLight(0x404060, 0.6));
-const dirLight = new THREE.DirectionalLight(0xffffff, 0.4);
-dirLight.position.set(200, 400, 100);
-scene.add(dirLight);
-
-// ═══════════════════════════════════════
-// LAYERS & GROUPS
-// ═══════════════════════════════════════
+// ═══════════════════════════════════════════════
+// GLOBALS
+// ═══════════════════════════════════════════════
+let scene, camera, renderer, controls;
+const mouse = new THREE.Vector2(-999, -999);
+const raycaster = new THREE.Raycaster();
+const hov = [];
 const layers = {};
-const layerVisibility = {
-  geo: true, key: true, up: true,
-  iso: false, brg: false, vds: false,
-  planes: true
-};
+const tt = document.getElementById('tt');
+let mx = 0, my = 0;
 
-function createGroup(name) {
+function tw(px, pz, st) {
+  return new THREE.Vector3(px * SCALE, (st || 0) * GAP, pz * SCALE);
+}
+
+// ═══════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════
+function init() {
+  const W = innerWidth, H = innerHeight;
+
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0a0a12);
+  scene.fog = new THREE.FogExp2(0x0a0a12, 0.0008);
+
+  camera = new THREE.PerspectiveCamera(55, W / H, 1, 5000);
+  camera.position.set(50, 350, 500);
+  camera.lookAt(0, 40, 0);
+
+  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(W, H);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.target.set(0, 40, 0);
+  controls.enableDamping = true;
+  controls.dampingFactor = 0.05;
+  controls.minDistance = 50;
+  controls.maxDistance = 2000;
+  controls.update();
+
+  // Lights
+  scene.add(new THREE.AmbientLight(0x404060, 0.6));
+  const dl = new THREE.DirectionalLight(0xffffff, 0.7);
+  dl.position.set(200, 400, 200);
+  scene.add(dl);
+  const dl2 = new THREE.DirectionalLight(0x8080ff, 0.3);
+  dl2.position.set(-200, 200, -200);
+  scene.add(dl2);
+
+  // Build
+  buildGrid();
+  buildPlanes();
+  buildCentroids();
+  buildGeo();
+  buildKey();
+  buildUpper();
+  buildGeoRte();
+  buildKeyRte();
+
+  addEventListener('resize', onResize);
+  renderer.domElement.addEventListener('mousemove', onMouse);
+
+  animate();
+}
+
+// ═══════════════════════════════════════════════
+// LAYER HELPERS
+// ═══════════════════════════════════════════════
+function mkLayer(name) {
   const g = new THREE.Group();
   g.name = name;
-  scene.add(g);
   layers[name] = g;
+  scene.add(g);
   return g;
 }
 
-// ═══════════════════════════════════════
-// BUILD SCENE
-// ═══════════════════════════════════════
-
-// Raycaster for hover
-const raycaster = new THREE.Raycaster();
-raycaster.params.Points.threshold = 5;
-const mouse = new THREE.Vector2(-999, -999);
-const hoverables = [];
-
-function toWorld(px, pz, strateLevel) {
-  return new THREE.Vector3(
-    px * SCALE,
-    strateLevel * STRATE_GAP,
-    pz * SCALE
-  );
+function tog(name) {
+  if (layers[name]) layers[name].visible = document.getElementById('chk-' + name).checked;
 }
 
-// --- Strate planes ---
+// ═══════════════════════════════════════════════
+// BUILD: GRID
+// ═══════════════════════════════════════════════
+function buildGrid() {
+  const g = mkLayer('grid');
+  const grid = new THREE.GridHelper(600, 30, 0x1a3a1a, 0x111118);
+  grid.material.opacity = 0.25;
+  grid.material.transparent = true;
+  g.add(grid);
+}
+
+// ═══════════════════════════════════════════════
+// BUILD: STRATE PLANES
+// ═══════════════════════════════════════════════
 function buildPlanes() {
-  const g = createGroup('planes');
-  for (let i = 0; i < 7; i++) {
-    const geo = new THREE.PlaneGeometry(SCALE * 3, SCALE * 3);
+  const g = mkLayer('planes');
+  for (let s = 0; s <= 6; s++) {
+    const geo = new THREE.PlaneGeometry(600, 600);
     const mat = new THREE.MeshBasicMaterial({
-      color: i === 0 ? 0x1a2a1a : 0x151520,
-      transparent: true,
-      opacity: i === 0 ? 0.15 : 0.06,
-      side: THREE.DoubleSide,
-      depthWrite: false
+      color: s === 0 ? 0x1a2a1a : 0x1a1a2a,
+      transparent: true, opacity: s === 0 ? 0.12 : 0.04,
+      side: THREE.DoubleSide, depthWrite: false
     });
     const plane = new THREE.Mesh(geo, mat);
     plane.rotation.x = -Math.PI / 2;
-    plane.position.y = i * STRATE_GAP;
+    plane.position.y = s * GAP;
     g.add(plane);
 
-    // Grid lines
-    const gridGeo = new THREE.EdgesGeometry(
-      new THREE.PlaneGeometry(SCALE * 3, SCALE * 3, 6, 6)
-    );
-    const grid = new THREE.LineSegments(gridGeo, new THREE.LineBasicMaterial({
-      color: 0x1a1a2a, transparent: true, opacity: 0.3
-    }));
-    grid.rotation.x = -Math.PI / 2;
-    grid.position.y = i * STRATE_GAP;
-    g.add(grid);
+    const lbl = mkLbl(s === 0 ? 'S0 — SOL' : 'S' + s, s === 0 ? '#4ade80' : '#8888aa', s === 0 ? 24 : 18);
+    lbl.position.set(-310, s * GAP + 5, 0);
+    g.add(lbl);
   }
 }
 
-// --- Escaliers geo (lianes) ---
-function buildGeoEscaliers() {
-  const g = createGroup('geo');
-  const data = D.geo;
-
-  data.forEach(e => {
-    const homePos = toWorld(e.px, e.pz, 0);
-    // Draw a vertical line from S0 up to ~S2 (concept migrated)
-    const topY = STRATE_GAP * (1.5 + e.sc);
-    const topPos = new THREE.Vector3(homePos.x, topY, homePos.z);
-
-    // Glow line
-    const points = [homePos, topPos];
-    const lineGeo = new THREE.BufferGeometry().setFromPoints(points);
-    const line = new THREE.Line(lineGeo, new THREE.LineBasicMaterial({
-      color: 0x4ade80,
-      transparent: true,
-      opacity: 0.3 + e.sc * 0.5
-    }));
-    g.add(line);
-
-    // Point at base
-    const dotGeo = new THREE.SphereGeometry(1.5, 6, 6);
-    const dot = new THREE.Mesh(dotGeo, new THREE.MeshBasicMaterial({
-      color: 0x4ade80
-    }));
-    dot.position.copy(homePos);
-    dot.userData = { type: 'geo', s: e.s, home: e.home, alien: e.alien, score: e.sc };
-    g.add(dot);
-    hoverables.push(dot);
-
-    // Top glow dot
-    const topDot = new THREE.Mesh(
-      new THREE.SphereGeometry(1, 6, 6),
-      new THREE.MeshBasicMaterial({ color: 0x4ade80, transparent: true, opacity: 0.5 })
-    );
-    topDot.position.copy(topPos);
-    g.add(topDot);
-  });
-}
-
-// --- Escaliers key (passe-partout) ---
-function buildKeyEscaliers() {
-  const g = createGroup('key');
-  const data = D.key;
-
-  data.forEach(e => {
-    const basePos = toWorld(e.px, e.pz, 0);
-    // Keys extend taller based on n_continents
-    const topY = STRATE_GAP * (1 + e.nc * 0.6);
-    const topPos = new THREE.Vector3(basePos.x, topY, basePos.z);
-
-    // Thick golden line
-    const points = [basePos, topPos];
-    const lineGeo = new THREE.BufferGeometry().setFromPoints(points);
-    const line = new THREE.Line(lineGeo, new THREE.LineBasicMaterial({
-      color: 0xfbbf24,
-      transparent: true,
-      opacity: 0.4 + e.sc * 0.5
-    }));
-    g.add(line);
-
-    // Base diamond
-    const dotGeo = new THREE.OctahedronGeometry(2.5, 0);
-    const dot = new THREE.Mesh(dotGeo, new THREE.MeshBasicMaterial({
-      color: 0xfbbf24
-    }));
-    dot.position.copy(basePos);
-    dot.userData = { type: 'key', s: e.s, home: e.home, nc: e.nc, score: e.sc };
-    g.add(dot);
-    hoverables.push(dot);
-
-    // Crown at top
-    const crownGeo = new THREE.OctahedronGeometry(1.5, 0);
-    const crown = new THREE.Mesh(crownGeo, new THREE.MeshBasicMaterial({
-      color: 0xfbbf24, transparent: true, opacity: 0.6
-    }));
-    crown.position.copy(topPos);
-    g.add(crown);
-  });
-}
-
-// --- Upper strate symbols ---
-function buildUpperStrates() {
-  const g = createGroup('up');
-
-  D.up.forEach(s => {
-    const pos = toWorld(s.px, s.pz, s.st);
-    const dotGeo = new THREE.SphereGeometry(1.2, 6, 6);
-    const color = s.st <= 2 ? 0x6366f1 : s.st <= 4 ? 0x8b5cf6 : 0xa78bfa;
-    const dot = new THREE.Mesh(dotGeo, new THREE.MeshBasicMaterial({
-      color, transparent: true, opacity: 0.7
-    }));
-    dot.position.copy(pos);
-    dot.userData = { type: 'strate', s: s.s, strate: s.st };
-    g.add(dot);
-    hoverables.push(dot);
-  });
-}
-
-// --- Cross-analysis: Isolated hubs ---
-function buildIsolated() {
-  const g = createGroup('iso');
-  g.visible = false;
-
-  D.iso.forEach(c => {
-    const pos = toWorld(c.px, c.pz, 0);
-    // Red pulsing ring
-    const ringGeo = new THREE.RingGeometry(4, 6, 16);
-    const ring = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({
-      color: 0xf87171, transparent: true, opacity: 0.6, side: THREE.DoubleSide
-    }));
-    ring.rotation.x = -Math.PI / 2;
-    ring.position.copy(pos);
-    ring.position.y += 1;
-    g.add(ring);
-
-    const dot = new THREE.Mesh(
-      new THREE.SphereGeometry(2, 8, 8),
-      new THREE.MeshBasicMaterial({ color: 0xf87171 })
-    );
-    dot.position.copy(pos);
-    dot.userData = { type: 'isolated', s: c.s, domain: c.d };
-    g.add(dot);
-    hoverables.push(dot);
-  });
-}
-
-// --- Cross-analysis: Hidden bridges ---
-function buildBridges() {
-  const g = createGroup('brg');
-  g.visible = false;
-
-  D.brg.forEach(c => {
-    const pos = toWorld(c.px, c.pz, 0);
-    // Cyan beam upward
-    const beamTop = new THREE.Vector3(pos.x, STRATE_GAP * 2, pos.z);
-    const lineGeo = new THREE.BufferGeometry().setFromPoints([pos, beamTop]);
-    const line = new THREE.Line(lineGeo, new THREE.LineBasicMaterial({
-      color: 0x38bdf8, transparent: true, opacity: 0.4
-    }));
-    g.add(line);
-
-    const dot = new THREE.Mesh(
-      new THREE.SphereGeometry(2, 8, 8),
-      new THREE.MeshBasicMaterial({ color: 0x38bdf8 })
-    );
-    dot.position.copy(pos);
-    dot.userData = { type: 'bridge', s: c.s, domain: c.d };
-    g.add(dot);
-    hoverables.push(dot);
-  });
-}
-
-// --- Cross-analysis: Fertile voids P4 ---
-function buildVoids() {
-  const g = createGroup('vds');
-  g.visible = false;
-
-  D.vds.forEach(c => {
-    const pos = toWorld(c.px, c.pz, 0);
-    // Purple hollow marker
-    const ringGeo = new THREE.TorusGeometry(3, 0.5, 8, 16);
-    const ring = new THREE.Mesh(ringGeo, new THREE.MeshBasicMaterial({
-      color: 0xc084fc, transparent: true, opacity: 0.5
-    }));
-    ring.rotation.x = -Math.PI / 2;
-    ring.position.copy(pos);
-    ring.position.y += 1;
-    g.add(ring);
-
-    const dot = new THREE.Mesh(
-      new THREE.SphereGeometry(1.5, 8, 8),
-      new THREE.MeshBasicMaterial({ color: 0xc084fc, transparent: true, opacity: 0.7 })
-    );
-    dot.position.copy(pos);
-    dot.userData = { type: 'void', s: c.s, domain: c.d };
-    g.add(dot);
-    hoverables.push(dot);
-  });
-}
-
-// --- Continent centroids ---
+// ═══════════════════════════════════════════════
+// BUILD: CENTROIDS
+// ═══════════════════════════════════════════════
 function buildCentroids() {
-  Object.entries(D.centroids).forEach(([name, c]) => {
-    const pos = toWorld(c.px, c.pz, 0);
-    // Label sprite
-    const canvas2 = document.createElement('canvas');
-    canvas2.width = 128; canvas2.height = 32;
-    const ctx = canvas2.getContext('2d');
-    ctx.font = '14px JetBrains Mono';
-    ctx.fillStyle = '#' + (CONTINENT_COLORS[name] || 0x888888).toString(16).padStart(6, '0');
-    ctx.textAlign = 'center';
-    ctx.fillText(name.toUpperCase(), 64, 22);
+  const g = mkLayer('centroids');
+  const sGeo = new THREE.SphereGeometry(4, 16, 16);
 
-    const tex = new THREE.CanvasTexture(canvas2);
-    const spriteMat = new THREE.SpriteMaterial({ map: tex, transparent: true, opacity: 0.6 });
-    const sprite = new THREE.Sprite(spriteMat);
-    sprite.position.set(pos.x, -8, pos.z);
-    sprite.scale.set(40, 10, 1);
-    scene.add(sprite);
-  });
+  for (const [name, [px, pz]] of Object.entries(D.c)) {
+    const col = CC[name] || 0x888888;
+    const pos = tw(px, pz);
+    pos.y = 2;
+
+    // Sphere
+    const mat = new THREE.MeshPhongMaterial({ color: col, emissive: col, emissiveIntensity: 0.3 });
+    const mesh = new THREE.Mesh(sGeo, mat);
+    mesh.position.copy(pos);
+    g.add(mesh);
+
+    // Glow ring
+    const rGeo = new THREE.RingGeometry(6, 10, 32);
+    const rMat = new THREE.MeshBasicMaterial({ color: col, transparent: true, opacity: 0.25, side: THREE.DoubleSide, depthWrite: false });
+    const ring = new THREE.Mesh(rGeo, rMat);
+    ring.rotation.x = -Math.PI / 2;
+    ring.position.copy(pos);
+    ring.position.y = 0.5;
+    g.add(ring);
+
+    // Label
+    const lbl = mkLbl(CN[name] || name, '#' + col.toString(16).padStart(6, '0'), 18);
+    lbl.position.copy(pos);
+    lbl.position.y = 14;
+    g.add(lbl);
+
+    mesh.userData = { t: 'centroid', name: CN[name], cont: name };
+    hov.push(mesh);
+  }
 }
 
-// ═══════════════════════════════════════
-// BUILD ALL
-// ═══════════════════════════════════════
-buildPlanes();
-buildGeoEscaliers();
-buildKeyEscaliers();
-buildUpperStrates();
-buildIsolated();
-buildBridges();
-buildVoids();
-buildCentroids();
+// ═══════════════════════════════════════════════
+// BUILD: GEO ESCALIERS (vertical green lines)
+// ═══════════════════════════════════════════════
+function buildGeo() {
+  const g = mkLayer('geo');
+  const sGeo = new THREE.SphereGeometry(1.5, 8, 8);
+  const sMat = new THREE.MeshPhongMaterial({ color: 0x4ade80, emissive: 0x4ade80, emissiveIntensity: 0.4 });
 
-// ═══════════════════════════════════════
-// ORBIT CONTROLS (manual)
-// ═══════════════════════════════════════
-let isDragging = false;
-let prevMouse = { x: 0, y: 0 };
-let spherical = { theta: Math.PI / 4, phi: Math.PI / 4, radius: 600 };
-const target = new THREE.Vector3(0, STRATE_GAP * 2.5, 0);
+  for (const e of D.g) {
+    const base = tw(e.px, e.pz);
+    const top = base.clone();
+    top.y = e.sc * GAP;
 
-function updateCamera() {
-  const r = spherical.radius;
-  const t = spherical.theta;
-  const p = Math.max(0.1, Math.min(Math.PI - 0.1, spherical.phi));
-  spherical.phi = p;
+    // Vertical line
+    const lGeo = new THREE.BufferGeometry().setFromPoints([base, top]);
+    const lMat = new THREE.LineBasicMaterial({ color: 0x4ade80, transparent: true, opacity: 0.5 });
+    g.add(new THREE.Line(lGeo, lMat));
 
-  camera.position.set(
-    target.x + r * Math.sin(p) * Math.cos(t),
-    target.y + r * Math.cos(p),
-    target.z + r * Math.sin(p) * Math.sin(t)
-  );
-  camera.lookAt(target);
+    // Top sphere
+    const dot = new THREE.Mesh(sGeo, sMat);
+    dot.position.copy(top);
+    g.add(dot);
+
+    dot.userData = { t: 'geo', s: e.s, f: e.f, home: e.home, alien: e.alien, sc: e.sc };
+    hov.push(dot);
+  }
 }
-updateCamera();
 
-canvas.addEventListener('mousedown', e => {
-  isDragging = true;
-  prevMouse = { x: e.clientX, y: e.clientY };
-});
+// ═══════════════════════════════════════════════
+// BUILD: KEY ESCALIERS (vertical gold lines)
+// ═══════════════════════════════════════════════
+function buildKey() {
+  const g = mkLayer('key');
+  const sGeo = new THREE.SphereGeometry(2, 8, 8);
+  const sMat = new THREE.MeshPhongMaterial({ color: 0xfbbf24, emissive: 0xfbbf24, emissiveIntensity: 0.4 });
 
-canvas.addEventListener('mousemove', e => {
-  mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(e.clientY / window.innerHeight) * 2 + 1;
+  for (const e of D.k) {
+    const base = tw(e.px, e.pz);
+    const top = base.clone();
+    top.y = e.sc * GAP;
 
-  if (isDragging) {
-    const dx = e.clientX - prevMouse.x;
-    const dy = e.clientY - prevMouse.y;
-    spherical.theta -= dx * 0.005;
-    spherical.phi -= dy * 0.005;
-    updateCamera();
-    prevMouse = { x: e.clientX, y: e.clientY };
+    const lGeo = new THREE.BufferGeometry().setFromPoints([base, top]);
+    const lMat = new THREE.LineBasicMaterial({ color: 0xfbbf24, transparent: true, opacity: 0.6 });
+    g.add(new THREE.Line(lGeo, lMat));
+
+    const dot = new THREE.Mesh(sGeo, sMat);
+    dot.position.copy(top);
+    g.add(dot);
+
+    // Label for high-connectivity keys
+    if (e.nc >= 5) {
+      const lbl = mkLbl(e.s, '#fbbf24', 13);
+      lbl.position.copy(top);
+      lbl.position.y += 6;
+      g.add(lbl);
+    }
+
+    dot.userData = { t: 'key', s: e.s, f: e.f, home: e.home, nc: e.nc, conts: e.conts, sc: e.sc };
+    hov.push(dot);
   }
-});
+}
 
-canvas.addEventListener('mouseup', () => isDragging = false);
-canvas.addEventListener('mouseleave', () => isDragging = false);
+// ═══════════════════════════════════════════════
+// BUILD: UPPER STRATES (S1-S6 symbols)
+// ═══════════════════════════════════════════════
+function buildUpper() {
+  const g = mkLayer('upper');
+  const sGeo = new THREE.SphereGeometry(1.8, 8, 8);
 
-canvas.addEventListener('wheel', e => {
-  spherical.radius = Math.max(100, Math.min(1500, spherical.radius + e.deltaY * 0.5));
-  updateCamera();
-  e.preventDefault();
-}, { passive: false });
+  for (const u of D.u) {
+    const col = u.c2 ? 0xff6b6b : 0xa78bfa;
+    const mat = new THREE.MeshPhongMaterial({ color: col, emissive: col, emissiveIntensity: 0.3 });
+    const dot = new THREE.Mesh(sGeo, mat);
+    dot.position.copy(tw(u.px, u.pz, u.st));
+    g.add(dot);
 
-// Touch controls
-let touchStart = null;
-let touchDist = 0;
-canvas.addEventListener('touchstart', e => {
-  if (e.touches.length === 1) {
-    touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-  } else if (e.touches.length === 2) {
-    touchDist = Math.hypot(
-      e.touches[0].clientX - e.touches[1].clientX,
-      e.touches[0].clientY - e.touches[1].clientY
-    );
+    dot.userData = { t: 'upper', s: u.s, f: u.f, st: u.st, dom: u.dom, c2: u.c2 };
+    hov.push(dot);
   }
-});
+}
 
-canvas.addEventListener('touchmove', e => {
-  e.preventDefault();
-  if (e.touches.length === 1 && touchStart) {
-    const dx = e.touches[0].clientX - touchStart.x;
-    const dy = e.touches[0].clientY - touchStart.y;
-    spherical.theta -= dx * 0.005;
-    spherical.phi -= dy * 0.005;
-    updateCamera();
-    touchStart = { x: e.touches[0].clientX, y: e.touches[0].clientY };
-  } else if (e.touches.length === 2) {
-    const newDist = Math.hypot(
-      e.touches[0].clientX - e.touches[1].clientX,
-      e.touches[0].clientY - e.touches[1].clientY
-    );
-    spherical.radius = Math.max(100, Math.min(1500, spherical.radius - (newDist - touchDist) * 1));
-    touchDist = newDist;
-    updateCamera();
+// ═══════════════════════════════════════════════
+// BUILD: GEO ROUTES (orange arcs at S0)
+// ═══════════════════════════════════════════════
+function buildGeoRte() {
+  const g = mkLayer('georte');
+
+  for (const e of D.g) {
+    const ac = D.c[e.alien];
+    if (!ac) continue;
+    const start = tw(e.px, e.pz);
+    const end = tw(ac[0], ac[1]);
+    const alpha = Math.min(0.7, e.sc * 0.8);
+    const arc = mkArc(start, end, 0xff6b35, alpha, false);
+    if (arc) g.add(arc);
   }
-}, { passive: false });
+}
 
-// ═══════════════════════════════════════
-// TOOLTIP & HOVER
-// ═══════════════════════════════════════
-const tooltip = document.getElementById('tooltip');
-const ttSym = document.getElementById('tt-sym');
-const ttType = document.getElementById('tt-type');
-const ttInfo = document.getElementById('tt-info');
+// ═══════════════════════════════════════════════
+// BUILD: KEY ROUTES (cyan dashed arcs at S0)
+// ═══════════════════════════════════════════════
+function buildKeyRte() {
+  const g = mkLayer('keyrte');
 
-function updateHover() {
-  raycaster.setFromCamera(mouse, camera);
-
-  let closest = null;
-  let closestDist = Infinity;
-
-  for (const obj of hoverables) {
-    if (!obj.parent || !obj.parent.visible) continue;
-    const intersects = raycaster.intersectObject(obj);
-    if (intersects.length > 0 && intersects[0].distance < closestDist) {
-      closestDist = intersects[0].distance;
-      closest = obj;
+  for (const e of D.k) {
+    for (const cont of e.conts) {
+      if (cont === e.home) continue;
+      const cc = D.c[cont];
+      if (!cc) continue;
+      const start = tw(e.px, e.pz);
+      const end = tw(cc[0], cc[1]);
+      const alpha = Math.min(0.6, 0.15 + e.nc * 0.05);
+      const arc = mkArc(start, end, 0x35d4ff, alpha, true);
+      if (arc) g.add(arc);
     }
   }
+}
 
-  if (closest && closest.userData) {
-    const d = closest.userData;
-    ttSym.textContent = d.s;
+// ═══════════════════════════════════════════════
+// HELPERS
+// ═══════════════════════════════════════════════
+function mkArc(a, b, color, opacity, dashed) {
+  const mid = new THREE.Vector3().addVectors(a, b).multiplyScalar(0.5);
+  const dist = a.distanceTo(b);
+  if (dist < 1) return null;
+  mid.y = dist * 0.22;
 
-    const typeMap = {
-      geo: '🌿 LIANE GÉOGRAPHIQUE',
-      key: '🔑 PASSE-PARTOUT',
-      strate: '◆ STRATE S' + (d.strate || ''),
-      isolated: '🏝️ CONCEPT ISOLÉ',
-      bridge: '🌉 PONT CACHÉ',
-      void: '🕳️ VIDE FERTILE P4'
-    };
-    ttType.textContent = typeMap[d.type] || d.type;
+  const curve = new THREE.QuadraticBezierCurve3(a.clone(), mid, b.clone());
+  const pts = curve.getPoints(24);
+  const geo = new THREE.BufferGeometry().setFromPoints(pts);
 
-    let info = '';
-    if (d.type === 'geo') info = `${d.home} → ${d.alien} · score ${d.score}`;
-    if (d.type === 'key') info = `${d.home} · ${d.nc} continents · score ${d.score}`;
-    if (d.type === 'strate') info = STRATE_NAMES[d.strate] || '';
-    if (d.type === 'isolated' || d.type === 'bridge' || d.type === 'void')
-      info = d.domain || '';
-    ttInfo.textContent = info;
-
-    tooltip.style.display = 'block';
-    const screen = closest.position.clone().project(camera);
-    tooltip.style.left = ((screen.x + 1) / 2 * window.innerWidth + 15) + 'px';
-    tooltip.style.top = ((-screen.y + 1) / 2 * window.innerHeight - 10) + 'px';
+  let mat;
+  if (dashed) {
+    mat = new THREE.LineDashedMaterial({
+      color, transparent: true, opacity,
+      dashSize: 4, gapSize: 3, depthWrite: false
+    });
   } else {
-    tooltip.style.display = 'none';
-  }
-}
-
-// ═══════════════════════════════════════
-// LAYER TOGGLE
-// ═══════════════════════════════════════
-function toggleLayer(name) {
-  const chk = document.getElementById('chk-' + name);
-  // Toggle (the click already toggled the checkbox if clicked on label row)
-  if (event && event.target.tagName !== 'INPUT') {
-    chk.checked = !chk.checked;
-  }
-  layerVisibility[name] = chk.checked;
-  if (layers[name]) layers[name].visible = chk.checked;
-}
-
-// Make toggleLayer global
-window.toggleLayer = toggleLayer;
-
-// ═══════════════════════════════════════
-// STRATE LABELS
-// ═══════════════════════════════════════
-function buildStrateLabels() {
-  const container = document.getElementById('strate-labels');
-  STRATE_NAMES.forEach((name, i) => {
-    const el = document.createElement('div');
-    el.className = 'strate-label';
-    el.textContent = name;
-    el.dataset.strate = i;
-    container.appendChild(el);
-  });
-}
-buildStrateLabels();
-
-// ═══════════════════════════════════════
-// CONTINENT LEGEND
-// ═══════════════════════════════════════
-function buildContinentLegend() {
-  const container = document.getElementById('continent-legend');
-  Object.entries(CONTINENT_COLORS).forEach(([name, color]) => {
-    const el = document.createElement('div');
-    el.className = 'cont-item';
-    el.innerHTML = `<span class="cont-dot" style="background:#${color.toString(16).padStart(6,'0')}"></span>${name}`;
-    container.appendChild(el);
-  });
-}
-buildContinentLegend();
-
-// ═══════════════════════════════════════
-// ANIMATION LOOP
-// ═══════════════════════════════════════
-let frame = 0;
-
-function animate() {
-  requestAnimationFrame(animate);
-  frame++;
-
-  // Subtle rotation of key escaliers (pulsing)
-  if (layers.key) {
-    layers.key.children.forEach(child => {
-      if (child.isLine) {
-        child.material.opacity = 0.3 + 0.2 * Math.sin(frame * 0.03);
-      }
+    mat = new THREE.LineBasicMaterial({
+      color, transparent: true, opacity, depthWrite: false
     });
   }
 
-  updateHover();
-  renderer.render(scene, camera);
-
-  // Update strate label highlights based on camera angle
-  const labels = document.querySelectorAll('.strate-label');
-  const camY = camera.position.y;
-  labels.forEach(l => {
-    const st = parseInt(l.dataset.strate);
-    const strateY = st * STRATE_GAP;
-    l.classList.toggle('active', Math.abs(camY - strateY) < STRATE_GAP * 2);
-  });
+  const line = new THREE.Line(geo, mat);
+  if (dashed) line.computeLineDistances();
+  return line;
 }
 
-// ═══════════════════════════════════════
-// RESIZE
-// ═══════════════════════════════════════
-window.addEventListener('resize', () => {
-  camera.aspect = window.innerWidth / window.innerHeight;
+function mkLbl(text, color, size) {
+  const cv = document.createElement('canvas');
+  const ctx = cv.getContext('2d');
+  cv.width = 256; cv.height = 64;
+  ctx.font = `bold ${size || 16}px monospace`;
+  ctx.fillStyle = color || '#fff';
+  ctx.textAlign = 'center';
+  ctx.fillText(text, 128, 42);
+  const tex = new THREE.CanvasTexture(cv);
+  const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, depthTest: false });
+  const sp = new THREE.Sprite(mat);
+  sp.scale.set(40, 10, 1);
+  return sp;
+}
+
+// ═══════════════════════════════════════════════
+// INTERACTION
+// ═══════════════════════════════════════════════
+function onMouse(e) {
+  mx = e.clientX; my = e.clientY;
+  mouse.x = (e.clientX / innerWidth) * 2 - 1;
+  mouse.y = -(e.clientY / innerHeight) * 2 + 1;
+}
+
+function onResize() {
+  camera.aspect = innerWidth / innerHeight;
   camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-});
+  renderer.setSize(innerWidth, innerHeight);
+}
 
-// ═══════════════════════════════════════
-// STATS
-// ═══════════════════════════════════════
-document.getElementById('stats').textContent =
-  `YGGDRASIL ENGINE · ${D.geo.length} lianes · ${D.key.length} clés · ${D.up.length} upper · 21,228 S0`;
+// ═══════════════════════════════════════════════
+// ANIMATE
+// ═══════════════════════════════════════════════
+function animate() {
+  requestAnimationFrame(animate);
+  controls.update();
 
-// ═══════════════════════════════════════
-// START
-// ═══════════════════════════════════════
-animate();
+  // Raycaster hover
+  raycaster.setFromCamera(mouse, camera);
+  const hits = raycaster.intersectObjects(hov);
+
+  // Find first visible hit (parent layer must be visible)
+  let hit = null;
+  for (const h of hits) {
+    let p = h.object.parent;
+    let vis = true;
+    while (p) { if (!p.visible) { vis = false; break; } p = p.parent; }
+    if (vis) { hit = h; break; }
+  }
+
+  if (hit) {
+    const d = hit.object.userData;
+    let html = '';
+
+    if (d.t === 'geo') {
+      html = `<div class="tn">🌿 ${d.s}</div>
+        <div class="tf">${d.f}</div>
+        <div class="td">Score: ${(d.sc*100).toFixed(0)}%</div>
+        <div class="tr">${d.home} → ${d.alien}</div>`;
+    } else if (d.t === 'key') {
+      html = `<div class="tn">🔑 ${d.s}</div>
+        <div class="tf">${d.f}</div>
+        <div class="td">${d.nc} continents · Score: ${(d.sc*100).toFixed(0)}%</div>
+        <div class="tr">${d.conts.join(' · ')}</div>`;
+    } else if (d.t === 'upper') {
+      html = `<div class="tn">${d.c2?'⚡':'🟣'} ${d.s}</div>
+        <div class="tf">${d.f}</div>
+        <div class="td">S${d.st} · ${d.dom}${d.c2?' · C2 conjecture':''}</div>`;
+    } else if (d.t === 'centroid') {
+      html = `<div class="tn">◉ ${d.name}</div>
+        <div class="td">Centroïde continent</div>`;
+    }
+
+    tt.innerHTML = html;
+    tt.style.display = 'block';
+    tt.style.left = (mx + 15) + 'px';
+    tt.style.top = (my - 10) + 'px';
+  } else {
+    tt.style.display = 'none';
+  }
+
+  renderer.render(scene, camera);
+}
+
+init();
 </script>
 </body>
 </html>
