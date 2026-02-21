@@ -116,3 +116,44 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - [ ] Ajuster validation: accepter P2 pour percées matures (>10K papers)
 - [ ] Pipeline v2: ajouter détection automatique du lifecycle stage
 - [ ] Intégrer MICR (moteur inverse contraintes) dans repo 3d-printer
+
+## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES
+
+### 2A. Test semi-aveugle 2015→2025 (EN COURS — lancé 21 fév 2026)
+- Geler données OpenAlex à ≤2015
+- Détecter P4 avec formules actuelles
+- Comparer aux 12 percées réelles 2016-2025
+- Verdict: PASS si recall@100 > 50% ET Mann-Whitney p < 0.05
+- Dossier: blind_test/
+
+### 2B. Timelapse adaptatif (PROCHAIN)
+- Résolution adaptative selon densité de données:
+  - 1665-1900: par décennie
+  - 1900-1950: par année
+  - 1950-2000: par mois (si données suffisantes)
+  - 2000-2025: par mois (publication_date dispo)
+- Chaque frame = spectral layout recalculé + strates existantes
+- Source: OpenAlex publication_date + concepts
+- Livrable: séquence de snapshots JSON + viz timelapse
+
+### 2C. Boîtes de mesure météorites
+- À chaque percée majeure: sauvegarder état mycelium AVANT et APRÈS
+- Mesurer le DELTA: quels nœuds bougent, quels trous se ferment, quels nouveaux s'ouvrent
+- Accumuler les boîtes: Shannon 1948, ADN 1953, transistor, CRISPR, AlphaFold...
+- Calculer la SIGNATURE MOYENNE d'impact météorite sur le mycelium
+
+### 2D. Test Gödel (TEST FINAL)
+- Gödel 1931 = première météorite. Avant lui: tout S0, plat, pas de strates.
+- UNE seule mesure possible, pas de moyenne.
+- Appliquer la signature moyenne des autres météorites → prédire l'impact attendu.
+- Comparer à l'impact RÉEL mesuré de Gödel.
+- Si ça colle → le modèle fonctionne du premier impact au dernier.
+
+### LOGIQUE DE LA CHAÎNE
+```
+2A (validation prédictive) 
+  → 2B (construire le film)
+    → 2C (mesurer chaque impact)
+      → 2D (le test ultime = Gödel)
+```
+Chaque étape nourrit la suivante. PAS de saut.
