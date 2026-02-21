@@ -345,12 +345,12 @@ body{{background:#08080d;color:#c8ccd4;font-family:'JetBrains Mono',monospace;ov
 canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
 #hud{{position:fixed;top:18px;left:22px;z-index:10;pointer-events:none}}
 #hud h1{{font-family:'Instrument Serif',serif;font-size:24px;font-weight:400;color:#e8e8f0;margin-bottom:2px}}
-#hud .sub{{font-size:9px;color:#3a3a4a;letter-spacing:2.5px;text-transform:uppercase}}
+#hud .sub{{font-size:9px;color:#5a5a6a;letter-spacing:2.5px;text-transform:uppercase}}
 #info{{position:fixed;bottom:24px;left:24px;z-index:10;pointer-events:none;max-width:520px}}
 #info .sn{{font-family:'Instrument Serif',serif;font-size:19px;color:#fff;margin-bottom:2px}}
 #info .sf{{font-size:12px;color:#8af;margin-bottom:5px}}
 #info .sd{{font-size:10.5px;color:#667;line-height:1.5}}
-#info .sl{{font-size:9px;color:#3a3a4a;margin-top:6px}}
+#info .sl{{font-size:9px;color:#5a5a6a;margin-top:6px}}
 #cont-panel{{position:fixed;top:12px;right:12px;z-index:10;pointer-events:all;
   display:flex;flex-direction:column;gap:2px;max-height:94vh;overflow-y:auto;
   scrollbar-width:thin;scrollbar-color:#222 transparent}}
@@ -362,9 +362,9 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
 .cb.act{{border-color:rgba(255,255,255,0.15)}}
 .cb.dim{{opacity:0.2}}
 .cb-icon{{font-size:11px;flex-shrink:0}}
-.cb-name{{font-size:8.5px;letter-spacing:0.5px;color:#556;transition:color 0.15s;white-space:nowrap}}
-.cb.act .cb-name,.cb:hover .cb-name{{color:#bbc}}
-.cb-count{{font-size:7px;color:#334;margin-left:auto;padding-left:6px}}
+.cb-name{{font-size:9px;letter-spacing:0.5px;color:#667;transition:color 0.15s;white-space:nowrap}}
+.cb.act .cb-name,.cb:hover .cb-name{{color:#ccd}}
+.cb-count{{font-size:7.5px;color:#445;margin-left:auto;padding-left:6px}}
 .sub-doms{{display:none;flex-direction:column;gap:0px;padding:0 0 2px 20px}}
 .sub-doms.open{{display:flex}}
 .sd-item{{display:flex;align-items:center;gap:5px;padding:1px 8px 1px 4px;border-radius:3px;cursor:pointer;
@@ -373,25 +373,33 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
 .sd-item.act{{background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);opacity:1}}
 .sd-item.dim{{opacity:0.12}}
 .sd-dot{{width:6px;height:6px;border-radius:50%;flex-shrink:0}}
-.sd-name{{font-size:7.5px;color:#445;letter-spacing:0.3px;white-space:nowrap;max-width:105px;overflow:hidden;text-overflow:ellipsis}}
-.sd-item.act .sd-name,.sd-item:hover .sd-name{{color:#88a}}
-.sd-cnt{{font-size:6.5px;color:#2a2a35;margin-left:auto;padding-left:3px}}
-#cont-reset{{font-size:8px;color:#445;letter-spacing:1.5px;text-align:center;padding:5px 0;cursor:pointer;
-  border-top:1px solid #1a1a22;margin-top:3px}}
+.sd-name{{font-size:8px;color:#556;letter-spacing:0.3px;white-space:nowrap;max-width:105px;overflow:hidden;text-overflow:ellipsis}}
+.sd-item.act .sd-name,.sd-item:hover .sd-name{{color:#99b}}
+.sd-cnt{{font-size:7px;color:#3a3a45;margin-left:auto;padding-left:3px}}
+#cont-reset{{font-size:9px;color:#556;letter-spacing:1.5px;text-align:center;padding:8px 0;cursor:pointer;
+  border-top:1px solid #1a1a22;margin-top:4px;min-height:24px}}
 #cont-reset:hover{{color:#8af}}
 #strate-legend{{position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:10;display:flex;flex-direction:column;gap:1px;pointer-events:all}}
-.si{{display:flex;align-items:center;gap:6px;padding:3px 8px;border-radius:3px;cursor:pointer;transition:all 0.2s;border:1px solid transparent}}
-.si:hover{{background:rgba(255,255,255,0.03);border-color:rgba(255,255,255,0.06)}}
-.si.act{{background:rgba(255,255,255,0.06);border-color:rgba(255,255,255,0.12)}}
-.sd2{{width:6px;height:6px;border-radius:50%;flex-shrink:0}}
-.sn2{{font-size:8px;color:#445;letter-spacing:0.5px;white-space:nowrap}}
-.si.act .sn2,.si:hover .sn2{{color:#889}}
-#controls{{position:fixed;top:70px;left:22px;z-index:10;font-size:10px;color:#555;letter-spacing:1px;pointer-events:all}}
+.si{{display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:4px;cursor:pointer;transition:all 0.15s;border:1px solid transparent;min-height:28px}}
+.si:hover{{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08)}}
+.si.act{{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.14)}}
+.sd2{{width:8px;height:8px;border-radius:50%;flex-shrink:0}}
+.sn2{{font-size:9px;color:#667;letter-spacing:0.5px;white-space:nowrap}}
+.si.act .sn2,.si:hover .sn2{{color:#aab}}
+#controls{{position:fixed;top:70px;left:22px;z-index:10;font-size:10px;color:#778;letter-spacing:1px;pointer-events:all}}
 #controls input{{vertical-align:middle;accent-color:#f97316}}
-#controls label{{cursor:pointer;margin-right:8px}}
-.ctrl-row{{margin-bottom:5px;display:flex;align-items:center;gap:2px}}
-.ctrl-sep{{height:1px;background:#1a1a22;margin:6px 0}}
-#hint{{position:fixed;bottom:20px;right:20px;z-index:10;font-size:9px;color:#222;letter-spacing:1px;text-align:right;line-height:1.9}}
+#controls label{{cursor:pointer;margin-right:10px;padding:4px 2px;min-height:24px;display:inline-flex;align-items:center;gap:4px;
+  border-radius:4px;transition:color 0.1s}}
+#controls label:hover{{color:#bbc}}
+.ctrl-row{{margin-bottom:6px;display:flex;align-items:center;gap:4px}}
+.ctrl-sep{{height:1px;background:#1a1a22;margin:8px 0}}
+#hint{{position:fixed;bottom:20px;right:20px;z-index:10;font-size:9px;color:#3a3a4a;letter-spacing:1px;text-align:right;line-height:1.9}}
+#hint kbd{{padding:2px 6px;border-radius:3px;border:1px solid #2a2a35;color:#556;font-size:8px}}
+#tooltip{{position:fixed;z-index:20;pointer-events:none;background:rgba(18,18,24,0.94);border:1px solid rgba(255,255,255,0.12);
+  border-radius:8px;padding:10px 14px;max-width:280px;opacity:0;transition:opacity 0.15s;backdrop-filter:blur(6px)}}
+#tooltip.vis{{opacity:1}}
+#tooltip .tt-title{{font-size:11px;color:#e8e8f0;font-weight:500;margin-bottom:4px;letter-spacing:0.3px}}
+#tooltip .tt-body{{font-size:9px;color:#8890a0;line-height:1.6;letter-spacing:0.2px}}
 </style>
 </head>
 <body>
@@ -408,19 +416,20 @@ canvas{{display:block;position:fixed;top:0;left:0;z-index:1}}
 </div>
 <div id="controls">
   <div class="ctrl-row">
-    <label><input type="radio" name="cube" value="vivant" checked onchange="switchCube()"> Vivant</label>
-    <label><input type="radio" name="cube" value="musee" onchange="switchCube()"> Mus\u00e9e</label>
-    <label><input type="radio" name="cube" value="fusion" onchange="switchCube()"> Fusion</label>
+    <label data-tt="vivant"><input type="radio" name="cube" value="vivant" checked onchange="switchCube()"> Vivant</label>
+    <label data-tt="vivant"><input type="radio" name="cube" value="musee" onchange="switchCube()"> Mus\u00e9e</label>
+    <label data-tt="vivant"><input type="radio" name="cube" value="fusion" onchange="switchCube()"> Fusion</label>
   </div>
   <div class="ctrl-sep"></div>
   <div class="ctrl-row">
-    <label><input type="checkbox" id="toggleEsc" onchange="toggleEsc()"> \U0001F33F Escaliers</label>
-    <label><input type="checkbox" id="toggleRte" onchange="toggleRte()"> \U0001F30F Routes</label>
+    <label data-tt="escalier"><input type="checkbox" id="toggleEsc" onchange="toggleEsc()"> \U0001F33F Escaliers</label>
+    <label data-tt="route"><input type="checkbox" id="toggleRte" onchange="toggleRte()"> \U0001F30F Routes</label>
     <label><input type="checkbox" id="toggleC2" onchange="toggleC2mode()"> C2 Conjectures</label>
   </div>
 </div>
 <div id="strate-legend"></div>
 <div id="cont-panel"></div>
+<div id="tooltip"><div class="tt-title"></div><div class="tt-body"></div></div>
 <div id="hint"><kbd>drag</kbd> rotation \u00b7 <kbd>scroll</kbd> zoom \u00b7 <kbd>clic</kbd> continent \u00b7 <kbd>espace</kbd> pause</div>
 <script>
 {ST_C1_LINE}
@@ -570,6 +579,35 @@ function updateContUI(){{
 }}
 buildContPanel();
 
+// \u2550\u2550\u2550 Strate descriptions \u2550\u2550\u2550
+const STRATE_DESC=[
+  ['S0 \u2014 Sol','Outils fondamentaux (21K+ concepts). Le sol solide, 100% C1.'],
+  ['S1 \u2014 Th\u00e9or\u00e8mes','Th\u00e9or\u00e8mes qui assemblent les outils S0.'],
+  ['S2 \u2014 Structures','Groupes, espaces, cat\u00e9gories. Architecture abstraite.'],
+  ['S3 \u2014 Conjectures','Probl\u00e8mes ouverts, fronti\u00e8re de la connaissance.'],
+  ['S4 \u2014 Principes','Axiomes et principes fondamentaux.'],
+  ['S5 \u2014 M\u00e9ta','R\u00e9flexion sur les math elles-m\u00eames.'],
+  ['S6 \u2014 Ind\u00e9cidable','Ce qui ne peut \u00eatre prouv\u00e9 ni r\u00e9fut\u00e9 (G\u00f6del).']
+];
+const EXTRA_TT={{
+  'escalier':['Escaliers spectraux','Concepts qui connectent des continents \u00e9loign\u00e9s.<br>\U0001F33F Vert = g\u00e9ographique (position alien)<br>\U0001F511 Or = passe-partout (utilis\u00e9 partout)'],
+  'route':['Routes (colonnes montantes)','C\u00e2blage entre S0 et S1.<br>Colonne verticale = mont\u00e9e du concept<br>C\u00e2ble horizontal = vers centroide continent<br>Vert/Orange = g\u00e9o | Or/Cyan = passe-partout'],
+  'vivant':['Vivant / Mus\u00e9e','VIVANT = works >= Q1 domaine (beaucoup cit\u00e9)<br>MUS\u00c9E = sous Q1 (peu cit\u00e9, existe)<br>FUSION = les deux ensemble<br>Q1 par domaine (PIB par habitant)']
+}};
+
+// \u2550\u2550\u2550 Tooltip system \u2550\u2550\u2550
+const ttEl=document.getElementById('tooltip');
+const ttTitle=ttEl.querySelector('.tt-title');
+const ttBody=ttEl.querySelector('.tt-body');
+function showTT(x,y,title,body){{
+  ttTitle.textContent=title;
+  ttBody.innerHTML=body;
+  ttEl.style.left=Math.min(x+16,window.innerWidth-300)+'px';
+  ttEl.style.top=Math.max(10,y-10)+'px';
+  ttEl.classList.add('vis');
+}}
+function hideTT(){{ttEl.classList.remove('vis')}}
+
 // \u2550\u2550\u2550 Strate legend (left) \u2550\u2550\u2550
 const strateLeg=document.getElementById('strate-legend');
 function buildStrateLegend(){{
@@ -578,10 +616,24 @@ function buildStrateLegend(){{
     const el=document.createElement('div');el.className='si';
     el.innerHTML=`<div class="sd2" style="background:rgb(${{s.c}})"></div><div class="sn2">${{s.sh}} <span style="color:#334">${{s.sy.length}}</span></div>`;
     el.addEventListener('click',()=>{{activeS=activeS===i?-1:i;strateLeg.querySelectorAll('.si').forEach((el2,j)=>el2.classList.toggle('act',j===activeS))}});
+    el.addEventListener('mouseenter',e=>{{
+      const d=STRATE_DESC[i]||['S'+i,''];
+      showTT(e.clientX,e.clientY,d[0],d[1]);
+    }});
+    el.addEventListener('mouseleave',()=>hideTT());
     strateLeg.appendChild(el);
   }});
 }}
 buildStrateLegend();
+
+// \u2550\u2550\u2550 Tooltips on controls \u2550\u2550\u2550
+document.querySelectorAll('[data-tt]').forEach(el=>{{
+  el.addEventListener('mouseenter',e=>{{
+    const k=el.dataset.tt;const d=EXTRA_TT[k];
+    if(d)showTT(e.clientX,e.clientY,d[0],d[1]);
+  }});
+  el.addEventListener('mouseleave',()=>hideTT());
+}});
 
 // \u2550\u2550\u2550 Cube edges \u2550\u2550\u2550
 const CE=[[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
@@ -741,6 +793,17 @@ function frame(){{
     ctx.beginPath();ctx.moveTo(ns.px-20,ns.py);ctx.lineTo(ns.px+20,ns.py);ctx.stroke();
     ctx.beginPath();ctx.moveTo(ns.px,ns.py-20);ctx.lineTo(ns.px,ns.py+20);ctx.stroke();
   }}
+
+  // \u2550\u2550\u2550 Central axis line (white, visible) \u2550\u2550\u2550
+  const axBot=project(0,-BOX.h/2,0), axTop=project(0,BOX.h/2,0);
+  ctx.beginPath();ctx.moveTo(axBot.x,axBot.y);ctx.lineTo(axTop.x,axTop.y);
+  ctx.strokeStyle='rgba(255,255,255,0.12)';ctx.lineWidth=1.5;ctx.stroke();
+  // Tick marks per strate
+  currentST.forEach(st=>{{
+    const py=project(0,st.yr*BOX.h,0);
+    ctx.beginPath();ctx.moveTo(py.x-6,py.y);ctx.lineTo(py.x+6,py.y);
+    ctx.strokeStyle='rgba(255,255,255,0.18)';ctx.lineWidth=1;ctx.stroke();
+  }});
 
   // Axis labels
   const bot=project(0,-BOX.h/2-0.35,0),top2=project(0,BOX.h/2+0.35,0);
