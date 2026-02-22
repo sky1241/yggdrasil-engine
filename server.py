@@ -97,6 +97,12 @@ def continents():
     return jsonify(result)
 
 
+@app.route("/<path:filename>")
+def serve_viz(filename):
+    """Serve any file from the viz/ directory."""
+    return send_from_directory("viz", filename)
+
+
 @app.route("/api/hole/search")
 def hole_search():
     """Search for structural holes between two domains via OpenAlex."""

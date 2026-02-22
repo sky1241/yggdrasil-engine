@@ -45,13 +45,22 @@ canvas{display:block;position:fixed;top:0;left:0;z-index:1}
 #cont-reset{font-size:9px;color:#556;letter-spacing:1.5px;text-align:center;padding:8px 0;cursor:pointer;
   border-top:1px solid #1a1a22;margin-top:4px;min-height:24px}
 #cont-reset:hover{color:#8af}
-#strate-legend{position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:10;display:flex;flex-direction:column;gap:1px;pointer-events:all}
-.si{display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:4px;cursor:pointer;transition:all 0.15s;border:1px solid transparent;min-height:28px}
+#strate-legend{position:fixed;top:50%;left:12px;transform:translateY(-50%);z-index:10;display:flex;flex-direction:column;gap:0;
+  pointer-events:all;max-height:92vh;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#222 transparent;padding-right:4px}
+#strate-legend::-webkit-scrollbar{width:3px}
+#strate-legend::-webkit-scrollbar-thumb{background:#333;border-radius:2px}
+.si{display:flex;align-items:flex-start;gap:8px;padding:8px 10px;border-radius:4px;cursor:pointer;transition:all 0.15s;border:1px solid transparent}
 .si:hover{background:rgba(255,255,255,0.04);border-color:rgba(255,255,255,0.08)}
 .si.act{background:rgba(255,255,255,0.07);border-color:rgba(255,255,255,0.14)}
-.sd2{width:8px;height:8px;border-radius:50%;flex-shrink:0}
-.sn2{font-size:9px;color:#667;letter-spacing:0.5px;white-space:nowrap}
-.si.act .sn2,.si:hover .sn2{color:#aab}
+.sd2{width:8px;height:8px;border-radius:50%;flex-shrink:0;margin-top:3px}
+.sn2{font-size:9.5px;color:#889;letter-spacing:0.5px;white-space:nowrap;font-weight:500}
+.si.act .sn2,.si:hover .sn2{color:#ccd}
+.si-wrap{display:flex;flex-direction:column;gap:3px}
+.si-tag{font-size:7.5px;color:#4a4a5a;line-height:1.55;max-width:285px;white-space:normal;letter-spacing:0.15px}
+.si:hover .si-tag{color:#778}
+.si-ghost{opacity:0.35;border:1px dashed rgba(255,255,255,0.08)}
+.si-ghost:hover{opacity:0.6;border-color:rgba(255,255,255,0.15)}
+.si-sep{height:1px;background:linear-gradient(90deg,transparent,#1a1a28,transparent);margin:6px 0}
 #controls{position:fixed;top:70px;left:22px;z-index:10;font-size:10px;color:#778;letter-spacing:1px;pointer-events:all}
 #controls input{vertical-align:middle;accent-color:#f97316}
 #controls label{cursor:pointer;margin-right:10px;padding:4px 2px;min-height:24px;display:inline-flex;align-items:center;gap:4px;
@@ -247,13 +256,17 @@ buildContPanel();
 
 // ═══ Strate descriptions ═══
 const STRATE_DESC=[
-  ['S0 — Sol','Outils fondamentaux (21K+ concepts). Le sol solide, 100% C1.'],
-  ['S1 — Théorèmes','Théorèmes qui assemblent les outils S0.'],
-  ['S2 — Structures','Groupes, espaces, catégories. Architecture abstraite.'],
-  ['S3 — Conjectures','Problèmes ouverts, frontière de la connaissance.'],
-  ['S4 — Principes','Axiomes et principes fondamentaux.'],
-  ['S5 — Méta','Réflexion sur les math elles-mêmes.'],
-  ['S6 — Indécidable','Ce qui ne peut être prouvé ni réfuté (Gödel).']
+  ['Δ⁰₀ SOL','Tout ce qu\'on peut CALCULER et VÉRIFIER en temps fini. Tu poses la question, tu as la réponse. 2+2=4. Fini. Prouvé. C\'est le roc.'],
+  ['Σ⁰₁ HALTING','Tu peux dire OUI mais jamais NON. Le programme tourne... il s\'arrête ? Peut-être. Tu sais pas quand. Si ça s\'arrête t\'as ta réponse. Si ça s\'arrête pas t\'attends pour toujours.'],
+  ['Σ⁰₂ LIMITE','Tu devines, tu corriges, tu re-devines, tu re-corriges. Tu CONVERGES vers la réponse mais t\'es jamais sûr d\'y être. La limite. Tu t\'approches sans jamais toucher.'],
+  ['Σ⁰ₙ MOTIF','Chaque étage rajoute une alternance. Oui-non-oui-non... Plus tu montes, plus c\'est complexe.'],
+  ['AH CIEL','L\'union de TOUS les nuages en dessous. Tout le ciel arithmétique. Tout ce qu\'on peut exprimer avec des nombres. Le plafond de Tarski.'],
+  ['HYP ω₁ᶜᵏ','Le transfini. On dépasse les nombres. Kleene, Church-Kleene. Des ordinaux qui vont au-delà de l\'infini dénombrable.'],
+  ['∞ PLAFOND','Le MUR. Gödel, Church, Turing. Prouvé en 1936 : il existe des questions qu\'AUCUNE machine ne pourra jamais résoudre. Point final. BB(n). Le Busy Beaver. L\'infranchissable.']
+];
+const GHOST_PLANES=[
+  {yr:-0.58, c:[0,190,170], op:0.07, name:'MÉTIER', tag:'Les professions. Qui utilise quoi, et pourquoi.'},
+  {yr:-0.72, c:[160,170,195], op:0.05, name:'GLYPHES', tag:'L\'alphabet mathématique. Les lettres avant les mots.'}
 ];
 const EXTRA_TT={
   'escalier':['Escaliers spectraux','Concepts qui connectent des continents éloignés.<br>🌿 Vert = géographique (position alien)<br>🔑 Or = passe-partout (utilisé partout)'],
@@ -280,12 +293,23 @@ function buildStrateLegend(){
   strateLeg.innerHTML='';
   currentST.forEach((s,i)=>{
     const el=document.createElement('div');el.className='si';
-    el.innerHTML=`<div class="sd2" style="background:rgb(${s.c})"></div><div class="sn2">${s.sh} <span style="color:#334">${s.sy.length}</span></div>`;
+    const d=STRATE_DESC[i]||['S'+i,''];
+    el.innerHTML=`<div class="sd2" style="background:rgb(${s.c})"></div><div class="si-wrap"><div class="sn2">${s.sh} <span style="color:#445">${s.sy.length.toLocaleString()}</span></div><div class="si-tag">${d[1]}</div></div>`;
     el.addEventListener('click',()=>{activeS=activeS===i?-1:i;strateLeg.querySelectorAll('.si').forEach((el2,j)=>el2.classList.toggle('act',j===activeS))});
     el.addEventListener('mouseenter',e=>{
       const d=STRATE_DESC[i]||['S'+i,''];
       showTT(e.clientX,e.clientY,d[0],d[1]);
     });
+    el.addEventListener('mouseleave',()=>hideTT());
+    strateLeg.appendChild(el);
+  });
+  // ── Séparateur ──
+  const sep=document.createElement('div');sep.className='si-sep';strateLeg.appendChild(sep);
+  // ── Ghost strates (vides, sous le SOL) ──
+  GHOST_PLANES.forEach(gs=>{
+    const el=document.createElement('div');el.className='si si-ghost';
+    el.innerHTML=`<div class="sd2" style="background:rgb(${gs.c});border:1px dashed rgba(255,255,255,0.3)"></div><div class="si-wrap"><div class="sn2" style="color:#445">${gs.name} <span style="color:#223">vide</span></div><div class="si-tag">${gs.tag}</div></div>`;
+    el.addEventListener('mouseenter',e=>showTT(e.clientX,e.clientY,gs.name,gs.tag+'<br><br><i>Étage vide — pas encore rempli.</i>'));
     el.addEventListener('mouseleave',()=>hideTT());
     strateLeg.appendChild(el);
   });
@@ -365,6 +389,18 @@ function frame(){
       const isEsc=showEsc&&(ESC_GEO.has(sym[0])||ESC_KEY.has(sym[0]));
       items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:domCol,sop:finalOp,isCentre,isC2:false,isEsc});
     });
+  });
+
+  // ═══ Ghost planes (empty, below SOL) ═══
+  GHOST_PLANES.forEach(gs=>{
+    const y=gs.yr*BOX.h;
+    const sh=SHRINK,hw=BOX.w*sh/2,hd=BOX.d*sh/2;
+    const qv=[[-hw,y,-hd],[hw,y,-hd],[hw,y,hd],[-hw,y,hd]];
+    const pq=qv.map(v=>project(v[0],v[1],v[2]));
+    const avgZ=pq.reduce((a,p)=>a+p.z,0)/4;
+    let planeOp=gs.op;
+    if(activeS>=0)planeOp*=0.1;
+    items.push({type:'gp',z:avgZ-0.01,pts:pq,col:gs.c,op:planeOp,name:gs.name});
   });
 
   // C2 overlay
@@ -493,6 +529,21 @@ function frame(){
 
 
   items.forEach(it=>{
+    if(it.type==='gp'){
+      ctx.save();
+      ctx.setLineDash([8,6]);
+      ctx.beginPath();ctx.moveTo(it.pts[0].x,it.pts[0].y);
+      for(let i=1;i<4;i++)ctx.lineTo(it.pts[i].x,it.pts[i].y);
+      ctx.closePath();ctx.fillStyle=rgba(it.col,it.op*0.4);ctx.fill();
+      ctx.strokeStyle=rgba(it.col,it.op*3);ctx.lineWidth=1;ctx.stroke();
+      ctx.setLineDash([]);
+      const cx=(it.pts[0].x+it.pts[2].x)/2,cy=(it.pts[0].y+it.pts[2].y)/2;
+      ctx.font='500 10px "JetBrains Mono",monospace';ctx.textAlign='center';ctx.textBaseline='middle';
+      ctx.fillStyle=rgba(it.col,it.op*5);ctx.fillText(it.name,cx,cy-6);
+      ctx.font='400 7px "JetBrains Mono",monospace';
+      ctx.fillStyle=rgba(it.col,it.op*3);ctx.fillText('· vide ·',cx,cy+6);
+      ctx.restore();
+    }
     if(it.type==='p'){
       ctx.beginPath();ctx.moveTo(it.pts[0].x,it.pts[0].y);
       for(let i=1;i<4;i++)ctx.lineTo(it.pts[i].x,it.pts[i].y);
@@ -593,6 +644,12 @@ function frame(){
   ctx.font='500 8px "JetBrains Mono",monospace';ctx.textAlign='center';
   ctx.fillStyle='rgba(74,222,128,0.25)';ctx.fillText('SOL',bot.x,bot.y);
   ctx.fillStyle='rgba(239,68,68,0.25)';ctx.fillText('PLAFOND',top2.x,top2.y);
+  // Ghost plane axis labels
+  GHOST_PLANES.forEach(gs=>{
+    const gp=project(0,gs.yr*BOX.h,0);
+    ctx.beginPath();ctx.moveTo(gp.x-5,gp.y);ctx.lineTo(gp.x+5,gp.y);
+    ctx.strokeStyle=`rgba(${gs.c[0]},${gs.c[1]},${gs.c[2]},0.15)`;ctx.lineWidth=1;ctx.stroke();
+  });
 }
 
 frame();
