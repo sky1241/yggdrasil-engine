@@ -1,5 +1,5 @@
 {
-  "idea": "Yggdrasil Engine — Cartographie de 2022 symboles mathématiques × 250M papers OpenAlex",
+  "idea": "Yggdrasil Engine — Cartographie de 2022 symboles mathématiques x 250M papers OpenAlex",
   "domain": "science",
   "family": "baobab",
   "family_name": "Baobab",
@@ -269,13 +269,13 @@
       "level": "F",
       "depth": 4,
       "label": "Feuille — Corriger le sous-titre (remplacer 8257 par le vrai chiffre)",
-      "status": "wip",
+      "status": "todo",
       "entry": "viz/yggdrasil_rain_v2.html:38",
-      "confidence": 40,
+      "confidence": 15,
       "depends": [
         "T1"
       ],
-      "desc": "S-2 GLYPHES intégré : 1228 glyphes Unicode en dessous du SOL. Toggle dans La Pluie v3."
+      "desc": "ATTENTE PAPERS. S-2 et S-1 seront positionnés par le mycelium (co-occurrences locales), pas manuellement."
     },
     {
       "id": "C1",
@@ -368,7 +368,7 @@
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "Phase 4 : Branches — co-occurrences + S-1 MÉTIER (professions) à remplir",
+  "next_step": "ATTENTE: snapshot 500GB OpenAlex en cours de DL. Quand prêt: mycelium sur glyphes (S-2) + métiers (S-1) + rembobinage timeline.",
   "rules": {
     "auto_update": true,
     "description": "Ce fichier est la source de vérité du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",
