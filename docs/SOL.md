@@ -97,6 +97,12 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 5. Si un test échoue → noter tel quel. Pas de triche.
 6. SOL.md = source de vérité entre sessions Claude.
 
+### FIX concept_id (session 4, 22 fév 2026)
+- `concept_id` injecté dans les 21,524 symboles de `strates_export_v2.json` (100% match)
+- Sources: `openalex_map.json` (794 originaux) + `mined_concepts.json` (20,730 minés)
+- Index inverse: `data/concept_index.json` (20,932 entries, concept_id → symbol info)
+- Script: `engine/inject_concept_ids.py`
+
 ## FICHIERS CLÉS
 | Fichier | Rôle |
 |---------|------|
@@ -110,6 +116,7 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 | engine/gen_viz_v3.py | Génère La Pluie v3 HTML |
 | data/strates_export_v2.json | Export complet 7 strates + cube/wc |
 | data/domain_cooccurrence_matrix.json | Matrice co-occurrence 85 domaines |
+| data/concept_index.json | Index inverse concept_id → symbole (20,932) |
 | data/escaliers_unified.json | 200 geo + 69 key escaliers |
 | viz/yggdrasil_rain_v3.html | La Pluie v3 (vivant/musée/fusion/escaliers) |
 

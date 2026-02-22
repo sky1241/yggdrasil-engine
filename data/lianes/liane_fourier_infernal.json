@@ -1,11 +1,11 @@
 {
   "source": "LIANE_FOURIER_x_INFERNAL",
   "algo": "Welch PSD (from Ichimoku spectral engine)",
-  "generated": "2026-02-22T01:33:47.535096",
+  "generated": "2026-02-22T13:40:58.228953",
   "stats": {
     "n_days": 36,
-    "mean_drinks_per_day": 7.1,
-    "std_drinks_per_day": 3.3,
+    "mean_drinks_per_day": 7.2,
+    "std_drinks_per_day": 3.2,
     "max_day": 13,
     "min_day": 0,
     "dry_days": 3,
@@ -61,8 +61,8 @@
     {
       "date": "2026-02-24",
       "phase": 3,
-      "risk_score": 0.72,
-      "predicted_drinks": 6.3,
+      "risk_score": 0.76,
+      "predicted_drinks": 6.7,
       "warning": false
     },
     {
@@ -89,8 +89,8 @@
     {
       "date": "2026-02-28",
       "phase": 3,
-      "risk_score": 0.72,
-      "predicted_drinks": 6.3,
+      "risk_score": 0.76,
+      "predicted_drinks": 6.7,
       "warning": false
     }
   ],
@@ -130,6 +130,6 @@
     "2026-02-18": 13,
     "2026-02-19": 7,
     "2026-02-20": 11,
-    "2026-02-21": 3
+    "2026-02-21": 6
   }
 }
