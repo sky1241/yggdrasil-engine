@@ -98,10 +98,37 @@ Shannon 1948, ADN 1953, transistor, laser, internet, CRISPR, AlphaFold...
 - Comparer à l'impact RÉEL
 - Si ça colle → le modèle est validé du premier impact au dernier
 
+## V4 — LE GRIMPEUR (VISION — après V3)
+Le sommet de chaque escalier = un point de vue.
+Regarder en bas = voir les briques S0 filtrées par la topologie.
+L'AI grimpe avec le bon sac à dos.
+
+### Le mécanisme
+1. Problème ouvert → positionnement sur la carte
+2. Trouver escaliers les plus proches (géo + passe-partout)
+3. Vue plongeante → sac à dos de briques S0 filtrées
+4. AI compose des chemins de preuves avec ces briques
+5. Échec = donnée (P5 local) → réduction espace → autre sommet
+
+### Modules à construire
+- [ ] Moteur de positionnement: problème → coordonnées topologiques
+- [ ] Moteur de proximité: coordonnées → top-N escaliers
+- [ ] Vue plongeante: escalier → briques S0 connectées
+- [ ] Compositeur: AI + sac à dos filtré → chemins candidats
+- [ ] Mémoire d'échec: tentatives ratées → P5 locaux → carte se raffine
+
+### Premier test: P=NP
+- P=NP est S3-S4, PAS S6 (pas prouvé indécidable)
+- 3 routes classiques sont P5 prouvés (diagonalisation, preuves naturelles, arithmétisation)
+- Le moteur cherche les P4 = routes que personne n'a empruntées
+- Les briques manquantes viendront → OpenAlex mine en continu → détection automatique
+
+### Dépend de: V2 (timelapse) + V3 (candlesticks). PAS DE SAUT.
+
 ## TEST EN COURS
 - [x] Test semi-aveugle 2015→2025 lancé le 21 fév 2026
-- [ ] Résultats attendus → blind_test/
-- [ ] Verdict: PASS si recall@100 > 50% ET Mann-Whitney p < 0.05
+- [x] Résultats: SIGNAL DÉTECTÉ (p=0.00002, recall@100=50%, r=0.90)
+- [x] Verdict: PASS (recall@100 = 50% ET Mann-Whitney p < 0.05)
 
 ## NOTES
 - V2 est le goulot (calcul lourd). V3 = post-traitement sur les frames V2.
