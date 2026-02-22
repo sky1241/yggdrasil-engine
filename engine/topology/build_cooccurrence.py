@@ -30,7 +30,7 @@ from scipy import sparse
 
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 WORKS_DIR = os.environ.get("YGG_WORKS_DIR", os.path.join("D:", os.sep, "openalex", "data", "works"))
-STRATES_PATH = os.environ.get("YGG_STRATES", os.path.join("data", "strates_export_v2.json"))
+STRATES_PATH = os.environ.get("YGG_STRATES", os.path.join("data", "core", "strates_export_v2.json"))
 OPENALEX_MAP_PATH = os.environ.get("YGG_OA_MAP", os.path.join("data", "openalex_map.json"))
 OUTPUT_DIR = os.environ.get("YGG_OUTPUT", os.path.join("data", "pluie"))
 CHECKPOINT_PATH = os.path.join(OUTPUT_DIR, "_checkpoint.json")

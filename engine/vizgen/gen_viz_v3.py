@@ -13,7 +13,7 @@ Changes vs v3-old:
 import json, colorsys, re, os
 from collections import Counter
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 V2_HTML = os.path.join(ROOT, 'viz', 'yggdrasil_rain_v2.html')
 V3_HTML = os.path.join(ROOT, 'viz', 'yggdrasil_rain_v3.html')
 
@@ -44,7 +44,7 @@ print(f"  C1: {total_c1}, C2: {total_c2}")
 # 2. Load strates_export_v2.json for cube info
 # ══════════════════════════════════════════════════════════
 print("[2] Loading cube info from strates_export_v2.json...")
-with open(os.path.join(ROOT, 'data', 'strates_export_v2.json'), encoding='utf-8') as f:
+with open(os.path.join(ROOT, 'data', 'core', 'strates_export_v2.json'), encoding='utf-8') as f:
     stdata = json.load(f)
 
 # Build lookup: (symbol_s, domain) → {cube, wc}
@@ -69,7 +69,7 @@ print(f"  Cube lookup: {len(cube_lookup)} entries")
 # 3. Load escaliers spectraux
 # ══════════════════════════════════════════════════════════
 print("[3] Loading escaliers spectraux...")
-esc_path = os.path.join(ROOT, 'data', 'escaliers_unified.json')
+esc_path = os.path.join(ROOT, 'data', 'topology', 'escaliers_unified.json')
 esc_geo_set = set()
 esc_key_set = set()
 esc_rte_geo = []

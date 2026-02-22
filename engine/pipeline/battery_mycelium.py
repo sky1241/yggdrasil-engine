@@ -35,11 +35,11 @@ import numpy as np
 # IMPORT MYCELIUM
 # ════════════════════════════════════════════════════════════
 SCRIPT_DIR = Path(__file__).parent
-DATA_DIR = SCRIPT_DIR / "data" if (SCRIPT_DIR / "data").exists() else SCRIPT_DIR.parent / "data"
+DATA_DIR = SCRIPT_DIR.parent.parent / "data"
 
 myc_path = SCRIPT_DIR / "mycelium_full.py"
 if not myc_path.exists():
-    myc_path = SCRIPT_DIR.parent / "engine" / "mycelium_full.py"
+    myc_path = SCRIPT_DIR / "mycelium_full.py"
 if not myc_path.exists():
     for p in [SCRIPT_DIR, SCRIPT_DIR.parent]:
         candidate = p / "mycelium_full.py"

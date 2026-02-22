@@ -19,7 +19,7 @@ from scipy.sparse import csr_matrix, diags
 from scipy.sparse.linalg import eigsh, lobpcg
 from scipy.sparse.csgraph import connected_components
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 
 # ============================================================
 # CONFIG
@@ -37,7 +37,7 @@ t0 = time.time()
 # STEP 1: Load data
 # ============================================================
 print("\n[1/6] Loading data...")
-with open(ROOT / "data" / "strates_export_v2.json", encoding="utf-8") as f:
+with open(ROOT / "data" / "core" / "strates_export_v2.json", encoding="utf-8") as f:
     strates = json.load(f)
 
 s0 = strates["strates"][0]["symbols"]
@@ -47,7 +47,7 @@ N_ORIG = len(originals)
 N_MINED = len(mined)
 print(f"  S0: {len(s0)} total, {N_ORIG} originaux, {N_MINED} mines")
 
-with open(ROOT / "data" / "mined_concepts.json", encoding="utf-8") as f:
+with open(ROOT / "data" / "core" / "mined_concepts.json", encoding="utf-8") as f:
     concept_lookup = {c["concept_id"]: c for c in json.load(f)["concepts"]}
 
 # ============================================================
@@ -181,7 +181,7 @@ for local_i, (global_i, sym) in enumerate(mined):
     sym["pz"] = round(float(pz[local_i]), 4)
     sym["spectral"] = True
 
-output_path = ROOT / "data" / "strates_export_v2.json"
+output_path = ROOT / "data" / "core" / "strates_export_v2.json"
 with open(output_path, "w", encoding="utf-8") as f:
     json.dump(strates, f, ensure_ascii=False, indent=1)
 

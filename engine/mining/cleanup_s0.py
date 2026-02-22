@@ -16,7 +16,7 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 
 print("=" * 60)
 print("🧹 CLEANUP S0 — Yggdrasil Engine")
@@ -25,7 +25,7 @@ print("=" * 60)
 # ══════════════════════════════════════════════════════════
 # LOAD
 # ══════════════════════════════════════════════════════════
-with open(ROOT / 'data' / 'strates_export_v2.json', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', encoding='utf-8') as f:
     data = json.load(f)
 
 strates = data['strates']
@@ -262,7 +262,7 @@ for st in strates:
     n_c2 = sum(1 for s in st['symbols'] if s.get('class') == 'C2')
     print(f"    S{st['id']}: {len(st['symbols'])} symboles ({n_c1} C1, {n_c2} C2)")
 
-with open(ROOT / 'data' / 'strates_export_v2.json', 'w', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=1)
 
 print(f"\n✅ CLEANUP TERMINÉ")

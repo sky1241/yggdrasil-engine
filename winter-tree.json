@@ -27,7 +27,7 @@
       "JSON": 5
     },
     "biggest_file": {
-      "path": "engine/verify_32tests.py",
+      "path": "engine/pipeline/verify_32tests.py",
       "lines": 519,
       "lang": "Python"
     }
@@ -39,7 +39,7 @@
       "depth": -5,
       "label": "Post 1944 — Hiérarchie Arithmétique (7 strates S0→S6)",
       "status": "done",
-      "entry": "engine/symbols.py:22:STRATE_NAMES",
+      "entry": "engine/core/symbols.py:22:STRATE_NAMES",
       "confidence": 100,
       "depends": [],
       "desc": "Loi fondamentale : Δ⁰₀ → Σ⁰₁ → Σ⁰₂ → Σ⁰ₙ → AH → HYP → PLAFOND"
@@ -61,7 +61,7 @@
       "depth": -5,
       "label": "Wang & Barabási 2013 / Uzzi 2013 / Wu 2019 — Science of Science",
       "status": "done",
-      "entry": "engine/scisci.py:1",
+      "entry": "engine/core/scisci.py:1",
       "confidence": 95,
       "depends": [],
       "desc": "Fitness, atypicality z-scores, disruption index — formules validées"
@@ -72,7 +72,7 @@
       "depth": -4,
       "label": "OpenAlex API — 250M+ papers, 65K concepts, clé gratuite",
       "status": "wip",
-      "entry": "engine/openalex.py:14:BASE_URL",
+      "entry": "engine/core/openalex.py:14:BASE_URL",
       "confidence": 70,
       "depends": [],
       "desc": "Rate limit 100K req/jour. API key requise depuis fév 2026. Module existe mais mapping pas fait."
@@ -83,7 +83,7 @@
       "depth": -4,
       "label": "794 symboles (7 strates S0→S6) × 53 domaines mathématiques",
       "status": "done",
-      "entry": "data/strates_export.json",
+      "entry": "data/core/strates_export.json",
       "confidence": 100,
       "depends": [],
       "desc": "Données validées par publications scientifiques. 7 strates × 7 continents."
@@ -94,7 +94,7 @@
       "depth": -3,
       "label": "32 tests de validation — 28/29 = 97% confirmé",
       "status": "done",
-      "entry": "engine/verify_32tests.py:1",
+      "entry": "engine/pipeline/verify_32tests.py:1",
       "confidence": 97,
       "depends": ["M1", "M3"],
       "desc": "Cross-validation lianes × découvertes majeures 2010-2025"
@@ -105,7 +105,7 @@
       "depth": -3,
       "label": "Lianes — symboles S0 utilisés par 3+ continents",
       "status": "done",
-      "entry": "engine/lianes.py:1",
+      "entry": "engine/analysis/lianes.py:1",
       "confidence": 95,
       "depends": ["M1", "P2"],
       "desc": "60 lianes identifiées. exp=universel (6 continents, 28/32 tests)"
@@ -116,7 +116,7 @@
       "depth": -2,
       "label": "Concept IDs OpenAlex — 794 symboles → 466 concepts (96.2% couverture)",
       "status": "done",
-      "entry": "engine/map_concepts.py:1",
+      "entry": "engine/mining/map_concepts.py:1",
       "confidence": 96,
       "depends": ["P1", "P2"],
       "desc": "PIVOT FAIT. 794 symboles → 466 concepts uniques. 310 high + 271 medium + 183 low. 1.47B works couverts."
@@ -138,7 +138,7 @@
       "depth": 0,
       "label": "SOL — data/openalex_map.json (794 symboles → 466 concepts)",
       "status": "done",
-      "entry": "data/openalex_map.json",
+      "entry": "data/core/openalex_map.json",
       "confidence": 96,
       "depends": ["A3"],
       "desc": "FICHIER PIVOT GENERE. 96.2% couverture. 4 méthodes: symbol_map(390), from_english(205), fr_to_en(111), word_search(24)."
@@ -149,7 +149,7 @@
       "depth": 1,
       "label": "Tronc — engine/map_concepts.py (mapping batch 794 symboles → snapshot local)",
       "status": "done",
-      "entry": "engine/map_concepts.py:1",
+      "entry": "engine/mining/map_concepts.py:1",
       "confidence": 96,
       "depends": ["S0", "R1"],
       "desc": "FAIT. Script 4-passes: symbol_map → fr_to_en → from_english → word_search. Snapshot local 65K concepts (pas API)."
@@ -160,7 +160,7 @@
       "depth": 1,
       "label": "Tronc — engine/holes.py (détection trous structurels)",
       "status": "done",
-      "entry": "engine/holes.py:1",
+      "entry": "engine/core/holes.py:1",
       "confidence": 85,
       "depends": ["A2"],
       "desc": "3 types de trous (A=technique, B=conceptuel, C=perceptuel). Formules implémentées."
@@ -171,7 +171,7 @@
       "depth": 2,
       "label": "Branche — Matrice co-occurrence (concept × concept)",
       "status": "todo",
-      "entry": "engine/openalex.py:93:batch_co_occurrences",
+      "entry": "engine/core/openalex.py:93:batch_co_occurrences",
       "confidence": 20,
       "depends": ["T1", "A3"],
       "desc": "La PLUIE. Chaque goutte = un paper qui connecte deux concepts."
@@ -182,7 +182,7 @@
       "depth": 2,
       "label": "Branche — Timeline par strate (papers/année/strate)",
       "status": "todo",
-      "entry": "engine/openalex.py:62:get_concept_works_by_year",
+      "entry": "engine/core/openalex.py:62:get_concept_works_by_year",
       "confidence": 20,
       "depends": ["T1", "A3"],
       "desc": "Évolution temporelle : quelles strates sont actives ?"
@@ -193,7 +193,7 @@
       "depth": 2,
       "label": "Branche — Détection trous réels via OpenAlex",
       "status": "todo",
-      "entry": "engine/openalex.py:138:search_structural_hole",
+      "entry": "engine/core/openalex.py:138:search_structural_hole",
       "confidence": 15,
       "depends": ["B1", "T2"],
       "desc": "Appliquer les scores de holes.py sur les vrais chiffres OpenAlex"

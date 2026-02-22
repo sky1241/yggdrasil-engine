@@ -23,8 +23,8 @@ import numpy as np
 
 # Paths
 SCRIPT_DIR = Path(__file__).parent
-DATA_DIR = SCRIPT_DIR.parent / "data"
-REPO_DIR = SCRIPT_DIR.parent
+DATA_DIR = SCRIPT_DIR.parent.parent / "data"
+REPO_DIR = SCRIPT_DIR.parent.parent
 
 # ══════════════════════════════════════════
 # OPENALEX API — LA PLUIE
@@ -554,7 +554,7 @@ def run_test(test_id, pair, test_type):
     
     # Step 7: Save JSON
     fname = f"pipeline_test_{test_id:03d}.json"
-    fpath = DATA_DIR / fname
+    fpath = DATA_DIR / "pipeline" / fname
     with open(fpath, 'w') as f:
         json.dump(result, f, indent=2)
     print(f"  💾 Saved: {fname}")
@@ -657,7 +657,7 @@ def run_all():
         "errors": errors,
         "results": results
     }
-    with open(DATA_DIR / "pipeline_100_summary.json", 'w') as f:
+    with open(DATA_DIR / "pipeline" / "pipeline_100_summary.json", 'w') as f:
         json.dump(summary, f, indent=2)
     
     return summary

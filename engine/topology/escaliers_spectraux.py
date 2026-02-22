@@ -92,9 +92,9 @@ for cont_id, cont_data in CONTINENTS.items():
 def load_data(base_path=None):
     """Charge strates_export_v2.json et retourne les symboles S0."""
     if base_path is None:
-        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
-    path = os.path.join(base_path, 'data', 'strates_export_v2.json')
+    path = os.path.join(base_path, 'data', 'core', 'strates_export_v2.json')
     with open(path) as f:
         data = json.load(f)
     
@@ -358,9 +358,9 @@ def validate_against_known(lianes):
 def load_passepartout(base_path=None):
     """Charge les 69 lianes historiques (passe-partout multi-continents)."""
     if base_path is None:
-        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
-    path = os.path.join(base_path, 'data', 'lianes_export.json')
+    path = os.path.join(base_path, 'data', 'lianes', 'lianes_export.json')
     with open(path) as f:
         old = json.load(f)
     
@@ -465,7 +465,7 @@ def build_unified(symbols, lianes_geo, passepartout, centroids):
 def export_results(lianes, centroids, inter_dists, base_path=None):
     """Exporte les résultats pour la visualisation."""
     if base_path is None:
-        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
     output = {
         'meta': {
@@ -481,7 +481,7 @@ def export_results(lianes, centroids, inter_dists, base_path=None):
         'lianes': lianes[:500]  # Top 500 pour la viz
     }
     
-    path = os.path.join(base_path, 'data', 'escaliers_spectraux.json')
+    path = os.path.join(base_path, 'data', 'topology', 'escaliers_spectraux.json')
     with open(path, 'w') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     
@@ -492,7 +492,7 @@ def export_results(lianes, centroids, inter_dists, base_path=None):
 def export_unified(geo_layer, key_layer, centroids, inter_dists, base_path=None):
     """Exporte le dataset unifié pour la visualisation."""
     if base_path is None:
-        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
     output = {
         'meta': {
@@ -509,7 +509,7 @@ def export_unified(geo_layer, key_layer, centroids, inter_dists, base_path=None)
         'key': key_layer
     }
     
-    path = os.path.join(base_path, 'data', 'escaliers_unified.json')
+    path = os.path.join(base_path, 'data', 'topology', 'escaliers_unified.json')
     with open(path, 'w') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     

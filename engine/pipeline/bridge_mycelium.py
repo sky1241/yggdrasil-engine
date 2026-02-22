@@ -28,11 +28,11 @@ import numpy as np
 # ════════════════════════════════════════════════════════════
 
 SCRIPT_DIR = Path(__file__).parent
-DATA_DIR = SCRIPT_DIR.parent / "data" if (SCRIPT_DIR.parent / "data").exists() else SCRIPT_DIR
+DATA_DIR = SCRIPT_DIR.parent.parent / "data"
 
 myc_path = SCRIPT_DIR / "mycelium_full.py"
 if not myc_path.exists():
-    myc_path = SCRIPT_DIR.parent / "mycelium_full.py"
+    myc_path = SCRIPT_DIR / "mycelium_full.py"
 
 spec = importlib.util.spec_from_file_location("mycelium", str(myc_path))
 myc = importlib.util.module_from_spec(spec)

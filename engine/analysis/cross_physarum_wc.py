@@ -36,7 +36,7 @@ except ImportError:
     HAS_MYCELIUM = False
     print("⚠️  mycelium_full.py non trouvé, fallback networkx pur")
 
-DATA_DIR = Path(__file__).parent.parent / "data"
+DATA_DIR = Path(__file__).parent.parent.parent / "data"
 
 
 def load_data():
@@ -44,18 +44,18 @@ def load_data():
     print("  CHARGEMENT DES DONNÉES")
     print("═" * 60)
 
-    with open(DATA_DIR / "strates_export_v2.json") as f:
+    with open(DATA_DIR / "core" / "strates_export_v2.json") as f:
         strates = json.load(f)
     s0 = strates["strates"][0]["symbols"]
     print(f"  S0: {len(s0)} symboles")
 
-    with open(DATA_DIR / "domain_cooccurrence_matrix.json") as f:
+    with open(DATA_DIR / "topology" / "domain_cooccurrence_matrix.json") as f:
         cooc = json.load(f)
     domains = cooc["domains"]
     matrix = np.array(cooc["matrix"], dtype=float)
     print(f"  Co-occurrence: {len(domains)}×{len(domains)} domaines")
 
-    with open(DATA_DIR / "escaliers_unified.json") as f:
+    with open(DATA_DIR / "topology" / "escaliers_unified.json") as f:
         esc = json.load(f)
     print(f"  Escaliers: {len(esc['geo'])} geo + {len(esc['key'])} key")
 
@@ -424,7 +424,7 @@ def export_results(isolated, bridges, voids, domain_map, domain_metrics, concept
         },
     }
 
-    outpath = DATA_DIR / "cross_physarum_wc.json"
+    outpath = DATA_DIR / "cross" / "cross_physarum_wc.json"
     with open(outpath, "w") as f:
         json.dump(out, f, indent=2, ensure_ascii=False)
     print(f"\n  💾 Export: {outpath}")

@@ -12,7 +12,7 @@ Sky × Claude — 21 Février 2026, Versoix
 """
 
 import sys
-sys.path.insert(0, str(__import__('pathlib').Path(__file__).parent))
+sys.path.insert(0, str(__import__('pathlib').Path(__file__).parent.parent / "pipeline"))
 
 from pipeline_100 import (
     search_concept, get_timeline, get_total_co_occurrence,
@@ -23,7 +23,7 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-DATA_DIR = Path(__file__).parent.parent / "data"
+DATA_DIR = Path(__file__).parent.parent.parent / "data"
 
 # ══════════════════════════════════════════════
 # PHILIPPE'S S0 TOOLS (son quartier)

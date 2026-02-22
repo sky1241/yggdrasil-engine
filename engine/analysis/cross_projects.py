@@ -299,7 +299,7 @@ def main():
         },
     }
 
-    out_path = os.path.join(os.path.dirname(__file__), "..", "data", "cross_projects_p4.json")
+    out_path = os.path.join(os.path.dirname(__file__), "..", "..", "data", "cross", "cross_projects_p4.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
     print(f"Export: {out_path}")

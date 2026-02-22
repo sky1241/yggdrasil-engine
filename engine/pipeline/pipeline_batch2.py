@@ -195,13 +195,13 @@ def run_batch2():
         "errors": errors,
         "results": results
     }
-    with open(DATA_DIR / "pipeline_batch2_summary.json", 'w') as f:
+    with open(DATA_DIR / "pipeline" / "pipeline_batch2_summary.json", 'w') as f:
         json.dump(summary_b2, f, indent=2)
     print(f"\n💾 Saved: pipeline_batch2_summary.json")
     
     # Load batch 1 and merge for grand total
     try:
-        with open(DATA_DIR / "pipeline_100_summary.json") as f:
+        with open(DATA_DIR / "pipeline" / "pipeline_100_summary.json") as f:
             b1 = json.load(f)
         
         grand_total_valid = b1["total_valid"] + total_valid
@@ -218,7 +218,7 @@ def run_batch2():
             "grand_pct": grand_pct,
             "all_results": b1["results"] + results
         }
-        with open(DATA_DIR / "pipeline_grand_summary.json", 'w') as f:
+        with open(DATA_DIR / "pipeline" / "pipeline_grand_summary.json", 'w') as f:
             json.dump(grand_summary, f, indent=2)
         
         print(f"\n{'='*60}")

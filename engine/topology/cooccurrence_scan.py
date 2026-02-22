@@ -14,7 +14,7 @@ import numpy as np
 from pathlib import Path
 from multiprocessing import Pool
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 WORKS_DIR = Path("D:/openalex/data/works")
 N_WORKERS = 2
 
@@ -170,7 +170,7 @@ def main():
     np.save(ROOT / 'data' / 'domain_cooccurrence_matrix.npy', matrix)
     np.save(ROOT / 'data' / 'domain_paper_counts.npy', domain_paper_count)
 
-    with open(ROOT / 'data' / 'domain_cooccurrence_matrix.json', 'w', encoding='utf-8') as f:
+    with open(ROOT / 'data' / 'topology' / 'domain_cooccurrence_matrix.json', 'w', encoding='utf-8') as f:
         json.dump({
             'domains': domains,
             'matrix': matrix.tolist(),
@@ -254,7 +254,7 @@ def main():
             'papers': int(domain_paper_count[i])
         }
 
-    with open(ROOT / 'data' / 'domain_spectral_positions.json', 'w', encoding='utf-8') as f:
+    with open(ROOT / 'data' / 'topology' / 'domain_spectral_positions.json', 'w', encoding='utf-8') as f:
         json.dump(dom_positions, f, ensure_ascii=False, indent=2)
     print(f"  -> domain_spectral_positions.json")
 
@@ -265,7 +265,7 @@ def main():
     t4 = time.time()
     random.seed(42)
 
-    with open(ROOT / 'data' / 'strates_export_v2.json', encoding='utf-8') as f:
+    with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', encoding='utf-8') as f:
         data = json.load(f)
 
     s0 = data['strates'][0]['symbols']
@@ -284,7 +284,7 @@ def main():
         else:
             not_found += 1
 
-    with open(ROOT / 'data' / 'strates_export_v2.json', 'w', encoding='utf-8') as f:
+    with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
 
     print(f"  Symboles S0 mis a jour: {updated}")

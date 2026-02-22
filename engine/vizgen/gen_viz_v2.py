@@ -8,8 +8,8 @@ et les positions de strates_export_v2.json UNIQUEMENT pour les symboles minés.
 """
 import json, math, os, re, subprocess
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-V2_PATH   = os.path.join(ROOT, 'data', 'strates_export_v2.json')
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+V2_PATH   = os.path.join(ROOT, 'data', 'core', 'strates_export_v2.json')
 HTML_PATH = os.path.join(ROOT, 'viz', 'yggdrasil_rain_v2.html')
 
 # ── Load v2 data ──
@@ -104,7 +104,7 @@ from depth_map import (
 )
 
 # ── Load mined concepts data (for level info) ──
-MINED_PATH = os.path.join(ROOT, 'data', 'mined_concepts.json')
+MINED_PATH = os.path.join(ROOT, 'data', 'core', 'mined_concepts.json')
 with open(MINED_PATH, 'r', encoding='utf-8') as f:
     mined_data = json.load(f)
 # Build lookup: truncated_name → concept

@@ -14,11 +14,11 @@ import re
 from pathlib import Path
 from collections import defaultdict, Counter
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 CONCEPTS_DIR = Path("D:/openalex/data/concepts")
-STRATES_FILE = ROOT / "data" / "strates_export.json"
-OUTPUT_MINED = ROOT / "data" / "mined_concepts.json"
-OUTPUT_STRATES_V2 = ROOT / "data" / "strates_export_v2.json"
+STRATES_FILE = ROOT / "data" / "core" / "strates_export.json"
+OUTPUT_MINED = ROOT / "data" / "core" / "mined_concepts.json"
+OUTPUT_STRATES_V2 = ROOT / "data" / "core" / "strates_export_v2.json"
 
 # ═══════════════════════════════════════════════════════════
 # FILTRES : ce qui EST science (TOUTES SCIENCES)

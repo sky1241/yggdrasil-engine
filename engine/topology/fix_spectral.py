@@ -7,7 +7,7 @@ import json, random, time
 import numpy as np
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 random.seed(42)
 
 print("=" * 60)
@@ -15,7 +15,7 @@ print("FIX SPECTRAL POSITIONS -- Laplacien normalise")
 print("=" * 60)
 
 # Load saved matrix
-with open(ROOT / 'data' / 'domain_cooccurrence_matrix.json', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'topology' / 'domain_cooccurrence_matrix.json', encoding='utf-8') as f:
     saved = json.load(f)
 
 domains = saved['domains']
@@ -95,13 +95,13 @@ for i, d in enumerate(domains):
         'papers': int(dpc[i])
     }
 
-with open(ROOT / 'data' / 'domain_spectral_positions.json', 'w', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'topology' / 'domain_spectral_positions.json', 'w', encoding='utf-8') as f:
     json.dump(dom_positions, f, ensure_ascii=False, indent=2)
 print(f"\n-> domain_spectral_positions.json")
 
 # ── Update strates_export_v2.json ──
 print(f"\nMise a jour strates_export_v2.json...")
-with open(ROOT / 'data' / 'strates_export_v2.json', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', encoding='utf-8') as f:
     data = json.load(f)
 
 s0 = data['strates'][0]['symbols']
@@ -120,7 +120,7 @@ for sym in s0:
     else:
         not_found += 1
 
-with open(ROOT / 'data' / 'strates_export_v2.json', 'w', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', 'w', encoding='utf-8') as f:
     json.dump(data, f, ensure_ascii=False, indent=1)
 
 print(f"  Updated: {updated}, not found: {not_found}")

@@ -17,10 +17,10 @@ import re
 from pathlib import Path
 from collections import defaultdict
 
-ROOT = Path(__file__).parent.parent
-STRATES_FILE = ROOT / "data" / "strates_export.json"
+ROOT = Path(__file__).parent.parent.parent
+STRATES_FILE = ROOT / "data" / "core" / "strates_export.json"
 CONCEPTS_DIR = Path("E:/openalex/data/concepts")
-OUTPUT_FILE = ROOT / "data" / "openalex_map.json"
+OUTPUT_FILE = ROOT / "data" / "core" / "openalex_map.json"
 
 # ═══════════════════════════════════════════════════════════════
 # Pass 1 : SYMBOL_MAP — mapping direct symbole → search terms EN

@@ -13,7 +13,7 @@ Sky × Claude — 21 février 2026, Versoix
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 
 print("=" * 60)
 print("🌿 GEN ESCALIERS 3D — Yggdrasil Engine")
@@ -24,10 +24,10 @@ print("=" * 60)
 # ══════════════════════════════════════════════════
 print("\n[1] Loading data...")
 
-with open(ROOT / 'data' / 'escaliers_unified.json', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'topology' / 'escaliers_unified.json', encoding='utf-8') as f:
     esc = json.load(f)
 
-with open(ROOT / 'data' / 'strates_export_v2.json', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'core' / 'strates_export_v2.json', encoding='utf-8') as f:
     strates = json.load(f)['strates']
 
 # ══════════════════════════════════════════════════

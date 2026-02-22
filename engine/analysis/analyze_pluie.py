@@ -19,8 +19,8 @@ from pathlib import Path
 PLUIE_DIR = Path(os.environ.get("YGG_OUTPUT", "data/pluie"))
 MATRIX_PATH = PLUIE_DIR / "cooccurrence_matrix.npz"
 INDEX_PATH = PLUIE_DIR / "matrix_index.json"
-STRATES_PATH = Path(os.environ.get("YGG_STRATES", "data/strates_export_v2.json"))
-ESCALIERS_PATH = Path("data/escaliers_spectraux.json")
+STRATES_PATH = Path(os.environ.get("YGG_STRATES", "data/core/strates_export_v2.json"))
+ESCALIERS_PATH = Path("data/topology/escaliers_spectraux.json")
 
 
 def load_matrix():
