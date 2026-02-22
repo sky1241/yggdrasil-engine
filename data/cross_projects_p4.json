@@ -1,0 +1,456 @@
+{
+  "source": "CROSS_PROJECTS_P4_SCAN",
+  "generated": "2026-02-22T01:35:09.752401",
+  "projects": {
+    "Yggdrasil": {
+      "desc": "Détection trous structurels dans la science",
+      "tools": [
+        "spectral_layout",
+        "laplacien",
+        "co_occurrence",
+        "betweenness_centrality",
+        "physarum",
+        "fitness_wang",
+        "disruption_index",
+        "uzzi_zscore",
+        "fiedler_vector",
+        "meshedness",
+        "graph_theory",
+        "pattern_classification",
+        "openalex_api",
+        "strate_hierarchy"
+      ],
+      "domains": [
+        "graph_theory",
+        "scientometrics",
+        "biology",
+        "topology"
+      ]
+    },
+    "Ichimoku": {
+      "desc": "Trading crypto adaptatif par régime de marché",
+      "tools": [
+        "welch_psd",
+        "fft",
+        "hmm_regime",
+        "lightgbm",
+        "walk_forward",
+        "monte_carlo",
+        "ichimoku",
+        "atr",
+        "kelly_criterion",
+        "optuna",
+        "halving_indexer",
+        "position_sizing",
+        "checkpoint_recovery",
+        "volatility_targeting"
+      ],
+      "domains": [
+        "signal_processing",
+        "machine_learning",
+        "finance",
+        "statistics"
+      ]
+    },
+    "Automates": {
+      "desc": "Générateur d'automates mécaniques 3D",
+      "tools": [
+        "constraint_engine",
+        "cam_mechanics",
+        "grashof_condition",
+        "geneva_mechanism",
+        "worm_gear",
+        "torque_calc",
+        "shaft_deflection",
+        "trimesh_3d",
+        "stl_export",
+        "figurine_builder",
+        "text_to_config_nlp",
+        "material_science",
+        "print_orientation"
+      ],
+      "domains": [
+        "mechanical_engineering",
+        "3d_printing",
+        "nlp",
+        "physics"
+      ]
+    },
+    "Shazam_Piano": {
+      "desc": "Pipeline audio → partition → vidéo pédagogique",
+      "tools": [
+        "pyin_pitch",
+        "krumhansl_key",
+        "demucs_separation",
+        "midi_quantization",
+        "arranger_4levels",
+        "nsdf_autocorrelation",
+        "mpm_algorithm",
+        "ffmpeg_pipeline",
+        "flutter_riverpod"
+      ],
+      "domains": [
+        "signal_processing",
+        "music_theory",
+        "mobile_dev",
+        "pedagogy"
+      ]
+    },
+    "Infernal_Wheel": {
+      "desc": "Tracking addiction + santé personnelle",
+      "tools": [
+        "powershell_http",
+        "mutex_io",
+        "infernal_day_4am",
+        "addiction_tracking",
+        "health_integration",
+        "ux_framework_5200lines",
+        "flutter_hive",
+        "trilateration_ml",
+        "cnn_lstm",
+        "dbscan"
+      ],
+      "domains": [
+        "health_science",
+        "mobile_dev",
+        "machine_learning",
+        "ux_design"
+      ]
+    },
+    "Winter_Tree": {
+      "desc": "Framework de classification + orchestration AI",
+      "tools": [
+        "bio_classification",
+        "repo_scanner",
+        "github_scanner",
+        "tree_hierarchy_10levels",
+        "family_detection",
+        "handoff_protocol",
+        "master_prompt",
+        "mycelium_engine",
+        "l_system",
+        "physarum",
+        "sporulation",
+        "nutrient_transport"
+      ],
+      "domains": [
+        "biology",
+        "software_architecture",
+        "ai_orchestration",
+        "mycology"
+      ]
+    },
+    "P_eq_NP": {
+      "desc": "Mapping par accumulation de la complexité",
+      "tools": [
+        "strate_hierarchy",
+        "mycelium_mapping",
+        "periodic_table_complexity",
+        "bounded_strata"
+      ],
+      "domains": [
+        "complexity_theory",
+        "mathematics",
+        "topology"
+      ]
+    }
+  },
+  "holes": [
+    {
+      "tool": "persistent_homology",
+      "from": "NOUVEAU",
+      "to": "Yggdrasil",
+      "type": "B",
+      "impact": 10,
+      "why": "Topologie persistante détecte les structures qui survivent à différentes échelles — P4 pur",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "persistent_homology",
+      "from": "NOUVEAU",
+      "to": "Ichimoku",
+      "type": "B",
+      "impact": 10,
+      "why": "Topologie persistante détecte les structures qui survivent à différentes échelles — P4 pur",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "shannon_entropy",
+      "from": "NOUVEAU",
+      "to": "Ichimoku",
+      "type": "B",
+      "impact": 10,
+      "why": "Entropie du signal = mesure du désordre. Applicable partout.",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "shannon_entropy",
+      "from": "NOUVEAU",
+      "to": "Infernal_Wheel",
+      "type": "B",
+      "impact": 10,
+      "why": "Entropie du signal = mesure du désordre. Applicable partout.",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "shannon_entropy",
+      "from": "NOUVEAU",
+      "to": "Yggdrasil",
+      "type": "B",
+      "impact": 10,
+      "why": "Entropie du signal = mesure du désordre. Applicable partout.",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "welch_psd",
+      "from": "Ichimoku",
+      "to": "Infernal_Wheel",
+      "type": "C",
+      "impact": 7,
+      "why": "Détection de cycles cachés dans tout signal temporel",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "welch_psd",
+      "from": "Ichimoku",
+      "to": "Shazam_Piano",
+      "type": "C",
+      "impact": 7,
+      "why": "Détection de cycles cachés dans tout signal temporel",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "hmm_regime",
+      "from": "Ichimoku",
+      "to": "Infernal_Wheel",
+      "type": "C",
+      "impact": 7,
+      "why": "Détection de régimes dans addiction (sober/moderate/heavy) et dans l'évolution scientifique",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "hmm_regime",
+      "from": "Ichimoku",
+      "to": "Yggdrasil",
+      "type": "C",
+      "impact": 7,
+      "why": "Détection de régimes dans addiction (sober/moderate/heavy) et dans l'évolution scientifique",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "pattern_classification",
+      "from": "Yggdrasil",
+      "to": "Ichimoku",
+      "type": "C",
+      "impact": 7,
+      "why": "P1-P5 patterns applicables aux régimes de marché et aux patterns d'addiction",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "pattern_classification",
+      "from": "Yggdrasil",
+      "to": "Infernal_Wheel",
+      "type": "C",
+      "impact": 7,
+      "why": "P1-P5 patterns applicables aux régimes de marché et aux patterns d'addiction",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "physarum",
+      "from": "Yggdrasil",
+      "to": "Ichimoku",
+      "type": "C",
+      "impact": 6,
+      "why": "Optimisation de flux = allocation de capital. Physarum trouve les chemins optimaux.",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "constraint_engine",
+      "from": "Automates",
+      "to": "Yggdrasil",
+      "type": "C",
+      "impact": 6,
+      "why": "Les TROU checks sont identiques aux trous structurels — même pattern de détection",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "disruption_index",
+      "from": "Yggdrasil",
+      "to": "Ichimoku",
+      "type": "C",
+      "impact": 6,
+      "why": "D-index mesure si un paper est disruptif. Appliqué au trading: une bougie est-elle disruptive?",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "combined_labels",
+      "from": "Ichimoku",
+      "to": "Infernal_Wheel",
+      "type": "C",
+      "impact": 6,
+      "why": "IF regime==bear FORCE CASH → IF regime==depression FORCE REST. Même logique.",
+      "status": "P4_OPEN"
+    },
+    {
+      "tool": "repo_scanner",
+      "from": "Winter_Tree",
+      "to": "Yggdrasil",
+      "type": "C",
+      "impact": 6,
+      "why": "Scanner un repo ET son domaine scientifique simultanément",
+      "status": "P4_OPEN"
+    }
+  ],
+  "tool_matrix": {
+    "names": [
+      "Yggdrasil",
+      "Ichimoku",
+      "Automates",
+      "Shazam_Piano",
+      "Infernal_Wheel",
+      "Winter_Tree",
+      "P_eq_NP"
+    ],
+    "values": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "domain_matrix": {
+    "names": [
+      "Yggdrasil",
+      "Ichimoku",
+      "Automates",
+      "Shazam_Piano",
+      "Infernal_Wheel",
+      "Winter_Tree",
+      "P_eq_NP"
+    ],
+    "values": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  }
+}
