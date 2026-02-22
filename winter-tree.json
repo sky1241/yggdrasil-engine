@@ -1,5 +1,5 @@
 {
-  "idea": "Yggdrasil Engine — Cartographie de 794 symboles mathématiques × 250M papers OpenAlex",
+  "idea": "Yggdrasil Engine — Cartographie de 2022 symboles mathématiques × 250M papers OpenAlex",
   "domain": "science",
   "family": "baobab",
   "family_name": "Baobab",
@@ -18,9 +18,9 @@
     "label": "🌳 Baobab (2249 lignes Python + viz HTML)"
   },
   "stats": {
-    "total_files": 15,
+    "total_files": 17,
     "total_code_lines": 2249,
-    "data_weight_mb": 1.2,
+    "data_weight_mb": 2.8,
     "languages": {
       "Python": 2249,
       "HTML": 368,
@@ -96,7 +96,10 @@
       "status": "done",
       "entry": "engine/pipeline/verify_32tests.py:1",
       "confidence": 97,
-      "depends": ["M1", "M3"],
+      "depends": [
+        "M1",
+        "M3"
+      ],
       "desc": "Cross-validation lianes × découvertes majeures 2010-2025"
     },
     {
@@ -107,7 +110,10 @@
       "status": "done",
       "entry": "engine/analysis/lianes.py:1",
       "confidence": 95,
-      "depends": ["M1", "P2"],
+      "depends": [
+        "M1",
+        "P2"
+      ],
       "desc": "60 lianes identifiées. exp=universel (6 continents, 28/32 tests)"
     },
     {
@@ -118,7 +124,10 @@
       "status": "done",
       "entry": "engine/mining/map_concepts.py:1",
       "confidence": 96,
-      "depends": ["P1", "P2"],
+      "depends": [
+        "P1",
+        "P2"
+      ],
       "desc": "PIVOT FAIT. 794 symboles → 466 concepts uniques. 310 high + 271 medium + 183 low. 1.47B works couverts."
     },
     {
@@ -140,7 +149,9 @@
       "status": "done",
       "entry": "data/core/openalex_map.json",
       "confidence": 96,
-      "depends": ["A3"],
+      "depends": [
+        "A3"
+      ],
       "desc": "FICHIER PIVOT GENERE. 96.2% couverture. 4 méthodes: symbol_map(390), from_english(205), fr_to_en(111), word_search(24)."
     },
     {
@@ -151,7 +162,10 @@
       "status": "done",
       "entry": "engine/mining/map_concepts.py:1",
       "confidence": 96,
-      "depends": ["S0", "R1"],
+      "depends": [
+        "S0",
+        "R1"
+      ],
       "desc": "FAIT. Script 4-passes: symbol_map → fr_to_en → from_english → word_search. Snapshot local 65K concepts (pas API)."
     },
     {
@@ -162,7 +176,9 @@
       "status": "done",
       "entry": "engine/core/holes.py:1",
       "confidence": 85,
-      "depends": ["A2"],
+      "depends": [
+        "A2"
+      ],
       "desc": "3 types de trous (A=technique, B=conceptuel, C=perceptuel). Formules implémentées."
     },
     {
@@ -173,7 +189,10 @@
       "status": "todo",
       "entry": "engine/core/openalex.py:93:batch_co_occurrences",
       "confidence": 20,
-      "depends": ["T1", "A3"],
+      "depends": [
+        "T1",
+        "A3"
+      ],
       "desc": "La PLUIE. Chaque goutte = un paper qui connecte deux concepts."
     },
     {
@@ -184,7 +203,10 @@
       "status": "todo",
       "entry": "engine/core/openalex.py:62:get_concept_works_by_year",
       "confidence": 20,
-      "depends": ["T1", "A3"],
+      "depends": [
+        "T1",
+        "A3"
+      ],
       "desc": "Évolution temporelle : quelles strates sont actives ?"
     },
     {
@@ -195,7 +217,10 @@
       "status": "todo",
       "entry": "engine/core/openalex.py:138:search_structural_hole",
       "confidence": 15,
-      "depends": ["B1", "T2"],
+      "depends": [
+        "B1",
+        "T2"
+      ],
       "desc": "Appliquer les scores de holes.py sur les vrais chiffres OpenAlex"
     },
     {
@@ -206,7 +231,9 @@
       "status": "todo",
       "entry": "~",
       "confidence": 10,
-      "depends": ["B1"],
+      "depends": [
+        "B1"
+      ],
       "desc": "Pour chaque symbole, les 10 papers les plus cités"
     },
     {
@@ -217,7 +244,10 @@
       "status": "todo",
       "entry": "~",
       "confidence": 10,
-      "depends": ["B1", "A2"],
+      "depends": [
+        "B1",
+        "A2"
+      ],
       "desc": "Vérifier si exp, ∫, Σ sont vraiment les ponts dans les données réelles"
     },
     {
@@ -228,7 +258,10 @@
       "status": "todo",
       "entry": "viz/yggdrasil_rain_v2.html",
       "confidence": 5,
-      "depends": ["S0", "b1"],
+      "depends": [
+        "S0",
+        "b1"
+      ],
       "desc": "Cliquer sur un symbole → voir ses vrais papers OpenAlex"
     },
     {
@@ -236,11 +269,13 @@
       "level": "F",
       "depth": 4,
       "label": "Feuille — Corriger le sous-titre (remplacer 8257 par le vrai chiffre)",
-      "status": "todo",
+      "status": "wip",
       "entry": "viz/yggdrasil_rain_v2.html:38",
-      "confidence": 5,
-      "depends": ["T1"],
-      "desc": "Le 8257 est un placeholder. Le vrai chiffre viendra du mapping."
+      "confidence": 40,
+      "depends": [
+        "T1"
+      ],
+      "desc": "S-2 GLYPHES intégré : 1228 glyphes Unicode en dessous du SOL. Toggle dans La Pluie v3."
     },
     {
       "id": "C1",
@@ -250,7 +285,10 @@
       "status": "todo",
       "entry": "tests/test_engine.py",
       "confidence": 5,
-      "depends": ["T1", "B1"],
+      "depends": [
+        "T1",
+        "B1"
+      ],
       "desc": "Valider que le mapping est reproductible"
     }
   ],
@@ -258,52 +296,99 @@
     {
       "phase": 0,
       "name": "Mycorhizes — lois fondamentales",
-      "ids": ["M1", "M2", "M3"],
+      "ids": [
+        "M1",
+        "M2",
+        "M3"
+      ],
       "action": "FAIT. Post, Gödel, Turing, Science of Science — tout est en place.",
       "bio": "Sans mycorhizes, rien ne pousse. Les lois sont là depuis le début."
     },
     {
       "phase": 1,
       "name": "Radicelles — contraintes API + données validées",
-      "ids": ["P1", "P2", "A1", "A2"],
+      "ids": [
+        "P1",
+        "P2",
+        "A1",
+        "A2"
+      ],
       "action": "FAIT sauf clé API. Obtenir une clé OpenAlex gratuite sur openalex.org/settings/api",
       "bio": "Filtrent tout ce qui entre. Les 524 symboles sont validés. L'API est documentée."
     },
     {
       "phase": 2,
       "name": "Pivot — mapper 524 symboles → concept_ids OpenAlex",
-      "ids": ["A3"],
+      "ids": [
+        "A3"
+      ],
       "action": "PROCHAIN. Script batch : pour chaque symbole, chercher son concept OpenAlex, stocker l'ID + works_count.",
       "bio": "Le pivot est la décision architecturale qui lock-in tout le reste. Si le mapping est mauvais, tout croule."
     },
     {
       "phase": 3,
       "name": "SOL + Tronc — fichier pivot + mapping batch",
-      "ids": ["S0", "T1"],
+      "ids": [
+        "S0",
+        "T1"
+      ],
       "action": "Générer data/openalex_map.json avec les vrais chiffres. Consolider le tronc (baobab = remplir avant d'étendre).",
       "bio": "Le tronc du baobab est un réservoir. Il accumule les données avant de pousser des branches."
     },
     {
       "phase": 4,
       "name": "Branches — co-occurrences, timelines, trous",
-      "ids": ["B1", "B2", "B3"],
+      "ids": [
+        "B1",
+        "B2",
+        "B3"
+      ],
       "action": "Matrice de co-occurrence entre concepts. Timelines par strate. Détecter les vrais trous structurels.",
       "bio": "Le baobab a peu de branches mais chacune est massive."
     },
     {
       "phase": 5,
       "name": "Rameaux + Feuilles — enrichir la viz",
-      "ids": ["b1", "b2", "F1", "F2"],
+      "ids": [
+        "b1",
+        "b2",
+        "F1",
+        "F2"
+      ],
       "action": "Top papers par symbole. Lianes cross-citations. Popups dans la viz 3D. Corriger le sous-titre.",
       "bio": "Feuilles = 5% de la masse, 100% de l'énergie perçue."
     },
     {
       "phase": 6,
       "name": "Cime — tests et reproductibilité",
-      "ids": ["C1"],
+      "ids": [
+        "C1"
+      ],
       "action": "Tests unitaires pour le mapping. Le mapping doit être reproductible.",
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "Phase 4 : Branches — co-occurrences, timelines, trous structurels (snapshot Works en cours de DL : 8.8 GB / ~330 GB)"
+  "next_step": "Phase 4 : Branches — co-occurrences + S-1 MÉTIER (professions) à remplir",
+  "rules": {
+    "auto_update": true,
+    "description": "Ce fichier est la source de vérité du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",
+    "triggers": [
+      "Fichier créé, déplacé ou supprimé → mettre à jour nodes[].entry",
+      "Fonctionnalité terminée → passer nodes[].status de 'todo'/'wip' à 'done'",
+      "Travail en cours → passer nodes[].status à 'wip'",
+      "Résultat de test/validation → ajuster nodes[].confidence",
+      "Nouveau module ou feature → ajouter un node",
+      "Stats changent (lignes de code, fichiers, data) → mettre à jour stats{}",
+      "Étape franchie → mettre à jour next_step et build_order[].action"
+    ],
+    "fields_to_update": [
+      "nodes[].status (todo|wip|done)",
+      "nodes[].entry (chemin relatif)",
+      "nodes[].confidence (0-100)",
+      "nodes[].desc (description courte)",
+      "stats.total_files, stats.total_code_lines, stats.data_weight_mb",
+      "phase (GRAINE|GERMINATION|CROISSANCE|CANOPEE)",
+      "next_step"
+    ]
+  }
 }
