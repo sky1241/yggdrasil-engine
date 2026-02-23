@@ -588,9 +588,10 @@ def measure_impact(frames: dict[str, Frame], candle: Candle,
     open_p = candle.open_date
     frame_before = frames.get(open_p)
     if frame_before is None:
-        # Chercher la frame la plus proche avant
-        sorted_periods = sorted(frames.keys())
-        candidates = [p for p in sorted_periods if p <= open_p]
+        # Chercher la frame la plus proche avant (comparaison par tuple année,mois)
+        open_key = _parse_period(open_p)
+        sorted_periods = sorted(frames.keys(), key=_parse_period)
+        candidates = [p for p in sorted_periods if _parse_period(p) <= open_key]
         if candidates:
             frame_before = frames[candidates[-1]]
         else:
@@ -603,7 +604,7 @@ def measure_impact(frames: dict[str, Frame], candle: Candle,
     # Générer les périodes à mesurer
     periods_to_check = _generate_periods(open_p, window_months)
 
-    last_frame_id = None
+    last_frame_id = id(frame_before)
     for t_months, period in enumerate(periods_to_check, 1):
         # Chercher frame: d'abord "YYYY-MM", sinon "YYYY" (avant 1980)
         frame_after = frames.get(period)
