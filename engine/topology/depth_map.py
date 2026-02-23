@@ -133,7 +133,7 @@ SYMBOL_DEPTH = {
     'S=kln W': 8, 'PV=nRT': 8,
     '∇·E=ρ/ε₀': 8, '∇·B=0': 8,
     'ODE': 8, 'PDE': 8, '∂u/∂t': 8, '∂²u/∂t²': 8,
-    'ν_visc': 8, 'η_visc': 8, 'Re': 8, 'P_pres': 8,
+    'ν_visc': 8, 'η_visc': 8, 'Re': 8, 'P_fluid': 8,
     'pH': 8, 'Kₑq': 8, 'E°': 8,
     'TM': 8, 'UTM': 8, 'λ_calc': 8,
     'Chom': 8, 'PR': 8,

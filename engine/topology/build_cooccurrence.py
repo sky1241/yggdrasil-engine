@@ -31,7 +31,7 @@ from scipy import sparse
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 WORKS_DIR = os.environ.get("YGG_WORKS_DIR", os.path.join("D:", os.sep, "openalex", "data", "works"))
 STRATES_PATH = os.environ.get("YGG_STRATES", os.path.join("data", "core", "strates_export_v2.json"))
-OPENALEX_MAP_PATH = os.environ.get("YGG_OA_MAP", os.path.join("data", "openalex_map.json"))
+OPENALEX_MAP_PATH = os.environ.get("YGG_OA_MAP", os.path.join("data", "core", "openalex_map.json"))
 OUTPUT_DIR = os.environ.get("YGG_OUTPUT", os.path.join("data", "pluie"))
 CHECKPOINT_PATH = os.path.join(OUTPUT_DIR, "_checkpoint.json")
 
@@ -300,7 +300,7 @@ def build_cooccurrence_matrix(args):
             file_papers += 1
             
             # Extraire indices concepts Yggdrasil
-            indices = extract_concept_indices(paper, concept_to_idx)
+            indices = extract_concept_indices(paper, concept_to_idx, MIN_CONCEPT_SCORE)
             
             if len(indices) >= 2:
                 papers_with_ygg_concepts += 1

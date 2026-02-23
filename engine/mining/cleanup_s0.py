@@ -132,7 +132,7 @@ print(f"  Corrigés: {hp_fixed}")
 print(f"\n[4] Déplacer C2 minés vers leur vraie strate...")
 
 # Load mined_concepts to get correct strate per concept_id
-with open(ROOT / 'data' / 'mined_concepts.json', encoding='utf-8') as f:
+with open(ROOT / 'data' / 'core' / 'mined_concepts.json', encoding='utf-8') as f:
     mined = json.load(f)
 
 # Build lookup: concept_id → correct strate

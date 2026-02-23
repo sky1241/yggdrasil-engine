@@ -19,7 +19,7 @@ from collections import defaultdict
 
 ROOT = Path(__file__).parent.parent.parent
 STRATES_FILE = ROOT / "data" / "core" / "strates_export.json"
-CONCEPTS_DIR = Path("E:/openalex/data/concepts")
+CONCEPTS_DIR = Path("D:/openalex/data/concepts")
 OUTPUT_FILE = ROOT / "data" / "core" / "openalex_map.json"
 
 # ═══════════════════════════════════════════════════════════════

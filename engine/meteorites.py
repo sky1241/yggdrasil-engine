@@ -411,13 +411,13 @@ class MeteoriteRegistry:
 
         avg = Deltas()
         n = len(peaks)
-        avg.volume = sum(p.volume for p in peaks) // n
+        avg.volume = int(round(sum(p.volume for p in peaks) / n))
         avg.amplitude = sum(p.amplitude for p in peaks) / n
         avg.bc_delta = sum(p.bc_delta for p in peaks) / n
         avg.alpha_delta = sum(p.alpha_delta for p in peaks) / n
-        avg.p4_delta = sum(p.p4_delta for p in peaks) // n
-        avg.physarum = sum(p.physarum for p in peaks) // n
-        avg.births = sum(p.births for p in peaks) // n
+        avg.p4_delta = int(round(sum(p.p4_delta for p in peaks) / n))
+        avg.physarum = int(round(sum(p.physarum for p in peaks) / n))
+        avg.births = int(round(sum(p.births for p in peaks) / n))
         return avg
 
     def fit_sedov(self) -> dict:
@@ -522,7 +522,7 @@ class MeteoriteRegistry:
             "n_boxes": len(self.boxes),
             "meteorites": [b.candle.name for b in self.boxes],
             "fit": self.fit_sedov(),
-            "signature": self.signature().to_dict() if self.signature() else None,
+            "signature": (lambda s: s.to_dict() if s else None)(self.signature()),
         }
 
 
@@ -603,6 +603,7 @@ def measure_impact(frames: dict[str, Frame], candle: Candle,
     # Générer les périodes à mesurer
     periods_to_check = _generate_periods(open_p, window_months)
 
+    last_frame_id = None
     for t_months, period in enumerate(periods_to_check, 1):
         # Chercher frame: d'abord "YYYY-MM", sinon "YYYY" (avant 1980)
         frame_after = frames.get(period)
@@ -610,6 +611,12 @@ def measure_impact(frames: dict[str, Frame], candle: Candle,
             frame_after = frames.get(period[:4])  # fallback yearly key
         if frame_after is None:
             continue
+
+        # Skip si c'est la même frame que le dernier mois (fallback yearly)
+        frame_id = id(frame_after)
+        if frame_id == last_frame_id:
+            continue
+        last_frame_id = frame_id
 
         # deltas sont TOUJOURS relatifs à frame_before (pré-impact)
         # → births = total concepts nés depuis l'impact, pas un delta incrémental
@@ -706,6 +713,8 @@ def classify_candle(candle: Candle) -> str:
         return "unknown"
 
     rho = candle.rho0
+    if rho == 0.0:
+        return "unmeasured"
 
     if rho > 0.15 and length > 120:     # > 10 ans + sol dense
         return "C_perceptual"

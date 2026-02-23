@@ -42,9 +42,8 @@ def fitness_wang_barabasi(citations_t: list[float], t_pub: int,
     sigma = 1.0
     expected = 0.0
     for t in range(1, age + 1):
-        if t > 0:
-            p_t = (1.0 / t) * np.exp(-(np.log(t) - mu)**2 / (2 * sigma**2))
-            expected += p_t
+        p_t = (1.0 / t) * np.exp(-(np.log(t) - mu)**2 / (2 * sigma**2))
+        expected += p_t
     
     if expected <= 0:
         return 0.0
@@ -129,13 +128,14 @@ def co_occurrence_strength(papers_a: int, papers_b: int,
                            papers_ab: int, total_papers: int) -> float:
     """
     Force de co-occurrence entre deux domaines.
-    
-    Jaccard modifié normalisé par la fréquence attendue:
-    
-    CoOcc(A,B) = P(A∩B) / P(A∪B)
+
+    PMI-like ratio: observed / expected
+
     Expected = P(A) × P(B) × total
-    
-    Ratio = observed / expected
+    Ratio = papers_ab / expected
+
+    Ratio > 1: co-occurrence plus fréquente qu'attendu
+    Ratio < 1: co-occurrence moins fréquente qu'attendu
     
     Args:
         papers_a: papers dans domaine A

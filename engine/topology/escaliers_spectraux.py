@@ -95,7 +95,7 @@ def load_data(base_path=None):
         base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
     path = os.path.join(base_path, 'data', 'core', 'strates_export_v2.json')
-    with open(path) as f:
+    with open(path, encoding='utf-8') as f:
         data = json.load(f)
     
     symbols = data['strates'][0]['symbols']
@@ -280,10 +280,7 @@ def analyze_lianes(lianes, centroids):
         max_score = max(scores)
         icon1 = CONTINENTS[c1]['icon']
         icon2 = CONTINENTS[c2]['icon']
-        portee = scores[0]  # approximation since all same pair
-        
-        # Recalculate actual portee
-        from itertools import chain
+        # Calculate actual portee
         actual_portee = 0
         for l in lianes:
             p = tuple(sorted([l['home'], l['alien']]))
@@ -361,7 +358,7 @@ def load_passepartout(base_path=None):
         base_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     
     path = os.path.join(base_path, 'data', 'lianes', 'lianes_export.json')
-    with open(path) as f:
+    with open(path, encoding='utf-8') as f:
         old = json.load(f)
     
     lianes_old = old['lianes']
@@ -482,7 +479,7 @@ def export_results(lianes, centroids, inter_dists, base_path=None):
     }
     
     path = os.path.join(base_path, 'data', 'topology', 'escaliers_spectraux.json')
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     
     print(f"\n💾 Exporté: {path} ({len(lianes[:500])} lianes)")
@@ -510,7 +507,7 @@ def export_unified(geo_layer, key_layer, centroids, inter_dists, base_path=None)
     }
     
     path = os.path.join(base_path, 'data', 'topology', 'escaliers_unified.json')
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
     
     print(f"💾 Exporté: {path}")

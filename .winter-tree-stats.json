@@ -1,0 +1,19 @@
+{
+  "repo": "yggdrasil-engine",
+  "date": "2026-02-23T21:32:06.374332",
+  "phase": "CANOPÉE",
+  "total_files": 405,
+  "total_code_lines": 28876,
+  "languages": {
+    "Python": 23958,
+    "PowerShell": 9,
+    "Shell": 11,
+    "HTML": 4892,
+    "JavaScript": 6
+  },
+  "biggest_file": {
+    "path": "engine\\pipeline\\mycelium_full.py",
+    "lines": 7912,
+    "lang": "Python"
+  }
+}

@@ -63,7 +63,7 @@ def score_perceptual(fitness: float, d_index: float,
     Détection: Fitness élevée AVEC D-index élevé MAIS citations << attendues.
     Exemples: mRNA (Karikó rejetée 30 ans), H. pylori, Quasicristaux.
     
-    Score_C = ηᵢ × |D_index| × (1 / cᵢ(t))
+    Score_C = ηᵢ × |D_index| × max(0, 1 - cᵢ(t)/expected_cᵢ)
     
     Args:
         fitness: Wang-Barabási fitness parameter

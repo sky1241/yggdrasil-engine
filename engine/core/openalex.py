@@ -110,7 +110,7 @@ def batch_co_occurrences(concept_ids: list[str],
     if cache_file:
         cache_path = CACHE_DIR / cache_file
         if cache_path.exists():
-            with open(cache_path) as f:
+            with open(cache_path, encoding='utf-8') as f:
                 return json.load(f)
     
     results = {}
@@ -130,7 +130,7 @@ def batch_co_occurrences(concept_ids: list[str],
     # Save cache
     if cache_file:
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
-        with open(CACHE_DIR / cache_file, 'w') as f:
+        with open(CACHE_DIR / cache_file, 'w', encoding='utf-8') as f:
             json.dump(results, f)
     
     return results

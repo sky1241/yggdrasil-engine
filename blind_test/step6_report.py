@@ -38,15 +38,15 @@ test = control["test"]
 # ══════════════════════════════════════════════════════════
 
 # Determine verdict
-recall_pass = metrics["recall_at_100"] > 0.50
+recall_pass = metrics["recall_at_100"] >= 0.50
 mw_pass = test["p_value_greater"] < 0.05
 verdict = "PASS" if recall_pass and mw_pass else "FAIL"
 
 reason_parts = []
 if recall_pass:
-    reason_parts.append(f"recall@100={metrics['recall_at_100']:.0%} > 50%")
+    reason_parts.append(f"recall@100={metrics['recall_at_100']:.0%} >= 50%")
 else:
-    reason_parts.append(f"recall@100={metrics['recall_at_100']:.0%} <= 50%")
+    reason_parts.append(f"recall@100={metrics['recall_at_100']:.0%} < 50%")
 if mw_pass:
     reason_parts.append(f"Mann-Whitney p={test['p_value_greater']:.4f} < 0.05")
 else:

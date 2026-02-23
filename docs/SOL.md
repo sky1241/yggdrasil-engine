@@ -173,7 +173,7 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - [x] Winter tree scanner créé + lancé (65K concepts, 393 chunks × 1 GB)
 - [ ] Attendre fin du scan (~19h) → vérifier winter_tree.json
 - [ ] V2: frames cumulatives à partir du tree trié
-- [ ] V3: formules météorites (OHLC + 7 deltas)
+- [x] V3: formules météorites (OHLC + 7 deltas) — `engine/meteorites.py` session 7
 - [ ] V4: le grimpeur
 
 ## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES

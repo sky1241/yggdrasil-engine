@@ -90,7 +90,7 @@ def main():
     print("\n[ETAPE 1] Preparer le lookup...")
     t0 = time.time()
 
-    with open(ROOT / 'data' / 'mined_concepts.json', encoding='utf-8') as f:
+    with open(ROOT / 'data' / 'core' / 'mined_concepts.json', encoding='utf-8') as f:
         mined = json.load(f)['concepts']
 
     cid_to_domain = {}
