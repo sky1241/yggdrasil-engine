@@ -17,7 +17,7 @@ except ImportError:
     print("Generating static data instead...")
     
     # Fallback: just generate the viz data
-    from engine.symbols import load
+    from engine.core.symbols import load
     db = load()
     viz_path = Path("viz/data.json")
     db.export_viz_json(viz_path)
@@ -25,8 +25,8 @@ except ImportError:
     print(f"Open viz/index.html directly in your browser.")
     exit(0)
 
-from engine.symbols import SymbolDatabase
-from engine.holes import HoleDetector, CONTINENTS, map_symbol_to_continents
+from engine.core.symbols import SymbolDatabase
+from engine.core.holes import HoleDetector, CONTINENTS, map_symbol_to_continents
 
 app = Flask(__name__, static_folder="viz")
 
@@ -111,7 +111,7 @@ def hole_search():
     if not a or not b:
         return jsonify({"error": "Provide ?a=domain&b=domain"}), 400
     
-    from engine.openalex import search_structural_hole
+    from engine.core.openalex import search_structural_hole
     result = search_structural_hole(a, b)
     return jsonify(result)
 

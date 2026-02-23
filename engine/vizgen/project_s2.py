@@ -22,7 +22,7 @@ ROOT = Path(__file__).parent.parent.parent
 DATA = ROOT / "data"
 
 def load_data():
-    with open(DATA / "math_symbols_unique.json", encoding="utf-8") as f:
+    with open(DATA / "core" / "math_symbols_unique.json", encoding="utf-8") as f:
         glyphs = json.load(f)
     with open(ROOT / "viz" / "data.json", encoding="utf-8") as f:
         viz = json.load(f)

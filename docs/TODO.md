@@ -48,7 +48,7 @@ Indexer les 65,026 concepts (levels 0-5, pas juste les 21K de S0) par année/moi
   - 22.9M papers lus, 18.5M avec concepts, 335M paires co-occurrence
   - 1,094 périodes distinctes (1000 → 2026-06)
   - ETA: ~matin 24 fév (PowerShell tourne)
-- Script: `engine/winter_tree_scanner.py` (--init, --chunks N, --status)
+- Script: `engine/topology/build_cooccurrence.py` (remplace winter_tree_scanner.py, supprimé)
 - Arbre: `data/scan/winter_tree.json` (mis à jour après chaque chunk)
 - Chunks: `data/scan/chunks/chunk_NNN/` (cooc.json.gz + activity.json.gz + meta.json)
 

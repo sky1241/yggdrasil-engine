@@ -167,8 +167,8 @@ def main():
     print(f"\n[ETAPE 3] Sauvegarder la matrice...")
     t2 = time.time()
 
-    np.save(ROOT / 'data' / 'domain_cooccurrence_matrix.npy', matrix)
-    np.save(ROOT / 'data' / 'domain_paper_counts.npy', domain_paper_count)
+    np.save(ROOT / 'data' / 'topology' / 'domain_cooccurrence_matrix.npy', matrix)
+    np.save(ROOT / 'data' / 'topology' / 'domain_paper_counts.npy', domain_paper_count)
 
     with open(ROOT / 'data' / 'topology' / 'domain_cooccurrence_matrix.json', 'w', encoding='utf-8') as f:
         json.dump({

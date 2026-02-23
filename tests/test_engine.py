@@ -2,9 +2,9 @@
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from engine.symbols import SymbolDatabase, load
-from engine.holes import score_technical, score_conceptual, score_perceptual, HoleDetector
-from engine.scisci import disruption_index, uzzi_zscore, fitness_wang_barabasi
+from engine.core.symbols import SymbolDatabase, load
+from engine.core.holes import score_technical, score_conceptual, score_perceptual, HoleDetector
+from engine.core.scisci import disruption_index, uzzi_zscore, fitness_wang_barabasi
 
 
 def test_load_symbols():

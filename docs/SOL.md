@@ -9,7 +9,7 @@
 | Racines | Pipeline API: search → timeline → co-occurrence |
 | Mycelium | Graphe topologique: BC, meshedness, Physarum |
 | Sol (S0) | 21,524 symboles (794 originaux + 20,730 minés OpenAlex), 100% C1 |
-| Winter Tree | Index trié par année/mois: 65,026 concepts × co-occurrences (engine/winter_tree_scanner.py) |
+| Winter Tree | Index trié par année/mois: 65,026 concepts × co-occurrences (remplacé par engine/topology/build_cooccurrence.py) |
 | Vivant | Concept avec works_count >= Q1 de son domaine (77%) |
 | Musée | Concept sous Q1 (23%) — existe mais peu cité |
 | Lianes | Symboles traversant 3+ continents |
@@ -108,14 +108,14 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 ### FIX concept_id (session 4, 22 fév 2026)
 - `concept_id` injecté dans les 21,524 symboles de `strates_export_v2.json` (100% match)
 - Sources: `openalex_map.json` (794 originaux) + `mined_concepts.json` (20,730 minés)
-- Index inverse: `data/concept_index.json` (20,932 entries, concept_id → symbol info)
-- Script: `engine/inject_concept_ids.py`
+- Index inverse: `data/core/concept_index.json` (20,932 entries, concept_id → symbol info)
+- Script: `engine/mining/map_concepts.py` (remplace inject_concept_ids.py, supprimé)
 
 ## FICHIERS CLÉS
 | Fichier | Rôle |
 |---------|------|
 | **V2 — SCAN** | |
-| engine/winter_tree_scanner.py | Scanner winter tree: 65K concepts × mois (--init, --chunks, --status) |
+| engine/topology/build_cooccurrence.py | PLUIE: matrice 5,459×5,459 depuis snapshot OpenAlex 400GB |
 | data/scan/winter_tree.json | Index principal (années, chunks, progression) |
 | data/scan/concepts_65k.json | Lookup 65,026 concepts OpenAlex (7 MB) |
 | data/scan/chunks/chunk_NNN/ | Données par chunk (cooc.json.gz, activity.json.gz, meta.json) |
@@ -126,7 +126,7 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 | engine/pipeline/mycelium_full.py | Mycelium complet (24 briques) |
 | engine/topology/cooccurrence_scan.py | Ancien scan 296M papers → matrice 85×85 |
 | data/core/strates_export_v2.json | Export complet 21,524 symboles, 7 strates |
-| data/concept_index.json | Index inverse concept_id → symbole (20,932) |
+| data/core/concept_index.json | Index inverse concept_id → symbole (20,932) |
 | data/topology/escaliers_spectraux.json | 200 geo + 69 key escaliers |
 | viz/yggdrasil_rain_v3.html | La Pluie v3 (vivant/musée/fusion/escaliers) |
 
