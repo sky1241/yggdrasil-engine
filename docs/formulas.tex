@@ -1,0 +1,471 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+\title{\textbf{Yggdrasil Engine --- Formules} \\[0.5em]
+\large Sources, modifications et mapping vers le mycelium}
+\author{Sky \& Claude (Opus 4.6) --- Session 6, 23 f\'evrier 2026}
+\date{}
+
+\begin{document}
+\maketitle
+
+% ============================================================================
+\section{Architecture des strates}
+% ============================================================================
+
+\begin{center}
+\begin{tabular}{clll}
+\toprule
+\textbf{Strate} & \textbf{Nom} & \textbf{Contenu} & \textbf{Mycelium?} \\
+\midrule
+S6 & Ind\'ecidable & G\"odel, Halting problem & Non \\
+S5 & Presque ind\'ecidable & & Non \\
+S4 & Logique sup\'erieure & & Non \\
+S3 & Conjectures & Riemann, P=NP & Non \\
+S2 & R\'ecursion\textsuperscript{2} & & Non \\
+S1 & Structures r\'ecursives & & Non \\
+\midrule
+\textbf{S0} & \textbf{Formules prouv\'ees} & \textbf{21,524 symboles C1} & \textbf{Oui} \\
+S-1 & M\'etiers & physics, biology, eng. & Oui \\
+S-2 & Glyphes & $=$, $+$, $\int$, $\Sigma$, $\partial$ & Oui \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Le mycelium (r\'eseau de co-occurrences) vit dans le \textbf{sol} (S-2 \`a S0).
+Au-dessus de S0 = l'arbre (conjectures, abstractions). Pas de mycelium.
+
+% ============================================================================
+\section{Formules utilis\'ees --- Sources originales}
+% ============================================================================
+
+% ----------------------------------------------------------------------------
+\subsection{Fitness $\eta_i$ --- Wang, Song \& Barab\'asi (2013)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Wang, D., Song, C., \& Barab\'asi, A.-L. (2013).
+\textit{Quantifying Long-term Scientific Impact}.
+Science, 342(6154), 127--132.
+\href{https://doi.org/10.1126/science.1237825}{doi:10.1126/science.1237825}
+
+\textbf{Formule originale:}
+\begin{equation}
+c_i(t) = \eta_i \cdot m \cdot \sum_j (c_j + 1) \cdot P_i(t - t_i)
+\end{equation}
+o\`u $P_i(t)$ est un vieillissement log-normal:
+\begin{equation}
+P_i(t) = \frac{1}{t} \exp\!\left(-\frac{(\ln t - \mu_i)^2}{2\sigma_i^2}\right)
+\end{equation}
+
+\textbf{Adaptation Yggdrasil} (\texttt{engine/core/scisci.py:15}):
+\begin{equation}
+\eta_i \approx \frac{\text{citations\_totales}}{\sum_{t=1}^{\text{age}} P_i(t)}
+\quad\text{avec } \mu=1, \sigma=1
+\end{equation}
+Simplification: on estime $\eta_i$ comme ratio citations r\'eelles / citations attendues
+selon l'\^age, sans le terme de pr\'ef\'erence cumulative.
+
+% ----------------------------------------------------------------------------
+\subsection{D-index (Disruption) --- Wu, Wang \& Evans (2019)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Wu, L., Wang, D., \& Evans, J. A. (2019).
+\textit{Large Teams Develop and Small Teams Disrupt Science and Technology}.
+Nature, 566, 378--382.
+\href{https://doi.org/10.1038/s41586-019-0941-9}{doi:10.1038/s41586-019-0941-9}
+
+Formule originale (Funk \& Owen-Smith, 2017):
+\begin{equation}
+D = \frac{n_i - n_j}{n_i + n_j + n_k}
+\end{equation}
+\begin{itemize}
+\item $n_i$ = papers citant le focal MAIS PAS ses r\'ef\'erences
+\item $n_j$ = papers citant le focal ET ses r\'ef\'erences
+\item $n_k$ = papers citant SEULEMENT les r\'ef\'erences
+\end{itemize}
+$D \to +1$: disruptif (nouveau paradigme).
+$D \to -1$: developmental (extension).
+
+\textbf{Adaptation Yggdrasil} (\texttt{engine/core/scisci.py:55}):
+Utilis\'e tel quel. Sert \`a d\'etecter les trous techniques (type A: $|D|$ bas)
+et perceptuels (type C: $|D|$ haut mais citations basses).
+
+% ----------------------------------------------------------------------------
+\subsection{Z-score d'atypicit\'e --- Uzzi et al. (2013)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Uzzi, B., Mukherjee, S., Stringer, M., \& Jones, B. (2013).
+\textit{Atypical Combinations and Scientific Impact}.
+Science, 342(6157), 468--472.
+\href{https://doi.org/10.1126/science.1240474}{doi:10.1126/science.1240474}
+
+\begin{equation}
+z = \frac{f_{\text{obs}} - \mu_{\text{random}}}{\sigma_{\text{random}}}
+\end{equation}
+$z \ll 0$: combinaison tr\`es atypique (novel).
+$z \gg 0$: combinaison conventionnelle.
+
+\textbf{Adaptation Yggdrasil} (\texttt{engine/core/scisci.py:83}):
+Utilis\'e tel quel. Sert au score de trou conceptuel (type B):
+plus le z-score est n\'egatif, plus la paire est un trou potentiel.
+
+% ----------------------------------------------------------------------------
+\subsection{Q-factor --- Sinatra et al. (2016)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Sinatra, R., Wang, D., Deville, P., Song, C., \& Barab\'asi, A.-L. (2016).
+\textit{Quantifying the Evolution of Individual Scientific Impact}.
+Science, 354(6312), aaf5239.
+\href{https://doi.org/10.1126/science.aaf5239}{doi:10.1126/science.aaf5239}
+
+\begin{equation}
+\log(c_i) = \log(Q_i) + \log(p_i)
+\end{equation}
+$Q$ = qualit\'e constante d'un chercheur. $p$ = chance (random).
+
+\textbf{Adaptation Yggdrasil} (\texttt{engine/core/scisci.py:107}):
+\begin{equation}
+Q \approx \text{median}\!\left(\log(c_i + 1)\right)
+\end{equation}
+Simplification: m\'ediane des log-citations comme proxy de qualit\'e.
+
+% ============================================================================
+\section{Formules de d\'etection de trous}
+% ============================================================================
+
+\textbf{Fichier:} \texttt{engine/core/holes.py}
+
+% ----------------------------------------------------------------------------
+\subsection{Type A --- Trou Technique}
+% ----------------------------------------------------------------------------
+
+Tout le monde SAIT o\`u aller, personne ne PEUT.
+Exemples: Poincar\'e (Hamilton bloqu\'e 20 ans), Higgs (besoin du LHC).
+
+\begin{equation}
+\text{Score}_A = \text{Production}(t) \times (1 - |\Delta\eta / \Delta t|) \times (1 - |D|)
+\end{equation}
+Production \'elev\'ee $\times$ fitness stagnante $\times$ D-index bas (developmental).
+
+% ----------------------------------------------------------------------------
+\subsection{Type B --- Trou Conceptuel}
+% ----------------------------------------------------------------------------
+
+Personne n'a l'ID\'EE de connecter. Le vide est invisible.
+Exemples: GANs (game theory $\times$ deep learning), CRISPR, AlphaFold.
+
+\begin{equation}
+\text{Score}_B = \text{Activity}(A) \times \text{Activity}(B) \times (1 - \text{CoOcc}(A,B)) \times \frac{|z|}{10}
+\end{equation}
+
+% ----------------------------------------------------------------------------
+\subsection{Type C --- Trou Perceptuel}
+% ----------------------------------------------------------------------------
+
+L'outil EXISTE, personne n'y CROIT.
+Exemples: mRNA (Karik\'o rejet\'ee 30 ans), H.\ pylori, quasicristaux.
+
+\begin{equation}
+\text{Score}_C = \eta_i \times |D| \times \left(1 - \frac{c_i(t)}{c_i^{\text{expected}}}\right)
+\end{equation}
+
+% ============================================================================
+\section{Topologie du mycelium}
+% ============================================================================
+
+\textbf{Fichier:} \texttt{engine/pipeline/mycelium\_full.py} (24 briques, 456 tests)
+
+% ----------------------------------------------------------------------------
+\subsection{Meshedness $\alpha$ (brique 1)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Bebber, D. P., Hynes, J., Darrah, P. R., Boddy, L., \& Fricker, M. D. (2007).
+\textit{Biological solutions to transport network design}.
+Proc.\ R.\ Soc.\ B, 274, 2307--2315.
+
+\begin{equation}
+\alpha = \frac{L - N + 1}{2N - 5}
+\end{equation}
+$L$ = ar\^etes, $N$ = n\oe uds. $\alpha = 0$: arbre pur. $\alpha = 1$: r\'eseau planaire maximal.
+
+\textbf{Adaptation Yggdrasil:} utilis\'e tel quel. Le $\alpha$ mesure la r\'esilience
+du mycelium dans le sol (S-2 \`a S0). Sert au delta $\alpha$ dans les bougies OHLC.
+
+% ----------------------------------------------------------------------------
+\subsection{Betweenness Centrality (brique 5)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Freeman, L. C. (1977).
+\textit{A Set of Measures of Centrality Based on Betweenness}.
+Sociometry, 40(1), 35--41.
+
+\begin{equation}
+BC(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
+\end{equation}
+$\sigma_{st}$ = chemins les plus courts entre $s$ et $t$.
+$\sigma_{st}(v)$ = ceux passant par $v$.
+
+\textbf{Adaptation Yggdrasil:} utilis\'e via NetworkX (normalis\'e). Un n\oe ud \`a BC \'elev\'e
+est un pont (P1). Corr\`ele avec le flux r\'eel en mycelium (Oyarte Galvez 2025).
+
+% ----------------------------------------------------------------------------
+\subsection{Physarum (brique 10)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Tero, A., Takagi, S., Saigusa, T., et al. (2010).
+\textit{Rules for biologically inspired adaptive network design}.
+Science, 327(5964), 439--442.
+\href{https://doi.org/10.1126/science.1177894}{doi:10.1126/science.1177894}
+
+\begin{equation}
+\frac{dD_{ij}}{dt} = f(|Q_{ij}|) - \gamma D_{ij}
+\end{equation}
+$D_{ij}$ = conductivit\'e de l'hyphe. $Q_{ij}$ = flux. $\gamma$ = d\'ecroissance.
+$f(|Q|) = |Q|^\mu$ avec $\mu = 1$ (shortest path) ou $\mu < 1$ (loops tolerated).
+
+\textbf{Adaptation Yggdrasil:} les hyphes vivantes/mortes du Physarum servent
+au delta 6 (redistribution des flux) dans les bougies OHLC.
+
+% ----------------------------------------------------------------------------
+\subsection{Laplacien spectral (positionnement)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Chung, F. R. K. (1997).
+\textit{Spectral Graph Theory}. AMS.
+
+Laplacien normalis\'e:
+\begin{equation}
+\mathcal{L} = D^{-1/2} L D^{-1/2} = I - D^{-1/2} A D^{-1/2}
+\end{equation}
+$A$ = matrice de co-occurrence (log-transform\'ee). $D$ = matrice des degr\'es.
+
+Vecteur de Fiedler (2\`eme plus petite valeur propre):
+\begin{equation}
+\mathcal{L} \mathbf{v}_2 = \lambda_2 \mathbf{v}_2
+\end{equation}
+
+\textbf{Adaptation Yggdrasil} (\texttt{engine/topology/cooccurrence\_scan.py:225}):
+\begin{equation}
+\text{position}_x = v_2[i], \quad \text{position}_z = v_3[i]
+\end{equation}
+Les 2\`eme et 3\`eme vecteurs propres donnent les coordonn\'ees spectrales.
+Appliqu\'e sur la matrice de co-occurrence \textbf{log-transform\'ee}: $W = \log(1 + C)$
+o\`u $C$ est la matrice de co-occurrence brute.
+
+Positionne TOUT le sol: glyphes (S-2), m\'etiers (S-1), formules (S0).
+
+% ============================================================================
+\section{Formules Sedov-Taylor --- Impact m\'et\'eorite}
+% ============================================================================
+
+% ----------------------------------------------------------------------------
+\subsection{Formules originales (physique)}
+% ----------------------------------------------------------------------------
+
+\textbf{Sources:}
+\begin{itemize}
+\item Taylor, G. I. (1950). \textit{The Formation of a Blast Wave by a Very Intense Explosion}.
+Proc.\ R.\ Soc.\ A, 201(1065), 159--174.
+\item Sedov, L. I. (1946). \textit{Propagation of strong shock waves}.
+J.\ Appl.\ Math.\ Mech., 10, 241--250.
+\item von Neumann, J. (1947). \textit{The point source solution}. In: Blast Wave (report).
+\end{itemize}
+
+\textbf{Rayon du front de choc:}
+\begin{equation}
+\boxed{R(t) = \beta \left(\frac{E t^2}{\rho_0}\right)^{1/5}}
+\end{equation}
+\begin{itemize}
+\item $E$ = \'energie totale inject\'ee (J)
+\item $\rho_0$ = densit\'e du milieu ambiant (kg/m$^3$)
+\item $t$ = temps depuis l'explosion
+\item $\beta$ = constante sans dimension:
+  $\beta \approx 1.033$ pour $\gamma = 7/5$ (air),
+  $\beta \approx 1.152$ pour $\gamma = 5/3$ (gaz monoatomique)
+\end{itemize}
+
+\textbf{Vitesse du choc:}
+\begin{equation}
+\dot{R}(t) = \frac{2}{5} \beta \left(\frac{E}{\rho_0}\right)^{1/5} t^{-3/5}
+\end{equation}
+Le choc d\'ec\'el\`ere en $t^{-3/5}$.
+
+\textbf{Conditions post-choc (Rankine-Hugoniot, \`a $\xi = 1$):}
+\begin{align}
+V(1) &= \frac{2}{\gamma + 1} \\
+G(1) &= \frac{\gamma + 1}{\gamma - 1} \\
+Z(1) &= \frac{2}{\gamma + 1}
+\end{align}
+Pour $\gamma = 7/5$: densit\'e post-choc $= 6\times$ la densit\'e ambiante.
+
+\textbf{Conservation d'\'energie:}
+\begin{equation}
+E = 4\pi \rho_0 R^3 \dot{R}^2 \left[
+2\int_0^1 G(\xi) V^2(\xi) \xi^2 \, d\xi
++ \frac{2}{\gamma - 1} \int_0^1 Z(\xi) \xi^2 \, d\xi
+\right]
+\end{equation}
+Partition pour $\gamma = 7/5$: $\sim$30\% cin\'etique, $\sim$70\% thermique.
+
+% ----------------------------------------------------------------------------
+\subsection{Scaling de crat\`ere (Holsapple-Schmidt)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Holsapple, K. A. (1993).
+\textit{The Scaling of Impact Processes in Planetary Sciences}.
+Annu.\ Rev.\ Earth Planet.\ Sci., 21, 333--373.
+
+Groupes $\pi$ adimensionnels:
+\begin{align}
+\pi_2 &= \frac{g \cdot a}{U^2} & \text{(gravit\'e vs inertie)} \\
+\pi_3 &= \frac{Y}{\rho_t U^2} & \text{(r\'esistance vs inertie)} \\
+\pi_4 &= \frac{\rho_t}{\rho_p} & \text{(densit\'es cible/projectile)} \\
+\pi_V &= \frac{\rho_t V}{m} & \text{(volume crat\`ere adimensionnel)}
+\end{align}
+
+Loi de scaling compl\`ete:
+\begin{equation}
+\pi_V = K_1 \left[
+\pi_2 \cdot \pi_4^{(6\nu - 2 - \mu)/(3\mu)}
++ K_2 \cdot \pi_3 \cdot \pi_4^{(6\nu - 2)/(3\mu)}
+\right]^{-3\mu/(2+\mu)}
+\end{equation}
+
+R\'egime gravit\'e ($\pi_2 \gg \pi_3$, gros impacts):
+\begin{equation}
+\pi_V = K_1 \cdot \pi_2^{-3\mu/(2+\mu)} \cdot \pi_4^{(6\nu-2-\mu)/(2+\mu)}
+\end{equation}
+
+R\'egime r\'esistance ($\pi_3 \gg \pi_2$, petits impacts):
+\begin{equation}
+\pi_V = K_1 K_2^{-3\mu/(2+\mu)} \cdot \pi_3^{-3\mu/(2+\mu)} \cdot \pi_4^{(6\nu-2)/(2+\mu)}
+\end{equation}
+
+Exposant $\mu$: 2/3 (scaling \'energie) \`a 1/3 (scaling quantit\'e de mouvement).
+Valeur exp\'erimentale pour mat\'eriaux consolid\'es: $\mu \approx 0.58$.
+
+% ----------------------------------------------------------------------------
+\subsection{Mapping Sedov-Taylor $\to$ Mycelium Yggdrasil}
+% ----------------------------------------------------------------------------
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Physique} & \textbf{Yggdrasil} & \textbf{Mesure} \\
+\midrule
+$E$ (\'energie) & strate\_height $\times$ continents\_touch\'es & entier \\
+$\rho_0$ (densit\'e) & meshedness $\alpha$ locale avant impact & $[0, 1]$ \\
+$R(t)$ (rayon choc) & concepts affect\'es \`a $t$ mois & entier \\
+$\dot{R}(t)$ (vitesse) & nouvelles co-occurrences / mois & taux \\
+$\gamma$ (adiabatique) & rigidit\'e du sol local & \`a calibrer \\
+$\beta$ (constante) & \`a calibrer depuis bo\^ites de m\'et\'eorites & $\sim 1$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\textbf{Formule adapt\'ee:}
+\begin{equation}
+\boxed{R(t) = \beta_{\text{myc}} \left(\frac{E_{\text{impact}} \cdot t^2}{\alpha_{\text{local}}}\right)^{1/5}}
+\end{equation}
+avec:
+\begin{align}
+E_{\text{impact}} &= \text{strate\_height} \times \text{continents\_touch\'es} \\
+\alpha_{\text{local}} &= \text{meshedness avant impact (densit\'e du sol S-2 \`a S0)}
+\end{align}
+
+\textbf{Pr\'ediction testable (corr\'elation bougie $\leftrightarrow$ type de trou):}
+\begin{itemize}
+\item Trou A (technique): $\alpha_{\text{local}}$ \'elev\'e $\to$ blast lent $\to$ bougie moyenne
+\item Trou B (conceptuel): $\alpha_{\text{local}}$ faible $\to$ blast rapide $\to$ bougie courte
+\item Trou C (perceptuel): $\alpha_{\text{local}}$ \'elev\'e + hostile $\to$ blast bloqu\'e $\to$ bougie longue
+\end{itemize}
+
+\textbf{Calibration:} depuis Shannon 1948 (premi\`ere bo\^ite, $\rho_0$ mesurable).
+Test final: G\"odel 1931 (avant lui tout est plat, $\rho_0 \approx 0$).
+
+% ============================================================================
+\section{Bougies OHLC et 7 deltas}
+% ============================================================================
+
+\textbf{Fichier pr\'evu:} \texttt{engine/meteorites.py} (V3, apr\`es le scan)
+
+Chaque perc\'ee majeure = une bougie OHLC:
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{OHLC} & \textbf{D\'efinition} \\
+\midrule
+Open & Date d'\'emission du paper \\
+High & Pic de reconfiguration maximale du mycelium \\
+Low & Creux (r\'esistance paradigme / stabilisation) \\
+Close & Date de validation (prouv\'e, r\'epliqu\'e, explosion citations) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Longueur de bougie $= t_{\text{Close}} - t_{\text{Open}}$ = temps de r\'esistance du paradigme.
+
+\textbf{7 indicateurs techniques} (deltas entre frame avant et apr\`es):
+\begin{align}
+\Delta_1 &= \text{volume} = \text{nouvelles ar\^etes co-occurrence cr\'e\'ees} \\
+\Delta_2 &= \text{amplitude} = \|\mathbf{x}_{\text{apr\`es}} - \mathbf{x}_{\text{avant}}\|_2
+  \quad\text{(d\'eplacement spectral des centro\"\i des)} \\
+\Delta_3 &= \Delta BC = BC_{\text{apr\`es}} - BC_{\text{avant}}
+  \quad\text{(nouveaux ponts vs obsol\`etes)} \\
+\Delta_4 &= \Delta\alpha = \alpha_{\text{apr\`es}} - \alpha_{\text{avant}}
+  \quad\text{(r\'esilience r\'eseau)} \\
+\Delta_5 &= \Delta P4 = P4_{\text{ferm\'es}} - P4_{\text{ouverts}}
+  \quad\text{(trous net)} \\
+\Delta_6 &= \Delta\text{Physarum} = \text{hyphes cr\'e\'ees} - \text{hyphes mortes} \\
+\Delta_7 &= \text{births} = \text{concepts n\'es} - \text{concepts morts}
+\end{align}
+
+\textbf{Impact pond\'er\'e:}
+\begin{equation}
+I_{\text{m\'et\'eorite}} = \text{strate\_height} \times \text{continents\_touch\'es}
+\end{equation}
+Exemples: Poincar\'e ($S3 \times 1 = 3$), Shannon ($S1 \times 7 = 7$),
+G\"odel ($S6 \times 9 = 54$, hors \'echelle).
+
+% ============================================================================
+\section{Co-occurrence et force de lien}
+% ============================================================================
+
+\textbf{Fichier:} \texttt{engine/core/scisci.py:128}
+
+\begin{equation}
+\text{CoOcc}(A,B) = \frac{P(A \cap B)}{P(A) \cdot P(B) \cdot N}
+= \frac{n_{AB}}{(n_A / N) \cdot (n_B / N) \cdot N}
+\end{equation}
+$> 1$: sur-repr\'esent\'e. $< 1$: sous-repr\'esent\'e. $= 0$: jamais vu ensemble (trou P4).
+
+\textbf{Jaccard modifi\'e:}
+\begin{equation}
+J(A,B) = \frac{n_{AB}}{n_A + n_B - n_{AB}}
+\end{equation}
+
+% ============================================================================
+\section{Hypoth\`eses \`a v\'erifier (V3)}
+% ============================================================================
+
+\begin{enumerate}
+\item \textbf{Partition \'energ\'etique:} $\sim$30\% nouveaux ponts / $\sim$70\% renforcement?
+  (par analogie avec 30\% cin\'etique / 70\% thermique pour $\gamma = 7/5$).
+  Mesurer avec $\Delta BC$ vs $\Delta\alpha$.
+\item \textbf{$\gamma$ variable:} le $\gamma$ effectif du mycelium varie-t-il par r\'egion?
+  (sol dense = $\gamma$ \'elev\'e, sol creux = $\gamma$ bas).
+  Calibrer depuis les bo\^ites de m\'et\'eorites.
+\item \textbf{Exposant 2/5:} le rayon $R(t) \propto t^{2/5}$ tient-il?
+  Fitter la courbe sur les perc\'ees post-1948 et mesurer l'exposant r\'eel.
+\item \textbf{Corr\'elation bougie $\leftrightarrow$ $\rho_0$:}
+  les bougies longues correspondent-elles aux zones denses (trou C)?
+\end{enumerate}
+
+\end{document}

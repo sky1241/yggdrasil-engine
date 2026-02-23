@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-02-21 23:09:23",
+    "date": "2026-02-22 13:42:19",
     "method": "P4 = activity_A * activity_B * (1 - cooc_norm) * |z_uzzi|",
     "null_model": "analytical independence (E = N_a * N_b / N_total)",
     "n_concepts": 100,

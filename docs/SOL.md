@@ -5,17 +5,21 @@
 ## VOCABULAIRE
 | Terme | Signification |
 |-------|--------------|
-| Pluie | Données brutes OpenAlex (250M+ papers) |
+| Pluie | Données brutes OpenAlex (500M+ papers, 467 GB snapshot local D:\) |
 | Racines | Pipeline API: search → timeline → co-occurrence |
 | Mycelium | Graphe topologique: BC, meshedness, Physarum |
-| Sol (S0) | 21,228 symboles (794 originaux + 20,434 minés OpenAlex), 100% C1 |
+| Sol (S0) | 21,524 symboles (794 originaux + 20,730 minés OpenAlex), 100% C1 |
+| Winter Tree | Index trié par année/mois: 65,026 concepts × co-occurrences (engine/winter_tree_scanner.py) |
 | Vivant | Concept avec works_count >= Q1 de son domaine (77%) |
 | Musée | Concept sous Q1 (23%) — existe mais peu cité |
 | Lianes | Symboles traversant 3+ continents |
 | Escalier géo 🌿 | Concept positionné entre 2 continents distants (200 détectés) |
 | Passe-partout 🔑 | Concept chez lui mais utilisé partout (69 détectés) |
-| Strates | S0=outils → S6=ciel/indécidable |
-| Météorite | Impact Sedov-Taylor: R = (E/ρ)^0.2 × t^0.4 |
+| Strates | S-2=glyphes → S-1=métiers → S0=outils → S6=ciel/indécidable |
+| S-2 Glyphes 🔣 | Notation (=, +, ∫, Σ, ∂) — briques atomiques d'écriture |
+| S-1 Métiers 🔧 | Professions/domaines (physics, biology, engineering) |
+| Mycelium zone | S-2 à S0 — le réseau de co-occurrences vit DANS le sol |
+| Météorite | Impact Sedov-Taylor: R = β(E/ρ₀)^{1/5} × t^{2/5}, blast dans le sol S-2→S0 |
 | Thermomètre | scisci.py: métriques scientométriques |
 | Pont (P1) | Bridge inter-domaines, BC élevé, explosion |
 | Dense (P2) | Hub stable, meshedness élevé |
@@ -27,11 +31,12 @@
 | Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 22 FÉV 2026 (session 4)
+## ÉTAT ACTUEL — 23 FÉV 2026 (session 6)
+- **WINTER TREE SCAN EN COURS** — 65,026 concepts × année/mois, 467 GB, ~393 chunks
+- **ARCHITECTURE S-2/S-1/S0** — mycelium vit dans le sol (glyphes → métiers → formules)
+- **FORMULES SEDOV-TAYLOR** — R = β(E/ρ₀)^{1/5} × t^{2/5}, calibration depuis 1948
 - **V4 VISION DOCUMENTÉE** — le grimpeur (moteur de sélection d'outils automatique)
 - **Test semi-aveugle 2015→2025: SIGNAL DÉTECTÉ** (p=0.00002, r=0.90)
-- Session 4 = audit complet des 22 repos (222K lignes de code propre en 10 mois)
-- Insight V4: les sommets d'escaliers = vues plongeantes sur les briques S0 utiles
 
 ### HISTORIQUE SESSIONS
 | # | Date | Claude | Résumé |
@@ -40,6 +45,8 @@
 | 2 | 21 fév midi | Sonnet 4.5 | Continents, co-occurrence réelle, La Pluie v3 |
 | 3 | 21 fév soir | Opus 4.6 | Cross Physarum, viz 3D escaliers, blind test |
 | 4 | 22 fév | Opus 4.6 | Audit 22 repos, vision V4 grimpeur, roadmap complète |
+| 5 | 23 fév | Opus 4.6 | Winter tree scanner: 65K concepts, chunks 1GB, scan 467 GB lancé |
+| 6 | 23 fév soir | Opus 4.6 | Formules Sedov-Taylor, architecture S-2/S-1/S0, mycelium dans le sol |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
@@ -48,8 +55,9 @@
 - Batch 1 (tests 1-50): 43/49 (88%)
 - Batch 2 (tests 51-100): 43/50 (86%)
 
-### CO-OCCURRENCE RÉELLE (296M papers scannés)
+### CO-OCCURRENCE V1 (296M papers scannés — ancien scan 85 domaines)
 - Matrice 85×85 domaines, densité 99.8%
+- Remplacé par le winter tree scan V2: 65,026 concepts × mois (en cours)
 - Laplacien normalisé D^{-1/2}LD^{-1/2} pour positions spectrales
 - Positions S0 mises à jour depuis co-occurrence réelle (pas TF-IDF)
 
@@ -64,7 +72,7 @@
 - Hagen-Poiseuille: domain "droit"→"fluides" (bug mapping corrigé)
 - 19 C2 déplacés S0→S3 (hypothèses non prouvées → strate conjectures)
 - Poincaré conjecture: C2→C1 (résolu Perelman 2003)
-- S0 final: 21,228 symboles, 100% C1
+- S0 final: 21,524 symboles (21,228 C1 dans S0 + 296 reclassés C2→S3), 100% C1 en S0
 
 ### ESCALIERS SPECTRAUX
 - 2 types: géographique 🌿 (200 lianes, position alien) + passe-partout 🔑 (69, multi-continent)
@@ -106,44 +114,63 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 ## FICHIERS CLÉS
 | Fichier | Rôle |
 |---------|------|
-| engine/pipeline_100.py | Pipeline batch 1 (1-50) |
-| engine/pipeline_batch2.py | Pipeline batch 2 (51-100) |
-| engine/mycelium_full.py | Mycelium complet (24 briques) |
-| engine/cooccurrence_scan.py | Scan 296M papers → matrice 85×85 |
-| engine/fix_spectral.py | Laplacien normalisé → positions spectrales |
-| engine/cleanup_s0.py | Cleanup S0: suspects, HP bug, C2 moves, Q1 vivant/musée |
-| engine/escaliers_spectraux.py | Détection lianes géo + passe-partout |
-| engine/gen_viz_v3.py | Génère La Pluie v3 HTML |
-| data/strates_export_v2.json | Export complet 7 strates + cube/wc |
-| data/domain_cooccurrence_matrix.json | Matrice co-occurrence 85 domaines |
+| **V2 — SCAN** | |
+| engine/winter_tree_scanner.py | Scanner winter tree: 65K concepts × mois (--init, --chunks, --status) |
+| data/scan/winter_tree.json | Index principal (années, chunks, progression) |
+| data/scan/concepts_65k.json | Lookup 65,026 concepts OpenAlex (7 MB) |
+| data/scan/chunks/chunk_NNN/ | Données par chunk (cooc.json.gz, activity.json.gz, meta.json) |
+| **V1 — CARTE** | |
+| engine/core/symbols.py | Symboles + strates |
+| engine/core/holes.py | Détection trous P1-P5 |
+| engine/core/scisci.py | Métriques scientométriques |
+| engine/pipeline/mycelium_full.py | Mycelium complet (24 briques) |
+| engine/topology/cooccurrence_scan.py | Ancien scan 296M papers → matrice 85×85 |
+| data/core/strates_export_v2.json | Export complet 21,524 symboles, 7 strates |
 | data/concept_index.json | Index inverse concept_id → symbole (20,932) |
-| data/escaliers_unified.json | 200 geo + 69 key escaliers |
+| data/topology/escaliers_spectraux.json | 200 geo + 69 key escaliers |
 | viz/yggdrasil_rain_v3.html | La Pluie v3 (vivant/musée/fusion/escaliers) |
+
+## ARCHITECTURE DES STRATES (session 6, 23 fév 2026)
+```
+    S6  ☁️  Indécidable (Gödel, Halting)
+    S5      Presque indécidable
+    S4      Logique supérieure
+    S3      Conjectures                      🌳 ARBRE (pas de mycelium)
+    S2      Récursion sur récursion
+    S1      Structures récursives
+═══════════════════════════════════════════
+    S0  🌍  FORMULES prouvées (21,524)       ░░░░░░░░░░░░░
+    S-1 🔧  MÉTIERS (physics, bio, eng)      ░░ MYCELIUM ░░
+    S-2 🔣  GLYPHES (=, +, ∫, Σ, ∂)         ░░░░░░░░░░░░░
+═══════════════════════════════════════════
+```
+- Le mycelium (co-occurrences) vit dans S-2 à S0 — c'est le SOL
+- Le spectral layout positionne TOUT (glyphes, métiers, formules) à partir du mycelium
+- La météorite frappe S0 et le blast se propage horizontalement + verticalement dans le sol
+- Au-dessus de S0 = l'arbre (conjectures, abstractions) — PAS de mycelium
+- Calibration météorites: commencer depuis Shannon 1948 (ρ₀ mesurable), test final = Gödel 1931
 
 ## DÉCISIONS PRISES (ne pas remettre en question)
 1. S0 = sol solide, 100% C1 — on construit dessus
-2. Vivant = works_count >= Q1 de son domaine (pas seuil fixe)
-3. 2 types d'escaliers: géographique (position spectrale) + passe-partout (multi-continent)
-4. Les contradictions entre couches = le vrai signal
-5. Cube 1 vivant / Cube 2 musée / Cube 3 fusion
-6. Le mycelium Physarum fait le tri vivant/mort sur les CONNEXIONS — le works_count sur les NŒUDS
-7. **V4 = moteur de sélection d'outils.** Sommet escalier = vue plongeante → briques filtrées → AI grimpe
-8. **P=NP est S3-S4, pas S6.** Le pont existe. Les 3 routes classiques sont P5. Le moteur cherche les P4.
-9. **Pas de saut.** V2→V3→V4. Les racines d'abord. Toujours.
+2. S-2 = glyphes (notation), S-1 = métiers (professions), S0 = formules prouvées
+3. Le mycelium vit dans le sol (S-2 à S0), PAS au-dessus
+4. Vivant = works_count >= Q1 de son domaine (pas seuil fixe)
+5. 2 types d'escaliers: géographique (position spectrale) + passe-partout (multi-continent)
+6. Les contradictions entre couches = le vrai signal
+7. Cube 1 vivant / Cube 2 musée / Cube 3 fusion
+8. Le mycelium Physarum fait le tri vivant/mort sur les CONNEXIONS — le works_count sur les NŒUDS
+9. **V4 = moteur de sélection d'outils.** Sommet escalier = vue plongeante → briques filtrées → AI grimpe
+10. **P=NP est S3-S4, pas S6.** Le pont existe. Les 3 routes classiques sont P5. Le moteur cherche les P4.
+11. **Pas de saut.** V2→V3→V4. Les racines d'abord. Toujours.
 
-## TODO
-- [x] Croiser flux Physarum (mycelium) × works_count → lister contradictions
-  - 806 isolated hubs, 1220 hidden bridges, 1567 P4 voids
-  - 21 domains OVER-CITED, 23 UNDER-CITED, 40 BALANCED
-  - Export: data/cross_physarum_wc.json (59KB)
-- [x] Identifier: concepts isolés, ponts cachés, vides fertiles (P4)
-- [x] Viz 3D routes escaliers entre strates
-  - Three.js: 7 strates, 150 lianes geo + 69 passe-partout
-  - Cross-analysis overlay: isolés/ponts/voids P4
-  - viz/yggdrasil_escaliers_3d.html (57KB)
-- [ ] Ajuster validation: accepter P2 pour percées matures (>10K papers)
-- [ ] Pipeline v2: ajouter détection automatique du lifecycle stage
-- [ ] Intégrer MICR (moteur inverse contraintes) dans repo 3d-printer
+## TODO (voir aussi docs/TODO.md pour le détail)
+- [x] Croiser flux Physarum × works_count (806 isolated hubs, 1220 hidden bridges, 1567 P4 voids)
+- [x] Viz 3D escaliers (Three.js)
+- [x] Winter tree scanner créé + lancé (65K concepts, 393 chunks × 1 GB)
+- [ ] Attendre fin du scan (~19h) → vérifier winter_tree.json
+- [ ] V2: frames cumulatives à partir du tree trié
+- [ ] V3: formules météorites (OHLC + 7 deltas)
+- [ ] V4: le grimpeur
 
 ## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES
 
@@ -157,13 +184,12 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - Dossier: blind_test/
 
 ### 2B. Timelapse adaptatif (PROCHAIN)
-- Résolution adaptative selon densité de données:
-  - 1665-1900: par décennie
-  - 1900-1950: par année
-  - 1950-2000: par mois (si données suffisantes)
-  - 2000-2025: par mois (publication_date dispo)
-- Chaque frame = spectral layout recalculé + strates existantes
-- Source: OpenAlex publication_date + concepts
+- Résolution adaptative (confirmée sur les données du winter tree):
+  - ~1000-1980: par année
+  - 1980-2025: par mois (publication_date précise au jour)
+  - ~645+ périodes distinctes
+- Chaque frame = spectral layout recalculé sur S-2→S0 (mycelium complet)
+- Source: winter tree scan (co-occurrences 65K concepts × période)
 - Livrable: séquence de snapshots JSON + viz timelapse
 
 ### 2C. Boîtes de mesure météorites
