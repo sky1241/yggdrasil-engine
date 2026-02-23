@@ -229,7 +229,7 @@ class Deltas:
     def magnitude(self) -> float:
         """Norme L2 des 7 deltas (normalisés)."""
         v = np.array([
-            self.volume / max(self.volume, 1),
+            self.volume / max(abs(self.volume), 1),
             self.amplitude,
             self.bc_delta,
             self.alpha_delta,
@@ -441,7 +441,7 @@ class MeteoriteRegistry:
                     points.append((E, rho0, t, R_obs))
 
         if len(points) < 3:
-            return {"beta": 1.033, "exponent": 0.4, "r_squared": 0.0,
+            return {"beta": 1.033, "exponent": 0.2, "r_squared": 0.0,
                     "n_points": len(points), "status": "insufficient_data"}
 
         E_arr = np.array([p[0] for p in points])
@@ -599,21 +599,25 @@ def measure_impact(frames: dict[str, Frame], candle: Candle,
     candle.rho0 = frame_before.meshedness
 
     box = MeteoriteBox(candle=candle)
-    cumulative_births = 0
 
     # Générer les périodes à mesurer
     periods_to_check = _generate_periods(open_p, window_months)
 
     for t_months, period in enumerate(periods_to_check, 1):
+        # Chercher frame: d'abord "YYYY-MM", sinon "YYYY" (avant 1980)
         frame_after = frames.get(period)
+        if frame_after is None:
+            frame_after = frames.get(period[:4])  # fallback yearly key
         if frame_after is None:
             continue
 
+        # deltas sont TOUJOURS relatifs à frame_before (pré-impact)
+        # → births = total concepts nés depuis l'impact, pas un delta incrémental
         deltas = compute_deltas(frame_before, frame_after)
         candle.deltas_series.append((period, deltas))
 
-        cumulative_births += deltas.births
-        box.measured_radii.append((t_months, abs(cumulative_births)))
+        # R(t) = concepts affectés = births cumulés (déjà cumulé par compute_deltas)
+        box.measured_radii.append((t_months, abs(deltas.births)))
 
     # Trouver High/Low
     candle.find_high_low()

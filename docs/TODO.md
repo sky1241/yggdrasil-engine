@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 23 fév 2026 (fin session 6), Sky×Claude (Opus 4.6)
+> Dernière màj: 24 fév 2026 (session 7), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -44,11 +44,11 @@ Indexer les 65,026 concepts (levels 0-5, pas juste les 21K de S0) par année/moi
 
 - [x] Lookup 65,026 concepts OpenAlex → `data/scan/concepts_65k.json` (7 MB)
 - [x] Plan: 1,492 fichiers → 393 chunks × ~1 GB
-- [ ] Scan en cours — **20/393 chunks (5.1%)** au 23 fév 23h
-  - 22.9M papers lus, 18.5M avec concepts, 335M paires co-occurrence
-  - 1,094 périodes distinctes (1000 → 2026-06)
-  - ETA: ~matin 24 fév (PowerShell tourne)
-- Script: `engine/topology/build_cooccurrence.py` (remplace winter_tree_scanner.py, supprimé)
+- [ ] Scan en cours — **32/393 chunks (8.1%)** au 24 fév
+  - 37.4M papers lus, 30.2M avec concepts, 549M paires co-occurrence
+  - 1,133 périodes distinctes (1000 → 2026-06)
+  - ETA: ~24 fév soir (PowerShell tourne)
+- Script: `engine/topology/build_cooccurrence.py` (--init, --chunks N, --status)
 - Arbre: `data/scan/winter_tree.json` (mis à jour après chaque chunk)
 - Chunks: `data/scan/chunks/chunk_NNN/` (cooc.json.gz + activity.json.gz + meta.json)
 
@@ -84,6 +84,16 @@ Chaque percée majeure = un candlestick sur le mycelium.
 Le V3 RÉUTILISE les frames du V2 → quasi gratuit en calcul.
 Blast Sedov-Taylor se propage dans le sol (S-2→S0). Calibration depuis 1948, test final Gödel 1931.
 Voir `docs/formulas.tex` pour les formules complètes avec sources.
+
+### Code V3 (session 7, 24 fév 2026)
+- [x] `engine/meteorites.py` — module complet (763 lignes)
+  - Sedov-Taylor: blast_radius, blast_velocity, energy_partition
+  - 7 deltas: compute_deltas(before, after)
+  - OHLC Candle + MeteoriteBox + MeteoriteRegistry
+  - fit_sedov (curve_fit scipy), predict_godel
+  - Catalogue 13 météorites (Shannon→AlphaFold)
+  - classify_candle (corrélation bougie↔trou A/B/C)
+- [x] Bugfix session 7: 8 bugs corrigés (4 meteorites + 4 core)
 
 ### La bougie OHLC scientifique
 - **Open** = date d'ÉMISSION du paper

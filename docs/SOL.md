@@ -31,11 +31,11 @@
 | Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 23 FÉV 2026 (session 6)
-- **WINTER TREE SCAN EN COURS** — 65,026 concepts × année/mois, 467 GB, ~393 chunks
+## ÉTAT ACTUEL — 24 FÉV 2026 (session 7)
+- **WINTER TREE SCAN EN COURS** — 32/393 chunks (8.1%), 37M papers, 549M paires
+- **V3 MODULE CODÉ** — `engine/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas + catalogue 13 météorites)
+- **8 BUGS FIXÉS** — 4 dans meteorites.py, 2 dans scisci.py, 1 dans holes.py, 1 dans openalex.py
 - **ARCHITECTURE S-2/S-1/S0** — mycelium vit dans le sol (glyphes → métiers → formules)
-- **FORMULES SEDOV-TAYLOR** — R = β(E/ρ₀)^{1/5} × t^{2/5}, calibration depuis 1948
-- **V4 VISION DOCUMENTÉE** — le grimpeur (moteur de sélection d'outils automatique)
 - **Test semi-aveugle 2015→2025: SIGNAL DÉTECTÉ** (p=0.00002, r=0.90)
 
 ### HISTORIQUE SESSIONS
@@ -47,6 +47,7 @@
 | 4 | 22 fév | Opus 4.6 | Audit 22 repos, vision V4 grimpeur, roadmap complète |
 | 5 | 23 fév | Opus 4.6 | Winter tree scanner: 65K concepts, chunks 1GB, scan 467 GB lancé |
 | 6 | 23 fév soir | Opus 4.6 | Formules Sedov-Taylor, architecture S-2/S-1/S0, mycelium dans le sol |
+| 7 | 24 fév | Opus 4.6 | engine/meteorites.py codé, 8 bugs fixés (core + meteorites), audit complet |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
@@ -119,6 +120,9 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 | data/scan/winter_tree.json | Index principal (années, chunks, progression) |
 | data/scan/concepts_65k.json | Lookup 65,026 concepts OpenAlex (7 MB) |
 | data/scan/chunks/chunk_NNN/ | Données par chunk (cooc.json.gz, activity.json.gz, meta.json) |
+| **V3 — MÉTÉORITES** | |
+| engine/meteorites.py | Sedov-Taylor + OHLC + 7 deltas + catalogue + fit (session 7) |
+| docs/formulas.tex | Toutes les formules sourcées (DOI) + adaptations mycelium |
 | **V1 — CARTE** | |
 | engine/core/symbols.py | Symboles + strates |
 | engine/core/holes.py | Détection trous P1-P5 |

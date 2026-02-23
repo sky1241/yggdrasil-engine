@@ -95,6 +95,17 @@ class DomainPair:
         self._score_b: Optional[float] = None
     
     @property
+    def score_a(self) -> float:
+        """Score de trou technique (nécessite production, delta_fitness, d_index)."""
+        if self._score_a is None:
+            self._score_a = 0.0  # calculé via set_technical_score()
+        return self._score_a
+
+    def set_technical_score(self, production: float, delta_fitness: float, d_index: float):
+        """Calcule et cache le score technique (Type A)."""
+        self._score_a = score_technical(production, delta_fitness, d_index)
+
+    @property
     def score_b(self) -> float:
         """Score de trou conceptuel."""
         if self._score_b is None:
@@ -181,7 +192,7 @@ CONTINENTS = {
     ],
     "Physique Fondamentale": [
         "quantique", "relativité", "QFT", "particules", "cosmologie", "gravitation",
-        "nucléaire", "mécanique stat"
+        "nucléaire", "mécanique stat", "astronomie"
     ],
     "Informatique & IA": [
         "calculabilité", "complexité", "automates", "ML", "crypto", "information",
@@ -197,7 +208,7 @@ CONTINENTS = {
         "algèbre", "algèbre lin", "analyse", "analyse fonctionnelle", "topologie",
         "géométrie", "géom diff", "géom algébrique", "nb théorie", "nb premiers",
         "nombres", "catégories", "ensembles", "logique", "descriptive", "mesure",
-        "complexes", "arithmétique", "trigonométrie"
+        "complexes", "arithmétique", "trigonométrie", "ordinaux"
     ],
 }
 

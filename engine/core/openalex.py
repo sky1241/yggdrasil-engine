@@ -78,7 +78,8 @@ def get_domain_pair_timeline(concept_a_id: str, concept_b_id: str,
     Utile pour détecter les trous qui se REMPLISSENT.
     """
     results = {}
-    for year in range(start_year, 2025):
+    import datetime
+    for year in range(start_year, datetime.datetime.now().year + 1):
         data = _get("works", {
             "filter": f"concepts.id:{concept_a_id},concepts.id:{concept_b_id},publication_year:{year}",
             "per_page": 1,

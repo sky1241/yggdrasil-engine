@@ -146,20 +146,14 @@ def co_occurrence_strength(papers_a: int, papers_b: int,
     if total_papers <= 0 or papers_a <= 0 or papers_b <= 0:
         return 0.0
     
-    # Jaccard
-    union = papers_a + papers_b - papers_ab
-    if union <= 0:
-        return 0.0
-    jaccard = papers_ab / union
-    
-    # Expected co-occurrence
+    # PMI-like ratio: observed / expected
     p_a = papers_a / total_papers
     p_b = papers_b / total_papers
     expected = p_a * p_b * total_papers
-    
+
     if expected <= 0:
-        return jaccard
-    
+        return 0.0
+
     return papers_ab / expected
 
 
@@ -190,6 +184,8 @@ def fiedler_vector(adjacency_matrix: np.ndarray) -> np.ndarray:
     Args:
         adjacency_matrix: matrice d'adjacence
     """
+    if adjacency_matrix.shape[0] < 2:
+        return np.array([0.0])
     L = graph_laplacian(adjacency_matrix)
     eigenvalues, eigenvectors = np.linalg.eigh(L)
     # 2nd smallest eigenvalue (first is always 0)
