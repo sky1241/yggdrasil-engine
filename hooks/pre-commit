@@ -1,0 +1,123 @@
+#!/usr/bin/env python3
+"""
+YGGDRASIL — Auto-update winter-tree.json before each commit.
+Git pre-commit hook: recalcule stats, met à jour phase et next_step.
+"""
+import json
+import subprocess
+import os
+from pathlib import Path
+from datetime import datetime
+
+ROOT = Path(__file__).parent.parent.parent  # .git/hooks/ → repo root
+TREE = ROOT / "winter-tree.json"
+
+def run(cmd):
+    """Run shell command, return stdout."""
+    r = subprocess.run(cmd, shell=True, capture_output=True, text=True, cwd=ROOT)
+    return r.stdout.strip()
+
+def count_lines(pattern):
+    """Count lines in files matching pattern."""
+    out = run(f"find . -not -path './.git/*' -name '{pattern}' | xargs wc -l 2>/dev/null | tail -1")
+    try:
+        return int(out.split()[0])
+    except (IndexError, ValueError):
+        return 0
+
+def count_files(pattern):
+    """Count files matching pattern."""
+    out = run(f"find . -not -path './.git/*' -name '{pattern}' | wc -l")
+    try:
+        return int(out.strip())
+    except ValueError:
+        return 0
+
+def get_commits():
+    """Count total commits."""
+    out = run("git rev-list --count HEAD 2>/dev/null")
+    try:
+        return int(out) + 1  # +1 for the commit about to happen
+    except ValueError:
+        return 0
+
+def get_biggest_py():
+    """Find biggest Python file."""
+    out = run("find engine/ tests/ -name '*.py' -exec wc -l {} + 2>/dev/null | sort -rn | head -2")
+    lines = out.strip().split('\n')
+    for line in lines:
+        parts = line.strip().split()
+        if len(parts) == 2 and parts[1] != 'total':
+            return {"path": parts[1], "lines": int(parts[0]), "lang": "Python"}
+    return {"path": "unknown", "lines": 0, "lang": "Python"}
+
+def determine_phase(py_lines):
+    """Determine project phase based on code volume."""
+    if py_lines < 500:
+        return "GRAINE"
+    elif py_lines < 5000:
+        return "GERMINATION"
+    elif py_lines < 20000:
+        return "CROISSANCE"
+    else:
+        return "CANOPEE"
+
+def main():
+    if not TREE.exists():
+        return  # No tree file, skip
+
+    try:
+        with open(TREE, 'r', encoding='utf-8') as f:
+            tree = json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return  # Corrupted file, skip
+
+    # Compute stats
+    py_lines = count_lines("*.py")
+    html_lines = count_lines("*.html")
+    total_files = int(run("find . -not -path './.git/*' -type f | wc -l") or 0)
+    py_files_engine = count_files("*.py") - count_files("__init__.py")
+    json_files = count_files("*.json")
+    html_files = count_files("*.html")
+    test_files = int(run("find tests/ -name 'test_*.py' -o -name 'verify_*.py' 2>/dev/null | wc -l") or 0)
+    data_mb = float(run("du -sm data/ 2>/dev/null | cut -f1") or 0)
+    commits = get_commits()
+    biggest = get_biggest_py()
+    viz_count = int(run("find viz/ -name '*.html' 2>/dev/null | wc -l") or 0)
+
+    # Update stats
+    tree["stats"] = {
+        "total_files": total_files,
+        "total_code_lines": py_lines,
+        "html_lines": html_lines,
+        "test_suites": test_files,
+        "data_weight_mb": data_mb,
+        "commits": commits,
+        "languages": {
+            "Python": py_lines,
+            "HTML": html_lines,
+            "JSON": json_files
+        },
+        "engine_modules": py_files_engine,
+        "visualizations": viz_count,
+        "biggest_file": biggest
+    }
+
+    # Update scale
+    tree["scale"]["lines"] = py_lines
+    tree["scale"]["data_mb"] = data_mb
+
+    # Update phase
+    tree["phase"] = determine_phase(py_lines)
+    tree["date"] = datetime.now().strftime("%Y-%m-%d")
+
+    # Write back
+    with open(TREE, 'w', encoding='utf-8') as f:
+        json.dump(tree, f, indent=2, ensure_ascii=False)
+
+    # Stage the updated file
+    subprocess.run(["git", "add", str(TREE)], cwd=ROOT)
+    print(f"[winter-tree] ✅ Stats updated: {py_lines} lines Python, {total_files} files, phase {tree['phase']}")
+
+if __name__ == "__main__":
+    main()

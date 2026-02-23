@@ -8,29 +8,28 @@
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 31960,
+    "lines": 23932,
     "factor": 14.2,
     "category": "forêt",
     "height_px": 800,
-    "data_mb": 21.0,
+    "data_mb": 20.0,
     "density": 1.8,
     "trunk_width": 3.0,
     "label": "🌳 Baobab (31,960 lignes Python + 4,889 HTML + 21MB data)"
   },
   "stats": {
-    "total_files": 273,
-    "total_code_lines": 31960,
+    "total_files": 261,
+    "total_code_lines": 23932,
     "html_lines": 4889,
-    "total_tests": 67,
-    "test_suites": 4,
-    "data_weight_mb": 21.0,
-    "commits": 99,
+    "test_suites": 3,
+    "data_weight_mb": 20.0,
+    "commits": 110,
     "languages": {
-      "Python": 31960,
+      "Python": 23932,
       "HTML": 4889,
-      "JSON": 171
+      "JSON": 176
     },
-    "engine_modules": 41,
+    "engine_modules": 42,
     "visualizations": 10,
     "biggest_file": {
       "path": "engine/pipeline/mycelium_full.py",
@@ -102,7 +101,9 @@
       "status": "done",
       "entry": "engine/pipeline/mycelium_full.py",
       "confidence": 95,
-      "depends": ["M3"],
+      "depends": [
+        "M3"
+      ],
       "desc": "7,912 lignes. BC, meshedness, Physarum flux, 456 tests internes. Le plus gros module."
     },
     {
@@ -113,7 +114,10 @@
       "status": "done",
       "entry": "engine/pipeline/verify_32tests.py",
       "confidence": 97,
-      "depends": ["M1", "M3"],
+      "depends": [
+        "M1",
+        "M3"
+      ],
       "desc": "Cross-validation lianes × découvertes majeures 2010-2025"
     },
     {
@@ -124,7 +128,11 @@
       "status": "done",
       "entry": "engine/pipeline/pipeline_100.py",
       "confidence": 87,
-      "depends": ["M3", "P1", "P3"],
+      "depends": [
+        "M3",
+        "P1",
+        "P3"
+      ],
       "desc": "Batch 1: 43/49 (88%). Batch 2: 43/50 (86%). POUR 41/50, CONTRE 46/50."
     },
     {
@@ -135,7 +143,10 @@
       "status": "done",
       "entry": "blind_test/FINAL_REPORT.json",
       "confidence": 90,
-      "depends": ["A2", "P1"],
+      "depends": [
+        "A2",
+        "P1"
+      ],
       "desc": "Mann-Whitney p=0.00001, r=0.90, recall@100=50%. SIGNAL DÉTECTÉ."
     },
     {
@@ -146,7 +157,10 @@
       "status": "done",
       "entry": "engine/analysis/lianes.py",
       "confidence": 95,
-      "depends": ["M1", "P2"],
+      "depends": [
+        "M1",
+        "P2"
+      ],
       "desc": "Escaliers spectraux. 5 universelles (=, exp, ln, Σ, ∫). 9/10 découvertes S3 utilisent des lianes."
     },
     {
@@ -157,7 +171,10 @@
       "status": "done",
       "entry": "engine/mining/map_concepts.py",
       "confidence": 96,
-      "depends": ["P1", "P2"],
+      "depends": [
+        "P1",
+        "P2"
+      ],
       "desc": "4-passes: symbol_map → fr_to_en → from_english → word_search. 1.47B works couverts."
     },
     {
@@ -168,7 +185,10 @@
       "status": "done",
       "entry": "engine/mining/mine_concepts.py",
       "confidence": 95,
-      "depends": ["A5", "P1"],
+      "depends": [
+        "A5",
+        "P1"
+      ],
       "desc": "65K candidats → filtrage → 20,730 concepts. 7.7MB mined_concepts.json."
     },
     {
@@ -179,7 +199,9 @@
       "status": "done",
       "entry": "engine/topology/cooccurrence_scan.py",
       "confidence": 95,
-      "depends": ["A5"],
+      "depends": [
+        "A5"
+      ],
       "desc": "Matrice domaines réelle. Laplacien normalisé → positions spectrales."
     },
     {
@@ -190,7 +212,10 @@
       "status": "done",
       "entry": "engine/mining/cleanup_s0.py",
       "confidence": 98,
-      "depends": ["P2", "A6"],
+      "depends": [
+        "P2",
+        "A6"
+      ],
       "desc": "13 suspects reclassés, HP bug fixé, 19 C2→S3, Poincaré C2→C1. S0 100% C1."
     },
     {
@@ -201,7 +226,10 @@
       "status": "done",
       "entry": "engine/analysis/cross_physarum_wc.py",
       "confidence": 90,
-      "depends": ["P3", "S1"],
+      "depends": [
+        "P3",
+        "S1"
+      ],
       "desc": "806 isolated hubs, 1,220 hidden bridges, 1,567 P4 voids. 21 over-cited, 23 under-cited."
     },
     {
@@ -212,7 +240,10 @@
       "status": "done",
       "entry": "engine/topology/escaliers_spectraux.py",
       "confidence": 95,
-      "depends": ["S1", "A4"],
+      "depends": [
+        "S1",
+        "A4"
+      ],
       "desc": "200 géo + 69 passe-partout. Centroïdes 9 continents. Positions spectrales."
     },
     {
@@ -223,7 +254,10 @@
       "status": "done",
       "entry": "engine/core/holes.py",
       "confidence": 85,
-      "depends": ["M3", "A4"],
+      "depends": [
+        "M3",
+        "A4"
+      ],
       "desc": "A=technique, B=conceptuel, C=perceptuel. Formules implémentées."
     },
     {
@@ -234,7 +268,10 @@
       "status": "done",
       "entry": "engine/topology/build_cooccurrence.py",
       "confidence": 90,
-      "depends": ["P1", "A5"],
+      "depends": [
+        "P1",
+        "A5"
+      ],
       "desc": "Streams 1,980 .gz, sparse matrix, checkpoint/resume. 63 tests bulletproof."
     },
     {
@@ -245,7 +282,10 @@
       "status": "done",
       "entry": "engine/analysis/cross_projects.py",
       "confidence": 85,
-      "depends": ["A4", "T1"],
+      "depends": [
+        "A4",
+        "T1"
+      ],
       "desc": "20 lianes manquantes identifiées. Fourier × Infernal Wheel."
     },
     {
@@ -256,7 +296,9 @@
       "status": "done",
       "entry": "engine/analysis/analyze_pluie.py",
       "confidence": 85,
-      "depends": ["B1"],
+      "depends": [
+        "B1"
+      ],
       "desc": "Post-analyse: densité, degrés, strates, structural holes top 200."
     },
     {
@@ -267,7 +309,10 @@
       "status": "done",
       "entry": "viz/yggdrasil_rain_v3.html",
       "confidence": 95,
-      "depends": ["S1", "T2"],
+      "depends": [
+        "S1",
+        "T2"
+      ],
       "desc": "9 continents filtres + sub-domain toggles + vivant/musée + escaliers glow."
     },
     {
@@ -278,7 +323,9 @@
       "status": "done",
       "entry": "viz/yggdrasil_escaliers_3d.html",
       "confidence": 90,
-      "depends": ["T2"],
+      "depends": [
+        "T2"
+      ],
       "desc": "150 lianes geo (vert) + 69 passe-partout (or). Orbit controls + tooltips."
     },
     {
@@ -289,7 +336,9 @@
       "status": "done",
       "entry": "viz/carte_vivante_s0.html",
       "confidence": 90,
-      "depends": ["P2"],
+      "depends": [
+        "P2"
+      ],
       "desc": "7 pays, 489 capitales, 60 frontières. Cubes C1 prouvés + C2 conjectures."
     },
     {
@@ -300,7 +349,10 @@
       "status": "todo",
       "entry": "~",
       "confidence": 0,
-      "depends": ["B1", "S1"],
+      "depends": [
+        "B1",
+        "S1"
+      ],
       "desc": "PROCHAIN. Résolution adaptative 1665→2025. ~300 frames, ~10-15h calcul."
     },
     {
@@ -311,7 +363,9 @@
       "status": "todo",
       "entry": "~",
       "confidence": 0,
-      "depends": ["F1"],
+      "depends": [
+        "F1"
+      ],
       "desc": "7 indicateurs techniques par météorite. Boîtes de mesure Shannon, ADN, CRISPR..."
     },
     {
@@ -322,7 +376,10 @@
       "status": "todo",
       "entry": "~",
       "confidence": 0,
-      "depends": ["F1", "F2"],
+      "depends": [
+        "F1",
+        "F2"
+      ],
       "desc": "Sommet escalier = vue plongeante → sac à dos S0 filtré → AI grimpe. P=NP est S3-S4."
     }
   ],
@@ -330,49 +387,82 @@
     {
       "phase": 0,
       "name": "Mycorhizes — lois fondamentales",
-      "ids": ["M1", "M2", "M3"],
+      "ids": [
+        "M1",
+        "M2",
+        "M3"
+      ],
       "action": "✅ FAIT. Post, Gödel, Turing, Science of Science.",
       "bio": "Sans mycorhizes, rien ne pousse."
     },
     {
       "phase": 1,
       "name": "Radicelles — données + API + validation initiale",
-      "ids": ["P1", "P2", "P3"],
+      "ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
       "action": "✅ FAIT. 21,524 symboles. OpenAlex 400GB. Mycelium 24 briques.",
       "bio": "Filtrent tout ce qui entre."
     },
     {
       "phase": 2,
       "name": "Ancrage — mapping, minage, tests massifs",
-      "ids": ["A1", "A2", "A3", "A4", "A5", "A6"],
+      "ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6"
+      ],
       "action": "✅ FAIT. 87% pipeline, 97% historique, blind test p=0.00001. 20K concepts minés.",
       "bio": "Le baobab s'ancre profondément avant de pousser."
     },
     {
       "phase": 3,
       "name": "SOL + Tronc — co-occurrence, cleanup, escaliers",
-      "ids": ["S1", "S2", "T1", "T2", "T3"],
+      "ids": [
+        "S1",
+        "S2",
+        "T1",
+        "T2",
+        "T3"
+      ],
       "action": "✅ FAIT. 296M papers, S0 100% C1, 200+69 escaliers, cross Physarum.",
       "bio": "Le tronc du baobab est un réservoir."
     },
     {
       "phase": 4,
       "name": "Branches — PLUIE, cross-projets, analyse",
-      "ids": ["B1", "B2", "B3", "V1", "V2", "V3"],
+      "ids": [
+        "B1",
+        "B2",
+        "B3",
+        "V1",
+        "V2",
+        "V3"
+      ],
       "action": "✅ FAIT. Matrice 5,459×5,459, 63 tests, 13 viz HTML, La Pluie v3.",
       "bio": "Le baobab a peu de branches mais chacune est massive."
     },
     {
       "phase": 5,
       "name": "Feuilles — Timelapse + Candlesticks",
-      "ids": ["F1", "F2"],
+      "ids": [
+        "F1",
+        "F2"
+      ],
       "action": "PROCHAIN. V2 timelapse → V3 OHLC. Les frames V2 nourrissent V3.",
       "bio": "Feuilles = 5% de la masse, 100% de l'énergie perçue."
     },
     {
       "phase": 6,
       "name": "Cime — Le Grimpeur V4",
-      "ids": ["C1"],
+      "ids": [
+        "C1"
+      ],
       "action": "VISION. Dépend de V2+V3. Pas de saut.",
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
