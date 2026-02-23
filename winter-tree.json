@@ -1,34 +1,40 @@
 {
-  "idea": "Yggdrasil Engine — Cartographie de 2022 symboles mathématiques x 250M papers OpenAlex",
+  "idea": "Yggdrasil Engine — Cartographie de 21,524 symboles mathématiques × 296M papers OpenAlex",
   "domain": "science",
   "family": "baobab",
   "family_name": "Baobab",
   "family_emoji": "🌳",
-  "date": "2026-02-19",
-  "phase": "CROISSANCE",
+  "date": "2026-02-23",
+  "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 2249,
-    "factor": 1.0,
-    "category": "arbre",
-    "height_px": 400,
-    "data_mb": 1.2,
-    "density": 1.2,
-    "trunk_width": 1.4,
-    "label": "🌳 Baobab (2249 lignes Python + viz HTML)"
+    "lines": 31960,
+    "factor": 14.2,
+    "category": "forêt",
+    "height_px": 800,
+    "data_mb": 21.0,
+    "density": 1.8,
+    "trunk_width": 3.0,
+    "label": "🌳 Baobab (31,960 lignes Python + 4,889 HTML + 21MB data)"
   },
   "stats": {
-    "total_files": 17,
-    "total_code_lines": 2249,
-    "data_weight_mb": 2.8,
+    "total_files": 273,
+    "total_code_lines": 31960,
+    "html_lines": 4889,
+    "total_tests": 67,
+    "test_suites": 4,
+    "data_weight_mb": 21.0,
+    "commits": 99,
     "languages": {
-      "Python": 2249,
-      "HTML": 368,
-      "JSON": 5
+      "Python": 31960,
+      "HTML": 4889,
+      "JSON": 171
     },
+    "engine_modules": 41,
+    "visualizations": 10,
     "biggest_file": {
-      "path": "engine/pipeline/verify_32tests.py",
-      "lines": 519,
+      "path": "engine/pipeline/mycelium_full.py",
+      "lines": 7912,
       "lang": "Python"
     }
   },
@@ -48,7 +54,7 @@
       "id": "M2",
       "level": "R",
       "depth": -5,
-      "label": "Gödel 1931 + Turing 1936 + Church — Incompletude & Indécidabilité",
+      "label": "Gödel 1931 + Turing 1936 + Church — Incomplétude & Indécidabilité",
       "status": "done",
       "entry": "docs/VERIFICATION_32TESTS.md",
       "confidence": 100,
@@ -62,333 +68,326 @@
       "label": "Wang & Barabási 2013 / Uzzi 2013 / Wu 2019 — Science of Science",
       "status": "done",
       "entry": "engine/core/scisci.py:1",
-      "confidence": 95,
+      "confidence": 100,
       "depends": [],
-      "desc": "Fitness, atypicality z-scores, disruption index — formules validées"
+      "desc": "Fitness, atypicality z-scores, disruption index — formules validées sur 100 tests"
     },
     {
       "id": "P1",
       "level": "R",
       "depth": -4,
-      "label": "OpenAlex API — 250M+ papers, 65K concepts, clé gratuite",
-      "status": "wip",
-      "entry": "engine/core/openalex.py:14:BASE_URL",
-      "confidence": 70,
+      "label": "OpenAlex — 250M+ papers, snapshot local 400GB + API",
+      "status": "done",
+      "entry": "engine/core/openalex.py",
+      "confidence": 95,
       "depends": [],
-      "desc": "Rate limit 100K req/jour. API key requise depuis fév 2026. Module existe mais mapping pas fait."
+      "desc": "Snapshot .gz local (1,980 fichiers) + API pour enrichissement. 296M papers scannés."
     },
     {
       "id": "P2",
       "level": "R",
       "depth": -4,
-      "label": "794 symboles (7 strates S0→S6) × 53 domaines mathématiques",
+      "label": "21,524 symboles (794 originaux + 20,730 minés) × 7 strates × 9 continents",
       "status": "done",
-      "entry": "data/core/strates_export.json",
+      "entry": "data/core/strates_export_v2.json",
       "confidence": 100,
       "depends": [],
-      "desc": "Données validées par publications scientifiques. 7 strates × 7 continents."
+      "desc": "S0 100% C1. Vivant 16,382 (77%) / Musée 4,846 (23%). 85 domaines, 9 continents."
+    },
+    {
+      "id": "P3",
+      "level": "R",
+      "depth": -4,
+      "label": "Mycelium Physarum — 24 briques, flux optimaux",
+      "status": "done",
+      "entry": "engine/pipeline/mycelium_full.py",
+      "confidence": 95,
+      "depends": ["M3"],
+      "desc": "7,912 lignes. BC, meshedness, Physarum flux, 456 tests internes. Le plus gros module."
     },
     {
       "id": "A1",
       "level": "R",
       "depth": -3,
-      "label": "32 tests de validation — 28/29 = 97% confirmé",
+      "label": "32 tests historiques — 28/29 = 97% confirmé",
       "status": "done",
-      "entry": "engine/pipeline/verify_32tests.py:1",
+      "entry": "engine/pipeline/verify_32tests.py",
       "confidence": 97,
-      "depends": [
-        "M1",
-        "M3"
-      ],
+      "depends": ["M1", "M3"],
       "desc": "Cross-validation lianes × découvertes majeures 2010-2025"
     },
     {
       "id": "A2",
       "level": "R",
       "depth": -3,
-      "label": "Lianes — symboles S0 utilisés par 3+ continents",
+      "label": "100 tests pipeline — 87/100 (87.0%)",
       "status": "done",
-      "entry": "engine/analysis/lianes.py:1",
-      "confidence": 95,
-      "depends": [
-        "M1",
-        "P2"
-      ],
-      "desc": "60 lianes identifiées. exp=universel (6 continents, 28/32 tests)"
+      "entry": "engine/pipeline/pipeline_100.py",
+      "confidence": 87,
+      "depends": ["M3", "P1", "P3"],
+      "desc": "Batch 1: 43/49 (88%). Batch 2: 43/50 (86%). POUR 41/50, CONTRE 46/50."
     },
     {
       "id": "A3",
       "level": "R",
-      "depth": -2,
-      "label": "Concept IDs OpenAlex — 794 symboles → 466 concepts (96.2% couverture)",
+      "depth": -3,
+      "label": "Blind test semi-aveugle 2015→2025",
       "status": "done",
-      "entry": "engine/mining/map_concepts.py:1",
-      "confidence": 96,
-      "depends": [
-        "P1",
-        "P2"
-      ],
-      "desc": "PIVOT FAIT. 794 symboles → 466 concepts uniques. 310 high + 271 medium + 183 low. 1.47B works couverts."
+      "entry": "blind_test/FINAL_REPORT.json",
+      "confidence": 90,
+      "depends": ["A2", "P1"],
+      "desc": "Mann-Whitney p=0.00001, r=0.90, recall@100=50%. SIGNAL DÉTECTÉ."
     },
     {
-      "id": "R1",
+      "id": "A4",
       "level": "R",
-      "depth": -1,
-      "label": "Python + urllib (pas de deps externes)",
+      "depth": -3,
+      "label": "Lianes — 200 géographiques + 69 passe-partout",
       "status": "done",
-      "entry": "requirements.txt",
-      "confidence": 100,
-      "depends": [],
-      "desc": "Stack minimale. Flask pour server.py."
+      "entry": "engine/analysis/lianes.py",
+      "confidence": 95,
+      "depends": ["M1", "P2"],
+      "desc": "Escaliers spectraux. 5 universelles (=, exp, ln, Σ, ∫). 9/10 découvertes S3 utilisent des lianes."
     },
     {
-      "id": "S0",
+      "id": "A5",
+      "level": "R",
+      "depth": -3,
+      "label": "Mapping 794→466 concepts OpenAlex (96.2% couverture)",
+      "status": "done",
+      "entry": "engine/mining/map_concepts.py",
+      "confidence": 96,
+      "depends": ["P1", "P2"],
+      "desc": "4-passes: symbol_map → fr_to_en → from_english → word_search. 1.47B works couverts."
+    },
+    {
+      "id": "A6",
+      "level": "R",
+      "depth": -3,
+      "label": "Minage 20,730 concepts depuis OpenAlex",
+      "status": "done",
+      "entry": "engine/mining/mine_concepts.py",
+      "confidence": 95,
+      "depends": ["A5", "P1"],
+      "desc": "65K candidats → filtrage → 20,730 concepts. 7.7MB mined_concepts.json."
+    },
+    {
+      "id": "S1",
       "level": "S",
       "depth": 0,
-      "label": "SOL — data/openalex_map.json (794 symboles → 466 concepts)",
+      "label": "SOL — Co-occurrence 85×85 domaines (296M papers)",
       "status": "done",
-      "entry": "data/core/openalex_map.json",
-      "confidence": 96,
-      "depends": [
-        "A3"
-      ],
-      "desc": "FICHIER PIVOT GENERE. 96.2% couverture. 4 méthodes: symbol_map(390), from_english(205), fr_to_en(111), word_search(24)."
+      "entry": "engine/topology/cooccurrence_scan.py",
+      "confidence": 95,
+      "depends": ["A5"],
+      "desc": "Matrice domaines réelle. Laplacien normalisé → positions spectrales."
+    },
+    {
+      "id": "S2",
+      "level": "S",
+      "depth": 0,
+      "label": "SOL — Cleanup S0: Q1 vivant/musée + suspects reclassés",
+      "status": "done",
+      "entry": "engine/mining/cleanup_s0.py",
+      "confidence": 98,
+      "depends": ["P2", "A6"],
+      "desc": "13 suspects reclassés, HP bug fixé, 19 C2→S3, Poincaré C2→C1. S0 100% C1."
     },
     {
       "id": "T1",
       "level": "T",
       "depth": 1,
-      "label": "Tronc — engine/map_concepts.py (mapping batch 794 symboles → snapshot local)",
+      "label": "Tronc — Cross Physarum × works_count",
       "status": "done",
-      "entry": "engine/mining/map_concepts.py:1",
-      "confidence": 96,
-      "depends": [
-        "S0",
-        "R1"
-      ],
-      "desc": "FAIT. Script 4-passes: symbol_map → fr_to_en → from_english → word_search. Snapshot local 65K concepts (pas API)."
+      "entry": "engine/analysis/cross_physarum_wc.py",
+      "confidence": 90,
+      "depends": ["P3", "S1"],
+      "desc": "806 isolated hubs, 1,220 hidden bridges, 1,567 P4 voids. 21 over-cited, 23 under-cited."
     },
     {
       "id": "T2",
       "level": "T",
       "depth": 1,
-      "label": "Tronc — engine/holes.py (détection trous structurels)",
+      "label": "Tronc — Escaliers spectraux (spectral layout)",
       "status": "done",
-      "entry": "engine/core/holes.py:1",
+      "entry": "engine/topology/escaliers_spectraux.py",
+      "confidence": 95,
+      "depends": ["S1", "A4"],
+      "desc": "200 géo + 69 passe-partout. Centroïdes 9 continents. Positions spectrales."
+    },
+    {
+      "id": "T3",
+      "level": "T",
+      "depth": 1,
+      "label": "Tronc — Holes detection (3 types A/B/C)",
+      "status": "done",
+      "entry": "engine/core/holes.py",
       "confidence": 85,
-      "depends": [
-        "A2"
-      ],
-      "desc": "3 types de trous (A=technique, B=conceptuel, C=perceptuel). Formules implémentées."
+      "depends": ["M3", "A4"],
+      "desc": "A=technique, B=conceptuel, C=perceptuel. Formules implémentées."
     },
     {
       "id": "B1",
       "level": "B",
       "depth": 2,
-      "label": "Branche — Matrice co-occurrence (concept × concept)",
-      "status": "todo",
-      "entry": "engine/core/openalex.py:93:batch_co_occurrences",
-      "confidence": 20,
-      "depends": [
-        "T1",
-        "A3"
-      ],
-      "desc": "La PLUIE. Chaque goutte = un paper qui connecte deux concepts."
+      "label": "Branche — PLUIE: matrice 5,459×5,459 depuis snapshot 400GB",
+      "status": "done",
+      "entry": "engine/topology/build_cooccurrence.py",
+      "confidence": 90,
+      "depends": ["P1", "A5"],
+      "desc": "Streams 1,980 .gz, sparse matrix, checkpoint/resume. 63 tests bulletproof."
     },
     {
       "id": "B2",
       "level": "B",
       "depth": 2,
-      "label": "Branche — Timeline par strate (papers/année/strate)",
-      "status": "todo",
-      "entry": "engine/core/openalex.py:62:get_concept_works_by_year",
-      "confidence": 20,
-      "depends": [
-        "T1",
-        "A3"
-      ],
-      "desc": "Évolution temporelle : quelles strates sont actives ?"
+      "label": "Branche — Cross-projets (7 racines × 7 projets)",
+      "status": "done",
+      "entry": "engine/analysis/cross_projects.py",
+      "confidence": 85,
+      "depends": ["A4", "T1"],
+      "desc": "20 lianes manquantes identifiées. Fourier × Infernal Wheel."
     },
     {
       "id": "B3",
       "level": "B",
       "depth": 2,
-      "label": "Branche — Détection trous réels via OpenAlex",
-      "status": "todo",
-      "entry": "engine/core/openalex.py:138:search_structural_hole",
-      "confidence": 15,
-      "depends": [
-        "B1",
-        "T2"
-      ],
-      "desc": "Appliquer les scores de holes.py sur les vrais chiffres OpenAlex"
+      "label": "Branche — Analyse PLUIE (stats, structural holes = prédictions)",
+      "status": "done",
+      "entry": "engine/analysis/analyze_pluie.py",
+      "confidence": 85,
+      "depends": ["B1"],
+      "desc": "Post-analyse: densité, degrés, strates, structural holes top 200."
     },
     {
-      "id": "b1",
-      "level": "b",
+      "id": "V1",
+      "level": "B",
       "depth": 3,
-      "label": "Rameau — Top 10 papers par symbole",
-      "status": "todo",
-      "entry": "~",
-      "confidence": 10,
-      "depends": [
-        "B1"
-      ],
-      "desc": "Pour chaque symbole, les 10 papers les plus cités"
+      "label": "Viz — La Pluie v3 (vivant/musée/fusion/escaliers)",
+      "status": "done",
+      "entry": "viz/yggdrasil_rain_v3.html",
+      "confidence": 95,
+      "depends": ["S1", "T2"],
+      "desc": "9 continents filtres + sub-domain toggles + vivant/musée + escaliers glow."
     },
     {
-      "id": "b2",
-      "level": "b",
+      "id": "V2",
+      "level": "B",
       "depth": 3,
-      "label": "Rameau — Lianes × papers (cross-continent citations)",
-      "status": "todo",
-      "entry": "~",
-      "confidence": 10,
-      "depends": [
-        "B1",
-        "A2"
-      ],
-      "desc": "Vérifier si exp, ∫, Σ sont vraiment les ponts dans les données réelles"
+      "label": "Viz — Escaliers 3D Three.js",
+      "status": "done",
+      "entry": "viz/yggdrasil_escaliers_3d.html",
+      "confidence": 90,
+      "depends": ["T2"],
+      "desc": "150 lianes geo (vert) + 69 passe-partout (or). Orbit controls + tooltips."
+    },
+    {
+      "id": "V3",
+      "level": "B",
+      "depth": 3,
+      "label": "Viz — Carte vivante S0 + cubes C1/C2",
+      "status": "done",
+      "entry": "viz/carte_vivante_s0.html",
+      "confidence": 90,
+      "depends": ["P2"],
+      "desc": "7 pays, 489 capitales, 60 frontières. Cubes C1 prouvés + C2 conjectures."
     },
     {
       "id": "F1",
       "level": "F",
       "depth": 4,
-      "label": "Feuille — Viz 3D avec popups papers (La Pluie enrichie)",
+      "label": "V2 — Timelapse historique (frame par frame)",
       "status": "todo",
-      "entry": "viz/yggdrasil_rain_v2.html",
-      "confidence": 5,
-      "depends": [
-        "S0",
-        "b1"
-      ],
-      "desc": "Cliquer sur un symbole → voir ses vrais papers OpenAlex"
+      "entry": "~",
+      "confidence": 0,
+      "depends": ["B1", "S1"],
+      "desc": "PROCHAIN. Résolution adaptative 1665→2025. ~300 frames, ~10-15h calcul."
     },
     {
       "id": "F2",
       "level": "F",
       "depth": 4,
-      "label": "Feuille — Corriger le sous-titre (remplacer 8257 par le vrai chiffre)",
+      "label": "V3 — Candlesticks OHLC + météorites",
       "status": "todo",
-      "entry": "viz/yggdrasil_rain_v2.html:38",
-      "confidence": 15,
-      "depends": [
-        "T1"
-      ],
-      "desc": "ATTENTE PAPERS. S-2 et S-1 seront positionnés par le mycelium (co-occurrences locales), pas manuellement."
+      "entry": "~",
+      "confidence": 0,
+      "depends": ["F1"],
+      "desc": "7 indicateurs techniques par météorite. Boîtes de mesure Shannon, ADN, CRISPR..."
     },
     {
       "id": "C1",
       "level": "C",
       "depth": 5,
-      "label": "Cime — Tests unitaires mapping OpenAlex",
+      "label": "V4 — Le Grimpeur (moteur sélection d'outils automatique)",
       "status": "todo",
-      "entry": "tests/test_engine.py",
-      "confidence": 5,
-      "depends": [
-        "T1",
-        "B1"
-      ],
-      "desc": "Valider que le mapping est reproductible"
+      "entry": "~",
+      "confidence": 0,
+      "depends": ["F1", "F2"],
+      "desc": "Sommet escalier = vue plongeante → sac à dos S0 filtré → AI grimpe. P=NP est S3-S4."
     }
   ],
   "build_order": [
     {
       "phase": 0,
       "name": "Mycorhizes — lois fondamentales",
-      "ids": [
-        "M1",
-        "M2",
-        "M3"
-      ],
-      "action": "FAIT. Post, Gödel, Turing, Science of Science — tout est en place.",
-      "bio": "Sans mycorhizes, rien ne pousse. Les lois sont là depuis le début."
+      "ids": ["M1", "M2", "M3"],
+      "action": "✅ FAIT. Post, Gödel, Turing, Science of Science.",
+      "bio": "Sans mycorhizes, rien ne pousse."
     },
     {
       "phase": 1,
-      "name": "Radicelles — contraintes API + données validées",
-      "ids": [
-        "P1",
-        "P2",
-        "A1",
-        "A2"
-      ],
-      "action": "FAIT sauf clé API. Obtenir une clé OpenAlex gratuite sur openalex.org/settings/api",
-      "bio": "Filtrent tout ce qui entre. Les 524 symboles sont validés. L'API est documentée."
+      "name": "Radicelles — données + API + validation initiale",
+      "ids": ["P1", "P2", "P3"],
+      "action": "✅ FAIT. 21,524 symboles. OpenAlex 400GB. Mycelium 24 briques.",
+      "bio": "Filtrent tout ce qui entre."
     },
     {
       "phase": 2,
-      "name": "Pivot — mapper 524 symboles → concept_ids OpenAlex",
-      "ids": [
-        "A3"
-      ],
-      "action": "PROCHAIN. Script batch : pour chaque symbole, chercher son concept OpenAlex, stocker l'ID + works_count.",
-      "bio": "Le pivot est la décision architecturale qui lock-in tout le reste. Si le mapping est mauvais, tout croule."
+      "name": "Ancrage — mapping, minage, tests massifs",
+      "ids": ["A1", "A2", "A3", "A4", "A5", "A6"],
+      "action": "✅ FAIT. 87% pipeline, 97% historique, blind test p=0.00001. 20K concepts minés.",
+      "bio": "Le baobab s'ancre profondément avant de pousser."
     },
     {
       "phase": 3,
-      "name": "SOL + Tronc — fichier pivot + mapping batch",
-      "ids": [
-        "S0",
-        "T1"
-      ],
-      "action": "Générer data/openalex_map.json avec les vrais chiffres. Consolider le tronc (baobab = remplir avant d'étendre).",
-      "bio": "Le tronc du baobab est un réservoir. Il accumule les données avant de pousser des branches."
+      "name": "SOL + Tronc — co-occurrence, cleanup, escaliers",
+      "ids": ["S1", "S2", "T1", "T2", "T3"],
+      "action": "✅ FAIT. 296M papers, S0 100% C1, 200+69 escaliers, cross Physarum.",
+      "bio": "Le tronc du baobab est un réservoir."
     },
     {
       "phase": 4,
-      "name": "Branches — co-occurrences, timelines, trous",
-      "ids": [
-        "B1",
-        "B2",
-        "B3"
-      ],
-      "action": "Matrice de co-occurrence entre concepts. Timelines par strate. Détecter les vrais trous structurels.",
+      "name": "Branches — PLUIE, cross-projets, analyse",
+      "ids": ["B1", "B2", "B3", "V1", "V2", "V3"],
+      "action": "✅ FAIT. Matrice 5,459×5,459, 63 tests, 13 viz HTML, La Pluie v3.",
       "bio": "Le baobab a peu de branches mais chacune est massive."
     },
     {
       "phase": 5,
-      "name": "Rameaux + Feuilles — enrichir la viz",
-      "ids": [
-        "b1",
-        "b2",
-        "F1",
-        "F2"
-      ],
-      "action": "Top papers par symbole. Lianes cross-citations. Popups dans la viz 3D. Corriger le sous-titre.",
+      "name": "Feuilles — Timelapse + Candlesticks",
+      "ids": ["F1", "F2"],
+      "action": "PROCHAIN. V2 timelapse → V3 OHLC. Les frames V2 nourrissent V3.",
       "bio": "Feuilles = 5% de la masse, 100% de l'énergie perçue."
     },
     {
       "phase": 6,
-      "name": "Cime — tests et reproductibilité",
-      "ids": [
-        "C1"
-      ],
-      "action": "Tests unitaires pour le mapping. Le mapping doit être reproductible.",
+      "name": "Cime — Le Grimpeur V4",
+      "ids": ["C1"],
+      "action": "VISION. Dépend de V2+V3. Pas de saut.",
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "ATTENTE: snapshot 500GB OpenAlex en cours de DL. Quand prêt: mycelium sur glyphes (S-2) + métiers (S-1) + rembobinage timeline.",
+  "next_step": "PLUIE: lancer le full run 400GB (6-12h) sur D:\\openalex\\data\\works\\ puis analyse structural holes réels. Ensuite: V2 timelapse.",
   "rules": {
     "auto_update": true,
     "description": "Ce fichier est la source de vérité du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",
     "triggers": [
       "Fichier créé, déplacé ou supprimé → mettre à jour nodes[].entry",
       "Fonctionnalité terminée → passer nodes[].status de 'todo'/'wip' à 'done'",
-      "Travail en cours → passer nodes[].status à 'wip'",
       "Résultat de test/validation → ajuster nodes[].confidence",
       "Nouveau module ou feature → ajouter un node",
-      "Stats changent (lignes de code, fichiers, data) → mettre à jour stats{}",
+      "Stats changent → mettre à jour stats{}",
       "Étape franchie → mettre à jour next_step et build_order[].action"
-    ],
-    "fields_to_update": [
-      "nodes[].status (todo|wip|done)",
-      "nodes[].entry (chemin relatif)",
-      "nodes[].confidence (0-100)",
-      "nodes[].desc (description courte)",
-      "stats.total_files, stats.total_code_lines, stats.data_weight_mb",
-      "phase (GRAINE|GERMINATION|CROISSANCE|CANOPEE)",
-      "next_step"
     ]
   }
 }

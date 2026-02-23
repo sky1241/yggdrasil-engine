@@ -59,50 +59,73 @@ P4 (trou) → P1 (pont) → P3 (explosion) → P2 (dense/mature)
 
 ```
 yggdrasil-engine/
-├── engine/                          ← 29 modules Python (21K+ lignes)
-│   ├── symbols.py                   ← 794 symboles, 7 strates
-│   ├── holes.py                     ← détection 3 types de trous
-│   ├── scisci.py                    ← Wang-Barabási, Uzzi, Wu-Evans
-│   ├── openalex.py                  ← API OpenAlex (250M+ papers)
-│   ├── mine_concepts.py             ← minage 20,730 concepts OpenAlex
-│   ├── map_concepts.py              ← mapping symboles → OpenAlex IDs
-│   ├── mycelium_full.py             ← mycelium complet (24 briques)
-│   ├── bridge_mycelium.py           ← pont mycelium × 101 tests
-│   ├── battery_mycelium.py          ← batterie tests mycelium
-│   ├── pipeline_100.py              ← pipeline batch 1 (1-50)
-│   ├── pipeline_batch2.py           ← pipeline batch 2 (51-100)
-│   ├── cooccurrence_scan.py         ← scan 296M papers → matrice 85×85
-│   ├── build_cooccurrence.py        ← PLUIE: 5,459×5,459 depuis snapshot 400GB
-│   ├── analyze_pluie.py             ← post-analyse PLUIE (structural holes)
-│   ├── cleanup_s0.py                ← cleanup S0: suspects, Q1 vivant/musée
-│   ├── escaliers_spectraux.py       ← détection lianes géo + passe-partout
-│   ├── spectral_layout.py           ← laplacien normalisé → positions spectrales
-│   ├── lianes.py                    ← analyse lianes multi-continents
-│   ├── cross_physarum_wc.py         ← Physarum flux × works_count
-│   ├── cross_projects.py            ← lianes cross-projets
-│   ├── cross_roots.py               ← racines cross-projets
-│   ├── fourier_infernal.py          ← Fourier × Infernal Wheel
-│   ├── gen_viz_v3.py                ← La Pluie v3 HTML
-│   ├── gen_escaliers_3d.py          ← escaliers 3D Three.js
-│   └── verify_32tests.py            ← vérification 32 découvertes
+├── engine/
+│   ├── core/                        ← fondations
+│   │   ├── symbols.py               ← 794 symboles, 7 strates
+│   │   ├── holes.py                 ← détection 3 types de trous
+│   │   ├── scisci.py                ← Wang-Barabási, Uzzi, Wu-Evans
+│   │   └── openalex.py              ← API OpenAlex (250M+ papers)
+│   ├── mining/                      ← extraction de données
+│   │   ├── mine_concepts.py         ← minage 20,730 concepts OpenAlex
+│   │   ├── map_concepts.py          ← mapping symboles → OpenAlex IDs
+│   │   └── cleanup_s0.py            ← cleanup S0, Q1 vivant/musée
+│   ├── topology/                    ← structure du réseau
+│   │   ├── build_cooccurrence.py    ← PLUIE: 5,459×5,459 depuis 400GB
+│   │   ├── cooccurrence_scan.py     ← scan 296M papers → matrice 85×85
+│   │   ├── escaliers_spectraux.py   ← lianes géo + passe-partout
+│   │   ├── spectral_layout.py       ← laplacien normalisé
+│   │   ├── depth_map.py             ← carte de profondeur
+│   │   └── fix_spectral.py          ← corrections spectrales
+│   ├── pipeline/                    ← validation
+│   │   ├── mycelium_full.py         ← mycelium 24 briques (7,912 lignes)
+│   │   ├── bridge_mycelium.py       ← pont mycelium × 101 tests
+│   │   ├── battery_mycelium.py      ← batterie tests mycelium
+│   │   ├── pipeline_100.py          ← pipeline batch 1 (1-50)
+│   │   ├── pipeline_batch2.py       ← pipeline batch 2 (51-100)
+│   │   └── verify_32tests.py        ← 32 découvertes historiques
+│   ├── analysis/                    ← analyses croisées
+│   │   ├── analyze_pluie.py         ← post-analyse PLUIE
+│   │   ├── cross_physarum_wc.py     ← Physarum × works_count
+│   │   ├── cross_projects.py        ← lianes cross-projets
+│   │   ├── cross_roots.py           ← racines cross-projets
+│   │   ├── lianes.py                ← lianes multi-continents
+│   │   └── fourier_infernal.py      ← Fourier × Infernal Wheel
+│   └── vizgen/                      ← génération de viz
+│       ├── gen_viz_v3.py            ← La Pluie v3
+│       ├── gen_escaliers_3d.py      ← escaliers 3D Three.js
+│       └── gen_viz_v2.py            ← La Pluie v2
 ├── blind_test/                      ← test semi-aveugle 2015→2025
 │   ├── step1→step6                  ← pipeline 6 étapes
 │   └── FINAL_REPORT.json            ← p=0.00001, r=0.90
-├── data/                            ← 163 fichiers JSON
-│   ├── strates_export_v2.json       ← 21,524 symboles + métadonnées
-│   ├── mined_concepts.json          ← 20,730 concepts minés (7.7MB)
-│   ├── domain_cooccurrence_matrix.json  ← matrice 85×85
-│   ├── escaliers_unified.json       ← 200 géo + 69 passe-partout
-│   └── cross_physarum_wc.json       ← contradictions flux × citations
-├── viz/                             ← 13 visualisations HTML
-│   ├── yggdrasil_rain_v3.html       ← La Pluie v3 (vivant/musée/escaliers)
+├── data/
+│   ├── core/                        ← données fondamentales
+│   │   ├── strates_export_v2.json   ← 21,524 symboles + méta
+│   │   └── openalex_map.json        ← mapping symboles → OpenAlex
+│   ├── topology/                    ← données réseau
+│   │   ├── domain_cooccurrence_matrix.json
+│   │   ├── escaliers_unified.json   ← 200 géo + 69 passe-partout
+│   │   └── domain_spectral_positions.json
+│   ├── pipeline/                    ← résultats 100 tests
+│   ├── discoveries/                 ← 20 découvertes majeures
+│   ├── cross/                       ← analyses croisées
+│   ├── lianes/                      ← données lianes
+│   └── results/                     ← résultats batterie
+├── viz/                             ← 10 visualisations HTML
+│   ├── yggdrasil_rain_v3.html       ← La Pluie v3
 │   ├── yggdrasil_escaliers_3d.html  ← escaliers 3D Three.js
-│   └── ...                          ← cubes, cartes, planètes
-├── tests/                           ← 4 fichiers (63+ tests)
-│   ├── test_pluie_bulletproof.py    ← 63 tests PLUIE (unit+integ+stress)
-│   └── verify_32tests.py            ← 32 découvertes historiques
-├── SOL.md                           ← sync Sky↔Claude
-├── TODO.md                          ← roadmap V1→V4
+│   ├── yggdrasil_rain_v2.html       ← La Pluie v2
+│   └── legacy/                      ← anciennes viz
+├── tests/                           ← 67+ tests
+│   ├── test_pluie_bulletproof.py    ← 63 tests PLUIE
+│   ├── test_engine.py               ← tests moteur
+│   ├── verify_32tests.py            ← 32 découvertes
+│   └── generate_mock_data.py        ← mock OpenAlex
+├── docs/                            ← documentation
+│   ├── SOL.md                       ← sync Sky↔Claude
+│   ├── TODO.md                      ← roadmap V1→V4
+│   ├── mycelium/                    ← recherche mycelium
+│   └── ...
+├── winter-tree.json                 ← arbre du projet (source de vérité)
 └── server.py                        ← Flask server
 ```
 
@@ -119,11 +142,11 @@ python server.py
 ```bash
 # Test rapide (mock)
 python tests/generate_mock_data.py
-YGG_WORKS_DIR="/tmp/mock_openalex/works" python engine/build_cooccurrence.py --test 5
+YGG_WORKS_DIR="/tmp/mock_openalex/works" python engine/topology/build_cooccurrence.py --test 5
 
 # Full run (6-12h)
-python engine/build_cooccurrence.py
-python engine/analyze_pluie.py
+python engine/topology/build_cooccurrence.py
+python engine/analysis/analyze_pluie.py
 ```
 
 ## Données
@@ -135,7 +158,6 @@ python engine/analyze_pluie.py
 - Blind test: Mann-Whitney p = 0.00001, effect size r = 0.90
 - Co-occurrence: 296M papers, matrice 85×85 domaines
 - Mycelium Physarum: 24 briques, flux optimaux, BC, meshedness
-- OpenAlex: 250M+ papers académiques
 
 ---
 
@@ -191,4 +213,4 @@ P=NP est S3-S4, pas S6. Les 3 routes classiques sont P5. Le moteur cherche les P
 
 Sky — Versoix, CH — 2025-2026
 
-98 commits · 29 modules · 21K+ lignes Python · 13 visualisations · 163 fichiers de données
+99 commits · 41 modules · 32K lignes Python · 10 visualisations · 273 fichiers
