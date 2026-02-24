@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 .env
 data/cache/
+data/scan/chunks/
 *.egg-info/
 dist/
 build/
