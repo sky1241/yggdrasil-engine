@@ -21,6 +21,8 @@
 | Mycelium zone | S-2 à S0 — le réseau de co-occurrences vit DANS le sol |
 | Météorite | Impact Sedov-Taylor: R = β(E/ρ₀)^{1/5} × t^{2/5}, blast dans le sol S-2→S0 |
 | Thermomètre | scisci.py: métriques scientométriques |
+| 5 Curseurs | BA (angle bifurcation), IL (internode), D (diamètre), Db (fractale), L (lacunarité) — Lehmann 2019 |
+| Espèce réseau | Profil des 5 curseurs mesurés sur le graphe réel → match (ou pas) avec 31 espèces biologiques |
 | Pont (P1) | Bridge inter-domaines, BC élevé, explosion |
 | Dense (P2) | Hub stable, meshedness élevé |
 | Théorie×Outil (P3) | Explosion après validation instrumentale |
@@ -48,6 +50,7 @@
 | 5 | 23 fév | Opus 4.6 | Winter tree scanner: 65K concepts, chunks 1GB, scan 467 GB lancé |
 | 6 | 23 fév soir | Opus 4.6 | Formules Sedov-Taylor, architecture S-2/S-1/S0, mycelium dans le sol |
 | 7 | 24 fév | Opus 4.6 | engine/meteorites.py codé, 8 bugs fixés (core + meteorites), audit complet |
+| 8 | 24 fév matin | Opus 4.6 | DÉCOUVERTE: mycelium_full.py=comportement SANS espèce. 5 curseurs (Lehmann 2019, 31 spp). Plan species_identifier.py |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
