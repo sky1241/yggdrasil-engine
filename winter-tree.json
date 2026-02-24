@@ -4,11 +4,11 @@
   "family": "baobab",
   "family_name": "Baobab",
   "family_emoji": "🌳",
-  "date": "2026-02-23",
+  "date": "2026-02-24",
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 23932,
+    "lines": 24527,
     "factor": 14.2,
     "category": "forêt",
     "height_px": 800,
@@ -18,21 +18,18 @@
     "label": "🌳 Baobab (31,960 lignes Python + 4,889 HTML + 21MB data)"
   },
   "stats": {
-    "total_files": 261,
-    "total_code_lines": 23932,
-    "html_lines": 4889,
-    "test_suites": 3,
-    "data_weight_mb": 20.0,
-    "commits": 110,
+    "total_files": 288,
+    "total_code_lines": 24527,
+    "html_lines": 4892,
     "languages": {
-      "Python": 23932,
-      "HTML": 4889,
-      "JSON": 176
+      "Python": 24527,
+      "PowerShell": 9,
+      "Shell": 11,
+      "HTML": 4892,
+      "JavaScript": 6
     },
-    "engine_modules": 42,
-    "visualizations": 10,
     "biggest_file": {
-      "path": "engine/pipeline/mycelium_full.py",
+      "path": "engine\\pipeline\\mycelium_full.py",
       "lines": 7912,
       "lang": "Python"
     }
