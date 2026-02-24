@@ -84,6 +84,32 @@ def sparsify(adjacency, percentile=90):
     return sparse
 
 
+def sparsify_max_degree(adjacency, max_k=3):
+    """
+    Chaque nœud garde ses top-K voisins les plus forts.
+    Symétrisé: si A garde B, B garde A (comme un vrai mycélium
+    où une connexion existe ou n'existe pas).
+
+    max_k=3 → branchement dichotomique (nature)
+    max_k=4 → avec anastomose
+    """
+    N = adjacency.shape[0]
+    sparse = np.zeros_like(adjacency)
+    for i in range(N):
+        row = adjacency[i].copy()
+        row[i] = 0
+        nonzero = (row > 0).sum()
+        if nonzero <= max_k:
+            sparse[i] = row
+        else:
+            sorted_weights = np.sort(row[row > 0])
+            threshold = sorted_weights[-max_k]
+            sparse[i] = np.where(row >= threshold, row, 0)
+    # Symétriser
+    sparse = np.maximum(sparse, sparse.T)
+    return sparse
+
+
 # ============================================================
 # MESURE DES 5 CURSEURS SUR UN GRAPHE
 # ============================================================
@@ -482,68 +508,195 @@ def load_v1_graph():
 # MAIN
 # ============================================================
 
-if __name__ == "__main__":
-    print("=" * 60)
-    print("YGGDRASIL — SPECIES IDENTIFIER v1")
-    print("Lehmann et al. 2019 — 5 curseurs mycéliens")
-    print("=" * 60)
+def run_single(matrix, positions, domains, sparse_method="percentile", sparse_param=90):
+    """
+    Lance mesure + identification pour une config de sparsification.
 
-    # Charger V1
-    print("\n[1/3] Chargement graphe V1 (85 domaines)...")
-    matrix, positions, domains = load_v1_graph()
-    print(f"  {len(domains)} domaines, {(matrix > 0).sum() // 2} arêtes")
-
-    # Mesurer
-    print("\n[2/3] Mesure des 5 curseurs...")
-    measurements = measure_all(matrix, positions, domains)
-
-    sp = measurements.get("sparse_percentile", 90)
-    print(f"\n  Sparsification: P{sp} -> {measurements['n_edges_sparse']}/{measurements['n_edges_full']} arêtes")
-    print(f"\n  Curseurs mesurés:")
-    print(f"    BA  (Branching Angle)     = {measurements['BA']['value']}° (cv={measurements['BA']['cv']})")
-    print(f"    IL  (Internodal Length)    = {measurements['IL']['value']} hops (cv={measurements['IL']['cv']})")
-    print(f"    D   (Hyphal Diameter)      = {measurements['D']['value']} log10 (cv={measurements['D']['cv']})")
-    print(f"    Db  (Box Counting Dim)     = {measurements['Db']['value']} (R²={measurements['Db']['r2']})")
-    print(f"    L   (Lacunarity)           = {measurements['L']['value']} (cv={measurements['L']['cv']})")
-    print(f"    Bifurcations: {measurements['n_bifurcations']}/{measurements['n_nodes']} nœuds (sparse)")
-
-    # Identifier
-    print("\n[3/3] Identification espèce...")
-    result = identify_species(measurements)
-
-    print(f"\n  {'='*50}")
-    if result["is_new_species"]:
-        print(f"  RÉSULTAT: NOUVELLE ESPÈCE TOPOLOGIQUE")
-        print(f"  Le réseau ne correspond à aucun des 3 phylums connus.")
+    sparse_method: "percentile" ou "max_degree"
+    sparse_param: percentile (0-100) ou max_k (entier)
+    """
+    if sparse_method == "max_degree":
+        sparse = sparsify_max_degree(matrix, max_k=sparse_param)
     else:
-        print(f"  RÉSULTAT: {result['identification']}")
-        print(f"  Stratégie: {result['ranking'][0]['strategy']}")
+        sparse = sparsify(matrix, percentile=sparse_param)
 
-    print(f"  Confiance: {result['confidence']*100:.1f}%")
-    print(f"  Marge vs 2ème: {result['margin']:.4f}")
+    # Positions
+    pos_tuples = {}
+    for d in domains:
+        if d in positions:
+            p = positions[d]
+            if isinstance(p, dict):
+                pos_tuples[d] = (p["px"], p["pz"])
+            else:
+                pos_tuples[d] = tuple(p)
 
-    print(f"\n  Classement:")
-    for r in result["ranking"]:
-        marker = " <<<" if r["phylum"] == result["identification"] else ""
-        print(f"    {r['phylum']:20s} dist={r['distance']:.4f} ({r['strategy']}){marker}")
+    N = len(domains)
+    n_edges_full = int((matrix > 0).sum()) // 2
+    n_edges_sparse = int((sparse > 0).sum()) // 2
 
-    print(f"\n  {'='*50}")
+    ba_mean, ba_cv = measure_branching_angles(pos_tuples, sparse, domains)
+    il_mean, il_cv = measure_internodal_length(sparse)
+    d_mean, d_cv = measure_hyphal_diameter(matrix)  # full graph, log10
+    db_val, db_r2 = measure_box_counting_dimension(pos_tuples, domains)
+    l_val, l_cv = measure_lacunarity(pos_tuples, domains)
+
+    degrees = [(sparse[i] > 0).sum() for i in range(N)]
+    mean_deg = np.mean(degrees)
+    max_deg = max(degrees)
+    n_bifurc = sum(1 for d in degrees if d >= 3)
+
+    measurements = {
+        "BA":  {"value": round(ba_mean, 2), "cv": round(ba_cv, 3)},
+        "IL":  {"value": round(il_mean, 2), "cv": round(il_cv, 3)},
+        "D":   {"value": round(d_mean, 2), "cv": round(d_cv, 3)},
+        "Db":  {"value": round(db_val, 3), "r2": round(db_r2, 3)},
+        "L":   {"value": round(l_val, 3), "cv": round(l_cv, 3)},
+        "n_nodes": N,
+        "n_edges_full": n_edges_full,
+        "n_edges_sparse": n_edges_sparse,
+        "n_bifurcations": n_bifurc,
+        "mean_degree": round(mean_deg, 1),
+        "max_degree": int(max_deg),
+        "sparse_method": sparse_method,
+        "sparse_param": sparse_param,
+    }
+
+    result = identify_species(measurements)
+    return measurements, result
+
+
+def run_compare(matrix, positions, domains):
+    """
+    Compare P90 vs max-degree K=3,4,5,6 sur les mêmes données.
+    Sauvegarde species_comparison.json.
+    """
+    from datetime import datetime
+
+    configs = [
+        ("P90", "percentile", 90),
+        ("K=3 (branchement)", "max_degree", 3),
+        ("K=4 (+ anastomose)", "max_degree", 4),
+        ("K=5", "max_degree", 5),
+        ("K=6", "max_degree", 6),
+    ]
+
+    n_papers = 296_000_000  # V1
+    n_edges_total = int((matrix > 0).sum()) // 2
+
+    print("=" * 80)
+    print("YGGDRASIL — SPECIES COMPARISON TEST")
+    print(f"Données: V1 — {len(domains)} domaines, {n_edges_total} arêtes, {n_papers:,} papers")
+    print(f"Lehmann et al. 2019 — 5 curseurs × 3 phylums × 31 espèces")
+    print("=" * 80)
+
+    header = f"{'Config':<22} {'Edges':>6} {'Deg':>5} {'Max':>4} {'Bif':>4}  {'BA':>6} {'IL':>5} {'D':>5} {'Db':>5} {'L':>5}  {'Espece':<15} {'Dist':>6} {'Conf':>5}"
+    print(f"\n{header}")
+    print("-" * len(header))
+
+    results = []
+    for name, method, param in configs:
+        m, r = run_single(matrix, positions, domains, method, param)
+        sp = r["identification"]
+        dist = r["ranking"][0]["distance"]
+        conf = r["confidence"] * 100
+
+        print(f"{name:<22} {m['n_edges_sparse']:>6} {m['mean_degree']:>5} {m['max_degree']:>4} {m['n_bifurcations']:>4}  "
+              f"{m['BA']['value']:>6} {m['IL']['value']:>5} {m['D']['value']:>5} {m['Db']['value']:>5} {m['L']['value']:>5}  "
+              f"{sp:<15} {dist:>6.4f} {conf:>4.1f}%")
+
+        results.append({
+            "config": name,
+            "method": method,
+            "param": param,
+            "measurements": m,
+            "identification": r,
+        })
+
+    # Verdict
+    species_set = set(r["identification"]["identification"] for r in results)
+    stable = len(species_set) == 1
+
+    print(f"\n{'=' * 80}")
+    if stable:
+        print(f"VERDICT: STABLE — toutes les configs donnent {species_set.pop()}")
+    else:
+        print(f"VERDICT: INSTABLE — espèces différentes: {species_set}")
+    print(f"{'=' * 80}")
 
     # Sauvegarder
-    output = {
-        "source": "V1 (85 domaines, 296M papers)",
-        "measurements": measurements,
-        "identification": result,
+    comparison = {
+        "date": datetime.now().isoformat(),
+        "source": f"V1 ({len(domains)} domaines, {n_papers:,} papers)",
         "reference": "Lehmann et al. 2019, Sci Rep 9:14152",
+        "question": "Est-ce que brider le degré max (nature: 3-4) change l'espèce ?",
+        "stable": stable,
+        "configs": results,
         "methodology": {
-            "sparsification": f"P{measurements.get('sparse_percentile', 90)}",
             "D_scale": "log10(co-occurrence counts)",
             "L_formula": "sigma^2 / mu^2 (sans +1)",
+            "note": "max_degree symetrise: si A garde B, B garde A",
         },
     }
 
-    out_path = ROOT / "data" / "topology" / "species_profile.json"
+    out_path = ROOT / "data" / "topology" / "species_comparison.json"
     with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
-    print(f"\n  Sauvegardé: {out_path}")
-    print("=" * 60)
+        json.dump(comparison, f, indent=2, ensure_ascii=False)
+    print(f"\nSauvegardé: {out_path}")
+
+    # Aussi sauvegarder le profil P90 comme résultat principal
+    p90_result = results[0]
+    profile = {
+        "source": f"V1 ({len(domains)} domaines, {n_papers:,} papers)",
+        "measurements": p90_result["measurements"],
+        "identification": p90_result["identification"],
+        "reference": "Lehmann et al. 2019, Sci Rep 9:14152",
+        "methodology": {
+            "sparsification": "P90",
+            "D_scale": "log10(co-occurrence counts)",
+            "L_formula": "sigma^2 / mu^2 (sans +1)",
+        },
+        "robustness": {
+            "tested_configs": [r["config"] for r in results],
+            "all_same_species": stable,
+        },
+    }
+
+    profile_path = ROOT / "data" / "topology" / "species_profile.json"
+    with open(profile_path, "w", encoding="utf-8") as f:
+        json.dump(profile, f, indent=2, ensure_ascii=False)
+    print(f"Sauvegardé: {profile_path}")
+
+    return comparison
+
+
+if __name__ == "__main__":
+    import sys
+
+    matrix, positions, domains = load_v1_graph()
+
+    if "--compare" in sys.argv:
+        run_compare(matrix, positions, domains)
+    else:
+        # Mode simple: P90 seul
+        print("=" * 60)
+        print("YGGDRASIL — SPECIES IDENTIFIER v1")
+        print("Lehmann et al. 2019 — 5 curseurs mycéliens")
+        print("=" * 60)
+
+        print(f"\nChargement V1: {len(domains)} domaines, {int((matrix > 0).sum()) // 2} arêtes")
+
+        measurements, result = run_single(matrix, positions, domains)
+
+        print(f"\nSparsification: P90 -> {measurements['n_edges_sparse']}/{measurements['n_edges_full']} arêtes")
+        print(f"\nCurseurs:")
+        for t in ["BA", "IL", "D", "Db", "L"]:
+            v = measurements[t]
+            extra = f"cv={v['cv']}" if 'cv' in v else f"R²={v['r2']}"
+            print(f"  {t:3s} = {v['value']} ({extra})")
+
+        print(f"\nRésultat: {result['identification']} (confiance {result['confidence']*100:.1f}%)")
+        for r in result["ranking"]:
+            marker = " <<<" if r["phylum"] == result["identification"] else ""
+            print(f"  {r['phylum']:20s} dist={r['distance']:.4f}{marker}")
+
+        print("\nPour le test de robustesse: python species_identifier.py --compare")

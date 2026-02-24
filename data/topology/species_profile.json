@@ -1,5 +1,5 @@
 {
-  "source": "V1 (85 domaines, 296M papers)",
+  "source": "V1 (85 domaines, 296,000,000 papers)",
   "measurements": {
     "BA": {
       "value": 77.99,
@@ -25,7 +25,10 @@
     "n_edges_full": 3563,
     "n_edges_sparse": 357,
     "n_bifurcations": 57,
-    "sparse_percentile": 90
+    "mean_degree": 8.4,
+    "max_degree": 54,
+    "sparse_method": "percentile",
+    "sparse_param": 90
   },
   "identification": {
     "identification": "Ascomycota",
@@ -153,5 +156,15 @@
     "sparsification": "P90",
     "D_scale": "log10(co-occurrence counts)",
     "L_formula": "sigma^2 / mu^2 (sans +1)"
+  },
+  "robustness": {
+    "tested_configs": [
+      "P90",
+      "K=3 (branchement)",
+      "K=4 (+ anastomose)",
+      "K=5",
+      "K=6"
+    ],
+    "all_same_species": true
   }
 }

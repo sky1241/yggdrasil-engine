@@ -170,6 +170,10 @@ Voir `docs/SESSION_8_SPECIES_DISCOVERY.md` pour le plan complet.
 - [x] Phase B: Identification → **Ascomycota** (polyvalent, hétérogène)
   - Confiance 28.5%, marge 0.30 vs Mucoromycota (2ème)
   - Résultat: `data/topology/species_profile.json`
+- [ ] Phase B2: Test de robustesse — P90 vs Max-K (K=3,4,5,6) sur V1 296M papers
+  - Question: est-ce que brider à 3-4 connexions (comme la nature) change l'espèce ?
+  - Vrai mycélium = degré 3 (branchement) + degré 4 (anastomose), confirmé par mycelium_full.py
+  - Résultat attendu: `data/topology/species_comparison.json`
 - [ ] Phase C: Calibrer mycelium_full.py avec les vrais paramètres
 - [ ] Phase D: Évolution temporelle (par décennie) — l'espèce change-t-elle avec le temps ?
 
