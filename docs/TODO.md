@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 24 fév 2026 (session 7), Sky×Claude (Opus 4.6)
+> Dernière màj: 24 fév 2026 (session 9), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -38,19 +38,25 @@ Valider sur 100 tests historiques → 87%.
 Remonter à l'an 1000+. Rejouer l'histoire de la science frame par frame.
 Voir les continents se former, les strates apparaître.
 
-### Étape 2A — Winter Tree Scan (EN COURS — lancé 23 fév 2026)
-Scanner les 467 GB du snapshot OpenAlex local (D:\) par chunks de 1 GB.
-Indexer les 65,026 concepts (levels 0-5, pas juste les 21K de S0) par année/mois.
+### Étape 2A — Winter Tree Scan V2 (PRÊT — rechunked 24 fév 2026)
+Scanner les 692 GB du snapshot OpenAlex complet (D:\) par chunks de ~1 GB.
+Indexer les 65,026 concepts (levels 0-5) par année/mois.
 
 - [x] Lookup 65,026 concepts OpenAlex → `data/scan/concepts_65k.json` (7 MB)
-- [x] Plan: 1,492 fichiers → 393 chunks × ~1 GB
-- [ ] Scan en cours — **32/393 chunks (8.1%)** au 24 fév
-  - 37.4M papers lus, 30.2M avec concepts, 549M paires co-occurrence
-  - 1,133 périodes distinctes (1000 → 2026-06)
-  - ETA: ~24 fév soir (PowerShell tourne)
-- Script: `engine/topology/build_cooccurrence.py` (--init, --chunks N, --status)
+- [x] Plan V1: 1,492 fichiers → 393 chunks (abandonné — disque plein + legacy-data)
+- [x] Nettoyage D:\ — legacy-data supprimé (173 GB), 174 GB libres (82%)
+- [x] Scanner V2: filtres erratum/retraction/is_retracted + poids 1/C(n,2)
+- [x] Re-init: 1,981 fichiers → 581 chunks × ~1 GB
+- [x] Test chunk 1 OK: 662K papers, 14 skipped, 580K matched, 6.9M paires
+- [ ] Lancer scan complet — **4/581 chunks** — commande PowerShell prête
+- Script: `engine/topology/winter_tree_scanner.py` (--init, --chunks N, --status)
 - Arbre: `data/scan/winter_tree.json` (mis à jour après chaque chunk)
 - Chunks: `data/scan/chunks/chunk_NNN/` (cooc.json.gz + activity.json.gz + meta.json)
+
+#### Poids 1/C(n,2) (session 9)
+Chaque paper distribue exactement **1 point** au total sur toutes ses paires de concepts.
+Un paper avec n concepts crée C(n,2) paires, chacune reçoit 1/C(n,2).
+Dilue naturellement les reviews (beaucoup de concepts → poids mince par paire) sans les supprimer.
 
 ### Résolution adaptative (confirmée sur les données)
 - Papers les plus anciens: an ~1000 (manuscrits rares)
@@ -85,7 +91,7 @@ Le V3 RÉUTILISE les frames du V2 → quasi gratuit en calcul.
 Blast Sedov-Taylor se propage dans le sol (S-2→S0). Calibration depuis 1948, test final Gödel 1931.
 Voir `docs/formulas.tex` pour les formules complètes avec sources.
 
-### Code V3 (session 7, 24 fév 2026)
+### Code V3 (sessions 7-8, 24 fév 2026)
 - [x] `engine/meteorites.py` — module complet (763 lignes)
   - Sedov-Taylor: blast_radius, blast_velocity, energy_partition
   - 7 deltas: compute_deltas(before, after)
@@ -94,6 +100,9 @@ Voir `docs/formulas.tex` pour les formules complètes avec sources.
   - Catalogue 13 météorites (Shannon→AlphaFold)
   - classify_candle (corrélation bougie↔trou A/B/C)
 - [x] Bugfix session 7: 8 bugs corrigés (4 meteorites + 4 core)
+- [x] Audit session 8: 26 bugs fixés sur 14 fichiers + 2 derniers bugs meteorites.py
+- [x] Tests meteorites.py passés: signature(), classify_candle(rho0=0), measure_impact(), summary()
+- [ ] En attente des frames V2 pour mesure réelle sur les données
 
 ### La bougie OHLC scientifique
 - **Open** = date d'ÉMISSION du paper
@@ -146,6 +155,21 @@ Shannon 1948, ADN 1953, transistor, laser, internet, CRISPR, AlphaFold...
 - Appliquer la signature moyenne → prédire l'impact attendu
 - Comparer à l'impact RÉEL
 - Si ça colle → le modèle est validé du premier impact au dernier
+
+## V3b — ESPÈCE MYCÉLIUM (APRÈS SCAN — session 8, 24 fév 2026)
+Identifier quelle espèce de champignon le réseau Yggdrasil ressemble.
+5 curseurs de Lehmann 2019 (31 espèces, dataset ouvert).
+Voir `docs/SESSION_8_SPECIES_DISCOVERY.md` pour le plan complet.
+
+- [ ] Phase A: Mesurer les 5 curseurs sur le graphe réel (`engine/topology/species_identifier.py`)
+  - BA (Branching Angle): angles entre arêtes aux nœuds degré ≥ 3 (atan2 sur positions spectrales)
+  - IL (Internodal Length): BFS entre bifurcations
+  - D (Hyphal Diameter): poids moyen des arêtes
+  - Db (Box Counting Dimension): fractale du sous-graphe
+  - L (Lacunarity): distribution des vides (FracLac)
+- [ ] Phase B: Identifier — distance euclidienne aux 31 espèces Lehmann 2019
+- [ ] Phase C: Calibrer mycelium_full.py avec les vrais paramètres
+- [ ] Phase D: Évolution temporelle (par décennie) — l'espèce change-t-elle avec le temps ?
 
 ## V4 — LE GRIMPEUR (VISION — après V3)
 Le sommet de chaque escalier = un point de vue.
