@@ -1,0 +1,157 @@
+{
+  "source": "V1 (85 domaines, 296M papers)",
+  "measurements": {
+    "BA": {
+      "value": 77.99,
+      "cv": 0.679
+    },
+    "IL": {
+      "value": 1.81,
+      "cv": 0.251
+    },
+    "D": {
+      "value": 3.96,
+      "cv": 0.289
+    },
+    "Db": {
+      "value": 0.351,
+      "r2": 0.639
+    },
+    "L": {
+      "value": 1.3,
+      "cv": 0.448
+    },
+    "n_nodes": 85,
+    "n_edges_full": 3563,
+    "n_edges_sparse": 357,
+    "n_bifurcations": 57,
+    "sparse_percentile": 90
+  },
+  "identification": {
+    "identification": "Ascomycota",
+    "confidence": 0.285,
+    "margin": 0.2989,
+    "ranking": [
+      {
+        "phylum": "Ascomycota",
+        "distance": 0.715,
+        "strategy": "Polyvalent, hétérogène",
+        "n_species": 20,
+        "details": {
+          "BA": {
+            "measured_norm": 0.866,
+            "reference_norm": 0.5,
+            "diff": 0.366
+          },
+          "IL": {
+            "measured_norm": 0.0,
+            "reference_norm": 0.315,
+            "diff": -0.315
+          },
+          "D": {
+            "measured_norm": 0.332,
+            "reference_norm": 0.342,
+            "diff": -0.011
+          },
+          "Db": {
+            "measured_norm": 0.0,
+            "reference_norm": 0.5,
+            "diff": -0.5
+          },
+          "L": {
+            "measured_norm": 1.0,
+            "reference_norm": 0.833,
+            "diff": 0.167
+          }
+        }
+      },
+      {
+        "phylum": "Mucoromycota",
+        "distance": 1.0139,
+        "strategy": "Dense, exploratoire",
+        "n_species": 7,
+        "details": {
+          "BA": {
+            "measured_norm": 0.866,
+            "reference_norm": 0.783,
+            "diff": 0.083
+          },
+          "IL": {
+            "measured_norm": 0.0,
+            "reference_norm": 0.073,
+            "diff": -0.073
+          },
+          "D": {
+            "measured_norm": 0.332,
+            "reference_norm": 0.342,
+            "diff": -0.011
+          },
+          "Db": {
+            "measured_norm": 0.0,
+            "reference_norm": 0.875,
+            "diff": -0.875
+          },
+          "L": {
+            "measured_norm": 1.0,
+            "reference_norm": 0.5,
+            "diff": 0.5
+          }
+        }
+      },
+      {
+        "phylum": "Basidiomycota",
+        "distance": 1.4664,
+        "strategy": "Longue portée, corridors",
+        "n_species": 4,
+        "details": {
+          "BA": {
+            "measured_norm": 0.866,
+            "reference_norm": 0.117,
+            "diff": 0.75
+          },
+          "IL": {
+            "measured_norm": 0.0,
+            "reference_norm": 0.692,
+            "diff": -0.692
+          },
+          "D": {
+            "measured_norm": 0.332,
+            "reference_norm": 0.803,
+            "diff": -0.471
+          },
+          "Db": {
+            "measured_norm": 0.0,
+            "reference_norm": 0.125,
+            "diff": -0.125
+          },
+          "L": {
+            "measured_norm": 1.0,
+            "reference_norm": 0.067,
+            "diff": 0.933
+          }
+        }
+      }
+    ],
+    "is_new_species": false,
+    "measured_raw": {
+      "BA": 77.99,
+      "IL": 1.81,
+      "D": 3.96,
+      "Db": 0.351,
+      "L": 1.3
+    },
+    "measured_normalized": {
+      "BA": 0.8664999999999999,
+      "IL": 0.0,
+      "D": 0.33157894736842103,
+      "Db": 0.0,
+      "L": 1.0
+    }
+  },
+  "reference": "Lehmann et al. 2019, Sci Rep 9:14152",
+  "methodology": {
+    "sparsification": "P90",
+    "D_scale": "log10(co-occurrence counts)",
+    "L_formula": "sigma^2 / mu^2 (sans +1)"
+  }
+}

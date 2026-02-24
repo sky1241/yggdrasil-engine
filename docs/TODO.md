@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 24 fév 2026 (session 9), Sky×Claude (Opus 4.6)
+> Dernière màj: 24 fév 2026 (session 10), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -48,7 +48,7 @@ Indexer les 65,026 concepts (levels 0-5) par année/mois.
 - [x] Scanner V2: filtres erratum/retraction/is_retracted + poids 1/C(n,2)
 - [x] Re-init: 1,981 fichiers → 581 chunks × ~1 GB
 - [x] Test chunk 1 OK: 662K papers, 14 skipped, 580K matched, 6.9M paires
-- [ ] Lancer scan complet — **4/581 chunks** — commande PowerShell prête
+- [ ] Scan complet en cours — commande PowerShell lancée (session 9)
 - Script: `engine/topology/winter_tree_scanner.py` (--init, --chunks N, --status)
 - Arbre: `data/scan/winter_tree.json` (mis à jour après chaque chunk)
 - Chunks: `data/scan/chunks/chunk_NNN/` (cooc.json.gz + activity.json.gz + meta.json)
@@ -161,13 +161,15 @@ Identifier quelle espèce de champignon le réseau Yggdrasil ressemble.
 5 curseurs de Lehmann 2019 (31 espèces, dataset ouvert).
 Voir `docs/SESSION_8_SPECIES_DISCOVERY.md` pour le plan complet.
 
-- [ ] Phase A: Mesurer les 5 curseurs sur le graphe réel (`engine/topology/species_identifier.py`)
-  - BA (Branching Angle): angles entre arêtes aux nœuds degré ≥ 3 (atan2 sur positions spectrales)
-  - IL (Internodal Length): BFS entre bifurcations
-  - D (Hyphal Diameter): poids moyen des arêtes
-  - Db (Box Counting Dimension): fractale du sous-graphe
-  - L (Lacunarity): distribution des vides (FracLac)
-- [ ] Phase B: Identifier — distance euclidienne aux 31 espèces Lehmann 2019
+- [x] Phase A: 5 curseurs mesurés sur V1 85×85 (`engine/topology/species_identifier.py`)
+  - BA = 77.99° (cv=0.679) — sparsification P90 (357/3563 arêtes)
+  - IL = 1.81 hops (cv=0.251) — BFS sur graphe sparse
+  - D = 3.96 log10 (cv=0.289) — log10(co-occ) tombe dans range Lehmann
+  - Db = 0.351 (R²=0.639) — limitation N=85 pour box counting
+  - L = 1.3 (cv=0.448) — σ²/μ² sans +1 (Lehmann convention)
+- [x] Phase B: Identification → **Ascomycota** (polyvalent, hétérogène)
+  - Confiance 28.5%, marge 0.30 vs Mucoromycota (2ème)
+  - Résultat: `data/topology/species_profile.json`
 - [ ] Phase C: Calibrer mycelium_full.py avec les vrais paramètres
 - [ ] Phase D: Évolution temporelle (par décennie) — l'espèce change-t-elle avec le temps ?
 
