@@ -1,0 +1,327 @@
+{
+  "meta": {
+    "description": "17 graines S-2 du mycélium Yggdrasil — patient t=0 de chaque glyphe scientifique",
+    "definition": "S-2 = glyphes inventés POUR la science (pas le substrat alphabet latin/grec)",
+    "exclusions": ["zodiac (pas de mutation scientifique)", "alphabet latin a-z", "alphabet grec α-ω"],
+    "total_seeds": 17,
+    "session": "session 10, 27 fév 2026",
+    "method": "recherche historique + sources peer-reviewed"
+  },
+  "seeds": [
+    {
+      "id": "TALLY",
+      "glyph": "|",
+      "name": "Trait / Tally mark",
+      "type": "proto-nombre",
+      "t0_year": -43000,
+      "t0_precision": "±1000 ans",
+      "t0_method": "24 datations radiocarbone",
+      "artifact": "Os de Lebombo — péroné de babouin, 29 encoches",
+      "location": "Border Cave, montagnes Lebombo, Eswatini/Afrique du Sud",
+      "museum": "KwaZulu-Natal Museum, Pietermaritzburg, Afrique du Sud",
+      "discoverer": "Peter Beaumont, années 1970",
+      "sources": [
+        "d'Errico F. et al. — datation radiocarbone Border Cave",
+        "https://en.wikipedia.org/wiki/Lebombo_bone"
+      ],
+      "descendants": ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_1",
+      "glyph": "1",
+      "name": "Un (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique des édits d'Ashoka",
+      "artifact": "Minor Rock Edict No. 1 — inscription Brahmi, sites Maski et Gujarra",
+      "location": "Inde, empire Maurya",
+      "sources": [
+        "Edicts of Ashoka, 3ème siècle av. J-C",
+        "https://en.wikipedia.org/wiki/Brahmi_numerals",
+        "https://en.wikipedia.org/wiki/Edicts_of_Ashoka"
+      ],
+      "note": "Brahmi 1-3 = traits verticaux I II III, identique au tally. Symboles distincts pour 4-9.",
+      "descendants": [],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_2",
+      "glyph": "2",
+      "name": "Deux (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_3",
+      "glyph": "3",
+      "name": "Trois (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_4",
+      "glyph": "4",
+      "name": "Quatre (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_5",
+      "glyph": "5",
+      "name": "Cinq (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_6",
+      "glyph": "6",
+      "name": "Six (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "note": "Full set 1-9 attesté seulement au 1er-2ème siècle ap. J-C (400 ans après Ashoka)",
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_7",
+      "glyph": "7",
+      "name": "Sept (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_8",
+      "glyph": "8",
+      "name": "Huit (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "DIGIT_9",
+      "glyph": "9",
+      "name": "Neuf (Brahmi → Hindu-Arabic)",
+      "type": "chiffre",
+      "t0_year": -257,
+      "t0_precision": "±20 ans",
+      "t0_method": "datation épigraphique",
+      "artifact": "Édits d'Ashoka, écriture Brahmi",
+      "sources": ["https://en.wikipedia.org/wiki/Brahmi_numerals"],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "ZERO",
+      "glyph": "0",
+      "name": "Zéro",
+      "type": "chiffre",
+      "t0_year": 628,
+      "t0_precision": "exacte",
+      "t0_method": "datation du manuscrit Brāhmasphuṭasiddhānta",
+      "artifact": "Brāhmasphuṭasiddhānta (chapitre 18) — en vers sanskrit, pas de notation",
+      "author": "Brahmagupta (598-668)",
+      "location": "Bhinmal, Rajasthan, Inde",
+      "sources": [
+        "Brahmagupta, Brāhmasphuṭasiddhānta, 628 CE",
+        "https://en.wikipedia.org/wiki/Br%C4%81hmasphu%E1%B9%ADasiddh%C4%81nta",
+        "https://mathshistory.st-andrews.ac.uk/Biographies/Brahmagupta/"
+      ],
+      "note": "Définit 0 comme résultat de a - a. Première arithmétique complète du zéro.",
+      "descendants": [],
+      "species_link": "ALL (universel)"
+    },
+    {
+      "id": "GOLD",
+      "glyph": "☉",
+      "name": "Or / Soleil",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique des papyrus de Leyde et Stockholm",
+      "artifact": "Papyrus de Leyde X (P.Leiden I 397) + Papyrus de Stockholm (P.Holm), 3ème-4ème siècle",
+      "author": "Attribué à Zosimos de Panopolis (~300 ap. J-C)",
+      "location": "Panopolis (Akhmim), Égypte romaine",
+      "sources": [
+        "Zosimos de Panopolis, Cheirokmeta, ~300 CE",
+        "Wentrup C. (2024) 'The Transition from Alchemical to Modern Chemical Symbolism', ChemPlusChem, DOI: 10.1002/cplu.202400033",
+        "Marx D. (2022) 'History of Chemical Notations from Alchemy to Psycho-Chemistry', Israel J. Chemistry, DOI: 10.1002/ijch.202100088",
+        "https://en.wikipedia.org/wiki/Alchemical_symbol"
+      ],
+      "mutation": [
+        {"year": 300, "form": "☉", "system": "alchimie (Zosimos)"},
+        {"year": 1808, "form": "⊙", "system": "Dalton (cercle avec point)"},
+        {"year": 1813, "form": "Au", "system": "Berzelius (Annals of Philosophy 2, 443-454)"},
+        {"year": 1869, "form": "79", "system": "Mendeleev (numéro atomique)"}
+      ],
+      "species_link": "ChiMat"
+    },
+    {
+      "id": "SILVER",
+      "glyph": "☽",
+      "name": "Argent / Lune",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique",
+      "artifact": "Papyrus de Leyde X + Stockholm",
+      "author": "Zosimos de Panopolis",
+      "mutation": [
+        {"year": 300, "form": "☽", "system": "alchimie"},
+        {"year": 1813, "form": "Ag", "system": "Berzelius"},
+        {"year": 1869, "form": "47", "system": "Mendeleev"}
+      ],
+      "sources": ["Wentrup 2024 ChemPlusChem", "Marx 2022 IJC"],
+      "species_link": "ChiMat"
+    },
+    {
+      "id": "IRON",
+      "glyph": "♂",
+      "name": "Fer / Mars",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique",
+      "artifact": "Papyrus de Leyde X + Stockholm",
+      "author": "Zosimos de Panopolis",
+      "mutation": [
+        {"year": 300, "form": "♂", "system": "alchimie"},
+        {"year": 1753, "form": "♂", "system": "Linné — réutilisé pour 'mâle' en biologie"},
+        {"year": 1813, "form": "Fe", "system": "Berzelius"},
+        {"year": 1869, "form": "26", "system": "Mendeleev"}
+      ],
+      "sources": ["Wentrup 2024 ChemPlusChem", "Marx 2022 IJC"],
+      "species_link": "ChiMat + TerBio (migration)"
+    },
+    {
+      "id": "COPPER",
+      "glyph": "♀",
+      "name": "Cuivre / Vénus",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique",
+      "artifact": "Papyrus de Leyde X + Stockholm",
+      "author": "Zosimos de Panopolis",
+      "mutation": [
+        {"year": 300, "form": "♀", "system": "alchimie"},
+        {"year": 1753, "form": "♀", "system": "Linné — réutilisé pour 'femelle' en biologie"},
+        {"year": 1813, "form": "Cu", "system": "Berzelius"},
+        {"year": 1869, "form": "29", "system": "Mendeleev"}
+      ],
+      "sources": ["Wentrup 2024 ChemPlusChem", "Marx 2022 IJC"],
+      "species_link": "ChiMat + TerBio (migration)"
+    },
+    {
+      "id": "TIN",
+      "glyph": "♃",
+      "name": "Étain / Jupiter",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique",
+      "artifact": "Papyrus de Leyde X + Stockholm",
+      "author": "Zosimos de Panopolis",
+      "mutation": [
+        {"year": 300, "form": "♃", "system": "alchimie"},
+        {"year": 1813, "form": "Sn", "system": "Berzelius"},
+        {"year": 1869, "form": "50", "system": "Mendeleev"}
+      ],
+      "sources": ["Wentrup 2024 ChemPlusChem", "Marx 2022 IJC"],
+      "species_link": "ChiMat"
+    },
+    {
+      "id": "LEAD",
+      "glyph": "♄",
+      "name": "Plomb / Saturne",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique",
+      "artifact": "Papyrus de Leyde X + Stockholm",
+      "author": "Zosimos de Panopolis",
+      "mutation": [
+        {"year": 300, "form": "♄", "system": "alchimie"},
+        {"year": 1813, "form": "Pb", "system": "Berzelius"},
+        {"year": 1869, "form": "82", "system": "Mendeleev"}
+      ],
+      "sources": ["Wentrup 2024 ChemPlusChem", "Marx 2022 IJC"],
+      "species_link": "ChiMat"
+    },
+    {
+      "id": "MERCURY",
+      "glyph": "☿",
+      "name": "Mercure / Mercure (planète)",
+      "type": "alchimique",
+      "t0_year": 300,
+      "t0_precision": "±50 ans",
+      "t0_method": "datation paléographique",
+      "artifact": "Papyrus de Leyde X + Stockholm",
+      "author": "Zosimos de Panopolis",
+      "mutation": [
+        {"year": 300, "form": "☿", "system": "alchimie"},
+        {"year": 1813, "form": "Hg", "system": "Berzelius"},
+        {"year": 1869, "form": "80", "system": "Mendeleev"}
+      ],
+      "sources": ["Wentrup 2024 ChemPlusChem", "Marx 2022 IJC"],
+      "species_link": "ChiMat"
+    }
+  ],
+  "mutation_proof": {
+    "transition_paper": {
+      "authors": "Wentrup C.",
+      "year": 2024,
+      "title": "The Transition from Alchemical to Modern Chemical Symbolism",
+      "journal": "ChemPlusChem",
+      "doi": "10.1002/cplu.202400033",
+      "covers": "Bergman → Guiton de Morveau → Hassenfratz & Adet → Higgins → Richter → Dalton → Berzelius"
+    },
+    "notation_history": {
+      "authors": "Marx D.",
+      "year": 2022,
+      "title": "History of Chemical Notations from Alchemy to Psycho-Chemistry",
+      "journal": "Israel Journal of Chemistry",
+      "doi": "10.1002/ijch.202100088"
+    },
+    "berzelius_original": {
+      "authors": "Berzelius J.J.",
+      "year": 1813,
+      "title": "Essay on the Cause of Chemical Proportions",
+      "journal": "Annals of Philosophy",
+      "volume": "2, pp. 443-454 (1813); 3, pp. 51-62, 93-106, 244-257, 353-364 (1814)"
+    },
+    "dalton_quote": "Berzelius's symbols are horrifying... a chaos of atoms (Dalton, 1837)"
+  }
+}

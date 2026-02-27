@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 24 fév 2026 (session 10), Sky×Claude (Opus 4.6)
+> Dernière màj: 27 fév 2026 (session 10b), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -202,6 +202,37 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - L'analogie biologique est poétique mais peut ne pas ajouter de pouvoir prédictif
 - Les 9 continents sont des groupements humains, pas naturels
 - Seuls les TESTS sur V2 trancheront — zéro risque car on ne change rien au modèle existant
+
+### V3c — GRAINES S-2 + PATIENT t=0 (session 10b, 27 fév 2026)
+**Objectif: remonter au patient zéro absolu — les graines S-2 avant l'an 1000.**
+
+#### Résultats validés
+- [x] 17 graines S-2 identifiées: 10 chiffres (0-9) + 7 symboles alchimiques (☉☽♂♀♃♄☿)
+- [x] Patient t=0 de chaque graine avec preuve scientifique:
+  - Tally | : ~43,000 av. J-C (Os de Lebombo, 24 datations radiocarbone)
+  - Brahmi 1-9 : ~257 av. J-C (Édits d'Ashoka, datation épigraphique)
+  - Zéro 0 : 628 ap. J-C (Brahmagupta, Brāhmasphuṭasiddhānta)
+  - 7 métaux ☉☽♂♀♃♄☿ : ~300 ap. J-C (Zosimos, Papyrus Leyde/Stockholm)
+- [x] Mutation documentée peer-reviewed: ☉→Au→79 (Wentrup 2024 ChemPlusChem)
+- [x] Zodiac EXCLU de S-2 (pas de mutation scientifique = ésotérique)
+- [x] Alphabet latin/grec EXCLU de S-2 (substrat emprunté, pas inventé pour la science)
+- [x] Fichier: `data/core/seeds_s2.json` (17 graines + sources + mutations)
+- [x] 9 espèces classifiées from scratch (spectral clustering 65K concepts): `data/scan/species_65k.json`
+- [x] Types mycologiques: endo (Physiq, BioCli), ecto (TerGeo), sapro (HumEco, BioLab)
+- [x] 619 concepts pré-1100 extraits: `data/scan/early_concepts.json`
+- [x] Audit data complet: 581/581 chunks, 1645 périodes, 2.2G occurrences, 0 trou
+
+#### Décisions architecturales
+- S-2 = ADN partagé par les 9 espèces (les glyphes sont universels, comme A/T/G/C)
+- La différenciation en espèces émerge aux niveaux S-1 (combinaisons) et S0 (formules)
+- Les 9 espèces sont 9 spores indépendantes avec t=0 différents, pas UN champignon qui se divise
+- Exception: Aristote (~350 av. J-C) = mega-hub, 1 spore → 4 espèces (spéciation naturelle)
+
+#### Prochaine étape
+- [ ] Construire le film chronologique: des graines (t=0) → 2015
+  - 978 frames par année (1000-1979) + 667 frames par mois (1980-2024) = 1645 frames
+  - Chaque frame: concepts actifs + co-occurrences + espèce
+  - Calibrer l'évolution sur la réalité historique (Gutenberg 1440, Rév. scientifique 1600, Lumières 1750...)
 
 ## V4 — LE GRIMPEUR (VISION — après V3)
 Le sommet de chaque escalier = un point de vue.
