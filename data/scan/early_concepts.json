@@ -1,0 +1,8496 @@
+{
+  "cutoff": 1100,
+  "total": 619,
+  "concepts": [
+    {
+      "idx": 64457,
+      "name": "Arabic",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1035,
+        1038
+      ]
+    },
+    {
+      "idx": 26,
+      "name": "History",
+      "level": 0,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 69,
+      "years": [
+        1000,
+        1008,
+        1012,
+        1013,
+        1014,
+        1016,
+        1017,
+        1018,
+        1020,
+        1022,
+        1024,
+        1030,
+        1033,
+        1035,
+        1038,
+        1047,
+        1049,
+        1050,
+        1059,
+        1061,
+        1066,
+        1068,
+        1073,
+        1075,
+        1076,
+        1077,
+        1078,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 55076,
+      "name": "Linguistics",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 23,
+      "years": [
+        1000,
+        1027,
+        1035,
+        1038,
+        1050,
+        1100
+      ]
+    },
+    {
+      "idx": 17,
+      "name": "Computer science",
+      "level": 0,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 94,
+      "years": [
+        1000,
+        1001,
+        1002,
+        1008,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1019,
+        1020,
+        1023,
+        1024,
+        1027,
+        1033,
+        1035,
+        1038,
+        1040,
+        1045,
+        1056,
+        1057,
+        1060,
+        1064,
+        1066,
+        1068,
+        1070,
+        1072,
+        1073,
+        1076,
+        1080,
+        1084,
+        1090,
+        1093,
+        1095,
+        1099
+      ]
+    },
+    {
+      "idx": 8575,
+      "name": "Artificial intelligence",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 28,
+      "years": [
+        1000,
+        1012,
+        1060,
+        1066,
+        1090,
+        1099
+      ]
+    },
+    {
+      "idx": 53500,
+      "name": "Computer vision",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1012,
+        1066,
+        1099
+      ]
+    },
+    {
+      "idx": 61275,
+      "name": "Buddhism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 6652,
+      "name": "Art",
+      "level": 0,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 268,
+      "years": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1007,
+        1008,
+        1009,
+        1011,
+        1012,
+        1013,
+        1015,
+        1019,
+        1020,
+        1024,
+        1026,
+        1027,
+        1029,
+        1030,
+        1032,
+        1035,
+        1036,
+        1037,
+        1038,
+        1040,
+        1041,
+        1042,
+        1043,
+        1045,
+        1046,
+        1047,
+        1048,
+        1050,
+        1051,
+        1052,
+        1053,
+        1054,
+        1055,
+        1056,
+        1057,
+        1058,
+        1060,
+        1062,
+        1063,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 14876,
+      "name": "Ancient history",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 33,
+      "years": [
+        1000,
+        1015,
+        1020,
+        1021,
+        1024,
+        1033,
+        1076,
+        1090,
+        1091,
+        1093,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 61149,
+      "name": "Classics",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1038,
+        1100
+      ]
+    },
+    {
+      "idx": 19170,
+      "name": "Monasticism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 57069,
+      "name": "Art history",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 19,
+      "years": [
+        1000,
+        1002,
+        1011,
+        1015,
+        1020,
+        1024,
+        1051,
+        1070,
+        1074,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 8322,
+      "name": "Visual arts",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 6,
+      "years": [
+        1000,
+        1024,
+        1051,
+        1088,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 4314,
+      "name": "Engineering",
+      "level": 0,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 30,
+      "years": [
+        1000,
+        1001,
+        1005,
+        1012,
+        1014,
+        1018,
+        1023,
+        1024,
+        1038,
+        1068,
+        1073,
+        1076,
+        1078,
+        1090,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 6929,
+      "name": "Nucleofection",
+      "level": 4,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 143,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 49137,
+      "name": "Gestational period",
+      "level": 4,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 142,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 29232,
+      "name": "TSG101",
+      "level": 5,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 141,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 23625,
+      "name": "Dysgeusia",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 141,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 12666,
+      "name": "Liquation",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 141,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 13629,
+      "name": "Diafiltration",
+      "level": 4,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 141,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 27768,
+      "name": "Emperipolesis",
+      "level": 4,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 133,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1021,
+        1022,
+        1023,
+        1033,
+        1038,
+        1050,
+        1053,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 22343,
+      "name": "Triacetin",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 132,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1021,
+        1022,
+        1023,
+        1033,
+        1038,
+        1050,
+        1053,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 26760,
+      "name": "Durvalumab",
+      "level": 5,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 103,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1021,
+        1022,
+        1023,
+        1033,
+        1038,
+        1050,
+        1053,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 759,
+      "name": "Demotion",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 132,
+      "years": [
+        1000,
+        1001,
+        1003,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 5147,
+      "name": "Fusible alloy",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 113,
+      "years": [
+        1000,
+        1001,
+        1008,
+        1010,
+        1013,
+        1014,
+        1015,
+        1017,
+        1018,
+        1020,
+        1021,
+        1022,
+        1023,
+        1030,
+        1033,
+        1038,
+        1050,
+        1053,
+        1055,
+        1056,
+        1064,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1073,
+        1076,
+        1077,
+        1079,
+        1081,
+        1093,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 53834,
+      "name": "Mathematics",
+      "level": 0,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 16,
+      "years": [
+        1000,
+        1013,
+        1019,
+        1035,
+        1060,
+        1093,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 13,
+      "name": "Chemistry",
+      "level": 0,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 19,
+      "years": [
+        1000,
+        1009,
+        1012,
+        1019,
+        1025,
+        1029,
+        1047,
+        1057,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 12850,
+      "name": "Order (exchange)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1078,
+        1088,
+        1089
+      ]
+    },
+    {
+      "idx": 12462,
+      "name": "Elliptic curve",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 2344,
+      "name": "Combinatorics",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1099
+      ]
+    },
+    {
+      "idx": 59636,
+      "name": "Alpha (finance)",
+      "level": 4,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 23496,
+      "name": "Constant (computer programming)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 22,
+      "name": "Medicine",
+      "level": 0,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 53,
+      "years": [
+        1000,
+        1010,
+        1014,
+        1018,
+        1026,
+        1027,
+        1030,
+        1033,
+        1038,
+        1048,
+        1049,
+        1051,
+        1056,
+        1061,
+        1062,
+        1065,
+        1066,
+        1068,
+        1073,
+        1075,
+        1083,
+        1084,
+        1088,
+        1090,
+        1094,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 56769,
+      "name": "Family medicine",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 3144,
+      "name": "Optometry",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 16298,
+      "name": "Natural language processing",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 15,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 11,
+      "name": "Humanities",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 200,
+      "years": [
+        1000,
+        1001,
+        1006,
+        1008,
+        1009,
+        1010,
+        1011,
+        1014,
+        1015,
+        1017,
+        1018,
+        1019,
+        1020,
+        1022,
+        1024,
+        1025,
+        1026,
+        1027,
+        1028,
+        1030,
+        1031,
+        1032,
+        1033,
+        1036,
+        1037,
+        1038,
+        1040,
+        1041,
+        1042,
+        1043,
+        1045,
+        1046,
+        1048,
+        1051,
+        1054,
+        1055,
+        1056,
+        1057,
+        1058,
+        1059,
+        1060,
+        1062,
+        1065,
+        1066,
+        1067,
+        1068,
+        1069,
+        1070,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1077,
+        1078,
+        1079,
+        1080,
+        1081,
+        1082,
+        1083,
+        1084,
+        1085,
+        1086,
+        1087,
+        1088,
+        1089,
+        1090,
+        1091,
+        1092,
+        1093,
+        1094,
+        1095,
+        1096,
+        1097,
+        1098,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 16489,
+      "name": "Volume (thermodynamics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1060,
+        1070
+      ]
+    },
+    {
+      "idx": 54685,
+      "name": "Environmental science",
+      "level": 0,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 6,
+      "years": [
+        1000,
+        1019,
+        1029,
+        1094,
+        1100
+      ]
+    },
+    {
+      "idx": 4,
+      "name": "Philosophy",
+      "level": 0,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 82,
+      "years": [
+        1000,
+        1001,
+        1002,
+        1007,
+        1008,
+        1010,
+        1014,
+        1015,
+        1018,
+        1019,
+        1023,
+        1027,
+        1028,
+        1030,
+        1045,
+        1050,
+        1057,
+        1059,
+        1060,
+        1063,
+        1064,
+        1067,
+        1068,
+        1071,
+        1072,
+        1073,
+        1074,
+        1075,
+        1076,
+        1078,
+        1079,
+        1080,
+        1088,
+        1089,
+        1090,
+        1091,
+        1097,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 42852,
+      "name": "Object (grammar)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1089,
+        1097
+      ]
+    },
+    {
+      "idx": 24,
+      "name": "Biology",
+      "level": 0,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 14,
+      "years": [
+        1000,
+        1007,
+        1010,
+        1012,
+        1016,
+        1019,
+        1027,
+        1080,
+        1100
+      ]
+    },
+    {
+      "idx": 41044,
+      "name": "Parchment",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1100
+      ]
+    },
+    {
+      "idx": 10448,
+      "name": "Archaeology",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 11,
+      "years": [
+        1000,
+        1005,
+        1014,
+        1024,
+        1068,
+        1078,
+        1100
+      ]
+    },
+    {
+      "idx": 28942,
+      "name": "Lime",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 3,
+      "name": "Geology",
+      "level": 0,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 38,
+      "years": [
+        1000,
+        1005,
+        1019,
+        1020,
+        1038,
+        1043,
+        1063,
+        1073,
+        1075,
+        1076,
+        1078,
+        1087,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 59970,
+      "name": "George (robot)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 7,
+      "years": [
+        1000,
+        1020,
+        1074,
+        1076,
+        1100
+      ]
+    },
+    {
+      "idx": 12,
+      "name": "Political science",
+      "level": 0,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 64,
+      "years": [
+        1000,
+        1001,
+        1004,
+        1006,
+        1010,
+        1011,
+        1014,
+        1017,
+        1018,
+        1022,
+        1032,
+        1035,
+        1037,
+        1039,
+        1046,
+        1047,
+        1049,
+        1050,
+        1051,
+        1055,
+        1067,
+        1072,
+        1073,
+        1078,
+        1080,
+        1083,
+        1084,
+        1087,
+        1090,
+        1092,
+        1095,
+        1096,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 28555,
+      "name": "Government (linguistics)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 11,
+      "years": [
+        1000,
+        1001,
+        1005,
+        1006,
+        1014,
+        1017,
+        1072,
+        1084,
+        1090
+      ]
+    },
+    {
+      "idx": 17736,
+      "name": "Grammar",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 13,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 30120,
+      "name": "Bronze",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 8,
+      "years": [
+        1000,
+        1015,
+        1100
+      ]
+    },
+    {
+      "idx": 48524,
+      "name": "Sanskrit",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 14428,
+      "name": "Bengali",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 3467,
+      "name": "Sanskrit literature",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 12056,
+      "name": "Set (abstract data type)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1010,
+        1012,
+        1014,
+        1084
+      ]
+    },
+    {
+      "idx": 16501,
+      "name": "Geography",
+      "level": 0,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 23,
+      "years": [
+        1000,
+        1014,
+        1019,
+        1024,
+        1059,
+        1062,
+        1065,
+        1067,
+        1068,
+        1071,
+        1079,
+        1084,
+        1086,
+        1087,
+        1093,
+        1096,
+        1098,
+        1100
+      ]
+    },
+    {
+      "idx": 9718,
+      "name": "Economics",
+      "level": 0,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 8,
+      "years": [
+        1000,
+        1010,
+        1013,
+        1050,
+        1051,
+        1072,
+        1074,
+        1099
+      ]
+    },
+    {
+      "idx": 3453,
+      "name": "Computer graphics (images)",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1012,
+        1040
+      ]
+    },
+    {
+      "idx": 949,
+      "name": "Anatomy",
+      "level": 1,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 6,
+      "years": [
+        1000,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 29550,
+      "name": "Identity (music)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1008,
+        1020,
+        1066
+      ]
+    },
+    {
+      "idx": 56378,
+      "name": "Morphology (biology)",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 7633,
+      "name": "Phonology",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 10,
+      "name": "Business",
+      "level": 0,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 12,
+      "years": [
+        1000,
+        1004,
+        1010,
+        1014,
+        1017,
+        1050,
+        1058,
+        1070
+      ]
+    },
+    {
+      "idx": 8959,
+      "name": "Psychology",
+      "level": 0,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 6,
+      "years": [
+        1000,
+        1012,
+        1014,
+        1018,
+        1072,
+        1077
+      ]
+    },
+    {
+      "idx": 17641,
+      "name": "Relation (database)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 4728,
+      "name": "Floorplan",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 14891,
+      "name": "Natural language",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 8,
+      "name": "Sociology",
+      "level": 0,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 17,
+      "years": [
+        1000,
+        1002,
+        1006,
+        1010,
+        1012,
+        1015,
+        1017,
+        1019,
+        1020,
+        1032,
+        1066,
+        1089
+      ]
+    },
+    {
+      "idx": 24106,
+      "name": "Hyporeflexia",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1020,
+        1030,
+        1055,
+        1094
+      ]
+    },
+    {
+      "idx": 7097,
+      "name": "Mathematics education",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1013
+      ]
+    },
+    {
+      "idx": 25861,
+      "name": "Front (military)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 11,
+      "years": [
+        1000,
+        1012,
+        1063
+      ]
+    },
+    {
+      "idx": 7153,
+      "name": "Proteogenomics",
+      "level": 5,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1033
+      ]
+    },
+    {
+      "idx": 5197,
+      "name": "Data collection",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 40695,
+      "name": "Administration (probate law)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 1318,
+      "name": "Agency (philosophy)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1017
+      ]
+    },
+    {
+      "idx": 30594,
+      "name": "Frontier",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 53374,
+      "name": "Public administration",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1004,
+        1068,
+        1080,
+        1095
+      ]
+    },
+    {
+      "idx": 54703,
+      "name": "Public relations",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1004,
+        1014
+      ]
+    },
+    {
+      "idx": 15551,
+      "name": "Law",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 9,
+      "years": [
+        1000,
+        1006,
+        1010,
+        1023,
+        1076,
+        1078,
+        1095,
+        1096
+      ]
+    },
+    {
+      "idx": 34222,
+      "name": "Context (archaeology)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 10,
+      "years": [
+        1000,
+        1010,
+        1020,
+        1035,
+        1037,
+        1050,
+        1080,
+        1087,
+        1089
+      ]
+    },
+    {
+      "idx": 3839,
+      "name": "Braid",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 5649,
+      "name": "Algebra over a field",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 16000,
+      "name": "Pure mathematics",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 2949,
+      "name": "Discrete mathematics",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 19883,
+      "name": "Fragment (logic)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 7,
+      "years": [
+        1000,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 56546,
+      "name": "Economic growth",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1012,
+        1072
+      ]
+    },
+    {
+      "idx": 18941,
+      "name": "HARP",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 3822,
+      "name": "Piano",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 40040,
+      "name": "Irish",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 42192,
+      "name": "Favourite",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 37869,
+      "name": "Section (typography)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1038
+      ]
+    },
+    {
+      "idx": 6677,
+      "name": "Descriptive research",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 13508,
+      "name": "Consciousness",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 13763,
+      "name": "Cognitive science",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 55427,
+      "name": "Inscribed figure",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1100
+      ]
+    },
+    {
+      "idx": 21098,
+      "name": "Emperor",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 6,
+      "years": [
+        1000,
+        1076,
+        1100
+      ]
+    },
+    {
+      "idx": 762,
+      "name": "Byzantine architecture",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 6,
+      "years": [
+        1000,
+        1100
+      ]
+    },
+    {
+      "idx": 60083,
+      "name": "Sculpture",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1015,
+        1100
+      ]
+    },
+    {
+      "idx": 14466,
+      "name": "Materials science",
+      "level": 0,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1019,
+        1029,
+        1039
+      ]
+    },
+    {
+      "idx": 19906,
+      "name": "Interrogation",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 6242,
+      "name": "Sign (mathematics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 13873,
+      "name": "Paraphernalia",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 56929,
+      "name": "Nasalization",
+      "level": 3,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 64133,
+      "name": "Arithmetic",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 57184,
+      "name": "Gautama Buddha",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 5,
+      "years": [
+        1000,
+        1099
+      ]
+    },
+    {
+      "idx": 32276,
+      "name": "Bust",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1005,
+        1100
+      ]
+    },
+    {
+      "idx": 39139,
+      "name": "SAINT",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 4,
+      "years": [
+        1000,
+        1015,
+        1100
+      ]
+    },
+    {
+      "idx": 33703,
+      "name": "Sketch",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 4245,
+      "name": "Radiology",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 42472,
+      "name": "Lesion",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 41540,
+      "name": "Intracranial pressure",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 57315,
+      "name": "Central nervous system",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 1620,
+      "name": "Public policy",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 53313,
+      "name": "Consumption (sociology)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1051
+      ]
+    },
+    {
+      "idx": 57932,
+      "name": "Welfare economics",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1051
+      ]
+    },
+    {
+      "idx": 25536,
+      "name": "Majesty",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 43235,
+      "name": "Queen (butterfly)",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 15471,
+      "name": "Narrative",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1066
+      ]
+    },
+    {
+      "idx": 9743,
+      "name": "Portrait",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1051,
+        1100
+      ]
+    },
+    {
+      "idx": 40317,
+      "name": "Hoard",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1100
+      ]
+    },
+    {
+      "idx": 43664,
+      "name": "SWORD",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1100
+      ]
+    },
+    {
+      "idx": 10026,
+      "name": "Spark plug",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 38968,
+      "name": "Service (business)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1004,
+        1068
+      ]
+    },
+    {
+      "idx": 64722,
+      "name": "Process (computing)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 29349,
+      "name": "Nose",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 31285,
+      "name": "Barbarian",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 54748,
+      "name": "Generative grammar",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 8238,
+      "name": "Head-driven phrase structure grammar",
+      "level": 3,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 25522,
+      "name": "Prayer",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 26845,
+      "name": "Loan",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 59127,
+      "name": "Term (time)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 13154,
+      "name": "Semantics (computer science)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 23445,
+      "name": "Manus",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 20725,
+      "name": "Domino",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 24399,
+      "name": "Reign",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 63646,
+      "name": "Ledger",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 30206,
+      "name": "Empire",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 62498,
+      "name": "Capital (architecture)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 56820,
+      "name": "HERO",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 43085,
+      "name": "Period (music)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1024,
+        1027
+      ]
+    },
+    {
+      "idx": 20122,
+      "name": "Value (mathematics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 1141,
+      "name": "Aesthetics",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1066,
+        1089
+      ]
+    },
+    {
+      "idx": 40156,
+      "name": "Stroke (engine)",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 19232,
+      "name": "Aneurysm",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 34807,
+      "name": "MEDLINE",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1056,
+        1095
+      ]
+    },
+    {
+      "idx": 29967,
+      "name": "Icon",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1100
+      ]
+    },
+    {
+      "idx": 691,
+      "name": "Motion (physics)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 27233,
+      "name": "Subject (documents)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 3,
+      "years": [
+        1000,
+        1010,
+        1100
+      ]
+    },
+    {
+      "idx": 51410,
+      "name": "New guinea",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 13159,
+      "name": "Bourgeoisie",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 28492,
+      "name": "Lexicon",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 21025,
+      "name": "Temple",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1099
+      ]
+    },
+    {
+      "idx": 19856,
+      "name": "Representation theorem",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 36871,
+      "name": "Notice",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 24275,
+      "name": "Conversation",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 55767,
+      "name": "Communication",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 40954,
+      "name": "Conversation analysis",
+      "level": 3,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 41918,
+      "name": "Factor (programming language)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 0,
+      "name": "Epistemology",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 2,
+      "years": [
+        1000,
+        1089
+      ]
+    },
+    {
+      "idx": 27353,
+      "name": "Quail",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 5288,
+      "name": "Endocrinology",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 2,
+      "name": "Internal medicine",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 19560,
+      "name": "Aromatase",
+      "level": 4,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 30248,
+      "name": "Aromatase inhibitor",
+      "level": 5,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 29317,
+      "name": "Coturnix",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 30873,
+      "name": "Battle",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 53054,
+      "name": "Northern territory",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 56770,
+      "name": "Planet",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 33992,
+      "name": "Gujarati",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 39203,
+      "name": "SILK",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 4803,
+      "name": "Tripod (photography)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 11302,
+      "name": "Barrel (horology)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 8450,
+      "name": "Brick",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 53404,
+      "name": "SL2(R)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 41700,
+      "name": "Conjecture",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 10029,
+      "name": "Rank (graph theory)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 4675,
+      "name": "Quadratic equation",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 64254,
+      "name": "Quadratic field",
+      "level": 4,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 38973,
+      "name": "Ring (chemistry)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 5485,
+      "name": "The Imaginary",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 61746,
+      "name": "Cohomology",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 33582,
+      "name": "BELLA",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 57164,
+      "name": "Torso",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 56991,
+      "name": "Romance",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 33595,
+      "name": "Indonesian",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 17742,
+      "name": "Miami",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1000,
+      "total_papers_pre1100": 1,
+      "years": [
+        1000
+      ]
+    },
+    {
+      "idx": 40931,
+      "name": "Soul",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 1,
+      "years": [
+        1002
+      ]
+    },
+    {
+      "idx": 6140,
+      "name": "Blues",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 1,
+      "years": [
+        1002
+      ]
+    },
+    {
+      "idx": 7362,
+      "name": "Funk",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 1,
+      "years": [
+        1002
+      ]
+    },
+    {
+      "idx": 1611,
+      "name": "KISS (TNC)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 1,
+      "years": [
+        1002
+      ]
+    },
+    {
+      "idx": 42188,
+      "name": "Dream",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 1,
+      "years": [
+        1002
+      ]
+    },
+    {
+      "idx": 19714,
+      "name": "The Thing",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 1,
+      "years": [
+        1002
+      ]
+    },
+    {
+      "idx": 2819,
+      "name": "Shadow (psychology)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1002,
+      "total_papers_pre1100": 2,
+      "years": [
+        1002,
+        1100
+      ]
+    },
+    {
+      "idx": 31879,
+      "name": "Ocrelizumab",
+      "level": 4,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1003,
+      "total_papers_pre1100": 1,
+      "years": [
+        1003
+      ]
+    },
+    {
+      "idx": 19469,
+      "name": "Mura",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1004,
+      "total_papers_pre1100": 1,
+      "years": [
+        1004
+      ]
+    },
+    {
+      "idx": 61591,
+      "name": "Forensic engineering",
+      "level": 1,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 4,
+      "years": [
+        1005,
+        1073,
+        1076
+      ]
+    },
+    {
+      "idx": 6502,
+      "name": "Boom",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 8781,
+      "name": "Bin",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 10412,
+      "name": "Mining engineering",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 1404,
+      "name": "Swell",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 49098,
+      "name": "Uranium mine",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 32557,
+      "name": "Wife",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 59319,
+      "name": "Economic history",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1005,
+      "total_papers_pre1100": 1,
+      "years": [
+        1005
+      ]
+    },
+    {
+      "idx": 47171,
+      "name": "Media studies",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1006,
+      "total_papers_pre1100": 3,
+      "years": [
+        1006,
+        1017,
+        1088
+      ]
+    },
+    {
+      "idx": 6234,
+      "name": "Economic Justice",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1006,
+      "total_papers_pre1100": 1,
+      "years": [
+        1006
+      ]
+    },
+    {
+      "idx": 21,
+      "name": "Computational biology",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 3,
+      "years": [
+        1007,
+        1010,
+        1012
+      ]
+    },
+    {
+      "idx": 57746,
+      "name": "Genetics",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 2,
+      "years": [
+        1007,
+        1012
+      ]
+    },
+    {
+      "idx": 13538,
+      "name": "Electroporation",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 726,
+      "name": "Gene",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 3354,
+      "name": "Cloning (programming)",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 339,
+      "name": "Promoter",
+      "level": 4,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 59801,
+      "name": "TATA box",
+      "level": 5,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 5,
+      "name": "Function (biology)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 8408,
+      "name": "Molecular biology",
+      "level": 1,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 3,
+      "years": [
+        1007,
+        1016,
+        1019
+      ]
+    },
+    {
+      "idx": 59008,
+      "name": "Sequence analysis",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 12195,
+      "name": "Terminator (solar)",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 7827,
+      "name": "Gene expression",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 57971,
+      "name": "Functional analysis",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 8999,
+      "name": "Accommodation",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 53626,
+      "name": "Carriage",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1007,
+      "total_papers_pre1100": 1,
+      "years": [
+        1007
+      ]
+    },
+    {
+      "idx": 21681,
+      "name": "Ideal (ethics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1008,
+      "total_papers_pre1100": 2,
+      "years": [
+        1008,
+        1100
+      ]
+    },
+    {
+      "idx": 3547,
+      "name": "Civilization",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1008,
+      "total_papers_pre1100": 1,
+      "years": [
+        1008
+      ]
+    },
+    {
+      "idx": 31120,
+      "name": "Modernity",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1008,
+      "total_papers_pre1100": 1,
+      "years": [
+        1008
+      ]
+    },
+    {
+      "idx": 48290,
+      "name": "Olive oil",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 2,
+      "years": [
+        1009,
+        1019
+      ]
+    },
+    {
+      "idx": 53492,
+      "name": "Food science",
+      "level": 1,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 3,
+      "years": [
+        1009,
+        1019
+      ]
+    },
+    {
+      "idx": 57734,
+      "name": "Fatty acid",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 2,
+      "years": [
+        1009,
+        1019
+      ]
+    },
+    {
+      "idx": 7768,
+      "name": "Chemical composition",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 2,
+      "years": [
+        1009,
+        1019
+      ]
+    },
+    {
+      "idx": 43100,
+      "name": "Peroxide value",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 64147,
+      "name": "Sensory system",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 17456,
+      "name": "Sensory analysis",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 41960,
+      "name": "Peroxide",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 58484,
+      "name": "Oxidative phosphorylation",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 55771,
+      "name": "Organoleptic",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 26692,
+      "name": "Phenols",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 9724,
+      "name": "Mass spectrometry",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1009,
+      "total_papers_pre1100": 1,
+      "years": [
+        1009
+      ]
+    },
+    {
+      "idx": 2047,
+      "name": "Advertising",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 3,
+      "years": [
+        1010,
+        1055,
+        1088
+      ]
+    },
+    {
+      "idx": 17914,
+      "name": "Theology",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 25,
+      "years": [
+        1010,
+        1023,
+        1059,
+        1060,
+        1063,
+        1070,
+        1074,
+        1079,
+        1088,
+        1096,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 18354,
+      "name": "In silico",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 14528,
+      "name": "Metabolic pathway",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 345,
+      "name": "Metabolic network",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 8212,
+      "name": "Systems biology",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 39874,
+      "name": "Simple (philosophy)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 17044,
+      "name": "Core (optical fiber)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 48325,
+      "name": "Biological evolution",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 52207,
+      "name": "Genetically engineered",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 2078,
+      "name": "Risk analysis (engineering)",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 2,
+      "years": [
+        1010,
+        1070
+      ]
+    },
+    {
+      "idx": 54894,
+      "name": "Industrial organization",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 13922,
+      "name": "Tourism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 34045,
+      "name": "Face (sociological concept)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 3,
+      "years": [
+        1010,
+        1017,
+        1042
+      ]
+    },
+    {
+      "idx": 27603,
+      "name": "Hemopericardium",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 2,
+      "years": [
+        1010,
+        1055
+      ]
+    },
+    {
+      "idx": 14083,
+      "name": "Law and economics",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 4,
+      "years": [
+        1010,
+        1078,
+        1099
+      ]
+    },
+    {
+      "idx": 25079,
+      "name": "Damages",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 27151,
+      "name": "Liability",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 47521,
+      "name": "Green building",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 39990,
+      "name": "Green paper",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 9676,
+      "name": "Actuarial science",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 15711,
+      "name": "Tort",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 9801,
+      "name": "Marketing",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 1446,
+      "name": "Internet privacy",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 3269,
+      "name": "Debt",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 43319,
+      "name": "Consumer debt",
+      "level": 3,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 58145,
+      "name": "Monetary economics",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 28452,
+      "name": "Bad debt",
+      "level": 3,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 17313,
+      "name": "Consumer behaviour",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 57861,
+      "name": "Commerce",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 31109,
+      "name": "Lawmaking",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 12964,
+      "name": "Skepticism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 19032,
+      "name": "Scrutiny",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 59323,
+      "name": "Embeddedness",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 54673,
+      "name": "Corporate governance",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 17629,
+      "name": "Corporate law",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 6471,
+      "name": "Corporate social responsibility",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 22204,
+      "name": "Status quo",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 57894,
+      "name": "Corporate crime",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 63648,
+      "name": "Competition (biology)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 60585,
+      "name": "Jurisprudence",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1010,
+      "total_papers_pre1100": 1,
+      "years": [
+        1010
+      ]
+    },
+    {
+      "idx": 33426,
+      "name": "Pollock",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1011,
+      "total_papers_pre1100": 1,
+      "years": [
+        1011
+      ]
+    },
+    {
+      "idx": 2000,
+      "name": "Complement (music)",
+      "level": 5,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 47151,
+      "name": "Gynecology",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 4,
+      "years": [
+        1012,
+        1014,
+        1048,
+        1051
+      ]
+    },
+    {
+      "idx": 10586,
+      "name": "VEGF receptors",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 25482,
+      "name": "Child labour",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 1238,
+      "name": "Human resources",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 4281,
+      "name": "Perspective (graphical)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 6,
+      "years": [
+        1012,
+        1013,
+        1015,
+        1017,
+        1066,
+        1099
+      ]
+    },
+    {
+      "idx": 42153,
+      "name": "Human development (humanity)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 6679,
+      "name": "Pyramid (geometry)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 36387,
+      "name": "Locality",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 16609,
+      "name": "Resource (disambiguation)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 15989,
+      "name": "Human resource management",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 35269,
+      "name": "Bottom of the pyramid",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 1509,
+      "name": "Child development",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 21009,
+      "name": "Corporal punishment",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 49767,
+      "name": "Child care",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 3130,
+      "name": "Photography",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 3,
+      "years": [
+        1012,
+        1051,
+        1099
+      ]
+    },
+    {
+      "idx": 54200,
+      "name": "Visualization",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 2014,
+      "name": "Digital imaging",
+      "level": 5,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1012,
+      "total_papers_pre1100": 1,
+      "years": [
+        1012
+      ]
+    },
+    {
+      "idx": 26493,
+      "name": "Calculus (dental)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1013,
+      "total_papers_pre1100": 1,
+      "years": [
+        1013
+      ]
+    },
+    {
+      "idx": 29524,
+      "name": "Production (economics)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1013,
+      "total_papers_pre1100": 1,
+      "years": [
+        1013
+      ]
+    },
+    {
+      "idx": 21538,
+      "name": "Natural (archaeology)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1013,
+      "total_papers_pre1100": 1,
+      "years": [
+        1013
+      ]
+    },
+    {
+      "idx": 20045,
+      "name": "Shortwave",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1013,
+      "total_papers_pre1100": 1,
+      "years": [
+        1013
+      ]
+    },
+    {
+      "idx": 13666,
+      "name": "Work (physics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 6,
+      "years": [
+        1014,
+        1019,
+        1063,
+        1074,
+        1100
+      ]
+    },
+    {
+      "idx": 57146,
+      "name": "Machining",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 5562,
+      "name": "Finite element method",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 9714,
+      "name": "Enhanced Data Rates for GSM Evolution",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 38994,
+      "name": "Cutting tool",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 59944,
+      "name": "Structural engineering",
+      "level": 1,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 61727,
+      "name": "Mechanical engineering",
+      "level": 1,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 16940,
+      "name": "Stress (linguistics)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 20878,
+      "name": "Tool wear",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 58768,
+      "name": "Machine tool",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 15567,
+      "name": "Engineering drawing",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 2,
+      "years": [
+        1014,
+        1038
+      ]
+    },
+    {
+      "idx": 41903,
+      "name": "Manatee",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 16264,
+      "name": "Library classification",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 33570,
+      "name": "Grind",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 61619,
+      "name": "Social psychology",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 18972,
+      "name": "Affect (linguistics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 19821,
+      "name": "Phrase",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 1431,
+      "name": "Lifelong learning",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 58117,
+      "name": "Engineering ethics",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 56713,
+      "name": "Professional development",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 49704,
+      "name": "Professional standards",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 1683,
+      "name": "Engineering management",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 14723,
+      "name": "Pedagogy",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 4951,
+      "name": "Continuing professional development",
+      "level": 3,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 20545,
+      "name": "Intensive care unit",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 48098,
+      "name": "Intensive care",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1014,
+      "total_papers_pre1100": 1,
+      "years": [
+        1014
+      ]
+    },
+    {
+      "idx": 3988,
+      "name": "Doors",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1015,
+      "total_papers_pre1100": 4,
+      "years": [
+        1015,
+        1074
+      ]
+    },
+    {
+      "idx": 58945,
+      "name": "Cultural heritage",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1015,
+      "total_papers_pre1100": 1,
+      "years": [
+        1015
+      ]
+    },
+    {
+      "idx": 57994,
+      "name": "Christianity",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1015,
+      "total_papers_pre1100": 2,
+      "years": [
+        1015,
+        1096
+      ]
+    },
+    {
+      "idx": 50244,
+      "name": "World heritage",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1015,
+      "total_papers_pre1100": 1,
+      "years": [
+        1015
+      ]
+    },
+    {
+      "idx": 17803,
+      "name": "Key (lock)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1015,
+      "total_papers_pre1100": 2,
+      "years": [
+        1015,
+        1066
+      ]
+    },
+    {
+      "idx": 12552,
+      "name": "Information system",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1015,
+      "total_papers_pre1100": 1,
+      "years": [
+        1015
+      ]
+    },
+    {
+      "idx": 55474,
+      "name": "Timeline",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 14180,
+      "name": "Chart",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 35647,
+      "name": "Event (particle physics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 2,
+      "years": [
+        1016,
+        1066
+      ]
+    },
+    {
+      "idx": 6440,
+      "name": "Genetically modified mouse",
+      "level": 4,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 403,
+      "name": "Transgene",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 9296,
+      "name": "Antibody",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 57730,
+      "name": "Monoclonal antibody",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 10322,
+      "name": "Endogeny",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 23029,
+      "name": "Neurodegeneration",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 53464,
+      "name": "Amyloid precursor protein",
+      "level": 4,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 16283,
+      "name": "Immunohistochemistry",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 20722,
+      "name": "Western blot",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 57628,
+      "name": "Transfection",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 61951,
+      "name": "Intracellular",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 26274,
+      "name": "Amyloid (mycology)",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 25,
+      "name": "Cell biology",
+      "level": 1,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 43978,
+      "name": "Extracellular",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 56439,
+      "name": "Alzheimer's disease",
+      "level": 3,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 26418,
+      "name": "Human brain",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 62765,
+      "name": "Blot",
+      "level": 3,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 8032,
+      "name": "BACE1-AS",
+      "level": 5,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 27575,
+      "name": "Ratón",
+      "level": 2,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1016,
+      "total_papers_pre1100": 1,
+      "years": [
+        1016
+      ]
+    },
+    {
+      "idx": 58271,
+      "name": "White (mutation)",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 6,
+      "years": [
+        1017,
+        1055,
+        1078,
+        1099
+      ]
+    },
+    {
+      "idx": 9874,
+      "name": "Power (physics)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 5,
+      "years": [
+        1017,
+        1066,
+        1095,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 1302,
+      "name": "Gender studies",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 43183,
+      "name": "Persuasion",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 15587,
+      "name": "Negotiation",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 29294,
+      "name": "Peace movement",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 5431,
+      "name": "Public opinion",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 5821,
+      "name": "Rhetoric",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 17835,
+      "name": "Perception",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 21670,
+      "name": "Public history",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 35412,
+      "name": "Public sphere",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 48785,
+      "name": "Public life",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 6985,
+      "name": "Principal (computer security)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 26508,
+      "name": "Feminism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1017,
+      "total_papers_pre1100": 1,
+      "years": [
+        1017
+      ]
+    },
+    {
+      "idx": 18424,
+      "name": "Control (management)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 2,
+      "years": [
+        1018,
+        1090
+      ]
+    },
+    {
+      "idx": 21862,
+      "name": "Mental illness",
+      "level": 3,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 1,
+      "years": [
+        1018
+      ]
+    },
+    {
+      "idx": 2942,
+      "name": "Psychiatry",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 1,
+      "years": [
+        1018
+      ]
+    },
+    {
+      "idx": 46416,
+      "name": "Bipolar illness",
+      "level": 5,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 1,
+      "years": [
+        1018
+      ]
+    },
+    {
+      "idx": 19592,
+      "name": "Bipolar disorder",
+      "level": 3,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 1,
+      "years": [
+        1018
+      ]
+    },
+    {
+      "idx": 44219,
+      "name": "Population",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 1,
+      "years": [
+        1018
+      ]
+    },
+    {
+      "idx": 34726,
+      "name": "Population control",
+      "level": 5,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1018,
+      "total_papers_pre1100": 1,
+      "years": [
+        1018
+      ]
+    },
+    {
+      "idx": 61472,
+      "name": "Hydrology (agriculture)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 2,
+      "years": [
+        1019,
+        1020
+      ]
+    },
+    {
+      "idx": 54809,
+      "name": "Composition (language)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 55549,
+      "name": "Microwave",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 55921,
+      "name": "Extraction (chemistry)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 55350,
+      "name": "Chromatography",
+      "level": 1,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 38220,
+      "name": "Fatty acid methyl ester",
+      "level": 4,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 3727,
+      "name": "Gas chromatography",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 20054,
+      "name": "Microwave oven",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 48483,
+      "name": "Microwave heating",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 40803,
+      "name": "Action (physics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 4,
+      "years": [
+        1019,
+        1070,
+        1090,
+        1100
+      ]
+    },
+    {
+      "idx": 19915,
+      "name": "Pepper",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 53520,
+      "name": "Greenhouse",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 63302,
+      "name": "Irrigation",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 26040,
+      "name": "Irrigation scheduling",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 5306,
+      "name": "Yield (engineering)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 2,
+      "years": [
+        1019,
+        1093
+      ]
+    },
+    {
+      "idx": 59742,
+      "name": "Agronomy",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 2,
+      "years": [
+        1019,
+        1093
+      ]
+    },
+    {
+      "idx": 11992,
+      "name": "Evapotranspiration",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 50534,
+      "name": "Plant production",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 4178,
+      "name": "Crop yield",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 5928,
+      "name": "Growing season",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 9,
+      "name": "Horticulture",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 2,
+      "years": [
+        1019,
+        1100
+      ]
+    },
+    {
+      "idx": 64568,
+      "name": "Forestry",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 3402,
+      "name": "Physics",
+      "level": 0,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 3,
+      "years": [
+        1019,
+        1054
+      ]
+    },
+    {
+      "idx": 42607,
+      "name": "Diaspididae",
+      "level": 4,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 32181,
+      "name": "Hemiptera",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 20,
+      "name": "Botany",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 34292,
+      "name": "Ficus",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 1467,
+      "name": "Structural basin",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 3,
+      "years": [
+        1019,
+        1099
+      ]
+    },
+    {
+      "idx": 58123,
+      "name": "Traditional medicine",
+      "level": 1,
+      "species": 7,
+      "species_name": "BioLab",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 33704,
+      "name": "Carica",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 57541,
+      "name": "Streamflow",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 40038,
+      "name": "SWAT model",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 4219,
+      "name": "Drainage basin",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1019,
+      "total_papers_pre1100": 1,
+      "years": [
+        1019
+      ]
+    },
+    {
+      "idx": 3400,
+      "name": "Submarine",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 5869,
+      "name": "World War II",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 48682,
+      "name": "First world war",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 14015,
+      "name": "Beat (acoustics)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 31258,
+      "name": "Spring (device)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 1217,
+      "name": "Lever",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 11577,
+      "name": "Bite force quotient",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 18986,
+      "name": "Biting",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 45710,
+      "name": "Pterygoid Muscles",
+      "level": 3,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 11050,
+      "name": "Biomechanics",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 8539,
+      "name": "Mastication",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 12406,
+      "name": "Moment (physics)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 52768,
+      "name": "Force transducer",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 47189,
+      "name": "Orthodontics",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1020,
+      "total_papers_pre1100": 1,
+      "years": [
+        1020
+      ]
+    },
+    {
+      "idx": 39412,
+      "name": "Archbishop",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1023,
+      "total_papers_pre1100": 1,
+      "years": [
+        1023
+      ]
+    },
+    {
+      "idx": 55571,
+      "name": "Studio",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 2,
+      "years": [
+        1024,
+        1051
+      ]
+    },
+    {
+      "idx": 39319,
+      "name": "Hollywood",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 54795,
+      "name": "Factory (object-oriented programming)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 58055,
+      "name": "Performance art",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 16216,
+      "name": "Sound (geography)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 39193,
+      "name": "Cover (algebra)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 2,
+      "years": [
+        1024,
+        1099
+      ]
+    },
+    {
+      "idx": 32972,
+      "name": "Falling (accident)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 61351,
+      "name": "Telecommunications",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 23888,
+      "name": "Pedestrian",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 8316,
+      "name": "Meteorology",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1024,
+      "total_papers_pre1100": 1,
+      "years": [
+        1024
+      ]
+    },
+    {
+      "idx": 58797,
+      "name": "Reproduction",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 2,
+      "years": [
+        1027
+      ]
+    },
+    {
+      "idx": 12511,
+      "name": "Transcription (linguistics)",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 4,
+      "years": [
+        1027
+      ]
+    },
+    {
+      "idx": 29340,
+      "name": "Facsimile",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 4,
+      "years": [
+        1027
+      ]
+    },
+    {
+      "idx": 31687,
+      "name": "Citation",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 1,
+      "years": [
+        1027
+      ]
+    },
+    {
+      "idx": 63588,
+      "name": "Zoology",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 3,
+      "years": [
+        1027,
+        1080,
+        1100
+      ]
+    },
+    {
+      "idx": 36536,
+      "name": "Obituary",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 2,
+      "years": [
+        1027
+      ]
+    },
+    {
+      "idx": 27226,
+      "name": "Phonetic transcription",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1027,
+      "total_papers_pre1100": 1,
+      "years": [
+        1027
+      ]
+    },
+    {
+      "idx": 24570,
+      "name": "Test (biology)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1029,
+      "total_papers_pre1100": 1,
+      "years": [
+        1029
+      ]
+    },
+    {
+      "idx": 4165,
+      "name": "IMG",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1029,
+      "total_papers_pre1100": 1,
+      "years": [
+        1029
+      ]
+    },
+    {
+      "idx": 61987,
+      "name": "Crystallography",
+      "level": 1,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1029,
+      "total_papers_pre1100": 1,
+      "years": [
+        1029
+      ]
+    },
+    {
+      "idx": 5360,
+      "name": "Symbol (formal)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1030,
+      "total_papers_pre1100": 1,
+      "years": [
+        1030
+      ]
+    },
+    {
+      "idx": 6096,
+      "name": "Public health",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1030,
+      "total_papers_pre1100": 1,
+      "years": [
+        1030
+      ]
+    },
+    {
+      "idx": 27119,
+      "name": "Bodhisattva",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1033,
+      "total_papers_pre1100": 6,
+      "years": [
+        1033,
+        1099
+      ]
+    },
+    {
+      "idx": 64348,
+      "name": "Ven",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1037,
+      "total_papers_pre1100": 2,
+      "years": [
+        1037,
+        1067
+      ]
+    },
+    {
+      "idx": 33174,
+      "name": "Astronomer",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1038,
+      "total_papers_pre1100": 1,
+      "years": [
+        1038
+      ]
+    },
+    {
+      "idx": 19318,
+      "name": "Convertible",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1038,
+      "total_papers_pre1100": 1,
+      "years": [
+        1038
+      ]
+    },
+    {
+      "idx": 21288,
+      "name": "Folding (DSP implementation)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1038,
+      "total_papers_pre1100": 1,
+      "years": [
+        1038
+      ]
+    },
+    {
+      "idx": 9403,
+      "name": "Occupancy",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1038,
+      "total_papers_pre1100": 1,
+      "years": [
+        1038
+      ]
+    },
+    {
+      "idx": 57025,
+      "name": "Fiber",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1039,
+      "total_papers_pre1100": 1,
+      "years": [
+        1039
+      ]
+    },
+    {
+      "idx": 35061,
+      "name": "Quality (philosophy)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1039,
+      "total_papers_pre1100": 1,
+      "years": [
+        1039
+      ]
+    },
+    {
+      "idx": 9353,
+      "name": "Composite material",
+      "level": 1,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1039,
+      "total_papers_pre1100": 1,
+      "years": [
+        1039
+      ]
+    },
+    {
+      "idx": 56266,
+      "name": "Common Object Request Broker Architecture",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1040,
+      "total_papers_pre1100": 1,
+      "years": [
+        1040
+      ]
+    },
+    {
+      "idx": 1745,
+      "name": "Mosaic",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1042,
+      "total_papers_pre1100": 1,
+      "years": [
+        1042
+      ]
+    },
+    {
+      "idx": 57482,
+      "name": "Genealogy",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1049,
+      "total_papers_pre1100": 1,
+      "years": [
+        1049
+      ]
+    },
+    {
+      "idx": 5672,
+      "name": "Economy",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1050,
+      "total_papers_pre1100": 1,
+      "years": [
+        1050
+      ]
+    },
+    {
+      "idx": 57115,
+      "name": "Cross section (physics)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 39917,
+      "name": "Multiplication (music)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 8200,
+      "name": "Neutron",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 61350,
+      "name": "Transmission (telecommunications)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 13221,
+      "name": "Atomic physics",
+      "level": 1,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 13311,
+      "name": "Nuclear physics",
+      "level": 1,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 13434,
+      "name": "Energy (signal processing)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 53576,
+      "name": "Absorption cross section",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 17924,
+      "name": "Neutron temperature",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 30441,
+      "name": "Lithium (medication)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 14290,
+      "name": "Scattering",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 14641,
+      "name": "Isotopes of lithium",
+      "level": 4,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 53275,
+      "name": "Computational physics",
+      "level": 1,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1054,
+      "total_papers_pre1100": 1,
+      "years": [
+        1054
+      ]
+    },
+    {
+      "idx": 9525,
+      "name": "Library science",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1056,
+      "total_papers_pre1100": 2,
+      "years": [
+        1056,
+        1080
+      ]
+    },
+    {
+      "idx": 38751,
+      "name": "Pagoda",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1056,
+      "total_papers_pre1100": 1,
+      "years": [
+        1056
+      ]
+    },
+    {
+      "idx": 51303,
+      "name": "Medical journal",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1056,
+      "total_papers_pre1100": 1,
+      "years": [
+        1056
+      ]
+    },
+    {
+      "idx": 3824,
+      "name": "Data mining",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1060,
+      "total_papers_pre1100": 2,
+      "years": [
+        1060
+      ]
+    },
+    {
+      "idx": 20657,
+      "name": "Feature (linguistics)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1060,
+      "total_papers_pre1100": 2,
+      "years": [
+        1060
+      ]
+    },
+    {
+      "idx": 39711,
+      "name": "Column (typography)",
+      "level": 3,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1063,
+      "total_papers_pre1100": 2,
+      "years": [
+        1063,
+        1100
+      ]
+    },
+    {
+      "idx": 54288,
+      "name": "Elevation (ballistics)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1063,
+      "total_papers_pre1100": 2,
+      "years": [
+        1063
+      ]
+    },
+    {
+      "idx": 43491,
+      "name": "Gospel",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1063,
+      "total_papers_pre1100": 4,
+      "years": [
+        1063,
+        1078,
+        1100
+      ]
+    },
+    {
+      "idx": 25030,
+      "name": "Carving",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1063,
+      "total_papers_pre1100": 1,
+      "years": [
+        1063
+      ]
+    },
+    {
+      "idx": 42032,
+      "name": "Altar",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1065,
+      "total_papers_pre1100": 1,
+      "years": [
+        1065
+      ]
+    },
+    {
+      "idx": 3651,
+      "name": "Feeling",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 27348,
+      "name": "Acknowledgement",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 7412,
+      "name": "Dance",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 2,
+      "years": [
+        1066,
+        1099
+      ]
+    },
+    {
+      "idx": 1903,
+      "name": "Psychoanalysis",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 22963,
+      "name": "Courage",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 23060,
+      "name": "Ethos",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 43043,
+      "name": "Shame",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 5313,
+      "name": "Performative utterance",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 15664,
+      "name": "Element (criminal law)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 16081,
+      "name": "Subjectivity",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 11320,
+      "name": "Self",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1066,
+      "total_papers_pre1100": 1,
+      "years": [
+        1066
+      ]
+    },
+    {
+      "idx": 13684,
+      "name": "Management",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1068,
+      "total_papers_pre1100": 2,
+      "years": [
+        1068,
+        1080
+      ]
+    },
+    {
+      "idx": 12730,
+      "name": "Ogden",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1068,
+      "total_papers_pre1100": 1,
+      "years": [
+        1068
+      ]
+    },
+    {
+      "idx": 18960,
+      "name": "Commission",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1068,
+      "total_papers_pre1100": 1,
+      "years": [
+        1068
+      ]
+    },
+    {
+      "idx": 48834,
+      "name": "Salt lake",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1068,
+      "total_papers_pre1100": 1,
+      "years": [
+        1068
+      ]
+    },
+    {
+      "idx": 37775,
+      "name": "Public service",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1068,
+      "total_papers_pre1100": 1,
+      "years": [
+        1068
+      ]
+    },
+    {
+      "idx": 15669,
+      "name": "Choir",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1070,
+      "total_papers_pre1100": 1,
+      "years": [
+        1070
+      ]
+    },
+    {
+      "idx": 14864,
+      "name": "Process management",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1070,
+      "total_papers_pre1100": 1,
+      "years": [
+        1070
+      ]
+    },
+    {
+      "idx": 13940,
+      "name": "Poverty",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 56019,
+      "name": "Development economics",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 57615,
+      "name": "Management science",
+      "level": 1,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 14922,
+      "name": "Applied probability",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 17622,
+      "name": "Data science",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 958,
+      "name": "Statistics",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 35730,
+      "name": "Statistician",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1072,
+      "total_papers_pre1100": 1,
+      "years": [
+        1072
+      ]
+    },
+    {
+      "idx": 161,
+      "name": "Bridge (graph theory)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1073,
+      "total_papers_pre1100": 2,
+      "years": [
+        1073
+      ]
+    },
+    {
+      "idx": 13599,
+      "name": "Pediatrics",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1073,
+      "total_papers_pre1100": 1,
+      "years": [
+        1073
+      ]
+    },
+    {
+      "idx": 18066,
+      "name": "Ceremony",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1073,
+      "total_papers_pre1100": 1,
+      "years": [
+        1073
+      ]
+    },
+    {
+      "idx": 23869,
+      "name": "Sugar",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1074,
+      "total_papers_pre1100": 1,
+      "years": [
+        1074
+      ]
+    },
+    {
+      "idx": 15802,
+      "name": "Newspaper",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1074,
+      "total_papers_pre1100": 1,
+      "years": [
+        1074
+      ]
+    },
+    {
+      "idx": 27136,
+      "name": "Tower",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1076,
+      "total_papers_pre1100": 4,
+      "years": [
+        1076,
+        1078
+      ]
+    },
+    {
+      "idx": 10258,
+      "name": "Ruler",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1076,
+      "total_papers_pre1100": 2,
+      "years": [
+        1076,
+        1100
+      ]
+    },
+    {
+      "idx": 35501,
+      "name": "Bishops",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1076,
+      "total_papers_pre1100": 1,
+      "years": [
+        1076
+      ]
+    },
+    {
+      "idx": 55239,
+      "name": "Henry IV, Holy Roman Emperor",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1076,
+      "total_papers_pre1100": 1,
+      "years": [
+        1076
+      ]
+    },
+    {
+      "idx": 59522,
+      "name": "Deposition (geology)",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1076,
+      "total_papers_pre1100": 1,
+      "years": [
+        1076
+      ]
+    },
+    {
+      "idx": 32113,
+      "name": "Manifesto",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1078,
+      "total_papers_pre1100": 1,
+      "years": [
+        1078
+      ]
+    },
+    {
+      "idx": 29159,
+      "name": "Sermon",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1078,
+      "total_papers_pre1100": 1,
+      "years": [
+        1078
+      ]
+    },
+    {
+      "idx": 35145,
+      "name": "Directive",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1078,
+      "total_papers_pre1100": 1,
+      "years": [
+        1078
+      ]
+    },
+    {
+      "idx": 44025,
+      "name": "Point (geometry)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1078,
+      "total_papers_pre1100": 1,
+      "years": [
+        1078
+      ]
+    },
+    {
+      "idx": 40141,
+      "name": "Pledge",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1078,
+      "total_papers_pre1100": 1,
+      "years": [
+        1078
+      ]
+    },
+    {
+      "idx": 34620,
+      "name": "Focal point",
+      "level": 3,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1078,
+      "total_papers_pre1100": 1,
+      "years": [
+        1078
+      ]
+    },
+    {
+      "idx": 21115,
+      "name": "Plan (archaeology)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 23492,
+      "name": "Statement (logic)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 31220,
+      "name": "Chironomidae",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 55061,
+      "name": "Systematics",
+      "level": 3,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 13893,
+      "name": "Ecology",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 13783,
+      "name": "Cytology",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 61720,
+      "name": "Evolutionary biology",
+      "level": 1,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1080,
+      "total_papers_pre1100": 1,
+      "years": [
+        1080
+      ]
+    },
+    {
+      "idx": 2674,
+      "name": "Identification (biology)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1084,
+      "total_papers_pre1100": 1,
+      "years": [
+        1084
+      ]
+    },
+    {
+      "idx": 14036,
+      "name": "Property (philosophy)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1087,
+      "total_papers_pre1100": 1,
+      "years": [
+        1087
+      ]
+    },
+    {
+      "idx": 16641,
+      "name": "Reuse",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1087,
+      "total_papers_pre1100": 1,
+      "years": [
+        1087
+      ]
+    },
+    {
+      "idx": 60700,
+      "name": "Upload",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1088,
+      "total_papers_pre1100": 1,
+      "years": [
+        1088
+      ]
+    },
+    {
+      "idx": 3935,
+      "name": "Literature",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 4,
+      "years": [
+        1089,
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 58078,
+      "name": "Reading (process)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 6109,
+      "name": "Deconstruction (building)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 40412,
+      "name": "Observer (physics)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 6735,
+      "name": "Literary criticism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 88,
+      "name": "Literary theory",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 33717,
+      "name": "Close reading",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 56568,
+      "name": "Literary science",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 7807,
+      "name": "Reflexive pronoun",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 61268,
+      "name": "World literature",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 13772,
+      "name": "Social reality",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1089,
+      "total_papers_pre1100": 1,
+      "years": [
+        1089
+      ]
+    },
+    {
+      "idx": 21210,
+      "name": "Persian",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 53900,
+      "name": "Robotics",
+      "level": 3,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 30605,
+      "name": "Space (punctuation)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 7179,
+      "name": "Dynamics (music)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 11703,
+      "name": "Control system",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 5241,
+      "name": "Control engineering",
+      "level": 1,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 63541,
+      "name": "Robot",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 55813,
+      "name": "Hinduism",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1090,
+      "total_papers_pre1100": 1,
+      "years": [
+        1090
+      ]
+    },
+    {
+      "idx": 57878,
+      "name": "Waste management",
+      "level": 1,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 2,
+      "years": [
+        1094,
+        1100
+      ]
+    },
+    {
+      "idx": 10495,
+      "name": "Flue gas",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 1,
+      "years": [
+        1094
+      ]
+    },
+    {
+      "idx": 7253,
+      "name": "Flue-gas emissions from fossil-fuel combustion",
+      "level": 3,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 1,
+      "years": [
+        1094
+      ]
+    },
+    {
+      "idx": 10937,
+      "name": "Flue",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 1,
+      "years": [
+        1094
+      ]
+    },
+    {
+      "idx": 30464,
+      "name": "Cooling tower",
+      "level": 3,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 1,
+      "years": [
+        1094
+      ]
+    },
+    {
+      "idx": 63139,
+      "name": "Environmental engineering",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 1,
+      "years": [
+        1094
+      ]
+    },
+    {
+      "idx": 35496,
+      "name": "Pretext",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1094,
+      "total_papers_pre1100": 1,
+      "years": [
+        1094
+      ]
+    },
+    {
+      "idx": 43121,
+      "name": "Proclamation",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1095,
+      "total_papers_pre1100": 1,
+      "years": [
+        1095
+      ]
+    },
+    {
+      "idx": 56067,
+      "name": "State (computer science)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1095,
+      "total_papers_pre1100": 1,
+      "years": [
+        1095
+      ]
+    },
+    {
+      "idx": 61147,
+      "name": "Gerontology",
+      "level": 1,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1095,
+      "total_papers_pre1100": 1,
+      "years": [
+        1095
+      ]
+    },
+    {
+      "idx": 33742,
+      "name": "Thursday",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1096,
+      "total_papers_pre1100": 1,
+      "years": [
+        1096
+      ]
+    },
+    {
+      "idx": 54022,
+      "name": "Portuguese",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1098,
+      "total_papers_pre1100": 1,
+      "years": [
+        1098
+      ]
+    },
+    {
+      "idx": 14319,
+      "name": "Anthropology",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1098,
+      "total_papers_pre1100": 1,
+      "years": [
+        1098
+      ]
+    },
+    {
+      "idx": 8651,
+      "name": "Modern history",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1098,
+      "total_papers_pre1100": 1,
+      "years": [
+        1098
+      ]
+    },
+    {
+      "idx": 43695,
+      "name": "Historical anthropology",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1098,
+      "total_papers_pre1100": 1,
+      "years": [
+        1098
+      ]
+    },
+    {
+      "idx": 17657,
+      "name": "Ethnology",
+      "level": 1,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1098,
+      "total_papers_pre1100": 1,
+      "years": [
+        1098
+      ]
+    },
+    {
+      "idx": 2845,
+      "name": "Biological anthropology",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1098,
+      "total_papers_pre1100": 1,
+      "years": [
+        1098
+      ]
+    },
+    {
+      "idx": 43113,
+      "name": "Wish",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 38457,
+      "name": "Pluto",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 38659,
+      "name": "Head (geology)",
+      "level": 2,
+      "species": 8,
+      "species_name": "Physiq",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 7,
+      "years": [
+        1099,
+        1100
+      ]
+    },
+    {
+      "idx": 17481,
+      "name": "Perfection",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 2,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 23729,
+      "name": "Ridiculous",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 3,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 35005,
+      "name": "Folio",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 2,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 60615,
+      "name": "Stereochemistry",
+      "level": 1,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 10093,
+      "name": "Textile",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 8070,
+      "name": "Paleontology",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 13699,
+      "name": "Stele",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 3177,
+      "name": "Squatting position",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 58217,
+      "name": "Wine",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 198,
+      "name": "Physical geography",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 59262,
+      "name": "Remote sensing",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 2123,
+      "name": "Arch",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 17626,
+      "name": "Geometry",
+      "level": 1,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 28442,
+      "name": "Sequence (biology)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1099,
+      "total_papers_pre1100": 1,
+      "years": [
+        1099
+      ]
+    },
+    {
+      "idx": 2483,
+      "name": "JAR",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 2,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 55607,
+      "name": "Table (database)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 53534,
+      "name": "Bottle",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 5993,
+      "name": "Kingdom",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 2,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 33297,
+      "name": "Diction",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 10117,
+      "name": "Poetry",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 19142,
+      "name": "Plank",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 3701,
+      "name": "Materiality (auditing)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 55430,
+      "name": "Beaker",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 5,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 30365,
+      "name": "Rite",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 41197,
+      "name": "Meaning (existential)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 2,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 57343,
+      "name": "Clothing",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 4,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 19692,
+      "name": "Blessing",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 20855,
+      "name": "Style (visual arts)",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 25273,
+      "name": "Mural",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 36342,
+      "name": "Eleventh",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 38489,
+      "name": "Curse",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 36062,
+      "name": "Idolatry",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 35685,
+      "name": "Battlefield",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 3647,
+      "name": "Colossus computer",
+      "level": 2,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 30834,
+      "name": "Revetment",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 14350,
+      "name": "Metallurgy",
+      "level": 1,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 61536,
+      "name": "Rest (music)",
+      "level": 2,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 4130,
+      "name": "Frame (networking)",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 26989,
+      "name": "Assemblage (archaeology)",
+      "level": 2,
+      "species": 1,
+      "species_name": "TerGeo",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 24508,
+      "name": "Iguana",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 5247,
+      "name": "Ectotherm",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 41973,
+      "name": "Shell (structure)",
+      "level": 2,
+      "species": 0,
+      "species_name": "ChiMat",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 22113,
+      "name": "Flag (linear algebra)",
+      "level": 3,
+      "species": 3,
+      "species_name": "HumEco",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 43245,
+      "name": "Scroll",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 23589,
+      "name": "Zhàng",
+      "level": 3,
+      "species": 6,
+      "species_name": "HumArt",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 47434,
+      "name": "Line drawings",
+      "level": 2,
+      "species": 5,
+      "species_name": "TerBio",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 1203,
+      "name": "Septum secundum",
+      "level": 2,
+      "species": 2,
+      "species_name": "BioCli",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    },
+    {
+      "idx": 13499,
+      "name": "Sine",
+      "level": 2,
+      "species": 4,
+      "species_name": "InfMat",
+      "earliest_year": 1100,
+      "total_papers_pre1100": 1,
+      "years": [
+        1100
+      ]
+    }
+  ]
+}

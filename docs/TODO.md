@@ -157,25 +157,51 @@ Shannon 1948, ADN 1953, transistor, laser, internet, CRISPR, AlphaFold...
 - Si ça colle → le modèle est validé du premier impact au dernier
 
 ## V3b — ESPÈCE MYCÉLIUM (APRÈS SCAN — session 8, 24 fév 2026)
-Identifier quelle espèce de champignon le réseau Yggdrasil ressemble.
+~~Identifier quelle espèce de champignon le réseau Yggdrasil ressemble.~~
+**REFONTE session 10 (25 fév 2026): PAS un champignon — une FORÊT de champignons.**
 5 curseurs de Lehmann 2019 (31 espèces, dataset ouvert).
 Voir `docs/SESSION_8_SPECIES_DISCOVERY.md` pour le plan complet.
 
+### V1 — Preuve de concept (FAIT mais NON FIABLE)
 - [x] Phase A: 5 curseurs mesurés sur V1 85×85 (`engine/topology/species_identifier.py`)
   - BA = 77.99° (cv=0.679) — sparsification P90 (357/3563 arêtes)
   - IL = 1.81 hops (cv=0.251) — BFS sur graphe sparse
   - D = 3.96 log10 (cv=0.289) — log10(co-occ) tombe dans range Lehmann
   - Db = 0.351 (R²=0.639) — limitation N=85 pour box counting
   - L = 1.3 (cv=0.448) — σ²/μ² sans +1 (Lehmann convention)
-- [x] Phase B: Identification → **Ascomycota** (polyvalent, hétérogène)
+- [x] Phase B: Identification globale → **Ascomycota** (polyvalent, hétérogène)
   - Confiance 28.5%, marge 0.30 vs Mucoromycota (2ème)
   - Résultat: `data/topology/species_profile.json`
-- [ ] Phase B2: Test de robustesse — P90 vs Max-K (K=3,4,5,6) sur V1 296M papers
-  - Question: est-ce que brider à 3-4 connexions (comme la nature) change l'espèce ?
-  - Vrai mycélium = degré 3 (branchement) + degré 4 (anastomose), confirmé par mycelium_full.py
-  - Résultat attendu: `data/topology/species_comparison.json`
-- [ ] Phase C: Calibrer mycelium_full.py avec les vrais paramètres
-- [ ] Phase D: Évolution temporelle (par décennie) — l'espèce change-t-elle avec le temps ?
+- [x] Phase B2: Robustesse P90 vs Max-K (K=3,4,5,6) → STABLE (toujours Ascomycota)
+  - **NON FIABLE**: 85 nœuds = 99.8% dense, 3/5 curseurs insensibles au K
+  - **Conclusion V1 = preuve de concept seulement**
+
+### V2 — MULTI-ESPÈCES (APRÈS SCAN — insight session 10)
+**Insight clé: c'est pas UN champignon, c'est une FORÊT.**
+- Chaque continent = son propre mycélium = sa propre espèce (9 espèces)
+- Mathematics = **Glomeromycota** (connecteur universel, 63% des domaines, comme 80% des plantes en nature)
+- Les connexions entre continents = anastomose inter-espèces
+- Degré 3-4 = contrainte physique (Murray's Law 1926, transport de fluide en tubes)
+
+#### P4 inter-espèce (NOUVEAU — potentiellement game-changer)
+Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par les espèces des deux côtés:
+- Explorateur × Explorateur → probabilité haute (les deux foncent)
+- Corridor × Corridor → probabilité basse (personne explore)
+- Explorateur × Corridor → probabilité moyenne
+→ Améliore potentiellement le recall du blind test (V1 = 50% avec probabilité uniforme)
+
+#### Plan V2
+- [ ] Phase E: Mesurer 5 curseurs PAR CONTINENT (9 mesures, pas 1)
+- [ ] Phase F: Identifier l'espèce de chaque continent
+- [ ] Phase G: Si espèces DIFFÉRENTES entre continents → calculer P4 inter-espèce pondéré
+- [ ] Phase H: Si espèces IDENTIQUES → l'analogie tient pas, on perd rien
+- [ ] Phase C: Calibrer mycelium_full.py avec les vrais paramètres par espèce
+- [ ] Phase D: Évolution temporelle — l'espèce de chaque continent change-t-elle avec le temps ?
+
+#### Risques identifiés
+- L'analogie biologique est poétique mais peut ne pas ajouter de pouvoir prédictif
+- Les 9 continents sont des groupements humains, pas naturels
+- Seuls les TESTS sur V2 trancheront — zéro risque car on ne change rien au modèle existant
 
 ## V4 — LE GRIMPEUR (VISION — après V3)
 Le sommet de chaque escalier = un point de vue.
