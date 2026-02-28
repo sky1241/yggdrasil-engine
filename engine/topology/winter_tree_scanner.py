@@ -38,8 +38,8 @@ from collections import defaultdict
 # --- CONFIG -------------------------------------------------------------------
 
 ROOT = Path(__file__).resolve().parent.parent.parent    # yggdrasil-engine/
-WORKS_DIR = Path(os.environ.get("YGG_WORKS_DIR", "D:/openalex/data/works"))
-CONCEPTS_DIR = Path(os.environ.get("YGG_CONCEPTS_DIR", "D:/openalex/data/concepts"))
+WORKS_DIR = Path(os.environ.get("YGG_WORKS_DIR", "E:/openalex/data/works"))
+CONCEPTS_DIR = Path(os.environ.get("YGG_CONCEPTS_DIR", "E:/openalex/data/concepts"))
 
 SCAN_DIR = ROOT / "data" / "scan"
 TREE_PATH = SCAN_DIR / "winter_tree.json"

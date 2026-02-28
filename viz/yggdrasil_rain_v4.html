@@ -58,6 +58,8 @@ canvas{display:block;position:fixed;top:0;left:0;z-index:1}
 .si-wrap{display:flex;flex-direction:column;gap:3px}
 .si-tag{font-size:7.5px;color:#4a4a5a;line-height:1.55;max-width:285px;white-space:normal;letter-spacing:0.15px}
 .si:hover .si-tag{color:#778}
+.film-on .si-tag{display:none}
+.film-on .si{padding:3px 8px}
 .si-ghost{opacity:0.35;border:1px dashed rgba(255,255,255,0.08)}
 .si-ghost:hover{opacity:0.6;border-color:rgba(255,255,255,0.15)}
 .si-sep{height:1px;background:linear-gradient(90deg,transparent,#1a1a28,transparent);margin:6px 0}
@@ -405,7 +407,8 @@ function frame(nowTs){
   if(autoRot)yaw+=yawSpd;
 
   const vts=bv().map(v=>project(v[0],v[1],v[2]));
-  ctx.strokeStyle='rgba(255,255,255,0.025)';ctx.lineWidth=0.5;
+  const boxAlpha=filmActive&&filmYear<1000?0:0.025;
+  ctx.strokeStyle=`rgba(255,255,255,${boxAlpha})`;ctx.lineWidth=0.5;
   CE.forEach(([a,b])=>{ctx.beginPath();ctx.moveTo(vts[a].x,vts[a].y);ctx.lineTo(vts[b].x,vts[b].y);ctx.stroke()});
 
   const hasDomFilter=activeDomains.size>0;
@@ -423,6 +426,8 @@ function frame(nowTs){
     const avgZ=pq.reduce((a,p)=>a+p.z,0)/4;
     let planeOp=st.op*0.3;
     if(activeS>=0)planeOp=si===activeS?0.12:0.005;
+    // Film: masquer le plan si aucun concept n'est né sur cette strate
+    if(filmActive&&filmYear<1000)planeOp=0;
     items.push({type:'p',z:avgZ-0.01,si,pts:pq,col:st.c,op:planeOp});
 
     const rot=time*(0.3-si*0.035);
@@ -457,6 +462,7 @@ function frame(nowTs){
     const avgZ=pq.reduce((a,p)=>a+p.z,0)/4;
     let planeOp=gs.op;
     if(activeS>=0)planeOp*=0.1;
+    if(filmActive&&filmYear<1000)planeOp=0;
     items.push({type:'gp',z:avgZ-0.01,pts:pq,col:gs.c,op:planeOp,name:gs.name});
   });
 
@@ -465,15 +471,16 @@ function frame(nowTs){
     const y=ST_S2.yr*BOX.h;
     let sop=0.55;
     if(activeS>=0)sop=0.03;
-    if(showS2)sop=Math.max(sop,0.7);
+    if(showS2||filmActive)sop=Math.max(sop,0.7);
     const sh=SHRINK,hw=BOX.w*sh/2,hd=BOX.d*sh/2;
     const qv=[[-hw,y,-hd],[hw,y,-hd],[hw,y,hd],[-hw,y,hd]];
     const pq=qv.map(v=>project(v[0],v[1],v[2]));
     const avgZ=pq.reduce((a,p)=>a+p.z,0)/4;
     let planeOp=ST_S2.op*0.5;
-    if(showS2)planeOp=0.06;
+    if(showS2||filmActive)planeOp=0.06;
+    if(filmActive&&filmYear<-43000)planeOp=0;
     items.push({type:'p',z:avgZ-0.01,si:-2,pts:pq,col:ST_S2.c,op:planeOp});
-    if(showS2){
+    if(showS2||filmActive){
       const rot=time*0.15;
       const cr=Math.cos(rot),sr=Math.sin(rot);
       ST_S2.sy.forEach(sym=>{
@@ -485,6 +492,7 @@ function frame(nowTs){
         const domCol=ST_S2.c;
         let finalOp=sop;
         if(hasDomFilter)finalOp*=0.03;
+        if(!isGlyphBorn(sym[0]))return;
         items.push({type:'s',z:pp.z,si:-2,sym,px:pp.x,py:pp.y,pf:pp.f,col:domCol,sop:finalOp,isCentre,isC2:false,isEsc:false});
       });
     }
@@ -721,29 +729,32 @@ function frame(nowTs){
   }
 
   // ═══ Central axis line (white, visible) ═══
+  const axisAlpha=filmActive&&filmYear<1000?0:0.12;
   const axBot=project(0,-BOX.h/2,0), axTop=project(0,BOX.h/2,0);
   ctx.beginPath();ctx.moveTo(axBot.x,axBot.y);ctx.lineTo(axTop.x,axTop.y);
-  ctx.strokeStyle='rgba(255,255,255,0.12)';ctx.lineWidth=1.5;ctx.stroke();
+  ctx.strokeStyle=`rgba(255,255,255,${axisAlpha})`;ctx.lineWidth=1.5;ctx.stroke();
   // Tick marks per strate
-  currentST.forEach(st=>{
-    const py=project(0,st.yr*BOX.h,0);
-    ctx.beginPath();ctx.moveTo(py.x-6,py.y);ctx.lineTo(py.x+6,py.y);
-    ctx.strokeStyle='rgba(255,255,255,0.18)';ctx.lineWidth=1;ctx.stroke();
-  });
+  if(!filmActive||filmYear>=1000){
+    currentST.forEach(st=>{
+      const py=project(0,st.yr*BOX.h,0);
+      ctx.beginPath();ctx.moveTo(py.x-6,py.y);ctx.lineTo(py.x+6,py.y);
+      ctx.strokeStyle='rgba(255,255,255,0.18)';ctx.lineWidth=1;ctx.stroke();
+    });
 
-  // Axis labels
-  const bot=project(0,-BOX.h/2-0.35,0),top2=project(0,BOX.h/2+0.35,0);
-  ctx.font='500 8px "JetBrains Mono",monospace';ctx.textAlign='center';
-  ctx.fillStyle='rgba(74,222,128,0.25)';ctx.fillText('SOL',bot.x,bot.y);
-  ctx.fillStyle='rgba(239,68,68,0.25)';ctx.fillText('PLAFOND',top2.x,top2.y);
-  // Ghost plane axis labels
-  GHOST_PLANES.forEach(gs=>{
-    const gp=project(0,gs.yr*BOX.h,0);
-    ctx.beginPath();ctx.moveTo(gp.x-5,gp.y);ctx.lineTo(gp.x+5,gp.y);
-    ctx.strokeStyle=`rgba(${gs.c[0]},${gs.c[1]},${gs.c[2]},0.15)`;ctx.lineWidth=1;ctx.stroke();
-  });
+    // Axis labels
+    const bot=project(0,-BOX.h/2-0.35,0),top2=project(0,BOX.h/2+0.35,0);
+    ctx.font='500 8px "JetBrains Mono",monospace';ctx.textAlign='center';
+    ctx.fillStyle='rgba(74,222,128,0.25)';ctx.fillText('SOL',bot.x,bot.y);
+    ctx.fillStyle='rgba(239,68,68,0.25)';ctx.fillText('PLAFOND',top2.x,top2.y);
+    // Ghost plane axis labels
+    GHOST_PLANES.forEach(gs=>{
+      const gp=project(0,gs.yr*BOX.h,0);
+      ctx.beginPath();ctx.moveTo(gp.x-5,gp.y);ctx.lineTo(gp.x+5,gp.y);
+      ctx.strokeStyle=`rgba(${gs.c[0]},${gs.c[1]},${gs.c[2]},0.15)`;ctx.lineWidth=1;ctx.stroke();
+    });
+  }
   // S-2 axis tick
-  if(showS2&&ST_S2){
+  if((showS2||filmActive)&&ST_S2&&(!filmActive||filmYear>=-43000)){
     const sp=project(0,ST_S2.yr*BOX.h,0);
     ctx.beginPath();ctx.moveTo(sp.x-6,sp.y);ctx.lineTo(sp.x+6,sp.y);
     ctx.strokeStyle=`rgba(${ST_S2.c[0]},${ST_S2.c[1]},${ST_S2.c[2]},0.3)`;ctx.lineWidth=1;ctx.stroke();
@@ -772,8 +783,9 @@ let birthsTrunc={};
 function toggleFilm(){
   filmActive=document.getElementById('toggleFilm').checked;
   document.getElementById('film-bar').style.display=filmActive?'block':'none';
+  document.body.classList.toggle('film-on',filmActive);
   if(filmActive&&!filmLoaded)loadFilmData();
-  if(!filmActive)filmYear=9999;
+  filmYear=filmActive?-999999:9999;
 }
 
 async function loadFilmData(){
@@ -852,11 +864,56 @@ function filmTick(now){
   }
 }
 
+// S-2 glyph birth dates (seeds from seeds_s2.json + default year 1000 for the rest)
+const GLYPH_BIRTHS={
+  '|':-43000,
+  '1':-257,'2':-257,'3':-257,'4':-257,'5':-257,'6':-257,'7':-257,'8':-257,'9':-257,
+  '☉':300,'☽':300,'♂':300,'♀':300,'♃':300,'♄':300,'☿':300,
+  '0':628,
+  // Opérateurs historiques (dates approximatives basées sur l'histoire des maths)
+  '+':1489,'−':1489,'-':1489, // Widmann 1489
+  '=':1557, // Recorde 1557
+  '×':1631, // Harriot/Oughtred 1631
+  '÷':1659, // Rahn 1659
+  '∞':1655, // Wallis 1655
+  '√':1525, // Rudolff 1525
+  '%':1425, // Italian merchants ~1425
+  'π':1706, // Jones 1706
+  'e':1731, // Euler 1731
+  'i':1777, // Euler 1777
+  '∫':1675, // Leibniz 1675
+  '∂':1770, // Condorcet 1770
+  '∑':1755, // Euler 1755
+  '∏':1812, // Gauss 1812
+  'd':1675, // Leibniz 1675
+  '!':1808, // Kramp 1808
+  'Δ':1706, // Taylor/finite differences
+  '∇':1837, // Hamilton 1837
+  '∈':1889, // Peano 1889
+  '∪':1888,'∩':1888,'⊂':1890,'⊃':1890, // Cantor/Peano
+  '∅':1939, // Bourbaki 1939
+  '∀':1935,'∃':1897, // Gentzen/Peano
+  '¬':1930,'∧':1930,'∨':1930, // Heyting/Lukasiewicz
+  '→':1922, // Hilbert
+  '↔':1936, // logique
+  '⊕':1800,'⊗':1800, // algèbre
+  'ℝ':1868,'ℂ':1847,'ℤ':1895,'ℕ':1895,'ℚ':1895, // Dedekind/Bourbaki
+};
+const GLYPH_DEFAULT_YEAR=1000; // tous les autres glyphes: apparaissent avec les données OpenAlex
+
+// Film visibility check — is this S-2 glyph born yet?
+function isGlyphBorn(ch){
+  if(!filmActive)return true;
+  const by=GLYPH_BIRTHS[ch];
+  if(by!==undefined)return filmYear>=by;
+  return filmYear>=GLYPH_DEFAULT_YEAR;
+}
+
 // Film visibility check — is this concept born yet?
 function isConceptBorn(name){
   if(!filmActive)return true;
   const by=birthsByName[name]??birthsTrunc[name];
-  if(by===undefined)return true;
+  if(by===undefined)return false;
   return filmYear>=by;
 }
 

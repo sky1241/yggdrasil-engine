@@ -40,7 +40,7 @@ python engine/analyze_pluie.py
 
 | Variable | Default | Purpose |
 |----------|---------|---------|
-| `YGG_WORKS_DIR` | `D:\openalex\data\works` | Path to OpenAlex .gz files |
+| `YGG_WORKS_DIR` | `E:\openalex\data\works` | Path to OpenAlex .gz files |
 | `YGG_STRATES` | `data\strates_export_v2.json` | Yggdrasil symbols export |
 | `YGG_OA_MAP` | `data\openalex_map.json` | Symbol → OpenAlex ID mapping |
 | `YGG_OUTPUT` | `data\pluie` | Output directory for matrix + index |

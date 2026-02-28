@@ -20,12 +20,12 @@
   "stats": {
     "total_files": 2006,
     "total_code_lines": 25769,
-    "html_lines": 6229,
+    "html_lines": 6286,
     "languages": {
       "Python": 25769,
       "PowerShell": 9,
       "Shell": 11,
-      "HTML": 6229,
+      "HTML": 6286,
       "JavaScript": 6
     },
     "biggest_file": {
@@ -464,7 +464,7 @@
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "PLUIE: lancer le full run 400GB (6-12h) sur D:\\openalex\\data\\works\\ puis analyse structural holes réels. Ensuite: V2 timelapse.",
+  "next_step": "PLUIE: lancer le full run 400GB (6-12h) sur E:\\openalex\\data\\works\\ puis analyse structural holes réels. Ensuite: V2 timelapse.",
   "rules": {
     "auto_update": true,
     "description": "Ce fichier est la source de vérité du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",

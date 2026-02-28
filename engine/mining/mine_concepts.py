@@ -3,7 +3,7 @@ YGGDRASIL ENGINE — Phase 3 : MINAGE v2
 Extraire ~8,000-15,000 concepts TOUTES SCIENCES des 65K concepts OpenAlex.
 Auto-classifier en strates S0-S6 + tags C1/C2.
 
-Entrée  : D:/openalex/data/concepts/ (snapshot gzip)
+Entrée  : E:/openalex/data/concepts/ (snapshot gzip)
 Sortie  : data/mined_concepts.json (concepts classifiés)
           data/strates_export_v2.json (794 originaux + minés)
 """
@@ -15,7 +15,7 @@ from pathlib import Path
 from collections import defaultdict, Counter
 
 ROOT = Path(__file__).parent.parent.parent
-CONCEPTS_DIR = Path("D:/openalex/data/concepts")
+CONCEPTS_DIR = Path("E:/openalex/data/concepts")
 STRATES_FILE = ROOT / "data" / "core" / "strates_export.json"
 OUTPUT_MINED = ROOT / "data" / "core" / "mined_concepts.json"
 OUTPUT_STRATES_V2 = ROOT / "data" / "core" / "strates_export_v2.json"

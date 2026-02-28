@@ -4,7 +4,7 @@ YGGDRASIL Phase 4 — PLUIE LOCALE
 Matrice de co-occurrence concepts depuis OpenAlex snapshot complet.
 
 Stream ~400 GB de .gz, extrait les paires de concepts, construit matrice sparse.
-Windows 11, D:/openalex/data/works/
+Windows 11, E:/openalex/data/works/
 
 Usage:
     python build_cooccurrence.py                    # run complet

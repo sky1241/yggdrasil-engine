@@ -15,7 +15,7 @@ from pathlib import Path
 from multiprocessing import Pool
 
 ROOT = Path(__file__).parent.parent.parent
-WORKS_DIR = Path("D:/openalex/data/works")
+WORKS_DIR = Path("E:/openalex/data/works")
 N_WORKERS = 2
 
 # Regex at module level (available after fork/spawn)
