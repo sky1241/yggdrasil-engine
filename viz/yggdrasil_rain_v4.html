@@ -442,6 +442,7 @@ function frame(nowTs){
       // Musee symbols slightly dimmer in fusion mode
       if(cubeMode==='fusion'&&cb===1)finalOp*=0.45;
       if(hasDomFilter&&!activeDomains.has(dom))finalOp*=0.03;
+      if(!isConceptBorn(sym[0]))return;
       const isEsc=showEsc&&(ESC_GEO.has(sym[0])||ESC_KEY.has(sym[0]));
       items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:domCol,sop:finalOp,isCentre,isC2:false,isEsc});
     });
@@ -506,6 +507,7 @@ function frame(nowTs){
         const domCol=DC[dom]||st.c;
         let finalOp=sop;
         if(hasDomFilter&&!activeDomains.has(dom))finalOp*=0.03;
+        if(!isConceptBorn(sym[0]))return;
         items.push({type:'s',z:pp.z,si,sym,px:pp.x,py:pp.y,pf:pp.f,col:domCol,sop:finalOp,isCentre,isC2:true,isEsc:false});
       });
     });
@@ -751,9 +753,10 @@ function frame(nowTs){
   }
 }
 
-// ═══════════════════════════════════════════════════
-// ═══ FILM DU MYCÉLIUM — 9 espèces sur plan S-1 ═══
-// ═══════════════════════════════════════════════════
+
+// ═══════════════════════════════════════════════════════════
+// ═══ FILM DU MYCÉLIUM — points apparaissent dans le cube ═══
+// ═══════════════════════════════════════════════════════════
 let filmActive=false;
 let filmFrames=[];
 let filmIdx=0;
@@ -762,36 +765,37 @@ let filmSpeed=1;
 let filmLastT=0;
 let filmAcc=0;
 let filmLoaded=false;
-
-const MYCO_SP=[
-  {id:0,name:'ChiMat',color:[255,107,53]},
-  {id:1,name:'TerGeo',color:[139,105,20]},
-  {id:2,name:'BioCli',color:[46,204,113]},
-  {id:3,name:'HumEco',color:[241,196,15]},
-  {id:4,name:'InfMat',color:[52,152,219]},
-  {id:5,name:'TerBio',color:[39,174,96]},
-  {id:6,name:'HumArt',color:[224,86,160]},
-  {id:7,name:'BioLab',color:[26,188,156]},
-  {id:8,name:'Physiq',color:[231,76,60]},
-];
+let filmYear=9999;
+let birthsByName={};
+let birthsTrunc={};
 
 function toggleFilm(){
   filmActive=document.getElementById('toggleFilm').checked;
   document.getElementById('film-bar').style.display=filmActive?'block':'none';
   if(filmActive&&!filmLoaded)loadFilmData();
+  if(!filmActive)filmYear=9999;
 }
 
 async function loadFilmData(){
   try{
-    const r=await fetch('../data/scan/frames.json');
-    const d=await r.json();
-    filmFrames=d.frames;
+    const [r1,r2]=await Promise.all([
+      fetch('../data/scan/frames.json'),
+      fetch('../data/scan/concept_births.json')
+    ]);
+    const d1=await r1.json();
+    const d2=await r2.json();
+    filmFrames=d1.frames;
+    birthsByName=d2.births_by_name;
+    // Build truncated name index (HTML truncates sym names to 20 chars)
+    birthsTrunc={};
+    for(const[name,yr]of Object.entries(birthsByName)){
+      const t=name.substring(0,20);
+      if(!(t in birthsTrunc)||yr<birthsTrunc[t])birthsTrunc[t]=yr;
+    }
     filmLoaded=true;
     document.getElementById('film-slider').max=filmFrames.length-1;
     showFilmFrame(0);
-  }catch(e){
-    console.error('Film load error',e);
-  }
+  }catch(e){console.error('Film load error',e);}
 }
 
 function fmtF(n){
@@ -806,8 +810,8 @@ function showFilmFrame(idx){
   filmIdx=idx;
   const fr=filmFrames[idx];
   document.getElementById('film-slider').value=idx;
-  const y=fr.year;
-  const yStr=y<0?Math.abs(y).toLocaleString()+' av.J-C':(fr.period.includes('-')?fr.period:String(y));
+  filmYear=fr.year;
+  const yStr=filmYear<0?Math.abs(filmYear).toLocaleString()+' av.J-C':(fr.period.includes('-')?fr.period:String(filmYear));
   document.getElementById('film-year').textContent=yStr;
   const concepts=fr.concepts_active||0;
   const edges=fr.edges_cumulative||fr.edges||0;
@@ -819,10 +823,9 @@ function showFilmFrame(idx){
   document.getElementById('film-info').textContent=(idx+1)+' / '+filmFrames.length;
 }
 
-// Film controls
 document.getElementById('film-play').addEventListener('click',()=>{
   filmPlaying=!filmPlaying;
-  document.getElementById('film-play').textContent=filmPlaying?'⏸':'▶';
+  document.getElementById('film-play').textContent=filmPlaying?'\u23F8':'\u25B6';
   if(filmPlaying){filmLastT=performance.now();filmAcc=0;}
 });
 document.getElementById('film-slider').addEventListener('input',e=>{
@@ -836,7 +839,6 @@ document.querySelectorAll('.fsp').forEach(btn=>{
   });
 });
 
-// Film animation tick (called from main frame loop)
 function filmTick(now){
   if(!filmPlaying||!filmActive)return;
   const dt=now-filmLastT;filmLastT=now;
@@ -846,107 +848,21 @@ function filmTick(now){
   while(filmAcc>=interval){
     filmAcc-=interval;
     if(filmIdx<filmFrames.length-1){showFilmFrame(filmIdx+1);}
-    else{filmPlaying=false;document.getElementById('film-play').textContent='▶';return;}
+    else{filmPlaying=false;document.getElementById('film-play').textContent='\u25B6';return;}
   }
 }
 
-// Draw mycelium species on the MÉTIER plane
-function drawFilmOnPlane(items){
-  if(!filmActive||!filmLoaded||filmFrames.length===0)return;
-  const fr=filmFrames[filmIdx];
-  const speciesCounts=fr.concepts_by_species||[0,0,0,0,0,0,0,0,0];
-  const mat=fr.species_matrix||Array.from({length:9},()=>Array(9).fill(0));
-  const metierY=GHOST_PLANES[0].yr*BOX.h; // S-1 MÉTIER plane Y
-  const maxCount=Math.max(1,...speciesCounts);
-
-  // Arrange 9 species in a circle on the plane
-  const planeR=BOX.w*SHRINK*0.32;
-  for(let i=0;i<9;i++){
-    const angle=(i/9)*Math.PI*2-Math.PI/2;
-    const sx=Math.cos(angle)*planeR;
-    const sz=Math.sin(angle)*planeR;
-    const pp=project(sx,metierY,sz);
-    const count=speciesCounts[i];
-    const ratio=count/maxCount;
-    const baseR=Math.max(3,ratio*22*(pp.f/(CAM.scale/CAM.dist)));
-    const col=MYCO_SP[i].color;
-
-    // Store position for edge drawing
-    MYCO_SP[i]._px=pp.x;MYCO_SP[i]._py=pp.y;MYCO_SP[i]._z=pp.z;MYCO_SP[i]._f=pp.f;MYCO_SP[i]._r=baseR;
-
-    if(count>0){
-      items.push({type:'myco',z:pp.z,px:pp.x,py:pp.y,r:baseR,col:col,name:MYCO_SP[i].name,count:count,si:i});
-    }
-  }
-
-  // Edges between species
-  let maxEdge=0;
-  for(let i=0;i<9;i++)for(let j=i+1;j<9;j++)maxEdge=Math.max(maxEdge,mat[i][j]);
-  if(maxEdge>0){
-    for(let i=0;i<9;i++){
-      for(let j=i+1;j<9;j++){
-        const w=mat[i][j];if(w<=0)continue;
-        const strength=w/maxEdge;if(strength<0.02)continue;
-        const a=MYCO_SP[i],b=MYCO_SP[j];
-        if(!a._px||!b._px)continue;
-        items.push({type:'myco-edge',z:Math.min(a._z,b._z)-0.005,
-          x1:a._px,y1:a._py,x2:b._px,y2:b._py,
-          col1:a.color,col2:b.color,strength:strength});
-      }
-    }
-  }
-
-  // Phase 1: show glyphs in center of plane
-  if(fr.phase==='historical'&&fr.new_glyphs){
-    const pp=project(0,metierY,0);
-    items.push({type:'myco-glyph',z:pp.z+0.01,px:pp.x,py:pp.y,pf:pp.f,
-      glyphs:fr.all_glyphs||[],newGlyphs:fr.new_glyphs});
-  }
+// Film visibility check — is this concept born yet?
+function isConceptBorn(name){
+  if(!filmActive)return true;
+  const by=birthsByName[name]??birthsTrunc[name];
+  if(by===undefined)return true;
+  return filmYear>=by;
 }
 
-// Render mycelium items (called from main render loop)
-function renderFilmItem(it,ctx){
-  if(it.type==='myco-edge'){
-    const alpha=Math.min(0.6,it.strength*0.7+0.05);
-    const lw=1+it.strength*5;
-    ctx.beginPath();ctx.moveTo(it.x1,it.y1);ctx.lineTo(it.x2,it.y2);
-    const grad=ctx.createLinearGradient(it.x1,it.y1,it.x2,it.y2);
-    grad.addColorStop(0,`rgba(${it.col1[0]},${it.col1[1]},${it.col1[2]},${alpha})`);
-    grad.addColorStop(1,`rgba(${it.col2[0]},${it.col2[1]},${it.col2[2]},${alpha})`);
-    ctx.strokeStyle=grad;ctx.lineWidth=lw;ctx.stroke();
-    return true;
-  }
-  if(it.type==='myco'){
-    const c=it.col;
-    // Glow
-    const grd=ctx.createRadialGradient(it.px,it.py,it.r*0.3,it.px,it.py,it.r*2.5);
-    grd.addColorStop(0,`rgba(${c[0]},${c[1]},${c[2]},0.25)`);
-    grd.addColorStop(1,`rgba(${c[0]},${c[1]},${c[2]},0)`);
-    ctx.beginPath();ctx.arc(it.px,it.py,it.r*2.5,0,Math.PI*2);ctx.fillStyle=grd;ctx.fill();
-    // Circle
-    ctx.beginPath();ctx.arc(it.px,it.py,it.r,0,Math.PI*2);
-    ctx.fillStyle=`rgba(${c[0]},${c[1]},${c[2]},0.8)`;ctx.fill();
-    ctx.strokeStyle=`rgb(${c[0]},${c[1]},${c[2]})`;ctx.lineWidth=1.5;ctx.stroke();
-    // Label
-    ctx.fillStyle='#fff';ctx.font='500 8px "JetBrains Mono",monospace';
-    ctx.textAlign='center';ctx.textBaseline='top';
-    ctx.fillText(it.name,it.px,it.py+it.r+4);
-    // Count inside
-    if(it.r>8){
-      ctx.fillStyle='#fff';ctx.font=`600 ${Math.max(7,it.r*0.45)}px "JetBrains Mono",monospace`;
-      ctx.textBaseline='middle';ctx.fillText(fmtF(it.count),it.px,it.py);
-    }
-    return true;
-  }
-  if(it.type==='myco-glyph'){
-    ctx.fillStyle='#ffd700';
-    const sz=Math.max(14,Math.min(36,24*(it.pf/(CAM.scale/CAM.dist))));
-    ctx.font=`700 ${sz}px serif`;ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillText(it.glyphs.join(' '),it.px,it.py);
-    return true;
-  }
-  return false;
-}
+// Stubs — film works by filtering existing symbols, no extra items needed
+function drawFilmOnPlane(items){}
+function renderFilmItem(it,ctx){return false;}
 
 // ═══ Keyboard shortcuts for film ═══
 document.addEventListener('keydown',e=>{
