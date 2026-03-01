@@ -1,0 +1,14 @@
+{
+  "cutoff_year": 2015,
+  "n_concepts": 65026,
+  "n_chunks_scanned": 581,
+  "total_works_2015": 184511629,
+  "n_active_concepts": 65026,
+  "n_pairs_nonzero": 82700789,
+  "total_pairs_accumulated": 1405892810,
+  "periods_accepted": 475622,
+  "periods_rejected": 72979,
+  "batch_size": 10,
+  "scan_time_sec": 9035.0,
+  "timestamp": "2026-02-28 20:14:58"
+}

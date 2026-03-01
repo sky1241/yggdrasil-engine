@@ -1,0 +1,585 @@
+{
+  "meta": {
+    "date": "2026-02-28 22:31:21",
+    "theory": "P4 inter-species bridges predict discoveries",
+    "method": "P4 baseline filtered to inter-species pairs only",
+    "cutoff_year": 2015,
+    "n_total_pairs": 82700789,
+    "n_inter_species_pairs": 48150155,
+    "n_intra_removed": 34550634,
+    "inter_fraction": 0.5822,
+    "n_ground_truth": 20,
+    "n_ground_truth_inter": 15,
+    "computation_time_sec": 25.0
+  },
+  "ground_truth_species": [
+    {
+      "name": "AlphaFold",
+      "concept_a": "Artificial intelligence",
+      "concept_b": "Biochemistry",
+      "species_a": 0,
+      "species_b": 6,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "BioClinical",
+      "is_inter_species": true,
+      "v1_rank": 3512,
+      "v1_p4": 0.5900724085,
+      "inter_rank": 3001,
+      "inter_p4": 0.5900661238,
+      "rank_improvement": 511
+    },
+    {
+      "name": "mRNA vaccines",
+      "concept_a": "Nanotechnology",
+      "concept_b": "Immunology",
+      "species_a": 1,
+      "species_b": 3,
+      "species_a_name": "ChemMat",
+      "species_b_name": "MedClinical",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0919043723,
+      "inter_rank": 10001,
+      "inter_p4": 0.0919043723,
+      "rank_improvement": null
+    },
+    {
+      "name": "CRISPR base editing",
+      "concept_a": "Organic chemistry",
+      "concept_b": "Genetics",
+      "species_a": 1,
+      "species_b": 6,
+      "species_a_name": "ChemMat",
+      "species_b_name": "BioClinical",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0646730645,
+      "inter_rank": 10001,
+      "inter_p4": 0.0646730645,
+      "rank_improvement": null
+    },
+    {
+      "name": "Gravitational waves",
+      "concept_a": "Optics",
+      "concept_b": "Quantum mechanics",
+      "species_a": 4,
+      "species_b": 4,
+      "species_a_name": "Physics",
+      "species_b_name": "Physics",
+      "is_inter_species": false,
+      "v1_rank": 10001,
+      "v1_p4": 0.0174842842,
+      "inter_rank": -1,
+      "inter_p4": 0.0174842842,
+      "rank_improvement": null
+    },
+    {
+      "name": "AlphaGo",
+      "concept_a": "Algorithm",
+      "concept_b": "Artificial intelligence",
+      "species_a": 0,
+      "species_b": 0,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "CS/Engineering",
+      "is_inter_species": false,
+      "v1_rank": 3812,
+      "v1_p4": 0.5342851887,
+      "inter_rank": -1,
+      "inter_p4": 0.5342851887,
+      "rank_improvement": null
+    },
+    {
+      "name": "Transformers/GPT",
+      "concept_a": "Artificial intelligence",
+      "concept_b": "Linguistics",
+      "species_a": 0,
+      "species_b": 8,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "HumArts",
+      "is_inter_species": true,
+      "v1_rank": 5318,
+      "v1_p4": 0.3460921159,
+      "inter_rank": 4705,
+      "inter_p4": 0.3415211023,
+      "rank_improvement": 613
+    },
+    {
+      "name": "CAR-T therapy",
+      "concept_a": "Immunology",
+      "concept_b": "Cell biology",
+      "species_a": 3,
+      "species_b": 6,
+      "species_a_name": "MedClinical",
+      "species_b_name": "BioClinical",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0262391285,
+      "inter_rank": 10001,
+      "inter_p4": 0.0262391285,
+      "rank_improvement": null
+    },
+    {
+      "name": "Cryo-EM",
+      "concept_a": "Atomic physics",
+      "concept_b": "Biochemistry",
+      "species_a": 4,
+      "species_b": 6,
+      "species_a_name": "Physics",
+      "species_b_name": "BioClinical",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0968785507,
+      "inter_rank": 10001,
+      "inter_p4": 0.0968785507,
+      "rank_improvement": null
+    },
+    {
+      "name": "Topological insulators",
+      "concept_a": "Composite material",
+      "concept_b": "Quantum mechanics",
+      "species_a": 1,
+      "species_b": 4,
+      "species_a_name": "ChemMat",
+      "species_b_name": "Physics",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0220573091,
+      "inter_rank": 10001,
+      "inter_p4": 0.0220573091,
+      "rank_improvement": null
+    },
+    {
+      "name": "Microbiome therapeutics",
+      "concept_a": "Internal medicine",
+      "concept_b": "Ecology",
+      "species_a": 3,
+      "species_b": 2,
+      "species_a_name": "MedClinical",
+      "species_b_name": "TerGeo",
+      "is_inter_species": true,
+      "v1_rank": 1785,
+      "v1_p4": 1.2923603606,
+      "inter_rank": 1457,
+      "inter_p4": 1.2923171433,
+      "rank_improvement": 328
+    },
+    {
+      "name": "Quantum supremacy",
+      "concept_a": "Algorithm",
+      "concept_b": "Quantum mechanics",
+      "species_a": 0,
+      "species_b": 4,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "Physics",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0170926611,
+      "inter_rank": 10001,
+      "inter_p4": 0.0170926611,
+      "rank_improvement": null
+    },
+    {
+      "name": "GAN explosion",
+      "concept_a": "Statistics",
+      "concept_b": "Artificial intelligence",
+      "species_a": 7,
+      "species_b": 0,
+      "species_a_name": "MathStat",
+      "species_b_name": "CS/Engineering",
+      "is_inter_species": true,
+      "v1_rank": 3105,
+      "v1_p4": 0.6871018363,
+      "inter_rank": 2638,
+      "inter_p4": 0.6850991483,
+      "rank_improvement": 467
+    },
+    {
+      "name": "Perovskite solar cells",
+      "concept_a": "Perovskite (structure)",
+      "concept_b": "Photovoltaic system",
+      "species_a": 1,
+      "species_b": 0,
+      "species_a_name": "ChemMat",
+      "species_b_name": "CS/Engineering",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 1.81846e-05,
+      "inter_rank": 10001,
+      "inter_p4": 1.81846e-05,
+      "rank_improvement": null
+    },
+    {
+      "name": "Organoids",
+      "concept_a": "Stem cell",
+      "concept_b": "Tissue engineering",
+      "species_a": 6,
+      "species_b": 1,
+      "species_a_name": "BioClinical",
+      "species_b_name": "ChemMat",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0003728947,
+      "inter_rank": 10001,
+      "inter_p4": 0.0003728947,
+      "rank_improvement": null
+    },
+    {
+      "name": "Single-cell RNA-seq",
+      "concept_a": "RNA",
+      "concept_b": "Single cell sequencing",
+      "species_a": 6,
+      "species_b": 6,
+      "species_a_name": "BioClinical",
+      "species_b_name": "BioClinical",
+      "is_inter_species": false,
+      "v1_rank": 10001,
+      "v1_p4": 2.55e-08,
+      "inter_rank": -1,
+      "inter_p4": 2.55e-08,
+      "rank_improvement": null
+    },
+    {
+      "name": "Neuromorphic computing",
+      "concept_a": "Neuroscience",
+      "concept_b": "Semiconductor",
+      "species_a": 3,
+      "species_b": 4,
+      "species_a_name": "MedClinical",
+      "species_b_name": "Physics",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.0033320084,
+      "inter_rank": 10001,
+      "inter_p4": 0.0033320084,
+      "rank_improvement": null
+    },
+    {
+      "name": "Federated learning",
+      "concept_a": "Privacy protection",
+      "concept_b": "Machine learning",
+      "species_a": 0,
+      "species_b": 0,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "CS/Engineering",
+      "is_inter_species": false,
+      "v1_rank": 10001,
+      "v1_p4": 1.3416e-06,
+      "inter_rank": -1,
+      "inter_p4": 1.3416e-06,
+      "rank_improvement": null
+    },
+    {
+      "name": "Graph neural networks",
+      "concept_a": "Graph theory",
+      "concept_b": "Deep learning",
+      "species_a": 7,
+      "species_b": 0,
+      "species_a_name": "MathStat",
+      "species_b_name": "CS/Engineering",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 9.7e-09,
+      "inter_rank": 10001,
+      "inter_p4": 9.7e-09,
+      "rank_improvement": null
+    },
+    {
+      "name": "Optogenetics maturation",
+      "concept_a": "Optics",
+      "concept_b": "Neuroscience",
+      "species_a": 4,
+      "species_b": 3,
+      "species_a_name": "Physics",
+      "species_b_name": "MedClinical",
+      "is_inter_species": true,
+      "v1_rank": 10001,
+      "v1_p4": 0.1203836391,
+      "inter_rank": 10001,
+      "inter_p4": 0.1203836391,
+      "rank_improvement": null
+    },
+    {
+      "name": "Liquid biopsy",
+      "concept_a": "Biopsy",
+      "concept_b": "Cancer",
+      "species_a": 3,
+      "species_b": 3,
+      "species_a_name": "MedClinical",
+      "species_b_name": "MedClinical",
+      "is_inter_species": false,
+      "v1_rank": 10001,
+      "v1_p4": 0.0045813592,
+      "inter_rank": -1,
+      "inter_p4": 0.0045813592,
+      "rank_improvement": null
+    }
+  ],
+  "scoring": {
+    "v1_baseline": {
+      "recall_100": 0.0,
+      "recall_1000": 0.0,
+      "recall_5000": 0.2,
+      "recall_10000": 0.25
+    },
+    "inter_species_filter": {
+      "recall_100": 0.0,
+      "recall_1000": 0.0,
+      "recall_5000": 0.2,
+      "recall_10000": 0.2
+    },
+    "mann_whitney_inter": {
+      "U": 28701.0,
+      "p_value": 5.214974274191125e-10,
+      "effect_size_r": -0.9134,
+      "cohens_d": 7.5409,
+      "n_gt_inter": 15,
+      "n_random_inter": 2000,
+      "gt_mean_p4": 0.22346369,
+      "random_mean_p4": 2.969e-05
+    }
+  },
+  "collision_matrix": [
+    [
+      0,
+      38,
+      52,
+      63,
+      19,
+      24,
+      30,
+      13,
+      67
+    ],
+    [
+      38,
+      0,
+      33,
+      41,
+      7,
+      13,
+      24,
+      7,
+      40
+    ],
+    [
+      52,
+      33,
+      0,
+      49,
+      13,
+      17,
+      20,
+      21,
+      80
+    ],
+    [
+      63,
+      41,
+      49,
+      0,
+      19,
+      28,
+      31,
+      15,
+      78
+    ],
+    [
+      19,
+      7,
+      13,
+      19,
+      0,
+      3,
+      9,
+      3,
+      18
+    ],
+    [
+      24,
+      13,
+      17,
+      28,
+      3,
+      0,
+      12,
+      4,
+      30
+    ],
+    [
+      30,
+      24,
+      20,
+      31,
+      9,
+      12,
+      0,
+      7,
+      48
+    ],
+    [
+      13,
+      7,
+      21,
+      15,
+      3,
+      4,
+      7,
+      0,
+      24
+    ],
+    [
+      67,
+      40,
+      80,
+      78,
+      18,
+      30,
+      48,
+      24,
+      0
+    ]
+  ],
+  "top_collision_zones": [
+    {
+      "species_a": 2,
+      "species_b": 8,
+      "species_a_name": "TerGeo",
+      "species_b_name": "HumArts",
+      "count": 80
+    },
+    {
+      "species_a": 3,
+      "species_b": 8,
+      "species_a_name": "MedClinical",
+      "species_b_name": "HumArts",
+      "count": 78
+    },
+    {
+      "species_a": 0,
+      "species_b": 8,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "HumArts",
+      "count": 67
+    },
+    {
+      "species_a": 0,
+      "species_b": 3,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "MedClinical",
+      "count": 63
+    },
+    {
+      "species_a": 0,
+      "species_b": 2,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "TerGeo",
+      "count": 52
+    },
+    {
+      "species_a": 2,
+      "species_b": 3,
+      "species_a_name": "TerGeo",
+      "species_b_name": "MedClinical",
+      "count": 49
+    },
+    {
+      "species_a": 6,
+      "species_b": 8,
+      "species_a_name": "BioClinical",
+      "species_b_name": "HumArts",
+      "count": 48
+    },
+    {
+      "species_a": 1,
+      "species_b": 3,
+      "species_a_name": "ChemMat",
+      "species_b_name": "MedClinical",
+      "count": 41
+    },
+    {
+      "species_a": 1,
+      "species_b": 8,
+      "species_a_name": "ChemMat",
+      "species_b_name": "HumArts",
+      "count": 40
+    },
+    {
+      "species_a": 0,
+      "species_b": 1,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "ChemMat",
+      "count": 38
+    },
+    {
+      "species_a": 1,
+      "species_b": 2,
+      "species_a_name": "ChemMat",
+      "species_b_name": "TerGeo",
+      "count": 33
+    },
+    {
+      "species_a": 3,
+      "species_b": 6,
+      "species_a_name": "MedClinical",
+      "species_b_name": "BioClinical",
+      "count": 31
+    },
+    {
+      "species_a": 0,
+      "species_b": 6,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "BioClinical",
+      "count": 30
+    },
+    {
+      "species_a": 5,
+      "species_b": 8,
+      "species_a_name": "HumEco",
+      "species_b_name": "HumArts",
+      "count": 30
+    },
+    {
+      "species_a": 3,
+      "species_b": 5,
+      "species_a_name": "MedClinical",
+      "species_b_name": "HumEco",
+      "count": 28
+    },
+    {
+      "species_a": 0,
+      "species_b": 5,
+      "species_a_name": "CS/Engineering",
+      "species_b_name": "HumEco",
+      "count": 24
+    },
+    {
+      "species_a": 1,
+      "species_b": 6,
+      "species_a_name": "ChemMat",
+      "species_b_name": "BioClinical",
+      "count": 24
+    },
+    {
+      "species_a": 7,
+      "species_b": 8,
+      "species_a_name": "MathStat",
+      "species_b_name": "HumArts",
+      "count": 24
+    },
+    {
+      "species_a": 2,
+      "species_b": 7,
+      "species_a_name": "TerGeo",
+      "species_b_name": "MathStat",
+      "count": 21
+    },
+    {
+      "species_a": 2,
+      "species_b": 6,
+      "species_a_name": "TerGeo",
+      "species_b_name": "BioClinical",
+      "count": 20
+    }
+  ],
+  "verdict": "Inter-species filter LOSES recall@10K (20% vs 25%) | 15/20 GT are inter-species, 5 INTRA lost | STRONG SIGNAL (p=5.21e-10, d=7.54)"
+}

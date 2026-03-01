@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "k": 9,
+    "top_n": 1000,
+    "species_source": "species_2015.json (NO look-ahead)",
+    "note": "Species numbers from 2015 clustering may differ from full-data labels",
+    "timestamp": "2026-02-28 20:26:35"
+  },
+  "matrix_p4_top1000": [
+    [
+      9,
+      31,
+      41,
+      50,
+      15,
+      19,
+      27,
+      9,
+      54
+    ],
+    [
+      0,
+      10,
+      29,
+      28,
+      5,
+      10,
+      17,
+      6,
+      38
+    ],
+    [
+      0,
+      0,
+      73,
+      43,
+      12,
+      15,
+      16,
+      20,
+      71
+    ],
+    [
+      0,
+      0,
+      0,
+      26,
+      16,
+      23,
+      21,
+      13,
+      64
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      6,
+      2,
+      16
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      11,
+      4,
+      22
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7,
+      5,
+      40
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      22
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      42
+    ]
+  ],
+  "matrix_gt_top1000": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "intra_species_count": 176,
+  "inter_species_count": 824,
+  "collision_zones": [
+    {
+      "species_a": 2,
+      "species_b": 8,
+      "p4_count": 71,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 3,
+      "species_b": 8,
+      "p4_count": 64,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 8,
+      "p4_count": 54,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 3,
+      "p4_count": 50,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 2,
+      "species_b": 3,
+      "p4_count": 43,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 2,
+      "p4_count": 41,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 6,
+      "species_b": 8,
+      "p4_count": 40,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 8,
+      "p4_count": 38,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 1,
+      "p4_count": 31,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 2,
+      "p4_count": 29,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 3,
+      "p4_count": 28,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 6,
+      "p4_count": 27,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 3,
+      "species_b": 5,
+      "p4_count": 23,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 7,
+      "species_b": 8,
+      "p4_count": 22,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 5,
+      "species_b": 8,
+      "p4_count": 22,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 3,
+      "species_b": 6,
+      "p4_count": 21,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 2,
+      "species_b": 7,
+      "p4_count": 20,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 5,
+      "p4_count": 19,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 6,
+      "p4_count": 17,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 4,
+      "species_b": 8,
+      "p4_count": 16,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 3,
+      "species_b": 4,
+      "p4_count": 16,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 2,
+      "species_b": 6,
+      "p4_count": 16,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 2,
+      "species_b": 5,
+      "p4_count": 15,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 4,
+      "p4_count": 15,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 3,
+      "species_b": 7,
+      "p4_count": 13,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 2,
+      "species_b": 4,
+      "p4_count": 12,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 5,
+      "species_b": 6,
+      "p4_count": 11,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 5,
+      "p4_count": 10,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 0,
+      "species_b": 7,
+      "p4_count": 9,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 4,
+      "species_b": 6,
+      "p4_count": 6,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 7,
+      "p4_count": 6,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 6,
+      "species_b": 7,
+      "p4_count": 5,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 1,
+      "species_b": 4,
+      "p4_count": 5,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 5,
+      "species_b": 7,
+      "p4_count": 4,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 4,
+      "species_b": 5,
+      "p4_count": 3,
+      "gt_hits": 0
+    },
+    {
+      "species_a": 4,
+      "species_b": 7,
+      "p4_count": 2,
+      "gt_hits": 0
+    }
+  ]
+}
