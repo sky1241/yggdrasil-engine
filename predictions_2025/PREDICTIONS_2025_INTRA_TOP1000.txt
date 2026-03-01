@@ -1,0 +1,1017 @@
+YGGDRASIL ENGINE — PREDICTIONS 2025+
+Layer: INTRA-SPECIES
+Generated: 2026-03-01 20:41:09
+Top 1000 predictions by P4 score
+========================================================================================================================
+
+These are REVOLUTIONS within scientific continents.
+Each pair represents two concepts from the SAME species
+that collaborate LESS than expected — an internal gap
+where a within-field breakthrough may occur.
+
+ Rank          P4   z-score             Species A             Species B                       Concept A                       Concept B
+--------------------------------------------------------------------------------------------------------------------------------------------
+    1    118.3828   +2957.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Download
+    2    114.9133   +6454.2  Humanities/Political science  Humanities/Political science                      Philosophy  Humanities
+    3    104.2926   +1706.7  Humanities/Political science  Humanities/Political science                      Philosophy  Political science
+    4     78.7800   +2189.7  Humanities/Political science  Humanities/Political science                      Philosophy  Art
+    5     77.8234   +3537.2  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Gynecology
+    6     77.5357   +5311.7  Humanities/Political science  Humanities/Political science                      Humanities  Political science
+    7     74.3088    +520.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Artificial intelligence
+    8     67.3008   +1080.7  Geography/Environmental science  Geography/Environmental science                         Geology  Geography
+    9     66.8759   +1022.0  Humanities/Political science  Humanities/Political science                       Sociology  Political science
+   10     62.2052   +1139.5  Geography/Environmental science  Geography/Environmental science                         Geology  Environmental science
+   11     59.1632    +809.3  Geography/Environmental science  Geography/Environmental science                       Geography  Environmental science
+   12     54.6288   +1567.0  Humanities/Political science  Humanities/Political science                         History  Art
+   13     51.2474    +990.3        Physics/Optics        Physics/Optics                          Optics  Physics
+   14     48.8513   +1871.8        Physics/Optics        Physics/Optics                         Physics  Beam (structure)
+   15     48.7530    +555.2  Humanities/Political science  Humanities/Political science               Political science  Art
+   16     48.6436   +2072.8        Biology/Botany        Biology/Botany                          Botany  Biology
+   17     47.1067   +1619.6  Geography/Environmental science  Geography/Environmental science                         Geology  Sample (material)
+   18     45.5509   +4362.1  Computer science/Mathematics  Computer science/Mathematics                      Statistics  Mathematics
+   19     43.4598    +395.2  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Medicine
+   20     43.4100   +1513.1  Geography/Environmental science  Geography/Environmental science           Environmental science  Remote sensing
+   21     42.7327    +663.6  Humanities/Political science  Humanities/Political science               Political science  History
+   22     41.9274   +1683.3  Geography/Environmental science  Geography/Environmental science                         Geology  Remote sensing
+   23     39.6908   +1178.8  Geography/Environmental science  Geography/Environmental science                       Geography  Remote sensing
+   24     39.6597   +1149.8  Geography/Environmental science  Geography/Environmental science               Sample (material)  Environmental science
+   25     38.4563    +960.7  Geography/Environmental science  Geography/Environmental science               Sample (material)  Geography
+   26     36.1747   +1372.9  Geography/Environmental science  Geography/Environmental science              Physical geography  Geography
+   27     35.5825    +795.0  Computer science/Mathematics  Computer science/Mathematics                Computer science  World Wide Web
+   28     33.5453   +1461.7  Geography/Environmental science  Geography/Environmental science              Physical geography  Environmental science
+   29     32.6898   +1642.4  Geography/Environmental science  Geography/Environmental science                         Geology  Physical geography
+   30     30.6221   +6804.1        Physics/Optics        Physics/Optics                 Power (physics)  Beam (structure)
+   31     29.5601    +601.9  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Surgery
+   32     28.6709   +1126.6  Humanities/Political science  Humanities/Political science               Political science  Law
+   33     28.3782   +1841.5  Geography/Environmental science  Geography/Environmental science               Sample (material)  Remote sensing
+   34     28.1458    +540.4  Humanities/Political science  Humanities/Political science                       Sociology  Humanities
+   35     26.8470   +1559.4        Physics/Optics        Physics/Optics                         Physics  Doppler effect
+   36     26.7694   +1006.9   Psychology/Business   Psychology/Business                        Business  Economics
+   37     26.3291    -289.6   Psychology/Business   Psychology/Business                        Business  Psychology
+   38     25.6590   +1606.2        Biology/Botany        Biology/Botany                         Biology  Zoology
+   39     25.5738   +2125.8  Geography/Environmental science  Geography/Environmental science              Physical geography  Sample (material)
+   40     23.9024   +2344.7  Geography/Environmental science  Geography/Environmental science              Physical geography  Remote sensing
+   41     22.6342   +1121.4  Humanities/Political science  Humanities/Political science               Political science  Government (linguistics)
+   42     22.4734   +1453.9        Physics/Optics        Physics/Optics                         Physics  Reflectometry
+   43     20.4351   +1169.4        Physics/Optics        Physics/Optics                         Physics  Laser
+   44     20.0138   +2222.5  Humanities/Political science  Humanities/Political science                             Art  Art history
+   45     19.9565    +779.3  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Intensive care medicine
+   46     19.9552   +1476.4  Materials science/Chemistry  Materials science/Chemistry               Materials science  Crystallography
+   47     19.7045    -142.0  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Materials science
+   48     18.8742    +371.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Data mining
+   49     18.5248   +1113.6   Psychology/Business   Psychology/Business           Mathematics education  Psychology
+   50     17.7673   +1051.9        Physics/Optics        Physics/Optics                         Physics  Cyclotron
+   51     17.6676    +845.8  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Family medicine
+   52     17.1923    +473.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Matching (statistics)
+   53     16.7042    +525.4  Computer science/Mathematics  Computer science/Mathematics                Computer science  Information retrieval
+   54     16.3509    +539.4        Physics/Optics        Physics/Optics                         Physics  Measure (data warehouse)
+   55     16.1177    +614.1  Humanities/Political science  Humanities/Political science               Political science  Context (archaeology)
+   56     16.0397   +1477.9  Computer science/Mathematics  Computer science/Mathematics                Computer science  Strain (injury)
+   57     15.0145    -324.8        Physics/Optics        Physics/Optics                         Physics  Nucleofection
+   58     14.5386   +1073.1   Psychology/Business   Psychology/Business                      Psychology  Social psychology
+   59     14.2776    -242.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Statistics
+   60     14.2476    +567.9        Physics/Optics        Physics/Optics                         Physics  Line (geometry)
+   61     13.8611    -316.3        Physics/Optics        Physics/Optics                         Physics  Gestational period
+   62     13.7913    -315.7        Physics/Optics        Physics/Optics                         Physics  TSG101
+   63     13.6004   +1039.3  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Dermatology
+   64     13.3571    +201.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Range (aeronautics)
+   65     13.2461    +417.1  Humanities/Political science  Humanities/Political science                      Philosophy  History
+   66     13.1651    -310.9        Physics/Optics        Physics/Optics                         Physics  Diafiltration
+   67     12.9163   +2750.9  Humanities/Political science  Humanities/Political science                      Philosophy  Theology
+   68     12.7808    +505.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Data science
+   69     12.5582    -306.0        Physics/Optics        Physics/Optics                         Physics  Liquation
+   70     12.5088   +1550.7        Physics/Optics        Physics/Optics                   Nucleofection  Gestational period
+   71     12.4999    -305.5        Physics/Optics        Physics/Optics                         Physics  Dysgeusia
+   72     11.8975    +347.2  Humanities/Political science  Humanities/Political science                      Philosophy  Sociology
+   73     11.8811    +594.7  Materials science/Chemistry  Materials science/Chemistry              Composite material  Materials science
+   74     11.8441   +1033.4        Physics/Optics        Physics/Optics                         Physics  Microwave
+   75     11.4531   +1416.4        Physics/Optics        Physics/Optics                   Nucleofection  TSG101
+   76     11.4265   +3588.4        Physics/Optics        Physics/Optics             Nuclear engineering  Power (physics)
+   77     10.8736   +1341.8  Humanities/Political science  Humanities/Political science                    Epistemology  Philosophy
+   78     10.8046    -291.0        Physics/Optics        Physics/Optics                         Physics  Triacetin
+   79     10.7848    +272.3        Physics/Optics        Physics/Optics                         Physics  Plasma
+   80     10.7315    +614.9        Physics/Optics        Physics/Optics                  Magnetic field  Physics
+   81     10.5408    +544.3  Humanities/Political science  Humanities/Political science                      Humanities  Context (archaeology)
+   82     10.3293    +863.3        Physics/Optics        Physics/Optics                         Physics  Interferometry
+   83     10.3201    +362.1  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Cardiology
+   84     10.2017     +53.6  Computer science/Mathematics  Computer science/Mathematics                Computer science  Mathematics
+   85      9.7515   +1036.7  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Stereochemistry
+   86      9.6312   +1076.0  Geography/Environmental science  Geography/Environmental science                     Archaeology  Geography
+   87      9.5787    +976.7        Physics/Optics        Physics/Optics                         Physics  Position (finance)
+   88      9.5216   +3666.1        Physics/Optics        Physics/Optics                        Divertor  Large Helical Device
+   89      9.3499    +678.9        Biology/Botany        Biology/Botany                    Horticulture  Biology
+   90      9.2545    -276.3        Physics/Optics        Physics/Optics                         Physics  Fusible alloy
+   91      9.2279   +1190.4        Physics/Optics        Physics/Optics                          TSG101  Gestational period
+   92      9.2200    -276.0        Physics/Optics        Physics/Optics                        Demotion  Physics
+   93      9.1807    -254.4  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Mathematics
+   94      9.0631    +125.6  Computer science/Mathematics  Computer science/Mathematics                Computer science  Set (abstract data type)
+   95      8.8421   +3537.5        Physics/Optics        Physics/Optics                 Power (physics)  SIGNAL (programming language)
+   96      8.8236   +1697.1        Physics/Optics        Physics/Optics                Beam (structure)  Plasma
+   97      8.4797    +653.5        Physics/Optics        Physics/Optics                         Physics  Spectroscopy
+   98      8.3760    +534.6        Biology/Botany        Biology/Botany           Computational biology  Biology
+   99      8.2385    -157.6  Humanities/Political science  Humanities/Political science                      Humanities  History
+  100      8.2325   +1032.7        Physics/Optics        Physics/Optics                   Nucleofection  Diafiltration
+  101      8.2257   +6606.5        Physics/Optics        Physics/Optics                  Doppler effect  Reflectometry
+  102      8.1710   +1999.7  Computer science/Mathematics  Computer science/Mathematics             Range (aeronautics)  Download
+  103      8.0683   +4385.4        Physics/Optics        Physics/Optics            Large Helical Device  Port (circuit theory)
+  104      8.0472    +540.4        Biology/Botany        Biology/Botany                         Biology  Agronomy
+  105      7.8684    +346.1        Biology/Botany        Biology/Botany                         Biology  Ecology
+  106      7.8282    +664.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  General surgery
+  107      7.7437    +942.4   Psychology/Business   Psychology/Business        Developmental psychology  Psychology
+  108      7.7240    +395.8  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Pediatrics
+  109      7.6997   +2860.8   Psychology/Business   Psychology/Business                 Library science  Citation
+  110      7.6190   +1005.5        Physics/Optics        Physics/Optics                   Diafiltration  Gestational period
+  111      7.5683   +1001.9        Physics/Optics        Physics/Optics                   Diafiltration  TSG101
+  112      7.5168    +590.0   Psychology/Business   Psychology/Business                      Psychology  Pedagogy
+  113      7.4975    +360.5        Biology/Botany        Biology/Botany                         Biology  Genetics
+  114      7.4935   +1916.1  Humanities/Political science  Humanities/Political science                         History  Ancient history
+  115      7.4888    +616.5  Materials science/Chemistry  Materials science/Chemistry                      Metallurgy  Materials science
+  116      7.4702   +1024.8   Psychology/Business   Psychology/Business                        Business  Finance
+  117      7.4258    +275.2  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Disease
+  118      7.3854   +2006.7  Computer science/Mathematics  Computer science/Mathematics                     Data mining  Range (aeronautics)
+  119      7.3247    +600.4  Humanities/Political science  Humanities/Political science               Political science  Public administration
+  120      7.2178   +1185.8  Humanities/Political science  Humanities/Political science                             Art  Theology
+  121      7.1814    +458.9  Humanities/Political science  Humanities/Political science               Political science  Politics
+  122      7.1746    +549.0  Computer science/Mathematics  Computer science/Mathematics                Computer science  Database
+  123      7.0633    +909.1        Physics/Optics        Physics/Optics                   Nucleofection  Liquation
+  124      7.0029    -218.9   Psychology/Business   Psychology/Business                      Psychology  Economics
+  125      6.9801    +435.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Computer graphics (images)
+  126      6.9670    +563.3   Psychology/Business   Psychology/Business                      Psychology  Medical education
+  127      6.8570    +388.0  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Nursing
+  128      6.8552    +884.1        Physics/Optics        Physics/Optics                   Nucleofection  Dysgeusia
+  129      6.8036   +2623.3  Computer science/Mathematics  Computer science/Mathematics           Matching (statistics)  Range (aeronautics)
+  130      6.7406   +2137.4  Computer science/Mathematics  Computer science/Mathematics                     Data mining  Download
+  131      6.7276    +912.2        Physics/Optics        Physics/Optics                       Liquation  Gestational period
+  132      6.6751    +907.7        Physics/Optics        Physics/Optics                       Dysgeusia  Gestational period
+  133      6.6744    +907.8        Physics/Optics        Physics/Optics                       Liquation  TSG101
+  134      6.6605    +661.1        Physics/Optics        Physics/Optics                         Physics  Electron density
+  135      6.6448    +906.5        Physics/Optics        Physics/Optics                       Dysgeusia  TSG101
+  136      6.4845    +909.1        Physics/Optics        Physics/Optics                       Liquation  Diafiltration
+  137      6.4751    +209.0  Humanities/Political science  Humanities/Political science                       Sociology  History
+  138      6.4100    +901.1        Physics/Optics        Physics/Optics                   Diafiltration  Dysgeusia
+  139      6.3844    -221.0  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Artificial intelligence
+  140      6.3167    +263.9  Computer science/Mathematics  Computer science/Mathematics                Computer science  Computer security
+  141      6.2570   +2816.9  Computer science/Mathematics  Computer science/Mathematics           Matching (statistics)  Download
+  142      6.2346    +802.5  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Computer vision
+  143      6.1975    +282.1  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Radiology
+  144      6.1805    +827.8  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Cardiology
+  145      6.1706   +1117.8        Physics/Optics        Physics/Optics                         Physics  RADIUS
+  146      6.1532    +891.7        Physics/Optics        Physics/Optics                       Liquation  Dysgeusia
+  147      6.0663   +1119.4  Humanities/Political science  Humanities/Political science                             Art  Visual arts
+  148      6.0258    +755.7   Psychology/Business   Psychology/Business                        Business  Marketing
+  149      5.8063    +303.4  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Anesthesia
+  150      5.8053    +223.5  Medicine/Internal medicine  Medicine/Internal medicine                       Pathology  Medicine
+  151      5.7656    +289.7  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Environmental health
+  152      5.7525    +542.0  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Chromatography
+  153      5.7320    +376.1        Physics/Optics        Physics/Optics                         Physics  Electron
+  154      5.6895    -228.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Mathematical analysis
+  155      5.6486    +576.7        Physics/Optics        Physics/Optics                         Physics  Detector
+  156      5.6287    +229.9  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Pharmacology
+  157      5.6271   +2811.8  Computer science/Mathematics  Computer science/Mathematics                     Data mining  Matching (statistics)
+  158      5.5076    +863.4        Physics/Optics        Physics/Optics                   Fusible alloy  Nucleofection
+  159      5.4968   +5624.7        Physics/Optics        Physics/Optics                        Divertor  Port (circuit theory)
+  160      5.3767   +1138.4  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Medicinal chemistry
+  161      5.3369    +155.7        Physics/Optics        Physics/Optics                         Physics  Large Helical Device
+  162      5.1480    +738.2  Humanities/Political science  Humanities/Political science                         History  Art history
+  163      5.1193    +720.5        Physics/Optics        Physics/Optics                   Nucleofection  Emperipolesis
+  164      5.0912    +717.5        Physics/Optics        Physics/Optics                   Nucleofection  Triacetin
+  165      5.0299    +746.6        Physics/Optics        Physics/Optics                   Emperipolesis  Gestational period
+  166      5.0236    +748.2        Physics/Optics        Physics/Optics                   Emperipolesis  TSG101
+  167      5.0030    +743.6        Physics/Optics        Physics/Optics                       Triacetin  Gestational period
+  168      4.9972    +745.2        Physics/Optics        Physics/Optics                       Triacetin  TSG101
+  169      4.9672    +763.0        Physics/Optics        Physics/Optics                   Diafiltration  Emperipolesis
+  170      4.9441    +760.5        Physics/Optics        Physics/Optics                   Diafiltration  Triacetin
+  171      4.9393   +1814.0        Physics/Optics        Physics/Optics             Nuclear engineering  Large Helical Device
+  172      4.9030    +779.6        Physics/Optics        Physics/Optics                       Dysgeusia  Emperipolesis
+  173      4.9019    +777.0        Physics/Optics        Physics/Optics                       Liquation  Emperipolesis
+  174      4.8826    +775.0        Physics/Optics        Physics/Optics                       Liquation  Triacetin
+  175      4.8823    +777.4        Physics/Optics        Physics/Optics                       Triacetin  Dysgeusia
+  176      4.8776    +798.3  Humanities/Political science  Humanities/Political science                      Literature  Art
+  177      4.8378    +604.1  Humanities/Political science  Humanities/Political science                    Epistemology  Sociology
+  178      4.7860    +449.8        Physics/Optics        Physics/Optics                         Physics  Core (optical fiber)
+  179      4.7149    +272.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Gerontology
+  180      4.7066    +279.1  Computer science/Mathematics  Computer science/Mathematics        Set (abstract data type)  Mathematics
+  181      4.6933    +295.6  Materials science/Chemistry  Materials science/Chemistry                  Nanotechnology  Materials science
+  182      4.6710    -209.4  Computer science/Mathematics  Computer science/Mathematics                Computer science  Pure mathematics
+  183      4.6556    +768.9        Physics/Optics        Physics/Optics                   Fusible alloy  TSG101
+  184      4.6500    +765.4        Physics/Optics        Physics/Optics                   Fusible alloy  Gestational period
+  185      4.5609    +798.2        Physics/Optics        Physics/Optics                       Triacetin  Emperipolesis
+  186      4.4808    +221.7  Humanities/Political science  Humanities/Political science               Political science  Public relations
+  187      4.4717    +424.8  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Medical emergency
+  188      4.4390    +755.5        Physics/Optics        Physics/Optics                   Fusible alloy  Diafiltration
+  189      4.4053    +755.7  Materials science/Chemistry  Materials science/Chemistry               Crystal structure  Materials science
+  190      4.3886   +1094.9        Physics/Optics        Physics/Optics                         Physics  Thomson scattering
+  191      4.3383     +93.3  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Population
+  192      4.3183   +1058.3        Physics/Optics        Physics/Optics                         Physics  Frequency spectrum
+  193      4.3137    +885.6  Computer science/Mathematics  Computer science/Mathematics                Pure mathematics  Mathematics
+  194      4.2705    +444.6        Physics/Optics        Physics/Optics                         Physics  Electron temperature
+  195      4.2441    +608.2  Geography/Environmental science  Geography/Environmental science                     Meteorology  Environmental science
+  196      4.2216    +609.7   Psychology/Business   Psychology/Business                        Business  Advertising
+  197      4.1997    +432.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Nuclear medicine
+  198      4.1910    +653.7        Physics/Optics        Physics/Optics                        Demotion  Nucleofection
+  199      4.1846    +681.3        Physics/Optics        Physics/Optics            Large Helical Device  Plasma
+  200      4.1645    +416.2  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Dentistry
+  201      4.1317    +724.5        Physics/Optics        Physics/Optics                   Fusible alloy  Liquation
+  202      4.1179    +450.9  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Endocrinology
+  203      4.1030    +675.0        Physics/Optics        Physics/Optics                        Demotion  Gestational period
+  204      4.0919    +675.4        Physics/Optics        Physics/Optics                        Demotion  TSG101
+  205      4.0539    +712.7        Physics/Optics        Physics/Optics                   Fusible alloy  Dysgeusia
+  206      4.0340    +686.7        Physics/Optics        Physics/Optics                        Demotion  Diafiltration
+  207      4.0166     +95.2        Physics/Optics        Physics/Optics                         Physics  Power (physics)
+  208      4.0027    +365.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  MEDLINE
+  209      3.9843    -196.0  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Geography
+  210      3.9705    +697.3        Physics/Optics        Physics/Optics                        Demotion  Liquation
+  211      3.9572    +697.1        Physics/Optics        Physics/Optics                        Demotion  Dysgeusia
+  212      3.9372    +360.0  Computer science/Mathematics  Computer science/Mathematics                Computer science  Programming language
+  213      3.9060    -196.6  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Composite material
+  214      3.8867    +870.0  Computer science/Mathematics  Computer science/Mathematics              Index (typography)  Mathematics
+  215      3.8290    +261.0  Materials science/Chemistry  Materials science/Chemistry               Materials science  Optoelectronics
+  216      3.8132   +3650.3        Physics/Optics        Physics/Optics                        Ion beam  Plasma
+  217      3.8029    +300.9   Psychology/Business   Psychology/Business                      Psychology  Linguistics
+  218      3.7784    +877.1  Computer science/Mathematics  Computer science/Mathematics                   Combinatorics  Mathematics
+  219      3.7723    +731.0        Physics/Optics        Physics/Optics                        Demotion  Emperipolesis
+  220      3.7578    +729.2        Physics/Optics        Physics/Optics                        Demotion  Triacetin
+  221      3.6312    -177.8  Humanities/Political science  Humanities/Political science                      Humanities  Law
+  222      3.6146    +604.3        Physics/Optics        Physics/Optics                   Nucleofection  Durvalumab
+  223      3.6063    +328.0  Humanities/Political science  Humanities/Political science               Political science  Theology
+  224      3.5574    -152.0  Computer science/Mathematics  Computer science/Mathematics                Computer science  Applied mathematics
+  225      3.5526    +626.4        Physics/Optics        Physics/Optics                      Durvalumab  Gestational period
+  226      3.5483    +627.7        Physics/Optics        Physics/Optics                      Durvalumab  TSG101
+  227      3.5412    +574.4   Psychology/Business   Psychology/Business                      Psychology  Cognitive psychology
+  228      3.5109    +505.5        Biology/Botany        Biology/Botany                         Biology  Evolutionary biology
+  229      3.5083    +640.1        Physics/Optics        Physics/Optics                   Diafiltration  Durvalumab
+  230      3.4964   +2176.0        Physics/Optics        Physics/Optics        Measure (data warehouse)  Microwave
+  231      3.4784    -167.0   Psychology/Business   Psychology/Business                        Business  Library science
+  232      3.4730    +656.0        Physics/Optics        Physics/Optics                       Dysgeusia  Durvalumab
+  233      3.4673    +652.8        Physics/Optics        Physics/Optics                       Liquation  Durvalumab
+  234      3.4036    +657.3        Physics/Optics        Physics/Optics                   Fusible alloy  Triacetin
+  235      3.3985    +192.3  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Physical therapy
+  236      3.3983    -192.5  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Environmental science
+  237      3.3802    +651.7        Physics/Optics        Physics/Optics                   Fusible alloy  Emperipolesis
+  238      3.3780    +527.1        Physics/Optics        Physics/Optics                      Radiometer  Physics
+  239      3.3501   +4314.3        Physics/Optics        Physics/Optics                Beam (structure)  Ion beam
+  240      3.3311    +692.2        Physics/Optics        Physics/Optics                      Durvalumab  Emperipolesis
+  241      3.3208    +691.0        Physics/Optics        Physics/Optics                       Triacetin  Durvalumab
+  242      3.2872   +1456.3   Psychology/Business   Psychology/Business           Mathematics education  Pedagogy
+  243      3.2701    +264.4  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Physical medicine and rehabili
+  244      3.2681   +1040.1        Physics/Optics        Physics/Optics                          Optics  Interferometry
+  245      3.2614    +114.5  Medicine/Internal medicine  Medicine/Internal medicine                          Cancer  Medicine
+  246      3.2484    +425.5  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Ophthalmology
+  247      3.2334    +413.5  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Organic chemistry
+  248      3.2268    +179.5  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Psychiatry
+  249      3.1895    +669.4        Physics/Optics        Physics/Optics                          Optics  Laser
+  250      3.1864    -180.6  Humanities/Political science  Humanities/Political science               Political science  Art history
+  251      3.1846    +184.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Natural language processing
+  252      3.1759    +564.2  Humanities/Political science  Humanities/Political science                             Art  Ancient history
+  253      3.1592    -188.5  Geography/Environmental science  Geography/Environmental science                       Geography  Sequence (biology)
+  254      3.1298    +340.5  Humanities/Political science  Humanities/Political science               Political science  Law and economics
+  255      3.0799    -164.8        Physics/Optics        Physics/Optics                         Physics  Divertor
+  256      3.0138    +292.4  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Obstetrics
+  257      2.9984    +692.5        Physics/Optics        Physics/Optics                        Demotion  Durvalumab
+  258      2.9839    +507.5  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Combinatorial chemistry
+  259      2.9801    +454.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Medical physics
+  260      2.9540    +369.2  Humanities/Political science  Humanities/Political science                      Humanities  Theology
+  261      2.9096    +235.0        Physics/Optics        Physics/Optics                         Physics  Phase (matter)
+  262      2.8973    +620.3        Physics/Optics        Physics/Optics                        Demotion  Fusible alloy
+  263      2.8943    +334.5        Physics/Optics        Physics/Optics                         Physics  Astronomy
+  264      2.8699    +349.8  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Orthodontics
+  265      2.8694    +211.0  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Set (abstract data type)
+  266      2.8391    +348.9        Physics/Optics        Physics/Optics                          Optics  Measure (data warehouse)
+  267      2.8316    +179.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Telecommunications
+  268      2.8304    -173.1   Psychology/Business   Psychology/Business                        Business  Mathematics education
+  269      2.8114    +689.8        Physics/Optics        Physics/Optics                         Physics  Cutoff
+  270      2.7966    +400.7  Geography/Environmental science  Geography/Environmental science                         Geology  Archaeology
+  271      2.7782     +19.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Engineering
+  272      2.7686     -78.0  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Endocrinology
+  273      2.7661    -180.1  Geography/Environmental science  Geography/Environmental science                         Geology  Identification (biology)
+  274      2.7657    -183.4  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Geography
+  275      2.7586    +835.0  Geography/Environmental science  Geography/Environmental science                         Geology  Section (typography)
+  276      2.7404    -181.8  Humanities/Political science  Humanities/Political science                      Humanities  Public relations
+  277      2.7339    -183.5  Geography/Environmental science  Geography/Environmental science           Environmental science  Taxonomy (biology)
+  278      2.7040   +1642.2  Humanities/Political science  Humanities/Political science                         History  Newspaper
+  279      2.6713    +675.2  Geography/Environmental science  Geography/Environmental science                         Geology  Geometry
+  280      2.6701    +180.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Human–computer interaction
+  281      2.6544   +5313.1        Physics/Optics        Physics/Optics                 Power (physics)  Pulse (music)
+  282      2.6498   +1301.4  Geography/Environmental science  Geography/Environmental science                         Geology  Front (military)
+  283      2.6283    -180.6  Geography/Environmental science  Geography/Environmental science              Sequence (biology)  Environmental science
+  284      2.6262    +140.9   Psychology/Business   Psychology/Business                        Business  Work (physics)
+  285      2.6208    -180.3  Geography/Environmental science  Geography/Environmental science                       Geography  Annotation
+  286      2.6200    +742.4  Humanities/Political science  Humanities/Political science                       Sociology  Gender studies
+  287      2.6116    +600.1        Physics/Optics        Physics/Optics                   Fusible alloy  Durvalumab
+  288      2.5870    +748.0        Physics/Optics        Physics/Optics                         Physics  Emissivity
+  289      2.5766    -161.3  Humanities/Political science  Humanities/Political science                      Humanities  Government (linguistics)
+  290      2.5548     -64.5  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Mathematics
+  291      2.5542    +950.2  Humanities/Political science  Humanities/Political science                         History  Classics
+  292      2.5517    +842.2  Geography/Environmental science  Geography/Environmental science                         Geology  Geochemistry
+  293      2.5501    +575.9        Biology/Botany        Biology/Botany                         Biology  Cultivar
+  294      2.5327    +164.6  Humanities/Political science  Humanities/Political science               Political science  State (computer science)
+  295      2.5156    +565.7  Humanities/Political science  Humanities/Political science                         History  Literature
+  296      2.5127    +290.0        Physics/Optics        Physics/Optics                         Physics  Nuclear physics
+  297      2.5052    -156.8  Computer science/Mathematics  Computer science/Mathematics             Range (aeronautics)  Mathematics
+  298      2.5006    -156.8  Humanities/Political science  Humanities/Political science                             Art  Law
+  299      2.4909    -163.0  Geography/Environmental science  Geography/Environmental science                       Geography  Taxon
+  300      2.4882    +880.6        Biology/Botany        Biology/Botany                         Biology  Herbarium
+  301      2.4856    -177.9  Geography/Environmental science  Geography/Environmental science                      Similitude  Geography
+  302      2.4799    +380.6        Physics/Optics        Physics/Optics                 Power (physics)  Large Helical Device
+  303      2.4614   +2135.1        Physics/Optics        Physics/Optics                  Doppler effect  SIGNAL (programming language)
+  304      2.4605    +291.6        Physics/Optics        Physics/Optics                         Physics  Astrophysics
+  305      2.4551    +336.9  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Environmental chemistry
+  306      2.4537    +639.2   Psychology/Business   Psychology/Business                        Business  Accounting
+  307      2.3765    +171.7        Physics/Optics        Physics/Optics              Function (biology)  Physics
+  308      2.3412    +346.7  Humanities/Political science  Humanities/Political science               Political science  Criminology
+  309      2.3300    +185.4  Humanities/Political science  Humanities/Political science                      Philosophy  Context (archaeology)
+  310      2.3221    -118.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Combinatorics
+  311      2.3198    -163.5  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Optoelectronics
+  312      2.3196   +2272.3        Physics/Optics        Physics/Optics                   Reflectometry  SIGNAL (programming language)
+  313      2.3189    +446.0  Computer science/Mathematics  Computer science/Mathematics             Applied mathematics  Mathematics
+  314      2.3149    +200.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Diabetes mellitus
+  315      2.3142    +671.3        Physics/Optics        Physics/Optics                Beam (structure)  Line (geometry)
+  316      2.3019    -101.2   Psychology/Business   Psychology/Business                      Psychology  Library science
+  317      2.3003    +226.7        Physics/Optics        Physics/Optics                         Physics  Mode (computer interface)
+  318      2.2923    -172.7  Geography/Environmental science  Geography/Environmental science           Environmental science  Taxon
+  319      2.2730    +533.3  Humanities/Political science  Humanities/Political science                       Sociology  Media studies
+  320      2.2680    +413.5  Materials science/Chemistry  Materials science/Chemistry               Materials science  Impurity
+  321      2.2662   +2666.4        Physics/Optics        Physics/Optics                   Reflectometry  Microwave
+  322      2.2460    -171.6  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Environmental science
+  323      2.2446    +400.8   Psychology/Business   Psychology/Business                        Business  Process management
+  324      2.2295    +285.2        Biology/Botany        Biology/Botany                         Biology  Animal science
+  325      2.1989    +416.5  Humanities/Political science  Humanities/Political science                      Aesthetics  Art
+  326      2.1769    +180.7  Humanities/Political science  Humanities/Political science                       Sociology  Context (archaeology)
+  327      2.1709   +4037.5  Materials science/Chemistry  Materials science/Chemistry               Crystal structure  Crystallography
+  328      2.1696    +170.4  Computer science/Mathematics  Computer science/Mathematics                Computer science  Multimedia
+  329      2.1510    +329.1        Physics/Optics        Physics/Optics                         Physics  Scattering
+  330      2.1435    +132.0  Materials science/Chemistry  Materials science/Chemistry               Materials science  Chemical engineering
+  331      2.1291    -164.3  Geography/Environmental science  Geography/Environmental science                         Geology  Taxonomy (biology)
+  332      2.1284    -168.8  Geography/Environmental science  Geography/Environmental science                      Annotation  Environmental science
+  333      2.0908     +74.6        Physics/Optics        Physics/Optics                         Physics  Atomic physics
+  334      2.0753    +305.9  Humanities/Political science  Humanities/Political science               Political science  Political economy
+  335      2.0680   +1474.4        Physics/Optics        Physics/Optics                Electron density  Measure (data warehouse)
+  336      2.0666     -91.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Econometrics
+  337      2.0638    +376.9  Geography/Environmental science  Geography/Environmental science                       Geography  Table (database)
+  338      2.0580    +471.7   Psychology/Business   Psychology/Business                        Business  Industrial organization
+  339      2.0549     +45.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Algorithm
+  340      2.0462    +312.7   Psychology/Business   Psychology/Business                        Business  Environmental planning
+  341      2.0227    +289.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Operating system
+  342      2.0174    -161.7  Humanities/Political science  Humanities/Political science                             Art  Government (linguistics)
+  343      2.0126   +1213.2  Computer science/Mathematics  Computer science/Mathematics                  World Wide Web  Information retrieval
+  344      2.0074    -165.6  Geography/Environmental science  Geography/Environmental science                      Similitude  Environmental science
+  345      1.9986    +401.2        Physics/Optics        Physics/Optics                         Physics  Amplitude
+  346      1.9971   +1682.0        Physics/Optics        Physics/Optics                        Electron  Cyclotron
+  347      1.9969    -157.8  Geography/Environmental science  Geography/Environmental science                         Geology  Sequence (biology)
+  348      1.9862     +99.0  Computer science/Mathematics  Computer science/Mathematics                Computer science  Index (typography)
+  349      1.9782    +397.5        Physics/Optics        Physics/Optics                         Physics  Spectrum analyzer
+  350      1.9519    +112.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Computer network
+  351      1.9431     +44.9  Computer science/Mathematics  Computer science/Mathematics                Computer science  Computer vision
+  352      1.9423    -163.6        Physics/Optics        Physics/Optics                          Optics  Nucleofection
+  353      1.9352    -147.0   Psychology/Business   Psychology/Business                        Business  Social psychology
+  354      1.9195     -81.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Electronic engineering
+  355      1.9163    -162.9  Humanities/Political science  Humanities/Political science                             Art  Public relations
+  356      1.9162    +370.9  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Optometry
+  357      1.9127   +1161.0        Physics/Optics        Physics/Optics                         Physics  Bremsstrahlung
+  358      1.9063    +552.7  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Taxonomy (biology)
+  359      1.9041    +391.8  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Gastroenterology
+  360      1.9037    +212.2  Humanities/Political science  Humanities/Political science                       Sociology  Public relations
+  361      1.8936    +948.5        Biology/Botany        Biology/Botany                    Horticulture  Botany
+  362      1.8900    +561.1  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Sequence (biology)
+  363      1.8839    -110.2  Geography/Environmental science  Geography/Environmental science                       Geography  Taxonomy (biology)
+  364      1.8689    +361.0  Geography/Environmental science  Geography/Environmental science           Environmental science  Hydrology (agriculture)
+  365      1.8607    +729.7        Physics/Optics        Physics/Optics                          Optics  Detector
+  366      1.8538    +325.7        Physics/Optics        Physics/Optics                         Physics  Interference (communication)
+  367      1.8380    +349.4  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Oncology
+  368      1.8369    -148.3  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Set (abstract data type)
+  369      1.8310    +449.5   Psychology/Business   Psychology/Business                      Psychology  Applied psychology
+  370      1.8289    -151.8   Psychology/Business   Psychology/Business                        Business  Pedagogy
+  371      1.8212    +295.7        Physics/Optics        Physics/Optics                         Physics  Resolution (logic)
+  372      1.8210    +592.7  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Taxon
+  373      1.8172    -159.6  Geography/Environmental science  Geography/Environmental science                         Geology  Similarity (geometry)
+  374      1.8139    -157.1  Geography/Environmental science  Geography/Environmental science                         Geology  Taxon
+  375      1.8112    +597.8  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Identification (biology)
+  376      1.8102     +89.7  Medicine/Internal medicine  Medicine/Internal medicine                        Oncology  Medicine
+  377      1.7993    -141.0  Computer science/Mathematics  Computer science/Mathematics                Computer science  Discrete mathematics
+  378      1.7912    +847.5        Physics/Optics        Physics/Optics                 Line (geometry)  Laser
+  379      1.7887    -153.0   Psychology/Business   Psychology/Business                        Business  Citation
+  380      1.7877    -145.5  Computer science/Mathematics  Computer science/Mathematics                     Data mining  Mathematics
+  381      1.7844    +611.2  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Annotation
+  382      1.7788    +326.6  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Nuclear chemistry
+  383      1.7767    +685.7  Geography/Environmental science  Geography/Environmental science              Taxonomy (biology)  Taxon
+  384      1.7763    +104.1        Biology/Botany        Biology/Botany                         Biology  Gene
+  385      1.7746    -141.8        Physics/Optics        Physics/Optics                         Physics  Structural engineering
+  386      1.7745    +321.2  Computer science/Mathematics  Computer science/Mathematics           Mathematical analysis  Mathematics
+  387      1.7737    -157.6  Computer science/Mathematics  Computer science/Mathematics                  World Wide Web  Mathematics
+  388      1.7672    +621.7  Geography/Environmental science  Geography/Environmental science              Sequence (biology)  Taxonomy (biology)
+  389      1.7558    +625.7  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Similitude
+  390      1.7472    +391.4  Geography/Environmental science  Geography/Environmental science                         Geology  Oceanography
+  391      1.7469    -148.4   Psychology/Business   Psychology/Business                        Business  Linguistics
+  392      1.7386    +436.4   Psychology/Business   Psychology/Business                        Business  Operations management
+  393      1.7354    +375.4  Computer science/Mathematics  Computer science/Mathematics  Pattern recognition (psycholog  Artificial intelligence
+  394      1.7260    +590.3  Geography/Environmental science  Geography/Environmental science                         Geology  Paleontology
+  395      1.7252    -157.2  Geography/Environmental science  Geography/Environmental science                         Geology  Annotation
+  396      1.7207   +1092.7  Humanities/Political science  Humanities/Political science                         History  Genealogy
+  397      1.7031    -156.6        Physics/Optics        Physics/Optics                          Optics  Diafiltration
+  398      1.6960    +663.4  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Taxonomy (biology)
+  399      1.6904    +667.6  Geography/Environmental science  Geography/Environmental science              Sequence (biology)  Taxon
+  400      1.6858    +675.3  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Sequence (biology)
+  401      1.6818    -146.8  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Range (aeronautics)
+  402      1.6809    +345.7        Physics/Optics        Physics/Optics                          Optics  Doppler effect
+  403      1.6743    -149.0        Physics/Optics        Physics/Optics                          Optics  Power (physics)
+  404      1.6710    +678.2  Geography/Environmental science  Geography/Environmental science                      Annotation  Taxonomy (biology)
+  405      1.6576    +689.0  Geography/Environmental science  Geography/Environmental science                      Annotation  Sequence (biology)
+  406      1.6448    +694.6  Geography/Environmental science  Geography/Environmental science                      Similitude  Taxonomy (biology)
+  407      1.6435     +93.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Software
+  408      1.6413    -113.7  Computer science/Mathematics  Computer science/Mathematics                Computer science  Nonlinear system
+  409      1.6361    +361.7  Humanities/Political science  Humanities/Political science               Political science  Economic history
+  410      1.6300    +704.9  Geography/Environmental science  Geography/Environmental science                      Similitude  Sequence (biology)
+  411      1.6265    -154.2  Geography/Environmental science  Geography/Environmental science                         Geology  Similitude
+  412      1.6260    -146.2  Humanities/Political science  Humanities/Political science               Political science  Literature
+  413      1.6245    -154.2        Physics/Optics        Physics/Optics                          Optics  Liquation
+  414      1.6200    +711.4  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Taxon
+  415      1.6183    +621.1        Physics/Optics        Physics/Optics                          Optics  Position (finance)
+  416      1.6170    -153.9        Physics/Optics        Physics/Optics                          Optics  Dysgeusia
+  417      1.6162    +406.2  Humanities/Political science  Humanities/Political science                         History  Media studies
+  418      1.6151    +504.2        Physics/Optics        Physics/Optics               Flux (metallurgy)  Plasma
+  419      1.6132    +145.1  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Pregnancy
+  420      1.6105     +86.2  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Gastroenterology
+  421      1.6088    +488.7        Physics/Optics        Physics/Optics             Nuclear engineering  Plasma
+  422      1.6074    +306.0        Physics/Optics        Physics/Optics      Filter (signal processing)  Physics
+  423      1.5957    +727.1  Geography/Environmental science  Geography/Environmental science                      Annotation  Taxon
+  424      1.5940    +207.1   Psychology/Business   Psychology/Business                        Business  Knowledge management
+  425      1.5874    +733.6  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Annotation
+  426      1.5736    -135.9  Computer science/Mathematics  Computer science/Mathematics                     Mathematics  Process (computing)
+  427      1.5702    +744.4  Geography/Environmental science  Geography/Environmental science                      Similitude  Taxon
+  428      1.5700    +160.7  Humanities/Political science  Humanities/Political science               Political science  Media studies
+  429      1.5650    +752.5  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Similitude
+  430      1.5527   +3576.4        Physics/Optics        Physics/Optics                  Magnetic field  RADIUS
+  431      1.5471   +1101.3        Biology/Botany        Biology/Botany                         Biology  Phaseolus
+  432      1.5471    +207.2        Physics/Optics        Physics/Optics     Stability (learning theory)  Physics
+  433      1.5377    +767.2  Geography/Environmental science  Geography/Environmental science                      Similitude  Annotation
+  434      1.5209   +2040.1        Physics/Optics        Physics/Optics            Electron temperature  Cyclotron
+  435      1.5196    +224.9  Materials science/Chemistry  Materials science/Chemistry               Materials science  Polymer
+  436      1.5151    +467.5        Physics/Optics        Physics/Optics                         Physics  Gyrotron
+  437      1.4906    -131.2  Humanities/Political science  Humanities/Political science                      Humanities  State (computer science)
+  438      1.4691    +151.1  Computer science/Mathematics  Computer science/Mathematics                     Data mining  Artificial intelligence
+  439      1.4691    +149.1  Humanities/Political science  Humanities/Political science               Political science  Economic growth
+  440      1.4681    -137.9  Humanities/Political science  Humanities/Political science                    Epistemology  Art
+  441      1.4589    -139.5  Materials science/Chemistry  Materials science/Chemistry               Materials science  Stereochemistry
+  442      1.4336    +418.7   Psychology/Business   Psychology/Business                        Business  Actuarial science
+  443      1.4271    +102.6        Physics/Optics        Physics/Optics                         Physics  Energy (signal processing)
+  444      1.4260    -104.8  Humanities/Political science  Humanities/Political science                    Epistemology  Humanities
+  445      1.4255    +617.7        Physics/Optics        Physics/Optics                   Reflectometry  Measure (data warehouse)
+  446      1.3969    -118.9  Humanities/Political science  Humanities/Political science                      Humanities  Politics
+  447      1.3964    +395.4        Physics/Optics        Physics/Optics                             Ion  Atomic physics
+  448      1.3893    +206.0        Physics/Optics        Physics/Optics                          Optics  Line (geometry)
+  449      1.3893    -120.2  Materials science/Chemistry  Materials science/Chemistry               Materials science  Chromatography
+  450      1.3879    -146.1  Humanities/Political science  Humanities/Political science                      Philosophy  Public relations
+  451      1.3848    +196.6   Psychology/Business   Psychology/Business                        Business  Service (business)
+  452      1.3777     -73.9        Physics/Optics        Physics/Optics             Nuclear engineering  Physics
+  453      1.3756    -140.3  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Download
+  454      1.3731    +419.8        Physics/Optics        Physics/Optics                             Ion  Line (geometry)
+  455      1.3681     -31.4  Humanities/Political science  Humanities/Political science                       Sociology  Art
+  456      1.3677    +324.9        Physics/Optics        Physics/Optics                         Physics  Dispersion (optics)
+  457      1.3667    +229.1   Psychology/Business   Psychology/Business                      Psychology  Perception
+  458      1.3637    -141.9  Computer science/Mathematics  Computer science/Mathematics                      Statistics  Engineering
+  459      1.3561    +904.9        Biology/Botany        Biology/Botany                         Biology  Lepidoptera genitalia
+  460      1.3494   +2093.0        Physics/Optics        Physics/Optics                        Electron  Electron temperature
+  461      1.3438    -143.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Brightness
+  462      1.3414     -80.1  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Clinical psychology
+  463      1.3386    +641.6        Biology/Botany        Biology/Botany                         Ecology  Zoology
+  464      1.3351    -134.2  Humanities/Political science  Humanities/Political science               Political science  Visual arts
+  465      1.3299   +3980.3        Physics/Optics        Physics/Optics              Frequency spectrum  Doppler effect
+  466      1.3282    +303.6        Physics/Optics        Physics/Optics                             Ion  Large Helical Device
+  467      1.3277    -131.8  Humanities/Political science  Humanities/Political science                      Philosophy  Government (linguistics)
+  468      1.3226    -123.3  Computer science/Mathematics  Computer science/Mathematics                      Statistics  Artificial intelligence
+  469      1.3193    +284.1        Physics/Optics        Physics/Optics                Beam (structure)  Large Helical Device
+  470      1.3068    +141.1        Physics/Optics        Physics/Optics                         Physics  Point (geometry)
+  471      1.3037   +1303.4        Physics/Optics        Physics/Optics                  Interferometry  Laser
+  472      1.3003    -140.9  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Sample (material)
+  473      1.3000     +94.3  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Crystallography
+  474      1.2978   +2461.7        Physics/Optics        Physics/Optics                Electron density  Microwave
+  475      1.2950    +412.0  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Natural language processing
+  476      1.2939    +348.5  Computer science/Mathematics  Computer science/Mathematics                Machine learning  Artificial intelligence
+  477      1.2870    +312.4  Humanities/Political science  Humanities/Political science               Political science  Newspaper
+  478      1.2805    +441.1  Humanities/Political science  Humanities/Political science                      Humanities  Business administration
+  479      1.2804    +178.9  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Catalysis
+  480      1.2795    +462.9  Humanities/Political science  Humanities/Political science                      Humanities  Cartography
+  481      1.2749    +181.4  Humanities/Political science  Humanities/Political science                       Sociology  Politics
+  482      1.2729    -109.3   Psychology/Business   Psychology/Business                        Business  Medical education
+  483      1.2562    +182.9  Humanities/Political science  Humanities/Political science               Political science  Management
+  484      1.2546    +549.1   Psychology/Business   Psychology/Business                      Psychology  Psychotherapist
+  485      1.2536    +248.5        Physics/Optics        Physics/Optics                  Atomic physics  Plasma
+  486      1.2481    +102.3  Humanities/Political science  Humanities/Political science                       Sociology  Law
+  487      1.2478    +480.3   Psychology/Business   Psychology/Business                         Finance  Economics
+  488      1.2438    +138.4  Computer science/Mathematics  Computer science/Mathematics                Computer science  Engineering drawing
+  489      1.2358     +68.7        Physics/Optics        Physics/Optics                         Physics  Flux (metallurgy)
+  490      1.2230    +365.9  Geography/Environmental science  Geography/Environmental science                         Geology  Geotechnical engineering
+  491      1.2209    +404.7  Computer science/Mathematics  Computer science/Mathematics                  World Wide Web  Download
+  492      1.2205    -132.8  Humanities/Political science  Humanities/Political science                      Humanities  Public administration
+  493      1.2178     -77.8        Physics/Optics        Physics/Optics                         Physics  Plasma diagnostics
+  494      1.2130    +240.8  Humanities/Political science  Humanities/Political science                      Philosophy  Literature
+  495      1.2109    +304.5  Geography/Environmental science  Geography/Environmental science           Environmental science  Climatology
+  496      1.2025    -139.3        Physics/Optics        Physics/Optics                   Nucleofection  Power (physics)
+  497      1.2019    +175.5  Humanities/Political science  Humanities/Political science               Political science  Economy
+  498      1.2004    +563.3  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Aeronautics
+  499      1.1988    +645.7  Geography/Environmental science  Geography/Environmental science                         Geology  Seismology
+  500      1.1980    +598.5  Humanities/Political science  Humanities/Political science                             Art  George (robot)
+  501      1.1973    -139.2        Physics/Optics        Physics/Optics                          Optics  Fusible alloy
+  502      1.1945    -135.7  Computer science/Mathematics  Computer science/Mathematics                     Data mining  Engineering
+  503      1.1937    +237.5   Psychology/Business   Psychology/Business                        Business  Internet privacy
+  504      1.1910     -63.8  Humanities/Political science  Humanities/Political science                    Epistemology  Political science
+  505      1.1890    -137.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Luminance
+  506      1.1855    +241.4        Physics/Optics        Physics/Optics                 Power (physics)  Line (geometry)
+  507      1.1744     -93.9  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Population
+  508      1.1709    +808.7  Humanities/Political science  Humanities/Political science               Law and economics  Law
+  509      1.1697    +524.4   Psychology/Business   Psychology/Business           Mathematics education  Medical education
+  510      1.1673    +232.8        Physics/Optics        Physics/Optics                         Physics  Injector
+  511      1.1636    +836.2  Geography/Environmental science  Geography/Environmental science                       Geography  Forest cover
+  512      1.1599    +714.3        Biology/Botany        Biology/Botany                         Biology  Oryza sativa
+  513      1.1598    +836.7  Geography/Environmental science  Geography/Environmental science                Forest inventory  Geography
+  514      1.1584     -97.4  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Metallurgy
+  515      1.1467    +110.0  Computer science/Mathematics  Computer science/Mathematics                       Algorithm  Mathematics
+  516      1.1439    +392.3   Psychology/Business   Psychology/Business                      Psychology  Cognitive science
+  517      1.1423    -137.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Region of interest
+  518      1.1403    +464.3        Physics/Optics        Physics/Optics             Nuclear engineering  Beam (structure)
+  519      1.1344    +184.4        Physics/Optics        Physics/Optics                         Physics  Head (geology)
+  520      1.1271   +2267.0        Physics/Optics        Physics/Optics                      Radiometer  Cyclotron
+  521      1.1234    +112.9  Materials science/Chemistry  Materials science/Chemistry               Materials science  Condensed matter physics
+  522      1.1215     +97.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Software engineering
+  523      1.1207    -117.9  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Condensed matter physics
+  524      1.1199     +98.2        Physics/Optics        Physics/Optics                         Physics  Current (fluid)
+  525      1.1116    -135.8        Physics/Optics        Physics/Optics                 Power (physics)  Gestational period
+  526      1.1058    -135.6        Physics/Optics        Physics/Optics                 Power (physics)  TSG101
+  527      1.1052    +235.5   Psychology/Business   Psychology/Business                        Business  Natural resource economics
+  528      1.1023    -122.4  Computer science/Mathematics  Computer science/Mathematics                  World Wide Web  Artificial intelligence
+  529      1.1011    -131.8   Psychology/Business   Psychology/Business                         Finance  Psychology
+  530      1.0956    +273.4  Humanities/Political science  Humanities/Political science               Political science  Business administration
+  531      1.0953     -53.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Mathematical optimization
+  532      1.0947    +129.7  Computer science/Mathematics  Computer science/Mathematics                Computer science  Code (set theory)
+  533      1.0932    +208.4   Psychology/Business   Psychology/Business                      Psychology  Cognition
+  534      1.0872    +287.0  Humanities/Political science  Humanities/Political science                             Art  Classics
+  535      1.0852    +224.1        Physics/Optics        Physics/Optics        Measure (data warehouse)  Large Helical Device
+  536      1.0773    -127.4  Humanities/Political science  Humanities/Political science                         History  Public relations
+  537      1.0695    +266.3  Humanities/Political science  Humanities/Political science                         History  Visual arts
+  538      1.0685     -51.7   Psychology/Business   Psychology/Business                      Psychology  Work (physics)
+  539      1.0684    +573.3        Biology/Botany        Biology/Botany                            Gene  Genetics
+  540      1.0678    -122.7  Computer science/Mathematics  Computer science/Mathematics           Matching (statistics)  Mathematics
+  541      1.0672   +2335.7        Physics/Optics        Physics/Optics               Signal processing  Doppler effect
+  542      1.0664    +259.3  Humanities/Political science  Humanities/Political science                       Sociology  Aesthetics
+  543      1.0624    +224.7   Psychology/Business   Psychology/Business                        Business  Risk analysis (engineering)
+  544      1.0616     -41.3  Computer science/Mathematics  Computer science/Mathematics                Computer science  Pattern recognition (psycholog
+  545      1.0558    -133.5        Physics/Optics        Physics/Optics                 Power (physics)  Diafiltration
+  546      1.0496   +2444.0        Physics/Optics        Physics/Optics                      Radiometer  Electron
+  547      1.0493    +546.8        Physics/Optics        Physics/Optics     Stability (learning theory)  Optics
+  548      1.0451    +262.2        Physics/Optics        Physics/Optics                 Line (geometry)  Large Helical Device
+  549      1.0436    +232.5        Biology/Botany        Biology/Botany                         Biology  Genus
+  550      1.0392    +190.4        Physics/Optics        Physics/Optics                         Physics  Theoretical physics
+  551      1.0332    -132.2   Psychology/Business   Psychology/Business                        Business  Developmental psychology
+  552      1.0320    -109.1  Humanities/Political science  Humanities/Political science               Political science  Aesthetics
+  553      1.0289    -132.1  Geography/Environmental science  Geography/Environmental science               Sample (material)  Taxonomy (biology)
+  554      1.0178    +664.9  Humanities/Political science  Humanities/Political science        Government (linguistics)  Public administration
+  555      1.0157    +159.4        Physics/Optics        Physics/Optics                         Physics  Enhanced Data Rates for GSM Ev
+  556      1.0139     +41.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Control (management)
+  557      1.0121    +382.9  Humanities/Political science  Humanities/Political science                      Philosophy  Psychoanalysis
+  558      1.0113   +3396.7        Physics/Optics        Physics/Optics              Frequency spectrum  Reflectometry
+  559      1.0053   +2484.9        Physics/Optics        Physics/Optics               Signal processing  Reflectometry
+  560      1.0036     -97.4  Computer science/Mathematics  Computer science/Mathematics                Computer science  Algebra over a field
+  561      1.0032    +243.3  Humanities/Political science  Humanities/Political science                       Sociology  Perspective (graphical)
+  562      1.0024    -131.2        Physics/Optics        Physics/Optics                 Power (physics)  Dysgeusia
+  563      1.0010    -118.7  Materials science/Chemistry  Materials science/Chemistry               Organic chemistry  Materials science
+  564      1.0008    -131.0        Physics/Optics        Physics/Optics                         Physics  Forensic engineering
+  565      0.9981    -127.6  Geography/Environmental science  Geography/Environmental science        Identification (biology)  Remote sensing
+  566      0.9949     -19.9  Computer science/Mathematics  Computer science/Mathematics                Computer science  Process (computing)
+  567      0.9941    +297.4  Humanities/Political science  Humanities/Political science               Political science  Democracy
+  568      0.9901    -119.5        Physics/Optics        Physics/Optics                         Physics  Mechanical engineering
+  569      0.9888    -130.0  Geography/Environmental science  Geography/Environmental science               Sample (material)  Sequence (biology)
+  570      0.9860    +188.6  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Impurity
+  571      0.9851    +371.3  Geography/Environmental science  Geography/Environmental science                         Geology  Astrobiology
+  572      0.9831    +217.1  Geography/Environmental science  Geography/Environmental science                         Geology  Hydrology (agriculture)
+  573      0.9805    -130.2        Physics/Optics        Physics/Optics                   Diafiltration  Plasma
+  574      0.9728   +2812.7        Physics/Optics        Physics/Optics               Signal processing  SIGNAL (programming language)
+  575      0.9577    +156.0        Biology/Botany        Biology/Botany                         Biology  Bacteria
+  576      0.9556     +84.1  Humanities/Political science  Humanities/Political science                         History  Law
+  577      0.9544    +158.1  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Urology
+  578      0.9486     +98.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Speech recognition
+  579      0.9434   +1134.6        Physics/Optics        Physics/Optics                  Doppler effect  Position (finance)
+  580      0.9396    +392.3  Humanities/Political science  Humanities/Political science               Political science  Welfare economics
+  581      0.9395    +426.4        Physics/Optics        Physics/Optics                  Atomic physics  Cyclotron
+  582      0.9373    +117.3        Biology/Botany        Biology/Botany                         Biology  Fishery
+  583      0.9335    +180.6  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Human immunodeficiency virus (
+  584      0.9331     +99.6   Psychology/Business   Psychology/Business                        Business  Quality (philosophy)
+  585      0.9322    +156.8  Geography/Environmental science  Geography/Environmental science                    Oceanography  Geography
+  586      0.9303    +404.5  Computer science/Mathematics  Computer science/Mathematics            Algebra over a field  Mathematics
+  587      0.9278    +115.9  Humanities/Political science  Humanities/Political science                      Philosophy  Art history
+  588      0.9274    +722.3        Biology/Botany        Biology/Botany                         Biology  Organism
+  589      0.9225    -117.8  Materials science/Chemistry  Materials science/Chemistry         Environmental chemistry  Materials science
+  590      0.9225    -112.9  Geography/Environmental science  Geography/Environmental science                     Archaeology  Environmental science
+  591      0.9219    +103.7  Humanities/Political science  Humanities/Political science                         History  Government (linguistics)
+  592      0.9191    -126.8  Humanities/Political science  Humanities/Political science                      Humanities  Economic growth
+  593      0.9190    +870.5        Physics/Optics        Physics/Optics                          Optics  Cutoff
+  594      0.9159    -103.3  Humanities/Political science  Humanities/Political science                             Art  State (computer science)
+  595      0.9119     +82.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Systems engineering
+  596      0.9119    +939.5        Physics/Optics        Physics/Optics                         Physics  Phase-contrast imaging
+  597      0.9104    -126.9  Humanities/Political science  Humanities/Political science                             Art  Public administration
+  598      0.9072    -102.5   Psychology/Business   Psychology/Business                      Psychology  Order (exchange)
+  599      0.9032    -111.9  Humanities/Political science  Humanities/Political science                      Humanities  Literature
+  600      0.9024    -119.6  Computer science/Mathematics  Computer science/Mathematics                       Algorithm  Engineering
+  601      0.8972    +177.3        Physics/Optics        Physics/Optics                Particle physics  Physics
+  602      0.8959   +2684.2        Physics/Optics        Physics/Optics                  Doppler effect  Cutoff
+  603      0.8957    -122.9   Psychology/Business   Psychology/Business                      Psychology  Environmental planning
+  604      0.8936     -97.5  Humanities/Political science  Humanities/Political science                             Art  Politics
+  605      0.8872    +557.0  Computer science/Mathematics  Computer science/Mathematics               Calculus (dental)  Mathematics
+  606      0.8850    -116.2  Computer science/Mathematics  Computer science/Mathematics           Information retrieval  Mathematics
+  607      0.8802    +461.3        Physics/Optics        Physics/Optics                  Atomic physics  Plasma diagnostics
+  608      0.8761    +468.2   Psychology/Business   Psychology/Business                        Business  Financial system
+  609      0.8759     +69.1  Humanities/Political science  Humanities/Political science                      Humanities  Art history
+  610      0.8729     +65.9  Computer science/Mathematics  Computer science/Mathematics                Computer science  Aeronautics
+  611      0.8708   +1300.8        Physics/Optics        Physics/Optics                   Reflectometry  Point (geometry)
+  612      0.8705    +654.3  Medicine/Internal medicine  Medicine/Internal medicine                         Surgery  General surgery
+  613      0.8681    +253.7  Humanities/Political science  Humanities/Political science                             Law  Government (linguistics)
+  614      0.8665    -125.0        Physics/Optics        Physics/Optics                 Power (physics)  Triacetin
+  615      0.8653    -124.7  Geography/Environmental science  Geography/Environmental science               Sample (material)  Taxon
+  616      0.8651    +311.8        Physics/Optics        Physics/Optics              Plasma diagnostics  Plasma
+  617      0.8613    +193.1        Biology/Botany        Biology/Botany                         Biology  Veterinary medicine
+  618      0.8560   +1327.9        Physics/Optics        Physics/Optics                 Line (geometry)  Interference (communication)
+  619      0.8559    +165.8  Geography/Environmental science  Geography/Environmental science                    Oceanography  Environmental science
+  620      0.8506    +119.9  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Intensive care medicine
+  621      0.8505    +502.4        Physics/Optics        Physics/Optics                        Hydrogen  Plasma
+  622      0.8471    +283.9  Humanities/Political science  Humanities/Political science                       Sociology  Criminology
+  623      0.8470    -117.4   Psychology/Business   Psychology/Business                 Library science  Economics
+  624      0.8468    +375.1        Physics/Optics        Physics/Optics                             Ion  Flux (metallurgy)
+  625      0.8454    -123.6  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Sample (material)
+  626      0.8447    +112.2  Medicine/Internal medicine  Medicine/Internal medicine                          Cancer  Internal medicine
+  627      0.8435    +118.4  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Emergency medicine
+  628      0.8400     -74.1  Humanities/Political science  Humanities/Political science                         History  Context (archaeology)
+  629      0.8366    +162.4        Physics/Optics        Physics/Optics                             Ion  Plasma
+  630      0.8363    +230.5  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Tuberculosis
+  631      0.8357    -116.0  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Computer vision
+  632      0.8350   +3100.5        Physics/Optics        Physics/Optics                      Radiometer  Electron temperature
+  633      0.8262    +764.2        Physics/Optics        Physics/Optics                          Optics  Dispersion (optics)
+  634      0.8219     +49.5  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Demography
+  635      0.8183    +620.1  Computer science/Mathematics  Computer science/Mathematics                  World Wide Web  Data science
+  636      0.8177    +579.5        Physics/Optics        Physics/Optics                  Interferometry  Line (geometry)
+  637      0.8144    +246.8  Geography/Environmental science  Geography/Environmental science           Environmental science  Atmospheric sciences
+  638      0.8125    +188.8        Biology/Botany        Biology/Botany                         Biology  Biotechnology
+  639      0.8102    +492.2   Psychology/Business   Psychology/Business                        Pedagogy  Medical education
+  640      0.8079    +558.7        Physics/Optics        Physics/Optics                        Divertor  Flux (metallurgy)
+  641      0.8067    +835.6  Humanities/Political science  Humanities/Political science                     Visual arts  Art history
+  642      0.8064    -100.2  Computer science/Mathematics  Computer science/Mathematics                     Engineering  World Wide Web
+  643      0.8053     +98.8  Humanities/Political science  Humanities/Political science               Political science  Gender studies
+  644      0.8031    -121.6  Geography/Environmental science  Geography/Environmental science              Taxonomy (biology)  Remote sensing
+  645      0.8029    +293.5  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Artificial neural network
+  646      0.8025    -121.7  Geography/Environmental science  Geography/Environmental science               Sample (material)  Annotation
+  647      0.8007     -45.9        Physics/Optics        Physics/Optics                         Physics  Mechanics
+  648      0.8006    +411.6        Physics/Optics        Physics/Optics                             Ion  Plasma diagnostics
+  649      0.7983    +303.1        Physics/Optics        Physics/Optics                         Physics  Loop (graph theory)
+  650      0.7968    -115.9  Humanities/Political science  Humanities/Political science                      Humanities  Aesthetics
+  651      0.7968    +320.4        Physics/Optics        Physics/Optics      Energy (signal processing)  Plasma
+  652      0.7958    +236.2        Physics/Optics        Physics/Optics                 Power (physics)  Cyclotron
+  653      0.7910     +79.1  Humanities/Political science  Humanities/Political science               Political science  China
+  654      0.7909   +1104.8        Physics/Optics        Physics/Optics                   Nucleofection  Hyporeflexia
+  655      0.7908   +4627.9        Physics/Optics        Physics/Optics                      Turbulence  Phase (matter)
+  656      0.7883    -107.6  Humanities/Political science  Humanities/Political science                      Humanities  China
+  657      0.7872     +51.7  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Nanotechnology
+  658      0.7870    +492.1  Humanities/Political science  Humanities/Political science                             Art  Poetry
+  659      0.7837    +446.4        Biology/Botany        Biology/Botany           Computational biology  Genetics
+  660      0.7828    +439.7        Physics/Optics        Physics/Optics                          Plasma  Detector
+  661      0.7797    -114.6  Humanities/Political science  Humanities/Political science                      Humanities  Law and economics
+  662      0.7790    +358.9        Biology/Botany        Biology/Botany                          Botany  Agronomy
+  663      0.7753    -120.2  Geography/Environmental science  Geography/Environmental science              Sequence (biology)  Remote sensing
+  664      0.7739    +174.4  Humanities/Political science  Humanities/Political science               Political science  Legislation
+  665      0.7729     -85.5   Psychology/Business   Psychology/Business                      Psychology  Marketing
+  666      0.7728    +145.8        Physics/Optics        Physics/Optics                         Physics  Bolometer
+  667      0.7713    +308.4        Physics/Optics        Physics/Optics                  Magnetic field  Measure (data warehouse)
+  668      0.7690   +1293.1        Physics/Optics        Physics/Optics      Filter (signal processing)  Line (geometry)
+  669      0.7680    +377.6        Physics/Optics        Physics/Optics                 Current (fluid)  Plasma
+  670      0.7636     -82.5  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Process (computing)
+  671      0.7618    -119.7        Physics/Optics        Physics/Optics                   Nucleofection  Measure (data warehouse)
+  672      0.7572    -119.5  Geography/Environmental science  Geography/Environmental science                      Similitude  Sample (material)
+  673      0.7497     -81.7  Materials science/Chemistry  Materials science/Chemistry               Materials science  Waste management
+  674      0.7480    +174.6  Humanities/Political science  Humanities/Political science               Political science  Development economics
+  675      0.7463    +517.2        Physics/Optics        Physics/Optics            Large Helical Device  Hydrogen
+  676      0.7459    +322.1        Physics/Optics        Physics/Optics                             Ion  Divertor
+  677      0.7450    +327.7        Physics/Optics        Physics/Optics                  Atomic physics  Divertor
+  678      0.7436     +74.6  Computer science/Mathematics  Computer science/Mathematics                Computer science  Reliability engineering
+  679      0.7423     -99.1        Physics/Optics        Physics/Optics                          Optics  Ion
+  680      0.7422   +1552.8        Physics/Optics        Physics/Optics                Point (geometry)  Microwave
+  681      0.7421    -118.6        Physics/Optics        Physics/Optics                   Fusible alloy  Power (physics)
+  682      0.7393    -118.5        Physics/Optics        Physics/Optics                        Demotion  Power (physics)
+  683      0.7293     -93.6  Geography/Environmental science  Geography/Environmental science                       Geography  Production (economics)
+  684      0.7259    +142.2  Computer science/Mathematics  Computer science/Mathematics                    Econometrics  Mathematics
+  685      0.7208    +475.1        Physics/Optics        Physics/Optics            Large Helical Device  Detector
+  686      0.7202    +388.9  Humanities/Political science  Humanities/Political science                         History  Economic history
+  687      0.7195    -115.4  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Matching (statistics)
+  688      0.7193    -100.2  Humanities/Political science  Humanities/Political science                      Humanities  Media studies
+  689      0.7181    -100.3  Humanities/Political science  Humanities/Political science                      Philosophy  State (computer science)
+  690      0.7170    +140.2  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Polymer chemistry
+  691      0.7137    -116.9  Geography/Environmental science  Geography/Environmental science              Physical geography  Identification (biology)
+  692      0.7134    +901.9        Physics/Optics        Physics/Optics                       Cyclotron  Mode (computer interface)
+  693      0.7077    +248.3  Computer science/Mathematics  Computer science/Mathematics            Discrete mathematics  Mathematics
+  694      0.7068    +386.8        Physics/Optics        Physics/Optics      Distribution (mathematics)  Plasma
+  695      0.7041     +95.7  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Drug
+  696      0.7038    -116.6        Physics/Optics        Physics/Optics        Measure (data warehouse)  Gestational period
+  697      0.7038    +219.0   Psychology/Business   Psychology/Business                   Mental health  Psychology
+  698      0.7007     +69.6  Humanities/Political science  Humanities/Political science               Political science  Ancient history
+  699      0.7002    -116.4        Physics/Optics        Physics/Optics                          TSG101  Measure (data warehouse)
+  700      0.6986    +253.9        Physics/Optics        Physics/Optics                  Magnetic field  Large Helical Device
+  701      0.6983     -96.7  Humanities/Political science  Humanities/Political science                      Humanities  Visual arts
+  702      0.6945    +112.4   Psychology/Business   Psychology/Business                      Psychology  Test (biology)
+  703      0.6942     -65.1        Physics/Optics        Physics/Optics                          Optics  Plasma
+  704      0.6915    +413.7        Physics/Optics        Physics/Optics                             Ion  Spectroscopy
+  705      0.6894    -115.8        Physics/Optics        Physics/Optics                   Fusible alloy  Plasma
+  706      0.6864    -114.7  Computer science/Mathematics  Computer science/Mathematics                    Data science  Mathematics
+  707      0.6835    +729.9        Physics/Optics        Physics/Optics                        Injector  Power (physics)
+  708      0.6827    +222.6  Humanities/Political science  Humanities/Political science                      Philosophy  Classics
+  709      0.6809    +106.5        Physics/Optics        Physics/Optics                         Physics  Rogowski coil
+  710      0.6790     -53.2   Psychology/Business   Psychology/Business                      Psychology  Citation
+  711      0.6766    +307.2  Humanities/Political science  Humanities/Political science                       Sociology  Identity (music)
+  712      0.6765    -115.0  Geography/Environmental science  Geography/Environmental science                  Remote sensing  Taxon
+  713      0.6748    -106.4  Materials science/Chemistry  Materials science/Chemistry               Materials science  Combinatorial chemistry
+  714      0.6743    +213.9  Geography/Environmental science  Geography/Environmental science                     Meteorology  Remote sensing
+  715      0.6740     +93.5  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Disease
+  716      0.6738    +459.1  Geography/Environmental science  Geography/Environmental science                         Geology  Geomorphology
+  717      0.6730   +1671.9        Biology/Botany        Biology/Botany                          Botany  Herbarium
+  718      0.6710     +84.0  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Audiology
+  719      0.6684    -114.6        Physics/Optics        Physics/Optics                   Diafiltration  Measure (data warehouse)
+  720      0.6679    +199.9  Humanities/Political science  Humanities/Political science               Political science  European union
+  721      0.6678    +413.6   Psychology/Business   Psychology/Business                        Business  Commerce
+  722      0.6656    +146.4  Humanities/Political science  Humanities/Political science                         History  Theology
+  723      0.6653     +86.2        Physics/Optics        Physics/Optics                 Power (physics)  Plasma
+  724      0.6619     +79.1  Computer science/Mathematics  Computer science/Mathematics                       Algorithm  Artificial intelligence
+  725      0.6613     +86.0  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Inorganic chemistry
+  726      0.6609    -114.0  Geography/Environmental science  Geography/Environmental science           Similarity (geometry)  Remote sensing
+  727      0.6592    -113.8  Humanities/Political science  Humanities/Political science                      Philosophy  Public administration
+  728      0.6544    +542.6   Psychology/Business   Psychology/Business        Developmental psychology  Social psychology
+  729      0.6543    +287.7  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Automotive engineering
+  730      0.6529     -71.8        Physics/Optics        Physics/Optics                          Optics  Large Helical Device
+  731      0.6488     -40.7  Computer science/Mathematics  Computer science/Mathematics                Computer science  Class (philosophy)
+  732      0.6466    +581.0        Biology/Botany        Biology/Botany                    Horticulture  Agronomy
+  733      0.6435    -111.9   Psychology/Business   Psychology/Business                        Business  Cognitive psychology
+  734      0.6414     +76.3        Physics/Optics        Physics/Optics                         Physics  Wavelength
+  735      0.6392    -113.0  Humanities/Political science  Humanities/Political science                             Art  Economic growth
+  736      0.6390     +95.1  Geography/Environmental science  Geography/Environmental science          Production (economics)  Environmental science
+  737      0.6382    -108.4  Geography/Environmental science  Geography/Environmental science                         Geology  Production (economics)
+  738      0.6377    -112.8        Physics/Optics        Physics/Optics                       Liquation  Measure (data warehouse)
+  739      0.6375   +2700.1  Geography/Environmental science  Geography/Environmental science                        Geometry  Section (typography)
+  740      0.6368    +323.5  Humanities/Political science  Humanities/Political science                             Law  Public administration
+  741      0.6346    -112.6        Physics/Optics        Physics/Optics                       Dysgeusia  Measure (data warehouse)
+  742      0.6337     -86.2        Physics/Optics        Physics/Optics                          Optics  Atomic physics
+  743      0.6306    +325.2  Humanities/Political science  Humanities/Political science                         History  Period (music)
+  744      0.6288    +212.3   Psychology/Business   Psychology/Business                        Business  Investment (military)
+  745      0.6272    +203.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Scripting language
+  746      0.6265    -112.1  Geography/Environmental science  Geography/Environmental science                      Annotation  Remote sensing
+  747      0.6206    +101.6  Geography/Environmental science  Geography/Environmental science  Environmental resource managem  Geography
+  748      0.6187     -91.7  Humanities/Political science  Humanities/Political science               Political science  Classics
+  749      0.6181    +129.2        Physics/Optics        Physics/Optics                         Physics  Temperature measurement
+  750      0.6179     -83.4  Humanities/Political science  Humanities/Political science                      Philosophy  Politics
+  751      0.6147    +729.5   Psychology/Business   Psychology/Business                Labour economics  Economics
+  752      0.6120    -110.0  Computer science/Mathematics  Computer science/Mathematics                     Mathematics  Computer security
+  753      0.6108    +191.1        Physics/Optics        Physics/Optics                         Physics  Neutron
+  754      0.6095    -103.5  Computer science/Mathematics  Computer science/Mathematics                      Key (lock)  Mathematics
+  755      0.6059    +500.5  Medicine/Internal medicine  Medicine/Internal medicine                          Cancer  Oncology
+  756      0.6037    +483.7        Physics/Optics        Physics/Optics                        Divertor  Plasma diagnostics
+  757      0.6031    +262.9   Psychology/Business   Psychology/Business                      Psychology  Communication
+  758      0.6022    -105.6        Physics/Optics        Physics/Optics               Signal processing  Physics
+  759      0.6006    -110.1        Physics/Optics        Physics/Optics                             Ion  Power (physics)
+  760      0.6006    +198.6  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Diabetes mellitus
+  761      0.6000     +58.4        Physics/Optics        Physics/Optics      Distribution (mathematics)  Physics
+  762      0.5999    -110.5        Physics/Optics        Physics/Optics                Beam (structure)  Liquation
+  763      0.5994    +242.1  Medicine/Internal medicine  Medicine/Internal medicine                       Radiology  Surgery
+  764      0.5992    +549.4        Physics/Optics        Physics/Optics      Energy (signal processing)  Flux (metallurgy)
+  765      0.5951    -109.1  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Information retrieval
+  766      0.5937    +523.4        Physics/Optics        Physics/Optics  Enhanced Data Rates for GSM Ev  Plasma
+  767      0.5921    +302.7  Materials science/Chemistry  Materials science/Chemistry                 Polymer science  Materials science
+  768      0.5908    -110.0  Geography/Environmental science  Geography/Environmental science                      Similitude  Remote sensing
+  769      0.5890     -52.9  Computer science/Mathematics  Computer science/Mathematics                Computer science  Reliability (semiconductor)
+  770      0.5887   +1439.6        Physics/Optics        Physics/Optics                  Doppler effect  Amplitude
+  771      0.5885    +147.2        Physics/Optics        Physics/Optics                             Ion  Measure (data warehouse)
+  772      0.5878    +198.1  Computer science/Mathematics  Computer science/Mathematics      Computer graphics (images)  Artificial intelligence
+  773      0.5871    +885.3        Physics/Optics        Physics/Optics                        Injector  Beam (structure)
+  774      0.5843    +198.3  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Object (grammar)
+  775      0.5818    +530.9        Physics/Optics        Physics/Optics                  Head (geology)  Plasma
+  776      0.5814    -109.2        Physics/Optics        Physics/Optics                         Physics  Langmuir probe
+  777      0.5810    +761.1        Physics/Optics        Physics/Optics             Nuclear engineering  Hydrogen
+  778      0.5782     -96.9  Humanities/Political science  Humanities/Political science                      Humanities  Gender studies
+  779      0.5779    +499.5        Biology/Botany        Biology/Botany                         Biology  Hordeum vulgare
+  780      0.5753     -79.5        Physics/Optics        Physics/Optics                         Physics  Flow (mathematics)
+  781      0.5753    -109.0        Physics/Optics        Physics/Optics                             Ion  Diafiltration
+  782      0.5747     -78.1  Humanities/Political science  Humanities/Political science                      Humanities  Ancient history
+  783      0.5747     +92.8  Geography/Environmental science  Geography/Environmental science                         Geology  Meteorology
+  784      0.5736    -101.5   Psychology/Business   Psychology/Business           Mathematics education  Economics
+  785      0.5732    +829.6        Physics/Optics        Physics/Optics                 Power (physics)  Calorimeter (particle physics)
+  786      0.5730    +234.2   Psychology/Business   Psychology/Business                        Business  Labour economics
+  787      0.5725     -42.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Task (project management)
+  788      0.5717    +264.3        Physics/Optics        Physics/Optics                          Optics  Wavelength
+  789      0.5716    +212.4        Physics/Optics        Physics/Optics                         Physics  Polynomial
+  790      0.5712    +131.8  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Photochemistry
+  791      0.5711     -97.9  Humanities/Political science  Humanities/Political science               Political science  Psychoanalysis
+  792      0.5711     -65.8  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Waste management
+  793      0.5701    +209.1   Psychology/Business   Psychology/Business                        Business  Plan (archaeology)
+  794      0.5689    -108.6        Physics/Optics        Physics/Optics                   Nucleofection  Line (geometry)
+  795      0.5677    +148.0  Humanities/Political science  Humanities/Political science                         History  Aesthetics
+  796      0.5677    -106.1  Geography/Environmental science  Geography/Environmental science                       Geography  Geometry
+  797      0.5667     -90.7  Computer science/Mathematics  Computer science/Mathematics                Computer science  Boundary (topology)
+  798      0.5654     -28.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Space (punctuation)
+  799      0.5639    +338.5  Materials science/Chemistry  Materials science/Chemistry              Composite material  Metallurgy
+  800      0.5617    +210.9        Physics/Optics        Physics/Optics                          Optics  Electron density
+  801      0.5616   +1616.3        Biology/Botany        Biology/Botany                        Cultivar  Agronomy
+  802      0.5606    -107.8   Psychology/Business   Psychology/Business                      Psychology  Natural resource economics
+  803      0.5599    +458.6        Physics/Optics        Physics/Optics              Particle (ecology)  Large Helical Device
+  804      0.5595     -27.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Machine learning
+  805      0.5558    +104.0  Humanities/Political science  Humanities/Political science               Political science  Environmental ethics
+  806      0.5548   +1532.3        Physics/Optics        Physics/Optics                       Amplitude  Reflectometry
+  807      0.5541    +254.5  Humanities/Political science  Humanities/Political science                         History  Environmental ethics
+  808      0.5534    -106.8  Materials science/Chemistry  Materials science/Chemistry             Medicinal chemistry  Materials science
+  809      0.5533    -107.4  Geography/Environmental science  Geography/Environmental science              Physical geography  Taxonomy (biology)
+  810      0.5531     -88.6   Psychology/Business   Psychology/Business                      Psychology  Process management
+  811      0.5528    +125.7  Materials science/Chemistry  Materials science/Chemistry               Materials science  Thermal
+  812      0.5526     +79.8  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Matching (statistics)
+  813      0.5509    -100.7        Physics/Optics        Physics/Optics                         Physics  Component (thermodynamics)
+  814      0.5495     -70.4   Psychology/Business   Psychology/Business                      Psychology  Service (business)
+  815      0.5488    -107.3        Physics/Optics        Physics/Optics                             Ion  Liquation
+  816      0.5486    -107.3        Physics/Optics        Physics/Optics                       Triacetin  Measure (data warehouse)
+  817      0.5474    +264.7  Materials science/Chemistry  Materials science/Chemistry               Materials science  Shell (structure)
+  818      0.5451    +959.2        Physics/Optics        Physics/Optics                        Injector  Line (geometry)
+  819      0.5410    -101.2  Computer science/Mathematics  Computer science/Mathematics          Electronic engineering  Mathematics
+  820      0.5408    +249.3  Humanities/Political science  Humanities/Political science                             Art  Cartography
+  821      0.5399     -73.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Marine engineering
+  822      0.5399    +242.9        Physics/Optics        Physics/Optics                  Atomic physics  Flux (metallurgy)
+  823      0.5395     -94.4  Humanities/Political science  Humanities/Political science                             Art  China
+  824      0.5383     +75.8  Materials science/Chemistry  Materials science/Chemistry               Materials science  Thermodynamics
+  825      0.5366    +250.6        Physics/Optics        Physics/Optics                 Current (fluid)  Power (physics)
+  826      0.5360    +195.8        Physics/Optics        Physics/Optics            Large Helical Device  Cyclotron
+  827      0.5357     +72.8   Psychology/Business   Psychology/Business                      Psychology  Engineering ethics
+  828      0.5351    +133.9  Materials science/Chemistry  Materials science/Chemistry                Composite number  Materials science
+  829      0.5339    -106.1  Geography/Environmental science  Geography/Environmental science              Physical geography  Sequence (biology)
+  830      0.5334    +303.4  Geography/Environmental science  Geography/Environmental science                         Geology  Geodesy
+  831      0.5308     -20.6  Computer science/Mathematics  Computer science/Mathematics                Computer science  Key (lock)
+  832      0.5284    +675.8        Biology/Botany        Biology/Botany                         Biology  Solanum
+  833      0.5279    +196.8  Materials science/Chemistry  Materials science/Chemistry               Materials science  Engineering physics
+  834      0.5252    -105.7        Physics/Optics        Physics/Optics                 Line (geometry)  Gestational period
+  835      0.5226    -105.6        Physics/Optics        Physics/Optics                 Line (geometry)  TSG101
+  836      0.5205    +929.1        Physics/Optics        Physics/Optics  Calorimeter (particle physics)  Large Helical Device
+  837      0.5202    +114.6  Humanities/Political science  Humanities/Political science               Political science  International trade
+  838      0.5198    +157.1   Psychology/Business   Psychology/Business                        Business  Sustainability
+  839      0.5194    +221.7  Humanities/Political science  Humanities/Political science                       Sociology  Environmental ethics
+  840      0.5192    +241.6  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Feature (linguistics)
+  841      0.5182     -35.9        Physics/Optics        Physics/Optics                         Physics  SIGNAL (programming language)
+  842      0.5179    +285.1        Physics/Optics        Physics/Optics        Measure (data warehouse)  Port (circuit theory)
+  843      0.5162    -105.1        Physics/Optics        Physics/Optics                Beam (structure)  Triacetin
+  844      0.5162    -103.2  Humanities/Political science  Humanities/Political science                      Humanities  Political economy
+  845      0.5153    +209.2        Physics/Optics        Physics/Optics                 Power (physics)  Port (circuit theory)
+  846      0.5148    +185.2  Humanities/Political science  Humanities/Political science               Political science  Economic Justice
+  847      0.5136    +314.7  Computer science/Mathematics  Computer science/Mathematics          Mathematical economics  Mathematics
+  848      0.5123     +57.0        Physics/Optics        Physics/Optics                         Physics  Statistical physics
+  849      0.5121    +142.8  Geography/Environmental science  Geography/Environmental science                  Climate change  Environmental science
+  850      0.5120     +80.7  Humanities/Political science  Humanities/Political science                         History  State (computer science)
+  851      0.5095     -82.3        Physics/Optics        Physics/Optics                         Physics  Ion beam
+  852      0.5092    +313.1   Psychology/Business   Psychology/Business                       Economics  Natural resource economics
+  853      0.5091    +249.7        Physics/Optics        Physics/Optics    Sampling (signal processing)  Plasma
+  854      0.5088    +746.3        Physics/Optics        Physics/Optics                    Hyporeflexia  Gestational period
+  855      0.5068    -104.1   Psychology/Business   Psychology/Business                      Psychology  Industrial organization
+  856      0.5062     -35.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Automotive engineering
+  857      0.5060     -89.2   Psychology/Business   Psychology/Business                        Business  Test (biology)
+  858      0.5051     -96.4   Psychology/Business   Psychology/Business     Risk analysis (engineering)  Psychology
+  859      0.5040     +75.9  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Epidemiology
+  860      0.5032     +88.9  Materials science/Chemistry  Materials science/Chemistry                   Carbon fibers  Materials science
+  861      0.5025     +88.2        Physics/Optics        Physics/Optics                         Physics  Heterodyne (poetry)
+  862      0.5019    +369.7  Computer science/Mathematics  Computer science/Mathematics                      Statistics  Econometrics
+  863      0.5005     -36.8  Computer science/Mathematics  Computer science/Mathematics                        Download  Mathematics
+  864      0.5001     +88.3        Physics/Optics        Physics/Optics                         Physics  Heterodyne detection
+  865      0.4999    -103.9        Physics/Optics        Physics/Optics                          Optics  Divertor
+  866      0.4999    -102.7  Geography/Environmental science  Geography/Environmental science                         Geology  Agriculture
+  867      0.4997     -48.3   Psychology/Business   Psychology/Business                      Psychology  Quality (philosophy)
+  868      0.4995     -91.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Regression analysis
+  869      0.4989    -103.9        Physics/Optics        Physics/Optics                   Diafiltration  Line (geometry)
+  870      0.4984    +150.5        Physics/Optics        Physics/Optics                        Divertor  Plasma
+  871      0.4980    +340.4        Physics/Optics        Physics/Optics                          Optics  Heterodyne (poetry)
+  872      0.4972    +276.8  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Systems engineering
+  873      0.4966    +535.8   Psychology/Business   Psychology/Business                       Economics  Monetary economics
+  874      0.4963    +358.5  Geography/Environmental science  Geography/Environmental science                         Geology  Mining engineering
+  875      0.4959    +729.8        Physics/Optics        Physics/Optics                    Hyporeflexia  TSG101
+  876      0.4940    +339.8        Physics/Optics        Physics/Optics                          Optics  Heterodyne detection
+  877      0.4936     -93.5        Physics/Optics        Physics/Optics                         Physics  Finite element method
+  878      0.4932     +89.1        Physics/Optics        Physics/Optics                         Physics  Michelson interferometer
+  879      0.4920     -98.7  Humanities/Political science  Humanities/Political science                      Humanities  Criminology
+  880      0.4892    +999.9        Physics/Optics        Physics/Optics                Beam (structure)  Calorimeter (particle physics)
+  881      0.4871     +83.3  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Transplantation
+  882      0.4870     -99.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Boundary value problem
+  883      0.4866    +238.3  Computer science/Mathematics  Computer science/Mathematics             Image (mathematics)  Artificial intelligence
+  884      0.4860     -61.2        Physics/Optics        Physics/Optics                          Optics  Beam (structure)
+  885      0.4851    +231.2  Computer science/Mathematics  Computer science/Mathematics                      Brightness  Mathematics
+  886      0.4834    +703.2   Psychology/Business   Psychology/Business                     Advertising  Marketing
+  887      0.4825    +339.5        Physics/Optics        Physics/Optics                          Optics  Michelson interferometer
+  888      0.4824    +384.5  Humanities/Political science  Humanities/Political science                       Sociology  Social science
+  889      0.4820     -99.9   Psychology/Business   Psychology/Business                        Business  Cognition
+  890      0.4804    +168.5   Psychology/Business   Psychology/Business                      Psychology  Training (meteorology)
+  891      0.4801    +177.7  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Mass spectrometry
+  892      0.4799     -90.2  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Environmental health
+  893      0.4796     -99.5        Physics/Optics        Physics/Optics             Nuclear engineering  Optics
+  894      0.4791    +149.0        Physics/Optics        Physics/Optics                       Cyclotron  Plasma
+  895      0.4765    +247.1  Computer science/Mathematics  Computer science/Mathematics                     Mathematics  Luminance
+  896      0.4759    -102.3        Physics/Optics        Physics/Optics                       Liquation  Line (geometry)
+  897      0.4733    +135.2   Psychology/Business   Psychology/Business                      Psychology  Reading (process)
+  898      0.4731     -57.8  Computer science/Mathematics  Computer science/Mathematics                Computer science  Topology (electrical circuits)
+  899      0.4724    +265.0  Computer science/Mathematics  Computer science/Mathematics           Transport engineering  Engineering
+  900      0.4723     -99.6  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Nursing
+  901      0.4720    +147.7        Biology/Botany        Biology/Botany                         Biology  Crop
+  902      0.4708     +79.7  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Physiology
+  903      0.4704    +393.5  Computer science/Mathematics  Computer science/Mathematics       Manufacturing engineering  Engineering
+  904      0.4701     -57.5  Materials science/Chemistry  Materials science/Chemistry             Inorganic chemistry  Materials science
+  905      0.4700   +1459.0        Physics/Optics        Physics/Optics     Stability (learning theory)  Detector
+  906      0.4700    -101.2  Geography/Environmental science  Geography/Environmental science                        Geometry  Environmental science
+  907      0.4699    -101.9        Physics/Optics        Physics/Optics                   Fusible alloy  Measure (data warehouse)
+  908      0.4688    +252.1  Computer science/Mathematics  Computer science/Mathematics              Region of interest  Mathematics
+  909      0.4683    +296.3  Materials science/Chemistry  Materials science/Chemistry               Materials science  Polystyrene
+  910      0.4683     -91.4  Humanities/Political science  Humanities/Political science               Political science  Agricultural economics
+  911      0.4681    -101.8        Physics/Optics        Physics/Optics                        Demotion  Measure (data warehouse)
+  912      0.4678    +257.7  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Otorhinolaryngology
+  913      0.4677     -42.9  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Download
+  914      0.4667    +139.9  Humanities/Political science  Humanities/Political science               Political science  Regional science
+  915      0.4655    +320.2  Computer science/Mathematics  Computer science/Mathematics                     Engineering  Engineering drawing
+  916      0.4646    -101.2  Geography/Environmental science  Geography/Environmental science              Physical geography  Taxon
+  917      0.4635    +275.9  Computer science/Mathematics  Computer science/Mathematics                      Brightness  Artificial intelligence
+  918      0.4634    -101.5  Humanities/Political science  Humanities/Political science                      Philosophy  Economic growth
+  919      0.4632   +1451.0        Physics/Optics        Physics/Optics                       Astronomy  Astrophysics
+  920      0.4610     -86.8  Humanities/Political science  Humanities/Political science                             Art  Law and economics
+  921      0.4595    +654.3        Physics/Optics        Physics/Optics              Resolution (logic)  Line (geometry)
+  922      0.4593    -101.1        Physics/Optics        Physics/Optics                  Atomic physics  Triacetin
+  923      0.4576    +233.4  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Radiochemistry
+  924      0.4564    +265.0        Physics/Optics        Physics/Optics                  Interferometry  Measure (data warehouse)
+  925      0.4562    -100.8  Geography/Environmental science  Geography/Environmental science              Physical geography  Similarity (geometry)
+  926      0.4558    +150.6  Humanities/Political science  Humanities/Political science                       Sociology  Management
+  927      0.4555     +34.7        Physics/Optics        Physics/Optics                         Physics  Port (circuit theory)
+  928      0.4535    +176.6  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Computational chemistry
+  929      0.4535    +148.0  Geography/Environmental science  Geography/Environmental science           Environmental science  Astrobiology
+  930      0.4534    +293.7  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Luminance
+  931      0.4534    +406.9   Psychology/Business   Psychology/Business                 Library science  Volume (thermodynamics)
+  932      0.4525     -99.4  Humanities/Political science  Humanities/Political science                      Philosophy  Visual arts
+  933      0.4522   +2506.8        Physics/Optics        Physics/Optics              Position (finance)  Cutoff
+  934      0.4499     -87.3  Humanities/Political science  Humanities/Political science                         History  Public administration
+  935      0.4490    +608.1  Humanities/Political science  Humanities/Political science                      Humanities  Persona
+  936      0.4489     -96.7  Geography/Environmental science  Geography/Environmental science                         Geology  Environmental resource managem
+  937      0.4485    +381.5        Physics/Optics        Physics/Optics                Electron density  Line (geometry)
+  938      0.4480    +347.4        Physics/Optics        Physics/Optics                          Optics  Spectrum analyzer
+  939      0.4477     -99.8  Computer science/Mathematics  Computer science/Mathematics           Mathematical analysis  Artificial intelligence
+  940      0.4471    +172.4        Physics/Optics        Physics/Optics                         Physics  Cascade
+  941      0.4447    +298.8  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Region of interest
+  942      0.4445     -99.3  Geography/Environmental science  Geography/Environmental science        Geotechnical engineering  Geography
+  943      0.4430     -79.2  Computer science/Mathematics  Computer science/Mathematics            Control (management)  Mathematics
+  944      0.4422     -99.8        Physics/Optics        Physics/Optics                   Fusible alloy  Beam (structure)
+  945      0.4417     -51.8   Psychology/Business   Psychology/Business                      Psychology  Knowledge management
+  946      0.4413    +144.0        Physics/Optics        Physics/Optics                         Physics  Radar
+  947      0.4409     +39.9  Materials science/Chemistry  Materials science/Chemistry                       Chemistry  Analytical Chemistry (journal)
+  948      0.4397    +179.7  Humanities/Political science  Humanities/Political science                      Philosophy  Environmental ethics
+  949      0.4397   +1913.2        Biology/Botany        Biology/Botany                          Botany  Oryza sativa
+  950      0.4385     -67.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Convergence (economics)
+  951      0.4384     -78.2  Computer science/Mathematics  Computer science/Mathematics                Computer science  Dimension (graph theory)
+  952      0.4382     -44.5  Computer science/Mathematics  Computer science/Mathematics                Computer science  Matrix (chemical analysis)
+  953      0.4370     -63.5  Humanities/Political science  Humanities/Political science                      Humanities  Perspective (graphical)
+  954      0.4351     -90.7   Psychology/Business   Psychology/Business                      Psychology  Operations research
+  955      0.4335    +221.5  Humanities/Political science  Humanities/Political science                         History  Narrative
+  956      0.4329    +120.5  Computer science/Mathematics  Computer science/Mathematics              Class (philosophy)  Mathematics
+  957      0.4324     -72.3  Medicine/Internal medicine  Medicine/Internal medicine               Internal medicine  Neuroscience
+  958      0.4321     -99.1  Geography/Environmental science  Geography/Environmental science              Physical geography  Annotation
+  959      0.4313    +170.6  Humanities/Political science  Humanities/Political science        Government (linguistics)  Public relations
+  960      0.4305    +230.1  Humanities/Political science  Humanities/Political science               Political science  Human rights
+  961      0.4303    +152.4  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Asthma
+  962      0.4283     -81.1  Computer science/Mathematics  Computer science/Mathematics                Computer science  Limit (mathematics)
+  963      0.4281    +299.5        Physics/Optics        Physics/Optics    Sampling (signal processing)  Ion
+  964      0.4277    +432.3        Biology/Botany        Biology/Botany                         Biology  Chlorella vulgaris
+  965      0.4269    +198.0  Medicine/Internal medicine  Medicine/Internal medicine                         Surgery  Anesthesia
+  966      0.4265     -91.0  Computer science/Mathematics  Computer science/Mathematics                Machine learning  Mathematics
+  967      0.4256    +303.2        Physics/Optics        Physics/Optics    Sampling (signal processing)  Atomic physics
+  968      0.4249     -97.4        Physics/Optics        Physics/Optics                          Optics  Reflectometry
+  969      0.4220     -79.5  Medicine/Internal medicine  Medicine/Internal medicine                         Surgery  Population
+  970      0.4215    +126.4  Humanities/Political science  Humanities/Political science                         History  Gender studies
+  971      0.4206    +248.1  Materials science/Chemistry  Materials science/Chemistry                  Nanotechnology  Chemical engineering
+  972      0.4188     -86.6  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Control theory (sociology)
+  973      0.4178     -90.8  Computer science/Mathematics  Computer science/Mathematics                      Statistics  Set (abstract data type)
+  974      0.4142    +121.0        Biology/Botany        Biology/Botany                         Biology  Dorsum
+  975      0.4098    +242.0  Cell biology/Anatomy  Cell biology/Anatomy                        Virology  Immunology
+  976      0.4079    +145.5  Humanities/Political science  Humanities/Political science               Political science  Islam
+  977      0.4076    +106.4  Geography/Environmental science  Geography/Environmental science                       Geography  Natural (archaeology)
+  978      0.4071     -97.1  Geography/Environmental science  Geography/Environmental science              Physical geography  Similitude
+  979      0.4070    +212.2        Physics/Optics        Physics/Optics                         Physics  Quantum cascade laser
+  980      0.4070    +247.6  Medicine/Internal medicine  Medicine/Internal medicine                      Demography  Population
+  981      0.4064    +332.9        Physics/Optics        Physics/Optics              Plasma diagnostics  Flux (metallurgy)
+  982      0.4062     -88.0  Humanities/Political science  Humanities/Political science                      Philosophy  China
+  983      0.4045     -96.9        Physics/Optics        Physics/Optics                   Fusible alloy  Ion
+  984      0.4044    +880.9  Medicine/Internal medicine  Medicine/Internal medicine                Physical therapy  Physical medicine and rehabili
+  985      0.4037    +277.9  Humanities/Political science  Humanities/Political science           Public administration  Public relations
+  986      0.4032     -96.7        Physics/Optics        Physics/Optics                   Nucleofection  Field (mathematics)
+  987      0.4032     -80.7  Computer science/Mathematics  Computer science/Mathematics                Computer science  Electricity
+  988      0.4031     -94.2  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Electronic engineering
+  989      0.4020     -88.8  Humanities/Political science  Humanities/Political science                      Philosophy  Media studies
+  990      0.4019   +2991.5        Biology/Botany        Biology/Botany           Lepidoptera genitalia  Zoology
+  991      0.4013     -78.0  Materials science/Chemistry  Materials science/Chemistry             Yield (engineering)  Materials science
+  992      0.4012     +87.7  Medicine/Internal medicine  Medicine/Internal medicine                        Medicine  Stroke (engine)
+  993      0.4004    +166.7  Humanities/Political science  Humanities/Political science               Political science  Commission
+  994      0.4004     -93.7  Geography/Environmental science  Geography/Environmental science                     Archaeology  Sample (material)
+  995      0.3997    +467.3  Humanities/Political science  Humanities/Political science                       Sociology  Anthropology
+  996      0.3993     -72.9  Computer science/Mathematics  Computer science/Mathematics        Set (abstract data type)  Range (aeronautics)
+  997      0.3991  +18559.5        Physics/Optics        Physics/Optics                Data acquisition  Control system
+  998      0.3965     -95.2   Psychology/Business   Psychology/Business                       Economics  Pedagogy
+  999      0.3959     -93.5  Computer science/Mathematics  Computer science/Mathematics         Artificial intelligence  Applied mathematics
+ 1000      0.3959    +788.7        Physics/Optics        Physics/Optics              Resolution (logic)  Laser
+
+========================================================================================================================
+Total: 1000 predictions
+"Les champignons voient l'avenir." — Sky, Versoix, 2026

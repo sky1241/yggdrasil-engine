@@ -1,0 +1,646 @@
+{
+  "meta": {
+    "k": 9,
+    "species_names": {
+      "6": "Humanities/Political science",
+      "2": "Medicine/Internal medicine",
+      "1": "Geography/Environmental science",
+      "8": "Physics/Optics",
+      "5": "Biology/Botany",
+      "3": "Psychology/Business",
+      "0": "Materials science/Chemistry",
+      "4": "Computer science/Mathematics",
+      "7": "Cell biology/Anatomy"
+    },
+    "timestamp": "2026-03-01 20:41:10"
+  },
+  "matrix_top1000": [
+    [
+      0,
+      27,
+      21,
+      15,
+      43,
+      11,
+      24,
+      7,
+      45
+    ],
+    [
+      0,
+      0,
+      26,
+      20,
+      43,
+      10,
+      48,
+      1,
+      52
+    ],
+    [
+      0,
+      0,
+      0,
+      20,
+      52,
+      14,
+      33,
+      7,
+      55
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      33,
+      13,
+      23,
+      1,
+      45
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      22,
+      56,
+      12,
+      82
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      18,
+      4,
+      34
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      72
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "matrix_top100": [
+    [
+      0,
+      5,
+      2,
+      4,
+      3,
+      1,
+      6,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      5,
+      2,
+      8,
+      2,
+      4,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      5,
+      1,
+      5,
+      0,
+      3
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      3,
+      2,
+      2,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      7,
+      0,
+      10
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "matrix_p4_sum_top1000": [
+    [
+      0.0,
+      410.8515443802,
+      521.0239017009,
+      294.10549354550005,
+      994.2804071900999,
+      167.55169630050003,
+      599.1221175193001,
+      35.3215179444,
+      416.43032932259996
+    ],
+    [
+      0.0,
+      0.0,
+      641.8199439048001,
+      275.4591889384,
+      967.8909025192,
+      186.9244103433,
+      636.2236094474998,
+      3.5652272701,
+      482.1966824529001
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      270.28779339760007,
+      1445.4267811774002,
+      298.50056743619996,
+      675.8063256739999,
+      51.905773639799996,
+      885.0959351061999
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      474.89682436,
+      207.52559590340005,
+      367.2585980893,
+      3.6099939346,
+      401.17987179739987
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      618.2988059522999,
+      1301.8838660715005,
+      123.1959426403,
+      1456.6110730173
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      385.7850105763,
+      19.318156242300002,
+      390.4174392223
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      21.335873365399998,
+      766.7688603401998
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      27.3722960949
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "collision_zones": [
+    {
+      "species_a": 4,
+      "species_b": 8,
+      "species_a_name": "Computer science/Mathematics",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 82,
+      "count_top100": 10,
+      "p4_sum_top1000": 1456.61
+    },
+    {
+      "species_a": 6,
+      "species_b": 8,
+      "species_a_name": "Humanities/Political science",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 72,
+      "count_top100": 5,
+      "p4_sum_top1000": 766.77
+    },
+    {
+      "species_a": 4,
+      "species_b": 6,
+      "species_a_name": "Computer science/Mathematics",
+      "species_b_name": "Humanities/Political science",
+      "count_top1000": 56,
+      "count_top100": 7,
+      "p4_sum_top1000": 1301.88
+    },
+    {
+      "species_a": 2,
+      "species_b": 8,
+      "species_a_name": "Medicine/Internal medicine",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 55,
+      "count_top100": 3,
+      "p4_sum_top1000": 885.1
+    },
+    {
+      "species_a": 1,
+      "species_b": 8,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 52,
+      "count_top100": 2,
+      "p4_sum_top1000": 482.2
+    },
+    {
+      "species_a": 2,
+      "species_b": 4,
+      "species_a_name": "Medicine/Internal medicine",
+      "species_b_name": "Computer science/Mathematics",
+      "count_top1000": 52,
+      "count_top100": 5,
+      "p4_sum_top1000": 1445.43
+    },
+    {
+      "species_a": 1,
+      "species_b": 6,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Humanities/Political science",
+      "count_top1000": 48,
+      "count_top100": 4,
+      "p4_sum_top1000": 636.22
+    },
+    {
+      "species_a": 0,
+      "species_b": 8,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 45,
+      "count_top100": 2,
+      "p4_sum_top1000": 416.43
+    },
+    {
+      "species_a": 3,
+      "species_b": 8,
+      "species_a_name": "Psychology/Business",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 45,
+      "count_top100": 2,
+      "p4_sum_top1000": 401.18
+    },
+    {
+      "species_a": 0,
+      "species_b": 4,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Computer science/Mathematics",
+      "count_top1000": 43,
+      "count_top100": 3,
+      "p4_sum_top1000": 994.28
+    },
+    {
+      "species_a": 1,
+      "species_b": 4,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Computer science/Mathematics",
+      "count_top1000": 43,
+      "count_top100": 8,
+      "p4_sum_top1000": 967.89
+    },
+    {
+      "species_a": 5,
+      "species_b": 8,
+      "species_a_name": "Biology/Botany",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 34,
+      "count_top100": 1,
+      "p4_sum_top1000": 390.42
+    },
+    {
+      "species_a": 2,
+      "species_b": 6,
+      "species_a_name": "Medicine/Internal medicine",
+      "species_b_name": "Humanities/Political science",
+      "count_top1000": 33,
+      "count_top100": 5,
+      "p4_sum_top1000": 675.81
+    },
+    {
+      "species_a": 3,
+      "species_b": 4,
+      "species_a_name": "Psychology/Business",
+      "species_b_name": "Computer science/Mathematics",
+      "count_top1000": 33,
+      "count_top100": 3,
+      "p4_sum_top1000": 474.9
+    },
+    {
+      "species_a": 0,
+      "species_b": 1,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Geography/Environmental science",
+      "count_top1000": 27,
+      "count_top100": 5,
+      "p4_sum_top1000": 410.85
+    },
+    {
+      "species_a": 1,
+      "species_b": 2,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Medicine/Internal medicine",
+      "count_top1000": 26,
+      "count_top100": 5,
+      "p4_sum_top1000": 641.82
+    },
+    {
+      "species_a": 0,
+      "species_b": 6,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Humanities/Political science",
+      "count_top1000": 24,
+      "count_top100": 6,
+      "p4_sum_top1000": 599.12
+    },
+    {
+      "species_a": 3,
+      "species_b": 6,
+      "species_a_name": "Psychology/Business",
+      "species_b_name": "Humanities/Political science",
+      "count_top1000": 23,
+      "count_top100": 2,
+      "p4_sum_top1000": 367.26
+    },
+    {
+      "species_a": 4,
+      "species_b": 5,
+      "species_a_name": "Computer science/Mathematics",
+      "species_b_name": "Biology/Botany",
+      "count_top1000": 22,
+      "count_top100": 2,
+      "p4_sum_top1000": 618.3
+    },
+    {
+      "species_a": 0,
+      "species_b": 2,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Medicine/Internal medicine",
+      "count_top1000": 21,
+      "count_top100": 2,
+      "p4_sum_top1000": 521.02
+    },
+    {
+      "species_a": 1,
+      "species_b": 3,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Psychology/Business",
+      "count_top1000": 20,
+      "count_top100": 2,
+      "p4_sum_top1000": 275.46
+    },
+    {
+      "species_a": 2,
+      "species_b": 3,
+      "species_a_name": "Medicine/Internal medicine",
+      "species_b_name": "Psychology/Business",
+      "count_top1000": 20,
+      "count_top100": 1,
+      "p4_sum_top1000": 270.29
+    },
+    {
+      "species_a": 5,
+      "species_b": 6,
+      "species_a_name": "Biology/Botany",
+      "species_b_name": "Humanities/Political science",
+      "count_top1000": 18,
+      "count_top100": 5,
+      "p4_sum_top1000": 385.79
+    },
+    {
+      "species_a": 0,
+      "species_b": 3,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Psychology/Business",
+      "count_top1000": 15,
+      "count_top100": 4,
+      "p4_sum_top1000": 294.11
+    },
+    {
+      "species_a": 2,
+      "species_b": 5,
+      "species_a_name": "Medicine/Internal medicine",
+      "species_b_name": "Biology/Botany",
+      "count_top1000": 14,
+      "count_top100": 1,
+      "p4_sum_top1000": 298.5
+    },
+    {
+      "species_a": 3,
+      "species_b": 5,
+      "species_a_name": "Psychology/Business",
+      "species_b_name": "Biology/Botany",
+      "count_top1000": 13,
+      "count_top100": 2,
+      "p4_sum_top1000": 207.53
+    },
+    {
+      "species_a": 4,
+      "species_b": 7,
+      "species_a_name": "Computer science/Mathematics",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 12,
+      "count_top100": 0,
+      "p4_sum_top1000": 123.2
+    },
+    {
+      "species_a": 0,
+      "species_b": 5,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Biology/Botany",
+      "count_top1000": 11,
+      "count_top100": 1,
+      "p4_sum_top1000": 167.55
+    },
+    {
+      "species_a": 1,
+      "species_b": 5,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Biology/Botany",
+      "count_top1000": 10,
+      "count_top100": 2,
+      "p4_sum_top1000": 186.92
+    },
+    {
+      "species_a": 0,
+      "species_b": 7,
+      "species_a_name": "Materials science/Chemistry",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 7,
+      "count_top100": 0,
+      "p4_sum_top1000": 35.32
+    },
+    {
+      "species_a": 2,
+      "species_b": 7,
+      "species_a_name": "Medicine/Internal medicine",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 7,
+      "count_top100": 0,
+      "p4_sum_top1000": 51.91
+    },
+    {
+      "species_a": 7,
+      "species_b": 8,
+      "species_a_name": "Cell biology/Anatomy",
+      "species_b_name": "Physics/Optics",
+      "count_top1000": 6,
+      "count_top100": 0,
+      "p4_sum_top1000": 27.37
+    },
+    {
+      "species_a": 6,
+      "species_b": 7,
+      "species_a_name": "Humanities/Political science",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 5,
+      "count_top100": 0,
+      "p4_sum_top1000": 21.34
+    },
+    {
+      "species_a": 5,
+      "species_b": 7,
+      "species_a_name": "Biology/Botany",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 4,
+      "count_top100": 0,
+      "p4_sum_top1000": 19.32
+    },
+    {
+      "species_a": 1,
+      "species_b": 7,
+      "species_a_name": "Geography/Environmental science",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 1,
+      "count_top100": 0,
+      "p4_sum_top1000": 3.57
+    },
+    {
+      "species_a": 3,
+      "species_b": 7,
+      "species_a_name": "Psychology/Business",
+      "species_b_name": "Cell biology/Anatomy",
+      "count_top1000": 1,
+      "count_top100": 0,
+      "p4_sum_top1000": 3.61
+    }
+  ]
+}
