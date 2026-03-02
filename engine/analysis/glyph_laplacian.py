@@ -33,6 +33,8 @@ import numpy as np
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.join(BASE, "..", "..")
+if REPO not in sys.path:
+    sys.path.insert(0, REPO)
 BT_DIR = os.path.join(REPO, "blind_test_v2")
 N = 65026
 
@@ -510,13 +512,19 @@ def main():
     print(f"\n  Saved: {pred_path}")
 
     # ══════════════════════════════════════════════
-    # [7/7] BLIND TEST COMPARISON
+    # [7/7] BLIND TEST COMPARISON (HONEST VALIDATION)
     # ══════════════════════════════════════════════
-    print(f"\n[7/7] Blind test: spectral vs P4...")
+    print(f"\n[7/7] Blind test: spectral vs P4 (validation honnête)...")
+
+    from engine.analysis.validation_honest import (
+        degree_matched_random, rank_in_fullspace,
+        honest_metrics, recall_fullspace, print_honest_report,
+    )
 
     pred_scores = np.array([p[0] for p in predictions])  # sorted descending
 
-    bt_results = []
+    # --- Track B: rang dans les prédictions zero-cooc (comme avant) ---
+    bt_results_zerocooc = []
     for bt in breakthroughs:
         i, j = bt["concept_a_idx"], bt["concept_b_idx"]
         score = float(U[i] @ U[j])
@@ -525,7 +533,7 @@ def main():
         if rank > len(predictions):
             rank = len(predictions) + 1
 
-        bt_results.append({
+        bt_results_zerocooc.append({
             "name": bt["name"], "year": bt["year"],
             "concept_a": bt["concept_a_name"], "concept_b": bt["concept_b_name"],
             "spectral_score": score, "rank": rank,
@@ -533,91 +541,91 @@ def main():
             "in_top_10000": rank <= 10000,
         })
 
-    n_gt = len(bt_results)
-    recall_100 = sum(1 for r in bt_results if r["in_top_100"]) / n_gt
-    recall_1000 = sum(1 for r in bt_results if r["in_top_1000"]) / n_gt
-    recall_10000 = sum(1 for r in bt_results if r["in_top_10000"]) / n_gt
-    median_rank = float(np.median([r["rank"] for r in bt_results]))
+    n_gt = len(bt_results_zerocooc)
+    recall_100_filtered = sum(1 for r in bt_results_zerocooc if r["in_top_100"]) / n_gt
+    recall_1000_filtered = sum(1 for r in bt_results_zerocooc if r["in_top_1000"]) / n_gt
+    recall_10000_filtered = sum(1 for r in bt_results_zerocooc if r["in_top_10000"]) / n_gt
+    median_rank = float(np.median([r["rank"] for r in bt_results_zerocooc]))
 
-    # Mann-Whitney U: GT scores vs random pairs
-    rng = np.random.RandomState(42)
-    random_scores = []
-    for _ in range(2000):
-        ri, rj = rng.randint(0, N), rng.randint(0, N)
-        while ri == rj:
-            rj = rng.randint(0, N)
-        random_scores.append(float(U[ri] @ U[rj]))
-    random_scores = np.array(random_scores)
+    # --- BIAIS 1 FIX: Cohen's d apparié par degré ---
+    print(f"\n  [Biais 1] Tirage random apparié par degré...")
+    matched_random, naive_random = degree_matched_random(
+        U, degrees, breakthroughs, n_per_bt=100, seed=42)
 
-    U_stat, p_value = mannwhitneyu(gt_scores, random_scores, alternative='greater')
-    n1, n2 = len(gt_scores), len(random_scores)
-    effect_r = 1 - 2 * U_stat / (n1 * n2)
-    pooled_std = np.sqrt(
-        (np.var(gt_scores) * (n1 - 1) + np.var(random_scores) * (n2 - 1))
-        / (n1 + n2 - 2)
-    ) if (n1 + n2 > 2) else 1
-    cohens_d = (np.mean(gt_scores) - np.mean(random_scores)) / pooled_std \
-        if pooled_std > 0 else 0
+    metrics = honest_metrics(gt_scores, matched_random, naive_random)
 
-    # Display
-    print(f"\n{'='*80}")
-    print("GLYPH LAPLACIAN — BLIND TEST RESULTS")
-    print(f"{'='*80}")
-    print(f"\n  SPECTRAL (K={K} glyphs)")
-    print(f"  {'─'*50}")
-    print(f"  Recall@100:    {recall_100:.2%} ({int(recall_100 * n_gt)}/{n_gt})")
-    print(f"  Recall@1,000:  {recall_1000:.2%} ({int(recall_1000 * n_gt)}/{n_gt})")
-    print(f"  Recall@10,000: {recall_10000:.2%} ({int(recall_10000 * n_gt)}/{n_gt})")
+    # --- BIAIS 2+3 FIX: Rang dans l'espace complet ---
+    print(f"\n  [Biais 2+3] Estimation rang espace complet (200K paires)...")
+    fullspace_results = rank_in_fullspace(
+        U, breakthroughs, species_map, n_sample=200000, seed=42)
+
+    fs_recall = recall_fullspace(
+        breakthroughs, fullspace_results,
+        thresholds_pct=(0.001, 0.01, 0.1, 1.0))
+
+    # --- Affichage du rapport honnête ---
+    print_honest_report(metrics, fs_recall, fullspace_results, bt_results_zerocooc)
+
+    # --- Aussi afficher le recall filtré (pour comparaison) ---
+    print(f"\n  RECALL FILTRÉ (top {TOP_ACTIVE} concepts × inter-espèces × level≥2 × zero-cooc)")
+    print(f"  {'─'*55}")
+    print(f"  Recall@100:    {recall_100_filtered:.2%} ({int(recall_100_filtered * n_gt)}/{n_gt})")
+    print(f"  Recall@1,000:  {recall_1000_filtered:.2%} ({int(recall_1000_filtered * n_gt)}/{n_gt})")
+    print(f"  Recall@10,000: {recall_10000_filtered:.2%} ({int(recall_10000_filtered * n_gt)}/{n_gt})")
     print(f"  Median rank:   {median_rank:,.0f}")
-    print(f"  Mann-Whitney p = {p_value:.2e}")
-    print(f"  Effect size r  = {effect_r:.4f}")
-    print(f"  Cohen's d      = {cohens_d:.4f}")
+    print(f"  Note: espace de recherche pré-filtré, PAS l'espace complet de 82M paires")
 
     print(f"\n  P4 BASELINE (blind_test_v2)")
     print(f"  {'─'*50}")
     print(f"  Mann-Whitney p = 3.4e-12")
     print(f"  Cohen's d      = 0.44")
 
-    print(f"\n  {'Breakthrough':<30s} {'Score':>10s} {'Rank':>8s} {'Top10K':>7s}")
-    print(f"  {'─'*30} {'─'*10} {'─'*8} {'─'*7}")
-    for r in sorted(bt_results, key=lambda x: x["rank"]):
+    print(f"\n  {'Breakthrough':<30s} {'Score':>10s} {'Rank(0c)':>9s} {'Pctl':>7s} {'Top10K':>7s}")
+    print(f"  {'─'*30} {'─'*10} {'─'*9} {'─'*7} {'─'*7}")
+    for r, fs in zip(
+        sorted(bt_results_zerocooc, key=lambda x: x["rank"]),
+        sorted(fullspace_results, key=lambda x: -x["percentile"]),
+    ):
         rank_str = f"{r['rank']:,}" if r['rank'] <= TOP_K else f">{TOP_K//1000}K"
         top_str = "YES" if r["in_top_10000"] else "no"
-        print(f"  {r['name']:<30s} {r['spectral_score']:10.6f} {rank_str:>8s} {top_str:>7s}")
+        pctl_str = f"{fs['percentile']:.1f}%"
+        print(f"  {r['name']:<30s} {r['spectral_score']:10.6f} {rank_str:>9s} {pctl_str:>7s} {top_str:>7s}")
 
-    # Save
+    # Save (version honnête)
     bt_path = os.path.join(REPO, "data", "scan", "spectral_blind_test.json")
     with open(bt_path, "w", encoding="utf-8") as f:
         json.dump({
-            "meta": {"method": "glyph_laplacian", "k": K, "cutoff": 2015,
+            "meta": {"method": "glyph_laplacian_honest", "k": K, "cutoff": 2015,
+                     "version": 2,
+                     "fixes": ["degree_matched_random", "two_track_ranking", "fullspace_recall"],
                      "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")},
-            "spectral": {
-                "recall_100": round(recall_100, 4),
-                "recall_1000": round(recall_1000, 4),
-                "recall_10000": round(recall_10000, 4),
+            "metrics_honest": metrics,
+            "recall_filtered": {
+                "recall_100": round(recall_100_filtered, 4),
+                "recall_1000": round(recall_1000_filtered, 4),
+                "recall_10000": round(recall_10000_filtered, 4),
                 "median_rank": median_rank,
-                "mann_whitney_U": float(U_stat),
-                "p_value": float(p_value),
-                "effect_size_r": round(float(effect_r), 4),
-                "cohens_d": round(float(cohens_d), 4),
-                "gt_score_mean": round(float(np.mean(gt_scores)), 8),
-                "random_score_mean": round(float(np.mean(random_scores)), 8),
+                "note": f"Top {TOP_ACTIVE} concepts, inter-species, level>=2, zero-cooc",
             },
+            "recall_fullspace": fs_recall,
+            "fullspace_ranking": fullspace_results,
             "p4_baseline": {"p_value": 3.4e-12, "cohens_d": 0.44},
-            "per_breakthrough": bt_results,
+            "per_breakthrough_zerocooc": bt_results_zerocooc,
         }, f, indent=2, ensure_ascii=False, default=_json_default)
     print(f"\n  Saved: {bt_path}")
 
     # SUMMARY
     total_time = time.time() - t0
+    d_honest = metrics.get("matched", {}).get("cohens_d", "?")
+    d_naive = metrics.get("naive", {}).get("cohens_d", "?")
     print(f"\n{'='*80}")
     print(f"GLYPH LAPLACIAN COMPLETE — {total_time:.0f}s ({total_time/60:.1f} min)")
     print(f"{'='*80}")
     print(f"  {K} glyphs extracted")
     print(f"  {len(predictions):,} spectral predictions")
-    print(f"  Blind test: recall@100={recall_100:.0%}, "
-          f"recall@1K={recall_1000:.0%}, recall@10K={recall_10000:.0%}")
-    print(f"  p-value: {p_value:.2e} (P4: 3.4e-12)")
+    print(f"  Cohen's d: {d_naive} (naïf) → {d_honest} (honnête)")
+    print(f"  Recall@100 filtré: {recall_100_filtered:.0%}")
+    print(f"  p-value matched: {metrics.get('matched', {}).get('p_value', '?')}")
 
 
 if __name__ == "__main__":

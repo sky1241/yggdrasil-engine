@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 1 mars 2026 (session 11), Sky×Claude (Opus 4.6)
+> Dernière màj: 2 mars 2026 (session 12), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -59,6 +59,21 @@ Remonter à l'an 1000+. Rejouer l'histoire de la science frame par frame.
 - [x] Spectral clustering K=9 sur données 2015 ONLY (pas de look-ahead)
 - [x] **Mann-Whitney p = 3.4e-12**, Cohen's d = 0.44
 - [x] Dossier: `blind_test_v2/` (7 étapes + FINAL_REPORT_V2.json)
+
+### Glyph Laplacian S-2 (✅ COMPLET — session 12, 2 mars 2026)
+- [x] Spectral embedding: 64 eigenvectors (glyphes) du laplacien normalisé
+- [x] Score(i,j) = Σ_k √|λ_k| · v_k(i) · v_k(j), cutoff 2015
+- [x] 3,348 prédictions spectrales zero-cooc (inter-espèces, level≥2)
+- [x] 64 glyphes nommés: `data/scan/glyphs.json`
+- [x] **Validation honnête** (3 biais corrigés):
+  - Biais 1: Cohen's d apparié par décile de degré → **d=5.76** (vs 8.98 naïf, inflation 1.6×)
+  - Biais 2: Rang dans l'espace complet (200K paires inter-espèces)
+  - Biais 3: Recall plein espace: **30% top 0.001%**, **70% top 0.1%**, **95% top 1%**
+  - p-value honnête = **7.0e-11** (ultra-significatif)
+- [x] 19/20 percées dans le top 1% de 82M paires (seul outlier: Topological insulators)
+- [x] Module: `engine/analysis/validation_honest.py` (réutilisable)
+- [x] Script: `engine/analysis/glyph_laplacian.py` (631 lignes)
+- [x] Résultats: `data/scan/spectral_blind_test.json` (version 2, honnête)
 
 ### Predictions 2025 (✅ COMPLET — session 11, 1 mars 2026, commit `b07d891`)
 - [x] Scan complet sans cutoff: 348M papers, 108M paires, 568K périodes
@@ -215,7 +230,7 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 #### Prochaine étape
 - [x] Film chronologique FAIT: 1,534 frames (an 1000→2024), 65,021 births
 - [ ] Calibrer l'évolution sur la réalité historique (Gutenberg 1440, Rév. scientifique 1600, Lumières 1750...)
-- [ ] Glyph Laplacian: décomposer formules S0 → glyphes S-2, cutoff 2015
+- [x] Glyph Laplacian: 64 glyphes S-2, cutoff 2015, d=5.76 (honnête), p=7e-11
 
 ## V4 — LE GRIMPEUR (VISION — après V3)
 Le sommet de chaque escalier = un point de vue.
@@ -248,15 +263,41 @@ L'AI grimpe avec le bon sac à dos.
 - [x] Test semi-aveugle V1 2015→2025: p=0.00002, recall@100=50%, r=0.90
 - Dossier: blind_test/
 
-## TEST V2 (✅ FAIT — session 11, 1 mars 2026)
-- [x] Blind test V2: 65K concepts, cutoff 2015, 82.7M paires scorées
-- [x] Mann-Whitney p=3.4e-12, Cohen's d=0.44
+## TEST V2 (✅ FAIT — session 11-12, 1-2 mars 2026)
+- [x] Blind test V2 (P4): 65K concepts, cutoff 2015, 82.7M paires — p=3.4e-12, d=0.44
+- [x] Blind test spectral (Glyph Laplacian): 64 eigenvectors, validation honnête
+  - Cohen's d honnête = 5.76 (apparié par degré), p = 7.0e-11
+  - Recall@100 filtré = 70%, Recall top 0.1% espace complet = 70%
+  - 19/20 percées dans le top 1% des 82M paires
 - [x] Espèces K=9 sur données 2015 ONLY (pas de look-ahead)
-- Dossier: blind_test_v2/
+- Dossiers: `blind_test_v2/` + `data/scan/spectral_blind_test.json`
+
+## SOURCES ANNEXES — arXiv + PMC (EN COURS — session 12, 2 mars 2026)
+
+### arXiv Source Tars (téléchargement archive.org)
+- [x] Découvert 2,046 tars gratuits sur archive.org (2016-2020, ~1 TB)
+- [x] Installé aria2c (5 downloads parallèles × 4 connexions), 5-8 MiB/s
+- [ ] **Téléchargement EN COURS**: 1,350/2,046 tars (618 GB/~1 TB), destination `E:/arxiv/src/`
+- [x] Inventaire: `data/scan/arxiv_tree.json` (1,235 tars indexés)
+- Script: `engine/mining/build_arxiv_tree.py`
+
+### arXiv↔OpenAlex Mapper (EN COURS — session 12, 2 mars 2026)
+- [x] Scanner les 692 GB d'OpenAlex pour extraire les papers avec arXiv ID
+- [ ] **Scan EN COURS**: 32/309 chunks (~10%), PID 21524
+- [ ] Auto-merge quand terminé → `data/scan/arxiv_openalex_map.json.gz`
+- Chunks: `data/scan/arxiv_map_chunks/chunk_NNN/`
+- Script: `engine/mining/arxiv_openalex_mapper.py`
+
+### PMC Glyph Scanner (✅ COMPLET — session 12, 2 mars 2026)
+- [x] 39/39 chunks scannés, 72,502 papers avec glyphes
+- [x] Résultats: `data/scan/pmc_glyph_chunks/`
+- [x] Tree: `data/scan/pmc_glyph_tree.json`
+- Script: `engine/glyphs/pmc_scanner.py`
 
 ## NOTES
 - Winter tree scan V2 COMPLET (581/581 chunks, 692 GB, 348M papers). Le goulot est passé.
 - V3 (formules météorites) réutilise les 1,534 frames V2 → quasi gratuit.
 - Predictions 2025 produites sans cutoff. Blind test V2 avec cutoff 2015.
-- Prochaine étape majeure: Glyph Laplacian (S0→S-2) ou V3 météorites sur frames.
+- Glyph Laplacian FAIT avec validation honnête: d=5.76, p=7e-11, recall top 0.1%=70%.
+- Prochaine étape majeure: V3 météorites sur frames, ou compléter arXiv mapper.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.

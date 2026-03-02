@@ -182,7 +182,7 @@ def scan_chunk(tree: dict, unicode_to_id: dict) -> bool:
                             papers_skipped += 1
                             continue
                         xml_bytes = f.read()
-                    except (tarfile.TarError, IOError):
+                    except (tarfile.TarError, IOError, EOFError, OSError):
                         papers_skipped += 1
                         continue
 
@@ -226,7 +226,7 @@ def scan_chunk(tree: dict, unicode_to_id: dict) -> bool:
                         print(f"    {papers_total:,} papers, {papers_matched:,} matched, "
                               f"{papers_cutoff:,} cutoff, {rate:.0f}/s")
 
-        except (tarfile.TarError, IOError) as e:
+        except (tarfile.TarError, IOError, EOFError, OSError) as e:
             print(f"    ERROR reading {tarname}: {e}")
             continue
 

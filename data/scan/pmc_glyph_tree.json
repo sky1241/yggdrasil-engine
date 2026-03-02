@@ -13,10 +13,10 @@
  },
  "progress": {
   "chunks_total": 39,
-  "chunks_completed": 4,
-  "papers_scanned": 476868,
-  "papers_with_glyphs": 26442,
-  "pairs_counted": 2305562
+  "chunks_completed": 39,
+  "papers_scanned": 5093837,
+  "papers_with_glyphs": 72502,
+  "pairs_counted": 6312400
  },
  "chunks": [
   {
@@ -57,7 +57,7 @@
     "oa_comm\\oa_comm_xml.PMC004xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 7298566977,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 6,
@@ -65,7 +65,7 @@
     "oa_comm\\oa_comm_xml.PMC005xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 5667319643,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 7,
@@ -73,7 +73,7 @@
     "oa_comm\\oa_comm_xml.PMC006xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 9446451328,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 8,
@@ -81,7 +81,7 @@
     "oa_comm\\oa_comm_xml.PMC007xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 10355004763,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 9,
@@ -89,7 +89,7 @@
     "oa_comm\\oa_comm_xml.PMC008xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 688863642,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 10,
@@ -97,7 +97,7 @@
     "oa_comm\\oa_comm_xml.PMC009xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 3067431642,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 11,
@@ -105,7 +105,7 @@
     "oa_comm\\oa_comm_xml.PMC010xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 589527642,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 12,
@@ -113,7 +113,7 @@
     "oa_comm\\oa_comm_xml.PMC011xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 12927749219,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 13,
@@ -121,7 +121,7 @@
     "oa_comm\\oa_comm_xml.PMC012xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 899343642,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 14,
@@ -129,7 +129,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC000xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 2452901,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 15,
@@ -137,7 +137,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC001xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 29937509,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 16,
@@ -145,7 +145,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC002xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 681576638,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 17,
@@ -153,7 +153,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC003xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 1101877248,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 18,
@@ -161,7 +161,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC004xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 2033548543,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 19,
@@ -169,7 +169,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC005xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 2325194308,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 20,
@@ -177,7 +177,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC006xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 2754689709,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 21,
@@ -185,7 +185,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC007xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 2025535644,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 22,
@@ -193,7 +193,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC008xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 3096439508,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 23,
@@ -201,7 +201,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC009xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 3417041316,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 24,
@@ -209,7 +209,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC010xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 112751644,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 25,
@@ -217,7 +217,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC011xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 5460975643,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 26,
@@ -225,7 +225,7 @@
     "oa_noncomm\\oa_noncomm_xml.PMC012xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 4971455643,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 27,
@@ -233,7 +233,7 @@
     "oa_other\\oa_other_xml.PMC000xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 103372922,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 28,
@@ -241,7 +241,7 @@
     "oa_other\\oa_other_xml.PMC001xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 82830803,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 29,
@@ -249,7 +249,7 @@
     "oa_other\\oa_other_xml.PMC002xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 333846514,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 30,
@@ -257,7 +257,7 @@
     "oa_other\\oa_other_xml.PMC003xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 691648587,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 31,
@@ -265,7 +265,7 @@
     "oa_other\\oa_other_xml.PMC004xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 561302618,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 32,
@@ -273,7 +273,7 @@
     "oa_other\\oa_other_xml.PMC005xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 310454079,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 33,
@@ -281,7 +281,7 @@
     "oa_other\\oa_other_xml.PMC006xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 352876560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 34,
@@ -289,7 +289,7 @@
     "oa_other\\oa_other_xml.PMC007xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 1524252605,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 35,
@@ -297,7 +297,7 @@
     "oa_other\\oa_other_xml.PMC008xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 834350327,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 36,
@@ -305,7 +305,7 @@
     "oa_other\\oa_other_xml.PMC009xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 764306943,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 37,
@@ -313,7 +313,7 @@
     "oa_other\\oa_other_xml.PMC010xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 219448466,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 38,
@@ -321,7 +321,7 @@
     "oa_other\\oa_other_xml.PMC011xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 27740387,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 39,
@@ -329,7 +329,7 @@
     "oa_other\\oa_other_xml.PMC012xxxxxx.baseline.2026-01-23.tar.gz"
    ],
    "bytes": 16020906,
-   "status": "pending"
+   "status": "complete"
   }
  ]
 }

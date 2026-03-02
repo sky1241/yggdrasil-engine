@@ -1,27 +1,240 @@
 {
   "meta": {
-    "method": "glyph_laplacian",
+    "method": "glyph_laplacian_honest",
     "k": 64,
     "cutoff": 2015,
-    "timestamp": "2026-03-02 10:33:44"
+    "version": 2,
+    "fixes": [
+      "degree_matched_random",
+      "two_track_ranking",
+      "fullspace_recall"
+    ],
+    "timestamp": "2026-03-02 20:57:05"
   },
-  "spectral": {
+  "metrics_honest": {
+    "naive": {
+      "cohens_d": 8.9824,
+      "mann_whitney_U": 37873.0,
+      "p_value": 2.870505634963199e-12,
+      "effect_size_r": -0.8937,
+      "gt_mean": 0.00122485,
+      "random_mean": 1.052e-05,
+      "random_std": 4.525e-05,
+      "n_gt": 20,
+      "n_random": 2000
+    },
+    "matched": {
+      "cohens_d": 5.758,
+      "mann_whitney_U": 36652.0,
+      "p_value": 7.017850924035473e-11,
+      "effect_size_r": -0.8326,
+      "gt_mean": 0.00122485,
+      "random_mean": 6.418e-05,
+      "random_std": 0.00015689,
+      "n_gt": 20,
+      "n_random": 2000
+    }
+  },
+  "recall_filtered": {
     "recall_100": 0.7,
     "recall_1000": 0.85,
     "recall_10000": 1.0,
     "median_rank": 8.0,
-    "mann_whitney_U": 37887.0,
-    "p_value": 2.763722074505138e-12,
-    "effect_size_r": -0.8943,
-    "cohens_d": 8.7819,
-    "gt_score_mean": 0.00122485,
-    "random_score_mean": 9.96e-06
+    "note": "Top 5000 concepts, inter-species, level>=2, zero-cooc"
   },
+  "recall_fullspace": {
+    "top_0.001%": {
+      "recall": 0.3,
+      "n_in": 6,
+      "n_total": 20,
+      "equivalent_pairs": "top 0.001% of ~82M pairs = ~820"
+    },
+    "top_0.01%": {
+      "recall": 0.45,
+      "n_in": 9,
+      "n_total": 20,
+      "equivalent_pairs": "top 0.01% of ~82M pairs = ~8,200"
+    },
+    "top_0.1%": {
+      "recall": 0.7,
+      "n_in": 14,
+      "n_total": 20,
+      "equivalent_pairs": "top 0.1% of ~82M pairs = ~82,000"
+    },
+    "top_1.0%": {
+      "recall": 0.95,
+      "n_in": 19,
+      "n_total": 20,
+      "equivalent_pairs": "top 1.0% of ~82M pairs = ~820,000"
+    }
+  },
+  "fullspace_ranking": [
+    {
+      "name": "AlphaFold",
+      "score": 0.0009271349309418951,
+      "percentile": 99.9955,
+      "top_fraction": 4.5e-05,
+      "n_better_in_sample": 9,
+      "n_sample": 200000
+    },
+    {
+      "name": "mRNA vaccines",
+      "score": 0.0006628365531350386,
+      "percentile": 99.9865,
+      "top_fraction": 0.000135,
+      "n_better_in_sample": 27,
+      "n_sample": 200000
+    },
+    {
+      "name": "CRISPR base editing",
+      "score": 0.00034367693689544166,
+      "percentile": 99.9105,
+      "top_fraction": 0.000895,
+      "n_better_in_sample": 179,
+      "n_sample": 200000
+    },
+    {
+      "name": "Gravitational waves",
+      "score": 0.0011887861425469923,
+      "percentile": 99.9985,
+      "top_fraction": 1.5e-05,
+      "n_better_in_sample": 3,
+      "n_sample": 200000
+    },
+    {
+      "name": "AlphaGo",
+      "score": 0.004573018734687259,
+      "percentile": 100.0,
+      "top_fraction": 0.0,
+      "n_better_in_sample": 0,
+      "n_sample": 200000
+    },
+    {
+      "name": "Transformers/GPT",
+      "score": 0.0036957760310808996,
+      "percentile": 100.0,
+      "top_fraction": 0.0,
+      "n_better_in_sample": 0,
+      "n_sample": 200000
+    },
+    {
+      "name": "CAR-T therapy",
+      "score": 0.0031142835564162558,
+      "percentile": 100.0,
+      "top_fraction": 0.0,
+      "n_better_in_sample": 0,
+      "n_sample": 200000
+    },
+    {
+      "name": "Cryo-EM",
+      "score": 0.00032125224074691633,
+      "percentile": 99.895,
+      "top_fraction": 0.00105,
+      "n_better_in_sample": 210,
+      "n_sample": 200000
+    },
+    {
+      "name": "Topological insulators",
+      "score": -0.0002044724702135077,
+      "percentile": 0.0115,
+      "top_fraction": 0.999885,
+      "n_better_in_sample": 199977,
+      "n_sample": 200000
+    },
+    {
+      "name": "Microbiome therapeutics",
+      "score": 0.0016359140657656946,
+      "percentile": 99.9995,
+      "top_fraction": 5e-06,
+      "n_better_in_sample": 1,
+      "n_sample": 200000
+    },
+    {
+      "name": "Quantum supremacy",
+      "score": 0.0006877772016125497,
+      "percentile": 99.988,
+      "top_fraction": 0.00012,
+      "n_better_in_sample": 24,
+      "n_sample": 200000
+    },
+    {
+      "name": "GAN explosion",
+      "score": 0.0020960133407532623,
+      "percentile": 100.0,
+      "top_fraction": 0.0,
+      "n_better_in_sample": 0,
+      "n_sample": 200000
+    },
+    {
+      "name": "Perovskite solar cells",
+      "score": 0.0003815235975174236,
+      "percentile": 99.93,
+      "top_fraction": 0.0007,
+      "n_better_in_sample": 140,
+      "n_sample": 200000
+    },
+    {
+      "name": "Organoids",
+      "score": 0.0007041587942886521,
+      "percentile": 99.9885,
+      "top_fraction": 0.000115,
+      "n_better_in_sample": 23,
+      "n_sample": 200000
+    },
+    {
+      "name": "Single-cell RNA-seq",
+      "score": 0.0002536865616204661,
+      "percentile": 99.8255,
+      "top_fraction": 0.001745,
+      "n_better_in_sample": 349,
+      "n_sample": 200000
+    },
+    {
+      "name": "Neuromorphic computing",
+      "score": 0.00011474500904961589,
+      "percentile": 99.182,
+      "top_fraction": 0.00818,
+      "n_better_in_sample": 1636,
+      "n_sample": 200000
+    },
+    {
+      "name": "Federated learning",
+      "score": 0.00023371286058366424,
+      "percentile": 99.7935,
+      "top_fraction": 0.002065,
+      "n_better_in_sample": 413,
+      "n_sample": 200000
+    },
+    {
+      "name": "Graph neural networks",
+      "score": 0.00011833030554322211,
+      "percentile": 99.2225,
+      "top_fraction": 0.007775,
+      "n_better_in_sample": 1555,
+      "n_sample": 200000
+    },
+    {
+      "name": "Optogenetics maturation",
+      "score": 0.0007550941506866293,
+      "percentile": 99.991,
+      "top_fraction": 9e-05,
+      "n_better_in_sample": 18,
+      "n_sample": 200000
+    },
+    {
+      "name": "Liquid biopsy",
+      "score": 0.0028937617476734135,
+      "percentile": 100.0,
+      "top_fraction": 0.0,
+      "n_better_in_sample": 0,
+      "n_sample": 200000
+    }
+  ],
   "p4_baseline": {
     "p_value": 3.4e-12,
     "cohens_d": 0.44
   },
-  "per_breakthrough": [
+  "per_breakthrough_zerocooc": [
     {
       "name": "AlphaFold",
       "year": "2018-2020",

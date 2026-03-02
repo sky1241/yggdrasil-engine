@@ -1,0 +1,3896 @@
+{
+  "version": 1,
+  "type": "arxiv_tree",
+  "created": "2026-03-02 18:23:18",
+  "description": "Comprehensive arXiv source tar inventory with glyph scan cross-reference",
+  "metadata": {
+    "date": "2026-03-02",
+    "total_tars": 1235,
+    "total_size_bytes": 561170838411,
+    "total_size_gb": 522.63,
+    "period_range": "1992-01 to 2016-03",
+    "months_covered": 290,
+    "months_expected": 291,
+    "months_missing": 1,
+    "avg_tars_per_month": 4.3,
+    "avg_size_per_month_gb": 1.8
+  },
+  "download": {
+    "source": "s3://arxiv/src/",
+    "tool": "aria2c",
+    "local_dir": "E:\\arxiv\\src",
+    "first_file": "arXiv_src_0001_001.tar",
+    "last_file": "arXiv_src_9912_001.tar",
+    "period_range": "1992-01 to 2016-03",
+    "total_tars": 1235,
+    "total_size_gb": 522.63,
+    "status": "partial",
+    "note": "Latest file is 2016-03, current date is 2026-03-02"
+  },
+  "glyph_scan": {
+    "status": "complete",
+    "chunks_done": 420,
+    "total_chunks": 420,
+    "papers_scanned": 978919,
+    "papers_with_glyphs": 950237,
+    "pairs_counted": 610096820,
+    "glyph_count": 1337,
+    "cutoff": "2015-12",
+    "from_chunk_metas": {
+      "papers_total": 978919,
+      "papers_matched": 950237,
+      "pairs_counted": 610096820,
+      "unique_pairs_sum": 8599584,
+      "total_scan_time_sec": 15801.0,
+      "total_scan_time_hours": 4.39,
+      "periods_covered": 279,
+      "avg_papers_per_sec": 62.0
+    }
+  },
+  "glyph_coverage": {
+    "months_with_glyph_data": 279,
+    "months_without_glyph_data": 11,
+    "coverage_pct": 96.2
+  },
+  "years": {
+    "1992": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 70277120,
+      "glyph_scanned_months": 12,
+      "size_gb": 0.07
+    },
+    "1993": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 211517440,
+      "glyph_scanned_months": 12,
+      "size_gb": 0.2
+    },
+    "1994": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 425635840,
+      "glyph_scanned_months": 12,
+      "size_gb": 0.4
+    },
+    "1995": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 684216320,
+      "glyph_scanned_months": 12,
+      "size_gb": 0.64
+    },
+    "1996": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 932198400,
+      "glyph_scanned_months": 12,
+      "size_gb": 0.87
+    },
+    "1997": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 1384407040,
+      "glyph_scanned_months": 12,
+      "size_gb": 1.29
+    },
+    "1998": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 2012293120,
+      "glyph_scanned_months": 12,
+      "size_gb": 1.87
+    },
+    "1999": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 2483609600,
+      "glyph_scanned_months": 12,
+      "size_gb": 2.31
+    },
+    "2000": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 2955462727,
+      "glyph_scanned_months": 11,
+      "size_gb": 2.75
+    },
+    "2001": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 3540254720,
+      "glyph_scanned_months": 12,
+      "size_gb": 3.3
+    },
+    "2002": {
+      "months": 11,
+      "tars": 11,
+      "size_bytes": 3801362182,
+      "glyph_scanned_months": 10,
+      "size_gb": 3.54
+    },
+    "2003": {
+      "months": 12,
+      "tars": 12,
+      "size_bytes": 4141187035,
+      "glyph_scanned_months": 8,
+      "size_gb": 3.86
+    },
+    "2004": {
+      "months": 12,
+      "tars": 18,
+      "size_bytes": 5740373837,
+      "glyph_scanned_months": 10,
+      "size_gb": 5.35
+    },
+    "2005": {
+      "months": 12,
+      "tars": 24,
+      "size_bytes": 8403527680,
+      "glyph_scanned_months": 12,
+      "size_gb": 7.83
+    },
+    "2006": {
+      "months": 12,
+      "tars": 25,
+      "size_bytes": 10319388672,
+      "glyph_scanned_months": 12,
+      "size_gb": 9.61
+    },
+    "2007": {
+      "months": 12,
+      "tars": 28,
+      "size_bytes": 12613349447,
+      "glyph_scanned_months": 12,
+      "size_gb": 11.75
+    },
+    "2008": {
+      "months": 12,
+      "tars": 42,
+      "size_bytes": 18872035328,
+      "glyph_scanned_months": 12,
+      "size_gb": 17.58
+    },
+    "2009": {
+      "months": 12,
+      "tars": 55,
+      "size_bytes": 26037002240,
+      "glyph_scanned_months": 12,
+      "size_gb": 24.25
+    },
+    "2010": {
+      "months": 12,
+      "tars": 83,
+      "size_bytes": 40005058702,
+      "glyph_scanned_months": 12,
+      "size_gb": 37.26
+    },
+    "2011": {
+      "months": 12,
+      "tars": 99,
+      "size_bytes": 50245546126,
+      "glyph_scanned_months": 12,
+      "size_gb": 46.79
+    },
+    "2012": {
+      "months": 12,
+      "tars": 127,
+      "size_bytes": 64644789914,
+      "glyph_scanned_months": 12,
+      "size_gb": 60.21
+    },
+    "2013": {
+      "months": 12,
+      "tars": 156,
+      "size_bytes": 78338356390,
+      "glyph_scanned_months": 12,
+      "size_gb": 72.96
+    },
+    "2014": {
+      "months": 12,
+      "tars": 175,
+      "size_bytes": 91676137543,
+      "glyph_scanned_months": 12,
+      "size_gb": 85.38
+    },
+    "2015": {
+      "months": 12,
+      "tars": 214,
+      "size_bytes": 110056677159,
+      "glyph_scanned_months": 12,
+      "size_gb": 102.5
+    },
+    "2016": {
+      "months": 3,
+      "tars": 46,
+      "size_bytes": 21576173829,
+      "glyph_scanned_months": 0,
+      "size_gb": 20.09
+    }
+  },
+  "months": {
+    "1992-01": {
+      "tars": 1,
+      "size_bytes": 5376000,
+      "size_mb": 5.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-02": {
+      "tars": 1,
+      "size_bytes": 2682880,
+      "size_mb": 2.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-03": {
+      "tars": 1,
+      "size_bytes": 2140160,
+      "size_mb": 2.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-04": {
+      "tars": 1,
+      "size_bytes": 5406720,
+      "size_mb": 5.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-05": {
+      "tars": 1,
+      "size_bytes": 5109760,
+      "size_mb": 4.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-06": {
+      "tars": 1,
+      "size_bytes": 4669440,
+      "size_mb": 4.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-07": {
+      "tars": 1,
+      "size_bytes": 7065600,
+      "size_mb": 6.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-08": {
+      "tars": 1,
+      "size_bytes": 4648960,
+      "size_mb": 4.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-09": {
+      "tars": 1,
+      "size_bytes": 6727680,
+      "size_mb": 6.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-10": {
+      "tars": 1,
+      "size_bytes": 9103360,
+      "size_mb": 8.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-11": {
+      "tars": 1,
+      "size_bytes": 9185280,
+      "size_mb": 8.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1992-12": {
+      "tars": 1,
+      "size_bytes": 8161280,
+      "size_mb": 7.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-01": {
+      "tars": 1,
+      "size_bytes": 9820160,
+      "size_mb": 9.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-02": {
+      "tars": 1,
+      "size_bytes": 10055680,
+      "size_mb": 9.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-03": {
+      "tars": 1,
+      "size_bytes": 16762880,
+      "size_mb": 16.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-04": {
+      "tars": 1,
+      "size_bytes": 15032320,
+      "size_mb": 14.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-05": {
+      "tars": 1,
+      "size_bytes": 17090560,
+      "size_mb": 16.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-06": {
+      "tars": 1,
+      "size_bytes": 17438720,
+      "size_mb": 16.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-07": {
+      "tars": 1,
+      "size_bytes": 18862080,
+      "size_mb": 18.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-08": {
+      "tars": 1,
+      "size_bytes": 15646720,
+      "size_mb": 14.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-09": {
+      "tars": 1,
+      "size_bytes": 15882240,
+      "size_mb": 15.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-10": {
+      "tars": 1,
+      "size_bytes": 20480000,
+      "size_mb": 19.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-11": {
+      "tars": 1,
+      "size_bytes": 25528320,
+      "size_mb": 24.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1993-12": {
+      "tars": 1,
+      "size_bytes": 28917760,
+      "size_mb": 27.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-01": {
+      "tars": 1,
+      "size_bytes": 25149440,
+      "size_mb": 24.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-02": {
+      "tars": 1,
+      "size_bytes": 22753280,
+      "size_mb": 21.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-03": {
+      "tars": 1,
+      "size_bytes": 29235200,
+      "size_mb": 27.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-04": {
+      "tars": 1,
+      "size_bytes": 28590080,
+      "size_mb": 27.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-05": {
+      "tars": 1,
+      "size_bytes": 33474560,
+      "size_mb": 31.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-06": {
+      "tars": 1,
+      "size_bytes": 36843520,
+      "size_mb": 35.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-07": {
+      "tars": 1,
+      "size_bytes": 37744640,
+      "size_mb": 36.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-08": {
+      "tars": 1,
+      "size_bytes": 31825920,
+      "size_mb": 30.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-09": {
+      "tars": 1,
+      "size_bytes": 42280960,
+      "size_mb": 40.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-10": {
+      "tars": 1,
+      "size_bytes": 40785920,
+      "size_mb": 38.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-11": {
+      "tars": 1,
+      "size_bytes": 48424960,
+      "size_mb": 46.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1994-12": {
+      "tars": 1,
+      "size_bytes": 48527360,
+      "size_mb": 46.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-01": {
+      "tars": 1,
+      "size_bytes": 46510080,
+      "size_mb": 44.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-02": {
+      "tars": 1,
+      "size_bytes": 52264960,
+      "size_mb": 49.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-03": {
+      "tars": 1,
+      "size_bytes": 56176640,
+      "size_mb": 53.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-04": {
+      "tars": 1,
+      "size_bytes": 46581760,
+      "size_mb": 44.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-05": {
+      "tars": 1,
+      "size_bytes": 58890240,
+      "size_mb": 56.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-06": {
+      "tars": 1,
+      "size_bytes": 60375040,
+      "size_mb": 57.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-07": {
+      "tars": 1,
+      "size_bytes": 53667840,
+      "size_mb": 51.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-08": {
+      "tars": 1,
+      "size_bytes": 60928000,
+      "size_mb": 58.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-09": {
+      "tars": 1,
+      "size_bytes": 59975680,
+      "size_mb": 57.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-10": {
+      "tars": 1,
+      "size_bytes": 64450560,
+      "size_mb": 61.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-11": {
+      "tars": 1,
+      "size_bytes": 60907520,
+      "size_mb": 58.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1995-12": {
+      "tars": 1,
+      "size_bytes": 63488000,
+      "size_mb": 60.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-01": {
+      "tars": 1,
+      "size_bytes": 60395520,
+      "size_mb": 57.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-02": {
+      "tars": 1,
+      "size_bytes": 65280000,
+      "size_mb": 62.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-03": {
+      "tars": 1,
+      "size_bytes": 61347840,
+      "size_mb": 58.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-04": {
+      "tars": 1,
+      "size_bytes": 68894720,
+      "size_mb": 65.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-05": {
+      "tars": 1,
+      "size_bytes": 73676800,
+      "size_mb": 70.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-06": {
+      "tars": 1,
+      "size_bytes": 74844160,
+      "size_mb": 71.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-07": {
+      "tars": 1,
+      "size_bytes": 76769280,
+      "size_mb": 73.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-08": {
+      "tars": 1,
+      "size_bytes": 79063040,
+      "size_mb": 75.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-09": {
+      "tars": 1,
+      "size_bytes": 84695040,
+      "size_mb": 80.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-10": {
+      "tars": 1,
+      "size_bytes": 100352000,
+      "size_mb": 95.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-11": {
+      "tars": 1,
+      "size_bytes": 91791360,
+      "size_mb": 87.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1996-12": {
+      "tars": 1,
+      "size_bytes": 95088640,
+      "size_mb": 90.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-01": {
+      "tars": 1,
+      "size_bytes": 81868800,
+      "size_mb": 78.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-02": {
+      "tars": 1,
+      "size_bytes": 94781440,
+      "size_mb": 90.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-03": {
+      "tars": 1,
+      "size_bytes": 77895680,
+      "size_mb": 74.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-04": {
+      "tars": 1,
+      "size_bytes": 102645760,
+      "size_mb": 97.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-05": {
+      "tars": 1,
+      "size_bytes": 109066240,
+      "size_mb": 104.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-06": {
+      "tars": 1,
+      "size_bytes": 118374400,
+      "size_mb": 112.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-07": {
+      "tars": 1,
+      "size_bytes": 137830400,
+      "size_mb": 131.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-08": {
+      "tars": 1,
+      "size_bytes": 108800000,
+      "size_mb": 103.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-09": {
+      "tars": 1,
+      "size_bytes": 136448000,
+      "size_mb": 130.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-10": {
+      "tars": 1,
+      "size_bytes": 143165440,
+      "size_mb": 136.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-11": {
+      "tars": 1,
+      "size_bytes": 131973120,
+      "size_mb": 125.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1997-12": {
+      "tars": 1,
+      "size_bytes": 141557760,
+      "size_mb": 135.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-01": {
+      "tars": 1,
+      "size_bytes": 132085760,
+      "size_mb": 126.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-02": {
+      "tars": 1,
+      "size_bytes": 129832960,
+      "size_mb": 123.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-03": {
+      "tars": 1,
+      "size_bytes": 152924160,
+      "size_mb": 145.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-04": {
+      "tars": 1,
+      "size_bytes": 139612160,
+      "size_mb": 133.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-05": {
+      "tars": 1,
+      "size_bytes": 155985920,
+      "size_mb": 148.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-06": {
+      "tars": 1,
+      "size_bytes": 188241920,
+      "size_mb": 179.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-07": {
+      "tars": 1,
+      "size_bytes": 172103680,
+      "size_mb": 164.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-08": {
+      "tars": 1,
+      "size_bytes": 139601920,
+      "size_mb": 133.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-09": {
+      "tars": 1,
+      "size_bytes": 201861120,
+      "size_mb": 192.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-10": {
+      "tars": 1,
+      "size_bytes": 195225600,
+      "size_mb": 186.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-11": {
+      "tars": 1,
+      "size_bytes": 206274560,
+      "size_mb": 196.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1998-12": {
+      "tars": 1,
+      "size_bytes": 198543360,
+      "size_mb": 189.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-01": {
+      "tars": 1,
+      "size_bytes": 164669440,
+      "size_mb": 157.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-02": {
+      "tars": 1,
+      "size_bytes": 164126720,
+      "size_mb": 156.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-03": {
+      "tars": 1,
+      "size_bytes": 219443200,
+      "size_mb": 209.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-04": {
+      "tars": 1,
+      "size_bytes": 191938560,
+      "size_mb": 183.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-05": {
+      "tars": 1,
+      "size_bytes": 203612160,
+      "size_mb": 194.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-06": {
+      "tars": 1,
+      "size_bytes": 215203840,
+      "size_mb": 205.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-07": {
+      "tars": 1,
+      "size_bytes": 220702720,
+      "size_mb": 210.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-08": {
+      "tars": 1,
+      "size_bytes": 182671360,
+      "size_mb": 174.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-09": {
+      "tars": 1,
+      "size_bytes": 215592960,
+      "size_mb": 205.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-10": {
+      "tars": 1,
+      "size_bytes": 246722560,
+      "size_mb": 235.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-11": {
+      "tars": 1,
+      "size_bytes": 223488000,
+      "size_mb": 213.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "1999-12": {
+      "tars": 1,
+      "size_bytes": 235438080,
+      "size_mb": 224.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-01": {
+      "tars": 1,
+      "size_bytes": 227420160,
+      "size_mb": 216.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-02": {
+      "tars": 1,
+      "size_bytes": 228853760,
+      "size_mb": 218.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-03": {
+      "tars": 1,
+      "size_bytes": 232980480,
+      "size_mb": 222.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-04": {
+      "tars": 1,
+      "size_bytes": 193167360,
+      "size_mb": 184.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-05": {
+      "tars": 1,
+      "size_bytes": 257617920,
+      "size_mb": 245.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-06": {
+      "tars": 1,
+      "size_bytes": 244418560,
+      "size_mb": 233.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-07": {
+      "tars": 1,
+      "size_bytes": 247439360,
+      "size_mb": 236.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-08": {
+      "tars": 1,
+      "size_bytes": 263796807,
+      "size_mb": 251.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2000-09": {
+      "tars": 1,
+      "size_bytes": 232693760,
+      "size_mb": 221.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-10": {
+      "tars": 1,
+      "size_bytes": 280913920,
+      "size_mb": 267.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-11": {
+      "tars": 1,
+      "size_bytes": 274083840,
+      "size_mb": 261.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2000-12": {
+      "tars": 1,
+      "size_bytes": 272076800,
+      "size_mb": 259.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-01": {
+      "tars": 1,
+      "size_bytes": 260167680,
+      "size_mb": 248.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-02": {
+      "tars": 1,
+      "size_bytes": 250808320,
+      "size_mb": 239.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-03": {
+      "tars": 1,
+      "size_bytes": 283801600,
+      "size_mb": 270.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-04": {
+      "tars": 1,
+      "size_bytes": 269629440,
+      "size_mb": 257.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-05": {
+      "tars": 1,
+      "size_bytes": 295608320,
+      "size_mb": 281.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-06": {
+      "tars": 1,
+      "size_bytes": 308449280,
+      "size_mb": 294.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-07": {
+      "tars": 1,
+      "size_bytes": 317040640,
+      "size_mb": 302.4,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-08": {
+      "tars": 1,
+      "size_bytes": 272179200,
+      "size_mb": 259.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-09": {
+      "tars": 1,
+      "size_bytes": 289167360,
+      "size_mb": 275.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-10": {
+      "tars": 1,
+      "size_bytes": 357253120,
+      "size_mb": 340.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-11": {
+      "tars": 1,
+      "size_bytes": 348999680,
+      "size_mb": 332.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2001-12": {
+      "tars": 1,
+      "size_bytes": 287150080,
+      "size_mb": 273.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-01": {
+      "tars": 1,
+      "size_bytes": 302008320,
+      "size_mb": 288.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-02": {
+      "tars": 1,
+      "size_bytes": 292055040,
+      "size_mb": 278.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-03": {
+      "tars": 1,
+      "size_bytes": 317675520,
+      "size_mb": 303.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-04": {
+      "tars": 1,
+      "size_bytes": 343787520,
+      "size_mb": 327.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-05": {
+      "tars": 1,
+      "size_bytes": 348129280,
+      "size_mb": 332.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-06": {
+      "tars": 1,
+      "size_bytes": 329031680,
+      "size_mb": 313.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-07": {
+      "tars": 1,
+      "size_bytes": 399790080,
+      "size_mb": 381.3,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-08": {
+      "tars": 1,
+      "size_bytes": 262766342,
+      "size_mb": 250.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2002-10": {
+      "tars": 1,
+      "size_bytes": 406732800,
+      "size_mb": 387.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-11": {
+      "tars": 1,
+      "size_bytes": 417822720,
+      "size_mb": 398.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2002-12": {
+      "tars": 1,
+      "size_bytes": 381562880,
+      "size_mb": 363.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-01": {
+      "tars": 1,
+      "size_bytes": 365690880,
+      "size_mb": 348.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-02": {
+      "tars": 1,
+      "size_bytes": 361195520,
+      "size_mb": 344.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-03": {
+      "tars": 1,
+      "size_bytes": 252475463,
+      "size_mb": 240.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2003-04": {
+      "tars": 1,
+      "size_bytes": 363888640,
+      "size_mb": 347.0,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-05": {
+      "tars": 1,
+      "size_bytes": 410112000,
+      "size_mb": 391.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-06": {
+      "tars": 1,
+      "size_bytes": 253327431,
+      "size_mb": 241.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2003-07": {
+      "tars": 1,
+      "size_bytes": 431165440,
+      "size_mb": 411.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-08": {
+      "tars": 1,
+      "size_bytes": 42432583,
+      "size_mb": 40.5,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2003-09": {
+      "tars": 1,
+      "size_bytes": 472739840,
+      "size_mb": 450.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-10": {
+      "tars": 1,
+      "size_bytes": 262995718,
+      "size_mb": 250.8,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2003-11": {
+      "tars": 1,
+      "size_bytes": 442593280,
+      "size_mb": 422.1,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2003-12": {
+      "tars": 1,
+      "size_bytes": 482570240,
+      "size_mb": 460.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2004-01": {
+      "tars": 1,
+      "size_bytes": 431124480,
+      "size_mb": 411.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2004-02": {
+      "tars": 1,
+      "size_bytes": 465172480,
+      "size_mb": 443.6,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2004-03": {
+      "tars": 1,
+      "size_bytes": 133068871,
+      "size_mb": 126.9,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2004-04": {
+      "tars": 1,
+      "size_bytes": 120323846,
+      "size_mb": 114.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": false
+    },
+    "2004-05": {
+      "tars": 1,
+      "size_bytes": 516608000,
+      "size_mb": 492.7,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2004-06": {
+      "tars": 2,
+      "size_bytes": 575989760,
+      "size_mb": 549.3,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2004-07": {
+      "tars": 2,
+      "size_bytes": 530053120,
+      "size_mb": 505.5,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2004-08": {
+      "tars": 1,
+      "size_bytes": 490956800,
+      "size_mb": 468.2,
+      "chunks": [
+        1
+      ],
+      "glyph_scanned": true
+    },
+    "2004-09": {
+      "tars": 2,
+      "size_bytes": 546795520,
+      "size_mb": 521.5,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2004-10": {
+      "tars": 2,
+      "size_bytes": 611246080,
+      "size_mb": 582.9,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2004-11": {
+      "tars": 2,
+      "size_bytes": 649932800,
+      "size_mb": 619.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2004-12": {
+      "tars": 2,
+      "size_bytes": 669102080,
+      "size_mb": 638.1,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-01": {
+      "tars": 2,
+      "size_bytes": 625971200,
+      "size_mb": 597.0,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-02": {
+      "tars": 2,
+      "size_bytes": 531742720,
+      "size_mb": 507.1,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-03": {
+      "tars": 2,
+      "size_bytes": 692336640,
+      "size_mb": 660.3,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-04": {
+      "tars": 2,
+      "size_bytes": 691046400,
+      "size_mb": 659.0,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-05": {
+      "tars": 2,
+      "size_bytes": 638842880,
+      "size_mb": 609.2,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-06": {
+      "tars": 2,
+      "size_bytes": 706570240,
+      "size_mb": 673.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-07": {
+      "tars": 2,
+      "size_bytes": 677652480,
+      "size_mb": 646.3,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-08": {
+      "tars": 2,
+      "size_bytes": 701675520,
+      "size_mb": 669.2,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-09": {
+      "tars": 2,
+      "size_bytes": 802037760,
+      "size_mb": 764.9,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-10": {
+      "tars": 2,
+      "size_bytes": 878827520,
+      "size_mb": 838.1,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-11": {
+      "tars": 2,
+      "size_bytes": 753070080,
+      "size_mb": 718.2,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2005-12": {
+      "tars": 2,
+      "size_bytes": 703754240,
+      "size_mb": 671.2,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-01": {
+      "tars": 2,
+      "size_bytes": 705095680,
+      "size_mb": 672.4,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-02": {
+      "tars": 2,
+      "size_bytes": 676526080,
+      "size_mb": 645.2,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-03": {
+      "tars": 2,
+      "size_bytes": 837601280,
+      "size_mb": 798.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-04": {
+      "tars": 2,
+      "size_bytes": 643604480,
+      "size_mb": 613.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-05": {
+      "tars": 2,
+      "size_bytes": 777922560,
+      "size_mb": 741.9,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-06": {
+      "tars": 2,
+      "size_bytes": 897044480,
+      "size_mb": 855.5,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-07": {
+      "tars": 2,
+      "size_bytes": 834263040,
+      "size_mb": 795.6,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-08": {
+      "tars": 2,
+      "size_bytes": 836556800,
+      "size_mb": 797.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-09": {
+      "tars": 2,
+      "size_bytes": 897873920,
+      "size_mb": 856.3,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-10": {
+      "tars": 3,
+      "size_bytes": 1056952320,
+      "size_mb": 1008.0,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2006-11": {
+      "tars": 2,
+      "size_bytes": 1288046592,
+      "size_mb": 1228.4,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2006-12": {
+      "tars": 2,
+      "size_bytes": 867901440,
+      "size_mb": 827.7,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-01": {
+      "tars": 2,
+      "size_bytes": 1248247808,
+      "size_mb": 1190.4,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-02": {
+      "tars": 2,
+      "size_bytes": 877465600,
+      "size_mb": 836.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-03": {
+      "tars": 2,
+      "size_bytes": 951429120,
+      "size_mb": 907.4,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-04": {
+      "tars": 2,
+      "size_bytes": 864348160,
+      "size_mb": 824.3,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-05": {
+      "tars": 2,
+      "size_bytes": 914485319,
+      "size_mb": 872.1,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-06": {
+      "tars": 2,
+      "size_bytes": 960624640,
+      "size_mb": 916.1,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-07": {
+      "tars": 2,
+      "size_bytes": 1015879680,
+      "size_mb": 968.8,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-08": {
+      "tars": 2,
+      "size_bytes": 1013585920,
+      "size_mb": 966.6,
+      "chunks": [
+        1,
+        2
+      ],
+      "glyph_scanned": true
+    },
+    "2007-09": {
+      "tars": 3,
+      "size_bytes": 1100810240,
+      "size_mb": 1049.8,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2007-10": {
+      "tars": 3,
+      "size_bytes": 1312081920,
+      "size_mb": 1251.3,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2007-11": {
+      "tars": 3,
+      "size_bytes": 1190359040,
+      "size_mb": 1135.2,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2007-12": {
+      "tars": 3,
+      "size_bytes": 1164032000,
+      "size_mb": 1110.1,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-01": {
+      "tars": 3,
+      "size_bytes": 1526253568,
+      "size_mb": 1455.5,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-02": {
+      "tars": 3,
+      "size_bytes": 1149706240,
+      "size_mb": 1096.4,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-03": {
+      "tars": 3,
+      "size_bytes": 1157969920,
+      "size_mb": 1104.3,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-04": {
+      "tars": 3,
+      "size_bytes": 1223311360,
+      "size_mb": 1166.6,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-05": {
+      "tars": 3,
+      "size_bytes": 1381857280,
+      "size_mb": 1317.8,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-06": {
+      "tars": 3,
+      "size_bytes": 1417728000,
+      "size_mb": 1352.1,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-07": {
+      "tars": 4,
+      "size_bytes": 1856972800,
+      "size_mb": 1770.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2008-08": {
+      "tars": 3,
+      "size_bytes": 1481594880,
+      "size_mb": 1413.0,
+      "chunks": [
+        1,
+        2,
+        3
+      ],
+      "glyph_scanned": true
+    },
+    "2008-09": {
+      "tars": 4,
+      "size_bytes": 1806561280,
+      "size_mb": 1722.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2008-10": {
+      "tars": 5,
+      "size_bytes": 2212034560,
+      "size_mb": 2109.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2008-11": {
+      "tars": 4,
+      "size_bytes": 1847848960,
+      "size_mb": 1762.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2008-12": {
+      "tars": 4,
+      "size_bytes": 1810196480,
+      "size_mb": 1726.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2009-01": {
+      "tars": 4,
+      "size_bytes": 1824440320,
+      "size_mb": 1739.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2009-02": {
+      "tars": 4,
+      "size_bytes": 1765283840,
+      "size_mb": 1683.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2009-03": {
+      "tars": 5,
+      "size_bytes": 2142668800,
+      "size_mb": 2043.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2009-04": {
+      "tars": 4,
+      "size_bytes": 1965629440,
+      "size_mb": 1874.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2009-05": {
+      "tars": 4,
+      "size_bytes": 1986560000,
+      "size_mb": 1894.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2009-06": {
+      "tars": 5,
+      "size_bytes": 2358272000,
+      "size_mb": 2249.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2009-07": {
+      "tars": 5,
+      "size_bytes": 2316113920,
+      "size_mb": 2208.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2009-08": {
+      "tars": 4,
+      "size_bytes": 1958778880,
+      "size_mb": 1868.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "glyph_scanned": true
+    },
+    "2009-09": {
+      "tars": 5,
+      "size_bytes": 2386749440,
+      "size_mb": 2276.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2009-10": {
+      "tars": 5,
+      "size_bytes": 2427791360,
+      "size_mb": 2315.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2009-11": {
+      "tars": 5,
+      "size_bytes": 2425866240,
+      "size_mb": 2313.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2009-12": {
+      "tars": 5,
+      "size_bytes": 2478848000,
+      "size_mb": 2364.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2010-01": {
+      "tars": 5,
+      "size_bytes": 2408683520,
+      "size_mb": 2297.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2010-02": {
+      "tars": 5,
+      "size_bytes": 2234224640,
+      "size_mb": 2130.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "glyph_scanned": true
+    },
+    "2010-03": {
+      "tars": 6,
+      "size_bytes": 2923479040,
+      "size_mb": 2788.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "glyph_scanned": true
+    },
+    "2010-04": {
+      "tars": 6,
+      "size_bytes": 2724321280,
+      "size_mb": 2598.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "glyph_scanned": true
+    },
+    "2010-05": {
+      "tars": 6,
+      "size_bytes": 2989332480,
+      "size_mb": 2850.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "glyph_scanned": true
+    },
+    "2010-06": {
+      "tars": 6,
+      "size_bytes": 3133859840,
+      "size_mb": 2988.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "glyph_scanned": true
+    },
+    "2010-07": {
+      "tars": 6,
+      "size_bytes": 3015004160,
+      "size_mb": 2875.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "glyph_scanned": true
+    },
+    "2010-08": {
+      "tars": 6,
+      "size_bytes": 2489931847,
+      "size_mb": 2374.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "glyph_scanned": true
+    },
+    "2010-09": {
+      "tars": 8,
+      "size_bytes": 3717580800,
+      "size_mb": 3545.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "glyph_scanned": true
+    },
+    "2010-10": {
+      "tars": 15,
+      "size_bytes": 7925452800,
+      "size_mb": 7558.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "glyph_scanned": true
+    },
+    "2010-11": {
+      "tars": 7,
+      "size_bytes": 3190339655,
+      "size_mb": 3042.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2010-12": {
+      "tars": 7,
+      "size_bytes": 3252848640,
+      "size_mb": 3102.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-01": {
+      "tars": 7,
+      "size_bytes": 3839750144,
+      "size_mb": 3661.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-02": {
+      "tars": 7,
+      "size_bytes": 3253432320,
+      "size_mb": 3102.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-03": {
+      "tars": 7,
+      "size_bytes": 3660359680,
+      "size_mb": 3490.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-04": {
+      "tars": 7,
+      "size_bytes": 2741012622,
+      "size_mb": 2614.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-05": {
+      "tars": 7,
+      "size_bytes": 3724584960,
+      "size_mb": 3552.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-06": {
+      "tars": 7,
+      "size_bytes": 3720550400,
+      "size_mb": 3548.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-07": {
+      "tars": 7,
+      "size_bytes": 3677214720,
+      "size_mb": 3506.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "glyph_scanned": true
+    },
+    "2011-08": {
+      "tars": 8,
+      "size_bytes": 3946342400,
+      "size_mb": 3763.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "glyph_scanned": true
+    },
+    "2011-09": {
+      "tars": 9,
+      "size_bytes": 4417925120,
+      "size_mb": 4213.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "glyph_scanned": true
+    },
+    "2011-10": {
+      "tars": 16,
+      "size_bytes": 8335093760,
+      "size_mb": 7949.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "glyph_scanned": true
+    },
+    "2011-11": {
+      "tars": 9,
+      "size_bytes": 4719216640,
+      "size_mb": 4500.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "glyph_scanned": true
+    },
+    "2011-12": {
+      "tars": 8,
+      "size_bytes": 4210063360,
+      "size_mb": 4015.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "glyph_scanned": true
+    },
+    "2012-01": {
+      "tars": 9,
+      "size_bytes": 4393799680,
+      "size_mb": 4190.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "glyph_scanned": true
+    },
+    "2012-02": {
+      "tars": 9,
+      "size_bytes": 4010033223,
+      "size_mb": 3824.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "glyph_scanned": true
+    },
+    "2012-03": {
+      "tars": 9,
+      "size_bytes": 3890923341,
+      "size_mb": 3710.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "glyph_scanned": true
+    },
+    "2012-04": {
+      "tars": 9,
+      "size_bytes": 4550819590,
+      "size_mb": 4340.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "glyph_scanned": true
+    },
+    "2012-05": {
+      "tars": 10,
+      "size_bytes": 4889077760,
+      "size_mb": 4662.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "glyph_scanned": true
+    },
+    "2012-06": {
+      "tars": 10,
+      "size_bytes": 5279488000,
+      "size_mb": 5034.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "glyph_scanned": true
+    },
+    "2012-07": {
+      "tars": 11,
+      "size_bytes": 5382287360,
+      "size_mb": 5132.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "glyph_scanned": true
+    },
+    "2012-08": {
+      "tars": 10,
+      "size_bytes": 5305262080,
+      "size_mb": 5059.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "glyph_scanned": true
+    },
+    "2012-09": {
+      "tars": 10,
+      "size_bytes": 5476290560,
+      "size_mb": 5222.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "glyph_scanned": true
+    },
+    "2012-10": {
+      "tars": 19,
+      "size_bytes": 10653952000,
+      "size_mb": 10160.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "glyph_scanned": true
+    },
+    "2012-11": {
+      "tars": 11,
+      "size_bytes": 5576120320,
+      "size_mb": 5317.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "glyph_scanned": true
+    },
+    "2012-12": {
+      "tars": 10,
+      "size_bytes": 5236736000,
+      "size_mb": 4994.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "glyph_scanned": true
+    },
+    "2013-01": {
+      "tars": 11,
+      "size_bytes": 5726095360,
+      "size_mb": 5460.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "glyph_scanned": true
+    },
+    "2013-02": {
+      "tars": 11,
+      "size_bytes": 4856254464,
+      "size_mb": 4631.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "glyph_scanned": true
+    },
+    "2013-03": {
+      "tars": 12,
+      "size_bytes": 6081863680,
+      "size_mb": 5800.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "glyph_scanned": true
+    },
+    "2013-04": {
+      "tars": 12,
+      "size_bytes": 6226309120,
+      "size_mb": 5937.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "glyph_scanned": true
+    },
+    "2013-05": {
+      "tars": 12,
+      "size_bytes": 6003701760,
+      "size_mb": 5725.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "glyph_scanned": true
+    },
+    "2013-06": {
+      "tars": 12,
+      "size_bytes": 6294312960,
+      "size_mb": 6002.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "glyph_scanned": true
+    },
+    "2013-07": {
+      "tars": 15,
+      "size_bytes": 7009892423,
+      "size_mb": 6685.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "glyph_scanned": true
+    },
+    "2013-08": {
+      "tars": 12,
+      "size_bytes": 6126479360,
+      "size_mb": 5842.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "glyph_scanned": true
+    },
+    "2013-09": {
+      "tars": 13,
+      "size_bytes": 5162779743,
+      "size_mb": 4923.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "glyph_scanned": true
+    },
+    "2013-10": {
+      "tars": 21,
+      "size_bytes": 11863316480,
+      "size_mb": 11313.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "glyph_scanned": true
+    },
+    "2013-11": {
+      "tars": 13,
+      "size_bytes": 6663413760,
+      "size_mb": 6354.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "glyph_scanned": true
+    },
+    "2013-12": {
+      "tars": 12,
+      "size_bytes": 6323937280,
+      "size_mb": 6031.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "glyph_scanned": true
+    },
+    "2014-01": {
+      "tars": 13,
+      "size_bytes": 7013949440,
+      "size_mb": 6689.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "glyph_scanned": true
+    },
+    "2014-02": {
+      "tars": 13,
+      "size_bytes": 6972846080,
+      "size_mb": 6649.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "glyph_scanned": true
+    },
+    "2014-03": {
+      "tars": 14,
+      "size_bytes": 7400263680,
+      "size_mb": 7057.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "glyph_scanned": true
+    },
+    "2014-04": {
+      "tars": 13,
+      "size_bytes": 6794311680,
+      "size_mb": 6479.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "glyph_scanned": true
+    },
+    "2014-05": {
+      "tars": 14,
+      "size_bytes": 7362496583,
+      "size_mb": 7021.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "glyph_scanned": true
+    },
+    "2014-06": {
+      "tars": 14,
+      "size_bytes": 7282022400,
+      "size_mb": 6944.7,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "glyph_scanned": true
+    },
+    "2014-07": {
+      "tars": 16,
+      "size_bytes": 8374108160,
+      "size_mb": 7986.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "glyph_scanned": true
+    },
+    "2014-08": {
+      "tars": 13,
+      "size_bytes": 6913597440,
+      "size_mb": 6593.3,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "glyph_scanned": true
+    },
+    "2014-09": {
+      "tars": 16,
+      "size_bytes": 8276418560,
+      "size_mb": 7893.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "glyph_scanned": true
+    },
+    "2014-10": {
+      "tars": 17,
+      "size_bytes": 8695193600,
+      "size_mb": 8292.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "glyph_scanned": true
+    },
+    "2014-11": {
+      "tars": 15,
+      "size_bytes": 7824005120,
+      "size_mb": 7461.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "glyph_scanned": true
+    },
+    "2014-12": {
+      "tars": 17,
+      "size_bytes": 8766924800,
+      "size_mb": 8360.8,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "glyph_scanned": true
+    },
+    "2015-01": {
+      "tars": 15,
+      "size_bytes": 7911372800,
+      "size_mb": 7544.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "glyph_scanned": true
+    },
+    "2015-02": {
+      "tars": 16,
+      "size_bytes": 8339752960,
+      "size_mb": 7953.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "glyph_scanned": true
+    },
+    "2015-03": {
+      "tars": 18,
+      "size_bytes": 9409914880,
+      "size_mb": 8974.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "glyph_scanned": true
+    },
+    "2015-04": {
+      "tars": 17,
+      "size_bytes": 8807055360,
+      "size_mb": 8399.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "glyph_scanned": true
+    },
+    "2015-05": {
+      "tars": 17,
+      "size_bytes": 8713789440,
+      "size_mb": 8310.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "glyph_scanned": true
+    },
+    "2015-06": {
+      "tars": 18,
+      "size_bytes": 8986191943,
+      "size_mb": 8569.9,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "glyph_scanned": true
+    },
+    "2015-07": {
+      "tars": 18,
+      "size_bytes": 9424599040,
+      "size_mb": 8988.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "glyph_scanned": true
+    },
+    "2015-08": {
+      "tars": 16,
+      "size_bytes": 8109686855,
+      "size_mb": 7734.0,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "glyph_scanned": true
+    },
+    "2015-09": {
+      "tars": 20,
+      "size_bytes": 10353172480,
+      "size_mb": 9873.6,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "glyph_scanned": true
+    },
+    "2015-10": {
+      "tars": 19,
+      "size_bytes": 10013388800,
+      "size_mb": 9549.5,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "glyph_scanned": true
+    },
+    "2015-11": {
+      "tars": 21,
+      "size_bytes": 11221258240,
+      "size_mb": 10701.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "glyph_scanned": true
+    },
+    "2015-12": {
+      "tars": 19,
+      "size_bytes": 8766494361,
+      "size_mb": 8360.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "glyph_scanned": true
+    },
+    "2016-01": {
+      "tars": 17,
+      "size_bytes": 8501907277,
+      "size_mb": 8108.1,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "glyph_scanned": false
+    },
+    "2016-02": {
+      "tars": 14,
+      "size_bytes": 6022149536,
+      "size_mb": 5743.2,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "glyph_scanned": false
+    },
+    "2016-03": {
+      "tars": 15,
+      "size_bytes": 7052117016,
+      "size_mb": 6725.4,
+      "chunks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "glyph_scanned": false
+    }
+  },
+  "gaps": [
+    "2002-09"
+  ],
+  "top_months_by_tars": [
+    {
+      "period": "2013-10",
+      "tars": 21,
+      "size_mb": 11313.7
+    },
+    {
+      "period": "2015-11",
+      "tars": 21,
+      "size_mb": 10701.4
+    },
+    {
+      "period": "2015-09",
+      "tars": 20,
+      "size_mb": 9873.6
+    },
+    {
+      "period": "2012-10",
+      "tars": 19,
+      "size_mb": 10160.4
+    },
+    {
+      "period": "2015-10",
+      "tars": 19,
+      "size_mb": 9549.5
+    },
+    {
+      "period": "2015-12",
+      "tars": 19,
+      "size_mb": 8360.4
+    },
+    {
+      "period": "2015-03",
+      "tars": 18,
+      "size_mb": 8974.0
+    },
+    {
+      "period": "2015-06",
+      "tars": 18,
+      "size_mb": 8569.9
+    },
+    {
+      "period": "2015-07",
+      "tars": 18,
+      "size_mb": 8988.0
+    },
+    {
+      "period": "2014-10",
+      "tars": 17,
+      "size_mb": 8292.4
+    }
+  ],
+  "top_months_by_size": [
+    {
+      "period": "2013-10",
+      "tars": 21,
+      "size_mb": 11313.7
+    },
+    {
+      "period": "2015-11",
+      "tars": 21,
+      "size_mb": 10701.4
+    },
+    {
+      "period": "2012-10",
+      "tars": 19,
+      "size_mb": 10160.4
+    },
+    {
+      "period": "2015-09",
+      "tars": 20,
+      "size_mb": 9873.6
+    },
+    {
+      "period": "2015-10",
+      "tars": 19,
+      "size_mb": 9549.5
+    },
+    {
+      "period": "2015-07",
+      "tars": 18,
+      "size_mb": 8988.0
+    },
+    {
+      "period": "2015-03",
+      "tars": 18,
+      "size_mb": 8974.0
+    },
+    {
+      "period": "2015-06",
+      "tars": 18,
+      "size_mb": 8569.9
+    },
+    {
+      "period": "2015-04",
+      "tars": 17,
+      "size_mb": 8399.1
+    },
+    {
+      "period": "2014-12",
+      "tars": 17,
+      "size_mb": 8360.8
+    }
+  ]
+}
