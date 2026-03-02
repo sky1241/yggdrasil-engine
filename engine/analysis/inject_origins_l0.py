@@ -5,8 +5,8 @@ ORIGINS_FILE = "c:/Users/ludov/Desktop/ygg/yggdrasil-engine/data/scan/origins_to
 
 L0_SOURCES = {
     "Art": {
-        "real_t0": -45500,
-        "real_t0_event": "Sulawesi cave paintings (warty pig, Leang Tedongnge) -- oldest figurative art",
+        "real_t0": -51200,
+        "real_t0_event": "Leang Karampuang narrative cave painting (Sulawesi) -- oldest figurative art, dated to at least 51,200 years ago",
         "real_t0_source": "Brumm A. et al. (2021) Science Advances 7(3):eabd4648, DOI:10.1126/sciadv.abd4648; Aubert M. et al. (2024) Nature 631:105-110, DOI:10.1038/s41586-024-07541-7"
     },
     "Biology": {
@@ -15,8 +15,8 @@ L0_SOURCES = {
         "real_t0_source": "Mayr E. (1982) The Growth of Biological Thought, Harvard UP, Ch.4 p.87; Lennox J.G. (2001) Aristotle's Philosophy of Biology, Cambridge UP"
     },
     "Business": {
-        "real_t0": -3100,
-        "real_t0_event": "Sumerian cuneiform accounting tablets, Uruk IV -- writing invented for business",
+        "real_t0": -3300,
+        "real_t0_event": "Sumerian cuneiform accounting tablets, Uruk IV (~3400-3200 BCE) -- writing invented for bookkeeping",
         "real_t0_source": "Nissen H.J., Damerow P., Englund R.K. (1993) Archaic Bookkeeping, U. Chicago Press, ISBN:978-0226586595"
     },
     "Chemistry": {

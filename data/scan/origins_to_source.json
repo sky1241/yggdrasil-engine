@@ -16,9 +16,9 @@
       "species": 6,
       "species_name": "Humanities/PolSci",
       "openalex_birth": 1000,
-      "real_t0": -45500,
+      "real_t0": -51200,
       "real_t0_source": "Brumm A. et al. (2021) Science Advances 7(3):eabd4648, DOI:10.1126/sciadv.abd4648; Aubert M. et al. (2024) Nature 631:105-110, DOI:10.1038/s41586-024-07541-7",
-      "real_t0_event": "Sulawesi cave paintings (warty pig, Leang Tedongnge) -- oldest figurative art"
+      "real_t0_event": "Leang Karampuang narrative cave painting (Sulawesi) -- oldest figurative art, dated to at least 51,200 years ago"
     },
     {
       "name": "Biology",
@@ -40,9 +40,9 @@
       "species": 3,
       "species_name": "Psych/Business",
       "openalex_birth": 1000,
-      "real_t0": -3100,
+      "real_t0": -3300,
       "real_t0_source": "Nissen H.J., Damerow P., Englund R.K. (1993) Archaic Bookkeeping, U. Chicago Press, ISBN:978-0226586595",
-      "real_t0_event": "Sumerian cuneiform accounting tablets, Uruk IV -- writing invented for business"
+      "real_t0_event": "Sumerian cuneiform accounting tablets, Uruk IV (~3400-3200 BCE) -- writing invented for bookkeeping"
     },
     {
       "name": "Chemistry",
@@ -137,7 +137,7 @@
       "species_name": "Humanities/PolSci",
       "openalex_birth": 1000,
       "real_t0": -440,
-      "real_t0_source": "Momigliano A. (1958) History 43(147):1-13, DOI:10.1111/j.1468-229X.1958.tb02036.x",
+      "real_t0_source": "Momigliano A. (1958) History 43(147):1-13, DOI:10.1111/j.1468-229X.1958.tb02501.x",
       "real_t0_event": "Herodotus, Historiai -- first systematic historical inquiry with critical method"
     },
     {
@@ -365,7 +365,7 @@
       "species_name": "Psych/Business",
       "openalex_birth": 1000,
       "real_t0": 1948,
-      "real_t0_source": "Shannon C.E. (1948) Bell System Technical Journal 27(3):379-423, DOI:10.1002/j.1538-7305.1948.tb01338.x",
+      "real_t0_source": "Shannon C.E. (1948) Bell System Technical Journal 27(3-4):379-423, DOI:10.1002/j.1538-7305.1948.tb01338.x",
       "real_t0_event": "Shannon publishes 'A Mathematical Theory of Communication' -- founding information/communication theory"
     },
     {
@@ -436,7 +436,7 @@
       "species": 6,
       "species_name": "Humanities/PolSci",
       "openalex_birth": 1000,
-      "real_t0": -380,
+      "real_t0": -369,
       "real_t0_source": "Burnyeat M.F. (1990) The Theaetetus of Plato, Hackett Publishing",
       "real_t0_event": "Plato's Theaetetus (ca. 369 BCE) -- first systematic analysis of knowledge (episteme) as justified true belief"
     },
@@ -736,7 +736,7 @@
       "species": 3,
       "species_name": "Psych/Business",
       "openalex_birth": 1010,
-      "real_t0": -3000,
+      "real_t0": -3100,
       "real_t0_source": "Nissen H.J. et al. (1993) Archaic Bookkeeping, U. Chicago Press",
       "real_t0_event": "Earliest written commercial records: Sumerian cuneiform tablets documenting trade transactions (Uruk ~3100 BCE)"
     },
@@ -1276,9 +1276,9 @@
       "species": 2,
       "species_name": "Medicine",
       "openalex_birth": 1073,
-      "real_t0": 1745,
+      "real_t0": 1764,
       "real_t0_source": "Palpalicef J. (2009) 'Nils Rosen von Rosenstein and his Textbook on Paediatrics' Archives of Disease in Childhood 94(5):394-395",
-      "real_t0_event": "ANACHRONISM at 1073. Nils Rosen von Rosenstein publishes first modern pediatrics textbook (Swedish, 1764; Latin 1745 lectures)"
+      "real_t0_event": "ANACHRONISM at 1073. Nils Rosen von Rosenstein publishes first modern pediatrics textbook (Swedish, 1764; Latin 1764 publication)"
     },
     {
       "name": "Ecology",
@@ -1445,7 +1445,7 @@
       "species_name": "MatSci/Chem",
       "openalex_birth": 1099,
       "real_t0": 1848,
-      "real_t0_source": "Gal J. (2017) Helvetica Chimica Acta 100(6):e1700098, DOI:10.1002/hlca.201700098",
+      "real_t0_source": "Gal J. (2017) Nature Chemistry 9:857-863, DOI:10.1038/nchem.2790",
       "real_t0_event": "ANACHRONISM at 1099. Pasteur, resolution of tartaric acid into enantiomers -- discovery of molecular chirality"
     },
     {
@@ -1756,9 +1756,9 @@
       "species": 8,
       "species_name": "Physics/Optics",
       "openalex_birth": 1206,
-      "real_t0": -1600,
+      "real_t0": -1000,
       "real_t0_source": "Hunger H. & Pingree D. (1999) Astral Sciences in Mesopotamia, Brill",
-      "real_t0_event": "Babylonian MUL.APIN tablets (ca. 1200 BCE, traditions from ~1600 BCE) -- first systematic star catalogues and omen series"
+      "real_t0_event": "Babylonian MUL.APIN tablets (compiled ca. 1000 BCE, Hunger & Pingree) -- first systematic star catalogues and omen series"
     },
     {
       "name": "Theoretical computer science",
@@ -1936,7 +1936,7 @@
       "species": 2,
       "species_name": "Medicine",
       "openalex_birth": 1265,
-      "real_t0": 1766,
+      "real_t0": 1767,
       "real_t0_source": "Eisenberg M.S. (1997) Life in the Balance, Oxford UP",
       "real_t0_event": "ANACHRONISM at 1265. Amsterdam Society for Recovery of Drowned Persons -- first organized emergency medicine"
     },
@@ -1998,7 +1998,7 @@
       "openalex_birth": 1391,
       "real_t0": 1796,
       "real_t0_source": "Jenner E. (1798) An Inquiry into the Causes and Effects of the Variolae Vaccinae; Silverstein A.M. (2009) A History of Immunology, 2nd ed., Academic Press",
-      "real_t0_event": "ANACHRONISM at 1391. Jenner vacccinates James Phipps with cowpox -- founding of immunology"
+      "real_t0_event": "ANACHRONISM at 1391. Jenner vaccinates James Phipps with cowpox -- founding of immunology"
     },
     {
       "name": "Physical medicine and rehabilitation",
@@ -2140,9 +2140,9 @@
       "species": 2,
       "species_name": "Medicine",
       "openalex_birth": 1400,
-      "real_t0": -600,
-      "real_t0_source": "Kansupada K.B. & Sassani J.W. (1997) Documenta Ophthalmologica 93(1-2):159-167",
-      "real_t0_event": "Sushruta Samhita (~600 BCE) -- first systematic surgical treatise (rhinoplasty, cataract, 120+ instruments)"
+      "real_t0": -300,
+      "real_t0_source": "Meulenbeld G.J. (1999) A History of Indian Medical Literature, Vol. IA, Egbert Forsten; Wujastyk D. (2003) The Roots of Ayurveda, Penguin Classics",
+      "real_t0_event": "Sushruta Samhita (core composition ~3rd century BCE) -- first systematic surgical treatise (rhinoplasty, cataract, 120+ instruments, 300+ procedures)"
     },
     {
       "name": "Information retrieval",
@@ -2308,9 +2308,9 @@
       "species": 2,
       "species_name": "Medicine",
       "openalex_birth": 1452,
-      "real_t0": -7000,
+      "real_t0": -5050,
       "real_t0_source": "Arnott R. et al. (eds.) (2003) Trepanation: History, Discovery, Theory, Swets & Zeitlinger; Prioreschi P. (1996) A History of Medicine Vol.1, Horatius Press",
-      "real_t0_event": "Earliest trepanation skulls (Ensisheim, France ~7000 BP; widespread Neolithic evidence)"
+      "real_t0_event": "Earliest trepanation skulls (Ensisheim, France ~7000 BP = ~5050 BCE; widespread Neolithic evidence)"
     },
     {
       "name": "Applied mathematics",
@@ -2380,7 +2380,7 @@
       "species": 2,
       "species_name": "Medicine",
       "openalex_birth": 1485,
-      "real_t0": -60,
+      "real_t0": 60,
       "real_t0_source": "Riddle J.M. (1985) Dioscorides on Pharmacy and Medicine, U. Texas Press",
       "real_t0_event": "Dioscorides, De Materia Medica (~60 CE) -- systematic pharmacopoeia (600+ plants, 1000+ remedies) used for 1500 years"
     },

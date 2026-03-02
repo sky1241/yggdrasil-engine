@@ -47,7 +47,7 @@ L1_SOURCES = {
         "real_t0_source": "Biggs N.L. (1979) 'The Roots of Combinatorics' Historia Mathematica 6(2):109-136"
     },
     "Epistemology": {
-        "real_t0": -380,
+        "real_t0": -369,
         "real_t0_event": "Plato's Theaetetus (ca. 369 BCE) -- first systematic analysis of knowledge (episteme) as justified true belief",
         "real_t0_source": "Burnyeat M.F. (1990) The Theaetetus of Plato, Hackett Publishing"
     },
@@ -107,8 +107,8 @@ L1_SOURCES = {
         "real_t0_source": "Morange M. (1998) A History of Molecular Biology, Harvard UP (tr. Cobb)"
     },
     "Astronomy": {
-        "real_t0": -1600,
-        "real_t0_event": "Babylonian MUL.APIN tablets (ca. 1200 BCE, traditions from ~1600 BCE) -- first systematic star catalogues and omen series",
+        "real_t0": -1000,
+        "real_t0_event": "Babylonian MUL.APIN tablets (compiled ca. 1000 BCE, Hunger & Pingree) -- first systematic star catalogues and omen series",
         "real_t0_source": "Hunger H. & Pingree D. (1999) Astral Sciences in Mesopotamia, Brill"
     },
 
@@ -399,8 +399,8 @@ L1_SOURCES = {
         "real_t0_source": "Metropolis N. et al. (1953) J. Chem. Phys. 21(6):1087-1092, DOI:10.1063/1.1699114"
     },
     "Pediatrics": {
-        "real_t0": 1745,
-        "real_t0_event": "ANACHRONISM at 1073. Nils Rosen von Rosenstein publishes first modern pediatrics textbook (Swedish, 1764; Latin 1745 lectures)",
+        "real_t0": 1764,
+        "real_t0_event": "ANACHRONISM at 1073. Nils Rosen von Rosenstein publishes first modern pediatrics textbook (Swedish, 1764 publication)",
         "real_t0_source": "Palpalicef J. (2009) 'Nils Rosen von Rosenstein and his Textbook on Paediatrics' Archives of Disease in Childhood 94(5):394-395"
     },
     "Gerontology": {
@@ -414,8 +414,8 @@ L1_SOURCES = {
         "real_t0_source": "Brucer M. (1990) A Chronology of Nuclear Medicine, Heritage Publications; Wagner H.N. (2006) J. Nuclear Medicine 47(9):1480-1492"
     },
     "Surgery": {
-        "real_t0": -7000,
-        "real_t0_event": "Earliest trepanation skulls (Ensisheim, France ~7000 BP; widespread Neolithic evidence)",
+        "real_t0": -5050,
+        "real_t0_event": "Earliest trepanation skulls (Ensisheim, France ~7000 BP = ~5050 BCE; widespread Neolithic evidence)",
         "real_t0_source": "Arnott R. et al. (eds.) (2003) Trepanation: History, Discovery, Theory, Swets & Zeitlinger; Prioreschi P. (1996) A History of Medicine Vol.1, Horatius Press"
     },
     "Biochemistry": {
@@ -424,7 +424,7 @@ L1_SOURCES = {
         "real_t0_source": "Fruton J.S. (1999) Proteins, Enzymes, Genes: The Interplay of Chemistry and Biology, Yale UP"
     },
     "Pharmacology": {
-        "real_t0": -60,
+        "real_t0": 60,
         "real_t0_event": "Dioscorides, De Materia Medica (~60 CE) -- systematic pharmacopoeia (600+ plants, 1000+ remedies) used for 1500 years",
         "real_t0_source": "Riddle J.M. (1985) Dioscorides on Pharmacy and Medicine, U. Texas Press"
     },
@@ -538,7 +538,7 @@ L1_SOURCES = {
         "real_t0_source": "Nevett T.R. (1982) Advertising in Britain: A History, Heinemann"
     },
     "Commerce": {
-        "real_t0": -3000,
+        "real_t0": -3100,
         "real_t0_event": "Earliest written commercial records: Sumerian cuneiform tablets documenting trade transactions (Uruk ~3100 BCE)",
         "real_t0_source": "Nissen H.J. et al. (1993) Archaic Bookkeeping, U. Chicago Press"
     },
@@ -817,7 +817,7 @@ L1_SOURCES = {
         "real_t0_source": "Perrot J.-C. (1992) Une Histoire Intellectuelle de l'Economie Politique, EHESS"
     },
     "Medical emergency": {
-        "real_t0": 1766,
+        "real_t0": 1767,
         "real_t0_event": "ANACHRONISM at 1265. Amsterdam Society for Recovery of Drowned Persons -- first organized emergency medicine",
         "real_t0_source": "Eisenberg M.S. (1997) Life in the Balance, Oxford UP"
     },
@@ -867,9 +867,9 @@ L1_SOURCES = {
         "real_t0_source": "Ring M.E. (1985) Dentistry: An Illustrated History, Abrams/Mosby"
     },
     "General surgery": {
-        "real_t0": -600,
-        "real_t0_event": "Sushruta Samhita (~600 BCE) -- first systematic surgical treatise (rhinoplasty, cataract, 120+ instruments)",
-        "real_t0_source": "Kansupada K.B. & Sassani J.W. (1997) Documenta Ophthalmologica 93(1-2):159-167"
+        "real_t0": -300,
+        "real_t0_event": "Sushruta Samhita (core composition ~3rd century BCE) -- first systematic surgical treatise (rhinoplasty, cataract, 120+ instruments, 300+ procedures)",
+        "real_t0_source": "Meulenbeld G.J. (1999) A History of Indian Medical Literature, Vol. IA, Egbert Forsten; Wujastyk D. (2003) The Roots of Ayurveda, Penguin Classics"
     },
     "Nursing": {
         "real_t0": 1860,
