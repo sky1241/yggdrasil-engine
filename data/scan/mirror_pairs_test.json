@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "test": "mirror_pairs",
+    "method": "degree_decile + spectral_distance_15pct + zero_cooc + inter_species",
+    "n_mirrors_per_bt": 200,
+    "tolerance": 0.15,
+    "timestamp": "2026-03-02 23:03:36"
+  },
+  "verdict": {
+    "n_breakthroughs": 20,
+    "n_wins": 19,
+    "n_strong_wins": 19,
+    "mean_beats_pct": 94.7,
+    "paired_wilcoxon_p": 6.67572021484375e-06,
+    "cohens_d_mirror": 0.925,
+    "interpretation": "\ud83d\udfe1 SIGNAL PROBABLE. Les perc\u00e9es tendent \u00e0 scorer plus haut que les miroirs, mais l'effet est mod\u00e9r\u00e9. Le moteur capte du signal au-del\u00e0 de la centralit\u00e9, mais pas de mani\u00e8re \u00e9crasante."
+  },
+  "details": [
+    {
+      "name": "AlphaFold",
+      "bt_score": 0.0009271349309418951,
+      "bt_dist": 0.11692142842974919,
+      "mirror_mean": 1.1856273747184886e-05,
+      "mirror_std": 6.731570372695373e-05,
+      "mirror_max": 0.00029595035856339134,
+      "n_mirrors": 187,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "mRNA vaccines",
+      "bt_score": 0.0006628365531350386,
+      "bt_dist": 0.09892881086208581,
+      "mirror_mean": -1.5521801450417649e-06,
+      "mirror_std": 5.856021552494722e-05,
+      "mirror_max": 0.00040986026726757706,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "CRISPR base editing",
+      "bt_score": 0.00034367693689544166,
+      "bt_dist": 0.12108794496422778,
+      "mirror_mean": 1.6666642445278274e-05,
+      "mirror_std": 8.122616941978115e-05,
+      "mirror_max": 0.000358702425517244,
+      "n_mirrors": 129,
+      "bt_beats_pct": 99.2248062015504,
+      "bt_percentile": 99.2248062015504
+    },
+    {
+      "name": "Gravitational waves",
+      "bt_score": 0.0011887861425469923,
+      "bt_dist": 0.11189031517286621,
+      "mirror_mean": 1.3238469070650399e-05,
+      "mirror_std": 7.826766777532529e-05,
+      "mirror_max": 0.0004332834599092229,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "AlphaGo",
+      "bt_score": 0.004573018734687259,
+      "bt_dist": 0.07198588172246775,
+      "mirror_mean": -1.2353378792793787e-06,
+      "mirror_std": 5.061117814845963e-05,
+      "mirror_max": 0.00020616815402745546,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Transformers/GPT",
+      "bt_score": 0.0036957760310808996,
+      "bt_dist": 0.0920740852838987,
+      "mirror_mean": 5.87163771034131e-06,
+      "mirror_std": 6.754276974449767e-05,
+      "mirror_max": 0.0003593834128753959,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "CAR-T therapy",
+      "bt_score": 0.0031142835564162558,
+      "bt_dist": 0.10333539669686351,
+      "mirror_mean": 7.012948758293807e-06,
+      "mirror_std": 7.634429011342146e-05,
+      "mirror_max": 0.00039177628381731886,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Cryo-EM",
+      "bt_score": 0.00032125224074691633,
+      "bt_dist": 0.1118834308589991,
+      "mirror_mean": 1.2603871890060673e-05,
+      "mirror_std": 6.014402738324756e-05,
+      "mirror_max": 0.00023227806300740587,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Topological insulators",
+      "bt_score": -0.0002044724702135077,
+      "bt_dist": 0.12137815161141208,
+      "mirror_mean": 3.4593326677230106e-05,
+      "mirror_std": 9.676938723767233e-05,
+      "mirror_max": 0.0004377748368890493,
+      "n_mirrors": 111,
+      "bt_beats_pct": 0.0,
+      "bt_percentile": 0.0
+    },
+    {
+      "name": "Microbiome therapeutics",
+      "bt_score": 0.0016359140657656946,
+      "bt_dist": 0.12259228248135169,
+      "mirror_mean": 2.3049514455113342e-05,
+      "mirror_std": 7.428777350108786e-05,
+      "mirror_max": 0.0002423676671536518,
+      "n_mirrors": 90,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Quantum supremacy",
+      "bt_score": 0.0006877772016125497,
+      "bt_dist": 0.11632921244471389,
+      "mirror_mean": 1.0418208478292204e-05,
+      "mirror_std": 7.194258823706845e-05,
+      "mirror_max": 0.0003201165490386695,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "GAN explosion",
+      "bt_score": 0.0020960133407532623,
+      "bt_dist": 0.09135630349191312,
+      "mirror_mean": 2.377296860049501e-06,
+      "mirror_std": 6.689488287183467e-05,
+      "mirror_max": 0.0002733227160660387,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Perovskite solar cells",
+      "bt_score": 0.0003815235975174236,
+      "bt_dist": 0.03480616549746817,
+      "mirror_mean": 6.781206686943531e-06,
+      "mirror_std": 2.8046274616612255e-05,
+      "mirror_max": 0.00020959554591853144,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Organoids",
+      "bt_score": 0.0007041587942886521,
+      "bt_dist": 0.03672966615872506,
+      "mirror_mean": 4.600597180041451e-06,
+      "mirror_std": 2.1483479796393433e-05,
+      "mirror_max": 7.385166468770811e-05,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Single-cell RNA-seq",
+      "bt_score": 0.0002536865616204661,
+      "bt_dist": 0.05670845023870602,
+      "mirror_mean": -4.13057300132762e-06,
+      "mirror_std": 2.360862781710614e-05,
+      "mirror_max": 8.728275459332906e-05,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Neuromorphic computing",
+      "bt_score": 0.00011474500904961589,
+      "bt_dist": 0.09860287737074111,
+      "mirror_mean": 3.4298346481256104e-06,
+      "mirror_std": 7.099908211978999e-05,
+      "mirror_max": 0.0003284923997103672,
+      "n_mirrors": 200,
+      "bt_beats_pct": 94.5,
+      "bt_percentile": 94.5
+    },
+    {
+      "name": "Federated learning",
+      "bt_score": 0.00023371286058366424,
+      "bt_dist": 0.049765867651569644,
+      "mirror_mean": -3.911246135058421e-06,
+      "mirror_std": 2.6158839356139307e-05,
+      "mirror_max": 0.00011194877964491291,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Graph neural networks",
+      "bt_score": 0.00011833030554322211,
+      "bt_dist": 0.03569346761735125,
+      "mirror_mean": 2.422519552675124e-06,
+      "mirror_std": 2.3512965669891234e-05,
+      "mirror_max": 0.00011216633562018366,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Optogenetics maturation",
+      "bt_score": 0.0007550941506866293,
+      "bt_dist": 0.11395438753828656,
+      "mirror_mean": 7.195683601268845e-06,
+      "mirror_std": 8.958860907967242e-05,
+      "mirror_max": 0.00048427723372606923,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    },
+    {
+      "name": "Liquid biopsy",
+      "bt_score": 0.0028937617476734135,
+      "bt_dist": 0.04560929099995656,
+      "mirror_mean": 7.420452766952103e-07,
+      "mirror_std": 2.8177511998510257e-05,
+      "mirror_max": 0.0001236454912032226,
+      "n_mirrors": 200,
+      "bt_beats_pct": 100.0,
+      "bt_percentile": 100.0
+    }
+  ]
+}

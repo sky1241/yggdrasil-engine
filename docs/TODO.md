@@ -270,6 +270,13 @@ L'AI grimpe avec le bon sac à dos.
   - Recall@100 filtré = 70%, Recall top 0.1% espace complet = 70%
   - 19/20 percées dans le top 1% des 82M paires
 - [x] Espèces K=9 sur données 2015 ONLY (pas de look-ahead)
+- [x] Mirror pairs test (session 13, 2 mars 2026):
+  - Contrôle: même décile de degré + même distance spectrale (±15%) + zero-cooc + inter-espèces
+  - **19/20 victoires** (seul échec: Topological insulators)
+  - **Cohen's d = 0.925**, Wilcoxon p = 6.68e-06, mean beats = 94.7%
+  - Verdict: signal réel — le Laplacien détecte autre chose que la centralité
+  - Script: `engine/analysis/mirror_pairs_test.py`
+  - Résultats: `data/scan/mirror_pairs_test.json`
 - Dossiers: `blind_test_v2/` + `data/scan/spectral_blind_test.json`
 
 ## SOURCES ANNEXES — arXiv + PMC (EN COURS — session 12, 2 mars 2026)
@@ -299,5 +306,6 @@ L'AI grimpe avec le bon sac à dos.
 - V3 (formules météorites) réutilise les 1,534 frames V2 → quasi gratuit.
 - Predictions 2025 produites sans cutoff. Blind test V2 avec cutoff 2015.
 - Glyph Laplacian FAIT avec validation honnête: d=5.76, p=7e-11, recall top 0.1%=70%.
+- **Mirror pairs test PASSÉ**: 19/20, d=0.925, p=6.68e-06 → signal réel confirmé.
 - Prochaine étape majeure: V3 météorites sur frames, ou compléter arXiv mapper.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.

@@ -33,7 +33,7 @@
 | Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 1 MARS 2026 (session 11)
+## ÉTAT ACTUEL — 2 MARS 2026 (session 12-13)
 - **SCAN V2 COMPLET** — 581/581 chunks, 692 GB, 347,999,931 papers, 65,026 concepts, 108,301,944 paires non-zero
 - **MIGRATION E:\** — Snapshot OpenAlex migré D:\ → E:\ (disque 5 TB, 4.6 TB libre)
 - **9 ESPÈCES** (spectral K=9): MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math, Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics
@@ -58,6 +58,8 @@
 | 9 | 24 fév après-midi | Opus 4.6 | Scanner V2: filtre erratum/retraction + poids 1/C(n,2). D:\ nettoyé (legacy-data supprimé, +174 GB). 581 chunks, prêt pour scan complet |
 | 10 | 25-28 fév | Opus 4.6 | 9 espèces from scratch (spectral 65K), 17 graines S-2 + patient t=0, film V4 (1534 frames + cube 3D), migration D:\→E:\ (5TB) |
 | 11 | 1 mars | Opus 4.6 | Blind test V2 (65K, p=3.4e-12), Predictions 2025 (108M paires, P4 Uzzi, matrice collision 9×9), analyse top 100 INTER (41% WTF) |
+| 12 | 2 mars | Opus 4.6 | Glyph Laplacian (64 eigenvectors, d=5.76, p=7e-11), validation honnête, S-2 pipeline (8 briques) |
+| 13 | 2 mars | Opus 4.6 | Mirror pairs test: 19/20, d=0.925, p=6.68e-06 — signal réel confirmé |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
@@ -213,7 +215,8 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - [x] Analyse top 100 INTER (41% WTF, 20/20 web verified) — session 11
 - [x] V3: formules météorites (OHLC + 7 deltas) — `engine/meteorites.py` session 7
 - [ ] V3: mesurer météorites sur frames réelles (en attente)
-- [ ] Glyph Laplacian (décomposition S0→S-2, cutoff 2015)
+- [x] Glyph Laplacian (64 eigenvectors, d=5.76, p=7e-11, 19/20 top 1%) — session 12
+- [x] Mirror pairs test: 19/20, d=0.925, p=6.68e-06, signal réel confirmé — session 13
 - [ ] V4: le grimpeur
 
 ## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES
