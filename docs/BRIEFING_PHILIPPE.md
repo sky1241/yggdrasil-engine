@@ -8,9 +8,13 @@ Tu es le moteur analytique d'Yggdrasil, un système qui cartographie la topologi
 
 ## CE QU'ON A DÉJÀ
 
-### Le moteur (validé)
-- Pipeline complet: OpenAlex API (250M+ papers) → scisci.py (métriques scientométriques) → mycelium.py (topologie réseau) → classifier (P1-P5)
-- **87% validation sur 100 tests** (percées historiques connues vs bruit)
+### Le moteur V2 (validé — 1 mars 2026)
+- **V2 complet**: 65,026 concepts × 108M paires × 348M papers × 9 espèces spectral K=9
+- Snapshot OpenAlex local (692 GB, E:\), scan complet 581 chunks
+- P4 Uzzi z-scores: `P4 = activity_A × activity_B × (1 - cooc_norm) × |z_uzzi|`
+- Blind test V2: 65K concepts, cutoff 2015, **p = 3.4e-12**
+- Predictions 2025: top 10K INTER+INTRA, analyse top 100 → 41% WTF confirmés
+- **87% validation V1 sur 100 tests** (percées historiques connues vs bruit)
 - 5 patterns découverts:
   - **P1 Pont** = connexion rare entre 2 domaines éloignés (futur breakthrough)
   - **P2 Dense** = domaine mature, beaucoup de papers (pont devenu infrastructure)
@@ -22,6 +26,7 @@ Tu es le moteur analytique d'Yggdrasil, un système qui cartographie la topologi
 ### Validation acquise
 - Le moteur détecte correctement les percées passées (CRISPR, immunotherapy×cancer, etc.)
 - Score ajusté ~93% quand on tient compte des P2 = anciens ponts devenus denses
+- **V2 upgrade**: on passe de 85 domaines (V1 API) à 65K concepts × 108M paires (V2 local)
 - **Problème identifié:** le moteur confirme l'évidence. Un P4 "microbiome × mental health" = manger sainement, ma grand-mère le sait. On veut trouver l'INVISIBLE, pas l'évident.
 
 ## LE TEST PHILIPPE SCHUCHERT
@@ -82,16 +87,21 @@ Philippe est au 3ème étage de son immeuble (contrôle automatique). Il se cogn
 
 **On ne casse pas la serrure (P≠NP). On fait passer le câble par un autre chemin.**
 
-## SCRIPT À LANCER
+## APPROCHE V2 — SCAN LOCAL
 
+L'ancien script (`engine/analysis/scan_philippe.py`) utilisait l'API OpenAlex (V1, 85 domaines).
+On a maintenant les données V2 locales: 65K concepts, 108M paires, P4 Uzzi z-scores.
+
+**Nouvelle approche**: chercher les concepts de Philippe dans la matrice V2, calculer P4 Uzzi
+pour chaque paire Philippe_tool × domaine_inattendu, et trier par score P4.
+Avantage: pas de rate-limiting API, accès aux 65K concepts, z-scores Uzzi réels.
+
+### Script V1 (ancien, API-based)
 ```bash
 cd yggdrasil-engine
-python3 engine/scan_philippe.py
+python3 engine/analysis/scan_philippe.py
 ```
-
-Scanne 11 concepts core × 70 domaines cibles = 770 paires.
-Pipeline complet OpenAlex → scisci → mycelium → classification.
-Résultats dans `data/scan_philippe_schuchert.json` et `data/scan_philippe_full.json`.
+Scanne 6 concepts core × 18 domaines cibles = 108 paires via API OpenAlex.
 
 ## APRÈS LE SCAN — CE QUE TU DOIS FAIRE
 

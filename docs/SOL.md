@@ -1,11 +1,11 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 22 février 2026
+> Yggdrasil Engine — Versoix, 1 mars 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE
 | Terme | Signification |
 |-------|--------------|
-| Pluie | Données brutes OpenAlex (500M+ papers, 467 GB snapshot local D:\) |
+| Pluie | Données brutes OpenAlex (478M+ papers, 692 GB snapshot local E:\openalex\data) |
 | Racines | Pipeline API: search → timeline → co-occurrence |
 | Mycelium | Graphe topologique: BC, meshedness, Physarum |
 | Sol (S0) | 21,524 symboles (794 originaux + 20,730 minés OpenAlex), 100% C1 |
@@ -33,13 +33,16 @@
 | Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 24 FÉV 2026 (session 9)
-- **SCANNER V2 PRÊT** — 581 chunks, filtres erratum/retraction + poids 1/C(n,2), 4 chunks testés OK
-- **POIDS 1/C(n,2)** — chaque paper distribue exactement 1 point total (dilue les reviews sans les supprimer)
-- **D:\ = 174 GB libres (82%)** — legacy-data supprimé (173 GB de doublon ancien snapshot)
+## ÉTAT ACTUEL — 1 MARS 2026 (session 11)
+- **SCAN V2 COMPLET** — 581/581 chunks, 692 GB, 347,999,931 papers, 65,026 concepts, 108,301,944 paires non-zero
+- **MIGRATION E:\** — Snapshot OpenAlex migré D:\ → E:\ (disque 5 TB, 4.6 TB libre)
+- **9 ESPÈCES** (spectral K=9): MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math, Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics
+- **FILM V4** — 1,534 frames (an 1000→2024), 65,021 concept births, `viz/yggdrasil_rain_v4.html` (cube 3D)
+- **BLIND TEST V2** — 65K concepts, cutoff 2015, 82.7M paires scorées, p=3.4e-12 (commit `a446268`)
+- **PREDICTIONS 2025** — Top 10K INTER-espèces + INTRA, P4 Uzzi z-scores, matrice de collision 9×9 (commit `b07d891`)
+- **ANALYSE TOP 100 INTER** — 18 BANAL (18%), 30 INTÉRESSANT (30%), 41 WTF (41%), 11 BRUIT (11%), 20/20 web verified
 - **V3 MODULE CODÉ** — `engine/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas + catalogue 13 météorites)
-- **ESPÈCE MYCÉLIUM** — 5 curseurs Lehmann 2019 à mesurer post-scan (plan dans SESSION_8_SPECIES_DISCOVERY.md)
-- **Test semi-aveugle 2015→2025: SIGNAL DÉTECTÉ** (p=0.00002, r=0.90)
+- **17 GRAINES S-2** — 10 chiffres + 7 symboles alchimiques, patient t=0 documenté (tally ~43K av. J-C → alchimie ~300)
 
 ### HISTORIQUE SESSIONS
 | # | Date | Claude | Résumé |
@@ -53,6 +56,8 @@
 | 7 | 24 fév | Opus 4.6 | engine/meteorites.py codé, 8 bugs fixés (core + meteorites), audit complet |
 | 8 | 24 fév matin | Opus 4.6 | DÉCOUVERTE: mycelium_full.py=comportement SANS espèce. 5 curseurs (Lehmann 2019, 31 spp). Plan species_identifier.py |
 | 9 | 24 fév après-midi | Opus 4.6 | Scanner V2: filtre erratum/retraction + poids 1/C(n,2). D:\ nettoyé (legacy-data supprimé, +174 GB). 581 chunks, prêt pour scan complet |
+| 10 | 25-28 fév | Opus 4.6 | 9 espèces from scratch (spectral 65K), 17 graines S-2 + patient t=0, film V4 (1534 frames + cube 3D), migration D:\→E:\ (5TB) |
+| 11 | 1 mars | Opus 4.6 | Blind test V2 (65K, p=3.4e-12), Predictions 2025 (108M paires, P4 Uzzi, matrice collision 9×9), analyse top 100 INTER (41% WTF) |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
@@ -61,11 +66,14 @@
 - Batch 1 (tests 1-50): 43/49 (88%)
 - Batch 2 (tests 51-100): 43/50 (86%)
 
-### CO-OCCURRENCE V1 (296M papers scannés — ancien scan 85 domaines)
-- Matrice 85×85 domaines, densité 99.8%
-- Remplacé par le winter tree scan V2: 65,026 concepts × mois (en cours)
+### CO-OCCURRENCE V2 (348M papers — scan complet 65K concepts)
+- **Winter tree scan V2 COMPLET**: 581/581 chunks, 692 GB, 1,645 périodes (an 1000→2024)
+- 65,026 concepts × mois, 108,301,944 paires non-zero
+- Poids 1/C(n,2): chaque paper distribue exactement 1 point total
+- Filtres: erratum, retraction, is_retracted
+- Remplace l'ancien scan V1 85×85 domaines (296M papers)
 - Laplacien normalisé D^{-1/2}LD^{-1/2} pour positions spectrales
-- Positions S0 mises à jour depuis co-occurrence réelle (pas TF-IDF)
+- Spectral clustering K=9 → 9 espèces (LinearOperator, float32)
 
 ### 3 CUBES: VIVANT / MUSÉE / FUSION
 - **Vivant** = works_count >= Q1 de son domaine → **16,382 (77%)**
@@ -120,12 +128,30 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 ## FICHIERS CLÉS
 | Fichier | Rôle |
 |---------|------|
-| **V2 — SCAN** | |
+| **PREDICTIONS 2025** | |
+| predictions_2025/step1_full_scan.py | Scan 581 chunks → snapshot_full.npz (108M paires) |
+| predictions_2025/step2_species_full.py | Spectral clustering K=9 → 9 espèces |
+| predictions_2025/step3_p4_both.py | P4 Uzzi z-scores INTER + INTRA (float32, zero-alloc) |
+| predictions_2025/step4_report.py | Top 1000 INTER + INTRA → fichiers .txt lisibles |
+| predictions_2025/step5_collision.py | Matrice de collision 9×9 espèces |
+| predictions_2025/PREDICTIONS_2025.json | Résumé complet des prédictions |
+| predictions_2025/collision_matrix_full.json | Matrices collision (top 100, 1000, P4 sum) |
+| **BLIND TEST V2** | |
+| blind_test_v2/step1_snapshot_65k.py | Snapshot ≤2015 depuis 581 chunks |
+| blind_test_v2/FINAL_REPORT_V2.json | Résultats: p=3.4e-12, 82.7M paires |
+| **V2 — SCAN + FILM** | |
 | engine/topology/winter_tree_scanner.py | SCANNER V2: 65K concepts, filtres erratum/retraction, poids 1/C(n,2) |
-| engine/topology/build_cooccurrence.py | PLUIE V1: matrice 5,459×5,459 depuis snapshot OpenAlex 400GB |
+| engine/topology/frame_builder.py | Film: 1,534 frames depuis winter tree |
+| engine/topology/concept_births.py | 65,021 concept births (13 min scan) |
 | data/scan/winter_tree.json | Index principal (années, chunks, progression) |
 | data/scan/concepts_65k.json | Lookup 65,026 concepts OpenAlex (7 MB) |
-| data/scan/chunks/chunk_NNN/ | Données par chunk (cooc.json.gz, activity.json.gz, meta.json) |
+| data/scan/frames.json | 1,534 frames (2.5 MB) |
+| data/scan/concept_births.json | 65,021 births (1.6 MB) |
+| data/scan/species_65k.json | 9 espèces K=9 spectral clustering |
+| data/scan/early_concepts.json | 619 concepts pré-1100 |
+| data/core/seeds_s2.json | 17 graines S-2 + sources + mutations |
+| data/scan/chunks/chunk_NNN/ | 581 chunks (cooc.json.gz + activity.json.gz + meta.json) |
+| viz/yggdrasil_rain_v4.html | Film mycélium cube 3D (1534 frames, points progressifs) |
 | **V3 — MÉTÉORITES** | |
 | engine/meteorites.py | Sedov-Taylor + OHLC + 7 deltas + catalogue + fit (session 7) |
 | docs/formulas.tex | Toutes les formules sourcées (DOI) + adaptations mycelium |
@@ -178,53 +204,65 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - [x] Croiser flux Physarum × works_count (806 isolated hubs, 1220 hidden bridges, 1567 P4 voids)
 - [x] Viz 3D escaliers (Three.js)
 - [x] Winter tree scanner V2 (65K concepts, 581 chunks, filtres + 1/C(n,2))
-- [ ] Lancer scan complet (581 chunks, ~2-3 jours) → vérifier winter_tree.json
-- [ ] V2: frames cumulatives à partir du tree trié
+- [x] Scan complet 581/581 chunks (347M papers, 108M paires) — session 10
+- [x] Frames cumulatives (1,534 frames) + concept births (65,021) — session 10
+- [x] Film V4 cube 3D (`viz/yggdrasil_rain_v4.html`) — session 10
+- [x] 9 espèces spectral K=9 + 17 graines S-2 — session 10
+- [x] Blind test V2 (65K, cutoff 2015, p=3.4e-12) — session 11
+- [x] Predictions 2025 (108M paires, P4 Uzzi, top 10K INTER+INTRA) — session 11
+- [x] Analyse top 100 INTER (41% WTF, 20/20 web verified) — session 11
 - [x] V3: formules météorites (OHLC + 7 deltas) — `engine/meteorites.py` session 7
+- [ ] V3: mesurer météorites sur frames réelles (en attente)
+- [ ] Glyph Laplacian (décomposition S0→S-2, cutoff 2015)
 - [ ] V4: le grimpeur
 
 ## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES
 
-### 2A. Test semi-aveugle 2015→2025 (✅ DONE — 21 fév 2026)
+### 2A. Test semi-aveugle V1 (✅ DONE — 21 fév 2026)
 - Données OpenAlex gelées à ≤2015, 100 concepts, 4950 paires
 - **recall@100 = 50%** (6/12 percées dans top 100)
 - **Mann-Whitney p = 0.00002** (U=539, effect size r=0.90, Cohen's d=1.53)
-- Percées médiane rang 207 vs random médiane rang 1.8
-- Meilleurs hits: ondes gravitationnelles (rang 6), isolants topologiques (rang 20), GANs (rang 42)
-- Verdict: **SIGNAL DÉTECTÉ** — le moteur prédit mieux que le hasard
 - Dossier: blind_test/
 
-### 2B. Timelapse adaptatif (PROCHAIN)
-- Résolution adaptative (confirmée sur les données du winter tree):
-  - ~1000-1980: par année
-  - 1980-2025: par mois (publication_date précise au jour)
-  - ~645+ périodes distinctes
-- Chaque frame = spectral layout recalculé sur S-2→S0 (mycelium complet)
-- Source: winter tree scan (co-occurrences 65K concepts × période)
-- Livrable: séquence de snapshots JSON + viz timelapse
+### 2A-bis. Blind test V2 (✅ DONE — 28 fév 2026, commit `a446268`)
+- 65,026 concepts, cutoff 2015, 82.7M paires scorées
+- **Mann-Whitney p = 3.4e-12**, Cohen's d = 0.44
+- Spectral clustering K=9 sur données 2015 ONLY (pas de look-ahead)
+- Dossier: blind_test_v2/
 
-### 2C. Boîtes de mesure météorites
-- À chaque percée majeure: sauvegarder état mycelium AVANT et APRÈS
-- Mesurer le DELTA: quels nœuds bougent, quels trous se ferment, quels nouveaux s'ouvrent
-- Accumuler les boîtes: Shannon 1948, ADN 1953, transistor, CRISPR, AlphaFold...
-- Calculer la SIGNATURE MOYENNE d'impact météorite sur le mycelium
+### 2B. Timelapse adaptatif (✅ DONE — 28 fév 2026)
+- Résolution: 978 frames/année (1000-1979) + 556 frames/mois (1980-2024) = **1,534 frames**
+- 65,021 concept births documentés
+- Film intégré dans viz cube 3D: `viz/yggdrasil_rain_v4.html`
+- Scripts: `engine/topology/frame_builder.py` + `engine/topology/concept_births.py`
 
-### 2D. Test Gödel (TEST FINAL)
-- Gödel 1931 = première météorite. Avant lui: tout S0, plat, pas de strates.
-- UNE seule mesure possible, pas de moyenne.
-- Appliquer la signature moyenne des autres météorites → prédire l'impact attendu.
-- Comparer à l'impact RÉEL mesuré de Gödel.
-- Si ça colle → le modèle fonctionne du premier impact au dernier.
+### 2B-bis. Predictions 2025 (✅ DONE — 1 mars 2026, commit `b07d891`)
+- Scan complet: 581 chunks, 347,999,931 papers, 108,301,944 paires non-zero
+- P4 = activity_A × activity_B × (1 - cooc_norm) × |z_uzzi|
+- Top 10K INTER-espèces + INTRA classés par P4 score
+- Matrice de collision 9×9: CS×Physics (82 top 1000), Humanities×Physics (72), CS×Humanities (56)
+- Analyse manuelle top 100: 18 BANAL, 30 INTÉRESSANT, 41 WTF, 11 BRUIT — 20/20 vérifiés web
+- Dossier: predictions_2025/
+
+### 2C. Boîtes de mesure météorites (EN ATTENTE)
+- Code prêt: `engine/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas)
+- À mesurer sur les frames réelles (1,534 frames disponibles)
+- Calibration: Shannon 1948 → Gödel 1931
+
+### 2D. Test Gödel (TEST FINAL — EN ATTENTE)
+- Gödel 1931 = première météorite. UNE seule mesure.
+- Dépend de 2C (signature moyenne des météorites)
 
 ### LOGIQUE DE LA CHAÎNE
 ```
-2A (validation prédictive) 
-  → 2B (construire le film)
-    → 2C (mesurer chaque impact)
-      → 2D (le test ultime = Gödel)
+2A (validation V1) ✅
+  → 2A-bis (blind test V2) ✅
+  → 2B (film 1534 frames) ✅
+    → 2B-bis (predictions 2025) ✅
+    → 2C (mesurer météorites) ← PROCHAIN
+      → 2D (test Gödel)
         → V4 (le grimpeur)
 ```
-Chaque étape nourrit la suivante. PAS de saut.
 
 ## VISION V4 — LE GRIMPEUR (documenté 22 fév 2026)
 
@@ -278,5 +316,22 @@ Chaque nouveau concept se positionne automatiquement sur la topologie.
 Si un nouveau concept ferme un P4 vers un problème ouvert → le moteur le détecte.
 V4 n'est pas statique. Il GRANDIT avec la science.
 
-### Statut: VISION — dépend de V2 (timelapse) et V3 (candlesticks)
+### Statut: VISION — V2 FAIT, dépend de V3 (candlesticks sur frames réelles)
 Pas de saut. Les racines d'abord. Toujours.
+
+## PREDICTIONS 2025 — ZONES DE COLLISION
+Les 5 frontières les plus actives entre espèces (top 1000 P4):
+| Collision | Count | P4 sum | Interprétation |
+|-----------|-------|--------|----------------|
+| CS/Math × Physics/Optics | 82 | 1,457 | Quantum computing, photonics algorithms |
+| Humanities × Physics/Optics | 72 | 767 | Science policy meets hard science |
+| CS/Math × Humanities | 56 | 1,302 | Computational social science, NLP |
+| Medicine × Physics/Optics | 55 | 885 | Medical imaging, biophotonics |
+| Medicine × CS/Math | 52 | 1,445 | AI diagnostics, drug discovery |
+
+### Formule P4
+```
+P4 = activity_A × activity_B × (1 - cooc_norm) × |z_uzzi|
+z_uzzi = (observed - E) / std
+E = works_i × works_j / total_works_sum
+```

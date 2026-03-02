@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 27 fév 2026 (session 10b), Sky×Claude (Opus 4.6)
+> Dernière màj: 1 mars 2026 (session 11), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -34,56 +34,41 @@ Valider sur 100 tests historiques → 87%.
 - [x] Viz La Pluie v3, Escaliers 2D
 - [ ] Viz Escaliers 3D → routes mycelium (b2, WIP, 60%)
 
-## V2 — TIMELAPSE HISTORIQUE (EN COURS)
+## V2 — TIMELAPSE HISTORIQUE (✅ FAIT)
 Remonter à l'an 1000+. Rejouer l'histoire de la science frame par frame.
-Voir les continents se former, les strates apparaître.
 
-### Étape 2A — Winter Tree Scan V2 (PRÊT — rechunked 24 fév 2026)
-Scanner les 692 GB du snapshot OpenAlex complet (D:\) par chunks de ~1 GB.
-Indexer les 65,026 concepts (levels 0-5) par année/mois.
-
+### Étape 2A — Winter Tree Scan V2 (✅ COMPLET — session 10, 25-28 fév 2026)
 - [x] Lookup 65,026 concepts OpenAlex → `data/scan/concepts_65k.json` (7 MB)
-- [x] Plan V1: 1,492 fichiers → 393 chunks (abandonné — disque plein + legacy-data)
-- [x] Nettoyage D:\ — legacy-data supprimé (173 GB), 174 GB libres (82%)
 - [x] Scanner V2: filtres erratum/retraction/is_retracted + poids 1/C(n,2)
-- [x] Re-init: 1,981 fichiers → 581 chunks × ~1 GB
-- [x] Test chunk 1 OK: 662K papers, 14 skipped, 580K matched, 6.9M paires
-- [ ] Scan complet en cours — commande PowerShell lancée (session 9)
-- Script: `engine/topology/winter_tree_scanner.py` (--init, --chunks N, --status)
-- Arbre: `data/scan/winter_tree.json` (mis à jour après chaque chunk)
-- Chunks: `data/scan/chunks/chunk_NNN/` (cooc.json.gz + activity.json.gz + meta.json)
+- [x] 581 chunks × ~1 GB, 1,981 fichiers
+- [x] **SCAN COMPLET**: 581/581 chunks, 347,999,931 papers, 108,301,944 paires non-zero
+- [x] Migration D:\ → E:\ (disque 5 TB, 4.6 TB libre)
+- [x] 1,645 périodes distinctes (an ~1000 → 2024)
+- Script: `engine/topology/winter_tree_scanner.py`
+- Chunks: `data/scan/chunks/chunk_000→580/`
 
-#### Poids 1/C(n,2) (session 9)
-Chaque paper distribue exactement **1 point** au total sur toutes ses paires de concepts.
-Un paper avec n concepts crée C(n,2) paires, chacune reçoit 1/C(n,2).
-Dilue naturellement les reviews (beaucoup de concepts → poids mince par paire) sans les supprimer.
+### Étape 2B — Frames + Film (✅ COMPLET — session 10, 28 fév 2026)
+- [x] **1,534 frames** (978 par année 1000-1979 + 556 par mois 1980-2024)
+- [x] **65,021 concept births** documentés
+- [x] Film cube 3D: `viz/yggdrasil_rain_v4.html` (points apparaissent progressivement)
+- [x] Scripts: `engine/topology/frame_builder.py` + `engine/topology/concept_births.py`
+- [x] Données: `data/scan/frames.json` (2.5 MB) + `data/scan/concept_births.json` (1.6 MB)
 
-### Résolution adaptative (confirmée sur les données)
-- Papers les plus anciens: an ~1000 (manuscrits rares)
-- Avant 1980: par année (MONTH_FROM_YEAR = 1980 dans le scanner)
-- 1980-2025: par mois (publication_date précise au jour)
-- ~1,094 périodes distinctes (constaté à 5% du scan)
-- **Décision**: garder 1980 pour le 1er pass. 2nd pass optionnel 1930-1979 si publication_date existe
+### Blind test V2 (✅ COMPLET — session 11, 1 mars 2026, commit `a446268`)
+- [x] Snapshot ≤2015: 65,026 concepts, 184,511,629 papers, 82,700,789 paires
+- [x] Spectral clustering K=9 sur données 2015 ONLY (pas de look-ahead)
+- [x] **Mann-Whitney p = 3.4e-12**, Cohen's d = 0.44
+- [x] Dossier: `blind_test_v2/` (7 étapes + FINAL_REPORT_V2.json)
 
-### Étape 2B — Frames cumulatives (APRÈS scan)
-Reconstruire le film à partir du winter tree trié:
-1. Pour chaque frame: additionner les co-occurrences ≤ date
-2. Recalculer spectral layout → positions des centroïdes
-3. Recalculer mycelium (BC, meshedness, Physarum)
-4. Recalculer P4 (trous ouverts)
-5. Sauvegarder snapshot JSON
-
-### Blind test V2
-- Entraînement: frames ≤ 2015 (calibration formules)
-- Test aveugle: 2015→2025 (prédire, puis comparer au réel)
-- 10 ans de marge pour valider les prédictions
-
-### Livrables
-- Winter tree complet: co-occurrences 65K concepts × mois
-- Séquence de snapshots JSON: `timelapse/frame_YYYY_MM.json`
-- Viz timelapse animée (Three.js ou canvas) — cube live pendant le scan
-- On voit les continents dériver comme la tectonique des plaques
-- On voit les strates apparaître: plat en 1900 → Gödel 1931 crée S1 → Turing 1936 pose S6
+### Predictions 2025 (✅ COMPLET — session 11, 1 mars 2026, commit `b07d891`)
+- [x] Scan complet sans cutoff: 348M papers, 108M paires, 568K périodes
+- [x] P4 = activity_A × activity_B × (1 - cooc_norm) × |z_uzzi|
+- [x] Top 10K INTER-espèces + INTRA classés par P4 score
+- [x] Matrice de collision 9×9 espèces
+- [x] Analyse manuelle top 100 INTER: 18 BANAL (18%), 30 INTÉRESSANT (30%), 41 WTF (41%), 11 BRUIT (11%)
+- [x] 20/20 vérifications web positives, 0 faux positif
+- [x] Top collision: CS×Physics (82 dans top 1000, P4 sum=1,457)
+- [x] Dossier: `predictions_2025/` (5 étapes + fichiers résultats)
 
 ## V3 — CANDLESTICKS OHLC & MÉTÉORITES (APRÈS V2)
 Chaque percée majeure = un candlestick sur le mycelium.
@@ -190,13 +175,12 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - Explorateur × Corridor → probabilité moyenne
 → Améliore potentiellement le recall du blind test (V1 = 50% avec probabilité uniforme)
 
-#### Plan V2
-- [ ] Phase E: Mesurer 5 curseurs PAR CONTINENT (9 mesures, pas 1)
-- [ ] Phase F: Identifier l'espèce de chaque continent
-- [ ] Phase G: Si espèces DIFFÉRENTES entre continents → calculer P4 inter-espèce pondéré
-- [ ] Phase H: Si espèces IDENTIQUES → l'analogie tient pas, on perd rien
-- [ ] Phase C: Calibrer mycelium_full.py avec les vrais paramètres par espèce
-- [ ] Phase D: Évolution temporelle — l'espèce de chaque continent change-t-elle avec le temps ?
+#### Plan V2 (partiellement réalisé via spectral K=9)
+- [x] 9 espèces identifiées par spectral clustering K=9 (65K concepts) — session 10
+- [x] P4 inter-espèce calculé et classé (Predictions 2025) — session 11
+- [ ] Phase E: Mesurer 5 curseurs PAR espèce (9 mesures, pas 1)
+- [ ] Phase F: Calibrer mycelium_full.py avec les vrais paramètres par espèce
+- [ ] Phase G: Évolution temporelle — l'espèce de chaque continent change-t-elle avec le temps ?
 
 #### Risques identifiés
 - L'analogie biologique est poétique mais peut ne pas ajouter de pouvoir prédictif
@@ -229,10 +213,9 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - Exception: Aristote (~350 av. J-C) = mega-hub, 1 spore → 4 espèces (spéciation naturelle)
 
 #### Prochaine étape
-- [ ] Construire le film chronologique: des graines (t=0) → 2015
-  - 978 frames par année (1000-1979) + 667 frames par mois (1980-2024) = 1645 frames
-  - Chaque frame: concepts actifs + co-occurrences + espèce
-  - Calibrer l'évolution sur la réalité historique (Gutenberg 1440, Rév. scientifique 1600, Lumières 1750...)
+- [x] Film chronologique FAIT: 1,534 frames (an 1000→2024), 65,021 births
+- [ ] Calibrer l'évolution sur la réalité historique (Gutenberg 1440, Rév. scientifique 1600, Lumières 1750...)
+- [ ] Glyph Laplacian: décomposer formules S0 → glyphes S-2, cutoff 2015
 
 ## V4 — LE GRIMPEUR (VISION — après V3)
 Le sommet de chaque escalier = un point de vue.
@@ -262,13 +245,18 @@ L'AI grimpe avec le bon sac à dos.
 ### Dépend de: V2 (timelapse) + V3 (candlesticks). PAS DE SAUT.
 
 ## TEST V1 (✅ FAIT)
-- [x] Test semi-aveugle 2015→2025 lancé le 21 fév 2026
-- [x] Résultats: SIGNAL DÉTECTÉ (p=0.00002, recall@100=50%, r=0.90)
-- [x] Verdict: PASS (recall@100 = 50% ET Mann-Whitney p < 0.05)
-- Attention: c'était sur 100 concepts / 21K. V2 sera sur 65K.
+- [x] Test semi-aveugle V1 2015→2025: p=0.00002, recall@100=50%, r=0.90
+- Dossier: blind_test/
+
+## TEST V2 (✅ FAIT — session 11, 1 mars 2026)
+- [x] Blind test V2: 65K concepts, cutoff 2015, 82.7M paires scorées
+- [x] Mann-Whitney p=3.4e-12, Cohen's d=0.44
+- [x] Espèces K=9 sur données 2015 ONLY (pas de look-ahead)
+- Dossier: blind_test_v2/
 
 ## NOTES
-- Le winter tree scan est le goulot (lecture 467 GB). Après ça, tout est du post-traitement.
-- V3 (formules météorites) réutilise les frames V2 → quasi gratuit.
-- Le timelapse V2 donne AUSSI les données pour refaire le test aveugle à n'importe quelle date.
+- Winter tree scan V2 COMPLET (581/581 chunks, 692 GB, 348M papers). Le goulot est passé.
+- V3 (formules météorites) réutilise les 1,534 frames V2 → quasi gratuit.
+- Predictions 2025 produites sans cutoff. Blind test V2 avec cutoff 2015.
+- Prochaine étape majeure: Glyph Laplacian (S0→S-2) ou V3 météorites sur frames.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.

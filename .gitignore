@@ -3,9 +3,12 @@ __pycache__/
 .env
 data/cache/
 data/scan/chunks/
+data/scan/glyph_chunks/
+data/scan/pmc_glyph_chunks/
 blind_test/_api_cache.json
 *.egg-info/
 dist/
 build/
 .claude/
 *.npz
+*.npy

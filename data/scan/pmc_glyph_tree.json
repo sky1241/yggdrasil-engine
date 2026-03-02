@@ -1,0 +1,335 @@
+{
+ "version": 1,
+ "type": "glyph_tree_pmc",
+ "created": "2026-03-02 10:42:17",
+ "config": {
+  "glyph_count": 1337,
+  "cutoff_year": 2015,
+  "pmc_dir": "E:\\pmc"
+ },
+ "files": {
+  "total": 39,
+  "total_bytes": 92588551023
+ },
+ "progress": {
+  "chunks_total": 39,
+  "chunks_completed": 4,
+  "papers_scanned": 476868,
+  "papers_with_glyphs": 26442,
+  "pairs_counted": 2305562
+ },
+ "chunks": [
+  {
+   "id": 1,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC000xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 45090006,
+   "status": "complete"
+  },
+  {
+   "id": 2,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC001xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 402879247,
+   "status": "complete"
+  },
+  {
+   "id": 3,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC002xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 1746488714,
+   "status": "complete"
+  },
+  {
+   "id": 4,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC003xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 5617906587,
+   "status": "complete"
+  },
+  {
+   "id": 5,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC004xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 7298566977,
+   "status": "pending"
+  },
+  {
+   "id": 6,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC005xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 5667319643,
+   "status": "pending"
+  },
+  {
+   "id": 7,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC006xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 9446451328,
+   "status": "pending"
+  },
+  {
+   "id": 8,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC007xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 10355004763,
+   "status": "pending"
+  },
+  {
+   "id": 9,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC008xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 688863642,
+   "status": "pending"
+  },
+  {
+   "id": 10,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC009xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 3067431642,
+   "status": "pending"
+  },
+  {
+   "id": 11,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC010xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 589527642,
+   "status": "pending"
+  },
+  {
+   "id": 12,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC011xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 12927749219,
+   "status": "pending"
+  },
+  {
+   "id": 13,
+   "files": [
+    "oa_comm\\oa_comm_xml.PMC012xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 899343642,
+   "status": "pending"
+  },
+  {
+   "id": 14,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC000xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 2452901,
+   "status": "pending"
+  },
+  {
+   "id": 15,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC001xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 29937509,
+   "status": "pending"
+  },
+  {
+   "id": 16,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC002xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 681576638,
+   "status": "pending"
+  },
+  {
+   "id": 17,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC003xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 1101877248,
+   "status": "pending"
+  },
+  {
+   "id": 18,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC004xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 2033548543,
+   "status": "pending"
+  },
+  {
+   "id": 19,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC005xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 2325194308,
+   "status": "pending"
+  },
+  {
+   "id": 20,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC006xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 2754689709,
+   "status": "pending"
+  },
+  {
+   "id": 21,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC007xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 2025535644,
+   "status": "pending"
+  },
+  {
+   "id": 22,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC008xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 3096439508,
+   "status": "pending"
+  },
+  {
+   "id": 23,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC009xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 3417041316,
+   "status": "pending"
+  },
+  {
+   "id": 24,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC010xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 112751644,
+   "status": "pending"
+  },
+  {
+   "id": 25,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC011xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 5460975643,
+   "status": "pending"
+  },
+  {
+   "id": 26,
+   "files": [
+    "oa_noncomm\\oa_noncomm_xml.PMC012xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 4971455643,
+   "status": "pending"
+  },
+  {
+   "id": 27,
+   "files": [
+    "oa_other\\oa_other_xml.PMC000xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 103372922,
+   "status": "pending"
+  },
+  {
+   "id": 28,
+   "files": [
+    "oa_other\\oa_other_xml.PMC001xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 82830803,
+   "status": "pending"
+  },
+  {
+   "id": 29,
+   "files": [
+    "oa_other\\oa_other_xml.PMC002xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 333846514,
+   "status": "pending"
+  },
+  {
+   "id": 30,
+   "files": [
+    "oa_other\\oa_other_xml.PMC003xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 691648587,
+   "status": "pending"
+  },
+  {
+   "id": 31,
+   "files": [
+    "oa_other\\oa_other_xml.PMC004xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 561302618,
+   "status": "pending"
+  },
+  {
+   "id": 32,
+   "files": [
+    "oa_other\\oa_other_xml.PMC005xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 310454079,
+   "status": "pending"
+  },
+  {
+   "id": 33,
+   "files": [
+    "oa_other\\oa_other_xml.PMC006xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 352876560,
+   "status": "pending"
+  },
+  {
+   "id": 34,
+   "files": [
+    "oa_other\\oa_other_xml.PMC007xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 1524252605,
+   "status": "pending"
+  },
+  {
+   "id": 35,
+   "files": [
+    "oa_other\\oa_other_xml.PMC008xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 834350327,
+   "status": "pending"
+  },
+  {
+   "id": 36,
+   "files": [
+    "oa_other\\oa_other_xml.PMC009xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 764306943,
+   "status": "pending"
+  },
+  {
+   "id": 37,
+   "files": [
+    "oa_other\\oa_other_xml.PMC010xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 219448466,
+   "status": "pending"
+  },
+  {
+   "id": 38,
+   "files": [
+    "oa_other\\oa_other_xml.PMC011xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 27740387,
+   "status": "pending"
+  },
+  {
+   "id": 39,
+   "files": [
+    "oa_other\\oa_other_xml.PMC012xxxxxx.baseline.2026-01-23.tar.gz"
+   ],
+   "bytes": 16020906,
+   "status": "pending"
+  }
+ ]
+}
