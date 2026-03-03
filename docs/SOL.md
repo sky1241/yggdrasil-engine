@@ -33,7 +33,7 @@
 | Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 2 MARS 2026 (session 12-13)
+## ÉTAT ACTUEL — 3 MARS 2026 (session 15)
 - **SCAN V2 COMPLET** — 581/581 chunks, 692 GB, 347,999,931 papers, 65,026 concepts, 108,301,944 paires non-zero
 - **MIGRATION E:\** — Snapshot OpenAlex migré D:\ → E:\ (disque 5 TB, 4.6 TB libre)
 - **9 ESPÈCES** (spectral K=9): MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math, Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics
@@ -43,6 +43,9 @@
 - **ANALYSE TOP 100 INTER** — 18 BANAL (18%), 30 INTÉRESSANT (30%), 41 WTF (41%), 11 BRUIT (11%), 20/20 web verified
 - **V3 MODULE CODÉ** — `engine/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas + catalogue 13 météorites)
 - **17 GRAINES S-2** — 10 chiffres + 7 symboles alchimiques, patient t=0 documenté (tally ~43K av. J-C → alchimie ~300)
+- **ARCHÉOLOGIE t=0 COMPLÈTE** — 206 L0+L1 concepts sourcés + 194 glyphes S-2 (Cajori, peer-reviewed)
+- **arXiv TARS COMPLET** — 2,449 tars, 1,025 GB, `E:/arxiv/src/`
+- **arXiv↔OpenAlex MAPPER COMPLET** — 309/309 chunks, 479M papers, 4,324,641 arXiv trouvés
 
 ### HISTORIQUE SESSIONS
 | # | Date | Claude | Résumé |
@@ -60,6 +63,8 @@
 | 11 | 1 mars | Opus 4.6 | Blind test V2 (65K, p=3.4e-12), Predictions 2025 (108M paires, P4 Uzzi, matrice collision 9×9), analyse top 100 INTER (41% WTF) |
 | 12 | 2 mars | Opus 4.6 | Glyph Laplacian (64 eigenvectors, d=5.76, p=7e-11), validation honnête, S-2 pipeline (8 briques) |
 | 13 | 2 mars | Opus 4.6 | Mirror pairs test: 19/20, d=0.925, p=6.68e-06 — signal réel confirmé |
+| 14 | 3 mars | Opus 4.6 | Archéologie S-2: 194 glyphes tracés (57 C1 + 137 C2, Cajori), 7 mécaniques Claude dans SOL.md |
+| 15 | 3 mars | Opus 4.6 | arXiv mapper COMPLET (309/309, 4.3M arXiv), arXiv tars COMPLET (2,449, 1 TB), ménage TODO/SOL |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
@@ -158,6 +163,17 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 | engine/meteorites.py | Sedov-Taylor + OHLC + 7 deltas + catalogue + fit (session 7) |
 | docs/formulas.tex | Toutes les formules sourcées (DOI) + adaptations mycelium |
 | docs/SESSION_8_SPECIES_DISCOVERY.md | 5 curseurs Lehmann 2019, plan species_identifier.py |
+| **ARCHÉOLOGIE** | |
+| engine/analysis/inject_origins_l0.py | Origins 19 L0 concepts (peer-reviewed) |
+| engine/analysis/inject_origins_l1.py | Origins 187 L1 concepts (peer-reviewed) |
+| engine/analysis/inject_glyph_origins.py | Origins 194 glyphes S-2 (Cajori 1928-29) |
+| data/scan/origins_to_source.json | 206 L0+L1 origins |
+| data/core/glyph_origins.json | 194 glyph origins (57 C1 + 137 C2) |
+| **arXiv PIPELINE** | |
+| engine/mining/arxiv_openalex_mapper.py | Mapper OpenAlex→arXiv (309 chunks, 4.3M arXiv) |
+| data/scan/arxiv_map_chunks/ | 309 chunks (map.json.gz + meta.json) |
+| data/scan/arxiv_mapper_state.json | État du mapper (complet) |
+| engine/glyphs/ | 8 briques pipeline S-2 (registry, parsers, scanners, laplacian) |
 | **V1 — CARTE** | |
 | engine/core/symbols.py | Symboles + strates |
 | engine/core/holes.py | Détection trous P1-P5 |
@@ -217,6 +233,11 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - [ ] V3: mesurer météorites sur frames réelles (en attente)
 - [x] Glyph Laplacian (64 eigenvectors, d=5.76, p=7e-11, 19/20 top 1%) — session 12
 - [x] Mirror pairs test: 19/20, d=0.925, p=6.68e-06, signal réel confirmé — session 13
+- [x] Archéologie S-2: 194 glyphes tracés (57 C1 + 137 C2) — session 14
+- [x] arXiv mapper COMPLET: 309/309 chunks, 479M papers, 4.3M arXiv — session 15
+- [x] arXiv tars COMPLET: 2,449 tars, 1,025 GB — session 15
+- [ ] Pipeline glyph S-2: arxiv_scanner → glyph_laplacian → intégration
+- [ ] V3: mesurer météorites sur frames réelles
 - [ ] V4: le grimpeur
 
 ## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES

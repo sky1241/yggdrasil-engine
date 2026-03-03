@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 3 mars 2026 (session 14), Sky×Claude (Opus 4.6)
+> Dernière màj: 3 mars 2026 (session 15), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -301,17 +301,17 @@ L'AI grimpe avec le bon sac à dos.
 
 ## SOURCES ANNEXES — arXiv + PMC (EN COURS — session 12, 2 mars 2026)
 
-### arXiv Source Tars (téléchargement archive.org)
-- [x] Découvert 2,046 tars gratuits sur archive.org (2016-2020, ~1 TB)
+### arXiv Source Tars (✅ COMPLET — vérifié session 15, 3 mars 2026)
+- [x] Découvert tars gratuits sur archive.org (~1 TB)
 - [x] Installé aria2c (5 downloads parallèles × 4 connexions), 5-8 MiB/s
-- [ ] **Téléchargement EN COURS**: 1,350/2,046 tars (618 GB/~1 TB), destination `E:/arxiv/src/`
+- [x] **2,449 tars, 1,025 GB**, destination `E:/arxiv/src/` — COMPLET
 - [x] Inventaire: `data/scan/arxiv_tree.json` (1,235 tars indexés)
 - Script: `engine/mining/build_arxiv_tree.py`
 
-### arXiv↔OpenAlex Mapper (EN COURS — session 12, 2 mars 2026)
+### arXiv↔OpenAlex Mapper (✅ COMPLET — session 15, 3 mars 2026)
 - [x] Scanner les 692 GB d'OpenAlex pour extraire les papers avec arXiv ID
-- [ ] **Scan EN COURS**: 114/309 chunks (~37%), 196M papers, 1.6M arXiv trouvés
-- [ ] Auto-merge quand terminé → `data/scan/arxiv_openalex_map.json.gz`
+- [x] **309/309 chunks COMPLET**: 479,290,643 papers scannés, 4,324,641 arXiv trouvés
+- [ ] Auto-merge → `data/scan/arxiv_openalex_map.json.gz`
 - Chunks: `data/scan/arxiv_map_chunks/chunk_NNN/`
 - Script: `engine/mining/arxiv_openalex_mapper.py`
 
@@ -328,8 +328,8 @@ L'AI grimpe avec le bon sac à dos.
 - Glyph Laplacian FAIT avec validation honnête: d=5.76, p=7e-11, recall top 0.1%=70%.
 - **Mirror pairs test PASSÉ**: 19/20, d=0.925, p=6.68e-06 → signal réel confirmé.
 - **Archéologie t=0 COMPLÈTE**: 206 L0+L1 concepts + 194 glyphes S-2 sourcés (Cajori, peer-reviewed).
-- **arXiv mapper EN COURS**: 114/309 chunks (37%), tourne en background sur D:\ (data dupliquée D:\+E:\).
+- **arXiv mapper COMPLET**: 309/309 chunks, 479M papers, 4.3M arXiv trouvés (session 15).
 - ⚠️ `pytest` non installé — tests non exécutables. Installer: `pip install pytest`.
 - ⚠️ D:\ contient encore le snapshot OpenAlex (~692 GB) après migration E:\. À nettoyer si besoin d'espace.
-- Prochaine étape majeure: V3 météorites sur frames, ou compléter arXiv mapper.
+- Prochaine étape majeure: Pipeline glyph S-2 (arxiv_scanner → glyph_laplacian → intégration), puis V3 météorites.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.
