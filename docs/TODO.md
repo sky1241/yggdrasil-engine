@@ -299,27 +299,42 @@ L'AI grimpe avec le bon sac à dos.
   - Résultats: `data/scan/mirror_pairs_test.json`
 - Dossiers: `blind_test_v2/` + `data/scan/spectral_blind_test.json`
 
-## SOURCES ANNEXES — arXiv + PMC (EN COURS — session 12, 2 mars 2026)
+## S-2 PIPELINE SPECTRAL (✅ COMPLET — session 15, 3 mars 2026)
+Pipeline 8 briques: registry → parsers → scanners → laplacien → frames → intégration.
 
-### arXiv Source Tars (✅ COMPLET — vérifié session 15, 3 mars 2026)
-- [x] Découvert tars gratuits sur archive.org (~1 TB)
-- [x] Installé aria2c (5 downloads parallèles × 4 connexions), 5-8 MiB/s
-- [x] **2,449 tars, 1,025 GB**, destination `E:/arxiv/src/` — COMPLET
-- [x] Inventaire: `data/scan/arxiv_tree.json` (1,235 tars indexés)
+### arXiv Glyph Scanner (✅ COMPLET — session 12)
+- [x] 420/420 chunks, 978,919 papers, 950,237 avec glyphes (97%), 610M paires
+- [x] Cutoff 2015-12, poids 1/C(n,2)
+- [x] Résultats: `data/scan/glyph_chunks/chunk_001→420/`
+- Script: `engine/glyphs/arxiv_scanner.py`
+
+### PMC Glyph Scanner (✅ COMPLET — session 12)
+- [x] 39/39 chunks, 72,502 papers avec glyphes
+- [x] Résultats: `data/scan/pmc_glyph_chunks/`
+- Script: `engine/glyphs/pmc_scanner.py`
+
+### Glyph Laplacien spectral (✅ COMPLET — session 15)
+- [x] 459 chunks (420 arXiv + 39 PMC) → matrice 1337×1337, densité 6.9%
+- [x] eigsh(k=9), 617/1337 glyphes actifs
+- [x] Sanity check: ∫↔∂=0.024, ∀↔∃=0.020, (↔)=0.0003, ∧↔∨=0.043
+- [x] Positions: `data/scan/glyph_positions.json`
+- Script: `engine/glyphs/glyph_laplacian.py`
+
+### Glyph Frames + Intégration (✅ COMPLET — session 15)
+- [x] 356 frames (4 historiques + 352 data, 1959→2015-12)
+- [x] `data/scan/glyph_frames.json` + `data/core/s2_spectral.json`
+- Scripts: `engine/glyphs/glyph_frame_builder.py` + `engine/glyphs/integrate.py`
+
+## SOURCES ANNEXES — arXiv + PMC (✅ COMPLET)
+
+### arXiv Source Tars (✅ COMPLET — session 15)
+- [x] 2,282 tars, 1,025 GB, `E:/arxiv/src/` — archive.org gratuit (1992-2019)
 - Script: `engine/mining/build_arxiv_tree.py`
 
-### arXiv↔OpenAlex Mapper (✅ COMPLET — session 15, 3 mars 2026)
-- [x] Scanner les 692 GB d'OpenAlex pour extraire les papers avec arXiv ID
-- [x] **309/309 chunks COMPLET**: 479,290,643 papers scannés, 4,324,641 arXiv trouvés
+### arXiv↔OpenAlex Mapper (✅ COMPLET — session 15)
+- [x] **309/309 chunks**: 479,290,643 papers, 4,324,641 arXiv trouvés
 - [ ] Auto-merge → `data/scan/arxiv_openalex_map.json.gz`
-- Chunks: `data/scan/arxiv_map_chunks/chunk_NNN/`
 - Script: `engine/mining/arxiv_openalex_mapper.py`
-
-### PMC Glyph Scanner (✅ COMPLET — session 12, 2 mars 2026)
-- [x] 39/39 chunks scannés, 72,502 papers avec glyphes
-- [x] Résultats: `data/scan/pmc_glyph_chunks/`
-- [x] Tree: `data/scan/pmc_glyph_tree.json`
-- Script: `engine/glyphs/pmc_scanner.py`
 
 ## NOTES
 - Winter tree scan V2 COMPLET (581/581 chunks, 692 GB, 348M papers). Le goulot est passé.
@@ -331,5 +346,6 @@ L'AI grimpe avec le bon sac à dos.
 - **arXiv mapper COMPLET**: 309/309 chunks, 479M papers, 4.3M arXiv trouvés (session 15).
 - ⚠️ `pytest` non installé — tests non exécutables. Installer: `pip install pytest`.
 - ⚠️ D:\ contient encore le snapshot OpenAlex (~692 GB) après migration E:\. À nettoyer si besoin d'espace.
-- Prochaine étape majeure: Pipeline glyph S-2 (arxiv_scanner → glyph_laplacian → intégration), puis V3 météorites.
+- **Pipeline S-2 COMPLET**: 459 chunks, 617 glyphes actifs, positions spectrales calculées.
+- Prochaine étape majeure: **S-1 Métiers** (lier S-2 glyphes → S-1 métiers → S0 formules), puis V3 météorites.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.
