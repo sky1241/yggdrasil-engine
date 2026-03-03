@@ -32,13 +32,13 @@ L1_SOURCES = {
         "real_t0_source": "Trigger B.G. (2006) A History of Archaeological Thought, 2nd ed., Cambridge UP, ch. 2"
     },
     "Arithmetic": {
-        "real_t0": -2000,
-        "real_t0_event": "Old Babylonian mathematical tablets (YBC 7289, Plimpton 322) demonstrate systematic arithmetic ca. 2000-1800 BCE",
+        "real_t0": -1800,
+        "real_t0_event": "Old Babylonian mathematical tablets (YBC 7289, Plimpton 322) demonstrate systematic arithmetic, ca. 1800 BCE",
         "real_t0_source": "Robson E. (2008) Mathematics in Ancient Iraq: A Social History, Princeton UP"
     },
     "Classics": {
-        "real_t0": 1470,
-        "real_t0_event": "Renaissance humanist philology systematizes Greek & Latin textual criticism; Poliziano's Miscellanea (1489) as landmark",
+        "real_t0": 1489,
+        "real_t0_event": "Poliziano publishes Miscellanea, founding modern classical philology with systematic textual criticism of Greek & Latin sources",
         "real_t0_source": "Grafton A. (1991) Defenders of the Text: The Traditions of Scholarship in an Age of Science, Harvard UP"
     },
     "Combinatorics": {
@@ -126,8 +126,8 @@ L1_SOURCES = {
         "real_t0_source": "Radivojevic M. et al. (2010) Journal of Archaeological Science 37(11):2775-2787, DOI:10.1016/j.jas.2010.06.012"
     },
     "Algorithm": {
-        "real_t0": 825,
-        "real_t0_event": "al-Khwarizmi, al-Kitab al-mukhtasar fi hisab al-jabr wa-l-muqabala -- systematic procedures; 'algorithm' derives from his Latinized name",
+        "real_t0": 820,
+        "real_t0_event": "al-Khwarizmi, al-Kitab al-mukhtasar fi hisab al-jabr wa-l-muqabala (~820 CE) -- systematic procedures; 'algorithm' derives from his Latinized name",
         "real_t0_source": "Rashed R. (2009) Al-Khwarizmi: The Beginnings of Algebra, Saqi Books; Folkerts M. (1997) Die alteste lateinische Schrift uber das indische Rechnen nach al-Hwarizmi"
     },
     "Cartography": {
@@ -534,7 +534,7 @@ L1_SOURCES = {
     },
     "Advertising": {
         "real_t0": 1625,
-        "real_t0_event": "ANACHRONISM at 1010. First paid newspaper advertisement (England, Mercurius Britannicus)",
+        "real_t0_event": "ANACHRONISM at 1010. First paid newspaper advertisement in England (Nathaniel Butter's news-book, 1625)",
         "real_t0_source": "Nevett T.R. (1982) Advertising in Britain: A History, Heinemann"
     },
     "Commerce": {
@@ -573,7 +573,7 @@ L1_SOURCES = {
         "real_t0_source": "Taylor F.W. (1911) The Principles of Scientific Management, Harper & Brothers"
     },
     "Social psychology": {
-        "real_t0": 1897,
+        "real_t0": 1898,
         "real_t0_event": "ANACHRONISM at 1014. Norman Triplett publishes first experimental social psychology study on social facilitation",
         "real_t0_source": "Triplett N. (1898) American Journal of Psychology 9(4):507-533"
     },

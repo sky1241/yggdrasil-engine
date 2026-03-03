@@ -292,9 +292,9 @@
       "species": 4,
       "species_name": "CS/Math",
       "openalex_birth": 1000,
-      "real_t0": -2000,
+      "real_t0": -1800,
       "real_t0_source": "Robson E. (2008) Mathematics in Ancient Iraq: A Social History, Princeton UP",
-      "real_t0_event": "Old Babylonian mathematical tablets (YBC 7289, Plimpton 322) demonstrate systematic arithmetic ca. 2000-1800 BCE"
+      "real_t0_event": "Old Babylonian mathematical tablets (YBC 7289, Plimpton 322) demonstrate systematic arithmetic, ca. 1800 BCE"
     },
     {
       "name": "Art history",
@@ -328,9 +328,9 @@
       "species": 6,
       "species_name": "Humanities/PolSci",
       "openalex_birth": 1000,
-      "real_t0": 1470,
+      "real_t0": 1489,
       "real_t0_source": "Grafton A. (1991) Defenders of the Text: The Traditions of Scholarship in an Age of Science, Harvard UP",
-      "real_t0_event": "Renaissance humanist philology systematizes Greek & Latin textual criticism; Poliziano's Miscellanea (1489) as landmark"
+      "real_t0_event": "Poliziano publishes Miscellanea, founding modern classical philology with systematic textual criticism of Greek & Latin sources"
     },
     {
       "name": "Cognitive science",
@@ -365,7 +365,7 @@
       "species_name": "Psych/Business",
       "openalex_birth": 1000,
       "real_t0": 1948,
-      "real_t0_source": "Shannon C.E. (1948) Bell System Technical Journal 27(3-4):379-423, DOI:10.1002/j.1538-7305.1948.tb01338.x",
+      "real_t0_source": "Shannon C.E. (1948) Bell System Technical Journal 27(3):379-423, DOI:10.1002/j.1538-7305.1948.tb01338.x",
       "real_t0_event": "Shannon publishes 'A Mathematical Theory of Communication' -- founding information/communication theory"
     },
     {
@@ -726,7 +726,7 @@
       "openalex_birth": 1010,
       "real_t0": 1625,
       "real_t0_source": "Nevett T.R. (1982) Advertising in Britain: A History, Heinemann",
-      "real_t0_event": "ANACHRONISM at 1010. First paid newspaper advertisement (England, Mercurius Britannicus)"
+      "real_t0_event": "ANACHRONISM at 1010. First paid newspaper advertisement in England (Nathaniel Butter's news-book, 1625)"
     },
     {
       "name": "Commerce",
@@ -904,7 +904,7 @@
       "species": 3,
       "species_name": "Psych/Business",
       "openalex_birth": 1014,
-      "real_t0": 1897,
+      "real_t0": 1898,
       "real_t0_source": "Triplett N. (1898) American Journal of Psychology 9(4):507-533",
       "real_t0_event": "ANACHRONISM at 1014. Norman Triplett publishes first experimental social psychology study on social facilitation"
     },
@@ -1278,7 +1278,7 @@
       "openalex_birth": 1073,
       "real_t0": 1764,
       "real_t0_source": "Palpalicef J. (2009) 'Nils Rosen von Rosenstein and his Textbook on Paediatrics' Archives of Disease in Childhood 94(5):394-395",
-      "real_t0_event": "ANACHRONISM at 1073. Nils Rosen von Rosenstein publishes first modern pediatrics textbook (Swedish, 1764; Latin 1764 publication)"
+      "real_t0_event": "ANACHRONISM at 1073. Nils Rosen von Rosenstein publishes first modern pediatrics textbook (Swedish, 1764 publication)"
     },
     {
       "name": "Ecology",
@@ -1445,7 +1445,7 @@
       "species_name": "MatSci/Chem",
       "openalex_birth": 1099,
       "real_t0": 1848,
-      "real_t0_source": "Gal J. (2017) Nature Chemistry 9:857-863, DOI:10.1038/nchem.2790",
+      "real_t0_source": "Gal J. (2017) Helvetica Chimica Acta 100(6):e1700098, DOI:10.1002/hlca.201700098",
       "real_t0_event": "ANACHRONISM at 1099. Pasteur, resolution of tartaric acid into enantiomers -- discovery of molecular chirality"
     },
     {
@@ -1744,9 +1744,9 @@
       "species": 4,
       "species_name": "CS/Math",
       "openalex_birth": 1206,
-      "real_t0": 825,
+      "real_t0": 820,
       "real_t0_source": "Rashed R. (2009) Al-Khwarizmi: The Beginnings of Algebra, Saqi Books; Folkerts M. (1997) Die alteste lateinische Schrift uber das indische Rechnen nach al-Hwarizmi",
-      "real_t0_event": "al-Khwarizmi, al-Kitab al-mukhtasar fi hisab al-jabr wa-l-muqabala -- systematic procedures; 'algorithm' derives from his Latinized name"
+      "real_t0_event": "al-Khwarizmi, al-Kitab al-mukhtasar fi hisab al-jabr wa-l-muqabala (~820 CE) -- systematic procedures; 'algorithm' derives from his Latinized name"
     },
     {
       "name": "Astronomy",
@@ -1998,7 +1998,7 @@
       "openalex_birth": 1391,
       "real_t0": 1796,
       "real_t0_source": "Jenner E. (1798) An Inquiry into the Causes and Effects of the Variolae Vaccinae; Silverstein A.M. (2009) A History of Immunology, 2nd ed., Academic Press",
-      "real_t0_event": "ANACHRONISM at 1391. Jenner vaccinates James Phipps with cowpox -- founding of immunology"
+      "real_t0_event": "ANACHRONISM at 1391. Jenner vacccinates James Phipps with cowpox -- founding of immunology"
     },
     {
       "name": "Physical medicine and rehabilitation",
