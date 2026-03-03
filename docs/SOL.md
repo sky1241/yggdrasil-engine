@@ -338,3 +338,146 @@ P4 = activity_A × activity_B × (1 - cooc_norm) × |z_uzzi|
 z_uzzi = (observed - E) / std
 E = works_i × works_j / total_works_sum
 ```
+
+## ⚙️ MÉCANIQUES CLAUDE
+
+<rules>
+Cette section est la boîte à outils de prompting Sky↔Claude.
+Chaque technique a un nom, une règle, et un exemple Yggdrasil concret.
+Les instructions critiques sont EN HAUT (sandwich ouvert).
+</rules>
+
+### 1. SANDWICH (Primauté + Récence)
+
+Claude fait plus attention au **DÉBUT** et à la **FIN** du prompt. Le milieu = ventre mou.
+
+**Règle** : Instructions critiques en HAUT, rappelées en BAS. En conversation longue (40+ messages), rappeler les 3 règles clés tous les 15-20 messages.
+
+**Exemple Yggdrasil** :
+```
+# DÉBUT DU PROMPT
+RÈGLE : Le mycelium vit dans S-2 à S0. PAS au-dessus.
+
+[... 200 lignes d'instructions de scan ...]
+
+# FIN DU PROMPT — RAPPEL
+RAPPEL : Mycelium = S-2 à S0 uniquement. Pas au-dessus. Jamais.
+```
+
+### 2. AMORCE (Bombe de glisse output)
+
+Pour forcer un format précis, Sky donne les **3 premières lignes** de l'output attendu. Claude s'accroche au pattern et déraille moins — le cousin passe le câble en un seul tir.
+
+**Règle** : Fournir le début exact de la sortie + "continue".
+
+**Exemple Yggdrasil** :
+```
+Génère le JSON des graines S-2. Commence EXACTEMENT par :
+{"seeds": [{"glyph_id": 0, "symbol": "0", "origin": {"source": "Lebombo", "year": -43000}},
+{"glyph_id": 1, "symbol": "1", "origin": {"source": "Brahmi", "year": -257}},
+Continue pour les 15 graines restantes.
+```
+
+### 3. MONTRE, EXPLIQUE PAS (2 exemples minimum)
+
+2 exemples concrets battent 2 paragraphes d'instructions. Toujours.
+
+**Règle** : Chaque mission DOIT inclure 2 exemples RÉELS du format attendu — un bon + un mauvais.
+
+**Exemple Yggdrasil** :
+```
+BON :
+{"concept": "Topology", "species": 4, "strate": "S0", "confidence": "C1", "source": "DOI:10.xxx"}
+
+MAUVAIS :
+{"concept": "Topology", "species": "CS/Math", "strate": 0, "confidence": "prouvé"}
+→ species = index (int), pas nom. strate = string "S0", pas int. confidence = "C1"/"C2", pas prose.
+```
+
+### 4. POSITIF AVANT NÉGATIF
+
+"Fais Y" bat "Ne fais pas X". Claude lit "fais X" dans "ne fais pas X" — le cerveau accroche le verbe.
+
+**Règle** : Donner l'action de remplacement AVANT l'interdiction.
+
+**Exemple Yggdrasil** :
+```
+✅ "Marque INCONNU si la source est absente. NE JAMAIS inventer un DOI."
+❌ "Ne jamais inventer un DOI. Marque INCONNU si la source est absente."
+```
+Dans le deuxième cas, Claude a déjà lu "inventer un DOI" — la graine est plantée.
+
+### 5. XML TAGS (Murs d'attention)
+
+Les tags `<rules>`, `<format>`, `<context>`, `<philosophy>` compartimentent l'attention. Sans tags = prose → Claude perd le fil sur les longs prompts. Avec tags = compartiments → Claude sait où regarder.
+
+**Règle** : Utiliser des tags XML pour séparer les blocs logiques d'un prompt.
+
+**Exemple Yggdrasil** :
+```xml
+<context>
+Scan V2 : 581 chunks, 65,026 concepts, cutoff 2015.
+</context>
+
+<rules>
+1. Filtrer erratum + retraction + is_retracted
+2. Poids = 1/C(n,2) par paper
+3. MONTH_FROM_YEAR = 1980
+</rules>
+
+<format>
+Output : chunk_NNN/cooc.json.gz + activity.json.gz + meta.json
+</format>
+```
+
+### 6. CHUNKING (Le câble et le tube)
+
+Limite de sortie Claude = ~32K tokens. Si le script est plus gros → il se coupe. Le tube a un diamètre fixe — fais passer le câble en sections.
+
+**Règle** : Max 25-30 items par génération. Commit entre chaque chunk. Pattern : squelette → données chunk par chunk → commit.
+
+**Exemple Yggdrasil** :
+```
+# Au lieu de générer 206 entrées glyph_origins d'un coup :
+Chunk 1 : glyphes 0-29 → commit
+Chunk 2 : glyphes 30-59 → commit
+...
+Chunk 7 : glyphes 180-206 → commit final
+```
+
+### 7. RAPPEL MID-SESSION
+
+Plus la conversation dure, plus les vieilles instructions s'effacent. Le ventre mou grossit à chaque message.
+
+**Règle** : Tous les 15-20 messages : "RAPPEL : [règle 1], [règle 2], [règle 3]". Juste les 3 plus importantes, pas tout.
+
+**Exemple Yggdrasil** :
+```
+Message 25 de la session :
+RAPPEL :
+1. Mycelium = S-2 à S0 uniquement
+2. Token JAMAIS affiché (grep -v "ghp_\|x-access")
+3. Si un test échoue → noter tel quel, pas de triche
+```
+
+### Tableau résumé
+
+| # | Technique | Règle express | Quand l'utiliser |
+|---|-----------|--------------|-----------------|
+| 1 | **Sandwich** | Critique en haut + rappelé en bas | Tout prompt de mission |
+| 2 | **Amorce** | Donner les 3 premières lignes de l'output | Quand le format JSON/code est strict |
+| 3 | **Montre** | 2 exemples (bon + mauvais) | Toute mission avec format attendu |
+| 4 | **Positif d'abord** | "Fais Y" avant "Pas X" | Toute interdiction/contrainte |
+| 5 | **XML tags** | `<rules>` `<format>` `<context>` | Prompts de 50+ lignes |
+| 6 | **Chunking** | Max 25-30 items, commit entre | Génération de données/code long |
+| 7 | **Rappel** | 3 règles clés tous les 15-20 msg | Sessions de 40+ messages |
+
+> "Tu mets la bombe de glisse dans le tube avant, et le cousin passe le câble
+> en un seul tir là où normalement il faudrait trois instances." — Sky, mars 2026
+
+<rules>
+RAPPEL (sandwich fermé) :
+- Cette section applique ses propres règles : sandwich (haut+bas), exemples concrets (bon/mauvais), positif avant négatif, XML tags pour compartimenter.
+- Chaque technique a un exemple Yggdrasil réel tiré du repo.
+- Le tableau résumé ferme le tube.
+</rules>
