@@ -1,8 +1,8 @@
 {
  "meta": {
-  "total_frames": 99,
+  "total_frames": 356,
   "historical_frames": 4,
-  "data_frames": 95,
+  "data_frames": 352,
   "method": "glyph_frame_builder_v1"
  },
  "frames": [
@@ -91,954 +91,3524 @@
    "edges_cumulative": 0
   },
   {
+   "period": "1959",
+   "year": 1959,
+   "phase": "data",
+   "glyphs_active": 54,
+   "glyphs_new": 54,
+   "glyphs_period": 54,
+   "edges_cumulative": 1090,
+   "edges_period": 1090
+  },
+  {
+   "period": "1960",
+   "year": 1960,
+   "phase": "data",
+   "glyphs_active": 72,
+   "glyphs_new": 18,
+   "glyphs_period": 67,
+   "edges_cumulative": 2563,
+   "edges_period": 1473
+  },
+  {
+   "period": "1961",
+   "year": 1961,
+   "phase": "data",
+   "glyphs_active": 81,
+   "glyphs_new": 9,
+   "glyphs_period": 67,
+   "edges_cumulative": 3787,
+   "edges_period": 1224
+  },
+  {
+   "period": "1962",
+   "year": 1962,
+   "phase": "data",
+   "glyphs_active": 90,
+   "glyphs_new": 9,
+   "glyphs_period": 68,
+   "edges_cumulative": 5334,
+   "edges_period": 1547
+  },
+  {
+   "period": "1963",
+   "year": 1963,
+   "phase": "data",
+   "glyphs_active": 98,
+   "glyphs_new": 8,
+   "glyphs_period": 71,
+   "edges_cumulative": 6819,
+   "edges_period": 1485
+  },
+  {
+   "period": "1964",
+   "year": 1964,
+   "phase": "data",
+   "glyphs_active": 104,
+   "glyphs_new": 6,
+   "glyphs_period": 72,
+   "edges_cumulative": 8139,
+   "edges_period": 1320
+  },
+  {
+   "period": "1976",
+   "year": 1976,
+   "phase": "data",
+   "glyphs_active": 109,
+   "glyphs_new": 5,
+   "glyphs_period": 71,
+   "edges_cumulative": 9767,
+   "edges_period": 1628
+  },
+  {
+   "period": "1977",
+   "year": 1977,
+   "phase": "data",
+   "glyphs_active": 109,
+   "glyphs_new": 0,
+   "glyphs_period": 61,
+   "edges_cumulative": 11131,
+   "edges_period": 1364
+  },
+  {
+   "period": "1979",
+   "year": 1979,
+   "phase": "data",
+   "glyphs_active": 109,
+   "glyphs_new": 0,
+   "glyphs_period": 13,
+   "edges_cumulative": 11203,
+   "edges_period": 72
+  },
+  {
+   "period": "1980",
+   "year": 1980,
+   "phase": "data",
+   "glyphs_active": 110,
+   "glyphs_new": 1,
+   "glyphs_period": 17,
+   "edges_cumulative": 11290,
+   "edges_period": 87
+  },
+  {
+   "period": "1981",
+   "year": 1981,
+   "phase": "data",
+   "glyphs_active": 110,
+   "glyphs_new": 0,
+   "glyphs_period": 10,
+   "edges_cumulative": 11323,
+   "edges_period": 33
+  },
+  {
+   "period": "1981-09",
+   "year": 1981,
+   "phase": "data",
+   "glyphs_active": 110,
+   "glyphs_new": 0,
+   "glyphs_period": 6,
+   "edges_cumulative": 11338,
+   "edges_period": 15
+  },
+  {
+   "period": "1981-12",
+   "year": 1981,
+   "phase": "data",
+   "glyphs_active": 110,
+   "glyphs_new": 0,
+   "glyphs_period": 11,
+   "edges_cumulative": 11393,
+   "edges_period": 55
+  },
+  {
+   "period": "1982-03",
+   "year": 1982,
+   "phase": "data",
+   "glyphs_active": 111,
+   "glyphs_new": 1,
+   "glyphs_period": 21,
+   "edges_cumulative": 11585,
+   "edges_period": 192
+  },
+  {
+   "period": "1982-06",
+   "year": 1982,
+   "phase": "data",
+   "glyphs_active": 111,
+   "glyphs_new": 0,
+   "glyphs_period": 10,
+   "edges_cumulative": 11628,
+   "edges_period": 43
+  },
+  {
+   "period": "1982-09",
+   "year": 1982,
+   "phase": "data",
+   "glyphs_active": 111,
+   "glyphs_new": 0,
+   "glyphs_period": 12,
+   "edges_cumulative": 11694,
+   "edges_period": 66
+  },
+  {
+   "period": "1982-12",
+   "year": 1982,
+   "phase": "data",
+   "glyphs_active": 111,
+   "glyphs_new": 0,
+   "glyphs_period": 12,
+   "edges_cumulative": 11748,
+   "edges_period": 54
+  },
+  {
+   "period": "1983",
+   "year": 1983,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 1,
+   "glyphs_period": 21,
+   "edges_cumulative": 11905,
+   "edges_period": 157
+  },
+  {
+   "period": "1984",
+   "year": 1984,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 0,
+   "glyphs_period": 18,
+   "edges_cumulative": 12013,
+   "edges_period": 108
+  },
+  {
+   "period": "1984-11",
+   "year": 1984,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 0,
+   "glyphs_period": 5,
+   "edges_cumulative": 12023,
+   "edges_period": 10
+  },
+  {
+   "period": "1985",
+   "year": 1985,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 0,
+   "glyphs_period": 15,
+   "edges_cumulative": 12097,
+   "edges_period": 74
+  },
+  {
+   "period": "1986",
+   "year": 1986,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 0,
+   "glyphs_period": 10,
+   "edges_cumulative": 12132,
+   "edges_period": 35
+  },
+  {
+   "period": "1986-01",
+   "year": 1986,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 0,
+   "glyphs_period": 7,
+   "edges_cumulative": 12153,
+   "edges_period": 21
+  },
+  {
+   "period": "1986-07",
+   "year": 1986,
+   "phase": "data",
+   "glyphs_active": 112,
+   "glyphs_new": 0,
+   "glyphs_period": 9,
+   "edges_cumulative": 12187,
+   "edges_period": 34
+  },
+  {
+   "period": "1987",
+   "year": 1987,
+   "phase": "data",
+   "glyphs_active": 113,
+   "glyphs_new": 1,
+   "glyphs_period": 59,
+   "edges_cumulative": 13294,
+   "edges_period": 1107
+  },
+  {
+   "period": "1987-01",
+   "year": 1987,
+   "phase": "data",
+   "glyphs_active": 113,
+   "glyphs_new": 0,
+   "glyphs_period": 4,
+   "edges_cumulative": 13300,
+   "edges_period": 6
+  },
+  {
+   "period": "1987-07",
+   "year": 1987,
+   "phase": "data",
+   "glyphs_active": 113,
+   "glyphs_new": 0,
+   "glyphs_period": 9,
+   "edges_cumulative": 13330,
+   "edges_period": 30
+  },
+  {
+   "period": "1987-12",
+   "year": 1987,
+   "phase": "data",
+   "glyphs_active": 113,
+   "glyphs_new": 0,
+   "glyphs_period": 8,
+   "edges_cumulative": 13358,
+   "edges_period": 28
+  },
+  {
    "period": "1988",
    "year": 1988,
    "phase": "data",
-   "glyphs_active": 5,
-   "glyphs_new": 5,
+   "glyphs_active": 115,
+   "glyphs_new": 2,
+   "glyphs_period": 62,
+   "edges_cumulative": 14642,
+   "edges_period": 1284
+  },
+  {
+   "period": "1988-01",
+   "year": 1988,
+   "phase": "data",
+   "glyphs_active": 115,
+   "glyphs_new": 0,
+   "glyphs_period": 7,
+   "edges_cumulative": 14663,
+   "edges_period": 21
+  },
+  {
+   "period": "1988-07",
+   "year": 1988,
+   "phase": "data",
+   "glyphs_active": 115,
+   "glyphs_new": 0,
+   "glyphs_period": 4,
+   "edges_cumulative": 14669,
+   "edges_period": 6
+  },
+  {
+   "period": "1989",
+   "year": 1989,
+   "phase": "data",
+   "glyphs_active": 117,
+   "glyphs_new": 2,
+   "glyphs_period": 66,
+   "edges_cumulative": 16225,
+   "edges_period": 1556
+  },
+  {
+   "period": "1989-01",
+   "year": 1989,
+   "phase": "data",
+   "glyphs_active": 117,
+   "glyphs_new": 0,
+   "glyphs_period": 4,
+   "edges_cumulative": 16231,
+   "edges_period": 6
+  },
+  {
+   "period": "1989-07",
+   "year": 1989,
+   "phase": "data",
+   "glyphs_active": 117,
+   "glyphs_new": 0,
    "glyphs_period": 5,
-   "edges_cumulative": 10,
+   "edges_cumulative": 16241,
    "edges_period": 10
+  },
+  {
+   "period": "1989-12",
+   "year": 1989,
+   "phase": "data",
+   "glyphs_active": 117,
+   "glyphs_new": 0,
+   "glyphs_period": 7,
+   "edges_cumulative": 16258,
+   "edges_period": 17
+  },
+  {
+   "period": "1990",
+   "year": 1990,
+   "phase": "data",
+   "glyphs_active": 121,
+   "glyphs_new": 4,
+   "glyphs_period": 79,
+   "edges_cumulative": 18149,
+   "edges_period": 1891
+  },
+  {
+   "period": "1990-07",
+   "year": 1990,
+   "phase": "data",
+   "glyphs_active": 121,
+   "glyphs_new": 0,
+   "glyphs_period": 7,
+   "edges_cumulative": 18170,
+   "edges_period": 21
+  },
+  {
+   "period": "1990-12",
+   "year": 1990,
+   "phase": "data",
+   "glyphs_active": 121,
+   "glyphs_new": 0,
+   "glyphs_period": 8,
+   "edges_cumulative": 18186,
+   "edges_period": 16
+  },
+  {
+   "period": "1991",
+   "year": 1991,
+   "phase": "data",
+   "glyphs_active": 126,
+   "glyphs_new": 5,
+   "glyphs_period": 68,
+   "edges_cumulative": 19472,
+   "edges_period": 1286
+  },
+  {
+   "period": "1991-01",
+   "year": 1991,
+   "phase": "data",
+   "glyphs_active": 126,
+   "glyphs_new": 0,
+   "glyphs_period": 5,
+   "edges_cumulative": 19482,
+   "edges_period": 10
+  },
+  {
+   "period": "1991-07",
+   "year": 1991,
+   "phase": "data",
+   "glyphs_active": 126,
+   "glyphs_new": 0,
+   "glyphs_period": 4,
+   "edges_cumulative": 19488,
+   "edges_period": 6
+  },
+  {
+   "period": "1992",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 130,
+   "glyphs_new": 4,
+   "glyphs_period": 71,
+   "edges_cumulative": 21391,
+   "edges_period": 1903
+  },
+  {
+   "period": "1992-01",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 198,
+   "glyphs_new": 68,
+   "glyphs_period": 166,
+   "edges_cumulative": 30653,
+   "edges_period": 9262
+  },
+  {
+   "period": "1992-02",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 203,
+   "glyphs_new": 5,
+   "glyphs_period": 145,
+   "edges_cumulative": 38365,
+   "edges_period": 7712
+  },
+  {
+   "period": "1992-03",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 209,
+   "glyphs_new": 6,
+   "glyphs_period": 139,
+   "edges_cumulative": 45389,
+   "edges_period": 7024
+  },
+  {
+   "period": "1992-04",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 215,
+   "glyphs_new": 6,
+   "glyphs_period": 156,
+   "edges_cumulative": 53570,
+   "edges_period": 8181
+  },
+  {
+   "period": "1992-05",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 215,
+   "glyphs_new": 0,
+   "glyphs_period": 146,
+   "edges_cumulative": 61018,
+   "edges_period": 7448
+  },
+  {
+   "period": "1992-06",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 216,
+   "glyphs_new": 1,
+   "glyphs_period": 147,
+   "edges_cumulative": 68748,
+   "edges_period": 7730
+  },
+  {
+   "period": "1992-07",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 217,
+   "glyphs_new": 1,
+   "glyphs_period": 157,
+   "edges_cumulative": 77098,
+   "edges_period": 8350
+  },
+  {
+   "period": "1992-08",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 218,
+   "glyphs_new": 1,
+   "glyphs_period": 147,
+   "edges_cumulative": 84923,
+   "edges_period": 7825
+  },
+  {
+   "period": "1992-09",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 218,
+   "glyphs_new": 0,
+   "glyphs_period": 160,
+   "edges_cumulative": 93706,
+   "edges_period": 8783
+  },
+  {
+   "period": "1992-10",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 218,
+   "glyphs_new": 0,
+   "glyphs_period": 161,
+   "edges_cumulative": 102634,
+   "edges_period": 8928
+  },
+  {
+   "period": "1992-11",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 219,
+   "glyphs_new": 1,
+   "glyphs_period": 169,
+   "edges_cumulative": 112409,
+   "edges_period": 9775
+  },
+  {
+   "period": "1992-12",
+   "year": 1992,
+   "phase": "data",
+   "glyphs_active": 219,
+   "glyphs_new": 0,
+   "glyphs_period": 158,
+   "edges_cumulative": 120854,
+   "edges_period": 8445
+  },
+  {
+   "period": "1993",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 219,
+   "glyphs_new": 0,
+   "glyphs_period": 83,
+   "edges_cumulative": 123528,
+   "edges_period": 2674
+  },
+  {
+   "period": "1993-01",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 219,
+   "glyphs_new": 0,
+   "glyphs_period": 153,
+   "edges_cumulative": 131698,
+   "edges_period": 8170
+  },
+  {
+   "period": "1993-02",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 220,
+   "glyphs_new": 1,
+   "glyphs_period": 165,
+   "edges_cumulative": 140789,
+   "edges_period": 9091
+  },
+  {
+   "period": "1993-03",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 220,
+   "glyphs_new": 0,
+   "glyphs_period": 164,
+   "edges_cumulative": 150363,
+   "edges_period": 9574
+  },
+  {
+   "period": "1993-04",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 220,
+   "glyphs_new": 0,
+   "glyphs_period": 165,
+   "edges_cumulative": 159882,
+   "edges_period": 9519
+  },
+  {
+   "period": "1993-05",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 221,
+   "glyphs_new": 1,
+   "glyphs_period": 160,
+   "edges_cumulative": 168847,
+   "edges_period": 8965
+  },
+  {
+   "period": "1993-06",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 1,
+   "glyphs_period": 168,
+   "edges_cumulative": 178147,
+   "edges_period": 9300
+  },
+  {
+   "period": "1993-07",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 160,
+   "edges_cumulative": 187020,
+   "edges_period": 8873
+  },
+  {
+   "period": "1993-08",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 166,
+   "edges_cumulative": 196774,
+   "edges_period": 9754
+  },
+  {
+   "period": "1993-09",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 163,
+   "edges_cumulative": 205736,
+   "edges_period": 8962
+  },
+  {
+   "period": "1993-10",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 170,
+   "edges_cumulative": 215254,
+   "edges_period": 9518
+  },
+  {
+   "period": "1993-11",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 161,
+   "edges_cumulative": 224857,
+   "edges_period": 9603
+  },
+  {
+   "period": "1993-12",
+   "year": 1993,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 166,
+   "edges_cumulative": 234548,
+   "edges_period": 9691
+  },
+  {
+   "period": "1994",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 24,
+   "edges_cumulative": 234697,
+   "edges_period": 149
+  },
+  {
+   "period": "1994-01",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 171,
+   "edges_cumulative": 244500,
+   "edges_period": 9803
+  },
+  {
+   "period": "1994-02",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 165,
+   "edges_cumulative": 254316,
+   "edges_period": 9816
+  },
+  {
+   "period": "1994-03",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 173,
+   "edges_cumulative": 264728,
+   "edges_period": 10412
+  },
+  {
+   "period": "1994-04",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 170,
+   "edges_cumulative": 274700,
+   "edges_period": 9972
+  },
+  {
+   "period": "1994-05",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 165,
+   "edges_cumulative": 284963,
+   "edges_period": 10263
+  },
+  {
+   "period": "1994-06",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 222,
+   "glyphs_new": 0,
+   "glyphs_period": 168,
+   "edges_cumulative": 295449,
+   "edges_period": 10486
+  },
+  {
+   "period": "1994-07",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 223,
+   "glyphs_new": 1,
+   "glyphs_period": 173,
+   "edges_cumulative": 305935,
+   "edges_period": 10486
+  },
+  {
+   "period": "1994-08",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 223,
+   "glyphs_new": 0,
+   "glyphs_period": 172,
+   "edges_cumulative": 316210,
+   "edges_period": 10275
+  },
+  {
+   "period": "1994-09",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 223,
+   "glyphs_new": 0,
+   "glyphs_period": 166,
+   "edges_cumulative": 325876,
+   "edges_period": 9666
+  },
+  {
+   "period": "1994-10",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 223,
+   "glyphs_new": 0,
+   "glyphs_period": 170,
+   "edges_cumulative": 336314,
+   "edges_period": 10438
+  },
+  {
+   "period": "1994-11",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 223,
+   "glyphs_new": 0,
+   "glyphs_period": 173,
+   "edges_cumulative": 347078,
+   "edges_period": 10764
+  },
+  {
+   "period": "1994-12",
+   "year": 1994,
+   "phase": "data",
+   "glyphs_active": 223,
+   "glyphs_new": 0,
+   "glyphs_period": 173,
+   "edges_cumulative": 358062,
+   "edges_period": 10984
+  },
+  {
+   "period": "1995",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 1,
+   "glyphs_period": 74,
+   "edges_cumulative": 359916,
+   "edges_period": 1854
+  },
+  {
+   "period": "1995-01",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 167,
+   "edges_cumulative": 369958,
+   "edges_period": 10042
+  },
+  {
+   "period": "1995-02",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 171,
+   "edges_cumulative": 380442,
+   "edges_period": 10484
+  },
+  {
+   "period": "1995-03",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 177,
+   "edges_cumulative": 391714,
+   "edges_period": 11272
+  },
+  {
+   "period": "1995-04",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 170,
+   "edges_cumulative": 401352,
+   "edges_period": 9638
+  },
+  {
+   "period": "1995-05",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 169,
+   "edges_cumulative": 412466,
+   "edges_period": 11114
+  },
+  {
+   "period": "1995-06",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 423225,
+   "edges_period": 10759
+  },
+  {
+   "period": "1995-07",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 175,
+   "edges_cumulative": 433954,
+   "edges_period": 10729
+  },
+  {
+   "period": "1995-08",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 444991,
+   "edges_period": 11037
+  },
+  {
+   "period": "1995-09",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 173,
+   "edges_cumulative": 455329,
+   "edges_period": 10338
+  },
+  {
+   "period": "1995-10",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 224,
+   "glyphs_new": 0,
+   "glyphs_period": 174,
+   "edges_cumulative": 465766,
+   "edges_period": 10437
+  },
+  {
+   "period": "1995-11",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 227,
+   "glyphs_new": 3,
+   "glyphs_period": 180,
+   "edges_cumulative": 476600,
+   "edges_period": 10834
+  },
+  {
+   "period": "1995-12",
+   "year": 1995,
+   "phase": "data",
+   "glyphs_active": 227,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 487876,
+   "edges_period": 11276
+  },
+  {
+   "period": "1996",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 227,
+   "glyphs_new": 0,
+   "glyphs_period": 96,
+   "edges_cumulative": 491261,
+   "edges_period": 3385
+  },
+  {
+   "period": "1996-01",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 227,
+   "glyphs_new": 0,
+   "glyphs_period": 173,
+   "edges_cumulative": 501752,
+   "edges_period": 10491
+  },
+  {
+   "period": "1996-02",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 1,
+   "glyphs_period": 180,
+   "edges_cumulative": 512560,
+   "edges_period": 10808
+  },
+  {
+   "period": "1996-03",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 172,
+   "edges_cumulative": 523016,
+   "edges_period": 10456
+  },
+  {
+   "period": "1996-04",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 534746,
+   "edges_period": 11730
+  },
+  {
+   "period": "1996-05",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 546188,
+   "edges_period": 11442
+  },
+  {
+   "period": "1996-06",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 181,
+   "edges_cumulative": 557543,
+   "edges_period": 11355
+  },
+  {
+   "period": "1996-07",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 177,
+   "edges_cumulative": 568642,
+   "edges_period": 11099
+  },
+  {
+   "period": "1996-08",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 170,
+   "edges_cumulative": 579402,
+   "edges_period": 10760
+  },
+  {
+   "period": "1996-09",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 590611,
+   "edges_period": 11209
+  },
+  {
+   "period": "1996-10",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 181,
+   "edges_cumulative": 602244,
+   "edges_period": 11633
+  },
+  {
+   "period": "1996-11",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 180,
+   "edges_cumulative": 613463,
+   "edges_period": 11219
+  },
+  {
+   "period": "1996-12",
+   "year": 1996,
+   "phase": "data",
+   "glyphs_active": 228,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 624819,
+   "edges_period": 11356
+  },
+  {
+   "period": "1997",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 2,
+   "glyphs_period": 83,
+   "edges_cumulative": 626836,
+   "edges_period": 2017
+  },
+  {
+   "period": "1997-01",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 174,
+   "edges_cumulative": 637908,
+   "edges_period": 11072
+  },
+  {
+   "period": "1997-02",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 649097,
+   "edges_period": 11189
+  },
+  {
+   "period": "1997-03",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 177,
+   "edges_cumulative": 660552,
+   "edges_period": 11455
+  },
+  {
+   "period": "1997-04",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 178,
+   "edges_cumulative": 671698,
+   "edges_period": 11146
+  },
+  {
+   "period": "1997-05",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 181,
+   "edges_cumulative": 683286,
+   "edges_period": 11588
+  },
+  {
+   "period": "1997-06",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 694800,
+   "edges_period": 11514
+  },
+  {
+   "period": "1997-07",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 185,
+   "edges_cumulative": 707476,
+   "edges_period": 12676
+  },
+  {
+   "period": "1997-08",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 172,
+   "edges_cumulative": 718354,
+   "edges_period": 10878
+  },
+  {
+   "period": "1997-09",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 730077,
+   "edges_period": 11723
+  },
+  {
+   "period": "1997-10",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 188,
+   "edges_cumulative": 742595,
+   "edges_period": 12518
+  },
+  {
+   "period": "1997-11",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 754133,
+   "edges_period": 11538
+  },
+  {
+   "period": "1997-12",
+   "year": 1997,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 185,
+   "edges_cumulative": 766983,
+   "edges_period": 12850
+  },
+  {
+   "period": "1998",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 80,
+   "edges_cumulative": 769874,
+   "edges_period": 2891
+  },
+  {
+   "period": "1998-01",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 184,
+   "edges_cumulative": 781891,
+   "edges_period": 12017
+  },
+  {
+   "period": "1998-02",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 793958,
+   "edges_period": 12067
+  },
+  {
+   "period": "1998-03",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 184,
+   "edges_cumulative": 806648,
+   "edges_period": 12690
+  },
+  {
+   "period": "1998-04",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 185,
+   "edges_cumulative": 819288,
+   "edges_period": 12640
+  },
+  {
+   "period": "1998-05",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 188,
+   "edges_cumulative": 832491,
+   "edges_period": 13203
+  },
+  {
+   "period": "1998-06",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 184,
+   "edges_cumulative": 844574,
+   "edges_period": 12083
+  },
+  {
+   "period": "1998-07",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 189,
+   "edges_cumulative": 857586,
+   "edges_period": 13012
+  },
+  {
+   "period": "1998-08",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 181,
+   "edges_cumulative": 869604,
+   "edges_period": 12018
+  },
+  {
+   "period": "1998-09",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 191,
+   "edges_cumulative": 883081,
+   "edges_period": 13477
+  },
+  {
+   "period": "1998-10",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 187,
+   "edges_cumulative": 895701,
+   "edges_period": 12620
+  },
+  {
+   "period": "1998-11",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 186,
+   "edges_cumulative": 908427,
+   "edges_period": 12726
+  },
+  {
+   "period": "1998-12",
+   "year": 1998,
+   "phase": "data",
+   "glyphs_active": 230,
+   "glyphs_new": 0,
+   "glyphs_period": 186,
+   "edges_cumulative": 921440,
+   "edges_period": 13013
+  },
+  {
+   "period": "1999",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 1,
+   "glyphs_period": 69,
+   "edges_cumulative": 923132,
+   "edges_period": 1692
+  },
+  {
+   "period": "1999-01",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 185,
+   "edges_cumulative": 935448,
+   "edges_period": 12316
+  },
+  {
+   "period": "1999-02",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 183,
+   "edges_cumulative": 947220,
+   "edges_period": 11772
+  },
+  {
+   "period": "1999-03",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 189,
+   "edges_cumulative": 959991,
+   "edges_period": 12771
+  },
+  {
+   "period": "1999-04",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 189,
+   "edges_cumulative": 972713,
+   "edges_period": 12722
+  },
+  {
+   "period": "1999-05",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 186,
+   "edges_cumulative": 985281,
+   "edges_period": 12568
+  },
+  {
+   "period": "1999-06",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 186,
+   "edges_cumulative": 998382,
+   "edges_period": 13101
+  },
+  {
+   "period": "1999-07",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 187,
+   "edges_cumulative": 1011393,
+   "edges_period": 13011
+  },
+  {
+   "period": "1999-08",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 183,
+   "edges_cumulative": 1023756,
+   "edges_period": 12363
+  },
+  {
+   "period": "1999-09",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 179,
+   "edges_cumulative": 1036331,
+   "edges_period": 12575
+  },
+  {
+   "period": "1999-10",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 188,
+   "edges_cumulative": 1049788,
+   "edges_period": 13457
+  },
+  {
+   "period": "1999-11",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 189,
+   "edges_cumulative": 1062830,
+   "edges_period": 13042
+  },
+  {
+   "period": "1999-12",
+   "year": 1999,
+   "phase": "data",
+   "glyphs_active": 231,
+   "glyphs_new": 0,
+   "glyphs_period": 187,
+   "edges_cumulative": 1075987,
+   "edges_period": 13157
+  },
+  {
+   "period": "2000",
+   "year": 2000,
+   "phase": "data",
+   "glyphs_active": 232,
+   "glyphs_new": 1,
+   "glyphs_period": 80,
+   "edges_cumulative": 1077763,
+   "edges_period": 1776
   },
   {
    "period": "2000-01",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 185,
-   "glyphs_new": 180,
-   "glyphs_period": 184,
-   "edges_cumulative": 12473,
-   "edges_period": 12463
+   "glyphs_active": 232,
+   "glyphs_new": 0,
+   "glyphs_period": 188,
+   "edges_cumulative": 1090444,
+   "edges_period": 12681
   },
   {
    "period": "2000-02",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 188,
-   "glyphs_new": 3,
+   "glyphs_active": 232,
+   "glyphs_new": 0,
    "glyphs_period": 185,
-   "edges_cumulative": 25367,
+   "edges_cumulative": 1103338,
    "edges_period": 12894
   },
   {
    "period": "2000-03",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 195,
-   "glyphs_new": 7,
-   "glyphs_period": 192,
-   "edges_cumulative": 38946,
-   "edges_period": 13579
+   "glyphs_active": 232,
+   "glyphs_new": 0,
+   "glyphs_period": 193,
+   "edges_cumulative": 1116941,
+   "edges_period": 13603
   },
   {
    "period": "2000-04",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
-   "glyphs_new": 4,
+   "glyphs_active": 232,
+   "glyphs_new": 0,
    "glyphs_period": 192,
-   "edges_cumulative": 53139,
+   "edges_cumulative": 1131134,
    "edges_period": 14193
   },
   {
    "period": "2000-05",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 188,
-   "edges_cumulative": 66557,
+   "edges_cumulative": 1144552,
    "edges_period": 13418
   },
   {
    "period": "2000-06",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 190,
-   "edges_cumulative": 80183,
-   "edges_period": 13626
+   "glyphs_period": 192,
+   "edges_cumulative": 1158316,
+   "edges_period": 13764
   },
   {
    "period": "2000-07",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 188,
-   "edges_cumulative": 93478,
+   "edges_cumulative": 1171611,
    "edges_period": 13295
   },
   {
    "period": "2000-09",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 193,
-   "edges_cumulative": 107007,
-   "edges_period": 13529
+   "glyphs_period": 197,
+   "edges_cumulative": 1185390,
+   "edges_period": 13779
   },
   {
    "period": "2000-10",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 184,
-   "edges_cumulative": 120543,
+   "edges_cumulative": 1198926,
    "edges_period": 13536
   },
   {
    "period": "2000-11",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 189,
-   "edges_cumulative": 134347,
+   "edges_cumulative": 1212730,
    "edges_period": 13804
   },
   {
    "period": "2000-12",
    "year": 2000,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 189,
-   "edges_cumulative": 147774,
+   "edges_cumulative": 1226157,
    "edges_period": 13427
+  },
+  {
+   "period": "2001",
+   "year": 2001,
+   "phase": "data",
+   "glyphs_active": 232,
+   "glyphs_new": 0,
+   "glyphs_period": 83,
+   "edges_cumulative": 1228498,
+   "edges_period": 2341
   },
   {
    "period": "2001-01",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 190,
-   "edges_cumulative": 161110,
-   "edges_period": 13336
+   "glyphs_period": 193,
+   "edges_cumulative": 1242031,
+   "edges_period": 13533
   },
   {
    "period": "2001-02",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 190,
-   "edges_cumulative": 174728,
-   "edges_period": 13618
+   "glyphs_period": 191,
+   "edges_cumulative": 1255685,
+   "edges_period": 13654
   },
   {
    "period": "2001-03",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 187,
-   "edges_cumulative": 188019,
-   "edges_period": 13291
+   "glyphs_period": 192,
+   "edges_cumulative": 1269200,
+   "edges_period": 13515
   },
   {
    "period": "2001-04",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 187,
-   "edges_cumulative": 201474,
+   "edges_cumulative": 1282655,
    "edges_period": 13455
   },
   {
    "period": "2001-05",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 186,
-   "edges_cumulative": 214997,
-   "edges_period": 13523
+   "glyphs_period": 188,
+   "edges_cumulative": 1296396,
+   "edges_period": 13741
   },
   {
    "period": "2001-06",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 193,
-   "edges_cumulative": 228516,
-   "edges_period": 13519
+   "edges_cumulative": 1309916,
+   "edges_period": 13520
   },
   {
    "period": "2001-07",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 190,
-   "edges_cumulative": 241974,
-   "edges_period": 13458
+   "glyphs_period": 191,
+   "edges_cumulative": 1323377,
+   "edges_period": 13461
   },
   {
    "period": "2001-08",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 187,
-   "edges_cumulative": 254902,
+   "edges_cumulative": 1336305,
    "edges_period": 12928
   },
   {
    "period": "2001-09",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
-   "glyphs_period": 189,
-   "edges_cumulative": 268482,
-   "edges_period": 13580
+   "glyphs_period": 195,
+   "edges_cumulative": 1350414,
+   "edges_period": 14109
   },
   {
    "period": "2001-10",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 193,
-   "edges_cumulative": 283338,
+   "edges_cumulative": 1365270,
    "edges_period": 14856
   },
   {
    "period": "2001-11",
    "year": 2001,
    "phase": "data",
-   "glyphs_active": 199,
+   "glyphs_active": 232,
    "glyphs_new": 0,
    "glyphs_period": 188,
-   "edges_cumulative": 297415,
+   "edges_cumulative": 1379347,
    "edges_period": 14077
+  },
+  {
+   "period": "2001-12",
+   "year": 2001,
+   "phase": "data",
+   "glyphs_active": 232,
+   "glyphs_new": 0,
+   "glyphs_period": 193,
+   "edges_cumulative": 1393917,
+   "edges_period": 14570
   },
   {
    "period": "2002",
    "year": 2002,
    "phase": "data",
-   "glyphs_active": 201,
+   "glyphs_active": 234,
    "glyphs_new": 2,
-   "glyphs_period": 6,
-   "edges_cumulative": 297430,
-   "edges_period": 15
+   "glyphs_period": 91,
+   "edges_cumulative": 1396388,
+   "edges_period": 2471
+  },
+  {
+   "period": "2002-01",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 191,
+   "edges_cumulative": 1410216,
+   "edges_period": 13828
+  },
+  {
+   "period": "2002-02",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 191,
+   "edges_cumulative": 1424511,
+   "edges_period": 14295
+  },
+  {
+   "period": "2002-03",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 192,
+   "edges_cumulative": 1438762,
+   "edges_period": 14251
+  },
+  {
+   "period": "2002-04",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 191,
+   "edges_cumulative": 1452912,
+   "edges_period": 14150
+  },
+  {
+   "period": "2002-05",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 187,
+   "edges_cumulative": 1466511,
+   "edges_period": 13599
+  },
+  {
+   "period": "2002-06",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 199,
+   "edges_cumulative": 1480723,
+   "edges_period": 14212
+  },
+  {
+   "period": "2002-07",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 192,
+   "edges_cumulative": 1494927,
+   "edges_period": 14204
+  },
+  {
+   "period": "2002-08",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 15,
+   "edges_cumulative": 1495032,
+   "edges_period": 105
+  },
+  {
+   "period": "2002-09",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 21,
+   "edges_cumulative": 1495167,
+   "edges_period": 135
+  },
+  {
+   "period": "2002-10",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 195,
+   "edges_cumulative": 1509846,
+   "edges_period": 14679
+  },
+  {
+   "period": "2002-11",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 194,
+   "edges_cumulative": 1524608,
+   "edges_period": 14762
+  },
+  {
+   "period": "2002-12",
+   "year": 2002,
+   "phase": "data",
+   "glyphs_active": 234,
+   "glyphs_new": 0,
+   "glyphs_period": 190,
+   "edges_cumulative": 1539058,
+   "edges_period": 14450
+  },
+  {
+   "period": "2003",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 235,
+   "glyphs_new": 1,
+   "glyphs_period": 78,
+   "edges_cumulative": 1540756,
+   "edges_period": 1698
+  },
+  {
+   "period": "2003-01",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 235,
+   "glyphs_new": 0,
+   "glyphs_period": 196,
+   "edges_cumulative": 1555469,
+   "edges_period": 14713
+  },
+  {
+   "period": "2003-02",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 235,
+   "glyphs_new": 0,
+   "glyphs_period": 195,
+   "edges_cumulative": 1569497,
+   "edges_period": 14028
+  },
+  {
+   "period": "2003-03",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 235,
+   "glyphs_new": 0,
+   "glyphs_period": 35,
+   "edges_cumulative": 1569861,
+   "edges_period": 364
+  },
+  {
+   "period": "2003-04",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 235,
+   "glyphs_new": 0,
+   "glyphs_period": 189,
+   "edges_cumulative": 1584034,
+   "edges_period": 14173
+  },
+  {
+   "period": "2003-05",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 235,
+   "glyphs_new": 0,
+   "glyphs_period": 190,
+   "edges_cumulative": 1598657,
+   "edges_period": 14623
+  },
+  {
+   "period": "2003-06",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 236,
+   "glyphs_new": 1,
+   "glyphs_period": 30,
+   "edges_cumulative": 1598943,
+   "edges_period": 286
+  },
+  {
+   "period": "2003-07",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 236,
+   "glyphs_new": 0,
+   "glyphs_period": 192,
+   "edges_cumulative": 1613282,
+   "edges_period": 14339
+  },
+  {
+   "period": "2003-08",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 2,
+   "glyphs_period": 17,
+   "edges_cumulative": 1613359,
+   "edges_period": 77
+  },
+  {
+   "period": "2003-09",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 194,
+   "edges_cumulative": 1628198,
+   "edges_period": 14839
+  },
+  {
+   "period": "2003-10",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 8,
+   "edges_cumulative": 1628226,
+   "edges_period": 28
+  },
+  {
+   "period": "2003-11",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 194,
+   "edges_cumulative": 1643157,
+   "edges_period": 14931
+  },
+  {
+   "period": "2003-12",
+   "year": 2003,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 194,
+   "edges_cumulative": 1658112,
+   "edges_period": 14955
+  },
+  {
+   "period": "2004",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 73,
+   "edges_cumulative": 1659914,
+   "edges_period": 1802
+  },
+  {
+   "period": "2004-01",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 188,
+   "edges_cumulative": 1674411,
+   "edges_period": 14497
+  },
+  {
+   "period": "2004-02",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 190,
+   "edges_cumulative": 1688790,
+   "edges_period": 14379
+  },
+  {
+   "period": "2004-03",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 20,
+   "edges_cumulative": 1688929,
+   "edges_period": 139
+  },
+  {
+   "period": "2004-04",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 18,
+   "edges_cumulative": 1689004,
+   "edges_period": 75
+  },
+  {
+   "period": "2004-05",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 198,
+   "edges_cumulative": 1705580,
+   "edges_period": 16576
+  },
+  {
+   "period": "2004-06",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 197,
+   "edges_cumulative": 1720541,
+   "edges_period": 14961
+  },
+  {
+   "period": "2004-07",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 192,
+   "edges_cumulative": 1739266,
+   "edges_period": 18725
+  },
+  {
+   "period": "2004-08",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 198,
+   "edges_cumulative": 1754831,
+   "edges_period": 15565
+  },
+  {
+   "period": "2004-09",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 195,
+   "edges_cumulative": 1769731,
+   "edges_period": 14900
+  },
+  {
+   "period": "2004-10",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 238,
+   "glyphs_new": 0,
+   "glyphs_period": 193,
+   "edges_cumulative": 1794310,
+   "edges_period": 24579
+  },
+  {
+   "period": "2004-11",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 240,
+   "glyphs_new": 2,
+   "glyphs_period": 196,
+   "edges_cumulative": 1810624,
+   "edges_period": 16314
+  },
+  {
+   "period": "2004-12",
+   "year": 2004,
+   "phase": "data",
+   "glyphs_active": 240,
+   "glyphs_new": 0,
+   "glyphs_period": 195,
+   "edges_cumulative": 1837810,
+   "edges_period": 27186
+  },
+  {
+   "period": "2005",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 248,
+   "glyphs_new": 8,
+   "glyphs_period": 128,
+   "edges_cumulative": 1843920,
+   "edges_period": 6110
+  },
+  {
+   "period": "2005-01",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 249,
+   "glyphs_new": 1,
+   "glyphs_period": 193,
+   "edges_cumulative": 1859094,
+   "edges_period": 15174
+  },
+  {
+   "period": "2005-02",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 249,
+   "glyphs_new": 0,
+   "glyphs_period": 202,
+   "edges_cumulative": 1880975,
+   "edges_period": 21881
+  },
+  {
+   "period": "2005-03",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 249,
+   "glyphs_new": 0,
+   "glyphs_period": 196,
+   "edges_cumulative": 1896731,
+   "edges_period": 15756
+  },
+  {
+   "period": "2005-04",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 249,
+   "glyphs_new": 0,
+   "glyphs_period": 196,
+   "edges_cumulative": 1924006,
+   "edges_period": 27275
+  },
+  {
+   "period": "2005-05",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 250,
+   "glyphs_new": 1,
+   "glyphs_period": 202,
+   "edges_cumulative": 1939927,
+   "edges_period": 15921
   },
   {
    "period": "2005-06",
    "year": 2005,
    "phase": "data",
-   "glyphs_active": 202,
+   "glyphs_active": 251,
    "glyphs_new": 1,
-   "glyphs_period": 15,
-   "edges_cumulative": 297535,
-   "edges_period": 105
+   "glyphs_period": 202,
+   "edges_cumulative": 1967033,
+   "edges_period": 27106
+  },
+  {
+   "period": "2005-07",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 251,
+   "glyphs_new": 0,
+   "glyphs_period": 200,
+   "edges_cumulative": 1982943,
+   "edges_period": 15910
+  },
+  {
+   "period": "2005-08",
+   "year": 2005,
+   "phase": "data",
+   "glyphs_active": 251,
+   "glyphs_new": 0,
+   "glyphs_period": 196,
+   "edges_cumulative": 2010677,
+   "edges_period": 27734
   },
   {
    "period": "2005-09",
    "year": 2005,
    "phase": "data",
-   "glyphs_active": 203,
-   "glyphs_new": 1,
-   "glyphs_period": 27,
-   "edges_cumulative": 297723,
-   "edges_period": 188
+   "glyphs_active": 251,
+   "glyphs_new": 0,
+   "glyphs_period": 197,
+   "edges_cumulative": 2026588,
+   "edges_period": 15911
   },
   {
    "period": "2005-10",
    "year": 2005,
    "phase": "data",
-   "glyphs_active": 204,
-   "glyphs_new": 1,
-   "glyphs_period": 46,
-   "edges_cumulative": 298267,
-   "edges_period": 544
+   "glyphs_active": 251,
+   "glyphs_new": 0,
+   "glyphs_period": 201,
+   "edges_cumulative": 2052488,
+   "edges_period": 25900
   },
   {
    "period": "2005-11",
    "year": 2005,
    "phase": "data",
-   "glyphs_active": 205,
-   "glyphs_new": 1,
-   "glyphs_period": 45,
-   "edges_cumulative": 298812,
-   "edges_period": 545
+   "glyphs_active": 251,
+   "glyphs_new": 0,
+   "glyphs_period": 200,
+   "edges_cumulative": 2069290,
+   "edges_period": 16802
   },
   {
    "period": "2005-12",
    "year": 2005,
    "phase": "data",
-   "glyphs_active": 205,
+   "glyphs_active": 251,
    "glyphs_new": 0,
-   "glyphs_period": 57,
-   "edges_cumulative": 299506,
-   "edges_period": 694
+   "glyphs_period": 197,
+   "edges_cumulative": 2085903,
+   "edges_period": 16613
   },
   {
    "period": "2006",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 205,
-   "glyphs_new": 0,
-   "glyphs_period": 45,
-   "edges_cumulative": 299946,
-   "edges_period": 440
+   "glyphs_active": 254,
+   "glyphs_new": 3,
+   "glyphs_period": 116,
+   "edges_cumulative": 2091980,
+   "edges_period": 6077
   },
   {
    "period": "2006-01",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 207,
-   "glyphs_new": 2,
-   "glyphs_period": 75,
-   "edges_cumulative": 301562,
-   "edges_period": 1616
+   "glyphs_active": 254,
+   "glyphs_new": 0,
+   "glyphs_period": 204,
+   "edges_cumulative": 2122370,
+   "edges_period": 30390
   },
   {
    "period": "2006-02",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 211,
-   "glyphs_new": 4,
-   "glyphs_period": 81,
-   "edges_cumulative": 303177,
-   "edges_period": 1615
+   "glyphs_active": 256,
+   "glyphs_new": 2,
+   "glyphs_period": 204,
+   "edges_cumulative": 2139679,
+   "edges_period": 17309
   },
   {
    "period": "2006-03",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 217,
-   "glyphs_new": 6,
-   "glyphs_period": 85,
-   "edges_cumulative": 304755,
-   "edges_period": 1578
+   "glyphs_active": 258,
+   "glyphs_new": 2,
+   "glyphs_period": 209,
+   "edges_cumulative": 2170187,
+   "edges_period": 30508
   },
   {
    "period": "2006-04",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 219,
+   "glyphs_active": 260,
    "glyphs_new": 2,
-   "glyphs_period": 73,
-   "edges_cumulative": 305965,
-   "edges_period": 1210
+   "glyphs_period": 204,
+   "edges_cumulative": 2187773,
+   "edges_period": 17586
   },
   {
    "period": "2006-05",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 222,
-   "glyphs_new": 3,
-   "glyphs_period": 74,
-   "edges_cumulative": 307322,
-   "edges_period": 1357
+   "glyphs_active": 262,
+   "glyphs_new": 2,
+   "glyphs_period": 205,
+   "edges_cumulative": 2216255,
+   "edges_period": 28482
   },
   {
    "period": "2006-06",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 224,
-   "glyphs_new": 2,
-   "glyphs_period": 82,
-   "edges_cumulative": 308969,
-   "edges_period": 1647
+   "glyphs_active": 262,
+   "glyphs_new": 0,
+   "glyphs_period": 211,
+   "edges_cumulative": 2234372,
+   "edges_period": 18117
   },
   {
    "period": "2006-07",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 224,
+   "glyphs_active": 262,
    "glyphs_new": 0,
-   "glyphs_period": 59,
-   "edges_cumulative": 309584,
-   "edges_period": 615
+   "glyphs_period": 203,
+   "edges_cumulative": 2252018,
+   "edges_period": 17646
   },
   {
    "period": "2006-08",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 226,
-   "glyphs_new": 2,
-   "glyphs_period": 76,
-   "edges_cumulative": 310906,
-   "edges_period": 1322
+   "glyphs_active": 263,
+   "glyphs_new": 1,
+   "glyphs_period": 204,
+   "edges_cumulative": 2279475,
+   "edges_period": 27457
   },
   {
    "period": "2006-09",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 227,
-   "glyphs_new": 1,
-   "glyphs_period": 73,
-   "edges_cumulative": 312168,
-   "edges_period": 1262
+   "glyphs_active": 267,
+   "glyphs_new": 4,
+   "glyphs_period": 212,
+   "edges_cumulative": 2299283,
+   "edges_period": 19808
   },
   {
    "period": "2006-10",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 232,
-   "glyphs_new": 5,
-   "glyphs_period": 89,
-   "edges_cumulative": 314123,
-   "edges_period": 1955
+   "glyphs_active": 270,
+   "glyphs_new": 3,
+   "glyphs_period": 211,
+   "edges_cumulative": 2318438,
+   "edges_period": 19155
   },
   {
    "period": "2006-11",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 232,
-   "glyphs_new": 0,
-   "glyphs_period": 89,
-   "edges_cumulative": 316105,
-   "edges_period": 1982
+   "glyphs_active": 272,
+   "glyphs_new": 2,
+   "glyphs_period": 211,
+   "edges_cumulative": 2345989,
+   "edges_period": 27551
   },
   {
    "period": "2006-12",
    "year": 2006,
    "phase": "data",
-   "glyphs_active": 232,
-   "glyphs_new": 0,
-   "glyphs_period": 75,
-   "edges_cumulative": 317481,
-   "edges_period": 1376
+   "glyphs_active": 273,
+   "glyphs_new": 1,
+   "glyphs_period": 207,
+   "edges_cumulative": 2363699,
+   "edges_period": 17710
   },
   {
    "period": "2007",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 244,
-   "glyphs_new": 12,
-   "glyphs_period": 133,
-   "edges_cumulative": 323122,
-   "edges_period": 5641
+   "glyphs_active": 283,
+   "glyphs_new": 10,
+   "glyphs_period": 147,
+   "edges_cumulative": 2373855,
+   "edges_period": 10156
   },
   {
    "period": "2007-01",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 246,
-   "glyphs_new": 2,
-   "glyphs_period": 90,
-   "edges_cumulative": 325517,
-   "edges_period": 2395
+   "glyphs_active": 283,
+   "glyphs_new": 0,
+   "glyphs_period": 207,
+   "edges_cumulative": 2393192,
+   "edges_period": 19337
   },
   {
    "period": "2007-02",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 249,
+   "glyphs_active": 286,
    "glyphs_new": 3,
-   "glyphs_period": 96,
-   "edges_cumulative": 329346,
-   "edges_period": 3829
+   "glyphs_period": 211,
+   "edges_cumulative": 2413908,
+   "edges_period": 20716
   },
   {
    "period": "2007-03",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 249,
+   "glyphs_active": 286,
    "glyphs_new": 0,
-   "glyphs_period": 95,
-   "edges_cumulative": 331478,
-   "edges_period": 2132
+   "glyphs_period": 214,
+   "edges_cumulative": 2448484,
+   "edges_period": 34576
   },
   {
    "period": "2007-04",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 250,
+   "glyphs_active": 287,
    "glyphs_new": 1,
-   "glyphs_period": 75,
-   "edges_cumulative": 333143,
-   "edges_period": 1665
+   "glyphs_period": 208,
+   "edges_cumulative": 2468798,
+   "edges_period": 20314
   },
   {
    "period": "2007-05",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 251,
+   "glyphs_active": 288,
    "glyphs_new": 1,
-   "glyphs_period": 96,
-   "edges_cumulative": 335562,
-   "edges_period": 2419
+   "glyphs_period": 210,
+   "edges_cumulative": 2487474,
+   "edges_period": 18676
   },
   {
    "period": "2007-06",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 252,
-   "glyphs_new": 1,
-   "glyphs_period": 89,
-   "edges_cumulative": 337952,
-   "edges_period": 2390
+   "glyphs_active": 291,
+   "glyphs_new": 3,
+   "glyphs_period": 215,
+   "edges_cumulative": 2523094,
+   "edges_period": 35620
   },
   {
    "period": "2007-07",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 252,
+   "glyphs_active": 291,
    "glyphs_new": 0,
-   "glyphs_period": 93,
-   "edges_cumulative": 340659,
-   "edges_period": 2707
+   "glyphs_period": 213,
+   "edges_cumulative": 2544011,
+   "edges_period": 20917
   },
   {
    "period": "2007-08",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 253,
-   "glyphs_new": 1,
-   "glyphs_period": 87,
-   "edges_cumulative": 342848,
-   "edges_period": 2189
+   "glyphs_active": 293,
+   "glyphs_new": 2,
+   "glyphs_period": 213,
+   "edges_cumulative": 2563666,
+   "edges_period": 19655
   },
   {
    "period": "2007-09",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 254,
-   "glyphs_new": 1,
-   "glyphs_period": 107,
-   "edges_cumulative": 346526,
-   "edges_period": 3678
+   "glyphs_active": 293,
+   "glyphs_new": 0,
+   "glyphs_period": 211,
+   "edges_cumulative": 2599048,
+   "edges_period": 35382
   },
   {
    "period": "2007-10",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 255,
+   "glyphs_active": 294,
    "glyphs_new": 1,
-   "glyphs_period": 104,
-   "edges_cumulative": 349609,
-   "edges_period": 3083
+   "glyphs_period": 214,
+   "edges_cumulative": 2634972,
+   "edges_period": 35924
   },
   {
    "period": "2007-11",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 258,
-   "glyphs_new": 3,
-   "glyphs_period": 106,
-   "edges_cumulative": 352145,
-   "edges_period": 2536
+   "glyphs_active": 295,
+   "glyphs_new": 1,
+   "glyphs_period": 215,
+   "edges_cumulative": 2669622,
+   "edges_period": 34650
   },
   {
    "period": "2007-12",
    "year": 2007,
    "phase": "data",
-   "glyphs_active": 258,
+   "glyphs_active": 295,
    "glyphs_new": 0,
-   "glyphs_period": 106,
-   "edges_cumulative": 354826,
-   "edges_period": 2681
+   "glyphs_period": 214,
+   "edges_cumulative": 2703091,
+   "edges_period": 33469
   },
   {
    "period": "2008",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 268,
-   "glyphs_new": 10,
-   "glyphs_period": 135,
-   "edges_cumulative": 358788,
-   "edges_period": 3962
+   "glyphs_active": 303,
+   "glyphs_new": 8,
+   "glyphs_period": 153,
+   "edges_cumulative": 2710978,
+   "edges_period": 7887
   },
   {
    "period": "2008-01",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 270,
-   "glyphs_new": 2,
-   "glyphs_period": 99,
-   "edges_cumulative": 361088,
-   "edges_period": 2300
+   "glyphs_active": 306,
+   "glyphs_new": 3,
+   "glyphs_period": 216,
+   "edges_cumulative": 2745686,
+   "edges_period": 34708
   },
   {
    "period": "2008-02",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 270,
-   "glyphs_new": 0,
-   "glyphs_period": 92,
-   "edges_cumulative": 363166,
-   "edges_period": 2078
+   "glyphs_active": 383,
+   "glyphs_new": 77,
+   "glyphs_period": 302,
+   "edges_cumulative": 2790693,
+   "edges_period": 45007
   },
   {
    "period": "2008-03",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 271,
-   "glyphs_new": 1,
-   "glyphs_period": 107,
-   "edges_cumulative": 365894,
-   "edges_period": 2728
+   "glyphs_active": 385,
+   "glyphs_new": 2,
+   "glyphs_period": 213,
+   "edges_cumulative": 2825610,
+   "edges_period": 34917
   },
   {
    "period": "2008-04",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 271,
+   "glyphs_active": 385,
    "glyphs_new": 0,
-   "glyphs_period": 99,
-   "edges_cumulative": 368144,
-   "edges_period": 2250
+   "glyphs_period": 213,
+   "edges_cumulative": 2860099,
+   "edges_period": 34489
   },
   {
    "period": "2008-05",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 274,
-   "glyphs_new": 3,
-   "glyphs_period": 108,
-   "edges_cumulative": 370869,
-   "edges_period": 2725
+   "glyphs_active": 387,
+   "glyphs_new": 2,
+   "glyphs_period": 212,
+   "edges_cumulative": 2894104,
+   "edges_period": 34005
   },
   {
    "period": "2008-06",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 274,
+   "glyphs_active": 387,
    "glyphs_new": 0,
-   "glyphs_period": 103,
-   "edges_cumulative": 373947,
-   "edges_period": 3078
+   "glyphs_period": 209,
+   "edges_cumulative": 2928622,
+   "edges_period": 34518
   },
   {
    "period": "2008-07",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 274,
-   "glyphs_new": 0,
-   "glyphs_period": 103,
-   "edges_cumulative": 376444,
-   "edges_period": 2497
+   "glyphs_active": 388,
+   "glyphs_new": 1,
+   "glyphs_period": 206,
+   "edges_cumulative": 2963894,
+   "edges_period": 35272
   },
   {
    "period": "2008-08",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 275,
-   "glyphs_new": 1,
-   "glyphs_period": 98,
-   "edges_cumulative": 378912,
-   "edges_period": 2468
+   "glyphs_active": 390,
+   "glyphs_new": 2,
+   "glyphs_period": 211,
+   "edges_cumulative": 2984263,
+   "edges_period": 20369
   },
   {
    "period": "2008-09",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 275,
-   "glyphs_new": 0,
-   "glyphs_period": 97,
-   "edges_cumulative": 381334,
-   "edges_period": 2422
+   "glyphs_active": 392,
+   "glyphs_new": 2,
+   "glyphs_period": 212,
+   "edges_cumulative": 3016740,
+   "edges_period": 32477
   },
   {
    "period": "2008-10",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 275,
+   "glyphs_active": 392,
    "glyphs_new": 0,
-   "glyphs_period": 113,
-   "edges_cumulative": 383959,
-   "edges_period": 2625
+   "glyphs_period": 211,
+   "edges_cumulative": 3051922,
+   "edges_period": 35182
   },
   {
    "period": "2008-11",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 278,
-   "glyphs_new": 3,
-   "glyphs_period": 103,
-   "edges_cumulative": 386342,
-   "edges_period": 2383
+   "glyphs_active": 394,
+   "glyphs_new": 2,
+   "glyphs_period": 216,
+   "edges_cumulative": 3085656,
+   "edges_period": 33734
   },
   {
    "period": "2008-12",
    "year": 2008,
    "phase": "data",
-   "glyphs_active": 278,
+   "glyphs_active": 394,
    "glyphs_new": 0,
-   "glyphs_period": 100,
-   "edges_cumulative": 388808,
-   "edges_period": 2466
+   "glyphs_period": 209,
+   "edges_cumulative": 3121634,
+   "edges_period": 35978
   },
   {
    "period": "2009",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 284,
-   "glyphs_new": 6,
-   "glyphs_period": 126,
-   "edges_cumulative": 392600,
-   "edges_period": 3792
+   "glyphs_active": 396,
+   "glyphs_new": 2,
+   "glyphs_period": 142,
+   "edges_cumulative": 3129777,
+   "edges_period": 8143
   },
   {
    "period": "2009-01",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 285,
+   "glyphs_active": 397,
    "glyphs_new": 1,
-   "glyphs_period": 110,
-   "edges_cumulative": 395538,
-   "edges_period": 2938
+   "glyphs_period": 213,
+   "edges_cumulative": 3166131,
+   "edges_period": 36354
   },
   {
    "period": "2009-02",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 286,
-   "glyphs_new": 1,
-   "glyphs_period": 100,
-   "edges_cumulative": 398124,
-   "edges_period": 2586
+   "glyphs_active": 402,
+   "glyphs_new": 5,
+   "glyphs_period": 219,
+   "edges_cumulative": 3200443,
+   "edges_period": 34312
   },
   {
    "period": "2009-03",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 286,
+   "glyphs_active": 402,
    "glyphs_new": 0,
-   "glyphs_period": 89,
-   "edges_cumulative": 399788,
-   "edges_period": 1664
+   "glyphs_period": 214,
+   "edges_cumulative": 3235499,
+   "edges_period": 35056
   },
   {
    "period": "2009-04",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 286,
+   "glyphs_active": 402,
    "glyphs_new": 0,
-   "glyphs_period": 70,
-   "edges_cumulative": 400897,
-   "edges_period": 1109
+   "glyphs_period": 207,
+   "edges_cumulative": 3267531,
+   "edges_period": 32032
   },
   {
    "period": "2009-05",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 286,
-   "glyphs_new": 0,
-   "glyphs_period": 75,
-   "edges_cumulative": 402571,
-   "edges_period": 1674
+   "glyphs_active": 403,
+   "glyphs_new": 1,
+   "glyphs_period": 205,
+   "edges_cumulative": 3302014,
+   "edges_period": 34483
   },
   {
    "period": "2009-06",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 286,
-   "glyphs_new": 0,
-   "glyphs_period": 67,
-   "edges_cumulative": 403528,
-   "edges_period": 957
+   "glyphs_active": 407,
+   "glyphs_new": 4,
+   "glyphs_period": 213,
+   "edges_cumulative": 3348209,
+   "edges_period": 46195
   },
   {
    "period": "2009-07",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 286,
+   "glyphs_active": 407,
    "glyphs_new": 0,
-   "glyphs_period": 56,
-   "edges_cumulative": 404274,
-   "edges_period": 746
+   "glyphs_period": 210,
+   "edges_cumulative": 3383222,
+   "edges_period": 35013
   },
   {
    "period": "2009-08",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 288,
+   "glyphs_active": 409,
    "glyphs_new": 2,
-   "glyphs_period": 72,
-   "edges_cumulative": 405758,
-   "edges_period": 1484
+   "glyphs_period": 216,
+   "edges_cumulative": 3416908,
+   "edges_period": 33686
   },
   {
    "period": "2009-09",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 288,
-   "glyphs_new": 0,
-   "glyphs_period": 82,
-   "edges_cumulative": 407587,
-   "edges_period": 1829
+   "glyphs_active": 411,
+   "glyphs_new": 2,
+   "glyphs_period": 212,
+   "edges_cumulative": 3454531,
+   "edges_period": 37623
   },
   {
    "period": "2009-10",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 288,
+   "glyphs_active": 411,
    "glyphs_new": 0,
-   "glyphs_period": 75,
-   "edges_cumulative": 409369,
-   "edges_period": 1782
+   "glyphs_period": 211,
+   "edges_cumulative": 3491328,
+   "edges_period": 36797
   },
   {
    "period": "2009-11",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 289,
-   "glyphs_new": 1,
-   "glyphs_period": 110,
-   "edges_cumulative": 413638,
-   "edges_period": 4269
+   "glyphs_active": 413,
+   "glyphs_new": 2,
+   "glyphs_period": 215,
+   "edges_cumulative": 3532027,
+   "edges_period": 40699
   },
   {
    "period": "2009-12",
    "year": 2009,
    "phase": "data",
-   "glyphs_active": 289,
+   "glyphs_active": 413,
    "glyphs_new": 0,
-   "glyphs_period": 67,
-   "edges_cumulative": 415389,
-   "edges_period": 1751
+   "glyphs_period": 211,
+   "edges_cumulative": 3580277,
+   "edges_period": 48250
   },
   {
    "period": "2010",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
-   "glyphs_new": 4,
-   "glyphs_period": 130,
-   "edges_cumulative": 419299,
-   "edges_period": 3910
+   "glyphs_active": 416,
+   "glyphs_new": 3,
+   "glyphs_period": 144,
+   "edges_cumulative": 3588057,
+   "edges_period": 7780
   },
   {
    "period": "2010-01",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
+   "glyphs_active": 416,
    "glyphs_new": 0,
-   "glyphs_period": 59,
-   "edges_cumulative": 420228,
-   "edges_period": 929
+   "glyphs_period": 210,
+   "edges_cumulative": 3624465,
+   "edges_period": 36408
   },
   {
    "period": "2010-02",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
-   "glyphs_new": 0,
-   "glyphs_period": 38,
-   "edges_cumulative": 420567,
-   "edges_period": 339
+   "glyphs_active": 418,
+   "glyphs_new": 2,
+   "glyphs_period": 212,
+   "edges_cumulative": 3659999,
+   "edges_period": 35534
   },
   {
    "period": "2010-03",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
+   "glyphs_active": 418,
    "glyphs_new": 0,
-   "glyphs_period": 76,
-   "edges_cumulative": 422600,
-   "edges_period": 2033
+   "glyphs_period": 216,
+   "edges_cumulative": 3710640,
+   "edges_period": 50641
   },
   {
    "period": "2010-04",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
+   "glyphs_active": 418,
    "glyphs_new": 0,
-   "glyphs_period": 61,
-   "edges_cumulative": 423407,
-   "edges_period": 807
+   "glyphs_period": 215,
+   "edges_cumulative": 3747501,
+   "edges_period": 36861
   },
   {
    "period": "2010-05",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
-   "glyphs_new": 0,
-   "glyphs_period": 34,
-   "edges_cumulative": 423641,
-   "edges_period": 234
+   "glyphs_active": 438,
+   "glyphs_new": 20,
+   "glyphs_period": 300,
+   "edges_cumulative": 3794653,
+   "edges_period": 47152
   },
   {
    "period": "2010-06",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 293,
-   "glyphs_new": 0,
-   "glyphs_period": 50,
-   "edges_cumulative": 424182,
-   "edges_period": 541
+   "glyphs_active": 443,
+   "glyphs_new": 5,
+   "glyphs_period": 224,
+   "edges_cumulative": 3844086,
+   "edges_period": 49433
   },
   {
    "period": "2010-07",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 294,
+   "glyphs_active": 444,
    "glyphs_new": 1,
-   "glyphs_period": 67,
-   "edges_cumulative": 425147,
-   "edges_period": 965
+   "glyphs_period": 226,
+   "edges_cumulative": 3894881,
+   "edges_period": 50795
   },
   {
    "period": "2010-08",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 294,
+   "glyphs_active": 444,
    "glyphs_new": 0,
-   "glyphs_period": 105,
-   "edges_cumulative": 427825,
-   "edges_period": 2678
+   "glyphs_period": 222,
+   "edges_cumulative": 3946338,
+   "edges_period": 51457
   },
   {
    "period": "2010-09",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 295,
-   "glyphs_new": 1,
-   "glyphs_period": 119,
-   "edges_cumulative": 430895,
-   "edges_period": 3070
+   "glyphs_active": 448,
+   "glyphs_new": 4,
+   "glyphs_period": 224,
+   "edges_cumulative": 4004602,
+   "edges_period": 58264
   },
   {
    "period": "2010-10",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 296,
-   "glyphs_new": 1,
-   "glyphs_period": 111,
-   "edges_cumulative": 433877,
-   "edges_period": 2982
+   "glyphs_active": 450,
+   "glyphs_new": 2,
+   "glyphs_period": 222,
+   "edges_cumulative": 4098794,
+   "edges_period": 94192
   },
   {
    "period": "2010-11",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 298,
+   "glyphs_active": 452,
    "glyphs_new": 2,
-   "glyphs_period": 93,
-   "edges_cumulative": 435979,
-   "edges_period": 2102
+   "glyphs_period": 218,
+   "edges_cumulative": 4164262,
+   "edges_period": 65468
   },
   {
    "period": "2010-12",
    "year": 2010,
    "phase": "data",
-   "glyphs_active": 298,
-   "glyphs_new": 0,
-   "glyphs_period": 7,
-   "edges_cumulative": 435999,
-   "edges_period": 20
+   "glyphs_active": 456,
+   "glyphs_new": 4,
+   "glyphs_period": 231,
+   "edges_cumulative": 4224017,
+   "edges_period": 59755
   },
   {
    "period": "2011",
    "year": 2011,
    "phase": "data",
-   "glyphs_active": 298,
+   "glyphs_active": 457,
+   "glyphs_new": 1,
+   "glyphs_period": 164,
+   "edges_cumulative": 4234861,
+   "edges_period": 10844
+  },
+  {
+   "period": "2011-01",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 458,
+   "glyphs_new": 1,
+   "glyphs_period": 239,
+   "edges_cumulative": 4288248,
+   "edges_period": 53387
+  },
+  {
+   "period": "2011-02",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 466,
+   "glyphs_new": 8,
+   "glyphs_period": 234,
+   "edges_cumulative": 4341380,
+   "edges_period": 53132
+  },
+  {
+   "period": "2011-03",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 467,
+   "glyphs_new": 1,
+   "glyphs_period": 226,
+   "edges_cumulative": 4405594,
+   "edges_period": 64214
+  },
+  {
+   "period": "2011-04",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 471,
+   "glyphs_new": 4,
+   "glyphs_period": 225,
+   "edges_cumulative": 4454501,
+   "edges_period": 48907
+  },
+  {
+   "period": "2011-05",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 472,
+   "glyphs_new": 1,
+   "glyphs_period": 225,
+   "edges_cumulative": 4518148,
+   "edges_period": 63647
+  },
+  {
+   "period": "2011-06",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 474,
+   "glyphs_new": 2,
+   "glyphs_period": 222,
+   "edges_cumulative": 4581936,
+   "edges_period": 63788
+  },
+  {
+   "period": "2011-07",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 475,
+   "glyphs_new": 1,
+   "glyphs_period": 229,
+   "edges_cumulative": 4645308,
+   "edges_period": 63372
+  },
+  {
+   "period": "2011-08",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 475,
    "glyphs_new": 0,
-   "glyphs_period": 62,
-   "edges_cumulative": 437432,
-   "edges_period": 1433
+   "glyphs_period": 219,
+   "edges_cumulative": 4710076,
+   "edges_period": 64768
+  },
+  {
+   "period": "2011-09",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 478,
+   "glyphs_new": 3,
+   "glyphs_period": 226,
+   "edges_cumulative": 4782371,
+   "edges_period": 72295
+  },
+  {
+   "period": "2011-10",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 478,
+   "glyphs_new": 0,
+   "glyphs_period": 232,
+   "edges_cumulative": 4885188,
+   "edges_period": 102817
+  },
+  {
+   "period": "2011-11",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 480,
+   "glyphs_new": 2,
+   "glyphs_period": 231,
+   "edges_cumulative": 4954444,
+   "edges_period": 69256
+  },
+  {
+   "period": "2011-12",
+   "year": 2011,
+   "phase": "data",
+   "glyphs_active": 481,
+   "glyphs_new": 1,
+   "glyphs_period": 227,
+   "edges_cumulative": 5025401,
+   "edges_period": 70957
+  },
+  {
+   "period": "2012",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 486,
+   "glyphs_new": 5,
+   "glyphs_period": 195,
+   "edges_cumulative": 5036665,
+   "edges_period": 11264
+  },
+  {
+   "period": "2012-01",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 494,
+   "glyphs_new": 8,
+   "glyphs_period": 243,
+   "edges_cumulative": 5113008,
+   "edges_period": 76343
+  },
+  {
+   "period": "2012-02",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 496,
+   "glyphs_new": 2,
+   "glyphs_period": 241,
+   "edges_cumulative": 5182028,
+   "edges_period": 69020
+  },
+  {
+   "period": "2012-03",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 499,
+   "glyphs_new": 3,
+   "glyphs_period": 237,
+   "edges_cumulative": 5249160,
+   "edges_period": 67132
+  },
+  {
+   "period": "2012-04",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 500,
+   "glyphs_new": 1,
+   "glyphs_period": 240,
+   "edges_cumulative": 5320593,
+   "edges_period": 71433
+  },
+  {
+   "period": "2012-05",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 500,
+   "glyphs_new": 0,
+   "glyphs_period": 235,
+   "edges_cumulative": 5407680,
+   "edges_period": 87087
+  },
+  {
+   "period": "2012-06",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 507,
+   "glyphs_new": 7,
+   "glyphs_period": 249,
+   "edges_cumulative": 5477901,
+   "edges_period": 70221
+  },
+  {
+   "period": "2012-07",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 508,
+   "glyphs_new": 1,
+   "glyphs_period": 235,
+   "edges_cumulative": 5555944,
+   "edges_period": 78043
+  },
+  {
+   "period": "2012-08",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 511,
+   "glyphs_new": 3,
+   "glyphs_period": 228,
+   "edges_cumulative": 5637038,
+   "edges_period": 81094
+  },
+  {
+   "period": "2012-09",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 512,
+   "glyphs_new": 1,
+   "glyphs_period": 234,
+   "edges_cumulative": 5713963,
+   "edges_period": 76925
+  },
+  {
+   "period": "2012-10",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 514,
+   "glyphs_new": 2,
+   "glyphs_period": 242,
+   "edges_cumulative": 5850546,
+   "edges_period": 136583
+  },
+  {
+   "period": "2012-11",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 516,
+   "glyphs_new": 2,
+   "glyphs_period": 250,
+   "edges_cumulative": 5934520,
+   "edges_period": 83974
+  },
+  {
+   "period": "2012-12",
+   "year": 2012,
+   "phase": "data",
+   "glyphs_active": 518,
+   "glyphs_new": 2,
+   "glyphs_period": 242,
+   "edges_cumulative": 6015585,
+   "edges_period": 81065
+  },
+  {
+   "period": "2013",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 520,
+   "glyphs_new": 2,
+   "glyphs_period": 198,
+   "edges_cumulative": 6028188,
+   "edges_period": 12603
+  },
+  {
+   "period": "2013-01",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 523,
+   "glyphs_new": 3,
+   "glyphs_period": 244,
+   "edges_cumulative": 6111026,
+   "edges_period": 82838
+  },
+  {
+   "period": "2013-02",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 523,
+   "glyphs_new": 0,
+   "glyphs_period": 221,
+   "edges_cumulative": 6188781,
+   "edges_period": 77755
+  },
+  {
+   "period": "2013-03",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 527,
+   "glyphs_new": 4,
+   "glyphs_period": 240,
+   "edges_cumulative": 6283004,
+   "edges_period": 94223
+  },
+  {
+   "period": "2013-04",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 528,
+   "glyphs_new": 1,
+   "glyphs_period": 234,
+   "edges_cumulative": 6375931,
+   "edges_period": 92927
+  },
+  {
+   "period": "2013-05",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 529,
+   "glyphs_new": 1,
+   "glyphs_period": 231,
+   "edges_cumulative": 6467300,
+   "edges_period": 91369
+  },
+  {
+   "period": "2013-06",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 530,
+   "glyphs_new": 1,
+   "glyphs_period": 251,
+   "edges_cumulative": 6562930,
+   "edges_period": 95630
+  },
+  {
+   "period": "2013-07",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 535,
+   "glyphs_new": 5,
+   "glyphs_period": 250,
+   "edges_cumulative": 6656204,
+   "edges_period": 93274
+  },
+  {
+   "period": "2013-08",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 537,
+   "glyphs_new": 2,
+   "glyphs_period": 239,
+   "edges_cumulative": 6737289,
+   "edges_period": 81085
+  },
+  {
+   "period": "2013-09",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 539,
+   "glyphs_new": 2,
+   "glyphs_period": 252,
+   "edges_cumulative": 6797418,
+   "edges_period": 60129
+  },
+  {
+   "period": "2013-10",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 546,
+   "glyphs_new": 7,
+   "glyphs_period": 266,
+   "edges_cumulative": 6937535,
+   "edges_period": 140117
+  },
+  {
+   "period": "2013-11",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 547,
+   "glyphs_new": 1,
+   "glyphs_period": 258,
+   "edges_cumulative": 7036498,
+   "edges_period": 98963
+  },
+  {
+   "period": "2013-12",
+   "year": 2013,
+   "phase": "data",
+   "glyphs_active": 548,
+   "glyphs_new": 1,
+   "glyphs_period": 247,
+   "edges_cumulative": 7135913,
+   "edges_period": 99415
+  },
+  {
+   "period": "2014",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 561,
+   "glyphs_new": 13,
+   "glyphs_period": 275,
+   "edges_cumulative": 7157566,
+   "edges_period": 21653
+  },
+  {
+   "period": "2014-01",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 565,
+   "glyphs_new": 4,
+   "glyphs_period": 276,
+   "edges_cumulative": 7262296,
+   "edges_period": 104730
+  },
+  {
+   "period": "2014-02",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 567,
+   "glyphs_new": 2,
+   "glyphs_period": 277,
+   "edges_cumulative": 7365310,
+   "edges_period": 103014
+  },
+  {
+   "period": "2014-03",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 573,
+   "glyphs_new": 6,
+   "glyphs_period": 281,
+   "edges_cumulative": 7481306,
+   "edges_period": 115996
+  },
+  {
+   "period": "2014-04",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 575,
+   "glyphs_new": 2,
+   "glyphs_period": 253,
+   "edges_cumulative": 7594494,
+   "edges_period": 113188
+  },
+  {
+   "period": "2014-05",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 576,
+   "glyphs_new": 1,
+   "glyphs_period": 238,
+   "edges_cumulative": 7687890,
+   "edges_period": 93396
+  },
+  {
+   "period": "2014-06",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 580,
+   "glyphs_new": 4,
+   "glyphs_period": 273,
+   "edges_cumulative": 7788987,
+   "edges_period": 101097
+  },
+  {
+   "period": "2014-07",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 582,
+   "glyphs_new": 2,
+   "glyphs_period": 244,
+   "edges_cumulative": 7898348,
+   "edges_period": 109361
+  },
+  {
+   "period": "2014-08",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 582,
+   "glyphs_new": 0,
+   "glyphs_period": 242,
+   "edges_cumulative": 7991587,
+   "edges_period": 93239
+  },
+  {
+   "period": "2014-09",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 584,
+   "glyphs_new": 2,
+   "glyphs_period": 247,
+   "edges_cumulative": 8111840,
+   "edges_period": 120253
+  },
+  {
+   "period": "2014-10",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 584,
+   "glyphs_new": 0,
+   "glyphs_period": 239,
+   "edges_cumulative": 8219218,
+   "edges_period": 107378
+  },
+  {
+   "period": "2014-11",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 585,
+   "glyphs_new": 1,
+   "glyphs_period": 246,
+   "edges_cumulative": 8341875,
+   "edges_period": 122657
+  },
+  {
+   "period": "2014-12",
+   "year": 2014,
+   "phase": "data",
+   "glyphs_active": 585,
+   "glyphs_new": 0,
+   "glyphs_period": 259,
+   "edges_cumulative": 8468442,
+   "edges_period": 126567
+  },
+  {
+   "period": "2015",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 587,
+   "glyphs_new": 2,
+   "glyphs_period": 220,
+   "edges_cumulative": 8479338,
+   "edges_period": 10896
+  },
+  {
+   "period": "2015-01",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 588,
+   "glyphs_new": 1,
+   "glyphs_period": 251,
+   "edges_cumulative": 8589547,
+   "edges_period": 110209
+  },
+  {
+   "period": "2015-02",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 589,
+   "glyphs_new": 1,
+   "glyphs_period": 264,
+   "edges_cumulative": 8703148,
+   "edges_period": 113601
+  },
+  {
+   "period": "2015-03",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 596,
+   "glyphs_new": 7,
+   "glyphs_period": 289,
+   "edges_cumulative": 8833487,
+   "edges_period": 130339
+  },
+  {
+   "period": "2015-04",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 597,
+   "glyphs_new": 1,
+   "glyphs_period": 285,
+   "edges_cumulative": 8948292,
+   "edges_period": 114805
+  },
+  {
+   "period": "2015-05",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 600,
+   "glyphs_new": 3,
+   "glyphs_period": 271,
+   "edges_cumulative": 9072433,
+   "edges_period": 124141
+  },
+  {
+   "period": "2015-06",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 602,
+   "glyphs_new": 2,
+   "glyphs_period": 288,
+   "edges_cumulative": 9201166,
+   "edges_period": 128733
+  },
+  {
+   "period": "2015-07",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 606,
+   "glyphs_new": 4,
+   "glyphs_period": 276,
+   "edges_cumulative": 9334225,
+   "edges_period": 133059
+  },
+  {
+   "period": "2015-08",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 607,
+   "glyphs_new": 1,
+   "glyphs_period": 276,
+   "edges_cumulative": 9447581,
+   "edges_period": 113356
+  },
+  {
+   "period": "2015-09",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 609,
+   "glyphs_new": 2,
+   "glyphs_period": 273,
+   "edges_cumulative": 9596102,
+   "edges_period": 148521
+  },
+  {
+   "period": "2015-10",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 610,
+   "glyphs_new": 1,
+   "glyphs_period": 282,
+   "edges_cumulative": 9730444,
+   "edges_period": 134342
+  },
+  {
+   "period": "2015-11",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 614,
+   "glyphs_new": 4,
+   "glyphs_period": 286,
+   "edges_cumulative": 9887569,
+   "edges_period": 157125
+  },
+  {
+   "period": "2015-12",
+   "year": 2015,
+   "phase": "data",
+   "glyphs_active": 617,
+   "glyphs_new": 3,
+   "glyphs_period": 270,
+   "edges_cumulative": 9967365,
+   "edges_period": 79796
   }
  ]
 }
