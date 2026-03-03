@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 2 mars 2026 (session 12), Sky×Claude (Opus 4.6)
+> Dernière màj: 3 mars 2026 (session 14), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -202,6 +202,26 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - Les 9 continents sont des groupements humains, pas naturels
 - Seuls les TESTS sur V2 trancheront — zéro risque car on ne change rien au modèle existant
 
+### V2d — Archéologie t=0 (sessions 13-14, 2-3 mars 2026)
+**Objectif: sourcer le vrai t=0 de chaque concept (pas le birth OpenAlex, le VRAI).**
+
+#### Level 0+1 origins (✅ COMPLET — session 13, 2 mars 2026)
+- [x] 206/206 concepts (19 L0 + 187 L1) sourcés avec peer-reviewed
+- [x] Vérification round 1: 13 corrections (5 agents, web-vérifié) — commit `856a45a`
+- [x] Vérification round 2: 5 corrections (12 agents, web-vérifié) — commit `a0606c3`
+- [x] Données: `data/scan/origins_to_source.json` (206 entries, 0 missing)
+- [x] Scripts: `engine/analysis/inject_origins_l0.py` + `inject_origins_l1.py`
+
+#### S-2 Glyph Archaeology (✅ COMPLET — session 14, 3 mars 2026)
+- [x] 194/1337 glyphes mathématiques tracés (source: Cajori 1928-29 + Halmos 1950)
+- [x] 57 C1 (haute confiance) + 137 C2 (confiance moyenne)
+- [x] Données: `data/core/glyph_origins.json` (194 entries)
+- [x] Script: `engine/analysis/inject_glyph_origins.py`
+- [ ] Compléter les 1143 glyphes restants (priorité basse — 194 couvrent les plus importants)
+
+#### SOL.md MÉCANIQUES CLAUDE (✅ — session 14, 3 mars 2026)
+- [x] 7 techniques de prompting intégrées dans SOL.md — commit `2dd5a8f`
+
 ### V3c — GRAINES S-2 + PATIENT t=0 (session 10b, 27 fév 2026)
 **Objectif: remonter au patient zéro absolu — les graines S-2 avant l'an 1000.**
 
@@ -290,7 +310,7 @@ L'AI grimpe avec le bon sac à dos.
 
 ### arXiv↔OpenAlex Mapper (EN COURS — session 12, 2 mars 2026)
 - [x] Scanner les 692 GB d'OpenAlex pour extraire les papers avec arXiv ID
-- [ ] **Scan EN COURS**: 32/309 chunks (~10%), PID 21524
+- [ ] **Scan EN COURS**: 114/309 chunks (~37%), 196M papers, 1.6M arXiv trouvés
 - [ ] Auto-merge quand terminé → `data/scan/arxiv_openalex_map.json.gz`
 - Chunks: `data/scan/arxiv_map_chunks/chunk_NNN/`
 - Script: `engine/mining/arxiv_openalex_mapper.py`
@@ -307,5 +327,9 @@ L'AI grimpe avec le bon sac à dos.
 - Predictions 2025 produites sans cutoff. Blind test V2 avec cutoff 2015.
 - Glyph Laplacian FAIT avec validation honnête: d=5.76, p=7e-11, recall top 0.1%=70%.
 - **Mirror pairs test PASSÉ**: 19/20, d=0.925, p=6.68e-06 → signal réel confirmé.
+- **Archéologie t=0 COMPLÈTE**: 206 L0+L1 concepts + 194 glyphes S-2 sourcés (Cajori, peer-reviewed).
+- **arXiv mapper EN COURS**: 114/309 chunks (37%), tourne en background sur D:\ (data dupliquée D:\+E:\).
+- ⚠️ `pytest` non installé — tests non exécutables. Installer: `pip install pytest`.
+- ⚠️ D:\ contient encore le snapshot OpenAlex (~692 GB) après migration E:\. À nettoyer si besoin d'espace.
 - Prochaine étape majeure: V3 météorites sur frames, ou compléter arXiv mapper.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.
