@@ -253,8 +253,14 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
 
         try:
             with tarfile.open(tarpath, "r:") as tar:
-                for member in tar.getmembers():
+                while True:
                     if _interrupted:
+                        break
+                    try:
+                        member = tar.next()
+                    except Exception:
+                        break
+                    if member is None:
                         break
                     if not member.name.endswith(".gz") or not member.isfile():
                         continue
@@ -276,24 +282,32 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
 
                     papers_with_domain += 1
 
-                    # Extract tex
+                    # Extract tex (cap at 50 MB to avoid MemoryError)
                     try:
                         f = tar.extractfile(member)
                         if f is None:
                             continue
+                        if member.size > 50_000_000:
+                            continue
                         gz_bytes = f.read()
-                    except (tarfile.TarError, IOError):
+                    except (tarfile.TarError, IOError, MemoryError):
                         continue
 
-                    tex = extract_tex_from_gz(gz_bytes)
+                    try:
+                        tex = extract_tex_from_gz(gz_bytes)
+                    except MemoryError:
+                        continue
                     if tex is None or len(tex) < 100:
                         continue
 
                     # Parse glyphs
-                    from engine.glyphs.latex_parser import parse_tex_glyphs
-                    glyph_ids = parse_tex_glyphs(
-                        tex, latex_to_id, unicode_to_id, min_envs=1
-                    )
+                    try:
+                        from engine.glyphs.latex_parser import parse_tex_glyphs
+                        glyph_ids = parse_tex_glyphs(
+                            tex, latex_to_id, unicode_to_id, min_envs=1
+                        )
+                    except MemoryError:
+                        continue
                     if len(glyph_ids) < 2:
                         continue
 
