@@ -360,6 +360,54 @@ z_uzzi = (observed - E) / std
 E = works_i × works_j / total_works_sum
 ```
 
+## GRAINES SESSION 16 — 4 mars 2026 (Sky, bourré, 2h du mat)
+
+Deux idées brutes capturées. À relire sobre. Les graines vont germer.
+
+### Graine 1 — Mort = figé, Vivant = mute
+
+**L'insight**: en math classique, un théorème prouvé est "vivant" (C1, validé).
+Mais dans Yggdrasil c'est l'inverse — un concept figé est **mort**. Un concept qui **mute**
+(qui change de connexions, qui crée de nouveaux ponts, qui se reconfigure) est **vivant**.
+
+Implication V4: le grimpeur ne cherche pas les briques figées (P2 denses, matures).
+Il cherche les briques qui **mutent activement** — celles dont la topologie bouge encore.
+Les concepts "morts" (figés dans leur strate) = outils fiables mais inertes.
+Les concepts "vivants" (qui mutent) = outils instables mais c'est LÀ que les P4 se ferment.
+
+→ **Contre-intuitif en math, logique en biologie**: la mutation EST le signal de vie.
+→ Statut: **C2** — à valider avec les données (mesurer: les concepts qui mutent le plus
+entre frames sont-ils corrélés aux P4 qui se ferment ?)
+
+### Graine 2 — Conjecture Rubik (auto-correction convergente)
+
+**L'insight**: le grimpeur V4 = solveur de Rubik's cube sur la topologie.
+
+```
+ÉTAT(t) → identifier PATTERN → appliquer MOUVEMENT → sauver ÉTAT(t+1) → répéter
+              ↑                                              ↓
+         carte inverse                              espace se réduit
+         (undo si diverge)                          (P5 élimine des chemins)
+```
+
+Propriétés:
+1. **Fini**: nombre d'états borné (21,524 briques × 269 escaliers × 9 strates)
+2. **Auto-correctif**: chaque P5 = chemin éliminé = l'espace se compresse
+3. **Patterns répétables**: comme R U R' U' sur un Rubik — catalogue fini de mouvements
+4. **Couche par couche**: résoudre S-2 → S-1 → S0 sans casser les couches précédentes
+5. **Polynomial si commutatif**: si résoudre une strate ne casse pas la précédente → borné
+
+Rubik's cube: 43 quintillions d'états → max 20 mouvements (God's number).
+Yggdrasil: grand espace mais fini → **il existe un "God's number" du grimpeur**.
+
+Requirements pour tester:
+- Sauver l'état complet à chaque instant t (position, sac à dos, P5 enregistrés)
+- Mesurer si l'espace se réduit à chaque step (distance_to_target décroît ?)
+- Vérifier la commutativité entre strates (résoudre S-1 casse pas S-2 ?)
+
+→ Statut: **C2 forte** — l'analogie tient, la formalisation reste à faire.
+→ À VALIDER PAR SKY sobre.
+
 ## ⚙️ MÉCANIQUES CLAUDE
 
 <rules>
