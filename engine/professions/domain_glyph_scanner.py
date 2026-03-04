@@ -213,7 +213,7 @@ def init_tree():
 # ── SCAN ───────────────────────────────────────────────────────────
 
 def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
-               domain_lookup: dict) -> bool:
+               domain_lookup: dict, domain_names: list) -> bool:
     """Scan next pending chunk. Returns True if more remain."""
     chunk = None
     for c in tree["chunks"]:
@@ -272,9 +272,11 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
                     if arxiv_id is None:
                         continue
 
-                    # Look up domain
-                    domain = domain_lookup.get(arxiv_id)
-                    if domain is None:
+                    # Look up domain (compact: int index → name)
+                    domain_idx = domain_lookup.get(arxiv_id)
+                    if domain_idx is not None:
+                        domain = domain_names[domain_idx]
+                    else:
                         # Fallback: category from ID
                         domain = domain_from_category(arxiv_id)
                     if domain is None:
@@ -433,18 +435,28 @@ def main():
     latex_to_id = reg["latex_to_id"]
     unicode_to_id = reg["unicode_to_id"]
 
-    # Load domain lookup
-    print("  Loading domain lookup...")
+    # Load domain lookup — compact: store domain as int index
+    print("  Loading domain lookup (compact)...")
+    domain_names = []  # index → domain name
+    domain_index = {}  # domain name → index
+    domain_lookup = {}  # arxiv_id → domain_index (int, not string)
     with gzip.open(LOOKUP_PATH, "rt", encoding="utf-8") as f:
-        domain_lookup = json.load(f)
-    print(f"  Domain lookup: {len(domain_lookup):,} entries")
+        raw = json.load(f)
+    for arxiv_id, domain in raw.items():
+        if domain not in domain_index:
+            domain_index[domain] = len(domain_names)
+            domain_names.append(domain)
+        domain_lookup[arxiv_id] = domain_index[domain]
+    del raw  # free the full-string dict
+    print(f"  Domain lookup: {len(domain_lookup):,} entries, "
+          f"{len(domain_names)} domains")
 
     print(f"  Registry: {reg['meta']['total']} glyphs")
     print(f"  Chunks: {tree['progress']['chunks_completed']}/"
           f"{tree['progress']['chunks_total']}")
 
     for i in range(args.chunks):
-        if not scan_chunk(tree, latex_to_id, unicode_to_id, domain_lookup):
+        if not scan_chunk(tree, latex_to_id, unicode_to_id, domain_lookup, domain_names):
             print("\n  All chunks complete!")
             break
 
