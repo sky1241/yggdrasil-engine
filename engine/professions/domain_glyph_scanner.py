@@ -315,6 +315,10 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
 
                     papers_with_glyphs += 1
 
+                    # Cap glyphs per paper to avoid O(n²) explosion
+                    if len(glyph_ids) > 100:
+                        glyph_ids = glyph_ids[:100]
+
                     # Accumulate profile: domain → glyph counts
                     for gid in glyph_ids:
                         domain_profile[domain][gid] += 1
@@ -325,10 +329,13 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
                     if n_pairs == 0:
                         continue
                     weight = 1.0 / n_pairs
-                    for i in range(n):
-                        for j in range(i + 1, n):
-                            pair_key = f"{glyph_ids[i]}|{glyph_ids[j]}"
-                            domain_cooc[domain][pair_key] += weight
+                    try:
+                        for i in range(n):
+                            for j in range(i + 1, n):
+                                pair_key = f"{glyph_ids[i]}|{glyph_ids[j]}"
+                                domain_cooc[domain][pair_key] += weight
+                    except MemoryError:
+                        continue
 
         except (tarfile.TarError, IOError) as e:
             print(f"    ERROR: {tarname}: {e}")
