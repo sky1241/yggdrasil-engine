@@ -10,10 +10,10 @@
  },
  "progress": {
   "chunks_total": 416,
-  "chunks_completed": 1,
-  "papers_scanned": 11936,
-  "papers_with_domain": 11936,
-  "papers_with_glyphs": 11834
+  "chunks_completed": 201,
+  "papers_scanned": 616301,
+  "papers_with_domain": 615022,
+  "papers_with_glyphs": 609867
  },
  "chunks": [
   {
@@ -38,7 +38,7 @@
     "arXiv_src_0010_001.tar"
    ],
    "bytes": 1269262407,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 3,
@@ -50,7 +50,7 @@
     "arXiv_src_0103_001.tar"
    ],
    "bytes": 1340938240,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 4,
@@ -61,7 +61,7 @@
     "arXiv_src_0107_001.tar"
    ],
    "bytes": 1190727680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 5,
@@ -72,7 +72,7 @@
     "arXiv_src_0111_001.tar"
    ],
    "bytes": 1267599360,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 6,
@@ -83,7 +83,7 @@
     "arXiv_src_0203_001.tar"
    ],
    "bytes": 1198888960,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 7,
@@ -94,7 +94,7 @@
     "arXiv_src_0207_001.tar"
    ],
    "bytes": 1420738560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 8,
@@ -104,7 +104,7 @@
     "arXiv_src_0211_001.tar"
    ],
    "bytes": 1087321862,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 9,
@@ -114,7 +114,7 @@
     "arXiv_src_0302_001.tar"
    ],
    "bytes": 1108449280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 10,
@@ -125,7 +125,7 @@
     "arXiv_src_0306_001.tar"
    ],
    "bytes": 1279803534,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 11,
@@ -136,7 +136,7 @@
     "arXiv_src_0310_001.tar"
    ],
    "bytes": 1209333581,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 12,
@@ -146,7 +146,7 @@
     "arXiv_src_0401_001.tar"
    ],
    "bytes": 1356288000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 13,
@@ -157,7 +157,7 @@
     "arXiv_src_0405_001.tar"
    ],
    "bytes": 1235173197,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 14,
@@ -167,7 +167,7 @@
     "arXiv_src_0407_001.tar"
    ],
    "bytes": 1103104000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 15,
@@ -179,7 +179,7 @@
     "arXiv_src_0410_001.tar"
    ],
    "bytes": 1567877120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 16,
@@ -190,7 +190,7 @@
     "arXiv_src_0412_001.tar"
    ],
    "bytes": 1260677120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 17,
@@ -201,7 +201,7 @@
     "arXiv_src_0502_001.tar"
    ],
    "bytes": 1295124480,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 18,
@@ -212,7 +212,7 @@
     "arXiv_src_0504_001.tar"
    ],
    "bytes": 1223587840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 19,
@@ -223,7 +223,7 @@
     "arXiv_src_0506_001.tar"
    ],
    "bytes": 1329838080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 20,
@@ -234,7 +234,7 @@
     "arXiv_src_0508_001.tar"
    ],
    "bytes": 1385000960,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 21,
@@ -245,7 +245,7 @@
     "arXiv_src_0510_001.tar"
    ],
    "bytes": 1502668800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 22,
@@ -255,7 +255,7 @@
     "arXiv_src_0511_002.tar"
    ],
    "bytes": 1105971200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 23,
@@ -265,7 +265,7 @@
     "arXiv_src_0601_001.tar"
    ],
    "bytes": 1230202880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 24,
@@ -276,7 +276,7 @@
     "arXiv_src_0603_001.tar"
    ],
    "bytes": 1381181440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 25,
@@ -287,7 +287,7 @@
     "arXiv_src_0605_001.tar"
    ],
    "bytes": 1481953280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 26,
@@ -297,7 +297,7 @@
     "arXiv_src_0606_002.tar"
    ],
    "bytes": 1148211200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 27,
@@ -307,7 +307,7 @@
     "arXiv_src_0608_001.tar"
    ],
    "bytes": 1360035840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 28,
@@ -317,7 +317,7 @@
     "arXiv_src_0609_002.tar"
    ],
    "bytes": 1208657920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 29,
@@ -328,7 +328,7 @@
     "arXiv_src_0611_001.tar"
    ],
    "bytes": 1843546112,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 30,
@@ -338,7 +338,7 @@
     "arXiv_src_0612_002.tar"
    ],
    "bytes": 1369354240,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 31,
@@ -347,7 +347,7 @@
     "arXiv_src_0701_002.tar"
    ],
    "bytes": 1248247808,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 32,
@@ -357,7 +357,7 @@
     "arXiv_src_0703_001.tar"
    ],
    "bytes": 1402972160,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 33,
@@ -367,7 +367,7 @@
     "arXiv_src_0704_002.tar"
    ],
    "bytes": 1290270720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 34,
@@ -377,7 +377,7 @@
     "arXiv_src_0706_001.tar"
    ],
    "bytes": 1441302599,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 35,
@@ -387,7 +387,7 @@
     "arXiv_src_0707_002.tar"
    ],
    "bytes": 1449687040,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 36,
@@ -397,7 +397,7 @@
     "arXiv_src_0709_001.tar"
    ],
    "bytes": 1539870720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 37,
@@ -407,7 +407,7 @@
     "arXiv_src_0710_001.tar"
    ],
    "bytes": 1100759040,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 38,
@@ -417,7 +417,7 @@
     "arXiv_src_0711_001.tar"
    ],
    "bytes": 1312163840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 39,
@@ -427,7 +427,7 @@
     "arXiv_src_0712_001.tar"
    ],
    "bytes": 1190082560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 40,
@@ -437,7 +437,7 @@
     "arXiv_src_0801_001.tar"
    ],
    "bytes": 1419307008,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 41,
@@ -447,7 +447,7 @@
     "arXiv_src_0802_001.tar"
    ],
    "bytes": 1270896640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 42,
@@ -457,7 +457,7 @@
     "arXiv_src_0803_001.tar"
    ],
    "bytes": 1149839360,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 43,
@@ -467,7 +467,7 @@
     "arXiv_src_0804_001.tar"
    ],
    "bytes": 1157857280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 44,
@@ -477,7 +477,7 @@
     "arXiv_src_0805_001.tar"
    ],
    "bytes": 1224673280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 45,
@@ -487,7 +487,7 @@
     "arXiv_src_0806_001.tar"
    ],
    "bytes": 1380874240,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 46,
@@ -497,7 +497,7 @@
     "arXiv_src_0807_001.tar"
    ],
    "bytes": 1416939520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 47,
@@ -507,7 +507,7 @@
     "arXiv_src_0807_004.tar"
    ],
    "bytes": 1331404800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 48,
@@ -517,7 +517,7 @@
     "arXiv_src_0808_003.tar"
    ],
    "bytes": 1481594880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 49,
@@ -527,7 +527,7 @@
     "arXiv_src_0809_003.tar"
    ],
    "bytes": 1578178560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 50,
@@ -537,7 +537,7 @@
     "arXiv_src_0810_002.tar"
    ],
    "bytes": 1279150080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 51,
@@ -547,7 +547,7 @@
     "arXiv_src_0810_005.tar"
    ],
    "bytes": 1161267200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 52,
@@ -557,7 +557,7 @@
     "arXiv_src_0811_003.tar"
    ],
    "bytes": 1578403840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 53,
@@ -567,7 +567,7 @@
     "arXiv_src_0812_002.tar"
    ],
    "bytes": 1321021440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 54,
@@ -577,7 +577,7 @@
     "arXiv_src_0901_001.tar"
    ],
    "bytes": 1285621760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 55,
@@ -587,7 +587,7 @@
     "arXiv_src_0901_004.tar"
    ],
    "bytes": 1297438720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 56,
@@ -597,7 +597,7 @@
     "arXiv_src_0902_003.tar"
    ],
    "bytes": 1578905600,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 57,
@@ -607,7 +607,7 @@
     "arXiv_src_0903_002.tar"
    ],
    "bytes": 1239398400,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 58,
@@ -617,7 +617,7 @@
     "arXiv_src_0903_005.tar"
    ],
    "bytes": 1089648640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 59,
@@ -627,7 +627,7 @@
     "arXiv_src_0904_003.tar"
    ],
    "bytes": 1576407040,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 60,
@@ -637,7 +637,7 @@
     "arXiv_src_0905_002.tar"
    ],
    "bytes": 1440430080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 61,
@@ -647,7 +647,7 @@
     "arXiv_src_0906_001.tar"
    ],
    "bytes": 1466234880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 62,
@@ -657,7 +657,7 @@
     "arXiv_src_0906_004.tar"
    ],
    "bytes": 1576990720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 63,
@@ -667,7 +667,7 @@
     "arXiv_src_0907_002.tar"
    ],
    "bytes": 1301698560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 64,
@@ -677,7 +677,7 @@
     "arXiv_src_0907_005.tar"
    ],
    "bytes": 1264814080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 65,
@@ -687,7 +687,7 @@
     "arXiv_src_0908_003.tar"
    ],
    "bytes": 1577175040,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 66,
@@ -697,7 +697,7 @@
     "arXiv_src_0909_002.tar"
    ],
    "bytes": 1432524800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 67,
@@ -707,7 +707,7 @@
     "arXiv_src_0909_005.tar"
    ],
    "bytes": 1335828480,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 68,
@@ -717,7 +717,7 @@
     "arXiv_src_0910_003.tar"
    ],
    "bytes": 1598627840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 69,
@@ -727,7 +727,7 @@
     "arXiv_src_0911_001.tar"
    ],
    "bytes": 1352581120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 70,
@@ -737,7 +737,7 @@
     "arXiv_src_0911_004.tar"
    ],
    "bytes": 1580492800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 71,
@@ -747,7 +747,7 @@
     "arXiv_src_0912_002.tar"
    ],
    "bytes": 1386291200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 72,
@@ -757,7 +757,7 @@
     "arXiv_src_0912_005.tar"
    ],
    "bytes": 1414512640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 73,
@@ -767,7 +767,7 @@
     "arXiv_src_1001_003.tar"
    ],
    "bytes": 1584640000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 74,
@@ -777,7 +777,7 @@
     "arXiv_src_1002_001.tar"
    ],
    "bytes": 1353328640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 75,
@@ -787,7 +787,7 @@
     "arXiv_src_1002_004.tar"
    ],
    "bytes": 1563883520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 76,
@@ -797,7 +797,7 @@
     "arXiv_src_1003_002.tar"
    ],
    "bytes": 1215119360,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 77,
@@ -806,7 +806,7 @@
     "arXiv_src_1003_004.tar"
    ],
    "bytes": 1076285440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 78,
@@ -816,7 +816,7 @@
     "arXiv_src_1004_001.tar"
    ],
    "bytes": 1298657280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 79,
@@ -826,7 +826,7 @@
     "arXiv_src_1004_004.tar"
    ],
    "bytes": 1585991680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 80,
@@ -836,7 +836,7 @@
     "arXiv_src_1005_001.tar"
    ],
    "bytes": 1130864640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 81,
@@ -845,7 +845,7 @@
     "arXiv_src_1005_003.tar"
    ],
    "bytes": 1081313280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 82,
@@ -855,7 +855,7 @@
     "arXiv_src_1005_006.tar"
    ],
    "bytes": 1389957120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 83,
@@ -865,7 +865,7 @@
     "arXiv_src_1006_003.tar"
    ],
    "bytes": 1601013760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 84,
@@ -874,7 +874,7 @@
     "arXiv_src_1006_005.tar"
    ],
    "bytes": 1080248320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 85,
@@ -884,7 +884,7 @@
     "arXiv_src_1007_002.tar"
    ],
    "bytes": 1508085760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 86,
@@ -893,7 +893,7 @@
     "arXiv_src_1007_004.tar"
    ],
    "bytes": 1094799360,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 87,
@@ -903,7 +903,7 @@
     "arXiv_src_1008_001.tar"
    ],
    "bytes": 1405061120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 88,
@@ -913,7 +913,7 @@
     "arXiv_src_1008_004.tar"
    ],
    "bytes": 1075603527,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 89,
@@ -923,7 +923,7 @@
     "arXiv_src_1009_001.tar"
    ],
    "bytes": 1403054080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 90,
@@ -933,7 +933,7 @@
     "arXiv_src_1009_004.tar"
    ],
    "bytes": 1593149440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 91,
@@ -943,7 +943,7 @@
     "arXiv_src_1009_007.tar"
    ],
    "bytes": 1593518080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 92,
@@ -954,7 +954,7 @@
     "arXiv_src_1010_003.tar"
    ],
    "bytes": 1599201280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 93,
@@ -963,7 +963,7 @@
     "arXiv_src_1010_005.tar"
    ],
    "bytes": 1193697280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 94,
@@ -972,7 +972,7 @@
     "arXiv_src_1010_007.tar"
    ],
    "bytes": 1087201280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 95,
@@ -981,7 +981,7 @@
     "arXiv_src_1010_009.tar"
    ],
    "bytes": 1106401280,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 96,
@@ -990,7 +990,7 @@
     "arXiv_src_1010_011.tar"
    ],
    "bytes": 1122467840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 97,
@@ -999,7 +999,7 @@
     "arXiv_src_1010_013.tar"
    ],
    "bytes": 1085358080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 98,
@@ -1009,7 +1009,7 @@
     "arXiv_src_1011_001.tar"
    ],
    "bytes": 1264291840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 99,
@@ -1018,7 +1018,7 @@
     "arXiv_src_1011_003.tar"
    ],
    "bytes": 1133291520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 100,
@@ -1028,7 +1028,7 @@
     "arXiv_src_1011_006.tar"
    ],
    "bytes": 1140465735,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 101,
@@ -1038,7 +1038,7 @@
     "arXiv_src_1012_002.tar"
    ],
    "bytes": 1446307840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 102,
@@ -1047,7 +1047,7 @@
     "arXiv_src_1012_004.tar"
    ],
    "bytes": 1074462720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 103,
@@ -1056,7 +1056,7 @@
     "arXiv_src_1012_006.tar"
    ],
    "bytes": 1097502720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 104,
@@ -1066,7 +1066,7 @@
     "arXiv_src_1101_002.tar"
    ],
    "bytes": 1415880704,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 105,
@@ -1076,7 +1076,7 @@
     "arXiv_src_1101_005.tar"
    ],
    "bytes": 1619322880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 106,
@@ -1086,7 +1086,7 @@
     "arXiv_src_1102_001.tar"
    ],
    "bytes": 1361510400,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 107,
@@ -1096,7 +1096,7 @@
     "arXiv_src_1102_004.tar"
    ],
    "bytes": 1607270400,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 108,
@@ -1106,7 +1106,7 @@
     "arXiv_src_1102_007.tar"
    ],
    "bytes": 1109032960,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 109,
@@ -1115,7 +1115,7 @@
     "arXiv_src_1103_002.tar"
    ],
    "bytes": 1097881600,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 110,
@@ -1124,7 +1124,7 @@
     "arXiv_src_1103_004.tar"
    ],
    "bytes": 1075312640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 111,
@@ -1133,7 +1133,7 @@
     "arXiv_src_1103_006.tar"
    ],
    "bytes": 1092167680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 112,
@@ -1143,7 +1143,7 @@
     "arXiv_src_1104_002.tar"
    ],
    "bytes": 1199423559,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 113,
@@ -1153,7 +1153,7 @@
     "arXiv_src_1104_005.tar"
    ],
    "bytes": 1349752903,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 114,
@@ -1163,7 +1163,7 @@
     "arXiv_src_1105_001.tar"
    ],
    "bytes": 1112299520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 115,
@@ -1173,7 +1173,7 @@
     "arXiv_src_1105_004.tar"
    ],
    "bytes": 1585920000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 116,
@@ -1182,7 +1182,7 @@
     "arXiv_src_1105_006.tar"
    ],
    "bytes": 1083074560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 117,
@@ -1191,7 +1191,7 @@
     "arXiv_src_1106_001.tar"
    ],
    "bytes": 1093939200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 118,
@@ -1200,7 +1200,7 @@
     "arXiv_src_1106_003.tar"
    ],
    "bytes": 1083002880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 119,
@@ -1209,7 +1209,7 @@
     "arXiv_src_1106_005.tar"
    ],
    "bytes": 1084723200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 120,
@@ -1219,7 +1219,7 @@
     "arXiv_src_1107_001.tar"
    ],
    "bytes": 1529466880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 121,
@@ -1228,7 +1228,7 @@
     "arXiv_src_1107_003.tar"
    ],
    "bytes": 1094184960,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 122,
@@ -1237,7 +1237,7 @@
     "arXiv_src_1107_005.tar"
    ],
    "bytes": 1077125120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 123,
@@ -1247,7 +1247,7 @@
     "arXiv_src_1108_001.tar"
    ],
    "bytes": 1506048000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 124,
@@ -1256,7 +1256,7 @@
     "arXiv_src_1108_003.tar"
    ],
    "bytes": 1083525120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 125,
@@ -1266,7 +1266,7 @@
     "arXiv_src_1108_006.tar"
    ],
    "bytes": 1616885760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 126,
@@ -1276,7 +1276,7 @@
     "arXiv_src_1109_001.tar"
    ],
    "bytes": 1243955200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 127,
@@ -1285,7 +1285,7 @@
     "arXiv_src_1109_003.tar"
    ],
    "bytes": 1086955520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 128,
@@ -1294,7 +1294,7 @@
     "arXiv_src_1109_005.tar"
    ],
    "bytes": 1076899840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 129,
@@ -1304,7 +1304,7 @@
     "arXiv_src_1109_008.tar"
    ],
    "bytes": 1601873920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 130,
@@ -1314,7 +1314,7 @@
     "arXiv_src_1110_002.tar"
    ],
    "bytes": 1187317760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 131,
@@ -1323,7 +1323,7 @@
     "arXiv_src_1110_004.tar"
    ],
    "bytes": 1110937600,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 132,
@@ -1332,7 +1332,7 @@
     "arXiv_src_1110_006.tar"
    ],
    "bytes": 1074647040,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 133,
@@ -1341,7 +1341,7 @@
     "arXiv_src_1110_008.tar"
    ],
    "bytes": 1230776320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 134,
@@ -1350,7 +1350,7 @@
     "arXiv_src_1110_010.tar"
    ],
    "bytes": 1110312960,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 135,
@@ -1360,7 +1360,7 @@
     "arXiv_src_1110_013.tar"
    ],
    "bytes": 1603072000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 136,
@@ -1370,7 +1370,7 @@
     "arXiv_src_1110_016.tar"
    ],
    "bytes": 1131601920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 137,
@@ -1380,7 +1380,7 @@
     "arXiv_src_1111_003.tar"
    ],
    "bytes": 1593282560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 138,
@@ -1390,7 +1390,7 @@
     "arXiv_src_1111_006.tar"
    ],
    "bytes": 1581813760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 139,
@@ -1399,7 +1399,7 @@
     "arXiv_src_1111_008.tar"
    ],
    "bytes": 1079490560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 140,
@@ -1409,7 +1409,7 @@
     "arXiv_src_1112_002.tar"
    ],
    "bytes": 1556090880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 141,
@@ -1418,7 +1418,7 @@
     "arXiv_src_1112_004.tar"
    ],
    "bytes": 1078589440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 142,
@@ -1427,7 +1427,7 @@
     "arXiv_src_1112_006.tar"
    ],
    "bytes": 1080043520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 143,
@@ -1437,7 +1437,7 @@
     "arXiv_src_1201_001.tar"
    ],
    "bytes": 1502586880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 144,
@@ -1447,7 +1447,7 @@
     "arXiv_src_1201_004.tar"
    ],
    "bytes": 1627043840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 145,
@@ -1456,7 +1456,7 @@
     "arXiv_src_1201_006.tar"
    ],
    "bytes": 1075097600,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 146,
@@ -1465,7 +1465,7 @@
     "arXiv_src_1201_008.tar"
    ],
    "bytes": 1106944000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 147,
@@ -1475,7 +1475,7 @@
     "arXiv_src_1202_002.tar"
    ],
    "bytes": 1114808320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 148,
@@ -1484,7 +1484,7 @@
     "arXiv_src_1202_004.tar"
    ],
    "bytes": 1080647680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 149,
@@ -1494,7 +1494,7 @@
     "arXiv_src_1202_007.tar"
    ],
    "bytes": 1100900423,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 150,
@@ -1504,7 +1504,7 @@
     "arXiv_src_1203_001.tar"
    ],
    "bytes": 1281740800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 151,
@@ -1515,7 +1515,7 @@
     "arXiv_src_1203_005.tar"
    ],
    "bytes": 1386803021,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 152,
@@ -1524,7 +1524,7 @@
     "arXiv_src_1203_007.tar"
    ],
    "bytes": 1077329920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 153,
@@ -1534,7 +1534,7 @@
     "arXiv_src_1204_001.tar"
    ],
    "bytes": 1160345350,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 154,
@@ -1543,7 +1543,7 @@
     "arXiv_src_1204_003.tar"
    ],
    "bytes": 1079459840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 155,
@@ -1552,7 +1552,7 @@
     "arXiv_src_1204_005.tar"
    ],
    "bytes": 1125406720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 156,
@@ -1561,7 +1561,7 @@
     "arXiv_src_1204_007.tar"
    ],
    "bytes": 1101506560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 157,
@@ -1571,7 +1571,7 @@
     "arXiv_src_1205_001.tar"
    ],
    "bytes": 1526661120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 158,
@@ -1580,7 +1580,7 @@
     "arXiv_src_1205_003.tar"
    ],
    "bytes": 1090027520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 159,
@@ -1589,7 +1589,7 @@
     "arXiv_src_1205_005.tar"
    ],
    "bytes": 1075486720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 160,
@@ -1598,7 +1598,7 @@
     "arXiv_src_1205_007.tar"
    ],
    "bytes": 1075773440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 161,
@@ -1607,7 +1607,7 @@
     "arXiv_src_1205_009.tar"
    ],
    "bytes": 1090344960,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 162,
@@ -1617,7 +1617,7 @@
     "arXiv_src_1206_002.tar"
    ],
    "bytes": 1094287360,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 163,
@@ -1626,7 +1626,7 @@
     "arXiv_src_1206_004.tar"
    ],
    "bytes": 1161420800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 164,
@@ -1636,7 +1636,7 @@
     "arXiv_src_1206_007.tar"
    ],
    "bytes": 1596600320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 165,
@@ -1646,7 +1646,7 @@
     "arXiv_src_1206_010.tar"
    ],
    "bytes": 1442887680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 166,
@@ -1656,7 +1656,7 @@
     "arXiv_src_1207_003.tar"
    ],
    "bytes": 1256222720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 167,
@@ -1666,7 +1666,7 @@
     "arXiv_src_1207_006.tar"
    ],
    "bytes": 1588480000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 168,
@@ -1675,7 +1675,7 @@
     "arXiv_src_1207_008.tar"
    ],
    "bytes": 1074032640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 169,
@@ -1684,7 +1684,7 @@
     "arXiv_src_1207_010.tar"
    ],
    "bytes": 1094307840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 170,
@@ -1694,7 +1694,7 @@
     "arXiv_src_1208_002.tar"
    ],
    "bytes": 1451724800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 171,
@@ -1703,7 +1703,7 @@
     "arXiv_src_1208_004.tar"
    ],
    "bytes": 1076336640,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 172,
@@ -1712,7 +1712,7 @@
     "arXiv_src_1208_006.tar"
    ],
    "bytes": 1098915840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 173,
@@ -1721,7 +1721,7 @@
     "arXiv_src_1208_008.tar"
    ],
    "bytes": 1075210240,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 174,
@@ -1731,7 +1731,7 @@
     "arXiv_src_1209_001.tar"
    ],
    "bytes": 1493073920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 175,
@@ -1740,7 +1740,7 @@
     "arXiv_src_1209_003.tar"
    ],
    "bytes": 1108152320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 176,
@@ -1750,7 +1750,7 @@
     "arXiv_src_1209_006.tar"
    ],
    "bytes": 1699133440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 177,
@@ -1759,7 +1759,7 @@
     "arXiv_src_1209_008.tar"
    ],
    "bytes": 1098956800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 178,
@@ -1769,7 +1769,7 @@
     "arXiv_src_1210_001.tar"
    ],
    "bytes": 1587159040,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 179,
@@ -1779,7 +1779,7 @@
     "arXiv_src_1210_004.tar"
    ],
    "bytes": 1722572800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 180,
@@ -1788,7 +1788,7 @@
     "arXiv_src_1210_006.tar"
    ],
    "bytes": 1200701440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 181,
@@ -1797,7 +1797,7 @@
     "arXiv_src_1210_008.tar"
    ],
    "bytes": 1139558400,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 182,
@@ -1806,7 +1806,7 @@
     "arXiv_src_1210_010.tar"
    ],
    "bytes": 1217341440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 183,
@@ -1815,7 +1815,7 @@
     "arXiv_src_1210_012.tar"
    ],
    "bytes": 1258178560,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 184,
@@ -1824,7 +1824,7 @@
     "arXiv_src_1210_014.tar"
    ],
    "bytes": 1124925440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 185,
@@ -1833,7 +1833,7 @@
     "arXiv_src_1210_016.tar"
    ],
    "bytes": 1105991680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 186,
@@ -1842,7 +1842,7 @@
     "arXiv_src_1210_018.tar"
    ],
    "bytes": 1087662080,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 187,
@@ -1852,7 +1852,7 @@
     "arXiv_src_1211_002.tar"
    ],
    "bytes": 1377105920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 188,
@@ -1861,7 +1861,7 @@
     "arXiv_src_1211_004.tar"
    ],
    "bytes": 1080555520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 189,
@@ -1870,7 +1870,7 @@
     "arXiv_src_1211_006.tar"
    ],
    "bytes": 1106595840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 190,
@@ -1879,7 +1879,7 @@
     "arXiv_src_1211_008.tar"
    ],
    "bytes": 1077852160,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 191,
@@ -1889,7 +1889,7 @@
     "arXiv_src_1211_011.tar"
    ],
    "bytes": 1193164800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 192,
@@ -1898,7 +1898,7 @@
     "arXiv_src_1212_002.tar"
    ],
    "bytes": 1091491840,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 193,
@@ -1907,7 +1907,7 @@
     "arXiv_src_1212_004.tar"
    ],
    "bytes": 1120081920,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 194,
@@ -1916,7 +1916,7 @@
     "arXiv_src_1212_006.tar"
    ],
    "bytes": 1094471680,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 195,
@@ -1926,7 +1926,7 @@
     "arXiv_src_1212_009.tar"
    ],
    "bytes": 1603614720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 196,
@@ -1936,7 +1936,7 @@
     "arXiv_src_1301_002.tar"
    ],
    "bytes": 1395845120,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 197,
@@ -1946,7 +1946,7 @@
     "arXiv_src_1301_005.tar"
    ],
    "bytes": 1599549440,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 198,
@@ -1956,7 +1956,7 @@
     "arXiv_src_1301_008.tar"
    ],
    "bytes": 1590026240,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 199,
@@ -1965,7 +1965,7 @@
     "arXiv_src_1301_010.tar"
    ],
    "bytes": 1075660800,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 200,
@@ -1975,7 +1975,7 @@
     "arXiv_src_1302_002.tar"
    ],
    "bytes": 1241300992,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 201,
@@ -1985,7 +1985,7 @@
     "arXiv_src_1302_005.tar"
    ],
    "bytes": 1305157632,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 202,

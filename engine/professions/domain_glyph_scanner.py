@@ -442,19 +442,34 @@ def main():
     latex_to_id = reg["latex_to_id"]
     unicode_to_id = reg["unicode_to_id"]
 
-    # Load domain lookup — compact: store domain as int index
-    print("  Loading domain lookup (compact)...")
+    # Load domain lookup — stream 1 MB chunks to avoid MemoryError
+    print("  Loading domain lookup (streaming)...")
     domain_names = []  # index → domain name
     domain_index = {}  # domain name → index
     domain_lookup = {}  # arxiv_id → domain_index (int, not string)
+    pair_re = re.compile(r'"([^"]+)"\s*:\s*"([^"]+)"')
+    remainder = ""
     with gzip.open(LOOKUP_PATH, "rt", encoding="utf-8") as f:
-        raw = json.load(f)
-    for arxiv_id, domain in raw.items():
-        if domain not in domain_index:
-            domain_index[domain] = len(domain_names)
-            domain_names.append(domain)
-        domain_lookup[arxiv_id] = domain_index[domain]
-    del raw  # free the full-string dict
+        while True:
+            chunk = f.read(1_048_576)  # 1 MB text
+            if not chunk:
+                for m in pair_re.finditer(remainder):
+                    aid, dom = m.group(1), m.group(2)
+                    if dom not in domain_index:
+                        domain_index[dom] = len(domain_names)
+                        domain_names.append(dom)
+                    domain_lookup[aid] = domain_index[dom]
+                break
+            text = remainder + chunk
+            last_end = 0
+            for m in pair_re.finditer(text):
+                aid, dom = m.group(1), m.group(2)
+                if dom not in domain_index:
+                    domain_index[dom] = len(domain_names)
+                    domain_names.append(dom)
+                domain_lookup[aid] = domain_index[dom]
+                last_end = m.end()
+            remainder = text[last_end:]
     print(f"  Domain lookup: {len(domain_lookup):,} entries, "
           f"{len(domain_names)} domains")
 
