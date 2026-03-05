@@ -33,7 +33,11 @@
 | Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 3 MARS 2026 (session 15)
+## ÉTAT ACTUEL — 5 MARS 2026 (session 17)
+- **S-2 GLYPHES COMPLET** — 1,337 glyphes, 617 actifs, Laplacien spectral k=9, `data/core/s2_spectral.json`
+  - Pipeline: registry → arXiv scanner (420 chunks) → PMC scanner (39 chunks) → Laplacien → frames (356) → intégration
+- **S-1 MÉTIERS EN COURS** — scan domain×glyph ~200/416 chunks, 19 domaines, `engine/professions/domain_glyph_scanner.py`
+- **S0 FORMULES COMPLET** — 21,524 symboles, 100% C1
 - **SCAN V2 COMPLET** — 581/581 chunks, 692 GB, 347,999,931 papers, 65,026 concepts, 108,301,944 paires non-zero
 - **MIGRATION E:\** — Snapshot OpenAlex migré D:\ → E:\ (disque 5 TB, 4.6 TB libre)
 - **9 ESPÈCES** (spectral K=9): MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math, Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics
@@ -65,6 +69,8 @@
 | 13 | 2 mars | Opus 4.6 | Mirror pairs test: 19/20, d=0.925, p=6.68e-06 — signal réel confirmé |
 | 14 | 3 mars | Opus 4.6 | Archéologie S-2: 194 glyphes tracés (57 C1 + 137 C2, Cajori), 7 mécaniques Claude dans SOL.md |
 | 15 | 3 mars | Opus 4.6 | arXiv mapper COMPLET (309/309, 4.3M arXiv), arXiv tars COMPLET (2,449, 1 TB), ménage TODO/SOL |
+| 16 | 4 mars | Sky solo | 2 graines bourrées: Mort=figé/Vivant=mute + Conjecture Rubik (C2, à valider sobre) |
+| 17 | 5 mars | Opus 4.6 | Fix MemoryError S-1 scanner (streaming lookup), audit intégrité complet, S-1 scan relancé (~200/416) |
 
 ## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
 - **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
@@ -236,7 +242,10 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 - [x] Archéologie S-2: 194 glyphes tracés (57 C1 + 137 C2) — session 14
 - [x] arXiv mapper COMPLET: 309/309 chunks, 479M papers, 4.3M arXiv — session 15
 - [x] arXiv tars COMPLET: 2,449 tars, 1,025 GB — session 15
-- [ ] Pipeline glyph S-2: arxiv_scanner → glyph_laplacian → intégration
+- [x] Pipeline glyph S-2 COMPLET: 420 arXiv + 39 PMC → Laplacien 1337×1337 → s2_spectral.json — sessions 12-15
+- [ ] S-1 Métiers: scan domain×glyph en cours (~200/416), intégration après — session 17
+- [ ] Connexions inter-strates S-2↔S-1↔S0 (après S-1 complet)
+- [ ] Refaire viz avec 3 couches du sol complètes
 - [ ] V3: mesurer météorites sur frames réelles
 - [ ] V4: le grimpeur
 
