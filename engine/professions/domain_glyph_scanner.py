@@ -18,6 +18,7 @@ Usage:
 import argparse
 import gzip
 import json
+import random
 import re
 import signal
 import sys
@@ -317,7 +318,8 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
 
                     # Cap glyphs per paper to avoid O(n²) explosion
                     if len(glyph_ids) > 100:
-                        glyph_ids = glyph_ids[:100]
+                        rng = random.Random(arxiv_id)
+                        glyph_ids = rng.sample(glyph_ids, 100)
 
                     # Accumulate profile: domain → glyph counts
                     for gid in glyph_ids:

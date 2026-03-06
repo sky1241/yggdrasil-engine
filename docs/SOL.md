@@ -1,128 +1,139 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 1 mars 2026
+> Yggdrasil Engine — Versoix, 6 mars 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE
 | Terme | Signification |
 |-------|--------------|
 | Pluie | Données brutes OpenAlex (478M+ papers, 692 GB snapshot local E:\openalex\data) |
-| Racines | Pipeline API: search → timeline → co-occurrence |
-| Mycelium | Graphe topologique: BC, meshedness, Physarum |
-| Sol (S0) | 21,524 symboles (794 originaux + 20,730 minés OpenAlex), 100% C1 |
-| Winter Tree | Index trié par année/mois: 65,026 concepts × co-occurrences (scanner: engine/topology/winter_tree_scanner.py) |
-| Vivant | Concept avec works_count >= Q1 de son domaine (77%) |
-| Musée | Concept sous Q1 (23%) — existe mais peu cité |
-| Lianes | Symboles traversant 3+ continents |
-| Escalier géo 🌿 | Concept positionné entre 2 continents distants (200 détectés) |
-| Passe-partout 🔑 | Concept chez lui mais utilisé partout (69 détectés) |
-| Strates | S-2=glyphes → S-1=métiers → S0=outils → S6=ciel/indécidable |
-| S-2 Glyphes 🔣 | Notation (=, +, ∫, Σ, ∂) — briques atomiques d'écriture |
-| S-1 Métiers 🔧 | Professions/domaines (physics, biology, engineering) |
+| Racines | Pipeline: scan → co-occurrence → Laplacien → positions spectrales |
+| Mycelium | Graphe topologique: co-occurrences, BC, meshedness, Physarum |
+| Sol (S0) | 65,026 concepts scientifiques OpenAlex — le plancher de toute la science |
+| Winter Tree | Index trié par année/mois: 65,026 concepts × co-occurrences (581 chunks, 348M papers) |
+| Vivant | Concept avec works_count >= Q1 de son domaine |
+| Musée | Concept sous Q1 — existe mais peu cité |
+| Strates | S-2=glyphes → S-1=métiers → S0=concepts → S1-S6=arbre |
+| S-2 Glyphes | Notation (=, +, ∫, Σ, ∂) — 1,337 symboles math, briques atomiques d'écriture |
+| S-1 Métiers | Professions/domaines (physics, biology, engineering) — 19 domaines × 1,337 glyphes |
+| S0 Concepts | 65,026 concepts scientifiques = ce que les scientifiques utilisent, prouvé ou pas |
+| S1-S6 Arbre | 296 concepts sur l'indécidabilité (Halting, BB, etc.) |
 | Mycelium zone | S-2 à S0 — le réseau de co-occurrences vit DANS le sol |
 | Météorite | Impact Sedov-Taylor: R = β(E/ρ₀)^{1/5} × t^{2/5}, blast dans le sol S-2→S0 |
-| Thermomètre | scisci.py: métriques scientométriques |
 | 5 Curseurs | BA (angle bifurcation), IL (internode), D (diamètre), Db (fractale), L (lacunarité) — Lehmann 2019 |
-| Espèce réseau | Profil des 5 curseurs mesurés sur le graphe réel → match (ou pas) avec 31 espèces biologiques |
+| Espèce réseau | Profil des 5 curseurs mesurés sur le graphe réel → match avec 31 espèces biologiques |
+| 9 Espèces | Spectral K=9 sur les 65K: MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math, Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics |
 | Pont (P1) | Bridge inter-domaines, BC élevé, explosion |
 | Dense (P2) | Hub stable, meshedness élevé |
 | Théorie×Outil (P3) | Explosion après validation instrumentale |
 | Trou ouvert (P4) | Pont pas encore explosé = FUTUR |
 | Anti-signal (P5) | L'hyphe meurt, slope négative |
-| Sommet 🏔️ | Point haut d'un escalier — vue plongeante sur les briques S0 connectées |
-| Vue plongeante | Depuis un sommet: voir QUELLES briques S0 sont utiles pour CE problème |
-| Grimpeur 🧗 | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
+| Sommet | Point haut d'un escalier — vue plongeante sur les briques S0 connectées |
+| Grimpeur | V4: AI qui compose des chemins de preuves en montant les escaliers avec les bonnes briques |
 | Sac à dos | Ensemble de briques S0 filtrées par la topologie pour un problème donné |
 
-## ÉTAT ACTUEL — 5 MARS 2026 (session 17)
-- **S-2 GLYPHES COMPLET** — 1,337 glyphes, 617 actifs, Laplacien spectral k=9, `data/core/s2_spectral.json`
-  - Pipeline: registry → arXiv scanner (420 chunks) → PMC scanner (39 chunks) → Laplacien → frames (356) → intégration
-- **S-1 MÉTIERS EN COURS** — scan domain×glyph ~200/416 chunks, 19 domaines, `engine/professions/domain_glyph_scanner.py`
-- **S0 FORMULES COMPLET** — 21,524 symboles, 100% C1
-- **SCAN V2 COMPLET** — 581/581 chunks, 692 GB, 347,999,931 papers, 65,026 concepts, 108,301,944 paires non-zero
-- **MIGRATION E:\** — Snapshot OpenAlex migré D:\ → E:\ (disque 5 TB, 4.6 TB libre)
-- **9 ESPÈCES** (spectral K=9): MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math, Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics
-- **FILM V4** — 1,534 frames (an 1000→2024), 65,021 concept births, `viz/yggdrasil_rain_v4.html` (cube 3D)
-- **BLIND TEST V2** — 65K concepts, cutoff 2015, 82.7M paires scorées, p=3.4e-12 (commit `a446268`)
-- **PREDICTIONS 2025** — Top 10K INTER-espèces + INTRA, P4 Uzzi z-scores, matrice de collision 9×9 (commit `b07d891`)
-- **ANALYSE TOP 100 INTER** — 18 BANAL (18%), 30 INTÉRESSANT (30%), 41 WTF (41%), 11 BRUIT (11%), 20/20 web verified
-- **V3 MODULE CODÉ** — `engine/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas + catalogue 13 météorites)
-- **17 GRAINES S-2** — 10 chiffres + 7 symboles alchimiques, patient t=0 documenté (tally ~43K av. J-C → alchimie ~300)
-- **ARCHÉOLOGIE t=0 COMPLÈTE** — 206 L0+L1 concepts sourcés + 194 glyphes S-2 (Cajori, peer-reviewed)
-- **arXiv TARS COMPLET** — 2,449 tars, 1,025 GB, `E:/arxiv/src/`
-- **arXiv↔OpenAlex MAPPER COMPLET** — 309/309 chunks, 479M papers, 4,324,641 arXiv trouvés
+## POPULATIONS — LES VRAIS CHIFFRES
+```
+┌─────────────────────────────────────────────────────┐
+│  Population         │ Nombre  │ Source               │
+├─────────────────────┼─────────┼──────────────────────┤
+│  S-2 Glyphes        │  1,337  │ arXiv LaTeX + PMC    │
+│  S-1 Métiers        │  19 dom │ arXiv domain×glyph   │
+│  S0  Concepts       │ 65,026  │ OpenAlex snapshot     │
+│  S1-S6 Arbre        │    296  │ Keywords sur 65K      │
+└─────────────────────┴─────────┴──────────────────────┘
 
-### HISTORIQUE SESSIONS
+OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
+          Remplacé par les 65K directement. NE PLUS UTILISER pour du neuf.
+```
+
+## ARCHITECTURE DES STRATES
+```
+    S6      Indécidable (Gödel, Halting)         ┐
+    S5      Presque indécidable                  │
+    S4      Logique supérieure                   │ ARBRE
+    S3      Conjectures                          │ (296 concepts)
+    S2      Récursion sur récursion              │ PAS de mycelium
+    S1      Structures récursives                ┘
+═══════════════════════════════════════════════════
+    S0      CONCEPTS (65,026)                    ┐
+    S-1     MÉTIERS (19 domaines × 1,337)        │ SOL = MYCELIUM
+    S-2     GLYPHES (1,337 symboles math)        ┘
+═══════════════════════════════════════════════════
+```
+- Le mycelium (co-occurrences) vit dans S-2 à S0 — c'est le SOL
+- Au-dessus de S0 = l'arbre (conjectures, abstractions) — PAS de mycelium
+- Le spectral layout positionne TOUT à partir du mycelium
+- La météorite frappe S0 et le blast se propage dans le sol
+
+## ÉTAT ACTUEL — 6 MARS 2026 (session 18)
+
+### S-2 GLYPHES — COMPLET
+- 1,337 glyphes, 617 actifs, Laplacien spectral k=9
+- Pipeline: registry → arXiv scanner (420 chunks) → PMC scanner (39 chunks) → Laplacien → frames (356) → intégration
+- Archéologie: 194 glyphes tracés (57 C1 + 137 C2, Cajori 1928-29)
+- 17 graines: 10 chiffres + 7 symboles alchimiques, patient t=0 documenté
+- Output: `data/core/s2_spectral.json`, `data/core/glyph_registry.json`
+
+### S-1 MÉTIERS — EN COURS (~395/416 chunks)
+- Scan domain×glyph sur arXiv LaTeX, 19 domaines
+- Scanner: `engine/professions/domain_glyph_scanner.py`
+- Fix session 18: streaming lookup (MemoryError) + random.sample(glyph_ids, 100) avec seed arXiv_id
+- Output: `data/scan/s1_chunks/chunk_NNN/`
+- ETA: ~1h
+
+### S0 CONCEPTS — COMPLET (= les 65K OpenAlex)
+- 65,026 concepts scientifiques OpenAlex
+- Winter tree scan V2: 581/581 chunks, 692 GB, 347,999,931 papers, 108,301,944 paires non-zero
+- Poids 1/C(n,2), filtres erratum/retraction/is_retracted
+- 1,645 périodes (an 1000→2024, mois après 1980)
+- Scanner: `engine/topology/winter_tree_scanner.py`
+- Output: `data/scan/chunks/chunk_NNN/`, `data/scan/concepts_65k.json`
+
+### S1-S6 ARBRE — CORRECT (296 concepts)
+- Classés par keywords depuis les 65K (spot-check validé)
+- Halting→S1, BPP→S2, PH→S3, PSPACE→S4, HYP→S5, BB→S6
+
+### VALIDATIONS
+- **Blind test V2**: 65K concepts, cutoff 2015, 82.7M paires, **p=3.4e-12**, Cohen's d=0.44
+- **Laplacien spectral**: K=64, **Recall@100=70%**, Cohen's d=8.78, 7 percées au rang 1
+- **Mirror pairs**: 19/20, d=0.925, p=6.68e-06 — signal réel confirmé
+- **Prédictions 2025**: top 10K INTER+INTRA, 41% WTF, 20/20 web verified
+
+### INFRASTRUCTURE
+- **Film V4**: 1,534 frames (an 1000→2024), 65,021 concept births, `viz/yggdrasil_rain_v4.html`
+- **arXiv tars**: 2,449 tars, 1,025 GB, `E:/arxiv/src/`
+- **arXiv↔OpenAlex mapper**: 309/309 chunks, 479M papers, 4,324,641 arXiv trouvés
+- **V3 météorites**: `engine/meteorites.py` codé (Sedov-Taylor + OHLC + 7 deltas), en attente de mesure
+- **Migration E:\**: Snapshot OpenAlex migré D:\→E:\ (disque 5 TB, 4.6 TB libre)
+
+### LEGACY (ne plus utiliser pour du neuf)
+- `strates_export_v2.json` (21,524) — ancien sous-ensemble keyword-filtré, remplacé par 65K
+- `cooccurrence_scan.py` (85×85 domaines) — remplacé par winter_tree_scanner (65K)
+- `viz/yggdrasil_rain_v3.html` — viz basée sur 21K, à refaire avec 65K + S-2 + S-1
+- `escaliers_spectraux.json` (200 geo + 69 key) — basés sur 21K, à recalculer
+- `blind_test/` (V1) — 100 concepts, remplacé par blind_test_v2 (65K)
+
+## HISTORIQUE SESSIONS
 | # | Date | Claude | Résumé |
 |---|------|--------|--------|
-| 1 | 21 fév matin | Sonnet 4.5 | Escaliers spectraux, cleanup S0, vivant/musée |
-| 2 | 21 fév midi | Sonnet 4.5 | Continents, co-occurrence réelle, La Pluie v3 |
-| 3 | 21 fév soir | Opus 4.6 | Cross Physarum, viz 3D escaliers, blind test |
-| 4 | 22 fév | Opus 4.6 | Audit 22 repos, vision V4 grimpeur, roadmap complète |
-| 5 | 23 fév | Opus 4.6 | Winter tree scanner: 65K concepts, chunks 1GB, scan 467 GB lancé |
-| 6 | 23 fév soir | Opus 4.6 | Formules Sedov-Taylor, architecture S-2/S-1/S0, mycelium dans le sol |
-| 7 | 24 fév | Opus 4.6 | engine/meteorites.py codé, 8 bugs fixés (core + meteorites), audit complet |
-| 8 | 24 fév matin | Opus 4.6 | DÉCOUVERTE: mycelium_full.py=comportement SANS espèce. 5 curseurs (Lehmann 2019, 31 spp). Plan species_identifier.py |
-| 9 | 24 fév après-midi | Opus 4.6 | Scanner V2: filtre erratum/retraction + poids 1/C(n,2). D:\ nettoyé (legacy-data supprimé, +174 GB). 581 chunks, prêt pour scan complet |
-| 10 | 25-28 fév | Opus 4.6 | 9 espèces from scratch (spectral 65K), 17 graines S-2 + patient t=0, film V4 (1534 frames + cube 3D), migration D:\→E:\ (5TB) |
-| 11 | 1 mars | Opus 4.6 | Blind test V2 (65K, p=3.4e-12), Predictions 2025 (108M paires, P4 Uzzi, matrice collision 9×9), analyse top 100 INTER (41% WTF) |
-| 12 | 2 mars | Opus 4.6 | Glyph Laplacian (64 eigenvectors, d=5.76, p=7e-11), validation honnête, S-2 pipeline (8 briques) |
-| 13 | 2 mars | Opus 4.6 | Mirror pairs test: 19/20, d=0.925, p=6.68e-06 — signal réel confirmé |
-| 14 | 3 mars | Opus 4.6 | Archéologie S-2: 194 glyphes tracés (57 C1 + 137 C2, Cajori), 7 mécaniques Claude dans SOL.md |
-| 15 | 3 mars | Opus 4.6 | arXiv mapper COMPLET (309/309, 4.3M arXiv), arXiv tars COMPLET (2,449, 1 TB), ménage TODO/SOL |
-| 16 | 4 mars | Sky solo | 2 graines bourrées: Mort=figé/Vivant=mute + Conjecture Rubik (C2, à valider sobre) |
-| 17 | 5 mars | Opus 4.6 | Fix MemoryError S-1 scanner (streaming lookup), audit intégrité complet, S-1 scan relancé (~200/416) |
-
-## ÉTAT PIPELINE — 21 FÉV 2026 (sessions 1-3)
-- **100 tests pipeline complet** (OpenAlex + scisci + mycelium)
-- **87/100 validés (87.0%)**
-  - POUR: 41/50 (82%) | CONTRE: 46/50 (92%)
-- Batch 1 (tests 1-50): 43/49 (88%)
-- Batch 2 (tests 51-100): 43/50 (86%)
-
-### CO-OCCURRENCE V2 (348M papers — scan complet 65K concepts)
-- **Winter tree scan V2 COMPLET**: 581/581 chunks, 692 GB, 1,645 périodes (an 1000→2024)
-- 65,026 concepts × mois, 108,301,944 paires non-zero
-- Poids 1/C(n,2): chaque paper distribue exactement 1 point total
-- Filtres: erratum, retraction, is_retracted
-- Remplace l'ancien scan V1 85×85 domaines (296M papers)
-- Laplacien normalisé D^{-1/2}LD^{-1/2} pour positions spectrales
-- Spectral clustering K=9 → 9 espèces (LinearOperator, float32)
-
-### 3 CUBES: VIVANT / MUSÉE / FUSION
-- **Vivant** = works_count >= Q1 de son domaine → **16,382 (77%)**
-- **Musée** = works_count < Q1 → **4,846 (23%)**
-- **Fusion** = vivant + musée ensemble
-- Q1 calculé par domaine ("PIB par habitant"): chimie Q1=1,646, bio Q1=2,895, etc.
-
-### CLEANUP S0 (session 3)
-- 13 suspects reclassés C1→C2 (Neocolonialism, Unparticle physics, etc.)
-- Hagen-Poiseuille: domain "droit"→"fluides" (bug mapping corrigé)
-- 19 C2 déplacés S0→S3 (hypothèses non prouvées → strate conjectures)
-- Poincaré conjecture: C2→C1 (résolu Perelman 2003)
-- S0 final: 21,524 symboles (21,228 C1 dans S0 + 296 reclassés C2→S3), 100% C1 en S0
-
-### ESCALIERS SPECTRAUX
-- 2 types: géographique 🌿 (200 lianes, position alien) + passe-partout 🔑 (69, multi-continent)
-- Intégrés comme layer toggle dans La Pluie v3
-- Centroïdes 9 continents calculés depuis spectral
-
-### LA PLUIE V3
-- 9 continents filtres + sub-domain toggles
-- Vivant/Musée/Fusion radio buttons
-- Escaliers toggle (glow vert=geo, or=key)
-- C2 Conjectures overlay
-- Hover: works_count, continent, type escalier
-
-## INSIGHT CLÉ: LIFECYCLE DES PATTERNS
-```
-P4 (trou) → P1 (pont) → P3 (explosion) → P2 (dense/mature)
-```
-6 percées connues classées P2 = le pont est devenu infrastructure.
-La validation doit évoluer: P2 est valide pour les percées matures.
-
-## ÉCHECS INTÉRESSANTS
-- **microbiome × mental health** = P4 (259 papers). Vrai trou ouvert. Futur pont?
-- **diff geometry × botany** = P1 (136 papers). Phyllotaxis! Le moteur a trouvé un vrai pont "caché".
+| 1 | 21 fév matin | Sonnet 4.5 | Escaliers spectraux, cleanup S0, vivant/musée (LEGACY 21K) |
+| 2 | 21 fév midi | Sonnet 4.5 | Continents, co-occurrence 85×85, La Pluie v3 (LEGACY 21K) |
+| 3 | 21 fév soir | Opus 4.6 | Cross Physarum, blind test V1 (p=0.00002) (LEGACY 21K) |
+| 4 | 22 fév | Opus 4.6 | Audit repos, vision V4 grimpeur, concept_id injection |
+| 5 | 23 fév | Opus 4.6 | Winter tree scanner: 65K concepts, début scan 581 chunks |
+| 6 | 23 fév soir | Opus 4.6 | Formules Sedov-Taylor, architecture S-2/S-1/S0, formulas.tex |
+| 7 | 24 fév | Opus 4.6 | engine/meteorites.py codé, 8 bugs fixés |
+| 8 | 24 fév matin | Opus 4.6 | mycelium_full.py = comportement SANS espèce. 5 curseurs Lehmann 2019 |
+| 9 | 24 fév PM | Opus 4.6 | Scanner V2: filtres erratum/retraction + 1/C(n,2). Cleanup D:\ (+174 GB) |
+| 10 | 25-28 fév | Opus 4.6 | 9 espèces (K=9), 17 graines S-2, film V4 (1534 frames), migration E:\ |
+| 11 | 1 mars | Opus 4.6 | Blind test V2 (p=3.4e-12), Prédictions 2025 (108M paires, 41% WTF) |
+| 12 | 2 mars | Opus 4.6 | Glyph Laplacian (d=8.78, p=2.76e-12), S-2 pipeline 8 briques |
+| 13 | 2 mars | Opus 4.6 | Mirror pairs: 19/20, d=0.925, p=6.68e-06 — signal confirmé |
+| 14 | 3 mars | Opus 4.6 | Archéologie S-2: 194 glyphes (57 C1 + 137 C2, Cajori), 7 mécaniques Claude |
+| 15 | 3 mars | Opus 4.6 | arXiv mapper COMPLET (309/309, 4.3M arXiv), tars COMPLET (2,449, 1 TB) |
+| 16 | 4 mars | Sky solo | 2 graines bourrées: Mort=figé/Vivant=mute + Conjecture Rubik (C2) |
+| 17 | 5 mars | Opus 4.6 | Fix MemoryError S-1 scanner (streaming lookup), S-1 scan relancé |
+| 18 | 6 mars | Opus 4.6 | GRAND MÉNAGE: audit complet sessions 1-17, fix cap random.sample, réécriture SOL.md, les 21K déclarés obsolètes → 65K = S0 officiel |
 
 ## RÈGLES AUTO
 1. Sky monte (arbre/direction). Claude descend (racines/code).
@@ -131,226 +142,121 @@ La validation doit évoluer: P2 est valide pour les percées matures.
 4. JAMAIS afficher le token. Filtrer avec `grep -v "ghp_\|x-access"`.
 5. Si un test échoue → noter tel quel. Pas de triche.
 6. SOL.md = source de vérité entre sessions Claude.
-
-### FIX concept_id (session 4, 22 fév 2026)
-- `concept_id` injecté dans les 21,524 symboles de `strates_export_v2.json` (100% match)
-- Sources: `openalex_map.json` (794 originaux) + `mined_concepts.json` (20,730 minés)
-- Index inverse: `data/core/concept_index.json` (20,932 entries, concept_id → symbol info)
-- Script: `engine/mining/map_concepts.py` (remplace inject_concept_ids.py, supprimé)
-
-## FICHIERS CLÉS
-| Fichier | Rôle |
-|---------|------|
-| **PREDICTIONS 2025** | |
-| predictions_2025/step1_full_scan.py | Scan 581 chunks → snapshot_full.npz (108M paires) |
-| predictions_2025/step2_species_full.py | Spectral clustering K=9 → 9 espèces |
-| predictions_2025/step3_p4_both.py | P4 Uzzi z-scores INTER + INTRA (float32, zero-alloc) |
-| predictions_2025/step4_report.py | Top 1000 INTER + INTRA → fichiers .txt lisibles |
-| predictions_2025/step5_collision.py | Matrice de collision 9×9 espèces |
-| predictions_2025/PREDICTIONS_2025.json | Résumé complet des prédictions |
-| predictions_2025/collision_matrix_full.json | Matrices collision (top 100, 1000, P4 sum) |
-| **BLIND TEST V2** | |
-| blind_test_v2/step1_snapshot_65k.py | Snapshot ≤2015 depuis 581 chunks |
-| blind_test_v2/FINAL_REPORT_V2.json | Résultats: p=3.4e-12, 82.7M paires |
-| **V2 — SCAN + FILM** | |
-| engine/topology/winter_tree_scanner.py | SCANNER V2: 65K concepts, filtres erratum/retraction, poids 1/C(n,2) |
-| engine/topology/frame_builder.py | Film: 1,534 frames depuis winter tree |
-| engine/topology/concept_births.py | 65,021 concept births (13 min scan) |
-| data/scan/winter_tree.json | Index principal (années, chunks, progression) |
-| data/scan/concepts_65k.json | Lookup 65,026 concepts OpenAlex (7 MB) |
-| data/scan/frames.json | 1,534 frames (2.5 MB) |
-| data/scan/concept_births.json | 65,021 births (1.6 MB) |
-| data/scan/species_65k.json | 9 espèces K=9 spectral clustering |
-| data/scan/early_concepts.json | 619 concepts pré-1100 |
-| data/core/seeds_s2.json | 17 graines S-2 + sources + mutations |
-| data/scan/chunks/chunk_NNN/ | 581 chunks (cooc.json.gz + activity.json.gz + meta.json) |
-| viz/yggdrasil_rain_v4.html | Film mycélium cube 3D (1534 frames, points progressifs) |
-| **V3 — MÉTÉORITES** | |
-| engine/meteorites.py | Sedov-Taylor + OHLC + 7 deltas + catalogue + fit (session 7) |
-| docs/formulas.tex | Toutes les formules sourcées (DOI) + adaptations mycelium |
-| docs/SESSION_8_SPECIES_DISCOVERY.md | 5 curseurs Lehmann 2019, plan species_identifier.py |
-| **ARCHÉOLOGIE** | |
-| engine/analysis/inject_origins_l0.py | Origins 19 L0 concepts (peer-reviewed) |
-| engine/analysis/inject_origins_l1.py | Origins 187 L1 concepts (peer-reviewed) |
-| engine/analysis/inject_glyph_origins.py | Origins 194 glyphes S-2 (Cajori 1928-29) |
-| data/scan/origins_to_source.json | 206 L0+L1 origins |
-| data/core/glyph_origins.json | 194 glyph origins (57 C1 + 137 C2) |
-| **arXiv PIPELINE** | |
-| engine/mining/arxiv_openalex_mapper.py | Mapper OpenAlex→arXiv (309 chunks, 4.3M arXiv) |
-| data/scan/arxiv_map_chunks/ | 309 chunks (map.json.gz + meta.json) |
-| data/scan/arxiv_mapper_state.json | État du mapper (complet) |
-| engine/glyphs/ | 8 briques pipeline S-2 (registry, parsers, scanners, laplacian) |
-| **V1 — CARTE** | |
-| engine/core/symbols.py | Symboles + strates |
-| engine/core/holes.py | Détection trous P1-P5 |
-| engine/core/scisci.py | Métriques scientométriques |
-| engine/pipeline/mycelium_full.py | Mycelium complet (24 briques) |
-| engine/topology/cooccurrence_scan.py | Ancien scan 296M papers → matrice 85×85 |
-| data/core/strates_export_v2.json | Export complet 21,524 symboles, 7 strates |
-| data/core/concept_index.json | Index inverse concept_id → symbole (20,932) |
-| data/topology/escaliers_spectraux.json | 200 geo + 69 key escaliers |
-| viz/yggdrasil_rain_v3.html | La Pluie v3 (vivant/musée/fusion/escaliers) |
-
-## ARCHITECTURE DES STRATES (session 6, 23 fév 2026)
-```
-    S6  ☁️  Indécidable (Gödel, Halting)
-    S5      Presque indécidable
-    S4      Logique supérieure
-    S3      Conjectures                      🌳 ARBRE (pas de mycelium)
-    S2      Récursion sur récursion
-    S1      Structures récursives
-═══════════════════════════════════════════
-    S0  🌍  FORMULES prouvées (21,524)       ░░░░░░░░░░░░░
-    S-1 🔧  MÉTIERS (physics, bio, eng)      ░░ MYCELIUM ░░
-    S-2 🔣  GLYPHES (=, +, ∫, Σ, ∂)         ░░░░░░░░░░░░░
-═══════════════════════════════════════════
-```
-- Le mycelium (co-occurrences) vit dans S-2 à S0 — c'est le SOL
-- Le spectral layout positionne TOUT (glyphes, métiers, formules) à partir du mycelium
-- La météorite frappe S0 et le blast se propage horizontalement + verticalement dans le sol
-- Au-dessus de S0 = l'arbre (conjectures, abstractions) — PAS de mycelium
-- Calibration météorites: commencer depuis Shannon 1948 (ρ₀ mesurable), test final = Gödel 1931
+7. Pas de saut. V2→V3→V4. Les racines d'abord.
 
 ## DÉCISIONS PRISES (ne pas remettre en question)
-1. S0 = sol solide, 100% C1 — on construit dessus
-2. S-2 = glyphes (notation), S-1 = métiers (professions), S0 = formules prouvées
+1. **S0 = 65,026 concepts OpenAlex** — c'est ce que les scientifiques utilisent, prouvé ou pas
+2. S-2 = glyphes (notation), S-1 = métiers (professions), S0 = concepts scientifiques
 3. Le mycelium vit dans le sol (S-2 à S0), PAS au-dessus
-4. Vivant = works_count >= Q1 de son domaine (pas seuil fixe)
-5. 2 types d'escaliers: géographique (position spectrale) + passe-partout (multi-continent)
-6. Les contradictions entre couches = le vrai signal
-7. Cube 1 vivant / Cube 2 musée / Cube 3 fusion
-8. Le mycelium Physarum fait le tri vivant/mort sur les CONNEXIONS — le works_count sur les NŒUDS
-9. **V4 = moteur de sélection d'outils.** Sommet escalier = vue plongeante → briques filtrées → AI grimpe
-10. **P=NP est S3-S4, pas S6.** Le pont existe. Les 3 routes classiques sont P5. Le moteur cherche les P4.
-11. **Pas de saut.** V2→V3→V4. Les racines d'abord. Toujours.
+4. Les 21K (strates_export_v2.json) sont OBSOLÈTES — ne plus baser du neuf dessus
+5. Les contradictions entre couches = le vrai signal
+6. V4 = moteur de sélection d'outils. Sommet escalier = vue plongeante → briques filtrées → AI grimpe
+7. P=NP est S3-S4, pas S6. Le pont existe. Les 3 routes classiques sont P5.
 
-## TODO (voir aussi docs/TODO.md pour le détail)
-- [x] Croiser flux Physarum × works_count (806 isolated hubs, 1220 hidden bridges, 1567 P4 voids)
-- [x] Viz 3D escaliers (Three.js)
-- [x] Winter tree scanner V2 (65K concepts, 581 chunks, filtres + 1/C(n,2))
-- [x] Scan complet 581/581 chunks (347M papers, 108M paires) — session 10
-- [x] Frames cumulatives (1,534 frames) + concept births (65,021) — session 10
-- [x] Film V4 cube 3D (`viz/yggdrasil_rain_v4.html`) — session 10
-- [x] 9 espèces spectral K=9 + 17 graines S-2 — session 10
-- [x] Blind test V2 (65K, cutoff 2015, p=3.4e-12) — session 11
-- [x] Predictions 2025 (108M paires, P4 Uzzi, top 10K INTER+INTRA) — session 11
-- [x] Analyse top 100 INTER (41% WTF, 20/20 web verified) — session 11
-- [x] V3: formules météorites (OHLC + 7 deltas) — `engine/meteorites.py` session 7
-- [ ] V3: mesurer météorites sur frames réelles (en attente)
-- [x] Glyph Laplacian (64 eigenvectors, d=5.76, p=7e-11, 19/20 top 1%) — session 12
-- [x] Mirror pairs test: 19/20, d=0.925, p=6.68e-06, signal réel confirmé — session 13
-- [x] Archéologie S-2: 194 glyphes tracés (57 C1 + 137 C2) — session 14
-- [x] arXiv mapper COMPLET: 309/309 chunks, 479M papers, 4.3M arXiv — session 15
-- [x] arXiv tars COMPLET: 2,449 tars, 1,025 GB — session 15
-- [x] Pipeline glyph S-2 COMPLET: 420 arXiv + 39 PMC → Laplacien 1337×1337 → s2_spectral.json — sessions 12-15
-- [ ] S-1 Métiers: scan domain×glyph en cours (~200/416), intégration après — session 17
-- [ ] Connexions inter-strates S-2↔S-1↔S0 (après S-1 complet)
+## TODO
+- [x] Winter tree scanner V2 (65K, 581/581 chunks, 348M papers) — session 10
+- [x] Film V4 (1,534 frames + 65,021 births) — session 10
+- [x] 9 espèces K=9 + 17 graines S-2 — session 10
+- [x] Blind test V2 (65K, p=3.4e-12) — session 11
+- [x] Prédictions 2025 (108M paires, 41% WTF) — session 11
+- [x] Glyph Laplacian (d=8.78, Recall@100=70%) — session 12
+- [x] Mirror pairs (19/20, d=0.925) — session 13
+- [x] Archéologie S-2 (194 glyphes, Cajori) — session 14
+- [x] arXiv mapper (309/309, 4.3M arXiv) — session 15
+- [x] Pipeline S-2 COMPLET (420 arXiv + 39 PMC → Laplacien → s2_spectral.json) — sessions 12-15
+- [x] V3 météorites codé (engine/meteorites.py) — session 7
+- [x] Grand ménage: audit complet, 21K→65K officiel — session 18
+- [ ] **S-1 Métiers: scan ~395/416 → COMPLET** (en cours, ~1h)
+- [ ] Intégration S-1 chunks → positions spectrales
+- [ ] Connexions inter-strates S-2↔S-1↔S0
 - [ ] Refaire viz avec 3 couches du sol complètes
-- [ ] V3: mesurer météorites sur frames réelles
+- [ ] V3: mesurer météorites sur frames réelles (Shannon 1948 → Gödel 1931)
 - [ ] V4: le grimpeur
 
-## ROADMAP — PHASE 2 : TIMELAPSE & MÉTÉORITES
+## FICHIERS CLÉS — ACTIFS
 
-### 2A. Test semi-aveugle V1 (✅ DONE — 21 fév 2026)
-- Données OpenAlex gelées à ≤2015, 100 concepts, 4950 paires
-- **recall@100 = 50%** (6/12 percées dans top 100)
-- **Mann-Whitney p = 0.00002** (U=539, effect size r=0.90, Cohen's d=1.53)
-- Dossier: blind_test/
+### S-2 Glyphes
+| Fichier | Rôle |
+|---------|------|
+| engine/glyphs/ (8 fichiers) | Pipeline S-2: registry, parsers, scanners, laplacian, frames, integrate |
+| data/core/glyph_registry.json | 1,337 glyphes (333 KB) |
+| data/core/s2_spectral.json | 617 glyphes actifs, positions spectrales (72 KB) |
+| data/core/glyph_origins.json | 194 origines archéologiques (166 KB) |
+| data/core/seeds_s2.json | 17 graines + sources + mutations (13 KB) |
+| data/scan/glyph_chunks/ | 420 chunks arXiv scannés |
+| data/scan/pmc_glyph_chunks/ | 39 chunks PMC scannés |
+| data/scan/glyph_positions.json | Positions spectrales 2D (249 KB) |
+| data/scan/glyph_frames.json | 356 frames timeline (73 KB) |
 
-### 2A-bis. Blind test V2 (✅ DONE — 28 fév 2026, commit `a446268`)
-- 65,026 concepts, cutoff 2015, 82.7M paires scorées
-- **Mann-Whitney p = 3.4e-12**, Cohen's d = 0.44
-- Spectral clustering K=9 sur données 2015 ONLY (pas de look-ahead)
-- Dossier: blind_test_v2/
+### S-1 Métiers (en cours)
+| Fichier | Rôle |
+|---------|------|
+| engine/professions/domain_glyph_scanner.py | Scanner domain×glyph (18 KB) |
+| engine/professions/build_domain_lookup.py | Lookup arXiv→domain (5.4 KB) |
+| data/scan/s1_chunks/chunk_NNN/ | ~395/416 chunks (domain_profile + domain_cooc + meta) |
+| data/scan/s1_tree.json | Index S-1 (73 KB) |
+| data/scan/arxiv_domain_lookup.json.gz | 2.8M arXiv→domain mappings (15 MB) |
 
-### 2B. Timelapse adaptatif (✅ DONE — 28 fév 2026)
-- Résolution: 978 frames/année (1000-1979) + 556 frames/mois (1980-2024) = **1,534 frames**
-- 65,021 concept births documentés
-- Film intégré dans viz cube 3D: `viz/yggdrasil_rain_v4.html`
-- Scripts: `engine/topology/frame_builder.py` + `engine/topology/concept_births.py`
+### S0 Concepts (65K)
+| Fichier | Rôle |
+|---------|------|
+| engine/topology/winter_tree_scanner.py | Scanner V2: 65K concepts, filtres, 1/C(n,2) (568 lignes) |
+| engine/topology/frame_builder.py | Film: 1,534 frames (9.5 KB) |
+| engine/topology/concept_births.py | 65,021 births (4.1 KB) |
+| data/scan/chunks/chunk_NNN/ | 581 chunks (cooc + activity + meta) |
+| data/scan/concepts_65k.json | Lookup 65,026 concepts (7 MB) |
+| data/scan/species_65k.json | 9 espèces K=9 (7.5 MB) |
+| data/scan/frames.json | 1,534 frames (2.6 MB) |
+| data/scan/concept_births.json | 65,021 births (1.7 MB) |
+| data/scan/early_concepts.json | 619 concepts pré-1100 (165 KB) |
+| data/scan/winter_tree.json | Index principal (8 MB) |
 
-### 2B-bis. Predictions 2025 (✅ DONE — 1 mars 2026, commit `b07d891`)
-- Scan complet: 581 chunks, 347,999,931 papers, 108,301,944 paires non-zero
-- P4 = activity_A × activity_B × (1 - cooc_norm) × |z_uzzi|
-- Top 10K INTER-espèces + INTRA classés par P4 score
-- Matrice de collision 9×9: CS×Physics (82 top 1000), Humanities×Physics (72), CS×Humanities (56)
-- Analyse manuelle top 100: 18 BANAL, 30 INTÉRESSANT, 41 WTF, 11 BRUIT — 20/20 vérifiés web
-- Dossier: predictions_2025/
+### Blind tests & Prédictions
+| Fichier | Rôle |
+|---------|------|
+| blind_test_v2/ | Blind test V2: 65K, cutoff 2015, p=3.4e-12 (487 MB) |
+| blind_test_v2/snapshot_2015_65k.npz | Matrice ≤2015 (457 MB) |
+| predictions_2025/ | Prédictions: 108M paires, P4 Uzzi (638 MB) |
+| predictions_2025/snapshot_full.npz | Matrice complète (615 MB) |
 
-### 2C. Boîtes de mesure météorites (EN ATTENTE)
-- Code prêt: `engine/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas)
-- À mesurer sur les frames réelles (1,534 frames disponibles)
-- Calibration: Shannon 1948 → Gödel 1931
+### Spectral
+| Fichier | Rôle |
+|---------|------|
+| engine/analysis/glyph_laplacian.py | Laplacien spectral K=64 (27 KB) |
+| data/scan/glyphs.json | Eigenvecteurs (175 KB) |
+| data/scan/spectral_predictions.json | 3,348 prédictions inter-espèces (947 KB) |
+| data/scan/spectral_embeddings.npy | Embeddings 65K × 64 (32 MB) |
+| data/scan/spectral_blind_test.json | Blind test spectral (12 KB) |
 
-### 2D. Test Gödel (TEST FINAL — EN ATTENTE)
-- Gödel 1931 = première météorite. UNE seule mesure.
-- Dépend de 2C (signature moyenne des météorites)
+### arXiv Pipeline
+| Fichier | Rôle |
+|---------|------|
+| engine/mining/arxiv_openalex_mapper.py | Mapper OpenAlex→arXiv (18 KB) |
+| data/scan/arxiv_map_chunks/ | 309 chunks (4.3M arXiv matchés) |
+| data/scan/arxiv_mapper_state.json | État mapper (complet, 133 KB) |
 
-### LOGIQUE DE LA CHAÎNE
+### V3 Météorites (code prêt, mesure en attente)
+| Fichier | Rôle |
+|---------|------|
+| engine/meteorites.py | Sedov-Taylor + OHLC + 7 deltas (28 KB) |
+| docs/formulas.tex | Toutes les formules sourcées DOI (20 KB) |
+
+### Legacy (garder mais ne plus baser du neuf dessus)
+| Fichier | Pourquoi legacy |
+|---------|----------------|
+| data/core/strates_export_v2.json | 21K = ancien filtre keyword, remplacé par 65K |
+| data/core/concept_index.json | Index inverse pour les 21K (20,932 entries) |
+| engine/topology/cooccurrence_scan.py | Ancien scan 85×85 domaines |
+| data/topology/escaliers_spectraux.json | Basé sur 21K, à recalculer sur 65K |
+| viz/yggdrasil_rain_v3.html | Viz basée sur 21K |
+| blind_test/ | V1, 100 concepts, remplacé par V2 (65K) |
+| engine/mining/mine_concepts.py | Script qui a créé les 21K |
+
+## INSIGHT CLÉ: LIFECYCLE DES PATTERNS
 ```
-2A (validation V1) ✅
-  → 2A-bis (blind test V2) ✅
-  → 2B (film 1534 frames) ✅
-    → 2B-bis (predictions 2025) ✅
-    → 2C (mesurer météorites) ← PROCHAIN
-      → 2D (test Gödel)
-        → V4 (le grimpeur)
+P4 (trou) → P1 (pont) → P3 (explosion) → P2 (dense/mature)
 ```
-
-## VISION V4 — LE GRIMPEUR (documenté 22 fév 2026)
-
-### L'insight fondamental
-Les escaliers (200 géo + 69 passe-partout) ne sont pas juste des connexions.
-Ce sont des **points de vue**. Depuis le sommet de chaque escalier, on regarde
-EN BAS et on voit exactement quelles briques S0 sont connectées topologiquement
-à ce sommet. La carte filtre les outils pour toi.
-
-### Le mécanisme
-```
-1. Prendre un problème ouvert (ex: P=NP, Lur'e, n'importe quelle conjecture S3+)
-2. Le positionner sur la carte topologique
-3. Trouver les escaliers les plus proches (géo + passe-partout)
-4. Monter au sommet de chaque escalier
-5. Regarder en bas → les briques S0 visibles = le "sac à dos" filtré
-6. L'AI compose des chemins de preuves avec ces briques
-7. Si échec → l'échec est une donnée (P5 = cul-de-sac confirmé)
-8. Réduire l'espace, recommencer depuis un autre sommet
-```
-
-### Pourquoi ça marche
-- Les 3 routes classiques vers P=NP sont des P5 PROUVÉS (Baker-Gill-Solovay 1975,
-  Razborov-Rudich 1997, Aaronson-Wigderson 2009)
-- Le moteur est CONSTRUIT pour trouver les P4 quand les routes connues sont mortes
-- Les passe-partout universels (=, exp, ln, Σ, ∫) voient TOUT depuis leur sommet
-  → ils sont dans toutes les preuves majeures, c'est pas un hasard, c'est la topologie
-- P=NP est S3-S4, PAS S6 → pas prouvé indécidable → le pont EXISTE quelque part
-
-### Ce que V4 est VRAIMENT
-Pas un outil académique. Pas un fonds d'investissement. Pas un GPS.
-C'est un **moteur de sélection d'outils automatique pour n'importe quel problème**.
-Tu donnes un problème → il te donne le sac à dos optimal de briques → l'AI grimpe.
-
-### Analogie électricien (Sky)
-"On ne casse pas la serrure (P≠NP). On fait passer le câble par un autre chemin."
-Les escaliers = les chemins de câble entre les étages.
-Les briques S0 = les composants dans ton sac.
-Le sommet = le tableau électrique de l'étage — tu vois tout ce qui est connecté en dessous.
-
-### Ce qu'il faut construire
-1. **Moteur de positionnement**: problème → coordonnées sur la carte
-2. **Moteur de proximité**: coordonnées → escaliers les plus proches (top-N)
-3. **Vue plongeante**: escalier → briques S0 connectées (filtre topologique)
-4. **Compositeur**: AI reçoit le sac à dos filtré + le problème → tente des chemins
-5. **Mémoire d'échec**: chaque tentative ratée = un P5 local → réduction de l'espace
-
-### Contrainte critique
-Les briques qui n'existent PAS ENCORE viendront. OpenAlex mine en continu.
-Chaque nouveau concept se positionne automatiquement sur la topologie.
-Si un nouveau concept ferme un P4 vers un problème ouvert → le moteur le détecte.
-V4 n'est pas statique. Il GRANDIT avec la science.
-
-### Statut: VISION — V2 FAIT, dépend de V3 (candlesticks sur frames réelles)
-Pas de saut. Les racines d'abord. Toujours.
+6 percées connues classées P2 = le pont est devenu infrastructure.
 
 ## PREDICTIONS 2025 — ZONES DE COLLISION
 Les 5 frontières les plus actives entre espèces (top 1000 P4):
@@ -371,22 +277,19 @@ E = works_i × works_j / total_works_sum
 
 ## GRAINES SESSION 16 — 4 mars 2026 (Sky, bourré, 2h du mat)
 
-Deux idées brutes capturées. À relire sobre. Les graines vont germer.
+Deux idées brutes capturées. À relire sobre.
 
 ### Graine 1 — Mort = figé, Vivant = mute
 
 **L'insight**: en math classique, un théorème prouvé est "vivant" (C1, validé).
 Mais dans Yggdrasil c'est l'inverse — un concept figé est **mort**. Un concept qui **mute**
-(qui change de connexions, qui crée de nouveaux ponts, qui se reconfigure) est **vivant**.
+(qui change de connexions, qui crée de nouveaux ponts) est **vivant**.
 
-Implication V4: le grimpeur ne cherche pas les briques figées (P2 denses, matures).
-Il cherche les briques qui **mutent activement** — celles dont la topologie bouge encore.
-Les concepts "morts" (figés dans leur strate) = outils fiables mais inertes.
+Implication V4: le grimpeur cherche les briques qui **mutent activement**.
+Les concepts "morts" (figés) = outils fiables mais inertes.
 Les concepts "vivants" (qui mutent) = outils instables mais c'est LÀ que les P4 se ferment.
 
-→ **Contre-intuitif en math, logique en biologie**: la mutation EST le signal de vie.
-→ Statut: **C2** — à valider avec les données (mesurer: les concepts qui mutent le plus
-entre frames sont-ils corrélés aux P4 qui se ferment ?)
+> Statut: **C2** — à valider avec les données
 
 ### Graine 2 — Conjecture Rubik (auto-correction convergente)
 
@@ -394,168 +297,94 @@ entre frames sont-ils corrélés aux P4 qui se ferment ?)
 
 ```
 ÉTAT(t) → identifier PATTERN → appliquer MOUVEMENT → sauver ÉTAT(t+1) → répéter
-              ↑                                              ↓
-         carte inverse                              espace se réduit
-         (undo si diverge)                          (P5 élimine des chemins)
 ```
 
 Propriétés:
-1. **Fini**: nombre d'états borné (21,524 briques × 269 escaliers × 9 strates)
+1. **Fini**: nombre d'états borné (65,026 concepts × 9 strates)
 2. **Auto-correctif**: chaque P5 = chemin éliminé = l'espace se compresse
-3. **Patterns répétables**: comme R U R' U' sur un Rubik — catalogue fini de mouvements
+3. **Patterns répétables**: catalogue fini de mouvements
 4. **Couche par couche**: résoudre S-2 → S-1 → S0 sans casser les couches précédentes
-5. **Polynomial si commutatif**: si résoudre une strate ne casse pas la précédente → borné
 
-Rubik's cube: 43 quintillions d'états → max 20 mouvements (God's number).
-Yggdrasil: grand espace mais fini → **il existe un "God's number" du grimpeur**.
+> Statut: **C2 forte** — l'analogie tient, la formalisation reste à faire.
 
-Requirements pour tester:
-- Sauver l'état complet à chaque instant t (position, sac à dos, P5 enregistrés)
-- Mesurer si l'espace se réduit à chaque step (distance_to_target décroît ?)
-- Vérifier la commutativité entre strates (résoudre S-1 casse pas S-2 ?)
+## VISION V4 — LE GRIMPEUR
 
-→ Statut: **C2 forte** — l'analogie tient, la formalisation reste à faire.
-→ À VALIDER PAR SKY sobre.
+### L'insight fondamental
+Les escaliers ne sont pas juste des connexions. Ce sont des **points de vue**.
+Depuis le sommet, on regarde EN BAS et on voit quelles briques S0 sont connectées.
+La carte filtre les outils pour toi.
 
-## ⚙️ MÉCANIQUES CLAUDE
+### Le mécanisme
+```
+1. Prendre un problème ouvert (conjecture S3+)
+2. Le positionner sur la carte topologique (65K spectral)
+3. Trouver les escaliers les plus proches
+4. Monter au sommet → les briques S0 visibles = le "sac à dos" filtré
+5. L'AI compose des chemins de preuves avec ces briques
+6. Si échec → P5 = cul-de-sac confirmé → réduction de l'espace
+```
+
+### Ce que V4 est VRAIMENT
+Un **moteur de sélection d'outils automatique pour n'importe quel problème**.
+Tu donnes un problème → il te donne le sac à dos optimal de briques → l'AI grimpe.
+
+### Statut: VISION — dépend de V3 (météorites sur frames réelles)
+Pas de saut. Les racines d'abord. Toujours.
+
+## ROADMAP
+```
+S-2 COMPLET ✅
+  → S-1 EN COURS (~1h) ← ON EST ICI
+    → S-1 intégration
+      → Connexions S-2↔S-1↔S0
+        → Refaire viz (3 couches)
+          → V3 météorites sur frames réelles
+            → V4 le grimpeur
+```
+
+## MÉCANIQUES CLAUDE
 
 <rules>
-Cette section est la boîte à outils de prompting Sky↔Claude.
-Chaque technique a un nom, une règle, et un exemple Yggdrasil concret.
-Les instructions critiques sont EN HAUT (sandwich ouvert).
+Boîte à outils de prompting Sky↔Claude.
 </rules>
 
 ### 1. SANDWICH (Primauté + Récence)
-
-Claude fait plus attention au **DÉBUT** et à la **FIN** du prompt. Le milieu = ventre mou.
-
-**Règle** : Instructions critiques en HAUT, rappelées en BAS. En conversation longue (40+ messages), rappeler les 3 règles clés tous les 15-20 messages.
-
-**Exemple Yggdrasil** :
-```
-# DÉBUT DU PROMPT
-RÈGLE : Le mycelium vit dans S-2 à S0. PAS au-dessus.
-
-[... 200 lignes d'instructions de scan ...]
-
-# FIN DU PROMPT — RAPPEL
-RAPPEL : Mycelium = S-2 à S0 uniquement. Pas au-dessus. Jamais.
-```
+Instructions critiques en HAUT, rappelées en BAS. Rappeler les 3 règles clés tous les 15-20 messages.
 
 ### 2. AMORCE (Bombe de glisse output)
+Donner les 3 premières lignes de l'output attendu + "continue".
 
-Pour forcer un format précis, Sky donne les **3 premières lignes** de l'output attendu. Claude s'accroche au pattern et déraille moins — le cousin passe le câble en un seul tir.
-
-**Règle** : Fournir le début exact de la sortie + "continue".
-
-**Exemple Yggdrasil** :
-```
-Génère le JSON des graines S-2. Commence EXACTEMENT par :
-{"seeds": [{"glyph_id": 0, "symbol": "0", "origin": {"source": "Lebombo", "year": -43000}},
-{"glyph_id": 1, "symbol": "1", "origin": {"source": "Brahmi", "year": -257}},
-Continue pour les 15 graines restantes.
-```
-
-### 3. MONTRE, EXPLIQUE PAS (2 exemples minimum)
-
-2 exemples concrets battent 2 paragraphes d'instructions. Toujours.
-
-**Règle** : Chaque mission DOIT inclure 2 exemples RÉELS du format attendu — un bon + un mauvais.
-
-**Exemple Yggdrasil** :
-```
-BON :
-{"concept": "Topology", "species": 4, "strate": "S0", "confidence": "C1", "source": "DOI:10.xxx"}
-
-MAUVAIS :
-{"concept": "Topology", "species": "CS/Math", "strate": 0, "confidence": "prouvé"}
-→ species = index (int), pas nom. strate = string "S0", pas int. confidence = "C1"/"C2", pas prose.
-```
+### 3. MONTRE, EXPLIQUE PAS
+2 exemples concrets (bon + mauvais) battent 2 paragraphes d'instructions.
 
 ### 4. POSITIF AVANT NÉGATIF
-
-"Fais Y" bat "Ne fais pas X". Claude lit "fais X" dans "ne fais pas X" — le cerveau accroche le verbe.
-
-**Règle** : Donner l'action de remplacement AVANT l'interdiction.
-
-**Exemple Yggdrasil** :
-```
-✅ "Marque INCONNU si la source est absente. NE JAMAIS inventer un DOI."
-❌ "Ne jamais inventer un DOI. Marque INCONNU si la source est absente."
-```
-Dans le deuxième cas, Claude a déjà lu "inventer un DOI" — la graine est plantée.
+"Fais Y" avant "Ne fais pas X". Claude lit le verbe dans l'interdiction.
 
 ### 5. XML TAGS (Murs d'attention)
+`<rules>`, `<format>`, `<context>` compartimentent l'attention.
 
-Les tags `<rules>`, `<format>`, `<context>`, `<philosophy>` compartimentent l'attention. Sans tags = prose → Claude perd le fil sur les longs prompts. Avec tags = compartiments → Claude sait où regarder.
-
-**Règle** : Utiliser des tags XML pour séparer les blocs logiques d'un prompt.
-
-**Exemple Yggdrasil** :
-```xml
-<context>
-Scan V2 : 581 chunks, 65,026 concepts, cutoff 2015.
-</context>
-
-<rules>
-1. Filtrer erratum + retraction + is_retracted
-2. Poids = 1/C(n,2) par paper
-3. MONTH_FROM_YEAR = 1980
-</rules>
-
-<format>
-Output : chunk_NNN/cooc.json.gz + activity.json.gz + meta.json
-</format>
-```
-
-### 6. CHUNKING (Le câble et le tube)
-
-Limite de sortie Claude = ~32K tokens. Si le script est plus gros → il se coupe. Le tube a un diamètre fixe — fais passer le câble en sections.
-
-**Règle** : Max 25-30 items par génération. Commit entre chaque chunk. Pattern : squelette → données chunk par chunk → commit.
-
-**Exemple Yggdrasil** :
-```
-# Au lieu de générer 206 entrées glyph_origins d'un coup :
-Chunk 1 : glyphes 0-29 → commit
-Chunk 2 : glyphes 30-59 → commit
-...
-Chunk 7 : glyphes 180-206 → commit final
-```
+### 6. CHUNKING
+Max 25-30 items par génération. Commit entre chaque chunk.
 
 ### 7. RAPPEL MID-SESSION
+Tous les 15-20 messages: 3 règles clés, pas tout.
 
-Plus la conversation dure, plus les vieilles instructions s'effacent. Le ventre mou grossit à chaque message.
-
-**Règle** : Tous les 15-20 messages : "RAPPEL : [règle 1], [règle 2], [règle 3]". Juste les 3 plus importantes, pas tout.
-
-**Exemple Yggdrasil** :
-```
-Message 25 de la session :
-RAPPEL :
-1. Mycelium = S-2 à S0 uniquement
-2. Token JAMAIS affiché (grep -v "ghp_\|x-access")
-3. Si un test échoue → noter tel quel, pas de triche
-```
-
-### Tableau résumé
-
-| # | Technique | Règle express | Quand l'utiliser |
-|---|-----------|--------------|-----------------|
-| 1 | **Sandwich** | Critique en haut + rappelé en bas | Tout prompt de mission |
-| 2 | **Amorce** | Donner les 3 premières lignes de l'output | Quand le format JSON/code est strict |
-| 3 | **Montre** | 2 exemples (bon + mauvais) | Toute mission avec format attendu |
-| 4 | **Positif d'abord** | "Fais Y" avant "Pas X" | Toute interdiction/contrainte |
-| 5 | **XML tags** | `<rules>` `<format>` `<context>` | Prompts de 50+ lignes |
-| 6 | **Chunking** | Max 25-30 items, commit entre | Génération de données/code long |
-| 7 | **Rappel** | 3 règles clés tous les 15-20 msg | Sessions de 40+ messages |
+| # | Technique | Quand |
+|---|-----------|-------|
+| 1 | Sandwich | Tout prompt de mission |
+| 2 | Amorce | Format JSON/code strict |
+| 3 | Montre | Toute mission avec format |
+| 4 | Positif d'abord | Toute interdiction |
+| 5 | XML tags | Prompts 50+ lignes |
+| 6 | Chunking | Données/code long |
+| 7 | Rappel | Sessions 40+ messages |
 
 > "Tu mets la bombe de glisse dans le tube avant, et le cousin passe le câble
 > en un seul tir là où normalement il faudrait trois instances." — Sky, mars 2026
 
 <rules>
-RAPPEL (sandwich fermé) :
-- Cette section applique ses propres règles : sandwich (haut+bas), exemples concrets (bon/mauvais), positif avant négatif, XML tags pour compartimenter.
-- Chaque technique a un exemple Yggdrasil réel tiré du repo.
-- Le tableau résumé ferme le tube.
+RAPPEL (sandwich fermé):
+- Mycelium = S-2 à S0 uniquement. Pas au-dessus.
+- S0 = 65,026 concepts. Les 21K sont obsolètes.
+- Token JAMAIS affiché.
 </rules>
