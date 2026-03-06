@@ -1,0 +1,4164 @@
+{
+  "version": 1,
+  "created": "2026-03-02 18:42:43",
+  "config": {
+    "chunk_target_bytes": 2147483648,
+    "works_dir": "D:\\openalex\\data\\works"
+  },
+  "files": {
+    "total": 1981,
+    "total_bytes": 743356552709
+  },
+  "progress": {
+    "chunks_total": 309,
+    "chunks_completed": 309,
+    "papers_scanned": 479290643,
+    "arxiv_found": 4324641
+  },
+  "chunks": [
+    {
+      "id": 1,
+      "files": [
+        "updated_date=2016-06-24\\part_0000.gz",
+        "updated_date=2016-07-22\\part_0000.gz",
+        "updated_date=2016-08-23\\part_0000.gz",
+        "updated_date=2016-09-16\\part_0000.gz",
+        "updated_date=2016-09-23\\part_0000.gz",
+        "updated_date=2016-09-30\\part_0000.gz",
+        "updated_date=2016-10-07\\part_0000.gz",
+        "updated_date=2016-10-14\\part_0000.gz",
+        "updated_date=2016-10-21\\part_0000.gz",
+        "updated_date=2016-10-28\\part_0000.gz",
+        "updated_date=2016-11-04\\part_0000.gz",
+        "updated_date=2016-11-11\\part_0000.gz",
+        "updated_date=2016-11-30\\part_0000.gz",
+        "updated_date=2016-12-08\\part_0000.gz",
+        "updated_date=2016-12-16\\part_0000.gz",
+        "updated_date=2017-01-06\\part_0000.gz",
+        "updated_date=2017-01-13\\part_0000.gz",
+        "updated_date=2017-01-26\\part_0000.gz",
+        "updated_date=2017-02-03\\part_0000.gz",
+        "updated_date=2017-02-10\\part_0000.gz",
+        "updated_date=2017-02-17\\part_0000.gz",
+        "updated_date=2017-02-24\\part_0000.gz",
+        "updated_date=2017-03-03\\part_0000.gz",
+        "updated_date=2017-03-16\\part_0000.gz",
+        "updated_date=2017-03-23\\part_0000.gz",
+        "updated_date=2017-04-07\\part_0000.gz",
+        "updated_date=2017-04-14\\part_0000.gz",
+        "updated_date=2017-04-28\\part_0000.gz",
+        "updated_date=2017-05-05\\part_0000.gz",
+        "updated_date=2017-05-12\\part_0000.gz",
+        "updated_date=2017-05-19\\part_0000.gz",
+        "updated_date=2017-05-26\\part_0000.gz",
+        "updated_date=2017-06-05\\part_0000.gz",
+        "updated_date=2017-06-15\\part_0000.gz",
+        "updated_date=2017-06-23\\part_0000.gz",
+        "updated_date=2017-06-30\\part_0000.gz",
+        "updated_date=2017-07-14\\part_0000.gz",
+        "updated_date=2017-07-21\\part_0000.gz",
+        "updated_date=2017-07-31\\part_0000.gz",
+        "updated_date=2017-08-08\\part_0000.gz",
+        "updated_date=2017-08-17\\part_0000.gz",
+        "updated_date=2017-08-31\\part_0000.gz",
+        "updated_date=2017-09-15\\part_0000.gz",
+        "updated_date=2017-09-25\\part_0000.gz",
+        "updated_date=2017-10-06\\part_0000.gz",
+        "updated_date=2017-10-20\\part_0000.gz",
+        "updated_date=2017-11-17\\part_0000.gz",
+        "updated_date=2017-12-04\\part_0000.gz",
+        "updated_date=2017-12-22\\part_0000.gz",
+        "updated_date=2018-01-05\\part_0000.gz",
+        "updated_date=2018-01-12\\part_0000.gz",
+        "updated_date=2018-01-26\\part_0000.gz",
+        "updated_date=2018-02-02\\part_0000.gz",
+        "updated_date=2018-02-23\\part_0000.gz",
+        "updated_date=2018-03-06\\part_0000.gz",
+        "updated_date=2018-03-29\\part_0000.gz",
+        "updated_date=2018-04-06\\part_0000.gz",
+        "updated_date=2018-04-24\\part_0000.gz",
+        "updated_date=2018-05-17\\part_0000.gz",
+        "updated_date=2018-06-01\\part_0000.gz",
+        "updated_date=2018-06-13\\part_0000.gz",
+        "updated_date=2018-06-21\\part_0000.gz",
+        "updated_date=2018-06-29\\part_0000.gz",
+        "updated_date=2018-07-10\\part_0000.gz",
+        "updated_date=2018-07-19\\part_0000.gz",
+        "updated_date=2018-08-03\\part_0000.gz",
+        "updated_date=2018-08-22\\part_0000.gz",
+        "updated_date=2018-08-31\\part_0000.gz",
+        "updated_date=2018-09-07\\part_0000.gz",
+        "updated_date=2018-09-27\\part_0000.gz",
+        "updated_date=2018-10-05\\part_0000.gz",
+        "updated_date=2018-10-12\\part_0000.gz",
+        "updated_date=2018-10-26\\part_0000.gz",
+        "updated_date=2018-11-02\\part_0000.gz",
+        "updated_date=2018-11-09\\part_0000.gz",
+        "updated_date=2018-11-16\\part_0000.gz",
+        "updated_date=2018-11-29\\part_0000.gz",
+        "updated_date=2018-12-11\\part_0000.gz",
+        "updated_date=2018-12-22\\part_0000.gz",
+        "updated_date=2019-01-01\\part_0000.gz",
+        "updated_date=2019-01-11\\part_0000.gz",
+        "updated_date=2019-01-25\\part_0000.gz",
+        "updated_date=2019-02-21\\part_0000.gz",
+        "updated_date=2019-03-02\\part_0000.gz",
+        "updated_date=2019-03-11\\part_0000.gz",
+        "updated_date=2019-03-22\\part_0000.gz",
+        "updated_date=2019-04-01\\part_0000.gz",
+        "updated_date=2019-04-11\\part_0000.gz",
+        "updated_date=2019-04-25\\part_0000.gz",
+        "updated_date=2019-05-03\\part_0000.gz",
+        "updated_date=2019-05-09\\part_0000.gz",
+        "updated_date=2019-05-16\\part_0000.gz",
+        "updated_date=2019-05-29\\part_0000.gz",
+        "updated_date=2019-06-07\\part_0000.gz",
+        "updated_date=2019-06-14\\part_0000.gz",
+        "updated_date=2019-06-27\\part_0000.gz",
+        "updated_date=2019-07-12\\part_0000.gz",
+        "updated_date=2019-07-23\\part_0000.gz",
+        "updated_date=2019-08-13\\part_0000.gz",
+        "updated_date=2019-08-22\\part_0000.gz",
+        "updated_date=2019-09-12\\part_0000.gz",
+        "updated_date=2019-10-10\\part_0000.gz",
+        "updated_date=2019-10-18\\part_0000.gz",
+        "updated_date=2019-10-25\\part_0000.gz",
+        "updated_date=2019-11-08\\part_0000.gz",
+        "updated_date=2019-11-22\\part_0000.gz",
+        "updated_date=2019-12-05\\part_0000.gz",
+        "updated_date=2019-12-13\\part_0000.gz",
+        "updated_date=2020-01-10\\part_0000.gz",
+        "updated_date=2020-01-23\\part_0000.gz",
+        "updated_date=2020-01-30\\part_0000.gz",
+        "updated_date=2020-02-14\\part_0000.gz",
+        "updated_date=2020-02-24\\part_0000.gz",
+        "updated_date=2020-03-06\\part_0000.gz",
+        "updated_date=2020-03-23\\part_0000.gz",
+        "updated_date=2020-03-27\\part_0000.gz",
+        "updated_date=2020-04-03\\part_0000.gz",
+        "updated_date=2020-05-13\\part_0000.gz",
+        "updated_date=2020-05-21\\part_0000.gz",
+        "updated_date=2020-05-29\\part_0000.gz",
+        "updated_date=2020-06-05\\part_0000.gz",
+        "updated_date=2020-06-12\\part_0000.gz",
+        "updated_date=2020-06-19\\part_0000.gz",
+        "updated_date=2020-06-25\\part_0000.gz",
+        "updated_date=2020-07-16\\part_0000.gz",
+        "updated_date=2020-07-23\\part_0000.gz",
+        "updated_date=2020-07-29\\part_0000.gz",
+        "updated_date=2020-08-10\\part_0000.gz",
+        "updated_date=2020-08-21\\part_0000.gz",
+        "updated_date=2020-08-24\\part_0000.gz",
+        "updated_date=2020-09-01\\part_0000.gz",
+        "updated_date=2020-09-08\\part_0000.gz",
+        "updated_date=2020-09-14\\part_0000.gz",
+        "updated_date=2020-09-21\\part_0000.gz",
+        "updated_date=2020-09-25\\part_0000.gz",
+        "updated_date=2020-10-01\\part_0000.gz",
+        "updated_date=2020-10-08\\part_0000.gz",
+        "updated_date=2020-10-22\\part_0000.gz",
+        "updated_date=2020-10-29\\part_0000.gz",
+        "updated_date=2020-11-09\\part_0000.gz",
+        "updated_date=2020-11-23\\part_0000.gz",
+        "updated_date=2020-12-07\\part_0000.gz",
+        "updated_date=2020-12-21\\part_0000.gz",
+        "updated_date=2021-01-05\\part_0000.gz",
+        "updated_date=2021-01-18\\part_0000.gz",
+        "updated_date=2021-02-01\\part_0000.gz",
+        "updated_date=2021-02-15\\part_0000.gz",
+        "updated_date=2021-03-01\\part_0000.gz",
+        "updated_date=2021-03-15\\part_0000.gz",
+        "updated_date=2021-04-13\\part_0000.gz",
+        "updated_date=2021-05-10\\part_0000.gz",
+        "updated_date=2021-05-24\\part_0000.gz",
+        "updated_date=2021-06-07\\part_0000.gz",
+        "updated_date=2021-06-22\\part_0000.gz",
+        "updated_date=2021-07-05\\part_0000.gz",
+        "updated_date=2021-07-19\\part_0000.gz",
+        "updated_date=2021-08-02\\part_0000.gz",
+        "updated_date=2021-08-16\\part_0000.gz",
+        "updated_date=2021-08-30\\part_0000.gz",
+        "updated_date=2021-09-13\\part_0000.gz",
+        "updated_date=2021-09-27\\part_0000.gz",
+        "updated_date=2021-10-11\\part_0000.gz",
+        "updated_date=2021-10-25\\part_0000.gz",
+        "updated_date=2021-11-03\\part_0000.gz",
+        "updated_date=2021-11-04\\part_0000.gz",
+        "updated_date=2021-12-23\\part_0000.gz",
+        "updated_date=2022-02-01\\part_0000.gz",
+        "updated_date=2022-02-02\\part_0000.gz",
+        "updated_date=2022-02-03\\part_0000.gz",
+        "updated_date=2022-03-09\\part_0000.gz",
+        "updated_date=2022-04-05\\part_0000.gz",
+        "updated_date=2022-04-06\\part_0000.gz",
+        "updated_date=2022-05-05\\part_0000.gz",
+        "updated_date=2022-05-16\\part_0000.gz",
+        "updated_date=2022-07-29\\part_0000.gz",
+        "updated_date=2022-08-02\\part_0000.gz",
+        "updated_date=2022-08-06\\part_0000.gz",
+        "updated_date=2022-08-07\\part_0000.gz",
+        "updated_date=2022-10-02\\part_0000.gz",
+        "updated_date=2022-11-02\\part_0000.gz",
+        "updated_date=2023-12-11\\part_0000.gz",
+        "updated_date=2024-07-19\\part_0000.gz",
+        "updated_date=2024-11-08\\part_0000.gz",
+        "updated_date=2025-07-16\\part_0000.gz",
+        "updated_date=2025-07-22\\part_0000.gz",
+        "updated_date=2025-07-23\\part_0000.gz",
+        "updated_date=2025-07-23\\part_0001.gz",
+        "updated_date=2025-07-24\\part_0000.gz",
+        "updated_date=2025-07-25\\part_0000.gz",
+        "updated_date=2025-07-26\\part_0000.gz",
+        "updated_date=2025-07-27\\part_0000.gz",
+        "updated_date=2025-07-28\\part_0000.gz",
+        "updated_date=2025-07-29\\part_0000.gz",
+        "updated_date=2025-07-30\\part_0000.gz",
+        "updated_date=2025-07-31\\part_0000.gz",
+        "updated_date=2025-08-04\\part_0000.gz",
+        "updated_date=2025-08-15\\part_0000.gz",
+        "updated_date=2025-08-18\\part_0000.gz",
+        "updated_date=2025-08-27\\part_0000.gz",
+        "updated_date=2025-08-28\\part_0000.gz",
+        "updated_date=2025-08-29\\part_0000.gz",
+        "updated_date=2025-09-03\\part_0000.gz",
+        "updated_date=2025-09-08\\part_0000.gz",
+        "updated_date=2025-09-09\\part_0000.gz",
+        "updated_date=2025-09-23\\part_0000.gz",
+        "updated_date=2025-09-24\\part_0000.gz",
+        "updated_date=2025-09-25\\part_0000.gz",
+        "updated_date=2025-09-26\\part_0000.gz",
+        "updated_date=2025-09-27\\part_0000.gz",
+        "updated_date=2025-09-28\\part_0000.gz",
+        "updated_date=2025-09-29\\part_0000.gz",
+        "updated_date=2025-09-30\\part_0000.gz",
+        "updated_date=2025-10-01\\part_0000.gz",
+        "updated_date=2025-10-02\\part_0000.gz",
+        "updated_date=2025-10-03\\part_0000.gz",
+        "updated_date=2025-10-04\\part_0000.gz",
+        "updated_date=2025-10-05\\part_0000.gz",
+        "updated_date=2025-10-06\\part_0000.gz",
+        "updated_date=2025-10-07\\part_0000.gz",
+        "updated_date=2025-10-08\\part_0000.gz",
+        "updated_date=2025-10-09\\part_0000.gz",
+        "updated_date=2025-10-10\\part_0000.gz",
+        "updated_date=2025-10-10\\part_0001.gz",
+        "updated_date=2025-10-10\\part_0002.gz"
+      ],
+      "bytes": 2196215927,
+      "status": "complete"
+    },
+    {
+      "id": 2,
+      "files": [
+        "updated_date=2025-10-10\\part_0003.gz",
+        "updated_date=2025-10-10\\part_0004.gz",
+        "updated_date=2025-10-10\\part_0005.gz",
+        "updated_date=2025-10-10\\part_0006.gz",
+        "updated_date=2025-10-10\\part_0007.gz",
+        "updated_date=2025-10-10\\part_0008.gz",
+        "updated_date=2025-10-10\\part_0009.gz"
+      ],
+      "bytes": 2437321841,
+      "status": "complete"
+    },
+    {
+      "id": 3,
+      "files": [
+        "updated_date=2025-10-10\\part_0010.gz",
+        "updated_date=2025-10-10\\part_0011.gz",
+        "updated_date=2025-10-10\\part_0012.gz",
+        "updated_date=2025-10-10\\part_0013.gz",
+        "updated_date=2025-10-10\\part_0014.gz",
+        "updated_date=2025-10-10\\part_0015.gz",
+        "updated_date=2025-10-10\\part_0016.gz"
+      ],
+      "bytes": 2422001778,
+      "status": "complete"
+    },
+    {
+      "id": 4,
+      "files": [
+        "updated_date=2025-10-10\\part_0017.gz",
+        "updated_date=2025-10-10\\part_0018.gz",
+        "updated_date=2025-10-10\\part_0019.gz",
+        "updated_date=2025-10-10\\part_0020.gz",
+        "updated_date=2025-10-10\\part_0021.gz",
+        "updated_date=2025-10-10\\part_0022.gz",
+        "updated_date=2025-10-10\\part_0023.gz"
+      ],
+      "bytes": 2429717612,
+      "status": "complete"
+    },
+    {
+      "id": 5,
+      "files": [
+        "updated_date=2025-10-10\\part_0024.gz",
+        "updated_date=2025-10-10\\part_0025.gz",
+        "updated_date=2025-10-10\\part_0026.gz",
+        "updated_date=2025-10-10\\part_0027.gz",
+        "updated_date=2025-10-10\\part_0028.gz",
+        "updated_date=2025-10-10\\part_0029.gz",
+        "updated_date=2025-10-10\\part_0030.gz"
+      ],
+      "bytes": 2436265318,
+      "status": "complete"
+    },
+    {
+      "id": 6,
+      "files": [
+        "updated_date=2025-10-10\\part_0031.gz",
+        "updated_date=2025-10-10\\part_0032.gz",
+        "updated_date=2025-10-10\\part_0033.gz",
+        "updated_date=2025-10-10\\part_0034.gz",
+        "updated_date=2025-10-10\\part_0035.gz",
+        "updated_date=2025-10-10\\part_0036.gz",
+        "updated_date=2025-10-10\\part_0037.gz"
+      ],
+      "bytes": 2429989862,
+      "status": "complete"
+    },
+    {
+      "id": 7,
+      "files": [
+        "updated_date=2025-10-10\\part_0038.gz",
+        "updated_date=2025-10-10\\part_0039.gz",
+        "updated_date=2025-10-10\\part_0040.gz",
+        "updated_date=2025-10-10\\part_0041.gz",
+        "updated_date=2025-10-10\\part_0042.gz",
+        "updated_date=2025-10-10\\part_0043.gz",
+        "updated_date=2025-10-10\\part_0044.gz"
+      ],
+      "bytes": 2430459919,
+      "status": "complete"
+    },
+    {
+      "id": 8,
+      "files": [
+        "updated_date=2025-10-10\\part_0045.gz",
+        "updated_date=2025-10-10\\part_0046.gz",
+        "updated_date=2025-10-10\\part_0047.gz",
+        "updated_date=2025-10-10\\part_0048.gz",
+        "updated_date=2025-10-10\\part_0049.gz",
+        "updated_date=2025-10-10\\part_0050.gz",
+        "updated_date=2025-10-10\\part_0051.gz"
+      ],
+      "bytes": 2436017039,
+      "status": "complete"
+    },
+    {
+      "id": 9,
+      "files": [
+        "updated_date=2025-10-10\\part_0052.gz",
+        "updated_date=2025-10-10\\part_0053.gz",
+        "updated_date=2025-10-10\\part_0054.gz",
+        "updated_date=2025-10-10\\part_0055.gz",
+        "updated_date=2025-10-10\\part_0056.gz",
+        "updated_date=2025-10-10\\part_0057.gz",
+        "updated_date=2025-10-10\\part_0058.gz"
+      ],
+      "bytes": 2437196752,
+      "status": "complete"
+    },
+    {
+      "id": 10,
+      "files": [
+        "updated_date=2025-10-10\\part_0059.gz",
+        "updated_date=2025-10-10\\part_0060.gz",
+        "updated_date=2025-10-10\\part_0061.gz",
+        "updated_date=2025-10-10\\part_0062.gz",
+        "updated_date=2025-10-10\\part_0063.gz",
+        "updated_date=2025-10-10\\part_0064.gz",
+        "updated_date=2025-10-10\\part_0065.gz"
+      ],
+      "bytes": 2551246332,
+      "status": "complete"
+    },
+    {
+      "id": 11,
+      "files": [
+        "updated_date=2025-10-10\\part_0066.gz",
+        "updated_date=2025-10-10\\part_0067.gz",
+        "updated_date=2025-10-10\\part_0068.gz",
+        "updated_date=2025-10-10\\part_0069.gz",
+        "updated_date=2025-10-10\\part_0070.gz",
+        "updated_date=2025-10-10\\part_0071.gz",
+        "updated_date=2025-10-10\\part_0072.gz"
+      ],
+      "bytes": 2322369643,
+      "status": "complete"
+    },
+    {
+      "id": 12,
+      "files": [
+        "updated_date=2025-10-10\\part_0073.gz",
+        "updated_date=2025-10-10\\part_0074.gz",
+        "updated_date=2025-10-10\\part_0075.gz",
+        "updated_date=2025-10-10\\part_0076.gz",
+        "updated_date=2025-10-10\\part_0077.gz",
+        "updated_date=2025-10-10\\part_0078.gz",
+        "updated_date=2025-10-10\\part_0079.gz"
+      ],
+      "bytes": 2432019447,
+      "status": "complete"
+    },
+    {
+      "id": 13,
+      "files": [
+        "updated_date=2025-10-10\\part_0080.gz",
+        "updated_date=2025-10-10\\part_0081.gz",
+        "updated_date=2025-10-10\\part_0082.gz",
+        "updated_date=2025-10-10\\part_0083.gz",
+        "updated_date=2025-10-10\\part_0084.gz",
+        "updated_date=2025-10-10\\part_0085.gz",
+        "updated_date=2025-10-10\\part_0086.gz"
+      ],
+      "bytes": 2438117871,
+      "status": "complete"
+    },
+    {
+      "id": 14,
+      "files": [
+        "updated_date=2025-10-10\\part_0087.gz",
+        "updated_date=2025-10-10\\part_0088.gz",
+        "updated_date=2025-10-10\\part_0089.gz",
+        "updated_date=2025-10-10\\part_0090.gz",
+        "updated_date=2025-10-10\\part_0091.gz",
+        "updated_date=2025-10-10\\part_0092.gz",
+        "updated_date=2025-10-10\\part_0093.gz"
+      ],
+      "bytes": 2432927607,
+      "status": "complete"
+    },
+    {
+      "id": 15,
+      "files": [
+        "updated_date=2025-10-10\\part_0094.gz",
+        "updated_date=2025-10-10\\part_0095.gz",
+        "updated_date=2025-10-10\\part_0096.gz",
+        "updated_date=2025-10-10\\part_0097.gz",
+        "updated_date=2025-10-10\\part_0098.gz",
+        "updated_date=2025-10-10\\part_0099.gz",
+        "updated_date=2025-10-10\\part_0100.gz"
+      ],
+      "bytes": 2437544604,
+      "status": "complete"
+    },
+    {
+      "id": 16,
+      "files": [
+        "updated_date=2025-10-10\\part_0101.gz",
+        "updated_date=2025-10-10\\part_0102.gz",
+        "updated_date=2025-10-10\\part_0103.gz",
+        "updated_date=2025-10-10\\part_0104.gz",
+        "updated_date=2025-10-10\\part_0105.gz",
+        "updated_date=2025-10-10\\part_0106.gz",
+        "updated_date=2025-10-10\\part_0107.gz"
+      ],
+      "bytes": 2425777682,
+      "status": "complete"
+    },
+    {
+      "id": 17,
+      "files": [
+        "updated_date=2025-10-10\\part_0108.gz",
+        "updated_date=2025-10-10\\part_0109.gz",
+        "updated_date=2025-10-10\\part_0110.gz",
+        "updated_date=2025-10-10\\part_0111.gz",
+        "updated_date=2025-10-10\\part_0112.gz",
+        "updated_date=2025-10-10\\part_0113.gz",
+        "updated_date=2025-10-10\\part_0114.gz"
+      ],
+      "bytes": 2439643599,
+      "status": "complete"
+    },
+    {
+      "id": 18,
+      "files": [
+        "updated_date=2025-10-10\\part_0115.gz",
+        "updated_date=2025-10-10\\part_0116.gz",
+        "updated_date=2025-10-10\\part_0117.gz",
+        "updated_date=2025-10-10\\part_0118.gz",
+        "updated_date=2025-10-10\\part_0119.gz",
+        "updated_date=2025-10-10\\part_0120.gz",
+        "updated_date=2025-10-10\\part_0121.gz"
+      ],
+      "bytes": 2436544143,
+      "status": "complete"
+    },
+    {
+      "id": 19,
+      "files": [
+        "updated_date=2025-10-10\\part_0122.gz",
+        "updated_date=2025-10-10\\part_0123.gz",
+        "updated_date=2025-10-10\\part_0124.gz",
+        "updated_date=2025-10-10\\part_0125.gz",
+        "updated_date=2025-10-10\\part_0126.gz",
+        "updated_date=2025-10-10\\part_0127.gz",
+        "updated_date=2025-10-10\\part_0128.gz"
+      ],
+      "bytes": 2423879498,
+      "status": "complete"
+    },
+    {
+      "id": 20,
+      "files": [
+        "updated_date=2025-10-10\\part_0129.gz",
+        "updated_date=2025-10-10\\part_0130.gz",
+        "updated_date=2025-10-10\\part_0131.gz",
+        "updated_date=2025-10-10\\part_0132.gz",
+        "updated_date=2025-10-10\\part_0133.gz",
+        "updated_date=2025-10-10\\part_0134.gz",
+        "updated_date=2025-10-10\\part_0135.gz"
+      ],
+      "bytes": 2431040667,
+      "status": "complete"
+    },
+    {
+      "id": 21,
+      "files": [
+        "updated_date=2025-10-10\\part_0136.gz",
+        "updated_date=2025-10-10\\part_0137.gz",
+        "updated_date=2025-10-10\\part_0138.gz",
+        "updated_date=2025-10-10\\part_0139.gz",
+        "updated_date=2025-10-10\\part_0140.gz",
+        "updated_date=2025-10-10\\part_0141.gz",
+        "updated_date=2025-10-10\\part_0142.gz"
+      ],
+      "bytes": 2438156499,
+      "status": "complete"
+    },
+    {
+      "id": 22,
+      "files": [
+        "updated_date=2025-10-10\\part_0143.gz",
+        "updated_date=2025-10-10\\part_0144.gz",
+        "updated_date=2025-10-10\\part_0145.gz",
+        "updated_date=2025-10-10\\part_0146.gz",
+        "updated_date=2025-10-10\\part_0147.gz",
+        "updated_date=2025-10-10\\part_0148.gz",
+        "updated_date=2025-10-10\\part_0149.gz"
+      ],
+      "bytes": 2563347666,
+      "status": "complete"
+    },
+    {
+      "id": 23,
+      "files": [
+        "updated_date=2025-10-10\\part_0150.gz",
+        "updated_date=2025-10-10\\part_0151.gz",
+        "updated_date=2025-10-10\\part_0152.gz",
+        "updated_date=2025-10-10\\part_0153.gz",
+        "updated_date=2025-10-10\\part_0154.gz",
+        "updated_date=2025-10-10\\part_0155.gz",
+        "updated_date=2025-10-10\\part_0156.gz"
+      ],
+      "bytes": 2320244723,
+      "status": "complete"
+    },
+    {
+      "id": 24,
+      "files": [
+        "updated_date=2025-10-10\\part_0157.gz",
+        "updated_date=2025-10-10\\part_0158.gz",
+        "updated_date=2025-10-10\\part_0159.gz",
+        "updated_date=2025-10-11\\part_0000.gz",
+        "updated_date=2025-10-12\\part_0000.gz",
+        "updated_date=2025-10-13\\part_0000.gz",
+        "updated_date=2025-10-14\\part_0000.gz",
+        "updated_date=2025-10-15\\part_0000.gz",
+        "updated_date=2025-10-16\\part_0000.gz",
+        "updated_date=2025-10-17\\part_0000.gz",
+        "updated_date=2025-10-18\\part_0000.gz",
+        "updated_date=2025-10-19\\part_0000.gz",
+        "updated_date=2025-10-20\\part_0000.gz",
+        "updated_date=2025-10-21\\part_0000.gz",
+        "updated_date=2025-10-22\\part_0000.gz",
+        "updated_date=2025-10-23\\part_0000.gz",
+        "updated_date=2025-10-24\\part_0000.gz",
+        "updated_date=2025-10-25\\part_0000.gz",
+        "updated_date=2025-10-26\\part_0000.gz",
+        "updated_date=2025-10-27\\part_0000.gz",
+        "updated_date=2025-10-28\\part_0000.gz",
+        "updated_date=2025-10-29\\part_0000.gz",
+        "updated_date=2025-10-30\\part_0000.gz",
+        "updated_date=2025-10-31\\part_0000.gz",
+        "updated_date=2025-11-01\\part_0000.gz",
+        "updated_date=2025-11-02\\part_0000.gz",
+        "updated_date=2025-11-03\\part_0000.gz",
+        "updated_date=2025-11-04\\part_0000.gz",
+        "updated_date=2025-11-05\\part_0000.gz",
+        "updated_date=2025-11-06\\part_0000.gz",
+        "updated_date=2025-11-06\\part_0001.gz"
+      ],
+      "bytes": 2517836804,
+      "status": "complete"
+    },
+    {
+      "id": 25,
+      "files": [
+        "updated_date=2025-11-06\\part_0002.gz",
+        "updated_date=2025-11-06\\part_0003.gz",
+        "updated_date=2025-11-06\\part_0004.gz",
+        "updated_date=2025-11-06\\part_0005.gz",
+        "updated_date=2025-11-06\\part_0006.gz"
+      ],
+      "bytes": 2550230907,
+      "status": "complete"
+    },
+    {
+      "id": 26,
+      "files": [
+        "updated_date=2025-11-06\\part_0007.gz",
+        "updated_date=2025-11-06\\part_0008.gz",
+        "updated_date=2025-11-06\\part_0009.gz",
+        "updated_date=2025-11-06\\part_0010.gz",
+        "updated_date=2025-11-06\\part_0011.gz",
+        "updated_date=2025-11-06\\part_0012.gz",
+        "updated_date=2025-11-06\\part_0013.gz"
+      ],
+      "bytes": 2735317480,
+      "status": "complete"
+    },
+    {
+      "id": 27,
+      "files": [
+        "updated_date=2025-11-06\\part_0014.gz",
+        "updated_date=2025-11-06\\part_0015.gz",
+        "updated_date=2025-11-06\\part_0016.gz",
+        "updated_date=2025-11-06\\part_0017.gz",
+        "updated_date=2025-11-06\\part_0018.gz",
+        "updated_date=2025-11-06\\part_0019.gz",
+        "updated_date=2025-11-06\\part_0020.gz"
+      ],
+      "bytes": 2511277730,
+      "status": "complete"
+    },
+    {
+      "id": 28,
+      "files": [
+        "updated_date=2025-11-06\\part_0021.gz",
+        "updated_date=2025-11-06\\part_0022.gz",
+        "updated_date=2025-11-06\\part_0023.gz",
+        "updated_date=2025-11-06\\part_0024.gz",
+        "updated_date=2025-11-06\\part_0025.gz",
+        "updated_date=2025-11-06\\part_0026.gz"
+      ],
+      "bytes": 2522201955,
+      "status": "complete"
+    },
+    {
+      "id": 29,
+      "files": [
+        "updated_date=2025-11-06\\part_0027.gz",
+        "updated_date=2025-11-06\\part_0028.gz",
+        "updated_date=2025-11-06\\part_0029.gz",
+        "updated_date=2025-11-06\\part_0030.gz",
+        "updated_date=2025-11-06\\part_0031.gz",
+        "updated_date=2025-11-06\\part_0032.gz",
+        "updated_date=2025-11-06\\part_0033.gz"
+      ],
+      "bytes": 2494742416,
+      "status": "complete"
+    },
+    {
+      "id": 30,
+      "files": [
+        "updated_date=2025-11-06\\part_0034.gz",
+        "updated_date=2025-11-06\\part_0035.gz",
+        "updated_date=2025-11-06\\part_0036.gz",
+        "updated_date=2025-11-06\\part_0037.gz",
+        "updated_date=2025-11-06\\part_0038.gz",
+        "updated_date=2025-11-06\\part_0039.gz"
+      ],
+      "bytes": 2316926577,
+      "status": "complete"
+    },
+    {
+      "id": 31,
+      "files": [
+        "updated_date=2025-11-06\\part_0040.gz",
+        "updated_date=2025-11-06\\part_0041.gz",
+        "updated_date=2025-11-06\\part_0042.gz",
+        "updated_date=2025-11-06\\part_0043.gz",
+        "updated_date=2025-11-06\\part_0044.gz",
+        "updated_date=2025-11-06\\part_0045.gz"
+      ],
+      "bytes": 2533897100,
+      "status": "complete"
+    },
+    {
+      "id": 32,
+      "files": [
+        "updated_date=2025-11-06\\part_0046.gz",
+        "updated_date=2025-11-06\\part_0047.gz",
+        "updated_date=2025-11-06\\part_0048.gz",
+        "updated_date=2025-11-06\\part_0049.gz",
+        "updated_date=2025-11-06\\part_0050.gz",
+        "updated_date=2025-11-06\\part_0051.gz"
+      ],
+      "bytes": 2324767789,
+      "status": "complete"
+    },
+    {
+      "id": 33,
+      "files": [
+        "updated_date=2025-11-06\\part_0052.gz",
+        "updated_date=2025-11-06\\part_0053.gz",
+        "updated_date=2025-11-06\\part_0054.gz",
+        "updated_date=2025-11-06\\part_0055.gz",
+        "updated_date=2025-11-06\\part_0056.gz",
+        "updated_date=2025-11-06\\part_0057.gz",
+        "updated_date=2025-11-06\\part_0058.gz"
+      ],
+      "bytes": 2495452475,
+      "status": "complete"
+    },
+    {
+      "id": 34,
+      "files": [
+        "updated_date=2025-11-06\\part_0059.gz",
+        "updated_date=2025-11-06\\part_0060.gz",
+        "updated_date=2025-11-06\\part_0061.gz",
+        "updated_date=2025-11-06\\part_0062.gz",
+        "updated_date=2025-11-06\\part_0063.gz"
+      ],
+      "bytes": 2350226523,
+      "status": "complete"
+    },
+    {
+      "id": 35,
+      "files": [
+        "updated_date=2025-11-06\\part_0064.gz",
+        "updated_date=2025-11-06\\part_0065.gz",
+        "updated_date=2025-11-06\\part_0066.gz",
+        "updated_date=2025-11-06\\part_0067.gz",
+        "updated_date=2025-11-06\\part_0068.gz",
+        "updated_date=2025-11-06\\part_0069.gz"
+      ],
+      "bytes": 2332079475,
+      "status": "complete"
+    },
+    {
+      "id": 36,
+      "files": [
+        "updated_date=2025-11-06\\part_0070.gz",
+        "updated_date=2025-11-06\\part_0071.gz",
+        "updated_date=2025-11-06\\part_0072.gz",
+        "updated_date=2025-11-06\\part_0073.gz",
+        "updated_date=2025-11-06\\part_0074.gz"
+      ],
+      "bytes": 2159598845,
+      "status": "complete"
+    },
+    {
+      "id": 37,
+      "files": [
+        "updated_date=2025-11-06\\part_0075.gz",
+        "updated_date=2025-11-06\\part_0076.gz",
+        "updated_date=2025-11-06\\part_0077.gz",
+        "updated_date=2025-11-06\\part_0078.gz",
+        "updated_date=2025-11-06\\part_0079.gz",
+        "updated_date=2025-11-06\\part_0080.gz"
+      ],
+      "bytes": 2721612745,
+      "status": "complete"
+    },
+    {
+      "id": 38,
+      "files": [
+        "updated_date=2025-11-06\\part_0081.gz",
+        "updated_date=2025-11-06\\part_0082.gz",
+        "updated_date=2025-11-06\\part_0083.gz",
+        "updated_date=2025-11-06\\part_0084.gz",
+        "updated_date=2025-11-06\\part_0085.gz",
+        "updated_date=2025-11-06\\part_0086.gz"
+      ],
+      "bytes": 2516930752,
+      "status": "complete"
+    },
+    {
+      "id": 39,
+      "files": [
+        "updated_date=2025-11-06\\part_0087.gz",
+        "updated_date=2025-11-06\\part_0088.gz",
+        "updated_date=2025-11-06\\part_0089.gz",
+        "updated_date=2025-11-06\\part_0090.gz",
+        "updated_date=2025-11-06\\part_0091.gz",
+        "updated_date=2025-11-06\\part_0092.gz"
+      ],
+      "bytes": 2328459526,
+      "status": "complete"
+    },
+    {
+      "id": 40,
+      "files": [
+        "updated_date=2025-11-06\\part_0093.gz",
+        "updated_date=2025-11-06\\part_0094.gz",
+        "updated_date=2025-11-06\\part_0095.gz",
+        "updated_date=2025-11-06\\part_0096.gz",
+        "updated_date=2025-11-06\\part_0097.gz",
+        "updated_date=2025-11-06\\part_0098.gz"
+      ],
+      "bytes": 2324440892,
+      "status": "complete"
+    },
+    {
+      "id": 41,
+      "files": [
+        "updated_date=2025-11-06\\part_0099.gz",
+        "updated_date=2025-11-06\\part_0100.gz",
+        "updated_date=2025-11-06\\part_0101.gz",
+        "updated_date=2025-11-06\\part_0102.gz",
+        "updated_date=2025-11-06\\part_0103.gz",
+        "updated_date=2025-11-06\\part_0104.gz"
+      ],
+      "bytes": 2318641308,
+      "status": "complete"
+    },
+    {
+      "id": 42,
+      "files": [
+        "updated_date=2025-11-06\\part_0105.gz",
+        "updated_date=2025-11-06\\part_0106.gz",
+        "updated_date=2025-11-06\\part_0107.gz",
+        "updated_date=2025-11-06\\part_0108.gz",
+        "updated_date=2025-11-06\\part_0109.gz",
+        "updated_date=2025-11-06\\part_0110.gz"
+      ],
+      "bytes": 2318654213,
+      "status": "complete"
+    },
+    {
+      "id": 43,
+      "files": [
+        "updated_date=2025-11-06\\part_0111.gz",
+        "updated_date=2025-11-06\\part_0112.gz",
+        "updated_date=2025-11-06\\part_0113.gz",
+        "updated_date=2025-11-06\\part_0114.gz",
+        "updated_date=2025-11-06\\part_0115.gz",
+        "updated_date=2025-11-06\\part_0116.gz"
+      ],
+      "bytes": 2326758573,
+      "status": "complete"
+    },
+    {
+      "id": 44,
+      "files": [
+        "updated_date=2025-11-06\\part_0117.gz",
+        "updated_date=2025-11-06\\part_0118.gz",
+        "updated_date=2025-11-06\\part_0119.gz",
+        "updated_date=2025-11-06\\part_0120.gz",
+        "updated_date=2025-11-06\\part_0121.gz"
+      ],
+      "bytes": 2353470492,
+      "status": "complete"
+    },
+    {
+      "id": 45,
+      "files": [
+        "updated_date=2025-11-06\\part_0122.gz",
+        "updated_date=2025-11-06\\part_0123.gz",
+        "updated_date=2025-11-06\\part_0124.gz",
+        "updated_date=2025-11-06\\part_0125.gz",
+        "updated_date=2025-11-06\\part_0126.gz",
+        "updated_date=2025-11-06\\part_0127.gz"
+      ],
+      "bytes": 2335945728,
+      "status": "complete"
+    },
+    {
+      "id": 46,
+      "files": [
+        "updated_date=2025-11-06\\part_0128.gz",
+        "updated_date=2025-11-06\\part_0129.gz",
+        "updated_date=2025-11-06\\part_0130.gz",
+        "updated_date=2025-11-06\\part_0131.gz",
+        "updated_date=2025-11-06\\part_0132.gz",
+        "updated_date=2025-11-06\\part_0133.gz"
+      ],
+      "bytes": 2347622224,
+      "status": "complete"
+    },
+    {
+      "id": 47,
+      "files": [
+        "updated_date=2025-11-06\\part_0134.gz",
+        "updated_date=2025-11-06\\part_0135.gz",
+        "updated_date=2025-11-06\\part_0136.gz",
+        "updated_date=2025-11-06\\part_0137.gz",
+        "updated_date=2025-11-06\\part_0138.gz"
+      ],
+      "bytes": 2351198202,
+      "status": "complete"
+    },
+    {
+      "id": 48,
+      "files": [
+        "updated_date=2025-11-06\\part_0139.gz",
+        "updated_date=2025-11-06\\part_0140.gz",
+        "updated_date=2025-11-06\\part_0141.gz",
+        "updated_date=2025-11-06\\part_0142.gz",
+        "updated_date=2025-11-06\\part_0143.gz",
+        "updated_date=2025-11-06\\part_0144.gz"
+      ],
+      "bytes": 2319846996,
+      "status": "complete"
+    },
+    {
+      "id": 49,
+      "files": [
+        "updated_date=2025-11-06\\part_0145.gz",
+        "updated_date=2025-11-06\\part_0146.gz",
+        "updated_date=2025-11-06\\part_0147.gz",
+        "updated_date=2025-11-06\\part_0148.gz",
+        "updated_date=2025-11-06\\part_0149.gz",
+        "updated_date=2025-11-06\\part_0150.gz"
+      ],
+      "bytes": 2318533326,
+      "status": "complete"
+    },
+    {
+      "id": 50,
+      "files": [
+        "updated_date=2025-11-06\\part_0151.gz",
+        "updated_date=2025-11-06\\part_0152.gz",
+        "updated_date=2025-11-06\\part_0153.gz",
+        "updated_date=2025-11-06\\part_0154.gz",
+        "updated_date=2025-11-06\\part_0155.gz",
+        "updated_date=2025-11-06\\part_0156.gz"
+      ],
+      "bytes": 2540258709,
+      "status": "complete"
+    },
+    {
+      "id": 51,
+      "files": [
+        "updated_date=2025-11-06\\part_0157.gz",
+        "updated_date=2025-11-06\\part_0158.gz",
+        "updated_date=2025-11-06\\part_0159.gz",
+        "updated_date=2025-11-06\\part_0160.gz",
+        "updated_date=2025-11-06\\part_0161.gz",
+        "updated_date=2025-11-06\\part_0162.gz",
+        "updated_date=2025-11-06\\part_0163.gz"
+      ],
+      "bytes": 2498094808,
+      "status": "complete"
+    },
+    {
+      "id": 52,
+      "files": [
+        "updated_date=2025-11-06\\part_0164.gz",
+        "updated_date=2025-11-06\\part_0165.gz",
+        "updated_date=2025-11-06\\part_0166.gz",
+        "updated_date=2025-11-06\\part_0167.gz",
+        "updated_date=2025-11-06\\part_0168.gz"
+      ],
+      "bytes": 2563797014,
+      "status": "complete"
+    },
+    {
+      "id": 53,
+      "files": [
+        "updated_date=2025-11-06\\part_0169.gz",
+        "updated_date=2025-11-06\\part_0170.gz",
+        "updated_date=2025-11-06\\part_0171.gz",
+        "updated_date=2025-11-06\\part_0172.gz",
+        "updated_date=2025-11-06\\part_0173.gz",
+        "updated_date=2025-11-06\\part_0174.gz",
+        "updated_date=2025-11-06\\part_0175.gz"
+      ],
+      "bytes": 2726584189,
+      "status": "complete"
+    },
+    {
+      "id": 54,
+      "files": [
+        "updated_date=2025-11-06\\part_0176.gz",
+        "updated_date=2025-11-06\\part_0177.gz",
+        "updated_date=2025-11-06\\part_0178.gz",
+        "updated_date=2025-11-06\\part_0179.gz",
+        "updated_date=2025-11-06\\part_0180.gz",
+        "updated_date=2025-11-06\\part_0181.gz",
+        "updated_date=2025-11-06\\part_0182.gz"
+      ],
+      "bytes": 2494674539,
+      "status": "complete"
+    },
+    {
+      "id": 55,
+      "files": [
+        "updated_date=2025-11-06\\part_0183.gz",
+        "updated_date=2025-11-06\\part_0184.gz",
+        "updated_date=2025-11-06\\part_0185.gz",
+        "updated_date=2025-11-06\\part_0186.gz",
+        "updated_date=2025-11-06\\part_0187.gz"
+      ],
+      "bytes": 2360607639,
+      "status": "complete"
+    },
+    {
+      "id": 56,
+      "files": [
+        "updated_date=2025-11-06\\part_0188.gz",
+        "updated_date=2025-11-06\\part_0189.gz",
+        "updated_date=2025-11-06\\part_0190.gz",
+        "updated_date=2025-11-06\\part_0191.gz",
+        "updated_date=2025-11-06\\part_0192.gz"
+      ],
+      "bytes": 2349537784,
+      "status": "complete"
+    },
+    {
+      "id": 57,
+      "files": [
+        "updated_date=2025-11-06\\part_0193.gz",
+        "updated_date=2025-11-06\\part_0194.gz",
+        "updated_date=2025-11-06\\part_0195.gz",
+        "updated_date=2025-11-06\\part_0196.gz",
+        "updated_date=2025-11-06\\part_0197.gz"
+      ],
+      "bytes": 2346265455,
+      "status": "complete"
+    },
+    {
+      "id": 58,
+      "files": [
+        "updated_date=2025-11-06\\part_0198.gz",
+        "updated_date=2025-11-06\\part_0199.gz",
+        "updated_date=2025-11-06\\part_0200.gz",
+        "updated_date=2025-11-06\\part_0201.gz",
+        "updated_date=2025-11-06\\part_0202.gz"
+      ],
+      "bytes": 2158387694,
+      "status": "complete"
+    },
+    {
+      "id": 59,
+      "files": [
+        "updated_date=2025-11-06\\part_0203.gz",
+        "updated_date=2025-11-06\\part_0204.gz",
+        "updated_date=2025-11-06\\part_0205.gz",
+        "updated_date=2025-11-06\\part_0206.gz",
+        "updated_date=2025-11-06\\part_0207.gz",
+        "updated_date=2025-11-06\\part_0208.gz",
+        "updated_date=2025-11-06\\part_0209.gz"
+      ],
+      "bytes": 2710513919,
+      "status": "complete"
+    },
+    {
+      "id": 60,
+      "files": [
+        "updated_date=2025-11-06\\part_0210.gz",
+        "updated_date=2025-11-06\\part_0211.gz",
+        "updated_date=2025-11-06\\part_0212.gz",
+        "updated_date=2025-11-06\\part_0213.gz",
+        "updated_date=2025-11-06\\part_0214.gz",
+        "updated_date=2025-11-06\\part_0215.gz"
+      ],
+      "bytes": 2737923772,
+      "status": "complete"
+    },
+    {
+      "id": 61,
+      "files": [
+        "updated_date=2025-11-06\\part_0216.gz",
+        "updated_date=2025-11-06\\part_0217.gz",
+        "updated_date=2025-11-06\\part_0218.gz",
+        "updated_date=2025-11-06\\part_0219.gz",
+        "updated_date=2025-11-06\\part_0220.gz",
+        "updated_date=2025-11-06\\part_0221.gz",
+        "updated_date=2025-11-06\\part_0222.gz"
+      ],
+      "bytes": 2506945798,
+      "status": "complete"
+    },
+    {
+      "id": 62,
+      "files": [
+        "updated_date=2025-11-06\\part_0223.gz",
+        "updated_date=2025-11-06\\part_0224.gz",
+        "updated_date=2025-11-06\\part_0225.gz",
+        "updated_date=2025-11-06\\part_0226.gz",
+        "updated_date=2025-11-06\\part_0227.gz",
+        "updated_date=2025-11-06\\part_0228.gz"
+      ],
+      "bytes": 2340312273,
+      "status": "complete"
+    },
+    {
+      "id": 63,
+      "files": [
+        "updated_date=2025-11-06\\part_0229.gz",
+        "updated_date=2025-11-06\\part_0230.gz",
+        "updated_date=2025-11-06\\part_0231.gz",
+        "updated_date=2025-11-06\\part_0232.gz",
+        "updated_date=2025-11-06\\part_0233.gz",
+        "updated_date=2025-11-06\\part_0234.gz"
+      ],
+      "bytes": 2323630351,
+      "status": "complete"
+    },
+    {
+      "id": 64,
+      "files": [
+        "updated_date=2025-11-06\\part_0235.gz",
+        "updated_date=2025-11-06\\part_0236.gz",
+        "updated_date=2025-11-06\\part_0237.gz",
+        "updated_date=2025-11-06\\part_0238.gz",
+        "updated_date=2025-11-06\\part_0239.gz",
+        "updated_date=2025-11-06\\part_0240.gz"
+      ],
+      "bytes": 2322452970,
+      "status": "complete"
+    },
+    {
+      "id": 65,
+      "files": [
+        "updated_date=2025-11-06\\part_0241.gz",
+        "updated_date=2025-11-06\\part_0242.gz",
+        "updated_date=2025-11-06\\part_0243.gz",
+        "updated_date=2025-11-06\\part_0244.gz",
+        "updated_date=2025-11-06\\part_0245.gz"
+      ],
+      "bytes": 2157237533,
+      "status": "complete"
+    },
+    {
+      "id": 66,
+      "files": [
+        "updated_date=2025-11-06\\part_0246.gz",
+        "updated_date=2025-11-06\\part_0247.gz",
+        "updated_date=2025-11-06\\part_0248.gz",
+        "updated_date=2025-11-06\\part_0249.gz"
+      ],
+      "bytes": 2148351898,
+      "status": "complete"
+    },
+    {
+      "id": 67,
+      "files": [
+        "updated_date=2025-11-06\\part_0250.gz",
+        "updated_date=2025-11-06\\part_0251.gz",
+        "updated_date=2025-11-06\\part_0252.gz",
+        "updated_date=2025-11-06\\part_0253.gz",
+        "updated_date=2025-11-06\\part_0254.gz",
+        "updated_date=2025-11-06\\part_0255.gz"
+      ],
+      "bytes": 2319274809,
+      "status": "complete"
+    },
+    {
+      "id": 68,
+      "files": [
+        "updated_date=2025-11-06\\part_0256.gz",
+        "updated_date=2025-11-06\\part_0257.gz",
+        "updated_date=2025-11-06\\part_0258.gz",
+        "updated_date=2025-11-06\\part_0259.gz",
+        "updated_date=2025-11-06\\part_0260.gz"
+      ],
+      "bytes": 2565073873,
+      "status": "complete"
+    },
+    {
+      "id": 69,
+      "files": [
+        "updated_date=2025-11-06\\part_0261.gz",
+        "updated_date=2025-11-06\\part_0262.gz",
+        "updated_date=2025-11-06\\part_0263.gz",
+        "updated_date=2025-11-06\\part_0264.gz",
+        "updated_date=2025-11-06\\part_0265.gz",
+        "updated_date=2025-11-06\\part_0266.gz"
+      ],
+      "bytes": 2518318490,
+      "status": "complete"
+    },
+    {
+      "id": 70,
+      "files": [
+        "updated_date=2025-11-06\\part_0267.gz",
+        "updated_date=2025-11-06\\part_0268.gz",
+        "updated_date=2025-11-06\\part_0269.gz",
+        "updated_date=2025-11-06\\part_0270.gz",
+        "updated_date=2025-11-06\\part_0271.gz",
+        "updated_date=2025-11-06\\part_0272.gz"
+      ],
+      "bytes": 2535864244,
+      "status": "complete"
+    },
+    {
+      "id": 71,
+      "files": [
+        "updated_date=2025-11-06\\part_0273.gz",
+        "updated_date=2025-11-06\\part_0274.gz",
+        "updated_date=2025-11-06\\part_0275.gz",
+        "updated_date=2025-11-06\\part_0276.gz",
+        "updated_date=2025-11-06\\part_0277.gz",
+        "updated_date=2025-11-06\\part_0278.gz",
+        "updated_date=2025-11-06\\part_0279.gz"
+      ],
+      "bytes": 2739659243,
+      "status": "complete"
+    },
+    {
+      "id": 72,
+      "files": [
+        "updated_date=2025-11-06\\part_0280.gz",
+        "updated_date=2025-11-06\\part_0281.gz",
+        "updated_date=2025-11-06\\part_0282.gz",
+        "updated_date=2025-11-06\\part_0283.gz",
+        "updated_date=2025-11-06\\part_0284.gz",
+        "updated_date=2025-11-06\\part_0285.gz",
+        "updated_date=2025-11-06\\part_0286.gz"
+      ],
+      "bytes": 2489352427,
+      "status": "complete"
+    },
+    {
+      "id": 73,
+      "files": [
+        "updated_date=2025-11-06\\part_0287.gz",
+        "updated_date=2025-11-06\\part_0288.gz",
+        "updated_date=2025-11-06\\part_0289.gz",
+        "updated_date=2025-11-06\\part_0290.gz",
+        "updated_date=2025-11-06\\part_0291.gz"
+      ],
+      "bytes": 2342889957,
+      "status": "complete"
+    },
+    {
+      "id": 74,
+      "files": [
+        "updated_date=2025-11-06\\part_0292.gz",
+        "updated_date=2025-11-06\\part_0293.gz",
+        "updated_date=2025-11-06\\part_0294.gz",
+        "updated_date=2025-11-06\\part_0295.gz",
+        "updated_date=2025-11-06\\part_0296.gz",
+        "updated_date=2025-11-06\\part_0297.gz"
+      ],
+      "bytes": 2315380559,
+      "status": "complete"
+    },
+    {
+      "id": 75,
+      "files": [
+        "updated_date=2025-11-06\\part_0298.gz",
+        "updated_date=2025-11-06\\part_0299.gz",
+        "updated_date=2025-11-06\\part_0300.gz",
+        "updated_date=2025-11-06\\part_0301.gz",
+        "updated_date=2025-11-06\\part_0302.gz",
+        "updated_date=2025-11-06\\part_0303.gz"
+      ],
+      "bytes": 2316871657,
+      "status": "complete"
+    },
+    {
+      "id": 76,
+      "files": [
+        "updated_date=2025-11-06\\part_0304.gz",
+        "updated_date=2025-11-06\\part_0305.gz",
+        "updated_date=2025-11-06\\part_0306.gz",
+        "updated_date=2025-11-06\\part_0307.gz",
+        "updated_date=2025-11-06\\part_0308.gz",
+        "updated_date=2025-11-06\\part_0309.gz"
+      ],
+      "bytes": 2569006357,
+      "status": "complete"
+    },
+    {
+      "id": 77,
+      "files": [
+        "updated_date=2025-11-06\\part_0310.gz",
+        "updated_date=2025-11-06\\part_0311.gz",
+        "updated_date=2025-11-06\\part_0312.gz",
+        "updated_date=2025-11-06\\part_0313.gz",
+        "updated_date=2025-11-06\\part_0314.gz",
+        "updated_date=2025-11-06\\part_0315.gz",
+        "updated_date=2025-11-06\\part_0316.gz"
+      ],
+      "bytes": 2502684861,
+      "status": "complete"
+    },
+    {
+      "id": 78,
+      "files": [
+        "updated_date=2025-11-06\\part_0317.gz",
+        "updated_date=2025-11-06\\part_0318.gz",
+        "updated_date=2025-11-06\\part_0319.gz",
+        "updated_date=2025-11-06\\part_0320.gz",
+        "updated_date=2025-11-06\\part_0321.gz",
+        "updated_date=2025-11-06\\part_0322.gz"
+      ],
+      "bytes": 2323233398,
+      "status": "complete"
+    },
+    {
+      "id": 79,
+      "files": [
+        "updated_date=2025-11-06\\part_0323.gz",
+        "updated_date=2025-11-06\\part_0324.gz",
+        "updated_date=2025-11-06\\part_0325.gz",
+        "updated_date=2025-11-06\\part_0326.gz",
+        "updated_date=2025-11-06\\part_0327.gz"
+      ],
+      "bytes": 2551117804,
+      "status": "complete"
+    },
+    {
+      "id": 80,
+      "files": [
+        "updated_date=2025-11-06\\part_0328.gz",
+        "updated_date=2025-11-06\\part_0329.gz",
+        "updated_date=2025-11-06\\part_0330.gz",
+        "updated_date=2025-11-06\\part_0331.gz",
+        "updated_date=2025-11-06\\part_0332.gz",
+        "updated_date=2025-11-06\\part_0333.gz",
+        "updated_date=2025-11-06\\part_0334.gz"
+      ],
+      "bytes": 2717617693,
+      "status": "complete"
+    },
+    {
+      "id": 81,
+      "files": [
+        "updated_date=2025-11-06\\part_0335.gz",
+        "updated_date=2025-11-06\\part_0336.gz",
+        "updated_date=2025-11-06\\part_0337.gz",
+        "updated_date=2025-11-06\\part_0338.gz",
+        "updated_date=2025-11-06\\part_0339.gz",
+        "updated_date=2025-11-06\\part_0340.gz",
+        "updated_date=2025-11-06\\part_0341.gz"
+      ],
+      "bytes": 2517875765,
+      "status": "complete"
+    },
+    {
+      "id": 82,
+      "files": [
+        "updated_date=2025-11-06\\part_0342.gz",
+        "updated_date=2025-11-06\\part_0343.gz",
+        "updated_date=2025-11-06\\part_0344.gz",
+        "updated_date=2025-11-06\\part_0345.gz",
+        "updated_date=2025-11-06\\part_0346.gz"
+      ],
+      "bytes": 2149029886,
+      "status": "complete"
+    },
+    {
+      "id": 83,
+      "files": [
+        "updated_date=2025-11-06\\part_0347.gz",
+        "updated_date=2025-11-06\\part_0348.gz",
+        "updated_date=2025-11-06\\part_0349.gz",
+        "updated_date=2025-11-06\\part_0350.gz",
+        "updated_date=2025-11-06\\part_0351.gz",
+        "updated_date=2025-11-06\\part_0352.gz"
+      ],
+      "bytes": 2515768713,
+      "status": "complete"
+    },
+    {
+      "id": 84,
+      "files": [
+        "updated_date=2025-11-06\\part_0353.gz",
+        "updated_date=2025-11-06\\part_0354.gz",
+        "updated_date=2025-11-06\\part_0355.gz",
+        "updated_date=2025-11-06\\part_0356.gz",
+        "updated_date=2025-11-06\\part_0357.gz",
+        "updated_date=2025-11-06\\part_0358.gz"
+      ],
+      "bytes": 2552485671,
+      "status": "complete"
+    },
+    {
+      "id": 85,
+      "files": [
+        "updated_date=2025-11-06\\part_0359.gz",
+        "updated_date=2025-11-06\\part_0360.gz",
+        "updated_date=2025-11-06\\part_0361.gz",
+        "updated_date=2025-11-06\\part_0362.gz",
+        "updated_date=2025-11-06\\part_0363.gz",
+        "updated_date=2025-11-06\\part_0364.gz",
+        "updated_date=2025-11-06\\part_0365.gz"
+      ],
+      "bytes": 2703863927,
+      "status": "complete"
+    },
+    {
+      "id": 86,
+      "files": [
+        "updated_date=2025-11-06\\part_0366.gz",
+        "updated_date=2025-11-06\\part_0367.gz",
+        "updated_date=2025-11-06\\part_0368.gz",
+        "updated_date=2025-11-06\\part_0369.gz",
+        "updated_date=2025-11-06\\part_0370.gz",
+        "updated_date=2025-11-06\\part_0371.gz",
+        "updated_date=2025-11-06\\part_0372.gz"
+      ],
+      "bytes": 2726425996,
+      "status": "complete"
+    },
+    {
+      "id": 87,
+      "files": [
+        "updated_date=2025-11-06\\part_0373.gz",
+        "updated_date=2025-11-06\\part_0374.gz",
+        "updated_date=2025-11-06\\part_0375.gz",
+        "updated_date=2025-11-06\\part_0376.gz",
+        "updated_date=2025-11-06\\part_0377.gz",
+        "updated_date=2025-11-06\\part_0378.gz",
+        "updated_date=2025-11-06\\part_0379.gz"
+      ],
+      "bytes": 2492237927,
+      "status": "complete"
+    },
+    {
+      "id": 88,
+      "files": [
+        "updated_date=2025-11-06\\part_0380.gz",
+        "updated_date=2025-11-06\\part_0381.gz",
+        "updated_date=2025-11-06\\part_0382.gz",
+        "updated_date=2025-11-06\\part_0383.gz",
+        "updated_date=2025-11-06\\part_0384.gz",
+        "updated_date=2025-11-06\\part_0385.gz"
+      ],
+      "bytes": 2310682485,
+      "status": "complete"
+    },
+    {
+      "id": 89,
+      "files": [
+        "updated_date=2025-11-06\\part_0386.gz",
+        "updated_date=2025-11-06\\part_0387.gz",
+        "updated_date=2025-11-06\\part_0388.gz",
+        "updated_date=2025-11-06\\part_0389.gz",
+        "updated_date=2025-11-06\\part_0390.gz"
+      ],
+      "bytes": 2161631483,
+      "status": "complete"
+    },
+    {
+      "id": 90,
+      "files": [
+        "updated_date=2025-11-06\\part_0391.gz",
+        "updated_date=2025-11-06\\part_0392.gz",
+        "updated_date=2025-11-06\\part_0393.gz",
+        "updated_date=2025-11-06\\part_0394.gz",
+        "updated_date=2025-11-06\\part_0395.gz",
+        "updated_date=2025-11-06\\part_0396.gz"
+      ],
+      "bytes": 2511044020,
+      "status": "complete"
+    },
+    {
+      "id": 91,
+      "files": [
+        "updated_date=2025-11-06\\part_0397.gz",
+        "updated_date=2025-11-06\\part_0398.gz",
+        "updated_date=2025-11-06\\part_0399.gz",
+        "updated_date=2025-11-06\\part_0400.gz",
+        "updated_date=2025-11-06\\part_0401.gz"
+      ],
+      "bytes": 2553031909,
+      "status": "complete"
+    },
+    {
+      "id": 92,
+      "files": [
+        "updated_date=2025-11-06\\part_0402.gz",
+        "updated_date=2025-11-06\\part_0403.gz",
+        "updated_date=2025-11-06\\part_0404.gz",
+        "updated_date=2025-11-06\\part_0405.gz",
+        "updated_date=2025-11-06\\part_0406.gz",
+        "updated_date=2025-11-06\\part_0407.gz",
+        "updated_date=2025-11-06\\part_0408.gz"
+      ],
+      "bytes": 2513341565,
+      "status": "complete"
+    },
+    {
+      "id": 93,
+      "files": [
+        "updated_date=2025-11-06\\part_0409.gz",
+        "updated_date=2025-11-06\\part_0410.gz",
+        "updated_date=2025-11-06\\part_0411.gz",
+        "updated_date=2025-11-06\\part_0412.gz",
+        "updated_date=2025-11-06\\part_0413.gz",
+        "updated_date=2025-11-06\\part_0414.gz"
+      ],
+      "bytes": 2326704933,
+      "status": "complete"
+    },
+    {
+      "id": 94,
+      "files": [
+        "updated_date=2025-11-06\\part_0415.gz",
+        "updated_date=2025-11-06\\part_0416.gz",
+        "updated_date=2025-11-06\\part_0417.gz",
+        "updated_date=2025-11-06\\part_0418.gz",
+        "updated_date=2025-11-06\\part_0419.gz",
+        "updated_date=2025-11-06\\part_0420.gz"
+      ],
+      "bytes": 2317083524,
+      "status": "complete"
+    },
+    {
+      "id": 95,
+      "files": [
+        "updated_date=2025-11-06\\part_0421.gz",
+        "updated_date=2025-11-06\\part_0422.gz",
+        "updated_date=2025-11-06\\part_0423.gz",
+        "updated_date=2025-11-06\\part_0424.gz",
+        "updated_date=2025-11-06\\part_0425.gz",
+        "updated_date=2025-11-06\\part_0426.gz"
+      ],
+      "bytes": 2310849584,
+      "status": "complete"
+    },
+    {
+      "id": 96,
+      "files": [
+        "updated_date=2025-11-06\\part_0427.gz",
+        "updated_date=2025-11-06\\part_0428.gz",
+        "updated_date=2025-11-06\\part_0429.gz",
+        "updated_date=2025-11-06\\part_0430.gz",
+        "updated_date=2025-11-06\\part_0431.gz",
+        "updated_date=2025-11-06\\part_0432.gz"
+      ],
+      "bytes": 2544320155,
+      "status": "complete"
+    },
+    {
+      "id": 97,
+      "files": [
+        "updated_date=2025-11-06\\part_0433.gz",
+        "updated_date=2025-11-06\\part_0434.gz",
+        "updated_date=2025-11-06\\part_0435.gz",
+        "updated_date=2025-11-06\\part_0436.gz",
+        "updated_date=2025-11-06\\part_0437.gz",
+        "updated_date=2025-11-06\\part_0438.gz"
+      ],
+      "bytes": 2725487716,
+      "status": "complete"
+    },
+    {
+      "id": 98,
+      "files": [
+        "updated_date=2025-11-06\\part_0439.gz",
+        "updated_date=2025-11-06\\part_0440.gz",
+        "updated_date=2025-11-06\\part_0441.gz",
+        "updated_date=2025-11-06\\part_0442.gz",
+        "updated_date=2025-11-06\\part_0443.gz",
+        "updated_date=2025-11-06\\part_0444.gz",
+        "updated_date=2025-11-06\\part_0445.gz"
+      ],
+      "bytes": 2512579119,
+      "status": "complete"
+    },
+    {
+      "id": 99,
+      "files": [
+        "updated_date=2025-11-06\\part_0446.gz",
+        "updated_date=2025-11-06\\part_0447.gz",
+        "updated_date=2025-11-06\\part_0448.gz",
+        "updated_date=2025-11-06\\part_0449.gz",
+        "updated_date=2025-11-06\\part_0450.gz"
+      ],
+      "bytes": 2559629492,
+      "status": "complete"
+    },
+    {
+      "id": 100,
+      "files": [
+        "updated_date=2025-11-06\\part_0451.gz",
+        "updated_date=2025-11-06\\part_0452.gz",
+        "updated_date=2025-11-06\\part_0453.gz",
+        "updated_date=2025-11-06\\part_0454.gz",
+        "updated_date=2025-11-06\\part_0455.gz"
+      ],
+      "bytes": 2152556106,
+      "status": "complete"
+    },
+    {
+      "id": 101,
+      "files": [
+        "updated_date=2025-11-06\\part_0456.gz",
+        "updated_date=2025-11-06\\part_0457.gz",
+        "updated_date=2025-11-06\\part_0458.gz",
+        "updated_date=2025-11-06\\part_0459.gz",
+        "updated_date=2025-11-06\\part_0460.gz"
+      ],
+      "bytes": 2153715316,
+      "status": "complete"
+    },
+    {
+      "id": 102,
+      "files": [
+        "updated_date=2025-11-06\\part_0461.gz",
+        "updated_date=2025-11-06\\part_0462.gz",
+        "updated_date=2025-11-06\\part_0463.gz",
+        "updated_date=2025-11-06\\part_0464.gz",
+        "updated_date=2025-11-06\\part_0465.gz",
+        "updated_date=2025-11-06\\part_0466.gz"
+      ],
+      "bytes": 2524561218,
+      "status": "complete"
+    },
+    {
+      "id": 103,
+      "files": [
+        "updated_date=2025-11-06\\part_0467.gz",
+        "updated_date=2025-11-06\\part_0468.gz",
+        "updated_date=2025-11-06\\part_0469.gz",
+        "updated_date=2025-11-06\\part_0470.gz",
+        "updated_date=2025-11-06\\part_0471.gz",
+        "updated_date=2025-11-06\\part_0472.gz"
+      ],
+      "bytes": 2320226837,
+      "status": "complete"
+    },
+    {
+      "id": 104,
+      "files": [
+        "updated_date=2025-11-06\\part_0473.gz",
+        "updated_date=2025-11-06\\part_0474.gz",
+        "updated_date=2025-11-06\\part_0475.gz",
+        "updated_date=2025-11-06\\part_0476.gz",
+        "updated_date=2025-11-06\\part_0477.gz",
+        "updated_date=2025-11-06\\part_0478.gz"
+      ],
+      "bytes": 2318754287,
+      "status": "complete"
+    },
+    {
+      "id": 105,
+      "files": [
+        "updated_date=2025-11-06\\part_0479.gz",
+        "updated_date=2025-11-06\\part_0480.gz",
+        "updated_date=2025-11-06\\part_0481.gz",
+        "updated_date=2025-11-06\\part_0482.gz",
+        "updated_date=2025-11-06\\part_0483.gz",
+        "updated_date=2025-11-06\\part_0484.gz"
+      ],
+      "bytes": 2327246042,
+      "status": "complete"
+    },
+    {
+      "id": 106,
+      "files": [
+        "updated_date=2025-11-06\\part_0485.gz",
+        "updated_date=2025-11-06\\part_0486.gz",
+        "updated_date=2025-11-06\\part_0487.gz",
+        "updated_date=2025-11-06\\part_0488.gz",
+        "updated_date=2025-11-06\\part_0489.gz"
+      ],
+      "bytes": 2346046178,
+      "status": "complete"
+    },
+    {
+      "id": 107,
+      "files": [
+        "updated_date=2025-11-06\\part_0490.gz",
+        "updated_date=2025-11-06\\part_0491.gz",
+        "updated_date=2025-11-06\\part_0492.gz",
+        "updated_date=2025-11-06\\part_0493.gz",
+        "updated_date=2025-11-06\\part_0494.gz",
+        "updated_date=2025-11-06\\part_0495.gz"
+      ],
+      "bytes": 2535312344,
+      "status": "complete"
+    },
+    {
+      "id": 108,
+      "files": [
+        "updated_date=2025-11-06\\part_0496.gz",
+        "updated_date=2025-11-06\\part_0497.gz",
+        "updated_date=2025-11-06\\part_0498.gz",
+        "updated_date=2025-11-06\\part_0499.gz",
+        "updated_date=2025-11-06\\part_0500.gz",
+        "updated_date=2025-11-06\\part_0501.gz"
+      ],
+      "bytes": 2341051853,
+      "status": "complete"
+    },
+    {
+      "id": 109,
+      "files": [
+        "updated_date=2025-11-06\\part_0502.gz",
+        "updated_date=2025-11-06\\part_0503.gz",
+        "updated_date=2025-11-06\\part_0504.gz",
+        "updated_date=2025-11-06\\part_0505.gz",
+        "updated_date=2025-11-06\\part_0506.gz",
+        "updated_date=2025-11-06\\part_0507.gz",
+        "updated_date=2025-11-06\\part_0508.gz"
+      ],
+      "bytes": 2509319522,
+      "status": "complete"
+    },
+    {
+      "id": 110,
+      "files": [
+        "updated_date=2025-11-06\\part_0509.gz",
+        "updated_date=2025-11-06\\part_0510.gz",
+        "updated_date=2025-11-06\\part_0511.gz",
+        "updated_date=2025-11-06\\part_0512.gz",
+        "updated_date=2025-11-06\\part_0513.gz"
+      ],
+      "bytes": 2155759945,
+      "status": "complete"
+    },
+    {
+      "id": 111,
+      "files": [
+        "updated_date=2025-11-06\\part_0514.gz",
+        "updated_date=2025-11-06\\part_0515.gz",
+        "updated_date=2025-11-06\\part_0516.gz",
+        "updated_date=2025-11-06\\part_0517.gz",
+        "updated_date=2025-11-06\\part_0518.gz",
+        "updated_date=2025-11-06\\part_0519.gz"
+      ],
+      "bytes": 2492561280,
+      "status": "complete"
+    },
+    {
+      "id": 112,
+      "files": [
+        "updated_date=2025-11-06\\part_0520.gz",
+        "updated_date=2025-11-06\\part_0521.gz",
+        "updated_date=2025-11-06\\part_0522.gz",
+        "updated_date=2025-11-06\\part_0523.gz",
+        "updated_date=2025-11-06\\part_0524.gz"
+      ],
+      "bytes": 2165416188,
+      "status": "complete"
+    },
+    {
+      "id": 113,
+      "files": [
+        "updated_date=2025-11-06\\part_0525.gz",
+        "updated_date=2025-11-06\\part_0526.gz",
+        "updated_date=2025-11-06\\part_0527.gz",
+        "updated_date=2025-11-06\\part_0528.gz",
+        "updated_date=2025-11-06\\part_0529.gz",
+        "updated_date=2025-11-06\\part_0530.gz"
+      ],
+      "bytes": 2720096118,
+      "status": "complete"
+    },
+    {
+      "id": 114,
+      "files": [
+        "updated_date=2025-11-06\\part_0531.gz",
+        "updated_date=2025-11-06\\part_0532.gz",
+        "updated_date=2025-11-06\\part_0533.gz",
+        "updated_date=2025-11-06\\part_0534.gz",
+        "updated_date=2025-11-06\\part_0535.gz",
+        "updated_date=2025-11-06\\part_0536.gz",
+        "updated_date=2025-11-06\\part_0537.gz"
+      ],
+      "bytes": 2498451122,
+      "status": "complete"
+    },
+    {
+      "id": 115,
+      "files": [
+        "updated_date=2025-11-06\\part_0538.gz",
+        "updated_date=2025-11-06\\part_0539.gz",
+        "updated_date=2025-11-06\\part_0540.gz",
+        "updated_date=2025-11-06\\part_0541.gz",
+        "updated_date=2025-11-06\\part_0542.gz",
+        "updated_date=2025-11-06\\part_0543.gz"
+      ],
+      "bytes": 2319529513,
+      "status": "complete"
+    },
+    {
+      "id": 116,
+      "files": [
+        "updated_date=2025-11-06\\part_0544.gz",
+        "updated_date=2025-11-06\\part_0545.gz",
+        "updated_date=2025-11-06\\part_0546.gz",
+        "updated_date=2025-11-06\\part_0547.gz",
+        "updated_date=2025-11-06\\part_0548.gz",
+        "updated_date=2025-11-06\\part_0549.gz"
+      ],
+      "bytes": 2322808493,
+      "status": "complete"
+    },
+    {
+      "id": 117,
+      "files": [
+        "updated_date=2025-11-06\\part_0550.gz",
+        "updated_date=2025-11-06\\part_0551.gz",
+        "updated_date=2025-11-06\\part_0552.gz",
+        "updated_date=2025-11-06\\part_0553.gz",
+        "updated_date=2025-11-06\\part_0554.gz"
+      ],
+      "bytes": 2588293818,
+      "status": "complete"
+    },
+    {
+      "id": 118,
+      "files": [
+        "updated_date=2025-11-06\\part_0555.gz",
+        "updated_date=2025-11-06\\part_0556.gz",
+        "updated_date=2025-11-06\\part_0557.gz",
+        "updated_date=2025-11-06\\part_0558.gz",
+        "updated_date=2025-11-06\\part_0559.gz",
+        "updated_date=2025-11-06\\part_0560.gz"
+      ],
+      "bytes": 2494254383,
+      "status": "complete"
+    },
+    {
+      "id": 119,
+      "files": [
+        "updated_date=2025-11-06\\part_0561.gz",
+        "updated_date=2025-11-06\\part_0562.gz",
+        "updated_date=2025-11-06\\part_0563.gz",
+        "updated_date=2025-11-06\\part_0564.gz",
+        "updated_date=2025-11-06\\part_0565.gz"
+      ],
+      "bytes": 2566395511,
+      "status": "complete"
+    },
+    {
+      "id": 120,
+      "files": [
+        "updated_date=2025-11-06\\part_0566.gz",
+        "updated_date=2025-11-06\\part_0567.gz",
+        "updated_date=2025-11-06\\part_0568.gz",
+        "updated_date=2025-11-06\\part_0569.gz",
+        "updated_date=2025-11-06\\part_0570.gz",
+        "updated_date=2025-11-06\\part_0571.gz"
+      ],
+      "bytes": 2519004388,
+      "status": "complete"
+    },
+    {
+      "id": 121,
+      "files": [
+        "updated_date=2025-11-06\\part_0572.gz",
+        "updated_date=2025-11-06\\part_0573.gz",
+        "updated_date=2025-11-06\\part_0574.gz",
+        "updated_date=2025-11-06\\part_0575.gz",
+        "updated_date=2025-11-06\\part_0576.gz"
+      ],
+      "bytes": 2553187355,
+      "status": "complete"
+    },
+    {
+      "id": 122,
+      "files": [
+        "updated_date=2025-11-06\\part_0577.gz",
+        "updated_date=2025-11-06\\part_0578.gz",
+        "updated_date=2025-11-06\\part_0579.gz",
+        "updated_date=2025-11-06\\part_0580.gz",
+        "updated_date=2025-11-06\\part_0581.gz",
+        "updated_date=2025-11-06\\part_0582.gz"
+      ],
+      "bytes": 2519399908,
+      "status": "complete"
+    },
+    {
+      "id": 123,
+      "files": [
+        "updated_date=2025-11-06\\part_0583.gz",
+        "updated_date=2025-11-06\\part_0584.gz",
+        "updated_date=2025-11-06\\part_0585.gz",
+        "updated_date=2025-11-06\\part_0586.gz",
+        "updated_date=2025-11-06\\part_0587.gz",
+        "updated_date=2025-11-06\\part_0588.gz"
+      ],
+      "bytes": 2522710520,
+      "status": "complete"
+    },
+    {
+      "id": 124,
+      "files": [
+        "updated_date=2025-11-06\\part_0589.gz",
+        "updated_date=2025-11-06\\part_0590.gz",
+        "updated_date=2025-11-06\\part_0591.gz",
+        "updated_date=2025-11-06\\part_0592.gz",
+        "updated_date=2025-11-06\\part_0593.gz",
+        "updated_date=2025-11-06\\part_0594.gz",
+        "updated_date=2025-11-06\\part_0595.gz"
+      ],
+      "bytes": 2494650775,
+      "status": "complete"
+    },
+    {
+      "id": 125,
+      "files": [
+        "updated_date=2025-11-06\\part_0596.gz",
+        "updated_date=2025-11-06\\part_0597.gz",
+        "updated_date=2025-11-06\\part_0598.gz",
+        "updated_date=2025-11-06\\part_0599.gz",
+        "updated_date=2025-11-06\\part_0600.gz",
+        "updated_date=2025-11-06\\part_0601.gz"
+      ],
+      "bytes": 2312763854,
+      "status": "complete"
+    },
+    {
+      "id": 126,
+      "files": [
+        "updated_date=2025-11-06\\part_0602.gz",
+        "updated_date=2025-11-06\\part_0603.gz",
+        "updated_date=2025-11-06\\part_0604.gz",
+        "updated_date=2025-11-06\\part_0605.gz",
+        "updated_date=2025-11-06\\part_0606.gz",
+        "updated_date=2025-11-06\\part_0607.gz"
+      ],
+      "bytes": 2315327540,
+      "status": "complete"
+    },
+    {
+      "id": 127,
+      "files": [
+        "updated_date=2025-11-06\\part_0608.gz",
+        "updated_date=2025-11-06\\part_0609.gz",
+        "updated_date=2025-11-06\\part_0610.gz",
+        "updated_date=2025-11-06\\part_0611.gz",
+        "updated_date=2025-11-06\\part_0612.gz",
+        "updated_date=2025-11-06\\part_0613.gz"
+      ],
+      "bytes": 2538864631,
+      "status": "complete"
+    },
+    {
+      "id": 128,
+      "files": [
+        "updated_date=2025-11-06\\part_0614.gz",
+        "updated_date=2025-11-06\\part_0615.gz",
+        "updated_date=2025-11-06\\part_0616.gz",
+        "updated_date=2025-11-06\\part_0617.gz",
+        "updated_date=2025-11-06\\part_0618.gz",
+        "updated_date=2025-11-06\\part_0619.gz",
+        "updated_date=2025-11-06\\part_0620.gz"
+      ],
+      "bytes": 2487018471,
+      "status": "complete"
+    },
+    {
+      "id": 129,
+      "files": [
+        "updated_date=2025-11-06\\part_0621.gz",
+        "updated_date=2025-11-06\\part_0622.gz",
+        "updated_date=2025-11-06\\part_0623.gz",
+        "updated_date=2025-11-06\\part_0624.gz",
+        "updated_date=2025-11-06\\part_0625.gz",
+        "updated_date=2025-11-06\\part_0626.gz"
+      ],
+      "bytes": 2337495449,
+      "status": "complete"
+    },
+    {
+      "id": 130,
+      "files": [
+        "updated_date=2025-11-06\\part_0627.gz",
+        "updated_date=2025-11-06\\part_0628.gz",
+        "updated_date=2025-11-06\\part_0629.gz",
+        "updated_date=2025-11-06\\part_0630.gz",
+        "updated_date=2025-11-06\\part_0631.gz"
+      ],
+      "bytes": 2163264241,
+      "status": "complete"
+    },
+    {
+      "id": 131,
+      "files": [
+        "updated_date=2025-11-06\\part_0632.gz",
+        "updated_date=2025-11-06\\part_0633.gz",
+        "updated_date=2025-11-06\\part_0634.gz",
+        "updated_date=2025-11-06\\part_0635.gz",
+        "updated_date=2025-11-06\\part_0636.gz",
+        "updated_date=2025-11-06\\part_0637.gz"
+      ],
+      "bytes": 2502755296,
+      "status": "complete"
+    },
+    {
+      "id": 132,
+      "files": [
+        "updated_date=2025-11-06\\part_0638.gz",
+        "updated_date=2025-11-06\\part_0639.gz",
+        "updated_date=2025-11-06\\part_0640.gz",
+        "updated_date=2025-11-06\\part_0641.gz",
+        "updated_date=2025-11-06\\part_0642.gz"
+      ],
+      "bytes": 2345958465,
+      "status": "complete"
+    },
+    {
+      "id": 133,
+      "files": [
+        "updated_date=2025-11-06\\part_0643.gz",
+        "updated_date=2025-11-06\\part_0644.gz",
+        "updated_date=2025-11-06\\part_0645.gz",
+        "updated_date=2025-11-06\\part_0646.gz",
+        "updated_date=2025-11-06\\part_0647.gz"
+      ],
+      "bytes": 2388979677,
+      "status": "complete"
+    },
+    {
+      "id": 134,
+      "files": [
+        "updated_date=2025-11-06\\part_0648.gz",
+        "updated_date=2025-11-06\\part_0649.gz",
+        "updated_date=2025-11-06\\part_0650.gz",
+        "updated_date=2025-11-06\\part_0651.gz",
+        "updated_date=2025-11-06\\part_0652.gz",
+        "updated_date=2025-11-06\\part_0653.gz"
+      ],
+      "bytes": 2291722472,
+      "status": "complete"
+    },
+    {
+      "id": 135,
+      "files": [
+        "updated_date=2025-11-06\\part_0654.gz",
+        "updated_date=2025-11-06\\part_0655.gz",
+        "updated_date=2025-11-06\\part_0656.gz",
+        "updated_date=2025-11-06\\part_0657.gz",
+        "updated_date=2025-11-06\\part_0658.gz",
+        "updated_date=2025-11-06\\part_0659.gz"
+      ],
+      "bytes": 2328946899,
+      "status": "complete"
+    },
+    {
+      "id": 136,
+      "files": [
+        "updated_date=2025-11-06\\part_0660.gz",
+        "updated_date=2025-11-06\\part_0661.gz",
+        "updated_date=2025-11-06\\part_0662.gz",
+        "updated_date=2025-11-06\\part_0663.gz",
+        "updated_date=2025-11-06\\part_0664.gz",
+        "updated_date=2025-11-06\\part_0665.gz"
+      ],
+      "bytes": 2526475107,
+      "status": "complete"
+    },
+    {
+      "id": 137,
+      "files": [
+        "updated_date=2025-11-06\\part_0666.gz",
+        "updated_date=2025-11-06\\part_0667.gz",
+        "updated_date=2025-11-06\\part_0668.gz",
+        "updated_date=2025-11-06\\part_0669.gz",
+        "updated_date=2025-11-06\\part_0670.gz",
+        "updated_date=2025-11-06\\part_0671.gz",
+        "updated_date=2025-11-06\\part_0672.gz"
+      ],
+      "bytes": 2498410488,
+      "status": "complete"
+    },
+    {
+      "id": 138,
+      "files": [
+        "updated_date=2025-11-06\\part_0673.gz",
+        "updated_date=2025-11-06\\part_0674.gz",
+        "updated_date=2025-11-06\\part_0675.gz",
+        "updated_date=2025-11-06\\part_0676.gz",
+        "updated_date=2025-11-06\\part_0677.gz",
+        "updated_date=2025-11-06\\part_0678.gz"
+      ],
+      "bytes": 2326824580,
+      "status": "complete"
+    },
+    {
+      "id": 139,
+      "files": [
+        "updated_date=2025-11-06\\part_0679.gz",
+        "updated_date=2025-11-06\\part_0680.gz",
+        "updated_date=2025-11-06\\part_0681.gz",
+        "updated_date=2025-11-06\\part_0682.gz",
+        "updated_date=2025-11-06\\part_0683.gz",
+        "updated_date=2025-11-06\\part_0684.gz"
+      ],
+      "bytes": 2321063670,
+      "status": "complete"
+    },
+    {
+      "id": 140,
+      "files": [
+        "updated_date=2025-11-06\\part_0685.gz",
+        "updated_date=2025-11-06\\part_0686.gz",
+        "updated_date=2025-11-06\\part_0687.gz",
+        "updated_date=2025-11-06\\part_0688.gz",
+        "updated_date=2025-11-06\\part_0689.gz",
+        "updated_date=2025-11-06\\part_0690.gz"
+      ],
+      "bytes": 2324472356,
+      "status": "complete"
+    },
+    {
+      "id": 141,
+      "files": [
+        "updated_date=2025-11-06\\part_0691.gz",
+        "updated_date=2025-11-06\\part_0692.gz",
+        "updated_date=2025-11-06\\part_0693.gz",
+        "updated_date=2025-11-06\\part_0694.gz",
+        "updated_date=2025-11-06\\part_0695.gz",
+        "updated_date=2025-11-06\\part_0696.gz"
+      ],
+      "bytes": 2314881846,
+      "status": "complete"
+    },
+    {
+      "id": 142,
+      "files": [
+        "updated_date=2025-11-06\\part_0697.gz",
+        "updated_date=2025-11-06\\part_0698.gz",
+        "updated_date=2025-11-06\\part_0699.gz",
+        "updated_date=2025-11-06\\part_0700.gz",
+        "updated_date=2025-11-06\\part_0701.gz",
+        "updated_date=2025-11-06\\part_0702.gz"
+      ],
+      "bytes": 2319283332,
+      "status": "complete"
+    },
+    {
+      "id": 143,
+      "files": [
+        "updated_date=2025-11-06\\part_0703.gz",
+        "updated_date=2025-11-06\\part_0704.gz",
+        "updated_date=2025-11-06\\part_0705.gz",
+        "updated_date=2025-11-06\\part_0706.gz",
+        "updated_date=2025-11-06\\part_0707.gz",
+        "updated_date=2025-11-06\\part_0708.gz"
+      ],
+      "bytes": 2540622044,
+      "status": "complete"
+    },
+    {
+      "id": 144,
+      "files": [
+        "updated_date=2025-11-06\\part_0709.gz",
+        "updated_date=2025-11-06\\part_0710.gz",
+        "updated_date=2025-11-06\\part_0711.gz",
+        "updated_date=2025-11-06\\part_0712.gz",
+        "updated_date=2025-11-06\\part_0713.gz"
+      ],
+      "bytes": 2544548824,
+      "status": "complete"
+    },
+    {
+      "id": 145,
+      "files": [
+        "updated_date=2025-11-06\\part_0714.gz",
+        "updated_date=2025-11-06\\part_0715.gz",
+        "updated_date=2025-11-06\\part_0716.gz",
+        "updated_date=2025-11-06\\part_0717.gz",
+        "updated_date=2025-11-06\\part_0718.gz"
+      ],
+      "bytes": 2387991993,
+      "status": "complete"
+    },
+    {
+      "id": 146,
+      "files": [
+        "updated_date=2025-11-06\\part_0719.gz",
+        "updated_date=2025-11-06\\part_0720.gz",
+        "updated_date=2025-11-06\\part_0721.gz",
+        "updated_date=2025-11-06\\part_0722.gz",
+        "updated_date=2025-11-06\\part_0723.gz",
+        "updated_date=2025-11-06\\part_0724.gz"
+      ],
+      "bytes": 2286086737,
+      "status": "complete"
+    },
+    {
+      "id": 147,
+      "files": [
+        "updated_date=2025-11-06\\part_0725.gz",
+        "updated_date=2025-11-06\\part_0726.gz",
+        "updated_date=2025-11-06\\part_0727.gz",
+        "updated_date=2025-11-06\\part_0728.gz",
+        "updated_date=2025-11-06\\part_0729.gz"
+      ],
+      "bytes": 2350329564,
+      "status": "complete"
+    },
+    {
+      "id": 148,
+      "files": [
+        "updated_date=2025-11-06\\part_0730.gz",
+        "updated_date=2025-11-06\\part_0731.gz",
+        "updated_date=2025-11-06\\part_0732.gz",
+        "updated_date=2025-11-06\\part_0733.gz",
+        "updated_date=2025-11-06\\part_0734.gz",
+        "updated_date=2025-11-06\\part_0735.gz"
+      ],
+      "bytes": 2328542475,
+      "status": "complete"
+    },
+    {
+      "id": 149,
+      "files": [
+        "updated_date=2025-11-06\\part_0736.gz",
+        "updated_date=2025-11-06\\part_0737.gz",
+        "updated_date=2025-11-06\\part_0738.gz",
+        "updated_date=2025-11-06\\part_0739.gz",
+        "updated_date=2025-11-06\\part_0740.gz",
+        "updated_date=2025-11-06\\part_0741.gz"
+      ],
+      "bytes": 2532837638,
+      "status": "complete"
+    },
+    {
+      "id": 150,
+      "files": [
+        "updated_date=2025-11-06\\part_0742.gz",
+        "updated_date=2025-11-06\\part_0743.gz",
+        "updated_date=2025-11-06\\part_0744.gz",
+        "updated_date=2025-11-06\\part_0745.gz",
+        "updated_date=2025-11-06\\part_0746.gz",
+        "updated_date=2025-11-06\\part_0747.gz"
+      ],
+      "bytes": 2332500473,
+      "status": "complete"
+    },
+    {
+      "id": 151,
+      "files": [
+        "updated_date=2025-11-06\\part_0748.gz",
+        "updated_date=2025-11-06\\part_0749.gz",
+        "updated_date=2025-11-06\\part_0750.gz",
+        "updated_date=2025-11-06\\part_0751.gz",
+        "updated_date=2025-11-06\\part_0752.gz"
+      ],
+      "bytes": 2349826761,
+      "status": "complete"
+    },
+    {
+      "id": 152,
+      "files": [
+        "updated_date=2025-11-06\\part_0753.gz",
+        "updated_date=2025-11-06\\part_0754.gz",
+        "updated_date=2025-11-06\\part_0755.gz",
+        "updated_date=2025-11-06\\part_0756.gz",
+        "updated_date=2025-11-06\\part_0757.gz",
+        "updated_date=2025-11-06\\part_0758.gz",
+        "updated_date=2025-11-06\\part_0759.gz"
+      ],
+      "bytes": 2722804976,
+      "status": "complete"
+    },
+    {
+      "id": 153,
+      "files": [
+        "updated_date=2025-11-06\\part_0760.gz",
+        "updated_date=2025-11-06\\part_0761.gz",
+        "updated_date=2025-11-06\\part_0762.gz",
+        "updated_date=2025-11-06\\part_0763.gz",
+        "updated_date=2025-11-06\\part_0764.gz",
+        "updated_date=2025-11-06\\part_0765.gz"
+      ],
+      "bytes": 2496407008,
+      "status": "complete"
+    },
+    {
+      "id": 154,
+      "files": [
+        "updated_date=2025-11-06\\part_0766.gz",
+        "updated_date=2025-11-06\\part_0767.gz",
+        "updated_date=2025-11-06\\part_0768.gz",
+        "updated_date=2025-11-06\\part_0769.gz",
+        "updated_date=2025-11-06\\part_0770.gz",
+        "updated_date=2025-11-06\\part_0771.gz"
+      ],
+      "bytes": 2319400025,
+      "status": "complete"
+    },
+    {
+      "id": 155,
+      "files": [
+        "updated_date=2025-11-06\\part_0772.gz",
+        "updated_date=2025-11-06\\part_0773.gz",
+        "updated_date=2025-11-06\\part_0774.gz",
+        "updated_date=2025-11-06\\part_0775.gz",
+        "updated_date=2025-11-06\\part_0776.gz"
+      ],
+      "bytes": 2334236650,
+      "status": "complete"
+    },
+    {
+      "id": 156,
+      "files": [
+        "updated_date=2025-11-06\\part_0777.gz",
+        "updated_date=2025-11-06\\part_0778.gz",
+        "updated_date=2025-11-06\\part_0779.gz",
+        "updated_date=2025-11-06\\part_0780.gz",
+        "updated_date=2025-11-06\\part_0781.gz",
+        "updated_date=2025-11-06\\part_0782.gz"
+      ],
+      "bytes": 2314452822,
+      "status": "complete"
+    },
+    {
+      "id": 157,
+      "files": [
+        "updated_date=2025-11-06\\part_0783.gz",
+        "updated_date=2025-11-06\\part_0784.gz",
+        "updated_date=2025-11-06\\part_0785.gz",
+        "updated_date=2025-11-06\\part_0786.gz",
+        "updated_date=2025-11-06\\part_0787.gz",
+        "updated_date=2025-11-06\\part_0788.gz"
+      ],
+      "bytes": 2551016269,
+      "status": "complete"
+    },
+    {
+      "id": 158,
+      "files": [
+        "updated_date=2025-11-06\\part_0789.gz",
+        "updated_date=2025-11-06\\part_0790.gz",
+        "updated_date=2025-11-06\\part_0791.gz",
+        "updated_date=2025-11-06\\part_0792.gz",
+        "updated_date=2025-11-06\\part_0793.gz",
+        "updated_date=2025-11-06\\part_0794.gz",
+        "updated_date=2025-11-06\\part_0795.gz"
+      ],
+      "bytes": 2497796933,
+      "status": "complete"
+    },
+    {
+      "id": 159,
+      "files": [
+        "updated_date=2025-11-06\\part_0796.gz",
+        "updated_date=2025-11-06\\part_0797.gz",
+        "updated_date=2025-11-06\\part_0798.gz",
+        "updated_date=2025-11-06\\part_0799.gz",
+        "updated_date=2025-11-06\\part_0800.gz",
+        "updated_date=2025-11-06\\part_0801.gz"
+      ],
+      "bytes": 2331499627,
+      "status": "complete"
+    },
+    {
+      "id": 160,
+      "files": [
+        "updated_date=2025-11-06\\part_0802.gz",
+        "updated_date=2025-11-06\\part_0803.gz",
+        "updated_date=2025-11-06\\part_0804.gz",
+        "updated_date=2025-11-06\\part_0805.gz",
+        "updated_date=2025-11-06\\part_0806.gz",
+        "updated_date=2025-11-06\\part_0807.gz"
+      ],
+      "bytes": 2322910579,
+      "status": "complete"
+    },
+    {
+      "id": 161,
+      "files": [
+        "updated_date=2025-11-06\\part_0808.gz",
+        "updated_date=2025-11-06\\part_0809.gz",
+        "updated_date=2025-11-06\\part_0810.gz",
+        "updated_date=2025-11-06\\part_0811.gz",
+        "updated_date=2025-11-06\\part_0812.gz",
+        "updated_date=2025-11-06\\part_0813.gz"
+      ],
+      "bytes": 2322122216,
+      "status": "complete"
+    },
+    {
+      "id": 162,
+      "files": [
+        "updated_date=2025-11-06\\part_0814.gz",
+        "updated_date=2025-11-06\\part_0815.gz",
+        "updated_date=2025-11-06\\part_0816.gz",
+        "updated_date=2025-11-06\\part_0817.gz",
+        "updated_date=2025-11-06\\part_0818.gz",
+        "updated_date=2025-11-06\\part_0819.gz"
+      ],
+      "bytes": 2552548780,
+      "status": "complete"
+    },
+    {
+      "id": 163,
+      "files": [
+        "updated_date=2025-11-06\\part_0820.gz",
+        "updated_date=2025-11-06\\part_0821.gz",
+        "updated_date=2025-11-06\\part_0822.gz",
+        "updated_date=2025-11-06\\part_0823.gz"
+      ],
+      "bytes": 2365859588,
+      "status": "complete"
+    },
+    {
+      "id": 164,
+      "files": [
+        "updated_date=2025-11-06\\part_0824.gz",
+        "updated_date=2025-11-06\\part_0825.gz",
+        "updated_date=2025-11-06\\part_0826.gz",
+        "updated_date=2025-11-06\\part_0827.gz",
+        "updated_date=2025-11-06\\part_0828.gz",
+        "updated_date=2025-11-06\\part_0829.gz"
+      ],
+      "bytes": 2502159168,
+      "status": "complete"
+    },
+    {
+      "id": 165,
+      "files": [
+        "updated_date=2025-11-06\\part_0830.gz",
+        "updated_date=2025-11-06\\part_0831.gz",
+        "updated_date=2025-11-06\\part_0832.gz",
+        "updated_date=2025-11-06\\part_0833.gz",
+        "updated_date=2025-11-06\\part_0834.gz"
+      ],
+      "bytes": 2349817360,
+      "status": "complete"
+    },
+    {
+      "id": 166,
+      "files": [
+        "updated_date=2025-11-06\\part_0835.gz",
+        "updated_date=2025-11-06\\part_0836.gz",
+        "updated_date=2025-11-06\\part_0837.gz",
+        "updated_date=2025-11-06\\part_0838.gz",
+        "updated_date=2025-11-06\\part_0839.gz"
+      ],
+      "bytes": 2340642870,
+      "status": "complete"
+    },
+    {
+      "id": 167,
+      "files": [
+        "updated_date=2025-11-06\\part_0840.gz",
+        "updated_date=2025-11-06\\part_0841.gz",
+        "updated_date=2025-11-06\\part_0842.gz",
+        "updated_date=2025-11-06\\part_0843.gz",
+        "updated_date=2025-11-06\\part_0844.gz",
+        "updated_date=2025-11-06\\part_0845.gz"
+      ],
+      "bytes": 2325512455,
+      "status": "complete"
+    },
+    {
+      "id": 168,
+      "files": [
+        "updated_date=2025-11-06\\part_0846.gz",
+        "updated_date=2025-11-06\\part_0847.gz",
+        "updated_date=2025-11-06\\part_0848.gz",
+        "updated_date=2025-11-06\\part_0849.gz",
+        "updated_date=2025-11-06\\part_0850.gz",
+        "updated_date=2025-11-06\\part_0851.gz"
+      ],
+      "bytes": 2321012809,
+      "status": "complete"
+    },
+    {
+      "id": 169,
+      "files": [
+        "updated_date=2025-11-06\\part_0852.gz",
+        "updated_date=2025-11-06\\part_0853.gz",
+        "updated_date=2025-11-06\\part_0854.gz",
+        "updated_date=2025-11-06\\part_0855.gz",
+        "updated_date=2025-11-06\\part_0856.gz",
+        "updated_date=2025-11-06\\part_0857.gz"
+      ],
+      "bytes": 2539897410,
+      "status": "complete"
+    },
+    {
+      "id": 170,
+      "files": [
+        "updated_date=2025-11-06\\part_0858.gz",
+        "updated_date=2025-11-06\\part_0859.gz",
+        "updated_date=2025-11-06\\part_0860.gz",
+        "updated_date=2025-11-06\\part_0861.gz",
+        "updated_date=2025-11-06\\part_0862.gz",
+        "updated_date=2025-11-06\\part_0863.gz"
+      ],
+      "bytes": 2518021801,
+      "status": "complete"
+    },
+    {
+      "id": 171,
+      "files": [
+        "updated_date=2025-11-06\\part_0864.gz",
+        "updated_date=2025-11-06\\part_0865.gz",
+        "updated_date=2025-11-06\\part_0866.gz",
+        "updated_date=2025-11-06\\part_0867.gz",
+        "updated_date=2025-11-06\\part_0868.gz",
+        "updated_date=2025-11-06\\part_0869.gz"
+      ],
+      "bytes": 2326929529,
+      "status": "complete"
+    },
+    {
+      "id": 172,
+      "files": [
+        "updated_date=2025-11-06\\part_0870.gz",
+        "updated_date=2025-11-06\\part_0871.gz",
+        "updated_date=2025-11-06\\part_0872.gz",
+        "updated_date=2025-11-06\\part_0873.gz"
+      ],
+      "bytes": 2207777087,
+      "status": "complete"
+    },
+    {
+      "id": 173,
+      "files": [
+        "updated_date=2025-11-06\\part_0874.gz",
+        "updated_date=2025-11-06\\part_0875.gz",
+        "updated_date=2025-11-06\\part_0876.gz",
+        "updated_date=2025-11-06\\part_0877.gz",
+        "updated_date=2025-11-06\\part_0878.gz",
+        "updated_date=2025-11-06\\part_0879.gz",
+        "updated_date=2025-11-06\\part_0880.gz"
+      ],
+      "bytes": 2483287182,
+      "status": "complete"
+    },
+    {
+      "id": 174,
+      "files": [
+        "updated_date=2025-11-06\\part_0881.gz",
+        "updated_date=2025-11-06\\part_0882.gz",
+        "updated_date=2025-11-06\\part_0883.gz",
+        "updated_date=2025-11-06\\part_0884.gz",
+        "updated_date=2025-11-06\\part_0885.gz",
+        "updated_date=2025-11-06\\part_0886.gz"
+      ],
+      "bytes": 2321885586,
+      "status": "complete"
+    },
+    {
+      "id": 175,
+      "files": [
+        "updated_date=2025-11-06\\part_0887.gz",
+        "updated_date=2025-11-06\\part_0888.gz",
+        "updated_date=2025-11-06\\part_0889.gz",
+        "updated_date=2025-11-06\\part_0890.gz",
+        "updated_date=2025-11-06\\part_0891.gz",
+        "updated_date=2025-11-06\\part_0892.gz"
+      ],
+      "bytes": 2319929934,
+      "status": "complete"
+    },
+    {
+      "id": 176,
+      "files": [
+        "updated_date=2025-11-06\\part_0893.gz",
+        "updated_date=2025-11-06\\part_0894.gz",
+        "updated_date=2025-11-06\\part_0895.gz",
+        "updated_date=2025-11-06\\part_0896.gz",
+        "updated_date=2025-11-06\\part_0897.gz",
+        "updated_date=2025-11-06\\part_0898.gz"
+      ],
+      "bytes": 2333960491,
+      "status": "complete"
+    },
+    {
+      "id": 177,
+      "files": [
+        "updated_date=2025-11-06\\part_0899.gz",
+        "updated_date=2025-11-06\\part_0900.gz",
+        "updated_date=2025-11-06\\part_0901.gz",
+        "updated_date=2025-11-06\\part_0902.gz",
+        "updated_date=2025-11-06\\part_0903.gz",
+        "updated_date=2025-11-06\\part_0904.gz"
+      ],
+      "bytes": 2341173121,
+      "status": "complete"
+    },
+    {
+      "id": 178,
+      "files": [
+        "updated_date=2025-11-06\\part_0905.gz",
+        "updated_date=2025-11-06\\part_0906.gz",
+        "updated_date=2025-11-06\\part_0907.gz",
+        "updated_date=2025-11-06\\part_0908.gz",
+        "updated_date=2025-11-06\\part_0909.gz"
+      ],
+      "bytes": 2342202726,
+      "status": "complete"
+    },
+    {
+      "id": 179,
+      "files": [
+        "updated_date=2025-11-06\\part_0910.gz",
+        "updated_date=2025-11-06\\part_0911.gz",
+        "updated_date=2025-11-06\\part_0912.gz",
+        "updated_date=2025-11-06\\part_0913.gz",
+        "updated_date=2025-11-06\\part_0914.gz"
+      ],
+      "bytes": 2343019449,
+      "status": "complete"
+    },
+    {
+      "id": 180,
+      "files": [
+        "updated_date=2025-11-06\\part_0915.gz",
+        "updated_date=2025-11-06\\part_0916.gz",
+        "updated_date=2025-11-06\\part_0917.gz",
+        "updated_date=2025-11-06\\part_0918.gz",
+        "updated_date=2025-11-06\\part_0919.gz",
+        "updated_date=2025-11-06\\part_0920.gz"
+      ],
+      "bytes": 2324591453,
+      "status": "complete"
+    },
+    {
+      "id": 181,
+      "files": [
+        "updated_date=2025-11-06\\part_0921.gz",
+        "updated_date=2025-11-06\\part_0922.gz",
+        "updated_date=2025-11-06\\part_0923.gz",
+        "updated_date=2025-11-06\\part_0924.gz",
+        "updated_date=2025-11-06\\part_0925.gz",
+        "updated_date=2025-11-06\\part_0926.gz"
+      ],
+      "bytes": 2317494152,
+      "status": "complete"
+    },
+    {
+      "id": 182,
+      "files": [
+        "updated_date=2025-11-06\\part_0927.gz",
+        "updated_date=2025-11-06\\part_0928.gz",
+        "updated_date=2025-11-06\\part_0929.gz",
+        "updated_date=2025-11-06\\part_0930.gz",
+        "updated_date=2025-11-06\\part_0931.gz",
+        "updated_date=2025-11-06\\part_0932.gz"
+      ],
+      "bytes": 2320399501,
+      "status": "complete"
+    },
+    {
+      "id": 183,
+      "files": [
+        "updated_date=2025-11-06\\part_0933.gz",
+        "updated_date=2025-11-06\\part_0934.gz",
+        "updated_date=2025-11-06\\part_0935.gz",
+        "updated_date=2025-11-06\\part_0936.gz",
+        "updated_date=2025-11-06\\part_0937.gz"
+      ],
+      "bytes": 2152000982,
+      "status": "complete"
+    },
+    {
+      "id": 184,
+      "files": [
+        "updated_date=2025-11-06\\part_0938.gz",
+        "updated_date=2025-11-06\\part_0939.gz",
+        "updated_date=2025-11-06\\part_0940.gz",
+        "updated_date=2025-11-06\\part_0941.gz",
+        "updated_date=2025-11-06\\part_0942.gz",
+        "updated_date=2025-11-06\\part_0943.gz",
+        "updated_date=2025-11-06\\part_0944.gz"
+      ],
+      "bytes": 2520018803,
+      "status": "complete"
+    },
+    {
+      "id": 185,
+      "files": [
+        "updated_date=2025-11-06\\part_0945.gz",
+        "updated_date=2025-11-06\\part_0946.gz",
+        "updated_date=2025-11-06\\part_0947.gz",
+        "updated_date=2025-11-06\\part_0948.gz",
+        "updated_date=2025-11-06\\part_0949.gz"
+      ],
+      "bytes": 2152243214,
+      "status": "complete"
+    },
+    {
+      "id": 186,
+      "files": [
+        "updated_date=2025-11-06\\part_0950.gz",
+        "updated_date=2025-11-06\\part_0951.gz",
+        "updated_date=2025-11-06\\part_0952.gz",
+        "updated_date=2025-11-06\\part_0953.gz",
+        "updated_date=2025-11-06\\part_0954.gz",
+        "updated_date=2025-11-06\\part_0955.gz",
+        "updated_date=2025-11-06\\part_0956.gz"
+      ],
+      "bytes": 2499199877,
+      "status": "complete"
+    },
+    {
+      "id": 187,
+      "files": [
+        "updated_date=2025-11-06\\part_0957.gz",
+        "updated_date=2025-11-06\\part_0958.gz",
+        "updated_date=2025-11-06\\part_0959.gz",
+        "updated_date=2025-11-06\\part_0960.gz",
+        "updated_date=2025-11-06\\part_0961.gz",
+        "updated_date=2025-11-06\\part_0962.gz"
+      ],
+      "bytes": 2321993584,
+      "status": "complete"
+    },
+    {
+      "id": 188,
+      "files": [
+        "updated_date=2025-11-06\\part_0963.gz",
+        "updated_date=2025-11-06\\part_0964.gz",
+        "updated_date=2025-11-06\\part_0965.gz",
+        "updated_date=2025-11-06\\part_0966.gz",
+        "updated_date=2025-11-06\\part_0967.gz",
+        "updated_date=2025-11-06\\part_0968.gz"
+      ],
+      "bytes": 2322801223,
+      "status": "complete"
+    },
+    {
+      "id": 189,
+      "files": [
+        "updated_date=2025-11-06\\part_0969.gz",
+        "updated_date=2025-11-06\\part_0970.gz",
+        "updated_date=2025-11-06\\part_0971.gz",
+        "updated_date=2025-11-06\\part_0972.gz",
+        "updated_date=2025-11-06\\part_0973.gz",
+        "updated_date=2025-11-06\\part_0974.gz"
+      ],
+      "bytes": 2326258461,
+      "status": "complete"
+    },
+    {
+      "id": 190,
+      "files": [
+        "updated_date=2025-11-06\\part_0975.gz",
+        "updated_date=2025-11-06\\part_0976.gz",
+        "updated_date=2025-11-06\\part_0977.gz",
+        "updated_date=2025-11-06\\part_0978.gz",
+        "updated_date=2025-11-06\\part_0979.gz",
+        "updated_date=2025-11-06\\part_0980.gz"
+      ],
+      "bytes": 2321343923,
+      "status": "complete"
+    },
+    {
+      "id": 191,
+      "files": [
+        "updated_date=2025-11-06\\part_0981.gz",
+        "updated_date=2025-11-06\\part_0982.gz",
+        "updated_date=2025-11-06\\part_0983.gz",
+        "updated_date=2025-11-06\\part_0984.gz",
+        "updated_date=2025-11-06\\part_0985.gz",
+        "updated_date=2025-11-06\\part_0986.gz"
+      ],
+      "bytes": 2536105768,
+      "status": "complete"
+    },
+    {
+      "id": 192,
+      "files": [
+        "updated_date=2025-11-06\\part_0987.gz",
+        "updated_date=2025-11-06\\part_0988.gz",
+        "updated_date=2025-11-06\\part_0989.gz",
+        "updated_date=2025-11-06\\part_0990.gz",
+        "updated_date=2025-11-06\\part_0991.gz",
+        "updated_date=2025-11-06\\part_0992.gz",
+        "updated_date=2025-11-06\\part_0993.gz"
+      ],
+      "bytes": 2498599724,
+      "status": "complete"
+    },
+    {
+      "id": 193,
+      "files": [
+        "updated_date=2025-11-06\\part_0994.gz",
+        "updated_date=2025-11-06\\part_0995.gz",
+        "updated_date=2025-11-06\\part_0996.gz",
+        "updated_date=2025-11-06\\part_0997.gz",
+        "updated_date=2025-11-06\\part_0998.gz",
+        "updated_date=2025-11-06\\part_0999.gz"
+      ],
+      "bytes": 2334218678,
+      "status": "complete"
+    },
+    {
+      "id": 194,
+      "files": [
+        "updated_date=2025-11-06\\part_1000.gz",
+        "updated_date=2025-11-06\\part_1001.gz",
+        "updated_date=2025-11-06\\part_1002.gz",
+        "updated_date=2025-11-06\\part_1003.gz",
+        "updated_date=2025-11-06\\part_1004.gz",
+        "updated_date=2025-11-06\\part_1005.gz"
+      ],
+      "bytes": 2321592356,
+      "status": "complete"
+    },
+    {
+      "id": 195,
+      "files": [
+        "updated_date=2025-11-06\\part_1006.gz",
+        "updated_date=2025-11-06\\part_1007.gz",
+        "updated_date=2025-11-06\\part_1008.gz",
+        "updated_date=2025-11-06\\part_1009.gz",
+        "updated_date=2025-11-06\\part_1010.gz",
+        "updated_date=2025-11-06\\part_1011.gz"
+      ],
+      "bytes": 2340730885,
+      "status": "complete"
+    },
+    {
+      "id": 196,
+      "files": [
+        "updated_date=2025-11-06\\part_1012.gz",
+        "updated_date=2025-11-06\\part_1013.gz",
+        "updated_date=2025-11-06\\part_1014.gz",
+        "updated_date=2025-11-06\\part_1015.gz",
+        "updated_date=2025-11-06\\part_1016.gz"
+      ],
+      "bytes": 2147967726,
+      "status": "complete"
+    },
+    {
+      "id": 197,
+      "files": [
+        "updated_date=2025-11-06\\part_1017.gz",
+        "updated_date=2025-11-06\\part_1018.gz",
+        "updated_date=2025-11-06\\part_1019.gz",
+        "updated_date=2025-11-06\\part_1020.gz",
+        "updated_date=2025-11-06\\part_1021.gz",
+        "updated_date=2025-11-06\\part_1022.gz"
+      ],
+      "bytes": 2353602814,
+      "status": "complete"
+    },
+    {
+      "id": 198,
+      "files": [
+        "updated_date=2025-11-06\\part_1023.gz",
+        "updated_date=2025-11-06\\part_1024.gz",
+        "updated_date=2025-11-06\\part_1025.gz",
+        "updated_date=2025-11-06\\part_1026.gz",
+        "updated_date=2025-11-06\\part_1027.gz"
+      ],
+      "bytes": 2728775186,
+      "status": "complete"
+    },
+    {
+      "id": 199,
+      "files": [
+        "updated_date=2025-11-06\\part_1028.gz",
+        "updated_date=2025-11-06\\part_1029.gz",
+        "updated_date=2025-11-06\\part_1030.gz",
+        "updated_date=2025-11-06\\part_1031.gz",
+        "updated_date=2025-11-06\\part_1032.gz",
+        "updated_date=2025-11-06\\part_1033.gz"
+      ],
+      "bytes": 2514950716,
+      "status": "complete"
+    },
+    {
+      "id": 200,
+      "files": [
+        "updated_date=2025-11-06\\part_1034.gz",
+        "updated_date=2025-11-06\\part_1035.gz",
+        "updated_date=2025-11-06\\part_1036.gz",
+        "updated_date=2025-11-06\\part_1037.gz",
+        "updated_date=2025-11-06\\part_1038.gz",
+        "updated_date=2025-11-06\\part_1039.gz"
+      ],
+      "bytes": 2323952220,
+      "status": "complete"
+    },
+    {
+      "id": 201,
+      "files": [
+        "updated_date=2025-11-06\\part_1040.gz",
+        "updated_date=2025-11-06\\part_1041.gz",
+        "updated_date=2025-11-06\\part_1042.gz",
+        "updated_date=2025-11-06\\part_1043.gz",
+        "updated_date=2025-11-06\\part_1044.gz",
+        "updated_date=2025-11-06\\part_1045.gz"
+      ],
+      "bytes": 2527332702,
+      "status": "complete"
+    },
+    {
+      "id": 202,
+      "files": [
+        "updated_date=2025-11-06\\part_1046.gz",
+        "updated_date=2025-11-06\\part_1047.gz",
+        "updated_date=2025-11-06\\part_1048.gz",
+        "updated_date=2025-11-06\\part_1049.gz",
+        "updated_date=2025-11-06\\part_1050.gz"
+      ],
+      "bytes": 2349339405,
+      "status": "complete"
+    },
+    {
+      "id": 203,
+      "files": [
+        "updated_date=2025-11-06\\part_1051.gz",
+        "updated_date=2025-11-06\\part_1052.gz",
+        "updated_date=2025-11-06\\part_1053.gz",
+        "updated_date=2025-11-06\\part_1054.gz",
+        "updated_date=2025-11-06\\part_1055.gz",
+        "updated_date=2025-11-06\\part_1056.gz",
+        "updated_date=2025-11-06\\part_1057.gz"
+      ],
+      "bytes": 2513543291,
+      "status": "complete"
+    },
+    {
+      "id": 204,
+      "files": [
+        "updated_date=2025-11-06\\part_1058.gz",
+        "updated_date=2025-11-06\\part_1059.gz",
+        "updated_date=2025-11-06\\part_1060.gz",
+        "updated_date=2025-11-06\\part_1061.gz",
+        "updated_date=2025-11-06\\part_1062.gz",
+        "updated_date=2025-11-06\\part_1063.gz"
+      ],
+      "bytes": 2322378936,
+      "status": "complete"
+    },
+    {
+      "id": 205,
+      "files": [
+        "updated_date=2025-11-06\\part_1064.gz",
+        "updated_date=2025-11-06\\part_1065.gz",
+        "updated_date=2025-11-06\\part_1066.gz",
+        "updated_date=2025-11-06\\part_1067.gz",
+        "updated_date=2025-11-06\\part_1068.gz"
+      ],
+      "bytes": 2353216620,
+      "status": "complete"
+    },
+    {
+      "id": 206,
+      "files": [
+        "updated_date=2025-11-06\\part_1069.gz",
+        "updated_date=2025-11-06\\part_1070.gz",
+        "updated_date=2025-11-06\\part_1071.gz",
+        "updated_date=2025-11-06\\part_1072.gz",
+        "updated_date=2025-11-06\\part_1073.gz",
+        "updated_date=2025-11-06\\part_1074.gz"
+      ],
+      "bytes": 2312970535,
+      "status": "complete"
+    },
+    {
+      "id": 207,
+      "files": [
+        "updated_date=2025-11-06\\part_1075.gz",
+        "updated_date=2025-11-06\\part_1076.gz",
+        "updated_date=2025-11-06\\part_1077.gz",
+        "updated_date=2025-11-06\\part_1078.gz",
+        "updated_date=2025-11-06\\part_1079.gz"
+      ],
+      "bytes": 2351857774,
+      "status": "complete"
+    },
+    {
+      "id": 208,
+      "files": [
+        "updated_date=2025-11-06\\part_1080.gz",
+        "updated_date=2025-11-06\\part_1081.gz",
+        "updated_date=2025-11-06\\part_1082.gz",
+        "updated_date=2025-11-06\\part_1083.gz",
+        "updated_date=2025-11-06\\part_1084.gz",
+        "updated_date=2025-11-06\\part_1085.gz"
+      ],
+      "bytes": 2310645680,
+      "status": "complete"
+    },
+    {
+      "id": 209,
+      "files": [
+        "updated_date=2025-11-06\\part_1086.gz",
+        "updated_date=2025-11-06\\part_1087.gz",
+        "updated_date=2025-11-06\\part_1088.gz",
+        "updated_date=2025-11-06\\part_1089.gz",
+        "updated_date=2025-11-06\\part_1090.gz",
+        "updated_date=2025-11-06\\part_1091.gz"
+      ],
+      "bytes": 2328098403,
+      "status": "complete"
+    },
+    {
+      "id": 210,
+      "files": [
+        "updated_date=2025-11-06\\part_1092.gz",
+        "updated_date=2025-11-06\\part_1093.gz",
+        "updated_date=2025-11-06\\part_1094.gz",
+        "updated_date=2025-11-06\\part_1095.gz",
+        "updated_date=2025-11-06\\part_1096.gz",
+        "updated_date=2025-11-06\\part_1097.gz"
+      ],
+      "bytes": 2346864556,
+      "status": "complete"
+    },
+    {
+      "id": 211,
+      "files": [
+        "updated_date=2025-11-06\\part_1098.gz",
+        "updated_date=2025-11-06\\part_1099.gz",
+        "updated_date=2025-11-06\\part_1100.gz",
+        "updated_date=2025-11-06\\part_1101.gz",
+        "updated_date=2025-11-06\\part_1102.gz"
+      ],
+      "bytes": 2350476671,
+      "status": "complete"
+    },
+    {
+      "id": 212,
+      "files": [
+        "updated_date=2025-11-06\\part_1103.gz",
+        "updated_date=2025-11-06\\part_1104.gz",
+        "updated_date=2025-11-06\\part_1105.gz",
+        "updated_date=2025-11-06\\part_1106.gz",
+        "updated_date=2025-11-06\\part_1107.gz"
+      ],
+      "bytes": 2158162047,
+      "status": "complete"
+    },
+    {
+      "id": 213,
+      "files": [
+        "updated_date=2025-11-06\\part_1108.gz",
+        "updated_date=2025-11-06\\part_1109.gz",
+        "updated_date=2025-11-06\\part_1110.gz",
+        "updated_date=2025-11-06\\part_1111.gz",
+        "updated_date=2025-11-06\\part_1112.gz"
+      ],
+      "bytes": 2334364766,
+      "status": "complete"
+    },
+    {
+      "id": 214,
+      "files": [
+        "updated_date=2025-11-06\\part_1113.gz",
+        "updated_date=2025-11-06\\part_1114.gz",
+        "updated_date=2025-11-06\\part_1115.gz",
+        "updated_date=2025-11-06\\part_1116.gz",
+        "updated_date=2025-11-06\\part_1117.gz",
+        "updated_date=2025-11-06\\part_1118.gz"
+      ],
+      "bytes": 2525547183,
+      "status": "complete"
+    },
+    {
+      "id": 215,
+      "files": [
+        "updated_date=2025-11-06\\part_1119.gz",
+        "updated_date=2025-11-06\\part_1120.gz",
+        "updated_date=2025-11-06\\part_1121.gz",
+        "updated_date=2025-11-06\\part_1122.gz",
+        "updated_date=2025-11-06\\part_1123.gz",
+        "updated_date=2025-11-06\\part_1124.gz"
+      ],
+      "bytes": 2321634272,
+      "status": "complete"
+    },
+    {
+      "id": 216,
+      "files": [
+        "updated_date=2025-11-06\\part_1125.gz",
+        "updated_date=2025-11-06\\part_1126.gz",
+        "updated_date=2025-11-06\\part_1127.gz",
+        "updated_date=2025-11-06\\part_1128.gz",
+        "updated_date=2025-11-06\\part_1129.gz",
+        "updated_date=2025-11-06\\part_1130.gz"
+      ],
+      "bytes": 2320077287,
+      "status": "complete"
+    },
+    {
+      "id": 217,
+      "files": [
+        "updated_date=2025-11-06\\part_1131.gz",
+        "updated_date=2025-11-06\\part_1132.gz",
+        "updated_date=2025-11-06\\part_1133.gz",
+        "updated_date=2025-11-06\\part_1134.gz",
+        "updated_date=2025-11-06\\part_1135.gz",
+        "updated_date=2025-11-06\\part_1136.gz"
+      ],
+      "bytes": 2313576255,
+      "status": "complete"
+    },
+    {
+      "id": 218,
+      "files": [
+        "updated_date=2025-11-06\\part_1137.gz",
+        "updated_date=2025-11-06\\part_1138.gz",
+        "updated_date=2025-11-06\\part_1139.gz",
+        "updated_date=2025-11-06\\part_1140.gz",
+        "updated_date=2025-11-06\\part_1141.gz",
+        "updated_date=2025-11-06\\part_1142.gz"
+      ],
+      "bytes": 2321472759,
+      "status": "complete"
+    },
+    {
+      "id": 219,
+      "files": [
+        "updated_date=2025-11-06\\part_1143.gz",
+        "updated_date=2025-11-06\\part_1144.gz",
+        "updated_date=2025-11-06\\part_1145.gz",
+        "updated_date=2025-11-06\\part_1146.gz",
+        "updated_date=2025-11-06\\part_1147.gz"
+      ],
+      "bytes": 2336711850,
+      "status": "complete"
+    },
+    {
+      "id": 220,
+      "files": [
+        "updated_date=2025-11-06\\part_1148.gz",
+        "updated_date=2025-11-06\\part_1149.gz",
+        "updated_date=2025-11-06\\part_1150.gz",
+        "updated_date=2025-11-06\\part_1151.gz",
+        "updated_date=2025-11-06\\part_1152.gz",
+        "updated_date=2025-11-06\\part_1153.gz"
+      ],
+      "bytes": 2528884971,
+      "status": "complete"
+    },
+    {
+      "id": 221,
+      "files": [
+        "updated_date=2025-11-06\\part_1154.gz",
+        "updated_date=2025-11-06\\part_1155.gz",
+        "updated_date=2025-11-06\\part_1156.gz",
+        "updated_date=2025-11-06\\part_1157.gz",
+        "updated_date=2025-11-06\\part_1158.gz",
+        "updated_date=2025-11-06\\part_1159.gz",
+        "updated_date=2025-11-06\\part_1160.gz"
+      ],
+      "bytes": 2498013917,
+      "status": "complete"
+    },
+    {
+      "id": 222,
+      "files": [
+        "updated_date=2025-11-06\\part_1161.gz",
+        "updated_date=2025-11-06\\part_1162.gz",
+        "updated_date=2025-11-06\\part_1163.gz",
+        "updated_date=2025-11-06\\part_1164.gz",
+        "updated_date=2025-11-06\\part_1165.gz",
+        "updated_date=2025-11-06\\part_1166.gz"
+      ],
+      "bytes": 2314591173,
+      "status": "complete"
+    },
+    {
+      "id": 223,
+      "files": [
+        "updated_date=2025-11-06\\part_1167.gz",
+        "updated_date=2025-11-06\\part_1168.gz",
+        "updated_date=2025-11-06\\part_1169.gz",
+        "updated_date=2025-11-06\\part_1170.gz",
+        "updated_date=2025-11-06\\part_1171.gz",
+        "updated_date=2025-11-06\\part_1172.gz"
+      ],
+      "bytes": 2319582843,
+      "status": "complete"
+    },
+    {
+      "id": 224,
+      "files": [
+        "updated_date=2025-11-06\\part_1173.gz",
+        "updated_date=2025-11-06\\part_1174.gz",
+        "updated_date=2025-11-06\\part_1175.gz",
+        "updated_date=2025-11-06\\part_1176.gz",
+        "updated_date=2025-11-06\\part_1177.gz",
+        "updated_date=2025-11-06\\part_1178.gz"
+      ],
+      "bytes": 2319959073,
+      "status": "complete"
+    },
+    {
+      "id": 225,
+      "files": [
+        "updated_date=2025-11-06\\part_1179.gz",
+        "updated_date=2025-11-06\\part_1180.gz",
+        "updated_date=2025-11-06\\part_1181.gz",
+        "updated_date=2025-11-06\\part_1182.gz",
+        "updated_date=2025-11-06\\part_1183.gz"
+      ],
+      "bytes": 2591294049,
+      "status": "complete"
+    },
+    {
+      "id": 226,
+      "files": [
+        "updated_date=2025-11-06\\part_1184.gz",
+        "updated_date=2025-11-06\\part_1185.gz",
+        "updated_date=2025-11-06\\part_1186.gz",
+        "updated_date=2025-11-06\\part_1187.gz",
+        "updated_date=2025-11-06\\part_1188.gz",
+        "updated_date=2025-11-06\\part_1189.gz"
+      ],
+      "bytes": 2714048396,
+      "status": "complete"
+    },
+    {
+      "id": 227,
+      "files": [
+        "updated_date=2025-11-06\\part_1190.gz",
+        "updated_date=2025-11-06\\part_1191.gz",
+        "updated_date=2025-11-06\\part_1192.gz",
+        "updated_date=2025-11-06\\part_1193.gz",
+        "updated_date=2025-11-06\\part_1194.gz",
+        "updated_date=2025-11-06\\part_1195.gz",
+        "updated_date=2025-11-06\\part_1196.gz"
+      ],
+      "bytes": 2507776632,
+      "status": "complete"
+    },
+    {
+      "id": 228,
+      "files": [
+        "updated_date=2025-11-06\\part_1197.gz",
+        "updated_date=2025-11-06\\part_1198.gz",
+        "updated_date=2025-11-06\\part_1199.gz",
+        "updated_date=2025-11-06\\part_1200.gz",
+        "updated_date=2025-11-06\\part_1201.gz"
+      ],
+      "bytes": 2156117340,
+      "status": "complete"
+    },
+    {
+      "id": 229,
+      "files": [
+        "updated_date=2025-11-06\\part_1202.gz",
+        "updated_date=2025-11-06\\part_1203.gz",
+        "updated_date=2025-11-06\\part_1204.gz",
+        "updated_date=2025-11-06\\part_1205.gz",
+        "updated_date=2025-11-06\\part_1206.gz",
+        "updated_date=2025-11-06\\part_1207.gz"
+      ],
+      "bytes": 2524852706,
+      "status": "complete"
+    },
+    {
+      "id": 230,
+      "files": [
+        "updated_date=2025-11-06\\part_1208.gz",
+        "updated_date=2025-11-06\\part_1209.gz",
+        "updated_date=2025-11-06\\part_1210.gz",
+        "updated_date=2025-11-06\\part_1211.gz",
+        "updated_date=2025-11-06\\part_1212.gz",
+        "updated_date=2025-11-06\\part_1213.gz"
+      ],
+      "bytes": 2317333939,
+      "status": "complete"
+    },
+    {
+      "id": 231,
+      "files": [
+        "updated_date=2025-11-06\\part_1214.gz",
+        "updated_date=2025-11-06\\part_1215.gz",
+        "updated_date=2025-11-06\\part_1216.gz",
+        "updated_date=2025-11-06\\part_1217.gz",
+        "updated_date=2025-11-06\\part_1218.gz",
+        "updated_date=2025-11-06\\part_1219.gz"
+      ],
+      "bytes": 2347339412,
+      "status": "complete"
+    },
+    {
+      "id": 232,
+      "files": [
+        "updated_date=2025-11-06\\part_1220.gz",
+        "updated_date=2025-11-06\\part_1221.gz",
+        "updated_date=2025-11-06\\part_1222.gz",
+        "updated_date=2025-11-06\\part_1223.gz",
+        "updated_date=2025-11-06\\part_1224.gz",
+        "updated_date=2025-11-06\\part_1225.gz"
+      ],
+      "bytes": 2537822980,
+      "status": "complete"
+    },
+    {
+      "id": 233,
+      "files": [
+        "updated_date=2025-11-06\\part_1226.gz",
+        "updated_date=2025-11-06\\part_1227.gz",
+        "updated_date=2025-11-06\\part_1228.gz",
+        "updated_date=2025-11-06\\part_1229.gz",
+        "updated_date=2025-11-06\\part_1230.gz",
+        "updated_date=2025-11-06\\part_1231.gz"
+      ],
+      "bytes": 2324213291,
+      "status": "complete"
+    },
+    {
+      "id": 234,
+      "files": [
+        "updated_date=2025-11-06\\part_1232.gz",
+        "updated_date=2025-11-06\\part_1233.gz",
+        "updated_date=2025-11-06\\part_1234.gz",
+        "updated_date=2025-11-06\\part_1235.gz",
+        "updated_date=2025-11-06\\part_1236.gz",
+        "updated_date=2025-11-06\\part_1237.gz",
+        "updated_date=2025-11-06\\part_1238.gz"
+      ],
+      "bytes": 2519943436,
+      "status": "complete"
+    },
+    {
+      "id": 235,
+      "files": [
+        "updated_date=2025-11-06\\part_1239.gz",
+        "updated_date=2025-11-06\\part_1240.gz",
+        "updated_date=2025-11-06\\part_1241.gz",
+        "updated_date=2025-11-06\\part_1242.gz",
+        "updated_date=2025-11-06\\part_1243.gz"
+      ],
+      "bytes": 2346251583,
+      "status": "complete"
+    },
+    {
+      "id": 236,
+      "files": [
+        "updated_date=2025-11-06\\part_1244.gz",
+        "updated_date=2025-11-06\\part_1245.gz",
+        "updated_date=2025-11-06\\part_1246.gz",
+        "updated_date=2025-11-06\\part_1247.gz",
+        "updated_date=2025-11-06\\part_1248.gz",
+        "updated_date=2025-11-06\\part_1249.gz"
+      ],
+      "bytes": 2319961836,
+      "status": "complete"
+    },
+    {
+      "id": 237,
+      "files": [
+        "updated_date=2025-11-06\\part_1250.gz",
+        "updated_date=2025-11-06\\part_1251.gz",
+        "updated_date=2025-11-06\\part_1252.gz",
+        "updated_date=2025-11-06\\part_1253.gz",
+        "updated_date=2025-11-06\\part_1254.gz",
+        "updated_date=2025-11-06\\part_1255.gz"
+      ],
+      "bytes": 2335631840,
+      "status": "complete"
+    },
+    {
+      "id": 238,
+      "files": [
+        "updated_date=2025-11-06\\part_1256.gz",
+        "updated_date=2025-11-06\\part_1257.gz",
+        "updated_date=2025-11-06\\part_1258.gz",
+        "updated_date=2025-11-06\\part_1259.gz",
+        "updated_date=2025-11-06\\part_1260.gz",
+        "updated_date=2025-11-06\\part_1261.gz"
+      ],
+      "bytes": 2314622710,
+      "status": "complete"
+    },
+    {
+      "id": 239,
+      "files": [
+        "updated_date=2025-11-06\\part_1262.gz",
+        "updated_date=2025-11-06\\part_1263.gz",
+        "updated_date=2025-11-06\\part_1264.gz",
+        "updated_date=2025-11-06\\part_1265.gz",
+        "updated_date=2025-11-06\\part_1266.gz"
+      ],
+      "bytes": 2171050106,
+      "status": "complete"
+    },
+    {
+      "id": 240,
+      "files": [
+        "updated_date=2025-11-06\\part_1267.gz",
+        "updated_date=2025-11-06\\part_1268.gz",
+        "updated_date=2025-11-06\\part_1269.gz",
+        "updated_date=2025-11-06\\part_1270.gz",
+        "updated_date=2025-11-06\\part_1271.gz",
+        "updated_date=2025-11-06\\part_1272.gz",
+        "updated_date=2025-11-06\\part_1273.gz"
+      ],
+      "bytes": 2500099572,
+      "status": "complete"
+    },
+    {
+      "id": 241,
+      "files": [
+        "updated_date=2025-11-06\\part_1274.gz",
+        "updated_date=2025-11-06\\part_1275.gz",
+        "updated_date=2025-11-06\\part_1276.gz",
+        "updated_date=2025-11-06\\part_1277.gz",
+        "updated_date=2025-11-06\\part_1278.gz",
+        "updated_date=2025-11-06\\part_1279.gz"
+      ],
+      "bytes": 2547148177,
+      "status": "complete"
+    },
+    {
+      "id": 242,
+      "files": [
+        "updated_date=2025-11-06\\part_1280.gz",
+        "updated_date=2025-11-06\\part_1281.gz",
+        "updated_date=2025-11-06\\part_1282.gz",
+        "updated_date=2025-11-06\\part_1283.gz",
+        "updated_date=2025-11-06\\part_1284.gz",
+        "updated_date=2025-11-06\\part_1285.gz",
+        "updated_date=2025-11-06\\part_1286.gz"
+      ],
+      "bytes": 2506918005,
+      "status": "complete"
+    },
+    {
+      "id": 243,
+      "files": [
+        "updated_date=2025-11-06\\part_1287.gz",
+        "updated_date=2025-11-06\\part_1288.gz",
+        "updated_date=2025-11-06\\part_1289.gz",
+        "updated_date=2025-11-06\\part_1290.gz",
+        "updated_date=2025-11-06\\part_1291.gz",
+        "updated_date=2025-11-06\\part_1292.gz"
+      ],
+      "bytes": 2319025562,
+      "status": "complete"
+    },
+    {
+      "id": 244,
+      "files": [
+        "updated_date=2025-11-06\\part_1293.gz",
+        "updated_date=2025-11-06\\part_1294.gz",
+        "updated_date=2025-11-06\\part_1295.gz",
+        "updated_date=2025-11-06\\part_1296.gz",
+        "updated_date=2025-11-06\\part_1297.gz",
+        "updated_date=2025-11-06\\part_1298.gz"
+      ],
+      "bytes": 2535346928,
+      "status": "complete"
+    },
+    {
+      "id": 245,
+      "files": [
+        "updated_date=2025-11-06\\part_1299.gz",
+        "updated_date=2025-11-06\\part_1300.gz",
+        "updated_date=2025-11-06\\part_1301.gz",
+        "updated_date=2025-11-06\\part_1302.gz",
+        "updated_date=2025-11-06\\part_1303.gz",
+        "updated_date=2025-11-06\\part_1304.gz",
+        "updated_date=2025-11-06\\part_1305.gz"
+      ],
+      "bytes": 2494967978,
+      "status": "complete"
+    },
+    {
+      "id": 246,
+      "files": [
+        "updated_date=2025-11-06\\part_1306.gz",
+        "updated_date=2025-11-06\\part_1307.gz",
+        "updated_date=2025-11-06\\part_1308.gz",
+        "updated_date=2025-11-06\\part_1309.gz",
+        "updated_date=2025-11-06\\part_1310.gz"
+      ],
+      "bytes": 2147960584,
+      "status": "complete"
+    },
+    {
+      "id": 247,
+      "files": [
+        "updated_date=2025-11-06\\part_1311.gz",
+        "updated_date=2025-11-06\\part_1312.gz",
+        "updated_date=2025-11-06\\part_1313.gz",
+        "updated_date=2025-11-06\\part_1314.gz",
+        "updated_date=2025-11-06\\part_1315.gz",
+        "updated_date=2025-11-06\\part_1316.gz",
+        "updated_date=2025-11-06\\part_1317.gz"
+      ],
+      "bytes": 2519984790,
+      "status": "complete"
+    },
+    {
+      "id": 248,
+      "files": [
+        "updated_date=2025-11-06\\part_1318.gz",
+        "updated_date=2025-11-06\\part_1319.gz",
+        "updated_date=2025-11-06\\part_1320.gz",
+        "updated_date=2025-11-06\\part_1321.gz",
+        "updated_date=2025-11-06\\part_1322.gz",
+        "updated_date=2025-11-06\\part_1323.gz"
+      ],
+      "bytes": 2335745834,
+      "status": "complete"
+    },
+    {
+      "id": 249,
+      "files": [
+        "updated_date=2025-11-06\\part_1324.gz",
+        "updated_date=2025-11-06\\part_1325.gz",
+        "updated_date=2025-11-06\\part_1326.gz",
+        "updated_date=2025-11-06\\part_1327.gz",
+        "updated_date=2025-11-06\\part_1328.gz",
+        "updated_date=2025-11-06\\part_1329.gz"
+      ],
+      "bytes": 2528358335,
+      "status": "complete"
+    },
+    {
+      "id": 250,
+      "files": [
+        "updated_date=2025-11-06\\part_1330.gz",
+        "updated_date=2025-11-06\\part_1331.gz",
+        "updated_date=2025-11-06\\part_1332.gz",
+        "updated_date=2025-11-06\\part_1333.gz",
+        "updated_date=2025-11-07\\part_0000.gz",
+        "updated_date=2025-11-08\\part_0000.gz",
+        "updated_date=2025-11-09\\part_0000.gz",
+        "updated_date=2025-11-10\\part_0000.gz",
+        "updated_date=2025-11-11\\part_0000.gz"
+      ],
+      "bytes": 2217442571,
+      "status": "complete"
+    },
+    {
+      "id": 251,
+      "files": [
+        "updated_date=2025-11-12\\part_0000.gz",
+        "updated_date=2025-11-12\\part_0001.gz",
+        "updated_date=2025-11-13\\part_0000.gz",
+        "updated_date=2025-11-14\\part_0000.gz",
+        "updated_date=2025-11-15\\part_0000.gz",
+        "updated_date=2025-11-16\\part_0000.gz",
+        "updated_date=2025-11-17\\part_0000.gz",
+        "updated_date=2025-11-18\\part_0000.gz",
+        "updated_date=2025-11-19\\part_0000.gz",
+        "updated_date=2025-11-20\\part_0000.gz",
+        "updated_date=2025-11-23\\part_0000.gz",
+        "updated_date=2025-11-23\\part_0001.gz",
+        "updated_date=2025-11-23\\part_0002.gz"
+      ],
+      "bytes": 2463799781,
+      "status": "complete"
+    },
+    {
+      "id": 252,
+      "files": [
+        "updated_date=2025-11-25\\part_0000.gz",
+        "updated_date=2025-11-25\\part_0001.gz",
+        "updated_date=2025-11-27\\part_0000.gz",
+        "updated_date=2025-11-28\\part_0000.gz",
+        "updated_date=2025-11-28\\part_0001.gz",
+        "updated_date=2025-11-28\\part_0002.gz"
+      ],
+      "bytes": 2248633419,
+      "status": "complete"
+    },
+    {
+      "id": 253,
+      "files": [
+        "updated_date=2025-11-29\\part_0000.gz",
+        "updated_date=2025-11-30\\part_0000.gz",
+        "updated_date=2025-12-01\\part_0000.gz",
+        "updated_date=2025-12-02\\part_0000.gz",
+        "updated_date=2025-12-03\\part_0000.gz",
+        "updated_date=2025-12-04\\part_0000.gz",
+        "updated_date=2025-12-05\\part_0000.gz",
+        "updated_date=2025-12-06\\part_0000.gz",
+        "updated_date=2025-12-06\\part_0001.gz",
+        "updated_date=2025-12-07\\part_0000.gz",
+        "updated_date=2025-12-07\\part_0001.gz",
+        "updated_date=2025-12-08\\part_0000.gz"
+      ],
+      "bytes": 2245269045,
+      "status": "complete"
+    },
+    {
+      "id": 254,
+      "files": [
+        "updated_date=2025-12-08\\part_0001.gz",
+        "updated_date=2025-12-09\\part_0000.gz",
+        "updated_date=2025-12-10\\part_0000.gz",
+        "updated_date=2025-12-10\\part_0001.gz",
+        "updated_date=2025-12-10\\part_0002.gz",
+        "updated_date=2025-12-10\\part_0003.gz"
+      ],
+      "bytes": 2280634916,
+      "status": "complete"
+    },
+    {
+      "id": 255,
+      "files": [
+        "updated_date=2025-12-10\\part_0004.gz",
+        "updated_date=2025-12-10\\part_0005.gz",
+        "updated_date=2025-12-10\\part_0006.gz",
+        "updated_date=2025-12-10\\part_0007.gz",
+        "updated_date=2025-12-10\\part_0008.gz"
+      ],
+      "bytes": 2559699118,
+      "status": "complete"
+    },
+    {
+      "id": 256,
+      "files": [
+        "updated_date=2025-12-10\\part_0009.gz",
+        "updated_date=2025-12-11\\part_0000.gz",
+        "updated_date=2025-12-11\\part_0001.gz",
+        "updated_date=2025-12-11\\part_0002.gz",
+        "updated_date=2025-12-12\\part_0000.gz",
+        "updated_date=2025-12-13\\part_0000.gz",
+        "updated_date=2025-12-14\\part_0000.gz",
+        "updated_date=2025-12-15\\part_0000.gz"
+      ],
+      "bytes": 2232412548,
+      "status": "complete"
+    },
+    {
+      "id": 257,
+      "files": [
+        "updated_date=2025-12-16\\part_0000.gz",
+        "updated_date=2025-12-17\\part_0000.gz",
+        "updated_date=2025-12-18\\part_0000.gz",
+        "updated_date=2025-12-19\\part_0000.gz",
+        "updated_date=2025-12-19\\part_0001.gz",
+        "updated_date=2025-12-19\\part_0002.gz"
+      ],
+      "bytes": 2278047364,
+      "status": "complete"
+    },
+    {
+      "id": 258,
+      "files": [
+        "updated_date=2025-12-20\\part_0000.gz",
+        "updated_date=2025-12-21\\part_0000.gz",
+        "updated_date=2025-12-21\\part_0001.gz",
+        "updated_date=2025-12-21\\part_0002.gz",
+        "updated_date=2025-12-21\\part_0003.gz"
+      ],
+      "bytes": 2276480374,
+      "status": "complete"
+    },
+    {
+      "id": 259,
+      "files": [
+        "updated_date=2025-12-21\\part_0004.gz",
+        "updated_date=2025-12-21\\part_0005.gz",
+        "updated_date=2025-12-21\\part_0006.gz",
+        "updated_date=2025-12-21\\part_0007.gz"
+      ],
+      "bytes": 2269418759,
+      "status": "complete"
+    },
+    {
+      "id": 260,
+      "files": [
+        "updated_date=2025-12-21\\part_0008.gz",
+        "updated_date=2025-12-21\\part_0009.gz",
+        "updated_date=2025-12-22\\part_0000.gz",
+        "updated_date=2025-12-22\\part_0001.gz",
+        "updated_date=2025-12-22\\part_0002.gz"
+      ],
+      "bytes": 2812387775,
+      "status": "complete"
+    },
+    {
+      "id": 261,
+      "files": [
+        "updated_date=2025-12-22\\part_0003.gz",
+        "updated_date=2025-12-22\\part_0004.gz",
+        "updated_date=2025-12-22\\part_0005.gz",
+        "updated_date=2025-12-23\\part_0000.gz",
+        "updated_date=2025-12-23\\part_0001.gz",
+        "updated_date=2025-12-23\\part_0002.gz"
+      ],
+      "bytes": 2690671300,
+      "status": "complete"
+    },
+    {
+      "id": 262,
+      "files": [
+        "updated_date=2025-12-23\\part_0003.gz",
+        "updated_date=2025-12-23\\part_0004.gz",
+        "updated_date=2025-12-23\\part_0005.gz",
+        "updated_date=2025-12-24\\part_0000.gz",
+        "updated_date=2025-12-24\\part_0001.gz",
+        "updated_date=2025-12-24\\part_0002.gz"
+      ],
+      "bytes": 2800266950,
+      "status": "complete"
+    },
+    {
+      "id": 263,
+      "files": [
+        "updated_date=2025-12-24\\part_0003.gz",
+        "updated_date=2025-12-24\\part_0004.gz",
+        "updated_date=2025-12-24\\part_0005.gz",
+        "updated_date=2025-12-25\\part_0000.gz",
+        "updated_date=2025-12-25\\part_0001.gz",
+        "updated_date=2025-12-25\\part_0002.gz"
+      ],
+      "bytes": 2667662193,
+      "status": "complete"
+    },
+    {
+      "id": 264,
+      "files": [
+        "updated_date=2025-12-25\\part_0003.gz",
+        "updated_date=2025-12-25\\part_0004.gz",
+        "updated_date=2025-12-25\\part_0005.gz",
+        "updated_date=2025-12-26\\part_0000.gz",
+        "updated_date=2025-12-26\\part_0001.gz",
+        "updated_date=2025-12-26\\part_0002.gz"
+      ],
+      "bytes": 2744009078,
+      "status": "complete"
+    },
+    {
+      "id": 265,
+      "files": [
+        "updated_date=2025-12-26\\part_0003.gz",
+        "updated_date=2025-12-26\\part_0004.gz",
+        "updated_date=2025-12-26\\part_0005.gz",
+        "updated_date=2025-12-27\\part_0000.gz",
+        "updated_date=2025-12-27\\part_0001.gz",
+        "updated_date=2025-12-27\\part_0002.gz"
+      ],
+      "bytes": 2410564756,
+      "status": "complete"
+    },
+    {
+      "id": 266,
+      "files": [
+        "updated_date=2025-12-27\\part_0003.gz",
+        "updated_date=2025-12-27\\part_0004.gz",
+        "updated_date=2025-12-27\\part_0005.gz",
+        "updated_date=2025-12-28\\part_0000.gz",
+        "updated_date=2025-12-28\\part_0001.gz",
+        "updated_date=2025-12-28\\part_0002.gz"
+      ],
+      "bytes": 2551481471,
+      "status": "complete"
+    },
+    {
+      "id": 267,
+      "files": [
+        "updated_date=2025-12-29\\part_0000.gz",
+        "updated_date=2025-12-30\\part_0000.gz",
+        "updated_date=2025-12-31\\part_0000.gz"
+      ],
+      "bytes": 2486738484,
+      "status": "complete"
+    },
+    {
+      "id": 268,
+      "files": [
+        "updated_date=2025-12-31\\part_0001.gz",
+        "updated_date=2026-01-01\\part_0000.gz",
+        "updated_date=2026-01-02\\part_0000.gz",
+        "updated_date=2026-01-03\\part_0000.gz",
+        "updated_date=2026-01-04\\part_0000.gz",
+        "updated_date=2026-01-05\\part_0000.gz"
+      ],
+      "bytes": 2728953590,
+      "status": "complete"
+    },
+    {
+      "id": 269,
+      "files": [
+        "updated_date=2026-01-06\\part_0000.gz",
+        "updated_date=2026-01-08\\part_0000.gz",
+        "updated_date=2026-01-08\\part_0001.gz",
+        "updated_date=2026-01-08\\part_0002.gz",
+        "updated_date=2026-01-08\\part_0003.gz",
+        "updated_date=2026-01-08\\part_0004.gz",
+        "updated_date=2026-01-08\\part_0005.gz"
+      ],
+      "bytes": 2427501845,
+      "status": "complete"
+    },
+    {
+      "id": 270,
+      "files": [
+        "updated_date=2026-01-08\\part_0006.gz",
+        "updated_date=2026-01-08\\part_0007.gz",
+        "updated_date=2026-01-08\\part_0008.gz",
+        "updated_date=2026-01-08\\part_0009.gz",
+        "updated_date=2026-01-09\\part_0000.gz"
+      ],
+      "bytes": 2496674185,
+      "status": "complete"
+    },
+    {
+      "id": 271,
+      "files": [
+        "updated_date=2026-01-09\\part_0001.gz",
+        "updated_date=2026-01-09\\part_0002.gz",
+        "updated_date=2026-01-09\\part_0003.gz",
+        "updated_date=2026-01-09\\part_0004.gz",
+        "updated_date=2026-01-09\\part_0005.gz"
+      ],
+      "bytes": 2284564884,
+      "status": "complete"
+    },
+    {
+      "id": 272,
+      "files": [
+        "updated_date=2026-01-10\\part_0000.gz",
+        "updated_date=2026-01-10\\part_0001.gz",
+        "updated_date=2026-01-10\\part_0002.gz",
+        "updated_date=2026-01-10\\part_0003.gz",
+        "updated_date=2026-01-10\\part_0004.gz"
+      ],
+      "bytes": 2450021734,
+      "status": "complete"
+    },
+    {
+      "id": 273,
+      "files": [
+        "updated_date=2026-01-10\\part_0005.gz",
+        "updated_date=2026-01-11\\part_0000.gz",
+        "updated_date=2026-01-11\\part_0001.gz",
+        "updated_date=2026-01-11\\part_0002.gz",
+        "updated_date=2026-01-13\\part_0000.gz"
+      ],
+      "bytes": 2429008348,
+      "status": "complete"
+    },
+    {
+      "id": 274,
+      "files": [
+        "updated_date=2026-01-13\\part_0001.gz",
+        "updated_date=2026-01-13\\part_0002.gz"
+      ],
+      "bytes": 2233093040,
+      "status": "complete"
+    },
+    {
+      "id": 275,
+      "files": [
+        "updated_date=2026-01-13\\part_0003.gz",
+        "updated_date=2026-01-13\\part_0004.gz"
+      ],
+      "bytes": 2227057011,
+      "status": "complete"
+    },
+    {
+      "id": 276,
+      "files": [
+        "updated_date=2026-01-13\\part_0005.gz",
+        "updated_date=2026-01-13\\part_0006.gz"
+      ],
+      "bytes": 2225166945,
+      "status": "complete"
+    },
+    {
+      "id": 277,
+      "files": [
+        "updated_date=2026-01-13\\part_0007.gz",
+        "updated_date=2026-01-13\\part_0008.gz"
+      ],
+      "bytes": 2222791948,
+      "status": "complete"
+    },
+    {
+      "id": 278,
+      "files": [
+        "updated_date=2026-01-13\\part_0009.gz",
+        "updated_date=2026-01-13\\part_0010.gz"
+      ],
+      "bytes": 2225705302,
+      "status": "complete"
+    },
+    {
+      "id": 279,
+      "files": [
+        "updated_date=2026-01-13\\part_0011.gz",
+        "updated_date=2026-01-13\\part_0012.gz"
+      ],
+      "bytes": 2228912221,
+      "status": "complete"
+    },
+    {
+      "id": 280,
+      "files": [
+        "updated_date=2026-01-13\\part_0013.gz",
+        "updated_date=2026-01-13\\part_0014.gz"
+      ],
+      "bytes": 2227859279,
+      "status": "complete"
+    },
+    {
+      "id": 281,
+      "files": [
+        "updated_date=2026-01-13\\part_0015.gz",
+        "updated_date=2026-01-13\\part_0016.gz"
+      ],
+      "bytes": 2228586019,
+      "status": "complete"
+    },
+    {
+      "id": 282,
+      "files": [
+        "updated_date=2026-01-13\\part_0017.gz",
+        "updated_date=2026-01-13\\part_0018.gz"
+      ],
+      "bytes": 2223751400,
+      "status": "complete"
+    },
+    {
+      "id": 283,
+      "files": [
+        "updated_date=2026-01-13\\part_0019.gz",
+        "updated_date=2026-01-13\\part_0020.gz"
+      ],
+      "bytes": 2229057546,
+      "status": "complete"
+    },
+    {
+      "id": 284,
+      "files": [
+        "updated_date=2026-01-13\\part_0021.gz",
+        "updated_date=2026-01-13\\part_0022.gz"
+      ],
+      "bytes": 2231208375,
+      "status": "complete"
+    },
+    {
+      "id": 285,
+      "files": [
+        "updated_date=2026-01-13\\part_0023.gz",
+        "updated_date=2026-01-13\\part_0024.gz"
+      ],
+      "bytes": 2222810813,
+      "status": "complete"
+    },
+    {
+      "id": 286,
+      "files": [
+        "updated_date=2026-01-13\\part_0025.gz",
+        "updated_date=2026-01-13\\part_0026.gz"
+      ],
+      "bytes": 2228841657,
+      "status": "complete"
+    },
+    {
+      "id": 287,
+      "files": [
+        "updated_date=2026-01-13\\part_0027.gz",
+        "updated_date=2026-01-13\\part_0028.gz"
+      ],
+      "bytes": 2223783048,
+      "status": "complete"
+    },
+    {
+      "id": 288,
+      "files": [
+        "updated_date=2026-01-13\\part_0029.gz",
+        "updated_date=2026-01-13\\part_0030.gz"
+      ],
+      "bytes": 2229651607,
+      "status": "complete"
+    },
+    {
+      "id": 289,
+      "files": [
+        "updated_date=2026-01-13\\part_0031.gz",
+        "updated_date=2026-01-13\\part_0032.gz"
+      ],
+      "bytes": 2228300992,
+      "status": "complete"
+    },
+    {
+      "id": 290,
+      "files": [
+        "updated_date=2026-01-13\\part_0033.gz",
+        "updated_date=2026-01-13\\part_0034.gz"
+      ],
+      "bytes": 2230411864,
+      "status": "complete"
+    },
+    {
+      "id": 291,
+      "files": [
+        "updated_date=2026-01-13\\part_0035.gz",
+        "updated_date=2026-01-13\\part_0036.gz"
+      ],
+      "bytes": 2226268313,
+      "status": "complete"
+    },
+    {
+      "id": 292,
+      "files": [
+        "updated_date=2026-01-13\\part_0037.gz",
+        "updated_date=2026-01-13\\part_0038.gz"
+      ],
+      "bytes": 2236681640,
+      "status": "complete"
+    },
+    {
+      "id": 293,
+      "files": [
+        "updated_date=2026-01-13\\part_0039.gz",
+        "updated_date=2026-01-13\\part_0040.gz"
+      ],
+      "bytes": 2230790765,
+      "status": "complete"
+    },
+    {
+      "id": 294,
+      "files": [
+        "updated_date=2026-01-13\\part_0041.gz",
+        "updated_date=2026-01-13\\part_0042.gz"
+      ],
+      "bytes": 2229619001,
+      "status": "complete"
+    },
+    {
+      "id": 295,
+      "files": [
+        "updated_date=2026-01-13\\part_0043.gz",
+        "updated_date=2026-01-13\\part_0044.gz"
+      ],
+      "bytes": 2224697635,
+      "status": "complete"
+    },
+    {
+      "id": 296,
+      "files": [
+        "updated_date=2026-01-13\\part_0045.gz",
+        "updated_date=2026-01-13\\part_0046.gz"
+      ],
+      "bytes": 2227568734,
+      "status": "complete"
+    },
+    {
+      "id": 297,
+      "files": [
+        "updated_date=2026-01-13\\part_0047.gz",
+        "updated_date=2026-01-13\\part_0048.gz"
+      ],
+      "bytes": 2223925875,
+      "status": "complete"
+    },
+    {
+      "id": 298,
+      "files": [
+        "updated_date=2026-01-13\\part_0049.gz",
+        "updated_date=2026-01-14\\part_0000.gz",
+        "updated_date=2026-01-14\\part_0001.gz"
+      ],
+      "bytes": 2203747568,
+      "status": "complete"
+    },
+    {
+      "id": 299,
+      "files": [
+        "updated_date=2026-01-14\\part_0002.gz",
+        "updated_date=2026-01-15\\part_0000.gz",
+        "updated_date=2026-01-15\\part_0001.gz",
+        "updated_date=2026-01-15\\part_0002.gz"
+      ],
+      "bytes": 2838621486,
+      "status": "complete"
+    },
+    {
+      "id": 300,
+      "files": [
+        "updated_date=2026-01-16\\part_0000.gz",
+        "updated_date=2026-01-16\\part_0001.gz",
+        "updated_date=2026-01-17\\part_0000.gz"
+      ],
+      "bytes": 2413268978,
+      "status": "complete"
+    },
+    {
+      "id": 301,
+      "files": [
+        "updated_date=2026-01-19\\part_0000.gz",
+        "updated_date=2026-01-19\\part_0001.gz",
+        "updated_date=2026-01-20\\part_0000.gz",
+        "updated_date=2026-01-20\\part_0001.gz",
+        "updated_date=2026-01-20\\part_0002.gz"
+      ],
+      "bytes": 2962249527,
+      "status": "complete"
+    },
+    {
+      "id": 302,
+      "files": [
+        "updated_date=2026-01-20\\part_0003.gz",
+        "updated_date=2026-01-20\\part_0004.gz",
+        "updated_date=2026-01-20\\part_0005.gz",
+        "updated_date=2026-01-21\\part_0000.gz",
+        "updated_date=2026-01-21\\part_0001.gz"
+      ],
+      "bytes": 2775010365,
+      "status": "complete"
+    },
+    {
+      "id": 303,
+      "files": [
+        "updated_date=2026-01-22\\part_0000.gz",
+        "updated_date=2026-01-22\\part_0001.gz",
+        "updated_date=2026-01-23\\part_0000.gz"
+      ],
+      "bytes": 2862913290,
+      "status": "complete"
+    },
+    {
+      "id": 304,
+      "files": [
+        "updated_date=2026-01-23\\part_0001.gz",
+        "updated_date=2026-01-24\\part_0000.gz",
+        "updated_date=2026-01-24\\part_0001.gz",
+        "updated_date=2026-01-25\\part_0000.gz"
+      ],
+      "bytes": 2786595572,
+      "status": "complete"
+    },
+    {
+      "id": 305,
+      "files": [
+        "updated_date=2026-01-25\\part_0001.gz",
+        "updated_date=2026-01-26\\part_0000.gz",
+        "updated_date=2026-01-27\\part_0000.gz",
+        "updated_date=2026-01-28\\part_0000.gz",
+        "updated_date=2026-01-29\\part_0000.gz",
+        "updated_date=2026-01-30\\part_0000.gz",
+        "updated_date=2026-02-01\\part_0000.gz"
+      ],
+      "bytes": 2497887099,
+      "status": "complete"
+    },
+    {
+      "id": 306,
+      "files": [
+        "updated_date=2026-02-01\\part_0001.gz",
+        "updated_date=2026-02-02\\part_0000.gz",
+        "updated_date=2026-02-02\\part_0001.gz"
+      ],
+      "bytes": 2221041012,
+      "status": "complete"
+    },
+    {
+      "id": 307,
+      "files": [
+        "updated_date=2026-02-02\\part_0002.gz",
+        "updated_date=2026-02-02\\part_0003.gz",
+        "updated_date=2026-02-02\\part_0004.gz"
+      ],
+      "bytes": 2656285233,
+      "status": "complete"
+    },
+    {
+      "id": 308,
+      "files": [
+        "updated_date=2026-02-02\\part_0005.gz",
+        "updated_date=2026-02-02\\part_0006.gz",
+        "updated_date=2026-02-02\\part_0007.gz"
+      ],
+      "bytes": 2647644079,
+      "status": "complete"
+    },
+    {
+      "id": 309,
+      "files": [
+        "updated_date=2026-02-02\\part_0008.gz",
+        "updated_date=2026-02-02\\part_0009.gz"
+      ],
+      "bytes": 1772341723,
+      "status": "complete"
+    }
+  ]
+}

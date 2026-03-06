@@ -3,6 +3,8 @@ __pycache__/
 .env
 data/cache/
 data/scan/chunks/
+data/scan/s1_chunks/
+data/scan/arxiv_map_chunks/
 data/scan/glyph_chunks/
 data/scan/pmc_glyph_chunks/
 blind_test/_api_cache.json

@@ -10,10 +10,10 @@
  },
  "progress": {
   "chunks_total": 416,
-  "chunks_completed": 396,
-  "papers_scanned": 846672,
-  "papers_with_domain": 844853,
-  "papers_with_glyphs": 837725
+  "chunks_completed": 416,
+  "papers_scanned": 867562,
+  "papers_with_domain": 865679,
+  "papers_with_glyphs": 858407
  },
  "chunks": [
   {
@@ -3836,7 +3836,7 @@
     "arXiv_src_1510_009.tar"
    ],
    "bytes": 1078251520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 398,
@@ -3846,7 +3846,7 @@
     "arXiv_src_1510_012.tar"
    ],
    "bytes": 1611448320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 399,
@@ -3855,7 +3855,7 @@
     "arXiv_src_1510_014.tar"
    ],
    "bytes": 1121792000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 400,
@@ -3865,7 +3865,7 @@
     "arXiv_src_1510_017.tar"
    ],
    "bytes": 1586739200,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 401,
@@ -3875,7 +3875,7 @@
     "arXiv_src_1511_001.tar"
    ],
    "bytes": 1402040320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 402,
@@ -3884,7 +3884,7 @@
     "arXiv_src_1511_003.tar"
    ],
    "bytes": 1101434880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 403,
@@ -3893,7 +3893,7 @@
     "arXiv_src_1511_005.tar"
    ],
    "bytes": 1085429760,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 404,
@@ -3902,7 +3902,7 @@
     "arXiv_src_1511_007.tar"
    ],
    "bytes": 1171998720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 405,
@@ -3912,7 +3912,7 @@
     "arXiv_src_1511_010.tar"
    ],
    "bytes": 1572843520,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 406,
@@ -3922,7 +3922,7 @@
     "arXiv_src_1511_013.tar"
    ],
    "bytes": 1569423360,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 407,
@@ -3931,7 +3931,7 @@
     "arXiv_src_1511_015.tar"
    ],
    "bytes": 1142876160,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 408,
@@ -3941,7 +3941,7 @@
     "arXiv_src_1511_018.tar"
    ],
    "bytes": 1498368000,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 409,
@@ -3950,7 +3950,7 @@
     "arXiv_src_1511_020.tar"
    ],
    "bytes": 1122570240,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 410,
@@ -3960,7 +3960,7 @@
     "arXiv_src_1512_002.tar"
    ],
    "bytes": 1517086720,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 411,
@@ -3970,7 +3970,7 @@
     "arXiv_src_1512_005.tar"
    ],
    "bytes": 1332738118,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 412,
@@ -3980,7 +3980,7 @@
     "arXiv_src_1512_008.tar"
    ],
    "bytes": 1599324160,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 413,
@@ -3990,7 +3990,7 @@
     "arXiv_src_1512_011.tar"
    ],
    "bytes": 1595576320,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 414,
@@ -4002,7 +4002,7 @@
     "arXiv_src_1512_016.tar"
    ],
    "bytes": 1503506003,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 415,
@@ -4011,7 +4011,7 @@
     "arXiv_src_1512_018.tar"
    ],
    "bytes": 1107578880,
-   "status": "pending"
+   "status": "complete"
   },
   {
    "id": 416,
@@ -4019,7 +4019,7 @@
     "arXiv_src_1512_019.tar"
    ],
    "bytes": 536770560,
-   "status": "pending"
+   "status": "complete"
   }
  ]
 }
