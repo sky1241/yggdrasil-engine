@@ -1,0 +1,1383 @@
+{
+  "meta": {
+    "description": "S-2 fossil glyphs: dead symbols replaced by modern notation (Berzelius ~1814)",
+    "total": 116,
+    "source": "Unicode Alchemical Symbols U+1F700-U+1F773 + astronomical + medical + hazard",
+    "references": [
+      "Unicode L2/09-037R2: Proposal for Alchemical Symbols (Newman, Walsh, Kowalczyk)",
+      "The Chymistry of Isaac Newton Project, Indiana University",
+      "Cajori, A History of Mathematical Notations (1928-29)",
+      "Berzelius, Annals of Philosophy (1813-1814)",
+      "Luedy-Tenger, 3695 alchemical symbol variants (1928)"
+    ],
+    "extinction_event": "Berzelius letter notation, 1813-1814",
+    "era": "~300 CE (Zosimos) to ~1820 CE",
+    "categories": {
+      "element": "Aristotelian proto-elements",
+      "solvent": "Acids, spirits, solvents",
+      "prime": "Tria Prima (Paracelsus): sulfur/mercury/salt",
+      "metal": "Metals and ores (planetary associations)",
+      "compound": "Salts, minerals, organic matter",
+      "process": "Laboratory operations",
+      "apparatus": "Laboratory equipment",
+      "measure": "Weights and time",
+      "seed": "Original 7 seeds (already in S-2)"
+    }
+  },
+  "fossils": [
+    {
+      "codepoint": "U+1F700",
+      "symbol": "🜀",
+      "name": "Quintessence",
+      "category": "element",
+      "modern": "aether (obsolete)",
+      "formula": null,
+      "mutation": "Quintessence -> aether -> vacuum energy (conjectural)",
+      "era": "Aristotle ~350 BCE"
+    },
+    {
+      "codepoint": "U+1F701",
+      "symbol": "🜁",
+      "name": "Air",
+      "category": "element",
+      "modern": "gas (state of matter)",
+      "formula": null,
+      "mutation": "Air -> gas (Lavoisier 1789) -> gaseous state",
+      "era": "Aristotle ~350 BCE"
+    },
+    {
+      "codepoint": "U+1F702",
+      "symbol": "🜂",
+      "name": "Fire",
+      "category": "element",
+      "modern": "plasma / combustion",
+      "formula": null,
+      "mutation": "Fire -> phlogiston (Stahl 1703) -> oxidation (Lavoisier 1789)",
+      "era": "Aristotle ~350 BCE"
+    },
+    {
+      "codepoint": "U+1F703",
+      "symbol": "🜃",
+      "name": "Earth",
+      "category": "element",
+      "modern": "solid (state of matter)",
+      "formula": null,
+      "mutation": "Earth -> solid state",
+      "era": "Aristotle ~350 BCE"
+    },
+    {
+      "codepoint": "U+1F704",
+      "symbol": "🜄",
+      "name": "Water",
+      "category": "element",
+      "modern": "water",
+      "formula": "H2O",
+      "mutation": "Water -> H2O (Lavoisier/Cavendish 1783)",
+      "era": "Aristotle ~350 BCE"
+    },
+    {
+      "codepoint": "U+1F705",
+      "symbol": "🜅",
+      "name": "Aquafortis",
+      "category": "solvent",
+      "modern": "nitric acid",
+      "formula": "HNO3",
+      "mutation": "Aquafortis -> acide nitrique (Lavoisier) -> HNO3",
+      "era": "Geber ~8th c."
+    },
+    {
+      "codepoint": "U+1F706",
+      "symbol": "🜆",
+      "name": "Aqua Regia",
+      "category": "solvent",
+      "modern": "nitrohydrochloric acid",
+      "formula": "HNO3+HCl",
+      "mutation": "Aqua Regia -> eau regale -> HNO3+3HCl",
+      "era": "Geber ~8th c."
+    },
+    {
+      "codepoint": "U+1F707",
+      "symbol": "🜇",
+      "name": "Aqua Regia (variant 2)",
+      "category": "solvent",
+      "modern": "nitrohydrochloric acid",
+      "formula": "HNO3+HCl",
+      "mutation": "variant of U+1F706",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F708",
+      "symbol": "🜈",
+      "name": "Aqua Vitae",
+      "category": "solvent",
+      "modern": "ethanol",
+      "formula": "C2H5OH",
+      "mutation": "Aqua Vitae -> eau-de-vie -> ethanol",
+      "era": "~12th c. (Salernum)"
+    },
+    {
+      "codepoint": "U+1F709",
+      "symbol": "🜉",
+      "name": "Aqua Vitae (variant 2)",
+      "category": "solvent",
+      "modern": "ethanol",
+      "formula": "C2H5OH",
+      "mutation": "variant of U+1F708",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F70A",
+      "symbol": "🜊",
+      "name": "Vinegar",
+      "category": "solvent",
+      "modern": "acetic acid",
+      "formula": "CH3COOH",
+      "mutation": "Vinegar -> acide acetique -> CH3COOH",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F70B",
+      "symbol": "🜋",
+      "name": "Vinegar (variant 2)",
+      "category": "solvent",
+      "modern": "acetic acid",
+      "formula": "CH3COOH",
+      "mutation": "variant of U+1F70A",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F70C",
+      "symbol": "🜌",
+      "name": "Vinegar (variant 3)",
+      "category": "solvent",
+      "modern": "acetic acid",
+      "formula": "CH3COOH",
+      "mutation": "variant of U+1F70A",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F70D",
+      "symbol": "🜍",
+      "name": "Sulfur",
+      "category": "prime",
+      "modern": "sulfur",
+      "formula": "S",
+      "mutation": "Sulfur glyph -> S (Berzelius 1814) -> element 16",
+      "era": "Paracelsus ~1530"
+    },
+    {
+      "codepoint": "U+1F70E",
+      "symbol": "🜎",
+      "name": "Philosophers Sulfur",
+      "category": "prime",
+      "modern": "sulfur (philosophical)",
+      "formula": "S",
+      "mutation": "Tria Prima: soul/combustibility -> element S",
+      "era": "Paracelsus ~1530"
+    },
+    {
+      "codepoint": "U+1F70F",
+      "symbol": "🜏",
+      "name": "Black Sulfur",
+      "category": "prime",
+      "modern": "impure sulfur",
+      "formula": "S (impure)",
+      "mutation": "Black Sulfur -> sulfur with impurities",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F710",
+      "symbol": "🜐",
+      "name": "Mercury Sublimate",
+      "category": "compound",
+      "modern": "mercuric chloride",
+      "formula": "HgCl2",
+      "mutation": "Mercury Sublimate -> sublime de mercure -> HgCl2",
+      "era": "Geber ~8th c."
+    },
+    {
+      "codepoint": "U+1F711",
+      "symbol": "🜑",
+      "name": "Mercury Sublimate (variant 2)",
+      "category": "compound",
+      "modern": "mercuric chloride",
+      "formula": "HgCl2",
+      "mutation": "variant of U+1F710",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F712",
+      "symbol": "🜒",
+      "name": "Mercury Sublimate (variant 3)",
+      "category": "compound",
+      "modern": "mercuric chloride",
+      "formula": "HgCl2",
+      "mutation": "variant of U+1F710",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F713",
+      "symbol": "🜓",
+      "name": "Cinnabar",
+      "category": "compound",
+      "modern": "mercuric sulfide",
+      "formula": "HgS",
+      "mutation": "Cinnabar -> cinabre -> HgS (mineral vermillon)",
+      "era": "antiquity (China, Rome)"
+    },
+    {
+      "codepoint": "U+1F714",
+      "symbol": "🜔",
+      "name": "Salt",
+      "category": "prime",
+      "modern": "sodium chloride",
+      "formula": "NaCl",
+      "mutation": "Salt glyph -> sel -> NaCl (Berzelius)",
+      "era": "Paracelsus ~1530"
+    },
+    {
+      "codepoint": "U+1F715",
+      "symbol": "🜕",
+      "name": "Nitre",
+      "category": "compound",
+      "modern": "potassium nitrate",
+      "formula": "KNO3",
+      "mutation": "Nitre -> salpetre -> KNO3",
+      "era": "~13th c. (Roger Bacon)"
+    },
+    {
+      "codepoint": "U+1F716",
+      "symbol": "🜖",
+      "name": "Vitriol",
+      "category": "compound",
+      "modern": "sulfuric acid / iron sulfate",
+      "formula": "H2SO4 / FeSO4",
+      "mutation": "Oil of Vitriol -> acide sulfurique -> H2SO4",
+      "era": "Geber ~8th c."
+    },
+    {
+      "codepoint": "U+1F717",
+      "symbol": "🜗",
+      "name": "Vitriol (variant 2)",
+      "category": "compound",
+      "modern": "sulfuric acid / iron sulfate",
+      "formula": "H2SO4 / FeSO4",
+      "mutation": "variant of U+1F716",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F718",
+      "symbol": "🜘",
+      "name": "Rock Salt",
+      "category": "compound",
+      "modern": "halite (sodium chloride mineral)",
+      "formula": "NaCl",
+      "mutation": "Rock Salt -> halite -> NaCl (mineral form)",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F719",
+      "symbol": "🜙",
+      "name": "Rock Salt (variant 2)",
+      "category": "compound",
+      "modern": "halite",
+      "formula": "NaCl",
+      "mutation": "variant of U+1F718",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F71A",
+      "symbol": "🜚",
+      "name": "Gold",
+      "category": "metal",
+      "modern": "gold",
+      "formula": "Au (79)",
+      "mutation": "Gold glyph -> Au (Berzelius 1814) -> element 79",
+      "era": "antiquity, redundant with seed U+2609"
+    },
+    {
+      "codepoint": "U+1F71B",
+      "symbol": "🜛",
+      "name": "Silver",
+      "category": "metal",
+      "modern": "silver",
+      "formula": "Ag (47)",
+      "mutation": "Silver glyph -> Ag (Berzelius 1814) -> element 47",
+      "era": "antiquity, redundant with seed U+263D"
+    },
+    {
+      "codepoint": "U+1F71C",
+      "symbol": "🜜",
+      "name": "Iron Ore",
+      "category": "metal",
+      "modern": "iron oxide",
+      "formula": "Fe2O3",
+      "mutation": "Iron Ore glyph -> oxyde de fer -> Fe2O3",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F71D",
+      "symbol": "🜝",
+      "name": "Iron Ore (variant 2)",
+      "category": "metal",
+      "modern": "iron oxide",
+      "formula": "Fe2O3",
+      "mutation": "variant of U+1F71C",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F71E",
+      "symbol": "🜞",
+      "name": "Crocus of Iron",
+      "category": "metal",
+      "modern": "ferric oxide (red)",
+      "formula": "Fe2O3",
+      "mutation": "Crocus Martis -> colcothar -> Fe2O3 (pigment)",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F71F",
+      "symbol": "🜟",
+      "name": "Regulus of Iron",
+      "category": "metal",
+      "modern": "metallic iron (purified)",
+      "formula": "Fe",
+      "mutation": "Regulus Martis -> fer metallique -> Fe",
+      "era": "Newton ~1680"
+    },
+    {
+      "codepoint": "U+1F720",
+      "symbol": "🜠",
+      "name": "Copper Ore",
+      "category": "metal",
+      "modern": "copper oxide",
+      "formula": "Cu2O",
+      "mutation": "Copper Ore -> oxyde de cuivre -> Cu2O",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F721",
+      "symbol": "🜡",
+      "name": "Iron-Copper Ore",
+      "category": "metal",
+      "modern": "chalcopyrite",
+      "formula": "CuFeS2",
+      "mutation": "Iron-Copper Ore -> chalcopyrite -> CuFeS2",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F722",
+      "symbol": "🜢",
+      "name": "Sublimate of Copper",
+      "category": "compound",
+      "modern": "copper sublimate",
+      "formula": "CuCl2",
+      "mutation": "Sublimate of Copper -> chlorure de cuivre -> CuCl2",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F723",
+      "symbol": "🜣",
+      "name": "Crocus of Copper",
+      "category": "compound",
+      "modern": "cuprous oxide (red)",
+      "formula": "Cu2O",
+      "mutation": "Crocus Veneris -> oxyde cuivreux -> Cu2O",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F724",
+      "symbol": "🜤",
+      "name": "Crocus of Copper (variant 2)",
+      "category": "compound",
+      "modern": "cuprous oxide",
+      "formula": "Cu2O",
+      "mutation": "variant of U+1F723",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F725",
+      "symbol": "🜥",
+      "name": "Copper Antimoniate",
+      "category": "compound",
+      "modern": "copper antimoniate",
+      "formula": "Cu(SbO3)2",
+      "mutation": "Copper Antimoniate -> antimoniate de cuivre",
+      "era": "Newton ~1680"
+    },
+    {
+      "codepoint": "U+1F726",
+      "symbol": "🜦",
+      "name": "Salt of Copper Antimoniate",
+      "category": "compound",
+      "modern": "salt of copper antimoniate",
+      "formula": null,
+      "mutation": "compound notation (Newton)",
+      "era": "Newton ~1680"
+    },
+    {
+      "codepoint": "U+1F727",
+      "symbol": "🜧",
+      "name": "Sublimate of Salt of Copper",
+      "category": "compound",
+      "modern": "sublimed copper salt",
+      "formula": null,
+      "mutation": "compound notation (Newton)",
+      "era": "Newton ~1680"
+    },
+    {
+      "codepoint": "U+1F728",
+      "symbol": "🜨",
+      "name": "Verdigris",
+      "category": "compound",
+      "modern": "copper acetate",
+      "formula": "Cu(CH3COO)2",
+      "mutation": "Verdigris -> vert-de-gris -> acetate de cuivre -> Cu(CH3COO)2",
+      "era": "antiquity (Greece)"
+    },
+    {
+      "codepoint": "U+1F729",
+      "symbol": "🜩",
+      "name": "Tin Ore",
+      "category": "metal",
+      "modern": "tin oxide (cassiterite)",
+      "formula": "SnO2",
+      "mutation": "Tin Ore -> cassiterite -> SnO2",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F72A",
+      "symbol": "🜪",
+      "name": "Lead Ore",
+      "category": "metal",
+      "modern": "lead oxide (galena)",
+      "formula": "PbS",
+      "mutation": "Lead Ore -> galene -> PbS",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F72B",
+      "symbol": "🜫",
+      "name": "Antimony Ore",
+      "category": "metal",
+      "modern": "stibnite",
+      "formula": "Sb2S3",
+      "mutation": "Antimony Ore -> stibine -> Sb2S3",
+      "era": "Basil Valentine ~1450"
+    },
+    {
+      "codepoint": "U+1F72C",
+      "symbol": "🜬",
+      "name": "Sublimate of Antimony",
+      "category": "compound",
+      "modern": "antimony sublimate",
+      "formula": "Sb2O3",
+      "mutation": "Sublimate of Antimony -> oxyde d'antimoine -> Sb2O3",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F72D",
+      "symbol": "🜭",
+      "name": "Salt of Antimony",
+      "category": "compound",
+      "modern": "antimony salt",
+      "formula": null,
+      "mutation": "Salt of Antimony -> sel d'antimoine",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F72E",
+      "symbol": "🜮",
+      "name": "Sublimate of Salt of Antimony",
+      "category": "compound",
+      "modern": "sublimed antimony salt",
+      "formula": null,
+      "mutation": "compound notation",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F72F",
+      "symbol": "🜯",
+      "name": "Vinegar of Antimony",
+      "category": "compound",
+      "modern": "antimony in acetic acid",
+      "formula": null,
+      "mutation": "Vinegar of Antimony -> solution acetique d'antimoine",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F730",
+      "symbol": "🜰",
+      "name": "Regulus of Antimony",
+      "category": "metal",
+      "modern": "metallic antimony (purified)",
+      "formula": "Sb (51)",
+      "mutation": "Regulus of Antimony -> antimoine metallique -> Sb",
+      "era": "Newton ~1680 (star regulus)"
+    },
+    {
+      "codepoint": "U+1F731",
+      "symbol": "🜱",
+      "name": "Regulus of Antimony (variant 2)",
+      "category": "metal",
+      "modern": "metallic antimony",
+      "formula": "Sb (51)",
+      "mutation": "variant of U+1F730",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F732",
+      "symbol": "🜲",
+      "name": "Regulus",
+      "category": "metal",
+      "modern": "purified metal (generic)",
+      "formula": null,
+      "mutation": "Regulus -> metal pur (metallurgy term, still used)",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F733",
+      "symbol": "🜳",
+      "name": "Regulus (variant 2)",
+      "category": "metal",
+      "modern": "purified metal",
+      "formula": null,
+      "mutation": "variant of U+1F732",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F734",
+      "symbol": "🜴",
+      "name": "Regulus (variant 3)",
+      "category": "metal",
+      "modern": "purified metal",
+      "formula": null,
+      "mutation": "variant of U+1F732",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F735",
+      "symbol": "🜵",
+      "name": "Regulus (variant 4)",
+      "category": "metal",
+      "modern": "purified metal",
+      "formula": null,
+      "mutation": "variant of U+1F732",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F736",
+      "symbol": "🜶",
+      "name": "Alkali",
+      "category": "compound",
+      "modern": "potassium hydroxide / sodium hydroxide",
+      "formula": "KOH / NaOH",
+      "mutation": "Alkali -> base (Lavoisier) -> KOH/NaOH",
+      "era": "~8th c. (Arabic al-qali)"
+    },
+    {
+      "codepoint": "U+1F737",
+      "symbol": "🜷",
+      "name": "Alkali (variant 2)",
+      "category": "compound",
+      "modern": "alkali",
+      "formula": "KOH / NaOH",
+      "mutation": "variant of U+1F736",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F738",
+      "symbol": "🜸",
+      "name": "Marcasite",
+      "category": "compound",
+      "modern": "iron pyrite (white)",
+      "formula": "FeS2",
+      "mutation": "Marcasite -> pyrite blanche -> FeS2 (orthorhombic)",
+      "era": "~13th c."
+    },
+    {
+      "codepoint": "U+1F739",
+      "symbol": "🜹",
+      "name": "Sal-Ammoniac",
+      "category": "compound",
+      "modern": "ammonium chloride",
+      "formula": "NH4Cl",
+      "mutation": "Sal-Ammoniac -> chlorure d'ammonium -> NH4Cl",
+      "era": "~8th c. (Geber)"
+    },
+    {
+      "codepoint": "U+1F73A",
+      "symbol": "🜺",
+      "name": "Arsenic",
+      "category": "metal",
+      "modern": "arsenic",
+      "formula": "As (33)",
+      "mutation": "Arsenic glyph -> As (Berzelius 1814) -> element 33",
+      "era": "Albertus Magnus ~1250"
+    },
+    {
+      "codepoint": "U+1F73B",
+      "symbol": "🜻",
+      "name": "Realgar",
+      "category": "compound",
+      "modern": "arsenic sulfide (red)",
+      "formula": "As4S4",
+      "mutation": "Realgar -> sulfure d'arsenic rouge -> As4S4",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F73C",
+      "symbol": "🜼",
+      "name": "Realgar (variant 2)",
+      "category": "compound",
+      "modern": "arsenic sulfide",
+      "formula": "As4S4",
+      "mutation": "variant of U+1F73B",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F73D",
+      "symbol": "🜽",
+      "name": "Auripigment",
+      "category": "compound",
+      "modern": "arsenic trisulfide (yellow)",
+      "formula": "As2S3",
+      "mutation": "Auripigment -> orpiment -> As2S3",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F73E",
+      "symbol": "🜾",
+      "name": "Bismuth Ore",
+      "category": "metal",
+      "modern": "bismuth",
+      "formula": "Bi (83)",
+      "mutation": "Bismuth Ore -> Bi (Berzelius) -> element 83",
+      "era": "~15th c."
+    },
+    {
+      "codepoint": "U+1F73F",
+      "symbol": "🜿",
+      "name": "Tartar",
+      "category": "compound",
+      "modern": "potassium carbonate",
+      "formula": "K2CO3",
+      "mutation": "Salt of Tartar -> carbonate de potasse -> K2CO3",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F740",
+      "symbol": "🝀",
+      "name": "Tartar (variant 2)",
+      "category": "compound",
+      "modern": "potassium carbonate",
+      "formula": "K2CO3",
+      "mutation": "variant of U+1F73F",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F741",
+      "symbol": "🝁",
+      "name": "Quick Lime",
+      "category": "compound",
+      "modern": "calcium oxide",
+      "formula": "CaO",
+      "mutation": "Quick Lime -> chaux vive -> CaO",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F742",
+      "symbol": "🝂",
+      "name": "Borax",
+      "category": "compound",
+      "modern": "sodium tetraborate",
+      "formula": "Na2B4O7",
+      "mutation": "Borax -> borax -> Na2B4O7 (name survived)",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F743",
+      "symbol": "🝃",
+      "name": "Borax (variant 2)",
+      "category": "compound",
+      "modern": "sodium tetraborate",
+      "formula": "Na2B4O7",
+      "mutation": "variant of U+1F742",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F744",
+      "symbol": "🝄",
+      "name": "Borax (variant 3)",
+      "category": "compound",
+      "modern": "sodium tetraborate",
+      "formula": "Na2B4O7",
+      "mutation": "variant of U+1F742",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F745",
+      "symbol": "🝅",
+      "name": "Alum",
+      "category": "compound",
+      "modern": "potassium aluminium sulfate",
+      "formula": "KAl(SO4)2",
+      "mutation": "Alum -> alun -> KAl(SO4)2 (name survived)",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F746",
+      "symbol": "🝆",
+      "name": "Oil",
+      "category": "compound",
+      "modern": "essential oil / organic liquid",
+      "formula": null,
+      "mutation": "Oil (alchemical) -> huile essentielle -> organic compounds",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F747",
+      "symbol": "🝇",
+      "name": "Spirit",
+      "category": "compound",
+      "modern": "volatile substance / distillate",
+      "formula": null,
+      "mutation": "Spirit -> esprit (volatile fraction) -> distillat",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F748",
+      "symbol": "🝈",
+      "name": "Tincture",
+      "category": "compound",
+      "modern": "tincture (alcohol extract)",
+      "formula": null,
+      "mutation": "Tincture -> teinture -> extract in alcohol (term survived in pharmacy)",
+      "era": "Paracelsus ~1530"
+    },
+    {
+      "codepoint": "U+1F749",
+      "symbol": "🝉",
+      "name": "Gum",
+      "category": "compound",
+      "modern": "natural gum / resin",
+      "formula": null,
+      "mutation": "Gum -> gomme -> polysaccharides",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F74A",
+      "symbol": "🝊",
+      "name": "Wax",
+      "category": "compound",
+      "modern": "wax (beeswax)",
+      "formula": null,
+      "mutation": "Wax -> cire -> esters d'acides gras",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F74B",
+      "symbol": "🝋",
+      "name": "Powder",
+      "category": "compound",
+      "modern": "powder (ground solid)",
+      "formula": null,
+      "mutation": "Powder -> poudre -> particulate form",
+      "era": "~13th c."
+    },
+    {
+      "codepoint": "U+1F74C",
+      "symbol": "🝌",
+      "name": "Calx",
+      "category": "compound",
+      "modern": "calcium oxide / metal oxide",
+      "formula": "CaO",
+      "mutation": "Calx -> chaux -> CaO (also: metal oxide residue after calcination)",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F74D",
+      "symbol": "🝍",
+      "name": "Tutty",
+      "category": "compound",
+      "modern": "zinc oxide (crude)",
+      "formula": "ZnO",
+      "mutation": "Tutty -> tutie -> ZnO (furnace sublimate)",
+      "era": "~13th c."
+    },
+    {
+      "codepoint": "U+1F74E",
+      "symbol": "🝎",
+      "name": "Caput Mortuum",
+      "category": "compound",
+      "modern": "iron oxide residue (pigment)",
+      "formula": "Fe2O3",
+      "mutation": "Caput Mortuum -> tete morte -> Fe2O3 (pigment still called this)",
+      "era": "~15th c."
+    },
+    {
+      "codepoint": "U+1F74F",
+      "symbol": "🝏",
+      "name": "Scepter of Jove",
+      "category": "compound",
+      "modern": "tin compound (Jupiter association)",
+      "formula": null,
+      "mutation": "Scepter of Jove -> compound of tin",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F750",
+      "symbol": "🝐",
+      "name": "Caduceus",
+      "category": "compound",
+      "modern": "mercury compound (Hermes association)",
+      "formula": null,
+      "mutation": "Caduceus -> symbol of mercury/commerce",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F751",
+      "symbol": "🝑",
+      "name": "Trident",
+      "category": "compound",
+      "modern": "antimony/bismuth compound",
+      "formula": null,
+      "mutation": "Trident -> symbol of Neptune/bismuth",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F752",
+      "symbol": "🝒",
+      "name": "Starred Trident",
+      "category": "compound",
+      "modern": "volatile antimony/bismuth compound",
+      "formula": null,
+      "mutation": "Starred Trident -> volatility indicator",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F753",
+      "symbol": "🝓",
+      "name": "Lodestone",
+      "category": "compound",
+      "modern": "magnetite",
+      "formula": "Fe3O4",
+      "mutation": "Lodestone -> magnetite -> Fe3O4",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F754",
+      "symbol": "🝔",
+      "name": "Soap",
+      "category": "compound",
+      "modern": "soap (fatty acid salt)",
+      "formula": null,
+      "mutation": "Soap -> savon -> sels d'acides gras",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F755",
+      "symbol": "🝕",
+      "name": "Urine",
+      "category": "compound",
+      "modern": "urine (phosphorus source)",
+      "formula": null,
+      "mutation": "Urine -> source of phosphorus (Brand 1669) -> P",
+      "era": "antiquity, Brand 1669"
+    },
+    {
+      "codepoint": "U+1F756",
+      "symbol": "🝖",
+      "name": "Horse Dung",
+      "category": "compound",
+      "modern": "organic heat source (digestion)",
+      "formula": null,
+      "mutation": "Fimus Equinus -> source de chaleur douce (fermentation)",
+      "era": "~13th c."
+    },
+    {
+      "codepoint": "U+1F757",
+      "symbol": "🝗",
+      "name": "Ashes",
+      "category": "compound",
+      "modern": "potash (wood ash)",
+      "formula": "K2CO3",
+      "mutation": "Ashes -> cendres -> potasse -> K2CO3",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F758",
+      "symbol": "🝘",
+      "name": "Pot Ashes",
+      "category": "compound",
+      "modern": "potash (refined)",
+      "formula": "K2CO3",
+      "mutation": "Pot Ashes -> potasse -> K2CO3 (origin of 'potassium')",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F759",
+      "symbol": "🝙",
+      "name": "Brick",
+      "category": "compound",
+      "modern": "fired clay",
+      "formula": null,
+      "mutation": "Brick -> brique -> ceramic material",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F75A",
+      "symbol": "🝚",
+      "name": "Powdered Brick",
+      "category": "compound",
+      "modern": "ground ceramic",
+      "formula": null,
+      "mutation": "Powdered Brick -> brique pilee -> filtration medium",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F75B",
+      "symbol": "🝛",
+      "name": "Amalgam",
+      "category": "compound",
+      "modern": "mercury alloy",
+      "formula": null,
+      "mutation": "Amalgam -> amalgame (term survived: dental amalgam)",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F75C",
+      "symbol": "🝜",
+      "name": "Stratum Super Stratum",
+      "category": "process",
+      "modern": "layer upon layer (technique)",
+      "formula": null,
+      "mutation": "S.S.S. -> stratification -> layered processing",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F75D",
+      "symbol": "🝝",
+      "name": "Stratum Super Stratum (variant 2)",
+      "category": "process",
+      "modern": "layer upon layer",
+      "formula": null,
+      "mutation": "variant of U+1F75C",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F75E",
+      "symbol": "🝞",
+      "name": "Sublimation",
+      "category": "process",
+      "modern": "sublimation",
+      "formula": null,
+      "mutation": "Sublimation glyph -> sublimation (term + process survived in chemistry)",
+      "era": "Geber ~8th c."
+    },
+    {
+      "codepoint": "U+1F75F",
+      "symbol": "🝟",
+      "name": "Precipitate",
+      "category": "process",
+      "modern": "precipitation",
+      "formula": null,
+      "mutation": "Precipitate glyph -> precipitation (term + process survived)",
+      "era": "~13th c."
+    },
+    {
+      "codepoint": "U+1F760",
+      "symbol": "🝠",
+      "name": "Distill",
+      "category": "process",
+      "modern": "distillation",
+      "formula": null,
+      "mutation": "Distill glyph -> distillation (term + process survived)",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F761",
+      "symbol": "🝡",
+      "name": "Dissolve",
+      "category": "process",
+      "modern": "dissolution",
+      "formula": null,
+      "mutation": "Dissolve glyph -> dissolution (term + process survived)",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F762",
+      "symbol": "🝢",
+      "name": "Dissolve (variant 2)",
+      "category": "process",
+      "modern": "dissolution",
+      "formula": null,
+      "mutation": "variant of U+1F761",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F763",
+      "symbol": "🝣",
+      "name": "Purify",
+      "category": "process",
+      "modern": "purification",
+      "formula": null,
+      "mutation": "Purify glyph -> purification (term + process survived)",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F764",
+      "symbol": "🝤",
+      "name": "Putrefaction",
+      "category": "process",
+      "modern": "putrefaction / decomposition",
+      "formula": null,
+      "mutation": "Putrefaction glyph -> decomposition (nigredo stage)",
+      "era": "~5th c. CE (Zosimos)"
+    },
+    {
+      "codepoint": "U+1F765",
+      "symbol": "🝥",
+      "name": "Crucible",
+      "category": "apparatus",
+      "modern": "crucible",
+      "formula": null,
+      "mutation": "Crucible glyph -> crucible (object + term survived in metallurgy)",
+      "era": "antiquity"
+    },
+    {
+      "codepoint": "U+1F766",
+      "symbol": "🝦",
+      "name": "Crucible (variant 2)",
+      "category": "apparatus",
+      "modern": "crucible",
+      "formula": null,
+      "mutation": "variant of U+1F765",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F767",
+      "symbol": "🝧",
+      "name": "Crucible (variant 3)",
+      "category": "apparatus",
+      "modern": "crucible",
+      "formula": null,
+      "mutation": "variant of U+1F765",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F768",
+      "symbol": "🝨",
+      "name": "Crucible (variant 4)",
+      "category": "apparatus",
+      "modern": "crucible",
+      "formula": null,
+      "mutation": "variant of U+1F765",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F769",
+      "symbol": "🝩",
+      "name": "Crucible (variant 5)",
+      "category": "apparatus",
+      "modern": "crucible",
+      "formula": null,
+      "mutation": "variant of U+1F765",
+      "era": "~14th-17th c."
+    },
+    {
+      "codepoint": "U+1F76A",
+      "symbol": "🝪",
+      "name": "Alembic",
+      "category": "apparatus",
+      "modern": "distillation head / column",
+      "formula": null,
+      "mutation": "Alembic -> alambic -> colonne de distillation",
+      "era": "~8th c. (Arabic al-anbiq)"
+    },
+    {
+      "codepoint": "U+1F76B",
+      "symbol": "🝫",
+      "name": "Bath of Mary",
+      "category": "apparatus",
+      "modern": "water bath (bain-marie)",
+      "formula": null,
+      "mutation": "Balneum Mariae -> bain-marie (term survived worldwide)",
+      "era": "Mary the Jewess ~3rd c. CE"
+    },
+    {
+      "codepoint": "U+1F76C",
+      "symbol": "🝬",
+      "name": "Bath of Vapours",
+      "category": "apparatus",
+      "modern": "steam bath",
+      "formula": null,
+      "mutation": "Bath of Vapours -> bain de vapeur -> steam bath",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F76D",
+      "symbol": "🝭",
+      "name": "Retort",
+      "category": "apparatus",
+      "modern": "retort / round-bottom flask",
+      "formula": null,
+      "mutation": "Retort glyph -> cornue -> round-bottom flask",
+      "era": "~8th c."
+    },
+    {
+      "codepoint": "U+1F76E",
+      "symbol": "🝮",
+      "name": "Hour",
+      "category": "measure",
+      "modern": "hour (time unit)",
+      "formula": null,
+      "mutation": "Hour glyph -> h (abbreviation)",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F76F",
+      "symbol": "🝯",
+      "name": "Night",
+      "category": "measure",
+      "modern": "overnight (process duration)",
+      "formula": null,
+      "mutation": "Night glyph -> 'overnight' in lab protocols",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F770",
+      "symbol": "🝰",
+      "name": "Day-Night",
+      "category": "measure",
+      "modern": "24 hours",
+      "formula": null,
+      "mutation": "Day-Night glyph -> 24h",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F771",
+      "symbol": "🝱",
+      "name": "Month",
+      "category": "measure",
+      "modern": "month (process duration)",
+      "formula": null,
+      "mutation": "Month glyph -> '1 month' in protocols",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F772",
+      "symbol": "🝲",
+      "name": "Half Dram",
+      "category": "measure",
+      "modern": "half dram (~1.77g)",
+      "formula": null,
+      "mutation": "Half Dram -> apothecary system -> metric grams",
+      "era": "~15th-17th c."
+    },
+    {
+      "codepoint": "U+1F773",
+      "symbol": "🝳",
+      "name": "Half Ounce",
+      "category": "measure",
+      "modern": "half ounce (~14.2g)",
+      "formula": null,
+      "mutation": "Half Ounce -> apothecary system -> metric grams",
+      "era": "~15th-17th c."
+    }
+  ],
+  "seeds_existing": [
+    {
+      "codepoint": "U+2609",
+      "symbol": "☉",
+      "name": "Sun (Gold seed)",
+      "category": "seed",
+      "modern": "gold",
+      "formula": "Au (79)",
+      "mutation": "Sun -> Gold -> Au -> 79",
+      "status": "already in S-2 seeds"
+    },
+    {
+      "codepoint": "U+263D",
+      "symbol": "☽",
+      "name": "Moon (Silver seed)",
+      "category": "seed",
+      "modern": "silver",
+      "formula": "Ag (47)",
+      "mutation": "Moon -> Silver -> Ag -> 47",
+      "status": "already in S-2 seeds"
+    },
+    {
+      "codepoint": "U+2642",
+      "symbol": "♂",
+      "name": "Mars (Iron seed)",
+      "category": "seed",
+      "modern": "iron",
+      "formula": "Fe (26)",
+      "mutation": "Mars -> Iron -> Fe -> 26",
+      "status": "already in S-2 seeds"
+    },
+    {
+      "codepoint": "U+2640",
+      "symbol": "♀",
+      "name": "Venus (Copper seed)",
+      "category": "seed",
+      "modern": "copper",
+      "formula": "Cu (29)",
+      "mutation": "Venus -> Copper -> Cu -> 29",
+      "status": "already in S-2 seeds"
+    },
+    {
+      "codepoint": "U+2643",
+      "symbol": "♃",
+      "name": "Jupiter (Tin seed)",
+      "category": "seed",
+      "modern": "tin",
+      "formula": "Sn (50)",
+      "mutation": "Jupiter -> Tin -> Sn -> 50",
+      "status": "already in S-2 seeds"
+    },
+    {
+      "codepoint": "U+2644",
+      "symbol": "♄",
+      "name": "Saturn (Lead seed)",
+      "category": "seed",
+      "modern": "lead",
+      "formula": "Pb (82)",
+      "mutation": "Saturn -> Lead -> Pb -> 82",
+      "status": "already in S-2 seeds"
+    },
+    {
+      "codepoint": "U+263F",
+      "symbol": "☿",
+      "name": "Mercury (Mercury seed)",
+      "category": "seed",
+      "modern": "mercury",
+      "formula": "Hg (80)",
+      "mutation": "Mercury -> Hg -> 80",
+      "status": "already in S-2 seeds"
+    }
+  ],
+  "active_symbols": [
+    {
+      "codepoint": "U+2622",
+      "symbol": "☢",
+      "name": "Radioactive",
+      "category": "hazard",
+      "modern": "radioactivity warning",
+      "formula": null,
+      "inventor": "Nels Garden, UC Berkeley Radiation Lab",
+      "year": 1946,
+      "status": "active",
+      "mutation": "none (still in use)"
+    },
+    {
+      "codepoint": "U+2623",
+      "symbol": "☣",
+      "name": "Biohazard",
+      "category": "hazard",
+      "modern": "biological hazard warning",
+      "formula": null,
+      "inventor": "Charles Baldwin, Dow Chemical",
+      "year": 1966,
+      "status": "active",
+      "mutation": "none (still in use)"
+    },
+    {
+      "codepoint": "U+269B",
+      "symbol": "⚛",
+      "name": "Atom",
+      "category": "hazard",
+      "modern": "atomic/nuclear symbol",
+      "formula": null,
+      "inventor": "IAEA / Atoms for Peace",
+      "year": 1957,
+      "status": "active",
+      "mutation": "Bohr model obsolete but symbol persists"
+    },
+    {
+      "codepoint": "U+26A1",
+      "symbol": "⚡",
+      "name": "High Voltage",
+      "category": "hazard",
+      "modern": "electrical hazard",
+      "formula": null,
+      "inventor": "electrical engineering community",
+      "year": null,
+      "status": "active",
+      "mutation": "none (still in use)"
+    },
+    {
+      "codepoint": "U+211E",
+      "symbol": "℞",
+      "name": "Prescription Take (Rx)",
+      "category": "medical",
+      "modern": "prescription symbol",
+      "formula": null,
+      "inventor": "medieval physicians (from Latin recipe)",
+      "year": null,
+      "status": "active",
+      "mutation": "Latin recipe -> Rx ligature (still in use)"
+    },
+    {
+      "codepoint": "U+2695",
+      "symbol": "⚕",
+      "name": "Staff of Aesculapius",
+      "category": "medical",
+      "modern": "medicine symbol",
+      "formula": null,
+      "inventor": "Asclepius cult, adopted by medicine",
+      "year": null,
+      "status": "active",
+      "mutation": "mythological -> medical profession symbol"
+    },
+    {
+      "codepoint": "U+232C",
+      "symbol": "⌬",
+      "name": "Benzene Ring",
+      "category": "chemistry",
+      "modern": "benzene / aromatic ring",
+      "formula": "C6H6",
+      "inventor": "Friedrich August Kekule",
+      "year": 1865,
+      "status": "active",
+      "mutation": "none (still universal in organic chemistry)"
+    },
+    {
+      "codepoint": "U+2103",
+      "symbol": "℃",
+      "name": "Degree Celsius",
+      "category": "physics",
+      "modern": "Celsius temperature",
+      "formula": null,
+      "inventor": "Anders Celsius (inverted) / Linnaeus (flipped)",
+      "year": 1742,
+      "status": "active",
+      "mutation": "none (SI-adjacent, universal)"
+    },
+    {
+      "codepoint": "U+2109",
+      "symbol": "℉",
+      "name": "Degree Fahrenheit",
+      "category": "physics",
+      "modern": "Fahrenheit temperature",
+      "formula": null,
+      "inventor": "Daniel Gabriel Fahrenheit",
+      "year": 1724,
+      "status": "active",
+      "mutation": "being phased out globally in favor of Celsius"
+    },
+    {
+      "codepoint": "U+212B",
+      "symbol": "Å",
+      "name": "Angstrom",
+      "category": "physics",
+      "modern": "angstrom (0.1 nm)",
+      "formula": null,
+      "inventor": "Anders Jonas Angstrom",
+      "year": 1868,
+      "status": "active",
+      "mutation": "partially replaced by pm in SI, still used in crystallography"
+    }
+  ]
+}
