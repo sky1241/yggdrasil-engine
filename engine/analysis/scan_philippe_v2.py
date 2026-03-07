@@ -339,7 +339,7 @@ def main():
         print(f"    {sp:35s} | {v['count']:3d} pairs | {v['holes']:2d} holes | P4={v['p4_sum']:.2f}")
 
     # === 7. Save ===
-    outfile = os.path.join(REPO, "data", "scan_philippe_v2.json")
+    outfile = os.path.join(REPO, "data", "results", "scan_philippe_v2.json")
     summary = {
         "scan": "philippe_schuchert_v2",
         "date": time.strftime("%Y-%m-%d %H:%M:%S"),
