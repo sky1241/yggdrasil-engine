@@ -9,11 +9,11 @@
 | Racines | Pipeline: scan → co-occurrence → Laplacien → positions spectrales |
 | Mycelium | Graphe topologique: co-occurrences, BC, meshedness, Physarum |
 | Sol (S0) | 65,026 concepts scientifiques OpenAlex — le plancher de toute la science |
-| Winter Tree | Index trié par année/mois: 65,026 concepts × co-occurrences (581 chunks, 348M papers) |
+| Winter Tree | Index de co-occurrences — WT1=concept×concept, WT2=glyph×concept (per-paper), WT3=Bible unifiée |
 | Vivant | Concept avec works_count >= Q1 de son domaine |
 | Musée | Concept sous Q1 — existe mais peu cité |
 | Strates | S-2=glyphes → S-1=métiers → S0=concepts → S1-S6=arbre |
-| S-2 Glyphes | Notation (=, +, ∫, Σ, ∂) — 1,337 symboles math, briques atomiques d'écriture |
+| S-2 Glyphes | Notation (=, +, ∫, Σ, ∂) — ~1,500 symboles science (1,337 math + 116 fossiles alchimiques + 10 actifs non-math + 7 graines) |
 | S-1 Métiers | Professions/domaines (physics, biology, engineering) — 19 domaines × 1,337 glyphes |
 | S0 Concepts | 65,026 concepts scientifiques = ce que les scientifiques utilisent, prouvé ou pas |
 | S1-S6 Arbre | 296 concepts sur l'indécidabilité (Halting, BB, etc.) |
@@ -36,7 +36,7 @@
 ┌─────────────────────────────────────────────────────┐
 │  Population         │ Nombre  │ Source               │
 ├─────────────────────┼─────────┼──────────────────────┤
-│  S-2 Glyphes        │  1,337  │ arXiv LaTeX + PMC    │
+│  S-2 Glyphes        │ ~1,500  │ 1,337 math + 116 fossiles + 10 actifs + 7 graines │
 │  S-1 Métiers        │  19 dom │ arXiv domain×glyph   │
 │  S0  Concepts       │ 65,026  │ OpenAlex snapshot     │
 │  S1-S6 Arbre        │    296  │ Keywords sur 65K      │
@@ -57,7 +57,7 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 ═══════════════════════════════════════════════════
     S0      CONCEPTS (65,026)                    ┐
     S-1     MÉTIERS (19 domaines × 1,337)        │ SOL = MYCELIUM
-    S-2     GLYPHES (1,337 symboles math)        ┘
+    S-2     GLYPHES (~1,500 symboles science)     ┘
 ═══════════════════════════════════════════════════
 ```
 - Le mycelium (co-occurrences) vit dans S-2 à S0 — c'est le SOL
@@ -65,21 +65,31 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 - Le spectral layout positionne TOUT à partir du mycelium
 - La météorite frappe S0 et le blast se propage dans le sol
 
-## ÉTAT ACTUEL — 6 MARS 2026 (session 18)
+### WINTER TREES (3 couches)
+```
+WT1 (FAIT)     concept × concept    108M paires, Laplacien S0 propre
+WT2 (EN COURS)  per-paper index      {glyphs, domain, concepts} → graphe BIPARTITE glyph×concept  [52/416, ~40h]
+WT3 (APRÈS)    La Bible             jointure WT1+WT2, index unifié, Muninn par-dessus
+```
+- RÈGLE: Laplaciens S-2 et S0 restent SÉPARÉS. Le pont S-2↔S0 = table bipartite, PAS fusion de graphes
+- WT2 sauvegarde le détail PER-PAPER (contrairement à S-1 qui a agrégé et jeté)
+- WT3 = recherche cross-strate ("Philippe" → ses papers + ses formules + ses concepts)
+
+## ÉTAT ACTUEL — 6 MARS 2026 (session 20)
 
 ### S-2 GLYPHES — COMPLET
-- 1,337 glyphes, 617 actifs, Laplacien spectral k=9
+- ~1,500 glyphes total: 1,337 math (617 actifs) + 116 fossiles alchimiques + 10 actifs non-math + 7 graines
 - Pipeline: registry → arXiv scanner (420 chunks) → PMC scanner (39 chunks) → Laplacien → frames (356) → intégration
 - Archéologie: 194 glyphes tracés (57 C1 + 137 C2, Cajori 1928-29)
+- Fossiles: `data/core/glyph_fossils.json` — extinction Berzelius 1813-14, chaînes de mutation documentées
 - 17 graines: 10 chiffres + 7 symboles alchimiques, patient t=0 documenté
-- Output: `data/core/s2_spectral.json`, `data/core/glyph_registry.json`
+- Output: `data/core/s2_spectral.json`, `data/core/glyph_registry.json`, `data/core/glyph_fossils.json`
 
-### S-1 MÉTIERS — EN COURS (~395/416 chunks)
-- Scan domain×glyph sur arXiv LaTeX, 19 domaines
+### S-1 MÉTIERS — COMPLET (416/416 chunks)
+- Scan domain×glyph sur arXiv LaTeX, 19 domaines, 867,562 papers, 858,407 with glyphs
 - Scanner: `engine/professions/domain_glyph_scanner.py`
-- Fix session 18: streaming lookup (MemoryError) + random.sample(glyph_ids, 100) avec seed arXiv_id
-- Output: `data/scan/s1_chunks/chunk_NNN/`
-- ETA: ~1h
+- Output: `data/scan/s1_chunks/chunk_NNN/` (967 MB, gitignored)
+- ATTENTION: données agrégées domain×glyph uniquement, PAS per-paper
 
 ### S0 CONCEPTS — COMPLET (= les 65K OpenAlex)
 - 65,026 concepts scientifiques OpenAlex
@@ -134,6 +144,9 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 | 16 | 4 mars | Sky solo | 2 graines bourrées: Mort=figé/Vivant=mute + Conjecture Rubik (C2) |
 | 17 | 5 mars | Opus 4.6 | Fix MemoryError S-1 scanner (streaming lookup), S-1 scan relancé |
 | 18 | 6 mars | Opus 4.6 | GRAND MÉNAGE: audit complet sessions 1-17, fix cap random.sample, réécriture SOL.md, les 21K déclarés obsolètes → 65K = S0 officiel |
+| 19 | 6 mars | Opus 4.6 | S-1 scan COMPLET (416/416, 858K papers, 19 domaines × 1,337 glyphes) |
+| 20 | 6 mars | Opus 4.6 | S-2 fossiles (116 alchimiques + 10 actifs non-math), architecture WT1/WT2/WT3, règle bipartite, WT2 scanner construit+lancé (chunk 1 OK), Muninn lu en entier, Rubik mapping V4, décisions 11-14 |
+| 21 | 8 mars | Opus 4.6 | WT2 relancé (38→52+/416), check intégrité 38 chunks OK, dialogue Muninn↔Yggdrasil: mycelium paragraphe = couche complémentaire (pas redondante), WT3 = point de jonction des deux cousins |
 
 ## RÈGLES AUTO
 1. Sky monte (arbre/direction). Claude descend (racines/code).
@@ -152,6 +165,41 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 5. Les contradictions entre couches = le vrai signal
 6. V4 = moteur de sélection d'outils. Sommet escalier = vue plongeante → briques filtrées → AI grimpe
 7. P=NP est S3-S4, pas S6. Le pont existe. Les 3 routes classiques sont P5.
+8. **S-2 = "glyphes inventés POUR la science"** — pas juste math. Inclut fossiles alchimiques et symboles scientifiques actifs
+9. **Pont S-2↔S0 = BIPARTITE** — JAMAIS fusionner les Laplaciens S-2 et S0. Table de correspondance pondérée, pas graphe unique
+10. **WT2 sauvegarde per-paper** — ne plus jeter le détail par paper comme S-1 l'a fait
+11. **Blind test cutoff 2015 = MORT** — OpenAlex retags rétroactifs = fuite temporelle. Ne plus valider par cutoff. Validation = V3 météorites (propre)
+12. **S-2 = horloge, S0 = carte** — S-2 est propre temporellement (LaTeX ne change pas). S0 pour naviguer, S-2 pour dater/prédire
+13. **Grimpeur = solveur Rubik's cube** — mapper glyphes/domaines/escaliers sur structure de cube, utiliser algos de résolution existants (théorie des groupes). Voir Graine 2 enrichie
+14. **PMC = après V3** — pas de nouveau téléchargement tant que le grimpeur ne le demande pas. arXiv suffit pour V2-V3
+
+## PONT MUNINN ↔ YGGDRASIL (session 21, 8 mars 2026)
+
+**Contexte sobre**: Muninn = compresseur mémoire LLM (repo frère). Son mycelium
+tracke les co-occurrences entre concepts **au niveau paragraphe** (pas paper entier).
+Yggdrasil tracke les co-occurrences **au niveau paper entier** (WT1, 108M paires).
+
+**Pourquoi c'est complémentaire (pas redondant)**:
+- Yggdrasil (WT1): "ces 2 concepts apparaissent dans le même paper" → granularité grossière, 348M papers
+- Muninn (mycelium): "ces 2 concepts apparaissent dans le même paragraphe" → granularité fine, fusions auto
+- Les fusions Muninn = concepts inséparables (toujours dans le même paragraphe)
+- Les absences Muninn = structural holes paragraphe-level (plus fins que paper-level)
+
+**Point de jonction = WT3 (la Bible)**:
+1. WT1 donne la carte macro (concept × concept, paper-level)
+2. WT2 donne le pont S-2↔S0 (glyph × concept, per-paper)
+3. Muninn donnerait la carte micro (concept × concept, paragraphe-level)
+4. Les trois ensemble = zoom multi-résolution sur la même réalité
+
+**Réponses aux questions de Muninn**:
+- Concept index = keywords hiérarchiques OpenAlex (65K), pas du texte brut
+- Matrice co-occ = WT1, 108M paires sparse, poids 1/C(n,2), JSON compressé par chunks
+- arXiv = LaTeX source (.tex), pas PDF — on parse les math environments
+- Structural holes = Laplacien spectral (vecteurs propres), pas juste absence dans la matrice
+- 65K × 65K = sparse (2.5% fill), Laplacien sur top-K=64 voisins, pas matrice pleine
+- Scan S0 = ~48h sur 348M papers
+
+**Décision**: Muninn sur WT3, APRÈS que WT2 soit fini et WT3 assemblé. Pas avant.
 
 ## TODO
 - [x] Winter tree scanner V2 (65K, 581/581 chunks, 348M papers) — session 10
@@ -166,12 +214,17 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 - [x] Pipeline S-2 COMPLET (420 arXiv + 39 PMC → Laplacien → s2_spectral.json) — sessions 12-15
 - [x] V3 météorites codé (engine/meteorites.py) — session 7
 - [x] Grand ménage: audit complet, 21K→65K officiel — session 18
-- [ ] **S-1 Métiers: scan ~395/416 → COMPLET** (en cours, ~1h)
-- [ ] Intégration S-1 chunks → positions spectrales
-- [ ] Connexions inter-strates S-2↔S-1↔S0
+- [x] S-1 Métiers COMPLET (416/416, 858K papers) — session 19
+- [x] S-2 fossiles + scope étendu (~1,500 total) — session 20
+- [x] WT2: scanner per-paper {glyphs, domain, concepts} — scanner construit, chunk 1 OK (11,834 papers, 539K paires bipartite)
+- [ ] WT2: scan complet (416/416 chunks) ← EN COURS (52/416, relancé session 21, ~40h restantes)
+- [ ] WT3: La Bible (jointure WT1+WT2, index unifié)
+- [ ] Muninn sur WT3 (compression/accélération)
+- [ ] Recalculer escaliers spectraux sur 65K (200 geo + 69 passe-partout actuels basés sur 21K)
+- [ ] PMC bulk download + scan (bio/med/chimie — quand le grimpeur a besoin de disciplines hors arXiv)
 - [ ] Refaire viz avec 3 couches du sol complètes
-- [ ] V3: mesurer météorites sur frames réelles (Shannon 1948 → Gödel 1931)
-- [ ] V4: le grimpeur
+- [ ] V3: mesurer météorites sur frames réelles — calibrage du grimpeur
+- [ ] V4: le grimpeur (mapping Rubik's cube — voir Graine 2 enrichie)
 
 ## FICHIERS CLÉS — ACTIFS
 
@@ -182,18 +235,19 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 | data/core/glyph_registry.json | 1,337 glyphes (333 KB) |
 | data/core/s2_spectral.json | 617 glyphes actifs, positions spectrales (72 KB) |
 | data/core/glyph_origins.json | 194 origines archéologiques (166 KB) |
+| data/core/glyph_fossils.json | 116 fossiles alchimiques + 10 actifs non-math + 7 graines (40 KB) |
 | data/core/seeds_s2.json | 17 graines + sources + mutations (13 KB) |
 | data/scan/glyph_chunks/ | 420 chunks arXiv scannés |
 | data/scan/pmc_glyph_chunks/ | 39 chunks PMC scannés |
 | data/scan/glyph_positions.json | Positions spectrales 2D (249 KB) |
 | data/scan/glyph_frames.json | 356 frames timeline (73 KB) |
 
-### S-1 Métiers (en cours)
+### S-1 Métiers (COMPLET)
 | Fichier | Rôle |
 |---------|------|
 | engine/professions/domain_glyph_scanner.py | Scanner domain×glyph (18 KB) |
 | engine/professions/build_domain_lookup.py | Lookup arXiv→domain (5.4 KB) |
-| data/scan/s1_chunks/chunk_NNN/ | ~395/416 chunks (domain_profile + domain_cooc + meta) |
+| data/scan/s1_chunks/chunk_NNN/ | 416/416 chunks (domain_profile + domain_cooc + meta, 967 MB) |
 | data/scan/s1_tree.json | Index S-1 (73 KB) |
 | data/scan/arxiv_domain_lookup.json.gz | 2.8M arXiv→domain mappings (15 MB) |
 
@@ -218,6 +272,13 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 | blind_test_v2/snapshot_2015_65k.npz | Matrice ≤2015 (457 MB) |
 | predictions_2025/ | Prédictions: 108M paires, P4 Uzzi (638 MB) |
 | predictions_2025/snapshot_full.npz | Matrice complète (615 MB) |
+
+### WT2 — Bridge S-2 <-> S0 (EN COURS)
+| Fichier | Rôle |
+|---------|------|
+| engine/topology/wt2_scanner.py | Scanner per-paper: glyphs + domain + concepts (~350 lignes) |
+| data/scan/wt2_tree.json | Index 416 chunks, 1093 tars, 531.4 GB |
+| data/scan/wt2_chunks/chunk_NNN/ | papers.json.gz + bipartite.json.gz + meta.json par chunk |
 
 ### Spectral
 | Fichier | Rôle |
@@ -291,7 +352,7 @@ Les concepts "vivants" (qui mutent) = outils instables mais c'est LÀ que les P4
 
 > Statut: **C2** — à valider avec les données
 
-### Graine 2 — Conjecture Rubik (auto-correction convergente)
+### Graine 2 — Conjecture Rubik (auto-correction convergente) — ENRICHIE session 20
 
 **L'insight**: le grimpeur V4 = solveur de Rubik's cube sur la topologie.
 
@@ -305,7 +366,31 @@ Propriétés:
 3. **Patterns répétables**: catalogue fini de mouvements
 4. **Couche par couche**: résoudre S-2 → S-1 → S0 sans casser les couches précédentes
 
-> Statut: **C2 forte** — l'analogie tient, la formalisation reste à faire.
+**MAPPING CONCRET (session 20)**:
+Le Rubik's cube n'est PAS une métaphore. C'est le framework mathématique.
+
+```
+CUBE                          YGGDRASIL
+─────────────────────────────────────────
+Faces (6)                  =  Domaines/espèces (S-1)
+Centre de face (fixe)      =  Glyphes purs d'un domaine (1 seul métier)
+Arêtes (2 faces)           =  Lianes géographiques (200, relient 2 domaines)
+Coins (3+ faces)           =  Passe-partout (69, traversent 3+ domaines)
+État non résolu            =  Trous structurels dans le réseau
+État résolu                =  Réseau complet (pas de trous P4)
+Mouvements de résolution   =  Compositions de glyphes existants
+God's number (20 max)      =  Nb max de compositions pour combler un trou ?
+```
+
+**Réduction de l'espace**: pas 1,337 glyphes comme mouvements. Seulement ~269 escaliers (200 geo + 69 passe-partout) = les pièces mobiles du cube. Les centres (glyphes d'un seul domaine) sont fixes.
+
+**Algorithmes de résolution = EXISTANTS**: théorie des groupes, permutations, 50 ans d'optimisation. Pas besoin d'inventer. Juste de MAPPER.
+
+**Calibrage**: V3 (météorites) = vérité terrain. Les explosions passées correspondent-elles à des "rotations" du cube ?
+
+**Insight clé**: les chercheurs n'inventent quasi jamais de nouveaux glyphes. Ils RECOMBINENT des glyphes existants. Le Rubik's cube a toutes ses pièces depuis le début — on les tourne pour résoudre.
+
+> Statut: **C2 forte, mapping concret trouvé** — formalisation = mapper les données sur un cube de la bonne taille + brancher un solveur existant
 
 ## VISION V4 — LE GRIMPEUR
 
@@ -333,13 +418,14 @@ Pas de saut. Les racines d'abord. Toujours.
 
 ## ROADMAP
 ```
-S-2 COMPLET ✅
-  → S-1 EN COURS (~1h) ← ON EST ICI
-    → S-1 intégration
-      → Connexions S-2↔S-1↔S0
-        → Refaire viz (3 couches)
-          → V3 météorites sur frames réelles
-            → V4 le grimpeur
+S-2 COMPLET ✅ (~1,500 glyphes + fossiles)
+  → S-1 COMPLET ✅ (416/416, 858K papers)
+    → WT2 scanner per-paper ← ON EST ICI (52/416, ~40h)
+      → WT3 La Bible (jointure WT1+WT2)
+        → Muninn sur WT3 (compression/turbo)
+          → Refaire viz (3 couches du sol)
+            → V3 météorites sur frames réelles
+              → V4 le grimpeur
 ```
 
 ## MÉCANIQUES CLAUDE
