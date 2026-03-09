@@ -24,9 +24,9 @@ _MATH_PATTERNS = [
     re.compile(r"\\begin\{gather\*?\}(.+?)\\end\{gather\*?\}", re.DOTALL),
     re.compile(r"\\begin\{displaymath\}(.+?)\\end\{displaymath\}", re.DOTALL),
     re.compile(r"\\begin\{math\}(.+?)\\end\{math\}", re.DOTALL),
-    # Inline math (must be last — greedy risk)
-    re.compile(r"\\\((.+?)\\\)", re.DOTALL),
-    re.compile(r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)", re.DOTALL),
+    # Inline math (NO re.DOTALL — inline math never spans lines)
+    re.compile(r"\\\((.+?)\\\)"),
+    re.compile(r"(?<!\$)\$(?!\$)(.+?)(?<!\$)\$(?!\$)"),
 ]
 
 # Structural LaTeX commands to IGNORE (not glyphs)
@@ -79,9 +79,18 @@ def strip_comments(tex: str) -> str:
 
 def extract_math_envs(tex: str) -> list[str]:
     """Extract all math environments from a .tex string."""
+    # Hard cap: no real paper needs >500KB for glyph extraction.
+    # Prevents catastrophic backtracking on pathological inputs.
+    if len(tex) > 500_000:
+        tex = tex[:500_000]
     tex = strip_comments(tex)
     envs = []
-    for pat in _MATH_PATTERNS:
+    # _MATH_PATTERNS[-1] is the inline $...$ pattern — most dangerous for
+    # backtracking.  Skip it on large inputs (>200KB after comment strip).
+    skip_inline_dollar = len(tex) > 200_000
+    for i, pat in enumerate(_MATH_PATTERNS):
+        if skip_inline_dollar and i == len(_MATH_PATTERNS) - 1:
+            continue
         for m in pat.finditer(tex):
             envs.append(m.group(1))
     return envs

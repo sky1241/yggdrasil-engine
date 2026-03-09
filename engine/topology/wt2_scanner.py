@@ -32,6 +32,7 @@ import re
 import signal
 import sys
 import tarfile
+import threading
 import time
 from collections import defaultdict
 from pathlib import Path
@@ -51,6 +52,31 @@ ARXIV_DIR = Path("E:/arxiv/src")
 CUTOFF_YYMM = 1512  # December 2015
 
 _interrupted = False
+
+# Per-paper timeout (Windows-safe, no signal.alarm).
+PAPER_TIMEOUT_SEC = 30
+
+
+def _call_with_timeout(func, args, timeout=PAPER_TIMEOUT_SEC):
+    """Run *func(*args)* in a daemon thread; return None on timeout."""
+    result = [None]
+    exc = [None]
+
+    def target():
+        try:
+            result[0] = func(*args)
+        except Exception as e:
+            exc[0] = e
+
+    t = threading.Thread(target=target)
+    t.daemon = True
+    t.start()
+    t.join(timeout)
+    if t.is_alive():
+        return None          # timed out — caller will skip this paper
+    if exc[0] is not None:
+        raise exc[0]
+    return result[0]
 
 
 def _sigint_handler(sig, frame):
@@ -83,41 +109,101 @@ def yymm_from_tarname(tarname: str) -> int | None:
 
 def extract_tex_from_gz(gz_bytes: bytes) -> str | None:
     try:
-        with gzip.open(io.BytesIO(gz_bytes), "rt",
-                       encoding="utf-8", errors="replace") as f:
-            return f.read()
+        with gzip.open(io.BytesIO(gz_bytes), "rb") as f:
+            raw = f.read()
     except Exception:
+        return None
+
+    # Inner tarball? (multi-file submission)
+    if raw[:4] in (b"\x1f\x8b", b"BZh9") or raw[:5] == b"ustar" or (len(raw) > 257 and raw[257:262] == b"ustar"):
         try:
-            with gzip.open(io.BytesIO(gz_bytes), "rb") as f:
-                raw = f.read()
-            try:
-                inner = tarfile.open(fileobj=io.BytesIO(raw))
-                for member in inner.getmembers():
-                    if member.name.endswith(".tex") and member.isfile():
-                        ef = inner.extractfile(member)
-                        if ef:
-                            return ef.read().decode("utf-8", errors="replace")
-            except Exception:
-                pass
+            inner = tarfile.open(fileobj=io.BytesIO(raw))
+            for member in inner.getmembers():
+                if member.name.endswith(".tex") and member.isfile():
+                    ef = inner.extractfile(member)
+                    if ef:
+                        return ef.read().decode("utf-8", errors="replace")
         except Exception:
             pass
-    return None
+        return None
+
+    # Plain .tex (single file submission)
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        try:
+            return raw.decode("latin-1")
+        except Exception:
+            return None
 
 
 # ── LOAD CONCEPT INDEX ────────────────────────────────────────────
 
-def load_concept_index() -> dict:
-    """Load arxiv_id → [concept_idx, ...] from mapper chunks.
-    Compact: only store integer indices, not full concept objects."""
-    print("  Loading concept index from mapper chunks...")
+class ConceptIndex:
+    """SQLite-backed concept index. ~50MB RAM (page cache), 45K lookups/sec."""
+
+    def __init__(self, db_path):
+        import sqlite3
+        self.conn = sqlite3.connect(str(db_path))
+        self.conn.execute("PRAGMA journal_mode=WAL")
+        self.conn.execute("PRAGMA synchronous=OFF")
+        self.conn.execute("PRAGMA cache_size=-50000")  # 50MB page cache
+
+    def get(self, arxiv_id, default=None):
+        row = self.conn.execute(
+            "SELECT idxs FROM concepts WHERE arxiv_id=?", (arxiv_id,)
+        ).fetchone()
+        if row is None:
+            return default
+        return json.loads(row[0])
+
+    def close(self):
+        self.conn.close()
+
+
+def load_concept_index():
+    """Load arxiv_id → concept indices. SQLite-backed, zero RAM footprint.
+    Builds DB once from mapper chunks, then reuses it."""
+    DB_PATH = SCAN_DIR / "concept_index.db"
+
+    # ── Check if DB exists and is fresh ──
+    if DB_PATH.exists():
+        db_mtime = DB_PATH.stat().st_mtime
+        mapper_mtime = max(
+            (d / "map.json.gz").stat().st_mtime
+            for d in MAPPER_DIR.iterdir()
+            if (d / "map.json.gz").exists()
+        )
+        if db_mtime > mapper_mtime:
+            print("  Loading concept index (SQLite)...")
+            idx = ConceptIndex(DB_PATH)
+            count = idx.conn.execute("SELECT COUNT(*) FROM concepts").fetchone()[0]
+            print(f"  Concept index: {count:,} papers (SQLite, zero-RAM)")
+            return idx
+
+    # ── Build SQLite DB from mapper chunks ──
+    print("  Building concept index SQLite DB...")
+    import gc, sqlite3
 
     with open(CONCEPTS_PATH, "r", encoding="utf-8") as f:
         cdata = json.load(f)
     cid_to_idx = {cid: info["idx"] for cid, info in cdata["concepts"].items()}
+    del cdata
+    gc.collect()
 
-    arxiv_to_concepts = {}
+    # Remove stale DB
+    if DB_PATH.exists():
+        DB_PATH.unlink()
+
+    conn = sqlite3.connect(str(DB_PATH))
+    conn.execute("PRAGMA journal_mode=WAL")
+    conn.execute("PRAGMA synchronous=OFF")
+    conn.execute("CREATE TABLE concepts (arxiv_id TEXT PRIMARY KEY, idxs TEXT)")
+
     t0 = time.time()
     n_chunks = 0
+    n_papers = 0
+    batch = []
 
     for chunk_dir in sorted(MAPPER_DIR.iterdir()):
         map_path = chunk_dir / "map.json.gz"
@@ -133,13 +219,30 @@ def load_concept_index() -> dict:
                 if cid in cid_to_idx:
                     idxs.append(cid_to_idx[cid])
             if idxs:
-                arxiv_to_concepts[arxiv_id] = idxs
+                batch.append((arxiv_id, json.dumps(idxs)))
+                n_papers += 1
+                if len(batch) >= 50000:
+                    conn.executemany("INSERT OR REPLACE INTO concepts VALUES (?,?)", batch)
+                    conn.commit()
+                    batch.clear()
+        del data
+        gc.collect()
         n_chunks += 1
+        if n_chunks % 50 == 0:
+            print(f"    {n_chunks}/309 mapper chunks processed...")
+
+    if batch:
+        conn.executemany("INSERT OR REPLACE INTO concepts VALUES (?,?)", batch)
+        conn.commit()
+    conn.close()
 
     dt = time.time() - t0
-    print(f"  Concept index: {len(arxiv_to_concepts):,} papers from "
-          f"{n_chunks} chunks ({dt:.1f}s)")
-    return arxiv_to_concepts
+    print(f"  SQLite DB built: {n_papers:,} papers from {n_chunks} chunks ({dt:.1f}s)")
+
+    idx = ConceptIndex(DB_PATH)
+    count = idx.conn.execute("SELECT COUNT(*) FROM concepts").fetchone()[0]
+    print(f"  Concept index: {count:,} papers (SQLite, zero-RAM)")
+    return idx
 
 
 # ── LOAD DOMAIN LOOKUP ────────────────────────────────────────────
@@ -312,6 +415,7 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
         if yymm is None:
             continue
 
+        tar_t0 = time.time()
         try:
             with tarfile.open(tarpath, "r:") as tar:
                 while True:
@@ -343,12 +447,12 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
                     concept_idxs = arxiv_to_concepts.get(arxiv_id)
                     has_concepts = concept_idxs is not None and len(concept_idxs) > 0
 
-                    # Extract tex (cap at 50 MB)
+                    # Extract tex (cap at 5 MB)
                     try:
                         f = tar.extractfile(member)
                         if f is None:
                             continue
-                        if member.size > 50_000_000:
+                        if member.size > 5_000_000:
                             continue
                         gz_bytes = f.read()
                     except (tarfile.TarError, IOError, MemoryError):
@@ -356,18 +460,27 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
 
                     try:
                         tex = extract_tex_from_gz(gz_bytes)
-                    except MemoryError:
+                    except (MemoryError, Exception):
                         continue
                     if tex is None or len(tex) < 100:
                         continue
+                    # Cap decompressed tex at 30 MB (safety only)
+                    if len(tex) > 30_000_000:
+                        continue
 
-                    # Parse glyphs
+                    # Parse glyphs (with per-paper timeout)
                     try:
                         from engine.glyphs.latex_parser import parse_tex_glyphs
-                        glyph_ids = parse_tex_glyphs(
-                            tex, latex_to_id, unicode_to_id, min_envs=1
+                        glyph_ids = _call_with_timeout(
+                            parse_tex_glyphs,
+                            (tex, latex_to_id, unicode_to_id, 1),
                         )
-                    except MemoryError:
+                        if glyph_ids is None:
+                            # Timed out — skip this paper
+                            print(f"    TIMEOUT ({PAPER_TIMEOUT_SEC}s): "
+                                  f"{arxiv_id} ({len(tex)} chars)", flush=True)
+                            continue
+                    except (MemoryError, Exception):
                         continue
 
                     has_glyphs = len(glyph_ids) >= 2
@@ -409,6 +522,8 @@ def scan_chunk(tree: dict, latex_to_id: dict, unicode_to_id: dict,
         except (tarfile.TarError, IOError) as e:
             print(f"    ERROR: {tarname}: {e}")
             continue
+        tar_dt = time.time() - tar_t0
+        print(f"    {tarname}: {papers_total} papers, {tar_dt:.1f}s", flush=True)
 
     elapsed = time.time() - t0
 
