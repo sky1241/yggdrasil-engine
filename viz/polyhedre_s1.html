@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>YGGDRASIL — Polyedre S-1 · 19 Domaines</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #06060c; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; }
+canvas { display: block; position: fixed; top: 0; left: 0; }
+
+#title-bar {
+  position: fixed; top: 12px; left: 15px; z-index: 10;
+  font-size: 11px; max-width: 500px;
+}
+#title-bar h2 { color: #4ade80; font-size: 16px; letter-spacing: 2px; }
+#title-bar .stats { color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+#title-bar .sub { color: #444; font-size: 9px; margin-top: 1px; }
+
+#legend {
+  position: fixed; top: 15px; right: 15px; z-index: 10;
+  font-size: 10px; max-height: 90vh; overflow-y: auto;
+}
+.legend-row { display: flex; align-items: center; margin: 2px 0; cursor: default; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; flex-shrink: 0; }
+.legend-label { color: #666; }
+
+#hover-info {
+  position: fixed; bottom: 60px; left: 15px; z-index: 10;
+  background: rgba(0,0,0,0.88); padding: 12px 18px; border-left: 3px solid #4ade80;
+  font-size: 11px; display: none; max-width: 400px;
+}
+#hover-info .domain-name { font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+#hover-info .domain-idx { color: #888; font-size: 10px; }
+#hover-info .domain-meta { color: #666; font-size: 10px; margin-top: 4px; }
+
+#controls {
+  position: fixed; bottom: 40px; right: 15px; z-index: 10;
+  font-size: 9px;
+}
+#controls label { color: #555; display: block; margin: 2px 0; }
+#controls input[type=range] { width: 100px; vertical-align: middle; }
+
+#bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+  background: rgba(0,0,0,0.7); padding: 6px 15px;
+  font-size: 9px; color: #444; display: flex; justify-content: space-between;
+  border-top: 1px solid #1a1a2e;
+}
+</style>
+</head>
+<body>
+
+<div id="title-bar">
+  <h2>Yggdrasil &middot; Poly&egrave;dre S-1</h2>
+  <div class="stats">19 DOMAINES &middot; 1,337 GLYPHES &middot; 65,026 CONCEPTS</div>
+  <div class="sub">Le Rubik's Cube de la science &middot; Chaque face = un domaine</div>
+</div>
+
+<div id="legend"></div>
+
+<div id="hover-info">
+  <div class="domain-name"></div>
+  <div class="domain-idx"></div>
+  <div class="domain-meta"></div>
+</div>
+
+<div id="controls">
+  <label>Rotation: <input type="range" id="speed" min="0" max="100" value="15"></label>
+  <label>Opacite: <input type="range" id="opacity" min="10" max="100" value="60"></label>
+</div>
+
+<div id="bottom-bar">
+  <span>S-1 &middot; 19 faces</span>
+  <span>God's Number = diam&egrave;tre de ce graphe</span>
+  <span>polyhedre_s1</span>
+</div>
+
+<script src="three.min.js"></script>
+<script>
+// =================================================================
+// YGGDRASIL · POLYEDRE S-1 — 19 Domaines scientifiques
+// Chaque face = un domaine. Les aretes = ponts entre domaines.
+// =================================================================
+
+if (typeof THREE === 'undefined') {
+  document.body.innerHTML = '<div style="color:red;padding:40px;font-size:18px">three.min.js not found.</div>';
+}
+
+const DOMAINS = [
+  "Art", "Biology", "Business", "Chemistry", "Computer science",
+  "Economics", "Engineering", "Env. science", "Geography",
+  "Geology", "History", "Materials sci.", "Mathematics",
+  "Medicine", "Philosophy", "Physics", "Political sci.",
+  "Psychology", "Sociology"
+];
+
+const DOMAIN_COLORS = [
+  [239, 83, 80],    // Art - red
+  [76, 175, 80],    // Biology - green
+  [255, 167, 38],   // Business - orange
+  [171, 71, 188],   // Chemistry - purple
+  [66, 165, 245],   // Computer science - blue
+  [255, 213, 79],   // Economics - yellow
+  [141, 110, 99],   // Engineering - brown
+  [102, 187, 106],  // Env. science - light green
+  [38, 166, 154],   // Geography - teal
+  [161, 136, 127],  // Geology - tan
+  [255, 138, 101],  // History - coral
+  [149, 117, 205],  // Materials sci. - lavender
+  [41, 182, 246],   // Mathematics - light blue
+  [239, 154, 154],  // Medicine - pink
+  [189, 189, 189],  // Philosophy - silver
+  [255, 241, 118],  // Physics - gold
+  [206, 147, 216],  // Political sci. - mauve
+  [128, 203, 196],  // Psychology - mint
+  [255, 183, 77],   // Sociology - amber
+];
+
+const RADIUS = 2.2;
+const N = 19;
+
+let scene, camera, renderer, polyGroup;
+let faceMeshes = [];
+let labelSprites = [];
+let seeds = [];
+let mouse = new THREE.Vector2(-9, -9);
+let raycaster = new THREE.Raycaster();
+let time = 0;
+let isDragging = false;
+let prevMouse = { x: 0, y: 0 };
+let targetRotY = 0, targetRotX = 0;
+
+// ── Fibonacci Sphere ──
+function fibonacciSphere(n, r) {
+  const pts = [];
+  const golden = (1 + Math.sqrt(5)) / 2;
+  for (let i = 0; i < n; i++) {
+    const theta = Math.acos(1 - 2 * (i + 0.5) / n);
+    const phi = 2 * Math.PI * i / golden;
+    pts.push(new THREE.Vector3(
+      r * Math.sin(theta) * Math.cos(phi),
+      r * Math.sin(theta) * Math.sin(phi),
+      r * Math.cos(theta)
+    ));
+  }
+  return pts;
+}
+
+// ── Convex Hull (brute force, n=19 → fast) ──
+function convexHull(pts) {
+  const n = pts.length;
+  const faces = [];
+  const tmp = new THREE.Vector3();
+
+  for (let i = 0; i < n; i++) {
+    for (let j = i + 1; j < n; j++) {
+      for (let k = j + 1; k < n; k++) {
+        const a = pts[i], b = pts[j], c = pts[k];
+        const ab = new THREE.Vector3().subVectors(b, a);
+        const ac = new THREE.Vector3().subVectors(c, a);
+        const normal = new THREE.Vector3().crossVectors(ab, ac);
+
+        if (normal.lengthSq() < 1e-12) continue;
+
+        let allSame = true;
+        let sign = 0;
+
+        for (let l = 0; l < n; l++) {
+          if (l === i || l === j || l === k) continue;
+          tmp.subVectors(pts[l], a);
+          const d = normal.dot(tmp);
+          if (Math.abs(d) < 1e-10) continue;
+          const s = d > 0 ? 1 : -1;
+          if (sign === 0) sign = s;
+          else if (s !== sign) { allSame = false; break; }
+        }
+
+        if (allSame && sign !== 0) {
+          if (normal.dot(a) > 0) {
+            faces.push([i, j, k]);
+          } else {
+            faces.push([i, k, j]);
+          }
+        }
+      }
+    }
+  }
+  return faces;
+}
+
+// ── Dual: Voronoi on sphere ──
+function computeDual(seeds, delaunayFaces, radius) {
+  // Circumcenter of each Delaunay triangle on the sphere
+  const dualVerts = delaunayFaces.map(([i, j, k]) => {
+    const a = seeds[i].clone().normalize();
+    const b = seeds[j].clone().normalize();
+    const c = seeds[k].clone().normalize();
+
+    // Perpendicular bisector planes: x·(a-b)=0 and x·(b-c)=0
+    const ab = new THREE.Vector3().subVectors(a, b);
+    const bc = new THREE.Vector3().subVectors(b, c);
+    const cc = new THREE.Vector3().crossVectors(ab, bc).normalize();
+
+    // Orient toward triangle centroid
+    const centroid = new THREE.Vector3().add(a).add(b).add(c).normalize();
+    if (cc.dot(centroid) < 0) cc.negate();
+
+    return cc.multiplyScalar(radius * 1.02);
+  });
+
+  // For each seed, gather incident faces, sort dual vertices angularly
+  const cells = seeds.map((seed, idx) => {
+    const incidentFaces = [];
+    delaunayFaces.forEach((face, fi) => {
+      if (face.includes(idx)) incidentFaces.push(fi);
+    });
+
+    const cellVerts = incidentFaces.map(fi => ({
+      vertex: dualVerts[fi],
+      angle: 0
+    }));
+
+    // Sort angularly around seed
+    const n = seed.clone().normalize();
+    let up = new THREE.Vector3(0, 1, 0);
+    if (Math.abs(n.dot(up)) > 0.9) up = new THREE.Vector3(1, 0, 0);
+    const u = new THREE.Vector3().crossVectors(n, up).normalize();
+    const v = new THREE.Vector3().crossVectors(n, u).normalize();
+
+    cellVerts.forEach(cv => {
+      const d = cv.vertex.clone().sub(seed);
+      cv.angle = Math.atan2(d.dot(v), d.dot(u));
+    });
+
+    cellVerts.sort((a, b) => a.angle - b.angle);
+    return cellVerts.map(cv => cv.vertex);
+  });
+
+  return { dualVerts, cells };
+}
+
+// ── Build face meshes ──
+function buildFaces(seeds, cells, group) {
+  const meshes = [];
+
+  cells.forEach((cell, domainIdx) => {
+    const [r, g, b] = DOMAIN_COLORS[domainIdx];
+    const color = new THREE.Color(r / 255, g / 255, b / 255);
+    const center = seeds[domainIdx];
+    const nVerts = cell.length;
+
+    if (nVerts < 3) return;
+
+    // Inset vertices 6% toward center for gap
+    const inset = cell.map(v => v.clone().lerp(center, 0.06));
+
+    // Triangle fan
+    const positions = [];
+    const normals = [];
+    const faceNormal = center.clone().normalize();
+
+    for (let i = 0; i < nVerts; i++) {
+      const next = (i + 1) % nVerts;
+      positions.push(center.x, center.y, center.z);
+      positions.push(inset[i].x, inset[i].y, inset[i].z);
+      positions.push(inset[next].x, inset[next].y, inset[next].z);
+      for (let j = 0; j < 3; j++) {
+        normals.push(faceNormal.x, faceNormal.y, faceNormal.z);
+      }
+    }
+
+    const geo = new THREE.BufferGeometry();
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
+    geo.setAttribute('normal', new THREE.Float32BufferAttribute(normals, 3));
+
+    const mat = new THREE.MeshPhongMaterial({
+      color: color,
+      transparent: true,
+      opacity: 0.65,
+      side: THREE.DoubleSide,
+      emissive: color,
+      emissiveIntensity: 0.15,
+      shininess: 30,
+    });
+
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.userData = { domainIdx, domain: DOMAINS[domainIdx] };
+    group.add(mesh);
+    meshes.push(mesh);
+  });
+
+  return meshes;
+}
+
+// ── Build wireframe edges ──
+function buildEdges(cells, group) {
+  const allPoints = [];
+
+  cells.forEach((cell, domainIdx) => {
+    const [r, g, b] = DOMAIN_COLORS[domainIdx];
+    const nVerts = cell.length;
+
+    for (let i = 0; i < nVerts; i++) {
+      const next = (i + 1) % nVerts;
+      allPoints.push(cell[i].clone(), cell[next].clone());
+    }
+  });
+
+  const geo = new THREE.BufferGeometry().setFromPoints(allPoints);
+  const mat = new THREE.LineBasicMaterial({
+    color: 0x4ade80,
+    opacity: 0.35,
+    transparent: true,
+  });
+  group.add(new THREE.LineSegments(geo, mat));
+}
+
+// ── Build seed-to-seed connections (domain adjacency) ──
+function buildAdjacency(seeds, delaunayFaces, group) {
+  const edges = new Set();
+  delaunayFaces.forEach(([i, j, k]) => {
+    const add = (a, b) => {
+      const key = Math.min(a, b) + ',' + Math.max(a, b);
+      edges.add(key);
+    };
+    add(i, j); add(j, k); add(i, k);
+  });
+
+  const points = [];
+  edges.forEach(key => {
+    const [a, b] = key.split(',').map(Number);
+    points.push(seeds[a].clone(), seeds[b].clone());
+  });
+
+  const geo = new THREE.BufferGeometry().setFromPoints(points);
+  const mat = new THREE.LineBasicMaterial({
+    color: 0xffffff,
+    opacity: 0.08,
+    transparent: true,
+  });
+  group.add(new THREE.LineSegments(geo, mat));
+
+  return edges;
+}
+
+// ── Text sprite ──
+function makeTextSprite(text, rgb, scale) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 512; canvas.height = 128;
+  const ctx = canvas.getContext('2d');
+  const [r, g, b] = rgb;
+
+  ctx.font = 'bold 42px Courier New';
+  ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+  ctx.shadowColor = `rgb(${r},${g},${b})`;
+  ctx.shadowBlur = 20;
+  ctx.fillStyle = `rgba(${r},${g},${b},0.95)`;
+  ctx.fillText(text, 256, 64);
+  ctx.shadowBlur = 10;
+  ctx.fillText(text, 256, 64);
+
+  const tex = new THREE.CanvasTexture(canvas);
+  const mat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
+  const sprite = new THREE.Sprite(mat);
+  sprite.scale.set(scale * 4, scale, 1);
+  return sprite;
+}
+
+// ── Legend ──
+function buildLegend() {
+  const el = document.getElementById('legend');
+  let html = '';
+  DOMAINS.forEach((name, i) => {
+    const c = DOMAIN_COLORS[i];
+    html += `<div class="legend-row">
+      <div class="legend-dot" style="background:rgb(${c[0]},${c[1]},${c[2]})"></div>
+      <span class="legend-label">${name}</span>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+// ── Main ──
+function init() {
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x06060c);
+
+  camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 100);
+  camera.position.set(5, 3.5, 5);
+  camera.lookAt(0, 0, 0);
+
+  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  polyGroup = new THREE.Group();
+  scene.add(polyGroup);
+
+  // Compute geometry
+  seeds = fibonacciSphere(N, RADIUS);
+  const delaunayFaces = convexHull(seeds);
+  const { dualVerts, cells } = computeDual(seeds, delaunayFaces, RADIUS);
+
+  console.log(`Convex hull: ${delaunayFaces.length} triangles, Dual: ${cells.length} faces`);
+  cells.forEach((c, i) => console.log(`  ${DOMAINS[i]}: ${c.length} vertices`));
+
+  // Build visuals
+  faceMeshes = buildFaces(seeds, cells, polyGroup);
+  buildEdges(cells, polyGroup);
+  const adjacencyEdges = buildAdjacency(seeds, delaunayFaces, polyGroup);
+
+  // Labels at each seed position (slightly outside)
+  seeds.forEach((s, i) => {
+    const label = makeTextSprite(DOMAINS[i], DOMAIN_COLORS[i], 0.35);
+    const offset = s.clone().normalize().multiplyScalar(0.45);
+    label.position.copy(s).add(offset);
+    polyGroup.add(label);
+    labelSprites.push(label);
+  });
+
+  // Lighting
+  scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+  const dirLight = new THREE.DirectionalLight(0xffffff, 0.4);
+  dirLight.position.set(5, 10, 5);
+  scene.add(dirLight);
+
+  buildLegend();
+
+  // Events
+  window.addEventListener('resize', onResize);
+  renderer.domElement.addEventListener('mousemove', onMouseMove);
+  renderer.domElement.addEventListener('mousedown', e => {
+    isDragging = true;
+    prevMouse = { x: e.clientX, y: e.clientY };
+  });
+  window.addEventListener('mouseup', () => { isDragging = false; });
+  renderer.domElement.addEventListener('wheel', e => {
+    e.preventDefault();
+    camera.position.multiplyScalar(e.deltaY > 0 ? 1.05 : 0.95);
+  }, { passive: false });
+
+  animate();
+}
+
+// ── Animation ──
+function animate() {
+  requestAnimationFrame(animate);
+  time += 0.016;
+
+  const speed = document.getElementById('speed').value / 5000;
+  const opacityVal = document.getElementById('opacity').value / 100;
+
+  polyGroup.rotation.y += speed;
+  polyGroup.rotation.x = Math.sin(time * 0.15) * 0.1;
+
+  camera.position.y = 3.5 + Math.sin(time * 0.2) * 0.3;
+  camera.lookAt(0, 0, 0);
+
+  // Update opacity
+  faceMeshes.forEach(mesh => {
+    mesh.material.opacity = opacityVal;
+  });
+
+  // Raycast hover
+  raycaster.setFromCamera(mouse, camera);
+  const intersects = raycaster.intersectObjects(faceMeshes);
+  const hoverEl = document.getElementById('hover-info');
+
+  // Reset highlights
+  faceMeshes.forEach(m => { m.material.emissiveIntensity = 0.15; });
+
+  if (intersects.length > 0) {
+    const mesh = intersects[0].object;
+    const ud = mesh.userData;
+    if (ud.domain) {
+      const c = DOMAIN_COLORS[ud.domainIdx];
+      const srgb = `rgb(${c[0]},${c[1]},${c[2]})`;
+
+      mesh.material.emissiveIntensity = 0.5;
+
+      hoverEl.querySelector('.domain-name').textContent = ud.domain;
+      hoverEl.querySelector('.domain-name').style.color = srgb;
+      hoverEl.querySelector('.domain-idx').textContent = `Face ${ud.domainIdx + 1} / 19`;
+      hoverEl.querySelector('.domain-meta').textContent =
+        `S-1 domaine · escaliers + lianes = aretes du polyedre`;
+      hoverEl.style.display = 'block';
+      hoverEl.style.borderColor = srgb;
+    }
+  } else {
+    hoverEl.style.display = 'none';
+  }
+
+  renderer.render(scene, camera);
+}
+
+function onMouseMove(e) {
+  mouse.x = (e.clientX / innerWidth) * 2 - 1;
+  mouse.y = -(e.clientY / innerHeight) * 2 + 1;
+  if (isDragging) {
+    polyGroup.rotation.y += (e.clientX - prevMouse.x) * 0.005;
+    polyGroup.rotation.x += (e.clientY - prevMouse.y) * 0.005;
+    prevMouse = { x: e.clientX, y: e.clientY };
+  }
+}
+
+function onResize() {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+}
+
+init();
+</script>
+</body>
+</html>

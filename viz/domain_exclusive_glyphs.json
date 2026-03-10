@@ -1,0 +1,59 @@
+{
+  "Art": [],
+  "Biology": [],
+  "Business": [],
+  "Chemistry": [],
+  "Computer science": [
+    {
+      "gid": "275",
+      "symbol": "𞻱",
+      "name": "ARABIC MATHEMATICAL OPERATOR HAH WITH DAL",
+      "count": 2
+    }
+  ],
+  "Economics": [],
+  "Engineering": [],
+  "Environmental science": [],
+  "Geography": [],
+  "Geology": [],
+  "History": [],
+  "Materials science": [],
+  "Mathematics": [],
+  "Medicine": [],
+  "Philosophy": [],
+  "Physics": [
+    {
+      "gid": "226",
+      "symbol": "𝔧",
+      "name": "MATHEMATICAL FRAKTUR SMALL J",
+      "count": 6
+    },
+    {
+      "gid": "235",
+      "symbol": "𝔰",
+      "name": "MATHEMATICAL FRAKTUR SMALL S",
+      "count": 5
+    },
+    {
+      "gid": "190",
+      "symbol": "𝒰",
+      "name": "MATHEMATICAL SCRIPT CAPITAL U",
+      "count": 2
+    },
+    {
+      "gid": "224",
+      "symbol": "𝔥",
+      "name": "MATHEMATICAL FRAKTUR SMALL H",
+      "count": 1
+    },
+    {
+      "gid": "194",
+      "symbol": "𝒴",
+      "name": "MATHEMATICAL SCRIPT CAPITAL Y",
+      "count": 1
+    }
+  ],
+  "Political science": [],
+  "Psychology": [],
+  "Sociology": []
+}

@@ -1,0 +1,471 @@
+{
+  "domains": [
+    "Art",
+    "Biology",
+    "Business",
+    "Chemistry",
+    "Computer science",
+    "Economics",
+    "Engineering",
+    "Environmental science",
+    "Geography",
+    "Geology",
+    "History",
+    "Materials science",
+    "Mathematics",
+    "Medicine",
+    "Philosophy",
+    "Physics",
+    "Political science",
+    "Psychology",
+    "Sociology"
+  ],
+  "merge_history": [
+    {
+      "left": 3,
+      "right": 11,
+      "distance": 0.0022,
+      "new_id": 19,
+      "left_members": [
+        "Chemistry"
+      ],
+      "right_members": [
+        "Materials science"
+      ],
+      "all_members": [
+        "Chemistry",
+        "Materials science"
+      ]
+    },
+    {
+      "left": 16,
+      "right": 17,
+      "distance": 0.0035,
+      "new_id": 20,
+      "left_members": [
+        "Political science"
+      ],
+      "right_members": [
+        "Psychology"
+      ],
+      "all_members": [
+        "Political science",
+        "Psychology"
+      ]
+    },
+    {
+      "left": 7,
+      "right": 9,
+      "distance": 0.0042,
+      "new_id": 21,
+      "left_members": [
+        "Environmental science"
+      ],
+      "right_members": [
+        "Geology"
+      ],
+      "all_members": [
+        "Environmental science",
+        "Geology"
+      ]
+    },
+    {
+      "left": 8,
+      "right": 13,
+      "distance": 0.0049,
+      "new_id": 22,
+      "left_members": [
+        "Geography"
+      ],
+      "right_members": [
+        "Medicine"
+      ],
+      "all_members": [
+        "Geography",
+        "Medicine"
+      ]
+    },
+    {
+      "left": 2,
+      "right": 20,
+      "distance": 0.0058,
+      "new_id": 23,
+      "left_members": [
+        "Business"
+      ],
+      "right_members": [
+        "Political science",
+        "Psychology"
+      ],
+      "all_members": [
+        "Business",
+        "Political science",
+        "Psychology"
+      ]
+    },
+    {
+      "left": 0,
+      "right": 10,
+      "distance": 0.0059,
+      "new_id": 24,
+      "left_members": [
+        "Art"
+      ],
+      "right_members": [
+        "History"
+      ],
+      "all_members": [
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "left": 19,
+      "right": 21,
+      "distance": 0.0064,
+      "new_id": 25,
+      "left_members": [
+        "Chemistry",
+        "Materials science"
+      ],
+      "right_members": [
+        "Environmental science",
+        "Geology"
+      ],
+      "all_members": [
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology"
+      ]
+    },
+    {
+      "left": 4,
+      "right": 18,
+      "distance": 0.0072,
+      "new_id": 26,
+      "left_members": [
+        "Computer science"
+      ],
+      "right_members": [
+        "Sociology"
+      ],
+      "all_members": [
+        "Computer science",
+        "Sociology"
+      ]
+    },
+    {
+      "left": 22,
+      "right": 23,
+      "distance": 0.0091,
+      "new_id": 27,
+      "left_members": [
+        "Geography",
+        "Medicine"
+      ],
+      "right_members": [
+        "Business",
+        "Political science",
+        "Psychology"
+      ],
+      "all_members": [
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology"
+      ]
+    },
+    {
+      "left": 1,
+      "right": 26,
+      "distance": 0.0108,
+      "new_id": 28,
+      "left_members": [
+        "Biology"
+      ],
+      "right_members": [
+        "Computer science",
+        "Sociology"
+      ],
+      "all_members": [
+        "Biology",
+        "Computer science",
+        "Sociology"
+      ]
+    },
+    {
+      "left": 5,
+      "right": 24,
+      "distance": 0.0132,
+      "new_id": 29,
+      "left_members": [
+        "Economics"
+      ],
+      "right_members": [
+        "Art",
+        "History"
+      ],
+      "all_members": [
+        "Economics",
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "left": 25,
+      "right": 27,
+      "distance": 0.0146,
+      "new_id": 30,
+      "left_members": [
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology"
+      ],
+      "right_members": [
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology"
+      ],
+      "all_members": [
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology"
+      ]
+    },
+    {
+      "left": 28,
+      "right": 30,
+      "distance": 0.0183,
+      "new_id": 31,
+      "left_members": [
+        "Biology",
+        "Computer science",
+        "Sociology"
+      ],
+      "right_members": [
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology"
+      ],
+      "all_members": [
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology"
+      ]
+    },
+    {
+      "left": 14,
+      "right": 29,
+      "distance": 0.021,
+      "new_id": 32,
+      "left_members": [
+        "Philosophy"
+      ],
+      "right_members": [
+        "Economics",
+        "Art",
+        "History"
+      ],
+      "all_members": [
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "left": 15,
+      "right": 32,
+      "distance": 0.0288,
+      "new_id": 33,
+      "left_members": [
+        "Physics"
+      ],
+      "right_members": [
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ],
+      "all_members": [
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "left": 31,
+      "right": 33,
+      "distance": 0.0382,
+      "new_id": 34,
+      "left_members": [
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology"
+      ],
+      "right_members": [
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ],
+      "all_members": [
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology",
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "left": 6,
+      "right": 34,
+      "distance": 0.0666,
+      "new_id": 35,
+      "left_members": [
+        "Engineering"
+      ],
+      "right_members": [
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology",
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ],
+      "all_members": [
+        "Engineering",
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology",
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ]
+    },
+    {
+      "left": 12,
+      "right": 35,
+      "distance": 0.099,
+      "new_id": 36,
+      "left_members": [
+        "Mathematics"
+      ],
+      "right_members": [
+        "Engineering",
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology",
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ],
+      "all_members": [
+        "Mathematics",
+        "Engineering",
+        "Biology",
+        "Computer science",
+        "Sociology",
+        "Chemistry",
+        "Materials science",
+        "Environmental science",
+        "Geology",
+        "Geography",
+        "Medicine",
+        "Business",
+        "Political science",
+        "Psychology",
+        "Physics",
+        "Philosophy",
+        "Economics",
+        "Art",
+        "History"
+      ]
+    }
+  ],
+  "n_glyphs": 1329,
+  "n_universal": 339
+}

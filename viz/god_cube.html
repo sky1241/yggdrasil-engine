@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>YGGDRASIL — God Cube · 19 Domaines</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #08080d; color: #fff; font-family: 'Courier New', monospace; overflow: hidden; }
+canvas { display: block; position: fixed; top: 0; left: 0; }
+
+#title-bar {
+  position: fixed; top: 12px; left: 15px; z-index: 10; max-width: 500px;
+}
+#title-bar h2 { color: #f97316; font-size: 16px; letter-spacing: 2px; }
+#title-bar .stats { color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+#title-bar .sub { color: #444; font-size: 9px; margin-top: 1px; }
+
+#legend {
+  position: fixed; top: 15px; right: 15px; z-index: 10; font-size: 10px;
+  max-height: 90vh; overflow-y: auto;
+}
+.legend-row { display: flex; align-items: center; margin: 2px 0; }
+.legend-dot { width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; flex-shrink: 0; }
+.legend-label { color: #666; }
+.legend-val { color: #444; margin-left: 6px; font-size: 9px; }
+
+#hover-info {
+  position: fixed; bottom: 50px; left: 15px; z-index: 10;
+  background: rgba(0,0,0,0.92); padding: 14px 20px; border-left: 3px solid #f97316;
+  font-size: 11px; display: none; max-width: 420px; border-radius: 4px;
+}
+#hover-info .hn { font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+#hover-info .hs { color: #aaa; font-size: 11px; margin-top: 4px; }
+#hover-info .hc { color: #556; font-size: 9px; margin-top: 6px; line-height: 1.6; }
+
+#controls {
+  position: fixed; bottom: 30px; right: 15px; z-index: 10; font-size: 9px;
+}
+#controls label { color: #555; display: block; margin: 2px 0; }
+#controls input[type=range] { width: 100px; vertical-align: middle; }
+
+#bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+  background: rgba(0,0,0,0.7); padding: 6px 15px;
+  font-size: 9px; color: #444; display: flex; justify-content: space-between;
+  border-top: 1px solid #1a1a2e;
+}
+</style>
+</head>
+<body>
+
+<div id="title-bar">
+  <h2>Yggdrasil &middot; God Cube</h2>
+  <div class="stats">19 DOMAINES &middot; 1,337 GLYPHES &middot; 153 HYPEREDGES</div>
+  <div class="sub">Hauteur = connectivité &middot; faces = domaines adjacents &middot; hover = isoler</div>
+</div>
+<div id="legend"></div>
+<div id="hover-info">
+  <div class="hn"></div>
+  <div class="hs"></div>
+  <div class="hc"></div>
+</div>
+<div id="controls">
+  <label>Rotation: <input type="range" id="speed" min="0" max="100" value="12"></label>
+  <label>Opacité faces: <input type="range" id="opacity" min="5" max="100" value="45"></label>
+</div>
+<div id="bottom-bar">
+  <span>God Cube S-1</span>
+  <span>Manteuffel 1994: diam(G) ≤ ⌈acosh(n-1) / acosh((λn+λ2)/(λn-λ2))⌉</span>
+</div>
+
+<script src="three.min.js"></script>
+<script>
+if (typeof THREE === 'undefined') {
+  document.body.innerHTML = '<div style="color:red;padding:40px;font-size:18px">three.min.js introuvable.</div>';
+  throw 'no THREE';
+}
+
+// === DATA ===
+const DD = [
+  {name:"Physics",       short:"Phys",   g:1326, h:150, color:[249,115,22]},
+  {name:"Mathematics",   short:"Math",   g:1296, h:140, color:[167,139,250]},
+  {name:"Computer science",short:"CS",   g:1293, h:139, color:[56,189,248]},
+  {name:"Materials science",short:"MatSci",g:1288,h:140, color:[52,211,153]},
+  {name:"Chemistry",     short:"Chem",   g:1243, h:125, color:[251,113,133]},
+  {name:"Env. science",  short:"Env",    g:1241, h:122, color:[74,222,128]},
+  {name:"Geology",       short:"Geol",   g:1239, h:122, color:[192,132,252]},
+  {name:"Biology",       short:"Bio",    g:1235, h:118, color:[45,212,191]},
+  {name:"Business",      short:"Biz",    g:1224, h:108, color:[251,191,36]},
+  {name:"Economics",     short:"Econ",   g:1221, h:108, color:[244,114,182]},
+  {name:"Psychology",    short:"Psych",  g:1219, h:103, color:[196,181,253]},
+  {name:"Engineering",   short:"Eng",    g:1219, h:106, color:[103,232,249]},
+  {name:"Geography",     short:"Geo",    g:1217, h:103, color:[134,239,172]},
+  {name:"Political sci.",short:"PolSci", g:1194, h:92,  color:[252,165,165]},
+  {name:"History",       short:"Hist",   g:1052, h:75,  color:[212,165,116]},
+  {name:"Sociology",     short:"Socio",  g:850,  h:63,  color:[165,180,252]},
+  {name:"Philosophy",    short:"Philo",  g:753,  h:54,  color:[232,121,249]},
+  {name:"Art",           short:"Art",    g:696,  h:51,  color:[253,230,138]},
+  {name:"Medicine",      short:"Med",    g:628,  h:54,  color:[110,231,183]},
+];
+
+const N = 19;
+const maxG = DD[0].g, minG = DD[N-1].g;
+
+// === POSITION by connectivity ===
+// Y = connectivity, XZ = radial spread (tighter at top, wider at bottom)
+const HEIGHT = 5.0;
+const positions = [];
+
+DD.forEach((d, i) => {
+  const t = (d.g - minG) / (maxG - minG); // 0..1
+  const y = (t - 0.5) * HEIGHT;
+  const spread = 2.5 * (1 - t * 0.55);
+  const angle = (i / N) * Math.PI * 2 + i * 0.37;
+  const x = Math.cos(angle) * spread;
+  const z = Math.sin(angle) * spread;
+  positions.push(new THREE.Vector3(x, y, z));
+});
+
+// === Convex hull of the 19 points → triangular faces ===
+function convexHull(pts) {
+  const n = pts.length, faces = [], tmp = new THREE.Vector3();
+  for (let i = 0; i < n; i++) {
+    for (let j = i+1; j < n; j++) {
+      for (let k = j+1; k < n; k++) {
+        const a = pts[i], b = pts[j], c = pts[k];
+        const ab = new THREE.Vector3().subVectors(b,a);
+        const ac = new THREE.Vector3().subVectors(c,a);
+        const normal = new THREE.Vector3().crossVectors(ab,ac);
+        if (normal.lengthSq() < 1e-12) continue;
+        let allSame = true, sign = 0;
+        for (let l = 0; l < n; l++) {
+          if (l===i||l===j||l===k) continue;
+          tmp.subVectors(pts[l], a);
+          const d = normal.dot(tmp);
+          if (Math.abs(d) < 1e-10) continue;
+          const s = d > 0 ? 1 : -1;
+          if (sign===0) sign=s;
+          else if (s!==sign) { allSame=false; break; }
+        }
+        if (allSame && sign !== 0) {
+          // Orient outward (away from centroid)
+          const centroid = new THREE.Vector3();
+          pts.forEach(p => centroid.add(p));
+          centroid.divideScalar(n);
+          const toFace = new THREE.Vector3().addVectors(a,b).add(c).divideScalar(3).sub(centroid);
+          if (normal.dot(toFace) < 0) faces.push([i,k,j]);
+          else faces.push([i,j,k]);
+        }
+      }
+    }
+  }
+  return faces;
+}
+
+const hullFaces = convexHull(positions);
+
+// === Three.js setup ===
+let scene, camera, renderer, group;
+let meshes = [], edgeLines, nodeSprites = [];
+let mouse = new THREE.Vector2(-9,-9);
+let raycaster = new THREE.Raycaster();
+let time = 0, isDragging = false, prevMouse = {x:0,y:0};
+let hoveredNode = -1;
+
+function init() {
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x08080d);
+
+  camera = new THREE.PerspectiveCamera(50, innerWidth/innerHeight, 0.1, 100);
+  camera.position.set(7, 4, 7);
+  camera.lookAt(0, 0, 0);
+
+  renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  group = new THREE.Group();
+  scene.add(group);
+
+  // === Build face meshes ===
+  // Each hull triangle gets colored as blend of its 3 vertex-domain colors
+  hullFaces.forEach(([ai, bi, ci]) => {
+    const a = positions[ai], b = positions[bi], c = positions[ci];
+
+    // Average color of the 3 domains
+    const rc = DD[ai].color, gc = DD[bi].color, bc2 = DD[ci].color;
+    const avgR = (rc[0]+gc[0]+bc2[0]) / 3 / 255;
+    const avgG = (rc[1]+gc[1]+bc2[1]) / 3 / 255;
+    const avgB = (rc[2]+gc[2]+bc2[2]) / 3 / 255;
+
+    const geo = new THREE.BufferGeometry();
+    const verts = new Float32Array([a.x,a.y,a.z, b.x,b.y,b.z, c.x,c.y,c.z]);
+    geo.setAttribute('position', new THREE.Float32BufferAttribute(verts, 3));
+
+    // Vertex colors for gradient
+    const colors = new Float32Array([
+      rc[0]/255, rc[1]/255, rc[2]/255,
+      gc[0]/255, gc[1]/255, gc[2]/255,
+      bc2[0]/255, bc2[1]/255, bc2[2]/255,
+    ]);
+    geo.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+    geo.computeVertexNormals();
+
+    const mat = new THREE.MeshPhongMaterial({
+      vertexColors: true,
+      transparent: true,
+      opacity: 0.45,
+      side: THREE.DoubleSide,
+      emissive: new THREE.Color(avgR*0.3, avgG*0.3, avgB*0.3),
+      shininess: 20,
+    });
+
+    const mesh = new THREE.Mesh(geo, mat);
+    mesh.userData = { vertices: [ai, bi, ci] };
+    group.add(mesh);
+    meshes.push(mesh);
+  });
+
+  // === Wireframe edges ===
+  const edgeSet = new Set();
+  const edgePts = [];
+  hullFaces.forEach(([a,b,c]) => {
+    [[a,b],[b,c],[a,c]].forEach(([i,j]) => {
+      const key = Math.min(i,j)+','+Math.max(i,j);
+      if (!edgeSet.has(key)) {
+        edgeSet.add(key);
+        edgePts.push(positions[i].clone(), positions[j].clone());
+      }
+    });
+  });
+  const edgeGeo = new THREE.BufferGeometry().setFromPoints(edgePts);
+  edgeLines = new THREE.LineSegments(edgeGeo, new THREE.LineBasicMaterial({
+    color: 0xffffff, opacity: 0.2, transparent: true
+  }));
+  group.add(edgeLines);
+
+  // === Node spheres + labels ===
+  DD.forEach((d, i) => {
+    const [r,g,b] = d.color;
+    const color = new THREE.Color(r/255, g/255, b/255);
+
+    // Small sphere
+    const sGeo = new THREE.SphereGeometry(0.08, 12, 12);
+    const sMat = new THREE.MeshBasicMaterial({ color });
+    const sphere = new THREE.Mesh(sGeo, sMat);
+    sphere.position.copy(positions[i]);
+    sphere.userData = { domainIdx: i };
+    group.add(sphere);
+
+    // Outer ring
+    const rGeo = new THREE.RingGeometry(0.12, 0.16, 24);
+    const rMat = new THREE.MeshBasicMaterial({ color, side: THREE.DoubleSide, transparent: true, opacity: 0.8 });
+    const ring = new THREE.Mesh(rGeo, rMat);
+    ring.position.copy(positions[i]);
+    group.add(ring);
+
+    // Text label
+    const canvas = document.createElement('canvas');
+    canvas.width = 256; canvas.height = 64;
+    const ctx = canvas.getContext('2d');
+    ctx.font = 'bold 28px Courier New';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.shadowColor = `rgb(${r},${g},${b})`;
+    ctx.shadowBlur = 12;
+    ctx.fillStyle = `rgb(${r},${g},${b})`;
+    ctx.fillText(d.short, 128, 32);
+    const tex = new THREE.CanvasTexture(canvas);
+    const spMat = new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false });
+    const sprite = new THREE.Sprite(spMat);
+    sprite.scale.set(1.2, 0.3, 1);
+    sprite.position.copy(positions[i]).add(new THREE.Vector3(0, 0.3, 0));
+    sprite.userData = { domainIdx: i };
+    group.add(sprite);
+    nodeSprites.push({ sphere, ring, sprite, idx: i });
+  });
+
+  // Lighting
+  scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+  const dl = new THREE.DirectionalLight(0xffffff, 0.4);
+  dl.position.set(5, 10, 5);
+  scene.add(dl);
+
+  // Y axis guide
+  const axGeo = new THREE.BufferGeometry().setFromPoints([
+    new THREE.Vector3(0, -HEIGHT/2 - 0.5, 0),
+    new THREE.Vector3(0, HEIGHT/2 + 0.5, 0)
+  ]);
+  group.add(new THREE.Line(axGeo, new THREE.LineDashedMaterial({
+    color: 0xffffff, opacity: 0.08, transparent: true, dashSize: 0.1, gapSize: 0.1
+  })));
+
+  buildLegend();
+
+  // Events
+  window.addEventListener('resize', () => {
+    camera.aspect = innerWidth/innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(innerWidth, innerHeight);
+  });
+  renderer.domElement.addEventListener('mousemove', e => {
+    mouse.x = (e.clientX/innerWidth)*2 - 1;
+    mouse.y = -(e.clientY/innerHeight)*2 + 1;
+    if (isDragging) {
+      group.rotation.y += (e.clientX - prevMouse.x) * 0.005;
+      group.rotation.x += (e.clientY - prevMouse.y) * 0.005;
+      prevMouse = { x: e.clientX, y: e.clientY };
+    }
+  });
+  renderer.domElement.addEventListener('mousedown', e => {
+    isDragging = true; prevMouse = { x: e.clientX, y: e.clientY };
+  });
+  window.addEventListener('mouseup', () => isDragging = false);
+  renderer.domElement.addEventListener('wheel', e => {
+    e.preventDefault();
+    camera.position.multiplyScalar(e.deltaY > 0 ? 1.05 : 0.95);
+  }, { passive: false });
+
+  animate();
+}
+
+// === Adjacency from hull ===
+const adj = new Map();
+for (let i = 0; i < N; i++) adj.set(i, new Set());
+hullFaces.forEach(([a,b,c]) => {
+  adj.get(a).add(b); adj.get(a).add(c);
+  adj.get(b).add(a); adj.get(b).add(c);
+  adj.get(c).add(a); adj.get(c).add(b);
+});
+
+function buildLegend() {
+  const el = document.getElementById('legend');
+  let html = '';
+  DD.forEach((d,i) => {
+    const [r,g,b] = d.color;
+    html += `<div class="legend-row">
+      <div class="legend-dot" style="background:rgb(${r},${g},${b})"></div>
+      <span class="legend-label">${d.short}</span>
+      <span class="legend-val">${d.g} gl</span>
+    </div>`;
+  });
+  el.innerHTML = html;
+}
+
+function animate() {
+  requestAnimationFrame(animate);
+  time += 0.016;
+
+  const speed = document.getElementById('speed').value / 6000;
+  const opVal = document.getElementById('opacity').value / 100;
+
+  group.rotation.y += speed;
+
+  // Detect hover on node spheres
+  raycaster.setFromCamera(mouse, camera);
+  const spheres = nodeSprites.map(n => n.sphere);
+  const hits = raycaster.intersectObjects(spheres);
+  hoveredNode = hits.length > 0 ? hits[0].object.userData.domainIdx : -1;
+
+  // Update faces
+  meshes.forEach(mesh => {
+    const [ai,bi,ci] = mesh.userData.vertices;
+    if (hoveredNode === -1) {
+      mesh.material.opacity = opVal;
+    } else {
+      const touches = [ai,bi,ci].some(v => v === hoveredNode || adj.get(hoveredNode).has(v));
+      mesh.material.opacity = touches ? Math.min(opVal * 1.8, 0.85) : opVal * 0.1;
+    }
+  });
+
+  // Update edges
+  edgeLines.material.opacity = hoveredNode === -1 ? 0.2 : 0.06;
+
+  // Update nodes
+  nodeSprites.forEach(n => {
+    if (hoveredNode === -1) {
+      n.sphere.material.opacity = 1;
+      n.sprite.material.opacity = 0.85;
+      n.ring.material.opacity = 0.8;
+    } else if (n.idx === hoveredNode || adj.get(hoveredNode).has(n.idx)) {
+      n.sphere.material.opacity = 1;
+      n.sprite.material.opacity = 1;
+      n.ring.material.opacity = 1;
+    } else {
+      n.sphere.material.opacity = 0.1;
+      n.sprite.material.opacity = 0.1;
+      n.ring.material.opacity = 0.1;
+    }
+    // Billboard rings
+    n.ring.quaternion.copy(camera.quaternion);
+  });
+
+  // Hover info
+  const hoverEl = document.getElementById('hover-info');
+  if (hoveredNode >= 0) {
+    const d = DD[hoveredNode];
+    const [r,g,b] = d.color;
+    const connList = [];
+    adj.get(hoveredNode).forEach(j => connList.push(DD[j].short));
+    hoverEl.querySelector('.hn').textContent = d.name;
+    hoverEl.querySelector('.hn').style.color = `rgb(${r},${g},${b})`;
+    hoverEl.querySelector('.hs').innerHTML = `${d.g} glyphes · ${d.h} hyperedges · rang ${hoveredNode+1}/19`;
+    hoverEl.querySelector('.hc').innerHTML = `Adjacent: ${connList.join(', ')} (${connList.length} faces)`;
+    hoverEl.style.display = 'block';
+    hoverEl.style.borderColor = `rgb(${r},${g},${b})`;
+  } else {
+    hoverEl.style.display = 'none';
+  }
+
+  renderer.render(scene, camera);
+}
+
+init();
+</script>
+</body>
+</html>

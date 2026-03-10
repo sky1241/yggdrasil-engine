@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>YGGDRASIL — Hypertree S-1 · Decomposition</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #06060c; color: #fff; font-family: 'Courier New', monospace; overflow: auto; }
+
+#title-bar {
+  position: fixed; top: 12px; left: 15px; z-index: 10;
+  font-size: 11px; max-width: 500px;
+}
+#title-bar h2 { color: #4ade80; font-size: 16px; letter-spacing: 2px; }
+#title-bar .stats { color: #888; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+#title-bar .sub { color: #444; font-size: 9px; margin-top: 1px; }
+
+canvas { display: block; margin: 80px auto 40px auto; }
+
+#hover-info {
+  position: fixed; bottom: 20px; left: 15px; z-index: 10;
+  background: rgba(0,0,0,0.88); padding: 12px 18px; border-left: 3px solid #4ade80;
+  font-size: 11px; max-width: 500px;
+  color: #aaa;
+}
+
+#bottom-bar {
+  position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+  background: rgba(0,0,0,0.7); padding: 6px 15px;
+  font-size: 9px; color: #444; display: flex; justify-content: space-between;
+  border-top: 1px solid #1a1a2e;
+}
+</style>
+</head>
+<body>
+
+<div id="title-bar">
+  <h2>Yggdrasil &middot; Hypertree S-1</h2>
+  <div class="stats">DECOMPOSITION ARBORESCENTE · 19 DOMAINES · 1,329 GLYPHES</div>
+  <div class="sub">Hierarchie des domaines par partage de glyphes &middot; Tronc = 339 glyphes universels</div>
+</div>
+
+<canvas id="tree"></canvas>
+
+<div id="hover-info">
+  Survolez un noeud pour voir les details.
+</div>
+
+<div id="bottom-bar">
+  <span>hypertree S-1</span>
+  <span>Mathematics = le plus isole &middot; 339 glyphes = le tronc universel</span>
+  <span>Courcelle: NP &rarr; P si treewidth bornee</span>
+</div>
+
+<script>
+const DOMAINS = [
+  "Art", "Biology", "Business", "Chemistry", "Computer science",
+  "Economics", "Engineering", "Env. science", "Geography",
+  "Geology", "History", "Materials sci.", "Mathematics",
+  "Medicine", "Philosophy", "Physics", "Political sci.",
+  "Psychology", "Sociology"
+];
+
+const DOMAIN_COLORS = {
+  "Art": "#ef5350",
+  "Biology": "#4caf50",
+  "Business": "#ffa726",
+  "Chemistry": "#ab47bc",
+  "Computer science": "#42a5f5",
+  "Economics": "#ffd54f",
+  "Engineering": "#8d6e63",
+  "Environmental science": "#66bb6a",
+  "Env. science": "#66bb6a",
+  "Geography": "#26a69a",
+  "Geology": "#a1887f",
+  "History": "#ff8a65",
+  "Materials science": "#9575cd",
+  "Materials sci.": "#9575cd",
+  "Mathematics": "#29b6f6",
+  "Medicine": "#ef9a9a",
+  "Philosophy": "#bdbdbd",
+  "Physics": "#fff176",
+  "Political science": "#ce93d8",
+  "Political sci.": "#ce93d8",
+  "Psychology": "#80cbc4",
+  "Sociology": "#ffb74d"
+};
+
+// Merge history from computation
+const MERGES = [
+  { left: ["Chemistry"], right: ["Materials sci."], dist: 0.0022, shared: 1242 },
+  { left: ["Political sci."], right: ["Psychology"], dist: 0.0035, shared: 1179 },
+  { left: ["Env. science"], right: ["Geology"], dist: 0.0042, shared: 1235 },
+  { left: ["Geography"], right: ["Medicine"], dist: 0.0049, shared: 622 },
+  { left: ["Business"], right: ["Political sci.", "Psychology"], dist: 0.0058, shared: 1167 },
+  { left: ["Art"], right: ["History"], dist: 0.0059, shared: 619 },
+  { left: ["Chemistry", "Materials sci."], right: ["Env. science", "Geology"], dist: 0.0064, shared: 1234 },
+  { left: ["Computer science"], right: ["Sociology"], dist: 0.0072, shared: 850 },
+  { left: ["Geography", "Medicine"], right: ["Business", "Political sci.", "Psychology"], dist: 0.0091, shared: 598 },
+  { left: ["Biology"], right: ["Computer science", "Sociology"], dist: 0.0108, shared: 850 },
+  { left: ["Economics"], right: ["Art", "History"], dist: 0.0132, shared: 614 },
+  { left: ["Chemistry", "Materials sci.", "Env. science", "Geology"], right: ["Geography", "Medicine", "Business", "Political sci.", "Psychology"], dist: 0.0146, shared: 598 },
+  { left: ["Biology", "Computer science", "Sociology"], right: ["Chemistry", "Materials sci.", "Env. science", "Geology", "Geography", "Medicine", "Business", "Political sci.", "Psychology"], dist: 0.0183, shared: 467 },
+  { left: ["Philosophy"], right: ["Economics", "Art", "History"], dist: 0.021, shared: 463 },
+  { left: ["Physics"], right: ["Philosophy", "Economics", "Art", "History"], dist: 0.0288, shared: 463 },
+  { left: ["Biology", "Computer science", "Sociology", "Chemistry", "Materials sci.", "Env. science", "Geology", "Geography", "Medicine", "Business", "Political sci.", "Psychology"], right: ["Physics", "Philosophy", "Economics", "Art", "History"], dist: 0.0382, shared: 340 },
+  { left: ["Engineering"], right: ["Biology", "Computer science", "Sociology", "Chemistry", "Materials sci.", "Env. science", "Geology", "Geography", "Medicine", "Business", "Political sci.", "Psychology", "Physics", "Philosophy", "Economics", "Art", "History"], dist: 0.0666, shared: 339 },
+  { left: ["Mathematics"], right: ["Engineering", "Biology", "Computer science", "Sociology", "Chemistry", "Materials sci.", "Env. science", "Geology", "Geography", "Medicine", "Business", "Political sci.", "Psychology", "Physics", "Philosophy", "Economics", "Art", "History"], dist: 0.099, shared: 339 },
+];
+
+// Build tree structure recursively
+function buildTree() {
+  // Start with leaf nodes
+  const nodes = {};
+  DOMAINS.forEach(d => {
+    nodes[d] = { name: d, members: [d], isLeaf: true, children: [] };
+  });
+
+  // Track current cluster -> node mapping
+  const clusterMap = {};
+  DOMAINS.forEach(d => { clusterMap[d] = d; });
+
+  let nodeId = 0;
+  const internalNodes = [];
+
+  MERGES.forEach((merge, idx) => {
+    const leftKey = merge.left.join(',');
+    const rightKey = merge.right.join(',');
+    const allMembers = [...merge.left, ...merge.right];
+    const newKey = allMembers.join(',');
+
+    const leftNode = nodes[leftKey] || nodes[merge.left[0]];
+    const rightNode = nodes[rightKey] || nodes[merge.right[0]];
+
+    const newNode = {
+      name: `Node ${idx + 1}`,
+      members: allMembers,
+      isLeaf: false,
+      children: [leftNode, rightNode],
+      dist: merge.dist,
+      shared: merge.shared,
+      id: nodeId++
+    };
+
+    nodes[newKey] = newNode;
+    internalNodes.push(newNode);
+  });
+
+  // Root is the last merge
+  const allKey = MERGES[MERGES.length - 1].left.join(',') + ',' + MERGES[MERGES.length - 1].right.join(',');
+  return nodes[allKey] || internalNodes[internalNodes.length - 1];
+}
+
+// Layout tree
+function layoutTree(node, x, y, width, depth) {
+  node.x = x;
+  node.y = y;
+  node.depth = depth;
+
+  if (node.isLeaf) {
+    node.x = x;
+    node.y = y;
+    return;
+  }
+
+  const left = node.children[0];
+  const right = node.children[1];
+  const leftWeight = left.members.length;
+  const rightWeight = right.members.length;
+  const total = leftWeight + rightWeight;
+
+  const leftWidth = width * (leftWeight / total);
+  const rightWidth = width * (rightWeight / total);
+
+  const childY = y + 55;
+
+  layoutTree(left, x - rightWidth / 2, childY, leftWidth, depth + 1);
+  layoutTree(right, x + leftWidth / 2, childY, rightWidth, depth + 1);
+}
+
+// Collect all nodes
+function collectNodes(node, list) {
+  list.push(node);
+  if (!node.isLeaf) {
+    node.children.forEach(c => collectNodes(c, list));
+  }
+  return list;
+}
+
+// Draw
+const canvas = document.getElementById('tree');
+const ctx = canvas.getContext('2d');
+const W = Math.min(window.innerWidth, 1800);
+const H = 1150;
+canvas.width = W;
+canvas.height = H;
+
+const root = buildTree();
+layoutTree(root, W / 2, 60, W - 100, 0);
+const allNodes = collectNodes(root, []);
+
+let hoveredNode = null;
+
+function draw() {
+  ctx.clearRect(0, 0, W, H);
+
+  // Draw edges
+  allNodes.forEach(node => {
+    if (!node.isLeaf) {
+      node.children.forEach(child => {
+        // Elbow connector
+        ctx.beginPath();
+        ctx.moveTo(node.x, node.y + 8);
+        ctx.lineTo(node.x, (node.y + child.y) / 2);
+        ctx.lineTo(child.x, (node.y + child.y) / 2);
+        ctx.lineTo(child.x, child.y - 8);
+        ctx.strokeStyle = 'rgba(74, 222, 128, 0.2)';
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+    }
+  });
+
+  // Draw nodes
+  allNodes.forEach(node => {
+    const isHovered = hoveredNode === node;
+
+    if (node.isLeaf) {
+      // Leaf: domain name
+      const color = DOMAIN_COLORS[node.name] || '#888';
+      ctx.fillStyle = isHovered ? '#fff' : color;
+      ctx.font = isHovered ? 'bold 12px Courier New' : '10px Courier New';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'top';
+
+      // Dot
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, 4, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+
+      // Label (rotated)
+      ctx.save();
+      ctx.translate(node.x, node.y + 10);
+      ctx.rotate(Math.PI / 4);
+      ctx.fillStyle = isHovered ? '#fff' : color;
+      ctx.textAlign = 'left';
+      ctx.fillText(node.name, 0, 0);
+      ctx.restore();
+
+    } else {
+      // Internal node: merge point
+      const size = isHovered ? 8 : 5;
+      const alpha = isHovered ? 0.9 : 0.5;
+
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(74, 222, 128, ${alpha})`;
+      ctx.fill();
+
+      // Shared glyph count
+      if (node.shared) {
+        ctx.fillStyle = isHovered ? '#4ade80' : 'rgba(74, 222, 128, 0.4)';
+        ctx.font = '9px Courier New';
+        ctx.textAlign = 'center';
+        ctx.fillText(`${node.shared}g`, node.x, node.y - 12);
+      }
+
+      // Distance label
+      if (node.dist && isHovered) {
+        ctx.fillStyle = '#888';
+        ctx.font = '9px Courier New';
+        ctx.textAlign = 'left';
+        ctx.fillText(`d=${node.dist}`, node.x + 12, node.y + 3);
+      }
+    }
+  });
+
+  // Root annotation
+  ctx.fillStyle = '#4ade80';
+  ctx.font = 'bold 11px Courier New';
+  ctx.textAlign = 'center';
+  ctx.fillText('TRONC: 339 glyphes universels', W / 2, 30);
+  ctx.fillStyle = '#444';
+  ctx.font = '9px Courier New';
+  ctx.fillText('treewidth = profondeur max de la decomposition', W / 2, 44);
+}
+
+// Hover detection
+canvas.addEventListener('mousemove', (e) => {
+  const rect = canvas.getBoundingClientRect();
+  const mx = e.clientX - rect.left;
+  const my = e.clientY - rect.top;
+
+  hoveredNode = null;
+  let minDist = 20;
+
+  allNodes.forEach(node => {
+    const dx = mx - node.x;
+    const dy = my - node.y;
+    const d = Math.sqrt(dx * dx + dy * dy);
+    if (d < minDist) {
+      minDist = d;
+      hoveredNode = node;
+    }
+  });
+
+  const info = document.getElementById('hover-info');
+  if (hoveredNode) {
+    if (hoveredNode.isLeaf) {
+      info.innerHTML = `<span style="color:${DOMAIN_COLORS[hoveredNode.name] || '#fff'};font-size:16px;font-weight:bold">${hoveredNode.name}</span><br>` +
+        `<span style="color:#666">Domaine feuille</span>`;
+    } else {
+      info.innerHTML = `<span style="color:#4ade80;font-size:14px;font-weight:bold">${hoveredNode.name}</span><br>` +
+        `<span style="color:#aaa">${hoveredNode.members.length} domaines fusionnes</span><br>` +
+        `<span style="color:#666">Distance: ${hoveredNode.dist} · ${hoveredNode.shared} glyphes partages</span><br>` +
+        `<span style="color:#555;font-size:9px">${hoveredNode.members.join(', ')}</span>`;
+    }
+  } else {
+    info.innerHTML = 'Survolez un noeud pour voir les details.';
+  }
+
+  draw();
+});
+
+draw();
+</script>
+</body>
+</html>

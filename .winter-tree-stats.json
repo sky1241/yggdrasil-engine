@@ -1,14 +1,14 @@
 {
   "repo": "yggdrasil-engine",
-  "date": "2026-03-09T08:29:13.490292",
+  "date": "2026-03-10T09:20:06.297395",
   "phase": "CANOPÉE",
-  "total_files": 6590,
-  "total_code_lines": 45595,
+  "total_files": 6662,
+  "total_code_lines": 48484,
   "languages": {
-    "Python": 39283,
+    "Python": 40374,
     "PowerShell": 9,
     "Shell": 11,
-    "HTML": 6286,
+    "HTML": 8084,
     "JavaScript": 6
   },
   "biggest_file": {

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>Hypergraphe H</title>
+<style>
+body { margin:0; background:white; display:flex; flex-direction:column; align-items:center; padding:30px; font-family: "Times New Roman", serif; }
+</style>
+</head><body>
+<svg viewBox="0 0 600 520" width="600" height="520">
+<rect width="600" height="520" fill="white"/>
+<ellipse cx="237.5" cy="300.0" rx="142.0" ry="114.5" transform="rotate(90.0 237.5 300.0)" fill="none" stroke="#e53935" stroke-width="2"/>
+<text x="336.9" y="190.5" font-size="13" font-weight="bold" fill="#e53935" font-family="serif">c1</text>
+<ellipse cx="278.8" cy="203.8" rx="248.7" ry="143.9" transform="rotate(-66.8 278.8 203.8)" fill="none" stroke="#1e88e5" stroke-width="2"/>
+<text x="452.8" y="64.8" font-size="13" font-weight="bold" fill="#1e88e5" font-family="serif">c2</text>
+<ellipse cx="283.3" cy="318.3" rx="155.0" ry="146.8" transform="rotate(26.6 283.3 318.3)" fill="none" stroke="#43a047" stroke-width="2"/>
+<text x="391.8" y="176.5" font-size="13" font-weight="bold" fill="#43a047" font-family="serif">c3</text>
+<ellipse cx="182.5" cy="162.5" rx="171.1" ry="84.2" transform="rotate(71.6 182.5 162.5)" fill="none" stroke="#fb8c00" stroke-width="2"/>
+<text x="302.3" y="83.3" font-size="13" font-weight="bold" fill="#fb8c00" font-family="serif">c4</text>
+<ellipse cx="283.3" cy="245.0" rx="211.3" ry="129.9" transform="rotate(-59.2 283.3 245.0)" fill="none" stroke="#8e24aa" stroke-width="2"/>
+<text x="431.2" y="120.1" font-size="13" font-weight="bold" fill="#8e24aa" font-family="serif">c5</text>
+<ellipse cx="265.0" cy="245.0" rx="205.9" ry="101.6" transform="rotate(18.4 265.0 245.0)" fill="none" stroke="#00acc1" stroke-width="2"/>
+<text x="409.1" y="148.4" font-size="13" font-weight="bold" fill="#00acc1" font-family="serif">c6</text>
+<ellipse cx="173.3" cy="263.3" rx="109.8" ry="83.9" transform="rotate(-45.0 173.3 263.3)" fill="none" stroke="#d81b60" stroke-width="2"/>
+<text x="250.2" y="184.5" font-size="13" font-weight="bold" fill="#d81b60" font-family="serif">c7</text>
+<ellipse cx="246.7" cy="318.3" rx="207.5" ry="164.3" transform="rotate(-23.4 246.7 318.3)" fill="none" stroke="#6d4c41" stroke-width="2"/>
+<text x="391.9" y="159.0" font-size="13" font-weight="bold" fill="#6d4c41" font-family="serif">c8</text>
+<circle cx="100" cy="80" r="6" fill="black"/>
+<text x="110" y="84" font-size="13" fill="black" font-family="serif">Art</text>
+<circle cx="210" cy="80" r="6" fill="black"/>
+<text x="220" y="84" font-size="13" fill="black" font-family="serif">Econ</text>
+<circle cx="320" cy="80" r="6" fill="black"/>
+<text x="330" y="84" font-size="13" fill="black" font-family="serif">Bio</text>
+<circle cx="430" cy="80" r="6" fill="black"/>
+<text x="440" y="84" font-size="13" fill="black" font-family="serif">Env</text>
+<circle cx="100" cy="190" r="6" fill="black"/>
+<text x="110" y="194" font-size="13" fill="black" font-family="serif">Biz</text>
+<circle cx="210" cy="190" r="6" fill="black"/>
+<text x="220" y="194" font-size="13" fill="black" font-family="serif">Phys</text>
+<circle cx="320" cy="190" r="6" fill="black"/>
+<text x="330" y="194" font-size="13" fill="black" font-family="serif">Geol</text>
+<circle cx="430" cy="190" r="6" fill="black"/>
+<text x="440" y="194" font-size="13" fill="black" font-family="serif">Eng</text>
+<circle cx="100" cy="300" r="6" fill="black"/>
+<text x="110" y="304" font-size="13" fill="black" font-family="serif">Psych</text>
+<circle cx="210" cy="300" r="6" fill="black"/>
+<text x="220" y="304" font-size="13" fill="black" font-family="serif">Math</text>
+<circle cx="320" cy="300" r="6" fill="black"/>
+<text x="330" y="304" font-size="13" fill="black" font-family="serif">MatSci</text>
+<circle cx="430" cy="300" r="6" fill="black"/>
+<text x="440" y="304" font-size="13" fill="black" font-family="serif">Chem</text>
+<circle cx="100" cy="410" r="6" fill="black"/>
+<text x="110" y="414" font-size="13" fill="black" font-family="serif">PolSci</text>
+<circle cx="210" cy="410" r="6" fill="black"/>
+<text x="220" y="414" font-size="13" fill="black" font-family="serif">CS</text>
+<circle cx="320" cy="410" r="6" fill="black"/>
+<text x="330" y="414" font-size="13" fill="black" font-family="serif">Geo</text>
+<text x="300.0" y="505" text-anchor="middle" font-size="14" fill="black" font-family="serif">Un hypergraphe H</text>
+</svg>
+<div style="font-family:serif;font-size:13px;margin-top:12px;max-width:580px"><b>Un hypergraphe H et son hypertree decomposition</b><br><br><span style="color:#e53935;font-weight:bold">c1</span>: {CS, MatSci, Math, Phys} — 14 glyphes<br><span style="color:#1e88e5;font-weight:bold">c2</span>: {Bio, CS, Econ, Env, Geol, MatSci, Math, Phys} — 1 glyphe<br><span style="color:#43a047;font-weight:bold">c3</span>: {Chem, CS, Geo, MatSci, Math, Phys} — 1 glyphe<br><span style="color:#fb8c00;font-weight:bold">c4</span>: {Art, Econ, Math, Phys} — 1 glyphe<br><span style="color:#8e24aa;font-weight:bold">c5</span>: {Bio, CS, Eng, MatSci, Math, Phys} — 1 glyphe<br><span style="color:#00acc1;font-weight:bold">c6</span>: {Biz, Chem, Geol, MatSci, Math, Phys} — 1 glyphe<br><span style="color:#d81b60;font-weight:bold">c7</span>: {Math, Phys, Psych} — 1 glyphe<br><span style="color:#6d4c41;font-weight:bold">c8</span>: {Chem, CS, MatSci, Math, Phys, PolSci} — 1 glyphe<br></div></body></html>

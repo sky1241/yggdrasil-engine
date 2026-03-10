@@ -1,0 +1,9249 @@
+[
+  {
+    "domains": [
+      "Computer science"
+    ],
+    "n_domains": 1,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𞻱"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𞻱",
+        "name": "ARABIC MATHEMATICAL OPERATOR HAH WITH DAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Physics"
+    ],
+    "n_domains": 1,
+    "n_glyphs": 5,
+    "sample_symbols": [
+      "𝒰",
+      "𝔰",
+      "𝔧",
+      "𝔥",
+      "𝒴"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝒰",
+        "name": "MATHEMATICAL SCRIPT CAPITAL U"
+      },
+      {
+        "symbol": "𝔰",
+        "name": "MATHEMATICAL FRAKTUR SMALL S"
+      },
+      {
+        "symbol": "𝔧",
+        "name": "MATHEMATICAL FRAKTUR SMALL J"
+      },
+      {
+        "symbol": "𝔥",
+        "name": "MATHEMATICAL FRAKTUR SMALL H"
+      },
+      {
+        "symbol": "𝒴",
+        "name": "MATHEMATICAL SCRIPT CAPITAL Y"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Business",
+      "Physics"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔴"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔴",
+        "name": "MATHEMATICAL FRAKTUR SMALL W"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Materials science"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔤"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔤",
+        "name": "MATHEMATICAL FRAKTUR SMALL G"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Physics"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 5,
+    "sample_symbols": [
+      "𝔜",
+      "𝕄",
+      "𝔎",
+      "𝔛",
+      "𝔊"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔜",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL Y"
+      },
+      {
+        "symbol": "𝕄",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL M"
+      },
+      {
+        "symbol": "𝔎",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL K"
+      },
+      {
+        "symbol": "𝔛",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL X"
+      },
+      {
+        "symbol": "𝔊",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL G"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Geography",
+      "Physics"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝜵"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝜵",
+        "name": "MATHEMATICAL BOLD ITALIC NABLA"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Materials science",
+      "Mathematics"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔉"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔉",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL F"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "𝔅",
+      "𝜕",
+      "𝔑",
+      "𝒥"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔅",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL B"
+      },
+      {
+        "symbol": "𝜕",
+        "name": "MATHEMATICAL ITALIC PARTIAL DIFFERENTIAL"
+      },
+      {
+        "symbol": "𝔑",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL N"
+      },
+      {
+        "symbol": "𝒥",
+        "name": "MATHEMATICAL SCRIPT CAPITAL J"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 2,
+    "n_glyphs": 8,
+    "sample_symbols": [
+      "𝟘",
+      "𝔩",
+      "𝒞",
+      "𝕀",
+      "𝔻",
+      "𝔐",
+      "𝔨",
+      "𝒵"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝟘",
+        "name": "MATHEMATICAL DOUBLE-STRUCK DIGIT ZERO"
+      },
+      {
+        "symbol": "𝔩",
+        "name": "MATHEMATICAL FRAKTUR SMALL L"
+      },
+      {
+        "symbol": "𝒞",
+        "name": "MATHEMATICAL SCRIPT CAPITAL C"
+      },
+      {
+        "symbol": "𝕀",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL I"
+      },
+      {
+        "symbol": "𝔻",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL D"
+      },
+      {
+        "symbol": "𝔐",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL M"
+      },
+      {
+        "symbol": "𝔨",
+        "name": "MATHEMATICAL FRAKTUR SMALL K"
+      },
+      {
+        "symbol": "𝒵",
+        "name": "MATHEMATICAL SCRIPT CAPITAL Z"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Business",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔓"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔓",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL P"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 7,
+    "sample_symbols": [
+      "𝕊",
+      "𝕐",
+      "𝕍",
+      "𝔯",
+      "𝔠",
+      "𝔾",
+      "𝔘"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝕊",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL S"
+      },
+      {
+        "symbol": "𝕐",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL Y"
+      },
+      {
+        "symbol": "𝕍",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL V"
+      },
+      {
+        "symbol": "𝔯",
+        "name": "MATHEMATICAL FRAKTUR SMALL R"
+      },
+      {
+        "symbol": "𝔠",
+        "name": "MATHEMATICAL FRAKTUR SMALL C"
+      },
+      {
+        "symbol": "𝔾",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL G"
+      },
+      {
+        "symbol": "𝔘",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL U"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 14,
+    "sample_symbols": [
+      "𝔣",
+      "𝒜",
+      "𝔹",
+      "𝔈",
+      "𝔲",
+      "𝒢",
+      "𝒦",
+      "𝕌"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔣",
+        "name": "MATHEMATICAL FRAKTUR SMALL F"
+      },
+      {
+        "symbol": "𝒜",
+        "name": "MATHEMATICAL SCRIPT CAPITAL A"
+      },
+      {
+        "symbol": "𝔹",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL B"
+      },
+      {
+        "symbol": "𝔈",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL E"
+      },
+      {
+        "symbol": "𝔲",
+        "name": "MATHEMATICAL FRAKTUR SMALL U"
+      },
+      {
+        "symbol": "𝒢",
+        "name": "MATHEMATICAL SCRIPT CAPITAL G"
+      },
+      {
+        "symbol": "𝒦",
+        "name": "MATHEMATICAL SCRIPT CAPITAL K"
+      },
+      {
+        "symbol": "𝕌",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL U"
+      },
+      {
+        "symbol": "𝔵",
+        "name": "MATHEMATICAL FRAKTUR SMALL X"
+      },
+      {
+        "symbol": "𝔭",
+        "name": "MATHEMATICAL FRAKTUR SMALL P"
+      },
+      {
+        "symbol": "𝒲",
+        "name": "MATHEMATICAL SCRIPT CAPITAL W"
+      },
+      {
+        "symbol": "𝕃",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL L"
+      },
+      {
+        "symbol": "𝒳",
+        "name": "MATHEMATICAL SCRIPT CAPITAL X"
+      },
+      {
+        "symbol": "𝛁",
+        "name": "MATHEMATICAL BOLD NABLA"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Environmental science",
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 3,
+    "sample_symbols": [
+      "𝔟",
+      "𝔙",
+      "𝔡"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔟",
+        "name": "MATHEMATICAL FRAKTUR SMALL B"
+      },
+      {
+        "symbol": "𝔙",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL V"
+      },
+      {
+        "symbol": "𝔡",
+        "name": "MATHEMATICAL FRAKTUR SMALL D"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Geology",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔢"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔢",
+        "name": "MATHEMATICAL FRAKTUR SMALL E"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 7,
+    "sample_symbols": [
+      "𝔫",
+      "𝔮",
+      "𝟙",
+      "𝕋",
+      "𝕏",
+      "𞻰",
+      "𝒪"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔫",
+        "name": "MATHEMATICAL FRAKTUR SMALL N"
+      },
+      {
+        "symbol": "𝔮",
+        "name": "MATHEMATICAL FRAKTUR SMALL Q"
+      },
+      {
+        "symbol": "𝟙",
+        "name": "MATHEMATICAL DOUBLE-STRUCK DIGIT ONE"
+      },
+      {
+        "symbol": "𝕋",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL T"
+      },
+      {
+        "symbol": "𝕏",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL X"
+      },
+      {
+        "symbol": "𞻰",
+        "name": "ARABIC MATHEMATICAL OPERATOR MEEM WITH HAH WITH TATWEEL"
+      },
+      {
+        "symbol": "𝒪",
+        "name": "MATHEMATICAL SCRIPT CAPITAL O"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Mathematics",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 3,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝒮"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝒮",
+        "name": "MATHEMATICAL SCRIPT CAPITAL S"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Economics",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝝏"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝝏",
+        "name": "MATHEMATICAL BOLD ITALIC PARTIAL DIFFERENTIAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "𝕆",
+      "𝔦"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝕆",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL O"
+      },
+      {
+        "symbol": "𝔦",
+        "name": "MATHEMATICAL FRAKTUR SMALL I"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝒟"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝒟",
+        "name": "MATHEMATICAL SCRIPT CAPITAL D"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Engineering",
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝕂"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝕂",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL K"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Engineering",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝟃"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝟃",
+        "name": "MATHEMATICAL SANS-SERIF BOLD ITALIC PARTIAL DIFFERENTIAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Environmental science",
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔄"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔄",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL A"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 14,
+    "sample_symbols": [
+      "𝝯",
+      "𝔖",
+      "𝔶",
+      "𝕎",
+      "𝒬",
+      "𝒱",
+      "𝔗",
+      "𝞉"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝝯",
+        "name": "MATHEMATICAL SANS-SERIF BOLD NABLA"
+      },
+      {
+        "symbol": "𝔖",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL S"
+      },
+      {
+        "symbol": "𝔶",
+        "name": "MATHEMATICAL FRAKTUR SMALL Y"
+      },
+      {
+        "symbol": "𝕎",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL W"
+      },
+      {
+        "symbol": "𝒬",
+        "name": "MATHEMATICAL SCRIPT CAPITAL Q"
+      },
+      {
+        "symbol": "𝒱",
+        "name": "MATHEMATICAL SCRIPT CAPITAL V"
+      },
+      {
+        "symbol": "𝔗",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL T"
+      },
+      {
+        "symbol": "𝞉",
+        "name": "MATHEMATICAL SANS-SERIF BOLD PARTIAL DIFFERENTIAL"
+      },
+      {
+        "symbol": "𝔞",
+        "name": "MATHEMATICAL FRAKTUR SMALL A"
+      },
+      {
+        "symbol": "𝔸",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL A"
+      },
+      {
+        "symbol": "𝔚",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL W"
+      },
+      {
+        "symbol": "𝒯",
+        "name": "MATHEMATICAL SCRIPT CAPITAL T"
+      },
+      {
+        "symbol": "𝔍",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL J"
+      },
+      {
+        "symbol": "𝒫",
+        "name": "MATHEMATICAL SCRIPT CAPITAL P"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Economics",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 4,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝕁"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝕁",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL J"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 5,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔬"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔬",
+        "name": "MATHEMATICAL FRAKTUR SMALL O"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Materials science",
+      "Physics"
+    ],
+    "n_domains": 5,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔔"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔔",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL Q"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Environmental science",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 5,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔱"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔱",
+        "name": "MATHEMATICAL FRAKTUR SMALL T"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Geography",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 5,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔪"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔪",
+        "name": "MATHEMATICAL FRAKTUR SMALL M"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Computer science",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 5,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔇"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔇",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL D"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Computer science",
+      "Engineering",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 6,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔏"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔏",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL L"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 6,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝛻"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝛻",
+        "name": "MATHEMATICAL ITALIC NABLA"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Business",
+      "Chemistry",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 6,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔷"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔷",
+        "name": "MATHEMATICAL FRAKTUR SMALL Z"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Geography",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 6,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔳"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔳",
+        "name": "MATHEMATICAL FRAKTUR SMALL V"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 6,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔒"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔒",
+        "name": "MATHEMATICAL FRAKTUR CAPITAL O"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 7,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝛛"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝛛",
+        "name": "MATHEMATICAL BOLD PARTIAL DIFFERENTIAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Chemistry",
+      "Computer science",
+      "Environmental science",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 7,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝒩"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝒩",
+        "name": "MATHEMATICAL SCRIPT CAPITAL N"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics"
+    ],
+    "n_domains": 8,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝞩"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝞩",
+        "name": "MATHEMATICAL SANS-SERIF BOLD ITALIC NABLA"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 13,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⨙",
+      "﹥"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨙",
+        "name": "INTEGRAL WITH INTERSECTION"
+      },
+      {
+        "symbol": "﹥",
+        "name": "SMALL GREATER-THAN SIGN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Sociology"
+    ],
+    "n_domains": 13,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⇵"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⇵",
+        "name": "DOWNWARDS ARROW LEFTWARDS OF UPWARDS ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 13,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⩞"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩞",
+        "name": "LOGICAL AND WITH DOUBLE OVERBAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 13,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪿"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪿",
+        "name": "SUBSET WITH PLUS SIGN BELOW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⏝"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⏝",
+        "name": "BOTTOM PARENTHESIS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "≖"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≖",
+        "name": "RING IN EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⊐"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⊐",
+        "name": "SQUARE ORIGINAL OF"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⊁"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⊁",
+        "name": "DOES NOT SUCCEED"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "⪴",
+      "₇",
+      "⨘",
+      "⟢"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪴",
+        "name": "SUCCEEDS ABOVE EQUALS SIGN"
+      },
+      {
+        "symbol": "₇",
+        "name": "SUBSCRIPT SEVEN"
+      },
+      {
+        "symbol": "⨘",
+        "name": "INTEGRAL WITH TIMES SIGN"
+      },
+      {
+        "symbol": "⟢",
+        "name": "WHITE CONCAVE-SIDED DIAMOND WITH LEFTWARDS TICK"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⤫"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤫",
+        "name": "RISING DIAGONAL CROSSING FALLING DIAGONAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⤯",
+      "⊿"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤯",
+        "name": "FALLING DIAGONAL CROSSING NORTH EAST ARROW"
+      },
+      {
+        "symbol": "⊿",
+        "name": "RIGHT TRIANGLE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 12,
+    "sample_symbols": [
+      "⋤",
+      "⃞",
+      "⊄",
+      "⧕",
+      "⦼",
+      "⊎",
+      "＜",
+      "⨛"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⋤",
+        "name": "SQUARE IMAGE OF OR NOT EQUAL TO"
+      },
+      {
+        "symbol": "⃞",
+        "name": "COMBINING ENCLOSING SQUARE"
+      },
+      {
+        "symbol": "⊄",
+        "name": "NOT A SUBSET OF"
+      },
+      {
+        "symbol": "⧕",
+        "name": "TIMES WITH RIGHT HALF BLACK"
+      },
+      {
+        "symbol": "⦼",
+        "name": "CIRCLED ANTICLOCKWISE-ROTATED DIVISION SIGN"
+      },
+      {
+        "symbol": "⊎",
+        "name": "MULTISET UNION"
+      },
+      {
+        "symbol": "＜",
+        "name": "FULLWIDTH LESS-THAN SIGN"
+      },
+      {
+        "symbol": "⨛",
+        "name": "INTEGRAL WITH OVERBAR"
+      },
+      {
+        "symbol": "⧺",
+        "name": "DOUBLE PLUS"
+      },
+      {
+        "symbol": "⨓",
+        "name": "LINE INTEGRATION WITH SEMICIRCULAR PATH AROUND POLE"
+      },
+      {
+        "symbol": "⁵",
+        "name": "SUPERSCRIPT FIVE"
+      },
+      {
+        "symbol": "⪌",
+        "name": "GREATER-THAN ABOVE DOUBLE-LINE EQUAL ABOVE LESS-THAN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⥢"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥢",
+        "name": "LEFTWARDS HARPOON WITH BARB UP ABOVE LEFTWARDS HARPOON WITH BARB DOWN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⁻"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⁻",
+        "name": "SUPERSCRIPT MINUS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "≆"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≆",
+        "name": "APPROXIMATELY BUT NOT ACTUALLY EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⨝",
+      "⨈"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨝",
+        "name": "JOIN"
+      },
+      {
+        "symbol": "⨈",
+        "name": "TWO LOGICAL OR OPERATOR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨀"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨀",
+        "name": "N-ARY CIRCLED DOT OPERATOR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⩀",
+      "⃯"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩀",
+        "name": "INTERSECTION WITH DOT"
+      },
+      {
+        "symbol": "⃯",
+        "name": "COMBINING RIGHT ARROW BELOW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⥣"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥣",
+        "name": "UPWARDS HARPOON WITH BARB LEFT BESIDE UPWARDS HARPOON WITH BARB RIGHT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨞"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨞",
+        "name": "LARGE LEFT TRIANGLE OPERATOR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 14,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨹"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨹",
+        "name": "PLUS SIGN IN TRIANGLE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "ℳ"
+    ],
+    "glyphs": [
+      {
+        "symbol": "ℳ",
+        "name": "SCRIPT CAPITAL M"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "₆"
+    ],
+    "glyphs": [
+      {
+        "symbol": "₆",
+        "name": "SUBSCRIPT SIX"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⋠"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⋠",
+        "name": "DOES NOT PRECEDE OR EQUAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 10,
+    "sample_symbols": [
+      "⩢",
+      "⨏",
+      "∾",
+      "⩔",
+      "⧾",
+      "⧐",
+      "⩌",
+      "⨱"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩢",
+        "name": "LOGICAL OR WITH DOUBLE OVERBAR"
+      },
+      {
+        "symbol": "⨏",
+        "name": "INTEGRAL AVERAGE WITH SLASH"
+      },
+      {
+        "symbol": "∾",
+        "name": "INVERTED LAZY S"
+      },
+      {
+        "symbol": "⩔",
+        "name": "DOUBLE LOGICAL OR"
+      },
+      {
+        "symbol": "⧾",
+        "name": "TINY"
+      },
+      {
+        "symbol": "⧐",
+        "name": "VERTICAL BAR BESIDE RIGHT TRIANGLE"
+      },
+      {
+        "symbol": "⩌",
+        "name": "CLOSED UNION WITH SERIFS"
+      },
+      {
+        "symbol": "⨱",
+        "name": "MULTIPLICATION SIGN WITH UNDERBAR"
+      },
+      {
+        "symbol": "≌",
+        "name": "ALL EQUAL TO"
+      },
+      {
+        "symbol": "⨾",
+        "name": "Z NOTATION RELATIONAL COMPOSITION"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪃"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪃",
+        "name": "LESS-THAN OR SLANTED EQUAL TO WITH DOT ABOVE RIGHT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⃑",
+      "⦬"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⃑",
+        "name": "COMBINING RIGHT HARPOON ABOVE"
+      },
+      {
+        "symbol": "⦬",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING RIGHT AND UP"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨃"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨃",
+        "name": "N-ARY UNION OPERATOR WITH DOT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "⃖",
+      "∡",
+      "⭁",
+      "⏠"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⃖",
+        "name": "COMBINING LEFT ARROW ABOVE"
+      },
+      {
+        "symbol": "∡",
+        "name": "MEASURED ANGLE"
+      },
+      {
+        "symbol": "⭁",
+        "name": "REVERSE TILDE OPERATOR ABOVE LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⏠",
+        "name": "TOP TORTOISE SHELL BRACKET"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 60,
+    "sample_symbols": [
+      "⃐",
+      "⟡",
+      "⁹",
+      "⤕",
+      "⨉",
+      "⩟",
+      "⨥",
+      "⫑"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⃐",
+        "name": "COMBINING LEFT HARPOON ABOVE"
+      },
+      {
+        "symbol": "⟡",
+        "name": "WHITE CONCAVE-SIDED DIAMOND"
+      },
+      {
+        "symbol": "⁹",
+        "name": "SUPERSCRIPT NINE"
+      },
+      {
+        "symbol": "⤕",
+        "name": "RIGHTWARDS ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⨉",
+        "name": "N-ARY TIMES OPERATOR"
+      },
+      {
+        "symbol": "⩟",
+        "name": "LOGICAL AND WITH UNDERBAR"
+      },
+      {
+        "symbol": "⨥",
+        "name": "PLUS SIGN WITH DOT BELOW"
+      },
+      {
+        "symbol": "⫑",
+        "name": "CLOSED SUBSET OR EQUAL TO"
+      },
+      {
+        "symbol": "₍",
+        "name": "SUBSCRIPT LEFT PARENTHESIS"
+      },
+      {
+        "symbol": "⤅",
+        "name": "RIGHTWARDS TWO-HEADED ARROW FROM BAR"
+      },
+      {
+        "symbol": "∔",
+        "name": "DOT PLUS"
+      },
+      {
+        "symbol": "⩼",
+        "name": "GREATER-THAN WITH QUESTION MARK ABOVE"
+      },
+      {
+        "symbol": "⃜",
+        "name": "COMBINING FOUR DOTS ABOVE"
+      },
+      {
+        "symbol": "∢",
+        "name": "SPHERICAL ANGLE"
+      },
+      {
+        "symbol": "⧡",
+        "name": "INCREASES AS"
+      },
+      {
+        "symbol": "ℼ",
+        "name": "DOUBLE-STRUCK SMALL PI"
+      },
+      {
+        "symbol": "◺",
+        "name": "LOWER LEFT TRIANGLE"
+      },
+      {
+        "symbol": "⊏",
+        "name": "SQUARE IMAGE OF"
+      },
+      {
+        "symbol": "⇿",
+        "name": "LEFT RIGHT OPEN-HEADED ARROW"
+      },
+      {
+        "symbol": "ℎ",
+        "name": "PLANCK CONSTANT"
+      },
+      {
+        "symbol": "⧔",
+        "name": "TIMES WITH LEFT HALF BLACK"
+      },
+      {
+        "symbol": "⬸",
+        "name": "LEFTWARDS ARROW WITH DOTTED STEM"
+      },
+      {
+        "symbol": "″",
+        "name": "DOUBLE PRIME"
+      },
+      {
+        "symbol": "≏",
+        "name": "DIFFERENCE BETWEEN"
+      },
+      {
+        "symbol": "﹦",
+        "name": "SMALL EQUALS SIGN"
+      },
+      {
+        "symbol": "⟓",
+        "name": "LOWER RIGHT CORNER WITH DOT"
+      },
+      {
+        "symbol": "⊾",
+        "name": "RIGHT ANGLE WITH ARC"
+      },
+      {
+        "symbol": "⨒",
+        "name": "LINE INTEGRATION WITH RECTANGULAR PATH AROUND POLE"
+      },
+      {
+        "symbol": "⪏",
+        "name": "LESS-THAN ABOVE SIMILAR ABOVE GREATER-THAN"
+      },
+      {
+        "symbol": "⟞",
+        "name": "LONG LEFT TACK"
+      },
+      {
+        "symbol": "⇶",
+        "name": "THREE RIGHTWARDS ARROWS"
+      },
+      {
+        "symbol": "ℨ",
+        "name": "BLACK-LETTER CAPITAL Z"
+      },
+      {
+        "symbol": "⬶",
+        "name": "LEFTWARDS TWO-HEADED ARROW FROM BAR"
+      },
+      {
+        "symbol": "⫣",
+        "name": "DOUBLE VERTICAL BAR LEFT TURNSTILE"
+      },
+      {
+        "symbol": "◽",
+        "name": "WHITE MEDIUM SMALL SQUARE"
+      },
+      {
+        "symbol": "⥾",
+        "name": "UP FISH TAIL"
+      },
+      {
+        "symbol": "⫷",
+        "name": "TRIPLE NESTED LESS-THAN"
+      },
+      {
+        "symbol": "⇹",
+        "name": "LEFT RIGHT ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "∶",
+        "name": "RATIO"
+      },
+      {
+        "symbol": "⊋",
+        "name": "SUPERSET OF WITH NOT EQUAL TO"
+      },
+      {
+        "symbol": "⥙",
+        "name": "DOWNWARDS HARPOON WITH BARB LEFT TO BAR"
+      },
+      {
+        "symbol": "∛",
+        "name": "CUBE ROOT"
+      },
+      {
+        "symbol": "⩿",
+        "name": "LESS-THAN OR SLANTED EQUAL TO WITH DOT INSIDE"
+      },
+      {
+        "symbol": "ℽ",
+        "name": "DOUBLE-STRUCK SMALL GAMMA"
+      },
+      {
+        "symbol": "⎪",
+        "name": "CURLY BRACKET EXTENSION"
+      },
+      {
+        "symbol": "⤘",
+        "name": "RIGHTWARDS TWO-HEADED ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⪕",
+        "name": "SLANTED EQUAL TO OR LESS-THAN"
+      },
+      {
+        "symbol": "⫇",
+        "name": "SUBSET OF ABOVE TILDE OPERATOR"
+      },
+      {
+        "symbol": "⫦",
+        "name": "LONG DASH FROM LEFT MEMBER OF DOUBLE VERTICAL"
+      },
+      {
+        "symbol": "⊝",
+        "name": "CIRCLED DASH"
+      },
+      {
+        "symbol": "≲",
+        "name": "LESS-THAN OR EQUIVALENT TO"
+      },
+      {
+        "symbol": "⫺",
+        "name": "DOUBLE-LINE SLANTED GREATER-THAN OR EQUAL TO"
+      },
+      {
+        "symbol": "⪦",
+        "name": "LESS-THAN CLOSED BY CURVE"
+      },
+      {
+        "symbol": "≿",
+        "name": "SUCCEEDS OR EQUIVALENT TO"
+      },
+      {
+        "symbol": "ⅉ",
+        "name": "DOUBLE-STRUCK ITALIC SMALL J"
+      },
+      {
+        "symbol": "⧣",
+        "name": "EQUALS SIGN AND SLANTED PARALLEL"
+      },
+      {
+        "symbol": "∌",
+        "name": "DOES NOT CONTAIN AS MEMBER"
+      },
+      {
+        "symbol": "≹",
+        "name": "NEITHER GREATER-THAN NOR LESS-THAN"
+      },
+      {
+        "symbol": "⋸",
+        "name": "ELEMENT OF WITH UNDERBAR"
+      },
+      {
+        "symbol": "⊵",
+        "name": "CONTAINS AS NORMAL SUBGROUP OR EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 3,
+    "sample_symbols": [
+      "＞",
+      "⟛",
+      "⎬"
+    ],
+    "glyphs": [
+      {
+        "symbol": "＞",
+        "name": "FULLWIDTH GREATER-THAN SIGN"
+      },
+      {
+        "symbol": "⟛",
+        "name": "LEFT AND RIGHT TACK"
+      },
+      {
+        "symbol": "⎬",
+        "name": "RIGHT CURLY BRACKET MIDDLE PIECE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 7,
+    "sample_symbols": [
+      "⩜",
+      "⦴",
+      "⦱",
+      "ⁿ",
+      "≟",
+      "⨍",
+      "⨧"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩜",
+        "name": "LOGICAL AND WITH HORIZONTAL DASH"
+      },
+      {
+        "symbol": "⦴",
+        "name": "EMPTY SET WITH LEFT ARROW ABOVE"
+      },
+      {
+        "symbol": "⦱",
+        "name": "EMPTY SET WITH OVERBAR"
+      },
+      {
+        "symbol": "ⁿ",
+        "name": "SUPERSCRIPT LATIN SMALL LETTER N"
+      },
+      {
+        "symbol": "≟",
+        "name": "QUESTIONED EQUAL TO"
+      },
+      {
+        "symbol": "⨍",
+        "name": "FINITE PART INTEGRAL"
+      },
+      {
+        "symbol": "⨧",
+        "name": "PLUS SIGN WITH SUBSCRIPT TWO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⩣"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩣",
+        "name": "LOGICAL OR WITH DOUBLE UNDERBAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 10,
+    "sample_symbols": [
+      "⪄",
+      "⋗",
+      "⩑",
+      "⊅",
+      "⤧",
+      "≸",
+      "⪀",
+      "⪟"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪄",
+        "name": "GREATER-THAN OR SLANTED EQUAL TO WITH DOT ABOVE LEFT"
+      },
+      {
+        "symbol": "⋗",
+        "name": "GREATER-THAN WITH DOT"
+      },
+      {
+        "symbol": "⩑",
+        "name": "LOGICAL AND WITH DOT ABOVE"
+      },
+      {
+        "symbol": "⊅",
+        "name": "NOT A SUPERSET OF"
+      },
+      {
+        "symbol": "⤧",
+        "name": "NORTH WEST ARROW AND NORTH EAST ARROW"
+      },
+      {
+        "symbol": "≸",
+        "name": "NEITHER LESS-THAN NOR GREATER-THAN"
+      },
+      {
+        "symbol": "⪀",
+        "name": "GREATER-THAN OR SLANTED EQUAL TO WITH DOT INSIDE"
+      },
+      {
+        "symbol": "⪟",
+        "name": "SIMILAR ABOVE LESS-THAN ABOVE EQUALS SIGN"
+      },
+      {
+        "symbol": "⧝",
+        "name": "TIE OVER INFINITY"
+      },
+      {
+        "symbol": "≂",
+        "name": "MINUS TILDE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 18,
+    "sample_symbols": [
+      "⥀",
+      "₋",
+      "⅄",
+      "⤠",
+      "⦮",
+      "⨽",
+      "≭",
+      "⋚"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥀",
+        "name": "ANTICLOCKWISE CLOSED CIRCLE ARROW"
+      },
+      {
+        "symbol": "₋",
+        "name": "SUBSCRIPT MINUS"
+      },
+      {
+        "symbol": "⅄",
+        "name": "TURNED SANS-SERIF CAPITAL Y"
+      },
+      {
+        "symbol": "⤠",
+        "name": "RIGHTWARDS ARROW FROM BAR TO BLACK DIAMOND"
+      },
+      {
+        "symbol": "⦮",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING RIGHT AND DOWN"
+      },
+      {
+        "symbol": "⨽",
+        "name": "RIGHTHAND INTERIOR PRODUCT"
+      },
+      {
+        "symbol": "≭",
+        "name": "NOT EQUIVALENT TO"
+      },
+      {
+        "symbol": "⋚",
+        "name": "LESS-THAN EQUAL TO OR GREATER-THAN"
+      },
+      {
+        "symbol": "⪐",
+        "name": "GREATER-THAN ABOVE SIMILAR ABOVE LESS-THAN"
+      },
+      {
+        "symbol": "⪉",
+        "name": "LESS-THAN AND NOT APPROXIMATE"
+      },
+      {
+        "symbol": "◹",
+        "name": "UPPER RIGHT TRIANGLE"
+      },
+      {
+        "symbol": "⨌",
+        "name": "QUADRUPLE INTEGRAL OPERATOR"
+      },
+      {
+        "symbol": "⎢",
+        "name": "LEFT SQUARE BRACKET EXTENSION"
+      },
+      {
+        "symbol": "⟪",
+        "name": "MATHEMATICAL LEFT DOUBLE ANGLE BRACKET"
+      },
+      {
+        "symbol": "⊜",
+        "name": "CIRCLED EQUALS"
+      },
+      {
+        "symbol": "⪔",
+        "name": "GREATER-THAN ABOVE SLANTED EQUAL ABOVE LESS-THAN ABOVE SLANTED EQUAL"
+      },
+      {
+        "symbol": "⟙",
+        "name": "LARGE DOWN TACK"
+      },
+      {
+        "symbol": "⟣",
+        "name": "WHITE CONCAVE-SIDED DIAMOND WITH RIGHTWARDS TICK"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⃡"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⃡",
+        "name": "COMBINING LEFT RIGHT ARROW ABOVE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨋"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨋",
+        "name": "SUMMATION WITH INTEGRAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 3,
+    "sample_symbols": [
+      "⬰",
+      "⊲",
+      "ℇ"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⬰",
+        "name": "LEFT ARROW WITH SMALL CIRCLE"
+      },
+      {
+        "symbol": "⊲",
+        "name": "NORMAL SUBGROUP OF"
+      },
+      {
+        "symbol": "ℇ",
+        "name": "EULER CONSTANT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "﹤",
+      "≽"
+    ],
+    "glyphs": [
+      {
+        "symbol": "﹤",
+        "name": "SMALL LESS-THAN SIGN"
+      },
+      {
+        "symbol": "≽",
+        "name": "SUCCEEDS OR EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⇕"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⇕",
+        "name": "UP DOWN DOUBLE ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⫱"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫱",
+        "name": "DOWN TACK WITH CIRCLE BELOW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⤑"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤑",
+        "name": "RIGHTWARDS ARROW WITH DOTTED STEM"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⫬",
+      "⦲"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫬",
+        "name": "DOUBLE STROKE NOT SIGN"
+      },
+      {
+        "symbol": "⦲",
+        "name": "EMPTY SET WITH SMALL CIRCLE ABOVE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⧜"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⧜",
+        "name": "INCOMPLETE INFINITY"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⫚"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫚",
+        "name": "PITCHFORK WITH TEE TOP"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪂"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪂",
+        "name": "GREATER-THAN OR SLANTED EQUAL TO WITH DOT ABOVE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨳"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨳",
+        "name": "SMASH PRODUCT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⦄"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⦄",
+        "name": "RIGHT WHITE CURLY BRACKET"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪇"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪇",
+        "name": "LESS-THAN AND SINGLE-LINE NOT EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 15,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⧨"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⧨",
+        "name": "DOWN-POINTING TRIANGLE WITH LEFT HALF BLACK"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⤭"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤭",
+        "name": "SOUTH EAST ARROW CROSSING NORTH EAST ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⩊"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩊",
+        "name": "UNION BESIDE AND JOINED WITH UNION"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 39,
+    "sample_symbols": [
+      "∣",
+      "⤨",
+      "⤛",
+      "⪓",
+      "⨠",
+      "⤗",
+      "⊞",
+      "⟜"
+    ],
+    "glyphs": [
+      {
+        "symbol": "∣",
+        "name": "DIVIDES"
+      },
+      {
+        "symbol": "⤨",
+        "name": "NORTH EAST ARROW AND SOUTH EAST ARROW"
+      },
+      {
+        "symbol": "⤛",
+        "name": "LEFTWARDS DOUBLE ARROW-TAIL"
+      },
+      {
+        "symbol": "⪓",
+        "name": "LESS-THAN ABOVE SLANTED EQUAL ABOVE GREATER-THAN ABOVE SLANTED EQUAL"
+      },
+      {
+        "symbol": "⨠",
+        "name": "Z NOTATION SCHEMA PIPING"
+      },
+      {
+        "symbol": "⤗",
+        "name": "RIGHTWARDS TWO-HEADED ARROW WITH TAIL WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⊞",
+        "name": "SQUARED PLUS"
+      },
+      {
+        "symbol": "⟜",
+        "name": "LEFT MULTIMAP"
+      },
+      {
+        "symbol": "⪊",
+        "name": "GREATER-THAN AND NOT APPROXIMATE"
+      },
+      {
+        "symbol": "⫢",
+        "name": "VERTICAL BAR TRIPLE RIGHT TURNSTILE"
+      },
+      {
+        "symbol": "⁷",
+        "name": "SUPERSCRIPT SEVEN"
+      },
+      {
+        "symbol": "⥨",
+        "name": "RIGHTWARDS HARPOON WITH BARB UP ABOVE LEFTWARDS HARPOON WITH BARB UP"
+      },
+      {
+        "symbol": "⥿",
+        "name": "DOWN FISH TAIL"
+      },
+      {
+        "symbol": "⭀",
+        "name": "EQUALS SIGN ABOVE LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "ⅆ",
+        "name": "DOUBLE-STRUCK ITALIC SMALL D"
+      },
+      {
+        "symbol": "⤲",
+        "name": "NORTH WEST ARROW CROSSING NORTH EAST ARROW"
+      },
+      {
+        "symbol": "⩗",
+        "name": "SLOPING LARGE OR"
+      },
+      {
+        "symbol": "⩳",
+        "name": "EQUALS SIGN ABOVE TILDE OPERATOR"
+      },
+      {
+        "symbol": "⥤",
+        "name": "RIGHTWARDS HARPOON WITH BARB UP ABOVE RIGHTWARDS HARPOON WITH BARB DOWN"
+      },
+      {
+        "symbol": "⩖",
+        "name": "TWO INTERSECTING LOGICAL OR"
+      },
+      {
+        "symbol": "⟫",
+        "name": "MATHEMATICAL RIGHT DOUBLE ANGLE BRACKET"
+      },
+      {
+        "symbol": "⥭",
+        "name": "RIGHTWARDS HARPOON WITH BARB DOWN BELOW LONG DASH"
+      },
+      {
+        "symbol": "⫐",
+        "name": "CLOSED SUPERSET"
+      },
+      {
+        "symbol": "⫔",
+        "name": "SUPERSET ABOVE SUBSET"
+      },
+      {
+        "symbol": "⦚",
+        "name": "VERTICAL ZIGZAG LINE"
+      },
+      {
+        "symbol": "⃩",
+        "name": "COMBINING WIDE BRIDGE ABOVE"
+      },
+      {
+        "symbol": "⋎",
+        "name": "CURLY LOGICAL OR"
+      },
+      {
+        "symbol": "⫾",
+        "name": "WHITE VERTICAL BAR"
+      },
+      {
+        "symbol": "☆",
+        "name": "WHITE STAR"
+      },
+      {
+        "symbol": "⦅",
+        "name": "LEFT WHITE PARENTHESIS"
+      },
+      {
+        "symbol": "⤒",
+        "name": "UPWARDS ARROW TO BAR"
+      },
+      {
+        "symbol": "⧑",
+        "name": "BOWTIE WITH LEFT HALF BLACK"
+      },
+      {
+        "symbol": "⅁",
+        "name": "TURNED SANS-SERIF CAPITAL G"
+      },
+      {
+        "symbol": "↣",
+        "name": "RIGHTWARDS ARROW WITH TAIL"
+      },
+      {
+        "symbol": "⎦",
+        "name": "RIGHT SQUARE BRACKET LOWER CORNER"
+      },
+      {
+        "symbol": "⪺",
+        "name": "SUCCEEDS ABOVE NOT ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⤦",
+        "name": "SOUTH WEST ARROW WITH HOOK"
+      },
+      {
+        "symbol": "⪋",
+        "name": "LESS-THAN ABOVE DOUBLE-LINE EQUAL ABOVE GREATER-THAN"
+      },
+      {
+        "symbol": "↚",
+        "name": "LEFTWARDS ARROW WITH STROKE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⨅",
+      "⨐"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨅",
+        "name": "N-ARY SQUARE INTERSECTION OPERATOR"
+      },
+      {
+        "symbol": "⨐",
+        "name": "CIRCULATION FUNCTION"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⭂"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⭂",
+        "name": "LEFTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "⟑",
+      "⨬",
+      "⩛",
+      "⨰"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⟑",
+        "name": "AND WITH DOT"
+      },
+      {
+        "symbol": "⨬",
+        "name": "MINUS SIGN WITH RISING DOTS"
+      },
+      {
+        "symbol": "⩛",
+        "name": "LOGICAL OR WITH MIDDLE STEM"
+      },
+      {
+        "symbol": "⨰",
+        "name": "MULTIPLICATION SIGN WITH DOT ABOVE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 6,
+    "sample_symbols": [
+      "⁶",
+      "⋞",
+      "⤶",
+      "⟾",
+      "⫲",
+      "⦺"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⁶",
+        "name": "SUPERSCRIPT SIX"
+      },
+      {
+        "symbol": "⋞",
+        "name": "EQUAL TO OR PRECEDES"
+      },
+      {
+        "symbol": "⤶",
+        "name": "ARROW POINTING DOWNWARDS THEN CURVING LEFTWARDS"
+      },
+      {
+        "symbol": "⟾",
+        "name": "LONG RIGHTWARDS DOUBLE ARROW FROM BAR"
+      },
+      {
+        "symbol": "⫲",
+        "name": "PARALLEL WITH HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⦺",
+        "name": "CIRCLE DIVIDED BY HORIZONTAL BAR AND TOP HALF DIVIDED BY VERTICAL BAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪗"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪗",
+        "name": "SLANTED EQUAL TO OR LESS-THAN WITH DOT INSIDE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "◾"
+    ],
+    "glyphs": [
+      {
+        "symbol": "◾",
+        "name": "BLACK MEDIUM SMALL SQUARE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 14,
+    "sample_symbols": [
+      "≧",
+      "⤷",
+      "⫳",
+      "⪎",
+      "↶",
+      "⋷",
+      "⩭",
+      "≦"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≧",
+        "name": "GREATER-THAN OVER EQUAL TO"
+      },
+      {
+        "symbol": "⤷",
+        "name": "ARROW POINTING DOWNWARDS THEN CURVING RIGHTWARDS"
+      },
+      {
+        "symbol": "⫳",
+        "name": "PARALLEL WITH TILDE OPERATOR"
+      },
+      {
+        "symbol": "⪎",
+        "name": "GREATER-THAN ABOVE SIMILAR OR EQUAL"
+      },
+      {
+        "symbol": "↶",
+        "name": "ANTICLOCKWISE TOP SEMICIRCLE ARROW"
+      },
+      {
+        "symbol": "⋷",
+        "name": "SMALL ELEMENT OF WITH OVERBAR"
+      },
+      {
+        "symbol": "⩭",
+        "name": "CONGRUENT WITH DOT ABOVE"
+      },
+      {
+        "symbol": "≦",
+        "name": "LESS-THAN OVER EQUAL TO"
+      },
+      {
+        "symbol": "₃",
+        "name": "SUBSCRIPT THREE"
+      },
+      {
+        "symbol": "≑",
+        "name": "GEOMETRICALLY EQUAL TO"
+      },
+      {
+        "symbol": "⋧",
+        "name": "GREATER-THAN BUT NOT EQUIVALENT TO"
+      },
+      {
+        "symbol": "⫛",
+        "name": "TRANSVERSAL INTERSECTION"
+      },
+      {
+        "symbol": "⬱",
+        "name": "THREE LEFTWARDS ARROWS"
+      },
+      {
+        "symbol": "⧪",
+        "name": "BLACK DIAMOND WITH DOWN ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⟕"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⟕",
+        "name": "LEFT OUTER JOIN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨡"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨡",
+        "name": "Z NOTATION SCHEMA PROJECTION"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⨺"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨺",
+        "name": "MINUS SIGN IN TRIANGLE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪝"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪝",
+        "name": "SIMILAR OR LESS-THAN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⍼"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⍼",
+        "name": "RIGHT ANGLE WITH DOWNWARDS ZIGZAG ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⥧"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥧",
+        "name": "LEFTWARDS HARPOON WITH BARB DOWN ABOVE RIGHTWARDS HARPOON WITH BARB DOWN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 31,
+    "sample_symbols": [
+      "≨",
+      "⫂",
+      "⪼",
+      "⬴",
+      "⨔",
+      "⨯",
+      "⩨",
+      "⥛"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≨",
+        "name": "LESS-THAN BUT NOT EQUAL TO"
+      },
+      {
+        "symbol": "⫂",
+        "name": "SUPERSET WITH MULTIPLICATION SIGN BELOW"
+      },
+      {
+        "symbol": "⪼",
+        "name": "DOUBLE SUCCEEDS"
+      },
+      {
+        "symbol": "⬴",
+        "name": "LEFTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⨔",
+        "name": "LINE INTEGRATION NOT INCLUDING THE POLE"
+      },
+      {
+        "symbol": "⨯",
+        "name": "VECTOR OR CROSS PRODUCT"
+      },
+      {
+        "symbol": "⩨",
+        "name": "TRIPLE HORIZONTAL BAR WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⥛",
+        "name": "RIGHTWARDS HARPOON WITH BARB UP FROM BAR"
+      },
+      {
+        "symbol": "⁒",
+        "name": "COMMERCIAL MINUS SIGN"
+      },
+      {
+        "symbol": "⭌",
+        "name": "RIGHTWARDS ARROW ABOVE REVERSE TILDE OPERATOR"
+      },
+      {
+        "symbol": "⊍",
+        "name": "MULTISET MULTIPLICATION"
+      },
+      {
+        "symbol": "⧯",
+        "name": "ERROR-BARRED BLACK SQUARE"
+      },
+      {
+        "symbol": "⪆",
+        "name": "GREATER-THAN OR APPROXIMATE"
+      },
+      {
+        "symbol": "⊌",
+        "name": "MULTISET"
+      },
+      {
+        "symbol": "⫪",
+        "name": "DOUBLE DOWN TACK"
+      },
+      {
+        "symbol": "Ω",
+        "name": "OHM SIGN"
+      },
+      {
+        "symbol": "⎤",
+        "name": "RIGHT SQUARE BRACKET UPPER CORNER"
+      },
+      {
+        "symbol": "⊭",
+        "name": "NOT TRUE"
+      },
+      {
+        "symbol": "⪩",
+        "name": "GREATER-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL"
+      },
+      {
+        "symbol": "⨫",
+        "name": "MINUS SIGN WITH FALLING DOTS"
+      },
+      {
+        "symbol": "⦙",
+        "name": "DOTTED FENCE"
+      },
+      {
+        "symbol": "∦",
+        "name": "NOT PARALLEL TO"
+      },
+      {
+        "symbol": "⫠",
+        "name": "SHORT UP TACK"
+      },
+      {
+        "symbol": "⫉",
+        "name": "SUBSET OF ABOVE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⥺",
+        "name": "LEFTWARDS ARROW THROUGH SUBSET"
+      },
+      {
+        "symbol": "⋺",
+        "name": "CONTAINS WITH LONG HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "↮",
+        "name": "LEFT RIGHT ARROW WITH STROKE"
+      },
+      {
+        "symbol": "⪜",
+        "name": "DOUBLE-LINE SLANTED EQUAL TO OR GREATER-THAN"
+      },
+      {
+        "symbol": "⌠",
+        "name": "TOP HALF INTEGRAL"
+      },
+      {
+        "symbol": "⊑",
+        "name": "SQUARE IMAGE OF OR EQUAL TO"
+      },
+      {
+        "symbol": "⇼",
+        "name": "LEFT RIGHT ARROW WITH DOUBLE VERTICAL STROKE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⩅"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩅",
+        "name": "UNION WITH LOGICAL OR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "₌"
+    ],
+    "glyphs": [
+      {
+        "symbol": "₌",
+        "name": "SUBSCRIPT EQUALS SIGN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 42,
+    "sample_symbols": [
+      "⩤",
+      "⬽",
+      "≘",
+      "⪳",
+      "⃛",
+      "⧲",
+      "⟧",
+      "⤳"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩤",
+        "name": "Z NOTATION DOMAIN ANTIRESTRICTION"
+      },
+      {
+        "symbol": "⬽",
+        "name": "LEFTWARDS TWO-HEADED ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "≘",
+        "name": "CORRESPONDS TO"
+      },
+      {
+        "symbol": "⪳",
+        "name": "PRECEDES ABOVE EQUALS SIGN"
+      },
+      {
+        "symbol": "⃛",
+        "name": "COMBINING THREE DOTS ABOVE"
+      },
+      {
+        "symbol": "⧲",
+        "name": "ERROR-BARRED WHITE CIRCLE"
+      },
+      {
+        "symbol": "⟧",
+        "name": "MATHEMATICAL RIGHT WHITE SQUARE BRACKET"
+      },
+      {
+        "symbol": "⤳",
+        "name": "WAVE ARROW POINTING DIRECTLY RIGHT"
+      },
+      {
+        "symbol": "≎",
+        "name": "GEOMETRICALLY EQUIVALENT TO"
+      },
+      {
+        "symbol": "⩎",
+        "name": "DOUBLE SQUARE INTERSECTION"
+      },
+      {
+        "symbol": "∺",
+        "name": "GEOMETRIC PROPORTION"
+      },
+      {
+        "symbol": "⥈",
+        "name": "LEFT RIGHT ARROW THROUGH SMALL CIRCLE"
+      },
+      {
+        "symbol": "⪪",
+        "name": "SMALLER THAN"
+      },
+      {
+        "symbol": "∱",
+        "name": "CLOCKWISE INTEGRAL"
+      },
+      {
+        "symbol": "↬",
+        "name": "RIGHTWARDS ARROW WITH LOOP"
+      },
+      {
+        "symbol": "≾",
+        "name": "PRECEDES OR EQUIVALENT TO"
+      },
+      {
+        "symbol": "⊸",
+        "name": "MULTIMAP"
+      },
+      {
+        "symbol": "⊻",
+        "name": "XOR"
+      },
+      {
+        "symbol": "⤴",
+        "name": "ARROW POINTING RIGHTWARDS THEN CURVING UPWARDS"
+      },
+      {
+        "symbol": "⫴",
+        "name": "TRIPLE VERTICAL BAR BINARY RELATION"
+      },
+      {
+        "symbol": "⥌",
+        "name": "UP BARB RIGHT DOWN BARB LEFT HARPOON"
+      },
+      {
+        "symbol": "⫰",
+        "name": "VERTICAL LINE WITH CIRCLE BELOW"
+      },
+      {
+        "symbol": "−",
+        "name": "MINUS SIGN"
+      },
+      {
+        "symbol": "⋦",
+        "name": "LESS-THAN BUT NOT EQUIVALENT TO"
+      },
+      {
+        "symbol": "⫆",
+        "name": "SUPERSET OF ABOVE EQUALS SIGN"
+      },
+      {
+        "symbol": "⧱",
+        "name": "ERROR-BARRED BLACK DIAMOND"
+      },
+      {
+        "symbol": "⤂",
+        "name": "LEFTWARDS DOUBLE ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "ℌ",
+        "name": "BLACK-LETTER CAPITAL H"
+      },
+      {
+        "symbol": "⭉",
+        "name": "TILDE OPERATOR ABOVE LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "ℭ",
+        "name": "BLACK-LETTER CAPITAL C"
+      },
+      {
+        "symbol": "⇝",
+        "name": "RIGHTWARDS SQUIGGLE ARROW"
+      },
+      {
+        "symbol": "≞",
+        "name": "MEASURED BY"
+      },
+      {
+        "symbol": "⟠",
+        "name": "LOZENGE DIVIDED BY HORIZONTAL RULE"
+      },
+      {
+        "symbol": "◯",
+        "name": "LARGE CIRCLE"
+      },
+      {
+        "symbol": "⪁",
+        "name": "LESS-THAN OR SLANTED EQUAL TO WITH DOT ABOVE"
+      },
+      {
+        "symbol": "⭄",
+        "name": "RIGHTWARDS ARROW THROUGH SUPERSET"
+      },
+      {
+        "symbol": "⩪",
+        "name": "TILDE OPERATOR WITH DOT ABOVE"
+      },
+      {
+        "symbol": "∟",
+        "name": "RIGHT ANGLE"
+      },
+      {
+        "symbol": "⦆",
+        "name": "RIGHT WHITE PARENTHESIS"
+      },
+      {
+        "symbol": "∳",
+        "name": "ANTICLOCKWISE CONTOUR INTEGRAL"
+      },
+      {
+        "symbol": "⪑",
+        "name": "LESS-THAN ABOVE GREATER-THAN ABOVE DOUBLE-LINE EQUAL"
+      },
+      {
+        "symbol": "⟒",
+        "name": "ELEMENT OF OPENING UPWARDS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "ℾ",
+      "⤞",
+      "∽",
+      "⧩"
+    ],
+    "glyphs": [
+      {
+        "symbol": "ℾ",
+        "name": "DOUBLE-STRUCK CAPITAL GAMMA"
+      },
+      {
+        "symbol": "⤞",
+        "name": "RIGHTWARDS ARROW TO BLACK DIAMOND"
+      },
+      {
+        "symbol": "∽",
+        "name": "REVERSED TILDE"
+      },
+      {
+        "symbol": "⧩",
+        "name": "DOWN-POINTING TRIANGLE WITH RIGHT HALF BLACK"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 75,
+    "sample_symbols": [
+      "⊛",
+      "⊫",
+      "⪖",
+      "⥽",
+      "⇛",
+      "⨜",
+      "⟦",
+      "≋"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⊛",
+        "name": "CIRCLED ASTERISK OPERATOR"
+      },
+      {
+        "symbol": "⊫",
+        "name": "DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE"
+      },
+      {
+        "symbol": "⪖",
+        "name": "SLANTED EQUAL TO OR GREATER-THAN"
+      },
+      {
+        "symbol": "⥽",
+        "name": "RIGHT FISH TAIL"
+      },
+      {
+        "symbol": "⇛",
+        "name": "RIGHTWARDS TRIPLE ARROW"
+      },
+      {
+        "symbol": "⨜",
+        "name": "INTEGRAL WITH UNDERBAR"
+      },
+      {
+        "symbol": "⟦",
+        "name": "MATHEMATICAL LEFT WHITE SQUARE BRACKET"
+      },
+      {
+        "symbol": "≋",
+        "name": "TRIPLE TILDE"
+      },
+      {
+        "symbol": "⥝",
+        "name": "DOWNWARDS HARPOON WITH BARB RIGHT FROM BAR"
+      },
+      {
+        "symbol": "⥸",
+        "name": "GREATER-THAN ABOVE RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "⥁",
+        "name": "CLOCKWISE CLOSED CIRCLE ARROW"
+      },
+      {
+        "symbol": "⤰",
+        "name": "RISING DIAGONAL CROSSING SOUTH EAST ARROW"
+      },
+      {
+        "symbol": "⦸",
+        "name": "CIRCLED REVERSE SOLIDUS"
+      },
+      {
+        "symbol": "⎠",
+        "name": "RIGHT PARENTHESIS LOWER HOOK"
+      },
+      {
+        "symbol": "ⅇ",
+        "name": "DOUBLE-STRUCK ITALIC SMALL E"
+      },
+      {
+        "symbol": "⊈",
+        "name": "NEITHER A SUBSET OF NOR EQUAL TO"
+      },
+      {
+        "symbol": "⪒",
+        "name": "GREATER-THAN ABOVE LESS-THAN ABOVE DOUBLE-LINE EQUAL"
+      },
+      {
+        "symbol": "⪲",
+        "name": "SUCCEEDS ABOVE SINGLE-LINE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⟚",
+        "name": "LEFT AND RIGHT DOUBLE TURNSTILE"
+      },
+      {
+        "symbol": "⨲",
+        "name": "SEMIDIRECT PRODUCT WITH BOTTOM CLOSED"
+      },
+      {
+        "symbol": "⩇",
+        "name": "INTERSECTION ABOVE UNION"
+      },
+      {
+        "symbol": "⫡",
+        "name": "PERPENDICULAR WITH S"
+      },
+      {
+        "symbol": "⊟",
+        "name": "SQUARED MINUS"
+      },
+      {
+        "symbol": "⏜",
+        "name": "TOP PARENTHESIS"
+      },
+      {
+        "symbol": "⤮",
+        "name": "NORTH EAST ARROW CROSSING SOUTH EAST ARROW"
+      },
+      {
+        "symbol": "⪈",
+        "name": "GREATER-THAN AND SINGLE-LINE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⩃",
+        "name": "INTERSECTION WITH OVERBAR"
+      },
+      {
+        "symbol": "⪨",
+        "name": "LESS-THAN CLOSED BY CURVE ABOVE SLANTED EQUAL"
+      },
+      {
+        "symbol": "⧫",
+        "name": "BLACK LOZENGE"
+      },
+      {
+        "symbol": "⪬",
+        "name": "SMALLER THAN OR EQUAL TO"
+      },
+      {
+        "symbol": "⤻",
+        "name": "BOTTOM ARC ANTICLOCKWISE ARROW"
+      },
+      {
+        "symbol": "₈",
+        "name": "SUBSCRIPT EIGHT"
+      },
+      {
+        "symbol": "⩉",
+        "name": "INTERSECTION ABOVE BAR ABOVE UNION"
+      },
+      {
+        "symbol": "₅",
+        "name": "SUBSCRIPT FIVE"
+      },
+      {
+        "symbol": "⅃",
+        "name": "REVERSED SANS-SERIF CAPITAL L"
+      },
+      {
+        "symbol": "≊",
+        "name": "ALMOST EQUAL OR EQUAL TO"
+      },
+      {
+        "symbol": "⤱",
+        "name": "NORTH EAST ARROW CROSSING NORTH WEST ARROW"
+      },
+      {
+        "symbol": "⥠",
+        "name": "UPWARDS HARPOON WITH BARB LEFT FROM BAR"
+      },
+      {
+        "symbol": "⧅",
+        "name": "SQUARED FALLING DIAGONAL SLASH"
+      },
+      {
+        "symbol": "⊶",
+        "name": "ORIGINAL OF"
+      },
+      {
+        "symbol": "⋔",
+        "name": "PITCHFORK"
+      },
+      {
+        "symbol": "⧮",
+        "name": "ERROR-BARRED WHITE SQUARE"
+      },
+      {
+        "symbol": "⇴",
+        "name": "RIGHT ARROW WITH SMALL CIRCLE"
+      },
+      {
+        "symbol": "⩚",
+        "name": "LOGICAL AND WITH MIDDLE STEM"
+      },
+      {
+        "symbol": "⩂",
+        "name": "UNION WITH OVERBAR"
+      },
+      {
+        "symbol": "↢",
+        "name": "LEFTWARDS ARROW WITH TAIL"
+      },
+      {
+        "symbol": "～",
+        "name": "FULLWIDTH TILDE"
+      },
+      {
+        "symbol": "℧",
+        "name": "INVERTED OHM SIGN"
+      },
+      {
+        "symbol": "⦵",
+        "name": "CIRCLE WITH HORIZONTAL BAR"
+      },
+      {
+        "symbol": "⫊",
+        "name": "SUPERSET OF ABOVE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⌡",
+        "name": "BOTTOM HALF INTEGRAL"
+      },
+      {
+        "symbol": "⥬",
+        "name": "RIGHTWARDS HARPOON WITH BARB UP ABOVE LONG DASH"
+      },
+      {
+        "symbol": "⥰",
+        "name": "RIGHT DOUBLE ARROW WITH ROUNDED HEAD"
+      },
+      {
+        "symbol": "ℋ",
+        "name": "SCRIPT CAPITAL H"
+      },
+      {
+        "symbol": "⋙",
+        "name": "VERY MUCH GREATER-THAN"
+      },
+      {
+        "symbol": "Ⅎ",
+        "name": "TURNED CAPITAL F"
+      },
+      {
+        "symbol": "⨖",
+        "name": "QUATERNION INTEGRAL OPERATOR"
+      },
+      {
+        "symbol": "⤇",
+        "name": "RIGHTWARDS DOUBLE ARROW FROM BAR"
+      },
+      {
+        "symbol": "≵",
+        "name": "NEITHER GREATER-THAN NOR EQUIVALENT TO"
+      },
+      {
+        "symbol": "⊔",
+        "name": "SQUARE CUP"
+      },
+      {
+        "symbol": "∹",
+        "name": "EXCESS"
+      },
+      {
+        "symbol": "⊡",
+        "name": "SQUARED DOT OPERATOR"
+      },
+      {
+        "symbol": "⨮",
+        "name": "PLUS SIGN IN RIGHT HALF CIRCLE"
+      },
+      {
+        "symbol": "⪣",
+        "name": "DOUBLE NESTED LESS-THAN WITH UNDERBAR"
+      },
+      {
+        "symbol": "￫",
+        "name": "HALFWIDTH RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "⨗",
+        "name": "INTEGRAL WITH LEFTWARDS ARROW WITH HOOK"
+      },
+      {
+        "symbol": "⪾",
+        "name": "SUPERSET WITH DOT"
+      },
+      {
+        "symbol": "ℰ",
+        "name": "SCRIPT CAPITAL E"
+      },
+      {
+        "symbol": "₉",
+        "name": "SUBSCRIPT NINE"
+      },
+      {
+        "symbol": "⏡",
+        "name": "BOTTOM TORTOISE SHELL BRACKET"
+      },
+      {
+        "symbol": "⁼",
+        "name": "SUPERSCRIPT EQUALS SIGN"
+      },
+      {
+        "symbol": "⊀",
+        "name": "DOES NOT PRECEDE"
+      },
+      {
+        "symbol": "↺",
+        "name": "ANTICLOCKWISE OPEN CIRCLE ARROW"
+      },
+      {
+        "symbol": "∷",
+        "name": "PROPORTION"
+      },
+      {
+        "symbol": "⩕",
+        "name": "TWO INTERSECTING LOGICAL AND"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⋢",
+      "⪚"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⋢",
+        "name": "NOT SQUARE IMAGE OF OR EQUAL TO"
+      },
+      {
+        "symbol": "⪚",
+        "name": "DOUBLE-LINE EQUAL TO OR GREATER-THAN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⋘"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⋘",
+        "name": "VERY MUCH LESS-THAN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 13,
+    "sample_symbols": [
+      "⃝",
+      "⪙",
+      "∍",
+      "⋵",
+      "⫧",
+      "⩝",
+      "⤝",
+      "⤃"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⃝",
+        "name": "COMBINING ENCLOSING CIRCLE"
+      },
+      {
+        "symbol": "⪙",
+        "name": "DOUBLE-LINE EQUAL TO OR LESS-THAN"
+      },
+      {
+        "symbol": "∍",
+        "name": "SMALL CONTAINS AS MEMBER"
+      },
+      {
+        "symbol": "⋵",
+        "name": "ELEMENT OF WITH DOT ABOVE"
+      },
+      {
+        "symbol": "⫧",
+        "name": "SHORT DOWN TACK WITH OVERBAR"
+      },
+      {
+        "symbol": "⩝",
+        "name": "LOGICAL OR WITH HORIZONTAL DASH"
+      },
+      {
+        "symbol": "⤝",
+        "name": "LEFTWARDS ARROW TO BLACK DIAMOND"
+      },
+      {
+        "symbol": "⤃",
+        "name": "RIGHTWARDS DOUBLE ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⊮",
+        "name": "DOES NOT FORCE"
+      },
+      {
+        "symbol": "⩰",
+        "name": "APPROXIMATELY EQUAL OR EQUAL TO"
+      },
+      {
+        "symbol": "⩘",
+        "name": "SLOPING LARGE AND"
+      },
+      {
+        "symbol": "⊳",
+        "name": "CONTAINS AS NORMAL SUBGROUP"
+      },
+      {
+        "symbol": "⪠",
+        "name": "SIMILAR ABOVE GREATER-THAN ABOVE EQUALS SIGN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 20,
+    "sample_symbols": [
+      "≒",
+      "⦾",
+      "≝",
+      "⨻",
+      "⋐",
+      "⋼",
+      "⥞",
+      "⎮"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≒",
+        "name": "APPROXIMATELY EQUAL TO OR THE IMAGE OF"
+      },
+      {
+        "symbol": "⦾",
+        "name": "CIRCLED WHITE BULLET"
+      },
+      {
+        "symbol": "≝",
+        "name": "EQUAL TO BY DEFINITION"
+      },
+      {
+        "symbol": "⨻",
+        "name": "MULTIPLICATION SIGN IN TRIANGLE"
+      },
+      {
+        "symbol": "⋐",
+        "name": "DOUBLE SUBSET"
+      },
+      {
+        "symbol": "⋼",
+        "name": "SMALL CONTAINS WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⥞",
+        "name": "LEFTWARDS HARPOON WITH BARB DOWN FROM BAR"
+      },
+      {
+        "symbol": "⎮",
+        "name": "INTEGRAL EXTENSION"
+      },
+      {
+        "symbol": "⊩",
+        "name": "FORCES"
+      },
+      {
+        "symbol": "⋬",
+        "name": "NOT NORMAL SUBGROUP OF OR EQUAL TO"
+      },
+      {
+        "symbol": "◸",
+        "name": "UPPER LEFT TRIANGLE"
+      },
+      {
+        "symbol": "⋳",
+        "name": "ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⟖",
+        "name": "RIGHT OUTER JOIN"
+      },
+      {
+        "symbol": "⥉",
+        "name": "UPWARDS TWO-HEADED ARROW FROM SMALL CIRCLE"
+      },
+      {
+        "symbol": "⁺",
+        "name": "SUPERSCRIPT PLUS SIGN"
+      },
+      {
+        "symbol": "⋥",
+        "name": "SQUARE ORIGINAL OF OR NOT EQUAL TO"
+      },
+      {
+        "symbol": "∯",
+        "name": "SURFACE INTEGRAL"
+      },
+      {
+        "symbol": "⊽",
+        "name": "NOR"
+      },
+      {
+        "symbol": "⎨",
+        "name": "LEFT CURLY BRACKET MIDDLE PIECE"
+      },
+      {
+        "symbol": "⇺",
+        "name": "LEFTWARDS ARROW WITH DOUBLE VERTICAL STROKE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⧸",
+      "⥱"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⧸",
+        "name": "BIG SOLIDUS"
+      },
+      {
+        "symbol": "⥱",
+        "name": "EQUALS SIGN ABOVE RIGHTWARDS ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⋰"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⋰",
+        "name": "UP RIGHT DIAGONAL ELLIPSIS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⃰",
+      "‴"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⃰",
+        "name": "COMBINING ASTERISK ABOVE"
+      },
+      {
+        "symbol": "‴",
+        "name": "TRIPLE PRIME"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⤪"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤪",
+        "name": "SOUTH WEST ARROW AND NORTH WEST ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⧬"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⧬",
+        "name": "WHITE CIRCLE WITH DOWN ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 16,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⫗",
+      "⥒"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫗",
+        "name": "SUPERSET BESIDE SUBSET"
+      },
+      {
+        "symbol": "⥒",
+        "name": "LEFTWARDS HARPOON WITH BARB UP TO BAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Psychology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⪛"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪛",
+        "name": "DOUBLE-LINE SLANTED EQUAL TO OR LESS-THAN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 17,
+    "sample_symbols": [
+      "⥚",
+      "⫈",
+      "∸",
+      "⥂",
+      "⦢",
+      "⤐",
+      "⪵",
+      "⩠"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥚",
+        "name": "LEFTWARDS HARPOON WITH BARB UP FROM BAR"
+      },
+      {
+        "symbol": "⫈",
+        "name": "SUPERSET OF ABOVE TILDE OPERATOR"
+      },
+      {
+        "symbol": "∸",
+        "name": "DOT MINUS"
+      },
+      {
+        "symbol": "⥂",
+        "name": "RIGHTWARDS ARROW ABOVE SHORT LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⦢",
+        "name": "TURNED ANGLE"
+      },
+      {
+        "symbol": "⤐",
+        "name": "RIGHTWARDS TWO-HEADED TRIPLE DASH ARROW"
+      },
+      {
+        "symbol": "⪵",
+        "name": "PRECEDES ABOVE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⩠",
+        "name": "LOGICAL AND WITH DOUBLE UNDERBAR"
+      },
+      {
+        "symbol": "⩻",
+        "name": "LESS-THAN WITH QUESTION MARK ABOVE"
+      },
+      {
+        "symbol": "⦭",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING LEFT AND UP"
+      },
+      {
+        "symbol": "⤌",
+        "name": "LEFTWARDS DOUBLE DASH ARROW"
+      },
+      {
+        "symbol": "⇎",
+        "name": "LEFT RIGHT DOUBLE ARROW WITH STROKE"
+      },
+      {
+        "symbol": "⥦",
+        "name": "LEFTWARDS HARPOON WITH BARB UP ABOVE RIGHTWARDS HARPOON WITH BARB UP"
+      },
+      {
+        "symbol": "⨭",
+        "name": "PLUS SIGN IN LEFT HALF CIRCLE"
+      },
+      {
+        "symbol": "⊒",
+        "name": "SQUARE ORIGINAL OF OR EQUAL TO"
+      },
+      {
+        "symbol": "ℒ",
+        "name": "SCRIPT CAPITAL L"
+      },
+      {
+        "symbol": "⊊",
+        "name": "SUBSET OF WITH NOT EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⫿"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫿",
+        "name": "N-ARY WHITE VERTICAL BAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⪡",
+      "₎"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪡",
+        "name": "DOUBLE NESTED LESS-THAN"
+      },
+      {
+        "symbol": "₎",
+        "name": "SUBSCRIPT RIGHT PARENTHESIS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 28,
+    "sample_symbols": [
+      "⪅",
+      "∕",
+      "⥋",
+      "⊚",
+      "⫻",
+      "⤀",
+      "⥶",
+      "⩏"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪅",
+        "name": "LESS-THAN OR APPROXIMATE"
+      },
+      {
+        "symbol": "∕",
+        "name": "DIVISION SLASH"
+      },
+      {
+        "symbol": "⥋",
+        "name": "LEFT BARB DOWN RIGHT BARB UP HARPOON"
+      },
+      {
+        "symbol": "⊚",
+        "name": "CIRCLED RING OPERATOR"
+      },
+      {
+        "symbol": "⫻",
+        "name": "TRIPLE SOLIDUS BINARY RELATION"
+      },
+      {
+        "symbol": "⤀",
+        "name": "RIGHTWARDS TWO-HEADED ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⥶",
+        "name": "LESS-THAN ABOVE LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⩏",
+        "name": "DOUBLE SQUARE UNION"
+      },
+      {
+        "symbol": "￬",
+        "name": "HALFWIDTH DOWNWARDS ARROW"
+      },
+      {
+        "symbol": "∤",
+        "name": "DOES NOT DIVIDE"
+      },
+      {
+        "symbol": "⊖",
+        "name": "CIRCLED MINUS"
+      },
+      {
+        "symbol": "⥮",
+        "name": "UPWARDS HARPOON WITH BARB LEFT BESIDE DOWNWARDS HARPOON WITH BARB RIGHT"
+      },
+      {
+        "symbol": "⩵",
+        "name": "TWO CONSECUTIVE EQUALS SIGNS"
+      },
+      {
+        "symbol": "⥗",
+        "name": "RIGHTWARDS HARPOON WITH BARB DOWN TO BAR"
+      },
+      {
+        "symbol": "⨼",
+        "name": "INTERIOR PRODUCT"
+      },
+      {
+        "symbol": "⦞",
+        "name": "ANGLE WITH S INSIDE"
+      },
+      {
+        "symbol": "⪍",
+        "name": "LESS-THAN ABOVE SIMILAR OR EQUAL"
+      },
+      {
+        "symbol": "⎛",
+        "name": "LEFT PARENTHESIS UPPER HOOK"
+      },
+      {
+        "symbol": "⨴",
+        "name": "MULTIPLICATION SIGN IN LEFT HALF CIRCLE"
+      },
+      {
+        "symbol": "￩",
+        "name": "HALFWIDTH LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⊱",
+        "name": "SUCCEEDS UNDER RELATION"
+      },
+      {
+        "symbol": "⤣",
+        "name": "NORTH WEST ARROW WITH HOOK"
+      },
+      {
+        "symbol": "⬻",
+        "name": "LEFTWARDS TWO-HEADED ARROW WITH TAIL"
+      },
+      {
+        "symbol": "ℬ",
+        "name": "SCRIPT CAPITAL B"
+      },
+      {
+        "symbol": "⥪",
+        "name": "LEFTWARDS HARPOON WITH BARB UP ABOVE LONG DASH"
+      },
+      {
+        "symbol": "⧏",
+        "name": "LEFT TRIANGLE BESIDE VERTICAL BAR"
+      },
+      {
+        "symbol": "⧦",
+        "name": "GLEICH STARK"
+      },
+      {
+        "symbol": "⟘",
+        "name": "LARGE UP TACK"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⤽"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤽",
+        "name": "TOP ARC ANTICLOCKWISE ARROW WITH PLUS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 57,
+    "sample_symbols": [
+      "⇏",
+      "⋋",
+      "⟰",
+      "⥓",
+      "⨎",
+      "⥷",
+      "⤄",
+      "⟎"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⇏",
+        "name": "RIGHTWARDS DOUBLE ARROW WITH STROKE"
+      },
+      {
+        "symbol": "⋋",
+        "name": "LEFT SEMIDIRECT PRODUCT"
+      },
+      {
+        "symbol": "⟰",
+        "name": "UPWARDS QUADRUPLE ARROW"
+      },
+      {
+        "symbol": "⥓",
+        "name": "RIGHTWARDS HARPOON WITH BARB UP TO BAR"
+      },
+      {
+        "symbol": "⨎",
+        "name": "INTEGRAL WITH DOUBLE STROKE"
+      },
+      {
+        "symbol": "⥷",
+        "name": "LEFTWARDS ARROW THROUGH LESS-THAN"
+      },
+      {
+        "symbol": "⤄",
+        "name": "LEFT RIGHT DOUBLE ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⟎",
+        "name": "SQUARED LOGICAL AND"
+      },
+      {
+        "symbol": "⟤",
+        "name": "WHITE SQUARE WITH LEFTWARDS TICK"
+      },
+      {
+        "symbol": "⤊",
+        "name": "UPWARDS TRIPLE ARROW"
+      },
+      {
+        "symbol": "⋹",
+        "name": "ELEMENT OF WITH TWO HORIZONTAL STROKES"
+      },
+      {
+        "symbol": "⟶",
+        "name": "LONG RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "⦻",
+        "name": "CIRCLE WITH SUPERIMPOSED X"
+      },
+      {
+        "symbol": "⩥",
+        "name": "Z NOTATION RANGE ANTIRESTRICTION"
+      },
+      {
+        "symbol": "∬",
+        "name": "DOUBLE INTEGRAL"
+      },
+      {
+        "symbol": "⟋",
+        "name": "MATHEMATICAL RISING DIAGONAL"
+      },
+      {
+        "symbol": "⎡",
+        "name": "LEFT SQUARE BRACKET UPPER CORNER"
+      },
+      {
+        "symbol": "⫼",
+        "name": "LARGE TRIPLE VERTICAL BAR OPERATOR"
+      },
+      {
+        "symbol": "⟥",
+        "name": "WHITE SQUARE WITH RIGHTWARDS TICK"
+      },
+      {
+        "symbol": "⟴",
+        "name": "RIGHT ARROW WITH CIRCLED PLUS"
+      },
+      {
+        "symbol": "⪮",
+        "name": "EQUALS SIGN WITH BUMPY ABOVE"
+      },
+      {
+        "symbol": "↭",
+        "name": "LEFT RIGHT WAVE ARROW"
+      },
+      {
+        "symbol": "⧻",
+        "name": "TRIPLE PLUS"
+      },
+      {
+        "symbol": "⭈",
+        "name": "RIGHTWARDS ARROW ABOVE REVERSE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "＝",
+        "name": "FULLWIDTH EQUALS SIGN"
+      },
+      {
+        "symbol": "⭊",
+        "name": "LEFTWARDS ARROW ABOVE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⥲",
+        "name": "TILDE OPERATOR ABOVE RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "⦧",
+        "name": "OBLIQUE ANGLE OPENING DOWN"
+      },
+      {
+        "symbol": "⪽",
+        "name": "SUBSET WITH DOT"
+      },
+      {
+        "symbol": "⪢",
+        "name": "DOUBLE NESTED GREATER-THAN"
+      },
+      {
+        "symbol": "⎧",
+        "name": "LEFT CURLY BRACKET UPPER HOOK"
+      },
+      {
+        "symbol": "⤆",
+        "name": "LEFTWARDS DOUBLE ARROW FROM BAR"
+      },
+      {
+        "symbol": "↞",
+        "name": "LEFTWARDS TWO HEADED ARROW"
+      },
+      {
+        "symbol": "⫙",
+        "name": "ELEMENT OF OPENING DOWNWARDS"
+      },
+      {
+        "symbol": "⥃",
+        "name": "LEFTWARDS ARROW ABOVE SHORT RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "↛",
+        "name": "RIGHTWARDS ARROW WITH STROKE"
+      },
+      {
+        "symbol": "⦨",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING UP AND RIGHT"
+      },
+      {
+        "symbol": "⁾",
+        "name": "SUPERSCRIPT RIGHT PARENTHESIS"
+      },
+      {
+        "symbol": "⟷",
+        "name": "LONG LEFT RIGHT ARROW"
+      },
+      {
+        "symbol": "⨩",
+        "name": "MINUS SIGN WITH COMMA ABOVE"
+      },
+      {
+        "symbol": "⊦",
+        "name": "ASSERTION"
+      },
+      {
+        "symbol": "℮",
+        "name": "ESTIMATED SYMBOL"
+      },
+      {
+        "symbol": "⥼",
+        "name": "LEFT FISH TAIL"
+      },
+      {
+        "symbol": "⧠",
+        "name": "SQUARE WITH CONTOURED OUTLINE"
+      },
+      {
+        "symbol": "⥘",
+        "name": "UPWARDS HARPOON WITH BARB LEFT TO BAR"
+      },
+      {
+        "symbol": "⩐",
+        "name": "CLOSED UNION WITH SERIFS AND SMASH PRODUCT"
+      },
+      {
+        "symbol": "⫥",
+        "name": "DOUBLE VERTICAL BAR DOUBLE LEFT TURNSTILE"
+      },
+      {
+        "symbol": "↷",
+        "name": "CLOCKWISE TOP SEMICIRCLE ARROW"
+      },
+      {
+        "symbol": "‰",
+        "name": "PER MILLE SIGN"
+      },
+      {
+        "symbol": "⦟",
+        "name": "ACUTE ANGLE"
+      },
+      {
+        "symbol": "⇽",
+        "name": "LEFTWARDS OPEN-HEADED ARROW"
+      },
+      {
+        "symbol": "⥕",
+        "name": "DOWNWARDS HARPOON WITH BARB RIGHT TO BAR"
+      },
+      {
+        "symbol": "⭇",
+        "name": "REVERSE TILDE OPERATOR ABOVE RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "⥯",
+        "name": "DOWNWARDS HARPOON WITH BARB LEFT BESIDE UPWARDS HARPOON WITH BARB RIGHT"
+      },
+      {
+        "symbol": "⊯",
+        "name": "NEGATED DOUBLE VERTICAL BAR DOUBLE RIGHT TURNSTILE"
+      },
+      {
+        "symbol": "⨕",
+        "name": "INTEGRAL AROUND A POINT OPERATOR"
+      },
+      {
+        "symbol": "⩁",
+        "name": "UNION WITH MINUS SIGN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 9,
+    "sample_symbols": [
+      "⧷",
+      "⧶",
+      "⤏",
+      "⫖",
+      "⩶",
+      "⪭",
+      "⥄",
+      "⧥"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⧷",
+        "name": "REVERSE SOLIDUS WITH HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⧶",
+        "name": "SOLIDUS WITH OVERBAR"
+      },
+      {
+        "symbol": "⤏",
+        "name": "RIGHTWARDS TRIPLE DASH ARROW"
+      },
+      {
+        "symbol": "⫖",
+        "name": "SUPERSET ABOVE SUPERSET"
+      },
+      {
+        "symbol": "⩶",
+        "name": "THREE CONSECUTIVE EQUALS SIGNS"
+      },
+      {
+        "symbol": "⪭",
+        "name": "LARGER THAN OR EQUAL TO"
+      },
+      {
+        "symbol": "⥄",
+        "name": "SHORT RIGHTWARDS ARROW ABOVE LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⧥",
+        "name": "IDENTICAL TO AND SLANTED PARALLEL"
+      },
+      {
+        "symbol": "⟔",
+        "name": "UPPER LEFT CORNER WITH DOT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⤿"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⤿",
+        "name": "LOWER LEFT SEMICIRCULAR ANTICLOCKWISE ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "⫨",
+      "⨇",
+      "⋭",
+      "⋪"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫨",
+        "name": "SHORT UP TACK WITH UNDERBAR"
+      },
+      {
+        "symbol": "⨇",
+        "name": "TWO LOGICAL AND OPERATOR"
+      },
+      {
+        "symbol": "⋭",
+        "name": "DOES NOT CONTAIN AS NORMAL SUBGROUP OR EQUAL"
+      },
+      {
+        "symbol": "⋪",
+        "name": "NOT NORMAL SUBGROUP OF"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 16,
+    "sample_symbols": [
+      "⨑",
+      "ℐ",
+      "⤋",
+      "▷",
+      "⋇",
+      "⊬",
+      "⋩",
+      "⤁"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⨑",
+        "name": "ANTICLOCKWISE INTEGRATION"
+      },
+      {
+        "symbol": "ℐ",
+        "name": "SCRIPT CAPITAL I"
+      },
+      {
+        "symbol": "⤋",
+        "name": "DOWNWARDS TRIPLE ARROW"
+      },
+      {
+        "symbol": "▷",
+        "name": "WHITE RIGHT-POINTING TRIANGLE"
+      },
+      {
+        "symbol": "⋇",
+        "name": "DIVISION TIMES"
+      },
+      {
+        "symbol": "⊬",
+        "name": "DOES NOT PROVE"
+      },
+      {
+        "symbol": "⋩",
+        "name": "SUCCEEDS BUT NOT EQUIVALENT TO"
+      },
+      {
+        "symbol": "⤁",
+        "name": "RIGHTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⥆",
+        "name": "LEFTWARDS ARROW WITH PLUS BELOW"
+      },
+      {
+        "symbol": "◼",
+        "name": "BLACK MEDIUM SQUARE"
+      },
+      {
+        "symbol": "⁄",
+        "name": "FRACTION SLASH"
+      },
+      {
+        "symbol": "⎝",
+        "name": "LEFT PARENTHESIS LOWER HOOK"
+      },
+      {
+        "symbol": "ℶ",
+        "name": "BET SYMBOL"
+      },
+      {
+        "symbol": "⬹",
+        "name": "LEFTWARDS ARROW WITH TAIL WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⧞",
+        "name": "INFINITY NEGATED WITH VERTICAL BAR"
+      },
+      {
+        "symbol": "⎞",
+        "name": "RIGHT PARENTHESIS UPPER HOOK"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "ℴ"
+    ],
+    "glyphs": [
+      {
+        "symbol": "ℴ",
+        "name": "SCRIPT SMALL O"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "≔"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≔",
+        "name": "COLON EQUALS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "≼"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≼",
+        "name": "PRECEDES OR EQUAL TO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⩴"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⩴",
+        "name": "DOUBLE COLON EQUAL"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 33,
+    "sample_symbols": [
+      "₁",
+      "⤈",
+      "⩩",
+      "⥫",
+      "ⅈ",
+      "⧗",
+      "⫟",
+      "⅀"
+    ],
+    "glyphs": [
+      {
+        "symbol": "₁",
+        "name": "SUBSCRIPT ONE"
+      },
+      {
+        "symbol": "⤈",
+        "name": "DOWNWARDS ARROW WITH HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⩩",
+        "name": "TRIPLE HORIZONTAL BAR WITH TRIPLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⥫",
+        "name": "LEFTWARDS HARPOON WITH BARB DOWN BELOW LONG DASH"
+      },
+      {
+        "symbol": "ⅈ",
+        "name": "DOUBLE-STRUCK ITALIC SMALL I"
+      },
+      {
+        "symbol": "⧗",
+        "name": "BLACK HOURGLASS"
+      },
+      {
+        "symbol": "⫟",
+        "name": "SHORT DOWN TACK"
+      },
+      {
+        "symbol": "⅀",
+        "name": "DOUBLE-STRUCK N-ARY SUMMATION"
+      },
+      {
+        "symbol": "∆",
+        "name": "INCREMENT"
+      },
+      {
+        "symbol": "⦀",
+        "name": "TRIPLE VERTICAL BAR DELIMITER"
+      },
+      {
+        "symbol": "⨷",
+        "name": "MULTIPLICATION SIGN IN DOUBLE CIRCLE"
+      },
+      {
+        "symbol": "↖",
+        "name": "NORTH WEST ARROW"
+      },
+      {
+        "symbol": "⊘",
+        "name": "CIRCLED DIVISION SLASH"
+      },
+      {
+        "symbol": "⥊",
+        "name": "LEFT BARB UP RIGHT BARB DOWN HARPOON"
+      },
+      {
+        "symbol": "⫞",
+        "name": "SHORT LEFT TACK"
+      },
+      {
+        "symbol": "⩦",
+        "name": "EQUALS SIGN WITH DOT BELOW"
+      },
+      {
+        "symbol": "＋",
+        "name": "FULLWIDTH PLUS SIGN"
+      },
+      {
+        "symbol": "⩓",
+        "name": "DOUBLE LOGICAL AND"
+      },
+      {
+        "symbol": "⪹",
+        "name": "PRECEDES ABOVE NOT ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⦦",
+        "name": "OBLIQUE ANGLE OPENING UP"
+      },
+      {
+        "symbol": "≕",
+        "name": "EQUALS COLON"
+      },
+      {
+        "symbol": "⨢",
+        "name": "PLUS SIGN WITH SMALL CIRCLE ABOVE"
+      },
+      {
+        "symbol": "⫩",
+        "name": "SHORT UP TACK ABOVE SHORT DOWN TACK"
+      },
+      {
+        "symbol": "⏞",
+        "name": "TOP CURLY BRACKET"
+      },
+      {
+        "symbol": "⨚",
+        "name": "INTEGRAL WITH UNION"
+      },
+      {
+        "symbol": "₀",
+        "name": "SUBSCRIPT ZERO"
+      },
+      {
+        "symbol": "⏟",
+        "name": "BOTTOM CURLY BRACKET"
+      },
+      {
+        "symbol": "⨨",
+        "name": "PLUS SIGN WITH BLACK TRIANGLE"
+      },
+      {
+        "symbol": "⫹",
+        "name": "DOUBLE-LINE SLANTED LESS-THAN OR EQUAL TO"
+      },
+      {
+        "symbol": "ⅅ",
+        "name": "DOUBLE-STRUCK ITALIC CAPITAL D"
+      },
+      {
+        "symbol": "≰",
+        "name": "NEITHER LESS-THAN NOR EQUAL TO"
+      },
+      {
+        "symbol": "⇻",
+        "name": "RIGHTWARDS ARROW WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⇚",
+        "name": "LEFTWARDS TRIPLE ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⧿"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⧿",
+        "name": "MINY"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "ℊ"
+    ],
+    "glyphs": [
+      {
+        "symbol": "ℊ",
+        "name": "SCRIPT SMALL G"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 33,
+    "sample_symbols": [
+      "ℿ",
+      "⤼",
+      "⤉",
+      "⧢",
+      "⥅",
+      "﹢",
+      "｜",
+      "⋲"
+    ],
+    "glyphs": [
+      {
+        "symbol": "ℿ",
+        "name": "DOUBLE-STRUCK CAPITAL PI"
+      },
+      {
+        "symbol": "⤼",
+        "name": "TOP ARC CLOCKWISE ARROW WITH MINUS"
+      },
+      {
+        "symbol": "⤉",
+        "name": "UPWARDS ARROW WITH HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⧢",
+        "name": "SHUFFLE PRODUCT"
+      },
+      {
+        "symbol": "⥅",
+        "name": "RIGHTWARDS ARROW WITH PLUS BELOW"
+      },
+      {
+        "symbol": "﹢",
+        "name": "SMALL PLUS SIGN"
+      },
+      {
+        "symbol": "｜",
+        "name": "FULLWIDTH VERTICAL LINE"
+      },
+      {
+        "symbol": "⋲",
+        "name": "ELEMENT OF WITH LONG HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⊪",
+        "name": "TRIPLE VERTICAL BAR RIGHT TURNSTILE"
+      },
+      {
+        "symbol": "⤹",
+        "name": "LEFT-SIDE ARC ANTICLOCKWISE ARROW"
+      },
+      {
+        "symbol": "⦃",
+        "name": "LEFT WHITE CURLY BRACKET"
+      },
+      {
+        "symbol": "≙",
+        "name": "ESTIMATES"
+      },
+      {
+        "symbol": "⪱",
+        "name": "PRECEDES ABOVE SINGLE-LINE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⤔",
+        "name": "RIGHTWARDS ARROW WITH TAIL WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⋒",
+        "name": "DOUBLE INTERSECTION"
+      },
+      {
+        "symbol": "⧤",
+        "name": "EQUALS SIGN AND SLANTED PARALLEL WITH TILDE ABOVE"
+      },
+      {
+        "symbol": "◻",
+        "name": "WHITE MEDIUM SQUARE"
+      },
+      {
+        "symbol": "⁽",
+        "name": "SUPERSCRIPT LEFT PARENTHESIS"
+      },
+      {
+        "symbol": "⊴",
+        "name": "NORMAL SUBGROUP OF OR EQUAL TO"
+      },
+      {
+        "symbol": "⨊",
+        "name": "MODULO TWO SUM"
+      },
+      {
+        "symbol": "⁸",
+        "name": "SUPERSCRIPT EIGHT"
+      },
+      {
+        "symbol": "∿",
+        "name": "SINE WAVE"
+      },
+      {
+        "symbol": "⎱",
+        "name": "UPPER RIGHT OR LOWER LEFT CURLY BRACKET SECTION"
+      },
+      {
+        "symbol": "⦡",
+        "name": "SPHERICAL ANGLE OPENING UP"
+      },
+      {
+        "symbol": "⪞",
+        "name": "SIMILAR OR GREATER-THAN"
+      },
+      {
+        "symbol": "⫤",
+        "name": "VERTICAL BAR DOUBLE LEFT TURNSTILE"
+      },
+      {
+        "symbol": "∜",
+        "name": "FOURTH ROOT"
+      },
+      {
+        "symbol": "⥳",
+        "name": "LEFTWARDS ARROW ABOVE TILDE OPERATOR"
+      },
+      {
+        "symbol": "⃨",
+        "name": "COMBINING TRIPLE UNDERDOT"
+      },
+      {
+        "symbol": "⃗",
+        "name": "COMBINING RIGHT ARROW ABOVE"
+      },
+      {
+        "symbol": "⤥",
+        "name": "SOUTH EAST ARROW WITH HOOK"
+      },
+      {
+        "symbol": "⪤",
+        "name": "GREATER-THAN OVERLAPPING LESS-THAN"
+      },
+      {
+        "symbol": "⧰",
+        "name": "ERROR-BARRED WHITE DIAMOND"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 69,
+    "sample_symbols": [
+      "⊉",
+      "⩒",
+      "≢",
+      "⪻",
+      "⊹",
+      "⤾",
+      "⤬",
+      "⬵"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⊉",
+        "name": "NEITHER A SUPERSET OF NOR EQUAL TO"
+      },
+      {
+        "symbol": "⩒",
+        "name": "LOGICAL OR WITH DOT ABOVE"
+      },
+      {
+        "symbol": "≢",
+        "name": "NOT IDENTICAL TO"
+      },
+      {
+        "symbol": "⪻",
+        "name": "DOUBLE PRECEDES"
+      },
+      {
+        "symbol": "⊹",
+        "name": "HERMITIAN CONJUGATE MATRIX"
+      },
+      {
+        "symbol": "⤾",
+        "name": "LOWER RIGHT SEMICIRCULAR CLOCKWISE ARROW"
+      },
+      {
+        "symbol": "⤬",
+        "name": "FALLING DIAGONAL CROSSING RISING DIAGONAL"
+      },
+      {
+        "symbol": "⬵",
+        "name": "LEFTWARDS TWO-HEADED ARROW WITH DOUBLE VERTICAL STROKE"
+      },
+      {
+        "symbol": "⋓",
+        "name": "DOUBLE UNION"
+      },
+      {
+        "symbol": "⬾",
+        "name": "LEFTWARDS ARROW THROUGH X"
+      },
+      {
+        "symbol": "∭",
+        "name": "TRIPLE INTEGRAL"
+      },
+      {
+        "symbol": "⋝",
+        "name": "EQUAL TO OR GREATER-THAN"
+      },
+      {
+        "symbol": "⎫",
+        "name": "RIGHT CURLY BRACKET UPPER HOOK"
+      },
+      {
+        "symbol": "⫯",
+        "name": "VERTICAL LINE WITH CIRCLE ABOVE"
+      },
+      {
+        "symbol": "↠",
+        "name": "RIGHTWARDS TWO HEADED ARROW"
+      },
+      {
+        "symbol": "⤙",
+        "name": "LEFTWARDS ARROW-TAIL"
+      },
+      {
+        "symbol": "≳",
+        "name": "GREATER-THAN OR EQUIVALENT TO"
+      },
+      {
+        "symbol": "⊠",
+        "name": "SQUARED TIMES"
+      },
+      {
+        "symbol": "⫁",
+        "name": "SUBSET WITH MULTIPLICATION SIGN BELOW"
+      },
+      {
+        "symbol": "⇑",
+        "name": "UPWARDS DOUBLE ARROW"
+      },
+      {
+        "symbol": "≬",
+        "name": "BETWEEN"
+      },
+      {
+        "symbol": "⋑",
+        "name": "DOUBLE SUPERSET"
+      },
+      {
+        "symbol": "⤍",
+        "name": "RIGHTWARDS DOUBLE DASH ARROW"
+      },
+      {
+        "symbol": "⧹",
+        "name": "BIG REVERSE SOLIDUS"
+      },
+      {
+        "symbol": "≇",
+        "name": "NEITHER APPROXIMATELY NOR ACTUALLY EQUAL TO"
+      },
+      {
+        "symbol": "⪧",
+        "name": "GREATER-THAN CLOSED BY CURVE"
+      },
+      {
+        "symbol": "≩",
+        "name": "GREATER-THAN BUT NOT EQUAL TO"
+      },
+      {
+        "symbol": "⫮",
+        "name": "DOES NOT DIVIDE WITH REVERSED NEGATION SLASH"
+      },
+      {
+        "symbol": "⫕",
+        "name": "SUBSET ABOVE SUBSET"
+      },
+      {
+        "symbol": "⫓",
+        "name": "SUBSET ABOVE SUPERSET"
+      },
+      {
+        "symbol": "⎣",
+        "name": "LEFT SQUARE BRACKET LOWER CORNER"
+      },
+      {
+        "symbol": "⤵",
+        "name": "ARROW POINTING RIGHTWARDS THEN CURVING DOWNWARDS"
+      },
+      {
+        "symbol": "⊼",
+        "name": "NAND"
+      },
+      {
+        "symbol": "⧭",
+        "name": "BLACK CIRCLE WITH DOWN ARROW"
+      },
+      {
+        "symbol": "≗",
+        "name": "RING EQUAL TO"
+      },
+      {
+        "symbol": "≄",
+        "name": "NOT ASYMPTOTICALLY EQUAL TO"
+      },
+      {
+        "symbol": "⨦",
+        "name": "PLUS SIGN WITH TILDE BELOW"
+      },
+      {
+        "symbol": "⋾",
+        "name": "SMALL CONTAINS WITH OVERBAR"
+      },
+      {
+        "symbol": "⩱",
+        "name": "EQUALS SIGN ABOVE PLUS SIGN"
+      },
+      {
+        "symbol": "⅂",
+        "name": "TURNED SANS-SERIF CAPITAL L"
+      },
+      {
+        "symbol": "⋌",
+        "name": "RIGHT SEMIDIRECT PRODUCT"
+      },
+      {
+        "symbol": "⊧",
+        "name": "MODELS"
+      },
+      {
+        "symbol": "⩡",
+        "name": "SMALL VEE WITH UNDERBAR"
+      },
+      {
+        "symbol": "⥩",
+        "name": "RIGHTWARDS HARPOON WITH BARB DOWN ABOVE LEFTWARDS HARPOON WITH BARB DOWN"
+      },
+      {
+        "symbol": "⦥",
+        "name": "REVERSED ANGLE WITH UNDERBAR"
+      },
+      {
+        "symbol": "￪",
+        "name": "HALFWIDTH UPWARDS ARROW"
+      },
+      {
+        "symbol": "⎜",
+        "name": "LEFT PARENTHESIS EXTENSION"
+      },
+      {
+        "symbol": "⦰",
+        "name": "REVERSED EMPTY SET"
+      },
+      {
+        "symbol": "⫝̸",
+        "name": "FORKING"
+      },
+      {
+        "symbol": "⅋",
+        "name": "TURNED AMPERSAND"
+      },
+      {
+        "symbol": "⦶",
+        "name": "CIRCLED VERTICAL BAR"
+      },
+      {
+        "symbol": "⟻",
+        "name": "LONG LEFTWARDS ARROW FROM BAR"
+      },
+      {
+        "symbol": "⨤",
+        "name": "PLUS SIGN WITH TILDE ABOVE"
+      },
+      {
+        "symbol": "⥹",
+        "name": "SUBSET ABOVE RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "ℱ",
+        "name": "SCRIPT CAPITAL F"
+      },
+      {
+        "symbol": "↻",
+        "name": "CLOCKWISE OPEN CIRCLE ARROW"
+      },
+      {
+        "symbol": "⥐",
+        "name": "LEFT BARB DOWN RIGHT BARB DOWN HARPOON"
+      },
+      {
+        "symbol": "⦿",
+        "name": "CIRCLED BULLET"
+      },
+      {
+        "symbol": "∎",
+        "name": "END OF PROOF"
+      },
+      {
+        "symbol": "⦳",
+        "name": "EMPTY SET WITH RIGHT ARROW ABOVE"
+      },
+      {
+        "symbol": "﬩",
+        "name": "HEBREW LETTER ALTERNATIVE PLUS SIGN"
+      },
+      {
+        "symbol": "⎥",
+        "name": "RIGHT SQUARE BRACKET EXTENSION"
+      },
+      {
+        "symbol": "₂",
+        "name": "SUBSCRIPT TWO"
+      },
+      {
+        "symbol": "⇷",
+        "name": "LEFTWARDS ARROW WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⊓",
+        "name": "SQUARE CAP"
+      },
+      {
+        "symbol": "⤤",
+        "name": "NORTH EAST ARROW WITH HOOK"
+      },
+      {
+        "symbol": "⫀",
+        "name": "SUPERSET WITH PLUS SIGN BELOW"
+      },
+      {
+        "symbol": "⎰",
+        "name": "UPPER LEFT OR LOWER RIGHT CURLY BRACKET SECTION"
+      },
+      {
+        "symbol": "⥡",
+        "name": "DOWNWARDS HARPOON WITH BARB LEFT FROM BAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 5,
+    "sample_symbols": [
+      "⫋",
+      "⧵",
+      "⩽",
+      "⊷",
+      "⟗"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⫋",
+        "name": "SUBSET OF ABOVE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⧵",
+        "name": "REVERSE SOLIDUS OPERATOR"
+      },
+      {
+        "symbol": "⩽",
+        "name": "LESS-THAN OR SLANTED EQUAL TO"
+      },
+      {
+        "symbol": "⊷",
+        "name": "IMAGE OF"
+      },
+      {
+        "symbol": "⟗",
+        "name": "FULL OUTER JOIN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⥻"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥻",
+        "name": "SUPERSET ABOVE LEFTWARDS ARROW"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 17,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⪰",
+      "⁰"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⪰",
+        "name": "SUCCEEDS ABOVE SINGLE-LINE EQUALS SIGN"
+      },
+      {
+        "symbol": "⁰",
+        "name": "SUPERSCRIPT ZERO"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 22,
+    "sample_symbols": [
+      "√",
+      "⪸",
+      "∄",
+      "∐",
+      "⪷",
+      "⩆",
+      "⥵",
+      "⥖"
+    ],
+    "glyphs": [
+      {
+        "symbol": "√",
+        "name": "SQUARE ROOT"
+      },
+      {
+        "symbol": "⪸",
+        "name": "SUCCEEDS ABOVE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "∄",
+        "name": "THERE DOES NOT EXIST"
+      },
+      {
+        "symbol": "∐",
+        "name": "N-ARY COPRODUCT"
+      },
+      {
+        "symbol": "⪷",
+        "name": "PRECEDES ABOVE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⩆",
+        "name": "UNION ABOVE INTERSECTION"
+      },
+      {
+        "symbol": "⥵",
+        "name": "RIGHTWARDS ARROW ABOVE ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⥖",
+        "name": "LEFTWARDS HARPOON WITH BARB DOWN TO BAR"
+      },
+      {
+        "symbol": "∴",
+        "name": "THEREFORE"
+      },
+      {
+        "symbol": "⫅",
+        "name": "SUBSET OF ABOVE EQUALS SIGN"
+      },
+      {
+        "symbol": "⤚",
+        "name": "RIGHTWARDS ARROW-TAIL"
+      },
+      {
+        "symbol": "𝔼",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL E"
+      },
+      {
+        "symbol": "⩬",
+        "name": "SIMILAR MINUS SIMILAR"
+      },
+      {
+        "symbol": "⩸",
+        "name": "EQUIVALENT WITH FOUR DOTS ABOVE"
+      },
+      {
+        "symbol": "⤟",
+        "name": "LEFTWARDS ARROW FROM BAR TO BLACK DIAMOND"
+      },
+      {
+        "symbol": "⨟",
+        "name": "Z NOTATION SCHEMA COMPOSITION"
+      },
+      {
+        "symbol": "⦩",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING UP AND LEFT"
+      },
+      {
+        "symbol": "⥔",
+        "name": "UPWARDS HARPOON WITH BARB RIGHT TO BAR"
+      },
+      {
+        "symbol": "⨶",
+        "name": "CIRCLED MULTIPLICATION SIGN WITH CIRCUMFLEX ACCENT"
+      },
+      {
+        "symbol": "ℛ",
+        "name": "SCRIPT CAPITAL R"
+      },
+      {
+        "symbol": "￢",
+        "name": "FULLWIDTH NOT SIGN"
+      },
+      {
+        "symbol": "⬺",
+        "name": "LEFTWARDS ARROW WITH TAIL WITH DOUBLE VERTICAL STROKE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⇄",
+      "⇸"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⇄",
+        "name": "RIGHTWARDS ARROW OVER LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⇸",
+        "name": "RIGHTWARDS ARROW WITH VERTICAL STROKE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 24,
+    "sample_symbols": [
+      "⊰",
+      "⤢",
+      "⥎",
+      "⋜",
+      "⨪",
+      "≚",
+      "⫽",
+      "⧒"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⊰",
+        "name": "PRECEDES UNDER RELATION"
+      },
+      {
+        "symbol": "⤢",
+        "name": "NORTH EAST AND SOUTH WEST ARROW"
+      },
+      {
+        "symbol": "⥎",
+        "name": "LEFT BARB UP RIGHT BARB UP HARPOON"
+      },
+      {
+        "symbol": "⋜",
+        "name": "EQUAL TO OR LESS-THAN"
+      },
+      {
+        "symbol": "⨪",
+        "name": "MINUS SIGN WITH DOT BELOW"
+      },
+      {
+        "symbol": "≚",
+        "name": "EQUIANGULAR TO"
+      },
+      {
+        "symbol": "⫽",
+        "name": "DOUBLE SOLIDUS OPERATOR"
+      },
+      {
+        "symbol": "⧒",
+        "name": "BOWTIE WITH RIGHT HALF BLACK"
+      },
+      {
+        "symbol": "⟳",
+        "name": "CLOCKWISE GAPPED CIRCLE ARROW"
+      },
+      {
+        "symbol": "⋿",
+        "name": "Z NOTATION BAG MEMBERSHIP"
+      },
+      {
+        "symbol": "⎩",
+        "name": "LEFT CURLY BRACKET LOWER HOOK"
+      },
+      {
+        "symbol": "⧂",
+        "name": "CIRCLE WITH SMALL CIRCLE TO THE RIGHT"
+      },
+      {
+        "symbol": "⦤",
+        "name": "ANGLE WITH UNDERBAR"
+      },
+      {
+        "symbol": "⥑",
+        "name": "UP BARB LEFT DOWN BARB LEFT HARPOON"
+      },
+      {
+        "symbol": "⧀",
+        "name": "CIRCLED LESS-THAN"
+      },
+      {
+        "symbol": "■",
+        "name": "BLACK SQUARE"
+      },
+      {
+        "symbol": "⟵",
+        "name": "LONG LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "⟁",
+        "name": "WHITE TRIANGLE CONTAINING SMALL WHITE TRIANGLE"
+      },
+      {
+        "symbol": "⫸",
+        "name": "TRIPLE NESTED GREATER-THAN"
+      },
+      {
+        "symbol": "⦜",
+        "name": "RIGHT ANGLE VARIANT WITH SQUARE"
+      },
+      {
+        "symbol": "⎲",
+        "name": "SUMMATION TOP"
+      },
+      {
+        "symbol": "⩙",
+        "name": "LOGICAL OR OVERLAPPING LOGICAL AND"
+      },
+      {
+        "symbol": "⭋",
+        "name": "LEFTWARDS ARROW ABOVE REVERSE TILDE OPERATOR"
+      },
+      {
+        "symbol": "↫",
+        "name": "LEFTWARDS ARROW WITH LOOP"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 63,
+    "sample_symbols": [
+      "⇋",
+      "⩷",
+      "⋫",
+      "⟽",
+      "⤜",
+      "⤖",
+      "⥍",
+      "⨄"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⇋",
+        "name": "LEFTWARDS HARPOON OVER RIGHTWARDS HARPOON"
+      },
+      {
+        "symbol": "⩷",
+        "name": "EQUALS SIGN WITH TWO DOTS ABOVE AND TWO DOTS BELOW"
+      },
+      {
+        "symbol": "⋫",
+        "name": "DOES NOT CONTAIN AS NORMAL SUBGROUP"
+      },
+      {
+        "symbol": "⟽",
+        "name": "LONG LEFTWARDS DOUBLE ARROW FROM BAR"
+      },
+      {
+        "symbol": "⤜",
+        "name": "RIGHTWARDS DOUBLE ARROW-TAIL"
+      },
+      {
+        "symbol": "⤖",
+        "name": "RIGHTWARDS TWO-HEADED ARROW WITH TAIL"
+      },
+      {
+        "symbol": "⥍",
+        "name": "UP BARB LEFT DOWN BARB RIGHT HARPOON"
+      },
+      {
+        "symbol": "⨄",
+        "name": "N-ARY UNION OPERATOR WITH PLUS"
+      },
+      {
+        "symbol": "↙",
+        "name": "SOUTH WEST ARROW"
+      },
+      {
+        "symbol": "≴",
+        "name": "NEITHER LESS-THAN NOR EQUIVALENT TO"
+      },
+      {
+        "symbol": "⋏",
+        "name": "CURLY LOGICAL AND"
+      },
+      {
+        "symbol": "⋟",
+        "name": "EQUAL TO OR SUCCEEDS"
+      },
+      {
+        "symbol": "⟊",
+        "name": "VERTICAL BAR WITH HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⧇",
+        "name": "SQUARED SMALL CIRCLE"
+      },
+      {
+        "symbol": "⩾",
+        "name": "GREATER-THAN OR SLANTED EQUAL TO"
+      },
+      {
+        "symbol": "∊",
+        "name": "SMALL ELEMENT OF"
+      },
+      {
+        "symbol": "⇓",
+        "name": "DOWNWARDS DOUBLE ARROW"
+      },
+      {
+        "symbol": "∰",
+        "name": "VOLUME INTEGRAL"
+      },
+      {
+        "symbol": "⟸",
+        "name": "LONG LEFTWARDS DOUBLE ARROW"
+      },
+      {
+        "symbol": "∵",
+        "name": "BECAUSE"
+      },
+      {
+        "symbol": "⩲",
+        "name": "PLUS SIGN ABOVE EQUALS SIGN"
+      },
+      {
+        "symbol": "⦣",
+        "name": "REVERSED ANGLE"
+      },
+      {
+        "symbol": "↕",
+        "name": "UP DOWN ARROW"
+      },
+      {
+        "symbol": "⋈",
+        "name": "BOWTIE"
+      },
+      {
+        "symbol": "∁",
+        "name": "COMPLEMENT"
+      },
+      {
+        "symbol": "∻",
+        "name": "HOMOTHETIC"
+      },
+      {
+        "symbol": "⨸",
+        "name": "CIRCLED DIVISION SIGN"
+      },
+      {
+        "symbol": "⩮",
+        "name": "EQUALS WITH ASTERISK"
+      },
+      {
+        "symbol": "⪘",
+        "name": "SLANTED EQUAL TO OR GREATER-THAN WITH DOT INSIDE"
+      },
+      {
+        "symbol": "⤺",
+        "name": "TOP ARC ANTICLOCKWISE ARROW"
+      },
+      {
+        "symbol": "⧳",
+        "name": "ERROR-BARRED BLACK CIRCLE"
+      },
+      {
+        "symbol": "⋊",
+        "name": "RIGHT NORMAL FACTOR SEMIDIRECT PRODUCT"
+      },
+      {
+        "symbol": "≱",
+        "name": "NEITHER GREATER-THAN NOR EQUAL TO"
+      },
+      {
+        "symbol": "⫏",
+        "name": "CLOSED SUBSET"
+      },
+      {
+        "symbol": "⧖",
+        "name": "WHITE HOURGLASS"
+      },
+      {
+        "symbol": "⬳",
+        "name": "LONG LEFTWARDS SQUIGGLE ARROW"
+      },
+      {
+        "symbol": "⎟",
+        "name": "RIGHT PARENTHESIS EXTENSION"
+      },
+      {
+        "symbol": "⪫",
+        "name": "LARGER THAN"
+      },
+      {
+        "symbol": "⦽",
+        "name": "UP ARROW THROUGH CIRCLE"
+      },
+      {
+        "symbol": "⎯",
+        "name": "HORIZONTAL LINE EXTENSION"
+      },
+      {
+        "symbol": "⧋",
+        "name": "TRIANGLE WITH UNDERBAR"
+      },
+      {
+        "symbol": "ℷ",
+        "name": "GIMEL SYMBOL"
+      },
+      {
+        "symbol": "⋕",
+        "name": "EQUAL AND PARALLEL TO"
+      },
+      {
+        "symbol": "⬿",
+        "name": "WAVE ARROW POINTING DIRECTLY LEFT"
+      },
+      {
+        "symbol": "⋣",
+        "name": "NOT SQUARE ORIGINAL OF OR EQUAL TO"
+      },
+      {
+        "symbol": "⫒",
+        "name": "CLOSED SUPERSET OR EQUAL TO"
+      },
+      {
+        "symbol": "⫍",
+        "name": "SQUARE LEFT OPEN BOX OPERATOR"
+      },
+      {
+        "symbol": "≛",
+        "name": "STAR EQUALS"
+      },
+      {
+        "symbol": "≮",
+        "name": "NOT LESS-THAN"
+      },
+      {
+        "symbol": "⋨",
+        "name": "PRECEDES BUT NOT EQUIVALENT TO"
+      },
+      {
+        "symbol": "⦝",
+        "name": "MEASURED RIGHT ANGLE WITH DOT"
+      },
+      {
+        "symbol": "⨵",
+        "name": "MULTIPLICATION SIGN IN RIGHT HALF CIRCLE"
+      },
+      {
+        "symbol": "≁",
+        "name": "NOT TILDE"
+      },
+      {
+        "symbol": "★",
+        "name": "BLACK STAR"
+      },
+      {
+        "symbol": "⥇",
+        "name": "RIGHTWARDS ARROW THROUGH X"
+      },
+      {
+        "symbol": "⩯",
+        "name": "ALMOST EQUAL TO WITH CIRCUMFLEX ACCENT"
+      },
+      {
+        "symbol": "⧴",
+        "name": "RULE-DELAYED"
+      },
+      {
+        "symbol": "⫎",
+        "name": "SQUARE RIGHT OPEN BOX OPERATOR"
+      },
+      {
+        "symbol": "⬼",
+        "name": "LEFTWARDS TWO-HEADED ARROW WITH TAIL WITH VERTICAL STROKE"
+      },
+      {
+        "symbol": "⋖",
+        "name": "LESS-THAN WITH DOT"
+      },
+      {
+        "symbol": "⥟",
+        "name": "RIGHTWARDS HARPOON WITH BARB DOWN FROM BAR"
+      },
+      {
+        "symbol": "⬷",
+        "name": "LEFTWARDS TWO-HEADED TRIPLE DASH ARROW"
+      },
+      {
+        "symbol": "⩍",
+        "name": "CLOSED INTERSECTION WITH SERIFS"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 4,
+    "sample_symbols": [
+      "⥥",
+      "⨿",
+      "⨣",
+      "⁴"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⥥",
+        "name": "DOWNWARDS HARPOON WITH BARB LEFT BESIDE DOWNWARDS HARPOON WITH BARB RIGHT"
+      },
+      {
+        "symbol": "⨿",
+        "name": "AMALGAMATION OR COPRODUCT"
+      },
+      {
+        "symbol": "⨣",
+        "name": "PLUS SIGN WITH CIRCUMFLEX ACCENT ABOVE"
+      },
+      {
+        "symbol": "⁴",
+        "name": "SUPERSCRIPT FOUR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "⊺"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⊺",
+        "name": "INTERCALATE"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "𝔽"
+    ],
+    "glyphs": [
+      {
+        "symbol": "𝔽",
+        "name": "MATHEMATICAL DOUBLE-STRUCK CAPITAL F"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 2,
+    "sample_symbols": [
+      "⟀",
+      "⟐"
+    ],
+    "glyphs": [
+      {
+        "symbol": "⟀",
+        "name": "THREE DIMENSIONAL ANGLE"
+      },
+      {
+        "symbol": "⟐",
+        "name": "WHITE DIAMOND WITH CENTRED DOT"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 1,
+    "sample_symbols": [
+      "≶"
+    ],
+    "glyphs": [
+      {
+        "symbol": "≶",
+        "name": "LESS-THAN OR GREATER-THAN"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 18,
+    "n_glyphs": 35,
+    "sample_symbols": [
+      "↗",
+      "⤸",
+      "⩄",
+      "⇾",
+      "⊢",
+      "⩺",
+      "⦁",
+      "≓"
+    ],
+    "glyphs": [
+      {
+        "symbol": "↗",
+        "name": "NORTH EAST ARROW"
+      },
+      {
+        "symbol": "⤸",
+        "name": "RIGHT-SIDE ARC CLOCKWISE ARROW"
+      },
+      {
+        "symbol": "⩄",
+        "name": "INTERSECTION WITH LOGICAL AND"
+      },
+      {
+        "symbol": "⇾",
+        "name": "RIGHTWARDS OPEN-HEADED ARROW"
+      },
+      {
+        "symbol": "⊢",
+        "name": "RIGHT TACK"
+      },
+      {
+        "symbol": "⩺",
+        "name": "GREATER-THAN WITH CIRCLE INSIDE"
+      },
+      {
+        "symbol": "⦁",
+        "name": "Z NOTATION SPOT"
+      },
+      {
+        "symbol": "≓",
+        "name": "IMAGE OF OR APPROXIMATELY EQUAL TO"
+      },
+      {
+        "symbol": "⋻",
+        "name": "CONTAINS WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⩋",
+        "name": "INTERSECTION BESIDE AND JOINED WITH INTERSECTION"
+      },
+      {
+        "symbol": "≣",
+        "name": "STRICTLY EQUIVALENT TO"
+      },
+      {
+        "symbol": "⫶",
+        "name": "TRIPLE COLON OPERATOR"
+      },
+      {
+        "symbol": "⫵",
+        "name": "TRIPLE VERTICAL BAR WITH HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "ℯ",
+        "name": "SCRIPT SMALL E"
+      },
+      {
+        "symbol": "⪯",
+        "name": "PRECEDES ABOVE SINGLE-LINE EQUALS SIGN"
+      },
+      {
+        "symbol": "⩹",
+        "name": "LESS-THAN WITH CIRCLE INSIDE"
+      },
+      {
+        "symbol": "⧊",
+        "name": "TRIANGLE WITH DOT ABOVE"
+      },
+      {
+        "symbol": "∲",
+        "name": "CLOCKWISE CONTOUR INTEGRAL"
+      },
+      {
+        "symbol": "⦂",
+        "name": "Z NOTATION TYPE COLON"
+      },
+      {
+        "symbol": "⋽",
+        "name": "CONTAINS WITH OVERBAR"
+      },
+      {
+        "symbol": "≷",
+        "name": "GREATER-THAN OR LESS-THAN"
+      },
+      {
+        "symbol": "⭃",
+        "name": "RIGHTWARDS ARROW THROUGH GREATER-THAN"
+      },
+      {
+        "symbol": "⋴",
+        "name": "SMALL ELEMENT OF WITH VERTICAL BAR AT END OF HORIZONTAL STROKE"
+      },
+      {
+        "symbol": "⟝",
+        "name": "LONG RIGHT TACK"
+      },
+      {
+        "symbol": "≯",
+        "name": "NOT GREATER-THAN"
+      },
+      {
+        "symbol": "⟲",
+        "name": "ANTICLOCKWISE GAPPED CIRCLE ARROW"
+      },
+      {
+        "symbol": "⦯",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING LEFT AND DOWN"
+      },
+      {
+        "symbol": "⫌",
+        "name": "SUPERSET OF ABOVE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⊣",
+        "name": "LEFT TACK"
+      },
+      {
+        "symbol": "⟟",
+        "name": "UP TACK WITH CIRCLE ABOVE"
+      },
+      {
+        "symbol": "⫃",
+        "name": "SUBSET OF OR EQUAL TO WITH DOT ABOVE"
+      },
+      {
+        "symbol": "⧓",
+        "name": "BLACK BOWTIE"
+      },
+      {
+        "symbol": "⪥",
+        "name": "GREATER-THAN BESIDE LESS-THAN"
+      },
+      {
+        "symbol": "⋡",
+        "name": "DOES NOT SUCCEED OR EQUAL"
+      },
+      {
+        "symbol": "⥜",
+        "name": "UPWARDS HARPOON WITH BARB RIGHT FROM BAR"
+      }
+    ]
+  },
+  {
+    "domains": [
+      "Art",
+      "Biology",
+      "Business",
+      "Chemistry",
+      "Computer science",
+      "Economics",
+      "Engineering",
+      "Environmental science",
+      "Geography",
+      "Geology",
+      "History",
+      "Materials science",
+      "Mathematics",
+      "Medicine",
+      "Philosophy",
+      "Physics",
+      "Political science",
+      "Psychology",
+      "Sociology"
+    ],
+    "n_domains": 19,
+    "n_glyphs": 339,
+    "sample_symbols": [
+      "(",
+      ")",
+      "+",
+      "/",
+      "<",
+      "=",
+      ">",
+      "["
+    ],
+    "glyphs": [
+      {
+        "symbol": "(",
+        "name": "LEFT PARENTHESIS"
+      },
+      {
+        "symbol": ")",
+        "name": "RIGHT PARENTHESIS"
+      },
+      {
+        "symbol": "+",
+        "name": "PLUS SIGN"
+      },
+      {
+        "symbol": "/",
+        "name": "SOLIDUS"
+      },
+      {
+        "symbol": "<",
+        "name": "LESS-THAN SIGN"
+      },
+      {
+        "symbol": "=",
+        "name": "EQUALS SIGN"
+      },
+      {
+        "symbol": ">",
+        "name": "GREATER-THAN SIGN"
+      },
+      {
+        "symbol": "[",
+        "name": "LEFT SQUARE BRACKET"
+      },
+      {
+        "symbol": "]",
+        "name": "RIGHT SQUARE BRACKET"
+      },
+      {
+        "symbol": "|",
+        "name": "VERTICAL LINE"
+      },
+      {
+        "symbol": "~",
+        "name": "TILDE"
+      },
+      {
+        "symbol": "Δ",
+        "name": "GREEK CAPITAL LETTER DELTA"
+      },
+      {
+        "symbol": "Ξ",
+        "name": "GREEK CAPITAL LETTER XI"
+      },
+      {
+        "symbol": "Φ",
+        "name": "GREEK CAPITAL LETTER PHI"
+      },
+      {
+        "symbol": "γ",
+        "name": "GREEK SMALL LETTER GAMMA"
+      },
+      {
+        "symbol": "δ",
+        "name": "GREEK SMALL LETTER DELTA"
+      },
+      {
+        "symbol": "θ",
+        "name": "GREEK SMALL LETTER THETA"
+      },
+      {
+        "symbol": "ν",
+        "name": "GREEK SMALL LETTER NU"
+      },
+      {
+        "symbol": "ξ",
+        "name": "GREEK SMALL LETTER XI"
+      },
+      {
+        "symbol": "π",
+        "name": "GREEK SMALL LETTER PI"
+      },
+      {
+        "symbol": "ρ",
+        "name": "GREEK SMALL LETTER RHO"
+      },
+      {
+        "symbol": "ϕ",
+        "name": "GREEK PHI SYMBOL"
+      },
+      {
+        "symbol": "′",
+        "name": "PRIME"
+      },
+      {
+        "symbol": "∞",
+        "name": "INFINITY"
+      },
+      {
+        "symbol": "∫",
+        "name": "INTEGRAL"
+      },
+      {
+        "symbol": "∼",
+        "name": "TILDE OPERATOR"
+      },
+      {
+        "symbol": "≈",
+        "name": "ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "≡",
+        "name": "IDENTICAL TO"
+      },
+      {
+        "symbol": "≪",
+        "name": "MUCH LESS-THAN"
+      },
+      {
+        "symbol": "≫",
+        "name": "MUCH GREATER-THAN"
+      },
+      {
+        "symbol": "⋅",
+        "name": "DOT OPERATOR"
+      },
+      {
+        "symbol": "⟨",
+        "name": "MATHEMATICAL LEFT ANGLE BRACKET"
+      },
+      {
+        "symbol": "⟩",
+        "name": "MATHEMATICAL RIGHT ANGLE BRACKET"
+      },
+      {
+        "symbol": "×",
+        "name": "MULTIPLICATION SIGN"
+      },
+      {
+        "symbol": "β",
+        "name": "GREEK SMALL LETTER BETA"
+      },
+      {
+        "symbol": "μ",
+        "name": "GREEK SMALL LETTER MU"
+      },
+      {
+        "symbol": "ω",
+        "name": "GREEK SMALL LETTER OMEGA"
+      },
+      {
+        "symbol": "ℏ",
+        "name": "PLANCK CONSTANT OVER TWO PI"
+      },
+      {
+        "symbol": "∘",
+        "name": "RING OPERATOR"
+      },
+      {
+        "symbol": "≃",
+        "name": "ASYMPTOTICALLY EQUAL TO"
+      },
+      {
+        "symbol": "⊕",
+        "name": "CIRCLED PLUS"
+      },
+      {
+        "symbol": "⊙",
+        "name": "CIRCLED DOT OPERATOR"
+      },
+      {
+        "symbol": "Λ",
+        "name": "GREEK CAPITAL LETTER LAMDA"
+      },
+      {
+        "symbol": "Υ",
+        "name": "GREEK CAPITAL LETTER UPSILON"
+      },
+      {
+        "symbol": "Ω",
+        "name": "GREEK CAPITAL LETTER OMEGA"
+      },
+      {
+        "symbol": "α",
+        "name": "GREEK SMALL LETTER ALPHA"
+      },
+      {
+        "symbol": "λ",
+        "name": "GREEK SMALL LETTER LAMDA"
+      },
+      {
+        "symbol": "∝",
+        "name": "PROPORTIONAL TO"
+      },
+      {
+        "symbol": "η",
+        "name": "GREEK SMALL LETTER ETA"
+      },
+      {
+        "symbol": "σ",
+        "name": "GREEK SMALL LETTER SIGMA"
+      },
+      {
+        "symbol": "∗",
+        "name": "ASTERISK OPERATOR"
+      },
+      {
+        "symbol": "≤",
+        "name": "LESS-THAN OR EQUAL TO"
+      },
+      {
+        "symbol": "≥",
+        "name": "GREATER-THAN OR EQUAL TO"
+      },
+      {
+        "symbol": "±",
+        "name": "PLUS-MINUS SIGN"
+      },
+      {
+        "symbol": "ϵ",
+        "name": "GREEK LUNATE EPSILON SYMBOL"
+      },
+      {
+        "symbol": "κ",
+        "name": "GREEK SMALL LETTER KAPPA"
+      },
+      {
+        "symbol": "τ",
+        "name": "GREEK SMALL LETTER TAU"
+      },
+      {
+        "symbol": "χ",
+        "name": "GREEK SMALL LETTER CHI"
+      },
+      {
+        "symbol": "⋯",
+        "name": "MIDLINE HORIZONTAL ELLIPSIS"
+      },
+      {
+        "symbol": "→",
+        "name": "RIGHTWARDS ARROW"
+      },
+      {
+        "symbol": "∙",
+        "name": "BULLET OPERATOR"
+      },
+      {
+        "symbol": "⋆",
+        "name": "STAR OPERATOR"
+      },
+      {
+        "symbol": "∂",
+        "name": "PARTIAL DIFFERENTIAL"
+      },
+      {
+        "symbol": "‖",
+        "name": "DOUBLE VERTICAL LINE"
+      },
+      {
+        "symbol": "¬",
+        "name": "NOT SIGN"
+      },
+      {
+        "symbol": "°",
+        "name": "DEGREE SIGN"
+      },
+      {
+        "symbol": "²",
+        "name": "SUPERSCRIPT TWO"
+      },
+      {
+        "symbol": "³",
+        "name": "SUPERSCRIPT THREE"
+      },
+      {
+        "symbol": "¹",
+        "name": "SUPERSCRIPT ONE"
+      },
+      {
+        "symbol": "Å",
+        "name": "LATIN CAPITAL LETTER A WITH RING ABOVE"
+      },
+      {
+        "symbol": "÷",
+        "name": "DIVISION SIGN"
+      },
+      {
+        "symbol": "̀",
+        "name": "COMBINING GRAVE ACCENT"
+      },
+      {
+        "symbol": "̄",
+        "name": "COMBINING MACRON"
+      },
+      {
+        "symbol": "̈",
+        "name": "COMBINING DIAERESIS"
+      },
+      {
+        "symbol": "̌",
+        "name": "COMBINING CARON"
+      },
+      {
+        "symbol": "̲",
+        "name": "COMBINING LOW LINE"
+      },
+      {
+        "symbol": "̸",
+        "name": "COMBINING LONG SOLIDUS OVERLAY"
+      },
+      {
+        "symbol": "Ͱ",
+        "name": "GREEK CAPITAL LETTER HETA"
+      },
+      {
+        "symbol": "ͱ",
+        "name": "GREEK SMALL LETTER HETA"
+      },
+      {
+        "symbol": "Ͳ",
+        "name": "GREEK CAPITAL LETTER ARCHAIC SAMPI"
+      },
+      {
+        "symbol": "ͳ",
+        "name": "GREEK SMALL LETTER ARCHAIC SAMPI"
+      },
+      {
+        "symbol": "ͷ",
+        "name": "GREEK SMALL LETTER PAMPHYLIAN DIGAMMA"
+      },
+      {
+        "symbol": "ͻ",
+        "name": "GREEK SMALL REVERSED LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "ͽ",
+        "name": "GREEK SMALL REVERSED DOTTED LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "Ϳ",
+        "name": "GREEK CAPITAL LETTER YOT"
+      },
+      {
+        "symbol": "Ά",
+        "name": "GREEK CAPITAL LETTER ALPHA WITH TONOS"
+      },
+      {
+        "symbol": "Έ",
+        "name": "GREEK CAPITAL LETTER EPSILON WITH TONOS"
+      },
+      {
+        "symbol": "Ή",
+        "name": "GREEK CAPITAL LETTER ETA WITH TONOS"
+      },
+      {
+        "symbol": "Ί",
+        "name": "GREEK CAPITAL LETTER IOTA WITH TONOS"
+      },
+      {
+        "symbol": "Ύ",
+        "name": "GREEK CAPITAL LETTER UPSILON WITH TONOS"
+      },
+      {
+        "symbol": "Ώ",
+        "name": "GREEK CAPITAL LETTER OMEGA WITH TONOS"
+      },
+      {
+        "symbol": "ΐ",
+        "name": "GREEK SMALL LETTER IOTA WITH DIALYTIKA AND TONOS"
+      },
+      {
+        "symbol": "Α",
+        "name": "GREEK CAPITAL LETTER ALPHA"
+      },
+      {
+        "symbol": "Ε",
+        "name": "GREEK CAPITAL LETTER EPSILON"
+      },
+      {
+        "symbol": "Ζ",
+        "name": "GREEK CAPITAL LETTER ZETA"
+      },
+      {
+        "symbol": "Η",
+        "name": "GREEK CAPITAL LETTER ETA"
+      },
+      {
+        "symbol": "Θ",
+        "name": "GREEK CAPITAL LETTER THETA"
+      },
+      {
+        "symbol": "Ι",
+        "name": "GREEK CAPITAL LETTER IOTA"
+      },
+      {
+        "symbol": "Κ",
+        "name": "GREEK CAPITAL LETTER KAPPA"
+      },
+      {
+        "symbol": "Μ",
+        "name": "GREEK CAPITAL LETTER MU"
+      },
+      {
+        "symbol": "Ν",
+        "name": "GREEK CAPITAL LETTER NU"
+      },
+      {
+        "symbol": "Ο",
+        "name": "GREEK CAPITAL LETTER OMICRON"
+      },
+      {
+        "symbol": "Χ",
+        "name": "GREEK CAPITAL LETTER CHI"
+      },
+      {
+        "symbol": "Ψ",
+        "name": "GREEK CAPITAL LETTER PSI"
+      },
+      {
+        "symbol": "Ϊ",
+        "name": "GREEK CAPITAL LETTER IOTA WITH DIALYTIKA"
+      },
+      {
+        "symbol": "ά",
+        "name": "GREEK SMALL LETTER ALPHA WITH TONOS"
+      },
+      {
+        "symbol": "έ",
+        "name": "GREEK SMALL LETTER EPSILON WITH TONOS"
+      },
+      {
+        "symbol": "ή",
+        "name": "GREEK SMALL LETTER ETA WITH TONOS"
+      },
+      {
+        "symbol": "ί",
+        "name": "GREEK SMALL LETTER IOTA WITH TONOS"
+      },
+      {
+        "symbol": "ε",
+        "name": "GREEK SMALL LETTER EPSILON"
+      },
+      {
+        "symbol": "ζ",
+        "name": "GREEK SMALL LETTER ZETA"
+      },
+      {
+        "symbol": "ι",
+        "name": "GREEK SMALL LETTER IOTA"
+      },
+      {
+        "symbol": "ο",
+        "name": "GREEK SMALL LETTER OMICRON"
+      },
+      {
+        "symbol": "υ",
+        "name": "GREEK SMALL LETTER UPSILON"
+      },
+      {
+        "symbol": "φ",
+        "name": "GREEK SMALL LETTER PHI"
+      },
+      {
+        "symbol": "ψ",
+        "name": "GREEK SMALL LETTER PSI"
+      },
+      {
+        "symbol": "ϊ",
+        "name": "GREEK SMALL LETTER IOTA WITH DIALYTIKA"
+      },
+      {
+        "symbol": "ό",
+        "name": "GREEK SMALL LETTER OMICRON WITH TONOS"
+      },
+      {
+        "symbol": "Ϗ",
+        "name": "GREEK CAPITAL KAI SYMBOL"
+      },
+      {
+        "symbol": "ϐ",
+        "name": "GREEK BETA SYMBOL"
+      },
+      {
+        "symbol": "ϖ",
+        "name": "GREEK PI SYMBOL"
+      },
+      {
+        "symbol": "ϗ",
+        "name": "GREEK KAI SYMBOL"
+      },
+      {
+        "symbol": "Ϙ",
+        "name": "GREEK LETTER ARCHAIC KOPPA"
+      },
+      {
+        "symbol": "ϙ",
+        "name": "GREEK SMALL LETTER ARCHAIC KOPPA"
+      },
+      {
+        "symbol": "Ϛ",
+        "name": "GREEK LETTER STIGMA"
+      },
+      {
+        "symbol": "ϛ",
+        "name": "GREEK SMALL LETTER STIGMA"
+      },
+      {
+        "symbol": "ϝ",
+        "name": "GREEK SMALL LETTER DIGAMMA"
+      },
+      {
+        "symbol": "ϟ",
+        "name": "GREEK SMALL LETTER KOPPA"
+      },
+      {
+        "symbol": "Ϡ",
+        "name": "GREEK LETTER SAMPI"
+      },
+      {
+        "symbol": "ϡ",
+        "name": "GREEK SMALL LETTER SAMPI"
+      },
+      {
+        "symbol": "Ϣ",
+        "name": "COPTIC CAPITAL LETTER SHEI"
+      },
+      {
+        "symbol": "Ϥ",
+        "name": "COPTIC CAPITAL LETTER FEI"
+      },
+      {
+        "symbol": "ϧ",
+        "name": "COPTIC SMALL LETTER KHEI"
+      },
+      {
+        "symbol": "ϩ",
+        "name": "COPTIC SMALL LETTER HORI"
+      },
+      {
+        "symbol": "Ϫ",
+        "name": "COPTIC CAPITAL LETTER GANGIA"
+      },
+      {
+        "symbol": "ϭ",
+        "name": "COPTIC SMALL LETTER SHIMA"
+      },
+      {
+        "symbol": "ϯ",
+        "name": "COPTIC SMALL LETTER DEI"
+      },
+      {
+        "symbol": "ϰ",
+        "name": "GREEK KAPPA SYMBOL"
+      },
+      {
+        "symbol": "ϱ",
+        "name": "GREEK RHO SYMBOL"
+      },
+      {
+        "symbol": "ϳ",
+        "name": "GREEK LETTER YOT"
+      },
+      {
+        "symbol": "ϴ",
+        "name": "GREEK CAPITAL THETA SYMBOL"
+      },
+      {
+        "symbol": "ϸ",
+        "name": "GREEK SMALL LETTER SHO"
+      },
+      {
+        "symbol": "ϻ",
+        "name": "GREEK SMALL LETTER SAN"
+      },
+      {
+        "symbol": "ϼ",
+        "name": "GREEK RHO WITH STROKE SYMBOL"
+      },
+      {
+        "symbol": "Ͻ",
+        "name": "GREEK CAPITAL REVERSED LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "Ͼ",
+        "name": "GREEK CAPITAL DOTTED LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "Ͽ",
+        "name": "GREEK CAPITAL REVERSED DOTTED LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "א",
+        "name": "HEBREW LETTER ALEF"
+      },
+      {
+        "symbol": "ג",
+        "name": "HEBREW LETTER GIMEL"
+      },
+      {
+        "symbol": "ד",
+        "name": "HEBREW LETTER DALET"
+      },
+      {
+        "symbol": "י",
+        "name": "HEBREW LETTER YOD"
+      },
+      {
+        "symbol": "؆",
+        "name": "ARABIC-INDIC CUBE ROOT"
+      },
+      {
+        "symbol": "؇",
+        "name": "ARABIC-INDIC FOURTH ROOT"
+      },
+      {
+        "symbol": "Σ",
+        "name": "GREEK CAPITAL LETTER SIGMA"
+      },
+      {
+        "symbol": "⇔",
+        "name": "LEFT RIGHT DOUBLE ARROW"
+      },
+      {
+        "symbol": "∇",
+        "name": "NABLA"
+      },
+      {
+        "symbol": "∑",
+        "name": "N-ARY SUMMATION"
+      },
+      {
+        "symbol": "≠",
+        "name": "NOT EQUAL TO"
+      },
+      {
+        "symbol": "∥",
+        "name": "PARALLEL TO"
+      },
+      {
+        "symbol": "⊥",
+        "name": "UP TACK"
+      },
+      {
+        "symbol": "Γ",
+        "name": "GREEK CAPITAL LETTER GAMMA"
+      },
+      {
+        "symbol": "ℓ",
+        "name": "SCRIPT SMALL L"
+      },
+      {
+        "symbol": "Π",
+        "name": "GREEK CAPITAL LETTER PI"
+      },
+      {
+        "symbol": "⇌",
+        "name": "RIGHTWARDS HARPOON OVER LEFTWARDS HARPOON"
+      },
+      {
+        "symbol": "∓",
+        "name": "MINUS-OR-PLUS SIGN"
+      },
+      {
+        "symbol": "́",
+        "name": "COMBINING ACUTE ACCENT"
+      },
+      {
+        "symbol": "̂",
+        "name": "COMBINING CIRCUMFLEX ACCENT"
+      },
+      {
+        "symbol": "̃",
+        "name": "COMBINING TILDE"
+      },
+      {
+        "symbol": "̅",
+        "name": "COMBINING OVERLINE"
+      },
+      {
+        "symbol": "̆",
+        "name": "COMBINING BREVE"
+      },
+      {
+        "symbol": "̊",
+        "name": "COMBINING RING ABOVE"
+      },
+      {
+        "symbol": "Ό",
+        "name": "GREEK CAPITAL LETTER OMICRON WITH TONOS"
+      },
+      {
+        "symbol": "Ρ",
+        "name": "GREEK CAPITAL LETTER RHO"
+      },
+      {
+        "symbol": "Τ",
+        "name": "GREEK CAPITAL LETTER TAU"
+      },
+      {
+        "symbol": "ΰ",
+        "name": "GREEK SMALL LETTER UPSILON WITH DIALYTIKA AND TONOS"
+      },
+      {
+        "symbol": "ς",
+        "name": "GREEK SMALL LETTER FINAL SIGMA"
+      },
+      {
+        "symbol": "ύ",
+        "name": "GREEK SMALL LETTER UPSILON WITH TONOS"
+      },
+      {
+        "symbol": "ϓ",
+        "name": "GREEK UPSILON WITH ACUTE AND HOOK SYMBOL"
+      },
+      {
+        "symbol": "ϔ",
+        "name": "GREEK UPSILON WITH DIAERESIS AND HOOK SYMBOL"
+      },
+      {
+        "symbol": "Ϝ",
+        "name": "GREEK LETTER DIGAMMA"
+      },
+      {
+        "symbol": "Ϟ",
+        "name": "GREEK LETTER KOPPA"
+      },
+      {
+        "symbol": "ϣ",
+        "name": "COPTIC SMALL LETTER SHEI"
+      },
+      {
+        "symbol": "ϥ",
+        "name": "COPTIC SMALL LETTER FEI"
+      },
+      {
+        "symbol": "Ϧ",
+        "name": "COPTIC CAPITAL LETTER KHEI"
+      },
+      {
+        "symbol": "Ϩ",
+        "name": "COPTIC CAPITAL LETTER HORI"
+      },
+      {
+        "symbol": "Ϲ",
+        "name": "GREEK CAPITAL LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "ע",
+        "name": "HEBREW LETTER AYIN"
+      },
+      {
+        "symbol": "؈",
+        "name": "ARABIC RAY"
+      },
+      {
+        "symbol": "̇",
+        "name": "COMBINING DOT ABOVE"
+      },
+      {
+        "symbol": "Ͷ",
+        "name": "GREEK CAPITAL LETTER PAMPHYLIAN DIGAMMA"
+      },
+      {
+        "symbol": "Β",
+        "name": "GREEK CAPITAL LETTER BETA"
+      },
+      {
+        "symbol": "ϋ",
+        "name": "GREEK SMALL LETTER UPSILON WITH DIALYTIKA"
+      },
+      {
+        "symbol": "ώ",
+        "name": "GREEK SMALL LETTER OMEGA WITH TONOS"
+      },
+      {
+        "symbol": "ϒ",
+        "name": "GREEK UPSILON WITH HOOK SYMBOL"
+      },
+      {
+        "symbol": "ϫ",
+        "name": "COPTIC SMALL LETTER GANGIA"
+      },
+      {
+        "symbol": "Ϭ",
+        "name": "COPTIC CAPITAL LETTER SHIMA"
+      },
+      {
+        "symbol": "Ϯ",
+        "name": "COPTIC CAPITAL LETTER DEI"
+      },
+      {
+        "symbol": "ϲ",
+        "name": "GREEK LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "ב",
+        "name": "HEBREW LETTER BET"
+      },
+      {
+        "symbol": "†",
+        "name": "DAGGER"
+      },
+      {
+        "symbol": "ͼ",
+        "name": "GREEK SMALL DOTTED LUNATE SIGMA SYMBOL"
+      },
+      {
+        "symbol": "Ϋ",
+        "name": "GREEK CAPITAL LETTER UPSILON WITH DIALYTIKA"
+      },
+      {
+        "symbol": "ϑ",
+        "name": "GREEK THETA SYMBOL"
+      },
+      {
+        "symbol": "Ϻ",
+        "name": "GREEK CAPITAL LETTER SAN"
+      },
+      {
+        "symbol": "∏",
+        "name": "N-ARY PRODUCT"
+      },
+      {
+        "symbol": "∈",
+        "name": "ELEMENT OF"
+      },
+      {
+        "symbol": "‡",
+        "name": "DOUBLE DAGGER"
+      },
+      {
+        "symbol": "϶",
+        "name": "GREEK REVERSED LUNATE EPSILON SYMBOL"
+      },
+      {
+        "symbol": "Ϸ",
+        "name": "GREEK CAPITAL LETTER SHO"
+      },
+      {
+        "symbol": "∠",
+        "name": "ANGLE"
+      },
+      {
+        "symbol": "♯",
+        "name": "MUSIC SHARP SIGN"
+      },
+      {
+        "symbol": "←",
+        "name": "LEFTWARDS ARROW"
+      },
+      {
+        "symbol": "∪",
+        "name": "UNION"
+      },
+      {
+        "symbol": "⟂",
+        "name": "PERPENDICULAR"
+      },
+      {
+        "symbol": "⋄",
+        "name": "DIAMOND OPERATOR"
+      },
+      {
+        "symbol": "△",
+        "name": "WHITE UP-POINTING TRIANGLE"
+      },
+      {
+        "symbol": "≅",
+        "name": "APPROXIMATELY EQUAL TO"
+      },
+      {
+        "symbol": "↔",
+        "name": "LEFT RIGHT ARROW"
+      },
+      {
+        "symbol": "↑",
+        "name": "UPWARDS ARROW"
+      },
+      {
+        "symbol": "↓",
+        "name": "DOWNWARDS ARROW"
+      },
+      {
+        "symbol": "↘",
+        "name": "SOUTH EAST ARROW"
+      },
+      {
+        "symbol": "∮",
+        "name": "CONTOUR INTEGRAL"
+      },
+      {
+        "symbol": "⊗",
+        "name": "CIRCLED TIMES"
+      },
+      {
+        "symbol": "⋃",
+        "name": "N-ARY UNION"
+      },
+      {
+        "symbol": "⌈",
+        "name": "LEFT CEILING"
+      },
+      {
+        "symbol": "⌉",
+        "name": "RIGHT CEILING"
+      },
+      {
+        "symbol": "◇",
+        "name": "WHITE DIAMOND"
+      },
+      {
+        "symbol": "⟼",
+        "name": "LONG RIGHTWARDS ARROW FROM BAR"
+      },
+      {
+        "symbol": "⟈",
+        "name": "REVERSE SOLIDUS PRECEDING SUBSET"
+      },
+      {
+        "symbol": "∩",
+        "name": "INTERSECTION"
+      },
+      {
+        "symbol": "ℑ",
+        "name": "BLACK-LETTER CAPITAL I"
+      },
+      {
+        "symbol": "⇒",
+        "name": "RIGHTWARDS DOUBLE ARROW"
+      },
+      {
+        "symbol": "ℜ",
+        "name": "BLACK-LETTER CAPITAL R"
+      },
+      {
+        "symbol": "∋",
+        "name": "CONTAINS AS MEMBER"
+      },
+      {
+        "symbol": "⊤",
+        "name": "DOWN TACK"
+      },
+      {
+        "symbol": "⫝",
+        "name": "NONFORKING"
+      },
+      {
+        "symbol": "♢",
+        "name": "WHITE DIAMOND SUIT"
+      },
+      {
+        "symbol": "≺",
+        "name": "PRECEDES"
+      },
+      {
+        "symbol": "⫘",
+        "name": "SUPERSET BESIDE AND JOINED BY DASH WITH SUBSET"
+      },
+      {
+        "symbol": "⦠",
+        "name": "SPHERICAL ANGLE OPENING LEFT"
+      },
+      {
+        "symbol": "⫭",
+        "name": "REVERSED DOUBLE STROKE NOT SIGN"
+      },
+      {
+        "symbol": "∀",
+        "name": "FOR ALL"
+      },
+      {
+        "symbol": "ℂ",
+        "name": "DOUBLE-STRUCK CAPITAL C"
+      },
+      {
+        "symbol": "ℍ",
+        "name": "DOUBLE-STRUCK CAPITAL H"
+      },
+      {
+        "symbol": "ℕ",
+        "name": "DOUBLE-STRUCK CAPITAL N"
+      },
+      {
+        "symbol": "ℚ",
+        "name": "DOUBLE-STRUCK CAPITAL Q"
+      },
+      {
+        "symbol": "ℝ",
+        "name": "DOUBLE-STRUCK CAPITAL R"
+      },
+      {
+        "symbol": "ℤ",
+        "name": "DOUBLE-STRUCK CAPITAL Z"
+      },
+      {
+        "symbol": "≜",
+        "name": "DELTA EQUAL TO"
+      },
+      {
+        "symbol": "≻",
+        "name": "SUCCEEDS"
+      },
+      {
+        "symbol": "℘",
+        "name": "SCRIPT CAPITAL P"
+      },
+      {
+        "symbol": "⧉",
+        "name": "TWO JOINED SQUARES"
+      },
+      {
+        "symbol": "⇁",
+        "name": "RIGHTWARDS HARPOON WITH BARB DOWNWARDS"
+      },
+      {
+        "symbol": "○",
+        "name": "WHITE CIRCLE"
+      },
+      {
+        "symbol": "⟃",
+        "name": "OPEN SUBSET"
+      },
+      {
+        "symbol": "⟄",
+        "name": "OPEN SUPERSET"
+      },
+      {
+        "symbol": "⟇",
+        "name": "OR WITH DOT INSIDE"
+      },
+      {
+        "symbol": "⟌",
+        "name": "LONG DIVISION"
+      },
+      {
+        "symbol": "⧎",
+        "name": "RIGHT TRIANGLE ABOVE LEFT TRIANGLE"
+      },
+      {
+        "symbol": "∖",
+        "name": "SET MINUS"
+      },
+      {
+        "symbol": "↦",
+        "name": "RIGHTWARDS ARROW FROM BAR"
+      },
+      {
+        "symbol": "↽",
+        "name": "LEFTWARDS HARPOON WITH BARB DOWNWARDS"
+      },
+      {
+        "symbol": "⧁",
+        "name": "CIRCLED GREATER-THAN"
+      },
+      {
+        "symbol": "∨",
+        "name": "LOGICAL OR"
+      },
+      {
+        "symbol": "⨁",
+        "name": "N-ARY CIRCLED PLUS OPERATOR"
+      },
+      {
+        "symbol": "∉",
+        "name": "NOT AN ELEMENT OF"
+      },
+      {
+        "symbol": "ℵ",
+        "name": "ALEF SYMBOL"
+      },
+      {
+        "symbol": "⋱",
+        "name": "DOWN RIGHT DIAGONAL ELLIPSIS"
+      },
+      {
+        "symbol": "□",
+        "name": "WHITE SQUARE"
+      },
+      {
+        "symbol": "≐",
+        "name": "APPROACHES THE LIMIT"
+      },
+      {
+        "symbol": "∅",
+        "name": "EMPTY SET"
+      },
+      {
+        "symbol": "⊂",
+        "name": "SUBSET OF"
+      },
+      {
+        "symbol": "⨂",
+        "name": "N-ARY CIRCLED TIMES OPERATOR"
+      },
+      {
+        "symbol": "∧",
+        "name": "LOGICAL AND"
+      },
+      {
+        "symbol": "⋮",
+        "name": "VERTICAL ELLIPSIS"
+      },
+      {
+        "symbol": "⌊",
+        "name": "LEFT FLOOR"
+      },
+      {
+        "symbol": "⌋",
+        "name": "RIGHT FLOOR"
+      },
+      {
+        "symbol": "⫫",
+        "name": "DOUBLE UP TACK"
+      },
+      {
+        "symbol": "⟺",
+        "name": "LONG LEFT RIGHT DOUBLE ARROW"
+      },
+      {
+        "symbol": "⋁",
+        "name": "N-ARY LOGICAL OR"
+      },
+      {
+        "symbol": "⟹",
+        "name": "LONG RIGHTWARDS DOUBLE ARROW"
+      },
+      {
+        "symbol": "⊆",
+        "name": "SUBSET OF OR EQUAL TO"
+      },
+      {
+        "symbol": "⇐",
+        "name": "LEFTWARDS DOUBLE ARROW"
+      },
+      {
+        "symbol": "↩",
+        "name": "LEFTWARDS ARROW WITH HOOK"
+      },
+      {
+        "symbol": "↪",
+        "name": "RIGHTWARDS ARROW WITH HOOK"
+      },
+      {
+        "symbol": "⊃",
+        "name": "SUPERSET OF"
+      },
+      {
+        "symbol": "⋀",
+        "name": "N-ARY LOGICAL AND"
+      },
+      {
+        "symbol": "∃",
+        "name": "THERE EXISTS"
+      },
+      {
+        "symbol": "≀",
+        "name": "WREATH PRODUCT"
+      },
+      {
+        "symbol": "ℙ",
+        "name": "DOUBLE-STRUCK CAPITAL P"
+      },
+      {
+        "symbol": "≍",
+        "name": "EQUIVALENT TO"
+      },
+      {
+        "symbol": "⊇",
+        "name": "SUPERSET OF OR EQUAL TO"
+      },
+      {
+        "symbol": "⋂",
+        "name": "N-ARY INTERSECTION"
+      },
+      {
+        "symbol": "◁",
+        "name": "WHITE LEFT-POINTING TRIANGLE"
+      },
+      {
+        "symbol": "⟿",
+        "name": "LONG RIGHTWARDS SQUIGGLE ARROW"
+      },
+      {
+        "symbol": "⦪",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING DOWN AND RIGHT"
+      },
+      {
+        "symbol": "⧟",
+        "name": "DOUBLE-ENDED MULTIMAP"
+      },
+      {
+        "symbol": "⥏",
+        "name": "UP BARB RIGHT DOWN BARB RIGHT HARPOON"
+      },
+      {
+        "symbol": "⤎",
+        "name": "LEFTWARDS TRIPLE DASH ARROW"
+      },
+      {
+        "symbol": "⧌",
+        "name": "S IN TRIANGLE"
+      },
+      {
+        "symbol": "⋍",
+        "name": "REVERSED TILDE EQUALS"
+      },
+      {
+        "symbol": "⎭",
+        "name": "RIGHT CURLY BRACKET LOWER HOOK"
+      },
+      {
+        "symbol": "⎳",
+        "name": "SUMMATION BOTTOM"
+      },
+      {
+        "symbol": "⦹",
+        "name": "CIRCLED PERPENDICULAR"
+      },
+      {
+        "symbol": "⧈",
+        "name": "SQUARED SQUARE"
+      },
+      {
+        "symbol": "⩧",
+        "name": "IDENTICAL WITH DOT ABOVE"
+      },
+      {
+        "symbol": "⟱",
+        "name": "DOWNWARDS QUADRUPLE ARROW"
+      },
+      {
+        "symbol": "⨆",
+        "name": "N-ARY SQUARE UNION OPERATOR"
+      },
+      {
+        "symbol": "⊨",
+        "name": "TRUE"
+      },
+      {
+        "symbol": "⟍",
+        "name": "MATHEMATICAL FALLING DIAGONAL"
+      },
+      {
+        "symbol": "⥴",
+        "name": "RIGHTWARDS ARROW ABOVE TILDE OPERATOR"
+      },
+      {
+        "symbol": "↼",
+        "name": "LEFTWARDS HARPOON WITH BARB UPWARDS"
+      },
+      {
+        "symbol": "⇀",
+        "name": "RIGHTWARDS HARPOON WITH BARB UPWARDS"
+      },
+      {
+        "symbol": "⩫",
+        "name": "TILDE OPERATOR WITH RISING DOTS"
+      },
+      {
+        "symbol": "⧧",
+        "name": "THERMODYNAMIC"
+      },
+      {
+        "symbol": "ℸ",
+        "name": "DALET SYMBOL"
+      },
+      {
+        "symbol": "⋉",
+        "name": "LEFT NORMAL FACTOR SEMIDIRECT PRODUCT"
+      },
+      {
+        "symbol": "◿",
+        "name": "LOWER RIGHT TRIANGLE"
+      },
+      {
+        "symbol": "⦛",
+        "name": "MEASURED ANGLE OPENING LEFT"
+      },
+      {
+        "symbol": "⋛",
+        "name": "GREATER-THAN EQUAL TO OR LESS-THAN"
+      },
+      {
+        "symbol": "⩈",
+        "name": "UNION ABOVE BAR ABOVE INTERSECTION"
+      },
+      {
+        "symbol": "⟉",
+        "name": "SUPERSET PRECEDING SOLIDUS"
+      },
+      {
+        "symbol": "⦷",
+        "name": "CIRCLED PARALLEL"
+      },
+      {
+        "symbol": "⧍",
+        "name": "TRIANGLE WITH SERIFS AT BOTTOM"
+      },
+      {
+        "symbol": "⫄",
+        "name": "SUPERSET OF OR EQUAL TO WITH DOT ABOVE"
+      },
+      {
+        "symbol": "⧆",
+        "name": "SQUARED ASTERISK"
+      },
+      {
+        "symbol": "₊",
+        "name": "SUBSCRIPT PLUS SIGN"
+      },
+      {
+        "symbol": "₄",
+        "name": "SUBSCRIPT FOUR"
+      },
+      {
+        "symbol": "≉",
+        "name": "NOT ALMOST EQUAL TO"
+      },
+      {
+        "symbol": "⤡",
+        "name": "NORTH WEST AND SOUTH EAST ARROW"
+      },
+      {
+        "symbol": "⤓",
+        "name": "DOWNWARDS ARROW TO BAR"
+      },
+      {
+        "symbol": "⧃",
+        "name": "CIRCLE WITH TWO HORIZONTAL STROKES TO THE RIGHT"
+      },
+      {
+        "symbol": "⤩",
+        "name": "SOUTH EAST ARROW AND SOUTH WEST ARROW"
+      },
+      {
+        "symbol": "⦫",
+        "name": "MEASURED ANGLE WITH OPEN ARM ENDING IN ARROW POINTING DOWN AND LEFT"
+      },
+      {
+        "symbol": "⟏",
+        "name": "SQUARED LOGICAL OR"
+      },
+      {
+        "symbol": "⧄",
+        "name": "SQUARED RISING DIAGONAL SLASH"
+      },
+      {
+        "symbol": "⪶",
+        "name": "SUCCEEDS ABOVE NOT EQUAL TO"
+      },
+      {
+        "symbol": "⋶",
+        "name": "ELEMENT OF WITH OVERBAR"
+      },
+      {
+        "symbol": "⬲",
+        "name": "LEFT ARROW WITH CIRCLED PLUS"
+      }
+    ]
+  }
+]
