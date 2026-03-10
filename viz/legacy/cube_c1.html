@@ -83,7 +83,7 @@ canvas { display: block; position: fixed; top: 0; left: 0; }
   <span id="bb-right"></span>
 </div>
 
-<script src="three.min.js"></script>
+<script src="../lib/three.min.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // YGGDRASIL · CUBE C1 — 794 symboles prouvés
@@ -134,7 +134,7 @@ async function init() {
   cubeGroup = new THREE.Group();
   scene.add(cubeGroup);
 
-  const resp = await fetch('data.json');
+  const resp = await fetch('../data/data.json');
   if (!resp.ok) { document.body.innerHTML = '<div style="color:red;padding:40px">data.json fetch failed. Run: python -m http.server 8080</div>'; return; }
   data = await resp.json();
 

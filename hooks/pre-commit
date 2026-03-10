@@ -10,7 +10,7 @@ from pathlib import Path
 from datetime import datetime
 
 ROOT = Path(__file__).parent.parent.parent  # .git/hooks/ → repo root
-TREE = ROOT / "winter-tree.json"
+TREE = ROOT / "data" / "topology" / "winter-tree.json"
 
 def run(cmd):
     """Run shell command, return stdout."""

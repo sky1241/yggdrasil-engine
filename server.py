@@ -19,7 +19,7 @@ except ImportError:
     # Fallback: just generate the viz data
     from engine.core.symbols import load
     db = load()
-    viz_path = Path("viz/data.json")
+    viz_path = Path("viz/data/data.json")
     db.export_viz_json(viz_path)
     print(f"Data exported to {viz_path}")
     print(f"Open viz/index.html directly in your browser.")
@@ -32,7 +32,7 @@ app = Flask(__name__, static_folder="viz")
 
 # Load data once
 db = SymbolDatabase()
-viz_data_path = Path("viz/data.json")
+viz_data_path = Path("viz/data/data.json")
 db.export_viz_json(viz_data_path)
 print(f"[SERVER] Viz data exported to {viz_data_path}")
 
@@ -42,14 +42,14 @@ def index():
     return send_from_directory("viz", "index.html")
 
 
-@app.route("/data.json")
+@app.route("/data/data.json")
 def data():
-    return send_from_directory("viz", "data.json")
+    return send_from_directory("viz/data", "data.json")
 
 
-@app.route("/three.min.js")
+@app.route("/lib/three.min.js")
 def threejs():
-    return send_from_directory("viz", "three.min.js")
+    return send_from_directory("viz/lib", "three.min.js")
 
 
 @app.route("/api/stats")

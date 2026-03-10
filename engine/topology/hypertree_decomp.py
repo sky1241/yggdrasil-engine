@@ -15,7 +15,7 @@ from collections import defaultdict
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-SIG_FILE = ROOT / "viz" / "hyperedge_signatures.json"
+SIG_FILE = ROOT / "viz" / "data" / "hyperedge_signatures.json"
 OUT_HTML = ROOT / "viz" / "hypertree_decomp.html"
 
 
@@ -687,7 +687,7 @@ def main():
     tree_json = tree_to_json(root)
 
     # Save JSON too
-    json_out = ROOT / "viz" / "hypertree_decomp.json"
+    json_out = ROOT / "viz" / "data" / "hypertree_decomp.json"
     with open(json_out, "w", encoding="utf-8") as f:
         json.dump(tree_json, f, ensure_ascii=False, indent=2)
     print(f"  JSON -> {json_out}")

@@ -1,24 +1,40 @@
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environment
 .env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Data (large scan outputs — gitignored)
 data/cache/
 data/scan/chunks/
 data/scan/s1_chunks/
 data/scan/wt2_chunks/
 data/scan/arxiv_map_chunks/
+data/scan/glyph_chunks/
+data/scan/pmc_glyph_chunks/
 data/scan/concept_index.db
 data/scan/concept_index.db-shm
 data/scan/concept_index.db-wal
 data/scan/concept_index_cache.json.gz
 data/scan/wt2_scan.log
-data/scan/glyph_chunks/
-data/scan/pmc_glyph_chunks/
-blind_test/_api_cache.json
-*.egg-info/
-dist/
-build/
-.claude/
+data/bible/
+
+# Binary data
 *.npz
 *.npy
-data/bible/
+
+# Claude Code / Muninn (local state)
+.claude/
 .muninn/

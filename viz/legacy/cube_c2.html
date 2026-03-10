@@ -89,7 +89,7 @@ canvas { display: block; position: fixed; top: 0; left: 0; }
   <span id="bb-right"></span>
 </div>
 
-<script src="three.min.js"></script>
+<script src="../lib/three.min.js"></script>
 <script>
 // ═══════════════════════════════════════════════════════════════
 // YGGDRASIL · CUBE C2 — 235 conjectures & problèmes ouverts
@@ -139,7 +139,7 @@ async function init() {
   cubeGroup = new THREE.Group();
   scene.add(cubeGroup);
 
-  const resp = await fetch('c2_data.json');
+  const resp = await fetch('../data/c2_data.json');
   if (!resp.ok) { document.body.innerHTML = '<div style="color:red;padding:40px">c2_data.json fetch failed. Run: python -m http.server 8080</div>'; return; }
   data = await resp.json();
 

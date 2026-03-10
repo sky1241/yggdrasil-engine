@@ -19,7 +19,7 @@ import numpy as np
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.join(BASE, "..", "..")
-PRED_DIR = os.path.join(REPO, "predictions_2025")
+PRED_DIR = os.path.join(REPO, "experiments", "predictions_2025")
 N_CONCEPTS = 65026
 
 # ══════════════════════════════════════════════

@@ -35,7 +35,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.join(BASE, "..", "..")
 if REPO not in sys.path:
     sys.path.insert(0, REPO)
-BT_DIR = os.path.join(REPO, "blind_test_v2")
+BT_DIR = os.path.join(REPO, "experiments", "blind_test_v2")
 N = 65026
 
 
