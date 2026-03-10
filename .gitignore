@@ -36,6 +36,9 @@ data/pipeline/pipeline_test_*.json
 *.npz
 *.npy
 
+# Hook-generated stats (root level)
+.winter-tree-stats.json
+
 # Claude Code / Muninn (local state)
 .claude/
 .muninn/
