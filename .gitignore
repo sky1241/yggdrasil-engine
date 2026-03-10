@@ -16,7 +16,7 @@ venv/
 .vscode/
 .idea/
 
-# Data (large scan outputs — gitignored)
+# Data (large/generated outputs — gitignored)
 data/cache/
 data/scan/chunks/
 data/scan/s1_chunks/
@@ -30,6 +30,7 @@ data/scan/concept_index.db-wal
 data/scan/concept_index_cache.json.gz
 data/scan/wt2_scan.log
 data/bible/
+data/pipeline/pipeline_test_*.json
 
 # Binary data
 *.npz
