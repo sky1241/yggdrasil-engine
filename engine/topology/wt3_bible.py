@@ -11,7 +11,7 @@ Output: E:/yggdrasil/wt3.db
 Tables:
     papers       — paper_id, domain, glyphs (JSON), concepts (JSON)
     bipartite    — glyph_id, concept_id, weight (aggregated across all chunks)
-    cooc         — concept_a, concept_b, period, weight (aggregated across all chunks)
+    cooc         — concept_a, concept_b, period, weight (direct upsert, chunk by chunk)
     cooc_global  — concept_a, concept_b, weight (sum across all periods)
     progress     — phase, chunk_id, done_at (crash-resume tracking)
 
@@ -61,7 +61,7 @@ def create_db(db_path: Path) -> sqlite3.Connection:
     conn.execute("PRAGMA journal_mode=WAL")
     conn.execute("PRAGMA synchronous=NORMAL")
     conn.execute("PRAGMA cache_size=-64000")  # 64 MB cache
-    conn.execute("PRAGMA temp_store=MEMORY")
+    conn.execute("PRAGMA temp_store=FILE")  # disk temp for large GROUP BYs
 
     conn.executescript("""
         CREATE TABLE IF NOT EXISTS papers (
@@ -84,13 +84,6 @@ def create_db(db_path: Path) -> sqlite3.Connection:
             period     TEXT,
             weight     REAL,
             PRIMARY KEY (concept_a, concept_b, period)
-        );
-
-        CREATE TABLE IF NOT EXISTS cooc_staging (
-            concept_a  INTEGER,
-            concept_b  INTEGER,
-            period     TEXT,
-            weight     REAL
         );
 
         CREATE TABLE IF NOT EXISTS cooc_global (
@@ -256,78 +249,44 @@ def ingest_wt2_bipartite(conn: sqlite3.Connection):
     return n
 
 
-# ─── Phase 3: Cooccurrences ───────────────────────────────────────
-
-def flush_staging(conn: sqlite3.Connection):
-    """Aggregate cooc_staging → cooc and truncate staging.
-
-    Uses INSERT ... ON CONFLICT to merge staging data into final cooc table.
-    """
-    n_staging = conn.execute("SELECT COUNT(*) FROM cooc_staging").fetchone()[0]
-    if n_staging == 0:
-        return 0
-
-    conn.execute(
-        """INSERT INTO cooc (concept_a, concept_b, period, weight)
-           SELECT concept_a, concept_b, period, SUM(weight)
-           FROM cooc_staging
-           GROUP BY concept_a, concept_b, period
-           ON CONFLICT(concept_a, concept_b, period)
-           DO UPDATE SET weight = weight + excluded.weight"""
-    )
-    conn.execute("DELETE FROM cooc_staging")
-    conn.commit()
-    checkpoint(conn)
-    return n_staging
-
-
-FLUSH_EVERY = 20  # flush staging every N chunks
-
+# ─── Phase 3: Cooccurrences — chunk by chunk ─────────────────────
 
 def ingest_wt1_cooc(conn: sqlite3.Connection):
-    """Stream WT1 cooc.json.gz chunks into cooc via staging table.
+    """Stream WT1 cooc.json.gz chunks directly into cooc table.
 
-    Hybrid approach for speed + crash safety:
-    1. Fast bulk INSERT into cooc_staging (no PK, no index lookup)
-    2. Every FLUSH_EVERY chunks: aggregate staging → cooc, truncate staging
-    3. Progress tracked per chunk, fully resumable
-
-    ~10x faster than direct upserts because staging INSERTs skip index lookups.
+    Like bipartite: read each chunk, aggregate in Python dict, upsert into cooc.
+    No staging table needed. Chunk by chunk, crash-safe, resumable.
     """
     chunks = sorted([d for d in WT1_CHUNKS.iterdir() if d.is_dir()])
     total = len(chunks)
-    already = count_done(conn, "cooc")
+    already = count_done(conn, "cooc_direct")
     if already >= total:
         n = conn.execute("SELECT COUNT(*) FROM cooc").fetchone()[0]
         log(f"[WT3] Phase 3 cooc: already done ({n:,} pairs, {already}/{total} chunks)")
-        return n
+        return
 
     if already > 0:
         log(f"[WT3] Phase 3 cooc: resuming from chunk {already+1}/{total}")
 
-    # Clean any leftover staging data from crashed run
-    conn.execute("DELETE FROM cooc_staging")
-    conn.commit()
-
-    total_rows = 0
-    pending_chunk_ids = []  # chunks in staging, not yet flushed
+    total_upserts = 0
     t0 = time.time()
-    log(f"[WT3] Ingesting WT1 cooccurrences: {total} chunks ({already} already done)")
+    log(f"[WT3] Ingesting WT1 cooccurrences (direct): {total} chunks ({already} already done)")
 
     for i, chunk_dir in enumerate(chunks, 1):
         chunk_id = chunk_dir.name
-        if is_done(conn, "cooc", chunk_id):
+        if is_done(conn, "cooc_direct", chunk_id):
             continue
 
         cooc_path = chunk_dir / "cooc.json.gz"
         if not cooc_path.exists():
-            mark_done(conn, "cooc", chunk_id)
+            mark_done(conn, "cooc_direct", chunk_id)
             continue
 
         with gzip.open(cooc_path, "rt", encoding="utf-8") as f:
             data = json.load(f)
 
-        rows = []
+        # Aggregate in Python dict first: (a, b, period) → sum(weight)
+        agg = {}
         for period, pairs in data.items():
             for pair_key, weight in pairs.items():
                 parts = pair_key.split("|")
@@ -335,37 +294,31 @@ def ingest_wt1_cooc(conn: sqlite3.Connection):
                     continue
                 a = int(parts[0])
                 b = int(parts[1])
-                rows.append((a, b, period, weight))
+                key = (a, b, period)
+                agg[key] = agg.get(key, 0.0) + weight
+        del data
 
-        # Fast bulk INSERT into staging (no PK = no index lookup)
+        # Upsert into cooc (ON CONFLICT add weight)
+        rows = [(a, b, p, w, w) for (a, b, p), w in agg.items()]
+        del agg
         conn.executemany(
-            "INSERT INTO cooc_staging (concept_a, concept_b, period, weight) VALUES (?, ?, ?, ?)",
+            """INSERT INTO cooc (concept_a, concept_b, period, weight)
+               VALUES (?, ?, ?, ?)
+               ON CONFLICT(concept_a, concept_b, period)
+               DO UPDATE SET weight = weight + ?""",
             rows,
         )
-        total_rows += len(rows)
-        pending_chunk_ids.append(chunk_id)
-
-        # Flush staging → cooc periodically, then mark ALL pending chunks done
-        if len(pending_chunk_ids) >= FLUSH_EVERY:
-            flush_staging(conn)
-            for cid in pending_chunk_ids:
-                mark_done(conn, "cooc", cid)
-            pending_chunk_ids = []
+        total_upserts += len(rows)
+        del rows
+        mark_done(conn, "cooc_direct", chunk_id)
 
         elapsed = time.time() - t0
-        rate = total_rows / elapsed if elapsed > 0 else 0
+        rate = total_upserts / elapsed if elapsed > 0 else 0
         if i % 10 == 0 or i == total or i <= 3:
-            log(f"  [{i}/{total}] {total_rows:,} rows ({rate:,.0f}/s)")
-
-    # Final flush
-    if pending_chunk_ids:
-        flush_staging(conn)
-        for cid in pending_chunk_ids:
-            mark_done(conn, "cooc", cid)
+            log(f"  [{i}/{total}] {total_upserts:,} upserts ({rate:,.0f}/s)")
 
     n = conn.execute("SELECT COUNT(*) FROM cooc").fetchone()[0]
     log(f"[WT3] Cooc done: {n:,} unique pairs×periods in {time.time()-t0:.1f}s")
-    return n
 
 
 # ─── Phase 4: cooc_global ─────────────────────────────────────────
@@ -575,9 +528,17 @@ def build():
 
     conn = create_db(DB_PATH)
 
-    # Drop cooc_raw if it exists from old version
+    # Drop legacy tables from old staging approach
+    for old_table in ["cooc_raw", "cooc_staging"]:
+        try:
+            conn.execute(f"DROP TABLE IF EXISTS {old_table}")
+            conn.commit()
+        except Exception:
+            pass
+
+    # Drop failed index from previous attempt
     try:
-        conn.execute("DROP TABLE IF EXISTS cooc_raw")
+        conn.execute("DROP INDEX IF EXISTS idx_staging_a")
         conn.commit()
     except Exception:
         pass
@@ -588,8 +549,9 @@ def build():
     # Phase 2: WT2 bipartite (resumable, no delete)
     n_bipartite = ingest_wt2_bipartite(conn)
 
-    # Phase 3: WT1 cooccurrences (direct upsert, crash-safe)
-    n_cooc = ingest_wt1_cooc(conn)
+    # Phase 3: WT1 cooccurrences (chunk by chunk, direct upsert, no staging)
+    ingest_wt1_cooc(conn)
+    n_cooc = conn.execute("SELECT COUNT(*) FROM cooc").fetchone()[0]
 
     # Phase 4: cooc_global (aggregate from cooc)
     n_global = build_cooc_global(conn)
@@ -611,9 +573,7 @@ def build():
     }
     save_meta(conn, stats)
 
-    # Phase 7: VACUUM (optional, can be slow on huge DBs)
-    log("[WT3] Compacting database (VACUUM)...")
-    conn.execute("VACUUM")
+    # Done — no VACUUM needed (no staging table bloat)
     conn.close()
 
     final_size = DB_PATH.stat().st_size / 1024**2
