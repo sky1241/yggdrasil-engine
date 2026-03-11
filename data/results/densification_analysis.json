@@ -1,0 +1,47 @@
+{
+  "efficiency_drop_pct": 97.4,
+  "sedov_alpha": 0.378,
+  "sedov_r2": 0.4767,
+  "rho_plafond": 0.9809,
+  "rho_inflection_year": 2000.3,
+  "rho_saturation_year": 2006.0,
+  "papers_per_concept_2000": 3,
+  "papers_per_concept_2012": 66,
+  "paper_growth": 2.36,
+  "concept_growth": 0.1,
+  "meteorites": [
+    {
+      "period": "2000-08",
+      "new": 353,
+      "excess": 98,
+      "sigma": 2.8
+    },
+    {
+      "period": "2000-09",
+      "new": 370,
+      "excess": 127,
+      "sigma": 3.6
+    },
+    {
+      "period": "2000-10",
+      "new": 338,
+      "excess": 106,
+      "sigma": 3.0
+    },
+    {
+      "period": "2000-11",
+      "new": 368,
+      "excess": 145,
+      "sigma": 4.1
+    },
+    {
+      "period": "2001-01",
+      "new": 285,
+      "excess": 77,
+      "sigma": 2.2
+    }
+  ],
+  "arbesman_decay_per_month": 187,
+  "birth_rate_per_month": 87,
+  "net_balance": -100
+}

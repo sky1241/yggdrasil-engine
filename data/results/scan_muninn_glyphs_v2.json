@@ -1,0 +1,3950 @@
+{
+  "scan": "muninn_glyphs_v2_tight",
+  "date": "2026-03-10 15:18:52",
+  "total_papers": 833030,
+  "F5_ema": {
+    "desc": "EMA: α·x + (1-α)·S — convex combination",
+    "required_glyphs": [
+      90,
+      451,
+      631
+    ],
+    "total_hors_cs_math": 87464,
+    "total_hors_physics": 8289,
+    "domain_distribution": {
+      "Materials science": 4456,
+      "Chemistry": 862,
+      "Economics": 853,
+      "Geology": 383,
+      "Business": 355,
+      "Biology": 322,
+      "Environmental science": 250,
+      "Psychology": 207,
+      "Geography": 130,
+      "Political science": 113,
+      "Philosophy": 100,
+      "Medicine": 90,
+      "History": 82,
+      "Sociology": 39,
+      "Art": 31,
+      "Engineering": 16
+    },
+    "new_cross_species": [
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 4773
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 2842
+      },
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2762
+      },
+      {
+        "idx": 13,
+        "name": "Chemistry",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1392
+      },
+      {
+        "idx": 9718,
+        "name": "Economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 960
+      },
+      {
+        "idx": 9275,
+        "name": "Chemical physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 881
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 878
+      },
+      {
+        "idx": 64605,
+        "name": "Thermodynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 792
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 707
+      },
+      {
+        "idx": 55089,
+        "name": "Molecular physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 596
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 522
+      },
+      {
+        "idx": 10,
+        "name": "Business",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 479
+      },
+      {
+        "idx": 3,
+        "name": "Geology",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 461
+      },
+      {
+        "idx": 62293,
+        "name": "Ferromagnetism",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 439
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 409
+      },
+      {
+        "idx": 55204,
+        "name": "Spin (aerodynamics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 397
+      },
+      {
+        "idx": 62834,
+        "name": "Anisotropy",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 395
+      },
+      {
+        "idx": 51183,
+        "name": "Graphene",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 387
+      },
+      {
+        "idx": 11134,
+        "name": "Nanotechnology",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 386
+      },
+      {
+        "idx": 4947,
+        "name": "Coupling (piping)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 365
+      },
+      {
+        "idx": 58789,
+        "name": "Molecular dynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 354
+      },
+      {
+        "idx": 24,
+        "name": "Biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 345
+      },
+      {
+        "idx": 42689,
+        "name": "Lattice (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 339
+      },
+      {
+        "idx": 56227,
+        "name": "Optoelectronics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 332
+      },
+      {
+        "idx": 61987,
+        "name": "Crystallography",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 320
+      },
+      {
+        "idx": 54685,
+        "name": "Environmental science",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 300
+      },
+      {
+        "idx": 7678,
+        "name": "Phase transition",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 295
+      },
+      {
+        "idx": 18940,
+        "name": "Relaxation (psychology)",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 292
+      },
+      {
+        "idx": 53590,
+        "name": "Magnetization",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 284
+      },
+      {
+        "idx": 16338,
+        "name": "Thermal",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 271
+      }
+    ],
+    "pioneer_papers": [
+      {
+        "paper_id": "cond-mat/0001044",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          59677,
+          8300,
+          16401,
+          56883,
+          3292,
+          7357,
+          14711,
+          53590
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001056",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          10514,
+          14466,
+          41185,
+          13196,
+          14880,
+          63389,
+          57146,
+          63174
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001082",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          14466,
+          56823,
+          15005,
+          14677,
+          3478,
+          9353,
+          6019,
+          63053
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001102",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17448,
+          60523,
+          14290,
+          56119,
+          58611,
+          13221,
+          55089,
+          53649
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001117",
+        "domain": "Economics",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          36508,
+          7757,
+          9443,
+          40928,
+          6002,
+          62785,
+          9718,
+          63706
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001176",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17448,
+          62834,
+          55089,
+          43056,
+          12103,
+          56119,
+          59046,
+          12739
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001194",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          58817,
+          61026,
+          64385,
+          11149,
+          35197,
+          60932,
+          15235,
+          14290
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001213",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          41973,
+          24398,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001271",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          58362,
+          17861,
+          15929,
+          14466,
+          62834,
+          12850,
+          57763
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001280",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          14466,
+          13443,
+          5188,
+          55549,
+          10760,
+          57657,
+          10729,
+          12170
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001318",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          57657,
+          17861,
+          62293,
+          59677,
+          56139,
+          14466,
+          64470,
+          3248
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001376",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          5715,
+          13,
+          14290,
+          18940,
+          53649,
+          5753,
+          55089,
+          8691
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001381",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          53590,
+          14466,
+          17861,
+          53303,
+          22417,
+          61924,
+          52799,
+          11203
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001390",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17861,
+          62293,
+          59419,
+          58526,
+          14466,
+          11669,
+          4947,
+          60353
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001431",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          12132,
+          14290,
+          17619,
+          3897,
+          17861,
+          14466,
+          8691,
+          10780
+        ]
+      },
+      {
+        "paper_id": "math/0001077",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          27815,
+          13
+        ]
+      },
+      {
+        "paper_id": "math-ph/0001025",
+        "domain": "Business",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          63268,
+          10,
+          54685
+        ]
+      },
+      {
+        "paper_id": "physics/0001056",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          53653,
+          13,
+          3402
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0001029",
+        "domain": "Environmental science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          13949,
+          9149,
+          54685,
+          3402,
+          3,
+          17,
+          62060
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002037",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17861,
+          57657,
+          63982,
+          62861,
+          42689,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002059",
+        "domain": "Economics",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          7757,
+          1244,
+          25083,
+          38592,
+          9718,
+          16259,
+          63231,
+          9676
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002124",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          24079,
+          43756,
+          53996,
+          27732,
+          14466,
+          15491,
+          62880,
+          11603
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002152",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          57657,
+          17861,
+          6414,
+          15564,
+          62834,
+          2442,
+          12237,
+          8962
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002157",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          22417,
+          56113,
+          14466,
+          17861,
+          16284,
+          55458,
+          12850,
+          14854
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002185",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          6183,
+          11491,
+          12814,
+          13951,
+          13,
+          63958,
+          54765,
+          4832
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002234",
+        "domain": "Geology",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          2256,
+          60583,
+          47092,
+          1193,
+          3,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002243",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          2233,
+          17448,
+          55458,
+          12103,
+          14466,
+          50679,
+          17440,
+          43056
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002261",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          61625,
+          12086,
+          37895,
+          55458,
+          4509,
+          13,
+          55037,
+          53731
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002273",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          55458,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002298",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          13109,
+          39311,
+          3481,
+          54881,
+          55454,
+          14466,
+          4068,
+          2489
+        ]
+      }
+    ]
+  },
+  "F5_ema_loose": {
+    "desc": "EMA loose: α + Σ (weighted average pattern)",
+    "required_glyphs": [
+      90,
+      451
+    ],
+    "total_hors_cs_math": 162322,
+    "total_hors_physics": 15405,
+    "domain_distribution": {
+      "Materials science": 8246,
+      "Chemistry": 1776,
+      "Economics": 1492,
+      "Biology": 750,
+      "Geology": 617,
+      "Business": 596,
+      "Environmental science": 439,
+      "Psychology": 394,
+      "Geography": 275,
+      "Political science": 203,
+      "Philosophy": 181,
+      "Medicine": 162,
+      "History": 124,
+      "Sociology": 66,
+      "Art": 53,
+      "Engineering": 31
+    },
+    "new_cross_species": [
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 8833
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 5167
+      },
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5021
+      },
+      {
+        "idx": 13,
+        "name": "Chemistry",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 2878
+      },
+      {
+        "idx": 9275,
+        "name": "Chemical physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1838
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1707
+      },
+      {
+        "idx": 9718,
+        "name": "Economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 1685
+      },
+      {
+        "idx": 64605,
+        "name": "Thermodynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1586
+      },
+      {
+        "idx": 55089,
+        "name": "Molecular physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1178
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1144
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1085
+      },
+      {
+        "idx": 24,
+        "name": "Biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 817
+      },
+      {
+        "idx": 10,
+        "name": "Business",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 813
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 780
+      },
+      {
+        "idx": 11134,
+        "name": "Nanotechnology",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 772
+      },
+      {
+        "idx": 3,
+        "name": "Geology",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 752
+      },
+      {
+        "idx": 62293,
+        "name": "Ferromagnetism",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 736
+      },
+      {
+        "idx": 56227,
+        "name": "Optoelectronics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 708
+      },
+      {
+        "idx": 51183,
+        "name": "Graphene",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 706
+      },
+      {
+        "idx": 58789,
+        "name": "Molecular dynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 681
+      },
+      {
+        "idx": 61987,
+        "name": "Crystallography",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 675
+      },
+      {
+        "idx": 42689,
+        "name": "Lattice (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 640
+      },
+      {
+        "idx": 7678,
+        "name": "Phase transition",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 630
+      },
+      {
+        "idx": 62834,
+        "name": "Anisotropy",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 617
+      },
+      {
+        "idx": 4947,
+        "name": "Coupling (piping)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 614
+      },
+      {
+        "idx": 55204,
+        "name": "Spin (aerodynamics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 611
+      },
+      {
+        "idx": 54685,
+        "name": "Environmental science",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 547
+      },
+      {
+        "idx": 57657,
+        "name": "Superconductivity",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 524
+      },
+      {
+        "idx": 8168,
+        "name": "Density functional theory",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 522
+      },
+      {
+        "idx": 18940,
+        "name": "Relaxation (psychology)",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 495
+      }
+    ],
+    "pioneer_papers": [
+      {
+        "paper_id": "cond-mat/0001044",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          59677,
+          8300,
+          16401,
+          56883,
+          3292,
+          7357,
+          14711,
+          53590
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001056",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          10514,
+          14466,
+          41185,
+          13196,
+          14880,
+          63389,
+          57146,
+          63174
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001082",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          14466,
+          56823,
+          15005,
+          14677,
+          3478,
+          9353,
+          6019,
+          63053
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001102",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17448,
+          60523,
+          14290,
+          56119,
+          58611,
+          13221,
+          55089,
+          53649
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001117",
+        "domain": "Economics",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          36508,
+          7757,
+          9443,
+          40928,
+          6002,
+          62785,
+          9718,
+          63706
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001176",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17448,
+          62834,
+          55089,
+          43056,
+          12103,
+          56119,
+          59046,
+          12739
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001194",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          58817,
+          61026,
+          64385,
+          11149,
+          35197,
+          60932,
+          15235,
+          14290
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001213",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          41973,
+          24398,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001271",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          58362,
+          17861,
+          15929,
+          14466,
+          62834,
+          12850,
+          57763
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001280",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          14466,
+          13443,
+          5188,
+          55549,
+          10760,
+          57657,
+          10729,
+          12170
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001318",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          57657,
+          17861,
+          62293,
+          59677,
+          56139,
+          14466,
+          64470,
+          3248
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001376",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          5715,
+          13,
+          14290,
+          18940,
+          53649,
+          5753,
+          55089,
+          8691
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001381",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          53590,
+          14466,
+          17861,
+          53303,
+          22417,
+          61924,
+          52799,
+          11203
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001390",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17861,
+          62293,
+          59419,
+          58526,
+          14466,
+          11669,
+          4947,
+          60353
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001431",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          12132,
+          14290,
+          17619,
+          3897,
+          17861,
+          14466,
+          8691,
+          10780
+        ]
+      },
+      {
+        "paper_id": "math/0001077",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          27815,
+          13
+        ]
+      },
+      {
+        "paper_id": "math-ph/0001025",
+        "domain": "Business",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          63268,
+          10,
+          54685
+        ]
+      },
+      {
+        "paper_id": "physics/0001056",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          53653,
+          13,
+          3402
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0001029",
+        "domain": "Environmental science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          13949,
+          9149,
+          54685,
+          3402,
+          3,
+          17,
+          62060
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002037",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          17861,
+          57657,
+          63982,
+          62861,
+          42689,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002059",
+        "domain": "Economics",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          7757,
+          1244,
+          25083,
+          38592,
+          9718,
+          16259,
+          63231,
+          9676
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002124",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          24079,
+          43756,
+          53996,
+          27732,
+          14466,
+          15491,
+          62880,
+          11603
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002152",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          57657,
+          17861,
+          6414,
+          15564,
+          62834,
+          2442,
+          12237,
+          8962
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002157",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          22417,
+          56113,
+          14466,
+          17861,
+          16284,
+          55458,
+          12850,
+          14854
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002185",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          6183,
+          11491,
+          12814,
+          13951,
+          13,
+          63958,
+          54765,
+          4832
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002234",
+        "domain": "Geology",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          2256,
+          60583,
+          47092,
+          1193,
+          3,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002243",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          2233,
+          17448,
+          55458,
+          12103,
+          14466,
+          50679,
+          17440,
+          43056
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002261",
+        "domain": "Chemistry",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          61625,
+          12086,
+          37895,
+          55458,
+          4509,
+          13,
+          55037,
+          53731
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002273",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          55458,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002298",
+        "domain": "Materials science",
+        "glyphs": [
+          4,
+          90,
+          451,
+          631
+        ],
+        "concepts": [
+          13109,
+          39311,
+          3481,
+          54881,
+          55454,
+          14466,
+          4068,
+          2489
+        ]
+      }
+    ]
+  },
+  "F8_decay_pipe": {
+    "desc": "Decay+absolute: τ + | (decay with norm/absolute value)",
+    "required_glyphs": [
+      16,
+      109
+    ],
+    "total_hors_cs_math": 139191,
+    "total_hors_physics": 12668,
+    "domain_distribution": {
+      "Materials science": 7279,
+      "Economics": 1245,
+      "Chemistry": 1136,
+      "Geology": 598,
+      "Biology": 488,
+      "Environmental science": 431,
+      "Business": 414,
+      "Psychology": 255,
+      "Geography": 182,
+      "Political science": 147,
+      "Philosophy": 129,
+      "Medicine": 116,
+      "History": 111,
+      "Engineering": 48,
+      "Art": 46,
+      "Sociology": 43
+    },
+    "new_cross_species": [
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 7670
+      },
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4068
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 4011
+      },
+      {
+        "idx": 13,
+        "name": "Chemistry",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1859
+      },
+      {
+        "idx": 9718,
+        "name": "Economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 1373
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1364
+      },
+      {
+        "idx": 9275,
+        "name": "Chemical physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1315
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1215
+      },
+      {
+        "idx": 64605,
+        "name": "Thermodynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1162
+      },
+      {
+        "idx": 56227,
+        "name": "Optoelectronics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1062
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1037
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 841
+      },
+      {
+        "idx": 55089,
+        "name": "Molecular physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 748
+      },
+      {
+        "idx": 3,
+        "name": "Geology",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 727
+      },
+      {
+        "idx": 11134,
+        "name": "Nanotechnology",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 683
+      },
+      {
+        "idx": 18940,
+        "name": "Relaxation (psychology)",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 677
+      },
+      {
+        "idx": 62293,
+        "name": "Ferromagnetism",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 571
+      },
+      {
+        "idx": 10,
+        "name": "Business",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 566
+      },
+      {
+        "idx": 51183,
+        "name": "Graphene",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 563
+      },
+      {
+        "idx": 55204,
+        "name": "Spin (aerodynamics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 540
+      },
+      {
+        "idx": 54685,
+        "name": "Environmental science",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 536
+      },
+      {
+        "idx": 24,
+        "name": "Biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 532
+      },
+      {
+        "idx": 57657,
+        "name": "Superconductivity",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 514
+      },
+      {
+        "idx": 58789,
+        "name": "Molecular dynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 495
+      },
+      {
+        "idx": 4947,
+        "name": "Coupling (piping)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 471
+      },
+      {
+        "idx": 60336,
+        "name": "Diffusion",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 460
+      },
+      {
+        "idx": 16338,
+        "name": "Thermal",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 458
+      },
+      {
+        "idx": 7179,
+        "name": "Dynamics (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 444
+      },
+      {
+        "idx": 62834,
+        "name": "Anisotropy",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 438
+      },
+      {
+        "idx": 7678,
+        "name": "Phase transition",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 429
+      }
+    ],
+    "pioneer_papers": [
+      {
+        "paper_id": "cond-mat/0001001",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          14861,
+          55037,
+          63053,
+          14393,
+          9275,
+          54759,
+          24610,
+          6990
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001056",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10514,
+          14466,
+          41185,
+          13196,
+          14880,
+          63389,
+          57146,
+          63174
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001102",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          17448,
+          60523,
+          14290,
+          56119,
+          58611,
+          13221,
+          55089,
+          53649
+        ]
+      },
+      {
+        "paper_id": "math/0001077",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          27815,
+          13
+        ]
+      },
+      {
+        "paper_id": "physics/0001067",
+        "domain": "Environmental science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          30313,
+          54685,
+          14466,
+          10
+        ]
+      },
+      {
+        "paper_id": "astro-ph/0002156",
+        "domain": "Economics",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          63451,
+          15761,
+          10227,
+          9718,
+          63567,
+          53726,
+          23617,
+          8552
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002037",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          17861,
+          57657,
+          63982,
+          62861,
+          42689,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002133",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          5387,
+          60764,
+          55458,
+          58817,
+          14466,
+          7616,
+          9275,
+          59928
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002234",
+        "domain": "Geology",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          2256,
+          60583,
+          47092,
+          1193,
+          3,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002298",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          13109,
+          39311,
+          3481,
+          54881,
+          55454,
+          14466,
+          4068,
+          2489
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002448",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          13483,
+          9843,
+          48862,
+          4179,
+          16489,
+          13736,
+          13,
+          14466
+        ]
+      },
+      {
+        "paper_id": "hep-ph/0002303",
+        "domain": "History",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          26,
+          0,
+          4
+        ]
+      },
+      {
+        "paper_id": "math/0002066",
+        "domain": "Art",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          4179,
+          6652,
+          14466
+        ]
+      },
+      {
+        "paper_id": "math/0002068",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          61082,
+          63389,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "math/0002249",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          12
+        ]
+      },
+      {
+        "paper_id": "math-ph/0002052",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          449,
+          15551,
+          12,
+          14083,
+          0,
+          4,
+          8
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003166",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10246,
+          5597,
+          219,
+          64385,
+          13116,
+          63029,
+          9843,
+          62834
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003196",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10875,
+          5820,
+          59928,
+          54771,
+          15376,
+          63691,
+          17861,
+          14290
+        ]
+      },
+      {
+        "paper_id": "math/0003055",
+        "domain": "Economics",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          13383,
+          14013,
+          9718,
+          1003,
+          9676,
+          53834
+        ]
+      },
+      {
+        "paper_id": "physics/0003052",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          12739,
+          9029,
+          58969,
+          13221,
+          7363,
+          15365,
+          14466,
+          8329
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0003007",
+        "domain": "Geography",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          16501
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0003016",
+        "domain": "Psychology",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10932,
+          13763,
+          8959,
+          3402,
+          12633,
+          17,
+          53726,
+          59231
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004029",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          55759,
+          53648,
+          64605,
+          18940,
+          59928,
+          14466,
+          57099,
+          18781
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004032",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          6183,
+          12069,
+          14466,
+          33836,
+          8630,
+          57099,
+          17861,
+          12801
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004204",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          11491,
+          14290,
+          47194,
+          7363,
+          16401,
+          17861,
+          1331,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004320",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          62664,
+          3624,
+          7678,
+          5612,
+          14466,
+          64605,
+          55458,
+          58789
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004443",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          60523,
+          16492,
+          3378,
+          60336,
+          31955,
+          13,
+          12170,
+          7856
+        ]
+      },
+      {
+        "paper_id": "physics/0004038",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          4942,
+          56119,
+          61180,
+          13221,
+          53653,
+          55204,
+          6090,
+          14466
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0004109",
+        "domain": "Psychology",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          958,
+          8959
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0005070",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          56823,
+          56224,
+          17861,
+          2442,
+          3900,
+          34222,
+          14466,
+          42573
+        ]
+      }
+    ]
+  },
+  "F8_decay_threshold": {
+    "desc": "Decay+threshold: τ + ≥ (decay constant with inequality)",
+    "required_glyphs": [
+      109,
+      535
+    ],
+    "total_hors_cs_math": 73812,
+    "total_hors_physics": 6820,
+    "domain_distribution": {
+      "Materials science": 2913,
+      "Economics": 1030,
+      "Chemistry": 628,
+      "Geology": 434,
+      "Business": 372,
+      "Biology": 370,
+      "Environmental science": 261,
+      "Psychology": 195,
+      "Geography": 147,
+      "Political science": 107,
+      "Philosophy": 101,
+      "Medicine": 90,
+      "History": 89,
+      "Art": 33,
+      "Sociology": 28,
+      "Engineering": 22
+    },
+    "new_cross_species": [
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 3112
+      },
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1744
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1405
+      },
+      {
+        "idx": 9718,
+        "name": "Economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 1142
+      },
+      {
+        "idx": 13,
+        "name": "Chemistry",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 989
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 748
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 743
+      },
+      {
+        "idx": 64605,
+        "name": "Thermodynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 643
+      },
+      {
+        "idx": 9275,
+        "name": "Chemical physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 634
+      },
+      {
+        "idx": 3,
+        "name": "Geology",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 521
+      },
+      {
+        "idx": 10,
+        "name": "Business",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 511
+      },
+      {
+        "idx": 24,
+        "name": "Biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 400
+      },
+      {
+        "idx": 54685,
+        "name": "Environmental science",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 333
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 329
+      },
+      {
+        "idx": 1003,
+        "name": "Financial economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 329
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 306
+      },
+      {
+        "idx": 18940,
+        "name": "Relaxation (psychology)",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 298
+      },
+      {
+        "idx": 56227,
+        "name": "Optoelectronics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 292
+      },
+      {
+        "idx": 55089,
+        "name": "Molecular physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 260
+      },
+      {
+        "idx": 58789,
+        "name": "Molecular dynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 252
+      },
+      {
+        "idx": 7179,
+        "name": "Dynamics (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 249
+      },
+      {
+        "idx": 8959,
+        "name": "Psychology",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 246
+      },
+      {
+        "idx": 11134,
+        "name": "Nanotechnology",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 238
+      },
+      {
+        "idx": 60336,
+        "name": "Diffusion",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 230
+      },
+      {
+        "idx": 11777,
+        "name": "Microeconomics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 229
+      },
+      {
+        "idx": 7678,
+        "name": "Phase transition",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 209
+      },
+      {
+        "idx": 9353,
+        "name": "Composite material",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 208
+      },
+      {
+        "idx": 16501,
+        "name": "Geography",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 196
+      },
+      {
+        "idx": 16338,
+        "name": "Thermal",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 192
+      },
+      {
+        "idx": 61114,
+        "name": "Classical mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 183
+      }
+    ],
+    "pioneer_papers": [
+      {
+        "paper_id": "cond-mat/0001001",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          14861,
+          55037,
+          63053,
+          14393,
+          9275,
+          54759,
+          24610,
+          6990
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001056",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10514,
+          14466,
+          41185,
+          13196,
+          14880,
+          63389,
+          57146,
+          63174
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001102",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          17448,
+          60523,
+          14290,
+          56119,
+          58611,
+          13221,
+          55089,
+          53649
+        ]
+      },
+      {
+        "paper_id": "math/0001077",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          27815,
+          13
+        ]
+      },
+      {
+        "paper_id": "physics/0001067",
+        "domain": "Environmental science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          30313,
+          54685,
+          14466,
+          10
+        ]
+      },
+      {
+        "paper_id": "astro-ph/0002156",
+        "domain": "Economics",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          63451,
+          15761,
+          10227,
+          9718,
+          63567,
+          53726,
+          23617,
+          8552
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002037",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          17861,
+          57657,
+          63982,
+          62861,
+          42689,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002133",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          5387,
+          60764,
+          55458,
+          58817,
+          14466,
+          7616,
+          9275,
+          59928
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002234",
+        "domain": "Geology",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          2256,
+          60583,
+          47092,
+          1193,
+          3,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002298",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          13109,
+          39311,
+          3481,
+          54881,
+          55454,
+          14466,
+          4068,
+          2489
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002448",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          13483,
+          9843,
+          48862,
+          4179,
+          16489,
+          13736,
+          13,
+          14466
+        ]
+      },
+      {
+        "paper_id": "hep-ph/0002303",
+        "domain": "History",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          26,
+          0,
+          4
+        ]
+      },
+      {
+        "paper_id": "math/0002066",
+        "domain": "Art",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          4179,
+          6652,
+          14466
+        ]
+      },
+      {
+        "paper_id": "math/0002068",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          61082,
+          63389,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "math/0002249",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          12
+        ]
+      },
+      {
+        "paper_id": "math-ph/0002052",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          449,
+          15551,
+          12,
+          14083,
+          0,
+          4,
+          8
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003166",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10246,
+          5597,
+          219,
+          64385,
+          13116,
+          63029,
+          9843,
+          62834
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003196",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10875,
+          5820,
+          59928,
+          54771,
+          15376,
+          63691,
+          17861,
+          14290
+        ]
+      },
+      {
+        "paper_id": "math/0003055",
+        "domain": "Economics",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          13383,
+          14013,
+          9718,
+          1003,
+          9676,
+          53834
+        ]
+      },
+      {
+        "paper_id": "physics/0003052",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          12739,
+          9029,
+          58969,
+          13221,
+          7363,
+          15365,
+          14466,
+          8329
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0003007",
+        "domain": "Geography",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          16501
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0003016",
+        "domain": "Psychology",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          10932,
+          13763,
+          8959,
+          3402,
+          12633,
+          17,
+          53726,
+          59231
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004029",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          55759,
+          53648,
+          64605,
+          18940,
+          59928,
+          14466,
+          57099,
+          18781
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004032",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          6183,
+          12069,
+          14466,
+          33836,
+          8630,
+          57099,
+          17861,
+          12801
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004204",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          11491,
+          14290,
+          47194,
+          7363,
+          16401,
+          17861,
+          1331,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004320",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          62664,
+          3624,
+          7678,
+          5612,
+          14466,
+          64605,
+          55458,
+          58789
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0004443",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          60523,
+          16492,
+          3378,
+          60336,
+          31955,
+          13,
+          12170,
+          7856
+        ]
+      },
+      {
+        "paper_id": "physics/0004038",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          4942,
+          56119,
+          61180,
+          13221,
+          53653,
+          55204,
+          6090,
+          14466
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0004109",
+        "domain": "Psychology",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          958,
+          8959
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0005070",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          109,
+          535,
+          631
+        ],
+        "concepts": [
+          56823,
+          56224,
+          17861,
+          2442,
+          3900,
+          34222,
+          14466,
+          42573
+        ]
+      }
+    ]
+  },
+  "F9_indicator": {
+    "desc": "Indicator: Σ + 𝟙 (summation with indicator function)",
+    "required_glyphs": [
+      273,
+      451
+    ],
+    "total_hors_cs_math": 1,
+    "total_hors_physics": 0,
+    "domain_distribution": {},
+    "new_cross_species": [],
+    "pioneer_papers": []
+  },
+  "F9_indicator_alt": {
+    "desc": "Indicator alt: Σ + 𝕀 (summation with identity/indicator)",
+    "required_glyphs": [
+      249,
+      451
+    ],
+    "total_hors_cs_math": 0,
+    "total_hors_physics": 0,
+    "domain_distribution": {},
+    "new_cross_species": [],
+    "pioneer_papers": []
+  },
+  "F9_membership": {
+    "desc": "Membership scoring: Σ + ∈ + | (sum with membership + norm)",
+    "required_glyphs": [
+      16,
+      442,
+      451
+    ],
+    "total_hors_cs_math": 62260,
+    "total_hors_physics": 7106,
+    "domain_distribution": {
+      "Materials science": 2251,
+      "Economics": 1317,
+      "Business": 603,
+      "Biology": 532,
+      "Chemistry": 497,
+      "Geology": 444,
+      "Psychology": 333,
+      "Environmental science": 242,
+      "Geography": 207,
+      "Political science": 161,
+      "Philosophy": 148,
+      "Medicine": 118,
+      "History": 116,
+      "Sociology": 57,
+      "Art": 55,
+      "Engineering": 25
+    },
+    "new_cross_species": [
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 2415
+      },
+      {
+        "idx": 9718,
+        "name": "Economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 1487
+      },
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 1458
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 1188
+      },
+      {
+        "idx": 10,
+        "name": "Business",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 792
+      },
+      {
+        "idx": 13,
+        "name": "Chemistry",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 776
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 696
+      },
+      {
+        "idx": 24,
+        "name": "Biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 562
+      },
+      {
+        "idx": 3,
+        "name": "Geology",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 518
+      },
+      {
+        "idx": 9275,
+        "name": "Chemical physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 506
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 484
+      },
+      {
+        "idx": 64605,
+        "name": "Thermodynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 455
+      },
+      {
+        "idx": 8959,
+        "name": "Psychology",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 410
+      },
+      {
+        "idx": 11777,
+        "name": "Microeconomics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 410
+      },
+      {
+        "idx": 1003,
+        "name": "Financial economics",
+        "species": 3,
+        "species_name": "Psychology/Business",
+        "paper_count": 363
+      },
+      {
+        "idx": 54685,
+        "name": "Environmental science",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 300
+      },
+      {
+        "idx": 16501,
+        "name": "Geography",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 293
+      },
+      {
+        "idx": 55089,
+        "name": "Molecular physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 275
+      },
+      {
+        "idx": 61720,
+        "name": "Evolutionary biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 237
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 234
+      },
+      {
+        "idx": 21,
+        "name": "Computational biology",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 223
+      },
+      {
+        "idx": 17626,
+        "name": "Geometry",
+        "species": 1,
+        "species_name": "Geography/Environmental science",
+        "paper_count": 218
+      },
+      {
+        "idx": 12,
+        "name": "Political science",
+        "species": 6,
+        "species_name": "Humanities/Political science",
+        "paper_count": 212
+      },
+      {
+        "idx": 57746,
+        "name": "Genetics",
+        "species": 5,
+        "species_name": "Biology/Botany",
+        "paper_count": 212
+      },
+      {
+        "idx": 11134,
+        "name": "Nanotechnology",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 208
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 206
+      },
+      {
+        "idx": 4,
+        "name": "Philosophy",
+        "species": 6,
+        "species_name": "Humanities/Political science",
+        "paper_count": 187
+      },
+      {
+        "idx": 51183,
+        "name": "Graphene",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 184
+      },
+      {
+        "idx": 58789,
+        "name": "Molecular dynamics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 182
+      },
+      {
+        "idx": 42689,
+        "name": "Lattice (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 181
+      }
+    ],
+    "pioneer_papers": [
+      {
+        "paper_id": "cond-mat/0001001",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          14861,
+          55037,
+          63053,
+          14393,
+          9275,
+          54759,
+          24610,
+          6990
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0001131",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          17861,
+          3246,
+          57657,
+          18940,
+          55458,
+          14466,
+          1565,
+          16300
+        ]
+      },
+      {
+        "paper_id": "math/0001077",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          27815,
+          13
+        ]
+      },
+      {
+        "paper_id": "math/0001160",
+        "domain": "Philosophy",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          30865,
+          3723,
+          13542,
+          4
+        ]
+      },
+      {
+        "paper_id": "math-ph/0001025",
+        "domain": "Business",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          63268,
+          10,
+          54685
+        ]
+      },
+      {
+        "paper_id": "physics/0001056",
+        "domain": "Chemistry",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          53653,
+          13,
+          3402
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002124",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          24079,
+          43756,
+          53996,
+          27732,
+          14466,
+          15491,
+          62880,
+          11603
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002243",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          2233,
+          17448,
+          55458,
+          12103,
+          14466,
+          50679,
+          17440,
+          43056
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002285",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          43756,
+          17083,
+          13105,
+          6333,
+          5188,
+          9942,
+          16401,
+          14466
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002298",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          13109,
+          39311,
+          3481,
+          54881,
+          55454,
+          14466,
+          4068,
+          2489
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0002368",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          1107,
+          17861,
+          10729,
+          7695,
+          53959,
+          58294,
+          16338,
+          14466
+        ]
+      },
+      {
+        "paper_id": "hep-ph/0002303",
+        "domain": "History",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          26,
+          0,
+          4
+        ]
+      },
+      {
+        "paper_id": "math/0002066",
+        "domain": "Art",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          4179,
+          6652,
+          14466
+        ]
+      },
+      {
+        "paper_id": "math/0002068",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          61082,
+          63389,
+          14466,
+          3402
+        ]
+      },
+      {
+        "paper_id": "math/0002249",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          12
+        ]
+      },
+      {
+        "paper_id": "math-ph/0002052",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          449,
+          15551,
+          12,
+          14083,
+          0,
+          4,
+          8
+        ]
+      },
+      {
+        "paper_id": "nlin/0002032",
+        "domain": "Biology",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          13812,
+          10187,
+          53670,
+          1612,
+          44219,
+          370,
+          13893,
+          63648
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003025",
+        "domain": "Economics",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          3233,
+          41252,
+          60379,
+          7757,
+          275,
+          9718,
+          3378,
+          6856
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003231",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          61939,
+          17861,
+          12801,
+          14466,
+          1331,
+          17894,
+          57047,
+          56227
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003233",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          56823,
+          14466,
+          59677,
+          3900,
+          26200,
+          62880,
+          12814,
+          17861
+        ]
+      },
+      {
+        "paper_id": "cond-mat/0003282",
+        "domain": "Materials science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          13672,
+          16879,
+          7925,
+          14854,
+          60166,
+          57329,
+          3481,
+          58789
+        ]
+      },
+      {
+        "paper_id": "cs/0003075",
+        "domain": "Business",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          40695,
+          10,
+          12
+        ]
+      },
+      {
+        "paper_id": "hep-th/0003090",
+        "domain": "Psychology",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          8959
+        ]
+      },
+      {
+        "paper_id": "hep-th/0003135",
+        "domain": "Environmental science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          58846,
+          20810,
+          4698,
+          63970,
+          54685,
+          17
+        ]
+      },
+      {
+        "paper_id": "math/0003003",
+        "domain": "Philosophy",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          4
+        ]
+      },
+      {
+        "paper_id": "math/0003070",
+        "domain": "Business",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          23492,
+          41700,
+          10
+        ]
+      },
+      {
+        "paper_id": "math/0003138",
+        "domain": "Business",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          10
+        ]
+      },
+      {
+        "paper_id": "math-ph/0003040",
+        "domain": "Political science",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          13520,
+          12,
+          3402
+        ]
+      },
+      {
+        "paper_id": "nlin/0003025",
+        "domain": "Psychology",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          8959
+        ]
+      },
+      {
+        "paper_id": "quant-ph/0003007",
+        "domain": "Geography",
+        "glyphs": [
+          16,
+          442,
+          451
+        ],
+        "concepts": [
+          16501
+        ]
+      }
+    ]
+  }
+}

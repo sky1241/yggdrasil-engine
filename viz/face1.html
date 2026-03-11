@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yggdrasil · Face 1 — Terrain 3D</title>
+<style>
+:root { --bg: #0a0a0a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: #E5E5E5; font-family: 'Segoe UI', system-ui, sans-serif; overflow: hidden; }
+#info {
+  position: fixed; top: 16px; left: 16px; z-index: 10;
+  background: rgba(30,30,30,0.9); border-radius: 10px; padding: 14px 18px;
+  box-shadow: 0 4px 20px rgba(0,0,0,.5); backdrop-filter: blur(8px); max-width: 340px;
+}
+#info h1 { font-size: 16px; margin-bottom: 4px; color: #50ff90; }
+#info p { font-size: 12px; color: #888; line-height: 1.5; }
+#tooltip {
+  position: fixed; z-index: 20; pointer-events: none; display: none;
+  background: rgba(15,15,15,0.95); border: 1px solid #50ff90; border-radius: 8px;
+  padding: 10px 14px; box-shadow: 0 8px 32px rgba(0,0,0,.6); max-width: 300px;
+}
+#tooltip .title { font-size: 18px; font-weight: bold; display: block; }
+#tooltip .sub { font-size: 12px; color: #888; display: block; margin-top: 4px; white-space: pre-line; }
+</style>
+</head>
+<body>
+<div id="info">
+  <h1>Face 1 — Terrain 3D</h1>
+  <p>19 territoires · hauteur ∝ papers<br>
+  Frontières = 21 glyphes nd=2<br>
+  Layout = Laplacien 19×19<br><br>
+  Clic: rotation · Scroll: zoom · Clic droit: pan</p>
+</div>
+<div id="tooltip"><span class="title"></span><span class="sub"></span></div>
+
+<script src="lib/three.min.js"></script>
+<script>
+const DC = {
+  "Art":"#e040fb","Biology":"#66bb6a","Business":"#ffa726","Chemistry":"#ef5350",
+  "Computer science":"#42a5f5","Economics":"#ffee58","Engineering":"#8d6e63",
+  "Environmental science":"#26a69a","Geography":"#78909c","Geology":"#a1887f",
+  "History":"#ce93d8","Materials science":"#ff7043","Mathematics":"#5c6bc0",
+  "Medicine":"#ec407a","Philosophy":"#ab47bc","Physics":"#29b6f6",
+  "Political science":"#d4e157","Psychology":"#7e57c2","Sociology":"#26c6da"
+};
+
+// Papers per domain (from S-1 scan)
+const PAPERS = {
+  "Art":10053,"Biology":151993,"Business":94228,"Chemistry":138417,
+  "Computer science":204498,"Economics":94869,"Engineering":152702,
+  "Environmental science":107199,"Geography":72498,"Geology":92487,
+  "History":36489,"Materials science":171558,"Mathematics":181498,
+  "Medicine":17925,"Philosophy":23456,"Physics":236732,
+  "Political science":58241,"Psychology":90587,"Sociology":34215
+};
+
+let scene, camera, renderer, raycaster, mouse = new THREE.Vector2();
+let data = null;
+let spherical = {theta: 0.5, phi: 0.7, radius: 40};
+let panOffset = new THREE.Vector3(0, 2, 0);
+let isDragging = false, prevMouse = {x:0,y:0,button:0};
+const S = 12; // XY scale
+const H_SCALE = 12; // height scale
+let glyphSprites = [];
+
+async function init() {
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(0x0a0a0a);
+  camera = new THREE.PerspectiveCamera(55, window.innerWidth/window.innerHeight, 0.1, 500);
+  updateCamera();
+  renderer = new THREE.WebGLRenderer({antialias: true});
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  document.body.appendChild(renderer.domElement);
+
+  scene.add(new THREE.AmbientLight(0xffffff, 0.5));
+  const dir = new THREE.DirectionalLight(0xffffff, 0.5);
+  dir.position.set(8, 20, 12);
+  scene.add(dir);
+
+  const resp = await fetch('data/face1_2d.json');
+  data = await resp.json();
+  data.domIdx = {};
+  data.domains.forEach((d, i) => { d.idx = i; data.domIdx[d.name] = i; });
+
+  // Max papers for normalization
+  const maxP = Math.max(...Object.values(PAPERS));
+  data.domains.forEach(d => {
+    d.papers = PAPERS[d.name] || 10000;
+    d.height = (d.papers / maxP) * H_SCALE;
+    d.weight = Math.sqrt(d.n_glyphs / Math.max(...data.domains.map(dd => dd.n_glyphs)));
+  });
+
+  buildTerrain();
+  buildGlyphsNd2();
+
+  raycaster = new THREE.Raycaster();
+
+  const el = renderer.domElement;
+  el.addEventListener('mousemove', onMouseMove);
+  el.addEventListener('mousedown', e => { isDragging=true; prevMouse={x:e.clientX,y:e.clientY,button:e.button}; });
+  el.addEventListener('mouseup', () => isDragging=false);
+  el.addEventListener('mouseleave', () => { isDragging=false; hideTooltip(); });
+  el.addEventListener('wheel', e => {
+    e.preventDefault();
+    spherical.radius = Math.max(5, Math.min(120, spherical.radius*(1+e.deltaY*0.001)));
+    updateCamera();
+  }, {passive:false});
+  el.addEventListener('contextmenu', e => e.preventDefault());
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth/window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
+
+  animate();
+}
+
+function buildTerrain() {
+  // Build a heightmap terrain where each pixel's height = domain's paper count
+  const size = 30;
+  const res = 250;
+  const geo = new THREE.PlaneGeometry(size, size, res, res);
+  geo.rotateX(-Math.PI / 2);
+  const positions = geo.attributes.position;
+  const colors = new Float32Array(positions.count * 3);
+  const R2 = (size * 0.3) ** 2;
+
+  for (let i = 0; i < positions.count; i++) {
+    const px = positions.getX(i);
+    const pz = positions.getZ(i);
+
+    let bestIdx = 0, bestVal = Infinity;
+    let secondIdx = -1, secondVal = Infinity;
+
+    for (let di = 0; di < data.domains.length; di++) {
+      const d = data.domains[di];
+      const dx = px - d.x * S;
+      const dz = pz - d.y * S;
+      const val = dx*dx + dz*dz - d.weight * d.weight * R2;
+      if (val < bestVal) {
+        secondIdx = bestIdx; secondVal = bestVal;
+        bestIdx = di; bestVal = val;
+      } else if (val < secondVal) {
+        secondIdx = di; secondVal = val;
+      }
+    }
+
+    const d = data.domains[bestIdx];
+    const diff = secondVal - bestVal;
+    const borderZone = R2 * 0.02;
+    const isBorder = diff < borderZone;
+
+    // Height: domain height, with smooth falloff near borders
+    let h = d.height;
+    if (isBorder) {
+      // Blend heights at border: valley between territories
+      const d2 = data.domains[secondIdx];
+      const t = diff / borderZone; // 0 at exact border, 1 at edge of border zone
+      const minH = Math.min(d.height, d2.height) * 0.3; // valley = 30% of lower territory
+      h = minH + (h - minH) * t;
+    }
+
+    positions.setY(i, h);
+
+    // Color
+    const col = new THREE.Color(DC[d.name] || '#888');
+    if (isBorder) {
+      // Bright border
+      colors[i*3] = 0.8; colors[i*3+1] = 0.8; colors[i*3+2] = 0.8;
+    } else {
+      const brightness = 0.3 + (d.height / H_SCALE) * 0.4;
+      colors[i*3] = col.r * brightness;
+      colors[i*3+1] = col.g * brightness;
+      colors[i*3+2] = col.b * brightness;
+    }
+  }
+
+  geo.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+  geo.computeVertexNormals();
+
+  const mat = new THREE.MeshPhongMaterial({
+    vertexColors: true,
+    side: THREE.DoubleSide,
+    flatShading: false
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  scene.add(mesh);
+
+  // Domain labels floating above each territory
+  data.domains.forEach(d => {
+    const canvas = document.createElement('canvas');
+    canvas.width = 512; canvas.height = 96;
+    const c = canvas.getContext('2d');
+    c.fillStyle = DC[d.name] || '#888';
+    c.font = 'bold 32px Segoe UI';
+    c.textAlign = 'center';
+    c.fillText(d.name, 256, 36);
+    c.fillStyle = 'rgba(255,255,255,0.6)';
+    c.font = '22px Segoe UI';
+    c.fillText(Math.round(d.papers/1000) + 'K papers', 256, 66);
+    c.fillText(d.n_glyphs + ' glyphes', 256, 88);
+    const tex = new THREE.CanvasTexture(canvas);
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({map:tex, transparent:true, depthTest:false}));
+    sp.position.set(d.x * S, d.height + 1.5, d.y * S);
+    sp.scale.set(7, 1.3, 1);
+    scene.add(sp);
+  });
+}
+
+function buildGlyphsNd2() {
+  // Place the 21 nd=2 glyphs at the frontier between their 2 domains
+  if (!data.glyphs_nd2) return;
+
+  data.glyphs_nd2.forEach((g, gi) => {
+    const doms = g.doms;
+    if (doms.length !== 2) return;
+
+    const dA = data.domains[data.domIdx[doms[0]]];
+    const dB = data.domains[data.domIdx[doms[1]]];
+
+    // Position = midpoint between the 2 domain centers
+    const mx = (dA.x + dB.x) / 2 * S;
+    const mz = (dA.y + dB.y) / 2 * S;
+    // Height = valley between the two (min of both)
+    const mh = Math.min(dA.height, dB.height) * 0.4;
+
+    // Glyph sprite
+    const canvas = document.createElement('canvas');
+    canvas.width = 64; canvas.height = 64;
+    const c = canvas.getContext('2d');
+    c.fillStyle = '#ffffff';
+    c.font = '44px Segoe UI Symbol, Cambria Math';
+    c.textAlign = 'center';
+    c.textBaseline = 'middle';
+    c.fillText(g.s, 32, 32);
+    const tex = new THREE.CanvasTexture(canvas);
+    const sp = new THREE.Sprite(new THREE.SpriteMaterial({map:tex, transparent:true, depthTest:false}));
+    sp.position.set(mx, mh + 0.5, mz);
+    sp.scale.set(1.2, 1.2, 1);
+    sp.userData = {idx: gi, glyph: g};
+    scene.add(sp);
+    glyphSprites.push(sp);
+
+    // Small connecting lines from glyph to both domain centers
+    const lineGeo = new THREE.BufferGeometry();
+    lineGeo.setAttribute('position', new THREE.Float32BufferAttribute([
+      dA.x*S, dA.height*0.5, dA.y*S,
+      mx, mh+0.5, mz,
+      dB.x*S, dB.height*0.5, dB.y*S
+    ], 3));
+    const lineMat = new THREE.LineBasicMaterial({color: 0xffffff, transparent: true, opacity: 0.25});
+    const line = new THREE.Line(lineGeo, lineMat);
+    scene.add(line);
+  });
+}
+
+function updateCamera() {
+  const r = spherical.radius;
+  camera.position.set(
+    r*Math.sin(spherical.phi)*Math.sin(spherical.theta)+panOffset.x,
+    r*Math.cos(spherical.phi)+panOffset.y,
+    r*Math.sin(spherical.phi)*Math.cos(spherical.theta)+panOffset.z
+  );
+  camera.lookAt(panOffset);
+}
+
+function onMouseMove(e) {
+  mouse.x = (e.clientX/window.innerWidth)*2-1;
+  mouse.y = -(e.clientY/window.innerHeight)*2+1;
+
+  if (isDragging) {
+    const dx=(e.clientX-prevMouse.x)*0.005, dy=(e.clientY-prevMouse.y)*0.005;
+    if (prevMouse.button===2) { panOffset.x-=dx*5; panOffset.y+=dy*5; }
+    else { spherical.theta-=dx; spherical.phi=Math.max(0.1,Math.min(Math.PI-0.1,spherical.phi+dy)); }
+    prevMouse.x=e.clientX; prevMouse.y=e.clientY;
+    updateCamera();
+    return;
+  }
+
+  raycaster.setFromCamera(mouse, camera);
+  const hits = raycaster.intersectObjects(glyphSprites);
+  if (hits.length > 0) {
+    const g = hits[0].object.userData.glyph;
+    showTooltip(e, g.s, g.doms.join(' ↔ '));
+  } else {
+    hideTooltip();
+  }
+}
+
+function showTooltip(e, t, s) {
+  const tt = document.getElementById('tooltip');
+  tt.querySelector('.title').textContent = t;
+  tt.querySelector('.sub').textContent = s;
+  tt.style.display = 'block';
+  posTooltip(e);
+}
+function posTooltip(e) {
+  const tt = document.getElementById('tooltip');
+  let x=e.clientX+16, y=e.clientY-10;
+  if(x+300>window.innerWidth) x=e.clientX-310;
+  tt.style.left=x+'px'; tt.style.top=y+'px';
+}
+function hideTooltip() { document.getElementById('tooltip').style.display='none'; }
+
+function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
+
+init();
+</script>
+</body>
+</html>

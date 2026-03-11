@@ -1,0 +1,819 @@
+{
+  "scan": "muninn_glyphs_f5_f8_f9",
+  "date": "2026-03-10 15:17:01",
+  "total_papers": 833030,
+  "papers_with_glyphs": 833030,
+  "F5_ema": {
+    "desc": "Exponential Moving Average: S_t = α·x_t + (1-α)·S_{t-1}",
+    "required_glyphs": [
+      90,
+      631
+    ],
+    "bonus_glyphs": [
+      4,
+      451
+    ],
+    "total_matches": 277746,
+    "matches_outside_cs_math": 135936,
+    "domain_distribution": {
+      "Physics": 123304,
+      "Materials science": 7185,
+      "Chemistry": 1265,
+      "Economics": 1071,
+      "Geology": 650,
+      "Business": 459,
+      "Environmental science": 441,
+      "Biology": 417,
+      "Psychology": 273,
+      "Geography": 187,
+      "Political science": 154,
+      "Philosophy": 145,
+      "Medicine": 121,
+      "History": 120,
+      "Sociology": 53,
+      "Art": 52,
+      "Engineering": 39
+    },
+    "new_cross_species_concepts": [
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 126513
+      },
+      {
+        "idx": 59231,
+        "name": "Quantum mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 25882
+      },
+      {
+        "idx": 1505,
+        "name": "Particle physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 25733
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 24049
+      },
+      {
+        "idx": 55553,
+        "name": "Astrophysics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 22128
+      },
+      {
+        "idx": 53726,
+        "name": "Theoretical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 21889
+      },
+      {
+        "idx": 61114,
+        "name": "Classical mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 21620
+      },
+      {
+        "idx": 54448,
+        "name": "Mathematical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 20024
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 18523
+      },
+      {
+        "idx": 53322,
+        "name": "Quantum electrodynamics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 15853
+      },
+      {
+        "idx": 13311,
+        "name": "Nuclear physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 15191
+      },
+      {
+        "idx": 4351,
+        "name": "Astronomy",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 12802
+      },
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 11893
+      },
+      {
+        "idx": 55204,
+        "name": "Spin (aerodynamics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 9795
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 8296
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 7534
+      },
+      {
+        "idx": 64792,
+        "name": "Galaxy",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 7373
+      },
+      {
+        "idx": 4947,
+        "name": "Coupling (piping)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 7150
+      },
+      {
+        "idx": 2718,
+        "name": "Quantum chromodynamics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 7069
+      },
+      {
+        "idx": 61325,
+        "name": "Quark",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6648
+      },
+      {
+        "idx": 42689,
+        "name": "Lattice (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6235
+      },
+      {
+        "idx": 12781,
+        "name": "Gauge theory",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6099
+      },
+      {
+        "idx": 12554,
+        "name": "Amplitude",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5488
+      },
+      {
+        "idx": 36751,
+        "name": "Symmetry (geometry)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5260
+      },
+      {
+        "idx": 58501,
+        "name": "Scalar (mathematics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5244
+      },
+      {
+        "idx": 53275,
+        "name": "Computational physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5240
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5189
+      },
+      {
+        "idx": 9249,
+        "name": "Photon",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4897
+      },
+      {
+        "idx": 7934,
+        "name": "Stars",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4833
+      },
+      {
+        "idx": 57114,
+        "name": "Fermion",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4813
+      },
+      {
+        "idx": 3814,
+        "name": "Gravitation",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4742
+      },
+      {
+        "idx": 15153,
+        "name": "Hadron",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4696
+      },
+      {
+        "idx": 281,
+        "name": "Standard Model (mathematical formulation)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4466
+      },
+      {
+        "idx": 57657,
+        "name": "Superconductivity",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 4442
+      },
+      {
+        "idx": 62834,
+        "name": "Anisotropy",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 4019
+      }
+    ],
+    "pioneer_papers": []
+  },
+  "F8_decay_threshold": {
+    "desc": "Co-occurrence decay: w·2^(-1/τ), threshold |Z|≥3",
+    "required_glyphs": [
+      109,
+      631
+    ],
+    "bonus_glyphs": [
+      16,
+      535
+    ],
+    "total_matches": 178801,
+    "matches_outside_cs_math": 88587,
+    "domain_distribution": {
+      "Physics": 80231,
+      "Materials science": 4700,
+      "Economics": 827,
+      "Chemistry": 760,
+      "Geology": 448,
+      "Environmental science": 315,
+      "Biology": 303,
+      "Business": 297,
+      "Psychology": 171,
+      "Geography": 116,
+      "Philosophy": 90,
+      "Political science": 89,
+      "Medicine": 83,
+      "History": 77,
+      "Art": 32,
+      "Engineering": 24,
+      "Sociology": 24
+    },
+    "new_cross_species_concepts": [
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 82296
+      },
+      {
+        "idx": 1505,
+        "name": "Particle physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 17688
+      },
+      {
+        "idx": 59231,
+        "name": "Quantum mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 16381
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 15420
+      },
+      {
+        "idx": 61114,
+        "name": "Classical mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 15236
+      },
+      {
+        "idx": 53726,
+        "name": "Theoretical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 14112
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 13590
+      },
+      {
+        "idx": 55553,
+        "name": "Astrophysics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 12478
+      },
+      {
+        "idx": 54448,
+        "name": "Mathematical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 12325
+      },
+      {
+        "idx": 13311,
+        "name": "Nuclear physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 10582
+      },
+      {
+        "idx": 53322,
+        "name": "Quantum electrodynamics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 9896
+      },
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 7895
+      },
+      {
+        "idx": 4351,
+        "name": "Astronomy",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6497
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6213
+      },
+      {
+        "idx": 55204,
+        "name": "Spin (aerodynamics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6072
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5228
+      },
+      {
+        "idx": 4947,
+        "name": "Coupling (piping)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4697
+      },
+      {
+        "idx": 61325,
+        "name": "Quark",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4220
+      },
+      {
+        "idx": 13458,
+        "name": "Neutrino",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3943
+      },
+      {
+        "idx": 42689,
+        "name": "Lattice (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3853
+      },
+      {
+        "idx": 2718,
+        "name": "Quantum chromodynamics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3802
+      },
+      {
+        "idx": 12781,
+        "name": "Gauge theory",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3640
+      },
+      {
+        "idx": 281,
+        "name": "Standard Model (mathematical formulation)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3622
+      },
+      {
+        "idx": 53275,
+        "name": "Computational physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3611
+      },
+      {
+        "idx": 36751,
+        "name": "Symmetry (geometry)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3453
+      },
+      {
+        "idx": 12554,
+        "name": "Amplitude",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3425
+      },
+      {
+        "idx": 3292,
+        "name": "Optics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3410
+      },
+      {
+        "idx": 58501,
+        "name": "Scalar (mathematics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3346
+      },
+      {
+        "idx": 64792,
+        "name": "Galaxy",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3241
+      },
+      {
+        "idx": 57114,
+        "name": "Fermion",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3178
+      },
+      {
+        "idx": 15153,
+        "name": "Hadron",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3088
+      },
+      {
+        "idx": 3814,
+        "name": "Gravitation",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3041
+      },
+      {
+        "idx": 9249,
+        "name": "Photon",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3016
+      },
+      {
+        "idx": 57657,
+        "name": "Superconductivity",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 3004
+      },
+      {
+        "idx": 2655,
+        "name": "Supersymmetry",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2847
+      },
+      {
+        "idx": 13215,
+        "name": "Physics beyond the Standard Model",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2638
+      }
+    ],
+    "pioneer_papers": []
+  },
+  "F9_novelty": {
+    "desc": "Novelty scoring: Σ𝟙{...} - Σ𝟙{...} with indicator",
+    "required_glyphs": [
+      442,
+      451
+    ],
+    "bonus_glyphs": [
+      16,
+      249,
+      273
+    ],
+    "total_matches": 281320,
+    "matches_outside_cs_math": 71029,
+    "domain_distribution": {
+      "Physics": 62447,
+      "Materials science": 2764,
+      "Economics": 1536,
+      "Business": 723,
+      "Biology": 676,
+      "Chemistry": 618,
+      "Geology": 504,
+      "Psychology": 404,
+      "Environmental science": 276,
+      "Geography": 249,
+      "Political science": 200,
+      "Philosophy": 182,
+      "Medicine": 147,
+      "History": 128,
+      "Sociology": 80,
+      "Art": 65,
+      "Engineering": 30
+    },
+    "new_cross_species_concepts": [
+      {
+        "idx": 3402,
+        "name": "Physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 63293
+      },
+      {
+        "idx": 59231,
+        "name": "Quantum mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 21451
+      },
+      {
+        "idx": 54448,
+        "name": "Mathematical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 16123
+      },
+      {
+        "idx": 53726,
+        "name": "Theoretical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 15944
+      },
+      {
+        "idx": 3481,
+        "name": "Statistical physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 15842
+      },
+      {
+        "idx": 61114,
+        "name": "Classical mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 11680
+      },
+      {
+        "idx": 17861,
+        "name": "Condensed matter physics",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 11600
+      },
+      {
+        "idx": 1505,
+        "name": "Particle physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 7490
+      },
+      {
+        "idx": 53322,
+        "name": "Quantum electrodynamics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 6719
+      },
+      {
+        "idx": 42689,
+        "name": "Lattice (music)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 5286
+      },
+      {
+        "idx": 55204,
+        "name": "Spin (aerodynamics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4696
+      },
+      {
+        "idx": 12781,
+        "name": "Gauge theory",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 4670
+      },
+      {
+        "idx": 14466,
+        "name": "Materials science",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 4603
+      },
+      {
+        "idx": 4947,
+        "name": "Coupling (piping)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3499
+      },
+      {
+        "idx": 55553,
+        "name": "Astrophysics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3397
+      },
+      {
+        "idx": 36751,
+        "name": "Symmetry (geometry)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3361
+      },
+      {
+        "idx": 3352,
+        "name": "Quantum entanglement",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3213
+      },
+      {
+        "idx": 57114,
+        "name": "Fermion",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 3152
+      },
+      {
+        "idx": 7678,
+        "name": "Phase transition",
+        "species": 0,
+        "species_name": "Materials science/Chemistry",
+        "paper_count": 2773
+      },
+      {
+        "idx": 58531,
+        "name": "Mechanics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2689
+      },
+      {
+        "idx": 58501,
+        "name": "Scalar (mathematics)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2643
+      },
+      {
+        "idx": 54936,
+        "name": "Gauge (firearms)",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2613
+      },
+      {
+        "idx": 13311,
+        "name": "Nuclear physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2601
+      },
+      {
+        "idx": 2404,
+        "name": "Quantum field theory",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2588
+      },
+      {
+        "idx": 2718,
+        "name": "Quantum chromodynamics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2495
+      },
+      {
+        "idx": 65000,
+        "name": "Scaling",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2463
+      },
+      {
+        "idx": 60353,
+        "name": "Ground state",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2322
+      },
+      {
+        "idx": 2655,
+        "name": "Supersymmetry",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2313
+      },
+      {
+        "idx": 12554,
+        "name": "Amplitude",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2275
+      },
+      {
+        "idx": 13221,
+        "name": "Atomic physics",
+        "species": 8,
+        "species_name": "Physics/Optics",
+        "paper_count": 2228
+      }
+    ],
+    "pioneer_papers": []
+  }
+}

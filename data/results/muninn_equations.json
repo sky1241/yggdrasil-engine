@@ -1,0 +1,942 @@
+{
+  "scan": "muninn_equations_v1",
+  "date": "2026-03-10 18:16:38",
+  "P1_immunology": {
+    "n_papers": 9,
+    "n_scored_equations": 8,
+    "top_equations": [
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\label{eq_affinity}\n    A_{f_i} = \\frac{A}{\\sum_{i=1}^{N}\\left(d_i + c \\beta_i\\right)}",
+        "type": "equation",
+        "context": "n and antibody. Selection, ordering and subsequent reselection of antibodies or mutated antibodies is solely done on the basis of affinity scores. It acts similar to fitness function in genetic algorithms (GA). Affinities $A_{f_i}$ are application specific but generally can take the following form. "
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\mu_i &=& K_1 e^{-K_2 \\cdot A_{f_i}} \\label{eq_Mu}\\\\\nC_i &=& A_i + \\gamma \\left[\\mu_i \\cdot rand(.)\\right] \\label{eq_Clone}",
+        "type": "eqnarray",
+        "context": "ibody in selected-and-ordered-best-population is then cloned as described in Eq. \\ref{eq_Clone}. These clones are projected within the solution bounds. Affinities are computed again and resulting best clones are selected. Selected best clones then replace the antibodies in initial antibody matrix. \\"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\dot{A_i}  =  \\left[\\alpha_a\\sum_{j=1}^{N_a} m_{ij} a_j\n                     - \\alpha_s\\sum_{j=1}^{N_a} m_{ji} a_j\n                     + \\sum_{k=1}^{N_g} n_{ik} y_k\n                     - \\lambda_i\\right]a_i\n                     \\label{eq_Farmer1}\\\\\n         a_i   =  \\sigma(A_i) = \\frac{1}{\\tau_i+exp(-A_i)}, ~~~\\forall ~i=1,\\dots,N_a. \\label{eq_Farmer2}",
+        "type": "eqnarray",
+        "context": "heory \\cite{Jerne1974} was translated into a computational model by Farmer et al. \\cite{Farmer1986}. Following differential equation was proposed by Farmer et al. for antibody concentration $\\it{A_i}$ with respect to all the stimulatory and suppressive effects as well as the natural death rate. \\\\ \\"
+      },
+      {
+        "paper_id": "1701",
+        "score": 1,
+        "latex": "W_t(\\sigma_i)=\r\n\\half \\left[1+(1-2\\sigma_i)\\tanh \\frac{\\beta}{2} \\sum_\\mu \\zeta_i^\\mu \r\np_\\mu(t)\\right]",
+        "type": "display",
+        "context": "vely very similar to the cumulative distribution function for the Gaussian distribution and easier to work with analytically. For this choice, the probability that helper T cell $i$ {\\it changes} in a single time step its state $\\sigma_i$ at time $t$ (to $1-\\sigma_i$ at time $t+\\Delta$) is $$ W_t(\\s"
+      },
+      {
+        "paper_id": "1903",
+        "score": 1,
+        "latex": "&(1-2^{-n/2})\\sum_{i=n/2}^{n} E(f_i)\\geq \\Omega(1) \\sum_{i=n/2-\\epsilon \nn}^{n/2-\\epsilon n/2} \n\\left( in^{1/2-\\epsilon-i/(2n)}+n-i)\\right)\\\\ &\\geq \\Omega(1) \n\\sum_{i=n/2-\\epsilon \nn}^{n/2-\\epsilon n/2} \n\\left( in^{1/4-\\epsilon}\\right)= \\Omega(n^{9/4-\\epsilon}).\n% \\Omega(1)\\left( \\sum_{i=1}^{n/2-\\epsilon n} n-i+ \\sum_{i=1}^{n/2-\\epsilon n} \n% in^{1/2+\\epsilon-i/(2n)}\\right)= ??",
+        "type": "align*",
+        "context": " have $E(f_i) = \\frac{i}{n} \\left( n^{HD/n}+ E(f_i)\\right) + \\frac{1}{n} \\cdot 1 +\\frac{n-i-1}{n} \\left( 1+ E(f_i)\\right)$. Replacing $HD$ with $(n-i)/2-\\epsilon n$ and then solving this equation for $E(f_i)$ gives us $E(f_i)=i n^{1/2-\\epsilon-i/(2n)}+n-i$. Then, we get the expected runtime of \\begi"
+      },
+      {
+        "paper_id": "1907",
+        "score": 1,
+        "latex": "\\label{eq:GLmodel}\n\\begin{split}\n\\mathcal{F}&=  \\sum_i \\frac{\\lambda_i}{2}\\int {dx dy \\,C_i(x,y)\\left[z(x,y)-z_i^{(0)}\\right]^2} \\\\\n&+\\frac{1}{2}\\int {dx dy\\, \\left[ \\gamma (\\nabla z(x,y))^2 + \\kappa (\\nabla^2 z(x,y))^2 \\right]},\n\\end{split}",
+        "type": "equation",
+        "context": " Ginzburg-Landau model for the mechanical deformation of the T-cell membrane during synapse formation. The model assumes the presence of several receptor-ligand pairs, indexed by $i$ (e.g. the TCR-pMHC pairs is one these pairs). The free energy $\\mathcal{F}$ for the membrane system is estimated as: "
+      },
+      {
+        "paper_id": "1907",
+        "score": 1,
+        "latex": "V(t)&=&V(t=0) e^{-ct} +\\frac{cV(t=0)}{c-\\nu} \\times \\\\ \\nonumber\n&&\\left[ \\frac{cV(t=0)}{c-\\nu} \\{ e^{-\\nu t}-e^{-c t} \\} -\\nu t e^{-c t} \\right].",
+        "type": "eqnarray",
+        "context": "\\epsilon_{\\rm RT}<1$ are efficacies of RT and PI drugs. The total viral populations is held constant $V_{\\rm NI}+V_{\\rm I}=V=\\rm{const}$. For $\\epsilon_{\\rm PI}=1$ and $\\epsilon_{\\rm RT}=1$, assuming $T={\\rm const}$, the total viral load will decay according to~\\cite{PerelsonRibeiro, Perelson2002}: "
+      },
+      {
+        "paper_id": "1907",
+        "score": 1,
+        "latex": "\\label{Pcoal}\n& &P\\left[ \\textrm{1st coalescence at time }t \\right]= \\left[ 1-P_c\\right]^{t-1} P_c \\\\ \\nonumber\n&&\\approx P_c e^{-P_c t} = {{k}\\choose{2}} \\frac{1}{N}e^{-{{k}\\choose{2}} t/N}.",
+        "type": "eqnarray",
+        "context": "-P_{\\rm diff} = {{k}\\choose{2}} N^{-1}$. If $N\\gg k$ then the probability that more than two cells share the same parent in a single generation can be neglected and we will assume that in each generation only two cells will share a parent. The distribution of times until the first coalescence is: \\b"
+      }
+    ]
+  },
+  "P2_cascades": {
+    "n_papers": 31,
+    "n_scored_equations": 23,
+    "top_equations": [
+      {
+        "paper_id": "0910",
+        "score": 2,
+        "latex": "\\frac{k_{cat}[count/sec] * Enzyme[count] * Substrate[count]}{K_M[count] + Substrate[count]}",
+        "type": "display",
+        "context": "for code), which we analyse with the Bio-PEPA Eclipse Plug-in \\cite{BioPEPA}. We report the results of stochastic simulations using the Gibson-Bruck algorithm \\cite{Gibson00,Gillespie07}. Each reaction is assumed to follow Michaelis-Menten kinetics, resulting in the following propensity function: $$"
+      },
+      {
+        "paper_id": "0104",
+        "score": 1,
+        "latex": "d_0(t+1) = d_0(t) + 1 - 2\\delta\\frac{d_0(t)}{t}.\n\\label{degree1}",
+        "type": "equation",
+        "context": "t)$ be the expected number of vertices with degree~$k$ at time~$t$. The number of isolated vertices, $d_0(t)$, will increase by one at each time step, but decrease on average by $2\\delta d_0(t)/t$, the probability that a degree zero vertex is randomly chosen as one of the ends of a new edge. Thus \\b"
+      },
+      {
+        "paper_id": "0104",
+        "score": 1,
+        "latex": "d_k(t+1) = d_k(t) + 2\\delta\\frac{d_{k-1}(t)}{t} - 2\\delta\\frac{d_k(t)}{t}.\n\\label{degree2}",
+        "type": "equation",
+        "context": "arly, the expected number of degree~$k$ vertices ($k>0$) will increase on average by an amount proportional to the probability that a degree~$k-1$ vertex is chosen for attachment by a new edge, and decrease by an amount proportional to the probability that a degree~$k$ vertex is chosen. This gives \\"
+      },
+      {
+        "paper_id": "0207",
+        "score": 1,
+        "latex": "\\frac{[ATP]_{eq}}{[ADP]_{eq}[Pi]_{eq}} =\n\t        \\frac{d_1q_1^od_2q_2^o}{a_1^ok_1a_2k_2}\n               = e^{-\\Delta G^o/RT},",
+        "type": "equation",
+        "context": "e{0.5cm} q_2 = q_2^o[Pi]. \\end{equation} For simplicity we have assumed that these rate constants are pseudo-first order, which implies that ATP, ADP, and Pi are sufficiently below the saturation levels for their respective enzymes. The equilibrium constant for ATP hydrolysis therefore is \\begin{equ"
+      },
+      {
+        "paper_id": "0207",
+        "score": 1,
+        "latex": "\\mu = \\frac{d_2q_2}{k_2a_2}.",
+        "type": "equation",
+        "context": " RT\\ln\\gamma = \\Delta G^o+ RT\\ln\\frac{[ATP]}{[ADP][Pi]} = \\Delta G \\end{equation} where $RT=0.6kcal/mol$ at room temperature. We shall also introduce an equilibrium constant for the dephosphorylation reaction catalyzed by phosphatase under intracellular phosphate concentration: \\begin{equation} \\mu "
+      },
+      {
+        "paper_id": "0207",
+        "score": 1,
+        "latex": "W^* = \\frac{a_1k_1}{a_1k_1+d_1q_1}\n           = \\frac{d_2q_2}{a_2k_2+d_2q_2}\n           = \\frac{\\mu}{1+\\mu}",
+        "type": "equation",
+        "context": "{GK}, and $\\mu=10^{-3}$, i.e., the dephosphorylation reaction is highly irreversible \\cite{Gresser}. It is seen that the quality of the amplifier is directly related to the phosphorylation potential. In fact, when $\\gamma=1$, i.e., ATP $\\rightleftharpoons$ ADP+Pi are in chemical equilibrium, \\begin{"
+      },
+      {
+        "paper_id": "0207",
+        "score": 1,
+        "latex": "n_v=\\left(\\frac{dW^*}{d\\ln\\sigma}\\right)_{W^*=0.5}\n\t \\approx \\frac{1}{4}\n\t\\left(\\mu+\\frac{1}{\\mu\\gamma}+K_1+K_2\\right)^{-1}\n\\label{nv}",
+        "type": "equation",
+        "context": "previous model \\cite{GK} predicts an indeterminate $\\frac{0}{0}$. The steepness of the curves in Fig. 1 can also be characterized by the slope at its mid-point, known as Hill coefficient in the theory of allosteric cooperativity \\cite{Str}. It can be obtained analytically from Eq. \\ref{sigma}: \\begi"
+      },
+      {
+        "paper_id": "0207",
+        "score": 1,
+        "latex": "\\frac{d[W]}{dt} &=& -a_1[W][E_1]+d_1[WE_1]+k_2[W^*E_2]-q_2[W][E_2]\n\\nonumber\\\\[10pt]\n  \\frac{d[WE_1]}{dt} &=& a_1[W][E_1]-(d_1+k_1)[WE_1]+q_1[W^*][E_1]\n\\nonumber\\\\\n\\label{mastereq}\\\\[-5pt]\n \\frac{d[W^*]}{dt} &=& -a_2[W^*][E_2]+d_2[W^*E_2]+k_1[WE_1]-q_1[W^*][E_1]\n\\nonumber\\\\[10pt]\n \\frac{d[W^*E_2]}{dt} &=& a_2[W^*][E_2]-(d_2+k_2)[W^*E_2]+q_2[W][E_2].\n\\nonumber",
+        "type": "eqnarray",
+        "context": "_2^o$, no matter how small it is. In fact, Eq. \\ref{eq4} could be used to estimate the unmeasurable $q_2^o$ if all the other rate constants are known. \\section{Reversible Kinetic Model for Covalent Modification} The kinetic equations for the reaction cycle in (\\ref{rxn}) are straightforward \\begin{e"
+      },
+      {
+        "paper_id": "0601",
+        "score": 1,
+        "latex": "\\label{MM}\n\\frac{{d\\left[ S \\right]}}\n{{dt}} \\approx  - \\frac{{k_3 k_1 \\left[ E \\right]_0 \\left[ S \\right]}}\n{{k_1 \\left[ S \\right] + \\left( {k_2  + k_3 } \\right)}} =  - \\frac{{k_3 \\left[ E \\right]_0 \\left[ S \\right]}}\n{{K_m  + \\left[ S \\right]}}",
+        "type": "equation",
+        "context": "k_1}{\\leftrightarrows}} ES \\stackrel{k_3}{\\longrightarrow} E + R \\] and we use the Michaelis-Menten equations with the usual quasi-steady state assumption (QSSA, see, e.g. ref. \\cite{schnell} and references therein), so that the substrate consumption is described by the single differential equation "
+      },
+      {
+        "paper_id": "0601",
+        "score": 1,
+        "latex": "\\label{diffsys}\n\\nonumber\n&& \\frac{d\\left[ A \\right]}{dt} = - k_ +  \\left[ A \\right]\\left[ B \\right] + k_ -  \\left[ AB \\right] \\\\\n&& \\frac{d\\left[ B \\right]}{dt} = - k_ +  \\left[ A \\right]\\left[ B \\right] + k_ -  \\left[ AB \\right] \\\\\n\\nonumber\n&& \\frac{d\\left[ AB \\right]}{dt} = k_ +  \\left[ A \\right]\\left[ B \\right] - k_ -  \\left[ AB \\right]",
+        "type": "eqnarray",
+        "context": "tes is: \\begin{equation} \\label{prob2} \\nu_A P_n = \\nu_A \\sum_{l=n}^{N} \\binom{N}{l} p^l (1-p)^{N-l} \\end{equation} Every single modification reaction can be represented as a generic bimolecular reaction, $A+B \\underset{k_-}{\\overset{k_-}{\\leftrightarrows}} AB$, so that the following equations hold "
+      },
+      {
+        "paper_id": "0601",
+        "score": 1,
+        "latex": "\\frac{dy_1}{dt} = \\frac{g(S(x)) - (y_1 + y_2)}{\\tau_e} \\qquad\n\\mbox{and} \\qquad\n\\frac{dy_2}{dt} = \\frac{g(S(x)) - y_2}{\\tau_a}.\n\\label{rom81}",
+        "type": "equation",
+        "context": "oldy) \\left[ p^+ - p^- \\right]. \\label{rom302} \\end{equation} % The essential components of the internal dynamics in the bacterial context are fast excitation, followed by slower adaptation and return to the basal turning rate, and these aspects are captured in the system \\cite{Othmer:1998:OCS} % \\b"
+      },
+      {
+        "paper_id": "0704",
+        "score": 1,
+        "latex": "\\label{eqn:ODE}\n\\frac{d\\s_0}{dt}&=-k_{\\mbox{on}_0}\\s_0 \\e +k_{\\mbox{off}_0}\\es_0+l_{\\mbox{cat}_0}\\fs_1  \\notag \\\\\n\\frac{d\\s_i}{dt}&=-k_{\\mbox{on}_i}\\s_i \\e +k_{\\mbox{off}_i}\\es_i+k_{\\mbox{cat}_{i-1}}\\es_{i-1}-l_{\\mbox{on}_{i-1}}\\s_i \\f +l_{\\mbox{off}_{i-1}}\\fs_i+l_{\\mbox{cat}_{i}}\\fs_{i+1}, \\ \\ i=1, \\dots, n-1 \\notag \\\\\n\\frac{d \\es_j}{dt}&=k_{\\mbox{on}_j} \\s_j \\e-(k_{\\mbox{off}_j}+k_{\\mbox{cat}_j})\\es_j,\\ \\  j=0,\\dots, n-1  \\\\\n\\frac{d \\fs_k}{dt}&=l_{\\mbox{on}_{k-1}}\\s_{k} \\f-(l_{\\mbox{off}_{k-1}",
+        "type": "align",
+        "context": " \\end{align*} where $k_{\\mbox{on}_0}$, etc., are kinetic parameters for binding and unbinding, $ES_0$ denotes the complex consisting of the enzyme $E$ and the substrate $S_0$, and so forth. These reactions can be modeled by $3n+3$ differential-algebraic equations according to mass action kinetics: \\"
+      },
+      {
+        "paper_id": "0812",
+        "score": 1,
+        "latex": "o_&1R#P%BUoCMPDnbMbUo_7qTo*=jYo^_YHo()bO\"7u*S\nnb)PQp&4O_pAad`p&4O]p&4U_p$qbSp\\jl;~>\nrU0jVnF5lEn,;\\En,DeVmeuV<mf2bVmeuYRme-&ImeuYRn,;\\Qn,;bNmK2kHnGVfVnE]B4dXH7f\nE.*\"W8SD=:Fa\\q1GC#BrNF[$aR!a@2NbV$?1/^,#9ik%S85r8_;I!I9E-?PRI#!Q9N/s'ZO-,H_\nPEM/oOH#EbP*CufOHPouTVnO`So^QnSX,V2T:D16QBdc)Pa@VqNfK6cP)PK_Mj0QqPa7PsOcPcl\nP`CukPaI]$Q'IMuP(npQNfB'[Pa%PpPE:]aNf]9_N/a!\\OdDQ)SX>_5R['M.R$O)'R$a2,OGf0Z\nQ'I;^L5LqHMh[%FO,AXCJUoh6L4t;1I\"$HpKS+r0ItE#lCgL4B3$'k$)\\aG8(`XVE7l`k987#Ln\n:iV1jA93<__!11Cb/;`snGVn_nac8BoCDJBq",
+        "type": "display",
+        "context": "I8SJ<ZjaLPD1<;F!KV8Q/`'@p<SeC3+obO-llL['mEZ _o0R:b/VNFa2cEHrlfi6ccsb^bfn8Sd*gM!eBlarf$W!mcI1=qdFQmsdF6Ikd`p%`e()mjcd'_` f@e^+f$M^dd*L1de'ZXqe'ut#eCiEqd*Bn[bg+\\ef?DakbL\"Vad*^(^d*0_]eBujqd+6^mfZ_dj dE^1gd*g.Zc-\"Pec,\\,Xd`fqTaN+P1bf\\)M`r3q8`l,g0_8*q)^U^t_Y+h#4GZ-@`0I@tu/1<&& 2HNOMBNf@l?!r)DB68]^P/-MTjj2"
+      },
+      {
+        "paper_id": "0812",
+        "score": 1,
+        "latex": "\\label{eq:mapk-model}\n\\begin{aligned}\n\\dot x_{11} &= v_1 - v_2 \\\\\n\\dot x_{21} &= v_3 + v_5 - v_4 - v_6 \\\\\n\\dot x_{22} &= v_4 - v_5 \\\\\n\\dot x_{31} &= v_7 +  v_9 - v_8 - v_{10} \\\\\n\\dot x_{32} &= v_8 - v_9.\n\\end{aligned}",
+        "type": "equation",
+        "context": "2}}$ \\\\[0.1cm] \\hline $v_{10}$ & $V_{10}\\frac{x_{31}}{K_{m10}+x_{31}}$ \\\\[0.1cm] \\hline \\end{tabular} % \\end{center} \\label{tab:mapk-reaction-rates} \\end{table} Using the reaction rates from Table~\\ref{tab:mapk-reaction-rates}, the model can be written as a system of five ODEs with 20 parameters: \\b"
+      },
+      {
+        "paper_id": "0903",
+        "score": 1,
+        "latex": "% \\frac{D_{\\sss(1)}+\\cdots+D_{\\sss(\\olmn)}}{n}\\leq\\frac{D_{1}+\r\n% =\\Op(\\olmn/n).\r\n%",
+        "type": "display",
+        "context": "expec_n[{\\overline X}_{i}]=\\frac1{{\\overline L}_n} % \\sum_{j=\\olmn+1}^n D_{\\sss(j)}(D_{\\sss(j)}-1) % \\le % \\frac{L_n}{{\\overline L}_n} % \\frac1{L_n} % \\sum_{j=1}^n D_{\\sss(j)}(D_{\\sss(j)}-1), % $$ %where % $$ % {\\overline L}_n=D_{\\sss(\\olmn+1)}+\\cdots+D_{\\sss(n)}=L_n- (D_{ % $$ %since % $$ % \\frac{D"
+      },
+      {
+        "paper_id": "0903",
+        "score": 1,
+        "latex": "\\label{Gm-induc} \\prob(G_{m+1}=k)=\\frac\r\n{d_{m+1}}{s_{m+1}} \\prob(G_{m}=k-1)+ \\biggl( 1-\\frac{d_{m+1}}{s_{m+1}}\r\n\\biggr)\\prob(G_{m}=k).",
+        "type": "equation",
+        "context": " one to die, must have been a vertex from generation $k-1$. On the other hand, if a uniform pick is conditioned on not taking one of the $d_{m+1}$ newly added vertices, then this choice must have been a uniform vertex from generation $k$. Hence, we obtain, for $1\\le k \\le m,$ % %e4.7 ### % \\begin{eq"
+      },
+      {
+        "paper_id": "0903",
+        "score": 1,
+        "latex": "\\label{BT-expec} \\expec_n[B_{R_2}]=\\sum_{i=2}^n\r\n\\frac{D_i(D_i-1)}{L_n-D_1}.",
+        "type": "equation",
+        "context": "m-exchange}, % %e7.6 ### % \\begin{equation} \\label{Artbd2} \\prob_n(R_m>m, R_{m-1}=m-1) \\leq \\frac{C}{n}D_1+\\frac{C(m-2)}{n}\\expec_n[B_{R_2}]. \\end{equation} % The first term converges to 0 in probability, while the expectation in the second term, by~(\\ref{BT-law}), equals % %e7.7 ### % \\begin{equati"
+      },
+      {
+        "paper_id": "0903",
+        "score": 1,
+        "latex": "&&\\prob(|G_m-\\hatG_m|\\geq\\kappa_n )\\nonumber\\\\\r\n&&\\qquad\\leq\r\n\\kappa_n^{-1} \\expec[|G_m-\\hatG_m|] \\leq\\kappa_n^{-1} \\expec\r\n\\Biggl[\\sum\r\n_{i=1}^m |I_i-\\hatI_i|\\Biggr]\\nonumber\\\\\r\n&&\\qquad=\\kappa_n^{-1} \\sum_{i=2}^{m} \\expec[|\\hat\r\n{Q}_i-Q_i|]\\nonumber\\\\\r\n&&\\qquad=\\kappa_n^{-1} \\sum_{i=2}^{m} \\expec\r\n\\biggl[B_i\\frac{|S_i-\\hatS_i|}{S_i\\hatS_i} \\biggr]\\nonumber\\\\ &&\\qquad\\leq\\kappa\r\n_n^{-1} \\sum\r\n_{i=2}^{m} \\expec\\biggl[B_i\\frac{D_1+(i-1)}{S_i\\hatS_i} \\biggr]\\nonumber\\\\\r\n&&\\qquad=\\kappa_n^{-1} \\sum",
+        "type": "eqnarray",
+        "context": "ng argument, we can couple $\\hatI_i$ and $I_i$ in such a way that $\\prob (\\hatI_i\\neq I_i|\\{B_i\\}_{i=2}^m)=|\\hat{Q}_i-Q_i|.$ The CLT for $\\hatG_m$ follows because, also in the exchangeable setting, $\\hatI_2,\\ldots,\\hatI_m$ are independent and, similar to~\\eqref{bd-GmhatGm}, % %e6.10 ### % \\begin{eqn"
+      },
+      {
+        "paper_id": "0907",
+        "score": 1,
+        "latex": "p_2(\\sigma,t|\\sigma,0)=\\frac{\\sigma-e^{D t/\\sigma^2(1+h\n     \\sigma)^2}\\sqrt{\\pi D t}(1+h \\sigma){\\rm\n     erfc}\\left((1+h\\sigma)\\sqrt{\\frac{D t}{\\sigma^2}}\\right)}{4 \\pi\n   \\sigma^3 \\sqrt{\\pi D t}},\n\\label{eq:rebind}",
+        "type": "equation",
+        "context": "lecule and the enzyme molecule that has just modified it. The rebinding probability can be obtained from the Green's function $p_2({\\bf r},t|{\\bf r}_0,t_0)$. The probability that a particle that starts at the origin given by $|{\\bf r}|=\\sigma$ returns to the origin at a later time $t$, is given by \\"
+      },
+      {
+        "paper_id": "0907",
+        "score": 1,
+        "latex": "{\\bf R} &\\equiv& \\frac{D_B {\\bf r}_A + D_A {\\bf r}_B}{D_A + D_B},\\label{eq:RAB}\\\\\n{\\bf r} &\\equiv& {\\bf r}_B - {\\bf r}_A \\label{eq:rAB},",
+        "type": "eqnarray",
+        "context": " to solve this equation for two particles that can react with each other and diffuse within a protective domain. To our knowledge, it is impossible to solve this equation and obtain the Green's function directly. We therefore apply the following tricks. First, we make a coordinate transformation \\be"
+      }
+    ]
+  },
+  "P3_fitness": {
+    "n_papers": 30,
+    "n_scored_equations": 225,
+    "top_equations": [
+      {
+        "paper_id": "0311",
+        "score": 3,
+        "latex": "\\begin{split}\n  E(x^*) + \\cO \\Big (\\frac{1}{N} \\Big ) \n & = \\sum_{i \\in S} E_i w_i^2 \\leqslant E(x^*) \n   - \\varepsilon  \\!\\!\\!\\!\\!\\!\\!\\!\n   \\sum_{\\substack{i\\in S \\\\\n         \\lvert i/N - x^* \\rvert \\geqslant \\delta(\\varepsilon)}}\n   \\!\\!\\!\\!\\!\\!\\!\\!\\! w_i^2 + \\cO \\Big (\\frac{1}{N} \\Big ) \\\\\n  & \\leqslant E(x^*) + \\cO \\Big (\\frac{1}{N} \\Big )\\,.\n\\end{split}",
+        "type": "bracket",
+        "context": "\\sqrt{\\varepsilon/C}$, therefore, \\[ E(x) \\leqslant \\begin{cases} E(x^*), & \\lvert x - x^* \\rvert < \\delta(\\varepsilon) \\\\ E(x^*) - \\varepsilon, & \\lvert x - x^* \\rvert \\geqslant\\delta(\\varepsilon). \\end{cases} \\] Together with \\eref{contapproxe} and \\eref{maxim}, this implies \\[ \\begin{split} E(x^*"
+      },
+      {
+        "paper_id": "0311",
+        "score": 3,
+        "latex": "\\label{eq:maxim}\n\\begin{split}\n  E(x^*) - \\frac{C'}{N} \n & \\leqslant \\lambdamax = \n   \\sum_{i,j \\in S} w_i F_{ij} w_j + \\sum_{i \\in S} E_i w_i^2 \\\\ \n & \\leqslant \\sum_{i \\in S} E_i w_i^2 \\leqslant \\max_{i \\in S} E_i\n   = E(x^*) + \\cO \\Big ( \\frac{1}{N} \\Big ) \\,.\n\\end{split}",
+        "type": "equation",
+        "context": "ribution $($of \\eref{a} and Prop.~$\\ref{prop:a})$. \\end{theorem} \\begin{proof} Recall first that the ($L^2$) maximizer of \\eref{RR} is given by $w = (\\sqrt{a_i})_{i \\in S}$ (cf.\\ \\eref{a}). Hence, by Theorem \\ref{theo:main}, the negative semidefiniteness of $F$, and \\eref{contapproxe}, we have \\begi"
+      },
+      {
+        "paper_id": "0601",
+        "score": 3,
+        "latex": "\\Delta H(\\bc) = \\sum_i \\Delta H(c_i) = \\sum_i c_i w_i.\n\\label{eq:Sippl2}",
+        "type": "equation",
+        "context": "_i}]}. \\label{eq:Sippl1} \\end{equation} Correspondingly, to calculate the effective potential energy $\\Delta H(\\bc)$ of the system, one often assumes that $\\Delta H(\\bc)$ can be decomposed into various basic energetic terms. For a linear potential function, $\\Delta H(\\bc)$ can be calculated as: \\beg"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "\\delta \\equiv \n                     \\sum_{i ({\\rm cells})} \\, \\, \\, \n                     \\frac{|I_{{\\rm ref},i} - I_{{\\rm mod},i}|}\n                      {\\max(I_{{\\rm ref},i},I_{{\\rm mod},i})}",
+        "type": "equation",
+        "context": "uming a mass-to-light ratio for the particles (or treating it as another free parameter) or by normalizing the intensities. Here the intensities are normalized to the total intensity of the whole grid. The quality can be measured by the relative deviation $\\delta$ of the intensities in both maps: \\b"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "\\label{Z0}\nZ = \\int_0^\\infty \\prod _i dx_i ~ \\delta \\left ( Q_0 N - \\sum_i b_i x_i\n\\right ) \\left ( QN - \\sum_i x_i(1-b_i)\n\\right ) \\mbox{e}^{- \\beta {\\mathcal H} \n\\left ( {\\mathbf x} \\right ) }",
+        "type": "equation",
+        "context": "lowing the standard prescription of performing quenched averages on extensive quantities only \\cite{MPV}, we define the average free-energy density $f$ as % \\begin{equation}\\label{f0} - \\beta f = \\lim_{N \\rightarrow \\infty} \\frac{1}{N} \\left \\langle \\ln Z \\right \\rangle \\end{equation} % where % \\beg"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "\\label{Gibbs}\n{\\mathcal W} \\left ( {\\mathbf x } \\right ) = \\frac{1}{Z} \n~\\delta \n\\left (Q_0 N - \\sum_i x_i \\right ) \n~\\delta \n\\left (Q N - \\sum_i (1-b_i) x_i \\right )\\; \\exp \\left [ - \\beta\n{\\mathcal H} \\left ( {\\mathbf x} \\right ) \\right ] .",
+        "type": "equation",
+        "context": "easure the overlap between a pair of different equilibrium states ${\\bf x}^\\rho$ and ${\\bf x}^\\delta$, and the overlap of an equilibrium state ${\\bf x}^\\rho$ with itself, respectively. Here, $\\langle \\ldots \\rangle_T$ stands for a thermal average taken with the Gibbs probability distribution % \\begi"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "{\\cal H}_{aux} \\left ( {\\bf x} \\right )  =  {\\cal H} \\left ( {\\bf x} \\right )\n+ h \\sum_k b_k \\delta \\left ( x_k - x \\right )  ,",
+        "type": "equation",
+        "context": "al W} \\left ( {\\mathbf x } \\right )$ given by Eq.\\ (\\ref{Gibbs}). As all non-vanishing species concentrations are equivalent we can write ${\\mathcal{P} }_k \\left ( x \\right ) = {\\mathcal{P} }\\left ( x \\right ) \\forall k$. Hence to evaluate Eq.\\ (\\ref{prob_x}) we introduce the auxiliary energy % \\beg"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "\\label{f_gen}\n-\\beta f &=& \\lim_{n \\rightarrow 0} \\mbox{extr} \\frac{1}{n} \\bigg\\{\n\\sum_{\\rho}\\hat{p}^\\rho p^\\rho - \\frac{\\beta u}{2} \\sum_\\rho p^\\rho + \\frac{\\beta^2}{4}\n\\sum_\\rho (p^\\rho)^2 + \\sum_{\\rho<\\delta} \\hat{q}^{\\rho\\delta} q^{\\rho\\delta} \n+ \\sum_{\\rho} Q \\hat{Q}^\\rho \\nonumber\\\\ \n&&+ \\frac{\\beta^2}{2} \\sum_{\\rho<\\delta}\n(q^{\\rho\\delta})^2+ \\sum_{\\rho} Q_0 \\hat{R}^\\rho  + \n\\sum_{b=0}^1 P_b \\ln G_0(b, \\hat{p}^\\rho,\\hat{q}^{\\rho\\delta},\\hat{R}^\\rho,\\hat{Q}^\\rho)\n\\bigg\\}",
+        "type": "eqnarray",
+        "context": "the identity % \\begin{equation} \\langle \\ln Z \\rangle = \\lim_{n \\rightarrow 0} \\frac{1}{n} \\ln \\langle Z^n \\rangle \\end{equation} % we first calculate $\\langle Z^n \\rangle$ for {\\it integer} $n$, i.e., $Z^n=\\prod_{\\rho=1}^{n} Z^\\rho$, and then analytically continue to $n=0$. The final result is % \\b"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "\\label{G0}\nG_0 &=&  \\int_{0}^{\\infty} \\prod_\\rho\ndx^\\rho \\exp \\bigg\\{ -b \\sum_\\rho \\hat{p}^\\rho (x^\\rho)^2 - b \\sum_{\\rho<\\delta}\n\\hat{q}^{\\rho\\delta} x^\\rho x^\\delta  \\nonumber\\\\\n&& - b \\sum_\\rho\\hat{R}^\\rho x^\\rho - \\left ( 1-b \\right ) \n\\sum_\\rho \\hat{Q}^\\rho x^\\rho  \\bigg\\} .",
+        "type": "eqnarray",
+        "context": "\\rho\\delta} + \\sum_{\\rho} Q \\hat{Q}^\\rho \\nonumber\\\\ &&+ \\frac{\\beta^2}{2} \\sum_{\\rho<\\delta} (q^{\\rho\\delta})^2+ \\sum_{\\rho} Q_0 \\hat{R}^\\rho + \\sum_{b=0}^1 P_b \\ln G_0(b, \\hat{p}^\\rho,\\hat{q}^{\\rho\\delta},\\hat{R}^\\rho,\\hat{Q}^\\rho) \\bigg\\} \\end{eqnarray} % where $P_0 = a$, $P_1 = 1-a$, and \\begin{"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "q^{\\rho\\delta} & = & \\frac{1}{N}  \\sum_i  \\langle \\langle x_i^\\rho x_i^\\delta  \n\\rangle_T \\rangle         ~~~~~~~\\rho<\\delta\\\\\np^{\\rho} &  = & \\frac{1}{N} \\sum_i \\langle \\langle \\left ( x_i^\\rho \\right )^2  \n\\rangle_T \\rangle",
+        "type": "eqnarray",
+        "context": "rray} We note that while we have calculated the average over the couplings $J_{ij}$ explicitly, we have used the self-averaging property $\\frac{1}{N} \\sum_i \\ln G_0 (b_i) = \\sum_b P_b \\ln G_0 (b)$ to eliminate the site dependence of the $b_i$ variables. The relevant physical order parameters are % \\"
+      },
+      {
+        "paper_id": "0104",
+        "score": 2,
+        "latex": "p_{1}(x) = \\max \\left\\{ 0, \\  100 + \\sum_{s \\in S \\mid x \\in s} \\mu(s)\n\\right\\}, \\label{eqn:pothole-fitness}",
+        "type": "equation",
+        "context": "is defined in Table~\\ref{table:p1}. That table lists all of the schemata that contribute to an individual's fitness, along with their fitness contributions; these schemata are called the function's \\emph{significant schemata}. The fitness $p_{1}(x)$ of a string $x \\in \\{0, 1\\}^{64}$ is given by % \\b"
+      },
+      {
+        "paper_id": "0207",
+        "score": 2,
+        "latex": "V(t) = C_1 \\sum_i (\\Delta f_i)^2",
+        "type": "equation",
+        "context": "ot less crowded and making the comparison with fig.\\ref{fig-4} more convenient.} \\label{fig-5} \\end{figure} \\subsection{Volatility and Coherence} Borrowing the concept of ``volatility'' in financial markets \\cite{stanley,bouchaud}, we now define the ``{\\it volatility}'' in the eco-system by \\begin{e"
+      },
+      {
+        "paper_id": "0207",
+        "score": 2,
+        "latex": "C(t) = C_2 \\sum_{i < j}  (\\Delta f_i)(\\Delta f_j)",
+        "type": "equation",
+        "context": "subsection{Volatility and Coherence} Borrowing the concept of ``volatility'' in financial markets \\cite{stanley,bouchaud}, we now define the ``{\\it volatility}'' in the eco-system by \\begin{equation} V(t) = C_1 \\sum_i (\\Delta f_i)^2 \\end{equation} and the time-dependent correlation function by \\begi"
+      },
+      {
+        "paper_id": "0207",
+        "score": 2,
+        "latex": "\\label{qdef}\nq_{k,k'}=\\frac{1}{N} \\sum_{i,j} \\delta_{k,k_i} c_{ij} \\delta_{k',k_j} \\ ,",
+        "type": "equation",
+        "context": "pending only on the connectivities of the nodes at either end, the evolutionary dynamics of the network can be represented in terms of the link connectivity distribution $q_{k,k'}$. This distribution is defined as the fraction of network links that connect vertices of connectivities $k$ and $k'$, \\b"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "0 \\leqslant \\varepsilon \n  \\sum_{\\substack{i \\in S \\\\  \n  \\lvert i/N - x^* \\rvert \\geqslant \\sqrt{\\varepsilon/C}}}\n  \\!\\!\\!\\!\\!\\! w_i^2\n  \\leqslant \\gamma/N",
+        "type": "bracket",
+        "context": "varepsilon \\!\\!\\!\\!\\!\\!\\!\\! \\sum_{\\substack{i\\in S \\\\ \\lvert i/N - x^* \\rvert \\geqslant \\delta(\\varepsilon)}} \\!\\!\\!\\!\\!\\!\\!\\!\\! w_i^2 + \\cO \\Big (\\frac{1}{N} \\Big ) \\\\ & \\leqslant E(x^*) + \\cO \\Big (\\frac{1}{N} \\Big )\\,. \\end{split} \\] Hence, for some positive constant $\\gamma$, \\[ 0 \\leqslant \\var"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "1mm]\n  \\label{eq:mlump}\n  \\sum_{\\tau \\in \\Phi_m} \\cM_{\\sigma,\\tau} & = & \\M_{\\varphi(\\sigma),m}, \\quad\n                     \\text{for all} \\; \\sigma \\in \\fS, \\; m \\in S\\,,\n\\end{eqnarray}\nwhere $\\cM$ is the  \nMarkov generator of Eq.~\\eref{lindgl2}.\nThen, $\\M$ is a Markov generator on $\\RR^{\\lvert S \\rvert}$. If\n$\\rho$ solves \\eref{lindgl2}, then\n\\begin{equation}\\label{eq:yrho}\n  \\y_m := \\sum_{\\sigma \\in \\Phi_m} \\rho_{\\sigma}\\,\n\\end{equation}\nsatisfies the differential equation \\eref{lindgl}, i.e.",
+        "type": "bracket",
+        "context": "ite, let $\\varphi$ be the mapping of \\eref{phi}, and assume that there are matrices $\\M=(\\M_{nm})_{n,m \\in S}$ and $R={\\rm diag}\\{R_i \\; | \\; i \\in S\\}$ with \\begin{eqnarray}\\label{eq:rlump} \\cR_{\\sigma} & = & R_{\\varphi(\\sigma)}, \\qquad \\text{for all} \\; \\sigma \\in \\fS, \\\\[1mm] \\label{eq:mlump} \\su"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "\\label{eq:hpiz}\n   \\h_i   =  \\frac{\\pi_i \\z_i}{ \\sum_{j \\in S} \\pi_j \\z_j}\n   \\quad \\text{and} \\quad\n   \\w_i^2  =  \\h_i \\z_i",
+        "type": "equation",
+        "context": "$ individual, relative to the mean offspring expectation of an equilibrium population. If $\\bR = C \\1$ for some constant $C$, we have $\\z_i \\equiv 1$, in line with the fact that $\\bH - C \\1$ is then a Markov generator. From \\eref{hz}, along with the normalization of $\\bh$ and $\\bz$, the relations \\b"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "\\label{eq:decay}\n  N^{(k-d)/2} \n  \\sum_{\\substack{i\\in A \\\\ \\lvert i/N-x^* \\rvert \\geqslant\\delta}} \n  \\Big \\lvert \\frac{i}{N}-x^* \\Big \\rvert^k \n  e^{-2\\alpha N \\lvert i/N-x^*  \\rvert^2}\n   = \\cO \\big(e^{-\\alpha N \\delta^2}\\big)\\,.",
+        "type": "equation",
+        "context": "2} = \\int_{\\RR^d} \\lvert x \\rvert^k e^{-\\alpha |x|^2} \\dd x\\,. \\end{equation} \\end{corollary} \\begin{proof} Use Lemma \\ref{riemann} with $n=\\sqrt N$ and $g(x)=|x|^ke^{-\\alpha \\lvert x \\rvert^2}$. \\end{proof} \\begin{lemma}\\label{decay} For any $A \\subset \\ZZ^d$, $\\delta >0$ and $k\\in \\NN$, \\begin{equ"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "\\label{eq:sumvi-outside}\n  \\sum_{\\substack{i \\in S(N) \\\\ \\lvert i/N - x^* \\rvert \\geqslant\\delta}}\n  \\Big \\lvert \\frac{i}{N} - x^* \\Big \\rvert^k v_i^2\n  = \\cO(e^{-\\alpha N \\delta^2})",
+        "type": "equation",
+        "context": " \\frac{i}{N} - x^* \\Big \\rvert^k v_i^2 = \\frac{1}{N^{k/2}} \\frac{N^{(k-d)/2} \\lvert i/N-x^* \\rvert^k e^{-2\\alpha N \\lvert i/N-x^* \\rvert^2}} {N^{d/2} \\sum_{j\\in S} e^{-2\\alpha N \\lvert i/N-x^* \\rvert^2}}\\,, \\] Lemma \\ref{decay} and Corollary \\ref{riemann-cor-prime} entail that, for $k>0$, \\begin{equ"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "\\label{eq:sumvi-inside}\n  \\sum_{\\substack{i \\in S(N) \\\\ \\lvert i/N - x^* \\rvert < \\delta}}\n  \\Big \\lvert \\frac{i}{N} - x^* \\Big \\rvert^k v_i^2\n  = \\cO \\Big (\\frac{1}{N^{k/2}} \\Big )\\,.",
+        "type": "equation",
+        "context": "Lemma \\ref{decay} and Corollary \\ref{riemann-cor-prime} entail that, for $k>0$, \\begin{equation}\\label{eq:sumvi-outside} \\sum_{\\substack{i \\in S(N) \\\\ \\lvert i/N - x^* \\rvert \\geqslant\\delta}} \\Big \\lvert \\frac{i}{N} - x^* \\Big \\rvert^k v_i^2 = \\cO(e^{-\\alpha N \\delta^2}) \\end{equation} and \\begin{e"
+      }
+    ]
+  },
+  "P4_finance_ema": {
+    "n_papers": 30,
+    "n_scored_equations": 571,
+    "top_equations": [
+      {
+        "paper_id": "1108",
+        "score": 4,
+        "latex": "H_{0,0}(x;y)&:=H_{0}(x;x+y)= \\bbp\\left[ \\gamma(x,J)\\geq{}y\\right], \\nonumber\\\\\n\t{H}_{0,1}(x;y)&:=(L_{\\varepsilon}H_{0})(x;x+y) =\n\t{b_{\\varepsilon}(x)}\\frac{\\partial H_{0}(z;x+y)}{\\partial z}\\bigg|_{z=x}+\n\t\\frac{\\sigma^{2}(x)}{2}\\frac{\\partial^{2}H_{0}(z;x+y)}{\\partial z^{2}}\\bigg|_{z=x}\\nonumber\n\t\\\\\n\t&\\qquad+\\int \\left(H_{0}(x+\\gamma(x,\\zeta);x+y)-H_{0}(x;x+y)\n\t-{\\gamma(x,\\zeta)\\frac{\\partial H_{0}(z;x+y)}{\\partial z}\\bigg|_{z=x}}\\right)\\bar{h}_{\\varepsilon}(\\zeta) d\\zeta \\label{NETBP0}\n\t\\\\\n\t\\ca",
+        "type": "align",
+        "context": "s valid since $H_{0}(z;x+y)=\\bbp\\left(\\gamma(z,J)+z\\geq{}x+y\\right)$ is $C_{b}^{4}$ in light of Lemma \\ref{Lm:ED}-(3).} By {(\\ref{DynkinF})}, \\begin{equation}\\label{Dcmp2} \\bbe H_{0}(X_{s}(\\varepsilon,\\emptyset,x);x+y)= H_{0,0}(x;y)+ s{H}_{0,1}(x;y)+{s^{2}\\calR_{s}^{2}(x;y)}, \\end{equation} where \\b"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "{\\int f_{\\delta}'(w)\\int_0^1(1-\\alpha)\\tilde{I}_{\\alpha t}(w;z,\\varepsilon)d\\alpha dw},",
+        "type": "bracket",
+        "context": "epTildeI}). Upon the substitutions of (\\ref{Eq:RepTildeI}) (and the analog representation for $(\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t})'(w;z,\\varepsilon)$) into (\\ref{Eq:RepbarI2}), we can represent $\\bar{I}^{(2)}_{t}(z;\\vartheta,\\delta,\\varepsilon)$ as the sum of terms of the form \\[ {"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\label{DynkinF}\n    \\bbe f(X_{t}(\\varepsilon,\\emptyset,x))=\n%    f(x)+\n    \\sum_{k=0}^{n-1} \\frac{t^{k}}{k!}\n    L^{k}_{\\varepsilon}f(x)+\n    \\frac{t^{n}}{(n-1)!}\n    \\int_{0}^{1} (1-\\alpha)^{n-1}\\bbe\\left\\{\n    L^{n}_{\\varepsilon} f(X_{\\alpha t}(\\varepsilon,\\emptyset,x))\\right\\}d\\alpha,",
+        "type": "equation",
+        "context": "the previous representations, it is evident that $\\calI_{\\varepsilon}f$} is well-defined whenever $f\\in C^{2}_{b}$, in view of (\\ref{Cnd2}), which follows from our condition {\\bf {(C2-a)}}. The $n$-order iterated Dynkin's formula for the process $X(\\varepsilon,\\emptyset,x)$ takes the generic form \\b"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\label{DfnRmdCT}\n\t\\breve{\\calR}_{t}(z;\\vartheta):=\\lim_{\\delta\\downarrow0}\\int\\widetilde\\Gamma(\\zeta;z)\\int_0^1(1-\\alpha)\\me(L_\\varepsilon)^2f_\\delta(X_{\\alpha t}(\\varepsilon,\\emptyset,\\zeta))d\\alpha d\\zeta",
+        "type": "equation",
+        "context": "} H_1(z;\\vartheta)&:=\\lim_{\\delta\\downarrow0}\\int\\widetilde\\Gamma(\\zeta;z)L_\\varepsilon f_\\delta(\\zeta)d\\zeta= {D}(z;\\vartheta)+{I}(z;\\vartheta), \\end{align*} with ${D}(z;\\vartheta)$ and ${I}(z;\\vartheta)$ given as in the statement of {the lemma}. \\noindent Finally, we estimate the remainder term \\b"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\label{Eq:Genlimterm}\n\t\\lim_{\\delta\\to{}0}\\int f_{\\delta}'(w)\\int_0^1(1-\\alpha)\\tilde{I}_{\\alpha t}(w;z,\\varepsilon)d\\alpha dw=\\int_0^1(1-\\alpha)\\tilde{I}_{\\alpha t}(\\vartheta;z,\\varepsilon)d\\alpha,",
+        "type": "equation",
+        "context": " for $\\varepsilon,t>0$ small enough, \\begin{equation}\\label{BndI1} \\sup_{z\\in\\bbr,w\\in{}{\\rm supp} f_{1}}|\\tilde{I}_{t}^{(i)}(w;z,\\varepsilon)|<\\infty. \\end{equation} Due to the continuity $\\tilde{I}_{t}^{(i)}(w;z,\\varepsilon)$ and uniformly boundedness condition (\\ref{BndI1}), it turns out that \\be"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\label{NEFl1}\n\t\\me f_\\delta(X_t(\\varepsilon,\\emptyset,z+\\gamma(z,J)))&=\\int \\widetilde\\Gamma(\\zeta;z)f_\\delta(\\zeta) d\\zeta+t\\int \\widetilde\\Gamma(\\zeta;z) L_{\\varepsilon}f_\\delta(\\zeta) d\\zeta\\\\\n\t&\\quad+t^{2}\\int \\widetilde\\Gamma(\\zeta;z) \\int_0^1(1-\\alpha)\\me(L_\\varepsilon)^2f_\\delta(X_{\\alpha t}(\\varepsilon,\\emptyset,\\zeta))d\\alpha d\\zeta.",
+        "type": "align",
+        "context": "abel{NEF} \\me f_\\delta(X_t(\\varepsilon,\\emptyset,z+\\gamma(z,J)))=\\int \\widetilde\\Gamma(\\zeta;z) \\me f_\\delta(X_t(\\varepsilon,\\emptyset,\\zeta)) d\\zeta, \\end{equation} and, thus, an application of {the} Dynkin's formula {(\\ref{DynkinF})} {with $n=2$} to the expectation in the above integral {yields} \\"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\nonumber \n\t\\breve{\\calR}_t(z;\\vartheta,\\delta,\\varepsilon)&=\\int\\widetilde\\Gamma(\\zeta;z)\\int_0^1(1-\\alpha)\\me(\\calD_\\varepsilon)^2f_\\delta(X_{\\alpha t}(\\varepsilon,\\emptyset,\\zeta))d\\alpha\nd\\zeta\\\\\n&\\quad+\\int\\widetilde\\Gamma(\\zeta;z)\\int_0^1(1-\\alpha)\\me(\\calI_\\varepsilon)^2f_\\delta(X_{\\alpha t}(\\varepsilon,\\emptyset,\\zeta))d\\alpha d\\zeta \\label{DcmCTDfnRmdTr}\\\\\n\\nonumber \n&\\quad+\\int\\widetilde\\Gamma(\\zeta;z)\\int_0^1(1-\\alpha)\\me \\calI_\\varepsilon \\calD_\\varepsilon f_\\delta(X_{\\alpha t}(\\vare",
+        "type": "align",
+        "context": "_0^1(1-\\alpha)\\me(L_\\varepsilon)^2f_\\delta(X_{\\alpha t}(\\varepsilon,\\emptyset,\\zeta))d\\alpha d\\zeta \\end{equation} and show that this is uniformly bounded for $t$ small enough. Let $\\breve{\\calR}_t(z;\\vartheta;\\delta,\\varepsilon)$ be the expression following $\\lim_{\\delta\\downarrow0}$ and note that "
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\nonumber\n{\\bar{I}^{(2)}_{t}(z;\\vartheta,\\delta,\\varepsilon)}&= \\int f_{\\delta}'(w)\\int_0^1(1-\\alpha)\\int\\left(\\int_{\\bar\\gamma(w,\\tilde\\zeta)}^{w}\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t}(\\eta;z,\\varepsilon) d\\eta-\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t}(w;z,\\varepsilon)\\gamma(w,\\tilde\\zeta)\\right)\\bar{h}_{\\varepsilon}(\\tilde\\zeta)d\\tilde\\zeta d\\alpha dw\n\\\\\n\t&=\\sum_{j=1}^{2} \\int f_{\\delta}'(w)\\bar{I}^{(2,j)}_{t}(w;z,\\varepsilon) dw, \\label{Eq:RepbarI2}",
+        "type": "align",
+        "context": "int\\widetilde\\Gamma(\\zeta;z)\\tilde{p}_{\\alpha t}(\\eta;\\zeta)d\\zeta=\\int\\widetilde\\Gamma(\\zeta;z)\\widetilde{\\calI}_{\\varepsilon}p_{\\alpha t}(\\eta;\\varepsilon,\\emptyset,\\zeta)d\\zeta=\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t}(\\eta;z,\\varepsilon).\\label{Eq:RepInttildeI} \\end{align} Therefore, \\"
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\bar{I}^{(2)}_{t}(z;\\vartheta,\\delta,\\varepsilon)=\\int\\widetilde\\Gamma(\\zeta;z)\\int_0^1(1-\\alpha) \\int \\calI_{\\varepsilon}f_{\\delta}(w)\\widetilde{\\calI}_{\\varepsilon}p_{\\alpha t}(w;\\varepsilon,\\emptyset,\\zeta)dw d\\alpha d\\zeta.",
+        "type": "align*",
+        "context": ")$ for any $\\zeta,\\beta$. Since $|1+\\partial_{y}\\gamma(y,\\zeta)|\\geq{}\\delta$, it follows that, for $y$ large enough, $y+\\gamma(y,\\zeta\\beta)\\notin \\calS$ {regardless of $\\zeta$ and $\\beta$. Next,} since $\\calI_{\\varepsilon}f_{\\delta}(\\cdot)$ has compact support, we can apply (\\ref{DlInOp1}) to get "
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "{\\bar{I}^{(2)}_{t}(z;\\vartheta,\\delta,\\varepsilon)}\n\t&=\\int\\widetilde\\Gamma(\\zeta;z)\\int_0^1(1-\\alpha) \\int f_{\\delta}'(w)\\int\n\t\\left(\\int_{\\bar\\gamma(w,\\tilde\\zeta)}^{w}\\tilde{p}_{\\alpha t}(\\eta;\\zeta)d\\eta-\\tilde{p}_{\\alpha t}(w;\\zeta)\\gamma(w,\\tilde\\zeta)\\right)\\bar{h}_{\\varepsilon}(\\tilde\\zeta)d\\tilde\\zeta dwd\\alpha d\\zeta\\\\\n\t\\nonumber\n\t&= \\int f_{\\delta}'(w)\\int_0^1(1-\\alpha)\\int\\bigg(\\int_{\\bar\\gamma(w,\\tilde\\zeta)}^{w}\\int\\widetilde\\Gamma(\\zeta;z)\\tilde{p}_{\\alpha t}(\\eta;\\zeta)d\\zeta d\\e",
+        "type": "align*",
+        "context": "ta}(w)\\widetilde{\\calI}_{\\varepsilon}p_{\\alpha t}(w;\\varepsilon,\\emptyset,\\zeta)dw d\\alpha d\\zeta. \\end{align*} Next, let $\\tilde{p}_{t}(\\eta;\\zeta):=\\widetilde{\\calI}_{\\varepsilon}p_{t}(\\eta;\\varepsilon,\\emptyset,\\zeta)$. {An application of the identity (\\ref{DlInOp2}) followed by Fubini leads to} "
+      },
+      {
+        "paper_id": "1108",
+        "score": 3,
+        "latex": "\\bar{I}^{(2,1)}_{t}(w;z,\\varepsilon)&=-\\int_0^1(1-\\alpha)\\int\\int_{0}^{1}(\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t})'(\\bar\\gamma(w,\\tilde\\zeta\\tilde\\beta);z,\\varepsilon) (\\partial_{\\zeta}\\bar\\gamma)(w,\\tilde\\zeta\\tilde\\beta)(1-\\tilde{\\beta})d\\tilde\\beta\\, \\tilde\\zeta^{2}\\,\\bar{h}_{\\varepsilon}(\\tilde\\zeta)d\\tilde\\zeta d\\alpha\\\\\n\t\\bar{I}^{(2,2)}_{t}(w;z,\\varepsilon)&=-\\int_0^1(1-\\alpha)\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t}(w;z,\\varepsilon)\\int\\int_{0}^{1}\n\t(\\partial_{\\zeta",
+        "type": "align*",
+        "context": "\\eta;z,\\varepsilon) d\\eta-\\widetilde{\\calI}_{\\varepsilon}\\breve{p}_{\\alpha t}(w;z,\\varepsilon)\\gamma(w,\\tilde\\zeta)\\right)\\bar{h}_{\\varepsilon}(\\tilde\\zeta)d\\tilde\\zeta d\\alpha dw \\\\ &=\\sum_{j=1}^{2} \\int f_{\\delta}'(w)\\bar{I}^{(2,j)}_{t}(w;z,\\varepsilon) dw, \\label{Eq:RepbarI2} \\end{align} where \\b"
+      },
+      {
+        "paper_id": "1305",
+        "score": 3,
+        "latex": "\\label{eq:SDE-exp-levy}\r\n    d S_t &= S_{t-}\\!\\!\\left( \\mathfrak{r}(C_{t-}) dt + \\sigma(C_{t-})\\!^\\top\\! d W_t  + \\!\\!\\int_{\\mathbf{R}^n}\\!\\!\r\n    (e^{\\sigma(C_{t-})\\!^\\top\\!x } - 1 ) \\widetilde{\\Pi}( dx, dt)+ \\!\\!\\!\\!\\sum_{i,j \\in\r\n    \\mathcal{K}: j \\neq i } \\!\\!\\!\\!(e^{\\rho^{i,j}} - 1 )  d M^{i,j}_t\\right), \\\\\r\n    \\nonumber\r\n    d C_t &= \\sum_{i,j \\in \\mathcal{K} : j \\neq i} (j-i)\\I_\\set{ i} (C_{t-}) d\r\n    N^{i,j}_t ,",
+        "type": "align",
+        "context": "subsection{Generalization of exponential L\\'{e}vy model with regime-switching }\\label{sec:gen-exp-reg} Now we consider particular model of asset prices and present how our theory works. We consider market with money account and one risky asset. The dynamic of asset price process is given by \\begin{a"
+      },
+      {
+        "paper_id": "1305",
+        "score": 3,
+        "latex": "%\\label{eq:SM-gen-levy-exp}\r\n    d S_t &= S_{t-}\\!\\!\\left( r dt + \\sigma(C_{t-}) d W_t  + \\!\\!\\int_{\\mathbf{R}}\\!\\!\r\n    (e^{\\sigma(C_{t-}) x } - 1 ) \\widetilde{\\Pi}( dx, dt)\\right) \\\\\r\n    d R_t&= dt - \\sum_{i,j \\in \\mathcal{K} : j \\neq i} R_{t-} \\I_\\set{ i} (C_{t-}) d\r\n    N^{i,j}_t \\\\\r\n    d C_t &= \\sum_{i,j \\in \\mathcal{K} : j \\neq i} (j-i) \\I_\\set{ i} (C_{t-}) d\r\n    N^{i,j}_t ,",
+        "type": "align*",
+        "context": "i-Markov nature of $C$ is reflected in the fact that the compensator $\\lambda_{i,j}$ of jumps from $i$ to $j$ depends on time that process $C$ spends in a current state after the last jump. A semi-Markov regime switching process can be embedded in our framework by considering the following SDE \\begi"
+      },
+      {
+        "paper_id": "1310",
+        "score": 3,
+        "latex": "\\frac{\\alpha}{\\Gamma(1-\\alpha)}x^{-\\alpha-1}(1-e^{-x}) ~for~x>0.",
+        "type": "display",
+        "context": "\\mathbb{G}_\\alpha),$ where $$ \\mathbb{G}_\\alpha\\overset{d}=\\frac{\\mathbb{Z}_{1-\\alpha}^{1/\\alpha}}{1+\\mathbb{Z}_{1-\\alpha}^{1/\\alpha}}. $$ Moreover, $\\Sigma_\\alpha=\\Sigma_\\alpha(1)\\overset{d}=\\frac{\\gamma_{1-\\alpha}}{U^{1/\\alpha}}$ ($U$ is a {\\rm Uniform}$[0,1]$ variable) with density function $$ \\f"
+      },
+      {
+        "paper_id": "1310",
+        "score": 3,
+        "latex": "\\frac{\\alpha x^{-\\alpha-1}e^{-c_{et}x}(1-e^{-x})}{[(c_{et}+1)^\\alpha-c_{et}^\\alpha]\\Gamma(1-\\alpha)}~for~x>0.",
+        "type": "display",
+        "context": "r more information on this example. \\end{Exa} \\begin{Exa} For $c_{et}>0,$ a GGC$(1-\\alpha,c_{et}/(c_{et}+\\mathbb{G}_\\alpha))$, say $\\Sigma_{\\alpha,c_{et}}(t)$, arises from exponentially tilting GGC$(1-\\alpha,1/\\mathbb{G}_\\alpha)$. The density of $\\Sigma_{\\alpha,c_{et}}(1)/c_{et}$ is given by: $$ \\fr"
+      },
+      {
+        "paper_id": "1501",
+        "score": 3,
+        "latex": "2mm]\n%(b) \\, \n$\\displaystyle{\\dlim_{v\\to -\\infty} \\dfrac{|S_{t}^{a,d}-S_{v}^{a,d} |}{|t-v|} = 0\\quad\\mbox{a.s.}}$\n\\end{proposition}\n\n\\begin{proof}\n\\begin{comment}\n(a) \\, Wlog we can assume that $t<0$. By the SLLN we find a random variable $T$ and a positive constant $M$ such that for all $s<T$ we have $ S_s\\le M |s|$. We can choose $T$ smaller, if we want, and we take $T<-a$.\nFurthermore, we can assume that $t<T$ and estimate\n  \\begin{align*}\n  \\frac{|S_t^{a,d}|}{|t|} \n  & \\le \\frac{|d|}{|t|} \\i",
+        "type": "bracket",
+        "context": "s)^{d-1} - (a+(t-s))^{d-1} \\Big)S_s ds + d \\int_t^0 (a-s)^{d-1} S_s ds, \\] Continuity follows from dominated convergence. \\end{proof} \\begin{proposition} \\label{LLN} Let $S^{a,d}$ be as above with $d\\in (-0.5,0)$. Then %(a) \\, $\\dlim_{t\\to -\\infty}\\dfrac{|S_t^{a,d}|}{|t|} = 0\\quad\\mbox{a.s.}$\\\\[2mm]"
+      },
+      {
+        "paper_id": "1501",
+        "score": 3,
+        "latex": "\\int_v^t e^{-(X_t-X_s)} ds \n   & \\le \\int_v^t \\exp\\Big\\{-\\beta_1(t-s)-\\alpha_1\\frac{S_t^{a,d}-S_s^{a,d}}{|t-s|} |t-s|\\Big\\} ds\\\\ \n   &=  \\int_v^t \\exp\\Big\\{-(t-s)\\Big(\\beta_1 + \\alpha_1\\frac{S_t^{a,d}-S_s^{a,d}}{|t-s|} \\Big)\\Big\\} ds \n  %& \\eqd & \\int_v^t \\exp\\Big\\{-\\beta_1(t-s) -\\alpha_1\\frac{M_{t-s}^{a,d}}{|t-s|}    |t-s|\\Big\\} ds \\\\\n  &  \\le   \\int_v^t \\exp\\Big\\{-(t-s)\\Big(\\beta_1-\\alpha_1 C \\Big)\\Big\\} ds ,",
+        "type": "align*",
+        "context": "m |t| d (|v|-|t|)^{d-1}$, which implies that $J_3$ also tends to 0 as $v\\to-\\infty$. \\end{proof} \\begin{lemma} The integral $\\int_v^t e^{-(X_t-X_s)} ds$ exists a.s. for $v\\to -\\infty$. \\end{lemma} \\begin{proof} Note that for $C\\in (0,\\beta_1/\\alpha_1)$ we estimate, using Proposition \\ref{LLN}, \\begi"
+      },
+      {
+        "paper_id": "1502",
+        "score": 3,
+        "latex": "p_{s} - p_b \\approx \\underbrace{\\alpha}_\\text{Risk aversion} \\times \\underbrace{\\frac{1}{4}\\left(m_4 - \\frac{m_3^2}{\\bar\n    \\sigma^2}\\right)}_\\text{L�vy model}\\times  \\underbrace{\\mathbb E^{BS}\\left[\\int_0^T\\left(S_t^2 \\frac{\\partial^2\n    P_{BS}(t,S_t)}{\\partial S^2}\\right)^2 dt\\right]}_\\text{Jump risk\nsensitivity of the option},",
+        "type": "display",
+        "context": "es. It is also related to the ``expansion in the model space'' technique for utility optimization recently discussed in \\cite{larsen2014expansion}. An important by-product of our study is a simple explicit approximate formula for the spread between the buyer's and the seller's indifference price: $$"
+      },
+      {
+        "paper_id": "1502",
+        "score": 3,
+        "latex": "\\sigma_t = \\frac{\\partial P(t,S_t)}{\\partial S}S_{t}\\quad\n\\text{and}\\quad \\gamma_t(z) = P(t,S_{t-}(1+z)) - P(t,S_{t-}).",
+        "type": "display",
+        "context": " [(K-S\\mathcal{E}(X)_{T-t})^{{+}}]$, and under suitable regularity assumptions on the process $X$ (see e.g., \\cite[Proposition 2]{options}), we have the martingale representation $$ H_t = \\mathbb E^*[H] + \\int_0^t \\sigma_t dX^c_t + \\int_0^t \\int_{\\mathbb R}\\gamma_s(z)\\tilde J(ds\\times dz) $$ with $$"
+      },
+      {
+        "paper_id": "1502",
+        "score": 3,
+        "latex": "p_s - p_b \\approx \\frac{\\alpha}{4}\\left(m_4 - \\frac{m_3^2}{\\bar{\\sigma}^2}\\right) \n\\mathbb E^{BS}\\left[\\int_0^T \\left( S_t^2\\frac{\\partial^2 P_{BS}}{\\partial S^2} (t,S_t)\\right)^2 dt\\right].",
+        "type": "equation*",
+        "context": "d and sensitivity of options to jump risk} \\label{bidask.sec} As a by-product of the asymptotic formula of Theorem \\ref{thm2} we obtain a simple explicit approximation for the difference between the {seller's and the buyer's} indifference price of a European option, that is, for the bid-ask spread: "
+      }
+    ]
+  },
+  "P5_ecology_decay": {
+    "n_papers": 30,
+    "n_scored_equations": 611,
+    "top_equations": [
+      {
+        "paper_id": "1004",
+        "score": 3,
+        "latex": "where $p_{t}=\\P_{x_1}(X_t>0)<1$ for  $t>0$ is the survival probability of a Feller diffusion (without jump) at time $t$ starting from $x_1$.\\\\\r\nThe set of infected cells at time $t$ can be partitioned into subfamilies according to the first time $\\lambda$ at which one of their ancestors' infection is less than $x_1$. In lineages where the infection remains more than $x_1$, the division rate is upper bounded by $r(x_1)$.\\\\\r\n%\\begin{align}\r\n%\\E(N^*t)=\\int_0^t d\\lambda \\E_{}\\Big(\\sum_{i\\in V_t} \\Bi",
+        "type": "display",
+        "context": ">0\\}<r(0)$. \\\\ %Let us now deal with the more general assumption %$$\\exists x_0, \\quad r(x_0)<r(0).$$ %Let us prove that under (\\ref{condition_decroissance}), this exponential growth rate is at most $$r=\\sup_{0\\leq \\lambda\\leq t\\leq 1} \\{r(x_1)\\lambda+(t-\\lambda)r(0)+\\ln(p_{t-\\lambda})\\}<r(0),$$ whe"
+      },
+      {
+        "paper_id": "1004",
+        "score": 3,
+        "latex": "\\E_{x_0}(N_t^*)\\leq x_0 \\E^\\lambda\\Big(  e^{r(x_1)\\lambda}.p_{t-\\lambda}.e^{r(0)(t-\\lambda)} \\Big) \\leq e^r,",
+        "type": "align",
+        "context": " $t$ with probability at least $1-p_{t-\\lambda}$ since it starts with at most $x_1$ parasites at time $\\lambda$. Moreover, after time $\\lambda$, conditionally on the survival of the parasites, the number of infected cells grows at most with rate $r(0)$. \\\\ Hence, for all $x_0>0$ and $t\\in [0,1]$, \\b"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "\\bar N(n) = (1-\\lambda^{-n})\\bar K,",
+        "type": "equation",
+        "context": "quare, and the time step is in units of generations. The curves through the data are guides to the eye.} \\end{figure} In the exactly soluble random hierarchical population model the average excess population of bacteria $\\bar N(t)$ obeys the simple time evolution in discrete time $t=n$ \\cite{Ind}, \\"
+      },
+      {
+        "paper_id": "0311",
+        "score": 2,
+        "latex": "\\bar N(t) = (1-e^{-(\\log \\lambda) t}) \\bar K",
+        "type": "equation",
+        "context": "ntroduced {\\em ad hoc} in that model to incorporate various possible conditions leading to a convergent population (limited nutrient, temperature boost or quench, diffusion without convection, bacterial motility, etc.). The asymptotic behavior of $\\bar N$ is conspicuous by rewriting (4) in the form "
+      },
+      {
+        "paper_id": "0609",
+        "score": 2,
+        "latex": "\\ga$ 6\\,deg, \n have a photometry error typically below 0.05\\,mag, and smaller still\n at brighter magnitudes.\n\n\n\n\n\\subsection{Extinction and extinction correction}\\label{extinc}\nSince all our target fields are at low Galactic latitudes, \n the line-of-sight dust extinction (and, to a lesser extent,\n  its dispersion) within each field\n is of great  importance to the analysis in this paper. \n Schlegel, Finkbeiner \\& Davies (1998; SFD98) dust maps provide\n extinction estimates for high latitude field",
+        "type": "display",
+        "context": " nearby moving objects. Based on the database of artificial star photometry, we can assess the photometry errors (e.g. see Fig.~\\ref{Fig_errs}). For example, 68\\% of all artificial stars and, by inference, all detected stars with B$^\\prime$$\\sim$22.6 and R$^\\prime$$\\sim$22\\,mag, at $|$b$|$$\\ga$ 6\\,d"
+      },
+      {
+        "paper_id": "0704",
+        "score": 2,
+        "latex": "\\km(dt) \\rN_t[dY, \\ind_{\\{\\tau_Y\\le m\\}}]",
+        "type": "bracket",
+        "context": "label{eq:def-km} \\km(dt)=\\sum_{i\\in I} \\ell_i \\delta_{t_i}(dt) + 2\\beta \\ind_{[0,m)} (t) dt. \\end{equation} Let $\\rN_t(dY)$ denote the law of $(Y(s-t), s\\ge t)$ under $\\rN$ and $\\displaystyle \\sum_{j\\in J} \\delta_{(t_j, Y^j)}$ be, conditionally on $\\cn'$, a Poisson point measure with intensity \\[ \\k"
+      },
+      {
+        "paper_id": "0704",
+        "score": 2,
+        "latex": "\\km(dt) \\rN_t[(dY^0,dY), \\ \\ind_{\\{\\tau_Y\\le m\\}}].",
+        "type": "bracket",
+        "context": "fty$. For $t\\ge 0$, let us denote by $\\rN_t(dY^0,dY)$ the joint law of $((Y^0(s-t),Y(s-t)), s\\ge t)$ under $\\rN$. Recall $\\km$ given by \\reff{eq:def-km}. Conditionally on $\\cn$ and $T_2$, let $\\displaystyle \\sum_{j\\in J} \\delta_{(t_j, Y^{0,j}, Y^j)}$ be a Poisson point measure, with intensity \\[ \\km"
+      },
+      {
+        "paper_id": "0704",
+        "score": 2,
+        "latex": "Z=\\exp{ -\\int_0^{\\bar a_m} \\km(dt)\\; [n_t \n\\ind_{\\{t<T_0\\}} +n^*_t \\ind_{\\{t\\geq T_0\\}}]}",
+        "type": "bracket",
+        "context": " a_1$: \\begin{align*} \\Delta &=\\int_{\\varepsilon}^\\infty dm\\;(-c'(m)) \\Q_m[1-\\expp{-\\int {Y'}^0_{r} \\;\\mue(dr) - \\int Y'_{r}\\;\\mut(dr) }] \\\\ &= c(\\varepsilon) + \\int_\\varepsilon^\\infty dm\\; \\ind_{A^c}(m) c'(m) \\Q_m[Z], \\end{align*} with, thanks to the definition \\reff{eq:def-km} of $\\km$, \\[ Z=\\exp{"
+      },
+      {
+        "paper_id": "0704",
+        "score": 2,
+        "latex": "\\Delta_1\n&=c'(m) \\Q_m(T_0>\\bar a_m)\\Q_m[\\expp{ -\\int_0^{\\bar a_m} \\km(dt)\n  n_t}|T_0>\\bar a_m ] \\\\ \n&=c'(m) \\expp{-\\int_0^{\\bar a_m}  \\phi'(c(m-t))dt} \\\\\n&\\quad \\exp\\left\\{-\n 2 \\beta \\int_0^{\\bar a_m} \\!\\!\\!\\!(w_m(t) -c(m-t))\\; dt -    \\int_0^{\\bar a_m} \\!\\!\\!\\! dt \\expp{-\\ell\n      c(m-t)} \\ell \\pe(d\\ell) [1- \\expp{- \\ell (w_m(t) -\n      c(m-t))}]\\right\\}\\\\\n&=c'(m) \\expp{-\\int_0^{\\bar a_m}\\phi'(c(m-t))dt} \\exp\\left\\{-\n  \\int_0^{\\bar a_m}  dt [\\Pe'(w_m(t))\n  - \\Pe'(c(m-t))]\\right\\}\\\\\n&=c'(m) \\ex",
+        "type": "align*",
+        "context": "=c'(m) \\int_0^{\\bar a_m} \\Q_m[Z|T_0=r,T_0=T_1] \\Q_m(T_0\\in [r,r+dr], T_0=T_1),\\\\ \\Delta_3&=c'(m) \\int_0^{\\bar a_m} \\Q_m[Z|T_0=r,T_0=T_2] \\Q_m(T_0\\in [r,r+dr], T_0=T_2). \\end{align*} We shall assume $m\\not \\in A$. \\subsubsection{Computation of $\\Delta_1$} We have, using formula \\reff{eq:def-km}, \\beg"
+      },
+      {
+        "paper_id": "0710",
+        "score": 2,
+        "latex": "%M_t^{n,f}  = &    \\langle Z^n_t, f \\rangle - \\langle Z^n_0, f \\rangle -\n %\\int_0^t \\int_{\\widetilde{\\X}}\\left[ \\partial_{a} f(x,a)+ f(x,0) b(x,a)(1-u_n p)\n  %\\right.\\nonumber\\\\\n%+  &  \\left. \\int_{\\R^d} f(x+h,0)b(x,a)u_n p k(x,h)dh -\n%f(x,a)(d(x,a)+Z^n_sU(x,a))\\right]Z_s^n(dx,da)\\, ds\\label{pbm}\n%",
+        "type": "align",
+        "context": "ithese} (Chapter 2). %\\begin{prop}\\label{ptemartingale} $n\\in \\N^*$ be fixed. Under Assumptions % \\ref{hypothesetaux} and if the initial condition satisfies $\\mathbb{E} %\\left(\\langle Z^n_0,1\\rangle^2\\right) < +\\infty$, then, for all $f$ %in $\\mathcal{C}_b^{0,1}(\\widetilde{\\mathcal{X}},\\R)$, % \\begi"
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{pol2}\n\\sum_{r=1}^K w_r^{\\prime}(0) \\lambda^{r+1}  - \\left[1+\\sum_{r=1}^K w_r^{\\prime}(0)\\right]\n\\lambda +1 =0\\,.",
+        "type": "equation",
+        "context": "\\prime}(0) f_{n-r}\\,, \\label{QSDR3} \\end{equation} where $K\\equiv r_{max}\\ll N$. If there is no degeneracy, the general solution of Eq.~(\\ref{QSDR3}) is a linear combination of all particular solutions $f_n=\\lambda^{-n}$, where $\\lambda$ obeys the characteristic polynomial equation of degree $K+1$: "
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{pol3}\n1-\\sum_{r=1}^K w_r^{\\prime}(0)(\\lambda+\\dots+\\lambda^{r})=0\\,.",
+        "type": "equation",
+        "context": "as two and only two real solutions for $\\lambda$, both of them positive. The roots $\\lambda_0=1$ and $\\lambda_1$ correspond to the crossing points with the $p$-axis of the slow and fast modes, respectively. Dividing Eq.~(\\ref{pol2}) by $1-\\lambda$, we arrive at a polynomial equation of degree $K$: \\"
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{fn}\nf_n=\\sum_{i=0}^K C_i \\lambda_i^{-n}=C_0+\\sum_{i=1}^K C_i\n\\lambda_i^{-n}\\,,",
+        "type": "equation",
+        "context": ". \\end{equation} For $K\\leq 4$ the roots of this polynomial can be expressed in radicals. For $K\\geq 5$, they need to be computed numerically. Assume that we have found all of the roots of Eq.~(\\ref{pol3}) $\\lambda_i$, $i=1,2, \\dots, K$. If there is no degeneracy, the general solution for $f_n$ is \\"
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{cires}\nC_i=\\frac{(-1)^K\nf_1\\displaystyle\\prod_{j=1}^K\\lambda_j}{\\displaystyle\\prod_{\\begin{array}{c}j=0\\\\j\\neq\ni\\\\\\end{array}}^K(\\lambda_i-\\lambda_j)}\\,.",
+        "type": "equation",
+        "context": "l3}) $\\lambda_i$, $i=1,2, \\dots, K$. If there is no degeneracy, the general solution for $f_n$ is \\begin{equation}\\label{fn} f_n=\\sum_{i=0}^K C_i \\lambda_i^{-n}=C_0+\\sum_{i=1}^K C_i \\lambda_i^{-n}\\,, \\end{equation} where the coefficients $C_i$ are the following (see Appendix A for the derivation): \\"
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{recsolution}\n\\pi(q)=\\frac{(-1)^K \\displaystyle\\prod_{j=1}^K\\lambda_j}{\\alpha\\tau Nq}\\, \\sum_{i=0}^K\\frac{\\lambda_i^{-Nq}}{\\displaystyle\\prod_{\\begin{array}{c}j=0\\\\j\\neq\ni\\\\\\end{array}}^K(\\lambda_i-\\lambda_j)}\\,.",
+        "type": "equation",
+        "context": " As $w_{-1}^{\\prime}(0)=1$, we obtain $$ \\tau^{-1} = \\alpha W_{-1}(1) \\pi_1 \\simeq \\alpha \\pi_1 = \\alpha f_1\\,, $$ so $f_1 \\simeq 1/(\\alpha \\tau)$. Now we switch to the rescaled variable $q=n/N$, use the relation $\\pi(q)=f_n/(Nq)$ and Eq.~(\\ref{fn}), and obtain the small-$q$ asymptote of $\\pi(q)$: \\"
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{c1}\nA_1=\\frac{(-1)^K \\displaystyle\\prod_{j=1}^K\\lambda_j}{\\displaystyle\\prod_{\\begin{array}{c}j=0\\\\j\\neq\n1\\\\\\end{array}}^K(\\lambda_1-\\lambda_j)}\\,.",
+        "type": "equation",
+        "context": "1}|>\\lambda_1$, see Appendix B. In this case the asymptote of the recursive solution (\\ref{recsolution}) at $n\\gg 1$, or $q \\gg N^{-1}$, is \\begin{equation}\\label{rec1} \\pi(q)\\simeq \\frac{A_1\\lambda_1^{-Nq}}{\\alpha\\tau Nq}, \\end{equation} where the positive constant $A_1$ (see Appendix B) satisfies "
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{A1bif}\n\\tilde{A}_1=\\frac{(-1)^K \\displaystyle\\prod_{j=2}^K\\lambda_j}{\\displaystyle\\prod_{j=2}^K(1-\\lambda_j)}",
+        "type": "equation",
+        "context": "})] which enters Eq.~(\\ref{tau1}). Among the roots $\\lambda_i$ of the polynomial (\\ref{pol2}), which contribute to $A_1$, two are special: $\\lambda_0=1$ and $\\lambda_1=e^{p_f}$. Near the bifurcation $|p_f| \\ll 1$, so we can write $\\lambda_1 \\simeq 1+p_f<1$. As a result, $A_1=\\tilde{A}_1/p_f$. where "
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{eqset}\n    C_0+\\sum_{i=1}^K  \\lambda_i^{-m} C_i =f_m\\,,\\;\\;\\;m=1,2, \\dots, K+1\\,,",
+        "type": "equation",
+        "context": " supported by the Clore Foundation. \\section*{Appendix A} \\renewcommand{\\theequation}{A\\arabic{equation}} \\setcounter{equation}{0} Here we derive Eq.~(\\ref{cires}) for the arbitrary constants $C_i$ appearing in Eq.~(\\ref{fn}). For that we need to solve the following set of $K+1$ linear equations: \\b"
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{c01}\n1-s_1^{(0)}+s_2^{(0)}-\\cdots+(-1)^K s_K^{(0)}=(1-\\lambda_1)(1-\\lambda_2)\\cdots(1-\\lambda_K).",
+        "type": "equation",
+        "context": "bda_1^{-K-1}s_K^{(0)}\\right]\\nonumber\\\\ &&\\hspace{-4mm}+\\cdots+C_K\\left[\\lambda_K^{-1}-\\lambda_K^{-2}s_1^{(0)}+\\cdots+(-1)^K \\lambda_K^{-K-1}s_K^{(0)}\\right].\\nonumber\\\\ \\end{eqnarray} By using Eqs.~(\\ref{s00}) we can rewrite the coefficient of $C_0$ in the right hand side of Eq.~(\\ref{c0calc1}) as "
+      },
+      {
+        "paper_id": "0907",
+        "score": 2,
+        "latex": "\\label{c02}\nC_0=\\frac{f_1-s_1^{(0)}f_2+s_2^{(0)}f_3-\\cdots+(-1)^K s_K^{(0)}f_{K+1}}{\\displaystyle\\prod_{i=1}^{K}(1-\\lambda_i)}",
+        "type": "equation",
+        "context": "K\\lambda_i^{-K-1}s_K^{(0)}\\nonumber\\\\ &&\\hspace{-12mm}=\\frac{(\\lambda_i-\\lambda_1)(\\lambda_i-\\lambda_2)\\cdots(\\lambda_i-\\lambda_j)\\cdots(\\lambda_i-\\lambda_K)}{\\lambda_i^{K+1}}. \\end{eqnarray} Clearly, this expression vanishes for all $i\\geq 1$. Therefore, Eqs.~(\\ref{c0calc1}) and (\\ref{c01}) yield \\"
+      }
+    ]
+  },
+  "P6_protein_decay": {
+    "n_papers": 11,
+    "n_scored_equations": 22,
+    "top_equations": [
+      {
+        "paper_id": "0812",
+        "score": 1,
+        "latex": "\\mathrm{H_{2}O}\\rightleftharpoons\\frac{1}{2}\\mathrm{O_{2}}_{\\left(g\\right)}+2\\mathrm{H^{+}}+2e^{-}\\,.\\label{react:water}",
+        "type": "equation",
+        "context": "e. \\subsection*{Conversion between scales of oxidation-reduction potential } Conversion between the $\\log f_{\\mathrm{O_{2}}_{\\left(g\\right)}}$ and $\\mathrm{Eh}$ scales of oxidation-reduction potential can be made by first writing the half-cell reaction for the dissociation of $\\mathrm{H_{2}O}$ as\\be"
+      },
+      {
+        "paper_id": "0907",
+        "score": 1,
+        "latex": "p_{\\rm act}(t)=k_{\\rm act}e^{-k_{\\rm act} t}",
+        "type": "equation",
+        "context": "er the enzyme has become active again, then the rebinding-time distribution is given by \\begin{equation} p_{\\rm reb}(t)=\\int_0^t \\! d t' \\, \\int_{\\sigma}^{\\infty}\\! \\! 4 \\pi r^2 dr \\,p^*_2(r,t'|\\sigma,0) k_{\\rm a} p_{\\rm act}(t') p_2(\\sigma ,t- t'|r ,0), \\label{eq:p_reb} \\end{equation} where \\begin{"
+      },
+      {
+        "paper_id": "0907",
+        "score": 1,
+        "latex": "p_{\\rm reb}^{\\rm min}(t)&=&\\int_0^t  \\! d t' \\,  k_{\\rm a} p_{\\rm\n   act}(t') p_2(\\sigma ,t|\\sigma ,0),\\\\\n &=& (1-e^{-k_{\\rm act}t}) k_a p_2(\\sigma,t|\\sigma,0),\\\\\n&=& s_{\\rm act} (t) p_{\\rm reb}^0(t),\n\\label{eq:bound_low}",
+        "type": "eqnarray",
+        "context": "r,t|\\sigma,0) \\leq p_2^*(r,t|\\sigma,0)$. This reflects the idea that with a radiation boundary condition, the particle can react with the reactive sphere (and thus leak out of the system), while with a reflecting boundary condition it cannot. This yields the following expression for the lower bound "
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\int_{0}^{x_1^*}e^{-V\\phi(x)}dx\\approx\\frac{\\sqrt{2\\pi}\r\n    e^{-V\\phi(x_1^*)}}{2\\sqrt{V\\phi^{''}(x_1^*)}},",
+        "type": "bracket",
+        "context": "c{1}{w(x)e^{-V\\phi(x)}}dx \\nonumber\\\\ &\\approx&V\\int_{0}^{x_1^*}e^{-V\\phi(x)}dx\\int_{x_1^*}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dx \\nonumber\\\\ &&+V\\int_{x_1^*}^{x_2^*}e^{-V\\phi(y)}\\int_{y}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dxdy. \\nonumber \\end{eqnarray} Applying Laplace's method, one has \\[ \\int_{0}^{"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\int_{x_1^*}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dx\r\n    \\approx\\frac{{\\frac{\\sqrt{2\\pi}}{w(x_3^*)e^{-V\\phi(x_3^*)}}}}\r\n        {\\sqrt{-V\\phi^{''}(x_3^*)}},",
+        "type": "bracket",
+        "context": "\\phi(x)}}dx \\nonumber\\\\ &&+V\\int_{x_1^*}^{x_2^*}e^{-V\\phi(y)}\\int_{y}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dxdy. \\nonumber \\end{eqnarray} Applying Laplace's method, one has \\[ \\int_{0}^{x_1^*}e^{-V\\phi(x)}dx\\approx\\frac{\\sqrt{2\\pi} e^{-V\\phi(x_1^*)}}{2\\sqrt{V\\phi^{''}(x_1^*)}}, \\] \\[ \\int_{x_1^*}^{x_2^"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\int_{y}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dx\r\n    \\approx\r\n    \\left\\{\\begin{array}{ll}\r\n       \\frac{{\\frac{\\sqrt{2\\pi}}{w(x_3^*)e^{-V\\phi(x_3^*)}}}}{\\sqrt{-V\\phi^{''}(x_3^*)}}  & \r\n        x_1^*\\leq y\\leq x_3^*,\r\n\\\\[8pt]\r\n     -\\frac{\\frac{1}{w(y)e^{-V\\phi(y)}}}{V\\phi^{'}(y)} & \r\n         x_3^*\\leq y\\leq x_2^*.\r\n\\end{array}\\right.",
+        "type": "bracket",
+        "context": "thod, one has \\[ \\int_{0}^{x_1^*}e^{-V\\phi(x)}dx\\approx\\frac{\\sqrt{2\\pi} e^{-V\\phi(x_1^*)}}{2\\sqrt{V\\phi^{''}(x_1^*)}}, \\] \\[ \\int_{x_1^*}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dx \\approx\\frac{{\\frac{\\sqrt{2\\pi}}{w(x_3^*)e^{-V\\phi(x_3^*)}}}} {\\sqrt{-V\\phi^{''}(x_3^*)}}, \\] \\[ \\int_{y}^{x_2^*}\\frac{1}{w("
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "+V\\int_{x_1^*}^{x_3^*}e^{-V\\phi(y)}dy\\frac{{\\frac{\\sqrt{2\\pi}}{w(x_3^*)e^{-V\\phi(x_3^*)}}}}{\\sqrt{-V\\phi^{''}(x_3^*)}}",
+        "type": "bracket",
+        "context": "\\[8pt] -\\frac{\\frac{1}{w(y)e^{-V\\phi(y)}}}{V\\phi^{'}(y)} & x_3^*\\leq y\\leq x_2^*. \\end{array}\\right. \\] Then \\begin{equation} T_{1\\rightarrow 2} \\approx \\frac{\\pi e^{V(\\phi(x_3^*)-\\phi(x_1^*))}}{w(x_3^*) \\sqrt{-\\phi^{''}(x_1^*)\\phi^{''}(x_3^*)}} \\end{equation} \\[ +V\\int_{x_1^*}^{x_3^*}e^{-V\\phi(y)}d"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "+V\\int_{x_3^*}^{x_2^*}e^{-V\\phi(y)}-\\frac{\\frac{1}{w(y)e^{-V\\phi(y)}}}{V\\phi^{'}(y)}dy.",
+        "type": "bracket",
+        "context": "\\begin{equation} T_{1\\rightarrow 2} \\approx \\frac{\\pi e^{V(\\phi(x_3^*)-\\phi(x_1^*))}}{w(x_3^*) \\sqrt{-\\phi^{''}(x_1^*)\\phi^{''}(x_3^*)}} \\end{equation} \\[ +V\\int_{x_1^*}^{x_3^*}e^{-V\\phi(y)}dy\\frac{{\\frac{\\sqrt{2\\pi}}{w(x_3^*)e^{-V\\phi(x_3^*)}}}}{\\sqrt{-V\\phi^{''}(x_3^*)}} \\] \\[ +V\\int_{x_3^*}^{x_2^"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "\\frac{k_{a\\rightarrow b}}{k_{b\\rightarrow a}}\r\n    =\r\n    \\sqrt{\\frac{\\mu_a}{\\mu_b}}\r\n    e^{-\\frac{U_b-U_a}{k_BT}} = e^{-\\frac{F_b-F_a}{k_BT}},",
+        "type": "bracket",
+        "context": "i\\eta} e^{(U_a-U_c)/k_BT}, \\end{equation} where $\\mu_a$ and $\\mu_c$ are the curvatures of the energy function $U(x)$ at $a$, the well, and $c$, the transition state. Similarly one has $k_{b\\rightarrow a}$. Then their ratio, which relates the populations in the two wells at equilibrium: \\[ \\frac{k_{a"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "f^{ss}(x) \\propto e^{-V\\phi(x)},",
+        "type": "equation",
+        "context": "](n_t-k)} {\\left[\\beta V^2+\\epsilon k(k-1)\\right](k+1)}, \\end{equation} where $C$ is a normalization factor. If $V$ and $n_t$ are large, but their ratio is hold constant, then one can develop an approximated formula for the probability density function for the concentration $x=n/V$: \\begin{equation}"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "p(n|i) = \\frac{1}{n!}\\left(\\frac{g_i}{k}\\right)^n e^{-g_i/k}.",
+        "type": "equation",
+        "context": "n) p_0(n) - fp_1(n). \\end{eqnarray*} We shall consider $h(n)=hn(n-1)/2$. If the gene switching between $0$ and $1$ is slow, i.e., it is nonadiabatic, then we have the rapid pre-steady states (conditional probability) in the state $i$ ($=0,1$) following their respective Poisson distribution \\begin{eq"
+      },
+      {
+        "paper_id": "1202",
+        "score": 1,
+        "latex": "T_{1\\rightarrow 2} &\\approx&\r\n  \\sum_{n=0}^{x_1^*V}\\frac{e^{-V\\phi(\\frac{n}{V})}}{V}\r\n  \\sum_{m=x_1^*V+1}^{x_2^*V}\\frac{1}{w(\\frac{m}{V})\r\n    e^{-V\\phi(\\frac{m}{V})}}\r\n\\nonumber\\\\\r\n   && +\\sum_{n=x_1^*V+1}^{x_2^*V}\\frac{e^{-V\\phi(\\frac{n}{V})}}{V}\\sum_{m=n+1}^{x_2^*V}\\frac{1}{w(\\frac{m}{V})e^{-V\\phi(\\frac{m}{V})}}\r\n\\nonumber\\\\\r\n   &\\approx&\\sum_{n=0}^{x_1^*V}e^{-V\\phi(\\frac{n}{V})}\\int_{x_1^*}^{x_2^*}\\frac{1}{w(x)e^{-V\\phi(x)}}dx\r\n\\nonumber\\\\\r\n  && +\\sum_{n=x_1^*V+1}^{x_2^*V-1}e^{-V\\phi(\\frac{n",
+        "type": "eqnarray",
+        "context": "{ss}(m)} \\] \\begin{equation} +\\sum_{n=x_1^*V+1}^{x_2^*V-1}p^{ss}(n) \\sum_{m=n+1}^{x_2^*V}\\frac{1}{w_mp^{ss}(m)}. \\end{equation} $w_m\\approx w\\left(\\frac{m}{V}\\right)V$, where $w(x)=\\beta x+\\epsilon x^3$, and $p^{ss}(n)\\approx (C/V)e^{-V\\phi\\left(\\frac{n}{V}\\right)}$, we have \\begin{eqnarray} T_{1\\ri"
+      },
+      {
+        "paper_id": "1309",
+        "score": 1,
+        "latex": "\\label{eqPI}\n\\mathcal{R}( [\\mathrm{R^2I}])  = \\underbrace{\\, \\overline{\\mathrm{k}}_\\mathrm{on}[\\mathrm{R}]^2[\\mathrm{I}] - \\overline{k}_\\mathrm{off}[\\mathrm{R_2I}]}_{\\text{\\ complex formation}}  \\underbrace{-\\overline{\\delta}_{\\mathrm{R_2I}}[\\mathrm{R_2I}]}_{\\text{\\ degradation}}.",
+        "type": "eqnarray",
+        "context": "+\\overline{R}_{\\textit{diff}}) [\\mathrm{R}] }_{\\text{\\ loss}} \\underbrace{-2\\, \\overline{\\mathrm{k}}_\\mathrm{on}[\\mathrm{R}]^2[\\mathrm{I}] + \\overline{k}_\\mathrm{off}[\\mathrm{R_2I}]}_{\\text{\\ complex formation}} \\end{eqnarray} % The dynamics of the complex $\\left[R_2I\\right]$ is then described by \\b"
+      },
+      {
+        "paper_id": "1309",
+        "score": 1,
+        "latex": "\\Delta G \\propto \\log{K_D} ; \\quad  K_D=\\frac{k_u}{k_b} .",
+        "type": "equation",
+        "context": "rmation. Information is related to Gibbs Free energy by a version of Second Law of Thermodynamics \\citep{Berg1987,Berg1988,Barrick1994} \\begin{equation} R_i \\propto -\\Delta G . \\end{equation} \\noindent On the other hand Gibbs free energy is related to the dissociation constant via the relation \\begi"
+      },
+      {
+        "paper_id": "1309",
+        "score": 1,
+        "latex": "\\frac{d[R_{p}]}{dt}=k_{srp}-k_{drp} [R_{p}] .",
+        "type": "equation",
+        "context": " Government of India. AKM acknowledges UGC, Government of India, for a research fellowship (UGC/776/JRF(Sc)). SKB acknowledges support from Bose Institute through Institutional Programme VI - Development of Systems Biology. \\end{acknowledgements} \\appendix \\section*{Appendix} \\noindent DevR: \\begin{"
+      },
+      {
+        "paper_id": "1309",
+        "score": 1,
+        "latex": "\\frac{d[P^*]}{dt}&=&k_{b1}[P][R_{p}] - k_{u1}[P^*], \\\\\n\\frac{d[S^*]}{dt}&=&k_{b2}[S][R_{p}] - k_{u2}[S^*], \\\\\n\\frac{d[mGFP_{4c}]}{dt}&=&k_{sm1}[P^*]+ k_{sm2}[S^*]+ k_{sm3}[P^*][S^*] \\nonumber \\\\\n&& - k_{dm}[mGFP_{4c}], \\\\\n\\frac{d[GFP]}{dt}&=&k_{sg}[mGFP_{4c}] - k_{dg}[GFP] .",
+        "type": "eqnarray",
+        "context": "). SKB acknowledges support from Bose Institute through Institutional Programme VI - Development of Systems Biology. \\end{acknowledgements} \\appendix \\section*{Appendix} \\noindent DevR: \\begin{equation} \\frac{d[R_{p}]}{dt}=k_{srp}-k_{drp} [R_{p}] . \\end{equation} \\noindent {\\it Rv3134c}: \\begin{eqna"
+      },
+      {
+        "paper_id": "1309",
+        "score": 1,
+        "latex": "\\frac{d[P1^*]}{dt}&=&k_{b3}[P1][R_{p}] - k_{u3}[P1^*], \\\\\n\\frac{d[P2^*]}{dt}&=&k_{b4}[P2][R_{p}] - k_{u4}[P2^*], \\\\\n\\frac{d[S^*]}{dt}&=&k_{b5}[S][R_{p}] - k_{u5}[S^*], \\\\\n\\frac{d[mGFP_{px}]}{dt} &= &k_{sm4}[P1^*]+ k_{sm5}[P2^*]+ k_{sm6}[S^*]  \\nonumber \\\\\n&& + k_{sm7}[P1^*][P2^*][S^*] - k_{dm}[mGFP_{px}], \\\\\n\\frac{d[GFP]}{dt}&=&k_{sg}[mGFP_{px}] - k_{dg}[GFP].",
+        "type": "eqnarray",
+        "context": "&=&k_{b1}[P][R_{p}] - k_{u1}[P^*], \\\\ \\frac{d[S^*]}{dt}&=&k_{b2}[S][R_{p}] - k_{u2}[S^*], \\\\ \\frac{d[mGFP_{4c}]}{dt}&=&k_{sm1}[P^*]+ k_{sm2}[S^*]+ k_{sm3}[P^*][S^*] \\nonumber \\\\ && - k_{dm}[mGFP_{4c}], \\\\ \\frac{d[GFP]}{dt}&=&k_{sg}[mGFP_{4c}] - k_{dg}[GFP] . \\end{eqnarray} \\noindent {\\it hspX}: \\beg"
+      },
+      {
+        "paper_id": "1309",
+        "score": 1,
+        "latex": "\\frac{d[P1^*]}{dt}&=&k_{b6}[P1][R_{p}] - k_{u6}[P1^*], \\\\\n\\frac{d[P2^*]}{dt}&=&k_{b7}[P2][R_{p}] - k_{u7}[P2^*], \\\\\n\\frac{d[S1^*]}{dt}&=&k_{b8}[S1][R_{p}] - k_{u8}[S1^*], \\\\\n\\frac{d[S2^*]}{dt}&=&k_{b9}[S2][R_{p}] - k_{u9}[S2^*], \\\\\n\\frac{d[mGFP_{K2}]}{dt} &=&k_{sm8}[P1^*]+ k_{sm10}[P2^*]+ k_{sm12}[S1^*] \\nonumber \\\\\n&&+ k_{sm14}[S2^*]+ k_{sm16}[P1^*][S1^*] \\nonumber \\\\\n&& + k_{sm18}[P2^*][S2^*] - k_{dm}[mGFP_{K2}], \\\\\n\\frac{d[GFP]}{dt} &=& k_{sg}[mGFP_{K2}] - k_{dg}[GFP], \\\\\n\\frac{d[mGFP_{38}]}{",
+        "type": "eqnarray",
+        "context": ", \\\\ \\frac{d[S^*]}{dt}&=&k_{b5}[S][R_{p}] - k_{u5}[S^*], \\\\ \\frac{d[mGFP_{px}]}{dt} &= &k_{sm4}[P1^*]+ k_{sm5}[P2^*]+ k_{sm6}[S^*] \\nonumber \\\\ && + k_{sm7}[P1^*][P2^*][S^*] - k_{dm}[mGFP_{px}], \\\\ \\frac{d[GFP]}{dt}&=&k_{sg}[mGFP_{px}] - k_{dg}[GFP]. \\end{eqnarray} \\noindent {\\it narK2-Rv1738}: \\beg"
+      },
+      {
+        "paper_id": "1711",
+        "score": 1,
+        "latex": "p_i^\\ast \\propto e^{-E_i/k_BT},\n\\label{eq:gb0}",
+        "type": "eqnarray",
+        "context": "ic state $i$, $\\bar E$ is the average energy of the system, and $k_B T$ are Boltzmann's constant and temperature and that probabilities are normalized quantities \\begin{eqnarray} \\sum_i p_i = 1. \\label{eq:c2} \\end{eqnarray} The resulting Gibbs-Boltzmann distribution after maximizing the entropy is \\"
+      },
+      {
+        "paper_id": "1711",
+        "score": 1,
+        "latex": "p_\\Gamma = \\frac{q_\\Gamma e^{-\\gamma F(\\Gamma)}}{\\mathcal Z} \\label{eq:maxcal0}",
+        "type": "eqnarray",
+        "context": "gle F \\rangle \\right ) \\nonumber \\\\ &+& \\alpha \\left ( \\sum_\\Gamma p_\\Gamma - 1\\right ).\\label{eq:caliber} \\end{eqnarray} In Eq.~\\ref{eq:caliber}, $\\gamma$ is a Lagrange multiplier that tunes the ensemble average $\\langle F \\rangle$ and $\\delta$ ensures normalization. After maximization, we find \\be"
+      }
+    ]
+  },
+  "P7_knowledge_halflife": {
+    "n_papers": 12,
+    "n_scored_equations": 50,
+    "top_equations": [
+      {
+        "paper_id": "1208",
+        "score": 1,
+        "latex": "\\label{eq:rhosr}\n\\rho_{N}(t)=-N\\Gamma_0\\e^{-(N\\Gamma_0+\\Gamma)t}  \\eiwt \\, \\theta(t) \\:,",
+        "type": "equation",
+        "context": " coefficient in the frequency domain,\\cite{Ivchenko1994} \\begin{equation}\\label{eq:rsr} r_{N}(\\omega)= -\\frac{\\rmi N\\Gamma_0}{\\omega-\\omega_0+\\rmi(N\\Gamma_0+\\Gamma)} \\:. \\end{equation} The corresponding response function $\\rho_{N}(t)$ determining the time dependence of reflected signal has the form "
+      },
+      {
+        "paper_id": "1208",
+        "score": 1,
+        "latex": "\\label{eq:rhoinfgamma}\n\\rho_{\\infty}(t) = - \\frac{2}{t} \\left[ J_2(\\Delta t) + \\frac{\\Gamma}{2\\Delta} I_1(\\Gamma t/2) \\right] \\e^{-\\Gamma t/2} \\eiwt \\theta(t) \\:,",
+        "type": "equation",
+        "context": " the semi-infinite structure is given by \\begin{eqnarray}\\label{eq:rinf} r_{\\infty}(\\omega)&=&\\frac{1}{\\left( \\sqrt{w\\tilde w}+\\sqrt{w\\tilde w-1} \\right)^2} \\:. \\end{eqnarray} The corresponding response function in the time domain at $\\Gamma \\ll \\Delta$ and $t \\gg \\Gamma^2 / \\Delta^3$ has the form \\"
+      },
+      {
+        "paper_id": "1208",
+        "score": 1,
+        "latex": "\\label{rho_Fib_inf}\n\\rho_{\\infty}(t) \\approx \\f \\sqrt{\\frac{8}{\\pi |\\f|^3 \\D^2 t^3}} \\, \\e^{-\\Gamma t /2} \\eiwt \\theta(t) \\\\\n\\times \\left[ \\sqrt{\\omega_+} \\sin \\left( \\omega_+ t + \\frac{\\pi}{4} \\right) - \\sqrt{\\omega_-} \\cos \\left( \\omega_- t + \\frac{\\pi}{4} \\right) \\right] \\:,",
+        "type": "multline",
+        "context": "the replacement of $\\cot(2\\Omega N \\Gamma_0/\\Delta^2_{hh'})$ in the denominator with $(-{\\rm i}) {\\rm sign} ({\\rm Im} \\Omega)$. The subsequent Fourier transformation of $r_{\\infty}(\\omega)$ by the stationary phase method yields the response function in the time domain \\newcommand{\\D}{\\Delta_{h,h'}} "
+      },
+      {
+        "paper_id": "1311",
+        "score": 1,
+        "latex": "n_\\mathrm{at}(\\vec r)=N_\\mathrm{at}\\left(8\\pi^3\\sigma_r^4\\sigma_z^2\\right)^{-{1/2}} e^{-(x^2+y^2)/2\\sigma_r^2}e^{-(z-z_0)^2/2\\sigma_z^2}~,",
+        "type": "equation",
+        "context": "ent is carried out with the experimental setup decribed in detail in~\\cite{Stehle11}. An ultracold $^{87}$Rb atom cloud consisting of $N_\\mathrm{at}\\sim10^6$ atoms with a temperature of $T\\sim 1~\\mu\\mathrm{K}$ is trapped in a magnetic trap inside a UHV chamber. The density of the cloud is given by \\"
+      },
+      {
+        "paper_id": "1311",
+        "score": 1,
+        "latex": "\\label{eq:b}\nb(\\theta,z)=\\frac{3}{8\\pi}n_2\\frac{k_x^2}{k_0^2}\\left|T_{012}^p\\frac{k_{z2}}{k_{z0}}\\right|^2 e^{-2\\mathrm{Im}(k_{z0})z}~,",
+        "type": "equation",
+        "context": " dipoles by $1/2$ and the plasmon excitation becomes independent of the pump laser polarization. The theory \\cite{Sipe81} describes also the angular dependence of photons emitted into the substrate. The radiation coefficient for emission at an angle $\\theta$ (see Fig. \\ref{fig:setup} b) is given by "
+      },
+      {
+        "paper_id": "1606",
+        "score": 1,
+        "latex": "\\label{psi}\n\\psi({\\bf r})=e^{i\\varphi({\\bf r})}\\sqrt{\\rho({\\bf r})}, \\ \\\n\\psi^+({\\bf r})=\\sqrt{\\rho({\\bf r})}e^{-i\\varphi({\\bf r})},",
+        "type": "eqnarray",
+        "context": "not dependent on the specific form of this part of the two-body interaction, except it must be repulsive enough at small inter-particle separations. Avoiding the problem with infrared divergences \\cite{Nepomnyashchy} we adopt the scheme normally used for low-dimensional systems \\cite{Mora_Castin} \\b"
+      },
+      {
+        "paper_id": "1606",
+        "score": 1,
+        "latex": "\\label{psi*psi}\nG(x-x')=-\\langle\ne^{i\\varphi(x)}\\sqrt{\\rho(x)\\rho(x')}e^{-i\\varphi(x')}\\rangle.",
+        "type": "eqnarray",
+        "context": "enholtz_Pines,Gavoret_Nozieres} were obtained within this approach. The purpose of this section is to show how the long-length limit of the one-particle Green's function can be reproduced using a hydrodynamic formulation. Therefore, our objective is to study the properties of the following function "
+      },
+      {
+        "paper_id": "1606",
+        "score": 1,
+        "latex": "\\label{G_P}\n\\mathcal{G}(P)=\\int dx\\, e^{-iPx}\\left\\{\\rho_{0}+G(x)\\right\\},",
+        "type": "eqnarray",
+        "context": "ow 0}}{\\rho_{0}|_{T=0}}=1-\\frac{mT^2}{24\\hbar^3\\rho c}\\frac{1}{ \\sqrt{3\\epsilon}}\\ln\\left[\\frac{\\sqrt{1+2\\epsilon}+\\sqrt{3\\epsilon}}{\\sqrt{1+2\\epsilon}-\\sqrt{3\\epsilon}}\\right]. \\end{eqnarray} Making use of transformation to the four-momentum space for the one-particle Green's function we find \\begi"
+      },
+      {
+        "paper_id": "1711",
+        "score": 1,
+        "latex": "J_p(\\omega)=\\frac{\\alpha}{2} \\frac{\\omega^D}{\\omega_c^{D-1}}e^{-\\omega/\\omega_c},",
+        "type": "equation",
+        "context": "a simple model of e.g.\\ a quantum dot in a phonon environment, for which the coupling constants appearing in the Hamiltonian, Eq.~\\eqref{eq:sham}, have $g_\\mode \\sim \\sqrt{\\omega_\\mode}$~\\cite{mahan00}. This means that in the continuum limit the spectral density for a $D$-dimensional environment is "
+      },
+      {
+        "paper_id": "1711",
+        "score": 1,
+        "latex": "\\label{eq:svd}\n  A_{\\{i_1,\\ldots, i_k\\},\\{i_k+1,\\ldots,i_\\km\\}} \\\\\n  = U_{\\{i_1,\\ldots, i_k\\},\\alpha} \\lambda_\\alpha  \\left[V^\\dagger\\right]_{\\alpha,\\{i_k+1,\\ldots,i_\\km\\}}.",
+        "type": "multline",
+        "context": "esults, we show how an ADT can be efficiently represented and propagated using standard MPS methods. One may decompose high-rank tensors into products of low-rank tensors using singular value decompositions (SVD) and truncation. By combining indices, the tensor $A$ can be written as~\\cite{orus14}: \\"
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\underline \\lambda = \\min_{k\\in [r]} \\ \\lambda_{\\text{\\emph{min}}} \\Big( \\sum\\nolimits_{i \\in \\mathcal I_k} x_i x_i^\\top\n\\Big),",
+        "type": "bracket",
+        "context": "{max}}_\\text{\\emph{active}} = \\max_{x \\in \\mathbb R^n} \\ \\sum\\nolimits_{k=1}^r \\mathbf{1}_{\\left\\{ \\hat V_k x + \\hat b_k > 0 \\right\\}}, \\] \\item $\\underline \\lambda$ is a lower bound for the minimum-eigenvalue of the covariance matrix of the training points that activate the same hidden-layer node: "
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "{\\Delta \\over 2 \\mathcal L(\\delta, \\overline \\mu, \\underline \\lambda, b, n^\\text{max}_\\text{active} )}",
+        "type": "bracket",
+        "context": "in\\nolimits_{j \\in \\mathcal J} \\hat f(x_{j}) - \\max\\nolimits_{i \\in \\mathcal I} \\hat f(x_{i}) > 0, \\] then the classifier \\[ x \\mapsto \\text{\\emph{sign}}\\left( \\hat f(x) - \\max\\nolimits_{i \\in \\mathcal I} \\hat f(x_i) - {\\Delta/2} \\right) \\] has a margin (in the input space) greater than or equal to "
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\sum\\nolimits_{i \\in \\mathcal I} \\log \\left( 1 + e^{-w^\\top {(Vx_{i} + b)}_+} \\right) + \n\\sum\\nolimits_{j \\in \\mathcal J} \\log \\left( 1 + e^{w^\\top {(Vx_{j} + b)}_+} \\right)",
+        "type": "bracket",
+        "context": " [L]$. \\end{defn} With this concept of convergence, we are ready to state the next theorem. \\begin{theo} \\label{theo:theo-3} Assume that a two-layer neural network is trained to classify the sets $\\{x_{i}\\}_{i \\in \\mathcal I}$ and $\\{x_{j}\\}_{j\\in \\mathcal J}$ by minimizing the cross-entropy loss \\["
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "{n_\\text{\\emph{node}}^\\text{\\emph{min}} \\sqrt{n^\\text{\\emph{max}}_\\text{\\emph{sup}}} \\over \\sqrt{\\underline \\lambda}},",
+        "type": "bracket",
+        "context": "oint. Let $\\mathcal I_\\text{sup}$ and $\\mathcal J_\\text{sup}$ denote the points that achieve equality in (\\ref{eq:defn-support-a}) and (\\ref{eq:defn-support-b}), respectively. Then the Lipschitz constant of the mapping $x \\mapsto \\overline w^\\top (\\overline V x + \\overline b)_+$ is upper bounded by "
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\lambda \\|w\\|_2^2 = \\sum\\nolimits_{i=1}^n \\left(w^\\top \\big(\\sqrt{\\lambda} e_i\\big) - 0 \\right)^2,",
+        "type": "bracket",
+        "context": " \\|w\\|_2^2$ for any $\\lambda >0$: \\begin{equation} \\label{eqn:ridge} \\min_{w} \\ \\sum\\nolimits_{i \\in \\mathcal I} ( w^\\top x_i - y_i )^2 + \\lambda \\|w\\|_2^2, \\end{equation} it is an ordinary observation that adding the regularization term is equivalent to adding $n$ ghost measurements, since we have "
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\mathbb E [\\xi_i] = 0, \\quad \\mathbb E [ \\xi_i \\xi_i^\\top ] = {\\lambda \\over | \\mathcal I |}I",
+        "type": "bracket",
+        "context": "vely, an equivalent problem could also be formulated as \\begin{equation} \\label{ridge:expectation} \\min_{w} \\ \\mathbb E_{\\{\\xi_i\\}_{i \\in \\mathcal I}} \\sum\\nolimits_{i \\in \\mathcal I} \\left( w^\\top (x_i + \\xi_i) - y_i\\right)^2 \\end{equation} where $\\xi_i \\in \\mathbb R^n$ is any random vector with \\["
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\min_{w} \\sum_{i \\in \\mathcal I} \\log \\Big( 1 + e^{-w^\\top x_{i}} \\Big) + \\sum_{j \\in \\mathcal J} \\log\\Big(1 + e^{w^\\top x_{j}}\\Big),",
+        "type": "bracket",
+        "context": "items 2 and 3 are equivalent irrespective of the loss function used for regression. Equivalence of item 1 to the others, however, does depend on the loss function. To see this, consider the cross-entropy loss with two sets of points $\\{x_{i}\\}_{i \\in \\mathcal I}$ and $\\{x_{j}\\}_{j \\in \\mathcal J}$: "
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\lambda_\\text{min} \\left( \\sum\\nolimits_{i \\in \\mathcal I_k} x_i x_i^\\top \\right) {\\big\\|\\hat V_k\\big\\|}_2^2 - 2 \\left|b_k\\right| \\left\\| \\sum\\nolimits_{i \\in \\mathcal I_k} x_i \\right\\|_2 {\\big\\|\\hat V_k \\big\\|}_2  + b_k^2 - {2 \\over \\delta} = 0.",
+        "type": "bracket",
+        "context": " \\mathcal I_k} x_i x_i^\\top \\right) \\hat V_k + 2 b_k \\hat V_k^\\top \\left(\\sum\\nolimits_{i\\in \\mathcal I_k} x_i \\right)+ b_k^2 - {2 \\over \\delta} \\le 0. \\] This is a quadratic inequality in $\\hat V_k$, and the largest value $\\big\\| \\hat V_k\\big\\|_2$ can take is upper bounded by the larger root of \\[ "
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "{\\big\\| \\hat V_k \\big\\|}_2 \\le { \\left| b_k \\right| \\mu_k \\over \\lambda_k^\\text{min} } + {1 \\over \\lambda^\\text{min}_k } \\sqrt{ b_k^2 {(\\mu_k)}^2 + \\lambda_k^\\text{min} \\left( {2 \\over \\delta} - b_k^2 \\right) }",
+        "type": "bracket",
+        "context": "d by the larger root of \\[ \\lambda_\\text{min} \\left( \\sum\\nolimits_{i \\in \\mathcal I_k} x_i x_i^\\top \\right) {\\big\\|\\hat V_k\\big\\|}_2^2 - 2 \\left|b_k\\right| \\left\\| \\sum\\nolimits_{i \\in \\mathcal I_k} x_i \\right\\|_2 {\\big\\|\\hat V_k \\big\\|}_2 + b_k^2 - {2 \\over \\delta} = 0. \\] Therefore, we have \\[ {\\"
+      },
+      {
+        "paper_id": "1911",
+        "score": 1,
+        "latex": "\\lambda^\\text{min}_k = \\lambda_\\text{min} \\left( \\sum\\nolimits_{i \\in \\mathcal I_k} x_i x_i^\\top \\right).",
+        "type": "bracket",
+        "context": "\\[ {\\big\\| \\hat V_k \\big\\|}_2 \\le { \\left| b_k \\right| \\mu_k \\over \\lambda_k^\\text{min} } + {1 \\over \\lambda^\\text{min}_k } \\sqrt{ b_k^2 {(\\mu_k)}^2 + \\lambda_k^\\text{min} \\left( {2 \\over \\delta} - b_k^2 \\right) } \\] where \\[ \\mu_k = \\left\\| \\sum\\nolimits_{i \\in \\mathcal I_k} x_i \\right\\|_2, \\] \\[ \\"
+      }
+    ]
+  }
+}
