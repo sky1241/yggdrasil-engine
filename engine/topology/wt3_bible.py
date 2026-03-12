@@ -249,76 +249,210 @@ def ingest_wt2_bipartite(conn: sqlite3.Connection):
     return n
 
 
-# ─── Phase 3: Cooccurrences — chunk by chunk ─────────────────────
+# ─── Phase 3: Cooccurrences — shard on disk, then aggregate ──────
 
-def ingest_wt1_cooc(conn: sqlite3.Connection):
-    """Stream WT1 cooc.json.gz chunks directly into cooc table.
+import struct
 
-    Like bipartite: read each chunk, aggregate in Python dict, upsert into cooc.
-    No staging table needed. Chunk by chunk, crash-safe, resumable.
+SHARD_DIR = Path("E:/yggdrasil/cooc_shards")
+N_SHARDS = 64  # concept_a % 64 → 64 shard files
+
+
+def _shard_path(shard_id: int) -> Path:
+    return SHARD_DIR / f"shard_{shard_id:03d}.bin"
+
+
+def shard_wt1_chunks(conn: sqlite3.Connection):
+    """Phase 3a: Read 581 WT1 chunks, dispatch rows to shard files by concept_a.
+
+    Each shard file = binary: (concept_a:u16, concept_b:u16, period_idx:u16, weight:f32)
+    8 bytes per row. Periods are indexed to save space.
     """
     chunks = sorted([d for d in WT1_CHUNKS.iterdir() if d.is_dir()])
     total = len(chunks)
-    already = count_done(conn, "cooc_direct")
+    already = count_done(conn, "cooc_shard")
     if already >= total:
-        n = conn.execute("SELECT COUNT(*) FROM cooc").fetchone()[0]
-        log(f"[WT3] Phase 3 cooc: already done ({n:,} pairs, {already}/{total} chunks)")
+        log(f"[WT3] Phase 3a shard: already done ({already}/{total} chunks)")
         return
 
-    if already > 0:
-        log(f"[WT3] Phase 3 cooc: resuming from chunk {already+1}/{total}")
+    SHARD_DIR.mkdir(parents=True, exist_ok=True)
 
-    total_upserts = 0
+    # Period index: map period strings to u16
+    period_idx_path = SHARD_DIR / "periods.json"
+    if period_idx_path.exists():
+        with open(period_idx_path, "r") as f:
+            period_to_idx = json.load(f)
+    else:
+        period_to_idx = {}
+
+    # Open shard files for append
+    shard_files = {}
+    for s in range(N_SHARDS):
+        shard_files[s] = open(_shard_path(s), "ab")
+
+    if already > 0:
+        log(f"[WT3] Phase 3a shard: resuming from chunk {already+1}/{total}")
+
+    total_rows = 0
     t0 = time.time()
-    log(f"[WT3] Ingesting WT1 cooccurrences (direct): {total} chunks ({already} already done)")
+    log(f"[WT3] Sharding WT1 cooccurrences: {total} chunks ({already} already done)")
+
+    pack = struct.pack
+    fmt = "<HHHf"  # concept_a:u16, concept_b:u16, period_idx:u16, weight:f32
 
     for i, chunk_dir in enumerate(chunks, 1):
         chunk_id = chunk_dir.name
-        if is_done(conn, "cooc_direct", chunk_id):
+        if is_done(conn, "cooc_shard", chunk_id):
             continue
 
         cooc_path = chunk_dir / "cooc.json.gz"
         if not cooc_path.exists():
-            mark_done(conn, "cooc_direct", chunk_id)
+            mark_done(conn, "cooc_shard", chunk_id)
             continue
 
         with gzip.open(cooc_path, "rt", encoding="utf-8") as f:
             data = json.load(f)
 
-        # Aggregate in Python dict first: (a, b, period) → sum(weight)
-        agg = {}
+        # Buffer per shard to reduce write() calls
+        buffers = {s: bytearray() for s in range(N_SHARDS)}
+        chunk_rows = 0
+
         for period, pairs in data.items():
+            if period not in period_to_idx:
+                period_to_idx[period] = len(period_to_idx)
+            pidx = period_to_idx[period]
+
             for pair_key, weight in pairs.items():
                 parts = pair_key.split("|")
                 if len(parts) != 2:
                     continue
                 a = int(parts[0])
                 b = int(parts[1])
-                key = (a, b, period)
-                agg[key] = agg.get(key, 0.0) + weight
+                shard_id = a % N_SHARDS
+                buffers[shard_id] += pack(fmt, a, b, pidx, weight)
+                chunk_rows += 1
         del data
 
-        # Upsert into cooc (ON CONFLICT add weight)
-        rows = [(a, b, p, w, w) for (a, b, p), w in agg.items()]
-        del agg
-        conn.executemany(
-            """INSERT INTO cooc (concept_a, concept_b, period, weight)
-               VALUES (?, ?, ?, ?)
-               ON CONFLICT(concept_a, concept_b, period)
-               DO UPDATE SET weight = weight + ?""",
-            rows,
-        )
-        total_upserts += len(rows)
-        del rows
-        mark_done(conn, "cooc_direct", chunk_id)
+        # Flush buffers
+        for s in range(N_SHARDS):
+            if buffers[s]:
+                shard_files[s].write(buffers[s])
+        del buffers
+
+        total_rows += chunk_rows
+        mark_done(conn, "cooc_shard", chunk_id)
 
         elapsed = time.time() - t0
-        rate = total_upserts / elapsed if elapsed > 0 else 0
+        rate = total_rows / elapsed if elapsed > 0 else 0
         if i % 10 == 0 or i == total or i <= 3:
-            log(f"  [{i}/{total}] {total_upserts:,} upserts ({rate:,.0f}/s)")
+            log(f"  [{i}/{total}] {total_rows:,} rows sharded ({rate:,.0f}/s)")
 
+    # Close shard files
+    for f in shard_files.values():
+        f.close()
+
+    # Save period index
+    with open(period_idx_path, "w") as f:
+        json.dump(period_to_idx, f)
+
+    log(f"[WT3] Sharding done: {total_rows:,} rows in {time.time()-t0:.1f}s, {len(period_to_idx)} periods")
+
+
+def aggregate_shards(conn: sqlite3.Connection):
+    """Phase 3b: For each shard file, load → aggregate in dict → bulk INSERT into cooc.
+
+    No PK during insert (fast). PK added at the end (Phase 3c).
+    Each shard = ~1-3M unique keys, fits in ~200 MB RAM.
+    """
+    if is_done(conn, "cooc_agg", "all"):
+        n = conn.execute("SELECT COUNT(*) FROM cooc").fetchone()[0]
+        log(f"[WT3] Phase 3b aggregate: already done ({n:,} rows)")
+        return
+
+    # Load period index
+    period_idx_path = SHARD_DIR / "periods.json"
+    with open(period_idx_path, "r") as f:
+        period_to_idx = json.load(f)
+    idx_to_period = {v: k for k, v in period_to_idx.items()}
+
+    # Drop and recreate cooc WITHOUT PK for fast bulk insert
+    already_done = count_done(conn, "cooc_shard_agg")
+    if already_done == 0:
+        conn.execute("DROP TABLE IF EXISTS cooc")
+        conn.execute("""CREATE TABLE cooc (
+            concept_a  INTEGER,
+            concept_b  INTEGER,
+            period     TEXT,
+            weight     REAL
+        )""")
+        conn.commit()
+        checkpoint(conn)
+        log("[WT3] Fresh cooc table (no PK) for shard aggregation")
+
+    t0 = time.time()
+    total_inserted = 0
+    fmt = "<HHHf"
+    row_size = struct.calcsize(fmt)
+    unpack = struct.unpack
+
+    log(f"[WT3] Aggregating {N_SHARDS} shards into cooc...")
+
+    for shard_id in range(N_SHARDS):
+        shard_key = f"shard_{shard_id:03d}"
+        if is_done(conn, "cooc_shard_agg", shard_key):
+            continue
+
+        sp = _shard_path(shard_id)
+        if not sp.exists() or sp.stat().st_size == 0:
+            mark_done(conn, "cooc_shard_agg", shard_key)
+            continue
+
+        # Read entire shard into memory and aggregate
+        raw = sp.read_bytes()
+        n_rows = len(raw) // row_size
+        agg = {}
+        for offset in range(0, len(raw), row_size):
+            a, b, pidx, w = unpack(fmt, raw[offset:offset + row_size])
+            key = (a, b, pidx)
+            agg[key] = agg.get(key, 0.0) + w
+        del raw
+
+        # Bulk INSERT (no PK = no index lookup = fast)
+        rows = [(a, b, idx_to_period[pidx], w) for (a, b, pidx), w in agg.items()]
+        del agg
+        conn.executemany(
+            "INSERT INTO cooc (concept_a, concept_b, period, weight) VALUES (?, ?, ?, ?)",
+            rows,
+        )
+        shard_inserted = len(rows)
+        del rows
+        total_inserted += shard_inserted
+        mark_done(conn, "cooc_shard_agg", shard_key)
+
+        elapsed = time.time() - t0
+        rate = total_inserted / elapsed if elapsed > 0 else 0
+        log(f"  [shard {shard_id}/{N_SHARDS}] {n_rows:,} raw → {shard_inserted:,} unique, total {total_inserted:,} ({rate:,.0f}/s)")
+
+    # Phase 3c: Add PK index (108M rows, not 6.4B — should be fine)
+    log("[WT3] Phase 3c: Creating PK index on cooc (~108M rows)...")
+    conn.execute("""CREATE UNIQUE INDEX IF NOT EXISTS idx_cooc_pk
+                    ON cooc(concept_a, concept_b, period)""")
+    conn.commit()
+    checkpoint(conn)
+
+    mark_done(conn, "cooc_agg", "all")
     n = conn.execute("SELECT COUNT(*) FROM cooc").fetchone()[0]
     log(f"[WT3] Cooc done: {n:,} unique pairs×periods in {time.time()-t0:.1f}s")
+
+    # Cleanup shard files
+    log("[WT3] Cleaning up shard files...")
+    import shutil
+    shutil.rmtree(SHARD_DIR, ignore_errors=True)
+
+
+def ingest_wt1_cooc(conn: sqlite3.Connection):
+    """Phase 3: Shard WT1 chunks on disk, then aggregate per shard into cooc."""
+    shard_wt1_chunks(conn)
+    aggregate_shards(conn)
 
 
 # ─── Phase 4: cooc_global ─────────────────────────────────────────
