@@ -19,7 +19,7 @@ from pathlib import Path
 
 # ── Paths ──────────────────────────────────────────────────────────────
 ARXIV_SRC = Path("E:/arxiv/src")
-REPO_ROOT = Path(r"c:\Users\ludov\Desktop\ygg\yggdrasil-engine")
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 GLYPH_CHUNKS_DIR = REPO_ROOT / "data" / "scan" / "glyph_chunks"
 GLYPH_TREE_PATH = REPO_ROOT / "data" / "scan" / "glyph_tree.json"
 OUTPUT_PATH = REPO_ROOT / "data" / "scan" / "arxiv_tree.json"

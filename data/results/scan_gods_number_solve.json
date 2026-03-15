@@ -1,0 +1,2213 @@
+{
+  "scan": "gods_number_solve_v1",
+  "date": "2026-03-14 21:29:37",
+  "cross_axis_papers": [
+    {
+      "paper_id": "cond-mat/0101387",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 26,
+      "domain": "Physics",
+      "n_glyphs": 54
+    },
+    {
+      "paper_id": "cond-mat/0103545",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 18,
+      "domain": "Physics",
+      "n_glyphs": 26
+    },
+    {
+      "paper_id": "hep-th/0201181",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "1": [
+          "Symmetric group"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 20,
+      "domain": "Mathematics",
+      "n_glyphs": 10
+    },
+    {
+      "paper_id": "quant-ph/0305008",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 19,
+      "domain": "Physics",
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "quant-ph/0401184",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ],
+        "4": [
+          "PSPACE"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 11,
+      "domain": "Physics",
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "quant-ph/0603139",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Quantum walk"
+        ],
+        "1": [
+          "Symmetric group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 16,
+      "domain": "Mathematics",
+      "n_glyphs": 89
+    },
+    {
+      "paper_id": "math/0610100",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 22,
+      "domain": "Mathematics",
+      "n_glyphs": 97
+    },
+    {
+      "paper_id": "0901.4237",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 17,
+      "domain": "Physics",
+      "n_glyphs": 44
+    },
+    {
+      "paper_id": "0904.2057",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 23,
+      "domain": "Mathematics",
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "1104.4576",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 22,
+      "domain": "Mathematics",
+      "n_glyphs": 80
+    },
+    {
+      "paper_id": "1205.3832",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 16,
+      "domain": "Computer science",
+      "n_glyphs": 29
+    },
+    {
+      "paper_id": "1206.3178",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Physics",
+      "n_glyphs": 100
+    },
+    {
+      "paper_id": "1207.5257",
+      "n_axes": 3,
+      "axes": [
+        1,
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ],
+        "1": [
+          "Coset"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 19,
+      "domain": "Mathematics",
+      "n_glyphs": 32
+    },
+    {
+      "paper_id": "1301.3282",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 23,
+      "domain": "Physics",
+      "n_glyphs": 29
+    },
+    {
+      "paper_id": "1312.0123",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 21,
+      "domain": "Physics",
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "1411.7691",
+      "n_axes": 3,
+      "axes": [
+        2,
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 22,
+      "domain": "Physics",
+      "n_glyphs": 32
+    },
+    {
+      "paper_id": "0904.1800",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors",
+          "Spectral gap",
+          "Laplacian matrix"
+        ],
+        "1": [
+          "Symmetric group",
+          "Cayley graph"
+        ]
+      },
+      "n_gn": 5,
+      "n_total": 14,
+      "domain": "Mathematics",
+      "n_glyphs": 28
+    },
+    {
+      "paper_id": "1403.1624",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Group theory",
+          "Symmetric group",
+          "Coset",
+          "Permutation group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 5,
+      "n_total": 25,
+      "domain": "Mathematics",
+      "n_glyphs": 42
+    },
+    {
+      "paper_id": "math/0505624",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Symmetric group"
+        ],
+        "2": [
+          "Random walk",
+          "Expander graph"
+        ]
+      },
+      "n_gn": 4,
+      "n_total": 13,
+      "domain": "Mathematics",
+      "n_glyphs": 51
+    },
+    {
+      "paper_id": "quant-ph/0609204",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Markov chain mixing time",
+          "Random walk",
+          "Spectral gap"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 4,
+      "n_total": 18,
+      "domain": "Mathematics",
+      "n_glyphs": 57
+    },
+    {
+      "paper_id": "0902.0727",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Symmetric group"
+        ],
+        "2": [
+          "Laplacian matrix",
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 4,
+      "n_total": 17,
+      "domain": "Mathematics",
+      "n_glyphs": 69
+    },
+    {
+      "paper_id": "1201.3399",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Coset",
+          "Normal subgroup"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 4,
+      "n_total": 18,
+      "domain": "Mathematics",
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "1310.6156",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Symmetric group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors",
+          "Spectral gap"
+        ]
+      },
+      "n_gn": 4,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 37
+    },
+    {
+      "paper_id": "math/0006118",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "1": [
+          "Symmetric group",
+          "Wreath product"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 10,
+      "domain": "Mathematics",
+      "n_glyphs": 55
+    },
+    {
+      "paper_id": "math/0302012",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors",
+          "Spectral gap"
+        ],
+        "4": [
+          "Inverse problem"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 30,
+      "domain": "Mathematics",
+      "n_glyphs": 35
+    },
+    {
+      "paper_id": "math/0305260",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "1": [
+          "Symmetric group",
+          "Normal subgroup"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 78
+    },
+    {
+      "paper_id": "cond-mat/0309240",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "4": [
+          "Constraint satisfaction problem",
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 13,
+      "domain": "Mathematics",
+      "n_glyphs": 29
+    },
+    {
+      "paper_id": "quant-ph/0311118",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 21,
+      "domain": "Mathematics",
+      "n_glyphs": 36
+    },
+    {
+      "paper_id": "quant-ph/0401053",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 51
+    },
+    {
+      "paper_id": "gr-qc/0410094",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Group theory",
+          "Semidirect product"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 16,
+      "domain": "Mathematics",
+      "n_glyphs": 44
+    },
+    {
+      "paper_id": "math/0501440",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Wreath product"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 17,
+      "domain": "Mathematics",
+      "n_glyphs": 56
+    },
+    {
+      "paper_id": "math/0502250",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Coset"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 9,
+      "domain": "Mathematics",
+      "n_glyphs": 52
+    },
+    {
+      "paper_id": "quant-ph/0502111",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 13,
+      "domain": "Mathematics",
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "math/0508291",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Symmetric group"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 51
+    },
+    {
+      "paper_id": "math/0606046",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Wreath product"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 46
+    },
+    {
+      "paper_id": "0705.4612",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Laplacian matrix"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 19,
+      "domain": "Mathematics",
+      "n_glyphs": 42
+    },
+    {
+      "paper_id": "0708.3766",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Wreath product"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 50
+    },
+    {
+      "paper_id": "0710.3453",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 10,
+      "domain": "Mathematics",
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "0807.2263",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 24,
+      "domain": "Mathematics",
+      "n_glyphs": 50
+    },
+    {
+      "paper_id": "0811.0647",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Expander graph",
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 44
+    },
+    {
+      "paper_id": "0906.1238",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Spectral gap"
+        ],
+        "1": [
+          "Coset"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 71
+    },
+    {
+      "paper_id": "0911.4038",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Symmetric group",
+          "Permutation group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 17,
+      "domain": "Mathematics",
+      "n_glyphs": 50
+    },
+    {
+      "paper_id": "1003.1883",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 25
+    },
+    {
+      "paper_id": "1010.0741",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Markov chain mixing time",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 25,
+      "domain": "Mathematics",
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "1010.1683",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Group theory",
+          "Symmetric group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 24,
+      "domain": "Mathematics",
+      "n_glyphs": 56
+    },
+    {
+      "paper_id": "1011.5953",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Semidirect product",
+          "Coset"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 9,
+      "domain": "Mathematics",
+      "n_glyphs": 56
+    },
+    {
+      "paper_id": "1104.2653",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 22,
+      "domain": "Mathematics",
+      "n_glyphs": 38
+    },
+    {
+      "paper_id": "1106.0725",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Symmetric group",
+          "Coset"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 11,
+      "domain": "Mathematics",
+      "n_glyphs": 67
+    },
+    {
+      "paper_id": "1108.4482",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 19,
+      "domain": "Mathematics",
+      "n_glyphs": 45
+    },
+    {
+      "paper_id": "1110.0909",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Expander graph",
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 13,
+      "domain": "Mathematics",
+      "n_glyphs": 57
+    },
+    {
+      "paper_id": "1111.7065",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 34
+    },
+    {
+      "paper_id": "1112.4982",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 16,
+      "domain": "Mathematics",
+      "n_glyphs": 55
+    },
+    {
+      "paper_id": "1202.1160",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 13,
+      "domain": "Mathematics",
+      "n_glyphs": 34
+    },
+    {
+      "paper_id": "1301.0034",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 47
+    },
+    {
+      "paper_id": "1311.0599",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Group theory",
+          "Classification of finite simple groups"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 19,
+      "domain": "Mathematics",
+      "n_glyphs": 31
+    },
+    {
+      "paper_id": "1312.1149",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 19,
+      "domain": "Mathematics",
+      "n_glyphs": 35
+    },
+    {
+      "paper_id": "1401.2935",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 71
+    },
+    {
+      "paper_id": "1404.5265",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors",
+          "Spectral gap"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 22,
+      "domain": "Mathematics",
+      "n_glyphs": 62
+    },
+    {
+      "paper_id": "1404.7787",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors",
+          "Spectral gap"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 20,
+      "domain": "Mathematics",
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "1405.1487",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 9,
+      "domain": "Mathematics",
+      "n_glyphs": 70
+    },
+    {
+      "paper_id": "1405.6462",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Symmetric group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 7,
+      "domain": "Mathematics",
+      "n_glyphs": 40
+    },
+    {
+      "paper_id": "1410.4800",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "1": [
+          "Symmetric group",
+          "Permutation group"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 14,
+      "domain": "Mathematics",
+      "n_glyphs": 60
+    },
+    {
+      "paper_id": "1501.03199",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Random walk",
+          "Expander graph"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 62
+    },
+    {
+      "paper_id": "1503.01334",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Markov chain mixing time",
+          "Spectral gap"
+        ],
+        "4": [
+          "Inverse problem"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 23,
+      "domain": "Mathematics",
+      "n_glyphs": 43
+    },
+    {
+      "paper_id": "1503.04075",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Symmetric group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 21,
+      "domain": "Mathematics",
+      "n_glyphs": 48
+    },
+    {
+      "paper_id": "1510.00438",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Symmetric group",
+          "Permutation group"
+        ],
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 22,
+      "domain": "Mathematics",
+      "n_glyphs": 44
+    },
+    {
+      "paper_id": "1510.00566",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory",
+          "Quantum walk"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 17,
+      "domain": "Physics",
+      "n_glyphs": 23
+    },
+    {
+      "paper_id": "1510.05178",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Quantum walk"
+        ],
+        "2": [
+          "Laplacian matrix",
+          "Eigenvalues and eigenvectors"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 14,
+      "domain": "Mathematics",
+      "n_glyphs": 56
+    },
+    {
+      "paper_id": "1510.08040",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph",
+          "Wreath product"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 18,
+      "domain": "Mathematics",
+      "n_glyphs": 92
+    },
+    {
+      "paper_id": "1510.08830",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "1": [
+          "Wreath product",
+          "Permutation group"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 14,
+      "domain": "Mathematics",
+      "n_glyphs": 85
+    },
+    {
+      "paper_id": "1511.03793",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk",
+          "Eigenvalues and eigenvectors"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 3,
+      "n_total": 14,
+      "domain": "Mathematics",
+      "n_glyphs": 31
+    },
+    {
+      "paper_id": "cond-mat/0001177",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 12,
+      "domain": "Physics",
+      "n_glyphs": 23
+    },
+    {
+      "paper_id": "hep-lat/0001010",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 11,
+      "domain": "Physics",
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "cond-mat/0003351",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 21
+    },
+    {
+      "paper_id": "hep-lat/0003021",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 13,
+      "domain": "Physics",
+      "n_glyphs": 40
+    },
+    {
+      "paper_id": "cond-mat/0004333",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 17,
+      "domain": "Mathematics",
+      "n_glyphs": 14
+    },
+    {
+      "paper_id": "cond-mat/0007509",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 23,
+      "domain": "Physics",
+      "n_glyphs": 26
+    },
+    {
+      "paper_id": "hep-lat/0007012",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 23,
+      "domain": "Physics",
+      "n_glyphs": 25
+    },
+    {
+      "paper_id": "hep-lat/0007025",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 24,
+      "domain": "Mathematics",
+      "n_glyphs": 26
+    },
+    {
+      "paper_id": "cond-mat/0008171",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 19,
+      "domain": "Materials science",
+      "n_glyphs": 26
+    },
+    {
+      "paper_id": "nucl-th/0009023",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 23,
+      "domain": "Physics",
+      "n_glyphs": 61
+    },
+    {
+      "paper_id": "cond-mat/0010380",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 14,
+      "domain": "Physics",
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "quant-ph/0010117",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 48
+    },
+    {
+      "paper_id": "cond-mat/0011174",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 11,
+      "domain": "Computer science",
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "cond-mat/0011494",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 15,
+      "domain": "Mathematics",
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "math/0011132",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Inverse problem"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 14,
+      "domain": "Mathematics",
+      "n_glyphs": 31
+    },
+    {
+      "paper_id": "cond-mat/0012304",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 15,
+      "domain": "Physics",
+      "n_glyphs": 53
+    },
+    {
+      "paper_id": "math-ph/0012037",
+      "n_axes": 2,
+      "axes": [
+        1,
+        2
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 17,
+      "domain": "Mathematics",
+      "n_glyphs": 44
+    },
+    {
+      "paper_id": "quant-ph/0012090",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 10,
+      "domain": "Mathematics",
+      "n_glyphs": 57
+    },
+    {
+      "paper_id": "cond-mat/0102169",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 14,
+      "domain": "Physics",
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "cond-mat/0102408",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "hep-lat/0103031",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 11,
+      "domain": "Physics",
+      "n_glyphs": 34
+    },
+    {
+      "paper_id": "quant-ph/0103020",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 11,
+      "domain": "Computer science",
+      "n_glyphs": 23
+    },
+    {
+      "paper_id": "cond-mat/0104072",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Eigenvalues and eigenvectors"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 20,
+      "domain": "Physics",
+      "n_glyphs": 41
+    },
+    {
+      "paper_id": "cond-mat/0104428",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "4": [
+          "Phase transition"
+        ],
+        "3": [
+          "Combinatorial optimization"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 12,
+      "domain": "Computer science",
+      "n_glyphs": 52
+    },
+    {
+      "paper_id": "math/0104044",
+      "n_axes": 2,
+      "axes": [
+        2,
+        4
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 10,
+      "domain": "Mathematics",
+      "n_glyphs": 58
+    },
+    {
+      "paper_id": "quant-ph/0104137",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "2": [
+          "Random walk"
+        ],
+        "3": [
+          "Quantum walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 11,
+      "domain": "Mathematics",
+      "n_glyphs": 50
+    },
+    {
+      "paper_id": "cond-mat/0105422",
+      "n_axes": 2,
+      "axes": [
+        1,
+        4
+      ],
+      "concepts_by_axis": {
+        "1": [
+          "Cayley graph"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 13,
+      "domain": "Mathematics",
+      "n_glyphs": 26
+    },
+    {
+      "paper_id": "cond-mat/0105556",
+      "n_axes": 2,
+      "axes": [
+        3,
+        4
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "4": [
+          "Phase transition"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 15,
+      "domain": "Physics",
+      "n_glyphs": 28
+    },
+    {
+      "paper_id": "math/0107079",
+      "n_axes": 2,
+      "axes": [
+        2,
+        3
+      ],
+      "concepts_by_axis": {
+        "3": [
+          "Percolation theory"
+        ],
+        "2": [
+          "Random walk"
+        ]
+      },
+      "n_gn": 2,
+      "n_total": 12,
+      "domain": "Mathematics",
+      "n_glyphs": 46
+    }
+  ],
+  "n_components": 1,
+  "components": [
+    [
+      "Cayley graph",
+      "Classification of finite simple groups",
+      "Coding theory",
+      "Combinatorial optimization",
+      "Commutator subgroup",
+      "Constraint satisfaction problem",
+      "Coset",
+      "Eigenvalues and eigenvectors",
+      "Expander graph",
+      "Group theory",
+      "Interval arithmetic",
+      "Inverse problem",
+      "Knot theory",
+      "Laplacian matrix",
+      "Markov chain mixing time",
+      "Nilpotent group",
+      "Normal subgroup",
+      "PSPACE",
+      "Percolation theory",
+      "Permutation group",
+      "Phase transition",
+      "Quantum walk",
+      "Random walk",
+      "Semidirect product",
+      "Sensitivity analysis",
+      "Simple group",
+      "Sorting network",
+      "Spectral gap",
+      "Sphere packing",
+      "Symmetric group",
+      "Unknot",
+      "Wreath product"
+    ]
+  ],
+  "strategic_holes": [],
+  "priority_papers": [
+    "0904.1800",
+    "math/0012192",
+    "math/0505624",
+    "quant-ph/0609204",
+    "cond-mat/0309240",
+    "1005.1858",
+    "1403.1624"
+  ],
+  "missing_bridges": [
+    {
+      "a": "Cayley graph",
+      "b": "Constraint satisfaction problem",
+      "type": "B",
+      "cooc": 0
+    },
+    {
+      "a": "Cayley graph",
+      "b": "PSPACE",
+      "type": "B",
+      "cooc": 0
+    },
+    {
+      "a": "Knot theory",
+      "b": "Cayley graph",
+      "type": "B",
+      "cooc": 0
+    },
+    {
+      "a": "Coding theory",
+      "b": "Cayley graph",
+      "type": "B",
+      "cooc": 0
+    },
+    {
+      "a": "Wreath product",
+      "b": "Spectral gap",
+      "type": "A",
+      "cooc": 0
+    }
+  ]
+}

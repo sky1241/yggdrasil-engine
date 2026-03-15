@@ -6,10 +6,12 @@ Rule: NE JAMAIS INVENTER — Sky prefere un trou a un mensonge.
 """
 import json
 from datetime import datetime
+from pathlib import Path
 
-REGISTRY = "c:/Users/ludov/Desktop/ygg/yggdrasil-engine/data/core/glyph_registry.json"
-SEEDS = "c:/Users/ludov/Desktop/ygg/yggdrasil-engine/data/core/seeds_s2.json"
-OUTPUT = "c:/Users/ludov/Desktop/ygg/yggdrasil-engine/data/core/glyph_origins.json"
+_ROOT = Path(__file__).resolve().parent.parent.parent
+REGISTRY = str(_ROOT / "data" / "core" / "glyph_registry.json")
+SEEDS = str(_ROOT / "data" / "core" / "seeds_s2.json")
+OUTPUT = str(_ROOT / "data" / "core" / "glyph_origins.json")
 
 # ============================================================
 #  GLYPH ORIGINS — keyed by glyph_id from glyph_registry.json

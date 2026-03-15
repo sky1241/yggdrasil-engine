@@ -30,6 +30,10 @@ data/scan/concept_index.db-wal
 data/scan/concept_index_cache.json.gz
 data/scan/wt2_scan.log
 data/bible/
+data/wt3.db
+data/wt3.db-shm
+data/wt3.db-wal
+data/cooc_shards/
 data/pipeline/pipeline_test_*.json
 
 # Binary data

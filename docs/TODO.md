@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 3 mars 2026 (session 15), Sky×Claude (Opus 4.6)
+> Dernière màj: 14 mars 2026 (session 25), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -333,11 +333,40 @@ Pipeline 8 briques: registry → parsers → scanners → laplacien → frames �
 
 ### arXiv↔OpenAlex Mapper (✅ COMPLET — session 15)
 - [x] **309/309 chunks**: 479,290,643 papers, 4,324,641 arXiv trouvés
-- [ ] Auto-merge → `data/scan/arxiv_openalex_map.json.gz`
+- [ ] Auto-merge → `data/scan/arxiv_openalex_map.json.gz` (nice-to-have)
 - Script: `engine/mining/arxiv_openalex_mapper.py`
+
+## WT2 — BRIDGE S-2↔S0 (✅ COMPLET — session 22, 9 mars 2026)
+- [x] **416/416 chunks**, 877K papers, 832K full (glyphs+concepts)
+- [x] 19 domaines, 1,337 glyphes, cutoff 2015-12
+- [x] Fix extract_tex_from_gz: magic bytes, timeout 30s/paper, cap 500KB regex
+- Scanner: `engine/topology/wt2_scanner.py`
+- Output: `data/scan/wt2_chunks/chunk_NNN/`
+
+## WT3 — LA BIBLE (EN COURS — sessions 23-25, crashé phase 4)
+Jointure WT1+WT2 dans SQLite unifié. Script: `engine/topology/wt3_bible.py`
+
+- [x] **Phase 1 papers**: 833,030 papers, 416/416 chunks
+- [x] **Phase 2 bipartite**: 6,181,981 paires glyph×concept, 416/416 chunks
+- [x] **Phase 3a cooc**: 6.4B rows, 64 shards dans `data/cooc_shards/` (20 GB)
+- [x] **Phase 3b cooc_shard_agg**: 64/64 shards agrégés (terminé 12 mars 15:35)
+- [ ] **Phase 4 cooc_global**: CRASHÉ — 61.6M rows mais marker "done" absent → potentiellement incomplet
+- [ ] **Phase 5 indexes**: 7/8 index manquants
+- [ ] **Phase 6 meta**: vide
+- Output: `data/wt3.db` (74 GB), SQLite WAL mode, crash-resumable
+
+### God Cube + WT4 design (sessions 23-25)
+- [x] `docs/GOD_CUBE.md` — théorie God's Algorithm, Manteuffel, polytope, trinité quantique
+- [x] `viz/god_cube.html` — prototype polytope
+- [x] `viz/s2_spectral_3d.html` — S-2 3D embedding (eigenvectors 1-2-3)
+- [x] `viz/hypertree_decomp.html`, `viz/hypergraph_s2s1.html` — nouvelles viz
+- [x] WT4 design: forme champignon, nd = coordonnée verticale, Laplacien joint = calcul dérivé
+- [ ] WT4 implémentation (attend WT3 complet)
 
 ## NOTES
 - Winter tree scan V2 COMPLET (581/581 chunks, 692 GB, 348M papers). Le goulot est passé.
+- **WT2 COMPLET** (416/416, 832K papers) — session 22.
+- **WT3 crashé phase 4** — cooc_global potentiellement incomplet, indexes manquants. Relancer le script.
 - V3 (formules météorites) réutilise les 1,534 frames V2 → quasi gratuit.
 - Predictions 2025 produites sans cutoff. Blind test V2 avec cutoff 2015.
 - Glyph Laplacian FAIT avec validation honnête: d=5.76, p=7e-11, recall top 0.1%=70%.
@@ -347,5 +376,6 @@ Pipeline 8 briques: registry → parsers → scanners → laplacien → frames �
 - ⚠️ `pytest` non installé — tests non exécutables. Installer: `pip install pytest`.
 - ⚠️ D:\ contient encore le snapshot OpenAlex (~692 GB) après migration E:\. À nettoyer si besoin d'espace.
 - **Pipeline S-2 COMPLET**: 459 chunks, 617 glyphes actifs, positions spectrales calculées.
-- Prochaine étape majeure: **S-1 Métiers** (lier S-2 glyphes → S-1 métiers → S0 formules), puis V3 météorites.
+- **S-1 Métiers COMPLET**: 416/416 chunks, 858K papers, 19 domaines (session 19).
+- **Prochaine étape**: finir WT3 (relancer wt3_bible.py), puis WT4, Muninn, viz, V3, V4.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.

@@ -1,0 +1,1269 @@
+{
+  "meta": {
+    "n_pairs": 36,
+    "method": "spectral_dot+P4+bridges",
+    "base": "65026 concepts"
+  },
+  "results": [
+    {
+      "num": 1,
+      "vector": "META",
+      "name_a": "computational neuroscience",
+      "name_b": "knowledge graph",
+      "idx_a": 8240,
+      "idx_b": 48063,
+      "spectral_dot": 2.6973950218304317e-05,
+      "cosine_sim": 0.26275436085974035,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00035840785607656655
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.0002765982193608276
+        },
+        {
+          "name": "Task (project management)",
+          "score": 0.0002427755428361854
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.0002068932446966745
+        },
+        {
+          "name": "Human–computer interaction",
+          "score": 0.00020043980347685068
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 2,
+      "vector": "META",
+      "name_a": "computational neuroscience",
+      "name_b": "BAM (assoc. memory)",
+      "idx_a": 8240,
+      "idx_b": 3287,
+      "spectral_dot": 4.70299231915567e-05,
+      "cosine_sim": 0.6389021379410432,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00035840785607656655
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.0002805942987923093
+        },
+        {
+          "name": "Computer vision",
+          "score": 0.0002662921177639487
+        },
+        {
+          "name": "Cognitive psychology",
+          "score": 0.00023023372710105218
+        },
+        {
+          "name": "Speech recognition",
+          "score": 0.00022573077192776546
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 3,
+      "vector": "META",
+      "name_a": "swarm intelligence",
+      "name_b": "semantic network",
+      "idx_a": 3108,
+      "idx_b": 62789,
+      "spectral_dot": 7.019452063249278e-05,
+      "cosine_sim": 0.22094258735420047,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.000647691260846478
+        },
+        {
+          "name": "Data mining",
+          "score": 0.0006006195364275985
+        },
+        {
+          "name": "Theoretical computer science",
+          "score": 0.0005285751849212869
+        },
+        {
+          "name": "Computer science",
+          "score": 0.0004707645770786914
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.0004525341389430813
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 4,
+      "vector": "V1-PIEUVRE",
+      "name_a": "cephalopod",
+      "name_b": "distributed computing",
+      "idx_a": 39241,
+      "idx_b": 3234,
+      "spectral_dot": -1.9178189477559563e-05,
+      "cosine_sim": -0.017085620109098858,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Biology",
+          "score": 0.0004657502331253607
+        },
+        {
+          "name": "Geography",
+          "score": 0.00043782755441498463
+        },
+        {
+          "name": "Geology",
+          "score": 0.0003673809540807413
+        },
+        {
+          "name": "Ecology",
+          "score": 0.00035763951496431596
+        },
+        {
+          "name": "Anatomy",
+          "score": 0.00029751967633097256
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 5,
+      "vector": "V1-PIEUVRE",
+      "name_a": "cephalopod",
+      "name_b": "multi-agent system",
+      "idx_a": 39241,
+      "idx_b": 55020,
+      "spectral_dot": 3.5086107823536025e-06,
+      "cosine_sim": 0.011542763714894199,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Range (aeronautics)",
+          "score": 0.00021728774402123382
+        },
+        {
+          "name": "Host (biology)",
+          "score": 0.00013574178686327334
+        },
+        {
+          "name": "Adaptation (eye)",
+          "score": 0.00013093588066219098
+        },
+        {
+          "name": "Type (biology)",
+          "score": 0.00012528308878564608
+        },
+        {
+          "name": "Distribution (mathematics)",
+          "score": 0.00012472741921512053
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 6,
+      "vector": "V1-PIEUVRE",
+      "name_a": "peripheral nervous sys",
+      "name_b": "multi-agent system",
+      "idx_a": 57799,
+      "idx_b": 55020,
+      "spectral_dot": -2.3888893117169985e-05,
+      "cosine_sim": -0.052305291597050906,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Latency (audio)",
+          "score": 0.00020933450110959415
+        },
+        {
+          "name": "Presentation (obstetrics)",
+          "score": 0.00017847145203911543
+        },
+        {
+          "name": "Psychology",
+          "score": 0.00015981048157201694
+        },
+        {
+          "name": "Functional magnetic resonance imaging",
+          "score": 0.0001401081436085424
+        },
+        {
+          "name": "Mechanism (biology)",
+          "score": 0.00013218851808982084
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 7,
+      "vector": "V2-PRIMATE",
+      "name_a": "cortical neurons",
+      "name_b": "network topology",
+      "idx_a": 47394,
+      "idx_b": 15597,
+      "spectral_dot": 1.984254003093157e-05,
+      "cosine_sim": 0.02414642331764458,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0002781064403012721
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.0002710545104272271
+        },
+        {
+          "name": "Latency (audio)",
+          "score": 0.00025747351747344564
+        },
+        {
+          "name": "Task (project management)",
+          "score": 0.00020594743181233502
+        },
+        {
+          "name": "Modulation (music)",
+          "score": 0.00018480115569748117
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 8,
+      "vector": "V2-PRIMATE",
+      "name_a": "dopamine",
+      "name_b": "weighting",
+      "idx_a": 56815,
+      "idx_b": 12983,
+      "spectral_dot": -1.2185397127474222e-05,
+      "cosine_sim": -0.009708899967270425,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Computer science",
+          "score": 0.0005629026197265592
+        },
+        {
+          "name": "Context (archaeology)",
+          "score": 0.0003812593175576433
+        },
+        {
+          "name": "Cognitive psychology",
+          "score": 0.00035141326831006407
+        },
+        {
+          "name": "Physics",
+          "score": 0.000328982930088496
+        },
+        {
+          "name": "Psychology",
+          "score": 0.00031593214597821015
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 9,
+      "vector": "V2-PRIMATE",
+      "name_a": "primate",
+      "name_b": "reinforcement learning",
+      "idx_a": 39540,
+      "idx_b": 64640,
+      "spectral_dot": 0.00011352955680528782,
+      "cosine_sim": 0.25112926282056525,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Cognitive psychology",
+          "score": 0.0007213378697469309
+        },
+        {
+          "name": "Cognition",
+          "score": 0.0005505660839442915
+        },
+        {
+          "name": "Cognitive science",
+          "score": 0.00048611763103926966
+        },
+        {
+          "name": "Psychology",
+          "score": 0.0004421655252492972
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0003962675074861034
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 10,
+      "vector": "V3-CORBEAU",
+      "name_a": "corvidae",
+      "name_b": "social network analysis",
+      "idx_a": 38417,
+      "idx_b": 2356,
+      "spectral_dot": 9.88564906258207e-06,
+      "cosine_sim": 0.0834449941264653,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Geography",
+          "score": 0.0001377541212020487
+        },
+        {
+          "name": "Population",
+          "score": 0.00013232226233671714
+        },
+        {
+          "name": "Dominance (genetics)",
+          "score": 0.00011777091950855471
+        },
+        {
+          "name": "Taxonomy (biology)",
+          "score": 0.0001121337726584859
+        },
+        {
+          "name": "Ecology",
+          "score": 0.00010589283511684633
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 11,
+      "vector": "V3-CORBEAU",
+      "name_a": "transitive relation",
+      "name_b": "knowledge graph",
+      "idx_a": 14275,
+      "idx_b": 48063,
+      "spectral_dot": 0.00014357835985298,
+      "cosine_sim": 0.4460790898176038,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Natural language processing",
+          "score": 0.0006127198682731912
+        },
+        {
+          "name": "Semantics (computer science)",
+          "score": 0.0005440015227832289
+        },
+        {
+          "name": "Programming language",
+          "score": 0.0005261025785667153
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0004852588329446074
+        },
+        {
+          "name": "Theoretical computer science",
+          "score": 0.00048319264009580917
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 12,
+      "vector": "V3-CORBEAU",
+      "name_a": "theory of mind",
+      "name_b": "multi-agent system",
+      "idx_a": 35201,
+      "idx_b": 55020,
+      "spectral_dot": 0.00010072957928312413,
+      "cosine_sim": 0.19895832305322658,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Task (project management)",
+          "score": 0.0006280330261611552
+        },
+        {
+          "name": "Context (archaeology)",
+          "score": 0.0004059006806665089
+        },
+        {
+          "name": "Epistemology",
+          "score": 0.00038626007155205565
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00037480023531627276
+        },
+        {
+          "name": "Human–computer interaction",
+          "score": 0.00037345767892220643
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 13,
+      "vector": "V4-DAUPHIN",
+      "name_a": "sleep",
+      "name_b": "online learning",
+      "idx_a": 18057,
+      "idx_b": 47838,
+      "spectral_dot": -4.304060731573835e-05,
+      "cosine_sim": -0.06658896846807791,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Social psychology",
+          "score": 0.0007600108194705806
+        },
+        {
+          "name": "Psychology",
+          "score": 0.0007275146568667169
+        },
+        {
+          "name": "Perception",
+          "score": 0.0006476937247117141
+        },
+        {
+          "name": "Applied psychology",
+          "score": 0.0005638296602459075
+        },
+        {
+          "name": "Developmental psychology",
+          "score": 0.0005007129961906906
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 14,
+      "vector": "V4-DAUPHIN",
+      "name_a": "cognition",
+      "name_b": "memory consolidation",
+      "idx_a": 10932,
+      "idx_b": 56130,
+      "spectral_dot": 0.0009525467755288506,
+      "cosine_sim": 0.5713220537274669,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Neuroscience",
+          "score": 0.0018454549909273175
+        },
+        {
+          "name": "Prefrontal cortex",
+          "score": 0.001231495975628714
+        },
+        {
+          "name": "Cognitive psychology",
+          "score": 0.0011947783403282119
+        },
+        {
+          "name": "Hippocampus",
+          "score": 0.0011782595833416322
+        },
+        {
+          "name": "Amygdala",
+          "score": 0.001104246627238032
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 15,
+      "vector": "V4-DAUPHIN",
+      "name_a": "memory consolidation",
+      "name_b": "concurrent computing",
+      "idx_a": 56130,
+      "idx_b": 7877,
+      "spectral_dot": 1.265360217432999e-05,
+      "cosine_sim": 0.01891604553018809,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Task (project management)",
+          "score": 0.000330585117682245
+        },
+        {
+          "name": "Latency (audio)",
+          "score": 0.00032146653934704447
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00022799818483454324
+        },
+        {
+          "name": "Natural language processing",
+          "score": 0.00021332561356791145
+        },
+        {
+          "name": "Computer science",
+          "score": 0.00017972293401485268
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 16,
+      "vector": "V5-ABEILLE",
+      "name_a": "collective behavior",
+      "name_b": "quorum sensing",
+      "idx_a": 86,
+      "idx_b": 2962,
+      "spectral_dot": 2.2037068029147558e-05,
+      "cosine_sim": 0.16838287062990862,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Domain (mathematical analysis)",
+          "score": 0.00011992752147814116
+        },
+        {
+          "name": "Function (biology)",
+          "score": 0.00011829273672500152
+        },
+        {
+          "name": "Adaptation (eye)",
+          "score": 9.678776507948973e-05
+        },
+        {
+          "name": "Ecology",
+          "score": 8.701647561070195e-05
+        },
+        {
+          "name": "Mechanism (biology)",
+          "score": 8.40435727077343e-05
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 17,
+      "vector": "V5-ABEILLE",
+      "name_a": "swarm intelligence",
+      "name_b": "ranking (IR)",
+      "idx_a": 3108,
+      "idx_b": 13955,
+      "spectral_dot": 0.00021472628594459712,
+      "cosine_sim": 0.46907389631531177,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Mathematical optimization",
+          "score": 0.0008503340149989638
+        },
+        {
+          "name": "Algorithm",
+          "score": 0.0008108661143028529
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.000647691260846478
+        },
+        {
+          "name": "Data mining",
+          "score": 0.0006006195364275985
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.0005954139062323955
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 18,
+      "vector": "V5-ABEILLE",
+      "name_a": "collective behavior",
+      "name_b": "voting",
+      "idx_a": 86,
+      "idx_b": 57036,
+      "spectral_dot": 5.555127700233853e-05,
+      "cosine_sim": 0.3154907956119446,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Mathematical optimization",
+          "score": 0.0002761565826325047
+        },
+        {
+          "name": "Cognitive psychology",
+          "score": 0.0001993258145728253
+        },
+        {
+          "name": "Algorithm",
+          "score": 0.00019769379067829745
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00019185044841764926
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.0001869101408185246
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 19,
+      "vector": "V6-ELEPHANT",
+      "name_a": "emotional memory",
+      "name_b": "graph database",
+      "idx_a": 48672,
+      "idx_b": 11901,
+      "spectral_dot": -3.671282396059969e-06,
+      "cosine_sim": -0.014757800780609601,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Task (project management)",
+          "score": 0.00024498858014981146
+        },
+        {
+          "name": "Sentence",
+          "score": 0.0001532830495127464
+        },
+        {
+          "name": "Natural language processing",
+          "score": 0.0001487152593282038
+        },
+        {
+          "name": "Categorization",
+          "score": 0.00013798224804810453
+        },
+        {
+          "name": "Word (group theory)",
+          "score": 0.00013598933995605372
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 20,
+      "vector": "V6-ELEPHANT",
+      "name_a": "amygdala",
+      "name_b": "episodic memory",
+      "idx_a": 33279,
+      "idx_b": 63259,
+      "spectral_dot": 0.0011673252903187893,
+      "cosine_sim": 0.6954148333043523,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Cognitive psychology",
+          "score": 0.001974811904776592
+        },
+        {
+          "name": "Functional magnetic resonance imaging",
+          "score": 0.001858930485566944
+        },
+        {
+          "name": "Neuroscience",
+          "score": 0.0017930667905815233
+        },
+        {
+          "name": "Psychology",
+          "score": 0.0017822830613249691
+        },
+        {
+          "name": "Audiology",
+          "score": 0.0017488704391325786
+        }
+      ],
+      "verdict": "PONT EXISTANT - connexion spectrale +"
+    },
+    {
+      "num": 21,
+      "vector": "V6-ELEPHANT",
+      "name_a": "valence (chemistry)",
+      "name_b": "information retrieval",
+      "idx_a": 10762,
+      "idx_b": 17299,
+      "spectral_dot": 0.00030507289585652854,
+      "cosine_sim": 0.13994604985741346,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Computational chemistry",
+          "score": 0.0010746397873004094
+        },
+        {
+          "name": "Physics",
+          "score": 0.001035846815507672
+        },
+        {
+          "name": "Crystallography",
+          "score": 0.0010356889194835038
+        },
+        {
+          "name": "Photochemistry",
+          "score": 0.0010287420171107289
+        },
+        {
+          "name": "Inorganic chemistry",
+          "score": 0.001008608979593373
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 22,
+      "vector": "V7-FOURMI",
+      "name_a": "ant colony optim.",
+      "name_b": "knowledge graph",
+      "idx_a": 54793,
+      "idx_b": 48063,
+      "spectral_dot": 9.047867940462507e-05,
+      "cosine_sim": 0.26093012474867733,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Data mining",
+          "score": 0.0005469726552584822
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0004852588329446074
+        },
+        {
+          "name": "Theoretical computer science",
+          "score": 0.00048319264009580917
+        },
+        {
+          "name": "Graph",
+          "score": 0.00036551444373672667
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.0003318395555451048
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 23,
+      "vector": "V7-FOURMI",
+      "name_a": "pheromone",
+      "name_b": "reinforcement",
+      "idx_a": 24824,
+      "idx_b": 59980,
+      "spectral_dot": 9.11377491057791e-05,
+      "cosine_sim": 0.09009823912561314,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Pharmacology",
+          "score": 0.00032164210175236166
+        },
+        {
+          "name": "Communication",
+          "score": 0.000318624013012862
+        },
+        {
+          "name": "Neuroscience",
+          "score": 0.00031259924023712804
+        },
+        {
+          "name": "Endocrinology",
+          "score": 0.00030391006714117495
+        },
+        {
+          "name": "Humanities",
+          "score": 0.00029847060400120057
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 24,
+      "vector": "V7-FOURMI",
+      "name_a": "stigmergy",
+      "name_b": "semantic network",
+      "idx_a": 20271,
+      "idx_b": 62789,
+      "spectral_dot": 3.3130520403965576e-05,
+      "cosine_sim": 0.3363706379817852,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Distributed computing",
+          "score": 0.00020343648249639888
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00019753183085670213
+        },
+        {
+          "name": "Algorithm",
+          "score": 0.00018414586621417947
+        },
+        {
+          "name": "Heuristic",
+          "score": 0.000171938855345774
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.00017193495724700372
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 25,
+      "vector": "V8-CHAUVE-SOURIS",
+      "name_a": "echolocation",
+      "name_b": "active learning (ML)",
+      "idx_a": 10623,
+      "idx_b": 61643,
+      "spectral_dot": 1.6268006722390847e-05,
+      "cosine_sim": 0.041084362635221326,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Communication",
+          "score": 0.0003675515403227043
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00035753206248100987
+        },
+        {
+          "name": "Speech recognition",
+          "score": 0.0003546336947345275
+        },
+        {
+          "name": "Computer vision",
+          "score": 0.0003398509365758782
+        },
+        {
+          "name": "Cognitive psychology",
+          "score": 0.00032937167295258115
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 26,
+      "vector": "V8-CHAUVE-SOURIS",
+      "name_a": "echolocation",
+      "name_b": "data exploration",
+      "idx_a": 10623,
+      "idx_b": 41642,
+      "spectral_dot": 1.3452849868572e-05,
+      "cosine_sim": 0.10521177840861275,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00035753206248100987
+        },
+        {
+          "name": "Computer vision",
+          "score": 0.00030537261925949225
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.00028995163411275654
+        },
+        {
+          "name": "Computer science",
+          "score": 0.00021847716313301227
+        },
+        {
+          "name": "Computer graphics (images)",
+          "score": 0.00018224513330893175
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 27,
+      "vector": "V8-CHAUVE-SOURIS",
+      "name_a": "bat algorithm",
+      "name_b": "knowledge graph",
+      "idx_a": 57473,
+      "idx_b": 48063,
+      "spectral_dot": 1.3468592835043655e-05,
+      "cosine_sim": 0.21559627911207388,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Algorithm",
+          "score": 0.00024975553411846945
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.00017893357822162104
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.00017192143510794794
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.00017155781826360867
+        },
+        {
+          "name": "Heuristic",
+          "score": 0.0001609155921008899
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 28,
+      "vector": "V9-PLANAIRE",
+      "name_a": "planarian",
+      "name_b": "distributed memory",
+      "idx_a": 18476,
+      "idx_b": 63684,
+      "spectral_dot": -3.159514380337689e-07,
+      "cosine_sim": -0.0008016721162945461,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Host (biology)",
+          "score": 0.00014565112234882484
+        },
+        {
+          "name": "Range (aeronautics)",
+          "score": 7.835642630066723e-05
+        },
+        {
+          "name": "Nesting (process)",
+          "score": 7.418932267129056e-05
+        },
+        {
+          "name": "DNA replication",
+          "score": 7.377554476614153e-05
+        },
+        {
+          "name": "Inheritance (genetic algorithm)",
+          "score": 7.335128168418136e-05
+        }
+      ],
+      "verdict": "ORTHOGONAL - independants"
+    },
+    {
+      "num": 29,
+      "vector": "V9-PLANAIRE",
+      "name_a": "error correction",
+      "name_b": "knowledge graph",
+      "idx_a": 5289,
+      "idx_b": 48063,
+      "spectral_dot": -6.291989682218775e-06,
+      "cosine_sim": -0.017470382433968885,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Inference",
+          "score": 0.00023178861668497695
+        },
+        {
+          "name": "Matching (statistics)",
+          "score": 0.0001796255775420088
+        },
+        {
+          "name": "Constraint (computer-aided design)",
+          "score": 0.00015806688733284926
+        },
+        {
+          "name": "Context (archaeology)",
+          "score": 0.00015694299544309566
+        },
+        {
+          "name": "Exploit",
+          "score": 0.00015147155406829068
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 30,
+      "vector": "V9-PLANAIRE",
+      "name_a": "bioelectrical imp.",
+      "name_b": "computer network",
+      "idx_a": 53823,
+      "idx_b": 53391,
+      "spectral_dot": -1.1812209166113576e-05,
+      "cosine_sim": -0.007676463164440012,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Internal medicine",
+          "score": 0.0005536811121490507
+        },
+        {
+          "name": "Medicine",
+          "score": 0.00040918508358261127
+        },
+        {
+          "name": "Intensive care medicine",
+          "score": 0.00032254279458219105
+        },
+        {
+          "name": "Endocrinology",
+          "score": 0.0003209819884649988
+        },
+        {
+          "name": "Gynecology",
+          "score": 0.0003145128440425029
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 31,
+      "vector": "V10-CHIEN",
+      "name_a": "cognition",
+      "name_b": "emotion recognition",
+      "idx_a": 10932,
+      "idx_b": 25370,
+      "spectral_dot": 0.0007141340184658057,
+      "cosine_sim": 0.7497741588090766,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Cognitive psychology",
+          "score": 0.0009144458300983063
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0007613604006710028
+        },
+        {
+          "name": "Developmental psychology",
+          "score": 0.0007053593925087476
+        },
+        {
+          "name": "Psychology",
+          "score": 0.0006583279638481072
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.0006275014888278862
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 32,
+      "vector": "V10-CHIEN",
+      "name_a": "sentiment analysis",
+      "name_b": "adaptive system",
+      "idx_a": 59873,
+      "idx_b": 57325,
+      "spectral_dot": 6.934151333162841e-05,
+      "cosine_sim": 0.37748272709314973,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0005344542126027691
+        },
+        {
+          "name": "Data mining",
+          "score": 0.00040297978509773425
+        },
+        {
+          "name": "Computer science",
+          "score": 0.00040230465241759036
+        },
+        {
+          "name": "Machine learning",
+          "score": 0.0003821197803406389
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.0003767968672229409
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 33,
+      "vector": "V10-CHIEN",
+      "name_a": "affective computing",
+      "name_b": "user modeling",
+      "idx_a": 59545,
+      "idx_b": 60069,
+      "spectral_dot": 9.120489264483753e-05,
+      "cosine_sim": 0.6218294901722556,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0004765928095989496
+        },
+        {
+          "name": "Computer vision",
+          "score": 0.0003645434179800696
+        },
+        {
+          "name": "Pattern recognition (psychology)",
+          "score": 0.0003518133328903035
+        },
+        {
+          "name": "Human–computer interaction",
+          "score": 0.00034823249795159117
+        },
+        {
+          "name": "Natural language processing",
+          "score": 0.0003323514529976219
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 34,
+      "vector": "V11-BALEINE",
+      "name_a": "whale",
+      "name_b": "cultural diversity",
+      "idx_a": 26586,
+      "idx_b": 3989,
+      "spectral_dot": 1.7410516410577485e-05,
+      "cosine_sim": 0.04577778468134655,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "History",
+          "score": 0.00040250925108787565
+        },
+        {
+          "name": "Art",
+          "score": 0.0003773938990288388
+        },
+        {
+          "name": "Geography",
+          "score": 0.00035667960237067335
+        },
+        {
+          "name": "Art history",
+          "score": 0.0002939841339441041
+        },
+        {
+          "name": "Humanities",
+          "score": 0.0002808977656557578
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 35,
+      "vector": "V11-BALEINE",
+      "name_a": "cultural diversity",
+      "name_b": "network dynamics",
+      "idx_a": 3989,
+      "idx_b": 3777,
+      "spectral_dot": 1.9418998487940657e-05,
+      "cosine_sim": 0.10213718904495338,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Cognitive psychology",
+          "score": 0.00025293807939047496
+        },
+        {
+          "name": "Computer science",
+          "score": 0.00023077437832828455
+        },
+        {
+          "name": "Set (abstract data type)",
+          "score": 0.00021788318154764694
+        },
+        {
+          "name": "Cognition",
+          "score": 0.0001934454366309704
+        },
+        {
+          "name": "Task (project management)",
+          "score": 0.00018848756355115877
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    },
+    {
+      "num": 36,
+      "vector": "V11-BALEINE",
+      "name_a": "language evolution",
+      "name_b": "mutation",
+      "idx_a": 47582,
+      "idx_b": 56432,
+      "spectral_dot": 2.72150511779424e-05,
+      "cosine_sim": 0.0557755487523385,
+      "p4": null,
+      "sp": null,
+      "bridges": [
+        {
+          "name": "Linguistics",
+          "score": 0.00032525577545695363
+        },
+        {
+          "name": "Artificial intelligence",
+          "score": 0.0002980056824086103
+        },
+        {
+          "name": "Cognition",
+          "score": 0.0002565159430905199
+        },
+        {
+          "name": "Natural language processing",
+          "score": 0.00023437477324374722
+        },
+        {
+          "name": "Psychology",
+          "score": 0.000206363742253546
+        }
+      ],
+      "verdict": "FAIBLE - signal quasi-nul"
+    }
+  ]
+}

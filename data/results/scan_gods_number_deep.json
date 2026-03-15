@@ -1,0 +1,2295 @@
+{
+  "scan": "gods_number_deep_v1",
+  "date": "2026-03-14 21:16:32",
+  "layers_used": [
+    "births",
+    "species",
+    "holes_typing",
+    "wt2_papers",
+    "glyphs",
+    "spectral",
+    "p4_global"
+  ],
+  "births": [
+    {
+      "name": "Wreath product",
+      "idx": 64319,
+      "birth": 1633,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Eigenvalues and eigenvectors",
+      "idx": 9157,
+      "birth": 1753,
+      "axis": "Spectral/Expansion"
+    },
+    {
+      "name": "Group theory",
+      "idx": 62210,
+      "birth": 1753,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Inverse problem",
+      "idx": 5503,
+      "birth": 1753,
+      "axis": "Cannon/Constraints"
+    },
+    {
+      "name": "Knot theory",
+      "idx": 6795,
+      "birth": 1753,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "Percolation theory",
+      "idx": 2489,
+      "birth": 1753,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "Phase transition",
+      "idx": 7678,
+      "birth": 1753,
+      "axis": "Cannon/Constraints"
+    },
+    {
+      "name": "Random walk",
+      "idx": 3378,
+      "birth": 1753,
+      "axis": "Spectral/Expansion"
+    },
+    {
+      "name": "Spectral gap",
+      "idx": 28454,
+      "birth": 1753,
+      "axis": "Spectral/Expansion"
+    },
+    {
+      "name": "Sphere packing",
+      "idx": 13095,
+      "birth": 1753,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "PSPACE",
+      "idx": 15276,
+      "birth": 1837,
+      "axis": "Cannon/Constraints"
+    },
+    {
+      "name": "Interval arithmetic",
+      "idx": 14255,
+      "birth": 1857,
+      "axis": "Cannon/Constraints"
+    },
+    {
+      "name": "Nilpotent group",
+      "idx": 16592,
+      "birth": 1861,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Cayley graph",
+      "idx": 3217,
+      "birth": 1866,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Permutation group",
+      "idx": 63903,
+      "birth": 1890,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Simple group",
+      "idx": 57573,
+      "birth": 1893,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Sorting network",
+      "idx": 59567,
+      "birth": 1899,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "Symmetric group",
+      "idx": 4492,
+      "birth": 1900,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Classification of finite simple groups",
+      "idx": 59370,
+      "birth": 1903,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Unknot",
+      "idx": 38541,
+      "birth": 1904,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "Normal subgroup",
+      "idx": 917,
+      "birth": 1905,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Commutator subgroup",
+      "idx": 6423,
+      "birth": 1907,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Coset",
+      "idx": 62772,
+      "birth": 1936,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Semidirect product",
+      "idx": 61178,
+      "birth": 1949,
+      "axis": "Cayley/Permutation"
+    },
+    {
+      "name": "Markov chain mixing time",
+      "idx": 64555,
+      "birth": 1950,
+      "axis": "Spectral/Expansion"
+    },
+    {
+      "name": "Coding theory",
+      "idx": 2234,
+      "birth": 1951,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "Constraint satisfaction problem",
+      "idx": 15562,
+      "birth": 1952,
+      "axis": "Cannon/Constraints"
+    },
+    {
+      "name": "Laplacian matrix",
+      "idx": 2429,
+      "birth": 1952,
+      "axis": "Spectral/Expansion"
+    },
+    {
+      "name": "Combinatorial optimization",
+      "idx": 57247,
+      "birth": 1956,
+      "axis": "Isomorphic/Bridges"
+    },
+    {
+      "name": "Expander graph",
+      "idx": 8508,
+      "birth": 1967,
+      "axis": "Spectral/Expansion"
+    },
+    {
+      "name": "Sensitivity analysis",
+      "idx": 11886,
+      "birth": 1968,
+      "axis": "Cannon/Constraints"
+    },
+    {
+      "name": "Quantum walk",
+      "idx": 6307,
+      "birth": 1970,
+      "axis": "Isomorphic/Bridges"
+    }
+  ],
+  "species": [
+    {
+      "name": "Cayley graph",
+      "idx": 3217,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Wreath product",
+      "idx": 64319,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Permutation group",
+      "idx": 63903,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Symmetric group",
+      "idx": 4492,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Semidirect product",
+      "idx": 61178,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Simple group",
+      "idx": 57573,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Classification of finite simple groups",
+      "idx": 59370,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Normal subgroup",
+      "idx": 917,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Nilpotent group",
+      "idx": 16592,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Coset",
+      "idx": 62772,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Commutator subgroup",
+      "idx": 6423,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Group theory",
+      "idx": 62210,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Spectral gap",
+      "idx": 28454,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Expander graph",
+      "idx": 8508,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Markov chain mixing time",
+      "idx": 64555,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Eigenvalues and eigenvectors",
+      "idx": 9157,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Laplacian matrix",
+      "idx": 2429,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Random walk",
+      "idx": 3378,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Knot theory",
+      "idx": 6795,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Unknot",
+      "idx": 38541,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Coding theory",
+      "idx": 2234,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Sphere packing",
+      "idx": 13095,
+      "species": 0,
+      "sp_name": "Materials science/Chemistry"
+    },
+    {
+      "name": "Sorting network",
+      "idx": 59567,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Quantum walk",
+      "idx": 6307,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Percolation theory",
+      "idx": 2489,
+      "species": 0,
+      "sp_name": "Materials science/Chemistry"
+    },
+    {
+      "name": "Combinatorial optimization",
+      "idx": 57247,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Constraint satisfaction problem",
+      "idx": 15562,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "PSPACE",
+      "idx": 15276,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Inverse problem",
+      "idx": 5503,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Interval arithmetic",
+      "idx": 14255,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Sensitivity analysis",
+      "idx": 11886,
+      "species": 4,
+      "sp_name": "Computer science/Mathematics"
+    },
+    {
+      "name": "Phase transition",
+      "idx": 7678,
+      "species": 0,
+      "sp_name": "Materials science/Chemistry"
+    }
+  ],
+  "typed_holes": [
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Sample (material)",
+      "other_idx": 15406,
+      "other_level": 2,
+      "cooc": 3.649210000000001,
+      "z": -31.35570492671209,
+      "p4": 0.01377931924410463,
+      "gn_sp": 0,
+      "other_sp": 1,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00043945174494756635,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.14321055173214267,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Sample (material)",
+      "other_idx": 15406,
+      "other_level": 2,
+      "cooc": 10.825121999999999,
+      "z": -28.610945573474737,
+      "p4": 0.010640651012674637,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00037190840076741833,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.14321055173214267,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Power (physics)",
+      "other_idx": 9874,
+      "other_level": 2,
+      "cooc": 4.887967000000001,
+      "z": -24.790913678478034,
+      "p4": 0.006876110600771162,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00027736414599114126,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.09042458572870936,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Plasma",
+      "other_idx": 62359,
+      "other_level": 2,
+      "cooc": 20.365539,
+      "z": -23.539843510452425,
+      "p4": 0.006184515610788418,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00026272543434888596,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.08607914385644,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Liquation",
+      "other_idx": 12666,
+      "other_level": 3,
+      "cooc": 0.018182,
+      "z": -24.18850910362354,
+      "p4": 0.006298370884605548,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00026038689931749556,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.08475748524770489,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Set (abstract data type)",
+      "other_idx": 12056,
+      "other_level": 2,
+      "cooc": 6.389452,
+      "z": -22.782692850896744,
+      "p4": 0.005381904828090551,
+      "gn_sp": 0,
+      "other_sp": 4,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Computer science/Mathematics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00023622777444759848,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.07705063119708541,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Power (physics)",
+      "other_idx": 9874,
+      "other_level": 2,
+      "cooc": 37.746936,
+      "z": -21.36823624743157,
+      "p4": 0.0049744559178866036,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00023279674842066226,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.09042458572870936,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Diafiltration",
+      "other_idx": 13629,
+      "other_level": 4,
+      "cooc": 0.015152,
+      "z": -22.63159566223227,
+      "p4": 0.00515828709742902,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.000227924145270817,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.08746302948434614,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Plasma",
+      "other_idx": 62359,
+      "other_level": 2,
+      "cooc": 9.632641000000001,
+      "z": -22.02175770772746,
+      "p4": 0.004924670181892091,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00022362748002463122,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.08607914385644,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Range (aeronautics)",
+      "other_idx": 16300,
+      "other_level": 2,
+      "cooc": 58.558825999999996,
+      "z": -19.51949091701289,
+      "p4": 0.0041903294375070675,
+      "gn_sp": 0,
+      "other_sp": 4,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Computer science/Mathematics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0002146741149819046,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.0712116554467028,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Fusible alloy",
+      "other_idx": 5147,
+      "other_level": 2,
+      "cooc": 0.186432,
+      "z": -21.837648048245306,
+      "p4": 0.0046400675535123205,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0002124801875761139,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06916728930463036,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Population",
+      "other_idx": 44219,
+      "other_level": 2,
+      "cooc": 12.063427,
+      "z": -21.249399390648602,
+      "p4": 0.004480568672642655,
+      "gn_sp": 0,
+      "other_sp": 2,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Medicine/Internal medicine",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0002108562501119187,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06890052886417582,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Measure (data warehouse)",
+      "other_idx": 37313,
+      "other_level": 2,
+      "cooc": 13.629158,
+      "z": -20.81373113221915,
+      "p4": 0.004245749853340305,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00020398792635348243,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06668973996893261,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Context (archaeology)",
+      "other_idx": 34222,
+      "other_level": 2,
+      "cooc": 21.675089999999997,
+      "z": -20.2987547613699,
+      "p4": 0.004079133912762326,
+      "gn_sp": 0,
+      "other_sp": 6,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Humanities/Political science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00020095488421414072,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06586847429015463,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Identification (biology)",
+      "other_idx": 2674,
+      "other_level": 2,
+      "cooc": 2.022209,
+      "z": -20.990611917273426,
+      "p4": 0.0041535531252410145,
+      "gn_sp": 0,
+      "other_sp": 1,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00019787670514850527,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06445137529328807,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Beam (structure)",
+      "other_idx": 10753,
+      "other_level": 2,
+      "cooc": 2.8821160000000003,
+      "z": -20.88196813352723,
+      "p4": 0.00410462945760717,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00019656334265815423,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06404122648928041,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Download",
+      "other_idx": 37980,
+      "other_level": 2,
+      "cooc": 0.173211,
+      "z": -20.495949539121014,
+      "p4": 0.0038374699203418037,
+      "gn_sp": 0,
+      "other_sp": 4,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Computer science/Mathematics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001872306483296688,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.06094771365816445,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Demotion",
+      "other_idx": 759,
+      "other_level": 3,
+      "cooc": 0.012821,
+      "z": -20.09394412356094,
+      "p4": 0.0036125496959941135,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001797830069487581,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.0689894205383245,
+      "type": "B"
+    },
+    {
+      "gn_name": "Inverse problem",
+      "gn_idx": 5503,
+      "other_name": "Sample (material)",
+      "other_idx": 15406,
+      "other_level": 2,
+      "cooc": 4.058292000000001,
+      "z": -19.850783397141807,
+      "p4": 0.003541075974951939,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00017838469666954287,
+      "act_a_norm": 0.0012472310506874875,
+      "act_b_norm": 0.14321055173214267,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Population",
+      "other_idx": 44219,
+      "other_level": 2,
+      "cooc": 22.015762000000002,
+      "z": -18.98278429657501,
+      "p4": 0.003384387522114124,
+      "gn_sp": 4,
+      "other_sp": 2,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Medicine/Internal medicine",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001782872032489331,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.06890052886417582,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Measure (data warehouse)",
+      "other_idx": 37313,
+      "other_level": 2,
+      "cooc": 36.793143,
+      "z": -17.889612690687773,
+      "p4": 0.003072447642204811,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00017174478259130436,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.06668973996893261,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Context (archaeology)",
+      "other_idx": 34222,
+      "other_level": 2,
+      "cooc": 32.055769,
+      "z": -17.99757255385468,
+      "p4": 0.0030576075373614895,
+      "gn_sp": 4,
+      "other_sp": 6,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Humanities/Political science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001698899964543617,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.06586847429015463,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Work (physics)",
+      "other_idx": 13666,
+      "other_level": 2,
+      "cooc": 36.183166,
+      "z": -17.70909928086071,
+      "p4": 0.002982904958600422,
+      "gn_sp": 4,
+      "other_sp": 3,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Psychology/Business",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00016843911207975592,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.06539320849102269,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Line (geometry)",
+      "other_idx": 15376,
+      "other_level": 2,
+      "cooc": 18.962862,
+      "z": -18.47801535838937,
+      "p4": 0.0030963108343664064,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00016756728329921116,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.05487681377844866,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Identification (biology)",
+      "other_idx": 2674,
+      "other_level": 2,
+      "cooc": 12.662801,
+      "z": -18.767625811793916,
+      "p4": 0.0031393963864292363,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001672772261079706,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.06445137529328807,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Beam (structure)",
+      "other_idx": 10753,
+      "other_level": 2,
+      "cooc": 24.263307,
+      "z": -18.10301455895161,
+      "p4": 0.0029977367511228353,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00016559323538965553,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.06404122648928041,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Sequence (biology)",
+      "other_idx": 28442,
+      "other_level": 2,
+      "cooc": 8.511617000000001,
+      "z": -18.69315639314872,
+      "p4": 0.0030418456022202464,
+      "gn_sp": 0,
+      "other_sp": 1,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00016272509244801063,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.05311233397746579,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Government (linguistics)",
+      "other_idx": 28555,
+      "other_level": 2,
+      "cooc": 0.17166599999999999,
+      "z": -18.915203502238207,
+      "p4": 0.003017569951236126,
+      "gn_sp": 0,
+      "other_sp": 6,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Humanities/Political science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00015953145578788308,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.051930988683978836,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Process (computing)",
+      "other_idx": 64722,
+      "other_level": 2,
+      "cooc": 16.346769000000002,
+      "z": -17.991139053832526,
+      "p4": 0.002835787232150562,
+      "gn_sp": 0,
+      "other_sp": 4,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Computer science/Mathematics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00015762132812521806,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.05157616227679082,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Ion",
+      "other_idx": 7059,
+      "other_level": 2,
+      "cooc": 8.873621,
+      "z": -18.317714729895297,
+      "p4": 0.0028723898444564613,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00015680939936075093,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.060344690991029556,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Similarity (geometry)",
+      "other_idx": 562,
+      "other_level": 3,
+      "cooc": 1.4001599999999998,
+      "z": -18.071631496910527,
+      "p4": 0.0026508921727099936,
+      "gn_sp": 0,
+      "other_sp": 1,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001466880382749716,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.0477689535122312,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Line (geometry)",
+      "other_idx": 15376,
+      "other_level": 2,
+      "cooc": 14.322862,
+      "z": -17.11696104699065,
+      "p4": 0.002436623811679853,
+      "gn_sp": 4,
+      "other_sp": 8,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001423514258746437,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.05487681377844866,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Taxonomy (biology)",
+      "other_idx": 58658,
+      "other_level": 2,
+      "cooc": 0.10435,
+      "z": -17.8318684595613,
+      "p4": 0.0025272950001768812,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00014172911862311136,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.05438832242433847,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Sequence (biology)",
+      "other_idx": 28442,
+      "other_level": 2,
+      "cooc": 29.311573999999997,
+      "z": -15.961035923201361,
+      "p4": 0.0021884256721621,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00013711050352195186,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.05311233397746579,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Similitude",
+      "other_idx": 6784,
+      "other_level": 2,
+      "cooc": 0.009524,
+      "z": -17.465010887922308,
+      "p4": 0.0023739387616190815,
+      "gn_sp": 0,
+      "other_sp": 1,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001359254097723321,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.044244407174036444,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Government (linguistics)",
+      "other_idx": 28555,
+      "other_level": 2,
+      "cooc": 0.281875,
+      "z": -17.413223860557846,
+      "p4": 0.0023563213882224748,
+      "gn_sp": 4,
+      "other_sp": 6,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Humanities/Political science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00013531792889653852,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.051930988683978836,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Cancer",
+      "other_idx": 1,
+      "other_level": 2,
+      "cooc": 0.294698,
+      "z": -16.93401172265385,
+      "p4": 0.0021682211462449473,
+      "gn_sp": 0,
+      "other_sp": 2,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Medicine/Internal medicine",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00012803942631883037,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.041681283230185634,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Taxon",
+      "other_idx": 60667,
+      "other_level": 2,
+      "cooc": 0.093558,
+      "z": -16.82779625976939,
+      "p4": 0.002124381980122267,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00012624243527365953,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.04844516517629088,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Similarity (geometry)",
+      "other_idx": 562,
+      "other_level": 3,
+      "cooc": 10.934608,
+      "z": -16.06006737566697,
+      "p4": 0.001992226866003287,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00012404847497848995,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.0477689535122312,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Citation",
+      "other_idx": 31687,
+      "other_level": 2,
+      "cooc": 4.788119,
+      "z": -16.35605418577996,
+      "p4": 0.002016172844117941,
+      "gn_sp": 0,
+      "other_sp": 3,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Psychology/Business",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001232676794303367,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.040185699319869074,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Disease",
+      "other_idx": 33228,
+      "other_level": 2,
+      "cooc": 0.09456500000000001,
+      "z": -16.579982589558202,
+      "p4": 0.0020325209784414805,
+      "gn_sp": 0,
+      "other_sp": 2,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Medicine/Internal medicine",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001225888487797043,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.03990437510897024,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Doppler effect",
+      "other_idx": 6712,
+      "other_level": 2,
+      "cooc": 0.100232,
+      "z": -16.52552407283537,
+      "p4": 0.002012664271686854,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00012179125229651677,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.03964481825389674,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Annotation",
+      "other_idx": 20278,
+      "other_level": 2,
+      "cooc": 1.176911,
+      "z": -16.33693250274685,
+      "p4": 0.0019591547635792895,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001199218251804543,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.04603560857533596,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Gene",
+      "other_idx": 726,
+      "other_level": 2,
+      "cooc": 0.632409,
+      "z": -16.34735713356941,
+      "p4": 0.0019557610356140316,
+      "gn_sp": 0,
+      "other_sp": 5,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Biology/Botany",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00011963775059381697,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.038950455263037,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Matching (statistics)",
+      "other_idx": 10144,
+      "other_level": 2,
+      "cooc": 1.2938800000000001,
+      "z": -16.264386111182894,
+      "p4": 0.0019353932807585818,
+      "gn_sp": 0,
+      "other_sp": 4,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Computer science/Mathematics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.0001189957781085795,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.03874965176145671,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Divertor",
+      "other_idx": 23455,
+      "other_level": 4,
+      "cooc": 0.045189,
+      "z": -16.327659558462376,
+      "p4": 0.0019405578652756982,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00011885095094783114,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.038687026124912816,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Politics",
+      "other_idx": 64170,
+      "other_level": 2,
+      "cooc": 0.208949,
+      "z": -16.216667708893134,
+      "p4": 0.0019035586453628216,
+      "gn_sp": 0,
+      "other_sp": 6,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Humanities/Political science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00011738284828509621,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.038211148163386825,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Flux (metallurgy)",
+      "other_idx": 60233,
+      "other_level": 2,
+      "cooc": 6.5009999999999994,
+      "z": -15.728216543902501,
+      "p4": 0.0018203876675075695,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00011574024699026003,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.037752453457898225,
+      "type": "B"
+    },
+    {
+      "gn_name": "Phase transition",
+      "gn_idx": 7678,
+      "other_name": "Cyclotron",
+      "other_idx": 54699,
+      "other_level": 3,
+      "cooc": 0.305274,
+      "z": -16.071558037298598,
+      "p4": 0.0018543289811017477,
+      "gn_sp": 0,
+      "other_sp": 8,
+      "gn_sp_name": "Materials science/Chemistry",
+      "other_sp_name": "Physics/Optics",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00011537954047754752,
+      "act_a_norm": 0.0030721583289982507,
+      "act_b_norm": 0.03756017752083028,
+      "type": "B"
+    },
+    {
+      "gn_name": "Eigenvalues and eigenvectors",
+      "gn_idx": 9157,
+      "other_name": "Similitude",
+      "other_idx": 6784,
+      "other_level": 2,
+      "cooc": 0.237049,
+      "z": -16.071160478337553,
+      "p4": 0.001852851439240151,
+      "gn_sp": 4,
+      "other_sp": 1,
+      "gn_sp_name": "Computer science/Mathematics",
+      "other_sp_name": "Geography/Environmental science",
+      "cross": true,
+      "known": false,
+      "score_b": 0.00011529045719738934,
+      "act_a_norm": 0.002605961075098958,
+      "act_b_norm": 0.044244407174036444,
+      "type": "B"
+    }
+  ],
+  "wt2_summary": {
+    "concept_counts": {
+      "Phase transition": 15753,
+      "Eigenvalues and eigenvectors": 12039,
+      "Random walk": 3811,
+      "Inverse problem": 1853,
+      "Coset": 928,
+      "Group theory": 878,
+      "Knot theory": 874,
+      "Symmetric group": 764,
+      "Quantum walk": 715,
+      "Spectral gap": 507,
+      "Nilpotent group": 503,
+      "Percolation theory": 495,
+      "Cayley graph": 467,
+      "Laplacian matrix": 462,
+      "Permutation group": 384,
+      "Normal subgroup": 377,
+      "Constraint satisfaction problem": 360,
+      "Semidirect product": 335,
+      "Simple group": 257,
+      "Wreath product": 249,
+      "Markov chain mixing time": 239,
+      "Sphere packing": 182,
+      "PSPACE": 168,
+      "Combinatorial optimization": 144,
+      "Classification of finite simple groups": 138,
+      "Commutator subgroup": 130,
+      "Coding theory": 122,
+      "Unknot": 114,
+      "Expander graph": 90,
+      "Interval arithmetic": 77,
+      "Sensitivity analysis": 17,
+      "Sorting network": 17
+    },
+    "total_unique": 41072,
+    "domain_dist": {
+      "Mathematics": 18454,
+      "Physics": 18152,
+      "Materials science": 2490,
+      "Computer science": 1626,
+      "Chemistry": 208,
+      "Economics": 64,
+      "Geology": 21,
+      "Biology": 12,
+      "Environmental science": 9,
+      "Psychology": 9,
+      "?": 9,
+      "Business": 7,
+      "Geography": 6,
+      "Sociology": 3,
+      "History": 1,
+      "Political science": 1
+    },
+    "top_glyphs": [
+      [
+        7,
+        40164
+      ],
+      [
+        3,
+        40139
+      ],
+      [
+        2,
+        40131
+      ],
+      [
+        4,
+        39473
+      ],
+      [
+        5,
+        38125
+      ],
+      [
+        10,
+        36913
+      ],
+      [
+        12,
+        36768
+      ],
+      [
+        8,
+        35502
+      ],
+      [
+        6,
+        35106
+      ],
+      [
+        16,
+        33015
+      ],
+      [
+        379,
+        30436
+      ],
+      [
+        451,
+        30234
+      ],
+      [
+        105,
+        27846
+      ],
+      [
+        26,
+        27169
+      ],
+      [
+        90,
+        26980
+      ],
+      [
+        534,
+        26295
+      ],
+      [
+        464,
+        26164
+      ],
+      [
+        93,
+        25160
+      ],
+      [
+        535,
+        24094
+      ],
+      [
+        101,
+        24004
+      ],
+      [
+        91,
+        23457
+      ],
+      [
+        100,
+        23454
+      ],
+      [
+        442,
+        23099
+      ],
+      [
+        530,
+        22642
+      ],
+      [
+        108,
+        22470
+      ],
+      [
+        631,
+        20980
+      ],
+      [
+        21,
+        20903
+      ],
+      [
+        62,
+        20862
+      ],
+      [
+        92,
+        20726
+      ],
+      [
+        477,
+        20720
+      ],
+      [
+        494,
+        19711
+      ],
+      [
+        106,
+        19567
+      ],
+      [
+        787,
+        19444
+      ],
+      [
+        786,
+        18818
+      ],
+      [
+        126,
+        18105
+      ],
+      [
+        531,
+        17850
+      ],
+      [
+        436,
+        17670
+      ],
+      [
+        109,
+        17198
+      ],
+      [
+        102,
+        16983
+      ],
+      [
+        18,
+        16250
+      ],
+      [
+        113,
+        15885
+      ],
+      [
+        97,
+        15832
+      ],
+      [
+        158,
+        15360
+      ],
+      [
+        114,
+        15336
+      ],
+      [
+        96,
+        14707
+      ],
+      [
+        103,
+        14142
+      ],
+      [
+        61,
+        14102
+      ],
+      [
+        506,
+        13445
+      ],
+      [
+        112,
+        12868
+      ],
+      [
+        82,
+        12628
+      ]
+    ]
+  },
+  "multi_gn_papers": [
+    {
+      "paper_id": "math/0304207",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Group theory",
+        "Permutation group",
+        "Simple group",
+        "Symmetric group"
+      ],
+      "n_gn": 5,
+      "domain": "Mathematics",
+      "n_total_concepts": 17,
+      "n_glyphs": 24
+    },
+    {
+      "paper_id": "0904.1800",
+      "gn_concepts": [
+        "Cayley graph",
+        "Eigenvalues and eigenvectors",
+        "Laplacian matrix",
+        "Spectral gap",
+        "Symmetric group"
+      ],
+      "n_gn": 5,
+      "domain": "Mathematics",
+      "n_total_concepts": 14,
+      "n_glyphs": 28
+    },
+    {
+      "paper_id": "1403.1624",
+      "gn_concepts": [
+        "Coset",
+        "Eigenvalues and eigenvectors",
+        "Group theory",
+        "Permutation group",
+        "Symmetric group"
+      ],
+      "n_gn": 5,
+      "domain": "Mathematics",
+      "n_total_concepts": 25,
+      "n_glyphs": 42
+    },
+    {
+      "paper_id": "math/0012192",
+      "gn_concepts": [
+        "Cayley graph",
+        "Permutation group",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 17,
+      "n_glyphs": 67
+    },
+    {
+      "paper_id": "math/0210057",
+      "gn_concepts": [
+        "Permutation group",
+        "Simple group",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 18,
+      "n_glyphs": 47
+    },
+    {
+      "paper_id": "hep-th/0312215",
+      "gn_concepts": [
+        "Group theory",
+        "Permutation group",
+        "Semidirect product",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 25,
+      "n_glyphs": 52
+    },
+    {
+      "paper_id": "math/0505624",
+      "gn_concepts": [
+        "Cayley graph",
+        "Expander graph",
+        "Random walk",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 13,
+      "n_glyphs": 51
+    },
+    {
+      "paper_id": "quant-ph/0609204",
+      "gn_concepts": [
+        "Markov chain mixing time",
+        "Quantum walk",
+        "Random walk",
+        "Spectral gap"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 18,
+      "n_glyphs": 57
+    },
+    {
+      "paper_id": "hep-th/0703076",
+      "gn_concepts": [
+        "Group theory",
+        "Permutation group",
+        "Semidirect product",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 16,
+      "n_glyphs": 33
+    },
+    {
+      "paper_id": "0902.0727",
+      "gn_concepts": [
+        "Cayley graph",
+        "Eigenvalues and eigenvectors",
+        "Laplacian matrix",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 17,
+      "n_glyphs": 69
+    },
+    {
+      "paper_id": "0903.5060",
+      "gn_concepts": [
+        "Permutation group",
+        "Semidirect product",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 21,
+      "n_glyphs": 44
+    },
+    {
+      "paper_id": "0906.1064",
+      "gn_concepts": [
+        "Commutator subgroup",
+        "Normal subgroup",
+        "Simple group",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 13,
+      "n_glyphs": 45
+    },
+    {
+      "paper_id": "0909.2190",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Group theory",
+        "Normal subgroup",
+        "Simple group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 19,
+      "n_glyphs": 33
+    },
+    {
+      "paper_id": "1003.4340",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Laplacian matrix",
+        "Random walk",
+        "Spectral gap"
+      ],
+      "n_gn": 4,
+      "domain": "Computer science",
+      "n_total_concepts": 17,
+      "n_glyphs": 22
+    },
+    {
+      "paper_id": "1005.1858",
+      "gn_concepts": [
+        "Cayley graph",
+        "Classification of finite simple groups",
+        "Coset",
+        "Simple group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 17,
+      "n_glyphs": 57
+    },
+    {
+      "paper_id": "1007.0459",
+      "gn_concepts": [
+        "Permutation group",
+        "Semidirect product",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 15,
+      "n_glyphs": 48
+    },
+    {
+      "paper_id": "1103.6069",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Permutation group",
+        "Simple group",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 14,
+      "n_glyphs": 61
+    },
+    {
+      "paper_id": "1104.0290",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Group theory",
+        "Nilpotent group",
+        "Simple group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 27,
+      "n_glyphs": 40
+    },
+    {
+      "paper_id": "1201.0425",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Expander graph",
+        "Laplacian matrix",
+        "Spectral gap"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 16,
+      "n_glyphs": 60
+    },
+    {
+      "paper_id": "1201.3399",
+      "gn_concepts": [
+        "Cayley graph",
+        "Coset",
+        "Normal subgroup",
+        "Random walk"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 18,
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "1303.0091",
+      "gn_concepts": [
+        "Permutation group",
+        "Semidirect product",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 13,
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "1308.2485",
+      "gn_concepts": [
+        "Permutation group",
+        "Semidirect product",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 9,
+      "n_glyphs": 63
+    },
+    {
+      "paper_id": "1308.4388",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Group theory",
+        "Simple group",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 18,
+      "n_glyphs": 46
+    },
+    {
+      "paper_id": "1310.6156",
+      "gn_concepts": [
+        "Cayley graph",
+        "Eigenvalues and eigenvectors",
+        "Spectral gap",
+        "Symmetric group"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 12,
+      "n_glyphs": 37
+    },
+    {
+      "paper_id": "1407.6306",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Markov chain mixing time",
+        "Random walk",
+        "Spectral gap"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 23,
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "1511.00666",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Laplacian matrix",
+        "Random walk",
+        "Spectral gap"
+      ],
+      "n_gn": 4,
+      "domain": "Mathematics",
+      "n_total_concepts": 15,
+      "n_glyphs": 68
+    },
+    {
+      "paper_id": "math/0006118",
+      "gn_concepts": [
+        "Random walk",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 10,
+      "n_glyphs": 55
+    },
+    {
+      "paper_id": "math/0012217",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Group theory",
+        "Simple group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 12,
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "cond-mat/0101387",
+      "gn_concepts": [
+        "Percolation theory",
+        "Phase transition",
+        "Random walk"
+      ],
+      "n_gn": 3,
+      "domain": "Physics",
+      "n_total_concepts": 26,
+      "n_glyphs": 54
+    },
+    {
+      "paper_id": "cond-mat/0103545",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Percolation theory",
+        "Phase transition"
+      ],
+      "n_gn": 3,
+      "domain": "Physics",
+      "n_total_concepts": 18,
+      "n_glyphs": 26
+    },
+    {
+      "paper_id": "hep-th/0103242",
+      "gn_concepts": [
+        "Group theory",
+        "Permutation group",
+        "Semidirect product"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 14,
+      "n_glyphs": 43
+    },
+    {
+      "paper_id": "math/0107029",
+      "gn_concepts": [
+        "Permutation group",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 15,
+      "n_glyphs": 45
+    },
+    {
+      "paper_id": "math-ph/0107031",
+      "gn_concepts": [
+        "Coset",
+        "Permutation group",
+        "Symmetric group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 14,
+      "n_glyphs": 27
+    },
+    {
+      "paper_id": "hep-th/0201181",
+      "gn_concepts": [
+        "Phase transition",
+        "Random walk",
+        "Symmetric group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 20,
+      "n_glyphs": 10
+    },
+    {
+      "paper_id": "math/0302012",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Inverse problem",
+        "Spectral gap"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 30,
+      "n_glyphs": 35
+    },
+    {
+      "paper_id": "math/0305260",
+      "gn_concepts": [
+        "Normal subgroup",
+        "Random walk",
+        "Symmetric group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 12,
+      "n_glyphs": 78
+    },
+    {
+      "paper_id": "quant-ph/0305008",
+      "gn_concepts": [
+        "Phase transition",
+        "Quantum walk",
+        "Random walk"
+      ],
+      "n_gn": 3,
+      "domain": "Physics",
+      "n_total_concepts": 19,
+      "n_glyphs": 30
+    },
+    {
+      "paper_id": "math/0307053",
+      "gn_concepts": [
+        "Coset",
+        "Permutation group",
+        "Symmetric group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 12,
+      "n_glyphs": 38
+    },
+    {
+      "paper_id": "cond-mat/0309240",
+      "gn_concepts": [
+        "Constraint satisfaction problem",
+        "Percolation theory",
+        "Phase transition"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 13,
+      "n_glyphs": 29
+    },
+    {
+      "paper_id": "math/0309133",
+      "gn_concepts": [
+        "Semidirect product",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 27,
+      "n_glyphs": 58
+    },
+    {
+      "paper_id": "quant-ph/0311118",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Quantum walk",
+        "Random walk"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 21,
+      "n_glyphs": 36
+    },
+    {
+      "paper_id": "math/0312022",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Expander graph",
+        "Spectral gap"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 10,
+      "n_glyphs": 45
+    },
+    {
+      "paper_id": "math/0401304",
+      "gn_concepts": [
+        "Group theory",
+        "Permutation group",
+        "Symmetric group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 21,
+      "n_glyphs": 35
+    },
+    {
+      "paper_id": "quant-ph/0401053",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Quantum walk",
+        "Random walk"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 15,
+      "n_glyphs": 51
+    },
+    {
+      "paper_id": "quant-ph/0401184",
+      "gn_concepts": [
+        "PSPACE",
+        "Quantum walk",
+        "Random walk"
+      ],
+      "n_gn": 3,
+      "domain": "Physics",
+      "n_total_concepts": 11,
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "math/0405241",
+      "gn_concepts": [
+        "Permutation group",
+        "Symmetric group",
+        "Wreath product"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 13,
+      "n_glyphs": 43
+    },
+    {
+      "paper_id": "math/0406163",
+      "gn_concepts": [
+        "Commutator subgroup",
+        "Group theory",
+        "Normal subgroup"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 23,
+      "n_glyphs": 39
+    },
+    {
+      "paper_id": "math/0406254",
+      "gn_concepts": [
+        "Commutator subgroup",
+        "Nilpotent group",
+        "Normal subgroup"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 14,
+      "n_glyphs": 32
+    },
+    {
+      "paper_id": "math/0409146",
+      "gn_concepts": [
+        "Classification of finite simple groups",
+        "Group theory",
+        "Simple group"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 16,
+      "n_glyphs": 48
+    },
+    {
+      "paper_id": "gr-qc/0410094",
+      "gn_concepts": [
+        "Eigenvalues and eigenvectors",
+        "Group theory",
+        "Semidirect product"
+      ],
+      "n_gn": 3,
+      "domain": "Mathematics",
+      "n_total_concepts": 16,
+      "n_glyphs": 44
+    }
+  ],
+  "p4_context": {
+    "threshold": 0.210502490401268,
+    "our_max_p4": 0.01377931924410463
+  }
+}

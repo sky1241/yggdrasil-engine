@@ -141,6 +141,29 @@ def normalize_positions(eigenvectors: np.ndarray, scale: float = 1.5,
     return px_raw, pz_raw
 
 
+def normalize_all_positions(eigenvectors: np.ndarray, scale: float = 1.5,
+                            clip_pct: float = 99.0):
+    """
+    Extract ALL eigenvector coordinates (skip [0] = constant).
+    Returns array of shape (N, K-1).
+    """
+    K = eigenvectors.shape[1]
+    coords = eigenvectors[:, 1:].copy()  # skip eigvec 0
+
+    for col in range(coords.shape[1]):
+        arr = coords[:, col]
+        nonzero = arr[arr != 0]
+        if len(nonzero) == 0:
+            continue
+        p_lo = np.percentile(nonzero, 100 - clip_pct)
+        p_hi = np.percentile(nonzero, clip_pct)
+        span = max(abs(p_lo), abs(p_hi))
+        if span > 0:
+            coords[:, col] = np.clip(arr / span, -1, 1) * scale
+
+    return coords
+
+
 def run(k: int = K_EIGENVECTORS):
     """Full pipeline: aggregate → Laplacian → positions → save."""
     print("=== Glyph Spectral Laplacian ===")
@@ -167,8 +190,9 @@ def run(k: int = K_EIGENVECTORS):
     # Laplacian
     eigenvalues, eigenvectors, degrees = compute_laplacian(W, k=k)
 
-    # Positions
+    # Positions (2D legacy + all K-1 coords)
     px, pz = normalize_positions(eigenvectors)
+    all_coords = normalize_all_positions(eigenvectors)
 
     # Save
     glyphs_out = {}
@@ -179,6 +203,7 @@ def run(k: int = K_EIGENVECTORS):
             "name": g["name"],
             "px": round(float(px[idx]), 6),
             "pz": round(float(pz[idx]), 6),
+            "coords": [round(float(c), 6) for c in all_coords[idx]],
             "degree": round(float(degrees[idx]), 4),
             "semantic_group": g["semantic_group"],
             "category": g["category"],
@@ -188,7 +213,7 @@ def run(k: int = K_EIGENVECTORS):
         "meta": {
             "total": N,
             "k": k,
-            "method": "glyph_laplacian_v1",
+            "method": "glyph_laplacian_v2",
             "chunks_arxiv": len(arxiv_chunks),
             "chunks_pmc": len(pmc_chunks),
             "matrix_nnz": int(W.nnz),
@@ -205,6 +230,7 @@ def run(k: int = K_EIGENVECTORS):
     active = np.sum(degrees > 0)
     print(f"\n  Output: {OUTPUT_PATH}")
     print(f"  Active glyphs: {active}/{N}")
+    print(f"  Coords: {all_coords.shape[1]} dimensions (eigenvectors 1-{k-1})")
     print(f"  Position range: px=[{px.min():.3f}, {px.max():.3f}], "
           f"pz=[{pz.min():.3f}, {pz.max():.3f}]")
 

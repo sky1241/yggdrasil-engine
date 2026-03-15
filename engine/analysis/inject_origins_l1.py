@@ -4,8 +4,10 @@ Sources: peer-reviewed academic works only (NO Wikipedia).
 Compiled from 6 research batches + manual medical sourcing.
 """
 import json
+from pathlib import Path
 
-ORIGINS_FILE = "c:/Users/ludov/Desktop/ygg/yggdrasil-engine/data/scan/origins_to_source.json"
+_ROOT = Path(__file__).resolve().parent.parent.parent
+ORIGINS_FILE = str(_ROOT / "data" / "scan" / "origins_to_source.json")
 
 L1_SOURCES = {
     # ============================================================

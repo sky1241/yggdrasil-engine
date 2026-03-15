@@ -6,7 +6,7 @@ Streams all chunks into a single SQLite database, one chunk at a time.
 CRASH-SAFE: commits + WAL checkpoint after every single chunk.
 RESUMABLE: tracks progress per phase+chunk, skips already-done work.
 
-Output: E:/yggdrasil/wt3.db
+Output: data/wt3.db (relative to repo root)
 
 Tables:
     papers       — paper_id, domain, glyphs (JSON), concepts (JSON)
@@ -34,7 +34,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 SCAN_DIR = ROOT / "data" / "scan"
-BIBLE_DIR = Path("E:/yggdrasil")
+BIBLE_DIR = ROOT / "data"
 DB_PATH = BIBLE_DIR / "wt3.db"
 LOG_PATH = ROOT / "data" / "bible" / "wt3_log.txt"
 
@@ -44,7 +44,7 @@ WT2_CHUNKS = SCAN_DIR / "wt2_chunks"
 
 def log(msg: str):
     """Print and append to log file."""
-    print(msg, flush=True)
+    print(msg.encode("ascii", errors="replace").decode(), flush=True)
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     with open(LOG_PATH, "a", encoding="utf-8") as f:
         f.write(msg + "\n")
@@ -253,7 +253,7 @@ def ingest_wt2_bipartite(conn: sqlite3.Connection):
 
 import struct
 
-SHARD_DIR = Path("E:/yggdrasil/cooc_shards")
+SHARD_DIR = ROOT / "data" / "cooc_shards"
 N_SHARDS = 64  # concept_a % 64 → 64 shard files
 
 
@@ -460,12 +460,10 @@ def ingest_wt1_cooc(conn: sqlite3.Connection):
 def build_cooc_global(conn: sqlite3.Connection):
     """Build cooc_global by aggregating cooc across periods.
 
-    This is a much smaller operation than the raw insert (cooc has ~108M unique
-    pairs×periods, cooc_global collapses periods → fewer rows).
-    Done in batches by concept_a ranges to stay crash-safe.
+    Done in batches by concept_a ranges, crash-safe with per-batch checkpoints.
+    885M cooc rows → ~61M cooc_global rows.
     """
-    already = count_done(conn, "cooc_global")
-    if already > 0:
+    if is_done(conn, "cooc_global", "all"):
         n = conn.execute("SELECT COUNT(*) FROM cooc_global").fetchone()[0]
         log(f"[WT3] Phase 4 cooc_global: already done ({n:,} pairs)")
         return n
@@ -473,19 +471,30 @@ def build_cooc_global(conn: sqlite3.Connection):
     log("[WT3] Phase 4: Building cooc_global from cooc...")
     t0 = time.time()
 
-    # Get range of concept_a values
-    row = conn.execute("SELECT MIN(concept_a), MAX(concept_a) FROM cooc").fetchone()
-    if row[0] is None:
+    # Get range of concept_a values (use index-friendly queries)
+    row_min = conn.execute("SELECT concept_a FROM cooc ORDER BY concept_a ASC LIMIT 1").fetchone()
+    if row_min is None:
         log("[WT3] cooc is empty, skipping cooc_global")
         mark_done(conn, "cooc_global", "all")
         return 0
-
-    min_a, max_a = row
+    row_max = conn.execute("SELECT concept_a FROM cooc ORDER BY concept_a DESC LIMIT 1").fetchone()
+    min_a, max_a = row_min[0], row_max[0]
+    log(f"[WT3] concept_a range: {min_a}-{max_a}")
     batch_size = 1000  # process 1000 concept_a values at a time
     total_inserted = 0
 
+    # Count already-done batches for resume
+    already_batches = count_done(conn, "cooc_global_batch")
+    if already_batches > 0:
+        log(f"[WT3] Resuming cooc_global: {already_batches} batches already done")
+
     for start in range(min_a, max_a + 1, batch_size):
         end = start + batch_size
+        batch_key = f"{start}-{end}"
+
+        if is_done(conn, "cooc_global_batch", batch_key):
+            continue
+
         conn.execute(
             """INSERT OR IGNORE INTO cooc_global (concept_a, concept_b, weight)
                SELECT concept_a, concept_b, SUM(weight)
@@ -494,16 +503,16 @@ def build_cooc_global(conn: sqlite3.Connection):
                GROUP BY concept_a, concept_b""",
             (start, end),
         )
-        conn.commit()
-        checkpoint(conn)
         batch_count = conn.execute(
             "SELECT changes()"
         ).fetchone()[0]
         total_inserted += batch_count
+        mark_done(conn, "cooc_global_batch", batch_key)
 
-        if (start - min_a) % (batch_size * 50) == 0:
-            elapsed = time.time() - t0
-            log(f"  concept_a {start}-{end}: {total_inserted:,} total ({elapsed:.0f}s)")
+        elapsed = time.time() - t0
+        rate = total_inserted / elapsed if elapsed > 0 else 0
+        if (start // batch_size) % 10 == 0 or start + batch_size > max_a:
+            log(f"  concept_a {start}-{end}: +{batch_count:,} batch, {total_inserted:,} total ({rate:,.0f}/s, {elapsed:.0f}s)")
 
     mark_done(conn, "cooc_global", "all")
     n = conn.execute("SELECT COUNT(*) FROM cooc_global").fetchone()[0]
