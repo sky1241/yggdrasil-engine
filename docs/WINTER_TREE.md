@@ -20,14 +20,18 @@ Trois couches de scan, chacune un arbre hivernal (graphe de co-occurrences).
 - 19 domaines, 1,337 glyphes, cutoff 2015-12
 - Fix session 22: extract_tex_from_gz reecrit (magic bytes), timeout 30s/paper, cap 500KB regex
 
-### WT3 — La Bible (jointure WT1+WT2) — COMPLET (12 mars 2026)
-- Script: `engine/topology/wt3_bible.py`, output: `data/wt3.db` (74 GB)
-- Tables SQLite: papers (833K), bipartite (6.2M), cooc_global (61,656,543 paires), progress
+### WT3 — La Bible (jointure WT1+WT2) — COMPLET (16 mars 2026)
+- Script: `engine/topology/wt3_bible.py`, output: `data/wt3.db` (78 GB)
+- Tables SQLite: papers (833K), bipartite (6.2M), cooc (885M), cooc_global (69.4M), progress, meta
 - Streaming chunk par chunk (RAM safe), SQLite WAL mode, crash-resumable
 - **Phase 1 papers**: 833,030 papers, 416/416 chunks
 - **Phase 2 bipartite**: 6,181,981 paires glyph×concept, 416/416 chunks
 - **Phase 3a cooc sharding**: 581/581 chunks → 64 shards disk
-- **Phase 3b cooc aggregation**: 64/64 shards → 61,656,543 cooc_global (terminé 12 mars 15:35)
+- **Phase 3b cooc aggregation**: 64/64 shards → 885,305,772 cooc rows
+- **Phase 3c PK index**: idx_cooc_pk ON cooc(concept_a, concept_b, period)
+- **Phase 4 cooc_global**: 69,440,760 paires concept×concept (agrégé cross-period)
+- **Phase 5 indexes**: 8/8 index créés (papers, bipartite, cooc, cooc_global)
+- **Phase 6 meta**: build_date, totals, build_time
 - Muninn par-dessus = turbo (P39 prevu post-WT3)
 
 ### WT4 — Forme 3D unifiee (S-2 x S-1 x S0) — DESIGN

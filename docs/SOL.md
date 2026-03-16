@@ -1,5 +1,5 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 14 mars 2026
+> Yggdrasil Engine — Versoix, 16 mars 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE
@@ -69,17 +69,16 @@ OBSOLÈTE: strates_export_v2.json (21,524) = ancien filtre keyword des 65K.
 ```
 WT1 (FAIT)     concept × concept    108M paires, Laplacien S0 propre
 WT2 (FAIT)     per-paper index      416/416 chunks, 832K papers, {glyphs, domain, concepts} → bipartite glyph×concept
-WT3 (EN COURS) La Bible             jointure WT1+WT2, SQLite `data/wt3.db` (74 GB)
-                                     Phases 1-3: FAIT. Phase 4 cooc_global: CRASHÉ (61.6M rows, incomplètes?)
-                                     Phase 5 indexes: MANQUANTS. Phase 6 meta: VIDE
-                                     → relancer `python wt3_bible.py` pour finir (resumable)
+WT3 (FAIT)     La Bible             jointure WT1+WT2, SQLite `data/wt3.db` (78 GB)
+                                     833K papers, 6.2M bipartite, 885M cooc, 69.4M cooc_global
+                                     8/8 indexes, meta complète. Build total ~57Ks
 WT4 (DESIGN)   Forme 3D unifiée     Laplacien spectral pur sur bipartite 1,337×65K
 ```
 - RÈGLE: Laplaciens S-2 et S0 restent SÉPARÉS. Le pont S-2↔S0 = table bipartite, PAS fusion de graphes
 - WT2 sauvegarde le détail PER-PAPER (contrairement à S-1 qui a agrégé et jeté)
 - WT3 = recherche cross-strate ("Philippe" → ses papers + ses formules + ses concepts)
 
-## ÉTAT ACTUEL — 14 MARS 2026 (session 25)
+## ÉTAT ACTUEL — 16 MARS 2026 (session 27)
 
 ### S-2 GLYPHES — COMPLET
 - ~1,500 glyphes total: 1,337 math (617 actifs) + 116 fossiles alchimiques + 10 actifs non-math + 7 graines
@@ -120,22 +119,22 @@ WT4 (DESIGN)   Forme 3D unifiée     Laplacien spectral pur sur bipartite 1,337�
 - Scanner: `engine/topology/wt2_scanner.py`
 - Output: `data/scan/wt2_chunks/chunk_NNN/`
 
-### WT3 — LA BIBLE — EN COURS (sessions 23-25, crashé phase 4)
-- Script: `engine/topology/wt3_bible.py`, output: `data/wt3.db` (74 GB)
-- Tables SQLite: papers (833K), bipartite (6.2M), cooc (per-period), cooc_global (61.6M, potentiellement incomplet), progress
-- **Phase 1 papers**: FAIT (416/416)
-- **Phase 2 bipartite**: FAIT (416/416)
-- **Phase 3a-3c cooc**: FAIT (581 chunks → 64 shards → agrégé + PK index)
-- **Phase 4 cooc_global**: CRASHÉ — 61.6M rows insérées mais marker "done" ABSENT → potentiellement incomplet
-- **Phase 5 indexes**: PAS FAIT — il manque 7/8 index de performance
-- **Phase 6 meta**: VIDE
-- **Action**: relancer `python engine/topology/wt3_bible.py` — le script est resumable, il reprendra à phase 4
+### WT3 — LA BIBLE — COMPLET (16 mars 2026, sessions 23-27)
+- Script: `engine/topology/wt3_bible.py`, output: `data/wt3.db` (78 GB, gitignored)
+- Tables SQLite: papers (833K), bipartite (6.2M), cooc (885M per-period), cooc_global (69.4M), progress, meta
+- **Phase 1 papers**: 833,030 papers, 416/416 chunks
+- **Phase 2 bipartite**: 6,181,981 paires glyph×concept, 416/416 chunks
+- **Phase 3a-3c cooc**: 885,305,772 rows (581 chunks → 64 shards → agrégé + PK index)
+- **Phase 4 cooc_global**: 69,440,760 paires concept×concept (SUM across periods)
+- **Phase 5 indexes**: 8/8 créés (domain, glyph, concept, period, cooc_a/b, cooc_global_a/b)
+- **Phase 6 meta**: build_date, totals, build_time
+- **Fix session 27**: ajout checkpoint par batch dans phase 4 (crash-resumable), commit `f50a4b8`
 
-### WT4 — FORME 3D — PRÊT À LANCER (session 25)
+### WT4 — FORME 3D — PRÊT À LANCER (session 25, prérequis WT3 rempli)
 - Laplacien spectral pur sur bipartite 1,337×65K
 - Eigenvectors 1-2-3 = x,y,z, zéro forçage, domaines = couleurs pas axes
 - nd (nombre de domaines par glyphe) = coordonnée verticale naturelle → forme champignon
-- Prérequis: WT3 complet ✅
+- Prérequis: WT3 complet ✅ (69.4M cooc_global + 6.2M bipartite disponibles)
 
 ### INFRASTRUCTURE
 - **Film V4**: 1,534 frames (an 1000→2024), 65,021 concept births, `viz/yggdrasil_rain_v4.html`
@@ -179,6 +178,8 @@ WT4 (DESIGN)   Forme 3D unifiée     Laplacien spectral pur sur bipartite 1,337�
 | 22 | 9 mars | Opus 4.6 | WT2 COMPLET (416/416, 832K papers), fix extract_tex_from_gz (magic bytes, timeout 30s, cap 500KB) |
 | 23-24 | 10-11 mars | Opus 4.6 | WT3 Bible lancée (phases 1-2 FAIT), God Cube design, hypergraph viz, GOD_CUBE.md |
 | 25 | 12 mars | Opus 4.6 | WT3 en cours (phase 3a cooc), WT4 design (forme 3D, nd=coordonnée verticale), viz S-2 3D |
+| 26 | 14 mars | Opus 4.6 | WT3 phase 3 FAIT (disk-sharded aggregation), phase 4 lancée mais crash sans checkpoint |
+| 27 | 16 mars | Opus 4.6 | Fix phase 4 crash-resume (checkpoint par batch), WT3 COMPLET (6 phases, 78 GB), audit code complet |
 
 ## RÈGLES AUTO
 1. Sky monte (arbre/direction). Claude descend (racines/code).
@@ -250,8 +251,8 @@ Yggdrasil tracke les co-occurrences **au niveau paper entier** (WT1, 108M paires
 - [x] S-2 fossiles + scope étendu (~1,500 total) — session 20
 - [x] WT2: scanner per-paper {glyphs, domain, concepts} — scanner construit, chunk 1 OK (11,834 papers, 539K paires bipartite)
 - [x] WT2: scan complet (416/416 chunks) — session 22, 832K papers
-- [ ] WT3: La Bible — phases 4-5-6 à finir (cooc_global incomplet, indexes manquants, meta vide)
-- [ ] WT4: Forme 3D (après WT3)
+- [x] WT3: La Bible COMPLET — 833K papers, 885M cooc, 69.4M cooc_global, 8 indexes — session 27
+- [ ] WT4: Forme 3D (WT3 prêt, lancer quand décidé)
 - [ ] Muninn sur WT3 (compression/accélération)
 - [ ] Recalculer escaliers spectraux sur 65K (200 geo + 69 passe-partout actuels basés sur 21K)
 - [ ] PMC bulk download + scan (bio/med/chimie — quand le grimpeur a besoin de disciplines hors arXiv)
@@ -454,8 +455,8 @@ Pas de saut. Les racines d'abord. Toujours.
 S-2 COMPLET ✅ (~1,500 glyphes + fossiles)
   → S-1 COMPLET ✅ (416/416, 858K papers)
     → WT2 COMPLET ✅ (416/416, 832K papers)
-      → WT3 La Bible ← ON EST ICI (phases 4-5-6 à finir, relancer le script)
-        → WT4 Forme 3D (après WT3)
+      → WT3 La Bible ✅ COMPLET (16 mars 2026)
+        → WT4 Forme 3D ← ON EST ICI
           → Muninn sur WT3 (compression/turbo)
             → Refaire viz (3 couches du sol)
               → V3 météorites sur frames réelles
