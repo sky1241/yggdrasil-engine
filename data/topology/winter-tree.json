@@ -3,34 +3,34 @@
   "domain": "science",
   "family": "baobab",
   "family_name": "Baobab",
-  "family_emoji": "\ud83c\udf33",
+  "family_emoji": "🌳",
   "date": "2026-03-16",
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 52454,
+    "lines": 52458,
     "factor": 20.7,
-    "category": "for\u00eat",
+    "category": "forêt",
     "height_px": 900,
     "data_gb": 78.0,
     "density": 2.1,
     "trunk_width": 3.5,
-    "label": "\ud83c\udf33 Baobab (44K Python + 8K HTML + 78GB data)"
+    "label": "🌳 Baobab (44K Python + 8K HTML + 78.0GB data)"
   },
   "stats": {
-    "total_files": 6728,
-    "total_code_lines": 52454,
+    "total_files": 6723,
+    "total_code_lines": 52458,
     "python_lines": 44117,
-    "html_lines": 8337,
+    "html_lines": 8341,
     "languages": {
       "Python": 44117,
-      "HTML": 8337,
       "PowerShell": 9,
       "Shell": 11,
+      "HTML": 8341,
       "JavaScript": 6
     },
     "biggest_file": {
-      "path": "engine/pipeline/mycelium_full.py",
+      "path": "engine\\pipeline\\mycelium_full.py",
       "lines": 7912,
       "lang": "Python"
     }
@@ -40,18 +40,18 @@
       "id": "M1",
       "level": "R",
       "depth": -5,
-      "label": "Post 1944 \u2014 Hi\u00e9rarchie Arithm\u00e9tique (9 strates S-2\u2192S6)",
+      "label": "Post 1944 — Hiérarchie Arithmétique (9 strates S-2→S6)",
       "status": "done",
       "entry": "engine/core/symbols.py:22:STRATE_NAMES",
       "confidence": 100,
       "depends": [],
-      "desc": "Loi fondamentale : S-2 (glyphes) \u2192 S-1 (m\u00e9tiers) \u2192 S0 (concepts) \u2192 S1\u2192S6 (arbre)"
+      "desc": "Loi fondamentale : S-2 (glyphes) → S-1 (métiers) → S0 (concepts) → S1→S6 (arbre)"
     },
     {
       "id": "M2",
       "level": "R",
       "depth": -5,
-      "label": "G\u00f6del 1931 + Turing 1936 + Church \u2014 Incompl\u00e9tude & Ind\u00e9cidabilit\u00e9",
+      "label": "Gödel 1931 + Turing 1936 + Church — Incomplétude & Indécidabilité",
       "status": "done",
       "entry": "docs/VERIFICATION_32TESTS.md",
       "confidence": 100,
@@ -62,23 +62,23 @@
       "id": "M3",
       "level": "R",
       "depth": -5,
-      "label": "Wang & Barab\u00e1si 2013 / Uzzi 2013 / Wu 2019 \u2014 Science of Science",
+      "label": "Wang & Barabási 2013 / Uzzi 2013 / Wu 2019 — Science of Science",
       "status": "done",
       "entry": "engine/core/scisci.py:1",
       "confidence": 100,
       "depends": [],
-      "desc": "Fitness, atypicality z-scores, disruption index \u2014 formules valid\u00e9es sur 100 tests"
+      "desc": "Fitness, atypicality z-scores, disruption index — formules validées sur 100 tests"
     },
     {
       "id": "P1",
       "level": "R",
       "depth": -4,
-      "label": "OpenAlex \u2014 250M+ papers, snapshot local 692GB + API",
+      "label": "OpenAlex — 250M+ papers, snapshot local 692GB + API",
       "status": "done",
       "entry": "engine/core/openalex.py",
       "confidence": 95,
       "depends": [],
-      "desc": "Snapshot .gz local (1,981 fichiers works/ + 65K concepts). Source de v\u00e9rit\u00e9 externe."
+      "desc": "Snapshot .gz local (1,981 fichiers works/ + 65K concepts). Source de vérité externe."
     },
     {
       "id": "P2",
@@ -89,62 +89,77 @@
       "entry": "engine/core/symbols.py",
       "confidence": 100,
       "depends": [],
-      "desc": "S0=65K C1 plancher. S-2=1,337 math+116 fossiles+7 graines. S-1=19 dom\u00d7glyphes. Vivant 75%/Mus\u00e9e 25%."
+      "desc": "S0=65K C1 plancher. S-2=1,337 math+116 fossiles+7 graines. S-1=19 dom×glyphes. Vivant 75%/Musée 25%."
     },
     {
       "id": "P3",
       "level": "R",
       "depth": -4,
-      "label": "Mycelium Physarum \u2014 24 briques, flux optimaux",
+      "label": "Mycelium Physarum — 24 briques, flux optimaux",
       "status": "done",
       "entry": "engine/pipeline/mycelium_full.py",
       "confidence": 95,
-      "depends": ["M3"],
+      "depends": [
+        "M3"
+      ],
       "desc": "7,912 lignes. BC, meshedness, Physarum flux, 456 tests internes. Le plus gros module."
     },
     {
       "id": "A1",
       "level": "R",
       "depth": -3,
-      "label": "32 tests historiques \u2014 28/29 = 97% confirm\u00e9",
+      "label": "32 tests historiques — 28/29 = 97% confirmé",
       "status": "done",
       "entry": "engine/pipeline/verify_32tests.py",
       "confidence": 97,
-      "depends": ["M1", "M3"],
-      "desc": "Cross-validation lianes \u00d7 d\u00e9couvertes majeures 2010-2025"
+      "depends": [
+        "M1",
+        "M3"
+      ],
+      "desc": "Cross-validation lianes × découvertes majeures 2010-2025"
     },
     {
       "id": "A2",
       "level": "R",
       "depth": -3,
-      "label": "100 tests pipeline \u2014 87/100 (87.0%)",
+      "label": "100 tests pipeline — 87/100 (87.0%)",
       "status": "done",
       "entry": "engine/pipeline/pipeline_100.py",
       "confidence": 87,
-      "depends": ["M3", "P1", "P3"],
+      "depends": [
+        "M3",
+        "P1",
+        "P3"
+      ],
       "desc": "Batch 1: 43/49 (88%). Batch 2: 43/50 (86%). POUR 41/50, CONTRE 46/50."
     },
     {
       "id": "A3",
       "level": "R",
       "depth": -3,
-      "label": "Blind test V2 \u2014 65K concepts, p=3.4e-12",
+      "label": "Blind test V2 — 65K concepts, p=3.4e-12",
       "status": "done",
       "entry": "experiments/blind_test_v2/",
       "confidence": 95,
-      "depends": ["A2", "P1"],
-      "desc": "Mann-Whitney p=3.4e-12, Cohen's d=0.44. K=9 esp\u00e8ces, cutoff 2015. SIGNAL R\u00c9EL."
+      "depends": [
+        "A2",
+        "P1"
+      ],
+      "desc": "Mann-Whitney p=3.4e-12, Cohen's d=0.44. K=9 espèces, cutoff 2015. SIGNAL RÉEL."
     },
     {
       "id": "A4",
       "level": "R",
       "depth": -3,
-      "label": "Lianes \u2014 200 g\u00e9ographiques + 69 passe-partout",
+      "label": "Lianes — 200 géographiques + 69 passe-partout",
       "status": "done",
       "entry": "engine/analysis/lianes.py",
       "confidence": 95,
-      "depends": ["M1", "P2"],
-      "desc": "Escaliers spectraux. 5 universelles (=, exp, ln, \u03a3, \u222b). 9/10 d\u00e9couvertes S3 utilisent des lianes."
+      "depends": [
+        "M1",
+        "P2"
+      ],
+      "desc": "Escaliers spectraux. 5 universelles (=, exp, ln, Σ, ∫). 9/10 découvertes S3 utilisent des lianes."
     },
     {
       "id": "A5",
@@ -154,321 +169,419 @@
       "status": "done",
       "entry": "engine/mining/map_concepts.py",
       "confidence": 96,
-      "depends": ["P1", "P2"],
-      "desc": "4-passes: symbol_map \u2192 fr_to_en \u2192 from_english \u2192 word_search. 1.47B works couverts."
+      "depends": [
+        "P1",
+        "P2"
+      ],
+      "desc": "4-passes: symbol_map → fr_to_en → from_english → word_search. 1.47B works couverts."
     },
     {
       "id": "S1",
       "level": "S",
       "depth": 0,
-      "label": "SOL \u2014 Co-occurrence 85\u00d785 domaines (296M papers)",
+      "label": "SOL — Co-occurrence 85×85 domaines (296M papers)",
       "status": "done",
       "entry": "engine/topology/cooccurrence_scan.py",
       "confidence": 95,
-      "depends": ["A5"],
-      "desc": "Matrice domaines r\u00e9elle. Laplacien normalis\u00e9 \u2192 positions spectrales."
+      "depends": [
+        "A5"
+      ],
+      "desc": "Matrice domaines réelle. Laplacien normalisé → positions spectrales."
     },
     {
       "id": "S2",
       "level": "S",
       "depth": 0,
-      "label": "SOL \u2014 Cleanup S0: Q1 vivant/mus\u00e9e + suspects reclass\u00e9s",
+      "label": "SOL — Cleanup S0: Q1 vivant/musée + suspects reclassés",
       "status": "done",
       "entry": "engine/mining/cleanup_s0.py",
       "confidence": 98,
-      "depends": ["P2"],
-      "desc": "13 suspects reclass\u00e9s, HP bug fix\u00e9, 19 C2\u2192S3, Poincar\u00e9 C2\u2192C1. S0 100% C1."
+      "depends": [
+        "P2"
+      ],
+      "desc": "13 suspects reclassés, HP bug fixé, 19 C2→S3, Poincaré C2→C1. S0 100% C1."
     },
     {
       "id": "T1",
       "level": "T",
       "depth": 1,
-      "label": "Tronc \u2014 Escaliers spectraux (spectral layout)",
+      "label": "Tronc — Escaliers spectraux (spectral layout)",
       "status": "done",
       "entry": "engine/topology/escaliers_spectraux.py",
       "confidence": 95,
-      "depends": ["S1", "A4"],
-      "desc": "200 g\u00e9o + 69 passe-partout. Centro\u00efdes 9 continents. Positions spectrales."
+      "depends": [
+        "S1",
+        "A4"
+      ],
+      "desc": "200 géo + 69 passe-partout. Centroïdes 9 continents. Positions spectrales."
     },
     {
       "id": "T2",
       "level": "T",
       "depth": 1,
-      "label": "Tronc \u2014 Holes detection (3 types A/B/C)",
+      "label": "Tronc — Holes detection (3 types A/B/C)",
       "status": "done",
       "entry": "engine/core/holes.py",
       "confidence": 85,
-      "depends": ["M3", "A4"],
-      "desc": "A=technique, B=conceptuel, C=perceptuel. Formules impl\u00e9ment\u00e9es."
+      "depends": [
+        "M3",
+        "A4"
+      ],
+      "desc": "A=technique, B=conceptuel, C=perceptuel. Formules implémentées."
     },
     {
       "id": "T3",
       "level": "T",
       "depth": 1,
-      "label": "Tronc \u2014 Cross Physarum \u00d7 works_count",
+      "label": "Tronc — Cross Physarum × works_count",
       "status": "done",
       "entry": "engine/analysis/cross_projects.py",
       "confidence": 90,
-      "depends": ["P3", "S1"],
-      "desc": "806 isolated hubs, 1,220 hidden bridges, 1,567 P4 voids. Cross-projets \u00d7 7 racines."
+      "depends": [
+        "P3",
+        "S1"
+      ],
+      "desc": "806 isolated hubs, 1,220 hidden bridges, 1,567 P4 voids. Cross-projets × 7 racines."
     },
     {
       "id": "B1",
       "level": "B",
       "depth": 2,
-      "label": "Branche \u2014 PLUIE: matrice 5,459\u00d75,459 depuis snapshot 400GB",
+      "label": "Branche — PLUIE: matrice 5,459×5,459 depuis snapshot 400GB",
       "status": "done",
       "entry": "engine/topology/build_cooccurrence.py",
       "confidence": 90,
-      "depends": ["P1", "A5"],
+      "depends": [
+        "P1",
+        "A5"
+      ],
       "desc": "Streams 1,980 .gz, sparse matrix, checkpoint/resume. 63 tests bulletproof."
     },
     {
       "id": "B2",
       "level": "B",
       "depth": 2,
-      "label": "Branche \u2014 Glyph Laplacian (Score spectral, d=8.78)",
+      "label": "Branche — Glyph Laplacian (Score spectral, d=8.78)",
       "status": "done",
       "entry": "engine/analysis/glyph_laplacian.py",
       "confidence": 98,
-      "depends": ["F2"],
-      "desc": "64 eigenvectors, Score(i,j)=\u03a3\u03bb\u00b7v(i)\u00b7v(j). 7 perc\u00e9es rang 1. Recall@100=70%."
+      "depends": [
+        "F2"
+      ],
+      "desc": "64 eigenvectors, Score(i,j)=Σλ·v(i)·v(j). 7 percées rang 1. Recall@100=70%."
     },
     {
       "id": "V1",
       "level": "V",
       "depth": 3,
-      "label": "Viz \u2014 Film Myc\u00e9lium V4 (1534 frames, cube 3D)",
+      "label": "Viz — Film Mycélium V4 (1534 frames, cube 3D)",
       "status": "done",
       "entry": "viz/yggdrasil_rain_v4.html",
       "confidence": 95,
-      "depends": ["B1", "S1"],
+      "depends": [
+        "B1",
+        "S1"
+      ],
       "desc": "Film cube 3D. 1534 frames, 65K concepts. Points progressifs."
     },
     {
       "id": "V2",
       "level": "V",
       "depth": 3,
-      "label": "Viz \u2014 Escaliers 3D Three.js",
+      "label": "Viz — Escaliers 3D Three.js",
       "status": "done",
       "entry": "viz/yggdrasil_escaliers_3d.html",
       "confidence": 90,
-      "depends": ["T1"],
+      "depends": [
+        "T1"
+      ],
       "desc": "150 lianes geo (vert) + 69 passe-partout (or). Orbit controls + tooltips."
     },
     {
       "id": "V3",
       "level": "V",
       "depth": 3,
-      "label": "Viz \u2014 Carte vivante S0 + cubes C1/C2",
+      "label": "Viz — Carte vivante S0 + cubes C1/C2",
       "status": "done",
       "entry": "viz/legacy/carte_vivante_s0.html",
       "confidence": 90,
-      "depends": ["P2"],
-      "desc": "7 pays, 489 capitales, 60 fronti\u00e8res. Cubes C1 prouv\u00e9s + C2 conjectures."
+      "depends": [
+        "P2"
+      ],
+      "desc": "7 pays, 489 capitales, 60 frontières. Cubes C1 prouvés + C2 conjectures."
     },
     {
       "id": "F1",
       "level": "F",
       "depth": 4,
-      "label": "WT1 \u2014 Winter Tree V2 (581 chunks, 108M paires)",
+      "label": "WT1 — Winter Tree V2 (581 chunks, 108M paires)",
       "status": "done",
       "entry": "engine/topology/winter_tree_scanner.py",
       "confidence": 98,
-      "depends": ["P1"],
-      "desc": "Scan complet 692 GB. 108M paires non-zero, 1645 p\u00e9riodes. Concept\u00d7Concept (S0\u2194S0)."
+      "depends": [
+        "P1"
+      ],
+      "desc": "Scan complet 692 GB. 108M paires non-zero, 1645 périodes. Concept×Concept (S0↔S0)."
     },
     {
       "id": "F2",
       "level": "F",
       "depth": 4,
-      "label": "WT2 \u2014 Per-paper scanner (416 chunks, 832K papers)",
+      "label": "WT2 — Per-paper scanner (416 chunks, 832K papers)",
       "status": "done",
       "entry": "engine/glyphs/arxiv_scanner.py",
       "confidence": 98,
-      "depends": ["F1"],
+      "depends": [
+        "F1"
+      ],
       "desc": "Per-paper {glyphs, domain, concepts}. S-2 pipeline 8 briques. arXiv+PMC."
     },
     {
       "id": "F3",
       "level": "F",
       "depth": 4,
-      "label": "WT3 \u2014 La Bible (833K papers, 78GB SQLite)",
+      "label": "WT3 — La Bible (833K papers, 78GB SQLite)",
       "status": "done",
       "entry": "engine/topology/wt3_bible.py",
       "confidence": 98,
-      "depends": ["F1", "F2"],
+      "depends": [
+        "F1",
+        "F2"
+      ],
       "desc": "Jointure WT1+WT2. 6.2M bipartite, 885M cooc, 69.4M cooc_global, 8 indexes. data/wt3.db"
     },
     {
       "id": "F4",
       "level": "F",
       "depth": 4,
-      "label": "WT3 Enrich \u2014 title/authors/year depuis OpenAlex",
+      "label": "WT3 Enrich — title/authors/year depuis OpenAlex",
       "status": "wip",
       "entry": "engine/topology/wt3_enrich.py",
       "confidence": 80,
-      "depends": ["F3"],
+      "depends": [
+        "F3"
+      ],
       "desc": "Scanne 1,981 .gz OpenAlex works, injecte title/authors/year par arXiv ID. Crash-safe, resumable."
     },
     {
       "id": "F5",
       "level": "F",
       "depth": 4,
-      "label": "WT4 \u2014 Forme 3D spectrale (30,509 noeuds, gap 0.683)",
+      "label": "WT4 — Forme 3D spectrale (30,509 noeuds, gap 0.683)",
       "status": "done",
       "entry": "engine/topology/wt4_spectral.py",
       "confidence": 95,
-      "depends": ["F3"],
-      "desc": "Laplacien bipartite complet [0,B;B^T,0]. 1,316 glyphes \u00d7 29,193 concepts. Signature 10+/10-."
+      "depends": [
+        "F3"
+      ],
+      "desc": "Laplacien bipartite complet [0,B;B^T,0]. 1,316 glyphes × 29,193 concepts. Signature 10+/10-."
     },
     {
       "id": "F6",
       "level": "F",
       "depth": 4,
-      "label": "Predictions 2025 \u2014 Top 10K inter+intra P4",
+      "label": "Predictions 2025 — Top 10K inter+intra P4",
       "status": "done",
       "entry": "experiments/predictions_2025/",
       "confidence": 90,
-      "depends": ["F1"],
-      "desc": "P4=activity\u00d7activity\u00d7(1-cooc)\u00d7|z_uzzi|. 18% banal, 30% int\u00e9ressant, 41% WTF, 11% bruit."
+      "depends": [
+        "F1"
+      ],
+      "desc": "P4=activity×activity×(1-cooc)×|z_uzzi|. 18% banal, 30% intéressant, 41% WTF, 11% bruit."
     },
     {
       "id": "F7",
       "level": "F",
       "depth": 4,
-      "label": "S-2 Pipeline \u2014 1,337 glyphes arXiv+PMC, Laplacien spectral",
+      "label": "S-2 Pipeline — 1,337 glyphes arXiv+PMC, Laplacien spectral",
       "status": "done",
       "entry": "engine/glyphs/",
       "confidence": 95,
-      "depends": ["F1"],
-      "desc": "8 briques: registry\u2192parser\u2192scanner\u2192Laplacien\u2192frames\u2192int\u00e9gration. 617 actifs, k=9 esp\u00e8ces."
+      "depends": [
+        "F1"
+      ],
+      "desc": "8 briques: registry→parser→scanner→Laplacien→frames→intégration. 617 actifs, k=9 espèces."
     },
     {
       "id": "F8",
       "level": "F",
       "depth": 4,
-      "label": "S-1 M\u00e9tiers \u2014 19 domaines \u00d7 1,337 glyphes (416/416)",
+      "label": "S-1 Métiers — 19 domaines × 1,337 glyphes (416/416)",
       "status": "done",
       "entry": "engine/glyphs/arxiv_scanner.py",
       "confidence": 98,
-      "depends": ["F7"],
-      "desc": "858K papers, bridge S-2\u2194S0 per-paper. Commit 6889e1f."
+      "depends": [
+        "F7"
+      ],
+      "desc": "858K papers, bridge S-2↔S0 per-paper. Commit 6889e1f."
     },
     {
       "id": "C1",
       "level": "C",
       "depth": 5,
-      "label": "V3 \u2014 Candlesticks OHLC + m\u00e9t\u00e9orites",
+      "label": "V3 — Candlesticks OHLC + météorites",
       "status": "todo",
       "entry": "engine/meteorites.py",
       "confidence": 60,
-      "depends": ["F3", "F5"],
-      "desc": "Sedov-Taylor + OHLC + 7 deltas. Calibrage sur donn\u00e9es r\u00e9elles WT3. En attente."
+      "depends": [
+        "F3",
+        "F5"
+      ],
+      "desc": "Sedov-Taylor + OHLC + 7 deltas. Calibrage sur données réelles WT3. En attente."
     },
     {
       "id": "C2",
       "level": "C",
       "depth": 5,
-      "label": "God Cube \u2014 Polytope 19 faces, God's Algorithm",
+      "label": "God Cube — Polytope 19 faces, God's Algorithm",
       "status": "todo",
       "entry": "docs/GOD_CUBE.md",
       "confidence": 30,
-      "depends": ["C1", "F5"],
-      "desc": "Manteuffel bounds \u00d7 Graham invers\u00e9 \u00d7 myc\u00e9lium. BLOQU\u00c9: attend V3 calibrage."
+      "depends": [
+        "C1",
+        "F5"
+      ],
+      "desc": "Manteuffel bounds × Graham inversé × mycélium. BLOQUÉ: attend V3 calibrage."
     },
     {
       "id": "C3",
       "level": "C",
       "depth": 5,
-      "label": "Muninn P39 \u2014 Biblioth\u00e9caire sur WT3",
+      "label": "Muninn P39 — Bibliothécaire sur WT3",
       "status": "todo",
       "entry": "~",
       "confidence": 40,
-      "depends": ["F3", "F4"],
-      "desc": "Muninn comme biblioth\u00e9caire sur La Bible. Granularit\u00e9 paragraphe \u00d7 granularit\u00e9 paper."
+      "depends": [
+        "F3",
+        "F4"
+      ],
+      "desc": "Muninn comme bibliothécaire sur La Bible. Granularité paragraphe × granularité paper."
     },
     {
       "id": "C4",
       "level": "C",
       "depth": 6,
-      "label": "V4 \u2014 Le Grimpeur (moteur s\u00e9lection d'outils automatique)",
+      "label": "V4 — Le Grimpeur (moteur sélection d'outils automatique)",
       "status": "todo",
       "entry": "~",
       "confidence": 0,
-      "depends": ["C1", "C2"],
-      "desc": "Sommet escalier = vue plongeante \u2192 sac \u00e0 dos S0 filtr\u00e9 \u2192 AI grimpe. P=NP est S3-S4."
+      "depends": [
+        "C1",
+        "C2"
+      ],
+      "desc": "Sommet escalier = vue plongeante → sac à dos S0 filtré → AI grimpe. P=NP est S3-S4."
     }
   ],
   "build_order": [
     {
       "phase": 0,
-      "name": "Mycorhizes \u2014 lois fondamentales",
-      "ids": ["M1", "M2", "M3"],
-      "action": "\u2705 FAIT. Post, G\u00f6del, Turing, Science of Science.",
+      "name": "Mycorhizes — lois fondamentales",
+      "ids": [
+        "M1",
+        "M2",
+        "M3"
+      ],
+      "action": "✅ FAIT. Post, Gödel, Turing, Science of Science.",
       "bio": "Sans mycorhizes, rien ne pousse."
     },
     {
       "phase": 1,
-      "name": "Radicelles \u2014 donn\u00e9es + populations + mycelium",
-      "ids": ["P1", "P2", "P3"],
-      "action": "\u2705 FAIT. 65K concepts. 1,337 glyphes. OpenAlex 692GB. Mycelium 24 briques.",
+      "name": "Radicelles — données + populations + mycelium",
+      "ids": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "action": "✅ FAIT. 65K concepts. 1,337 glyphes. OpenAlex 692GB. Mycelium 24 briques.",
       "bio": "Filtrent tout ce qui entre."
     },
     {
       "phase": 2,
-      "name": "Ancrage \u2014 mapping, tests massifs, validation",
-      "ids": ["A1", "A2", "A3", "A4", "A5"],
-      "action": "\u2705 FAIT. 87% pipeline, 97% historique, blind test p=3.4e-12. 65K concepts mapp\u00e9s.",
-      "bio": "Le baobab s'ancre profond\u00e9ment avant de pousser."
+      "name": "Ancrage — mapping, tests massifs, validation",
+      "ids": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "action": "✅ FAIT. 87% pipeline, 97% historique, blind test p=3.4e-12. 65K concepts mappés.",
+      "bio": "Le baobab s'ancre profondément avant de pousser."
     },
     {
       "phase": 3,
-      "name": "SOL + Tronc \u2014 co-occurrence, cleanup, escaliers, holes",
-      "ids": ["S1", "S2", "T1", "T2", "T3"],
-      "action": "\u2705 FAIT. 296M papers, S0 100% C1, 200+69 escaliers, cross Physarum.",
-      "bio": "Le tronc du baobab est un r\u00e9servoir."
+      "name": "SOL + Tronc — co-occurrence, cleanup, escaliers, holes",
+      "ids": [
+        "S1",
+        "S2",
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "action": "✅ FAIT. 296M papers, S0 100% C1, 200+69 escaliers, cross Physarum.",
+      "bio": "Le tronc du baobab est un réservoir."
     },
     {
       "phase": 4,
-      "name": "Branches \u2014 PLUIE, Glyph Laplacian",
-      "ids": ["B1", "B2"],
-      "action": "\u2705 FAIT. Matrice 5,459\u00d75,459. Laplacien d=8.78. 63 tests.",
+      "name": "Branches — PLUIE, Glyph Laplacian",
+      "ids": [
+        "B1",
+        "B2"
+      ],
+      "action": "✅ FAIT. Matrice 5,459×5,459. Laplacien d=8.78. 63 tests.",
       "bio": "Le baobab a peu de branches mais chacune est massive."
     },
     {
       "phase": 5,
-      "name": "Viz \u2014 Film V4, Escaliers 3D, Carte vivante",
-      "ids": ["V1", "V2", "V3"],
-      "action": "\u2705 FAIT. 1534 frames, escaliers Three.js, carte S0.",
-      "bio": "Feuilles = 5% de la masse, 100% de l'\u00e9nergie per\u00e7ue."
+      "name": "Viz — Film V4, Escaliers 3D, Carte vivante",
+      "ids": [
+        "V1",
+        "V2",
+        "V3"
+      ],
+      "action": "✅ FAIT. 1534 frames, escaliers Three.js, carte S0.",
+      "bio": "Feuilles = 5% de la masse, 100% de l'énergie perçue."
     },
     {
       "phase": 6,
-      "name": "Feuilles \u2014 Winter Trees 1-4, S-2, S-1, Predictions",
-      "ids": ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8"],
-      "action": "\u2705 F1-F3,F5-F8 FAIT. F4 (WT3 enrich) EN COURS.",
-      "bio": "Les Winter Trees sont le squelette de donn\u00e9es. Tout le reste pousse dessus."
+      "name": "Feuilles — Winter Trees 1-4, S-2, S-1, Predictions",
+      "ids": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8"
+      ],
+      "action": "✅ F1-F3,F5-F8 FAIT. F4 (WT3 enrich) EN COURS.",
+      "bio": "Les Winter Trees sont le squelette de données. Tout le reste pousse dessus."
     },
     {
       "phase": 7,
-      "name": "Cime \u2014 M\u00e9t\u00e9orites, God Cube, Muninn, Grimpeur",
-      "ids": ["C1", "C2", "C3", "C4"],
+      "name": "Cime — Météorites, God Cube, Muninn, Grimpeur",
+      "ids": [
+        "C1",
+        "C2",
+        "C3",
+        "C4"
+      ],
       "action": "VISION. C1 attend calibrage WT3. C2 attend C1. C3 attend F4. C4 = sommet.",
-      "bio": "Bourgeons terminaux \u2014 ils contr\u00f4lent la croissance via les auxines."
+      "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "WT3 Enrich (F4): scan 1,981 fichiers OpenAlex pour injecter title/authors/year. EN COURS. Apr\u00e8s: index authors/title/year, test Philippe Schuchert, puis Muninn P39.",
+  "next_step": "WT3 Enrich (F4): scan 1,981 fichiers OpenAlex pour injecter title/authors/year. EN COURS. Après: index authors/title/year, test Philippe Schuchert, puis Muninn P39.",
   "rules": {
     "auto_update": true,
-    "description": "Ce fichier est la source de v\u00e9rit\u00e9 architecturale du projet. Il DOIT \u00eatre mis \u00e0 jour automatiquement apr\u00e8s chaque modification significative.",
+    "description": "Ce fichier est la source de vérité architecturale du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",
     "triggers": [
-      "Fichier cr\u00e9\u00e9, d\u00e9plac\u00e9 ou supprim\u00e9 \u2192 mettre \u00e0 jour nodes[].entry",
-      "Fonctionnalit\u00e9 termin\u00e9e \u2192 passer nodes[].status de 'todo'/'wip' \u00e0 'done'",
-      "R\u00e9sultat de test/validation \u2192 ajuster nodes[].confidence",
-      "Nouveau module ou feature \u2192 ajouter un node",
-      "Stats changent \u2192 mettre \u00e0 jour stats{}",
-      "\u00c9tape franchie \u2192 mettre \u00e0 jour next_step et build_order[].action"
+      "Fichier créé, déplacé ou supprimé → mettre à jour nodes[].entry",
+      "Fonctionnalité terminée → passer nodes[].status de 'todo'/'wip' à 'done'",
+      "Résultat de test/validation → ajuster nodes[].confidence",
+      "Nouveau module ou feature → ajouter un node",
+      "Stats changent → mettre à jour stats{}",
+      "Étape franchie → mettre à jour next_step et build_order[].action"
     ]
   }
 }
