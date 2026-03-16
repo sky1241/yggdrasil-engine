@@ -362,7 +362,11 @@ Jointure WT1+WT2 dans SQLite unifié. Script: `engine/topology/wt3_bible.py`
 - [x] `viz/s2_spectral_3d.html` — S-2 3D embedding (eigenvectors 1-2-3)
 - [x] `viz/hypertree_decomp.html`, `viz/hypergraph_s2s1.html` — nouvelles viz
 - [x] WT4 design: forme champignon, nd = coordonnée verticale, Laplacien joint = calcul dérivé
-- [ ] WT4 implémentation (WT3 prêt, lancer quand décidé)
+- [x] WT4 implémentation: Laplacien bipartite complet [0,B;B^T,0] sur 30,509 noeuds
+  - Gap spectral 0.683, signature bipartite (10+/10-), 32s runtime
+  - Script: `engine/topology/wt4_spectral.py`
+  - Output: `data/scan/wt4_spectral.json` + viz Three.js
+  - Note: B@B^T (v1) était FAUX (99.9% dense) → reécrit en bipartite complet (v2)
 
 ## NOTES
 - Winter tree scan V2 COMPLET (581/581 chunks, 692 GB, 348M papers). Le goulot est passé.
@@ -378,5 +382,6 @@ Jointure WT1+WT2 dans SQLite unifié. Script: `engine/topology/wt3_bible.py`
 - ⚠️ D:\ contient encore le snapshot OpenAlex (~692 GB) après migration E:\. À nettoyer si besoin d'espace.
 - **Pipeline S-2 COMPLET**: 459 chunks, 617 glyphes actifs, positions spectrales calculées.
 - **S-1 Métiers COMPLET**: 416/416 chunks, 858K papers, 19 domaines (session 19).
-- **Prochaine étape**: WT4 (forme 3D), puis Muninn P39, viz, V3, V4.
+- **WT4 COMPLET** (30,509 noeuds, gap 0.683, 1316 glyphes + 29K concepts) — session 28.
+- **Prochaine étape**: Muninn P39 (bibliothécaire WT3), V3 calibrage, V4 grimpeur.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.

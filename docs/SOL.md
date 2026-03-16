@@ -72,7 +72,7 @@ WT2 (FAIT)     per-paper index      416/416 chunks, 832K papers, {glyphs, domain
 WT3 (FAIT)     La Bible             jointure WT1+WT2, SQLite `data/wt3.db` (78 GB)
                                      833K papers, 6.2M bipartite, 885M cooc, 69.4M cooc_global
                                      8/8 indexes, meta complète. Build total ~57Ks
-WT4 (DESIGN)   Forme 3D unifiée     Laplacien spectral pur sur bipartite 1,337×65K
+WT4 (FAIT)     Forme 3D unifiée     Laplacien bipartite complet 30,509 noeuds, gap=0.683, 32s
 ```
 - RÈGLE: Laplaciens S-2 et S0 restent SÉPARÉS. Le pont S-2↔S0 = table bipartite, PAS fusion de graphes
 - WT2 sauvegarde le détail PER-PAPER (contrairement à S-1 qui a agrégé et jeté)

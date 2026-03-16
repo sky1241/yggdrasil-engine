@@ -34,21 +34,22 @@ Trois couches de scan, chacune un arbre hivernal (graphe de co-occurrences).
 - **Phase 6 meta**: build_date, totals, build_time
 - Muninn par-dessus = turbo (P39 prevu post-WT3)
 
-### WT4 — Forme 3D unifiee (S-2 x S-1 x S0) — DESIGN
-- Session 25: decouverte que Face 1 utilisait hauteur=papers (faux) au lieu de eigenvector 3 (vrai)
-- Le Laplacien S-2 actuel est 2D (eigenvectors 1-2 seulement), pas de composante 3D
-- Les 19 domaines (S-1) donnent un prior de clustering gratuit pour accelerer le calcul
-- Les nd (nombre de domaines par glyphe) SONT la coordonnee verticale naturelle:
-  - nd=2 (21 glyphes) = aretes/frontieres entre 2 territoires
-  - nd=3 (34) = sommets ou 3 territoires se touchent
-  - nd=4 (22) = carrefours a 4
-  - nd=5-8 (13) = reseau profond
-  - TROU nd=9-12 (0) = vide structurel
-  - nd=13-19 (1,233) = tronc du champignon (ubiquistes)
-- Forme champignon emerge naturellement (coherent avec core-periphery en network science)
-- Necessite: Laplacien S-2 repondere avec masses S0 (papers/concepts par glyphe) + eigenvectors 1-2-3
-- Prerequis: WT3 complet (la Bible fournit les masses S0 par glyphe)
-- La regle "Laplaciens separes" reste pour le stockage; le Laplacien joint est un CALCUL DERIVE, pas une fusion de tables
+### WT4 — Forme 3D unifiee (S-2 x S-1 x S0) — COMPLET (16 mars 2026)
+- Script: `engine/topology/wt4_spectral.py`, output: `data/scan/wt4_spectral.json` (948 KB)
+- **Methode**: Laplacien bipartite COMPLET sur graphe [0,B; B^T,0] (PAS projection B@B^T)
+- **Matrice**: 30,509 noeuds (1,316 glyphes + 29,193 concepts), 6,181,981 aretes, densite 1.33%
+- **Laplacien normalise**: L_sym = I - D^{-1/2} A D^{-1/2}, eigsh k=20
+- **Gap spectral**: lambda_1=1.000, lambda_2=0.317, gap=0.683 (excellent)
+- **Signature bipartite**: 10 eigenvalues positives + 10 negatives (symetrie attendue)
+- **nd** (domaines par glyphe): range 1-19, mean=13.4, median=13
+  - nd<=4 (peripherie): radius spectral 0.164 (compact)
+  - nd>=13 (core ubiquiste): radius spectral 0.496 (etale)
+  - Forme = core-periphery INVERSE: ubiquistes etalés (captent toutes les directions spectrales)
+- **Paires sanity**: parentheses (↔) dist=0.045 (tres proches)
+- **Domaines**: Physics/Math/CS spread~0.38 (compacts), Art/Medicine spread~0.62 (etales)
+- **Viz**: `viz/wt4_spectral_3d.html` (Three.js, toggle couleur domaine/nd/groupe, taille nd/deg/fixe)
+- **Exports**: wt4_spectral.json (full), viz/data/wt4_spectral.json (glyphes), viz/data/wt4_full.json (glyphes + top 5K concepts)
+- La regle "Laplaciens separes" respectee: WT4 = calcul DERIVE sur bipartite WT3, pas fusion de tables
 
 ## Regle fondamentale
 Laplaciens S-2 et S0 restent SEPARES en stockage. Le pont S-2↔S0 = table bipartite dans WT3.

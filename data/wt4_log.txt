@@ -1,0 +1,117 @@
+[WT4] === FORME 3D UNIFIEE (S-2 x S-1 x S0) ===
+  Source: D:\ygg\yggdrasil-engine\data\wt3.db
+  Graphe: glyphes + concepts + mycelium (bipartite + cooc_global)
+[WT4] Phase 1: Loading ALL data from WT3...
+  Loading bipartite...
+  Bipartite: 6,181,981 edges, 1316 glyphs, 29,193 concepts
+  Loading cooc_global (69.4M rows, may take a minute)...
+    5,000,000 cooc rows loaded...
+    10,000,000 cooc rows loaded...
+    15,000,000 cooc rows loaded...
+    20,000,000 cooc rows loaded...
+    25,000,000 cooc rows loaded...
+    30,000,000 cooc rows loaded...
+    35,000,000 cooc rows loaded...
+    40,000,000 cooc rows loaded...
+    45,000,000 cooc rows loaded...
+    50,000,000 cooc rows loaded...
+    55,000,000 cooc rows loaded...
+    60,000,000 cooc rows loaded...
+    65,000,000 cooc rows loaded...
+    69,440,760 cooc rows loaded...
+  cooc_global: 69,440,760 edges, 65,026 unique concepts, 272.1s
+  Total unique concepts: 65,026 (bipartite: 29,193, cooc: 65,026)
+  Phase 1 total: 284.3s
+[WT4] Phase 2: Computing nd (domains per glyph)...
+  200,000 papers...
+  400,000 papers...
+  600,000 papers...
+  800,000 papers...
+  833,030 papers, nd range: 1-19, mean=13.4, median=13
+  Time: 12.7s
+[WT4] Phase 3: Building unified graph (1316 glyphs + 65,026 concepts = 66,342 nodes)...
+  Bipartite weights: min=0.000286, max=1657.39, median=0.002767
+  Cooc weights: min=0.001282, max=1540885.83, median=0.0357
+  After log+norm: bipartite [0.0000, 1.0000], cooc [0.0001, 1.0000]
+  Allocating 151,245,482 entries (1.21 GB per array)...
+  Adding 6,181,981 bipartite edges...
+  Added 6,181,981 bipartite edges
+  Adding 69,440,760 mycelium edges...
+    20,000,000 cooc edges added...
+    40,000,000 cooc edges added...
+    60,000,000 cooc edges added...
+  Added 69,440,760 mycelium edges
+  Building sparse matrix (66,342 x 66,342, 151,245,482 entries)...
+  A: 66,342 x 66,342, nnz=151,245,482, density=3.4364%
+  Bipartite edges: 6,181,981, Mycelium edges: 69,440,760
+  Time: 195.0s
+[WT4] Phase 4: Spectral decomposition (66,342 nodes, k=20)...
+  Computing D^{-1/2} A D^{-1/2}...
+  A_norm: nnz=151,245,482
+  Running eigsh(k=20, which='LM')... (this may take several minutes)
+  Eigenvalues (top 10): [1.0, 0.774, 0.7301, 0.6453, 0.5779, 0.5611, 0.5422, 0.496, 0.4924, 0.4875]
+  lambda_1=1.000000, lambda_2=0.774017
+  Spectral gap (1->2): 0.225983
+  Spectral gap (2->3): 0.043919
+  Spectral gap (3->4): 0.084838
+  Time: 85.5s
+[WT4] Phase 5: Exporting results...
+  Glyph coords: x=[-0.076,0.978], y=[-1.421,0.039], z=[-1.388,0.041]
+  Concept positions: 5000 top concepts
+  Full output: D:\ygg\yggdrasil-engine\data\scan\wt4_spectral.json (941 KB)
+  Viz glyphs: D:\ygg\yggdrasil-engine\viz\data\wt4_spectral.json (476 KB)
+  Viz full: D:\ygg\yggdrasil-engine\viz\data\wt4_full.json (701 KB)
+  Export time: 56.6s
+[WT4] Phase 6: Sanity checks...
+  Eigenvalue gap (1->2): 0.225983
+  Eigenvalue gap (2->3): 0.043919
+  Glyph norms (1-3): mean=0.004534, std=0.008835
+  Concept norms (1-3): mean=0.005193, std=0.004144
+  Mushroom: nd<=4 radius=0.081, nd>=13 radius=0.665
+  -> Core further out (inverse champignon)
+  WARNING: 85 collapsed glyphs (1231/1316 unique)
+  Random pair distances: median=0.1393, mean=0.5841
+  integral/partial (∫<->∂): dist=0.0000, 0.00x median [CLOSER]
+  forall/exists (∀<->∃): dist=0.5868, 4.21x median [FARTHER]
+  parens ((<->)): dist=0.0000, 0.00x median [CLOSER]
+  and/or (∧<->∨): dist=0.5231, 3.76x median [FARTHER]
+  plus/minus (+<->−): dist=1.6481, 11.83x median [FARTHER]
+  element/not-element (∈<->∉): dist=0.5382, 3.86x median [FARTHER]
+  Sigma/Pi (Σ<->Π): dist=0.0000, 0.00x median [CLOSER]
+  Sigma/integral (Σ<->∫): dist=0.0000, 0.00x median [CLOSER]
+  union/intersection (∪<->∩): dist=0.1355, 0.97x median [CLOSER]
+  equals/not-equal (=<->≠): dist=0.0000, 0.00x median [CLOSER]
+  less/greater (<<->>): dist=0.0000, 0.00x median [CLOSER]
+  brackets ([<->]): dist=0.0000, 0.00x median [CLOSER]
+  Pairs closer than median: 8/12 (67%)
+  Domain centroids (19 domains):
+    Art                       n= 436 center=(+0.519,-0.624,-0.720) spread=0.738
+    Biology                   n=1175 center=(+0.214,-0.287,-0.320) spread=0.468
+    Business                  n= 906 center=(+0.270,-0.346,-0.393) spread=0.529
+    Chemistry                 n=1235 center=(+0.205,-0.276,-0.308) spread=0.457
+    Computer science          n=1266 center=(+0.198,-0.269,-0.300) spread=0.451
+    Economics                 n=1095 center=(+0.228,-0.302,-0.338) spread=0.484
+    Engineering               n= 657 center=(+0.352,-0.441,-0.500) spread=0.610
+    Environmental science     n=1155 center=(+0.217,-0.290,-0.324) spread=0.471
+    Geography                 n= 853 center=(+0.284,-0.363,-0.412) spread=0.544
+    Geology                   n=1185 center=(+0.213,-0.285,-0.318) spread=0.466
+    History                   n= 676 center=(+0.351,-0.435,-0.501) spread=0.607
+    Materials science         n=1256 center=(+0.200,-0.272,-0.302) spread=0.453
+    Mathematics               n=1262 center=(+0.199,-0.270,-0.301) spread=0.452
+    Medicine                  n= 465 center=(+0.492,-0.591,-0.685) spread=0.719
+    Philosophy                n= 492 center=(+0.474,-0.568,-0.663) spread=0.702
+    Physics                   n=1298 center=(+0.192,-0.262,-0.292) spread=0.446
+    Political science         n= 731 center=(+0.328,-0.410,-0.470) spread=0.585
+    Psychology                n= 920 center=(+0.266,-0.343,-0.389) spread=0.525
+    Sociology                 n= 566 center=(+0.408,-0.500,-0.574) spread=0.656
+  Eigenvector 0: lambda=1.0000, variance=16.8%
+  Eigenvector 1: lambda=0.7740, variance=10.1%
+  Eigenvector 2: lambda=0.7301, variance=8.9%
+  Eigenvector 3: lambda=0.6453, variance=7.0%
+  Eigenvector 4: lambda=0.5779, variance=5.6%
+  Eigenvector 5: lambda=0.5611, variance=5.3%
+
+[WT4] === DONE in 634.8s (10.6 min) ===
+  1316 glyphs + 65,026 concepts = 66,342 nodes
+  6,181,981 bipartite + 69,440,760 mycelium = 75,622,741 total edges
+  Output: D:\ygg\yggdrasil-engine\data\scan\wt4_spectral.json
