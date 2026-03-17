@@ -35,21 +35,25 @@ Trois couches de scan, chacune un arbre hivernal (graphe de co-occurrences).
 - Muninn par-dessus = turbo (P39 prevu post-WT3)
 
 ### WT4 — Forme 3D unifiee (S-2 x S-1 x S0) — COMPLET (16 mars 2026)
-- Script: `engine/topology/wt4_spectral.py`, output: `data/scan/wt4_spectral.json` (948 KB)
-- **Methode**: Laplacien bipartite COMPLET sur graphe [0,B; B^T,0] (PAS projection B@B^T)
-- **Matrice**: 30,509 noeuds (1,316 glyphes + 29,193 concepts), 6,181,981 aretes, densite 1.33%
+- Script: `engine/topology/wt4_spectral.py`, output: `data/scan/wt4_spectral.json` (941 KB)
+- **Methode**: Graphe UNIFIE glyphes + 65K concepts + mycelium
+- **Matrice**: 66,342 noeuds (1,316 glyphes + 65,026 concepts), 75,622,741 aretes
+  - 6,181,981 aretes bipartite glyph↔concept (pont S-2↔S0)
+  - 69,440,760 aretes concept↔concept (cooc_global = LE MYCELIUM)
+  - densite 3.44%
 - **Laplacien normalise**: L_sym = I - D^{-1/2} A D^{-1/2}, eigsh k=20
-- **Gap spectral**: lambda_1=1.000, lambda_2=0.317, gap=0.683 (excellent)
-- **Signature bipartite**: 10 eigenvalues positives + 10 negatives (symetrie attendue)
+- **Gap spectral**: lambda_1=1.000, lambda_2=0.774, gap=0.226
+  - gap 2→3: 0.044, gap 3→4: 0.085
+- **Variance eigenvectors 1-3**: 10.1% + 8.9% + 7.0% = 26% (bon pour 66K noeuds)
 - **nd** (domaines par glyphe): range 1-19, mean=13.4, median=13
-  - nd<=4 (peripherie): radius spectral 0.164 (compact)
-  - nd>=13 (core ubiquiste): radius spectral 0.496 (etale)
-  - Forme = core-periphery INVERSE: ubiquistes etalés (captent toutes les directions spectrales)
-- **Paires sanity**: parentheses (↔) dist=0.045 (tres proches)
-- **Domaines**: Physics/Math/CS spread~0.38 (compacts), Art/Medicine spread~0.62 (etales)
-- **Viz**: `viz/wt4_spectral_3d.html` (Three.js, toggle couleur domaine/nd/groupe, taille nd/deg/fixe)
+- **Paires semantiques**: 8/12 plus proches que la mediane (67%)
+  - ∫↔∂, Σ↔Π, =↔≠, (↔), <↔>, [↔], Σ↔∫, ∪↔∩ = CLOSER
+- **Domaines**: Physics/Math/CS spread~0.45 (compacts), Art/Medicine spread~0.72 (etales)
+- **Runtime**: 10.6 min (charge 69.4M mycelium + eigsh sur 66K noeuds)
+- **Viz**: `viz/wt4_spectral_3d.html` (Three.js, toggle couleur domaine/nd/groupe)
 - **Exports**: wt4_spectral.json (full), viz/data/wt4_spectral.json (glyphes), viz/data/wt4_full.json (glyphes + top 5K concepts)
-- La regle "Laplaciens separes" respectee: WT4 = calcul DERIVE sur bipartite WT3, pas fusion de tables
+- Utilise TOUTES les tables WT3: bipartite + cooc_global + papers
+- La regle "Laplaciens separes" respectee: WT4 = calcul DERIVE, pas fusion de tables
 
 ## Regle fondamentale
 Laplaciens S-2 et S0 restent SEPARES en stockage. Le pont S-2↔S0 = table bipartite dans WT3.

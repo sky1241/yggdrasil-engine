@@ -1,5 +1,5 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 16 mars 2026
+> Yggdrasil Engine — Versoix, 17 mars 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE
@@ -72,13 +72,13 @@ WT2 (FAIT)     per-paper index      416/416 chunks, 832K papers, {glyphs, domain
 WT3 (FAIT)     La Bible             jointure WT1+WT2, SQLite `data/wt3.db` (78 GB)
                                      833K papers, 6.2M bipartite, 885M cooc, 69.4M cooc_global
                                      8/8 indexes, meta complète. Build total ~57Ks
-WT4 (FAIT)     Forme 3D unifiée     Laplacien bipartite complet 30,509 noeuds, gap=0.683, 32s
+WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75.6M aretes, 10.6 min
 ```
 - RÈGLE: Laplaciens S-2 et S0 restent SÉPARÉS. Le pont S-2↔S0 = table bipartite, PAS fusion de graphes
 - WT2 sauvegarde le détail PER-PAPER (contrairement à S-1 qui a agrégé et jeté)
 - WT3 = recherche cross-strate ("Philippe" → ses papers + ses formules + ses concepts)
 
-## ÉTAT ACTUEL — 16 MARS 2026 (session 27)
+## ÉTAT ACTUEL — 17 MARS 2026 (session 30)
 
 ### S-2 GLYPHES — COMPLET
 - ~1,500 glyphes total: 1,337 math (617 actifs) + 116 fossiles alchimiques + 10 actifs non-math + 7 graines
@@ -130,11 +130,11 @@ WT4 (FAIT)     Forme 3D unifiée     Laplacien bipartite complet 30,509 noeuds, 
 - **Phase 6 meta**: build_date, totals, build_time
 - **Fix session 27**: ajout checkpoint par batch dans phase 4 (crash-resumable), commit `f50a4b8`
 
-### WT4 — FORME 3D — PRÊT À LANCER (session 25, prérequis WT3 rempli)
-- Laplacien spectral pur sur bipartite 1,337×65K
-- Eigenvectors 1-2-3 = x,y,z, zéro forçage, domaines = couleurs pas axes
-- nd (nombre de domaines par glyphe) = coordonnée verticale naturelle → forme champignon
-- Prérequis: WT3 complet ✅ (69.4M cooc_global + 6.2M bipartite disponibles)
+### WT4 — FORME 3D UNIFIÉE — COMPLET (session 28)
+- 66,342 noeuds (1,316 glyphes + 65,026 concepts), 75.6M arêtes
+- Gap spectral 0.226, variance 26%, 8/12 paires sémantiques correctes
+- Script: `engine/topology/wt4_spectral.py`, output: `data/scan/wt4_spectral.json`
+- Viz: `viz/wt4_spectral_3d.html`
 
 ### INFRASTRUCTURE
 - **Film V4**: 1,534 frames (an 1000→2024), 65,021 concept births, `viz/yggdrasil_rain_v4.html`
@@ -180,6 +180,9 @@ WT4 (FAIT)     Forme 3D unifiée     Laplacien bipartite complet 30,509 noeuds, 
 | 25 | 12 mars | Opus 4.6 | WT3 en cours (phase 3a cooc), WT4 design (forme 3D, nd=coordonnée verticale), viz S-2 3D |
 | 26 | 14 mars | Opus 4.6 | WT3 phase 3 FAIT (disk-sharded aggregation), phase 4 lancée mais crash sans checkpoint |
 | 27 | 16 mars | Opus 4.6 | Fix phase 4 crash-resume (checkpoint par batch), WT3 COMPLET (6 phases, 78 GB), audit code complet |
+| 28 | 16 mars | Opus 4.6 | WT4 Forme 3D COMPLET (66K noeuds, 75.6M arêtes, gap 0.226) |
+| 29 | 16 mars | Opus 4.6 | WT3 enrichissement (title/authors/year), ménage repo (-293K lignes), CHANGELOG créé |
+| 30 | 17 mars | Opus 4.6 | forge.py Carmack moves (Kalman+Wavelet+KM+Newman+DTW+Hamming), metaprompt cousin, Muninn 350 tests audit |
 
 ## RÈGLES AUTO
 1. Sky monte (arbre/direction). Claude descend (racines/code).

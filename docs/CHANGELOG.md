@@ -5,6 +5,31 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 17 mars 2026 — Session 30
+
+### forge.py Carmack Moves
+- **7 algos cross-domaine** ajoutés à forge.py (outil de debug universel, 2252 lignes):
+  - Kalman filter (1960, missiles → bug risk), Haar wavelet (signal → churn multi-échelle)
+  - Kaplan-Meier (médecine → survie de fichiers), Newman Q-modularity (biologie → couplage imports)
+  - DTW (reconnaissance vocale → patterns flaky), Hamming distance (télécom → sévérité mutations)
+  - Z-score anomaly detection (statistique → outliers unifiés)
+- **3 nouvelles commandes**: `--carmack`, `--anomaly`, `--flaky-dtw`
+- **Full cycle 8 étapes** (avant: 6), pipeline complet sur Muninn = 350 tests, 1 vrai bug trouvé
+- **Metaprompt cousin**: `data/forge_cousin_metaprompt.md` — coordonnées Yggdrasil pour deep research forge.py
+- Pushed sur infernal-wheel (commit `c48752f`) et MUNINN- (commit `d0b07d0`)
+
+### Muninn — Fixes
+- `test_ebbinghaus_recall_separation`: seuil gap 0.1→0.25 (faux positif sur branches uniformes)
+- 3 flaky tests (test_lazy_real.py): `@flaky(reruns=2)` pour I/O timing sur DB 2.7M
+- `adaptive_boot_budget()`: boot budget adaptatif 15% du contexte (floor 15K, cap 100K)
+- `pull_from_meta()`: max_pull 500→1000
+
+### Audit Muninn
+- 64 fichiers de tests, ~370 fonctions, **0 fake**, 60 GOOD, 4 OK
+- forge.py --full-cycle validé: predict + carmack + mutate + tests + flaky + locate + anomaly
+
+---
+
 ## 16 mars 2026 — Session 29
 
 ### WT3 Enrichissement (EN COURS)
@@ -272,4 +297,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-03-16 | 44,117L Python | 6,723 fichiers | phase CANOPEE_
+_Auto-update: 2026-03-17 | 44,117L Python | 6,723 fichiers | phase CANOPEE_
