@@ -4,26 +4,26 @@
   "family": "baobab",
   "family_name": "Baobab",
   "family_emoji": "🌳",
-  "date": "2026-03-17",
+  "date": "2026-03-28",
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 52458,
+    "lines": 56142,
     "factor": 20.7,
     "category": "forêt",
     "height_px": 900,
     "data_gb": 78.0,
     "density": 2.1,
     "trunk_width": 3.5,
-    "label": "🌳 Baobab (44K Python + 8K HTML + 78.0GB data)"
+    "label": "🌳 Baobab (47K Python + 8K HTML + 78.0GB data)"
   },
   "stats": {
-    "total_files": 6723,
-    "total_code_lines": 52458,
-    "python_lines": 44117,
+    "total_files": 6763,
+    "total_code_lines": 56142,
+    "python_lines": 47801,
     "html_lines": 8341,
     "languages": {
-      "Python": 44117,
+      "Python": 47801,
       "PowerShell": 9,
       "Shell": 11,
       "HTML": 8341,
@@ -416,6 +416,21 @@
       "desc": "858K papers, bridge S-2↔S0 per-paper. Commit 6889e1f."
     },
     {
+      "id": "Q1",
+      "level": "Q",
+      "depth": 4,
+      "label": "Tests unitaires core — 86 tests (scisci, holes, symbols)",
+      "status": "done",
+      "entry": "tests/test_core_scisci.py",
+      "confidence": 100,
+      "depends": [
+        "M3",
+        "T2",
+        "P1"
+      ],
+      "desc": "86 tests pytest: 32 scisci (fitness, D-index, Uzzi, Q-factor, Laplacien, Fiedler), 34 holes (3 scores, DomainPair, HoleDetector, continents), 20 symbols (Symbol, strates, SymbolDatabase mock). 100% pass."
+    },
+    {
       "id": "C1",
       "level": "C",
       "depth": 5,
@@ -571,7 +586,7 @@
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "WT3 Enrich (F4): scan 1,981 fichiers OpenAlex pour injecter title/authors/year. EN COURS. Après: index authors/title/year, test Philippe Schuchert, puis Muninn P39.",
+  "next_step": "Tests core FAIT (Q1, 86/86). Prochain: étendre tests Tier 2 (parsers, pipelines avec mock). WT3 Enrich (F4) EN COURS.",
   "rules": {
     "auto_update": true,
     "description": "Ce fichier est la source de vérité architecturale du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",

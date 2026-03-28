@@ -5,6 +5,20 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 27 mars 2026 — Session 31
+
+### Tests unitaires core — 86/86 PASS
+- **3 fichiers de tests créés** couvrant les 3 modules core purs (Tier 1 = maths, zéro data):
+  - `test_core_scisci.py` — 32 tests: disruption_index (Wu/Evans), uzzi_zscore, fitness_wang_barabasi, q_factor_sinatra, co_occurrence_strength, graph_laplacian, fiedler_vector
+  - `test_core_holes.py` — 34 tests: score_technical (A), score_conceptual (B), score_perceptual (C), DomainPair, HoleDetector, map_symbol_to_continents, CONTINENTS
+  - `test_core_symbols.py` — 20 tests: Symbol class, STRATE_COLORS/NAMES/CENTERS, SymbolDatabase (fixture mock JSON)
+- **Méthode**: edge cases (zeros, caps, ranges), propriétés mathématiques (row sums, symmetry, signs), mock data (tmp_path fixture)
+- **1 fix**: `test_stats` comptait 3 domaines au lieu de 4 dans le mock data → corrigé
+- **Résultat**: 86/86 passed, 1.43s, Python 3.13.6, pytest 9.0.2
+- **Node Q1** ajouté à winter-tree.json
+
+---
+
 ## 17 mars 2026 — Session 30
 
 ### forge.py Carmack Moves
@@ -297,4 +311,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-03-17 | 44,117L Python | 6,723 fichiers | phase CANOPEE_
+_Auto-update: 2026-03-28 | 47,801L Python | 6,763 fichiers | phase CANOPEE_

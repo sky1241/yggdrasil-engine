@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 17 mars 2026 (session 30), Sky×Claude (Opus 4.6)
+> Dernière màj: 28 mars 2026 (session 31), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -298,6 +298,19 @@ L'AI grimpe avec le bon sac à dos.
   - Script: `engine/analysis/mirror_pairs_test.py`
   - Résultats: `data/scan/mirror_pairs_test.json`
 - Dossiers: `blind_test_v2/` + `data/scan/spectral_blind_test.json`
+
+## TESTS UNITAIRES CODE (session 31, 27 mars 2026)
+### Tier 1 — Core pur (✅ COMPLET — 86/86 pass)
+- [x] `test_core_scisci.py` — 32 tests: D-index, Uzzi z, fitness, Q-factor, co-occ, Laplacien, Fiedler
+- [x] `test_core_holes.py` — 34 tests: scores A/B/C, DomainPair, HoleDetector, continents
+- [x] `test_core_symbols.py` — 20 tests: Symbol, strates, SymbolDatabase (mock fixture)
+### Tier 2 — Parsers + mock data (TODO)
+- [ ] `test_glyph_registry.py` — registre glyphes, catégories, lookup
+- [ ] `test_meteorites.py` — Sedov-Taylor, OHLC, fit_sedov, classify_candle
+- [ ] `test_species.py` — curseurs Lehmann, identification, multi-espèces
+### Tier 3 — Pipelines synthétiques (TODO)
+- [ ] `test_mycelium.py` — Physarum sur réseau synthétique
+- [ ] `test_frame_builder.py` — frames sur mini-dataset
 
 ## S-2 PIPELINE SPECTRAL (✅ COMPLET — session 15, 3 mars 2026)
 Pipeline 8 briques: registry → parsers → scanners → laplacien → frames → intégration.
