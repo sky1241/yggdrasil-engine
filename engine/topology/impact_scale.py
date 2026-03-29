@@ -101,18 +101,19 @@ def compute_impact_score(spread_rare: float, weight_rare: float,
     # Rarity density (for reporting only, not used in score)
     rarity_density = weight_rare / n_concepts
 
-    # Breadth factor: papers with few concepts get penalized
-    # A paper touching 2 concepts can't be an "extinction" no matter how rare they are
-    # Minimum 5 concepts to reach full score; below that, linear penalty
-    # 1 concept → 0.2x, 2 → 0.4x, 3 → 0.6x, 4 → 0.8x, 5+ → 1.0x
-    breadth_factor = min(n_concepts / 5.0, 1.0)
+    # Breadth factor: papers with few concepts get penalized hard
+    # A paper touching 5 concepts can't be an "extinction" — z_spread alone isn't impact
+    # Minimum 10 concepts to reach full z_spread contribution
+    # 1→0.1, 3→0.3, 5→0.5, 7→0.7, 10+→1.0
+    breadth_factor = min(n_concepts / 10.0, 1.0)
 
-    # Bonus for touching MANY concepts (log scale, mild, on top of the floor)
-    breadth_bonus = math.log(max(n_concepts, 1)) / math.log(50)  # 1→0, 50→1
+    # Bonus for touching MANY concepts (log scale, stronger than before)
+    # Real paradigm shifts touch 15+ concepts across domains
+    breadth_bonus = math.log(max(n_concepts, 1)) / math.log(30)  # 1→0, 30→1
     breadth_bonus = min(max(breadth_bonus, 0), 1.0)
 
-    # raw = z_spread * breadth_factor + mild breadth bonus
-    raw = z_spread * breadth_factor + 0.3 * breadth_bonus
+    # raw = z_spread * breadth_factor + breadth bonus (stronger: 0.5 instead of 0.3)
+    raw = z_spread * breadth_factor + 0.5 * breadth_bonus
 
     # Collab penalty
     if is_collab:
@@ -132,10 +133,12 @@ def compute_impact_score(spread_rare: float, weight_rare: float,
         score = 9.0 + min((raw - 4) * 0.5, 1.0)  # 4→9, 6+→10
     score = round(min(max(score, 0), 10), 2)
 
-    # Tier
-    if score >= 9:
+    # Tier — hard caps prevent artifacts
+    # Extinction requires genuinely broad papers (>= 8 concepts)
+    # Asteroide requires >= 5 concepts
+    if score >= 9 and n_concepts >= 8:
         tier = "extinction"
-    elif score >= 7.5:
+    elif score >= 7.5 and n_concepts >= 5:
         tier = "asteroide"
     elif score >= 6:
         tier = "meteorite"

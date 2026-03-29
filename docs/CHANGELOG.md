@@ -334,4 +334,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-03-29 | 49,920L Python | 6,780 fichiers | phase CANOPEE_
+_Auto-update: 2026-03-29 | 52,290L Python | 6,789 fichiers | phase CANOPEE_
