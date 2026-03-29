@@ -8,7 +8,7 @@
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 57655,
+    "lines": 58261,
     "factor": 20.7,
     "category": "forêt",
     "height_px": 900,
@@ -18,12 +18,12 @@
     "label": "🌳 Baobab (49K Python + 8K HTML + 78.0GB data)"
   },
   "stats": {
-    "total_files": 6773,
-    "total_code_lines": 57655,
-    "python_lines": 49314,
+    "total_files": 6780,
+    "total_code_lines": 58261,
+    "python_lines": 49920,
     "html_lines": 8341,
     "languages": {
-      "Python": 49314,
+      "Python": 49920,
       "PowerShell": 9,
       "Shell": 11,
       "HTML": 8341,

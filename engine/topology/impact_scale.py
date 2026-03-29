@@ -101,12 +101,18 @@ def compute_impact_score(spread_rare: float, weight_rare: float,
     # Rarity density (for reporting only, not used in score)
     rarity_density = weight_rare / n_concepts
 
-    # Bonus for touching many concepts (log scale, mild)
+    # Breadth factor: papers with few concepts get penalized
+    # A paper touching 2 concepts can't be an "extinction" no matter how rare they are
+    # Minimum 5 concepts to reach full score; below that, linear penalty
+    # 1 concept → 0.2x, 2 → 0.4x, 3 → 0.6x, 4 → 0.8x, 5+ → 1.0x
+    breadth_factor = min(n_concepts / 5.0, 1.0)
+
+    # Bonus for touching MANY concepts (log scale, mild, on top of the floor)
     breadth_bonus = math.log(max(n_concepts, 1)) / math.log(50)  # 1→0, 50→1
     breadth_bonus = min(max(breadth_bonus, 0), 1.0)
 
-    # raw = z_spread + mild breadth bonus
-    raw = z_spread + 0.3 * breadth_bonus
+    # raw = z_spread * breadth_factor + mild breadth bonus
+    raw = z_spread * breadth_factor + 0.3 * breadth_bonus
 
     # Collab penalty
     if is_collab:

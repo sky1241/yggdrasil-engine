@@ -42,6 +42,9 @@ data/impact_scale.db
 data/impact_scale.db-shm
 data/impact_scale.db-wal
 data/impact_timeline.db
+data/impact_concepts.db
+data/impact_concepts.db-shm
+data/impact_concepts.db-wal
 data/pipeline/pipeline_test_*.json
 
 # Binary data
