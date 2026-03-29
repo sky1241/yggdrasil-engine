@@ -1,0 +1,2128 @@
+{
+  "meta": {
+    "description": "Impact Scale — echelle probabiliste 0-10 normalisee par domaine",
+    "build_date": "2026-03-29 08:51:09",
+    "tiers": {
+      "0-1": "caillou (paper ordinaire)",
+      "2-3": "pierre (au-dessus de la moyenne)",
+      "4-5": "rocher (top 10%, pont inter-domaines)",
+      "6-7": "meteorite (top 1%, nouvelles connexions)",
+      "8-9": "asteroide (top 0.1%, reconfigure la topologie)",
+      "10": "extinction (top 0.01%, change tout)"
+    }
+  },
+  "distribution": {
+    "caillou": 128244,
+    "pierre": 355569,
+    "rocher": 290035,
+    "meteorite": 52146,
+    "asteroide": 6615,
+    "extinction": 421
+  },
+  "top_papers": [
+    {
+      "paper_id": "cond-mat/0401023",
+      "year": 2005,
+      "domain": "Materials science",
+      "score": 9.92,
+      "tier": "extinction",
+      "z_spread": 5.784,
+      "rarity_density": 0.0673,
+      "spread_rare": 2.23418,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "John H. Carpenter",
+        "Karin A. Dahmen",
+        "Andrea C. Mills",
+        "Michael B. Weissman",
+        "Andreas Berger"
+      ]
+    },
+    {
+      "paper_id": "1408.3998",
+      "year": 2014,
+      "domain": "Materials science",
+      "score": 9.71,
+      "tier": "extinction",
+      "z_spread": 5.29,
+      "rarity_density": 0.0746,
+      "spread_rare": 2.13352,
+      "n_concepts": 6,
+      "is_collab": false,
+      "authors": [
+        "Sinclair, David",
+        "Dulwich, Fred",
+        "Mort, Benjamin",
+        "Jones, Michael E.",
+        "Grainge, Keith"
+      ]
+    },
+    {
+      "paper_id": "hep-ex/0312009",
+      "year": 2003,
+      "domain": "Materials science",
+      "score": 9.63,
+      "tier": "extinction",
+      "z_spread": 5.181,
+      "rarity_density": 0.0666,
+      "spread_rare": 2.11141,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Mochalov, V.",
+        "Borisov, N.",
+        "Davidenko, A.",
+        "Fedorov, A.",
+        "Grishin, V."
+      ]
+    },
+    {
+      "paper_id": "physics/0605070",
+      "year": 2006,
+      "domain": "Computer science",
+      "score": 9.63,
+      "tier": "extinction",
+      "z_spread": 5.21,
+      "rarity_density": 0.0652,
+      "spread_rare": 2.39694,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Wasko, Mateusz",
+        "Kulakowski, Krzysztof"
+      ]
+    },
+    {
+      "paper_id": "1306.3655",
+      "year": 2013,
+      "domain": "Computer science",
+      "score": 9.63,
+      "tier": "extinction",
+      "z_spread": 5.21,
+      "rarity_density": 0.0652,
+      "spread_rare": 2.39694,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Regev, Amitai"
+      ]
+    },
+    {
+      "paper_id": "1310.4521",
+      "year": 2014,
+      "domain": "Computer science",
+      "score": 9.63,
+      "tier": "extinction",
+      "z_spread": 5.212,
+      "rarity_density": 0.0648,
+      "spread_rare": 2.39741,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Frédéric Chapoton",
+        "Samuele Giraudo"
+      ]
+    },
+    {
+      "paper_id": "1510.01304",
+      "year": 2015,
+      "domain": "Materials science",
+      "score": 9.62,
+      "tier": "extinction",
+      "z_spread": 5.114,
+      "rarity_density": 0.0744,
+      "spread_rare": 2.09774,
+      "n_concepts": 5,
+      "is_collab": false,
+      "authors": [
+        "Jing Ma",
+        "D. A. Pesin"
+      ]
+    },
+    {
+      "paper_id": "cond-mat/0012123",
+      "year": 2001,
+      "domain": "Materials science",
+      "score": 9.58,
+      "tier": "extinction",
+      "z_spread": 5.034,
+      "rarity_density": 0.0829,
+      "spread_rare": 2.08148,
+      "n_concepts": 5,
+      "is_collab": false,
+      "authors": [
+        "J. B. Neaton",
+        "N. W. Ashcroft"
+      ]
+    },
+    {
+      "paper_id": "1101.5799",
+      "year": 2011,
+      "domain": "Computer science",
+      "score": 9.56,
+      "tier": "extinction",
+      "z_spread": 5.059,
+      "rarity_density": 0.0768,
+      "spread_rare": 2.35818,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Feliu, Elisenda",
+        "Wiuf, Carsten"
+      ]
+    },
+    {
+      "paper_id": "cond-mat/0012340",
+      "year": 2000,
+      "domain": "Materials science",
+      "score": 9.47,
+      "tier": "extinction",
+      "z_spread": 4.892,
+      "rarity_density": 0.065,
+      "spread_rare": 2.05246,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Pask, J. E.",
+        "Singh, D. J.",
+        "Mazin, I. I.",
+        "Hellberg, C. S.",
+        "Kortus, J."
+      ]
+    },
+    {
+      "paper_id": "0809.4967",
+      "year": 2008,
+      "domain": "Materials science",
+      "score": 9.47,
+      "tier": "extinction",
+      "z_spread": 4.892,
+      "rarity_density": 0.065,
+      "spread_rare": 2.05246,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Battaglia, Corsin",
+        "Monney, Claude",
+        "Didiot, Clement",
+        "Schwier, Eike Fabian",
+        "Mariotti, Nicolas"
+      ]
+    },
+    {
+      "paper_id": "0811.3426",
+      "year": 2009,
+      "domain": "Materials science",
+      "score": 9.47,
+      "tier": "extinction",
+      "z_spread": 4.892,
+      "rarity_density": 0.065,
+      "spread_rare": 2.05246,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "N. Kurita",
+        "F. Ronning",
+        "Y. Tokiwa",
+        "E. D. Bauer",
+        "A. Subedi"
+      ]
+    },
+    {
+      "paper_id": "1009.4490",
+      "year": 2010,
+      "domain": "Materials science",
+      "score": 9.47,
+      "tier": "extinction",
+      "z_spread": 4.859,
+      "rarity_density": 0.0814,
+      "spread_rare": 2.04576,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Argatov, I. I.",
+        "Mishuris, G. S."
+      ]
+    },
+    {
+      "paper_id": "cond-mat/0401348",
+      "year": 2004,
+      "domain": "Chemistry",
+      "score": 9.45,
+      "tier": "extinction",
+      "z_spread": 4.841,
+      "rarity_density": 0.0652,
+      "spread_rare": 2.39694,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Charles F. F. Karney",
+        "Jason E. Ferrara",
+        "Stephan Brunner"
+      ]
+    },
+    {
+      "paper_id": "0808.3361",
+      "year": 2008,
+      "domain": "Chemistry",
+      "score": 9.45,
+      "tier": "extinction",
+      "z_spread": 4.841,
+      "rarity_density": 0.0652,
+      "spread_rare": 2.39694,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Chia Wei Hsu",
+        "Julio Largo",
+        "Francesco Sciortino",
+        "Francis W. Starr"
+      ]
+    },
+    {
+      "paper_id": "0903.1359",
+      "year": 2009,
+      "domain": "Chemistry",
+      "score": 9.45,
+      "tier": "extinction",
+      "z_spread": 4.841,
+      "rarity_density": 0.0652,
+      "spread_rare": 2.39694,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Linial, Nathan",
+        "Meshulam, Roy",
+        "Rosenthal, Mishael"
+      ]
+    },
+    {
+      "paper_id": "0907.1669",
+      "year": 2009,
+      "domain": "Chemistry",
+      "score": 9.45,
+      "tier": "extinction",
+      "z_spread": 4.841,
+      "rarity_density": 0.0652,
+      "spread_rare": 2.39694,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Goff, Michael",
+        "Klee, Steven",
+        "Novik, Isabella"
+      ]
+    },
+    {
+      "paper_id": "1102.1567",
+      "year": 2000,
+      "domain": "Computer science",
+      "score": 9.44,
+      "tier": "extinction",
+      "z_spread": 4.754,
+      "rarity_density": 0.0723,
+      "spread_rare": 2.28014,
+      "n_concepts": 5,
+      "is_collab": false,
+      "authors": [
+        "Tam�s Waldhauser"
+      ]
+    },
+    {
+      "paper_id": "astro-ph/0507007",
+      "year": 2005,
+      "domain": "Physics",
+      "score": 9.43,
+      "tier": "extinction",
+      "z_spread": 4.798,
+      "rarity_density": 0.0785,
+      "spread_rare": 2.2607,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "David Makovoz",
+        "Francine R. Marleau"
+      ]
+    },
+    {
+      "paper_id": "gr-qc/0004065",
+      "year": 2000,
+      "domain": "Mathematics",
+      "score": 9.39,
+      "tier": "extinction",
+      "z_spread": 4.704,
+      "rarity_density": 0.0665,
+      "spread_rare": 2.25522,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Lehner, Luis",
+        "Huq, Mijan",
+        "Garrison, David"
+      ]
+    },
+    {
+      "paper_id": "1505.02395",
+      "year": 2015,
+      "domain": "Computer science",
+      "score": 9.38,
+      "tier": "extinction",
+      "z_spread": 4.683,
+      "rarity_density": 0.0657,
+      "spread_rare": 2.26187,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Ayupov, Shavkat",
+        "Arzikulov, Farhodjon"
+      ]
+    },
+    {
+      "paper_id": "math/0609125",
+      "year": 2006,
+      "domain": "Computer science",
+      "score": 9.37,
+      "tier": "extinction",
+      "z_spread": 4.657,
+      "rarity_density": 0.0665,
+      "spread_rare": 2.25522,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Holtkamp, Ralf",
+        "Loday, Jean-Louis",
+        "Ronco, Maria"
+      ]
+    },
+    {
+      "paper_id": "1206.5843",
+      "year": 2012,
+      "domain": "Computer science",
+      "score": 9.37,
+      "tier": "extinction",
+      "z_spread": 4.678,
+      "rarity_density": 0.0785,
+      "spread_rare": 2.2607,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Muto, Shunsuke",
+        "Tatsumi, Kazuyoshi",
+        "Rusz, Jan"
+      ]
+    },
+    {
+      "paper_id": "1210.5984",
+      "year": 2012,
+      "domain": "Computer science",
+      "score": 9.37,
+      "tier": "extinction",
+      "z_spread": 4.678,
+      "rarity_density": 0.0785,
+      "spread_rare": 2.2607,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Furche, Tim",
+        "Gottlob, Georg",
+        "Grasso, Giovanni",
+        "Orsi, Giorgio",
+        "Schallhart, Christian"
+      ]
+    },
+    {
+      "paper_id": "1212.3023",
+      "year": 2012,
+      "domain": "Computer science",
+      "score": 9.37,
+      "tier": "extinction",
+      "z_spread": 4.678,
+      "rarity_density": 0.0785,
+      "spread_rare": 2.2607,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Nasution, Mahyuddin K. M.",
+        "Noah, Shahrul Azman Mohd"
+      ]
+    },
+    {
+      "paper_id": "1310.4756",
+      "year": 2013,
+      "domain": "Computer science",
+      "score": 9.37,
+      "tier": "extinction",
+      "z_spread": 4.657,
+      "rarity_density": 0.0665,
+      "spread_rare": 2.25522,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Wotzlaw, Andreas",
+        "van der Grinten, Alexander",
+        "Speckenmeyer, Ewald"
+      ]
+    },
+    {
+      "paper_id": "1401.7151",
+      "year": 2017,
+      "domain": "Computer science",
+      "score": 9.37,
+      "tier": "extinction",
+      "z_spread": 4.657,
+      "rarity_density": 0.0665,
+      "spread_rare": 2.25522,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Aldo J. Lazar"
+      ]
+    },
+    {
+      "paper_id": "0909.2670",
+      "year": 2009,
+      "domain": "Mathematics",
+      "score": 9.36,
+      "tier": "extinction",
+      "z_spread": 4.641,
+      "rarity_density": 0.0715,
+      "spread_rare": 2.23641,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Arapura, Donu",
+        "Kumar, Manish"
+      ]
+    },
+    {
+      "paper_id": "0903.1228",
+      "year": 2009,
+      "domain": "Computer science",
+      "score": 9.35,
+      "tier": "extinction",
+      "z_spread": 4.615,
+      "rarity_density": 0.0659,
+      "spread_rare": 2.24444,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Corezzi, Silvia",
+        "De Michele, Cristiano",
+        "Zaccarelli, Emanuela",
+        "Tartaglia, Piero",
+        "Sciortino, Francesco"
+      ]
+    },
+    {
+      "paper_id": "cond-mat/0601263",
+      "year": 2006,
+      "domain": "Physics",
+      "score": 9.34,
+      "tier": "extinction",
+      "z_spread": 4.487,
+      "rarity_density": 0.0791,
+      "spread_rare": 2.16408,
+      "n_concepts": 11,
+      "is_collab": false,
+      "authors": [
+        "Van der Straeten, Erik",
+        "Naudts, Jan"
+      ]
+    },
+    {
+      "paper_id": "hep-ph/0110278",
+      "year": 2001,
+      "domain": "Physics",
+      "score": 9.33,
+      "tier": "extinction",
+      "z_spread": 4.505,
+      "rarity_density": 0.0863,
+      "spread_rare": 2.16957,
+      "n_concepts": 7,
+      "is_collab": false,
+      "authors": [
+        "Fleischer, Robert"
+      ]
+    },
+    {
+      "paper_id": "1101.1631",
+      "year": 2011,
+      "domain": "Materials science",
+      "score": 9.33,
+      "tier": "extinction",
+      "z_spread": 4.53,
+      "rarity_density": 0.0799,
+      "spread_rare": 1.97875,
+      "n_concepts": 5,
+      "is_collab": false,
+      "authors": [
+        "Elitzur, Shmuel",
+        "Karni, Boaz",
+        "Rabinovici, Eliezer"
+      ]
+    },
+    {
+      "paper_id": "hep-ph/0108146",
+      "year": 2001,
+      "domain": "Physics",
+      "score": 9.32,
+      "tier": "extinction",
+      "z_spread": 4.563,
+      "rarity_density": 0.0654,
+      "spread_rare": 2.18746,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Irastorza, I. G.",
+        "Morales, A.",
+        "Scopel, S.",
+        "Cebrian, S."
+      ]
+    },
+    {
+      "paper_id": "cond-mat/0408557",
+      "year": 2004,
+      "domain": "Physics",
+      "score": 9.32,
+      "tier": "extinction",
+      "z_spread": 4.547,
+      "rarity_density": 0.0884,
+      "spread_rare": 2.18251,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Chan, H. Y.",
+        "Lo, T. S.",
+        "Hui, P. M.",
+        "Johnson, N. F."
+      ]
+    },
+    {
+      "paper_id": "1005.0390",
+      "year": 2010,
+      "domain": "Computer science",
+      "score": 9.32,
+      "tier": "extinction",
+      "z_spread": 4.55,
+      "rarity_density": 0.0774,
+      "spread_rare": 2.22783,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Gauci, Adam",
+        "Adami, Kristian Zarb",
+        "Abela, John"
+      ]
+    },
+    {
+      "paper_id": "cond-mat/0402506",
+      "year": 2004,
+      "domain": "Mathematics",
+      "score": 9.3,
+      "tier": "extinction",
+      "z_spread": 4.507,
+      "rarity_density": 0.068,
+      "spread_rare": 2.19688,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Shukla, Pragya"
+      ]
+    },
+    {
+      "paper_id": "astro-ph/0008102",
+      "year": 2000,
+      "domain": "Physics",
+      "score": 9.28,
+      "tier": "extinction",
+      "z_spread": 4.479,
+      "rarity_density": 0.0751,
+      "spread_rare": 2.16132,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Hayashida, N.",
+        "Honda, K.",
+        "Inoue, N.",
+        "Kadota, K.",
+        "Kakimoto, F."
+      ]
+    },
+    {
+      "paper_id": "1312.6634",
+      "year": 2014,
+      "domain": "Physics",
+      "score": 9.28,
+      "tier": "extinction",
+      "z_spread": 4.501,
+      "rarity_density": 0.0699,
+      "spread_rare": 2.16815,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "R. JACKIW"
+      ]
+    },
+    {
+      "paper_id": "1403.4256",
+      "year": 2014,
+      "domain": "Materials science",
+      "score": 9.28,
+      "tier": "extinction",
+      "z_spread": 4.456,
+      "rarity_density": 0.0789,
+      "spread_rare": 1.96379,
+      "n_concepts": 4,
+      "is_collab": false,
+      "authors": [
+        "S. Das Sarma",
+        "E. H. Hwang"
+      ]
+    },
+    {
+      "paper_id": "1105.4464",
+      "year": 2011,
+      "domain": "Computer science",
+      "score": 9.27,
+      "tier": "extinction",
+      "z_spread": 4.43,
+      "rarity_density": 0.0735,
+      "spread_rare": 2.19711,
+      "n_concepts": 4,
+      "is_collab": false,
+      "authors": [
+        "Oreshkov, Ognyan",
+        "Costa, Fabio",
+        "Brukner, Caslav"
+      ]
+    },
+    {
+      "paper_id": "math/0011043",
+      "year": 2000,
+      "domain": "Mathematics",
+      "score": 9.25,
+      "tier": "extinction",
+      "z_spread": 4.425,
+      "rarity_density": 0.0708,
+      "spread_rare": 2.1725,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Bonavero, Laurent"
+      ]
+    },
+    {
+      "paper_id": "0711.4662",
+      "year": 2007,
+      "domain": "Computer science",
+      "score": 9.25,
+      "tier": "extinction",
+      "z_spread": 4.42,
+      "rarity_density": 0.0754,
+      "spread_rare": 2.19447,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Sevbitov, S. N.",
+        "Shishkina, T. V.",
+        "Solovtsov, I. L."
+      ]
+    },
+    {
+      "paper_id": "1011.6612",
+      "year": 2010,
+      "domain": "Computer science",
+      "score": 9.25,
+      "tier": "extinction",
+      "z_spread": 4.409,
+      "rarity_density": 0.0738,
+      "spread_rare": 2.19189,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "GaL, Światosław R."
+      ]
+    },
+    {
+      "paper_id": "1202.4939",
+      "year": 2012,
+      "domain": "Computer science",
+      "score": 9.25,
+      "tier": "extinction",
+      "z_spread": 4.411,
+      "rarity_density": 0.07,
+      "spread_rare": 2.19217,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Roux, Benoit"
+      ]
+    },
+    {
+      "paper_id": "1501.05240",
+      "year": 2015,
+      "domain": "Materials science",
+      "score": 9.25,
+      "tier": "extinction",
+      "z_spread": 4.417,
+      "rarity_density": 0.0793,
+      "spread_rare": 1.95581,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Biao Huang"
+      ]
+    },
+    {
+      "paper_id": "physics/0212038",
+      "year": 2002,
+      "domain": "Materials science",
+      "score": 9.24,
+      "tier": "extinction",
+      "z_spread": 4.349,
+      "rarity_density": 0.0816,
+      "spread_rare": 1.94185,
+      "n_concepts": 6,
+      "is_collab": false,
+      "authors": [
+        "Neustadt, Yury S.",
+        "Partenskii, Michael B."
+      ]
+    },
+    {
+      "paper_id": "math/0507526",
+      "year": 2005,
+      "domain": "Mathematics",
+      "score": 9.24,
+      "tier": "extinction",
+      "z_spread": 4.399,
+      "rarity_density": 0.0782,
+      "spread_rare": 2.16486,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Chatterjee, Sourav"
+      ]
+    },
+    {
+      "paper_id": "0704.2891",
+      "year": 2008,
+      "domain": "Mathematics",
+      "score": 9.24,
+      "tier": "extinction",
+      "z_spread": 4.42,
+      "rarity_density": 0.0717,
+      "spread_rare": 2.17119,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Avraham Aizenbud",
+        "Dmitry Gourevitch"
+      ]
+    },
+    {
+      "paper_id": "1403.4320",
+      "year": 2014,
+      "domain": "Mathematics",
+      "score": 9.24,
+      "tier": "extinction",
+      "z_spread": 4.42,
+      "rarity_density": 0.0717,
+      "spread_rare": 2.17119,
+      "n_concepts": 2,
+      "is_collab": false,
+      "authors": [
+        "Matthew Ando",
+        "Andrew J. Blumberg",
+        "David Gepner",
+        "Michael J. Hopkins",
+        "Charles Rezk"
+      ]
+    },
+    {
+      "paper_id": "0809.1323",
+      "year": 2009,
+      "domain": "Materials science",
+      "score": 9.23,
+      "tier": "extinction",
+      "z_spread": 4.37,
+      "rarity_density": 0.0728,
+      "spread_rare": 1.94624,
+      "n_concepts": 3,
+      "is_collab": false,
+      "authors": [
+        "Zi Cai",
+        "Shu Chen",
+        "Yupeng Wang"
+      ]
+    }
+  ],
+  "top_authors_avg": [
+    {
+      "name": "Kurasov, Victor",
+      "n_papers": 21,
+      "avg_score": 6.51,
+      "max_score": 7.6,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.905,
+      "years": "2002-2013"
+    },
+    {
+      "name": "Kelk, Steven",
+      "n_papers": 24,
+      "avg_score": 6.33,
+      "max_score": 9.22,
+      "best_tier": "extinction",
+      "avg_z_spread": 1.801,
+      "years": "2005-2015"
+    },
+    {
+      "name": "Rossello, Francesc",
+      "n_papers": 24,
+      "avg_score": 6.11,
+      "max_score": 8.1,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.733,
+      "years": "2003-2013"
+    },
+    {
+      "name": "Lopez, Cristobal",
+      "n_papers": 20,
+      "avg_score": 5.84,
+      "max_score": 8.61,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.42,
+      "years": "2000-2014"
+    },
+    {
+      "name": "Neindre, N. Le",
+      "n_papers": 24,
+      "avg_score": 5.79,
+      "max_score": 8.41,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.377,
+      "years": "2000-2014"
+    },
+    {
+      "name": "Nason, Paolo",
+      "n_papers": 30,
+      "avg_score": 5.75,
+      "max_score": 8.75,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.357,
+      "years": "2002-2015"
+    },
+    {
+      "name": "Evans, M. R.",
+      "n_papers": 24,
+      "avg_score": 5.74,
+      "max_score": 7.49,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.328,
+      "years": "2000-2015"
+    },
+    {
+      "name": "R. Cayrel",
+      "n_papers": 36,
+      "avg_score": 5.74,
+      "max_score": 8.4,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.349,
+      "years": "2001-2015"
+    },
+    {
+      "name": "M. Spite",
+      "n_papers": 41,
+      "avg_score": 5.72,
+      "max_score": 8.4,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.343,
+      "years": "2001-2015"
+    },
+    {
+      "name": "Maritan, Amos",
+      "n_papers": 35,
+      "avg_score": 5.7,
+      "max_score": 8.75,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.318,
+      "years": "2000-2015"
+    },
+    {
+      "name": "van Iersel, Leo",
+      "n_papers": 23,
+      "avg_score": 5.68,
+      "max_score": 9.22,
+      "best_tier": "extinction",
+      "avg_z_spread": 1.374,
+      "years": "2005-2015"
+    },
+    {
+      "name": "F. Spite",
+      "n_papers": 39,
+      "avg_score": 5.67,
+      "max_score": 8.4,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.308,
+      "years": "2001-2015"
+    },
+    {
+      "name": "Pigolotti, Simone",
+      "n_papers": 21,
+      "avg_score": 5.67,
+      "max_score": 8.13,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.304,
+      "years": "2005-2015"
+    },
+    {
+      "name": "Zuckerman, Daniel M.",
+      "n_papers": 20,
+      "avg_score": 5.6,
+      "max_score": 8.65,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.304,
+      "years": "2000-2010"
+    },
+    {
+      "name": "Celebonovic, V.",
+      "n_papers": 23,
+      "avg_score": 5.55,
+      "max_score": 7.53,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.249,
+      "years": "2000-2014"
+    },
+    {
+      "name": "Banavar, Jayanth R.",
+      "n_papers": 21,
+      "avg_score": 5.54,
+      "max_score": 8.75,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.211,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Curran, S. J.",
+      "n_papers": 27,
+      "avg_score": 5.52,
+      "max_score": 7.55,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.174,
+      "years": "2002-2013"
+    },
+    {
+      "name": "L. C. Chapon",
+      "n_papers": 20,
+      "avg_score": 5.52,
+      "max_score": 7.59,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.205,
+      "years": "2006-2015"
+    },
+    {
+      "name": "Rivet, M. F.",
+      "n_papers": 29,
+      "avg_score": 5.48,
+      "max_score": 7.28,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.158,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Wang, Jian-Xiong",
+      "n_papers": 26,
+      "avg_score": 5.48,
+      "max_score": 9.08,
+      "best_tier": "extinction",
+      "avg_z_spread": 1.178,
+      "years": "2005-2015"
+    },
+    {
+      "name": "Adam, H. -H.",
+      "n_papers": 26,
+      "avg_score": 5.46,
+      "max_score": 6.7,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.224,
+      "years": "2000-2008"
+    },
+    {
+      "name": "Bougault, R.",
+      "n_papers": 25,
+      "avg_score": 5.46,
+      "max_score": 8.41,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.147,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Wieleczko, J. P.",
+      "n_papers": 22,
+      "avg_score": 5.45,
+      "max_score": 8.41,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.136,
+      "years": "2000-2014"
+    },
+    {
+      "name": "Caselli, Paola",
+      "n_papers": 21,
+      "avg_score": 5.42,
+      "max_score": 7.36,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.089,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Hua Wu",
+      "n_papers": 20,
+      "avg_score": 5.42,
+      "max_score": 7.32,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.133,
+      "years": "2001-2014"
+    },
+    {
+      "name": "Joachim Krug",
+      "n_papers": 21,
+      "avg_score": 5.38,
+      "max_score": 7.52,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.083,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Marchetti, M. Cristina",
+      "n_papers": 22,
+      "avg_score": 5.37,
+      "max_score": 6.99,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.049,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Louis, A. A.",
+      "n_papers": 23,
+      "avg_score": 5.36,
+      "max_score": 7.94,
+      "best_tier": "asteroide",
+      "avg_z_spread": 1.086,
+      "years": "2000-2012"
+    },
+    {
+      "name": "Raduta, Ad. R.",
+      "n_papers": 24,
+      "avg_score": 5.35,
+      "max_score": 7.05,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.066,
+      "years": "2000-2015"
+    },
+    {
+      "name": "Shnerb, Nadav M.",
+      "n_papers": 21,
+      "avg_score": 5.35,
+      "max_score": 7.1,
+      "best_tier": "meteorite",
+      "avg_z_spread": 1.077,
+      "years": "2000-2015"
+    }
+  ],
+  "top_authors_max": [
+    {
+      "name": "Karin A. Dahmen",
+      "n_papers": 7,
+      "avg_score": 5.79,
+      "max_score": 9.92,
+      "best_tier": "extinction",
+      "years": "2002-2010"
+    },
+    {
+      "name": "Jones, Michael E.",
+      "n_papers": 14,
+      "avg_score": 4.69,
+      "max_score": 9.71,
+      "best_tier": "extinction",
+      "years": "2001-2014"
+    },
+    {
+      "name": "Regev, Amitai",
+      "n_papers": 20,
+      "avg_score": 4.98,
+      "max_score": 9.63,
+      "best_tier": "extinction",
+      "years": "2000-2015"
+    },
+    {
+      "name": "Soloviev, L.",
+      "n_papers": 5,
+      "avg_score": 5.28,
+      "max_score": 9.63,
+      "best_tier": "extinction",
+      "years": "2002-2003"
+    },
+    {
+      "name": "Frédéric Chapoton",
+      "n_papers": 5,
+      "avg_score": 3.44,
+      "max_score": 9.63,
+      "best_tier": "extinction",
+      "years": "2003-2016"
+    },
+    {
+      "name": "Kulakowski, Krzysztof",
+      "n_papers": 25,
+      "avg_score": 4.97,
+      "max_score": 9.63,
+      "best_tier": "extinction",
+      "years": "2004-2015"
+    },
+    {
+      "name": "D. A. Pesin",
+      "n_papers": 9,
+      "avg_score": 4.49,
+      "max_score": 9.62,
+      "best_tier": "extinction",
+      "years": "2006-2015"
+    },
+    {
+      "name": "J. B. Neaton",
+      "n_papers": 7,
+      "avg_score": 5.06,
+      "max_score": 9.58,
+      "best_tier": "extinction",
+      "years": "2001-2014"
+    },
+    {
+      "name": "N. W. Ashcroft",
+      "n_papers": 7,
+      "avg_score": 4.4,
+      "max_score": 9.58,
+      "best_tier": "extinction",
+      "years": "2001-2013"
+    },
+    {
+      "name": "Feliu, Elisenda",
+      "n_papers": 14,
+      "avg_score": 5.73,
+      "max_score": 9.56,
+      "best_tier": "extinction",
+      "years": "2006-2015"
+    },
+    {
+      "name": "Wiuf, Carsten",
+      "n_papers": 14,
+      "avg_score": 5.75,
+      "max_score": 9.56,
+      "best_tier": "extinction",
+      "years": "2009-2015"
+    },
+    {
+      "name": "Mazin, I. I.",
+      "n_papers": 59,
+      "avg_score": 4.3,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2000-2015"
+    },
+    {
+      "name": "R. Movshovich",
+      "n_papers": 13,
+      "avg_score": 5.09,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2000-2014"
+    },
+    {
+      "name": "F. Ronning",
+      "n_papers": 36,
+      "avg_score": 4.48,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2000-2015"
+    },
+    {
+      "name": "Singh, D. J.",
+      "n_papers": 40,
+      "avg_score": 4.04,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2000-2012"
+    },
+    {
+      "name": "D. J. Singh",
+      "n_papers": 28,
+      "avg_score": 4.39,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2001-2016"
+    },
+    {
+      "name": "Kortus, J.",
+      "n_papers": 9,
+      "avg_score": 3.97,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2000-2005"
+    },
+    {
+      "name": "J. D. Thompson",
+      "n_papers": 51,
+      "avg_score": 4.17,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2002-2015"
+    },
+    {
+      "name": "E. D. Bauer",
+      "n_papers": 35,
+      "avg_score": 4.84,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2002-2015"
+    },
+    {
+      "name": "Y. Tokiwa",
+      "n_papers": 12,
+      "avg_score": 5.17,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2006-2014"
+    },
+    {
+      "name": "Mishuris, G. S.",
+      "n_papers": 5,
+      "avg_score": 5.57,
+      "max_score": 9.47,
+      "best_tier": "extinction",
+      "years": "2010-2015"
+    },
+    {
+      "name": "Francesco Sciortino",
+      "n_papers": 53,
+      "avg_score": 4.93,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2000-2015"
+    },
+    {
+      "name": "Francis W. Starr",
+      "n_papers": 7,
+      "avg_score": 4.6,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2001-2010"
+    },
+    {
+      "name": "Novik, Isabella",
+      "n_papers": 22,
+      "avg_score": 3.83,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2001-2015"
+    },
+    {
+      "name": "Linial, Nathan",
+      "n_papers": 15,
+      "avg_score": 3.55,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2003-2014"
+    },
+    {
+      "name": "Meshulam, Roy",
+      "n_papers": 7,
+      "avg_score": 5.05,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2003-2013"
+    },
+    {
+      "name": "Julio Largo",
+      "n_papers": 5,
+      "avg_score": 5.85,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2006-2010"
+    },
+    {
+      "name": "Goff, Michael",
+      "n_papers": 8,
+      "avg_score": 3.29,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2007-2013"
+    },
+    {
+      "name": "Chia Wei Hsu",
+      "n_papers": 8,
+      "avg_score": 4.68,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2008-2016"
+    },
+    {
+      "name": "Klee, Steven",
+      "n_papers": 11,
+      "avg_score": 4.23,
+      "max_score": 9.45,
+      "best_tier": "extinction",
+      "years": "2008-2015"
+    }
+  ],
+  "domain_calibration": [
+    {
+      "domain": "Physics",
+      "n_papers": 449877,
+      "avg_score": 3.65003123075863,
+      "avg_spread": 0.7552214031168519,
+      "pct_meteorite": 7.21
+    },
+    {
+      "domain": "Mathematics",
+      "n_papers": 248980,
+      "avg_score": 3.6312424692746403,
+      "avg_spread": 0.8493321263153667,
+      "pct_meteorite": 6.98
+    },
+    {
+      "domain": "Computer science",
+      "n_papers": 73019,
+      "avg_score": 3.609626672509895,
+      "avg_spread": 1.0420484784782043,
+      "pct_meteorite": 7.29
+    },
+    {
+      "domain": "Materials science",
+      "n_papers": 36856,
+      "avg_score": 3.7104053614065555,
+      "avg_spread": 1.05415694975038,
+      "pct_meteorite": 7.33
+    },
+    {
+      "domain": "Chemistry",
+      "n_papers": 5594,
+      "avg_score": 3.679924919556668,
+      "avg_spread": 1.19528941365749,
+      "pct_meteorite": 6.74
+    },
+    {
+      "domain": "Economics",
+      "n_papers": 3471,
+      "avg_score": 3.5946874099683086,
+      "avg_spread": 1.1734193488908096,
+      "pct_meteorite": 5.79
+    },
+    {
+      "domain": "Geology",
+      "n_papers": 2610,
+      "avg_score": 3.528973180076629,
+      "avg_spread": 1.1382765402298851,
+      "pct_meteorite": 7.01
+    },
+    {
+      "domain": "Biology",
+      "n_papers": 2082,
+      "avg_score": 3.6716426512968297,
+      "avg_spread": 1.3288638664745438,
+      "pct_meteorite": 5.96
+    },
+    {
+      "domain": "Environmental science",
+      "n_papers": 2024,
+      "avg_score": 3.557949604743083,
+      "avg_spread": 1.203476111660079,
+      "pct_meteorite": 7.07
+    },
+    {
+      "domain": "Business",
+      "n_papers": 1635,
+      "avg_score": 2.9166727828746177,
+      "avg_spread": 1.001313382262997,
+      "pct_meteorite": 5.44
+    },
+    {
+      "domain": "Psychology",
+      "n_papers": 1267,
+      "avg_score": 3.323401736385162,
+      "avg_spread": 1.1907435359116023,
+      "pct_meteorite": 6.08
+    },
+    {
+      "domain": "Geography",
+      "n_papers": 908,
+      "avg_score": 3.427169603524229,
+      "avg_spread": 1.3144743942731278,
+      "pct_meteorite": 3.52
+    },
+    {
+      "domain": "Political science",
+      "n_papers": 698,
+      "avg_score": 2.7841117478510027,
+      "avg_spread": 0.9436565329512895,
+      "pct_meteorite": 2.15
+    },
+    {
+      "domain": "Philosophy",
+      "n_papers": 650,
+      "avg_score": 3.3678615384615385,
+      "avg_spread": 1.1884586615384614,
+      "pct_meteorite": 0.77
+    },
+    {
+      "domain": "Medicine",
+      "n_papers": 455,
+      "avg_score": 3.309516483516483,
+      "avg_spread": 1.2126571868131868,
+      "pct_meteorite": 4.18
+    },
+    {
+      "domain": "History",
+      "n_papers": 445,
+      "avg_score": 2.970943820224719,
+      "avg_spread": 1.0947713932584269,
+      "pct_meteorite": 0.67
+    },
+    {
+      "domain": "Sociology",
+      "n_papers": 297,
+      "avg_score": 3.5616161616161617,
+      "avg_spread": 1.1167078787878788,
+      "pct_meteorite": 6.06
+    },
+    {
+      "domain": "Engineering",
+      "n_papers": 257,
+      "avg_score": 3.7256420233463037,
+      "avg_spread": 1.255324980544747,
+      "pct_meteorite": 5.84
+    },
+    {
+      "domain": "Art",
+      "n_papers": 185,
+      "avg_score": 3.1850810810810812,
+      "avg_spread": 0.9964667567567568,
+      "pct_meteorite": 3.24
+    }
+  ],
+  "year_evolution": [
+    {
+      "year": 1826,
+      "n_papers": 1,
+      "avg_score": 1.31,
+      "max_score": 1.31,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 4,
+      "cumulative_concepts": 4
+    },
+    {
+      "year": 1967,
+      "n_papers": 2,
+      "avg_score": 3.045,
+      "max_score": 3.92,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 16,
+      "cumulative_concepts": 20
+    },
+    {
+      "year": 1968,
+      "n_papers": 1,
+      "avg_score": 1.83,
+      "max_score": 1.83,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 12,
+      "cumulative_concepts": 32
+    },
+    {
+      "year": 1971,
+      "n_papers": 3,
+      "avg_score": 4.89,
+      "max_score": 6.24,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 19,
+      "cumulative_concepts": 51
+    },
+    {
+      "year": 1972,
+      "n_papers": 2,
+      "avg_score": 2.935,
+      "max_score": 3.35,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 8,
+      "cumulative_concepts": 59
+    },
+    {
+      "year": 1973,
+      "n_papers": 1,
+      "avg_score": 5.21,
+      "max_score": 5.21,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 6,
+      "cumulative_concepts": 65
+    },
+    {
+      "year": 1974,
+      "n_papers": 1,
+      "avg_score": 4.0,
+      "max_score": 4.0,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 8,
+      "cumulative_concepts": 73
+    },
+    {
+      "year": 1977,
+      "n_papers": 2,
+      "avg_score": 1.905,
+      "max_score": 2.14,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 18,
+      "cumulative_concepts": 91
+    },
+    {
+      "year": 1978,
+      "n_papers": 1,
+      "avg_score": 4.99,
+      "max_score": 4.99,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 5,
+      "cumulative_concepts": 96
+    },
+    {
+      "year": 1979,
+      "n_papers": 1,
+      "avg_score": 4.28,
+      "max_score": 4.28,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 16,
+      "cumulative_concepts": 112
+    },
+    {
+      "year": 1980,
+      "n_papers": 2,
+      "avg_score": 3.375,
+      "max_score": 4.32,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 14,
+      "cumulative_concepts": 126
+    },
+    {
+      "year": 1981,
+      "n_papers": 1,
+      "avg_score": 4.44,
+      "max_score": 4.44,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 10,
+      "cumulative_concepts": 136
+    },
+    {
+      "year": 1982,
+      "n_papers": 4,
+      "avg_score": 4.473,
+      "max_score": 6.08,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 33,
+      "cumulative_concepts": 169
+    },
+    {
+      "year": 1983,
+      "n_papers": 6,
+      "avg_score": 3.8,
+      "max_score": 6.34,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 26,
+      "cumulative_concepts": 195
+    },
+    {
+      "year": 1984,
+      "n_papers": 6,
+      "avg_score": 3.887,
+      "max_score": 6.86,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 59,
+      "cumulative_concepts": 254
+    },
+    {
+      "year": 1985,
+      "n_papers": 1,
+      "avg_score": 1.97,
+      "max_score": 1.97,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 10,
+      "cumulative_concepts": 264
+    },
+    {
+      "year": 1986,
+      "n_papers": 11,
+      "avg_score": 3.642,
+      "max_score": 7.16,
+      "n_meteorites": 2,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 61,
+      "cumulative_concepts": 325
+    },
+    {
+      "year": 1987,
+      "n_papers": 3,
+      "avg_score": 3.62,
+      "max_score": 5.12,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 3,
+      "cumulative_concepts": 328
+    },
+    {
+      "year": 1988,
+      "n_papers": 6,
+      "avg_score": 3.63,
+      "max_score": 6.58,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 29,
+      "cumulative_concepts": 357
+    },
+    {
+      "year": 1989,
+      "n_papers": 5,
+      "avg_score": 3.874,
+      "max_score": 5.9,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 27,
+      "cumulative_concepts": 384
+    },
+    {
+      "year": 1990,
+      "n_papers": 16,
+      "avg_score": 2.834,
+      "max_score": 7.41,
+      "n_meteorites": 2,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 70,
+      "cumulative_concepts": 454
+    },
+    {
+      "year": 1991,
+      "n_papers": 18,
+      "avg_score": 3.677,
+      "max_score": 6.11,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 89,
+      "cumulative_concepts": 543
+    },
+    {
+      "year": 1992,
+      "n_papers": 21,
+      "avg_score": 3.268,
+      "max_score": 7.36,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 66,
+      "cumulative_concepts": 609
+    },
+    {
+      "year": 1993,
+      "n_papers": 21,
+      "avg_score": 3.31,
+      "max_score": 5.32,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 84,
+      "cumulative_concepts": 693
+    },
+    {
+      "year": 1994,
+      "n_papers": 26,
+      "avg_score": 3.29,
+      "max_score": 6.32,
+      "n_meteorites": 1,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 112,
+      "cumulative_concepts": 805
+    },
+    {
+      "year": 1995,
+      "n_papers": 30,
+      "avg_score": 3.609,
+      "max_score": 7.69,
+      "n_meteorites": 1,
+      "n_asteroides": 1,
+      "n_extinctions": 0,
+      "concept_births": 96,
+      "cumulative_concepts": 901
+    },
+    {
+      "year": 1996,
+      "n_papers": 43,
+      "avg_score": 3.531,
+      "max_score": 6.94,
+      "n_meteorites": 2,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 129,
+      "cumulative_concepts": 1030
+    },
+    {
+      "year": 1997,
+      "n_papers": 70,
+      "avg_score": 3.996,
+      "max_score": 8.16,
+      "n_meteorites": 5,
+      "n_asteroides": 1,
+      "n_extinctions": 0,
+      "concept_births": 203,
+      "cumulative_concepts": 1233
+    },
+    {
+      "year": 1998,
+      "n_papers": 86,
+      "avg_score": 3.967,
+      "max_score": 9.12,
+      "n_meteorites": 6,
+      "n_asteroides": 1,
+      "n_extinctions": 1,
+      "concept_births": 316,
+      "cumulative_concepts": 1549
+    },
+    {
+      "year": 1999,
+      "n_papers": 184,
+      "avg_score": 3.614,
+      "max_score": 8.42,
+      "n_meteorites": 9,
+      "n_asteroides": 2,
+      "n_extinctions": 0,
+      "concept_births": 529,
+      "cumulative_concepts": 2078
+    },
+    {
+      "year": 2000,
+      "n_papers": 24667,
+      "avg_score": 3.616,
+      "max_score": 9.47,
+      "n_meteorites": 1680,
+      "n_asteroides": 240,
+      "n_extinctions": 15,
+      "concept_births": 7855,
+      "cumulative_concepts": 9933
+    },
+    {
+      "year": 2001,
+      "n_papers": 31259,
+      "avg_score": 3.599,
+      "max_score": 9.58,
+      "n_meteorites": 2056,
+      "n_asteroides": 304,
+      "n_extinctions": 22,
+      "concept_births": 2526,
+      "cumulative_concepts": 12459
+    },
+    {
+      "year": 2002,
+      "n_papers": 30630,
+      "avg_score": 3.621,
+      "max_score": 9.24,
+      "n_meteorites": 2084,
+      "n_asteroides": 265,
+      "n_extinctions": 16,
+      "concept_births": 1602,
+      "cumulative_concepts": 14061
+    },
+    {
+      "year": 2003,
+      "n_papers": 29156,
+      "avg_score": 3.629,
+      "max_score": 9.63,
+      "n_meteorites": 2005,
+      "n_asteroides": 256,
+      "n_extinctions": 20,
+      "concept_births": 1312,
+      "cumulative_concepts": 15373
+    },
+    {
+      "year": 2004,
+      "n_papers": 34281,
+      "avg_score": 3.633,
+      "max_score": 9.45,
+      "n_meteorites": 2377,
+      "n_asteroides": 339,
+      "n_extinctions": 23,
+      "concept_births": 1339,
+      "cumulative_concepts": 16712
+    },
+    {
+      "year": 2005,
+      "n_papers": 42870,
+      "avg_score": 3.627,
+      "max_score": 9.92,
+      "n_meteorites": 2938,
+      "n_asteroides": 398,
+      "n_extinctions": 26,
+      "concept_births": 1439,
+      "cumulative_concepts": 18151
+    },
+    {
+      "year": 2006,
+      "n_papers": 46456,
+      "avg_score": 3.654,
+      "max_score": 9.63,
+      "n_meteorites": 3257,
+      "n_asteroides": 438,
+      "n_extinctions": 31,
+      "concept_births": 1332,
+      "cumulative_concepts": 19483
+    },
+    {
+      "year": 2007,
+      "n_papers": 48995,
+      "avg_score": 3.656,
+      "max_score": 9.25,
+      "n_meteorites": 3361,
+      "n_asteroides": 486,
+      "n_extinctions": 23,
+      "concept_births": 1135,
+      "cumulative_concepts": 20618
+    },
+    {
+      "year": 2008,
+      "n_papers": 53136,
+      "avg_score": 3.647,
+      "max_score": 9.47,
+      "n_meteorites": 3470,
+      "n_asteroides": 529,
+      "n_extinctions": 41,
+      "concept_births": 1156,
+      "cumulative_concepts": 21774
+    },
+    {
+      "year": 2009,
+      "n_papers": 57686,
+      "avg_score": 3.661,
+      "max_score": 9.47,
+      "n_meteorites": 3795,
+      "n_asteroides": 495,
+      "n_extinctions": 29,
+      "concept_births": 1090,
+      "cumulative_concepts": 22864
+    },
+    {
+      "year": 2010,
+      "n_papers": 59880,
+      "avg_score": 3.643,
+      "max_score": 9.47,
+      "n_meteorites": 3513,
+      "n_asteroides": 421,
+      "n_extinctions": 24,
+      "concept_births": 1171,
+      "cumulative_concepts": 24035
+    },
+    {
+      "year": 2011,
+      "n_papers": 57000,
+      "avg_score": 3.636,
+      "max_score": 9.56,
+      "n_meteorites": 3395,
+      "n_asteroides": 397,
+      "n_extinctions": 26,
+      "concept_births": 883,
+      "cumulative_concepts": 24918
+    },
+    {
+      "year": 2012,
+      "n_papers": 67301,
+      "avg_score": 3.626,
+      "max_score": 9.37,
+      "n_meteorites": 3854,
+      "n_asteroides": 462,
+      "n_extinctions": 27,
+      "concept_births": 1017,
+      "cumulative_concepts": 25935
+    },
+    {
+      "year": 2013,
+      "n_papers": 72073,
+      "avg_score": 3.639,
+      "max_score": 9.63,
+      "n_meteorites": 4249,
+      "n_asteroides": 436,
+      "n_extinctions": 26,
+      "concept_births": 1066,
+      "cumulative_concepts": 27001
+    },
+    {
+      "year": 2014,
+      "n_papers": 76385,
+      "avg_score": 3.651,
+      "max_score": 9.71,
+      "n_meteorites": 4452,
+      "n_asteroides": 526,
+      "n_extinctions": 41,
+      "concept_births": 1049,
+      "cumulative_concepts": 28050
+    },
+    {
+      "year": 2015,
+      "n_papers": 78491,
+      "avg_score": 3.628,
+      "max_score": 9.62,
+      "n_meteorites": 4504,
+      "n_asteroides": 494,
+      "n_extinctions": 21,
+      "concept_births": 992,
+      "cumulative_concepts": 29042
+    },
+    {
+      "year": 2016,
+      "n_papers": 12992,
+      "avg_score": 3.54,
+      "max_score": 9.18,
+      "n_meteorites": 662,
+      "n_asteroides": 67,
+      "n_extinctions": 2,
+      "concept_births": 88,
+      "cumulative_concepts": 29130
+    },
+    {
+      "year": 2017,
+      "n_papers": 4061,
+      "avg_score": 3.513,
+      "max_score": 9.37,
+      "n_meteorites": 191,
+      "n_asteroides": 20,
+      "n_extinctions": 2,
+      "concept_births": 26,
+      "cumulative_concepts": 29156
+    },
+    {
+      "year": 2018,
+      "n_papers": 1694,
+      "avg_score": 3.514,
+      "max_score": 9.1,
+      "n_meteorites": 86,
+      "n_asteroides": 10,
+      "n_extinctions": 1,
+      "concept_births": 6,
+      "cumulative_concepts": 29162
+    },
+    {
+      "year": 2019,
+      "n_papers": 723,
+      "avg_score": 3.471,
+      "max_score": 8.5,
+      "n_meteorites": 27,
+      "n_asteroides": 3,
+      "n_extinctions": 0,
+      "concept_births": 3,
+      "cumulative_concepts": 29165
+    },
+    {
+      "year": 2020,
+      "n_papers": 372,
+      "avg_score": 3.484,
+      "max_score": 7.74,
+      "n_meteorites": 19,
+      "n_asteroides": 3,
+      "n_extinctions": 0,
+      "concept_births": 8,
+      "cumulative_concepts": 29173
+    },
+    {
+      "year": 2021,
+      "n_papers": 199,
+      "avg_score": 3.25,
+      "max_score": 7.24,
+      "n_meteorites": 5,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 8,
+      "cumulative_concepts": 29181
+    },
+    {
+      "year": 2022,
+      "n_papers": 62,
+      "avg_score": 3.352,
+      "max_score": 7.13,
+      "n_meteorites": 4,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 0,
+      "cumulative_concepts": 29181
+    },
+    {
+      "year": 2023,
+      "n_papers": 38,
+      "avg_score": 3.135,
+      "max_score": 6.03,
+      "n_meteorites": 2,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 0,
+      "cumulative_concepts": 29181
+    },
+    {
+      "year": 2024,
+      "n_papers": 19,
+      "avg_score": 3.691,
+      "max_score": 7.5,
+      "n_meteorites": 1,
+      "n_asteroides": 1,
+      "n_extinctions": 0,
+      "concept_births": 0,
+      "cumulative_concepts": 29181
+    },
+    {
+      "year": 2025,
+      "n_papers": 16,
+      "avg_score": 2.801,
+      "max_score": 5.42,
+      "n_meteorites": 0,
+      "n_asteroides": 0,
+      "n_extinctions": 0,
+      "concept_births": 0,
+      "cumulative_concepts": 29181
+    }
+  ]
+}

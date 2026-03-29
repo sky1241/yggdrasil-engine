@@ -5,6 +5,29 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 28 mars 2026 — Session 31 (suite)
+
+### Impact Scale — Pipeline complet (scanner → timeline → scale 0-10)
+- **3 scripts créés**: `impact_scanner.py`, `impact_timeline.py`, `impact_scale.py`
+- **Scanner**: 833K papers WT3, cursor pagination (stable 1,250/s sur 78GB), dual metrics:
+  - `weight_pop` = Σ degree (popularity proxy)
+  - `weight_rare` = Σ 1/log(degree+1) (rarity-weighted, inspiré Adamic-Adar)
+  - `spread_rare` = RMS distance pondérée rareté depuis centroïde — LE métrique core
+- **Timeline**: fenêtres variables (avant 1900: 100 ans, 1900-1930: 10 ans, 1930+: annuel)
+  - 56 fenêtres avec données, top papers/auteurs/domaines par fenêtre
+- **Scale 0-10**: normalisation z-score par domaine + bonus breadth + pénalité mega-collab
+  - Distribution: 421 extinction (0.05%), 6,615 astéroïde (0.8%), 52K météorite (6.3%), 290K rocher (34.8%), 356K pierre (42.7%), 128K caillou (15.4%)
+- **Outputs**: `data/impact.db` (365 MB), `data/impact_scale.db` (344 MB), `data/impact_timeline.json` (0.2 MB), `data/impact_scale.json` (51 KB)
+- **Fixes en cours de build**:
+  - Cursor pagination (OFFSET O(N²) → WHERE rowid > last_rowid)
+  - UTF-8 Windows console (auteurs avec diacritiques)
+  - V1 weight_sum = degré naïf → V2 rarity weighting
+  - Sigmoid trop conservative (0 extinctions) → piecewise linear
+- **5 frameworks publiés alignés**: Wu/Evans, Uzzi, Wang/Barabási, Sinatra, Burt — tous déjà cités dans le codebase
+- **SCIENTOMETRICS.md** mis à jour avec section Impact Scale complète
+
+---
+
 ## 27 mars 2026 — Session 31
 
 ### Tests unitaires core — 86/86 PASS
@@ -311,4 +334,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-03-28 | 47,801L Python | 6,763 fichiers | phase CANOPEE_
+_Auto-update: 2026-03-29 | 49,314L Python | 6,773 fichiers | phase CANOPEE_

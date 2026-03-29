@@ -4,26 +4,26 @@
   "family": "baobab",
   "family_name": "Baobab",
   "family_emoji": "🌳",
-  "date": "2026-03-28",
+  "date": "2026-03-29",
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 56142,
+    "lines": 57655,
     "factor": 20.7,
     "category": "forêt",
     "height_px": 900,
     "data_gb": 78.0,
     "density": 2.1,
     "trunk_width": 3.5,
-    "label": "🌳 Baobab (47K Python + 8K HTML + 78.0GB data)"
+    "label": "🌳 Baobab (49K Python + 8K HTML + 78.0GB data)"
   },
   "stats": {
-    "total_files": 6763,
-    "total_code_lines": 56142,
-    "python_lines": 47801,
+    "total_files": 6773,
+    "total_code_lines": 57655,
+    "python_lines": 49314,
     "html_lines": 8341,
     "languages": {
-      "Python": 47801,
+      "Python": 49314,
       "PowerShell": 9,
       "Shell": 11,
       "HTML": 8341,
@@ -431,6 +431,21 @@
       "desc": "86 tests pytest: 32 scisci (fitness, D-index, Uzzi, Q-factor, Laplacien, Fiedler), 34 holes (3 scores, DomainPair, HoleDetector, continents), 20 symbols (Symbol, strates, SymbolDatabase mock). 100% pass."
     },
     {
+      "id": "F9",
+      "level": "F",
+      "depth": 4,
+      "label": "Impact Scale — 833K papers scorés 0-10 (5 frameworks)",
+      "status": "done",
+      "entry": "engine/topology/impact_scanner.py",
+      "confidence": 95,
+      "depends": [
+        "F3",
+        "F5",
+        "M3"
+      ],
+      "desc": "Scanner+Timeline+Scale. weight_rare=1/log(d+1), spread_rare=RMS, z-score/domaine. 365MB+344MB. Aligné Wu/Uzzi/Wang/Sinatra/Burt."
+    },
+    {
       "id": "C1",
       "level": "C",
       "depth": 5,
@@ -568,9 +583,10 @@
         "F5",
         "F6",
         "F7",
-        "F8"
+        "F8",
+        "F9"
       ],
-      "action": "✅ F1-F3,F5-F8 FAIT. F4 (WT3 enrich) EN COURS.",
+      "action": "✅ F1-F3,F5-F9 FAIT. F4 (WT3 enrich) EN COURS. F9 (Impact Scale) COMPLET.",
       "bio": "Les Winter Trees sont le squelette de données. Tout le reste pousse dessus."
     },
     {
@@ -586,7 +602,7 @@
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "Tests core FAIT (Q1, 86/86). Prochain: étendre tests Tier 2 (parsers, pipelines avec mock). WT3 Enrich (F4) EN COURS.",
+  "next_step": "Impact Scale FAIT (F9). Tests core FAIT (Q1, 86/86). Prochain: validation croisée impact, V3 calibrage Sedov-Taylor, Tier 2 tests.",
   "rules": {
     "auto_update": true,
     "description": "Ce fichier est la source de vérité architecturale du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",

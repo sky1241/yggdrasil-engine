@@ -33,7 +33,15 @@ data/bible/
 data/wt3.db
 data/wt3.db-shm
 data/wt3.db-wal
+data/scan/wt3.db
 data/cooc_shards/
+data/impact.db
+data/impact.db-shm
+data/impact.db-wal
+data/impact_scale.db
+data/impact_scale.db-shm
+data/impact_scale.db-wal
+data/impact_timeline.db
 data/pipeline/pipeline_test_*.json
 
 # Binary data

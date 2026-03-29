@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 28 mars 2026 (session 31), Sky×Claude (Opus 4.6)
+> Dernière màj: 29 mars 2026 (session 31), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -84,6 +84,24 @@ Remonter à l'an 1000+. Rejouer l'histoire de la science frame par frame.
 - [x] 20/20 vérifications web positives, 0 faux positif
 - [x] Top collision: CS×Physics (82 dans top 1000, P4 sum=1,457)
 - [x] Dossier: `predictions_2025/` (5 étapes + fichiers résultats)
+
+## IMPACT SCALE (✅ COMPLET — session 31, 28 mars 2026)
+Pipeline spatial d'impact: qui a fait quoi, à quel point c'est gros, chronologiquement.
+
+- [x] `impact_scanner.py` — scan 833K papers WT3, dual metrics (popularity + rarity)
+  - Cursor pagination (WHERE rowid > ?, stable 1,250/s sur 78GB)
+  - weight_rare = Σ 1/log(degree+1), spread_rare = RMS rarity-weighted
+  - Output: `data/impact.db` (365 MB) — tables paper_impact, author_impact, year_impact
+- [x] `impact_timeline.py` — fenêtres variables (100yr/10yr/1yr), 56 fenêtres
+  - Top papers, auteurs, domaines par fenêtre
+  - Output: `data/impact_timeline.json` + `data/impact_timeline.db`
+- [x] `impact_scale.py` — échelle calibrée 0-10 (caillou → extinction)
+  - z-score par domaine + bonus breadth + pénalité mega-collab (>50 auteurs)
+  - Distribution: 0.05% extinction, 0.8% astéroïde, 6.3% météorite, 34.8% rocher, 42.7% pierre, 15.4% caillou
+  - Output: `data/impact_scale.db` (344 MB) + `data/impact_scale.json` (51 KB)
+- [x] Aligné sur 5 frameworks publiés (Wu/Evans, Uzzi, Wang/Barabási, Sinatra, Burt)
+- [ ] Validation croisée: comparer top extinctions avec bibliométrie connue
+- [ ] Brancher sur V3 météorites (Sedov-Taylor calibrage)
 
 ## V3 — CANDLESTICKS OHLC & MÉTÉORITES (APRÈS V2)
 Chaque percée majeure = un candlestick sur le mycelium.
@@ -398,5 +416,6 @@ Jointure WT1+WT2 dans SQLite unifié. Script: `engine/topology/wt3_bible.py`
 - **Pipeline S-2 COMPLET**: 459 chunks, 617 glyphes actifs, positions spectrales calculées.
 - **S-1 Métiers COMPLET**: 416/416 chunks, 858K papers, 19 domaines (session 19).
 - **WT4 COMPLET** (66,342 noeuds, 75.6M arêtes, mycélium inclus, 8/12 paires OK) — session 28.
-- **Prochaine étape**: Muninn P39 (bibliothécaire WT3), V3 calibrage, V4 grimpeur.
+- **Impact Scale COMPLET**: 833K papers scorés 0-10. 365 MB impact.db + 344 MB impact_scale.db.
+- **Prochaine étape**: Validation croisée impact, V3 calibrage (Sedov-Taylor sur impact_scale), Muninn P39.
 - Tout Claude qui bosse sur ce repo: lis SOL.md EN PREMIER, puis ce TODO.

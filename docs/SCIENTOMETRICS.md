@@ -122,6 +122,60 @@
 - **On branche sur**: Nos frames temporelles
 - **Ref**: https://link.springer.com/article/10.1007/s11192-025-05434-8
 
+## IMPACT SCALE — Module spatial d'impact (session 31, 28 mars 2026)
+
+Pipeline complet: scanner → timeline → scale. Implémente spatialement les 5 frameworks publiés.
+
+### Architecture
+
+| Étape | Script | Output | Rôle |
+|-------|--------|--------|------|
+| 1. Scanner | `engine/topology/impact_scanner.py` | `data/impact.db` (365 MB) | Scan 833K papers, calcul centroïde pondéré + spread + weight |
+| 2. Timeline | `engine/topology/impact_timeline.py` | `data/impact_timeline.json` (0.2 MB) | Agrégation fenêtres variables (100yr/10yr/1yr) |
+| 3. Scale | `engine/topology/impact_scale.py` | `data/impact_scale.db` (344 MB) | Échelle calibrée 0-10, normalisation par domaine |
+
+### Métriques clés
+
+- **weight_rare** = `Σ 1/log(degree+1)` — concepts rares amplifiés, hubs amortis (cf. Adamic-Adar)
+- **spread_rare** = RMS distance pondérée rareté du centroïde paper — dispersal spatial
+- **z_spread** = z-score de spread_rare dans le domaine — normalisation cross-domain
+- **impact 0-10** = mapping linéaire par morceaux du z_spread + bonus breadth + pénalité mega-collab
+
+### Échelle
+
+| Score | Nom | % papers | Description |
+|-------|-----|----------|-------------|
+| 0-1 | Caillou | 15.4% | Paper incrémental, local |
+| 2-3 | Pierre | 42.7% | Contribution solide, un domaine |
+| 4-5 | Rocher | 34.8% | Paper multi-concepts, cross-subfield |
+| 6-7 | Météorite | 6.3% | Percée réelle, reconfigurations |
+| 8-9 | Astéroïde | 0.8% | Breakthrough majeur, cross-domain |
+| 10 | Extinction | 0.05% | Paradigm shift (Shannon, ADN, Gödel) |
+
+### Alignement avec les 5 frameworks publiés
+
+1. **Wu/Evans D-index** (Science, 2019): `disruption_index()` dans `engine/core/scisci.py`.
+   Notre spread_rare capture le même signal: un paper disruptif touche des concepts rares et éloignés.
+
+2. **Uzzi z-score** (Science, 2013): `uzzi_zscore()` dans `engine/core/scisci.py`.
+   Combinaisons atypiques = concepts qui ne co-apparaissent pas souvent. Le spread géométrique dans l'espace spectral corrèle avec l'atypicalité Uzzi.
+
+3. **Wang/Barabási fitness** (Science, 2013): `fitness_wang_barabasi()` dans `engine/core/scisci.py`.
+   Fitness intrinsèque η × preferential attachment. Notre normalisation par domaine isole le η.
+
+4. **Sinatra Q-factor** (Science, 2016): `q_factor_sinatra()` dans `engine/core/scisci.py`.
+   Q = log(C10*/S) — impact relatif à la baseline. Notre z_spread fait exactement ça.
+
+5. **Burt Structural Holes** (1992): `engine/core/holes.py`.
+   Brokerage = connecter des groupes non connectés. spread_rare élevé = paper qui ponte des clusters.
+
+### Ce qui est NOUVEAU (pas dans la littérature)
+
+- **Spatialisation 3D** des métriques: x,y,z depuis le Laplacien spectral WT4
+- **Rarity weighting géométrique**: 1/log(degree+1) appliqué aux POSITIONS, pas aux citations
+- **Normalisation par domaine** via z-score spatial (Physics baseline ≠ Biology baseline)
+- **Timeline à fenêtres variables**: résolution temporelle adaptative (100yr → 10yr → 1yr)
+
 ## Plan d'intégration
 
 **Phase 1 (après WT3)**: Tier 1 — Adamic-Adar, Katz, Burt Constraint sur la matrice existante
