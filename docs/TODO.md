@@ -214,7 +214,7 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 #### Plan V2 (partiellement réalisé via spectral K=9)
 - [x] 9 espèces identifiées par spectral clustering K=9 (65K concepts) — session 10
 - [x] P4 inter-espèce calculé et classé (Predictions 2025) — session 11
-- [ ] Phase E: Mesurer 5 curseurs PAR espèce (9 mesures, pas 1)
+- [x] Phase E: 5 curseurs PAR espèce (9 mesures) — `species_per_cluster.py`, valeurs relatives OK, absolues hors range Lehmann (echelle incompatible)
 - [ ] Phase F: Calibrer mycelium_full.py avec les vrais paramètres par espèce
 - [ ] Phase G: Évolution temporelle — l'espèce de chaque continent change-t-elle avec le temps ?
 

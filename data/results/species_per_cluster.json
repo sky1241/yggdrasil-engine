@@ -1,0 +1,381 @@
+{
+  "date": "2026-03-30",
+  "method": "Stream cooc_global -> per-species subgraph -> 5 Lehmann cursors",
+  "n_species": 9,
+  "species": [
+    {
+      "species_id": 0,
+      "name": "MatSci/Chem",
+      "n_nodes": 7584,
+      "n_edges": 4249834,
+      "n_edges_sparse": 22534,
+      "n_bifurcations": 7584,
+      "density_pct": 14.78,
+      "BA": {
+        "value": 0.99,
+        "cv": 1.657
+      },
+      "IL": {
+        "value": 2.38,
+        "cv": 0.204
+      },
+      "D": {
+        "value": 4.78,
+        "cv": 0.16
+      },
+      "Db": {
+        "value": 1.033,
+        "r2": 0.999
+      },
+      "L": {
+        "value": 61.688,
+        "cv": 0.601
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8179,
+        "distances": {
+          "Mucoromycota": 1.2949,
+          "Basidiomycota": 1.2021,
+          "Ascomycota": 0.8179
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 1,
+      "name": "Geo/Earth",
+      "n_nodes": 3065,
+      "n_edges": 860751,
+      "n_edges_sparse": 9093,
+      "n_bifurcations": 3065,
+      "density_pct": 18.33,
+      "BA": {
+        "value": 3.01,
+        "cv": 2.488
+      },
+      "IL": {
+        "value": 2.29,
+        "cv": 0.225
+      },
+      "D": {
+        "value": 4.92,
+        "cv": 0.175
+      },
+      "Db": {
+        "value": 0.755,
+        "r2": 0.988
+      },
+      "L": {
+        "value": 68.404,
+        "cv": 0.638
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8279,
+        "distances": {
+          "Mucoromycota": 1.3012,
+          "Basidiomycota": 1.1948,
+          "Ascomycota": 0.8279
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 2,
+      "name": "Medicine",
+      "n_nodes": 12685,
+      "n_edges": 5648824,
+      "n_edges_sparse": 37540,
+      "n_bifurcations": 12685,
+      "density_pct": 7.02,
+      "BA": {
+        "value": 4.19,
+        "cv": 3.217
+      },
+      "IL": {
+        "value": 2.0,
+        "cv": 0.0
+      },
+      "D": {
+        "value": 4.78,
+        "cv": 0.153
+      },
+      "Db": {
+        "value": 0.884,
+        "r2": 0.997
+      },
+      "L": {
+        "value": 66.878,
+        "cv": 0.611
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8179,
+        "distances": {
+          "Mucoromycota": 1.2949,
+          "Basidiomycota": 1.2021,
+          "Ascomycota": 0.8179
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 3,
+      "name": "Psych/Biz",
+      "n_nodes": 6340,
+      "n_edges": 2663489,
+      "n_edges_sparse": 18781,
+      "n_bifurcations": 6340,
+      "density_pct": 13.25,
+      "BA": {
+        "value": 0.52,
+        "cv": 1.666
+      },
+      "IL": {
+        "value": 2.62,
+        "cv": 0.306
+      },
+      "D": {
+        "value": 4.8,
+        "cv": 0.163
+      },
+      "Db": {
+        "value": 0.804,
+        "r2": 0.998
+      },
+      "L": {
+        "value": 58.145,
+        "cv": 0.685
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8193,
+        "distances": {
+          "Mucoromycota": 1.2957,
+          "Basidiomycota": 1.201,
+          "Ascomycota": 0.8193
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 4,
+      "name": "CS/Math",
+      "n_nodes": 11371,
+      "n_edges": 5871195,
+      "n_edges_sparse": 33887,
+      "n_bifurcations": 11371,
+      "density_pct": 9.08,
+      "BA": {
+        "value": 6.08,
+        "cv": 2.196
+      },
+      "IL": {
+        "value": 2.31,
+        "cv": 0.204
+      },
+      "D": {
+        "value": 4.67,
+        "cv": 0.163
+      },
+      "Db": {
+        "value": 0.942,
+        "r2": 0.998
+      },
+      "L": {
+        "value": 49.804,
+        "cv": 0.609
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8111,
+        "distances": {
+          "Mucoromycota": 1.2906,
+          "Basidiomycota": 1.2086,
+          "Ascomycota": 0.8111
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 5,
+      "name": "Biology",
+      "n_nodes": 6058,
+      "n_edges": 2085403,
+      "n_edges_sparse": 17744,
+      "n_bifurcations": 6058,
+      "density_pct": 11.37,
+      "BA": {
+        "value": 2.48,
+        "cv": 3.716
+      },
+      "IL": {
+        "value": 2.05,
+        "cv": 0.103
+      },
+      "D": {
+        "value": 4.76,
+        "cv": 0.156
+      },
+      "Db": {
+        "value": 0.976,
+        "r2": 0.999
+      },
+      "L": {
+        "value": 47.54,
+        "cv": 0.442
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8166,
+        "distances": {
+          "Mucoromycota": 1.294,
+          "Basidiomycota": 1.2032,
+          "Ascomycota": 0.8166
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 6,
+      "name": "Humanities",
+      "n_nodes": 5517,
+      "n_edges": 2740188,
+      "n_edges_sparse": 16448,
+      "n_bifurcations": 5517,
+      "density_pct": 18.01,
+      "BA": {
+        "value": 23.98,
+        "cv": 1.632
+      },
+      "IL": {
+        "value": 2.47,
+        "cv": 0.246
+      },
+      "D": {
+        "value": 4.82,
+        "cv": 0.163
+      },
+      "Db": {
+        "value": 0.645,
+        "r2": 0.994
+      },
+      "L": {
+        "value": 52.873,
+        "cv": 0.647
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8206,
+        "distances": {
+          "Mucoromycota": 1.2966,
+          "Basidiomycota": 1.1999,
+          "Ascomycota": 0.8206
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 7,
+      "name": "CellBio/Mol",
+      "n_nodes": 7501,
+      "n_edges": 2806292,
+      "n_edges_sparse": 21500,
+      "n_bifurcations": 7501,
+      "density_pct": 9.98,
+      "BA": {
+        "value": 1.47,
+        "cv": 3.124
+      },
+      "IL": {
+        "value": 3.28,
+        "cv": 0.21
+      },
+      "D": {
+        "value": 4.59,
+        "cv": 0.154
+      },
+      "Db": {
+        "value": 0.991,
+        "r2": 0.998
+      },
+      "L": {
+        "value": 53.334,
+        "cv": 0.595
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8068,
+        "distances": {
+          "Mucoromycota": 1.2879,
+          "Basidiomycota": 1.2137,
+          "Ascomycota": 0.8068
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    },
+    {
+      "species_id": 8,
+      "name": "Physics",
+      "n_nodes": 4905,
+      "n_edges": 1781931,
+      "n_edges_sparse": 14495,
+      "n_bifurcations": 4905,
+      "density_pct": 14.82,
+      "BA": {
+        "value": 7.55,
+        "cv": 4.645
+      },
+      "IL": {
+        "value": 2.3,
+        "cv": 0.237
+      },
+      "D": {
+        "value": 4.78,
+        "cv": 0.174
+      },
+      "Db": {
+        "value": 0.62,
+        "r2": 0.991
+      },
+      "L": {
+        "value": 67.152,
+        "cv": 0.603
+      },
+      "identification": {
+        "best_match": "Ascomycota",
+        "distance": 0.8179,
+        "distances": {
+          "Mucoromycota": 1.2949,
+          "Basidiomycota": 1.2021,
+          "Ascomycota": 0.8179
+        },
+        "strategy": "Polyvalent, hétérogène"
+      }
+    }
+  ],
+  "lehmann_reference": {
+    "Mucoromycota": {
+      "BA": 73.0,
+      "IL": 70.0,
+      "D": 4.0,
+      "Db": 1.55,
+      "L": 0.55
+    },
+    "Basidiomycota": {
+      "BA": 33.0,
+      "IL": 326.0,
+      "D": 5.75,
+      "Db": 1.25,
+      "L": 0.42
+    },
+    "Ascomycota": {
+      "BA": 56.0,
+      "IL": 170.0,
+      "D": 4.0,
+      "Db": 1.4,
+      "L": 0.65
+    }
+  }
+}
