@@ -675,7 +675,10 @@ def _period_diff(p1: str, p2: str) -> int:
 
 
 def _parse_period(p: str) -> tuple[int, int]:
-    """Parse "YYYY" → (year, 6) ou "YYYY-MM" → (year, month)."""
+    """Parse "YYYY" → (year, 6) ou "YYYY-MM" → (year, month). Handles negative years."""
+    if p.startswith("-"):
+        # Negative year like "-43000"
+        return (int(p), 6)
     parts = p.split("-")
     year = int(parts[0])
     month = int(parts[1]) if len(parts) > 1 else 6  # milieu d'année par défaut

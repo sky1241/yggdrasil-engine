@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 29 mars 2026 (session 31), Sky×Claude (Opus 4.6)
+> Dernière màj: 30 mars 2026 (session 31), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -101,7 +101,7 @@ Pipeline spatial d'impact: qui a fait quoi, à quel point c'est gros, chronologi
   - Output: `data/impact_scale.db` (344 MB) + `data/impact_scale.json` (51 KB)
 - [x] Aligné sur 5 frameworks publiés (Wu/Evans, Uzzi, Wang/Barabási, Sinatra, Burt)
 - [ ] Validation croisée: comparer top extinctions avec bibliométrie connue
-- [ ] Brancher sur V3 météorites (Sedov-Taylor calibrage)
+- [x] Brancher sur V3 météorites (Sedov-Taylor calibrage) — `calibrate_sedov.py`, 9 météorites, α=0.34, R²=0.64
 
 ## V3 — CANDLESTICKS OHLC & MÉTÉORITES (APRÈS V2)
 Chaque percée majeure = un candlestick sur le mycelium.
@@ -120,7 +120,9 @@ Voir `docs/formulas.tex` pour les formules complètes avec sources.
 - [x] Bugfix session 7: 8 bugs corrigés (4 meteorites + 4 core)
 - [x] Audit session 8: 26 bugs fixés sur 14 fichiers + 2 derniers bugs meteorites.py
 - [x] Tests meteorites.py passés: signature(), classify_candle(rho0=0), measure_impact(), summary()
-- [ ] En attente des frames V2 pour mesure réelle sur les données
+- [x] Calibrage Sedov-Taylor sur données réelles (9 météorites, 359 points) — session 32
+- [ ] Enrichir R(t) avec impact_scale.db (pas juste concepts_new)
+- [ ] Tester Gödel comme hold-out (retirer du fit, prédire seul)
 
 ### La bougie OHLC scientifique
 - **Open** = date d'ÉMISSION du paper

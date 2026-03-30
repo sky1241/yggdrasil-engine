@@ -4,11 +4,11 @@
   "family": "baobab",
   "family_name": "Baobab",
   "family_emoji": "🌳",
-  "date": "2026-03-29",
+  "date": "2026-03-30",
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 60631,
+    "lines": 60942,
     "factor": 20.7,
     "category": "forêt",
     "height_px": 900,
@@ -18,12 +18,12 @@
     "label": "🌳 Baobab (52K Python + 8K HTML + 78.0GB data)"
   },
   "stats": {
-    "total_files": 6789,
-    "total_code_lines": 60631,
-    "python_lines": 52290,
+    "total_files": 6791,
+    "total_code_lines": 60942,
+    "python_lines": 52601,
     "html_lines": 8341,
     "languages": {
-      "Python": 52290,
+      "Python": 52601,
       "PowerShell": 9,
       "Shell": 11,
       "HTML": 8341,
@@ -449,15 +449,16 @@
       "id": "C1",
       "level": "C",
       "depth": 5,
-      "label": "V3 — Candlesticks OHLC + météorites",
-      "status": "todo",
-      "entry": "engine/meteorites.py",
-      "confidence": 60,
+      "label": "V3 — Sedov-Taylor calibré (9 météorites, α=0.34, R²=0.64)",
+      "status": "wip",
+      "entry": "engine/analysis/calibrate_sedov.py",
+      "confidence": 75,
       "depends": [
         "F3",
-        "F5"
+        "F5",
+        "F9"
       ],
-      "desc": "Sedov-Taylor + OHLC + 7 deltas. Calibrage sur données réelles WT3. En attente."
+      "desc": "Calibrage Sedov R(t)=β×(Et²/ρ₀)^α sur 9 météorites. α=0.34 (>0.2: super-diffusion). b=1.0 (accélération science). Gödel converge 0.36→0.92. 4 post-2012 skippées (S0 saturé)."
     },
     {
       "id": "C2",
@@ -598,11 +599,11 @@
         "C3",
         "C4"
       ],
-      "action": "VISION. C1 attend calibrage WT3. C2 attend C1. C3 attend F4. C4 = sommet.",
+      "action": "C1 calibré (9 météorites, α=0.34, R²=0.64). C2 attend C1 finalisé. C3 attend F4. C4 = sommet.",
       "bio": "Bourgeons terminaux — ils contrôlent la croissance via les auxines."
     }
   ],
-  "next_step": "Impact Scale FAIT (F9). Tests core FAIT (Q1, 86/86). Prochain: validation croisée impact, V3 calibrage Sedov-Taylor, Tier 2 tests.",
+  "next_step": "V3 Sedov calibré (C1 wip, 9 météorites). Prochain: enrichir R(t) avec impact_scale.db, tester Gödel comme hold-out, Tier 2 tests.",
   "rules": {
     "auto_update": true,
     "description": "Ce fichier est la source de vérité architecturale du projet. Il DOIT être mis à jour automatiquement après chaque modification significative.",
