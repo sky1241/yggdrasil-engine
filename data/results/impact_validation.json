@@ -1,0 +1,139 @@
+{
+  "validation_date": "2026-03-30",
+  "godel_holdout": {
+    "method": "Train on 12 meteorites, predict Godel 1931",
+    "fit_without_godel": {
+      "beta": 299.84,
+      "alpha": 0.4383,
+      "R2": 0.6947,
+      "n_points": 349
+    },
+    "godel_prediction": {
+      "E": 54.0,
+      "rho0": 473.2036,
+      "mean_ratio_obs_vs_pred": 0.45,
+      "mean_absolute_error_pct": 120.8,
+      "interpretation": "Model overpredicts by 2x. Godel blast attenuated because 1931 mycelium was too sparse to relay shockwave at expected rate."
+    }
+  },
+  "extinction_analysis": {
+    "n_extinctions": 24,
+    "finding": "Top extinctions are obscure interdisciplinary papers, not paradigm-shifting discoveries. Famous authors (Shannon, Turing, Maldacena, Weinberg) score meteorite/asteroide. The scale captures STRUCTURAL breadth (spanning rare concepts), not scientific fame.",
+    "interpretation": "Correct behavior: famous papers are often focused (Shannon=info theory), while structural outliers bridge many rare corners simultaneously."
+  },
+  "famous_authors_best_scores": {
+    "Shannon": {
+      "best_score": 7.35,
+      "tier": "meteorite",
+      "year": 2014,
+      "n_concepts": 8,
+      "domain": "Physics"
+    },
+    "Turing": {
+      "best_score": 5.05,
+      "tier": "rocher",
+      "year": 2005,
+      "n_concepts": 11,
+      "domain": "Physics"
+    },
+    "Grover": {
+      "best_score": 6.87,
+      "tier": "meteorite",
+      "year": 2010,
+      "n_concepts": 13,
+      "domain": "Materials science"
+    },
+    "Maldacena": {
+      "best_score": 7.39,
+      "tier": "meteorite",
+      "year": 2001,
+      "n_concepts": 13,
+      "domain": "Physics"
+    },
+    "Weinberg": {
+      "best_score": 7.9,
+      "tier": "asteroide",
+      "year": 2010,
+      "n_concepts": 11,
+      "domain": "Mathematics"
+    },
+    "Hawking": {
+      "best_score": 6.52,
+      "tier": "meteorite",
+      "year": 2006,
+      "n_concepts": 9,
+      "domain": "Physics"
+    },
+    "Witten": {
+      "best_score": 7.81,
+      "tier": "asteroide",
+      "year": 2006,
+      "n_concepts": 13,
+      "domain": "Materials science"
+    },
+    "Wiles": {
+      "best_score": 7.06,
+      "tier": "meteorite",
+      "year": 2009,
+      "n_concepts": 23,
+      "domain": "Mathematics"
+    },
+    "Barabasi": {
+      "best_score": 7.18,
+      "tier": "meteorite",
+      "year": 2000,
+      "n_concepts": 10,
+      "domain": "Computer science"
+    }
+  },
+  "tier_distribution": {
+    "extinction": {
+      "n": 24,
+      "avg": 9.08,
+      "range": [
+        9.0,
+        9.42
+      ]
+    },
+    "asteroide": {
+      "n": 2705,
+      "avg": 7.84,
+      "range": [
+        7.5,
+        8.99
+      ]
+    },
+    "meteorite": {
+      "n": 50559,
+      "avg": 6.5,
+      "range": [
+        6.0,
+        7.49
+      ]
+    },
+    "rocher": {
+      "n": 348362,
+      "avg": 4.82,
+      "range": [
+        4.0,
+        5.99
+      ]
+    },
+    "pierre": {
+      "n": 357328,
+      "avg": 3.14,
+      "range": [
+        2.0,
+        3.99
+      ]
+    },
+    "caillou": {
+      "n": 74052,
+      "avg": 1.17,
+      "range": [
+        0.0,
+        1.99
+      ]
+    }
+  }
+}

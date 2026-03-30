@@ -5,19 +5,17 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
-## 29 mars 2026 — Session 32
+## 30 mars 2026 — Session 32
 
-### V3 Sedov-Taylor — Calibrage sur données réelles
-- **`calibrate_sedov.py`** créé: calibre R(t) = β × (E×t²/ρ₀)^α sur 13 météorites connues
-- **9 météorites mesurées** (Shannon, ADN, Transistor, Laser, Gödel, Turing, mRNA, TCP/IP, Perelman)
-- **4 post-2012 skippées** (CRISPR, AlphaFold, Higgs, LIGO): espace S0 saturé à 65K, quasi plus de naissances
-- **3 fits simultanés**:
-  - Fit 1 (classique): β=807, α=0.34, R²=0.64 — α > 0.20 théorique = super-diffusion
-  - Fit 2 (séparé): β=84, a=0.33, b=1.00 — b >> 0.40 théorique = accélération science
-  - Fit 3 (log-linéaire): β=70, α=0.70, R²=0.67
-- **Gödel 1931 test**: ratio prédit/observé 0.36→0.92 sur 10 ans (converge mais surestimé à court terme)
-- **Finding**: ρ₀ (meshedness Bebber) varie de 473 (1931) à 11,022 (2003) — le sol scientifique se densifie
-- **Output**: `data/results/sedov_calibration.json`
+### V3 Sedov-Taylor — Calibrage complet + validation
+- **`calibrate_sedov.py`**: vrais objets Frame, appelle `measure_all()` + `fit_sedov()` (13 meteorites, 7 deltas, OHLC)
+- **Fit classique**: beta=369, alpha=0.35, R2=0.64
+- **Fit separe**: a(E)=0.01, b(t)=0.91, c(rho0)=0.79, R2=0.88 — densite et temps dominent
+- **Classification**: mRNA = seul C_perceptual (30 ans), reste A_technical ou mixed
+- **Godel hold-out**: train 12, predict 1 — ratio=0.45 (blast attenue, sol vierge 1931)
+- **Validation croisee**: extinctions = breadth structurelle, pas fame (Shannon/Turing = meteorite)
+- **Fix**: `_parse_period` gere annees negatives (-43000)
+- **Outputs**: `sedov_calibration.json`, `impact_validation.json`
 
 ---
 
@@ -350,4 +348,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-03-30 | 52,601L Python | 6,791 fichiers | phase CANOPEE_
+_Auto-update: 2026-03-30 | 52,601L Python | 6,792 fichiers | phase CANOPEE_

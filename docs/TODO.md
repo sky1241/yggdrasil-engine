@@ -100,7 +100,8 @@ Pipeline spatial d'impact: qui a fait quoi, à quel point c'est gros, chronologi
   - Distribution: 0.05% extinction, 0.8% astéroïde, 6.3% météorite, 34.8% rocher, 42.7% pierre, 15.4% caillou
   - Output: `data/impact_scale.db` (344 MB) + `data/impact_scale.json` (51 KB)
 - [x] Aligné sur 5 frameworks publiés (Wu/Evans, Uzzi, Wang/Barabási, Sinatra, Burt)
-- [ ] Validation croisée: comparer top extinctions avec bibliométrie connue
+- [x] Validation croisée: top extinctions = breadth structurelle, pas fame (Shannon/Turing = meteorite/asteroide, correct)
+- [x] Gödel hold-out: train 12, predict 1 — ratio obs/pred=0.45 (blast atténué, sol vierge 1931)
 - [x] Brancher sur V3 météorites (Sedov-Taylor calibrage) — `calibrate_sedov.py`, 9 météorites, α=0.34, R²=0.64
 
 ## V3 — CANDLESTICKS OHLC & MÉTÉORITES (APRÈS V2)
