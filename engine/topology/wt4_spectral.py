@@ -21,6 +21,7 @@ Usage:
     python engine/topology/wt4_spectral.py --status      # Show progress
 """
 import argparse
+import gc
 import json
 import sqlite3
 import time
@@ -38,6 +39,8 @@ CONCEPTS_PATH = ROOT / "data" / "scan" / "concepts_65k.json"
 OUTPUT_PATH = ROOT / "data" / "scan" / "wt4_spectral.json"
 VIZ_GLYPH_PATH = ROOT / "viz" / "data" / "wt4_spectral.json"
 VIZ_FULL_PATH = ROOT / "viz" / "data" / "wt4_full.json"
+SPECTRAL_BIRTHS_PATH = ROOT / "data" / "scan" / "spectral_births.json"
+CONCEPT_BIRTHS_PATH = ROOT / "data" / "scan" / "concept_births.json"
 LOG_PATH = ROOT / "data" / "wt4_log.txt"
 
 K_EIGENVECTORS = 20
@@ -55,59 +58,72 @@ def log(msg: str):
 # ─── Phase 1: Load ALL data from WT3 ─────────────────────────────
 
 def load_all_data(db_path: Path):
-    """Load bipartite + cooc_global + papers from WT3."""
-    log("[WT4] Phase 1: Loading ALL data from WT3...")
+    """Load bipartite as numpy + get concept IDs from concepts_65k.json.
+
+    Returns (bip_gids, bip_cids, bip_weights) as numpy arrays,
+    glyph_ids, all_concept_ids, n_cooc_total.
+    """
+    log("[WT4] Phase 1: Loading data from WT3 (low-RAM mode)...")
     t0 = time.time()
 
     conn = sqlite3.connect(str(db_path), timeout=60)
 
-    # 1a. Bipartite (glyph↔concept)
-    log("  Loading bipartite...")
-    bipartite = conn.execute(
-        "SELECT glyph_id, concept_id, weight FROM bipartite"
-    ).fetchall()
-    glyph_ids = sorted(set(e[0] for e in bipartite))
-    bip_concept_ids = set(e[1] for e in bipartite)
-    log(f"  Bipartite: {len(bipartite):,} edges, "
-        f"{len(glyph_ids)} glyphs, {len(bip_concept_ids):,} concepts")
+    # 1a. Bipartite as numpy arrays (not Python tuples — saves ~500 MB)
+    log("  Loading bipartite into numpy arrays...")
+    n_bip = conn.execute("SELECT COUNT(*) FROM bipartite").fetchone()[0]
+    bip_gids = np.empty(n_bip, dtype=np.int32)
+    bip_cids = np.empty(n_bip, dtype=np.int32)
+    bip_weights = np.empty(n_bip, dtype=np.float32)
 
-    # 1b. cooc_global (concept↔concept = THE MYCELIUM)
-    log("  Loading cooc_global (69.4M rows, may take a minute)...")
-    t1 = time.time()
-    cooc_concept_ids = set()
-    cooc_edges = []
-    batch_size = 5_000_000
+    batch_size = 1_000_000
     offset = 0
-    total_cooc = 0
-
+    pos = 0
+    glyph_set = set()
+    bip_concept_set = set()
     while True:
         rows = conn.execute(
-            "SELECT concept_a, concept_b, weight FROM cooc_global "
+            "SELECT glyph_id, concept_id, weight FROM bipartite "
             "LIMIT ? OFFSET ?", (batch_size, offset)
         ).fetchall()
         if not rows:
             break
-        cooc_edges.extend(rows)
-        for ca, cb, _ in rows:
-            cooc_concept_ids.add(ca)
-            cooc_concept_ids.add(cb)
-        total_cooc += len(rows)
+        for gid, cid, w in rows:
+            bip_gids[pos] = gid
+            bip_cids[pos] = cid
+            bip_weights[pos] = w
+            glyph_set.add(gid)
+            bip_concept_set.add(cid)
+            pos += 1
         offset += batch_size
-        log(f"    {total_cooc:,} cooc rows loaded...")
+        del rows
 
-    log(f"  cooc_global: {len(cooc_edges):,} edges, "
-        f"{len(cooc_concept_ids):,} unique concepts, {time.time()-t1:.1f}s")
+    glyph_ids = sorted(glyph_set)
+    del glyph_set
+    log(f"  Bipartite: {pos:,} edges, {len(glyph_ids)} glyphs, "
+        f"{len(bip_concept_set):,} concepts (numpy: {pos*10/1e6:.0f} MB)")
+    del bip_concept_set
 
-    # 1c. All unique concept IDs (union of bipartite + cooc_global)
-    all_concept_ids = sorted(bip_concept_ids | cooc_concept_ids)
-    log(f"  Total unique concepts: {len(all_concept_ids):,} "
-        f"(bipartite: {len(bip_concept_ids):,}, "
-        f"cooc: {len(cooc_concept_ids):,})")
+    # 1b. Concept IDs from concepts_65k.json (no need to scan cooc_global)
+    log("  Loading concept IDs from concepts_65k.json...")
+    with open(CONCEPTS_PATH, encoding="utf-8") as f:
+        concepts_data = json.load(f)
+    concept_map = concepts_data.get("concepts", {})
+    # idx values are the concept IDs used in bipartite/cooc tables
+    all_concept_ids = sorted(info["idx"] for info in concept_map.values()
+                             if isinstance(info, dict) and "idx" in info)
+    log(f"  Concepts: {len(all_concept_ids):,} from concepts_65k.json")
+    del concepts_data, concept_map
+    gc.collect()
+
+    # 1c. Count cooc rows (cheap query, no data transfer)
+    log("  Counting cooc_global rows...")
+    n_cooc_total = conn.execute("SELECT COUNT(*) FROM cooc_global").fetchone()[0]
+    log(f"  cooc_global: {n_cooc_total:,} edges")
 
     conn.close()
     log(f"  Phase 1 total: {time.time()-t0:.1f}s")
 
-    return bipartite, cooc_edges, glyph_ids, all_concept_ids
+    return (bip_gids, bip_cids, bip_weights), n_cooc_total, glyph_ids, all_concept_ids
 
 
 # ─── Phase 2: Compute nd (domains per glyph) ─────────────────────
@@ -159,21 +175,20 @@ def compute_nd(db_path: Path, glyph_ids: list[int]):
 
 # ─── Phase 3: Build unified adjacency matrix ─────────────────────
 
-def build_unified_graph(bipartite, cooc_edges, glyph_ids, concept_ids):
+def build_unified_graph(bipartite_arrays, n_cooc_total, glyph_ids, concept_ids):
     """Build the FULL unified graph: glyphs + concepts + mycelium.
 
     Node numbering: [0..N_g-1] = glyphs, [N_g..N_g+N_c-1] = concepts.
 
-    Edges:
-      - bipartite (glyph↔concept): 6.2M, log-transformed
-      - cooc_global (concept↔concept): 69.4M, log-transformed
-      - Weights normalized to same scale
+    Builds sparse matrix incrementally to avoid large array allocations.
 
-    Returns: A (sparse CSR), g2idx, c2idx, N_g, N_c
+    Returns: A (sparse CSR), g2idx, c2idx, N_g, N_c, concept_cooc_degree
     """
+    bip_gids, bip_cids, bip_weights_raw = bipartite_arrays
     N_g = len(glyph_ids)
     N_c = len(concept_ids)
     N = N_g + N_c
+    n_bip = len(bip_gids)
 
     log(f"[WT4] Phase 3: Building unified graph ({N_g} glyphs + {N_c:,} concepts = {N:,} nodes)...")
     t0 = time.time()
@@ -181,99 +196,99 @@ def build_unified_graph(bipartite, cooc_edges, glyph_ids, concept_ids):
     g2idx = {g: i for i, g in enumerate(glyph_ids)}
     c2idx = {c: i + N_g for i, c in enumerate(concept_ids)}
 
-    # ── Step 1: Log-transform weights ──
-    bip_weights = np.array([w for _, _, w in bipartite])
-    cooc_weights = np.array([w for _, _, w in cooc_edges])
-
-    log(f"  Bipartite weights: min={bip_weights.min():.6f}, "
-        f"max={bip_weights.max():.2f}, median={np.median(bip_weights):.6f}")
-    log(f"  Cooc weights: min={cooc_weights.min():.6f}, "
-        f"max={cooc_weights.max():.2f}, median={np.median(cooc_weights):.4f}")
-
-    # Log-transform both: w → log(1 + w)
-    bip_log = np.log1p(bip_weights)
-    cooc_log = np.log1p(cooc_weights)
-
-    # Normalize both to [0, 1] range so they're comparable
+    # ── Step 1: Bipartite sparse matrix (vectorized) ──
+    bip_log = np.log1p(bip_weights_raw.astype(np.float64))
     bip_max = bip_log.max()
-    cooc_max = cooc_log.max()
-    if bip_max > 0:
-        bip_norm = bip_log / bip_max
-    else:
-        bip_norm = bip_log
-    if cooc_max > 0:
-        cooc_norm = cooc_log / cooc_max
-    else:
-        cooc_norm = cooc_log
+    bip_norm = (bip_log / bip_max if bip_max > 0 else bip_log).astype(np.float32)
+    del bip_log
 
-    log(f"  After log+norm: bipartite [{bip_norm.min():.4f}, {bip_norm.max():.4f}], "
-        f"cooc [{cooc_norm.min():.4f}, {cooc_norm.max():.4f}]")
+    log(f"  Bipartite weights: min={bip_weights_raw.min():.6f}, "
+        f"max={bip_weights_raw.max():.2f}, median={np.median(bip_weights_raw):.6f}")
 
-    # ── Step 2: Pre-allocate numpy arrays (avoid Python list memory bloat) ──
-    n_bip = len(bipartite)
-    n_cooc = len(cooc_edges)
-    total_sym = 2 * (n_bip + n_cooc)  # symmetric → 2x
-    log(f"  Allocating {total_sym:,} entries ({total_sym * 8 / 1e9:.2f} GB per array)...")
+    gi_arr = np.array([g2idx[int(g)] for g in bip_gids], dtype=np.int32)
+    ci_arr = np.array([c2idx.get(int(c), -1) for c in bip_cids], dtype=np.int32)
+    valid = ci_arr >= 0
+    gi_v = gi_arr[valid]
+    ci_v = ci_arr[valid]
+    w_v = bip_norm[valid]
+    del gi_arr, ci_arr, valid, bip_norm
 
-    row_idx = np.empty(total_sym, dtype=np.int32)
-    col_idx = np.empty(total_sym, dtype=np.int32)
-    w_arr = np.empty(total_sym, dtype=np.float32)  # float32 saves RAM
+    # Symmetric: both directions
+    rows_bip = np.concatenate([gi_v, ci_v])
+    cols_bip = np.concatenate([ci_v, gi_v])
+    vals_bip = np.concatenate([w_v, w_v])
+    del gi_v, ci_v, w_v
 
-    # Bipartite edges (glyph↔concept)
-    log(f"  Adding {n_bip:,} bipartite edges...")
-    pos = 0
-    for k in range(n_bip):
-        gid, cid, _ = bipartite[k]
-        gi = g2idx[gid]
-        ci = c2idx.get(cid, -1)
-        if ci < 0:
-            continue
-        w = bip_norm[k]
-        row_idx[pos] = gi;  col_idx[pos] = ci;  w_arr[pos] = w;  pos += 1
-        row_idx[pos] = ci;  col_idx[pos] = gi;  w_arr[pos] = w;  pos += 1
+    A = sparse.coo_matrix((vals_bip, (rows_bip, cols_bip)), shape=(N, N)).tocsr()
+    n_bip_added = len(vals_bip) // 2
+    del rows_bip, cols_bip, vals_bip
+    gc.collect()
+    log(f"  Bipartite sparse: {n_bip_added:,} edges, nnz={A.nnz:,}")
 
-    n_bip_added = (pos) // 2
-    log(f"  Added {n_bip_added:,} bipartite edges")
+    # ── Step 2: Stream cooc_global in batches, accumulate into A ──
+    log(f"  Getting cooc max weight...")
+    conn = sqlite3.connect(str(DB_PATH), timeout=60)
+    cooc_weight_max_raw = conn.execute("SELECT MAX(weight) FROM cooc_global").fetchone()[0]
+    cooc_log_max = float(np.log1p(cooc_weight_max_raw))
+    log(f"  Cooc weight max: {cooc_weight_max_raw:.2f}, log1p max: {cooc_log_max:.4f}")
 
-    # Cooc edges (concept↔concept = MYCELIUM)
-    log(f"  Adding {n_cooc:,} mycelium edges...")
+    log(f"  Streaming {n_cooc_total:,} mycelium edges in batches...")
+    concept_cooc_degree = defaultdict(float)
+    batch_size = 2_000_000
+    offset = 0
     n_cooc_added = 0
-    for k in range(n_cooc):
-        ca, cb, _ = cooc_edges[k]
-        ci_a = c2idx.get(ca, -1)
-        ci_b = c2idx.get(cb, -1)
-        if ci_a < 0 or ci_b < 0:
-            continue
-        w = cooc_norm[k]
-        row_idx[pos] = ci_a;  col_idx[pos] = ci_b;  w_arr[pos] = w;  pos += 1
-        row_idx[pos] = ci_b;  col_idx[pos] = ci_a;  w_arr[pos] = w;  pos += 1
-        n_cooc_added += 1
-        if n_cooc_added % 20_000_000 == 0:
-            log(f"    {n_cooc_added:,} cooc edges added...")
+    import math
+    log1p_fn = math.log1p
 
+    while True:
+        rows = conn.execute(
+            "SELECT concept_a, concept_b, weight FROM cooc_global "
+            "LIMIT ? OFFSET ?", (batch_size, offset)
+        ).fetchall()
+        if not rows:
+            break
+
+        # Build batch arrays
+        r_list = []
+        c_list = []
+        w_list = []
+        for ca, cb, w_raw in rows:
+            ci_a = c2idx.get(ca, -1)
+            ci_b = c2idx.get(cb, -1)
+            if ci_a < 0 or ci_b < 0:
+                continue
+            w = log1p_fn(w_raw) / cooc_log_max
+            r_list.append(ci_a)
+            c_list.append(ci_b)
+            w_list.append(w)
+            concept_cooc_degree[ca] += w_raw
+            concept_cooc_degree[cb] += w_raw
+
+        n_batch = len(r_list)
+        if n_batch > 0:
+            r_arr = np.array(r_list + c_list, dtype=np.int32)
+            c_arr = np.array(c_list + r_list, dtype=np.int32)
+            w_arr = np.array(w_list + w_list, dtype=np.float32)
+            batch_coo = sparse.coo_matrix((w_arr, (r_arr, c_arr)), shape=(N, N))
+            A = A + batch_coo.tocsr()
+            del r_arr, c_arr, w_arr, batch_coo
+            n_cooc_added += n_batch
+
+        del rows, r_list, c_list, w_list
+        offset += batch_size
+        if n_cooc_added % 10_000_000 < batch_size:
+            log(f"    {n_cooc_added:,} cooc edges streamed...")
+            gc.collect()
+
+    conn.close()
     log(f"  Added {n_cooc_added:,} mycelium edges")
-
-    # Trim to actual size
-    row_idx = row_idx[:pos]
-    col_idx = col_idx[:pos]
-    w_arr = w_arr[:pos]
-
-    # ── Step 3: Build sparse matrix ──
-    log(f"  Building sparse matrix ({N:,} x {N:,}, {pos:,} entries)...")
-    A = sparse.coo_matrix(
-        (w_arr, (row_idx, col_idx)),
-        shape=(N, N),
-    ).tocsr()
-
-    # Free COO arrays
-    del row_idx, col_idx, w_arr
 
     density = A.nnz / (N * N) * 100
     log(f"  A: {N:,} x {N:,}, nnz={A.nnz:,}, density={density:.4f}%")
     log(f"  Bipartite edges: {n_bip_added:,}, Mycelium edges: {n_cooc_added:,}")
     log(f"  Time: {time.time()-t0:.1f}s")
 
-    return A, g2idx, c2idx, N_g, N_c
+    return A, g2idx, c2idx, N_g, N_c, concept_cooc_degree
 
 
 # ─── Phase 4: Normalized Laplacian + eigenvectors ─────────────────
@@ -344,11 +359,12 @@ def export_results(
     glyph_ids, all_concept_ids,
     g2idx, c2idx, N_g, N_c,
     nd, domains_per_glyph,
-    bipartite, cooc_edges,
+    bipartite_arrays, concept_cooc_degree, n_cooc_total,
 ):
     """Export glyph + concept positions to JSON."""
     log("[WT4] Phase 5: Exporting results...")
     t0 = time.time()
+    bip_gids, bip_cids, bip_weights_raw = bipartite_arrays
 
     # Load glyph registry
     with open(REGISTRY_PATH, encoding="utf-8") as f:
@@ -360,15 +376,11 @@ def export_results(
     if CONCEPTS_PATH.exists():
         with open(CONCEPTS_PATH, encoding="utf-8") as f:
             concepts_data = json.load(f)
-        if isinstance(concepts_data, dict):
-            for cid_str, info in concepts_data.items():
-                if not cid_str.isdigit():
-                    continue
-                if isinstance(info, dict):
-                    concept_names[int(cid_str)] = info.get(
-                        "display_name", info.get("name", ""))
-                elif isinstance(info, str):
-                    concept_names[int(cid_str)] = info
+        concepts_map = concepts_data.get("concepts", {})
+        for url, info in concepts_map.items():
+            if isinstance(info, dict) and "idx" in info:
+                concept_names[info["idx"]] = info.get("name", f"C{info['idx']}")
+        del concepts_data, concepts_map
 
     # Normalize ALL positions together (glyphs + concepts in same space)
     all_x = robust_normalize(eigenvectors[:, 1].copy())
@@ -383,11 +395,12 @@ def export_results(
         f"y=[{glyph_y.min():.3f},{glyph_y.max():.3f}], "
         f"z=[{glyph_z.min():.3f},{glyph_z.max():.3f}]")
 
-    # Bipartite degree per glyph
+    # Bipartite degree per glyph (from numpy arrays)
     glyph_degree = defaultdict(float)
     glyph_concept_count = defaultdict(int)
-    for gid, cid, w in bipartite:
-        glyph_degree[gid] += w
+    for k in range(len(bip_gids)):
+        gid = int(bip_gids[k])
+        glyph_degree[gid] += float(bip_weights_raw[k])
         glyph_concept_count[gid] += 1
 
     # Build glyph output
@@ -424,11 +437,6 @@ def export_results(
         })
 
     # Build concept positions for full viz (top 5K by mycelium degree)
-    concept_cooc_degree = defaultdict(float)
-    for ca, cb, w in cooc_edges:
-        concept_cooc_degree[ca] += w
-        concept_cooc_degree[cb] += w
-
     top_concepts = sorted(
         concept_cooc_degree.keys(),
         key=lambda c: -concept_cooc_degree[c]
@@ -471,9 +479,9 @@ def export_results(
             "n_glyphs": N_g,
             "n_concepts": N_c,
             "n_total_nodes": N_g + N_c,
-            "n_bipartite_edges": len(bipartite),
-            "n_mycelium_edges": len(cooc_edges),
-            "n_total_edges": len(bipartite) + len(cooc_edges),
+            "n_bipartite_edges": len(bip_gids),
+            "n_mycelium_edges": n_cooc_total,
+            "n_total_edges": len(bip_gids) + n_cooc_total,
             "k": K_EIGENVECTORS,
             "eigenvalues": [round(float(v), 6) for v in eigenvalues],
             "clip_percentile": CLIP_PERCENTILE,
@@ -497,6 +505,77 @@ def export_results(
     with open(VIZ_FULL_PATH, "w", encoding="utf-8") as f:
         json.dump(viz_full, f, ensure_ascii=False)
     log(f"  Viz full: {VIZ_FULL_PATH} ({VIZ_FULL_PATH.stat().st_size / 1024:.0f} KB)")
+
+    # ── Phase 5b: spectral_births.json — ALL 65K concepts + glyphs with births ──
+    # This file is the foundation for V3 meteorites (impact at time t)
+    log("  Phase 5b: Building spectral_births.json (ALL nodes + birth years)...")
+
+    # Load birth years
+    concept_births = {}
+    if CONCEPT_BIRTHS_PATH.exists():
+        with open(CONCEPT_BIRTHS_PATH, encoding="utf-8") as f:
+            raw = json.load(f)
+        concept_births = {int(k): v for k, v in raw.items()}
+        log(f"  Loaded {len(concept_births)} concept birth years")
+    else:
+        log(f"  WARNING: {CONCEPT_BIRTHS_PATH} not found — run birth extraction first")
+
+    # Concept cooc degree (already computed above for top 5K)
+    sb_nodes = []
+
+    # Glyphs
+    for gid in glyph_ids:
+        i = g2idx[gid]
+        gid_str = str(gid)
+        meta = glyph_meta.get(gid_str, {})
+        sb_nodes.append({
+            "id": gid,
+            "type": "glyph",
+            "name": meta.get("symbol", "?"),
+            "x": round(float(all_x[i]), 5),
+            "y": round(float(all_y[i]), 5),
+            "z": round(float(all_z[i]), 5),
+            "degree": round(float(glyph_degree[gid]), 2),
+        })
+
+    # ALL concepts (65K)
+    n_with_birth = 0
+    for cid in all_concept_ids:
+        idx = c2idx.get(cid)
+        if idx is None:
+            continue
+        birth = concept_births.get(cid)
+        if birth is not None:
+            n_with_birth += 1
+        sb_nodes.append({
+            "id": cid,
+            "type": "concept",
+            "name": concept_names.get(cid, f"C{cid}"),
+            "x": round(float(all_x[idx]), 5),
+            "y": round(float(all_y[idx]), 5),
+            "z": round(float(all_z[idx]), 5),
+            "degree": round(float(concept_cooc_degree.get(cid, 0)), 1),
+            "birth_year": birth,
+        })
+
+    sb_output = {
+        "meta": {
+            "description": "Spectral positions (WT4 Laplacian) + birth years for ALL nodes",
+            "n_glyphs": N_g,
+            "n_concepts": len(all_concept_ids),
+            "n_concepts_with_birth": n_with_birth,
+            "n_total": len(sb_nodes),
+            "eigenvalues_top5": [round(float(v), 6) for v in eigenvalues[:5]],
+            "build_date": time.strftime("%Y-%m-%d %H:%M:%S"),
+            "usage": "V3 meteorites: spectral position at birth = impact coordinates",
+        },
+        "nodes": sb_nodes,
+    }
+
+    with open(SPECTRAL_BIRTHS_PATH, "w", encoding="utf-8") as f:
+        json.dump(sb_output, f, ensure_ascii=False)
+    sz = SPECTRAL_BIRTHS_PATH.stat().st_size / (1024 * 1024)
+    log(f"  spectral_births.json: {len(sb_nodes)} nodes ({n_with_birth} with birth), {sz:.1f} MB")
 
     log(f"  Export time: {time.time()-t0:.1f}s")
     return glyphs_out
@@ -657,18 +736,22 @@ def build():
     log(f"  Graphe: glyphes + concepts + mycelium (bipartite + cooc_global)")
     t0 = time.time()
 
-    # Phase 1: Load ALL data
-    bipartite, cooc_edges, glyph_ids, concept_ids = load_all_data(DB_PATH)
+    # Phase 1: Load data (streaming mode — cooc not stored in RAM)
+    bipartite_arrays, n_cooc_total, glyph_ids, concept_ids = load_all_data(DB_PATH)
+    gc.collect()
+    n_bip = len(bipartite_arrays[0])
 
-    # Phase 2: nd
-    nd, domains_per_glyph = compute_nd(DB_PATH, glyph_ids)
-
-    # Phase 3: Build unified graph
-    A, g2idx, c2idx, N_g, N_c = build_unified_graph(
-        bipartite, cooc_edges, glyph_ids, concept_ids)
+    # Phase 3 FIRST (before nd to save RAM for the big matrix)
+    A, g2idx, c2idx, N_g, N_c, concept_cooc_degree = build_unified_graph(
+        bipartite_arrays, n_cooc_total, glyph_ids, concept_ids)
 
     # Phase 4: Spectral decomposition
     eigenvalues, eigenvectors = compute_spectral(A, k=K_EIGENVECTORS)
+    del A  # free ~2 GB
+    gc.collect()
+
+    # Phase 2: nd (deferred — only needed for export)
+    nd, domains_per_glyph = compute_nd(DB_PATH, glyph_ids)
 
     # Phase 5: Export
     glyphs_out = export_results(
@@ -676,7 +759,7 @@ def build():
         glyph_ids, concept_ids,
         g2idx, c2idx, N_g, N_c,
         nd, domains_per_glyph,
-        bipartite, cooc_edges,
+        bipartite_arrays, concept_cooc_degree, n_cooc_total,
     )
 
     # Phase 6: Sanity
@@ -685,8 +768,8 @@ def build():
     total = time.time() - t0
     log(f"\n[WT4] === DONE in {total:.1f}s ({total/60:.1f} min) ===")
     log(f"  {N_g} glyphs + {N_c:,} concepts = {N_g+N_c:,} nodes")
-    log(f"  {len(bipartite):,} bipartite + {len(cooc_edges):,} mycelium "
-        f"= {len(bipartite)+len(cooc_edges):,} total edges")
+    log(f"  {n_bip:,} bipartite + {n_cooc_total:,} mycelium "
+        f"= {n_bip+n_cooc_total:,} total edges")
     log(f"  Output: {OUTPUT_PATH}")
 
 

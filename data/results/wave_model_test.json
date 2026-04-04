@@ -1,0 +1,309 @@
+{
+  "test": "wave_model_comparison",
+  "date": "2026-04-04",
+  "degree_distribution": {
+    "n_nodes": 65026,
+    "k_mean": 2135.78,
+    "k2_mean": 14299374.38,
+    "k_max": 61278,
+    "k_min": 28,
+    "kappa": 6695.14,
+    "gamma_estimated": 0.94,
+    "T_c_newman": 0.00014938,
+    "pk_sample": [
+      [
+        28,
+        1
+      ],
+      [
+        52,
+        1
+      ],
+      [
+        57,
+        1
+      ],
+      [
+        62,
+        1
+      ],
+      [
+        64,
+        1
+      ],
+      [
+        68,
+        2
+      ],
+      [
+        71,
+        1
+      ],
+      [
+        72,
+        2
+      ],
+      [
+        76,
+        1
+      ],
+      [
+        80,
+        1
+      ],
+      [
+        81,
+        1
+      ],
+      [
+        82,
+        1
+      ],
+      [
+        86,
+        1
+      ],
+      [
+        89,
+        1
+      ],
+      [
+        95,
+        1
+      ],
+      [
+        96,
+        1
+      ],
+      [
+        97,
+        2
+      ],
+      [
+        107,
+        1
+      ],
+      [
+        109,
+        3
+      ],
+      [
+        112,
+        1
+      ],
+      [
+        115,
+        1
+      ],
+      [
+        117,
+        1
+      ],
+      [
+        121,
+        2
+      ],
+      [
+        124,
+        1
+      ],
+      [
+        127,
+        1
+      ],
+      [
+        128,
+        2
+      ],
+      [
+        130,
+        1
+      ],
+      [
+        131,
+        2
+      ],
+      [
+        132,
+        2
+      ],
+      [
+        133,
+        3
+      ],
+      [
+        137,
+        2
+      ],
+      [
+        138,
+        4
+      ],
+      [
+        139,
+        1
+      ],
+      [
+        140,
+        1
+      ],
+      [
+        141,
+        2
+      ],
+      [
+        143,
+        2
+      ],
+      [
+        144,
+        2
+      ],
+      [
+        145,
+        3
+      ],
+      [
+        146,
+        1
+      ],
+      [
+        147,
+        2
+      ],
+      [
+        148,
+        1
+      ],
+      [
+        150,
+        3
+      ],
+      [
+        151,
+        1
+      ],
+      [
+        152,
+        4
+      ],
+      [
+        153,
+        3
+      ],
+      [
+        154,
+        1
+      ],
+      [
+        155,
+        2
+      ],
+      [
+        156,
+        2
+      ],
+      [
+        157,
+        2
+      ],
+      [
+        158,
+        3
+      ]
+    ]
+  },
+  "newman_percolation": {
+    "Shannon 1948": {
+      "T_fit": 0.001473,
+      "S_pred": 0.76,
+      "target_pct": 0.76,
+      "error": 0.0
+    },
+    "Transistor 1947": {
+      "T_fit": 0.001214,
+      "S_pred": 0.7001,
+      "target_pct": 0.7,
+      "error": 0.0001
+    },
+    "Turing 1936": {
+      "T_fit": 0.001046,
+      "S_pred": 0.65,
+      "target_pct": 0.65,
+      "error": 0.0
+    },
+    "ADN 1953": {
+      "T_fit": 0.000794,
+      "S_pred": 0.5498,
+      "target_pct": 0.55,
+      "error": 0.0002
+    },
+    "Godel 1931": {
+      "T_fit": 0.000598,
+      "S_pred": 0.4397,
+      "target_pct": 0.44,
+      "error": 0.0003
+    },
+    "Laser 1960": {
+      "T_fit": 0.00023,
+      "S_pred": 0.0571,
+      "target_pct": 0.06,
+      "error": 0.0029
+    }
+  },
+  "heat_kernel": {
+    "eigenvalues_laplacian": [
+      0.0,
+      0.22598300000000004,
+      0.269902,
+      0.35474000000000006,
+      0.422133,
+      0.43885700000000005,
+      0.45778700000000005,
+      0.504003,
+      0.507649,
+      0.512486,
+      0.526166,
+      0.5626880000000001,
+      0.56778,
+      0.572577,
+      0.582651,
+      0.58971,
+      0.597461,
+      0.60572,
+      0.609647,
+      0.61892
+    ],
+    "mixing_time": 4.43,
+    "spectral_gap": 0.225983,
+    "note": "Full eigenvectors not in WT4 JSON, only eigenvalues tested"
+  },
+  "branching_fits": {
+    "godel_mu_observed": [
+      3.0,
+      53.9,
+      7.3,
+      0.95,
+      3.6,
+      0.65
+    ],
+    "damped_oscillator": {
+      "r2": 0.9899,
+      "params": {
+        "A": 888.2981,
+        "gamma": 1.4384,
+        "omega": 4.7191,
+        "phi": -3.1416,
+        "offset": 3.8723
+      }
+    },
+    "exp_decay_r2": 0.1342,
+    "etas_omori_r2": 0.1113
+  },
+  "verdict": {
+    "best_for_rmax": "Newman SIR-percolation (1 param T per meteorite)",
+    "best_for_oscillation": "damped oscillator",
+    "heat_kernel_status": "eigenvalue analysis only, needs eigenvector recompute",
+    "hybrid_recommendation": "Newman R_max + Hawkes R(t) + heat kernel baseline"
+  }
+}

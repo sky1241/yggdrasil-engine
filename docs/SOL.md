@@ -1,5 +1,5 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 30 mars 2026
+> Yggdrasil Engine — Versoix, 4 avril 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE
@@ -78,7 +78,7 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 - WT2 sauvegarde le détail PER-PAPER (contrairement à S-1 qui a agrégé et jeté)
 - WT3 = recherche cross-strate ("Philippe" → ses papers + ses formules + ses concepts)
 
-## ÉTAT ACTUEL — 17 MARS 2026 (session 30)
+## ÉTAT ACTUEL — 2 AVRIL 2026 (session 33)
 
 ### S-2 GLYPHES — COMPLET
 - ~1,500 glyphes total: 1,337 math (617 actifs) + 116 fossiles alchimiques + 10 actifs non-math + 7 graines
@@ -140,9 +140,55 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 - **Film V4**: 1,534 frames (an 1000→2024), 65,021 concept births, `viz/yggdrasil_rain_v4.html`
 - **arXiv tars**: 2,449 tars, 1,025 GB, `E:/arxiv/src/`
 - **arXiv↔OpenAlex mapper**: 309/309 chunks, 479M papers, 4,324,641 arXiv trouvés
-- **V3 météorites**: `engine/meteorites.py` codé (Sedov-Taylor + OHLC + 7 deltas), en attente de mesure
+- **Impact Scale**: pipeline complet (833K papers scorés 0-10), `data/impact.db` + `data/impact_scale.db`
+- **V3 Sedov calibrage**: `engine/analysis/calibrate_sedov.py`, 13 météorites, R²=0.88 (fit séparé)
+- **V3 météorites**: `engine/analysis/meteorites.py` (Sedov-Taylor + OHLC + 7 deltas)
+
+### V3 REFONTE SESSION 33 — LE CAILLOU DANS LA MARE
+- **CONSTAT**: Sedov-Taylor (explosion gaz) ≠ bon modèle. Le mycélium = une mare, pas un gaz.
+- **DÉCOUVERTE**: propagation BFS onde réelle mesurée dans WT3 (table cooc per-period)
+  - Gödel 1931: 3 → 28,845 concepts en 10 ans (44% de la science), pic 1937 (168K arêtes)
+  - Shannon 1948: 473 → 49,627 concepts en 8 ans (76%), pic 1950 (1.2M arêtes)
+  - Turing 1936: 38 → 41,970 en 8 ans (65%), pic 1939 (372K arêtes)
+  - Laser 1960: 198 → 4,131 en 9 ans (6%)
+  - Transistor 1947: 614 → 45,604 en 8 ans (70%)
+  - ADN 1953: 2,896 → 36,081 en 9 ans (55%)
+- **Onde morte en 8-11 ans** pour toutes les météorites mesurées
+- **E (strate×continents) ne prédit PAS R_max** → besoin de masse = works_count des graines
+- **MODÈLE CANDIDAT**: diffusion de chaleur sur Laplacien (heat kernel) f(t) = e^(-tL) × f(0)
+  - Carmack move: on a DÉJÀ le Laplacien dans WT4 (66K noeuds, gap 0.226)
+  - Zéro paramètre à fitter, tout dans la structure du graphe
+- **Formule caillou**: E_impact = m × g × h (masse × gravité × hauteur de chute)
+  - m = works_count des concepts-graines
+  - h = strate d'origine (S0=0, S6=6)
+  - R_max ∝ E / ρ (énergie / densité locale)
+- **Scripts**: `scripts/godel_holdout_wave.py` (propagation BFS, 6/13 météorites mesurées)
+- **Résultats**: `data/results/godel_holdout.json`, `data/results/godel_holdout_wt3.json`
+- **TODO**: implémenter heat kernel sur WT4, comparer avec BFS, fitter les 13 météorites
 - **Migration E:\**: Snapshot OpenAlex migré D:\→E:\ (disque 5 TB, 4.6 TB libre)
 - **Viz S-2 3D**: `viz/s2_spectral_3d.html` — eigenvectors 1-2-3, 4-5-6, 5-9-18
+
+### V3 SESSION 34 — BATTERIE DE TESTS (4 avril 2026)
+- **P(k) mesuré**: ⟨k⟩=2136, ⟨k²⟩/⟨k⟩=6695, k_max=61K, gamma≈0.94 (graphe ultra-dense, pas vraiment scale-free)
+- **Newman SIR-percolation** (cond-mat/0205009): T_c=0.000149, fitte R_max parfaitement avec 1 param T/météorite
+- **Oscillation mu(t)** de Gödel: oscillateur amorti R²=0.99 (exp decay R²=0.13, ETAS R²=0.11)
+- **Batterie 5 tests** (`scripts/test_wave_plan.py` → `data/results/wave_test_plan.json`):
+
+| Test | Verdict | Détail |
+|------|---------|--------|
+| 1 — Énergie E=m×g×h | **FAIL** | Aucune formule d'énergie ne prédit R_max (ρ < 0.26 pour tout) |
+| 2 — Cratère (voisinage) | **PARTIAL** | avg_internal_weight ρ=+0.71, p=0.11 (suggestif, pas concluant avec n=6) |
+| 3 — Newman T prédictible | **PARTIAL** | LOO MAE=10,521 (16.2%), Laser explose le modèle (erreur 34K) |
+| 4 — Mort spectrale | **PASS** | Mixing time=4.4 × 2yr/unit = **8.8 ans**, MAE=0.83yr |
+| 5 — Hybride | **PARTIAL** | H2 (Newman + spectral) = meilleur combo validé |
+
+- **RÉSULTAT CLÉ**: La mort de l'onde est expliquée par le gap spectral (Chung 1997). 1/gap=4.4 × 2=8.8 ans ✓
+- **RÉSULTAT CLÉ**: Le caillou (énergie) NE prédit PAS R_max. C'est la mare qui décide.
+- **ANOMALIE**: Laser 1960 = outlier absolu (profil mare normal, R_max=6%). À investiguer.
+- **Recherche bibliographique**: 134+761 papers trouvés dans WT3/arXiv, 9 modèles classés, 5 déserts cooc=0
+- **Carmack moves identifiés**: rumor spreading (Moreno 2004), sandpile (Lee 2004), contagion financière, Hawkes/ETAS
+- **Scripts**: `scripts/test_wave_plan.py`, `scripts/_tmp_test_models.py`, `scripts/_tmp_wave_v2.py`
+- **Résultats**: `data/results/wave_test_plan.json`, `wave_model_test.json`, `wave_full_test.json`, `wave_research_v2.json`
 
 ### LEGACY (ne plus utiliser pour du neuf)
 - `strates_export_v2.json` (21,524) — ancien sous-ensemble keyword-filtré, remplacé par 65K
@@ -183,6 +229,9 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 | 28 | 16 mars | Opus 4.6 | WT4 Forme 3D COMPLET (66K noeuds, 75.6M arêtes, gap 0.226) |
 | 29 | 16 mars | Opus 4.6 | WT3 enrichissement (title/authors/year), ménage repo (-293K lignes), CHANGELOG créé |
 | 30 | 17 mars | Opus 4.6 | forge.py Carmack moves (Kalman+Wavelet+KM+Newman+DTW+Hamming), metaprompt cousin, Muninn 350 tests audit |
+| 31 | 28 mars | Opus 4.6 | Impact Scale pipeline (833K papers 0-10), tests core Tier 1 (86/86 pass) |
+| 32 | 30 mars | Opus 4.6 | V3 Sedov-Taylor calibrage (13 météorites, R²=0.88), Gödel hold-out, V3b espèces |
+| 33 | 2 avril | Opus 4.6 | V3 refonte: Sedov INVALIDÉ, propagation BFS onde réelle dans WT3, 6 météorites mesurées, analogie caillou dans la mare, Carmack move = heat kernel |
 
 ## RÈGLES AUTO
 1. Sky monte (arbre/direction). Claude descend (racines/code).
@@ -459,10 +508,10 @@ S-2 COMPLET ✅ (~1,500 glyphes + fossiles)
   → S-1 COMPLET ✅ (416/416, 858K papers)
     → WT2 COMPLET ✅ (416/416, 832K papers)
       → WT3 La Bible ✅ COMPLET (16 mars 2026)
-        → WT4 Forme 3D ← ON EST ICI
-          → Muninn sur WT3 (compression/turbo)
-            → Refaire viz (3 couches du sol)
-              → V3 météorites sur frames réelles
+        → WT4 Forme 3D ✅ COMPLET (66K noeuds)
+          → Impact Scale ✅ COMPLET (833K papers 0-10)
+            → V3 météorites ← ON EST ICI (refonte: caillou dans la mare)
+              → Heat kernel sur WT4 Laplacien
                 → V4 le grimpeur
 ```
 

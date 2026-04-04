@@ -1,0 +1,6247 @@
+{
+  "scan": "carmack_moves_navier_stokes",
+  "date": "2026-03-29 10:49:14",
+  "n_techniques": 45,
+  "n_targets": 20,
+  "n_moves": 45,
+  "moves": [
+    {
+      "technique": "Aneurysm",
+      "tech_idx": 19232,
+      "origin": "Medecine (193K papers)",
+      "works": 192729,
+      "move": "Un anevrisme = un blow-up REEL de NS : la pression monte, la paroi se deforme, l'ecoulement devient turbulent, ca pete. Les chirurgiens ont des CRITERES empiriques de rupture. Ces criteres = conditions suffisantes pour le blow-up physique.",
+      "carmack_score": 13.062060732534464,
+      "tier": "A",
+      "avg_z": -1.8289405572615158,
+      "total_cooc": 2.2757159755565226,
+      "n_deserts": 12,
+      "n_pairs": 20,
+      "desert_ratio": 0.6,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.6061469963751733,
+          "expected": 31.722914049865523,
+          "z": -5.525468839964525
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.1573819979093969,
+          "expected": 13.944150575713943,
+          "z": -3.6923385862337894
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.04999999888241291,
+          "expected": 9.890984262950434,
+          "z": -3.129304961280569
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.551429997663945,
+          "expected": 10.56972074120371,
+          "z": -3.0817115017130585
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 8.803248347267804,
+          "z": -2.9672147873676424
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.004761999938637018,
+          "expected": 8.595293901469706,
+          "z": -2.930332429502088
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.21812699921429157,
+          "expected": 5.875652242906322,
+          "z": -2.334111846149267
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.5050779851153493,
+          "expected": 3.137898422934718,
+          "z": -1.4863496317584293
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 2.2004934469403246,
+          "z": -1.483466835242521
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 1.7094526265396548,
+          "z": -1.3075117937645424
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 1.6339182052594423,
+          "z": -1.278298045273501
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.18279000045731664,
+          "expected": 1.7542634555051804,
+          "z": -1.1865247101001284
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 1.3643153285941019,
+          "z": -1.1680836686058322
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 1.3602904038367194,
+          "z": -1.1663593733697846
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 1.2934766528641692,
+          "z": -1.1373542782362445
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 1.1132941878920106,
+          "z": -1.0551669373308976
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.9229152468678166,
+          "z": -0.9229152468678166
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.39417429790633013,
+          "z": -0.39417429790633013
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.2135222583791438,
+          "z": -0.2135222583791438
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.11860111618420553,
+          "z": -0.11860111618420553
+        }
+      ]
+    },
+    {
+      "technique": "Data compression",
+      "tech_idx": 61733,
+      "origin": "Traitement signal (138K papers)",
+      "works": 138084,
+      "move": "La compressibilite du champ de vitesse turbulent dans une base d'ondelettes est un FAIT empirique. Si la turbulence est compressible >> les solutions sont dans un sous-espace de dimension finie effective >> regularite par compacite. Compression = regularisation.",
+      "carmack_score": 11.47913261600857,
+      "tier": "A",
+      "avg_z": -1.350783376724299,
+      "total_cooc": 0.5940639937762171,
+      "n_deserts": 15,
+      "n_pairs": 20,
+      "desert_ratio": 0.75,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.21457499684765935,
+          "expected": 17.899139839191417,
+          "z": -4.180547400333003
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 7.8677608463432875,
+          "z": -2.8051383930146505
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 5.963793531408227,
+          "z": -2.442221534278522
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.272416997468099,
+          "expected": 5.580827479830528,
+          "z": -2.247180502794617
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 4.967090127949487,
+          "z": -2.228805546847543
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.08326199930161238,
+          "expected": 4.849755204062269,
+          "z": -2.16451162878531
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 3.3152414994701527,
+          "z": -1.8208511352230219
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.012821000069379807,
+          "expected": 1.7705083015072136,
+          "z": -1.3210080470161087
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 1.2415927446039963,
+          "z": -1.1142971937957111
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.9898147079272964,
+          "z": -0.9898147079272964
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.9645309243283735,
+          "z": -0.9645309243283735
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.9219118519745003,
+          "z": -0.9219118519745003
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.7697928006510403,
+          "z": -0.7697928006510403
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.767521802124191,
+          "z": -0.767521802124191
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.7298232265784914,
+          "z": -0.7298232265784914
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.010989000089466572,
+          "expected": 0.6281581925265348,
+          "z": -0.6171691924370682
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.5207399622065597,
+          "z": -0.5207399622065597
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.22240645572944798,
+          "z": -0.22240645572944798
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.12047647184935889,
+          "z": -0.12047647184935889
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.06691875659116134,
+          "z": -0.06691875659116134
+        }
+      ]
+    },
+    {
+      "technique": "Deep learning",
+      "tech_idx": 1389,
+      "origin": "IA (709K papers)",
+      "works": 708578,
+      "move": "Les PINN (Physics-Informed Neural Networks) resolvent NS numeriquement. Mais les reseaux de neurones sont des APPROXIMATEURS UNIVERSELS. Si un NN de taille finie approxime TOUTE solution NS >> les solutions vivent dans un espace de dimension finie effective >> compacite >> regularite. Preuve par approximation.",
+      "carmack_score": 9.643370208757657,
+      "tier": "C",
+      "avg_z": -3.0023529593474545,
+      "total_cooc": 3.3921749903820455,
+      "n_deserts": 5,
+      "n_pairs": 20,
+      "desert_ratio": 0.25,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.6900369985960424,
+          "expected": 81.58719643660227,
+          "z": -8.957903298592496
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.08174599939957261,
+          "expected": 35.8625361583753,
+          "z": -5.9756808177305265
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.20986700057983398,
+          "expected": 27.183942844502717,
+          "z": -5.17420169951003
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.04333400074392557,
+          "expected": 25.438321168861844,
+          "z": -5.03565282878921
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.04444400034844875,
+          "expected": 22.64080629729466,
+          "z": -4.749446415340697
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 1.641294992994517,
+          "expected": 22.105974591968835,
+          "z": -4.353115777963785
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.42627799790352583,
+          "expected": 15.111411044446372,
+          "z": -3.7780828721113826
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.008333000354468822,
+          "expected": 8.070265380653598,
+          "z": -2.8381629245389512
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.056847000028938055,
+          "expected": 5.65938207413002,
+          "z": -2.355270421735157
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 4.511736750314732,
+          "z": -2.1242807877998207
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0058479998260736465,
+          "expected": 4.396489144134845,
+          "z": -2.094184398941
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.05158799979835749,
+          "expected": 4.20222446665198,
+          "z": -2.024952976634693
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 3.4984894582571275,
+          "z": -1.8705949226626186
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.06580100022256374,
+          "expected": 3.5088410396505307,
+          "z": -1.8382293609354385
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.020173999946564436,
+          "expected": 3.3266532071266366,
+          "z": -1.8130150092068953
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0058479998260736465,
+          "expected": 2.863247413415292,
+          "z": -1.6888093162074596
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.04073499981313944,
+          "expected": 2.373617613507326,
+          "z": -1.5143502442189185
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 1.013764871127275,
+          "z": -1.006947122717697
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.5491513929200335,
+          "z": -0.5491513929200335
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.3050265983922774,
+          "z": -0.3050265983922774
+        }
+      ]
+    },
+    {
+      "technique": "Hemodynamics",
+      "tech_idx": 12336,
+      "origin": "Medecine (831K papers)",
+      "works": 830645,
+      "move": "830K papers qui UTILISENT NS pour le sang. Donnees empiriques massives sur des ecoulements NS REELS dans des geometries complexes (bifurcations arterielles, aneurysmes). Les medecins ont des cas ou NS EXPLOSE (stenose critique) et des cas ou ca reste lisse. Empirique >> guidage pour la theorie.",
+      "carmack_score": 9.503868634946802,
+      "tier": "B",
+      "avg_z": -2.194862211435194,
+      "total_cooc": 8.834096965845674,
+      "n_deserts": 7,
+      "n_pairs": 20,
+      "desert_ratio": 0.35,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 1.1260009948164225,
+          "expected": 50.67836770119081,
+          "z": -6.961823368136624
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.9173959994222969,
+          "expected": 22.276225602918668,
+          "z": -4.525852721195636
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.08001800021156669,
+          "expected": 15.801163052567007,
+          "z": -3.955282056238492
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.7234429959207773,
+          "expected": 16.88546623994322,
+          "z": -3.933489615296682
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.023372999858111143,
+          "expected": 14.06347020978135,
+          "z": -3.7442089626229627
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.13933999743312597,
+          "expected": 13.731256345295655,
+          "z": -3.668271421607168
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 1.2709719906561077,
+          "expected": 9.386541992399195,
+          "z": -2.6490986019224354
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.5156460013240576,
+          "expected": 5.012892883563657,
+          "z": -2.0087708688250467
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 3.5153585150723354,
+          "z": -1.8750433733414482
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 2.7309051318351467,
+          "z": -1.6526431641211545
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.018182000145316124,
+          "expected": 2.6102364829929234,
+          "z": -1.6044636110966664
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 2.1731073367873917,
+          "z": -1.4742320906784314
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 2.06637023710102,
+          "z": -1.4375707982711823
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.05885299947112799,
+          "expected": 2.1795372825516313,
+          "z": -1.4365446994325326
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.03571400046348572,
+          "expected": 1.7785229983885766,
+          "z": -1.3069078278064021
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.18075799895450473,
+          "expected": 1.47438656374006,
+          "z": -1.0654388851590044
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.6297060218444972,
+          "z": -0.6297060218444972
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.3411086227928922,
+          "z": -0.3411086227928922
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.18946906851958323,
+          "z": -0.18946906851958323
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 3.744400987168774,
+          "expected": 2.802491861343677,
+          "z": 0.5626815502049595
+        }
+      ]
+    },
+    {
+      "technique": "Formal verification",
+      "tech_idx": 1871,
+      "origin": "Informatique (40.5K papers)",
+      "works": 40511,
+      "move": "La verification formelle prouve qu'un programme satisfait sa spec. NS = un 'programme' (EDP) et regularite = la 'spec'. Les model checkers explorent l'espace d'etats exhaustivement. Appliquer aux solutions discretisees >> prouver la regularite sur grille >> passage a la limite.",
+      "carmack_score": 7.436802029162404,
+      "tier": "S",
+      "avg_z": -0.7208700943492546,
+      "total_cooc": 0.0,
+      "n_deserts": 20,
+      "n_pairs": 20,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 6.490349391732908,
+          "z": -2.547907482058225
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 2.8529033954779672,
+          "z": -1.689145307980809
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 2.162511945643563,
+          "z": -1.4706108817835828
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 2.0236458603320604,
+          "z": -1.4226064594829761
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.8011005378052751,
+          "z": -1.3421000693706118
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 1.758554099332686,
+          "z": -1.326152541127157
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 1.20212903205665,
+          "z": -1.0964457793784985
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.6419983072362274,
+          "z": -0.6419983072362274
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.4502099423278527,
+          "z": -0.4502099423278527
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.3589135201602194,
+          "z": -0.3589135201602194
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.349745448902255,
+          "z": -0.349745448902255
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.3342914844764049,
+          "z": -0.3342914844764049
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.27913208569532877,
+          "z": -0.27913208569532877
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.27830860624102055,
+          "z": -0.27830860624102055
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.2646388472995048,
+          "z": -0.2646388472995048
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.22777441706164203,
+          "z": -0.22777441706164203
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.18882383887286522,
+          "z": -0.18882383887286522
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.08064608789191423,
+          "z": -0.08064608789191423
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.043685585051048845,
+          "z": -0.043685585051048845
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.024265194586947647,
+          "z": -0.024265194586947647
+        }
+      ]
+    },
+    {
+      "technique": "Protein folding",
+      "tech_idx": 16301,
+      "origin": "Biochimie (136K papers)",
+      "works": 136159,
+      "move": "Le paysage de folding = espace de configs exponentiellement grand mais le folding se fait en temps polynomial (paradoxe de Levinthal). NS a le MEME paradoxe : espace de solutions infini, mais le fluide 'choisit' une solution en temps fini. Funnel landscape >> NS funnel ?",
+      "carmack_score": 6.843878942621148,
+      "tier": "A",
+      "avg_z": -0.9741981906355358,
+      "total_cooc": 0.2858729986473918,
+      "n_deserts": 13,
+      "n_pairs": 20,
+      "desert_ratio": 0.65,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.012821000069379807,
+          "expected": 10.610166526473373,
+          "z": -3.2537748822717405
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.15567699866369367,
+          "expected": 4.6638136536252945,
+          "z": -2.0876219165596575
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.012821000069379807,
+          "expected": 3.5351890127813257,
+          "z": -1.8734789532884553
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.012615999672561884,
+          "expected": 3.3081762279363014,
+          "z": -1.8119839495740313
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 2.9443679351647973,
+          "z": -1.715986442959408
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 2.874814700037344,
+          "z": -1.6955962031486658
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.006535999942570925,
+          "expected": 1.9651930037350127,
+          "z": -1.3972344797616503
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.016251999884843826,
+          "expected": 1.049513445018355,
+          "z": -1.0086156577810723
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.7359854102857621,
+          "z": -0.7359854102857621
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.5867376296187229,
+          "z": -0.5867376296187229
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.5717500292751296,
+          "z": -0.5717500292751296
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.5464864993546417,
+          "z": -0.5464864993546417
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.456314095491017,
+          "z": -0.456314095491017
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.4326211224927618,
+          "z": -0.4326211224927618
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.06915000034496188,
+          "expected": 0.45496790384338887,
+          "z": -0.385817903498427
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.3723566097339423,
+          "z": -0.3723566097339423
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.3086817448011315,
+          "z": -0.3086817448011315
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.1318370353577154,
+          "z": -0.1318370353577154
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.0714154669066726,
+          "z": -0.0714154669066726
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.03966778055010906,
+          "z": -0.03966778055010906
+        }
+      ]
+    },
+    {
+      "technique": "Ising model",
+      "tech_idx": 56807,
+      "origin": "Physique stat (48K papers)",
+      "works": 48310,
+      "move": "Ising = spins +/- sur un reseau. La vorticite de NS discretisee sur un lattice EST un modele d'Ising generalise. La transition de phase du modele d'Ising = la transition laminaire-turbulent. Les solutions exactes de Onsager 2D >> analogie avec NS 2D (ou ca marche).",
+      "carmack_score": 5.452377392208332,
+      "tier": "A",
+      "avg_z": -0.9191923165299537,
+      "total_cooc": 1.5973669895902276,
+      "n_deserts": 11,
+      "n_pairs": 20,
+      "desert_ratio": 0.55,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.05972599983215332,
+          "expected": 10.369011736673345,
+          "z": -3.2019260006041663
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.10141399968415499,
+          "expected": 4.557811452952922,
+          "z": -2.0875217011727125
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 3.4548389295707076,
+          "z": -1.858806579262115
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.012821000069379807,
+          "expected": 2.8774464190201665,
+          "z": -1.6888143886754432
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0974010000936687,
+          "expected": 2.8094740352163208,
+          "z": -1.6181033819013892
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.04595999978482723,
+          "expected": 1.9205268145145382,
+          "z": -1.3527082390356733
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.9986299918964505,
+          "expected": 3.2329858394651225,
+          "z": -1.2427098496085833
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.008333000354468822,
+          "expected": 1.0256594184491952,
+          "z": -1.0045420249674741
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.5734018738239927,
+          "z": -0.5734018738239927
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.14940199768170714,
+          "expected": 0.7192574535217938,
+          "z": -0.5698554558400867
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.5587549214430348,
+          "z": -0.5587549214430348
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.5340655975194444,
+          "z": -0.5340655975194444
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.44594269090407107,
+          "z": -0.44594269090407107
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.4227882272599222,
+          "z": -0.4227882272599222
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.36389344568020277,
+          "z": -0.36389344568020277
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.12368000019341707,
+          "expected": 0.44462709637883535,
+          "z": -0.3209470961854183
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.3016658246365527,
+          "z": -0.3016658246365527
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.1288405571714191,
+          "z": -0.1288405571714191
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.06979228956375544,
+          "z": -0.06979228956375544
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.03876618534361283,
+          "z": -0.03876618534361283
+        }
+      ]
+    },
+    {
+      "technique": "Impedance matching",
+      "tech_idx": 59034,
+      "origin": "Electrotechnique (29K papers)",
+      "works": 29438,
+      "move": "L'impedance matching maximise le transfert d'energie entre systemes. Pour NS : l'impedance du fluide = ratio pression/debit. Le blow-up = une DESADAPTATION D'IMPEDANCE infinie entre les echelles. Borner le mismatch = regularite.",
+      "carmack_score": 5.411960964185747,
+      "tier": "S",
+      "avg_z": -0.570102163654122,
+      "total_cooc": 0.4225480007007718,
+      "n_deserts": 19,
+      "n_pairs": 20,
+      "desert_ratio": 0.95,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 4.694895075154069,
+          "z": -2.1670140982465105
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 2.0636919975957784,
+          "z": -1.4366305378657034
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.5642866155242592,
+          "z": -1.2507653972134811
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.3028540582992565,
+          "z": -1.141466003794746
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 1.272077430972423,
+          "z": -1.1279025134486074
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.8695787132032339,
+          "z": -0.8695787132032339
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.4225480007007718,
+          "expected": 1.4638356751071941,
+          "z": -0.8606791049773101
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.46439945047332054,
+          "z": -0.46439945047332054
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.325666356839394,
+          "z": -0.325666356839394
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.2596256713625886,
+          "z": -0.2596256713625886
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.2529938045708709,
+          "z": -0.2529938045708709
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.241814939290221,
+          "z": -0.241814939290221
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.20191453115262614,
+          "z": -0.20191453115262614
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.20131885449468742,
+          "z": -0.20131885449468742
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.19143062197290478,
+          "z": -0.19143062197290478
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.16476416358584833,
+          "z": -0.16476416358584833
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.13658865766534714,
+          "z": -0.13658865766534714
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.058336600700798075,
+          "z": -0.058336600700798075
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.03160064670364879,
+          "z": -0.03160064670364879
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.01755260552059411,
+          "z": -0.01755260552059411
+        }
+      ]
+    },
+    {
+      "technique": "Mutual information",
+      "tech_idx": 8133,
+      "origin": "Theorie de l'information (34.5K papers)",
+      "works": 34501,
+      "move": "I(X;Y) = combien X dit sur Y. Pour NS : I(petite echelle; grande echelle) = combien la micro-turbulence est correlee a la macro-turbulence. Si I est borne >> les echelles sont decouplees >> pas de cascade ascendante >> pas de blow-up. Budget informationnel du blow-up.",
+      "carmack_score": 5.159777209151634,
+      "tier": "S",
+      "avg_z": -0.6042513502655297,
+      "total_cooc": 0.13020900008268654,
+      "n_deserts": 17,
+      "n_pairs": 20,
+      "desert_ratio": 0.85,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.07167700002901256,
+          "expected": 4.952584966302807,
+          "z": -2.1934794042923897
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 2.1769623812171903,
+          "z": -1.4755306468644385
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.6501460098722038,
+          "z": -1.2846327757781424
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.05519900005310774,
+          "expected": 1.5441815933310716,
+          "z": -1.198277069896656
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.3743641378839022,
+          "z": -1.172373847388223
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.003333000000566244,
+          "expected": 1.3418982660438636,
+          "z": -1.1555657590446062
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.9173074995474629,
+          "z": -0.9173074995474629
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.4898890603424137,
+          "z": -0.4898890603424137
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.34354128837702713,
+          "z": -0.34354128837702713
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.27387581112543474,
+          "z": -0.27387581112543474
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.26687993938700066,
+          "z": -0.26687993938700066
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.25508749690574795,
+          "z": -0.25508749690574795
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.21299706499442056,
+          "z": -0.21299706499442056
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.21236869328138755,
+          "z": -0.21236869328138755
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.2019377228450397,
+          "z": -0.2019377228450397
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.17380761582492887,
+          "z": -0.17380761582492887
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.14408563379846778,
+          "z": -0.14408563379846778
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.06153853642969885,
+          "z": -0.06153853642969885
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.03333511937640086,
+          "z": -0.03333511937640086
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.018516019810705848,
+          "z": -0.018516019810705848
+        }
+      ]
+    },
+    {
+      "technique": "Fokker-Planck equation",
+      "tech_idx": 57869,
+      "origin": "Physique stat (13K papers)",
+      "works": 13000,
+      "move": "Fokker-Planck decrit l'evolution de la densite de probabilite. Pour NS : la PDF de la vitesse en un point satisfait une equation de type Fokker-Planck. Borner la PDF = borner la vitesse = regularite. Les quants font ca tous les jours.",
+      "carmack_score": 4.62046759284705,
+      "tier": "B",
+      "avg_z": -1.1697506659385755,
+      "total_cooc": 8.14552996167913,
+      "n_deserts": 7,
+      "n_pairs": 20,
+      "desert_ratio": 0.35,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 2.194063990842551,
+          "expected": 17.107387648636916,
+          "z": -3.6060943562175254
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.2741459980607033,
+          "expected": 5.699990542274167,
+          "z": -2.2727604957233023
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.2863959986716509,
+          "expected": 5.333964646087665,
+          "z": -2.185644693609212
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.02381000015884638,
+          "expected": 4.635230688305268,
+          "z": -2.1420004487414284
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.9083329981658608,
+          "expected": 4.747375408425663,
+          "z": -1.7620446861683428
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 3.5763389768544585,
+          "expected": 7.519737592666499,
+          "z": -1.43812849113081
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.6609019986353815,
+          "expected": 3.168594803427509,
+          "z": -1.4088263751642613
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.022344999946653843,
+          "expected": 1.6921914751844247,
+          "z": -1.283702127317973
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 1.1866720174546184,
+          "z": -1.0893725831970562
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.020512999966740608,
+          "expected": 0.9218657751058148,
+          "z": -0.9013527751390742
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.8811319187007939,
+          "z": -0.8811319187007939
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.13419700041413307,
+          "expected": 0.9460311535059515,
+          "z": -0.8118341530918184
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.008333000354468822,
+          "expected": 0.735741715422127,
+          "z": -0.7274087150676581
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.01515199989080429,
+          "expected": 0.7335711724520547,
+          "z": -0.7184191725612504
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.6975401591488569,
+          "z": -0.6975401591488569
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.6003721855219598,
+          "z": -0.6003721855219598
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.020999999716877937,
+          "expected": 0.49770550303754657,
+          "z": -0.47670550332066863
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.21256850820240034,
+          "z": -0.21256850820240034
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.11514730456232816,
+          "z": -0.11514730456232816
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.06395866618479303,
+          "z": -0.06395866618479303
+        }
+      ]
+    },
+    {
+      "technique": "Automated theorem proving",
+      "tech_idx": 16698,
+      "origin": "Informatique (16.5K papers)",
+      "works": 16517,
+      "move": "Les assistants de preuve (Lean, Coq) ont verifie des resultats en analyse fonctionnelle. Formaliser les estimations d'energie NS en Lean >> identifier EXACTEMENT ou l'argument 2D echoue en 3D. Le gap precis = la cible du Carmack move.",
+      "carmack_score": 3.509100038272674,
+      "tier": "S",
+      "avg_z": -0.4108103397105398,
+      "total_cooc": 0.05041499901562929,
+      "n_deserts": 18,
+      "n_pairs": 20,
+      "desert_ratio": 0.9,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 2.8429637240984635,
+          "z": -1.6862951855620503
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 1.2496555073032296,
+          "z": -1.1179360399153118
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.9472437681436979,
+          "z": -0.9472437681436979
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.8864163428049281,
+          "z": -0.8864163428049281
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.7889349530176032,
+          "z": -0.7889349530176032
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.03504299931228161,
+          "expected": 0.7702983629256693,
+          "z": -0.7352553636133877
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.5265678353427075,
+          "z": -0.5265678353427075
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.28121412088077075,
+          "z": -0.28121412088077075
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.19720518218893734,
+          "z": -0.19720518218893734
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.1572146669336006,
+          "z": -0.1572146669336006
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.15319878235895162,
+          "z": -0.15319878235895162
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.14642949189330082,
+          "z": -0.14642949189330082
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.12226805460959692,
+          "z": -0.12226805460959692
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.12190734641426916,
+          "z": -0.12190734641426916
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.11591959037182849,
+          "z": -0.11591959037182849
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.09977188682765613,
+          "z": -0.09977188682765613
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.08271038918865348,
+          "z": -0.08271038918865348
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.03532535592909782,
+          "z": -0.03532535592909782
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.01913556976213723,
+          "z": -0.01913556976213723
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.015371999703347683,
+          "expected": 0.010628868155657752,
+          "z": 0.004743131547689931
+        }
+      ]
+    },
+    {
+      "technique": "Spin glass",
+      "tech_idx": 7925,
+      "origin": "Physique stat (20K papers)",
+      "works": 20250,
+      "move": "Le spin glass a un paysage d'energie frustre avec des minima locaux. Le champ de vitesse NS turbulent a la MEME structure : des configurations metastables (tourbillons coherents) separes par des barrieres d'energie. Les bornes de Parisi sur le temps de relaxation >> bornes sur le temps de dissipation NS.",
+      "carmack_score": 3.1788696674376986,
+      "tier": "A",
+      "avg_z": -0.49828685750128987,
+      "total_cooc": 0.6084229971747845,
+      "n_deserts": 13,
+      "n_pairs": 20,
+      "desert_ratio": 0.65,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.02777799963951111,
+          "expected": 3.9299855815942277,
+          "z": -1.968626514185502
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.168720000423491,
+          "expected": 1.7274677422128866,
+          "z": -1.186023151509047
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.309427313301444,
+          "z": -1.1443478018786208
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.0905883053988334,
+          "z": -1.0443478171620242
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.03174599912017584,
+          "expected": 1.0648259188686966,
+          "z": -1.0011728244473626
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.34813699731603265,
+          "expected": 1.2253422078459846,
+          "z": -0.7924809845034062
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.7279037657381139,
+          "z": -0.7279037657381139
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.01961800060234964,
+          "expected": 0.3887377918452289,
+          "z": -0.36911979124287925
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.009091000072658062,
+          "expected": 0.2726076017251864,
+          "z": -0.2635166016525283
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.21732650649987345,
+          "z": -0.21732650649987345
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.21177512772499235,
+          "z": -0.21177512772499235
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.20241756410146525,
+          "z": -0.20241756410146525
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.16901787653223305,
+          "z": -0.16901787653223305
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.003333000000566244,
+          "expected": 0.16851924969616588,
+          "z": -0.16518624969559964
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.16024204421745095,
+          "z": -0.16024204421745095
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.13792018285617758,
+          "z": -0.13792018285617758
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.11433513351020072,
+          "z": -0.11433513351020072
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.048832188145510935,
+          "z": -0.048832188145510935
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.026452153653363054,
+          "z": -0.026452153653363054
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.014692870769445768,
+          "z": -0.014692870769445768
+        }
+      ]
+    },
+    {
+      "technique": "Percolation threshold",
+      "tech_idx": 17933,
+      "origin": "Physique stat (24K papers)",
+      "works": 24489,
+      "move": "Au seuil de percolation, un cluster geant apparait. Pour la turbulence : a quel Reynolds le reseau de tourbillons forme-t-il un cluster PERCOLANT ? Si oui, l'energie se propage a toutes les echelles >> blow-up potentiel. Le seuil = Re critique.",
+      "carmack_score": 3.043742990583819,
+      "tier": "A",
+      "avg_z": -0.5100387958342619,
+      "total_cooc": 1.6076199924573302,
+      "n_deserts": 12,
+      "n_pairs": 20,
+      "desert_ratio": 0.6,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.09463999886065722,
+          "expected": 4.481656690228487,
+          "z": -2.072519797110108
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.02670999988913536,
+          "expected": 1.4932379667013351,
+          "z": -1.2001718407855604
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.2436794674429623,
+          "z": -1.1152422929883963
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 1.2143006899508058,
+          "z": -1.101990406358163
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.17497799824923277,
+          "expected": 1.3973494277769354,
+          "z": -1.0341112846791625
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.14095599902793765,
+          "expected": 0.8300831425033843,
+          "z": -0.6891271434754467
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 1.1202129968442023,
+          "expected": 1.9699607551490597,
+          "z": -0.6054576852739385
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.4433067983066459,
+          "z": -0.4433067983066459
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.02777799963951111,
+          "expected": 0.31087485099200257,
+          "z": -0.28309685135249146
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.2415030280105235,
+          "z": -0.2415030280105235
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.012821000069379807,
+          "expected": 0.24783368070883333,
+          "z": -0.23501268063945352
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.23083189786337246,
+          "z": -0.23083189786337246
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.19274373439854126,
+          "z": -0.19274373439854126
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.18273599600121312,
+          "z": -0.18273599600121312
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.009523999877274036,
+          "expected": 0.19217511289869307,
+          "z": -0.18265111302141904
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.15728070685800918,
+          "z": -0.15728070685800918
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.13038490991518983,
+          "z": -0.13038490991518983
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.05568699888513268,
+          "z": -0.05568699888513268
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.030165370566946445,
+          "z": -0.030165370566946445
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.016755380195526647,
+          "z": -0.016755380195526647
+        }
+      ]
+    },
+    {
+      "technique": "Conformal field theory",
+      "tech_idx": 57822,
+      "origin": "Physique (31K papers)",
+      "works": 31181,
+      "move": "En 2D, la CFT classifie TOUTES les theories conformes. La turbulence 2D est invariante conforme (Polyakov 1993). En 3D, la turbulence a une invariance conforme APPROCHEE. Les outils de la CFT (operateurs primaires, OPE) pourraient classifier les singularites NS en 3D.",
+      "carmack_score": 2.9291054544498993,
+      "tier": "A",
+      "avg_z": -0.498568545145808,
+      "total_cooc": 0.40270300093106925,
+      "n_deserts": 12,
+      "n_pairs": 20,
+      "desert_ratio": 0.6,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.06792499986477196,
+          "expected": 3.840438344420041,
+          "z": -1.9252573280556289
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0028490000404417515,
+          "expected": 1.6881062839044458,
+          "z": -1.2971451644992014
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.2795911737655332,
+          "z": -1.131235221746711
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.050125000067055225,
+          "expected": 1.197422001263187,
+          "z": -1.0485002653190987
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.065738552743169,
+          "z": -1.0323810930457709
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.14994099969044328,
+          "expected": 1.040563178681371,
+          "z": -0.873119479369944
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.7113180124834942,
+          "z": -0.7113180124834942
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.010989000089466572,
+          "expected": 0.379880152415719,
+          "z": -0.3688911523262524
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.02619000058621168,
+          "expected": 0.2663960630158589,
+          "z": -0.2402060624296472
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.2123745829322844,
+          "z": -0.2123745829322844
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.20694969587638726,
+          "z": -0.20694969587638726
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.19780535033006963,
+          "z": -0.19780535033006963
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.16516669602220949,
+          "z": -0.16516669602220949
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.15659082666438406,
+          "z": -0.15659082666438406
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.13477758320309707,
+          "z": -0.13477758320309707
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.11172993430394129,
+          "z": -0.11172993430394129
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.06810900056734681,
+          "expected": 0.16467943071778757,
+          "z": -0.09657043015044076
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.047719515479717915,
+          "z": -0.047719515479717915
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.014358084303631937,
+          "z": -0.014358084303631937
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.026575000025331974,
+          "expected": 0.025849424399581707,
+          "z": 0.0007255756257502667
+        }
+      ]
+    },
+    {
+      "technique": "Partition function (QFT)",
+      "tech_idx": 29774,
+      "origin": "Physique quantique (23K papers)",
+      "works": 22648,
+      "move": "Z = somme sur tous les etats. Pour NS : Z = integrale fonctionnelle sur tous les champs de vitesse, ponderee par e^(-S[u]/nu) ou S = action de NS. Le free energy F = -nu ln Z donne une BORNE THERMODYNAMIQUE sur l'energie totale du fluide.",
+      "carmack_score": 2.455026084850897,
+      "tier": "A",
+      "avg_z": -0.46138881461717773,
+      "total_cooc": 0.3257179975043982,
+      "n_deserts": 11,
+      "n_pairs": 20,
+      "desert_ratio": 0.55,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.03737399913370609,
+          "expected": 3.415464765600579,
+          "z": -1.828077543335805
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0039530000649392605,
+          "expected": 1.5013045429154668,
+          "z": -1.2221132179493686
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.1379947225867146,
+          "z": -1.066810372603272
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.9478065131614909,
+          "z": -0.9478065131614909
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.12010499835014343,
+          "expected": 1.0649181911256425,
+          "z": -0.9155960994628389
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.10488899983465672,
+          "expected": 0.9254169848427201,
+          "z": -0.8205279850080633
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.6326052890041365,
+          "z": -0.6326052890041365
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.02303900010883808,
+          "expected": 0.3378435374732728,
+          "z": -0.3148045373644347
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.004761999938637018,
+          "expected": 0.2369173217550456,
+          "z": -0.23215532181640858
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.18887372744005723,
+          "z": -0.18887372744005723
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.1759166907291298,
+          "z": -0.1759166907291298
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.01515199989080429,
+          "expected": 0.1840491452087866,
+          "z": -0.1688971453179823
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.14688975062811685,
+          "z": -0.14688975062811685
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0036230001132935286,
+          "expected": 0.14645640491872128,
+          "z": -0.14283340480542775
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.1392628661427549,
+          "z": -0.1392628661427549
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.11986342321881342,
+          "z": -0.11986342321881342
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.09936617116440317,
+          "z": -0.09936617116440317
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.042438989806805716,
+          "z": -0.042438989806805716
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.01276925357018933,
+          "z": -0.01276925357018933
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.012821000069379807,
+          "expected": 0.02298898988343475,
+          "z": -0.010167989814054944
+        }
+      ]
+    },
+    {
+      "technique": "Gauge theory",
+      "tech_idx": 12781,
+      "origin": "Physique (128K papers)",
+      "works": 127752,
+      "move": "NS a une invariance de jauge : ajouter un gradient a la pression ne change rien. C'est une SYMETRIE DE JAUGE au sens de la physique. Les outils de la theorie de jauge (connexion, courbure, Chern-Simons) pourraient classifier les topologies de solutions NS.",
+      "carmack_score": 2.3898907529046953,
+      "tier": "C",
+      "avg_z": -1.3816944371281505,
+      "total_cooc": 3.9355799863114953,
+      "n_deserts": 3,
+      "n_pairs": 20,
+      "desert_ratio": 0.15,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.17784899845719337,
+          "expected": 21.870141061793483,
+          "z": -4.639127719515028
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.37764499452896416,
+          "expected": 9.61325745794925,
+          "z": -2.9789345055121434
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.02926500025205314,
+          "expected": 7.286886798310052,
+          "z": -2.6887405780343157
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.2166629999410361,
+          "expected": 6.81895807966048,
+          "z": -2.528485704223319
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 6.069060454348876,
+          "z": -2.4636766931201777
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.37167099956423044,
+          "expected": 5.92569427251317,
+          "z": -2.281711610478146
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.03657900006510317,
+          "expected": 4.050742097034723,
+          "z": -1.9945567475901949
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.3367649994324893,
+          "expected": 2.1633031895899397,
+          "z": -1.2418945379849256
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.014786999672651291,
+          "expected": 1.2094093616727561,
+          "z": -1.0863170559491646
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 1.1264419648297703,
+          "z": -1.0613701153044308
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.21229199832305312,
+          "expected": 1.5170454395989226,
+          "z": -1.0593572267506097
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.1463820005301386,
+          "expected": 1.1785162618449332,
+          "z": -0.9507820198479413
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.025642000138759613,
+          "expected": 0.9405746471530922,
+          "z": -0.9149326470143326
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.02093400014564395,
+          "expected": 0.8917376510180905,
+          "z": -0.8708036508724466
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.012821000069379807,
+          "expected": 0.767517791530766,
+          "z": -0.7546967914613862
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.022944000083953142,
+          "expected": 0.6362683644179489,
+          "z": -0.6133243643339957
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0030769999139010906,
+          "expected": 0.27174828531180895,
+          "z": -0.26867128539790786
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0030769999139010906,
+          "expected": 0.14720469573646833,
+          "z": -0.14412769582256724
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.08176497080178322,
+          "z": -0.08176497080178322
+        },
+        {
+          "target": "Helicity",
+          "cooc": 1.927186995279044,
+          "expected": 0.9377998178272399,
+          "z": 0.989387177451804
+        }
+      ]
+    },
+    {
+      "technique": "Electrical network",
+      "tech_idx": 15129,
+      "origin": "Electrotechnique (85K papers)",
+      "works": 84657,
+      "move": "Kirchhoff (conservation courant = conservation masse). Rayleigh monotonicity : couper un fil augmente la resistance. Sur NS : retirer une direction d'ecoulement augmente la dissipation. Thomson energy = borne variationnelle sur l'energie du fluide.",
+      "carmack_score": 2.291313495036738,
+      "tier": "A",
+      "avg_z": -0.3734236189582033,
+      "total_cooc": 0.46387399663217366,
+      "n_deserts": 13,
+      "n_pairs": 20,
+      "desert_ratio": 0.65,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.014285999815911055,
+          "expected": 2.7014490255426145,
+          "z": -1.6350969280937577
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.03304099943488836,
+          "expected": 1.187451188297804,
+          "z": -1.0594342437320479
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.006535999942570925,
+          "expected": 0.9000926507476185,
+          "z": -0.8935566508050475
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.7496640009790353,
+          "z": -0.7496640009790353
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.20979399979114532,
+          "expected": 0.8422930427136487,
+          "z": -0.6324990429225034
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.1527559980750084,
+          "expected": 0.7319550876656031,
+          "z": -0.5791990895905947
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.037301999516785145,
+          "expected": 0.5003567768420016,
+          "z": -0.4630547773252165
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.267216076794327,
+          "z": -0.267216076794327
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.18738886561952048,
+          "z": -0.18738886561952048
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.14938896518050424,
+          "z": -0.14938896518050424
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.14557297998909371,
+          "z": -0.14557297998909371
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.13914064566944062,
+          "z": -0.13914064566944062
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.11618189644147815,
+          "z": -0.11618189644147815
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.11583914328057301,
+          "z": -0.11583914328057301
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.010159000055864453,
+          "expected": 0.11014944080954772,
+          "z": -0.09999044075368327
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.09480552430636106,
+          "z": -0.09480552430636106
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.07859329979554806,
+          "z": -0.07859329979554806
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.03356695955797648,
+          "z": -0.03356695955797648
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.018183055186017552,
+          "z": -0.018183055186017552
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.010099793141338055,
+          "z": -0.010099793141338055
+        }
+      ]
+    },
+    {
+      "technique": "RLC circuit",
+      "tech_idx": 63454,
+      "origin": "Electrotechnique (11.7K papers)",
+      "works": 11744,
+      "move": "Un RLC est un oscillateur amorti : L(d2q/dt2) + R(dq/dt) + q/C = V(t). NS linearise autour d'un ecoulement de base a EXACTEMENT cette forme. La viscosite = R (resistance), l'inertie = L (inductance), la compressibilite = 1/C (capacitance). Les criteres de stabilite des circuits (Routh-Hurwitz) s'appliquent directement.",
+      "carmack_score": 2.2646648241253744,
+      "tier": "S",
+      "avg_z": -0.3059138456022103,
+      "total_cooc": 0.6733230000827461,
+      "n_deserts": 16,
+      "n_pairs": 20,
+      "desert_ratio": 0.8,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 2.242331536145944,
+          "z": -1.4976060216747993
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.022944000083953142,
+          "expected": 0.9856411214789881,
+          "z": -0.9626971213950349
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.7471198298176972,
+          "z": -0.7471198298176972
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.6222568758523916,
+          "z": -0.6222568758523916
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.042646999936550856,
+          "expected": 0.6075576331799863,
+          "z": -0.5649106332434355
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.4153199891720335,
+          "z": -0.4153199891720335
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.221802088544226,
+          "z": -0.221802088544226
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.15554169592997083,
+          "z": -0.15554169592997083
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.12399996616969994,
+          "z": -0.12399996616969994
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.11549337218444347,
+          "z": -0.11549337218444347
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.009523999877274036,
+          "expected": 0.12083251645835584,
+          "z": -0.1113085165810818
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.5982080001849681,
+          "expected": 0.6991433984114404,
+          "z": -0.10093539822647224
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.09643651531334776,
+          "z": -0.09643651531334776
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.09615201384226896,
+          "z": -0.09615201384226896
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.09142928942236069,
+          "z": -0.09142928942236069
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.07869310690039923,
+          "z": -0.07869310690039923
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.06523618731837144,
+          "z": -0.06523618731837144
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.027862177400984928,
+          "z": -0.027862177400984928
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.015092803040730943,
+          "z": -0.015092803040730943
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.008383310014455641,
+          "z": -0.008383310014455641
+        }
+      ]
+    },
+    {
+      "technique": "Algebraic topology",
+      "tech_idx": 60802,
+      "origin": "Mathematiques (8.5K papers)",
+      "works": 8500,
+      "move": "Les invariants topologiques (nombres de Betti, homologie) caractrisent les 'trous' dans un espace. Le champ de vitesse NS a une topologie (lignes de courant, surfaces de vorticite). Si cette topologie change >> singularite. Critere topologique pour le blow-up : reconnexion de lignes de vorticite.",
+      "carmack_score": 2.2286397497075243,
+      "tier": "A",
+      "avg_z": -0.3214953515268427,
+      "total_cooc": 0.29940599808469415,
+      "n_deserts": 15,
+      "n_pairs": 20,
+      "desert_ratio": 0.75,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.009523999877274036,
+          "expected": 2.2180657380627715,
+          "z": -1.483085054938463
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.01605999981984496,
+          "expected": 0.9749748270213051,
+          "z": -0.9589148272014602
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.7390347368499325,
+          "z": -0.7390347368499325
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.6155230100248374,
+          "z": -0.6155230100248374
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.015686000231653452,
+          "expected": 0.6009828378774257,
+          "z": -0.5852968376457722
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.25480299815535545,
+          "expected": 0.6915774911120253,
+          "z": -0.4367744929566698
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.4108255284579519,
+          "z": -0.4108255284579519
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.003333000000566244,
+          "expected": 0.21940181694821972,
+          "z": -0.21606881694765348
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.15385847321017704,
+          "z": -0.15385847321017704
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.12265807800869859,
+          "z": -0.12265807800869859
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.11952490542983694,
+          "z": -0.11952490542983694
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.11424353967564803,
+          "z": -0.11424353967564803
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.09539291004324546,
+          "z": -0.09539291004324546
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.09511148735652135,
+          "z": -0.09511148735652135
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.09043987075690131,
+          "z": -0.09043987075690131
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.0778415151478858,
+          "z": -0.0778415151478858
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.06453022206583592,
+          "z": -0.06453022206583592
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.027560661786513438,
+          "z": -0.027560661786513438
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.014929473530713456,
+          "z": -0.014929473530713456
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.008292588502136787,
+          "z": -0.008292588502136787
+        }
+      ]
+    },
+    {
+      "technique": "Path integral formulation",
+      "tech_idx": 8426,
+      "origin": "Physique quantique (22.7K papers)",
+      "works": 22738,
+      "move": "L'integrale de chemin de Feynman = somme sur toutes les histoires. Pour NS : integrer sur tous les champs de vitesse possibles avec poids e^(-Action/nu). Le blow-up = une histoire de mesure nulle ? Ou de mesure non-nulle ? La reponse donne la regularite.",
+      "carmack_score": 1.9809264699230877,
+      "tier": "B",
+      "avg_z": -0.44739209049898887,
+      "total_cooc": 1.9310649952385575,
+      "n_deserts": 9,
+      "n_pairs": 20,
+      "desert_ratio": 0.45,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.2031889990903437,
+          "expected": 4.027907740230749,
+          "z": -1.9059356425514467
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.03603900037705898,
+          "expected": 1.770510487989023,
+          "z": -1.303587719845526
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.3420538831536628,
+          "z": -1.1585168730679878
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.1177621356409988,
+          "z": -1.0572787098010772
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.07084499998018146,
+          "expected": 0.7460407045489209,
+          "z": -0.6751957045687395
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.5186439976096153,
+          "expected": 1.091357836195844,
+          "z": -0.5482372950462172
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.047946000238880515,
+          "expected": 0.3984238435954843,
+          "z": -0.35047784335660376
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.8800019980408251,
+          "expected": 1.255873656771058,
+          "z": -0.3354153966590089
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.222741559609755,
+          "z": -0.222741559609755
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.21705185895512166,
+          "z": -0.21705185895512166
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.07005099998787045,
+          "expected": 0.27940007570948694,
+          "z": -0.20934907572161648
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.20746113599536548,
+          "z": -0.20746113599536548
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.17322923939211493,
+          "z": -0.17322923939211493
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.025055000092834234,
+          "expected": 0.1727181884351119,
+          "z": -0.14766318834227768
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.1413566947070282,
+          "z": -0.1413566947070282
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.05012299958616495,
+          "expected": 0.16423474254886222,
+          "z": -0.11411174296269727
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.018182000145316124,
+          "expected": 0.11718398444078656,
+          "z": -0.09900198429547044
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.05004892372249323,
+          "z": -0.05004892372249323
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.010989000089466572,
+          "expected": 0.02711125326900884,
+          "z": -0.01612225317954227
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.015058968199688228,
+          "z": -0.015058968199688228
+        }
+      ]
+    },
+    {
+      "technique": "Symplectic geometry",
+      "tech_idx": 10725,
+      "origin": "Mathematiques (27K papers)",
+      "works": 27266,
+      "move": "NS est un systeme hamiltonien dissipation. En 2D, la structure symplectique de l'espace des phases est preservee. En 3D, la dissipation brise la symplectite. La MESURE de cette brisure = la 'distance a la regularite'. Borner la brisure symplectique >> borner le blow-up.",
+      "carmack_score": 1.9158473640508313,
+      "tier": "B",
+      "avg_z": -0.6162780605626748,
+      "total_cooc": 3.073058987269178,
+      "n_deserts": 6,
+      "n_pairs": 20,
+      "desert_ratio": 0.3,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.009523999877274036,
+          "expected": 6.796141395896078,
+          "z": -2.6035859502218406
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.04563499987125397,
+          "expected": 2.987317584042043,
+          "z": -1.7020751468731197
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 2.2643984269364568,
+          "z": -1.5048564716356987
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 1.8859591655790546,
+          "z": -1.3733530738774327
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.49483400024473667,
+          "expected": 2.1189896832910615,
+          "z": -1.115785967388444
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.018119999673217535,
+          "expected": 1.258767191851802,
+          "z": -1.1058274013834621
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.08727399888448417,
+          "expected": 0.672245977614218,
+          "z": -0.5849719787297338
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.37582368601213023,
+          "z": -0.37582368601213023
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.3500415861801635,
+          "z": -0.3500415861801635
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 1.4430839950218797,
+          "expected": 1.8414081569507956,
+          "z": -0.293546816827636
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.009523999877274036,
+          "expected": 0.29228335918759146,
+          "z": -0.2827593593103174
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.012821000069379807,
+          "expected": 0.2771072736677716,
+          "z": -0.2642862735983918
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.014786999672651291,
+          "expected": 0.23850598038535095,
+          "z": -0.22371898071269966
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.2904289970174432,
+          "expected": 0.47142152775251067,
+          "z": -0.1809925307350675
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.12734800018370152,
+          "expected": 0.29142108160123803,
+          "z": -0.16407308141753651
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.05384700000286102,
+          "expected": 0.19772025055083506,
+          "z": -0.14387325054797404
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.08444571829020982,
+          "z": -0.08444571829020982
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.04574382595604797,
+          "z": -0.04574382595604797
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.040686999913305044,
+          "expected": 0.025408446211213576,
+          "z": 0.015278553702091469
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.4251449969597161,
+          "expected": 0.36622366221739566,
+          "z": 0.05892133474232042
+        }
+      ]
+    },
+    {
+      "technique": "Fitness landscape",
+      "tech_idx": 63747,
+      "origin": "Biologie evolutive (11K papers)",
+      "works": 11054,
+      "move": "Le paysage de fitness a des pics, vallees, cols. L'espace des solutions NS a la MEME topologie. La question 'le blow-up existe-t-il ?' = 'y a-t-il un pic infini dans le paysage ?' Les outils de fitness landscapes (NK model, epistasie) pourraient cartographier le paysage NS.",
+      "carmack_score": 1.8018803360031173,
+      "tier": "A",
+      "avg_z": -0.2073236639499607,
+      "total_cooc": 0.0,
+      "n_deserts": 20,
+      "n_pairs": 20,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 1.277497635369874,
+          "z": -1.130387313255117
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 0.5615379268031507,
+          "z": -0.5615379268031507
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.42564794747993495,
+          "z": -0.42564794747993495
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.3983148895948725,
+          "z": -0.3983148895948725
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.35451121954088083,
+          "z": -0.35451121954088083
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 0.3461367898666672,
+          "z": -0.3461367898666672
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.23661545830151573,
+          "z": -0.23661545830151573
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.12636474092602953,
+          "z": -0.12636474092602953
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.08861497309781617,
+          "z": -0.08861497309781617
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.07064506787430999,
+          "z": -0.07064506787430999
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.0688405133509633,
+          "z": -0.0688405133509633
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.06579870437897474,
+          "z": -0.06579870437897474
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.05494166152069583,
+          "z": -0.05494166152069583
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.054779575785065884,
+          "z": -0.054779575785065884
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.052088952573608856,
+          "z": -0.052088952573608856
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.04483291447524181,
+          "z": -0.04483291447524181
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.03716625917994558,
+          "z": -0.03716625917994558
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.015873596376025603,
+          "z": -0.015873596376025603
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.008598648275168395,
+          "z": -0.008598648275168395
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.004776126343228942,
+          "z": -0.004776126343228942
+        }
+      ]
+    },
+    {
+      "technique": "Morse theory",
+      "tech_idx": 7450,
+      "origin": "Mathematiques (11K papers)",
+      "works": 11000,
+      "move": "Morse classifie les points critiques d'une fonction par leur index. L'energie NS : E(u) = ||u||^2. Les points critiques de E = les solutions stationnaires. L'index de Morse = nombre de directions instables. Si l'index est borne >> regularite.",
+      "carmack_score": 1.3388855780618933,
+      "tier": "B",
+      "avg_z": -0.15950276951524417,
+      "total_cooc": 0.0,
+      "n_deserts": 20,
+      "n_pairs": 20,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 0.9491577657311888,
+          "z": -0.9491577657311888
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 0.41721257967220143,
+          "z": -0.41721257967220143
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.31624876918159567,
+          "z": -0.31624876918159567
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.295940798791282,
+          "z": -0.295940798791282
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.2633954598034448,
+          "z": -0.2633954598034448
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 0.2571734091798065,
+          "z": -0.2571734091798065
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.17580102970124384,
+          "z": -0.17580102970124384
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.09388672968449328,
+          "z": -0.09388672968449328
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.0658393311636153,
+          "z": -0.0658393311636153
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.052488014793150135,
+          "z": -0.052488014793150135
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.0511472632394113,
+          "z": -0.0511472632394113
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.048887253883857514,
+          "z": -0.048887253883857514
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.04082066631727611,
+          "z": -0.04082066631727611
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.040700239531012136,
+          "z": -0.040700239531012136
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.03870115487903028,
+          "z": -0.03870115487903028
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.03331004908061335,
+          "z": -0.03331004908061335
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.027613862090327696,
+          "z": -0.027613862090327696
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.011793796601451195,
+          "z": -0.011793796601451195
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.006388641011303464,
+          "z": -0.006388641011303464
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.003548575968578236,
+          "z": -0.003548575968578236
+        }
+      ]
+    },
+    {
+      "technique": "Lyapunov function",
+      "tech_idx": 58937,
+      "origin": "Controle (56K papers)",
+      "works": 55996,
+      "move": "Une fonction de Lyapunov V(u) telle que dV/dt <= 0 prouve la stabilite. Pour NS : trouver V tel que V(u(t)) decroit le long des solutions. V = energie marche en 2D. En 3D, il faut une V plus subtile. Les controleurs savent construire des V non-triviales.",
+      "carmack_score": 1.2645896322894579,
+      "tier": "C",
+      "avg_z": -1.117153001589541,
+      "total_cooc": 8.879711964400485,
+      "n_deserts": 2,
+      "n_pairs": 20,
+      "desert_ratio": 0.1,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.6030539923813194,
+          "expected": 17.701792330886672,
+          "z": -4.064528842459773
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.20330499857664108,
+          "expected": 7.781014610886556,
+          "z": -2.716742454973316
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.20512999780476093,
+          "expected": 5.898039545236759,
+          "z": -2.3442509968598753
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.08347799954935908,
+          "expected": 4.912325325334246,
+          "z": -2.1788181440211254
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 1.1227189942728728,
+          "expected": 5.5192958974574085,
+          "z": -1.8715244416247907
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.07275200029835105,
+          "expected": 3.2786892039281974,
+          "z": -1.770604858434536
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.2189099993556738,
+          "expected": 1.7509875086157998,
+          "z": -1.1578490786084727
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.9789014758922501,
+          "z": -0.9789014758922501
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.9117472849339426,
+          "z": -0.9117472849339426
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.16373700043186545,
+          "expected": 0.9538964594150208,
+          "z": -0.7901594589831553
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.41044900100678205,
+          "expected": 1.2279035262014255,
+          "z": -0.7377221821075666
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.03603900037705898,
+          "expected": 0.7590594672533764,
+          "z": -0.7230204668763174
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.07239800039678812,
+          "expected": 0.7613054268171994,
+          "z": -0.6889074264204113
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.05044800043106079,
+          "expected": 0.621232415353439,
+          "z": -0.5707844149223782
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.004329000134021044,
+          "expected": 0.5149985279846115,
+          "z": -0.5106695278505905
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.016876999754458666,
+          "expected": 0.21995430661706478,
+          "z": -0.2030773068626061
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.6500479974783957,
+          "expected": 0.7217765384939148,
+          "z": -0.07172854101551907
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.04867999907582998,
+          "expected": 0.1191481548608096,
+          "z": -0.07046815578497961
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.05399499973282218,
+          "expected": 0.0661809418139841,
+          "z": -0.012185942081161916
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 4.863363983342424,
+          "expected": 4.796284081203392,
+          "z": 0.030630968921948172
+        }
+      ]
+    },
+    {
+      "technique": "Martingale",
+      "tech_idx": 56120,
+      "origin": "Probabilites (12.9K papers)",
+      "works": 12901,
+      "move": "Une martingale = processus sans drift (fair game). L'enstrophie de NS 3D : si c'est une sous-martingale (croissance en moyenne), blow-up possible. Si c'est une supermartingale >> l'enstrophie decroit >> pas de blow-up. Reinterpretation PROBABILISTE du probleme.",
+      "carmack_score": 0.985079689970894,
+      "tier": "B",
+      "avg_z": -0.29296587957423287,
+      "total_cooc": 3.2497059837915003,
+      "n_deserts": 7,
+      "n_pairs": 20,
+      "desert_ratio": 0.35,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.06269799964502454,
+          "expected": 3.1925630097569195,
+          "z": -1.7518784477350078
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.05122299958020449,
+          "expected": 1.4033256610829454,
+          "z": -1.1414381879181976
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 1.0637263464757427,
+          "z": -1.0314114808665673
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.10188699932768941,
+          "expected": 0.9954189718619885,
+          "z": -0.8935319725342991
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.8859502943207724,
+          "z": -0.8859502943207724
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.5913198888163783,
+          "z": -0.5854718889903047
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.07611799985170364,
+          "expected": 0.3157950249365072,
+          "z": -0.23967702508480354
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.17654735654519527,
+          "z": -0.17654735654519527
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.16443592839169902,
+          "z": -0.16443592839169902
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.13689829436822568,
+          "z": -0.13689829436822568
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.09288128680925381,
+          "z": -0.09288128680925381
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.05041499901562929,
+          "expected": 0.11204083703200875,
+          "z": -0.061625838016379456
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.02148867102150421,
+          "z": -0.02148867102150421
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.009523999877274036,
+          "expected": 0.011935900209242676,
+          "z": -0.00241190033196864
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.16785099916160107,
+          "expected": 0.1301742238883582,
+          "z": 0.03767677527324287
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.2185939997434616,
+          "expected": 0.17203763859283436,
+          "z": 0.04655636115062725
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.33883199701085687,
+          "expected": 0.13730335885496467,
+          "z": 0.2015286381558922
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.4914529975503683,
+          "expected": 0.22145550597499294,
+          "z": 0.26999749157537534
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 1.2395759946666658,
+          "expected": 0.8650219625059239,
+          "z": 0.3745540321607419
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.43568699853494763,
+          "expected": 0.03966931540130654,
+          "z": 0.3960176831336411
+        }
+      ]
+    },
+    {
+      "technique": "Ergodic theory",
+      "tech_idx": 3508,
+      "origin": "Mathematiques (24K papers)",
+      "works": 23752,
+      "move": "Un systeme ergodique visite tous les etats en temps fini. Les solutions NS sont-elles ergodiques ? Si oui, la moyenne temporelle = moyenne sur l'espace des solutions. Birkhoff >> l'enstrophie moyennee est finie >> regularite en moyenne.",
+      "carmack_score": 0.9292696638563617,
+      "tier": "C",
+      "avg_z": -0.5992923539529514,
+      "total_cooc": 3.478435982018709,
+      "n_deserts": 3,
+      "n_pairs": 20,
+      "desert_ratio": 0.15,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.692884000018239,
+          "expected": 6.627998741921526,
+          "z": -2.3056192519847563
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.35728899808600545,
+          "expected": 2.9134086587290717,
+          "z": -1.497628233577503
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.03642599983140826,
+          "expected": 2.208375172124423,
+          "z": -1.4616110261699888
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.027972999960184097,
+          "expected": 1.8392988386500735,
+          "z": -1.3356307775855958
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.3279009978286922,
+          "expected": 2.0665639716499813,
+          "z": -1.209507489163717
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.01130599994212389,
+          "expected": 1.2276241587621926,
+          "z": -1.097807409780419
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.6518849958665669,
+          "expected": 1.7958500620666806,
+          "z": -0.8536766522090614
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.018182000145316124,
+          "expected": 0.6556140071746347,
+          "z": -0.6374320070293186
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.36652546981687306,
+          "z": -0.36652546981687306
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.3413812423360322,
+          "z": -0.3413812423360322
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.13299000030383468,
+          "expected": 0.357162959249871,
+          "z": -0.22417295894603634
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.05259299976751208,
+          "expected": 0.2326051277993509,
+          "z": -0.18001212803183883
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.13291799975559115,
+          "expected": 0.2850520058558206,
+          "z": -0.15213400610022942
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.052591000217944384,
+          "expected": 0.19282847362397382,
+          "z": -0.14023747340602943
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.14624199969694018,
+          "expected": 0.2842110617929162,
+          "z": -0.13796906209597604
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.08235645522710207,
+          "z": -0.08235645522710207
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.20852799899876118,
+          "expected": 0.27025139034870355,
+          "z": -0.06172339134994237
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.004329000134021044,
+          "expected": 0.04461208253707724,
+          "z": -0.0402830824030562
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.024779818386915665,
+          "z": -0.018931818560842018
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.6185509916394949,
+          "expected": 0.4597581349242051,
+          "z": 0.1587928567152898
+        }
+      ]
+    },
+    {
+      "technique": "Controllability",
+      "tech_idx": 56079,
+      "origin": "Controle (36K papers)",
+      "works": 35949,
+      "move": "Un systeme est controlable si on peut l'amener de tout etat a tout autre etat. NS est-il controlable en 3D ? Si oui, on peut FORCER la solution vers la regularite. Coron et al. ont montre la controlabilite de NS 2D. 3D = ouvert.",
+      "carmack_score": 0.8415744168001389,
+      "tier": "C",
+      "avg_z": -0.3962275048322609,
+      "total_cooc": 11.44971695332788,
+      "n_deserts": 4,
+      "n_pairs": 20,
+      "desert_ratio": 0.2,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.2006859986577183,
+          "expected": 8.791090636539233,
+          "z": -2.897629901308401
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.33955999836325645,
+          "expected": 3.8642191372444756,
+          "z": -1.793125905966843
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.2502760011702776,
+          "expected": 2.9290932381801276,
+          "z": -1.5652945053589498
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.14160400023683906,
+          "expected": 2.4395663650301866,
+          "z": -1.4713079124342747
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.3840289982035756,
+          "expected": 2.7410010002075795,
+          "z": -1.4236997310342658
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.20726499892771244,
+          "expected": 1.6282675461333755,
+          "z": -1.1136395515876067
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.033334000036120415,
+          "expected": 0.8695780406841145,
+          "z": -0.8362440406479941
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.4861435180094978,
+          "z": -0.4861435180094978
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.37696525020827487,
+          "z": -0.37696525020827487
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.09047699812799692,
+          "expected": 0.45279330305370113,
+          "z": -0.3623163049257042
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.16369999991729856,
+          "expected": 0.47372548925226693,
+          "z": -0.3100254893349684
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0416209998074919,
+          "expected": 0.30851737313623284,
+          "z": -0.26689637332874094
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.05379800032824278,
+          "expected": 0.25575934078141066,
+          "z": -0.20196134045316788
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.008333000354468822,
+          "expected": 0.10923403739145,
+          "z": -0.10090103703698118
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.05917153523093693,
+          "z": -0.05917153523093693
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.03286687850716195,
+          "z": -0.03286687850716195
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.5048139989376068,
+          "expected": 0.37808064201281655,
+          "z": 0.12673335692479026
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 1.2337499964050949,
+          "expected": 0.6098032894063538,
+          "z": 0.6239467069987411
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 3.6122789790388197,
+          "expected": 2.381937788462199,
+          "z": 0.7972178762425444
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 4.184190984815359,
+          "expected": 0.35844974625288273,
+          "z": 3.8257412385624763
+        }
+      ]
+    },
+    {
+      "technique": "Lie group",
+      "tech_idx": 13717,
+      "origin": "Mathematiques (46.5K papers)",
+      "works": 46561,
+      "move": "NS a des symetries (Galileen, scaling, rotation). Chaque symetrie = un generateur de Lie. Le groupe de symetrie COMPLET de NS n'est pas totalement classifie. Les symetries cachees de NS pourraient reveler des lois de conservation cachees >> bornes.",
+      "carmack_score": 0.7760388539562196,
+      "tier": "C",
+      "avg_z": -0.4973323658188763,
+      "total_cooc": 6.5705609620781615,
+      "n_deserts": 3,
+      "n_pairs": 20,
+      "desert_ratio": 0.15,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.19006599998101592,
+          "expected": 7.075090703064588,
+          "z": -2.588745644500671
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.055750999599695206,
+          "expected": 3.1099327743122216,
+          "z": -1.7319810155855686
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.040794000029563904,
+          "expected": 2.357341221318107,
+          "z": -1.5088592106810395
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.04101000027731061,
+          "expected": 2.205964139768409,
+          "z": -1.4576970178566084
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.07746199937537313,
+          "expected": 1.9633688267294336,
+          "z": -1.3459702987236397
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.15133199957199395,
+          "expected": 1.31043360306943,
+          "z": -1.0125719252518781
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.04203099990263581,
+          "expected": 0.6998384802975114,
+          "z": -0.6578074803948756
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.3912494623054112,
+          "z": -0.3912494623054112
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0073529998771846294,
+          "expected": 0.3644091297989714,
+          "z": -0.35705612992178676
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.030554999597370625,
+          "expected": 0.30338253208784094,
+          "z": -0.2728275324904703
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.05277699884027243,
+          "expected": 0.30428020207133394,
+          "z": -0.2515032032310615
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.03980499925091863,
+          "expected": 0.28848121036185764,
+          "z": -0.24867621111093902
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.02798300003632903,
+          "expected": 0.24829551743415565,
+          "z": -0.22031251739782662
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.09768799808807671,
+          "expected": 0.20583572721493815,
+          "z": -0.10814772912686144
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.012821000069379807,
+          "expected": 0.08791181371674492,
+          "z": -0.07509081364736511
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.04762139262430209,
+          "z": -0.04762139262430209
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.026451342180259532,
+          "z": -0.026451342180259532
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.7407169947400689,
+          "expected": 0.38125540315585615,
+          "z": 0.35946159158421276
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 1.03549899533391,
+          "expected": 0.49077114114199855,
+          "z": 0.5447278541919114
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 3.9269169775070623,
+          "expected": 1.9169892109156301,
+          "z": 1.451732164876914
+        }
+      ]
+    },
+    {
+      "technique": "Wiener process",
+      "tech_idx": 58888,
+      "origin": "Probabilites (10.3K papers)",
+      "works": 10350,
+      "move": "Le processus de Wiener = mouvement Brownien. Les trajectoires sont continues mais nulle part derivables. Les solutions de NS 3D sont-elles dans l'espace de Wiener ? Si oui, les theoremes de regularite de Wiener s'appliquent.",
+      "carmack_score": 0.6170440348827853,
+      "tier": "B",
+      "avg_z": -0.12106098534698109,
+      "total_cooc": 1.0821999968029559,
+      "n_deserts": 12,
+      "n_pairs": 20,
+      "desert_ratio": 0.6,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 1.0498715648551544,
+          "z": -1.0247435755659278
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.46148242127090333,
+          "z": -0.4556344214448297
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.349805482472584,
+          "z": -0.349805482472584
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.3273426618304474,
+          "z": -0.3273426618304474
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.2913439825744438,
+          "z": -0.2913439825744438
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.19445503036411335,
+          "z": -0.19445503036411335
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.031110999640077353,
+          "expected": 0.10384891887499721,
+          "z": -0.07273791923491986
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.05805744441712919,
+          "z": -0.05805744441712919
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.05407461181859262,
+          "z": -0.05407461181859262
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.010989000089466572,
+          "expected": 0.05657442759671535,
+          "z": -0.045585427507248776
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.04501888485681411,
+          "z": -0.04501888485681411
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.03684453166405399,
+          "z": -0.03684453166405399
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.03054393026235568,
+          "z": -0.03054393026235568
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.007066530747570732,
+          "z": -0.007066530747570732
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.003925110386963573,
+          "z": -0.003925110386963573
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.10192499775439501,
+          "expected": 0.04515208996044409,
+          "z": 0.056772907793950916
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0726340003311634,
+          "expected": 0.013045219815496582,
+          "z": 0.05958878051566682
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.10806399979628623,
+          "expected": 0.04280768013655634,
+          "z": 0.06525631965972989
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.22197700012475252,
+          "expected": 0.07282545023957358,
+          "z": 0.14915154988517892
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.5296519992407411,
+          "expected": 0.2844617188868946,
+          "z": 0.24519028035384655
+        }
+      ]
+    },
+    {
+      "technique": "Lyapunov exponent",
+      "tech_idx": 14299,
+      "origin": "Dynamique (27.7K papers)",
+      "works": 27752,
+      "move": "Les exposants de Lyapunov mesurent la sensibilite aux conditions initiales. Pour NS : le plus grand exposant Lambda_1 controle la separation des trajectoires. Si Lambda_1 < infini >> pas de blow-up en temps fini. Borner Lambda_1 = regularite.",
+      "carmack_score": 0.44319040664818365,
+      "tier": "C",
+      "avg_z": -0.43533695697871505,
+      "total_cooc": 6.934691968606785,
+      "n_deserts": 2,
+      "n_pairs": 20,
+      "desert_ratio": 0.1,
+      "pairs": [
+        {
+          "target": "Viscosity",
+          "cooc": 0.14426799956709146,
+          "expected": 2.490060599944044,
+          "z": -1.4866466375041432
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.07388099981471896,
+          "expected": 1.5720299162024602,
+          "z": -1.1949235571090353
+        },
+        {
+          "target": "Turbulence",
+          "cooc": 3.1504539863672107,
+          "expected": 5.6648827737531136,
+          "z": -1.0565574420706254
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.6570469979196787,
+          "expected": 1.7662711022882396,
+          "z": -0.8346564572625366
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.521391998976469,
+          "expected": 1.534894690987171,
+          "z": -0.8180895604872331
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.819102996494621,
+          "expected": 1.8874756857489805,
+          "z": -0.7776787522593052
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.33502299804240465,
+          "expected": 1.0492378198006362,
+          "z": -0.6972734496273056
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.31326557245323544,
+          "z": -0.31326557245323544
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.29177505824800026,
+          "z": -0.29177505824800026
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.08051499957218766,
+          "expected": 0.305263530374586,
+          "z": -0.22474853080239832
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.04186700005084276,
+          "expected": 0.2429122893276245,
+          "z": -0.20104528927678172
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.033390999771654606,
+          "expected": 0.23098110083909928,
+          "z": -0.19759010106744468
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.23908500093966722,
+          "expected": 0.3929505783023013,
+          "z": -0.15386557736263407
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.02855899976566434,
+          "expected": 0.16480852532643545,
+          "z": -0.1362495255607711
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.4577649957500398,
+          "expected": 0.5603465902888989,
+          "z": -0.10258159453885907
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.1014889981597662,
+          "expected": 0.19880522505578735,
+          "z": -0.09731622689602115
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.1552969985641539,
+          "expected": 0.24363103562211397,
+          "z": -0.08833403705796006
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.004761999938637018,
+          "expected": 0.07038922044033541,
+          "z": -0.06562722050169839
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0073529998771846294,
+          "expected": 0.021179057477623043,
+          "z": -0.013826057600438414
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.08344099903479218,
+          "expected": 0.038129490922666376,
+          "z": 0.04531150811212581
+        }
+      ]
+    },
+    {
+      "technique": "Optimal control",
+      "tech_idx": 63699,
+      "origin": "Controle (201K papers)",
+      "works": 201380,
+      "move": "La regularite de NS = un probleme de controle optimal : quel 'controle' (conditions initiales) minimise la norme de la solution ? Si le cout optimal est fini >> regularite. Le Pontryagin maximum principle s'applique directement.",
+      "carmack_score": 0.4219776954003548,
+      "tier": "C",
+      "avg_z": -0.7342549021945057,
+      "total_cooc": 26.41502691898495,
+      "n_deserts": 1,
+      "n_pairs": 20,
+      "desert_ratio": 0.05,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.6708940020762384,
+          "expected": 21.07216136553622,
+          "z": -4.4448685050560695
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 1.540622997097671,
+          "expected": 9.262496836668277,
+          "z": -2.5373994397984445
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.3038280005566776,
+          "expected": 7.021008873812583,
+          "z": -2.5352015708978977
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.7979109974112362,
+          "expected": 6.570153552893872,
+          "z": -2.252065555442158
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.41676699789240956,
+          "expected": 5.847617574568424,
+          "z": -2.2459546837908646
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.35374399763531983,
+          "expected": 3.9029419553220936,
+          "z": -1.7966045280631224
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.1893609999679029,
+          "expected": 2.0843703643619813,
+          "z": -1.312617543250574
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.004761999938637018,
+          "expected": 1.1652814288738091,
+          "z": -1.0751009805517193
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.01307199988514185,
+          "expected": 1.0853412780803553,
+          "z": -1.029278214840763
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.9035821503844251,
+          "z": -0.9035821503844251
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.4291579993441701,
+          "expected": 1.1355155310309846,
+          "z": -0.6628881110454471
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.19385900115594268,
+          "expected": 0.7395132344304133,
+          "z": -0.5456542332744706
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.17214999860152602,
+          "expected": 0.6130527283257186,
+          "z": -0.44090272972419253
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 1.1605659960769117,
+          "expected": 1.4616927349373854,
+          "z": -0.24907732189525772
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.018182000145316124,
+          "expected": 0.14183361202651273,
+          "z": -0.12365161188119661
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.18466500053182244,
+          "expected": 0.26183295767131287,
+          "z": -0.07716795713949043
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.200377999804914,
+          "expected": 0.07878159788340387,
+          "z": 0.12159640192151012
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 1.5756629947572947,
+          "expected": 0.9062557340230022,
+          "z": 0.6694072607342925
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 4.113534979056567,
+          "expected": 0.8592006619840461,
+          "z": 3.2543343170725207
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 14.07590895704925,
+          "expected": 5.70948241990861,
+          "z": 3.5015791134176557
+        }
+      ]
+    },
+    {
+      "technique": "Renormalization group",
+      "tech_idx": 60204,
+      "origin": "Physique QFT (62K papers)",
+      "works": 61870,
+      "move": "La renormalisation elimine les degres de liberte a chaque echelle. Pour la turbulence : chaque echelle de Kolmogorov est un 'shell'. Renormaliser = integrer les petites echelles pour obtenir une viscosite effective. Si la viscosite renormalisee reste finie >> pas de blow-up.",
+      "carmack_score": 0.4033776639154315,
+      "tier": "C",
+      "avg_z": -0.756250039244706,
+      "total_cooc": 5.729371966794133,
+      "n_deserts": 1,
+      "n_pairs": 20,
+      "desert_ratio": 0.05,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 2.966344979358837,
+          "expected": 9.223365428941243,
+          "z": -2.060505306629638
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.5799199966713786,
+          "expected": 4.054230205769394,
+          "z": -1.7255959912736099
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.02777799963951111,
+          "expected": 2.5595245235334296,
+          "z": -1.5825511312356537
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.33427299722097814,
+          "expected": 3.0731223721988044,
+          "z": -1.562420735591472
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.5800649989396334,
+          "expected": 2.8757812780281338,
+          "z": -1.3538141925840204
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.46196499769575894,
+          "expected": 2.4990622392945405,
+          "z": -1.2886651820798216
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.07540499931201339,
+          "expected": 1.7083325852258198,
+          "z": -1.2493772273556578
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.08159000054001808,
+          "expected": 0.9123368612395184,
+          "z": -0.8307468606995003
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.010989000089466572,
+          "expected": 0.6397884870607333,
+          "z": -0.6287994869712668
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.010024999734014273,
+          "expected": 0.5100481274616723,
+          "z": -0.500023127727658
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.034199999645352364,
+          "expected": 0.4970194804063246,
+          "z": -0.46281948076097223
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.020512999966740608,
+          "expected": 0.37607540796588906,
+          "z": -0.35556240799914846
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.1231039990670979,
+          "expected": 0.4750580184537475,
+          "z": -0.3519540193866496
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.10752699943259358,
+          "expected": 0.39667159253242673,
+          "z": -0.28914459309983315
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0030769999139010906,
+          "expected": 0.26833551824472057,
+          "z": -0.2652585183308195
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0903400001116097,
+          "expected": 0.32368776426729046,
+          "z": -0.23334776415568076
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.16256099962629378,
+          "expected": 0.39550135477296433,
+          "z": -0.23294035514667055
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.11460528457668105,
+          "z": -0.1087572847506074
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.03448300597882439,
+          "z": -0.03448300597882439
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.05384700000286102,
+          "expected": 0.062081113139478526,
+          "z": -0.008234113136617503
+        }
+      ]
+    },
+    {
+      "technique": "Yang-Mills existence and mass gap",
+      "tech_idx": 17884,
+      "origin": "Physique/Math (436 papers)",
+      "works": 436,
+      "move": "Yang-Mills = autre probleme du millenaire Clay. NS et Yang-Mills partagent la MEME structure : champs de vecteurs avec self-interaction. Les techniques de Yang-Mills (lattice QCD, confinement) pourraient s'appliquer a NS. PERSONNE ne fait ce pont.",
+      "carmack_score": 0.39263669001668866,
+      "tier": "B",
+      "avg_z": -0.07067643194193682,
+      "total_cooc": 0.604434001725167,
+      "n_deserts": 14,
+      "n_pairs": 20,
+      "desert_ratio": 0.7,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.10000000149011612,
+          "expected": 0.600417446376562,
+          "z": -0.5004174448864459
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.02777799963951111,
+          "expected": 0.26391999383789033,
+          "z": -0.23614199419837922
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.20005238883071075,
+          "z": -0.20005238883071075
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.18720598946163447,
+          "z": -0.18720598946163447
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.16661848543222438,
+          "z": -0.16661848543222438
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.11120807218205378,
+          "z": -0.11120807218205378
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.059390790994987154,
+          "z": -0.059390790994987154
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.11334099993109703,
+          "expected": 0.1626825457164568,
+          "z": -0.049341545785359764
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.03320282564743163,
+          "z": -0.03320282564743163
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.030925059244177742,
+          "z": -0.030925059244177742
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.025822303851380995,
+          "z": -0.025822303851380995
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.02448154503207436,
+          "z": -0.02448154503207436
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.021071243717057674,
+          "z": -0.021071243717057674
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.017467954390171094,
+          "z": -0.017467954390171094
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.0074605102483388105,
+          "z": -0.0074605102483388105
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.004041321327512327,
+          "z": -0.004041321327512327
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.00224475529596035,
+          "z": -0.00224475529596035
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.07770600076764822,
+          "expected": 0.04164859048268516,
+          "z": 0.03605741028496306
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.071429000236094,
+          "expected": 0.03235469412158235,
+          "z": 0.039074306114511646
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.21417999966070056,
+          "expected": 0.025746124373011298,
+          "z": 0.18843387528768926
+        }
+      ]
+    },
+    {
+      "technique": "Kolmogorov complexity",
+      "tech_idx": 34208,
+      "origin": "Theorie de l'information (2K papers)",
+      "works": 1974,
+      "move": "K(x) = longueur du plus court programme qui produit x. Si K(champ_turbulent) est petit >> le champ est compressible >> il a une structure >> pas de blow-up aleatoire. Si K >> log(N) pour certaines configs >> configurations pathologiques incompressibles >> candidats au blow-up.",
+      "carmack_score": 0.3917678146151511,
+      "tier": "B",
+      "avg_z": -0.060844745712691384,
+      "total_cooc": 0.18903899984434247,
+      "n_deserts": 17,
+      "n_pairs": 20,
+      "desert_ratio": 0.85,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.17596699995920062,
+          "expected": 0.4183165899647864,
+          "z": -0.24234959000558576
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 0.1838755894120924,
+          "z": -0.1838755894120924
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.006535999942570925,
+          "expected": 0.13937841682482993,
+          "z": -0.132842416882259
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.1304282072500944,
+          "z": -0.1304282072500944
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.11608469585907477,
+          "z": -0.11608469585907477
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 0.11334248893263871,
+          "z": -0.11334248893263871
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.07747972983213189,
+          "z": -0.07747972983213189
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.041378133354161295,
+          "z": -0.041378133354161295
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.02901697219609109,
+          "z": -0.02901697219609109
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.023132726881686983,
+          "z": -0.023132726881686983
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.022541825518183983,
+          "z": -0.022541825518183983
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.021545785195872046,
+          "z": -0.021545785195872046
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.017990646603179606,
+          "z": -0.017990646603179606
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.017937571630409876,
+          "z": -0.017937571630409876
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.01705652708243235,
+          "z": -0.01705652708243235
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.014680537468107421,
+          "z": -0.014680537468107421
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.012170091256099174,
+          "z": -0.012170091256099174
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.005197808999915595,
+          "z": -0.005197808999915595
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.001563942530948055,
+          "z": -0.001563942530948055
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.006535999942570925,
+          "expected": 0.0028156273054341964,
+          "z": 0.0037203726371367284
+        }
+      ]
+    },
+    {
+      "technique": "Strange attractor",
+      "tech_idx": 43640,
+      "origin": "Systemes dynamiques (5K papers)",
+      "works": 5000,
+      "move": "Les solutions NS 3D vivent-elles sur un attracteur etrange de dimension finie ? Si dim(attracteur) < infini >> les solutions sont confinee a un sous-espace >> regularite par compacite. Temam et al. : bornes sur dim(attracteur) pour NS 2D.",
+      "carmack_score": 0.3331634080876262,
+      "tier": "B",
+      "avg_z": -0.04651562667537324,
+      "total_cooc": 0.0,
+      "n_deserts": 20,
+      "n_pairs": 20,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 0.2768018914089372,
+          "z": -0.2768018914089372
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 0.12167127040666688,
+          "z": -0.12167127040666688
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.09222729942875041,
+          "z": -0.09222729942875041
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.08630490715881504,
+          "z": -0.08630490715881504
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.07681374382050687,
+          "z": -0.07681374382050687
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 0.07499921367257253,
+          "z": -0.07499921367257253
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.05126867133142608,
+          "z": -0.05126867133142608
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.027380089267717612,
+          "z": -0.027380089267717612
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.019200655626674237,
+          "z": -0.019200655626674237
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.015307025128590617,
+          "z": -0.015307025128590617
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.014916023148326055,
+          "z": -0.014916023148326055
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.014256938972011841,
+          "z": -0.014256938972011841
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.011904488435060838,
+          "z": -0.011904488435060838
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.01186936849671372,
+          "z": -0.01186936849671372
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.011286377520151592,
+          "z": -0.011286377520151592
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.009714174946812355,
+          "z": -0.009714174946812355
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.008053001862993755,
+          "z": -0.008053001862993755
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.0034394126287942512,
+          "z": -0.0034394126287942512
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.0018631127293145169,
+          "z": -0.0018631127293145169
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.0010348675166283589,
+          "z": -0.0010348675166283589
+        }
+      ]
+    },
+    {
+      "technique": "Stochastic calculus",
+      "tech_idx": 59357,
+      "origin": "Mathematiques (4.2K papers)",
+      "works": 4163,
+      "move": "Ito vs Stratonovich : le bruit dans NS n'est pas un detail, c'est le MOTEUR de la turbulence. Le calcul stochastique donne des estimations d'energie que le calcul deterministe ne peut pas. Formule d'Ito appliquee a ||u||^2 = estimation d'enstrophie.",
+      "carmack_score": 0.28353162867872034,
+      "tier": "B",
+      "avg_z": -0.05528140713866279,
+      "total_cooc": 0.8221179991960526,
+      "n_deserts": 13,
+      "n_pairs": 20,
+      "desert_ratio": 0.65,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.004761999938637018,
+          "expected": 0.5735747493819017,
+          "z": -0.5688127494432647
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.024842000100761652,
+          "expected": 0.2521209955439932,
+          "z": -0.22727899544323155
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.19110870191946652,
+          "z": -0.19110870191946652
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.009523999877274036,
+          "expected": 0.17883662297998057,
+          "z": -0.16931262310270653
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.1591695188088238,
+          "z": -0.1591695188088238
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.010989000089466572,
+          "expected": 0.10623632360452992,
+          "z": -0.09524732351506335
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.056735623300289945,
+          "z": -0.056735623300289945
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.031718436088801816,
+          "z": -0.031718436088801816
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.02954250115922702,
+          "z": -0.02954250115922702
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.024667873242860742,
+          "z": -0.024667873242860742
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.024595099499396703,
+          "z": -0.024595099499396703
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.02338705535789364,
+          "z": -0.02338705535789364
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.02012921744215345,
+          "z": -0.02012921744215345
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.01668701937630436,
+          "z": -0.01668701937630436
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.01964700035750866,
+          "expected": 0.030908221744902167,
+          "z": -0.011261221387393508
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.007126975276578313,
+          "z": -0.007126975276578313
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.0038606470907673195,
+          "z": -0.0038606470907673195
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.0021443996407403774,
+          "z": -0.0021443996407403774
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.15830099862068892,
+          "expected": 0.03978661844751504,
+          "z": 0.11851438017317387
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.5940530002117157,
+          "expected": 0.15540954206318172,
+          "z": 0.438643458148534
+        }
+      ]
+    },
+    {
+      "technique": "Resistance distance",
+      "tech_idx": 59049,
+      "origin": "Theorie des circuits (753 papers)",
+      "works": 753,
+      "move": "La resistance distance dans un reseau electrique donne une BORNE sur les temps de diffusion. Le champ de vitesse NS vu comme un circuit : chaque streamline = fil, viscosite = resistance. La resistance effective borne le temps de dissipation.",
+      "carmack_score": 0.16824790310580096,
+      "tier": "B",
+      "avg_z": -0.025621485600865006,
+      "total_cooc": 0.0,
+      "n_deserts": 20,
+      "n_pairs": 20,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 0.1524665189296706,
+          "z": -0.1524665189296706
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 0.06701831030933553,
+          "z": -0.06701831030933553
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.05080014165586717,
+          "z": -0.05080014165586717
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.04753800161579416,
+          "z": -0.04753800161579416
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.042310130420915346,
+          "z": -0.042310130420915346
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 0.041310660750602406,
+          "z": -0.041310660750602406
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.028239531920335546,
+          "z": -0.028239531920335546
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.015081352505880143,
+          "z": -0.015081352505880143
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.010576001159766259,
+          "z": -0.010576001159766259
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.008431332693017329,
+          "z": -0.008431332693017329
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.008215963099543444,
+          "z": -0.008215963099543444
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.007852929922520098,
+          "z": -0.007852929922520098
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.006557165856395031,
+          "z": -0.006557165856395031
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.006537821282130909,
+          "z": -0.006537821282130909
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.006216701349346493,
+          "z": -0.006216701349346493
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.00535070924145599,
+          "z": -0.00535070924145599
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.0044357108787630465,
+          "z": -0.0044357108787630465
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.0018944786395996263,
+          "z": -0.0018944786395996263
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.0010262296647116423,
+          "z": -0.0010262296647116423
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.000570020121649445,
+          "z": -0.000570020121649445
+        }
+      ]
+    },
+    {
+      "technique": "Joule heating",
+      "tech_idx": 2837,
+      "origin": "Electrotechnique (24.5K papers)",
+      "works": 24506,
+      "move": "P = RI^2. La dissipation visqueuse de NS est EXACTEMENT un Joule heating generalise : mu|nabla u|^2 = 'chaleur' produite par le frottement. Borner la 'chaleur de Joule' du fluide = borner l'enstrophie. Si la chaleur totale est finie >> pas de blow-up.",
+      "carmack_score": 0.11948274810083334,
+      "tier": "B",
+      "avg_z": -0.04019951028269362,
+      "total_cooc": 12.022388969548047,
+      "n_deserts": 6,
+      "n_pairs": 20,
+      "desert_ratio": 0.3,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.7587809981778264,
+          "expected": 4.311796103646277,
+          "z": -1.7112622162937738
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 1.009048994164914,
+          "expected": 1.8952966939452789,
+          "z": -0.6437822469330274
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 1.0019579960498959,
+          "expected": 1.4366423159269817,
+          "z": -0.3626746198556841
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.06668399926275015,
+          "expected": 0.426504897134602,
+          "z": -0.35982089787185184
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.2990922919534461,
+          "z": -0.2990922919534461
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.8999799997545779,
+          "expected": 1.1682771228328812,
+          "z": -0.24823195883522395
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.2323497508108913,
+          "z": -0.2323497508108913
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.040686999913305044,
+          "expected": 0.2220830703018043,
+          "z": -0.18139607038849925
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.009523999877274036,
+          "expected": 0.1854384975078251,
+          "z": -0.17591449763055106
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.009523999877274036,
+          "expected": 0.17581006534299753,
+          "z": -0.1662860654657235
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.15131956459041526,
+          "z": -0.15131956459041526
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.02380999969318509,
+          "expected": 0.12544315314744114,
+          "z": -0.10163315345425605
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0987819992005825,
+          "expected": 0.1848914274984599,
+          "z": -0.0861094282978774
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.05357638958383225,
+          "z": -0.05357638958383225
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.029022063996824037,
+          "z": -0.029022063996824037
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.01612032960929466,
+          "z": -0.01612032960929466
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 1.4677700025495142,
+          "expected": 1.1965424066500834,
+          "z": 0.24796178123842808
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.5149339989293367,
+          "expected": 0.23844046358182389,
+          "z": 0.27649353534751275
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 1.2294969954527915,
+          "expected": 0.7986219175048133,
+          "z": 0.4308750779479782
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 4.891408986644819,
+          "expected": 1.3443880766810297,
+          "z": 3.0592709453833806
+        }
+      ]
+    },
+    {
+      "technique": "Langevin equation",
+      "tech_idx": 25979,
+      "origin": "Physique (11.2K papers)",
+      "works": 11178,
+      "move": "L'equation de Langevin = force deterministe + bruit blanc. NS + bruit = NS stochastique. Paradoxe : les solutions de NS stochastique sont PLUS REGULIERES que NS deterministe. Le bruit regularise ! Approche par regularisation stochastique.",
+      "carmack_score": 0.06201551155238081,
+      "tier": "B",
+      "avg_z": -0.02279683322467148,
+      "total_cooc": 5.755170985125005,
+      "n_deserts": 6,
+      "n_pairs": 20,
+      "desert_ratio": 0.3,
+      "pairs": [
+        {
+          "target": "Viscosity",
+          "cooc": 0.29223799775354564,
+          "expected": 0.818472913651054,
+          "z": -0.5262349158975084
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.1493660002015531,
+          "expected": 0.6204056736591891,
+          "z": -0.471039673457636
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.1373079982586205,
+          "expected": 0.5167199167320521,
+          "z": -0.3794119184734316
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.10614800034090877,
+          "expected": 0.3448802553256754,
+          "z": -0.23873225498476663
+        },
+        {
+          "target": "Turbulence",
+          "cooc": 1.6859349929727614,
+          "expected": 1.862024205125597,
+          "z": -0.129058787261397
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.02381000015884638,
+          "expected": 0.12916127613568062,
+          "z": -0.10535127597683425
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.10296913490303276,
+          "z": -0.09712113507695912
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.07984429343289734,
+          "z": -0.07984429343289734
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.07592255971856823,
+          "z": -0.07592255971856823
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.004329000134021044,
+          "expected": 0.08008054245183284,
+          "z": -0.0757515423178118
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.020512999966740608,
+          "expected": 0.09590528923686166,
+          "z": -0.07539228927012105
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.030021000187844038,
+          "expected": 0.10033889582555099,
+          "z": -0.07031789563770695
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.06534647863755619,
+          "z": -0.06534647863755619
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.05417190004190757,
+          "z": -0.05417190004190757
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.46893099998123944,
+          "expected": 0.5045137174203851,
+          "z": -0.03558271743914565
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.1512699997983873,
+          "expected": 0.18418367264575594,
+          "z": -0.03291367284736865
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.023136653921082197,
+          "z": -0.023136653921082197
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.0069614710912990685,
+          "z": -0.0069614710912990685
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.04893200006335974,
+          "expected": 0.012533010454527678,
+          "z": 0.03639898960883206
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 2.6305219954811037,
+          "expected": 0.5805662140993679,
+          "z": 2.049955781381736
+        }
+      ]
+    },
+    {
+      "technique": "Ohm's law",
+      "tech_idx": 10380,
+      "origin": "Physique (892 papers)",
+      "works": 892,
+      "move": "V = IR. Pour NS : pression = viscosite x debit (loi de Poiseuille = Ohm pour les fluides). Mais en turbulent, la 'loi d'Ohm' devient non-lineaire. La transition laminaire>>turbulent = la transition ohmique>>non-ohmique. Les electriciens ont des outils pour ca.",
+      "carmack_score": 0.049496299401730115,
+      "tier": "B",
+      "avg_z": -0.01702489702697425,
+      "total_cooc": 0.6937439993489534,
+      "n_deserts": 8,
+      "n_pairs": 20,
+      "desert_ratio": 0.4,
+      "pairs": [
+        {
+          "target": "Viscosity",
+          "cooc": 0.03603900037705898,
+          "expected": 0.13526371644123633,
+          "z": -0.09922471606417735
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.10253042675050375,
+          "z": -0.0966824269244301
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.02381000015884638,
+          "expected": 0.08337771388114541,
+          "z": -0.059567713722299034
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.01515199989080429,
+          "expected": 0.056996125692733574,
+          "z": -0.04184412580192928
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.048120999708771706,
+          "expected": 0.08539495337066436,
+          "z": -0.03727395366189265
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.0,
+          "expected": 0.021345647411190213,
+          "z": -0.021345647411190213
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.015849645885875074,
+          "z": -0.015849645885875074
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.0,
+          "expected": 0.012547229624807782,
+          "z": -0.012547229624807782
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.01079938921550202,
+          "z": -0.01079938921550202
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.008952638998968233,
+          "z": -0.008952638998968233
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.026140999980270863,
+          "expected": 0.030438842452008796,
+          "z": -0.004297842471737933
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.0038236449162623444,
+          "z": -0.0038236449162623444
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.012821000069379807,
+          "expected": 0.016582359326261627,
+          "z": -0.00376135925688182
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.0020712494500447656,
+          "z": -0.0020712494500447656
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.015318000223487616,
+          "expected": 0.01701704190013216,
+          "z": -0.0016990416766445443
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.0011504772314417675,
+          "z": -0.0011504772314417675
+        },
+        {
+          "target": "Turbulence",
+          "cooc": 0.307164000114426,
+          "expected": 0.3077246783467859,
+          "z": -0.0005606782323598902
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.02770600002259016,
+          "expected": 0.013195349151117737,
+          "z": 0.014510650871472424
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.12239899951964617,
+          "expected": 0.09594641734568034,
+          "z": 0.02645258217396583
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.05322499945759773,
+          "expected": 0.013234392496076167,
+          "z": 0.03999060696152157
+        }
+      ]
+    },
+    {
+      "technique": "Critical exponent",
+      "tech_idx": 10021,
+      "origin": "Physique stat (41K papers)",
+      "works": 41301,
+      "move": "Pres d'une transition de phase, les observables suivent des lois de puissance avec des exposants UNIVERSELS. La cascade de Kolmogorov E(k) ~ k^(-5/3) EST un exposant critique. L'universalite implique que les details microscopiques n'importent PAS >> simplification massive.",
+      "carmack_score": 0.04874243029024311,
+      "tier": "C",
+      "avg_z": 0.01905476510252537,
+      "total_cooc": 14.692716924939305,
+      "n_deserts": 5,
+      "n_pairs": 20,
+      "desert_ratio": 0.25,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.22731199744157493,
+          "expected": 5.965306238517352,
+          "z": -2.349595549461862
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.03896200004965067,
+          "expected": 1.9875734296596257,
+          "z": -1.382235144022636
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.5405709960032254,
+          "expected": 2.62211498884934,
+          "z": -1.2855322155957343
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.02777799963951111,
+          "expected": 1.6553987506515597,
+          "z": -1.2650788245402238
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.033519999124109745,
+          "expected": 1.1048816298802833,
+          "z": -1.0192708133024653
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.5297879937570542,
+          "expected": 1.8599410519509099,
+          "z": -0.9753698031817954
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.5986239989288151,
+          "expected": 1.6162941478746256,
+          "z": -0.800501609549776
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.03459500032477081,
+          "expected": 0.59006322712795,
+          "z": -0.5554682268031792
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.3298788603934203,
+          "z": -0.3298788603934203
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.009523999877274036,
+          "expected": 0.3214524492143906,
+          "z": -0.31192844933711655
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.3072486483347688,
+          "z": -0.3072486483347688
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.25655142299267264,
+          "z": -0.25655142299267264
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.019322000443935394,
+          "expected": 0.20934838312451542,
+          "z": -0.19002638268058003
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.17354875000163192,
+          "z": -0.17354875000163192
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.2057620007544756,
+          "expected": 0.25579455971311904,
+          "z": -0.05003255895864345
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.0401515969803165,
+          "z": -0.0401515969803165
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.01515199989080429,
+          "expected": 0.02230223797084498,
+          "z": -0.007150238080040689
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.08321499964222312,
+          "expected": 0.0741221438442789,
+          "z": 0.009092855797944221
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.9396349936723709,
+          "expected": 0.24323062927252992,
+          "z": 0.696404364399841
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 11.38895694538951,
+          "expected": 0.4137897693199253,
+          "z": 10.975167176069585
+        }
+      ]
+    },
+    {
+      "technique": "Kirchhoff integral theorem",
+      "tech_idx": 63544,
+      "origin": "Physique (339 papers)",
+      "works": 339,
+      "move": "Kirchhoff integral = representation du champ a l'interieur d'un volume par ses valeurs au bord. Pour NS : connaitre la pression et vitesse AU BORD suffit a reconstruire la solution a l'interieur. Si la representation integrale reste bornee >> regularite.",
+      "carmack_score": 0.027312824777964973,
+      "tier": "B",
+      "avg_z": -0.005457529328303853,
+      "total_cooc": 0.07777799852192402,
+      "n_deserts": 18,
+      "n_pairs": 20,
+      "desert_ratio": 0.9,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.0,
+          "expected": 0.05561806817293618,
+          "z": -0.05561806817293618
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 0.0,
+          "expected": 0.024447524464954788,
+          "z": -0.024447524464954788
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.0,
+          "expected": 0.018531319280098026,
+          "z": -0.018531319280098026
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 0.0,
+          "expected": 0.017341327349986883,
+          "z": -0.017341327349986883
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.0,
+          "expected": 0.01543425884368602,
+          "z": -0.01543425884368602
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.0,
+          "expected": 0.015069663569585947,
+          "z": -0.015069663569585947
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.0,
+          "expected": 0.010301463052629446,
+          "z": -0.010301463052629446
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.0,
+          "expected": 0.005501507463412616,
+          "z": -0.005501507463412616
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.0,
+          "expected": 0.0030756551654809697,
+          "z": -0.0030756551654809697
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.0,
+          "expected": 0.002997090764481341,
+          "z": -0.002997090764481341
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0,
+          "expected": 0.002864660352017895,
+          "z": -0.002864660352017895
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.0,
+          "expected": 0.002391980220853962,
+          "z": -0.002391980220853962
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.0,
+          "expected": 0.0023849235381294444,
+          "z": -0.0023849235381294444
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.0,
+          "expected": 0.0019518784416015513,
+          "z": -0.0019518784416015513
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.0,
+          "expected": 0.0016180973487318717,
+          "z": -0.0016180973487318717
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.0,
+          "expected": 0.000691084461487751,
+          "z": -0.000691084461487751
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.0,
+          "expected": 0.00037435701853565545,
+          "z": -0.00037435701853565545
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0,
+          "expected": 0.0002079369176157835,
+          "z": -0.0002079369176157835
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.02777799963951111,
+          "expected": 0.002267782604902453,
+          "z": 0.025510217034608654
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.04999999888241291,
+          "expected": 0.003858006056872481,
+          "z": 0.04614199282554043
+        }
+      ]
+    },
+    {
+      "technique": "Phase transition",
+      "tech_idx": 7678,
+      "origin": "Physique (362K papers)",
+      "works": 362325,
+      "move": "La transition laminaire>>turbulent EST une transition de phase. Mais personne ne l'attaque avec les outils modernes des transitions : Landau-Ginzburg, parametre d'ordre, brisure de symetrie. Le parametre d'ordre de la turbulence = quoi ? Personne ne sait.",
+      "carmack_score": 0.0,
+      "tier": "C",
+      "avg_z": -2.075025288196082,
+      "total_cooc": 13.671655944548547,
+      "n_deserts": 0,
+      "n_pairs": 20,
+      "desert_ratio": 0.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 2.0983239938504994,
+          "expected": 46.34595640625263,
+          "z": -6.500578859313238
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 0.4253760010469705,
+          "expected": 15.441955172468402,
+          "z": -3.8217008261045438
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 3.6317199792247266,
+          "expected": 20.371867278283677,
+          "z": -3.709245994548324
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.3781979999039322,
+          "expected": 12.861206996764494,
+          "z": -3.481069085846783
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 0.866659001680091,
+          "expected": 12.55739355565706,
+          "z": -3.2993315818840205
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 0.2967199964914471,
+          "expected": 8.584101771986843,
+          "z": -2.828784322477437
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 3.982649977086112,
+          "expected": 14.450347302428067,
+          "z": -2.753897906435962
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.6805240004323423,
+          "expected": 4.584348817639527,
+          "z": -1.8233808444242405
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.16265599755570292,
+          "expected": 3.2148362285958787,
+          "z": -1.7023751266584606
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.07291399943642318,
+          "expected": 2.5629113865808253,
+          "z": -1.5554496486604656
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.018182000145316124,
+          "expected": 2.387091608081877,
+          "z": -1.533337053167329
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.1352280005812645,
+          "expected": 2.497444490238965,
+          "z": -1.4948429583120113
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.023485000245273113,
+          "expected": 1.9932121823364624,
+          "z": -1.3952518261890305
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.07889700098894536,
+          "expected": 1.889719603688252,
+          "z": -1.3173476658390133
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.028914000373333693,
+          "expected": 1.6264799576190347,
+          "z": -1.2527296552676541
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.06282099895179272,
+          "expected": 1.3483436525019692,
+          "z": -1.1071388120904329
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.6246809978038073,
+          "expected": 1.987331922185996,
+          "z": -0.9666576513015713
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.07768499897792935,
+          "expected": 0.575873477402353,
+          "z": -0.4981884784244236
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.018668999895453453,
+          "expected": 0.311947800982248,
+          "z": -0.29327880108679455
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.0073529998771846294,
+          "expected": 0.17327166576707964,
+          "z": -0.165918665889895
+        }
+      ]
+    },
+    {
+      "technique": "Boltzmann equation",
+      "tech_idx": 10298,
+      "origin": "Physique stat (27.5K papers)",
+      "works": 27557,
+      "move": "L'equation de Boltzmann est PLUS FONDAMENTALE que NS. NS est une LIMITE hydrodynamique de Boltzmann. Si on prouve la regularite au niveau Boltzmann, elle descend automatiquement vers NS. Attaquer PAR AU-DESSUS.",
+      "carmack_score": 0.0,
+      "tier": "C",
+      "avg_z": -0.030290814928696112,
+      "total_cooc": 15.661242953268811,
+      "n_deserts": 0,
+      "n_pairs": 20,
+      "desert_ratio": 0.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 0.8998909976799041,
+          "expected": 5.82636843887299,
+          "z": -2.0412060044905846
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 0.4204399986192584,
+          "expected": 1.6168428994088382,
+          "z": -0.9409339993604626
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 1.2312619951553643,
+          "expected": 1.9412809062070258,
+          "z": -0.5096170357033145
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 0.13916799938306212,
+          "expected": 0.5763200791401972,
+          "z": -0.4371520797571351
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 2.0947829955257475,
+          "expected": 2.561043373680129,
+          "z": -0.29136891587133334
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.010989000089466572,
+          "expected": 0.2498368549672899,
+          "z": -0.23884785487782334
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.0652029998600483,
+          "expected": 0.30009252768706385,
+          "z": -0.23488952782701555
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 1.587236997904256,
+          "expected": 1.8166212110418694,
+          "z": -0.17019568683328792
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.07499999832361937,
+          "expected": 0.2375655507189705,
+          "z": -0.16256555239535114
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.1930080009624362,
+          "expected": 0.32219566003795236,
+          "z": -0.12918765907551616
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.15521499887108803,
+          "expected": 0.20447245512561116,
+          "z": -0.04925745625452313
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.01515199989080429,
+          "expected": 0.03921642713092434,
+          "z": -0.024064427240120048
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.009523999877274036,
+          "expected": 0.0217827970994264,
+          "z": -0.012258797222152364
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.09037999901920557,
+          "expected": 0.07239576683044657,
+          "z": 0.017984232188758997
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.2078599997330457,
+          "expected": 0.1695066303698577,
+          "z": 0.038353369363188006
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.6659969964530319,
+          "expected": 0.40415220206588476,
+          "z": 0.26184479438714714
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 1.7824909973423928,
+          "expected": 1.0791478592430197,
+          "z": 0.6770770454270645
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 2.7252069951500744,
+          "expected": 1.5786490809652738,
+          "z": 0.9125748718954729
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 1.229682993143797,
+          "expected": 0.2505760901629718,
+          "z": 0.9791069029808251
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 2.0627529902849346,
+          "expected": 0.313965508192694,
+          "z": 1.7487874820922407
+        }
+      ]
+    },
+    {
+      "technique": "Bifurcation",
+      "tech_idx": 43340,
+      "origin": "Dynamique (87K papers)",
+      "works": 87399,
+      "move": "Le blow-up NS = une bifurcation INFINIE. Mais les bifurcations finies sont classifiees (Hopf, saddle-node, period-doubling). Quelle SEQUENCE de bifurcations mene au blow-up ? Feigenbaum : les cascades de period-doubling sont universelles. La route vers le blow-up est-elle une cascade de Feigenbaum ?",
+      "carmack_score": 0.0,
+      "tier": "C",
+      "avg_z": -0.5791138700661228,
+      "total_cooc": 30.74078090651892,
+      "n_deserts": 0,
+      "n_pairs": 20,
+      "desert_ratio": 0.0,
+      "pairs": [
+        {
+          "target": "Turbulence",
+          "cooc": 6.287670969264582,
+          "expected": 17.080974434794168,
+          "z": -2.6118759447467754
+        },
+        {
+          "target": "Viscosity",
+          "cooc": 1.0031909993849695,
+          "expected": 7.508127378345304,
+          "z": -2.374135919537554
+        },
+        {
+          "target": "Dissipation",
+          "cooc": 1.7574589948635548,
+          "expected": 5.325729189469717,
+          "z": -1.5462886776896967
+        },
+        {
+          "target": "Boundary layer",
+          "cooc": 1.5158030022867024,
+          "expected": 4.7400456252682375,
+          "z": -1.4810074319485904
+        },
+        {
+          "target": "Fluid dynamics",
+          "cooc": 1.6038019922561944,
+          "expected": 3.1637026028272253,
+          "z": -0.8770322887502184
+        },
+        {
+          "target": "RANS",
+          "cooc": 0.06736700050532818,
+          "expected": 0.8797714815452023,
+          "z": -0.8124044810398742
+        },
+        {
+          "target": "Helicity",
+          "cooc": 0.14382500015199184,
+          "expected": 0.732438563976418,
+          "z": -0.5886135638244262
+        },
+        {
+          "target": "Sobolev space",
+          "cooc": 0.5681199969258159,
+          "expected": 1.184839836972011,
+          "z": -0.5665903509996414
+        },
+        {
+          "target": "Euler equations",
+          "cooc": 0.4361620000563562,
+          "expected": 0.9204424462871614,
+          "z": -0.48428044623080524
+        },
+        {
+          "target": "Pressure gradient",
+          "cooc": 0.47727799881249666,
+          "expected": 0.9445705141802597,
+          "z": -0.46729251536776306
+        },
+        {
+          "target": "Incompressible flow",
+          "cooc": 0.29550299886614084,
+          "expected": 0.599445231667454,
+          "z": -0.30394223280131316
+        },
+        {
+          "target": "Vorticity",
+          "cooc": 1.4028380021918565,
+          "expected": 1.6895787901728427,
+          "z": -0.2206036561356846
+        },
+        {
+          "target": "Weak solution",
+          "cooc": 0.037907999474555254,
+          "expected": 0.212240309790188,
+          "z": -0.17433231031563273
+        },
+        {
+          "target": "Navier-Stokes equations",
+          "cooc": 0.582642993889749,
+          "expected": 0.734605755703343,
+          "z": -0.15196276181359392
+        },
+        {
+          "target": "Fluid mechanics",
+          "cooc": 0.3582149990834296,
+          "expected": 0.4969370629839017,
+          "z": -0.13872206390047215
+        },
+        {
+          "target": "Enstrophy",
+          "cooc": 0.02694800030440092,
+          "expected": 0.11496952111337107,
+          "z": -0.08802152080897015
+        },
+        {
+          "target": "Parabolic PDE",
+          "cooc": 0.640711993444711,
+          "expected": 0.696463181309463,
+          "z": -0.05575118786475208
+        },
+        {
+          "target": "Existence theorem",
+          "cooc": 0.021687999833375216,
+          "expected": 0.06385991622005656,
+          "z": -0.04217191638668134
+        },
+        {
+          "target": "Partial differential equation",
+          "cooc": 6.022464985493571,
+          "expected": 4.628074052710446,
+          "z": 0.6481938090006907
+        },
+        {
+          "target": "Reynolds number",
+          "cooc": 7.491182979429141,
+          "expected": 5.6911899543535025,
+          "z": 0.7545580598392981
+        }
+      ]
+    }
+  ],
+  "bridge_papers": [],
+  "bridge_paper_count": 0,
+  "continent_ranking": {
+    "Medecine": {
+      "total_score": 22.565929367481267,
+      "n_moves": 2,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "Traitement signal": {
+      "total_score": 11.47913261600857,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "IA": {
+      "total_score": 9.643370208757657,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Informatique": {
+      "total_score": 10.945902067435078,
+      "n_moves": 2,
+      "s_count": 2,
+      "a_count": 0
+    },
+    "Biochimie": {
+      "total_score": 6.843878942621148,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "Physique stat": {
+      "total_score": 16.344200073367144,
+      "n_moves": 6,
+      "s_count": 0,
+      "a_count": 3
+    },
+    "Electrotechnique": {
+      "total_score": 10.08742203144869,
+      "n_moves": 4,
+      "s_count": 2,
+      "a_count": 1
+    },
+    "Theorie de l'information": {
+      "total_score": 5.551545023766785,
+      "n_moves": 2,
+      "s_count": 1,
+      "a_count": 0
+    },
+    "Physique": {
+      "total_score": 5.457820843086671,
+      "n_moves": 6,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "Physique quantique": {
+      "total_score": 4.435952554773985,
+      "n_moves": 2,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "Mathematiques": {
+      "total_score": 7.47221283831155,
+      "n_moves": 6,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "Biologie evolutive": {
+      "total_score": 1.8018803360031173,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 1
+    },
+    "Controle": {
+      "total_score": 2.5281417444899517,
+      "n_moves": 3,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Probabilites": {
+      "total_score": 1.6021237248536793,
+      "n_moves": 2,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Dynamique": {
+      "total_score": 0.44319040664818365,
+      "n_moves": 2,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Physique QFT": {
+      "total_score": 0.4033776639154315,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Physique/Math": {
+      "total_score": 0.39263669001668866,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Systemes dynamiques": {
+      "total_score": 0.3331634080876262,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 0
+    },
+    "Theorie des circuits": {
+      "total_score": 0.16824790310580096,
+      "n_moves": 1,
+      "s_count": 0,
+      "a_count": 0
+    }
+  }
+}

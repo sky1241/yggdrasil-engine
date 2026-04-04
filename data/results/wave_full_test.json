@@ -1,0 +1,270 @@
+{
+  "test": "wave_full_battery",
+  "date": "2026-04-04",
+  "n_meteorites": 6,
+  "seed_properties": {
+    "Shannon 1948": {
+      "seed_works": 356173,
+      "seed_degree": 24301,
+      "seed_weight": 16623.25,
+      "avg_level": 2.0,
+      "n_neighbors": 19552,
+      "avg_edge_weight": 0.6841,
+      "hub_fraction": 0.1548,
+      "n_seeds": 2,
+      "r_max": 49627,
+      "pct": 0.76,
+      "death": 8
+    },
+    "Transistor 1947": {
+      "seed_works": 475449,
+      "seed_degree": 17909,
+      "seed_weight": 36873.4,
+      "avg_level": 2.5,
+      "n_neighbors": 12153,
+      "avg_edge_weight": 2.0589,
+      "hub_fraction": 0.187,
+      "n_seeds": 2,
+      "r_max": 45604,
+      "pct": 0.7,
+      "death": 8
+    },
+    "Turing 1936": {
+      "seed_works": 13568,
+      "seed_degree": 3638,
+      "seed_weight": 616.48,
+      "avg_level": 2.67,
+      "n_neighbors": 2457,
+      "avg_edge_weight": 0.1695,
+      "hub_fraction": 0.2727,
+      "n_seeds": 3,
+      "r_max": 41970,
+      "pct": 0.65,
+      "death": 8
+    },
+    "ADN 1953": {
+      "seed_works": 7427000,
+      "seed_degree": 45668,
+      "seed_weight": 284720.62,
+      "avg_level": 1.5,
+      "n_neighbors": 28311,
+      "avg_edge_weight": 6.2346,
+      "hub_fraction": 0.1958,
+      "n_seeds": 2,
+      "r_max": 36081,
+      "pct": 0.55,
+      "death": 9
+    },
+    "Godel 1931": {
+      "seed_works": 10282,
+      "seed_degree": 3788,
+      "seed_weight": 656.94,
+      "avg_level": 2.33,
+      "n_neighbors": 2549,
+      "avg_edge_weight": 0.1734,
+      "hub_fraction": 0.2672,
+      "n_seeds": 3,
+      "r_max": 28845,
+      "pct": 0.44,
+      "death": 11
+    },
+    "Laser 1960": {
+      "seed_works": 2845069,
+      "seed_degree": 22719,
+      "seed_weight": 278014.57,
+      "avg_level": 2.5,
+      "n_neighbors": 20502,
+      "avg_edge_weight": 12.2371,
+      "hub_fraction": 0.1872,
+      "n_seeds": 2,
+      "r_max": 4131,
+      "pct": 0.06,
+      "death": 9
+    }
+  },
+  "mare_properties": {
+    "Shannon 1948": {
+      "local_density": 0.120994,
+      "avg_internal_weight": 474.5255,
+      "median_neighbor_works": 14010.0,
+      "n_neighbors": 19552,
+      "sample_size": 500,
+      "internal_edges": 15094
+    },
+    "Transistor 1947": {
+      "local_density": 0.165555,
+      "avg_internal_weight": 344.7093,
+      "median_neighbor_works": 16364.0,
+      "n_neighbors": 12153,
+      "sample_size": 500,
+      "internal_edges": 20653
+    },
+    "Turing 1936": {
+      "local_density": 0.263014,
+      "avg_internal_weight": 305.9969,
+      "median_neighbor_works": 20869.0,
+      "n_neighbors": 2457,
+      "sample_size": 500,
+      "internal_edges": 32811
+    },
+    "ADN 1953": {
+      "local_density": 0.18602,
+      "avg_internal_weight": 319.1385,
+      "median_neighbor_works": 18766.0,
+      "n_neighbors": 28311,
+      "sample_size": 500,
+      "internal_edges": 23206
+    },
+    "Godel 1931": {
+      "local_density": 0.254597,
+      "avg_internal_weight": 284.7395,
+      "median_neighbor_works": 19736.0,
+      "n_neighbors": 2549,
+      "sample_size": 500,
+      "internal_edges": 31761
+    },
+    "Laser 1960": {
+      "local_density": 0.192786,
+      "avg_internal_weight": 307.178,
+      "median_neighbor_works": 18923.0,
+      "n_neighbors": 20502,
+      "sample_size": 500,
+      "internal_edges": 24050
+    }
+  },
+  "pre_impact": {
+    "Shannon 1948": {
+      "pre_edges": 42032,
+      "pre_weight": 1341.5903
+    },
+    "Transistor 1947": {
+      "pre_edges": 55691,
+      "pre_weight": 2528.0843
+    },
+    "Turing 1936": {
+      "pre_edges": 1718,
+      "pre_weight": 28.611
+    },
+    "ADN 1953": {
+      "pre_edges": 128765,
+      "pre_weight": 7876.0062
+    },
+    "Godel 1931": {
+      "pre_edges": 1809,
+      "pre_weight": 29.7023
+    },
+    "Laser 1960": {
+      "pre_edges": 20666,
+      "pre_weight": 1066.3648
+    }
+  },
+  "correlations_with_rmax": {
+    "seed_works": {
+      "spearman_r": -0.1429,
+      "spearman_p": 0.7872,
+      "type": "seed_property"
+    },
+    "seed_degree": {
+      "spearman_r": 0.0857,
+      "spearman_p": 0.8717,
+      "type": "seed_property"
+    },
+    "seed_weight": {
+      "spearman_r": -0.2571,
+      "spearman_p": 0.6228,
+      "type": "seed_property"
+    },
+    "avg_edge_weight": {
+      "spearman_r": -0.3714,
+      "spearman_p": 0.4685,
+      "type": "seed_property"
+    },
+    "n_neighbors": {
+      "spearman_r": -0.2,
+      "spearman_p": 0.704,
+      "type": "mare_property"
+    },
+    "hub_fraction": {
+      "spearman_r": -0.4857,
+      "spearman_p": 0.3287,
+      "type": "seed_property"
+    },
+    "avg_level": {
+      "spearman_r": -0.087,
+      "spearman_p": 0.8699,
+      "type": "seed_property"
+    },
+    "n_seeds": {
+      "spearman_r": -0.207,
+      "spearman_p": 0.6939,
+      "type": "seed_property"
+    },
+    "strate": {
+      "spearman_r": 0.0926,
+      "spearman_p": 0.8615,
+      "type": "seed_property"
+    },
+    "log_seed_works": {
+      "spearman_r": -0.1429,
+      "spearman_p": 0.7872,
+      "type": "seed_property"
+    },
+    "local_density": {
+      "spearman_r": -0.6,
+      "spearman_p": 0.208,
+      "type": "mare_property"
+    },
+    "avg_internal_weight": {
+      "spearman_r": 0.7143,
+      "spearman_p": 0.1108,
+      "type": "mare_property"
+    },
+    "median_neighbor_works": {
+      "spearman_r": -0.6,
+      "spearman_p": 0.208,
+      "type": "mare_property"
+    },
+    "pre_edges": {
+      "spearman_r": 0.2571,
+      "spearman_p": 0.6228,
+      "type": "mare_property"
+    },
+    "pre_weight": {
+      "spearman_r": 0.2571,
+      "spearman_p": 0.6228,
+      "type": "mare_property"
+    }
+  },
+  "verdict_top3": [
+    [
+      "avg_internal_weight",
+      0.7143,
+      0.1108,
+      "mare_property"
+    ],
+    [
+      "local_density",
+      -0.6,
+      0.208,
+      "mare_property"
+    ],
+    [
+      "median_neighbor_works",
+      -0.6,
+      0.208,
+      "mare_property"
+    ],
+    [
+      "hub_fraction",
+      -0.4857,
+      0.3287,
+      "seed_property"
+    ],
+    [
+      "avg_edge_weight",
+      -0.3714,
+      0.4685,
+      "seed_property"
+    ]
+  ]
+}

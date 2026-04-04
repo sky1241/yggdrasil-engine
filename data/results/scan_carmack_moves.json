@@ -1,0 +1,1944 @@
+{
+  "scan": "carmack_moves_v1",
+  "date": "2026-03-21 00:27:34",
+  "n_techniques": 23,
+  "n_moves": 34,
+  "moves": [
+    {
+      "technique": "Protein folding",
+      "tech_idx": 16301,
+      "origin": "Biochimie (136K papers)",
+      "works": 136159,
+      "target": "PNP",
+      "move": "Le protein folding landscape a la MÊME structure que le cube : état natif = résolu, nombre de folding steps = GN. Levinthal's paradox (1969) : les protéines trouvent le fold en temps polynomial malgré un espace exponentiel. Même paradoxe pour le cube ?",
+      "carmack_score": 2.6871688900614985,
+      "tier": "S",
+      "avg_z": -0.2841484335628302,
+      "total_cooc": 0.1174749992787838,
+      "n_deserts": 7,
+      "n_pairs": 8,
+      "desert_ratio": 0.875,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.016737649485509817,
+          "z": -0.016737649485509817
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 0.1174749992787838,
+          "expected": 2.1303034093166033,
+          "z": -1.3791142857304155
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.0,
+          "expected": 0.22452233029691254,
+          "z": -0.22452233029691254
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.03194961510370775,
+          "z": -0.03194961510370775
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.0,
+          "expected": 0.0688128297212582,
+          "z": -0.0688128297212582
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.0,
+          "expected": 0.04218067162568158,
+          "z": -0.04218067162568158
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.0,
+          "expected": 0.08622357503058208,
+          "z": -0.08622357503058208
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.0,
+          "expected": 0.42364651150857424,
+          "z": -0.42364651150857424
+        }
+      ]
+    },
+    {
+      "technique": "Renormalization group",
+      "tech_idx": 60204,
+      "origin": "Physique (QFT)",
+      "works": 61870,
+      "target": "PNP",
+      "move": "La renormalisation élimine les degrés de liberté à chaque échelle. Appliqué au cube : chaque 'layer' du 4×4 est une échelle. Renormaliser = réduire le 4×4 à un 3×3 effectif + correction.",
+      "carmack_score": 2.4033294623023678,
+      "tier": "S",
+      "avg_z": -0.2574712998012373,
+      "total_cooc": 0.10657299868762493,
+      "n_deserts": 7,
+      "n_pairs": 8,
+      "desert_ratio": 0.875,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.014549956142648753,
+          "z": -0.014549956142648753
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 0.10657299868762493,
+          "expected": 1.851862246423879,
+          "z": -1.2825569904629677
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.0,
+          "expected": 0.19517615431566496,
+          "z": -0.19517615431566496
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.02777364282457349,
+          "z": -0.02777364282457349
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.0,
+          "expected": 0.05981865347118462,
+          "z": -0.05981865347118462
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.0,
+          "expected": 0.03666744979648747,
+          "z": -0.03666744979648747
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.0,
+          "expected": 0.07495372849356455,
+          "z": -0.07495372849356455
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.0,
+          "expected": 0.36827382290280664,
+          "z": -0.36827382290280664
+        }
+      ]
+    },
+    {
+      "technique": "Ising model",
+      "tech_idx": 56807,
+      "origin": "Physique stat (48K papers)",
+      "works": 48310,
+      "target": "PNP",
+      "move": "Ising = spins ±1 sur un réseau avec énergie d'interaction. Le cube EST un modèle d'Ising : chaque facette = spin, la configuration résolue = état fondamental, GN = temps de relaxation.",
+      "carmack_score": 1.702187028239372,
+      "tier": "A",
+      "avg_z": -0.252528515561607,
+      "total_cooc": 0.35316299623809755,
+      "n_deserts": 5,
+      "n_pairs": 8,
+      "desert_ratio": 0.625,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.016357225263764236,
+          "z": -0.016357225263764236
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 0.18480099900625646,
+          "expected": 2.0818844830347003,
+          "z": -1.3148380177893875
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.14541799714788795,
+          "expected": 0.21941924023389905,
+          "z": -0.07400124308601111
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.031223443398927977,
+          "z": -0.031223443398927977
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.0,
+          "expected": 0.06724880681496637,
+          "z": -0.06724880681496637
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.022944000083953142,
+          "expected": 0.04122196179071952,
+          "z": -0.018277961706766377
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.0,
+          "expected": 0.08426382934134846,
+          "z": -0.08426382934134846
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.0,
+          "expected": 0.414017597091684,
+          "z": -0.414017597091684
+        }
+      ]
+    },
+    {
+      "technique": "Data compression",
+      "tech_idx": 61733,
+      "origin": "Traitement signal (138K papers)",
+      "works": 138084,
+      "target": "GN",
+      "move": "Compresser = trouver les régularités. Si le groupe du cube est hautement structuré, la solution est compressible → GN est petit. Si incompressible → GN est grand. NCD (Normalized Compression Distance) entre position et résolu = approximation du nombre de moves.",
+      "carmack_score": 1.3599528999117516,
+      "tier": "S",
+      "avg_z": -0.14002595865092485,
+      "total_cooc": 0.0058479998260736465,
+      "n_deserts": 6,
+      "n_pairs": 7,
+      "desert_ratio": 0.8571428571428571,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.18353453094487632,
+          "z": -0.18353453094487632
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.08016624799778264,
+          "z": -0.08016624799778264
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.17827338435767529,
+          "z": -0.17827338435767529
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.24534354085062657,
+          "z": -0.24534354085062657
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.13209641431173816,
+          "z": -0.13209641431173816
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.03679017613495974,
+          "z": -0.03679017613495974
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.1298254157848888,
+          "z": -0.12397741595881515
+        }
+      ]
+    },
+    {
+      "technique": "Protein folding",
+      "tech_idx": 16301,
+      "origin": "Biochimie (136K papers)",
+      "works": 136159,
+      "target": "GN",
+      "move": "Le protein folding landscape a la MÊME structure que le cube : état natif = résolu, nombre de folding steps = GN. Levinthal's paradox (1969) : les protéines trouvent le fold en temps polynomial malgré un espace exponentiel. Même paradoxe pour le cube ?",
+      "carmack_score": 0.9024510277090995,
+      "tier": "S",
+      "avg_z": -0.08349913955323943,
+      "total_cooc": 0.0,
+      "n_deserts": 7,
+      "n_pairs": 7,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.10879472165581382,
+          "z": -0.10879472165581382
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.04752056516127318,
+          "z": -0.04752056516127318
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.10567604433880864,
+          "z": -0.10567604433880864
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.1454335709987596,
+          "z": -0.1454335709987596
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.07830348083703655,
+          "z": -0.07830348083703655
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.021808304691575797,
+          "z": -0.021808304691575797
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.07695728918940842,
+          "z": -0.07695728918940842
+        }
+      ]
+    },
+    {
+      "technique": "Power law",
+      "tech_idx": 63029,
+      "origin": "Physique/Sociologie (61K papers)",
+      "works": 60735,
+      "target": "GN",
+      "move": "Si la distribution des distances dans le Cayley graph suit une loi de puissance P(d) ~ d^(-gamma), alors gamma détermine GN. Les réseaux scale-free ont des diamètres ~ log(log(N)). Le cube est-il scale-free ?",
+      "carmack_score": 0.5162532794859588,
+      "tier": "A",
+      "avg_z": -0.06777065012537443,
+      "total_cooc": 0.032117999624460936,
+      "n_deserts": 5,
+      "n_pairs": 7,
+      "desert_ratio": 0.7142857142857143,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0073529998771846294,
+          "expected": 0.0942796574943225,
+          "z": -0.08692665761713787
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.041180514451015685,
+          "z": -0.041180514451015685
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.09157706471401504,
+          "z": -0.09157706471401504
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.12603026188455319,
+          "z": -0.12603026188455319
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.024764999747276306,
+          "expected": 0.06785646621059714,
+          "z": -0.043091466463320835
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.018898706348624762,
+          "z": -0.018898706348624762
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.06668987939895363,
+          "z": -0.06668987939895363
+        }
+      ]
+    },
+    {
+      "technique": "Fractal dimension",
+      "tech_idx": 17805,
+      "origin": "Mathématiques (44K papers)",
+      "works": 43622,
+      "target": "GN",
+      "move": "Si la croissance de la boule dans le Cayley graph est fractale (pas polynomiale, pas exponentielle), la dimension fractale donne le taux de croissance exact → borne sur GN.",
+      "carmack_score": 0.4915256434105971,
+      "tier": "A",
+      "avg_z": -0.06443061193365777,
+      "total_cooc": 0.06343600014224648,
+      "n_deserts": 5,
+      "n_pairs": 7,
+      "desert_ratio": 0.7142857142857143,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.09575714657993546,
+          "z": -0.09575714657993546
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.041825868520582246,
+          "z": -0.041825868520582246
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.09301220053443927,
+          "z": -0.09301220053443927
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.12800532566119646,
+          "z": -0.12800532566119646
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.05758800031617284,
+          "expected": 0.06891986833655904,
+          "z": -0.011331868020386202
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.019194874505196385,
+          "z": -0.019194874505196385
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0058479998260736465,
+          "expected": 0.06773499953994197,
+          "z": -0.061886999713868324
+        }
+      ]
+    },
+    {
+      "technique": "Simulated annealing",
+      "tech_idx": 4263,
+      "origin": "Optimisation (31K papers)",
+      "works": 31025,
+      "target": "GN",
+      "move": "SA explore un paysage d'énergie en acceptant des moves défavorables avec probabilité e^(-ΔE/T). Appliqué au cube : le 'recuit' simule le processus de résolution avec une température qui décroît. Le temps de convergence de SA → borne probabiliste sur GN.",
+      "carmack_score": 0.3994813699465179,
+      "tier": "A",
+      "avg_z": -0.05254231357364018,
+      "total_cooc": 0.12845999980345368,
+      "n_deserts": 5,
+      "n_pairs": 7,
+      "desert_ratio": 0.7142857142857143,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.09237059186507296,
+          "z": -0.09237059186507296
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.04034665159212714,
+          "z": -0.04034665159212714
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.08972272379552354,
+          "z": -0.08972272379552354
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.12347827932963558,
+          "z": -0.12347827932963558
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.01785700023174286,
+          "expected": 0.06648244289731998,
+          "z": -0.048625442665577126
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.018516027076273648,
+          "z": -0.018516027076273648
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.11060299957171082,
+          "expected": 0.06533947826298211,
+          "z": 0.04526352130872871
+        }
+      ]
+    },
+    {
+      "technique": "Renormalization group",
+      "tech_idx": 60204,
+      "origin": "Physique (QFT)",
+      "works": 61870,
+      "target": "GN",
+      "move": "La renormalisation élimine les degrés de liberté à chaque échelle. Appliqué au cube : chaque 'layer' du 4×4 est une échelle. Renormaliser = réduire le 4×4 à un 3×3 effectif + correction.",
+      "carmack_score": 0.3436382755908977,
+      "tier": "A",
+      "avg_z": -0.05637196164239587,
+      "total_cooc": 0.11349399969913065,
+      "n_deserts": 4,
+      "n_pairs": 7,
+      "desert_ratio": 0.5714285714285714,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.026140999980270863,
+          "expected": 0.09457471492721689,
+          "z": -0.06843371494694603
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.041309392909021525,
+          "z": -0.041309392909021525
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.008658000268042088,
+          "expected": 0.09186366411779574,
+          "z": -0.08320566384975366
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.12642468594725095,
+          "z": -0.12642468594725095
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0786949994508177,
+          "expected": 0.0680688296753943,
+          "z": 0.01062616977542341
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.01895785170329033,
+          "z": -0.01895785170329033
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.06689859191593193,
+          "z": -0.06689859191593193
+        }
+      ]
+    },
+    {
+      "technique": "Cellular automaton",
+      "tech_idx": 54073,
+      "origin": "Systèmes complexes (22K papers)",
+      "works": 21666,
+      "target": "PNP",
+      "move": "Rule 110 est Turing-complet. Le cube 4×4 est-il un automate cellulaire ? Si oui, les bornes de complexité des CA s'appliquent. Wolfram 2002 : certains CA ont des diamètres indécidables.",
+      "carmack_score": 0.2778220021052675,
+      "tier": "B",
+      "avg_z": 0.07136747194342721,
+      "total_cooc": 2.49875599402003,
+      "n_deserts": 3,
+      "n_pairs": 8,
+      "desert_ratio": 0.375,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.01092051258807869,
+          "z": -0.01092051258807869
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 1.090476997429505,
+          "expected": 1.3899206825910126,
+          "z": -0.2539994005037672
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.06851299991831183,
+          "expected": 0.14649003950255154,
+          "z": -0.07797703958423971
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.020845589712364686,
+          "z": -0.020845589712364686
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.12046299874782562,
+          "expected": 0.04489706716841467,
+          "z": 0.07556593157941095
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.08446700032800436,
+          "expected": 0.027520862822503937,
+          "z": 0.05694613750550043
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.0,
+          "expected": 0.05625674246110778,
+          "z": -0.05625674246110778
+        },
+        {
+          "target": "Decidability",
+          "cooc": 1.134835997596383,
+          "expected": 0.2764090062843188,
+          "z": 0.8584269913120643
+        }
+      ]
+    },
+    {
+      "technique": "Kolmogorov complexity",
+      "tech_idx": 34208,
+      "origin": "Théorie de l'information (2K papers)",
+      "works": 1974,
+      "target": "PNP",
+      "move": "K(x) = longueur du plus court programme qui produit x. Si K(position) ≈ log|G|, alors la position est 'incompressible' et nécessite ~GN moves. Borne par complexité de Kolmogorov.",
+      "carmack_score": 0.267739710340804,
+      "tier": "C",
+      "avg_z": 0.2827587338698951,
+      "total_cooc": 2.3813089893665165,
+      "n_deserts": 1,
+      "n_pairs": 8,
+      "desert_ratio": 0.125,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.012821000069379807,
+          "expected": 0.0006598988281036476,
+          "z": 0.01216110124127616
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 2.0533019902650267,
+          "expected": 0.08398937524233932,
+          "z": 1.9693126150226874
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.008658000268042088,
+          "expected": 0.00885202087511153,
+          "z": -0.00019402060706944294
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.0012596460204016009,
+          "z": -0.0012596460204016009
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.11144900042563677,
+          "expected": 0.0027130156914127175,
+          "z": 0.10873598473422405
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.09145699953660369,
+          "expected": 0.0016630158134515517,
+          "z": 0.08979398372315214
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.026304999832063913,
+          "expected": 0.0033994520059012303,
+          "z": 0.02290554782616268
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.07731699896976352,
+          "expected": 0.016702693930634147,
+          "z": 0.060614305039129374
+        }
+      ]
+    },
+    {
+      "technique": "Critical exponent",
+      "tech_idx": 10021,
+      "origin": "Physique stat (41K papers)",
+      "works": 41301,
+      "target": "GN",
+      "move": "Près d'une transition de phase, les observables suivent des lois de puissance avec des exposants UNIVERSELS. Si GN(n) ~ n^alpha, alpha est un exposant critique. La classe d'universalité du cube détermine alpha.",
+      "carmack_score": 0.2656271085240743,
+      "tier": "A",
+      "avg_z": -0.03634434607953566,
+      "total_cooc": 0.07420699903741479,
+      "n_deserts": 5,
+      "n_pairs": 7,
+      "desert_ratio": 0.7142857142857143,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.05555599927902222,
+          "expected": 0.06116716737592042,
+          "z": -0.0056111680968982044
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.026717273768240762,
+          "z": -0.026717273768240762
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.05941376744495467,
+          "z": -0.05941376744495467
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.08176646296776989,
+          "z": -0.08176646296776989
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.018650999758392572,
+          "expected": 0.044024214094032225,
+          "z": -0.025373214335639653
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.012261185128767714,
+          "z": -0.012261185128767714
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.04326735081447866,
+          "z": -0.04326735081447866
+        }
+      ]
+    },
+    {
+      "technique": "Ergodic theory",
+      "tech_idx": 3508,
+      "origin": "Mathématiques (24K papers)",
+      "works": 23752,
+      "target": "GN",
+      "move": "Un système ergodique visite tous les états en temps fini. Le graphe de Cayley est ergodique (chaque position est atteignable). Le temps de RETOUR ergodique → borne supérieure sur GN. Théorème de Birkhoff : la moyenne temporelle = moyenne spatiale.",
+      "carmack_score": 0.2375252348055607,
+      "tier": "C",
+      "avg_z": 0.16084072875475627,
+      "total_cooc": 1.491008997661993,
+      "n_deserts": 1,
+      "n_pairs": 7,
+      "desert_ratio": 0.14285714285714285,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0827860003337264,
+          "expected": 0.06796229601705546,
+          "z": 0.014823704316670946
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.03603900037705898,
+          "expected": 0.029685325420524537,
+          "z": 0.0063536749565344455
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.04285799991339445,
+          "expected": 0.06601410893799366,
+          "z": -0.023156109024599206
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.21677399752661586,
+          "expected": 0.09084999026243629,
+          "z": 0.12592400726417957
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.42814299813471735,
+          "expected": 0.04891491299227131,
+          "z": 0.37922808514244605
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.01362329381905092,
+          "z": -0.01362329381905092
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.6844090013764799,
+          "expected": 0.04807396892936693,
+          "z": 0.636335032447113
+        }
+      ]
+    },
+    {
+      "technique": "Power law",
+      "tech_idx": 63029,
+      "origin": "Physique/Sociologie (61K papers)",
+      "works": 60735,
+      "target": "RAMSEY",
+      "move": "Si la distribution des distances dans le Cayley graph suit une loi de puissance P(d) ~ d^(-gamma), alors gamma détermine GN. Les réseaux scale-free ont des diamètres ~ log(log(N)). Le cube est-il scale-free ?",
+      "carmack_score": 0.23260907674673365,
+      "tier": "A",
+      "avg_z": -0.0436221880742773,
+      "total_cooc": 0.009523999877274036,
+      "n_deserts": 1,
+      "n_pairs": 2,
+      "desert_ratio": 0.5,
+      "pairs": [
+        {
+          "target": "Ramsey theory",
+          "cooc": 0.0,
+          "expected": 0.04143327492687177,
+          "z": -0.04143327492687177
+        },
+        {
+          "target": "Ramsey's theorem",
+          "cooc": 0.009523999877274036,
+          "expected": 0.05533510109895686,
+          "z": -0.045811101221682825
+        }
+      ]
+    },
+    {
+      "technique": "Electrical network",
+      "tech_idx": 15129,
+      "origin": "Électrotechnique (85K papers)",
+      "works": 84657,
+      "target": "GN",
+      "move": "Kirchhoff + Rayleigh monotonicity : couper des arêtes augmente la résistance. Sur le Cayley graph : enlever des moves augmente le diamètre. Borne par énergie de Thomson = optimisation variationnelle sur GN.",
+      "carmack_score": 0.20069010024198491,
+      "tier": "S",
+      "avg_z": -0.02125967284461843,
+      "total_cooc": 0.0,
+      "n_deserts": 7,
+      "n_pairs": 7,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.027700167953816874,
+          "z": -0.027700167953816874
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.012099186579951357,
+          "z": -0.012099186579951357
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.026906123131053304,
+          "z": -0.026906123131053304
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.03702876648311837,
+          "z": -0.03702876648311837
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.019936808859315504,
+          "z": -0.019936808859315504
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.00555260120666323,
+          "z": -0.00555260120666323
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.019594055698410367,
+          "z": -0.019594055698410367
+        }
+      ]
+    },
+    {
+      "technique": "Spin glass",
+      "tech_idx": 7925,
+      "origin": "Physique stat (20K papers)",
+      "works": 20250,
+      "target": "GN",
+      "move": "Le spin glass a un paysage d'énergie frustré avec des minima locaux. Le graphe de Cayley du cube a la MÊME structure. Les bornes sur le temps de relaxation des spin glasses → bornes sur GN.",
+      "carmack_score": 0.19941896656156818,
+      "tier": "S",
+      "avg_z": -0.023704637475573213,
+      "total_cooc": 0.05056299944408238,
+      "n_deserts": 6,
+      "n_pairs": 7,
+      "desert_ratio": 0.8571428571428571,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.04029735880149464,
+          "z": -0.04029735880149464
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.01760152731317089,
+          "z": -0.01760152731317089
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.03914220663127238,
+          "z": -0.03914220663127238
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.053868319189789286,
+          "z": -0.053868319189789286
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.05056299944408238,
+          "expected": 0.029003460964573374,
+          "z": 0.021559538479509005
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.008077754744288058,
+          "z": -0.008077754744288058
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.028504834128506212,
+          "z": -0.028504834128506212
+        }
+      ]
+    },
+    {
+      "technique": "Percolation threshold",
+      "tech_idx": 17933,
+      "origin": "Physique stat (24K papers)",
+      "works": 24489,
+      "target": "GN",
+      "move": "Au seuil de percolation, un cluster géant apparaît. Sur le Cayley graph : à quel ratio de moves le graphe reste-t-il connexe ? Si on retire des moves aléatoirement, à quel seuil GN → ∞ ?",
+      "carmack_score": 0.18651806925683317,
+      "tier": "A",
+      "avg_z": -0.02625399695739265,
+      "total_cooc": 0.06310799950733781,
+      "n_deserts": 5,
+      "n_pairs": 7,
+      "desert_ratio": 0.7142857142857143,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.01919800043106079,
+          "expected": 0.045954094212731174,
+          "z": -0.026756093781670383
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.020072338944641086,
+          "z": -0.020072338944641086
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.04463678773808286,
+          "z": -0.04463678773808286
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.061430076033599394,
+          "z": -0.061430076033599394
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.04390999907627702,
+          "expected": 0.03307481724116968,
+          "z": 0.010835181835107337
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.009211668297540668,
+          "z": -0.009211668297540668
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.03250619574132149,
+          "z": -0.03250619574132149
+        }
+      ]
+    },
+    {
+      "technique": "Partition function (QFT)",
+      "tech_idx": 29774,
+      "origin": "Physique quantique (23K papers)",
+      "works": 22648,
+      "target": "RAMSEY",
+      "move": "Z = sum over all states. Pour le cube : Z = somme sur toutes les configurations, pondérée par e^(-beta * distance_au_résolu). Le free energy F = -kT ln Z donne une BORNE THERMODYNAMIQUE sur GN.",
+      "carmack_score": 0.17387904860700423,
+      "tier": "S",
+      "avg_z": -0.017973013297181078,
+      "total_cooc": 0.0,
+      "n_deserts": 2,
+      "n_pairs": 2,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Ramsey theory",
+          "cooc": 0.0,
+          "expected": 0.0153909951120325,
+          "z": -0.0153909951120325
+        },
+        {
+          "target": "Ramsey's theorem",
+          "cooc": 0.0,
+          "expected": 0.020555031482329657,
+          "z": -0.020555031482329657
+        }
+      ]
+    },
+    {
+      "technique": "Potts model",
+      "tech_idx": 64855,
+      "origin": "Physique stat (6.5K papers)",
+      "works": 6480,
+      "target": "GN",
+      "move": "Potts = Ising généralisé à q états. Le cube n×n a q = |G| états. La function de partition du Potts sur le graphe de Cayley = le polynôme chromatique. Lien avec Ramsey via coloration.",
+      "carmack_score": 0.15204292560200947,
+      "tier": "B",
+      "avg_z": 0.0403513611521209,
+      "total_cooc": 0.36029899795539677,
+      "n_deserts": 3,
+      "n_pairs": 7,
+      "desert_ratio": 0.42857142857142855,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.22688399907201529,
+          "expected": 0.014488641107799287,
+          "z": 0.212395357964216
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.006328509355809216,
+          "z": -0.006328509355809216
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.014073314006544574,
+          "z": -0.014073314006544574
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.019367987556352852,
+          "z": -0.019367987556352852
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.04988599964417517,
+          "expected": 0.010427997002726234,
+          "z": 0.03945800264144894
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.06837699934840202,
+          "expected": 0.002904301744025759,
+          "z": 0.06547269760437627
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.01515199989080429,
+          "expected": 0.010248719117292545,
+          "z": 0.004903280773511745
+        }
+      ]
+    },
+    {
+      "technique": "Holographic principle",
+      "tech_idx": 13175,
+      "origin": "Physique théorique (6.4K papers)",
+      "works": 6448,
+      "target": "PNP",
+      "move": "L'information d'un volume est bornée par sa SURFACE (pas son volume). Sur le Cayley graph : le nombre de positions à distance d du résolu croît comme la surface de la boule de rayon d. Borne holographique : GN ≥ log|G| / log(surface_growth_rate).",
+      "carmack_score": 0.13236415197842732,
+      "tier": "B",
+      "avg_z": -0.01906695103664267,
+      "total_cooc": 0.018182000145316124,
+      "n_deserts": 7,
+      "n_pairs": 8,
+      "desert_ratio": 0.875,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.0009447935480395653,
+          "z": -0.0009447935480395653
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 0.018182000145316124,
+          "expected": 0.12024967533412956,
+          "z": -0.10206767518881343
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.0,
+          "expected": 0.012673658224171488,
+          "z": -0.012673658224171488
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.0018034665045688217,
+          "z": -0.0018034665045688217
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.0,
+          "expected": 0.003884291972972315,
+          "z": -0.003884291972972315
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.0,
+          "expected": 0.002380981059402658,
+          "z": -0.002380981059402658
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.0,
+          "expected": 0.004867079899619369,
+          "z": -0.004867079899619369
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.0,
+          "expected": 0.023913661895553717,
+          "z": -0.023913661895553717
+        }
+      ]
+    },
+    {
+      "technique": "Godel incompleteness",
+      "tech_idx": 12665,
+      "origin": "Logique (1.8K papers)",
+      "works": 1764,
+      "target": "PNP",
+      "move": "Certaines valeurs de Ramsey sont-elles indémontrables dans PA ? Paris-Harrington 1977 : OUI pour certains énoncés Ramsey-like. Si R(5,5) est indémontrable, le canon ne peut PAS converger. C'est une BORNE MÉTA sur la méthode elle-même.",
+      "carmack_score": 0.1316761087235937,
+      "tier": "B",
+      "avg_z": 0.049110541839468086,
+      "total_cooc": 0.47080599679611623,
+      "n_deserts": 3,
+      "n_pairs": 8,
+      "desert_ratio": 0.375,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.00043123778653795863,
+          "z": -0.00043123778653795863
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 0.06149199977517128,
+          "expected": 0.054886280638345976,
+          "z": 0.006605719136825304
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.023485000245273113,
+          "expected": 0.005784713847031303,
+          "z": 0.01770028639824181
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.0008231670348928326,
+          "z": -0.0008231670348928326
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.008333000354468822,
+          "expected": 0.0017729306854047174,
+          "z": 0.006560069669064105
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.0,
+          "expected": 0.0010867654674146948,
+          "z": -0.0010867654674146948
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.04863799992017448,
+          "expected": 0.002221510474082272,
+          "z": 0.04641648944609221
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.32885799650102854,
+          "expected": 0.010915056146661843,
+          "z": 0.3179429403543667
+        }
+      ]
+    },
+    {
+      "technique": "Fitness landscape",
+      "tech_idx": 63747,
+      "origin": "Biologie évolutive (11K papers)",
+      "works": 11054,
+      "target": "GN",
+      "move": "Le paysage de fitness = graphe où chaque nœud est un génotype et les arêtes sont des mutations. Le DIAMÈTRE du fitness landscape = le nombre minimum de mutations pour passer du pire au meilleur. C'est EXACTEMENT God's Number pour le cube = diamètre du Cayley graph.",
+      "carmack_score": 0.06602638236559547,
+      "tier": "A",
+      "avg_z": -0.008863132089589228,
+      "total_cooc": 0.008333000354468822,
+      "n_deserts": 6,
+      "n_pairs": 7,
+      "desert_ratio": 0.8571428571428571,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.008333000354468822,
+          "expected": 0.013099228867826437,
+          "z": -0.004766228513357614
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.005721626467736934,
+          "z": -0.005721626467736934
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.012723730246950405,
+          "z": -0.012723730246950405
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.01751066230588801,
+          "z": -0.01751066230588801
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.009427986955808262,
+          "z": -0.009427986955808262
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.002625788917205052,
+          "z": -0.002625788917205052
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.00926590122017832,
+          "z": -0.00926590122017832
+        }
+      ]
+    },
+    {
+      "technique": "Potts model",
+      "tech_idx": 64855,
+      "origin": "Physique stat (6.5K papers)",
+      "works": 6480,
+      "target": "RAMSEY",
+      "move": "Potts = Ising généralisé à q états. Le cube n×n a q = |G| états. La function de partition du Potts sur le graphe de Cayley = le polynôme chromatique. Lien avec Ramsey via coloration.",
+      "carmack_score": 0.06537292687544843,
+      "tier": "A",
+      "avg_z": -0.007435550298362244,
+      "total_cooc": 0.0,
+      "n_deserts": 2,
+      "n_pairs": 2,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Ramsey theory",
+          "cooc": 0.0,
+          "expected": 0.0063673528976531816,
+          "z": -0.0063673528976531816
+        },
+        {
+          "target": "Ramsey's theorem",
+          "cooc": 0.0,
+          "expected": 0.008503747699071307,
+          "z": -0.008503747699071307
+        }
+      ]
+    },
+    {
+      "technique": "Ising model",
+      "tech_idx": 56807,
+      "origin": "Physique stat (48K papers)",
+      "works": 48310,
+      "target": "GN",
+      "move": "Ising = spins ±1 sur un réseau avec énergie d'interaction. Le cube EST un modèle d'Ising : chaque facette = spin, la configuration résolue = état fondamental, GN = temps de relaxation.",
+      "carmack_score": 0.06127435082849297,
+      "tier": "C",
+      "avg_z": 0.03977039692176062,
+      "total_cooc": 0.8496019947342575,
+      "n_deserts": 1,
+      "n_pairs": 7,
+      "desert_ratio": 0.14285714285714285,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.17622899962589145,
+          "expected": 0.10632196421446753,
+          "z": 0.06990703541142392
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.04644048674082125,
+          "z": -0.04644048674082125
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.03100300021469593,
+          "expected": 0.10327417023100476,
+          "z": -0.07227117001630882
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.018182000145316124,
+          "expected": 0.14212806187629995,
+          "z": -0.12394606173098383
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.44691299623809755,
+          "expected": 0.07652374821787826,
+          "z": 0.3703892480202193
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.06678899843245745,
+          "expected": 0.021312631308818816,
+          "z": 0.04547636712363863
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.11048600007779896,
+          "expected": 0.07520815369264253,
+          "z": 0.035277846385156436
+        }
+      ]
+    },
+    {
+      "technique": "Holographic principle",
+      "tech_idx": 13175,
+      "origin": "Physique théorique (6.4K papers)",
+      "works": 6448,
+      "target": "GN",
+      "move": "L'information d'un volume est bornée par sa SURFACE (pas son volume). Sur le Cayley graph : le nombre de positions à distance d du résolu croît comme la surface de la boule de rayon d. Borne holographique : GN ≥ log|G| / log(surface_growth_rate).",
+      "carmack_score": 0.03739431029746681,
+      "tier": "B",
+      "avg_z": -0.004713293129065247,
+      "total_cooc": 0.0,
+      "n_deserts": 7,
+      "n_pairs": 7,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.006141158062257175,
+          "z": -0.006141158062257175
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.0026824031296887392,
+          "z": -0.0026824031296887392
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.005965117441375808,
+          "z": -0.005965117441375808
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.008209318737791505,
+          "z": -0.008209318737791505
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.004420012711337913,
+          "z": -0.004420012711337913
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.0012310178668826508,
+          "z": -0.0012310178668826508
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.004344023954122934,
+          "z": -0.004344023954122934
+        }
+      ]
+    },
+    {
+      "technique": "Reversible computing",
+      "tech_idx": 16053,
+      "origin": "Informatique physique (1.5K papers)",
+      "works": 1510,
+      "target": "PNP",
+      "move": "Chaque move du cube est RÉVERSIBLE (R → R'). Landauer 1961 : effacer 1 bit = kT ln 2 d'énergie. Mais les moves réversibles n'effacent PAS d'info. Borne de Bennett sur le nombre de moves réversibles nécessaires.",
+      "carmack_score": 0.032355561016225366,
+      "tier": "B",
+      "avg_z": 0.00932797928345148,
+      "total_cooc": 0.13761000102385879,
+      "n_deserts": 4,
+      "n_pairs": 8,
+      "desert_ratio": 0.5,
+      "pairs": [
+        {
+          "target": "P versus NP",
+          "cooc": 0.0,
+          "expected": 0.0003485810544756948,
+          "z": -0.0003485810544756948
+        },
+        {
+          "target": "Comp. complexity",
+          "cooc": 0.03398700011894107,
+          "expected": 0.04436605088519875,
+          "z": -0.010379050766257683
+        },
+        {
+          "target": "Boolean satisfiability",
+          "cooc": 0.060649999883025885,
+          "expected": 0.004675939158362302,
+          "z": 0.055974060724663585
+        },
+        {
+          "target": "NP-complete",
+          "cooc": 0.0,
+          "expected": 0.0006653879645755889,
+          "z": -0.0006653879645755889
+        },
+        {
+          "target": "PSPACE",
+          "cooc": 0.0,
+          "expected": 0.001433107364714418,
+          "z": -0.001433107364714418
+        },
+        {
+          "target": "Circuit complexity",
+          "cooc": 0.03464000066742301,
+          "expected": 0.0008784616386250753,
+          "z": 0.033761539028797936
+        },
+        {
+          "target": "Proof complexity",
+          "cooc": 0.0,
+          "expected": 0.0017957064240617896,
+          "z": -0.0017957064240617896
+        },
+        {
+          "target": "Decidability",
+          "cooc": 0.008333000354468822,
+          "expected": 0.008822932266233336,
+          "z": -0.0004899319117645136
+        }
+      ]
+    },
+    {
+      "technique": "Godel incompleteness",
+      "tech_idx": 12665,
+      "origin": "Logique (1.8K papers)",
+      "works": 1764,
+      "target": "RAMSEY",
+      "move": "Certaines valeurs de Ramsey sont-elles indémontrables dans PA ? Paris-Harrington 1977 : OUI pour certains énoncés Ramsey-like. Si R(5,5) est indémontrable, le canon ne peut PAS converger. C'est une BORNE MÉTA sur la méthode elle-même.",
+      "carmack_score": 0.03152391506986005,
+      "tier": "B",
+      "avg_z": 0.008817980905890801,
+      "total_cooc": 0.020512999966740608,
+      "n_deserts": 1,
+      "n_pairs": 2,
+      "desert_ratio": 0.5,
+      "pairs": [
+        {
+          "target": "Ramsey theory",
+          "cooc": 0.020512999966740608,
+          "expected": 0.001231860218649316,
+          "z": 0.019281139748091293
+        },
+        {
+          "target": "Ramsey's theorem",
+          "cooc": 0.0,
+          "expected": 0.0016451779363096922,
+          "z": -0.0016451779363096922
+        }
+      ]
+    },
+    {
+      "technique": "Partition function (QFT)",
+      "tech_idx": 29774,
+      "origin": "Physique quantique (23K papers)",
+      "works": 22648,
+      "target": "GN",
+      "move": "Z = sum over all states. Pour le cube : Z = somme sur toutes les configurations, pondérée par e^(-beta * distance_au_résolu). Le free energy F = -kT ln Z donne une BORNE THERMODYNAMIQUE sur GN.",
+      "carmack_score": 0.03148017463669484,
+      "tier": "C",
+      "avg_z": 0.022777644650861937,
+      "total_cooc": 0.3475949971470982,
+      "n_deserts": 1,
+      "n_pairs": 7,
+      "desert_ratio": 0.14285714285714285,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.03571400046348572,
+          "expected": 0.03502155574765162,
+          "z": 0.0006924447158341007
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.015297103541663462,
+          "z": -0.015297103541663462
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.058954999316483736,
+          "expected": 0.034017638187551894,
+          "z": 0.024937361128931843
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.1304329987615347,
+          "expected": 0.04681578147170093,
+          "z": 0.08361721728983376
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.04263699892908335,
+          "expected": 0.025206275429842058,
+          "z": 0.01743072349924129
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.018182000145316124,
+          "expected": 0.007020200492208161,
+          "z": 0.011161799653107964
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.06167399953119457,
+          "expected": 0.024772929720446493,
+          "z": 0.036901069810748074
+        }
+      ]
+    },
+    {
+      "technique": "Penrose tiling",
+      "tech_idx": 61412,
+      "origin": "Mathématiques/Cristallographie (804 papers)",
+      "works": 804,
+      "target": "GN",
+      "move": "Quasi-cristaux = ordre sans périodicité. φ (golden ratio) est la constante structurelle des Penrose tilings. Si GN(n+1)/GN(n) → φ, le cube est un quasi-cristal combinatoire.",
+      "carmack_score": 0.03087339190986942,
+      "tier": "B",
+      "avg_z": 0.005060828609229674,
+      "total_cooc": 0.04999999888241291,
+      "n_deserts": 6,
+      "n_pairs": 7,
+      "desert_ratio": 0.8571428571428571,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.04999999888241291,
+          "expected": 0.002712766845715611,
+          "z": 0.047287232036697296
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.0011849123900238533,
+          "z": -0.0011849123900238533
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.0026350034735657924,
+          "z": -0.0026350034735657924
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.003626346606295853,
+          "z": -0.003626346606295853
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.001952476034552997,
+          "z": -0.001952476034552997
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.0005437841563282272,
+          "z": -0.0005437841563282272
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.0019189091113228595,
+          "z": -0.0019189091113228595
+        }
+      ]
+    },
+    {
+      "technique": "Resistance distance",
+      "tech_idx": 59049,
+      "origin": "Théorie des circuits (753 papers)",
+      "works": 753,
+      "target": "GN",
+      "move": "Resistance distance = distance effective dans un réseau électrique. Le graphe de Cayley vu comme un circuit : chaque arête = résistance 1Ω. La resistance distance effective donne une BORNE INFÉRIEURE sur le diamètre.",
+      "carmack_score": 0.025168385645224126,
+      "tier": "B",
+      "avg_z": 0.00536584400698811,
+      "total_cooc": 0.04595999978482723,
+      "n_deserts": 5,
+      "n_pairs": 7,
+      "desert_ratio": 0.7142857142857143,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.02777799963951111,
+          "expected": 0.0015633640101120811,
+          "z": 0.026214635629399026
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.0006828634715234868,
+          "z": -0.0006828634715234868
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.001518549079733533,
+          "z": -0.001518549079733533
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.002089858839667253,
+          "z": -0.002089858839667253
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.018182000145316124,
+          "expected": 0.0011252094030297305,
+          "z": 0.017056790742286394
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.0003133821030787673,
+          "z": -0.0003133821030787673
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.001105864828765609,
+          "z": -0.001105864828765609
+        }
+      ]
+    },
+    {
+      "technique": "Kolmogorov complexity",
+      "tech_idx": 34208,
+      "origin": "Théorie de l'information (2K papers)",
+      "works": 1974,
+      "target": "GN",
+      "move": "K(x) = longueur du plus court programme qui produit x. Si K(position) ≈ log|G|, alors la position est 'incompressible' et nécessite ~GN moves. Borne par complexité de Kolmogorov.",
+      "carmack_score": 0.02493742669432447,
+      "tier": "B",
+      "avg_z": -0.003292038370533919,
+      "total_cooc": 0.0,
+      "n_deserts": 7,
+      "n_pairs": 7,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.004289342382673709,
+          "z": -0.004289342382673709
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.001873546538771482,
+          "z": -0.001873546538771482
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.004166385362423834,
+          "z": -0.004166385362423834
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.005733866224889871,
+          "z": -0.005733866224889871
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.0030871942494393166,
+          "z": -0.0030871942494393166
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.0008598145588696321,
+          "z": -0.0008598145588696321
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.003034119276669586,
+          "z": -0.003034119276669586
+        }
+      ]
+    },
+    {
+      "technique": "Boltzmann entropy formula",
+      "tech_idx": 53836,
+      "origin": "Physique stat (6.5K papers)",
+      "works": 6509,
+      "target": "GN",
+      "move": "S = k ln W. Pour le cube : W = nombre de positions à distance d. L'entropie S(d) est maximale au milieu du graphe. dS/dd = 0 au 'point critique' → borne sur la distribution.",
+      "carmack_score": 0.02453203035611084,
+      "tier": "B",
+      "avg_z": -0.0032447195438527333,
+      "total_cooc": 0.0,
+      "n_deserts": 7,
+      "n_pairs": 7,
+      "desert_ratio": 1.0,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.0042276885907256275,
+          "z": -0.0042276885907256275
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.0018466167117254855,
+          "z": -0.0018466167117254855
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.0,
+          "expected": 0.004106498919842793,
+          "z": -0.004106498919842793
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.005651449256564966,
+          "z": -0.005651449256564966
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.0030428197941085667,
+          "z": -0.0030428197941085667
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.0008474558280439905,
+          "z": -0.0008474558280439905
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.002990507705957703,
+          "z": -0.002990507705957703
+        }
+      ]
+    },
+    {
+      "technique": "Cellular automaton",
+      "tech_idx": 54073,
+      "origin": "Systèmes complexes (22K papers)",
+      "works": 21666,
+      "target": "GN",
+      "move": "Rule 110 est Turing-complet. Le cube 4×4 est-il un automate cellulaire ? Si oui, les bornes de complexité des CA s'appliquent. Wolfram 2002 : certains CA ont des diamètres indécidables.",
+      "carmack_score": 0.021341068553092635,
+      "tier": "C",
+      "avg_z": -0.014390608057024313,
+      "total_cooc": 0.2806199975311756,
+      "n_deserts": 1,
+      "n_pairs": 7,
+      "desert_ratio": 0.14285714285714285,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.13888899981975555,
+          "expected": 0.07098333182251149,
+          "z": 0.06790566799724407
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.07494899816811085,
+          "expected": 0.031004886945778375,
+          "z": 0.04394411122233247
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.02777799963951111,
+          "expected": 0.06894854462446465,
+          "z": -0.04117054498495354
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.009523999877274036,
+          "expected": 0.09488842171035666,
+          "z": -0.08536442183308263
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.018182000145316124,
+          "expected": 0.05108926130347806,
+          "z": -0.032907261158161935
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.014228871629507355,
+          "z": -0.014228871629507355
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.011297999881207943,
+          "expected": 0.05021093589424921,
+          "z": -0.038912936013041265
+        }
+      ]
+    },
+    {
+      "technique": "Reversible computing",
+      "tech_idx": 16053,
+      "origin": "Informatique physique (1.5K papers)",
+      "works": 1510,
+      "target": "GN",
+      "move": "Chaque move du cube est RÉVERSIBLE (R → R'). Landauer 1961 : effacer 1 bit = kT ln 2 d'énergie. Mais les moves réversibles n'effacent PAS d'info. Borne de Bennett sur le nombre de moves réversibles nécessaires.",
+      "carmack_score": 0.003261756158185934,
+      "tier": "B",
+      "avg_z": -0.0005485382584665996,
+      "total_cooc": 0.008333000354468822,
+      "n_deserts": 6,
+      "n_pairs": 7,
+      "desert_ratio": 0.8571428571428571,
+      "pairs": [
+        {
+          "target": "Cayley graph",
+          "cooc": 0.0,
+          "expected": 0.002265776854092016,
+          "z": -0.002265776854092016
+        },
+        {
+          "target": "Wreath product",
+          "cooc": 0.0,
+          "expected": 0.0009896711439403773,
+          "z": -0.0009896711439403773
+        },
+        {
+          "target": "Permutation group",
+          "cooc": 0.008333000354468822,
+          "expected": 0.002200826764853247,
+          "z": 0.006132173589615575
+        },
+        {
+          "target": "Symmetric group",
+          "cooc": 0.0,
+          "expected": 0.0030288235859402862,
+          "z": -0.0030288235859402862
+        },
+        {
+          "target": "Spectral gap",
+          "cooc": 0.0,
+          "expected": 0.00163076123340506,
+          "z": -0.00163076123340506
+        },
+        {
+          "target": "Expander graph",
+          "cooc": 0.0,
+          "expected": 0.0004541833578423262,
+          "z": -0.0004541833578423262
+        },
+        {
+          "target": "Mixing time",
+          "cooc": 0.0,
+          "expected": 0.0016027252236617065,
+          "z": -0.0016027252236617065
+        }
+      ]
+    }
+  ],
+  "bridge_papers": [],
+  "bridge_paper_count": 0
+}

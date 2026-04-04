@@ -5,6 +5,48 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 4 avril 2026 — Session 34
+
+### V3 Batterie de tests — La mare qui décide
+- **P(k) mesuré sur cooc_global**: ⟨k⟩=2136, k_max=61K, gamma≈0.94 (ultra-dense, pas scale-free)
+- **Newman SIR-percolation** (cond-mat/0205009): T_c=0.000149, 1 param T fitte R_max parfaitement
+- **Recherche bibliographique** dans WT3 + arXiv tars (E:\arxiv\src\):
+  - 134 papers WT3 + 761 papers cousin deep research
+  - 10 papiers extraits des tars arXiv (Pastor-Satorras, Newman, Boguña, Cohen, Moreno, Lee)
+  - 9 modèles classés, 5 déserts cooc=0, 3 Carmack moves
+  - Metaprompt V2 rédigé (`data/metaprompt_wave_research.md`)
+- **Batterie 5 tests** (`scripts/test_wave_plan.py`):
+  - TEST 1 Énergie: **FAIL** — aucune formule E ne prédit R_max
+  - TEST 2 Cratère: **PARTIAL** — avg_internal_weight ρ=+0.71 (p=0.11, n=6 trop petit)
+  - TEST 3 Newman T: **PARTIAL** — LOO MAE=10,521 (16%), Laser = outlier (erreur 34K)
+  - TEST 4 Mort spectrale: **PASS** — mixing 1/gap × 2 = **8.8 ans** (obs 8-11), MAE=0.83yr
+  - TEST 5 Hybride: **PARTIAL** — H2 (Newman + spectral) = meilleur combo
+- **Oscillation mu(t) Gödel**: oscillateur amorti R²=0.99 (ETAS R²=0.11)
+- **Résultat clé**: le caillou NE compte PAS, c'est la mare qui décide
+- **Anomalie**: Laser 1960 = outlier absolu, à investiguer
+- **Outputs**: `wave_test_plan.json`, `wave_model_test.json`, `wave_full_test.json`, `wave_research_v2.json`
+
+---
+
+## 2 avril 2026 — Session 33
+
+### V3 Refonte — Le caillou dans la mare
+- **Sedov-Taylor INVALIDÉ**: mesurait la croissance globale de la science, PAS le blast local d'une météorite
+- **Gödel hold-out (frames globales)**: FAIL — ratio obs/pred=0.67, R²=-0.20 (modèle surestime systématiquement)
+- **Gödel hold-out WT3 (local, 3 concepts)**: FAIL — E ne prédit pas R_max, R²=0.003
+- **DÉCOUVERTE: propagation BFS onde réelle** dans WT3 (table cooc per-period)
+  - Méthode: BFS année par année depuis les concepts-graines, front qui s'élargit
+  - 6/13 météorites mesurées: Shannon (76%), Transistor (70%), Turing (65%), ADN (55%), Gödel (44%), Laser (6%)
+  - Onde meurt en 8-11 ans pour toutes les météorites
+  - **E (strate×continents) ne corrèle PAS avec R_max** — besoin de masse = works_count
+- **Analogie validée**: le mycélium = une mare, la percée = un caillou. E = m×g×h
+- **Carmack move identifié**: heat kernel sur Laplacien f(t) = e^(-tL) × f(0)
+  - WT4 a déjà le Laplacien (66K noeuds, gap 0.226) — zéro paramètre à fitter
+- **Scripts**: `godel_holdout.py`, `godel_holdout_wt3.py`, `godel_holdout_wave.py`
+- **Outputs**: `data/results/godel_holdout.json`, `godel_holdout_wt3.json`
+
+---
+
 ## 30 mars 2026 — Session 32
 
 ### V3 Sedov-Taylor — Calibrage complet + validation
@@ -348,4 +390,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-03-30 | 53,084L Python | 6,792 fichiers | phase CANOPEE_
+_Auto-update: 2026-04-04 | 58,324L Python | 6,818 fichiers | phase CANOPEE_

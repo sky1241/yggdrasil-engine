@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 30 mars 2026 (session 31), Sky×Claude (Opus 4.6)
+> Dernière màj: 4 avril 2026 (session 34), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -104,45 +104,77 @@ Pipeline spatial d'impact: qui a fait quoi, à quel point c'est gros, chronologi
 - [x] Gödel hold-out: train 12, predict 1 — ratio obs/pred=0.45 (blast atténué, sol vierge 1931)
 - [x] Brancher sur V3 météorites (Sedov-Taylor calibrage) — `calibrate_sedov.py`, 9 météorites, α=0.34, R²=0.64
 
-## V3 — CANDLESTICKS OHLC & MÉTÉORITES (APRÈS V2)
-Chaque percée majeure = un candlestick sur le mycelium.
-Le V3 RÉUTILISE les frames du V2 → quasi gratuit en calcul.
-Blast Sedov-Taylor se propage dans le sol (S-2→S0). Calibration depuis 1948, test final Gödel 1931.
-Voir `docs/formulas.tex` pour les formules complètes avec sources.
+## V3 — LE CAILLOU DANS LA MARE (REFONTE session 33)
+Chaque percée majeure = un caillou qui tombe dans le mycélium (S-2→S0).
+Le caillou crée une onde qui se propage, puis meurt.
 
-### Code V3 (sessions 7-8, 24 fév 2026)
-- [x] `engine/meteorites.py` — module complet (763 lignes)
-  - Sedov-Taylor: blast_radius, blast_velocity, energy_partition
-  - 7 deltas: compute_deltas(before, after)
-  - OHLC Candle + MeteoriteBox + MeteoriteRegistry
-  - fit_sedov (curve_fit scipy), predict_godel
-  - Catalogue 13 météorites (Shannon→AlphaFold)
-  - classify_candle (corrélation bougie↔trou A/B/C)
-- [x] Bugfix session 7: 8 bugs corrigés (4 meteorites + 4 core)
-- [x] Audit session 8: 26 bugs fixés sur 14 fichiers + 2 derniers bugs meteorites.py
-- [x] Tests meteorites.py passés: signature(), classify_candle(rho0=0), measure_impact(), summary()
-- [x] Calibrage Sedov-Taylor sur données réelles (9 météorites, 359 points) — session 32
-- [ ] Enrichir R(t) avec impact_scale.db (pas juste concepts_new)
-- [ ] Tester Gödel comme hold-out (retirer du fit, prédire seul)
+### Historique V3
+- [x] `engine/analysis/meteorites.py` — Sedov-Taylor + OHLC + 7 deltas (sessions 7-8)
+- [x] Calibrage Sedov-Taylor frames globales (R²=0.88 fit séparé) — session 32
+- [x] **INVALIDATION session 33**: Sedov mesurait la croissance globale de la science, PAS le blast local
+- [x] Gödel hold-out (frames globales): FAIL — R²=-0.20, ratio=0.67 — session 33
+- [x] Gödel hold-out WT3 (local): FAIL — E ne prédit pas R_max — session 33
+- [x] **Propagation BFS onde réelle** dans WT3 (table cooc per-period) — session 33
+  - 6/13 météorites mesurées: Shannon, ADN, Transistor, Laser, Gödel, Turing
+  - Onde meurt en 8-11 ans pour toutes, pic d'arêtes en 2-6 ans
 
-### La bougie OHLC scientifique
+### Le modèle du caillou
+```
+Le caillou tombe de strate S_h dans la mare (S0-S-1-S-2 = surface unique)
+  → onde se propage → amplitude décroit → onde meurt
+
+E_impact = m × g × h        (énergie potentielle classique)
+  m = works_count / degré des concepts-graines (masse du caillou)
+  h = strate d'origine (S0=0 → S6=6)
+  g = constante à fitter
+
+R_front(t) = v × t           (front avance, vitesse constante dans le graphe)
+A(r) = A₀ / √r × e^(-α×r)   (amplitude décroit géométriquement + dissipation)
+R_max ∝ E / ρ_local          (plus d'énergie / milieu moins dense = plus loin)
+```
+
+### Données mesurées (6/13 météorites)
+| Météorite | Strate | E_old | R_max (concepts) | % science | Pic | Mort |
+|-----------|--------|-------|------------------|-----------|-----|------|
+| Shannon 1948 | S1 | 7 | 49,627 | 76% | 1950 | t+8 |
+| Transistor 1947 | S0 | 6 | 45,604 | 70% | 1950 | t+8 |
+| Turing 1936 | S6 | 24 | 41,970 | 65% | 1939 | t+8 |
+| ADN 1953 | S0 | 5 | 36,081 | 55% | 1955 | t+9 |
+| Gödel 1931 | S6 | 54 | 28,845 | 44% | 1937 | t+11 |
+| Laser 1960 | S0 | 5 | 4,131 | 6% | 1962 | t+9 |
+
+### Carmack move: Heat Kernel sur Laplacien (WT4)
+```
+f(t) = exp(-t × L) × f(0)
+```
+- f(0) = vecteur Dirac sur les concepts-graines (1 sur Gödel, 0 partout)
+- L = Laplacien normalisé WT4 (66K noeuds, gap spectral 0.226)
+- f(t) = influence à temps t sur chaque concept
+- **Zéro paramètre à fitter** — tout est dans la structure du graphe
+- À comparer avec: BFS (ce qu'on a), SIR épidémique, sigmoïde, onde de surface
+
+### TODO V3
+- [x] Mesurer propagation BFS onde sur WT3 (6/13 faites)
+- [x] Mesurer P(k) sur cooc_global (⟨k⟩=2136, gamma≈0.94)
+- [x] Newman SIR-percolation: fitter T par météorite (6/6 OK)
+- [x] Oscillation mu(t) Gödel: oscillateur amorti R²=0.99
+- [x] Batterie 5 tests (énergie FAIL, cratère PARTIAL, Newman PARTIAL, mort PASS, hybride PARTIAL)
+- [x] Recherche biblio: 134+761 papers, 9 modèles, 5 déserts, 3 Carmack moves
+- [x] **E = m×g×h INVALIDÉ** — aucune formule d'énergie ne prédit R_max
+- [x] **Mort spectrale VALIDÉE** — mixing time 1/gap = 4.4 × 2yr = 8.8yr, MAE=0.83yr (Chung 1997)
+- [ ] **Investiguer anomalie Laser** (profil mare normal mais R_max=6% — pourquoi ?)
+- [ ] **Finir les 7 météorites restantes** (CRISPR, AlphaFold, Higgs, gravitational waves, mRNA, Internet, Poincaré)
+- [ ] **Implémenter heat kernel** sur WT4 (recalculer eigenvectors avec which='SM')
+- [ ] **Tester Newman sans Laser** (LOO MAE devrait baisser fortement)
+- [ ] **Identifier ce que T encode** (si pas les propriétés mare, quoi d'autre ?)
+- [ ] Gödel hold-out propre avec le bon modèle
+
+### La bougie OHLC scientifique (CONSERVÉ)
 - **Open** = date d'ÉMISSION du paper
 - **High** = pic de reconfiguration maximale du mycelium (dans S-2→S0)
 - **Low** = creux (résistance paradigme / stabilisation)
 - **Close** = date de VALIDATION (accepté, prouvé, répliqué, explosion citations)
 - **Longueur de la bougie** = temps de résistance du paradigme
-
-### Formule Sedov-Taylor adaptée au mycelium
-`R(t) = β × (E/ρ₀)^{1/5} × t^{2/5}`
-- E = strate_height × continents_touchés (énergie d'impact)
-- ρ₀ = meshedness locale avant impact (densité du sol)
-- R(t) = nombre de concepts affectés à t mois après publication
-- β, γ = paramètres libres à calibrer depuis les boîtes de météorites
-
-### Corrélation bougie ↔ type de trou (prédit par Sedov-Taylor + ρ₀)
-- Trou Technique (A) → ρ₀ élevé → blast lent → bougie MOYENNE
-- Trou Conceptuel (B) → ρ₀ faible (vide) → blast rapide → bougie COURTE
-- Trou Perceptuel (C) → ρ₀ élevé + hostile → blast bloqué → bougie LONGUE (Karikó mRNA: 30 ans)
 
 ### 7 indicateurs techniques sous chaque bougie
 Calculés comme DELTA entre frame avant et frame après la météorite:

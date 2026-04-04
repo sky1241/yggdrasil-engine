@@ -1,0 +1,366 @@
+{
+  "test": "wave_model_battery_v1",
+  "date": "2026-04-04",
+  "n_meteorites": 6,
+  "runtime_seconds": 103.4,
+  "test_1_energy": {
+    "verdict": "FAIL",
+    "best": "E_weight (seed_weight)",
+    "best_rho": -0.2571,
+    "formulas": {
+      "E_old (strate×continents)": {
+        "vs_rmax": {
+          "spearman_r": 0.0304,
+          "spearman_p": 0.9545,
+          "pearson_r": -0.0031,
+          "pearson_p": 0.9953,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": 0.0304,
+          "spearman_p": 0.9545,
+          "pearson_r": -0.1688,
+          "pearson_p": 0.7492,
+          "label": ""
+        }
+      },
+      "E_new (works×(1+strate))": {
+        "vs_rmax": {
+          "spearman_r": -0.0857,
+          "spearman_p": 0.8717,
+          "pearson_r": -0.245,
+          "pearson_p": 0.6398,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": -0.0857,
+          "spearman_p": 0.8717,
+          "pearson_r": -0.3195,
+          "pearson_p": 0.5371,
+          "label": ""
+        }
+      },
+      "E_mass (works_count)": {
+        "vs_rmax": {
+          "spearman_r": -0.1429,
+          "spearman_p": 0.7872,
+          "pearson_r": -0.2642,
+          "pearson_p": 0.6129,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": -0.1429,
+          "spearman_p": 0.7872,
+          "pearson_r": -0.3446,
+          "pearson_p": 0.5036,
+          "label": ""
+        }
+      },
+      "E_degree (seed_degree)": {
+        "vs_rmax": {
+          "spearman_r": 0.0857,
+          "spearman_p": 0.8717,
+          "pearson_r": -0.0322,
+          "pearson_p": 0.9517,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": 0.0857,
+          "spearman_p": 0.8717,
+          "pearson_r": -0.0069,
+          "pearson_p": 0.9896,
+          "label": ""
+        }
+      },
+      "E_weight (seed_weight)": {
+        "vs_rmax": {
+          "spearman_r": -0.2571,
+          "spearman_p": 0.6228,
+          "pearson_r": -0.6367,
+          "pearson_p": 0.174,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": -0.2571,
+          "spearman_p": 0.6228,
+          "pearson_r": -0.6147,
+          "pearson_p": 0.1941,
+          "label": ""
+        }
+      },
+      "log(E_mass)": {
+        "vs_rmax": {
+          "spearman_r": -0.1429,
+          "spearman_p": 0.7872,
+          "pearson_r": -0.2739,
+          "pearson_p": 0.5995,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": -0.1429,
+          "spearman_p": 0.7872,
+          "pearson_r": -0.1722,
+          "pearson_p": 0.7442,
+          "label": ""
+        }
+      },
+      "log(E_weight)": {
+        "vs_rmax": {
+          "spearman_r": -0.2571,
+          "spearman_p": 0.6228,
+          "pearson_r": -0.3519,
+          "pearson_p": 0.4939,
+          "label": ""
+        },
+        "vs_T": {
+          "spearman_r": -0.2571,
+          "spearman_p": 0.6228,
+          "pearson_r": -0.2346,
+          "pearson_p": 0.6545,
+          "label": ""
+        }
+      }
+    }
+  },
+  "test_2_crater": {
+    "verdict": "PARTIAL",
+    "best": "avg_internal_weight",
+    "best_rho": 0.7143,
+    "combos": {
+      "avg_internal_weight": {
+        "spearman_r": 0.7143,
+        "spearman_p": 0.1108,
+        "pearson_r": 0.5407,
+        "pearson_p": 0.268,
+        "label": ""
+      },
+      "local_density": {
+        "spearman_r": -0.6,
+        "spearman_p": 0.208,
+        "pearson_r": -0.266,
+        "pearson_p": 0.6104,
+        "label": ""
+      },
+      "median_neighbor_works": {
+        "spearman_r": -0.6,
+        "spearman_p": 0.208,
+        "pearson_r": -0.4468,
+        "pearson_p": 0.3744,
+        "label": ""
+      },
+      "hub_fraction": {
+        "spearman_r": -0.4857,
+        "spearman_p": 0.3287,
+        "pearson_r": -0.0618,
+        "pearson_p": 0.9074,
+        "label": ""
+      },
+      "avg_edge_weight": {
+        "spearman_r": -0.3714,
+        "spearman_p": 0.4685,
+        "pearson_r": -0.8209,
+        "pearson_p": 0.0453,
+        "label": ""
+      },
+      "n_neighbors": {
+        "spearman_r": -0.2,
+        "spearman_p": 0.704,
+        "pearson_r": -0.1618,
+        "pearson_p": 0.7594,
+        "label": ""
+      },
+      "aiw / density": {
+        "spearman_r": 0.7143,
+        "spearman_p": 0.1108,
+        "pearson_r": 0.4671,
+        "pearson_p": 0.3504,
+        "label": ""
+      },
+      "aiw × (1-density)": {
+        "spearman_r": 0.7143,
+        "spearman_p": 0.1108,
+        "pearson_r": 0.4944,
+        "pearson_p": 0.3189,
+        "label": ""
+      },
+      "1 / (density × med_works)": {
+        "spearman_r": 0.6,
+        "spearman_p": 0.208,
+        "pearson_r": 0.4482,
+        "pearson_p": 0.3727,
+        "label": ""
+      },
+      "aiw / med_works": {
+        "spearman_r": 0.7143,
+        "spearman_p": 0.1108,
+        "pearson_r": 0.5215,
+        "pearson_p": 0.2887,
+        "label": ""
+      },
+      "n_nbr × (1-density)": {
+        "spearman_r": 0.0857,
+        "spearman_p": 0.8717,
+        "pearson_r": -0.1224,
+        "pearson_p": 0.8173,
+        "label": ""
+      },
+      "(1-density) / avg_edge_w": {
+        "spearman_r": 0.3714,
+        "spearman_p": 0.4685,
+        "pearson_r": 0.2011,
+        "pearson_p": 0.7024,
+        "label": ""
+      },
+      "log(aiw) - log(density)": {
+        "spearman_r": 0.7143,
+        "spearman_p": 0.1108,
+        "pearson_r": 0.4276,
+        "pearson_p": 0.3977,
+        "label": ""
+      }
+    }
+  },
+  "test_3_newman": {
+    "verdict": "PARTIAL",
+    "best_predictor": "aiw",
+    "best_rho_vs_T": 0.7143,
+    "loo_mae": 10521,
+    "loo_predictions": [
+      {
+        "met": "Shannon 1948",
+        "T_pred": 0.00249,
+        "T_obs": 0.001473,
+        "S_pred": 0.886,
+        "rmax_pred": 57611,
+        "rmax_obs": 49627,
+        "error": 7984
+      },
+      {
+        "met": "Transistor 1947",
+        "T_pred": 0.000858,
+        "T_obs": 0.001214,
+        "S_pred": 0.579,
+        "rmax_pred": 37647,
+        "rmax_obs": 45604,
+        "error": 7957
+      },
+      {
+        "met": "Turing 1936",
+        "T_pred": 0.000647,
+        "T_obs": 0.001046,
+        "S_pred": 0.471,
+        "rmax_pred": 30624,
+        "rmax_obs": 41970,
+        "error": 11346
+      },
+      {
+        "met": "ADN 1953",
+        "T_pred": 0.000796,
+        "T_obs": 0.000794,
+        "S_pred": 0.5505,
+        "rmax_pred": 35798,
+        "rmax_obs": 36081,
+        "error": 283
+      },
+      {
+        "met": "Godel 1931",
+        "T_pred": 0.000643,
+        "T_obs": 0.000598,
+        "S_pred": 0.4687,
+        "rmax_pred": 30479,
+        "rmax_obs": 28845,
+        "error": 1634
+      },
+      {
+        "met": "Laser 1960",
+        "T_pred": 0.000873,
+        "T_obs": 0.00023,
+        "S_pred": 0.5852,
+        "rmax_pred": 38054,
+        "rmax_obs": 4131,
+        "error": 33923
+      }
+    ],
+    "T_correlations": {
+      "aiw": 0.7143,
+      "density": -0.6,
+      "med_works": -0.6,
+      "n_nbr": -0.2,
+      "seed_degree": 0.0857,
+      "seed_works": -0.1429,
+      "seed_weight": -0.2571,
+      "hub_frac": -0.4857,
+      "avg_edge_w": -0.3714
+    }
+  },
+  "test_4_death": {
+    "verdict": "PASS",
+    "spectral_gap": 0.225983,
+    "mixing_time_units": 4.43,
+    "ratio_yr_per_unit": 1.9962,
+    "predicted_death_years": 8.8,
+    "mean_observed_death": 8.8,
+    "mae_years": 0.83,
+    "decay_99pct_years": 40.7
+  },
+  "test_5_hybrid": {
+    "verdict": "PARTIAL",
+    "best_model": "H2_Newman_spectral",
+    "hybrids": {
+      "H1_Newman_mare": {
+        "description": "Newman S(T) with T predicted from mare properties",
+        "sources": "Newman 2002 (cond-mat/0205009)",
+        "params": 2,
+        "loo_mae": 10521,
+        "gives_rmax": true,
+        "gives_rt": false,
+        "gives_death": false,
+        "gives_oscillation": false
+      },
+      "H2_Newman_spectral": {
+        "description": "Newman R_max + spectral mixing time for death",
+        "sources": "Newman 2002 + Chung 1997",
+        "params": 3,
+        "loo_mae": 10521,
+        "predicted_death": 8.8,
+        "death_mae": 0.83,
+        "gives_rmax": true,
+        "gives_rt": false,
+        "gives_death": true,
+        "gives_oscillation": false
+      },
+      "H3_Newman_oscillator": {
+        "description": "Newman R_max + damped oscillator for mu(t)",
+        "sources": "Newman 2002 + Hawkes-type damped oscillator",
+        "params": 7,
+        "loo_mae": 10521,
+        "oscillator_r2": 0.9899,
+        "gives_rmax": true,
+        "gives_rt": true,
+        "gives_death": true,
+        "gives_oscillation": true,
+        "note": "Oscillator fitted on Godel only (n=1), cannot cross-validate"
+      },
+      "H4_full_stone": {
+        "description": "Full stone-in-water: E=m*g*h -> crater -> Newman S(T) -> spectral death",
+        "sources": "Newton 1687 + Worthington 1908 + Newman 2002 + Chung 1997",
+        "params": "depends on tests 1-4",
+        "gives_rmax": true,
+        "gives_rt": false,
+        "gives_death": true,
+        "gives_oscillation": false,
+        "note": "Only viable if Test 1 or 2 PASS (energy/crater predicts T)"
+      }
+    },
+    "overall": "Best validated model: H2_Newman_spectral. Newman gives R_max (MAE=10,521), spectral gap gives death (8.8 yr). Oscillator (R²=0.9899) gives mu(t) dynamics but validated on Godel only."
+  },
+  "sources": {
+    "energy": "Newton 1687, Principia Mathematica",
+    "crater": "Worthington 1908, A Study of Splashes",
+    "newman_percolation": "Newman 2002, cond-mat/0205009",
+    "heat_kernel": "Chung 1997, Spectral Graph Theory",
+    "sir": "Kermack & McKendrick 1927, Proc R Soc",
+    "branching": "Harris 1963, Theory of Branching Processes",
+    "surface_wave": "Lamb 1932 / Lighthill 1978"
+  }
+}
