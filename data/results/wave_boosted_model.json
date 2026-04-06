@@ -1,0 +1,844 @@
+{
+  "test": "wave_boosted_model_v1",
+  "date": "2026-04-06",
+  "n_features": 22,
+  "features": [
+    "1_over_n_seeds",
+    "avg_edge_weight",
+    "avg_internal_weight",
+    "avg_level",
+    "dist_over_n_seeds",
+    "dist_x_spread",
+    "hub_fraction",
+    "local_density",
+    "mean_spectral_degree",
+    "median_neighbor_works",
+    "n_neighbors",
+    "n_seeds",
+    "pre_edges",
+    "pre_weight",
+    "seed_degree",
+    "seed_spectral_dist",
+    "seed_spectral_spread",
+    "seed_weight",
+    "seed_works",
+    "seed_x_mean",
+    "seed_y_mean",
+    "seed_z_mean"
+  ],
+  "wt4_features": {
+    "Shannon 1948": {
+      "seed_spectral_dist": 1.8416,
+      "seed_spectral_spread": 1.2571,
+      "seed_x_mean": 0.9142,
+      "seed_y_mean": -0.8134,
+      "seed_z_mean": -1.2391,
+      "mean_spectral_degree": 8311.6
+    },
+    "Transistor 1947": {
+      "seed_spectral_dist": 1.824,
+      "seed_spectral_spread": 0.405,
+      "seed_x_mean": 0.9784,
+      "seed_y_mean": -1.4206,
+      "seed_z_mean": 0.0916,
+      "mean_spectral_degree": 18436.7
+    },
+    "Turing 1936": {
+      "seed_spectral_dist": 0.7495,
+      "seed_spectral_spread": 0.4401,
+      "seed_x_mean": 0.3427,
+      "seed_y_mean": -0.0684,
+      "seed_z_mean": -0.5499,
+      "mean_spectral_degree": 205.5
+    },
+    "ADN 1953": {
+      "seed_spectral_dist": 2.2417,
+      "seed_spectral_spread": 0.7836,
+      "seed_x_mean": -1.5,
+      "seed_y_mean": -1.4206,
+      "seed_z_mean": 1.0496,
+      "mean_spectral_degree": 142360.3
+    },
+    "Godel 1931": {
+      "seed_spectral_dist": 0.7755,
+      "seed_spectral_spread": 0.4009,
+      "seed_x_mean": 0.3628,
+      "seed_y_mean": -0.0468,
+      "seed_z_mean": -0.5704,
+      "mean_spectral_degree": 219.0
+    },
+    "Laser 1960": {
+      "seed_spectral_dist": 1.5078,
+      "seed_spectral_spread": 0.8538,
+      "seed_x_mean": 0.6713,
+      "seed_y_mean": -1.212,
+      "seed_z_mean": -0.2879,
+      "mean_spectral_degree": 139007.3
+    },
+    "CRISPR 2012": {
+      "seed_spectral_dist": 0.9408,
+      "seed_spectral_spread": 0.3437,
+      "seed_x_mean": -1.0206,
+      "seed_y_mean": -0.1945,
+      "seed_z_mean": 0.2289,
+      "mean_spectral_degree": 1705.2
+    },
+    "AlphaFold 2020": {
+      "seed_spectral_dist": 0.7042,
+      "seed_spectral_spread": 1.0975,
+      "seed_x_mean": -0.3325,
+      "seed_y_mean": -0.6399,
+      "seed_z_mean": 0.1245,
+      "mean_spectral_degree": 1315.8
+    },
+    "Grav waves 2016": {
+      "seed_spectral_dist": 2.306,
+      "seed_spectral_spread": 0,
+      "seed_x_mean": 0.9784,
+      "seed_y_mean": -1.4206,
+      "seed_z_mean": -1.3881,
+      "mean_spectral_degree": 5292.6
+    },
+    "Higgs 2012": {
+      "seed_spectral_dist": 2.306,
+      "seed_spectral_spread": 0,
+      "seed_x_mean": 0.9784,
+      "seed_y_mean": -1.4206,
+      "seed_z_mean": -1.3881,
+      "mean_spectral_degree": 6151.7
+    },
+    "mRNA 1990": {
+      "seed_spectral_dist": 0.533,
+      "seed_spectral_spread": 0.5005,
+      "seed_x_mean": -0.6568,
+      "seed_y_mean": 0.0019,
+      "seed_z_mean": -0.0479,
+      "mean_spectral_degree": 241.8
+    },
+    "Internet 1974": {
+      "seed_spectral_dist": 1.454,
+      "seed_spectral_spread": 1.3934,
+      "seed_x_mean": 0.861,
+      "seed_y_mean": 0.815,
+      "seed_z_mean": -0.6914,
+      "mean_spectral_degree": 77089.7
+    },
+    "Poincare 2003": {
+      "seed_spectral_dist": 2.0519,
+      "seed_spectral_spread": 0.756,
+      "seed_x_mean": 0.9143,
+      "seed_y_mean": -1.0483,
+      "seed_z_mean": -1.3774,
+      "mean_spectral_degree": 4770.8
+    }
+  },
+  "correlations": {
+    "1_over_n_seeds": {
+      "K": [
+        0.2623,
+        0.3866
+      ],
+      "r": [
+        0.5974,
+        0.0311
+      ],
+      "t0": [
+        -0.6552,
+        0.0151
+      ]
+    },
+    "avg_edge_weight": {
+      "K": [
+        -0.2802,
+        0.3538
+      ],
+      "r": [
+        -0.2582,
+        0.3943
+      ],
+      "t0": [
+        -0.2421,
+        0.4255
+      ]
+    },
+    "avg_internal_weight": {
+      "K": [
+        -0.2363,
+        0.4371
+      ],
+      "r": [
+        -0.2033,
+        0.5053
+      ],
+      "t0": [
+        0.1403,
+        0.6475
+      ]
+    },
+    "avg_level": {
+      "K": [
+        0.2956,
+        0.3268
+      ],
+      "r": [
+        -0.1251,
+        0.6839
+      ],
+      "t0": [
+        0.4298,
+        0.1427
+      ]
+    },
+    "dist_over_n_seeds": {
+      "K": [
+        -0.0633,
+        0.8373
+      ],
+      "r": [
+        0.3109,
+        0.3012
+      ],
+      "t0": [
+        -0.6047,
+        0.0286
+      ]
+    },
+    "dist_x_spread": {
+      "K": [
+        -0.3824,
+        0.1972
+      ],
+      "r": [
+        -0.2889,
+        0.3385
+      ],
+      "t0": [
+        0.0592,
+        0.8476
+      ]
+    },
+    "hub_fraction": {
+      "K": [
+        0.5165,
+        0.0707
+      ],
+      "r": [
+        0.4396,
+        0.1329
+      ],
+      "t0": [
+        -0.2201,
+        0.47
+      ]
+    },
+    "local_density": {
+      "K": [
+        0.1374,
+        0.6545
+      ],
+      "r": [
+        0.2857,
+        0.344
+      ],
+      "t0": [
+        -0.099,
+        0.7475
+      ]
+    },
+    "mean_spectral_degree": {
+      "K": [
+        -0.2088,
+        0.4936
+      ],
+      "r": [
+        -0.2198,
+        0.4706
+      ],
+      "t0": [
+        -0.2448,
+        0.4201
+      ]
+    },
+    "median_neighbor_works": {
+      "K": [
+        0.6044,
+        0.0287
+      ],
+      "r": [
+        0.5,
+        0.0819
+      ],
+      "t0": [
+        -0.2448,
+        0.4201
+      ]
+    },
+    "n_neighbors": {
+      "K": [
+        -0.2473,
+        0.4154
+      ],
+      "r": [
+        -0.1978,
+        0.5171
+      ],
+      "t0": [
+        -0.2531,
+        0.4041
+      ]
+    },
+    "n_seeds": {
+      "K": [
+        -0.2623,
+        0.3866
+      ],
+      "r": [
+        -0.5974,
+        0.0311
+      ],
+      "t0": [
+        0.6552,
+        0.0151
+      ]
+    },
+    "pre_edges": {
+      "K": [
+        -0.0989,
+        0.7479
+      ],
+      "r": [
+        -0.1429,
+        0.6415
+      ],
+      "t0": [
+        -0.2669,
+        0.3781
+      ]
+    },
+    "pre_weight": {
+      "K": [
+        -0.1813,
+        0.5533
+      ],
+      "r": [
+        -0.1923,
+        0.5291
+      ],
+      "t0": [
+        -0.2476,
+        0.4147
+      ]
+    },
+    "seed_degree": {
+      "K": [
+        -0.3736,
+        0.2086
+      ],
+      "r": [
+        -0.3132,
+        0.2974
+      ],
+      "t0": [
+        -0.0908,
+        0.768
+      ]
+    },
+    "seed_spectral_dist": {
+      "K": [
+        -0.2173,
+        0.4757
+      ],
+      "r": [
+        0.1568,
+        0.6089
+      ],
+      "t0": [
+        -0.4339,
+        0.1385
+      ]
+    },
+    "seed_spectral_spread": {
+      "K": [
+        -0.1898,
+        0.5345
+      ],
+      "r": [
+        -0.1898,
+        0.5345
+      ],
+      "t0": [
+        0.0675,
+        0.8266
+      ]
+    },
+    "seed_weight": {
+      "K": [
+        -0.3901,
+        0.1876
+      ],
+      "r": [
+        -0.3187,
+        0.2886
+      ],
+      "t0": [
+        -0.1651,
+        0.59
+      ]
+    },
+    "seed_works": {
+      "K": [
+        -0.1978,
+        0.5171
+      ],
+      "r": [
+        -0.1593,
+        0.6031
+      ],
+      "t0": [
+        -0.3109,
+        0.3012
+      ]
+    },
+    "seed_x_mean": {
+      "K": [
+        -0.116,
+        0.7058
+      ],
+      "r": [
+        0.0055,
+        0.9857
+      ],
+      "t0": [
+        0.083,
+        0.7875
+      ]
+    },
+    "seed_y_mean": {
+      "K": [
+        0.2814,
+        0.3517
+      ],
+      "r": [
+        -0.1198,
+        0.6967
+      ],
+      "t0": [
+        0.4449,
+        0.1276
+      ]
+    },
+    "seed_z_mean": {
+      "K": [
+        0.0468,
+        0.8794
+      ],
+      "r": [
+        -0.1843,
+        0.5466
+      ],
+      "t0": [
+        -0.0592,
+        0.8476
+      ]
+    }
+  },
+  "regression_loo": {
+    "K": {
+      "verdict": "PARTIAL",
+      "best_alpha": 0.1,
+      "mae": 10124.46,
+      "median_pct_error": 21.0,
+      "loo": [
+        {
+          "met": "Shannon 1948",
+          "obs": 49591.0,
+          "pred": 35310.28,
+          "error": 14280.72,
+          "pct_error": 28.8
+        },
+        {
+          "met": "Transistor 1947",
+          "obs": 45930.0,
+          "pred": 35295.97,
+          "error": 10634.03,
+          "pct_error": 23.2
+        },
+        {
+          "met": "Turing 1936",
+          "obs": 42064.0,
+          "pred": 33220.62,
+          "error": 8843.38,
+          "pct_error": 21.0
+        },
+        {
+          "met": "ADN 1953",
+          "obs": 35758.0,
+          "pred": 37832.14,
+          "error": 2074.14,
+          "pct_error": 5.8
+        },
+        {
+          "met": "Godel 1931",
+          "obs": 28961.0,
+          "pred": 37201.88,
+          "error": 8240.88,
+          "pct_error": 28.5
+        },
+        {
+          "met": "Laser 1960",
+          "obs": 4122.0,
+          "pred": 34373.89,
+          "error": 30251.89,
+          "pct_error": 733.9
+        },
+        {
+          "met": "CRISPR 2012",
+          "obs": 59153.0,
+          "pred": 59883.95,
+          "error": 730.95,
+          "pct_error": 1.2
+        },
+        {
+          "met": "AlphaFold 2020",
+          "obs": 51470.0,
+          "pred": 47542.16,
+          "error": 3927.84,
+          "pct_error": 7.6
+        },
+        {
+          "met": "Grav waves 2016",
+          "obs": 50290.0,
+          "pred": 30796.65,
+          "error": 19493.35,
+          "pct_error": 38.8
+        },
+        {
+          "met": "Higgs 2012",
+          "obs": 55534.0,
+          "pred": 64262.04,
+          "error": 8728.04,
+          "pct_error": 15.7
+        },
+        {
+          "met": "mRNA 1990",
+          "obs": 62765.0,
+          "pred": 68100.75,
+          "error": 5335.75,
+          "pct_error": 8.5
+        },
+        {
+          "met": "Internet 1974",
+          "obs": 53109.0,
+          "pred": 48423.25,
+          "error": 4685.75,
+          "pct_error": 8.8
+        },
+        {
+          "met": "Poincare 2003",
+          "obs": 20870.0,
+          "pred": 35261.23,
+          "error": 14391.23,
+          "pct_error": 69.0
+        }
+      ],
+      "top_features": {
+        "avg_internal_weight": 8815.3574822626,
+        "local_density": 8475.965192576841,
+        "pre_edges": 8062.436864958136,
+        "avg_level": 7832.852064019846,
+        "avg_edge_weight": -7018.686793867287
+      }
+    },
+    "r": {
+      "verdict": "PARTIAL",
+      "best_alpha": 10.0,
+      "mae": 1.28,
+      "median_pct_error": 30.6,
+      "loo": [
+        {
+          "met": "Shannon 1948",
+          "obs": 4.72,
+          "pred": 3.3,
+          "error": 1.43,
+          "pct_error": 30.2
+        },
+        {
+          "met": "Transistor 1947",
+          "obs": 1.62,
+          "pred": 3.92,
+          "error": 2.3,
+          "pct_error": 142.0
+        },
+        {
+          "met": "Turing 1936",
+          "obs": 2.24,
+          "pred": 3.1,
+          "error": 0.86,
+          "pct_error": 38.2
+        },
+        {
+          "met": "ADN 1953",
+          "obs": 3.48,
+          "pred": 3.06,
+          "error": 0.41,
+          "pct_error": 11.9
+        },
+        {
+          "met": "Godel 1931",
+          "obs": 1.64,
+          "pred": 3.37,
+          "error": 1.73,
+          "pct_error": 105.2
+        },
+        {
+          "met": "Laser 1960",
+          "obs": 1.16,
+          "pred": 3.39,
+          "error": 2.23,
+          "pct_error": 191.6
+        },
+        {
+          "met": "CRISPR 2012",
+          "obs": 5.41,
+          "pred": 3.64,
+          "error": 1.76,
+          "pct_error": 32.6
+        },
+        {
+          "met": "AlphaFold 2020",
+          "obs": 6.07,
+          "pred": 3.72,
+          "error": 2.35,
+          "pct_error": 38.7
+        },
+        {
+          "met": "Grav waves 2016",
+          "obs": 5.64,
+          "pred": 5.03,
+          "error": 0.62,
+          "pct_error": 11.0
+        },
+        {
+          "met": "Higgs 2012",
+          "obs": 6.02,
+          "pred": 4.87,
+          "error": 1.15,
+          "pct_error": 19.1
+        },
+        {
+          "met": "mRNA 1990",
+          "obs": 4.14,
+          "pred": 5.22,
+          "error": 1.08,
+          "pct_error": 26.2
+        },
+        {
+          "met": "Internet 1974",
+          "obs": 2.48,
+          "pred": 1.72,
+          "error": 0.76,
+          "pct_error": 30.6
+        },
+        {
+          "met": "Poincare 2003",
+          "obs": 3.75,
+          "pred": 3.74,
+          "error": 0.01,
+          "pct_error": 0.2
+        }
+      ],
+      "top_features": {
+        "n_seeds": -0.3804509846604429,
+        "1_over_n_seeds": 0.3194779591977539,
+        "seed_x_mean": -0.2990351551382855,
+        "avg_edge_weight": -0.2524173409737484,
+        "seed_spectral_spread": 0.24450386131773655
+      }
+    },
+    "t0": {
+      "verdict": "FAIL",
+      "best_alpha": 100.0,
+      "mae": 0.67,
+      "median_pct_error": 68.3,
+      "loo": [
+        {
+          "met": "Shannon 1948",
+          "obs": 1.24,
+          "pred": 1.31,
+          "error": 0.07,
+          "pct_error": 5.9
+        },
+        {
+          "met": "Transistor 1947",
+          "obs": 1.46,
+          "pred": 1.32,
+          "error": 0.14,
+          "pct_error": 9.8
+        },
+        {
+          "met": "Turing 1936",
+          "obs": 1.79,
+          "pred": 1.67,
+          "error": 0.12,
+          "pct_error": 6.9
+        },
+        {
+          "met": "ADN 1953",
+          "obs": 0.68,
+          "pred": 1.26,
+          "error": 0.58,
+          "pct_error": 84.6
+        },
+        {
+          "met": "Godel 1931",
+          "obs": 4.55,
+          "pred": 1.17,
+          "error": 3.38,
+          "pct_error": 74.4
+        },
+        {
+          "met": "Laser 1960",
+          "obs": 1.77,
+          "pred": 1.18,
+          "error": 0.59,
+          "pct_error": 33.1
+        },
+        {
+          "met": "CRISPR 2012",
+          "obs": 0.92,
+          "pred": 1.55,
+          "error": 0.63,
+          "pct_error": 68.3
+        },
+        {
+          "met": "AlphaFold 2020",
+          "obs": 0.71,
+          "pred": 1.56,
+          "error": 0.85,
+          "pct_error": 119.9
+        },
+        {
+          "met": "Grav waves 2016",
+          "obs": 0.71,
+          "pred": 1.28,
+          "error": 0.57,
+          "pct_error": 80.2
+        },
+        {
+          "met": "Higgs 2012",
+          "obs": 0.73,
+          "pred": 1.25,
+          "error": 0.52,
+          "pct_error": 70.7
+        },
+        {
+          "met": "mRNA 1990",
+          "obs": 1.17,
+          "pred": 1.56,
+          "error": 0.39,
+          "pct_error": 33.2
+        },
+        {
+          "met": "Internet 1974",
+          "obs": 1.2,
+          "pred": 1.49,
+          "error": 0.29,
+          "pct_error": 23.8
+        },
+        {
+          "met": "Poincare 2003",
+          "obs": 0.82,
+          "pred": 1.46,
+          "error": 0.64,
+          "pct_error": 77.8
+        }
+      ],
+      "top_features": {
+        "n_seeds": 0.05844752962135613,
+        "1_over_n_seeds": -0.04194668706945529,
+        "dist_over_n_seeds": -0.035357449743677306,
+        "seed_spectral_dist": -0.03439989261073591,
+        "seed_y_mean": 0.026650960399606845
+      }
+    }
+  },
+  "temporal_test": {
+    "K": {
+      "verdict": "PASS",
+      "mae": 9890.74,
+      "median_pct_error": 15.9,
+      "n_train": 6,
+      "n_test": 7
+    },
+    "r": {
+      "verdict": "FAIL",
+      "mae": 3.48,
+      "median_pct_error": 77.0,
+      "n_train": 6,
+      "n_test": 7
+    },
+    "t0": {
+      "verdict": "FAIL",
+      "mae": 1.14,
+      "median_pct_error": 142.4,
+      "n_train": 6,
+      "n_test": 7
+    }
+  },
+  "trajectory_reconstruction": {
+    "CRISPR 2012": {
+      "K_pred": 68576,
+      "r_pred": 1.097,
+      "t0_pred": 2.323,
+      "K_obs": 59315,
+      "r2_trajectory": 0.4254
+    },
+    "AlphaFold 2020": {
+      "K_pred": 46709,
+      "r_pred": 1.619,
+      "t0_pred": 2.276,
+      "K_obs": 51485,
+      "r2_trajectory": -0.3698
+    },
+    "Grav waves 2016": {
+      "K_pred": 26738,
+      "r_pred": 1.132,
+      "t0_pred": 1.778,
+      "K_obs": 50302,
+      "r2_trajectory": -2.0843
+    },
+    "Higgs 2012": {
+      "K_pred": 54795,
+      "r_pred": 1.384,
+      "t0_pred": 1.77,
+      "K_obs": 55558,
+      "r2_trajectory": 0.3477
+    },
+    "mRNA 1990": {
+      "K_pred": 84582,
+      "r_pred": 0.1,
+      "t0_pred": 2.609,
+      "K_obs": 62787,
+      "r2_trajectory": 0.2266
+    },
+    "Internet 1974": {
+      "K_pred": 49741,
+      "r_pred": 4.141,
+      "t0_pred": 1.642,
+      "K_obs": 53257,
+      "r2_trajectory": 0.8563
+    },
+    "Poincare 2003": {
+      "K_pred": 26444,
+      "r_pred": 3.042,
+      "t0_pred": 1.837,
+      "K_obs": 21072,
+      "r2_trajectory": -0.226
+    }
+  },
+  "graph_center": {
+    "x": -0.1293,
+    "y": 0.0269,
+    "z": 0.0244
+  }
+}
