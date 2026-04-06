@@ -342,3 +342,41 @@ death ≈ 1/λ₁ × ratio = 8.1 ans    [MAE=1.79, PASS]
 
 Scripts: `scripts/wave_predictive_model.py`, `scripts/wave_predictive_search.py`
 Résultats: `data/results/wave_predictive_model.json`, `data/results/wave_predictive_search.json`
+
+---
+
+## RÉFÉRENCES COMPLÈTES (session 34)
+
+### Modèles validés
+- Verhulst, P.F. (1838). "Notice sur la loi que la population suit dans son accroissement." — Logistique R(t) = K/(1+exp(-r(t-t₀)))
+- Chung, F.R.K. (1997). *Spectral Graph Theory*. AMS CBMS No. 92. — Mort spectrale, gap λ₁
+- Newman, M.E.J. (2002). "Spread of epidemic disease on networks." *Phys. Rev. E* 66, 016128. arXiv: cond-mat/0205009 — SIR-percolation, generating functions
+- Lamb, H. (1932). *Hydrodynamics*, 6th ed. CUP. — Onde de surface A(r) = A₀/√r × exp(-αr)
+- Lighthill, J. (1978). *Waves in Fluids*. CUP. — Ondes dispersives
+
+### Modèles testés (non retenus ou partiels)
+- Pastor-Satorras, R. & Vespignani, A. (2001). *Phys. Rev. Lett.* 86(14), 3200. arXiv: cond-mat/0010317 — SIS scale-free, λ_c → 0
+- Boguña, M. et al. (2003). arXiv: cond-mat/0205439 — Seuil fini avec clustering
+- Kermack, W.O. & McKendrick, A.G. (1927). *Proc. R. Soc. Lond. A* 115(772), 700-721 — SIR classique
+- Harris, T.E. (1963). *The Theory of Branching Processes*. Springer — Galton-Watson, seuil μ=1
+- Kondor, R.I. & Lafferty, J. (2002). *Proc. ICML*, 315-322 — Diffusion kernels sur graphes
+- Newman, M.E.J., Strogatz, S.H., Watts, D.J. (2001). arXiv: cond-mat/0007235 — Random graphs, generating functions
+- Cohen, R. et al. (2000). arXiv: cond-mat/0010251 — Percolation scale-free
+
+### Carmack moves identifiés
+- Moreno, Y. et al. (2004). arXiv: cond-mat/0312131 — Rumor spreading, mécanisme de saturation
+- Lee, D.S. et al. (2004). arXiv: cond-mat/0401531 — Sandpile avalanche sur SF
+- Aleksiejuk, A. et al. (2002). arXiv: cond-mat/0111586 — Contagion financière / SOC
+
+### Déserts dans le graphe (cooc=0, Carmack moves purs)
+- seismology × epidemic (score 321.6) — ETAS/Omori jamais appliqué aux graphes de connaissances
+- heat_kernel × cascade (score 116.3) — diffusion spectrale jamais sur cascades d'information
+- logistic_function × scale_free_network — notre modèle est un Carmack move
+- carrying_capacity × scale_free_network — K en fonction de topologie = vierge
+- PageRank × epidemic — malgré PLOS 2020 (R²=0.96 avec 3 features)
+- front_velocity × epidemic — vitesse du front sur réseau = non formalisé
+
+### Sources web consultées (session 34)
+- Bucur, D. et al. (2020). "Beyond ranking nodes: Predicting epidemic outbreak sizes by network centralities." *PLOS Comp. Bio.* — R²=0.96 avec PageRank + edge density
+- Hébert-Dufresne, L. et al. (2023). "Multi-scale Local Network Structure Critically Impacts Epidemic Spread." arXiv: 2312.17351
+- Mohammadi, Y. et al. "Epidemic Forecasting on Networks: Bridging Local Samples with Global Outcomes"
