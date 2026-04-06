@@ -44,6 +44,14 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 **Outputs**: `wave_comprehensive_test.json`, `wave_physics.md` mis à jour
 
+**Modèle prédictif:**
+- K prédit à ±11% (Ridge LOO, PASS)
+- r prédit par 1/n_seeds (ρ=+0.60) — caillou pointu = onde rapide
+- t₀ prédit par n_seeds (ρ=+0.66) — plus de seeds = inflexion tardive
+- Gödel hold-out: K OK (17%), trajectoire FAIL (r et t₀ faux)
+- Carmack move: seismology × epidemic score=321.6 (plus gros désert du graphe)
+- **Outputs**: `wave_predictive_model.json`, `wave_predictive_search.json`
+
 ---
 
 ## 2 avril 2026 — Session 33
@@ -408,4 +416,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-04-06 | 58,314L Python | 6,818 fichiers | phase CANOPEE_
+_Auto-update: 2026-04-06 | 59,184L Python | 6,823 fichiers | phase CANOPEE_

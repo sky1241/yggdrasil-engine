@@ -169,10 +169,15 @@ f(t) = exp(-t × L) × f(0)
 - [x] Index composite créé: `idx_cooc_a_period ON cooc(concept_a, period)` (accélère BFS 27×)
 
 ### TODO V3 — PROCHAINES ÉTAPES
+- [x] **Modèle prédictif K** — Ridge LOO ±11% (PASS)
+- [x] **1/n_seeds prédit r** — ρ=+0.60, caillou pointu = onde rapide
+- [x] **n_seeds prédit t₀** — ρ=+0.66, plus de seeds = inflexion tardive
+- [x] **Carmack move** — seismology × epidemic score=321.6 (plus gros désert)
+- [ ] **Améliorer r et t₀** — explorer spectral distance des seeds, ETAS/Omori
 - [ ] **Implémenter heat kernel** sur WT4 (recalculer eigenvectors avec which='SM')
-- [ ] **Prédire T depuis la mare** — trouver la bonne combinaison de features (Newman + mare)
-- [ ] **Gödel hold-out propre** — train 12, predict Gödel avec modèle logistique
-- [ ] **V4 God Cube** — appliquer le modèle onde au solveur (quand percée arrive, prédire propagation)
+- [ ] **Explorer Carmack seismology × epidemic** — ETAS aftershock model sur le graphe
+- [ ] **Gödel hold-out propre** — comprendre pourquoi t₀=4.55 (anomal)
+- [ ] **V4 God Cube** — appliquer le modèle onde au solveur
 
 ### La bougie OHLC scientifique (CONSERVÉ)
 - **Open** = date d'ÉMISSION du paper

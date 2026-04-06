@@ -1,0 +1,767 @@
+{
+  "test": "wave_predictive_model_v1",
+  "date": "2026-04-06",
+  "n_meteorites": 13,
+  "step_1_regression": {
+    "K": {
+      "verdict": "PASS",
+      "best_alpha": 0.1,
+      "mae": 6809.66,
+      "median_pct_error": 11.3,
+      "correlations": {
+        "local_density": {
+          "rho": 0.1374,
+          "p": 0.6545
+        },
+        "avg_internal_weight": {
+          "rho": -0.2363,
+          "p": 0.4371
+        },
+        "median_neighbor_works": {
+          "rho": 0.6044,
+          "p": 0.0287
+        },
+        "n_neighbors": {
+          "rho": -0.2473,
+          "p": 0.4154
+        },
+        "hub_fraction": {
+          "rho": 0.5165,
+          "p": 0.0707
+        },
+        "avg_edge_weight": {
+          "rho": -0.2802,
+          "p": 0.3538
+        },
+        "seed_degree": {
+          "rho": -0.3736,
+          "p": 0.2086
+        },
+        "seed_works": {
+          "rho": -0.1978,
+          "p": 0.5171
+        },
+        "seed_weight": {
+          "rho": -0.3901,
+          "p": 0.1876
+        },
+        "pre_edges": {
+          "rho": -0.0989,
+          "p": 0.7479
+        },
+        "pre_weight": {
+          "rho": -0.1813,
+          "p": 0.5533
+        },
+        "avg_level": {
+          "rho": 0.2956,
+          "p": 0.3268
+        },
+        "n_seeds": {
+          "rho": -0.2623,
+          "p": 0.3866
+        }
+      },
+      "top_features": {
+        "local_density": 12958.0353,
+        "pre_edges": 12642.2397,
+        "median_neighbor_works": 9801.461,
+        "avg_internal_weight": 9782.1093,
+        "seed_works": -8058.8383
+      },
+      "loo_predictions": [
+        {
+          "met": "Shannon 1948",
+          "obs": 49591.0,
+          "pred": 44941.68,
+          "error": 4649.32,
+          "pct_error": 9.4
+        },
+        {
+          "met": "Transistor 1947",
+          "obs": 45930.0,
+          "pred": 39408.6,
+          "error": 6521.4,
+          "pct_error": 14.2
+        },
+        {
+          "met": "Turing 1936",
+          "obs": 42064.0,
+          "pred": 37637.63,
+          "error": 4426.37,
+          "pct_error": 10.5
+        },
+        {
+          "met": "ADN 1953",
+          "obs": 35758.0,
+          "pred": 52273.5,
+          "error": 16515.5,
+          "pct_error": 46.2
+        },
+        {
+          "met": "Godel 1931",
+          "obs": 28961.0,
+          "pred": 33950.48,
+          "error": 4989.48,
+          "pct_error": 17.2
+        },
+        {
+          "met": "Laser 1960",
+          "obs": 4122.0,
+          "pred": 20932.0,
+          "error": 16810.0,
+          "pct_error": 407.8
+        },
+        {
+          "met": "CRISPR 2012",
+          "obs": 59153.0,
+          "pred": 56157.9,
+          "error": 2995.1,
+          "pct_error": 5.1
+        },
+        {
+          "met": "AlphaFold 2020",
+          "obs": 51470.0,
+          "pred": 45633.62,
+          "error": 5836.38,
+          "pct_error": 11.3
+        },
+        {
+          "met": "Grav waves 2016",
+          "obs": 50290.0,
+          "pred": 51949.95,
+          "error": 1659.95,
+          "pct_error": 3.3
+        },
+        {
+          "met": "Higgs 2012",
+          "obs": 55534.0,
+          "pred": 55197.57,
+          "error": 336.43,
+          "pct_error": 0.6
+        },
+        {
+          "met": "mRNA 1990",
+          "obs": 62765.0,
+          "pred": 72970.72,
+          "error": 10205.72,
+          "pct_error": 16.3
+        },
+        {
+          "met": "Internet 1974",
+          "obs": 53109.0,
+          "pred": 52474.66,
+          "error": 634.34,
+          "pct_error": 1.2
+        },
+        {
+          "met": "Poincare 2003",
+          "obs": 20870.0,
+          "pred": 33815.53,
+          "error": 12945.53,
+          "pct_error": 62.0
+        }
+      ]
+    },
+    "r_growth": {
+      "verdict": "PARTIAL",
+      "best_alpha": 10.0,
+      "mae": 1.41,
+      "median_pct_error": 30.6,
+      "correlations": {
+        "local_density": {
+          "rho": 0.2857,
+          "p": 0.344
+        },
+        "avg_internal_weight": {
+          "rho": -0.2033,
+          "p": 0.5053
+        },
+        "median_neighbor_works": {
+          "rho": 0.5,
+          "p": 0.0819
+        },
+        "n_neighbors": {
+          "rho": -0.1978,
+          "p": 0.5171
+        },
+        "hub_fraction": {
+          "rho": 0.4396,
+          "p": 0.1329
+        },
+        "avg_edge_weight": {
+          "rho": -0.2582,
+          "p": 0.3943
+        },
+        "seed_degree": {
+          "rho": -0.3132,
+          "p": 0.2974
+        },
+        "seed_works": {
+          "rho": -0.1593,
+          "p": 0.6031
+        },
+        "seed_weight": {
+          "rho": -0.3187,
+          "p": 0.2886
+        },
+        "pre_edges": {
+          "rho": -0.1429,
+          "p": 0.6415
+        },
+        "pre_weight": {
+          "rho": -0.1923,
+          "p": 0.5291
+        },
+        "avg_level": {
+          "rho": -0.1251,
+          "p": 0.6839
+        },
+        "n_seeds": {
+          "rho": -0.5974,
+          "p": 0.0311
+        }
+      },
+      "top_features": {
+        "n_seeds": -0.5624,
+        "avg_edge_weight": -0.3214,
+        "median_neighbor_works": 0.2853,
+        "seed_weight": -0.1997,
+        "avg_level": -0.149
+      },
+      "loo_predictions": [
+        {
+          "met": "Shannon 1948",
+          "obs": 4.72,
+          "pred": 2.93,
+          "error": 1.8,
+          "pct_error": 38.0
+        },
+        {
+          "met": "Transistor 1947",
+          "obs": 1.62,
+          "pred": 3.98,
+          "error": 2.36,
+          "pct_error": 145.9
+        },
+        {
+          "met": "Turing 1936",
+          "obs": 2.24,
+          "pred": 3.49,
+          "error": 1.25,
+          "pct_error": 55.6
+        },
+        {
+          "met": "ADN 1953",
+          "obs": 3.48,
+          "pred": 2.89,
+          "error": 0.58,
+          "pct_error": 16.8
+        },
+        {
+          "met": "Godel 1931",
+          "obs": 1.64,
+          "pred": 3.76,
+          "error": 2.12,
+          "pct_error": 129.0
+        },
+        {
+          "met": "Laser 1960",
+          "obs": 1.16,
+          "pred": 3.7,
+          "error": 2.53,
+          "pct_error": 217.8
+        },
+        {
+          "met": "CRISPR 2012",
+          "obs": 5.41,
+          "pred": 3.75,
+          "error": 1.66,
+          "pct_error": 30.6
+        },
+        {
+          "met": "AlphaFold 2020",
+          "obs": 6.07,
+          "pred": 4.07,
+          "error": 2.0,
+          "pct_error": 32.9
+        },
+        {
+          "met": "Grav waves 2016",
+          "obs": 5.64,
+          "pred": 4.7,
+          "error": 0.94,
+          "pct_error": 16.7
+        },
+        {
+          "met": "Higgs 2012",
+          "obs": 6.02,
+          "pred": 4.79,
+          "error": 1.23,
+          "pct_error": 20.4
+        },
+        {
+          "met": "mRNA 1990",
+          "obs": 4.14,
+          "pred": 5.19,
+          "error": 1.05,
+          "pct_error": 25.3
+        },
+        {
+          "met": "Internet 1974",
+          "obs": 2.48,
+          "pred": 1.89,
+          "error": 0.6,
+          "pct_error": 24.1
+        },
+        {
+          "met": "Poincare 2003",
+          "obs": 3.75,
+          "pred": 3.58,
+          "error": 0.17,
+          "pct_error": 4.5
+        }
+      ]
+    },
+    "t0": {
+      "verdict": "PARTIAL",
+      "best_alpha": 10.0,
+      "mae": 0.67,
+      "median_pct_error": 33.1,
+      "correlations": {
+        "local_density": {
+          "rho": -0.099,
+          "p": 0.7475
+        },
+        "avg_internal_weight": {
+          "rho": 0.1403,
+          "p": 0.6475
+        },
+        "median_neighbor_works": {
+          "rho": -0.2448,
+          "p": 0.4201
+        },
+        "n_neighbors": {
+          "rho": -0.2531,
+          "p": 0.4041
+        },
+        "hub_fraction": {
+          "rho": -0.2201,
+          "p": 0.47
+        },
+        "avg_edge_weight": {
+          "rho": -0.2421,
+          "p": 0.4255
+        },
+        "seed_degree": {
+          "rho": -0.0908,
+          "p": 0.768
+        },
+        "seed_works": {
+          "rho": -0.3109,
+          "p": 0.3012
+        },
+        "seed_weight": {
+          "rho": -0.1651,
+          "p": 0.59
+        },
+        "pre_edges": {
+          "rho": -0.2669,
+          "p": 0.3781
+        },
+        "pre_weight": {
+          "rho": -0.2476,
+          "p": 0.4147
+        },
+        "avg_level": {
+          "rho": 0.4298,
+          "p": 0.1427
+        },
+        "n_seeds": {
+          "rho": 0.6552,
+          "p": 0.0151
+        }
+      },
+      "top_features": {
+        "n_seeds": 0.36,
+        "median_neighbor_works": -0.118,
+        "n_neighbors": -0.0766,
+        "seed_degree": -0.0756,
+        "pre_edges": -0.0729
+      },
+      "loo_predictions": [
+        {
+          "met": "Shannon 1948",
+          "obs": 1.24,
+          "pred": 1.17,
+          "error": 0.07,
+          "pct_error": 5.8
+        },
+        {
+          "met": "Transistor 1947",
+          "obs": 1.46,
+          "pred": 1.21,
+          "error": 0.25,
+          "pct_error": 16.8
+        },
+        {
+          "met": "Turing 1936",
+          "obs": 1.79,
+          "pred": 2.35,
+          "error": 0.56,
+          "pct_error": 31.4
+        },
+        {
+          "met": "ADN 1953",
+          "obs": 0.68,
+          "pred": 1.01,
+          "error": 0.33,
+          "pct_error": 33.1
+        },
+        {
+          "met": "Godel 1931",
+          "obs": 4.55,
+          "pred": 1.25,
+          "error": 3.3,
+          "pct_error": 72.5
+        },
+        {
+          "met": "Laser 1960",
+          "obs": 1.77,
+          "pred": 0.94,
+          "error": 0.83,
+          "pct_error": 47.0
+        },
+        {
+          "met": "CRISPR 2012",
+          "obs": 0.92,
+          "pred": 1.49,
+          "error": 0.57,
+          "pct_error": 57.3
+        },
+        {
+          "met": "AlphaFold 2020",
+          "obs": 0.71,
+          "pred": 1.53,
+          "error": 0.82,
+          "pct_error": 82.1
+        },
+        {
+          "met": "Grav waves 2016",
+          "obs": 0.71,
+          "pred": 1.13,
+          "error": 0.42,
+          "pct_error": 42.0
+        },
+        {
+          "met": "Higgs 2012",
+          "obs": 0.73,
+          "pred": 1.01,
+          "error": 0.28,
+          "pct_error": 27.6
+        },
+        {
+          "met": "mRNA 1990",
+          "obs": 1.17,
+          "pred": 1.22,
+          "error": 0.05,
+          "pct_error": 4.3
+        },
+        {
+          "met": "Internet 1974",
+          "obs": 1.2,
+          "pred": 1.55,
+          "error": 0.35,
+          "pct_error": 29.2
+        },
+        {
+          "met": "Poincare 2003",
+          "obs": 0.82,
+          "pred": 1.71,
+          "error": 0.89,
+          "pct_error": 89.0
+        }
+      ]
+    }
+  },
+  "step_2_p4": {
+    "Shannon 1948": {
+      "avg_p4": 608.5497,
+      "median_p4": 50.4702,
+      "desert_ratio": 0.345,
+      "avg_z": -3.247,
+      "n_pairs": 400,
+      "n_deserts": 138
+    },
+    "Transistor 1947": {
+      "avg_p4": 729.7356,
+      "median_p4": 58.6419,
+      "desert_ratio": 0.295,
+      "avg_z": -3.6991,
+      "n_pairs": 400,
+      "n_deserts": 118
+    },
+    "Turing 1936": {
+      "avg_p4": 61.6561,
+      "median_p4": 0.6239,
+      "desert_ratio": 0.5,
+      "avg_z": -0.4366,
+      "n_pairs": 600,
+      "n_deserts": 300
+    },
+    "ADN 1953": {
+      "avg_p4": 3163.0445,
+      "median_p4": 483.4375,
+      "desert_ratio": 0.16,
+      "avg_z": -14.3037,
+      "n_pairs": 400,
+      "n_deserts": 64
+    },
+    "Godel 1931": {
+      "avg_p4": 43.8413,
+      "median_p4": 0.3125,
+      "desert_ratio": 0.4883,
+      "avg_z": -0.3132,
+      "n_pairs": 600,
+      "n_deserts": 293
+    },
+    "Laser 1960": {
+      "avg_p4": 1820.4374,
+      "median_p4": 175.0733,
+      "desert_ratio": 0.415,
+      "avg_z": -8.1879,
+      "n_pairs": 400,
+      "n_deserts": 166
+    },
+    "CRISPR 2012": {
+      "avg_p4": 221.8759,
+      "median_p4": 15.4873,
+      "desert_ratio": 0.2525,
+      "avg_z": -1.2404,
+      "n_pairs": 400,
+      "n_deserts": 101
+    },
+    "AlphaFold 2020": {
+      "avg_p4": 374.4682,
+      "median_p4": 36.4809,
+      "desert_ratio": 0.3875,
+      "avg_z": -2.1723,
+      "n_pairs": 400,
+      "n_deserts": 155
+    },
+    "Grav waves 2016": {
+      "avg_p4": 440.6949,
+      "median_p4": 33.4853,
+      "desert_ratio": 0.0,
+      "avg_z": -2.3697,
+      "n_pairs": 200,
+      "n_deserts": 0
+    },
+    "Higgs 2012": {
+      "avg_p4": 568.2742,
+      "median_p4": 78.5643,
+      "desert_ratio": 0.0,
+      "avg_z": -2.3894,
+      "n_pairs": 200,
+      "n_deserts": 0
+    },
+    "mRNA 1990": {
+      "avg_p4": 241.444,
+      "median_p4": 37.0731,
+      "desert_ratio": 0.4325,
+      "avg_z": -1.5074,
+      "n_pairs": 400,
+      "n_deserts": 173
+    },
+    "Internet 1974": {
+      "avg_p4": 1492.4664,
+      "median_p4": 164.0569,
+      "desert_ratio": 0.45,
+      "avg_z": -6.4966,
+      "n_pairs": 600,
+      "n_deserts": 270
+    },
+    "Poincare 2003": {
+      "avg_p4": 240.0856,
+      "median_p4": 1.5387,
+      "desert_ratio": 0.3775,
+      "avg_z": -1.2983,
+      "n_pairs": 400,
+      "n_deserts": 151
+    }
+  },
+  "step_3_carmack": [
+    {
+      "pair": "diffusion × spectral_graph_theory",
+      "a": 60336,
+      "b": 61010,
+      "cooc": 0.0128,
+      "expected": 0.5,
+      "z": -0.4865,
+      "desert": false,
+      "carmack_score": 0
+    },
+    {
+      "pair": "wave_propagation × laplacian_matrix",
+      "a": 55559,
+      "b": 2429,
+      "cooc": 0.0095,
+      "expected": 0.46,
+      "z": -0.4551,
+      "desert": false,
+      "carmack_score": 0
+    },
+    {
+      "pair": "wave_propagation × random_walk",
+      "a": 55559,
+      "b": 3378,
+      "cooc": 0.1104,
+      "expected": 2.04,
+      "z": -1.3521,
+      "desert": false,
+      "carmack_score": 0
+    },
+    {
+      "pair": "impulse_response × laplacian_matrix",
+      "a": 60743,
+      "b": 2429,
+      "cooc": 0.0095,
+      "expected": 0.09,
+      "z": -0.0782,
+      "desert": false,
+      "carmack_score": 0
+    },
+    {
+      "pair": "impulse_response × spectral_graph_theory",
+      "a": 60743,
+      "b": 61010,
+      "cooc": 0,
+      "expected": 0.04,
+      "z": -0.0395,
+      "desert": true,
+      "carmack_score": 3.55
+    },
+    {
+      "pair": "epidemic_model × heat_kernel",
+      "a": 9788,
+      "b": 12999,
+      "cooc": 0,
+      "expected": 0.06,
+      "z": -0.0622,
+      "desert": true,
+      "carmack_score": 5.93
+    },
+    {
+      "pair": "epidemic_model × seismic_wave",
+      "a": 9788,
+      "b": 61732,
+      "cooc": 0,
+      "expected": 0.26,
+      "z": -0.2643,
+      "desert": true,
+      "carmack_score": 29.1
+    },
+    {
+      "pair": "epidemic_model × financial_contagion",
+      "a": 9788,
+      "b": 32088,
+      "cooc": 0,
+      "expected": 0.02,
+      "z": -0.0189,
+      "desert": true,
+      "carmack_score": 1.57
+    },
+    {
+      "pair": "percolation × impulse_response",
+      "a": 2489,
+      "b": 60743,
+      "cooc": 0,
+      "expected": 0.11,
+      "z": -0.1089,
+      "desert": true,
+      "carmack_score": 10.96
+    },
+    {
+      "pair": "percolation × financial_contagion",
+      "a": 2489,
+      "b": 32088,
+      "cooc": 0,
+      "expected": 0.01,
+      "z": -0.0085,
+      "desert": true,
+      "carmack_score": 0.65
+    },
+    {
+      "pair": "impact_crater × cascade",
+      "a": 12452,
+      "b": 53869,
+      "cooc": 0.2919,
+      "expected": 5.01,
+      "z": -2.1084,
+      "desert": false,
+      "carmack_score": 0
+    },
+    {
+      "pair": "impact_crater × scale_free_network",
+      "a": 12452,
+      "b": 17674,
+      "cooc": 0,
+      "expected": 0.02,
+      "z": -0.0228,
+      "desert": true,
+      "carmack_score": 1.9
+    },
+    {
+      "pair": "branching_process × spectral_graph_theory",
+      "a": 12054,
+      "b": 61010,
+      "cooc": 0,
+      "expected": 0.01,
+      "z": -0.0118,
+      "desert": true,
+      "carmack_score": 0.94
+    },
+    {
+      "pair": "branching_process × laplacian_matrix",
+      "a": 12054,
+      "b": 2429,
+      "cooc": 0.0095,
+      "expected": 0.03,
+      "z": -0.0168,
+      "desert": false,
+      "carmack_score": 0
+    }
+  ],
+  "step_4_holdout": {
+    "holdout": "Godel 1931",
+    "predictions": {
+      "K": {
+        "observed": 28961,
+        "predicted": 33961.81,
+        "error": 5000.81,
+        "pct_error": 17.3
+      },
+      "r_growth": {
+        "observed": 1.64,
+        "predicted": 3.7,
+        "error": 2.06,
+        "pct_error": 125.3
+      },
+      "t0": {
+        "observed": 4.55,
+        "predicted": 1.27,
+        "error": 3.28,
+        "pct_error": 72.1
+      }
+    },
+    "r2_trajectory": -0.3816,
+    "verdict": "FAIL"
+  },
+  "sources": {
+    "logistic": "Verhulst 1838",
+    "ridge": "Hoerl & Kennard 1970",
+    "p4": "Uzzi et al 2013 (z-score atypicality)",
+    "newman": "Newman 2002, cond-mat/0205009",
+    "spectral": "Chung 1997, Spectral Graph Theory"
+  }
+}

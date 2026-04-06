@@ -217,6 +217,20 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 **Scripts**: `scripts/wave_comprehensive_test.py` (7 phases, checkpoints crash-safe)
 **Résultats**: `data/results/wave_comprehensive_test.json` (13 météorites × 6 modèles × 7 phases)
 
+**Modèle prédictif (K, r, t₀ depuis la mare):**
+- K (portée): **PASS** ±11% — Ridge regression, meilleur feature = median_neighbor_works (ρ=+0.60)
+- r (vitesse): PARTIAL ±31% — meilleur = 1/n_seeds (ρ=+0.60). Caillou pointu = onde rapide.
+- t₀ (timing): PARTIAL ±33% — meilleur = n_seeds (ρ=+0.66). Plus de seeds = inflexion tardive.
+- Gödel hold-out: K à 17% OK, mais r et t₀ faux → R² trajectoire = -0.38
+
+**Carmack moves session 34:**
+- **seismology × epidemic** = score 321.6, cooc=0, z=-2.29 — PLUS GROS DÉSERT
+- **heat_kernel × cascade** = score 116.3, cooc=0
+- **cognitive_psych × scale_free** = score 75.1, cooc=0
+
+**Scripts**: `wave_predictive_model.py`, `wave_predictive_search.py`
+**Résultats**: `wave_predictive_model.json`, `wave_predictive_search.json`
+
 ### LEGACY (ne plus utiliser pour du neuf)
 - `strates_export_v2.json` (21,524) — ancien sous-ensemble keyword-filtré, remplacé par 65K
 - `cooccurrence_scan.py` (85×85 domaines) — remplacé par winter_tree_scanner (65K)

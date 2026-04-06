@@ -1,0 +1,497 @@
+{
+  "search": "wave_predictive_search_v3",
+  "date": "2026-04-06",
+  "new_features": {
+    "Shannon 1948": {
+      "degree_variance": 56315382.7,
+      "degree_skew": 3.7594,
+      "weight_variance": 422005064158.5,
+      "weight_median": 635.1,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 13125.72,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 4787.1
+    },
+    "Transistor 1947": {
+      "degree_variance": 62849881.8,
+      "degree_skew": 3.2365,
+      "weight_variance": 421206632244.4,
+      "weight_median": 756.0,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 11026.19,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 5521.5
+    },
+    "Turing 1936": {
+      "degree_variance": 103501486.3,
+      "degree_skew": 2.0977,
+      "weight_variance": 451261826248.0,
+      "weight_median": 1153.3,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 7228.43,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 8000.0
+    },
+    "ADN 1953": {
+      "degree_variance": 62013269.2,
+      "degree_skew": 3.1844,
+      "weight_variance": 421982815274.4,
+      "weight_median": 706.2,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 11805.1,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 5633.6
+    },
+    "Godel 1931": {
+      "degree_variance": 99819611.3,
+      "degree_skew": 2.1582,
+      "weight_variance": 431100985166.7,
+      "weight_median": 1077.6,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 7736.18,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 7735.9
+    },
+    "Laser 1960": {
+      "degree_variance": 61362137.2,
+      "degree_skew": 3.2268,
+      "weight_variance": 421971827842.4,
+      "weight_median": 859.0,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 9704.61,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 5667.2
+    },
+    "CRISPR 2012": {
+      "degree_variance": 83267878.1,
+      "degree_skew": 2.6341,
+      "weight_variance": 420883632574.1,
+      "weight_median": 936.5,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 8901.42,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 6902.7
+    },
+    "AlphaFold 2020": {
+      "degree_variance": 82084344.5,
+      "degree_skew": 2.6506,
+      "weight_variance": 413422273359.2,
+      "weight_median": 959.3,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 8689.5,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 7088.9
+    },
+    "Grav waves 2016": {
+      "degree_variance": 82991379.4,
+      "degree_skew": 2.7909,
+      "weight_variance": 420420961686.5,
+      "weight_median": 993.1,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 8394.52,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 6622.2
+    },
+    "Higgs 2012": {
+      "degree_variance": 89852187.7,
+      "degree_skew": 2.0637,
+      "weight_variance": 458097871008.1,
+      "weight_median": 1517.0,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 5495.25,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 7759.6
+    },
+    "mRNA 1990": {
+      "degree_variance": 89974937.5,
+      "degree_skew": 2.1693,
+      "weight_variance": 351480370613.3,
+      "weight_median": 1720.9,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 4844.08,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 8467.4
+    },
+    "Internet 1974": {
+      "degree_variance": 58656909.8,
+      "degree_skew": 3.5447,
+      "weight_variance": 422208479862.5,
+      "weight_median": 629.2,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 13248.26,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 4989.4
+    },
+    "Poincare 2003": {
+      "degree_variance": 75980442.3,
+      "degree_skew": 3.0468,
+      "weight_variance": 421417230794.1,
+      "weight_median": 590.4,
+      "weight_max": 8336188.8,
+      "contrast_ratio": 14119.52,
+      "seed_spectral_dist": 0,
+      "mean_nbr_degree": 5666.2
+    }
+  },
+  "new_correlations": {
+    "degree_variance": {
+      "vs_r": {
+        "rho": 0.1429,
+        "p": 0.6415
+      },
+      "vs_t0": {
+        "rho": 0.1403,
+        "p": 0.6475
+      },
+      "vs_K": {
+        "rho": 0.2198,
+        "p": 0.4706
+      }
+    },
+    "degree_skew": {
+      "vs_r": {
+        "rho": -0.2857,
+        "p": 0.344
+      },
+      "vs_t0": {
+        "rho": 0.0138,
+        "p": 0.9644
+      },
+      "vs_K": {
+        "rho": -0.2527,
+        "p": 0.4048
+      }
+    },
+    "weight_variance": {
+      "vs_r": {
+        "rho": -0.3022,
+        "p": 0.3156
+      },
+      "vs_t0": {
+        "rho": 0.3934,
+        "p": 0.1836
+      },
+      "vs_K": {
+        "rho": -0.2967,
+        "p": 0.3249
+      }
+    },
+    "weight_median": {
+      "vs_r": {
+        "rho": 0.2308,
+        "p": 0.4481
+      },
+      "vs_t0": {
+        "rho": 0.0908,
+        "p": 0.768
+      },
+      "vs_K": {
+        "rho": 0.3956,
+        "p": 0.1809
+      }
+    },
+    "weight_max": {
+      "vs_r": {
+        "rho": NaN,
+        "p": NaN
+      },
+      "vs_t0": {
+        "rho": NaN,
+        "p": NaN
+      },
+      "vs_K": {
+        "rho": NaN,
+        "p": NaN
+      }
+    },
+    "contrast_ratio": {
+      "vs_r": {
+        "rho": -0.2308,
+        "p": 0.4481
+      },
+      "vs_t0": {
+        "rho": -0.0908,
+        "p": 0.768
+      },
+      "vs_K": {
+        "rho": -0.3956,
+        "p": 0.1809
+      }
+    },
+    "seed_spectral_dist": {
+      "vs_r": {
+        "rho": NaN,
+        "p": NaN
+      },
+      "vs_t0": {
+        "rho": NaN,
+        "p": NaN
+      },
+      "vs_K": {
+        "rho": NaN,
+        "p": NaN
+      }
+    },
+    "mean_nbr_degree": {
+      "vs_r": {
+        "rho": 0.2253,
+        "p": 0.4593
+      },
+      "vs_t0": {
+        "rho": 0.055,
+        "p": 0.8583
+      },
+      "vs_K": {
+        "rho": 0.2912,
+        "p": 0.3344
+      }
+    }
+  },
+  "papers_found": {
+    "omori_law": [
+      {
+        "paper_id": "1505.02225",
+        "title": "Aftershocks and Omori's law in a modified Carlson-Langer model with nonlinear visco-elasticity",
+        "year": 2015
+      },
+      {
+        "paper_id": "1011.4992",
+        "title": "Random stress and Omori's law",
+        "year": 2011
+      },
+      {
+        "paper_id": "1102.2091",
+        "title": "The blogosphere as an excitable social medium: Richter’s and Omori’s Law in media coverage",
+        "year": 2011
+      },
+      {
+        "paper_id": "1006.1882",
+        "title": "Market dynamics immediately before and after financial shocks: quantifying the Omori, productivity and Bath laws",
+        "year": 2010
+      },
+      {
+        "paper_id": "0809.2461",
+        "title": "Correlations and Omori law in Spamming",
+        "year": 2008
+      },
+      {
+        "paper_id": "physics/0609179",
+        "title": "Multifractal Omori Law for Earthquake Triggering: New Tests on the California, Japan and Worldwide Catalogs",
+        "year": 2006
+      },
+      {
+        "paper_id": "cond-mat/0402577",
+        "title": "Omori Law for Sliding of Blocks on Inclined Rough Surfaces",
+        "year": 2004
+      },
+      {
+        "paper_id": "cond-mat/0407208",
+        "title": "Magnitude-Dependent Omori Law: Empirical Study and Theory",
+        "year": 2004
+      },
+      {
+        "paper_id": "cond-mat/0311493",
+        "title": "Andrade, Omori and Time-to-failure Laws from Thermal Noise in Material Rupture",
+        "year": 2003
+      },
+      {
+        "paper_id": "cond-mat/0203505",
+        "title": "Diffusion of epicenters of earthquake aftershocks, Omori’s law, and generalized continuous-time random walk models",
+        "year": 2002
+      }
+    ],
+    "etas_model": [
+      {
+        "paper_id": "1511.01561",
+        "title": "Strong scaling for numerical weather prediction at petascale with the atmospheric model NUMA",
+        "year": 2018
+      },
+      {
+        "paper_id": "1508.07769",
+        "title": "Metastability for the Ising Model on the Hypercube",
+        "year": 2017
+      },
+      {
+        "paper_id": "1507.02498",
+        "title": "Nonperturbative fluctuations and metastability in a simple model: from observables to microscopic theory and back",
+        "year": 2016
+      },
+      {
+        "paper_id": "1508.06169",
+        "title": "Relativistic evaluation of the two-photon decay of the metastable<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:mn>1</mml:mn><mml:msup><mml:mi>s</mml:mi><mml:mn>2</mml:mn></mml:msup><mml:mn>2</mml:mn><mml:mi>s</mml:mi><mml:mn>2</mml:mn><mml:mi>p</mml:mi><mml:mspace width=\"0.16em\"/><mml:msup><mml:mrow/><mml:mn>3</mml:mn></mml:msup><mml:msub><mml:mi>P</mml:mi><mml:mn>0</mml:mn></mml:msub></mml:mrow></mml:math>state in berylliumlike ions with an effective-potential model",
+        "year": 2016
+      },
+      {
+        "paper_id": "1510.06357",
+        "title": "Equilibrium, metastability, and hysteresis in a model spin-crossover material with nearest-neighbor antiferromagnetic-like and long-range ferromagnetic-like interactions",
+        "year": 2016
+      },
+      {
+        "paper_id": "1410.3061",
+        "title": "Metastability for the contact process on the configuration model with infinite mean degree",
+        "year": 2015
+      },
+      {
+        "paper_id": "1411.6802",
+        "title": "Metastability of the Ising model on random regular graphs at zero temperature",
+        "year": 2015
+      },
+      {
+        "paper_id": "1501.01731",
+        "title": "Metastability for a PDE with blow-up and the FFG dynamics on diluted models",
+        "year": 2015
+      },
+      {
+        "paper_id": "1504.05868",
+        "title": "A new magnitude-dependent ETAS model for earthquakes",
+        "year": 2015
+      },
+      {
+        "paper_id": "1507.05100",
+        "title": "Tree-level metastability bounds for the most general two Higgs doublet model",
+        "year": 2015
+      }
+    ]
+  },
+  "n_papers": 20,
+  "carmack_results": [
+    {
+      "pair": "eigenvalues × epidemic_model",
+      "a": 9157,
+      "b": 9788,
+      "cooc": 0.6291,
+      "expected": 0.89,
+      "z": -0.2565,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "eigenvalues × cascade",
+      "a": 9157,
+      "b": 53869,
+      "cooc": 0.8167,
+      "expected": 13.71,
+      "z": -3.4825,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "random_walk × cascade",
+      "a": 3378,
+      "b": 53869,
+      "cooc": 0.1938,
+      "expected": 3.9,
+      "z": -1.8759,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "heat_kernel × cascade",
+      "a": 12999,
+      "b": 53869,
+      "cooc": 0,
+      "expected": 0.96,
+      "z": -0.963,
+      "desert": true,
+      "score": 116.33
+    },
+    {
+      "pair": "heat_kernel × epidemic",
+      "a": 12999,
+      "b": 9788,
+      "cooc": 0,
+      "expected": 0.06,
+      "z": -0.0622,
+      "desert": true,
+      "score": 5.93
+    },
+    {
+      "pair": "seismology × epidemic",
+      "a": 10173,
+      "b": 9788,
+      "cooc": 0,
+      "expected": 5.23,
+      "z": -2.2868,
+      "desert": true,
+      "score": 321.65
+    },
+    {
+      "pair": "seismology × branching_process",
+      "a": 10173,
+      "b": 12054,
+      "cooc": 0.3644,
+      "expected": 2.4,
+      "z": -1.3147,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "seismology × percolation",
+      "a": 10173,
+      "b": 2489,
+      "cooc": 0.1777,
+      "expected": 2.36,
+      "z": -1.4212,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "cognitive_psych × scale_free",
+      "a": 12633,
+      "b": 17674,
+      "cooc": 0,
+      "expected": 0.69,
+      "z": -0.6889,
+      "desert": true,
+      "score": 75.07
+    },
+    {
+      "pair": "financial_contagion × phase_transition",
+      "a": 32088,
+      "b": 7678,
+      "cooc": 0.0095,
+      "expected": 0.25,
+      "z": -0.2356,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "systemic_risk × percolation",
+      "a": 6986,
+      "b": 2489,
+      "cooc": 0,
+      "expected": 0.06,
+      "z": -0.0623,
+      "desert": true,
+      "score": 5.95
+    },
+    {
+      "pair": "population × spectral_graph",
+      "a": 44219,
+      "b": 61010,
+      "cooc": 0.0128,
+      "expected": 16.28,
+      "z": -4.0394,
+      "desert": false,
+      "score": 0
+    },
+    {
+      "pair": "population × laplacian",
+      "a": 44219,
+      "b": 2429,
+      "cooc": 0.1084,
+      "expected": 36.2,
+      "z": -6.0097,
+      "desert": false,
+      "score": 0
+    }
+  ],
+  "best_predictor_r": {
+    "feature": "weight_variance",
+    "rho": -0.3022
+  },
+  "best_predictor_t0": {
+    "feature": "weight_variance",
+    "rho": 0.3934
+  }
+}

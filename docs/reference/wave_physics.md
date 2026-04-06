@@ -297,3 +297,48 @@ Le Laser (4,131 = 6%) tombe dans une mare épaisse (avg_edge_weight=12.24, Type 
 
 Scripts: `scripts/wave_comprehensive_test.py`
 Résultats: `data/results/wave_comprehensive_test.json`
+
+---
+
+## 11. MODÈLE PRÉDICTIF — Prédire K, r, t₀ depuis la mare
+
+### K (portée) — PASS (±11%)
+
+Ridge regression LOO 13-fold sur 13 features mare.
+Meilleur prédicteur: `median_neighbor_works` (ρ=+0.60, p=0.029).
+
+### r (vitesse) — PARTIAL (±31%)
+
+Meilleur prédicteur: `1/n_seeds` (ρ=+0.60).
+**Interprétation physique**: un caillou pointu (1 seed) perce plus vite qu'un caillou large (3 seeds).
+La concentration de l'énergie initiale détermine la vitesse.
+
+### t₀ (timing inflexion) — PARTIAL (±33%)
+
+Meilleur prédicteur: `n_seeds` (ρ=+0.66, p=0.015).
+Plus de seeds = inflexion plus tardive (énergie diluée = montée lente).
+
+### Formule prédictive candidate (C2 — à valider)
+
+```
+K ≈ Ridge(mare_features)           [±11%, PASS]
+r ≈ a / n_seeds + b                [±31%, C2]
+t₀ ≈ c × n_seeds + d              [±33%, C2]
+death ≈ 1/λ₁ × ratio = 8.1 ans    [MAE=1.79, PASS]
+```
+
+### Gödel hold-out
+- K prédit à 17% (OK)
+- r et t₀ faux → trajectoire R² = -0.38 (FAIL)
+- Le timing de Gödel (t₀=4.55) est anomal — l'onde met 4 ans avant de décoller
+
+### Carmack moves découverts
+
+| Paire | Score | z | Status |
+|-------|-------|---|--------|
+| seismology × epidemic | 321.6 | -2.29 | DÉSERT |
+| heat_kernel × cascade | 116.3 | -0.96 | DÉSERT |
+| cognitive_psych × scale_free | 75.1 | -0.69 | DÉSERT |
+
+Scripts: `scripts/wave_predictive_model.py`, `scripts/wave_predictive_search.py`
+Résultats: `data/results/wave_predictive_model.json`, `data/results/wave_predictive_search.json`
