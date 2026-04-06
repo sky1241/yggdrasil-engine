@@ -231,6 +231,42 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 **Scripts**: `wave_predictive_model.py`, `wave_predictive_search.py`
 **Résultats**: `wave_predictive_model.json`, `wave_predictive_search.json`
 
+### V3 SESSION 35 — TEST TEMPOREL HONNÊTE + NORMALISATION ÉPOQUE (6 avril 2026)
+
+**Test temporel (train pré-1960 → predict post-1974):**
+
+| Param | Sans époque | Avec époque | Verdict |
+|-------|-------------|-------------|---------|
+| K (portée) | **15.9% PASS** | 63% FAIL | Époque DÉGRADE K |
+| r (vitesse) | 77% FAIL | 95% FAIL | Toujours FAIL |
+| t₀ (timing) | 142% FAIL | 143% FAIL | Toujours FAIL |
+
+**Conclusions session 35:**
+- **K est le seul paramètre prédictible en test honnête** (±16%, train passé → predict futur)
+- **r et t₀ ne sont PAS prédictibles** depuis les features mare (le rythme de la science a changé)
+- La normalisation par l'époque (OpenAlex papers/an) améliore le LOO mais DÉTÉRIORE le test temporel
+- Le gap pré-1960/post-1974 est trop grand pour l'extrapolation linéaire
+- OpenAlex scanné: 693K papers, counts 1800-2025 (Gödel 1931=124, CRISPR 2012=67K)
+
+**MODÈLE FINAL V3 — Ce qui tient:**
+1. **K (portée)** prédit à ±16% depuis la mare — test temporel PASS
+2. **Mort** prédite à 8.1 ans par le gap spectral — 0 paramètre, PASS
+3. **R(t)** fittée par logistique R²=1.00 — mais r et t₀ mesurés post-hoc, pas prédits
+4. **"La mare décide"** — confirmé p=0.029 sur 13 points
+
+**Ce qui NE tient PAS:**
+- Énergie du caillou (E=m×g×h) = FAIL
+- Prédiction de r (vitesse) = FAIL en test temporel
+- Prédiction de t₀ (timing) = FAIL en test temporel
+- Normalisation par l'époque = FAIL en extrapolation
+
+**Carmack moves / déserts confirmés:**
+- logistic_function × scale_free_network (cooc=0) — notre modèle est un Carmack move
+- seismology × epidemic (score 321.6) — inexploré
+- carrying_capacity × scale_free (cooc=0) — K vs topologie = vierge
+
+**Scripts session 35**: `wave_boosted_model.py`, `wave_epoch_normalization.py`, `scan_openalex_years.py`
+
 ### LEGACY (ne plus utiliser pour du neuf)
 - `strates_export_v2.json` (21,524) — ancien sous-ensemble keyword-filtré, remplacé par 65K
 - `cooccurrence_scan.py` (85×85 domaines) — remplacé par winter_tree_scanner (65K)

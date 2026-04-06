@@ -173,10 +173,16 @@ f(t) = exp(-t × L) × f(0)
 - [x] **1/n_seeds prédit r** — ρ=+0.60, caillou pointu = onde rapide
 - [x] **n_seeds prédit t₀** — ρ=+0.66, plus de seeds = inflexion tardive
 - [x] **Carmack move** — seismology × epidemic score=321.6 (plus gros désert)
-- [ ] **Améliorer r et t₀** — explorer spectral distance des seeds, ETAS/Omori
-- [ ] **Implémenter heat kernel** sur WT4 (recalculer eigenvectors avec which='SM')
+- [x] **Test temporel honnête** (session 35): K PASS 16%, r FAIL 77%, t₀ FAIL 142%
+- [x] **WT4 positions spectrales** extraites (66K noeuds de spectral_births.json)
+- [x] **Normalisation époque** (OpenAlex): LOO amélioré mais test temporel DÉGRADÉ
+- [x] **Constat**: r et t₀ pas prédictibles par régression (gap époque trop grand)
+
+### TODO V3 — PROCHAINES ÉTAPES
+- [ ] **Pipeline opérationnel** — arXiv ID → seeds → mare → K + mort → prédiction
 - [ ] **Explorer Carmack seismology × epidemic** — ETAS aftershock model sur le graphe
-- [ ] **Gödel hold-out propre** — comprendre pourquoi t₀=4.55 (anomal)
+- [ ] **Publier** — "la topologie locale prédit la portée des percées scientifiques"
+- [ ] **Implémenter heat kernel** sur WT4 (recalculer eigenvectors avec which='SM')
 - [ ] **V4 God Cube** — appliquer le modèle onde au solveur
 
 ### La bougie OHLC scientifique (CONSERVÉ)

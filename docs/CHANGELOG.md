@@ -5,6 +5,24 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 6 avril 2026 — Session 35
+
+### V3 Test temporel honnête + normalisation époque
+- **Test temporel** train pré-1960 (6) → predict post-1974 (7):
+  - K: **15.9% PASS** — le seul qui tient
+  - r: 77% FAIL — la science moderne va plus vite
+  - t₀: 142% FAIL — même problème
+- **WT4 positions spectrales**: 66K noeuds extraits de spectral_births.json
+  - Distance spectrale des seeds calculée mais ne prédit ni r ni t₀
+- **Normalisation époque** (OpenAlex 693K papers scannés):
+  - log(papers/an) corrèle avec r à ρ=0.62 (p=0.023)
+  - MAIS test temporel PIRE: K de 16%→63% FAIL (extrapolation impossible)
+  - Gap pré-1960/post-1974 trop grand pour régression linéaire
+- **Bilan V3**: K + mort spectrale = modèle prédictif solide. r et t₀ = mesurés post-hoc.
+- **Outputs**: `wave_boosted_model.json`, `wave_epoch_normalization.json`, `openalex_papers_per_year.json`
+
+---
+
 ## 4-6 avril 2026 — Session 34
 
 ### V3 Batterie complète — 13 météorites × 6 modèles
