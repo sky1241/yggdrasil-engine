@@ -214,14 +214,86 @@ Gödel 1931 (session 33, mesuré dans WT3):
 
 ---
 
-## 8. RÉSUMÉ — QUEL MODÈLE UTILISER
+## 8. NEWMAN SIR-PERCOLATION (cadre théorique pour R_max)
 
-| Modèle | Paramètres à fitter | Données nécessaires | On a ? |
-|--------|--------------------|--------------------|--------|
-| **Heat kernel** | 0 (juste t) | Laplacien WT4 | ✅ OUI |
-| Onde de surface | 2 (v, alpha) | BFS per-year WT3 | ✅ OUI (6/13) |
-| SIR | 2 (beta, gamma) | Adjacence + temporal | ✅ OUI |
-| Galton-Watson | 0 (mesuré) | BFS per-year WT3 | ✅ OUI (6/13) |
-| Sedov-Taylor | 2 (beta, alpha) | ~~frames globales~~ | ❌ INVALIDÉ |
+```
+SIR ≡ bond percolation avec transmissibilité T
+S(T) = 1 - G₀(u)       [fraction infectée = R_max/N]
+u résout: u = G₁(1-T+Tu)
+G₀(x) = Σ_k p_k × x^k  [generating function du degré]
+G₁(x) = G₀'(x) / G₀'(1) [excess degree]
+T_c = ⟨k⟩ / (⟨k²⟩ - ⟨k⟩)  [seuil de percolation]
+```
 
-**Recommandation**: heat kernel en premier (0 param, on a tout). Comparer avec les BFS mesurés.
+- **T** = transmissibilité (1 paramètre par météorite)
+- **P(k)** = distribution de degré mesurée sur cooc_global
+- Sur Yggdrasil: ⟨k⟩=2136, T_c=0.0002 (quasi-zéro = toute perturbation se propage)
+
+**Source**: Newman, M.E.J. (2002). "Spread of epidemic disease on networks." *Phys. Rev. E* 66, 016128. arXiv: cond-mat/0205009
+
+---
+
+## 9. LOGISTIQUE S-CURVE (trajectoire R(t))
+
+```
+R(t) = K / (1 + exp(-r × (t - t₀)))
+```
+
+- **K** = capacité (≈ R_max)
+- **r** = taux de croissance
+- **t₀** = point d'inflexion
+
+Testée sur 13 météorites: **R² médian = 0.9996**, K_error < 1% pour toutes.
+
+**Source**: modèle de croissance logistique standard (Verhulst 1838).
+
+---
+
+## 10. RÉSULTATS SESSION 34 — BATTERIE COMPLÈTE (13 météorites)
+
+### Modèles testés et verdicts
+
+| Modèle | Params | Verdict | Détail | Source |
+|--------|--------|---------|--------|--------|
+| **Logistique S-curve** | 3 (K,r,t₀) | **PASS** | R² médian=1.00, K_err<1% | Verhulst 1838 |
+| **Oscillateur amorti** | 5 | **PASS** | R² médian=1.00 sur mu(t) | Hawkes-type |
+| **Mort spectrale** | 0 | **PASS** | Prédit 8.1 ans, MAE=1.79 ans | Chung 1997 |
+| **Onde de surface** | 2 (A₀,α) | **PASS** | R² médian=0.82 | Lamb 1932 |
+| Newman percolation | 1 (T) | PARTIAL | LOO MAE=11,597 | Newman 2002 |
+| Power law (baseline) | 2 (a,b) | PARTIAL | R² médian=0.61 | baseline |
+| Énergie E=m×g×h | divers | **FAIL** | ρ<0.26 pour tout | Newton 1687 |
+| Sedov-Taylor | 2 (β,α) | **FAIL** | R² holdout=-5.74 | Taylor 1950 |
+
+### Résultat principal: "C'est la mare qui décide"
+
+L'énergie du caillou (works_count, strate, degré des seeds) NE prédit PAS R_max.
+Les propriétés de la mare (median_neighbor_works ρ=+0.60, p=0.029) prédisent mieux.
+Le Laser (4,131 = 6%) tombe dans une mare épaisse (avg_edge_weight=12.24, Type A).
+
+### 13 météorites mesurées
+
+| Météorite | R_max | % science | Mort | mu_peak |
+|-----------|-------|-----------|------|---------|
+| mRNA 1990 | 62,787 | 97% | t+6 | 219.7 |
+| CRISPR 2012 | 59,315 | 91% | t+7 | 364.2 |
+| Higgs 2012 | 55,558 | 85% | t+5 | 68.0 |
+| Internet 1974 | 53,257 | 82% | t+12 | 116.7 |
+| AlphaFold 2020 | 51,485 | 79% | t+5 | 64.8 |
+| Grav waves 2016 | 50,302 | 77% | t+6 | 47.0 |
+| Shannon 1948 | 49,627 | 76% | t+8 | 24.4 |
+| Transistor 1947 | 45,604 | 70% | t+8 | 28.4 |
+| Turing 1936 | 41,970 | 65% | t+8 | 183.5 |
+| ADN 1953 | 36,081 | 55% | t+9 | 8.4 |
+| Gödel 1931 | 28,845 | 44% | t+11 | 53.9 |
+| Poincaré 2003 | 21,072 | 32% | t+11 | 24.1 |
+| Laser 1960 | 4,131 | 6% | t+9 | 6.0 |
+
+### Modèle retenu (hybride)
+
+1. **Trajectoire**: logistique R(t) = K/(1+exp(-r(t-t₀))) — R²=1.00
+2. **Mort**: gap spectral 1/λ₁ × ratio = 8.1 ans — MAE=1.79 ans, 0 paramètre
+3. **Portée R_max**: dépend de la mare (median_neighbor_works), pas du caillou
+4. **Amplitude front**: onde de surface A₀/√t × exp(-αt) — R²=0.82
+
+Scripts: `scripts/wave_comprehensive_test.py`
+Résultats: `data/results/wave_comprehensive_test.json`

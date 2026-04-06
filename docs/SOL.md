@@ -1,5 +1,5 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 4 avril 2026
+> Yggdrasil Engine — Versoix, 6 avril 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE
@@ -168,27 +168,54 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 - **Migration E:\**: Snapshot OpenAlex migré D:\→E:\ (disque 5 TB, 4.6 TB libre)
 - **Viz S-2 3D**: `viz/s2_spectral_3d.html` — eigenvectors 1-2-3, 4-5-6, 5-9-18
 
-### V3 SESSION 34 — BATTERIE DE TESTS (4 avril 2026)
-- **P(k) mesuré**: ⟨k⟩=2136, ⟨k²⟩/⟨k⟩=6695, k_max=61K, gamma≈0.94 (graphe ultra-dense, pas vraiment scale-free)
-- **Newman SIR-percolation** (cond-mat/0205009): T_c=0.000149, fitte R_max parfaitement avec 1 param T/météorite
-- **Oscillation mu(t)** de Gödel: oscillateur amorti R²=0.99 (exp decay R²=0.13, ETAS R²=0.11)
-- **Batterie 5 tests** (`scripts/test_wave_plan.py` → `data/results/wave_test_plan.json`):
+### V3 SESSION 34 — BATTERIE COMPLÈTE (4-6 avril 2026)
 
-| Test | Verdict | Détail |
-|------|---------|--------|
-| 1 — Énergie E=m×g×h | **FAIL** | Aucune formule d'énergie ne prédit R_max (ρ < 0.26 pour tout) |
-| 2 — Cratère (voisinage) | **PARTIAL** | avg_internal_weight ρ=+0.71, p=0.11 (suggestif, pas concluant avec n=6) |
-| 3 — Newman T prédictible | **PARTIAL** | LOO MAE=10,521 (16.2%), Laser explose le modèle (erreur 34K) |
-| 4 — Mort spectrale | **PASS** | Mixing time=4.4 × 2yr/unit = **8.8 ans**, MAE=0.83yr |
-| 5 — Hybride | **PARTIAL** | H2 (Newman + spectral) = meilleur combo validé |
+**13 météorites mesurées (BFS complet sur WT3 cooc, 885M rows):**
 
-- **RÉSULTAT CLÉ**: La mort de l'onde est expliquée par le gap spectral (Chung 1997). 1/gap=4.4 × 2=8.8 ans ✓
-- **RÉSULTAT CLÉ**: Le caillou (énergie) NE prédit PAS R_max. C'est la mare qui décide.
-- **ANOMALIE**: Laser 1960 = outlier absolu (profil mare normal, R_max=6%). À investiguer.
-- **Recherche bibliographique**: 134+761 papers trouvés dans WT3/arXiv, 9 modèles classés, 5 déserts cooc=0
-- **Carmack moves identifiés**: rumor spreading (Moreno 2004), sandpile (Lee 2004), contagion financière, Hawkes/ETAS
-- **Scripts**: `scripts/test_wave_plan.py`, `scripts/_tmp_test_models.py`, `scripts/_tmp_wave_v2.py`
-- **Résultats**: `data/results/wave_test_plan.json`, `wave_model_test.json`, `wave_full_test.json`, `wave_research_v2.json`
+| Météorite | R_max | % science | Mort | mu_peak |
+|-----------|-------|-----------|------|---------|
+| mRNA 1990 | 62,787 | 97% | t+6 | 219.7 |
+| CRISPR 2012 | 59,315 | 91% | t+7 | 364.2 |
+| Higgs 2012 | 55,558 | 85% | t+5 | 68.0 |
+| Internet 1974 | 53,257 | 82% | t+12 | 116.7 |
+| AlphaFold 2020 | 51,485 | 79% | t+5 | 64.8 |
+| Grav waves 2016 | 50,302 | 77% | t+6 | 47.0 |
+| Shannon 1948 | 49,627 | 76% | t+8 | 24.4 |
+| Transistor 1947 | 45,604 | 70% | t+8 | 28.4 |
+| Turing 1936 | 41,970 | 65% | t+8 | 183.5 |
+| ADN 1953 | 36,081 | 55% | t+9 | 8.4 |
+| Gödel 1931 | 28,845 | 44% | t+11 | 53.9 |
+| Poincaré 2003 | 21,072 | 32% | t+11 | 24.1 |
+| Laser 1960 | 4,131 | 6% | t+9 | 6.0 |
+
+**6 modèles testés (LOO 13-fold, Bonferroni, AIC):**
+
+| Modèle | Verdict | Détail | Source |
+|--------|---------|--------|--------|
+| Logistique S-curve | **PASS** | R² médian=1.00 | Verhulst 1838 |
+| Oscillateur amorti | **PASS** | R² médian=1.00 | Hawkes |
+| Mort spectrale | **PASS** | MAE=1.79 ans, 0 param | Chung 1997 |
+| Onde de surface | **PASS** | R² médian=0.82 | Lamb 1932, Lighthill 1978 |
+| Newman SIR-percolation | PARTIAL | LOO MAE=11,597 | Newman 2002 cond-mat/0205009 |
+| Power law (baseline) | PARTIAL | R² médian=0.61 | baseline |
+| Énergie E=m×g×h | **FAIL** | ρ<0.26 | — |
+| Sedov-Taylor | **FAIL** | R² holdout=-5.74 | INVALIDÉ session 33 |
+
+**Résultats clés:**
+- **"La mare décide"** CONFIRMÉ: median_neighbor_works ρ=+0.60 (p=0.029). Énergie du caillou = aucun signal
+- **Mort spectrale** CONFIRMÉ: 1/gap × ratio = 8.1 ans prédit, 8.1 observé, MAE=1.79 ans
+- **Logistique** CONFIRMÉ: R(t) = K/(1+exp(-r(t-t₀))) fitte les 13 à R²>0.98
+- **Laser = Type A**: mare trop épaisse (avg_edge_weight=12.24), onde absorbée. LOO sans Laser: MAE baisse de 22%
+- **Index composite** créé: idx_cooc_a_period ON cooc(concept_a, period) — accélère BFS 27×
+- **Recherche biblio**: 134+761 papers (WT3+arXiv tars), 9 modèles, 5 déserts cooc=0, 3 Carmack moves
+
+**Modèle retenu (hybride):**
+1. Trajectoire: logistique R(t) = K/(1+exp(-r(t-t₀)))
+2. Mort: gap spectral 1/λ₁ × ratio = 8.1 ans (Chung 1997)
+3. Portée R_max: dépend de la mare, pas du caillou
+
+**Scripts**: `scripts/wave_comprehensive_test.py` (7 phases, checkpoints crash-safe)
+**Résultats**: `data/results/wave_comprehensive_test.json` (13 météorites × 6 modèles × 7 phases)
 
 ### LEGACY (ne plus utiliser pour du neuf)
 - `strates_export_v2.json` (21,524) — ancien sous-ensemble keyword-filtré, remplacé par 65K

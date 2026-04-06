@@ -4,11 +4,11 @@
   "family": "baobab",
   "family_name": "Baobab",
   "family_emoji": "🌳",
-  "date": "2026-04-04",
+  "date": "2026-04-06",
   "phase": "CANOPEE",
   "scanned_from": "https://github.com/sky1241/yggdrasil-engine",
   "scale": {
-    "lines": 66665,
+    "lines": 66655,
     "factor": 20.7,
     "category": "forêt",
     "height_px": 900,
@@ -19,11 +19,11 @@
   },
   "stats": {
     "total_files": 6818,
-    "total_code_lines": 66665,
-    "python_lines": 58324,
+    "total_code_lines": 66655,
+    "python_lines": 58314,
     "html_lines": 8341,
     "languages": {
-      "Python": 58324,
+      "Python": 58314,
       "PowerShell": 9,
       "Shell": 11,
       "HTML": 8341,

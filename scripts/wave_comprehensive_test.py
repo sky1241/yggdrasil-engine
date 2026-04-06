@@ -136,7 +136,7 @@ def corr(x, y):
 # ═════════════════════════════════════════���════════════
 
 def measure_wave(db, name, seeds, impact_year):
-    """BFS wave propagation from impact point. From godel_holdout_wave.py."""
+    """BFS wave propagation — concept-by-concept queries (uses idx_cooc_a_period)."""
     wavefront = set(seeds)
     all_touched = set(seeds)
     edges_seen = set()
@@ -146,35 +146,23 @@ def measure_wave(db, name, seeds, impact_year):
 
     for yr in range(impact_year, impact_year + MAX_YEARS):
         t0 = time.time()
-        db.execute('DROP TABLE IF EXISTS tmp_front')
-        db.execute('CREATE TEMP TABLE tmp_front (cid INTEGER PRIMARY KEY)')
-        db.executemany('INSERT INTO tmp_front VALUES (?)', [(c,) for c in wavefront])
-
         new_edges = 0
         new_concepts = set()
 
-        rows = db.execute('''
-            SELECT c.concept_a, c.concept_b FROM cooc c
-            INNER JOIN tmp_front f ON c.concept_a = f.cid
-            WHERE c.period = ?
-        ''', (str(yr),)).fetchall()
-        for ca, cb in rows:
-            edge = (ca, cb) if ca < cb else (cb, ca)
-            if edge not in edges_seen:
-                edges_seen.add(edge)
-                new_edges += 1
-                if cb not in all_touched:
-                    new_concepts.add(cb)
-
+        # Build list of periods for this year
+        periods = [str(yr)]
         if yr >= 1980:
-            for mo in range(1, 13):
-                rows_m = db.execute('''
-                    SELECT c.concept_a, c.concept_b FROM cooc c
-                    INNER JOIN tmp_front f ON c.concept_a = f.cid
-                    WHERE c.period = ?
-                ''', (f'{yr}-{mo:02d}',)).fetchall()
-                for ca, cb in rows_m:
-                    edge = (ca, cb) if ca < cb else (cb, ca)
+            periods = [f'{yr}-{mo:02d}' for mo in range(1, 13)]
+
+        # Query concept-by-concept (hits idx_cooc_a_period directly)
+        for cid in wavefront:
+            for period in periods:
+                rows = db.execute(
+                    'SELECT concept_b FROM cooc WHERE concept_a=? AND period=?',
+                    (cid, period)
+                ).fetchall()
+                for (cb,) in rows:
+                    edge = (cid, cb) if cid < cb else (cb, cid)
                     if edge not in edges_seen:
                         edges_seen.add(edge)
                         new_edges += 1
@@ -1105,7 +1093,9 @@ def phase_7_verdict(phase1, r3a, r3b, r3c, r3d, r3e, r3f, r4, r5, r6):
         "best_model": r5['best'],
         "laser_explained": "TYPE A" in r6['verdict'],
     }
-    print(f"\n  OVERALL: {json.dumps(overall, indent=2)}")
+    # Convert numpy bools to Python bools for JSON
+    overall_clean = {k: bool(v) if isinstance(v, (np.bool_,)) else v for k, v in overall.items()}
+    print(f"\n  OVERALL: {json.dumps(overall_clean, indent=2)}")
 
     return overall
 

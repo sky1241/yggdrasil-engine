@@ -5,26 +5,44 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
-## 4 avril 2026 — Session 34
+## 4-6 avril 2026 — Session 34
 
-### V3 Batterie de tests — La mare qui décide
-- **P(k) mesuré sur cooc_global**: ⟨k⟩=2136, k_max=61K, gamma≈0.94 (ultra-dense, pas scale-free)
-- **Newman SIR-percolation** (cond-mat/0205009): T_c=0.000149, 1 param T fitte R_max parfaitement
-- **Recherche bibliographique** dans WT3 + arXiv tars (E:\arxiv\src\):
-  - 134 papers WT3 + 761 papers cousin deep research
-  - 10 papiers extraits des tars arXiv (Pastor-Satorras, Newman, Boguña, Cohen, Moreno, Lee)
-  - 9 modèles classés, 5 déserts cooc=0, 3 Carmack moves
-  - Metaprompt V2 rédigé (`data/metaprompt_wave_research.md`)
-- **Batterie 5 tests** (`scripts/test_wave_plan.py`):
-  - TEST 1 Énergie: **FAIL** — aucune formule E ne prédit R_max
-  - TEST 2 Cratère: **PARTIAL** — avg_internal_weight ρ=+0.71 (p=0.11, n=6 trop petit)
-  - TEST 3 Newman T: **PARTIAL** — LOO MAE=10,521 (16%), Laser = outlier (erreur 34K)
-  - TEST 4 Mort spectrale: **PASS** — mixing 1/gap × 2 = **8.8 ans** (obs 8-11), MAE=0.83yr
-  - TEST 5 Hybride: **PARTIAL** — H2 (Newman + spectral) = meilleur combo
-- **Oscillation mu(t) Gödel**: oscillateur amorti R²=0.99 (ETAS R²=0.11)
-- **Résultat clé**: le caillou NE compte PAS, c'est la mare qui décide
-- **Anomalie**: Laser 1960 = outlier absolu, à investiguer
-- **Outputs**: `wave_test_plan.json`, `wave_model_test.json`, `wave_full_test.json`, `wave_research_v2.json`
+### V3 Batterie complète — 13 météorites × 6 modèles
+
+**Phase 1: Recherche bibliographique**
+- 134 papers WT3 + 761 papers cousin deep research + 10 extraits des tars arXiv
+- 9 modèles classés, 5 déserts cooc=0, 3 Carmack moves
+- Papiers clés: Newman 2002 (cond-mat/0205009), Chung 1997, Lamb 1932, Moreno 2004
+
+**Phase 2: BFS 13 météorites sur WT3** (885M rows, ~24h)
+- Index composite créé: `idx_cooc_a_period ON cooc(concept_a, period)` — accélère 27×
+- 13/13 météorites mesurées: mRNA (97%) > CRISPR (91%) > Higgs (85%) > ... > Laser (6%)
+- Mort en 5-12 ans pour toutes
+
+**Phase 3: Tests de modèles (LOO 13-fold)**
+- Logistique S-curve: **PASS** R² médian=1.00 — meilleur fit trajectoire
+- Oscillateur amorti: **PASS** R² médian=1.00 — fitte mu(t) oscillation
+- Mort spectrale: **PASS** MAE=1.79 ans — gap Laplacien prédit la mort (0 param)
+- Onde de surface: **PASS** R² médian=0.82 — A₀/√t × exp(-αt)
+- Newman SIR: PARTIAL MAE=11,597 — fitte R_max mais T pas bien prédit
+- Power law: PARTIAL R²=0.61 — trop simple
+- **Énergie E=m×g×h: FAIL** — le caillou ne prédit PAS R_max
+- **Sedov-Taylor: FAIL** — invalidé session 33
+
+**Phase 4: Corrélations (n=13, Bonferroni)**
+- "La mare décide" CONFIRMÉ: median_neighbor_works ρ=+0.60 (p=0.029)
+- Énergie du caillou: aucun signal (ρ<0.26 pour tout)
+
+**Phase 5: Investigation Laser**
+- Laser = Type A (technique), mare trop épaisse (avg_edge_weight=12.24)
+- Sans Laser, Newman LOO MAE baisse de 22%
+
+**Modèle hybride retenu:**
+1. Trajectoire: logistique R(t) = K/(1+exp(-r(t-t₀)))
+2. Mort: gap spectral (Chung 1997), 0 paramètre
+3. Portée: dépend de la mare, pas du caillou
+
+**Outputs**: `wave_comprehensive_test.json`, `wave_physics.md` mis à jour
 
 ---
 
@@ -390,4 +408,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-04-04 | 58,324L Python | 6,818 fichiers | phase CANOPEE_
+_Auto-update: 2026-04-06 | 58,314L Python | 6,818 fichiers | phase CANOPEE_

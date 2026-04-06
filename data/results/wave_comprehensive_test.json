@@ -1,0 +1,1824 @@
+{
+  "test": "wave_comprehensive_v1",
+  "date": "2026-04-04",
+  "runtime_seconds": 0.0,
+  "n_meteorites": 13,
+  "phase_1_bfs": {
+    "Shannon 1948": {
+      "seeds": [
+        57221,
+        1033
+      ],
+      "open_year": 1948,
+      "strate": 1,
+      "continents": 7,
+      "r_max": 49627,
+      "pct": 0.7632,
+      "death_t": 8,
+      "peak_year": 1950,
+      "peak_edges": 1202310,
+      "mu_series": [
+        24.3737,
+        3.1645,
+        0.032,
+        0.08,
+        0.6774,
+        0.3968,
+        0.04,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 24.3737
+    },
+    "Transistor 1947": {
+      "seeds": [
+        11323,
+        1331
+      ],
+      "open_year": 1947,
+      "strate": 0,
+      "continents": 6,
+      "r_max": 45604,
+      "pct": 0.7013,
+      "death_t": 8,
+      "peak_year": 1950,
+      "peak_edges": 393432,
+      "mu_series": [
+        28.4444,
+        0.6405,
+        1.4339,
+        0.0256,
+        0.0585,
+        0.25,
+        0.6667,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 28.4444
+    },
+    "Turing 1936": {
+      "seeds": [
+        8122,
+        5866,
+        1806
+      ],
+      "open_year": 1936,
+      "strate": 6,
+      "continents": 4,
+      "r_max": 41970,
+      "pct": 0.6454,
+      "death_t": 8,
+      "peak_year": 1939,
+      "peak_edges": 371938,
+      "mu_series": [
+        183.5143,
+        2.9673,
+        0.7506,
+        0.148,
+        0.0118,
+        0.04,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 183.5143
+    },
+    "ADN 1953": {
+      "seeds": [
+        58019,
+        8408
+      ],
+      "open_year": 1953,
+      "strate": 0,
+      "continents": 5,
+      "r_max": 36081,
+      "pct": 0.5549,
+      "death_t": 9,
+      "peak_year": 1955,
+      "peak_edges": 301793,
+      "mu_series": [
+        8.3542,
+        0.2867,
+        0.1174,
+        1.5061,
+        0.0204,
+        0.16,
+        1.0,
+        0.75,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 8.3542
+    },
+    "Godel 1931": {
+      "seeds": [
+        12665,
+        8122,
+        1806
+      ],
+      "open_year": 1931,
+      "strate": 6,
+      "continents": 9,
+      "r_max": 28845,
+      "pct": 0.4436,
+      "death_t": 11,
+      "peak_year": 1937,
+      "peak_edges": 167856,
+      "mu_series": [
+        3.0,
+        53.8889,
+        7.3464,
+        0.9548,
+        3.5582,
+        0.6542,
+        0.1296,
+        0.2641,
+        0.2066,
+        0.0893,
+        0.0,
+        0.2,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 53.8889
+    },
+    "Laser 1960": {
+      "seeds": [
+        57047,
+        53232
+      ],
+      "open_year": 1960,
+      "strate": 0,
+      "continents": 5,
+      "r_max": 4131,
+      "pct": 0.0635,
+      "death_t": 9,
+      "peak_year": 1962,
+      "peak_edges": 8825,
+      "mu_series": [
+        5.9847,
+        0.8619,
+        0.8042,
+        0.8106,
+        0.261,
+        0.4128,
+        0.4366,
+        0.0968,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 5.9847
+    },
+    "CRISPR 2012": {
+      "seeds": [
+        64738,
+        5064
+      ],
+      "open_year": 2012,
+      "strate": 0,
+      "continents": 4,
+      "r_max": 59315,
+      "pct": 0.9122,
+      "death_t": 7,
+      "peak_year": 2014,
+      "peak_edges": 7321143,
+      "mu_series": [
+        364.2121,
+        0.6118,
+        0.0405,
+        0.2105,
+        0.0691,
+        0.1538,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 364.2121
+    },
+    "AlphaFold 2020": {
+      "seeds": [
+        12593,
+        16301
+      ],
+      "open_year": 2020,
+      "strate": 0,
+      "continents": 3,
+      "r_max": 51485,
+      "pct": 0.7918,
+      "death_t": 5,
+      "peak_year": 2022,
+      "peak_edges": 5544939,
+      "mu_series": [
+        64.7673,
+        0.176,
+        0.0116,
+        0.0341,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 64.7673
+    },
+    "Grav waves 2016": {
+      "seeds": [
+        14090
+      ],
+      "open_year": 2016,
+      "strate": 1,
+      "continents": 2,
+      "r_max": 50302,
+      "pct": 0.7736,
+      "death_t": 6,
+      "peak_year": 2018,
+      "peak_edges": 4322598,
+      "mu_series": [
+        47.0344,
+        0.201,
+        0.0122,
+        0.0891,
+        0.1111,
+        0.0,
+        2.0,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 47.0344
+    },
+    "Higgs 2012": {
+      "seeds": [
+        9062
+      ],
+      "open_year": 2012,
+      "strate": 1,
+      "continents": 2,
+      "r_max": 55558,
+      "pct": 0.8544,
+      "death_t": 5,
+      "peak_year": 2014,
+      "peak_edges": 6672374,
+      "mu_series": [
+        68.0,
+        0.1953,
+        0.0196,
+        0.0457,
+        0.0,
+        0.125,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 68.0
+    },
+    "mRNA 1990": {
+      "seeds": [
+        380,
+        39251
+      ],
+      "open_year": 1990,
+      "strate": 0,
+      "continents": 4,
+      "r_max": 62787,
+      "pct": 0.9656,
+      "death_t": 6,
+      "peak_year": 1992,
+      "peak_edges": 2728892,
+      "mu_series": [
+        219.6702,
+        1.9349,
+        0.051,
+        0.0235,
+        0.0208,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 219.6702
+    },
+    "Internet 1974": {
+      "seeds": [
+        1758,
+        53391,
+        2196
+      ],
+      "open_year": 1974,
+      "strate": 0,
+      "continents": 7,
+      "r_max": 53257,
+      "pct": 0.819,
+      "death_t": 12,
+      "peak_year": 1976,
+      "peak_edges": 859795,
+      "mu_series": [
+        116.6966,
+        1.1885,
+        0.2805,
+        0.0462,
+        0.2188,
+        1.1286,
+        1.2658,
+        0.85,
+        0.2588,
+        0.5,
+        0.3636,
+        0.0,
+        0.25,
+        0.0
+      ],
+      "mu_peak": 116.6966
+    },
+    "Poincare 2003": {
+      "seeds": [
+        63206,
+        41700
+      ],
+      "open_year": 2003,
+      "strate": 3,
+      "continents": 1,
+      "r_max": 21072,
+      "pct": 0.3241,
+      "death_t": 11,
+      "peak_year": 2005,
+      "peak_edges": 651923,
+      "mu_series": [
+        24.0733,
+        0.3911,
+        0.2117,
+        0.3734,
+        0.3317,
+        0.4203,
+        0.5517,
+        0.75,
+        0.2083,
+        0.6,
+        0.0,
+        0.3333,
+        0.0,
+        0.0
+      ],
+      "mu_peak": 24.0733
+    }
+  },
+  "phase_2_mare": {
+    "Shannon 1948": {
+      "seed_works": 356173,
+      "seed_degree": 24301,
+      "seed_weight": 16623.25,
+      "avg_edge_weight": 0.6841,
+      "n_neighbors": 19552,
+      "hub_fraction": 0.1525,
+      "avg_level": 2.0,
+      "n_seeds": 2,
+      "local_density": 0.120994,
+      "avg_internal_weight": 474.5255,
+      "median_neighbor_works": 14010.0,
+      "pre_edges": 42032,
+      "pre_weight": 1341.5903
+    },
+    "Transistor 1947": {
+      "seed_works": 475449,
+      "seed_degree": 17909,
+      "seed_weight": 36873.4,
+      "avg_edge_weight": 2.0589,
+      "n_neighbors": 12153,
+      "hub_fraction": 0.185,
+      "avg_level": 2.5,
+      "n_seeds": 2,
+      "local_density": 0.165555,
+      "avg_internal_weight": 344.7093,
+      "median_neighbor_works": 16364.0,
+      "pre_edges": 55691,
+      "pre_weight": 2528.0843
+    },
+    "Turing 1936": {
+      "seed_works": 13568,
+      "seed_degree": 3638,
+      "seed_weight": 616.48,
+      "avg_edge_weight": 0.1695,
+      "n_neighbors": 2457,
+      "hub_fraction": 0.2785,
+      "avg_level": 2.67,
+      "n_seeds": 3,
+      "local_density": 0.263014,
+      "avg_internal_weight": 305.9969,
+      "median_neighbor_works": 20869.0,
+      "pre_edges": 1718,
+      "pre_weight": 28.611
+    },
+    "ADN 1953": {
+      "seed_works": 7427000,
+      "seed_degree": 45668,
+      "seed_weight": 284720.62,
+      "avg_edge_weight": 6.2346,
+      "n_neighbors": 28311,
+      "hub_fraction": 0.196,
+      "avg_level": 1.5,
+      "n_seeds": 2,
+      "local_density": 0.18602,
+      "avg_internal_weight": 319.1385,
+      "median_neighbor_works": 18766.0,
+      "pre_edges": 128765,
+      "pre_weight": 7876.0062
+    },
+    "Godel 1931": {
+      "seed_works": 10282,
+      "seed_degree": 3788,
+      "seed_weight": 656.94,
+      "avg_edge_weight": 0.1734,
+      "n_neighbors": 2549,
+      "hub_fraction": 0.2725,
+      "avg_level": 2.33,
+      "n_seeds": 3,
+      "local_density": 0.254597,
+      "avg_internal_weight": 284.7395,
+      "median_neighbor_works": 19736.0,
+      "pre_edges": 1809,
+      "pre_weight": 29.7023
+    },
+    "Laser 1960": {
+      "seed_works": 2845069,
+      "seed_degree": 22719,
+      "seed_weight": 278014.57,
+      "avg_edge_weight": 12.2371,
+      "n_neighbors": 20502,
+      "hub_fraction": 0.193,
+      "avg_level": 2.5,
+      "n_seeds": 2,
+      "local_density": 0.192786,
+      "avg_internal_weight": 307.178,
+      "median_neighbor_works": 18923.0,
+      "pre_edges": 20666,
+      "pre_weight": 1066.3648
+    },
+    "CRISPR 2012": {
+      "seed_works": 70582,
+      "seed_degree": 8069,
+      "seed_weight": 3410.23,
+      "avg_edge_weight": 0.4226,
+      "n_neighbors": 5568,
+      "hub_fraction": 0.2815,
+      "avg_level": 3.5,
+      "n_seeds": 2,
+      "local_density": 0.246477,
+      "avg_internal_weight": 263.471,
+      "median_neighbor_works": 28973.0,
+      "pre_edges": 3002,
+      "pre_weight": 82.8689
+    },
+    "AlphaFold 2020": {
+      "seed_works": 158182,
+      "seed_degree": 6943,
+      "seed_weight": 2631.51,
+      "avg_edge_weight": 0.379,
+      "n_neighbors": 5628,
+      "hub_fraction": 0.287,
+      "avg_level": 2.5,
+      "n_seeds": 2,
+      "local_density": 0.254862,
+      "avg_internal_weight": 221.6796,
+      "median_neighbor_works": 30674.0,
+      "pre_edges": 6510,
+      "pre_weight": 128.1002
+    },
+    "Grav waves 2016": {
+      "seed_works": 106072,
+      "seed_degree": 5285,
+      "seed_weight": 5292.57,
+      "avg_edge_weight": 1.0014,
+      "n_neighbors": 5285,
+      "hub_fraction": 0.2435,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.290525,
+      "avg_internal_weight": 195.7821,
+      "median_neighbor_works": 23432.0,
+      "pre_edges": 12935,
+      "pre_weight": 443.3101
+    },
+    "Higgs 2012": {
+      "seed_works": 103927,
+      "seed_degree": 3604,
+      "seed_weight": 6151.71,
+      "avg_edge_weight": 1.7069,
+      "n_neighbors": 3604,
+      "hub_fraction": 0.295,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.222918,
+      "avg_internal_weight": 355.7925,
+      "median_neighbor_works": 30094.0,
+      "pre_edges": 11733,
+      "pre_weight": 424.8484
+    },
+    "mRNA 1990": {
+      "seed_works": 65401,
+      "seed_degree": 2809,
+      "seed_weight": 483.67,
+      "avg_edge_weight": 0.1722,
+      "n_neighbors": 2656,
+      "hub_fraction": 0.359,
+      "avg_level": 4.0,
+      "n_seeds": 2,
+      "local_density": 0.253034,
+      "avg_internal_weight": 160.5416,
+      "median_neighbor_works": 45578.0,
+      "pre_edges": 1894,
+      "pre_weight": 32.4953
+    },
+    "Internet 1974": {
+      "seed_works": 3531734,
+      "seed_degree": 37471,
+      "seed_weight": 231269.1,
+      "avg_edge_weight": 6.1719,
+      "n_neighbors": 25091,
+      "hub_fraction": 0.173,
+      "avg_level": 2.0,
+      "n_seeds": 3,
+      "local_density": 0.150445,
+      "avg_internal_weight": 387.213,
+      "median_neighbor_works": 15332.0,
+      "pre_edges": 149611,
+      "pre_weight": 16745.3515
+    },
+    "Poincare 2003": {
+      "seed_works": 105843,
+      "seed_degree": 11722,
+      "seed_weight": 9541.73,
+      "avg_edge_weight": 0.814,
+      "n_neighbors": 9392,
+      "hub_fraction": 0.1845,
+      "avg_level": 2.0,
+      "n_seeds": 2,
+      "local_density": 0.171928,
+      "avg_internal_weight": 350.7432,
+      "median_neighbor_works": 11670.0,
+      "pre_edges": 10054,
+      "pre_weight": 466.6879
+    }
+  },
+  "phase_3a_newman": {
+    "verdict": "PARTIAL",
+    "T_c": 0.00020119,
+    "k_mean": 1997.2,
+    "T_fits": {
+      "Shannon 1948": 0.00148861,
+      "Transistor 1947": 0.00121657,
+      "Turing 1936": 0.00103153,
+      "ADN 1953": 0.00080476,
+      "Godel 1931": 0.00060315,
+      "Laser 1960": 0.00023608,
+      "CRISPR 2012": 0.00290135,
+      "AlphaFold 2020": 0.00164855,
+      "Grav waves 2016": 0.00154439,
+      "Higgs 2012": 0.00213189,
+      "mRNA 1990": 0.00460273,
+      "Internet 1974": 0.00183303,
+      "Poincare 2003": 0.00044717
+    },
+    "best_predictor": "median_neighbor_works",
+    "best_rho": 0.6044,
+    "loo_mae": 11597,
+    "loo_rmse": 16520,
+    "loo_mae_no_laser": 9028,
+    "loo": [
+      {
+        "met": "Shannon 1948",
+        "T_obs": 0.00148861,
+        "T_pred": 0.00051186,
+        "rmax_obs": 49627,
+        "rmax_pred": 24606,
+        "error": 25021
+      },
+      {
+        "met": "Transistor 1947",
+        "T_obs": 0.00121657,
+        "T_pred": 0.00086847,
+        "rmax_obs": 45604,
+        "rmax_pred": 37928,
+        "error": 7676
+      },
+      {
+        "met": "Turing 1936",
+        "T_obs": 0.00103153,
+        "T_pred": 0.00141818,
+        "rmax_obs": 41970,
+        "rmax_pred": 48689,
+        "error": 6719
+      },
+      {
+        "met": "ADN 1953",
+        "T_obs": 0.00080476,
+        "T_pred": 0.00120018,
+        "rmax_obs": 36081,
+        "rmax_pred": 45290,
+        "error": 9209
+      },
+      {
+        "met": "Godel 1931",
+        "T_obs": 0.00060315,
+        "T_pred": 0.00132878,
+        "rmax_obs": 28845,
+        "rmax_pred": 47400,
+        "error": 18555
+      },
+      {
+        "met": "Laser 1960",
+        "T_obs": 0.00023608,
+        "T_pred": 0.00127465,
+        "rmax_obs": 4131,
+        "rmax_pred": 46551,
+        "error": 42420
+      },
+      {
+        "met": "CRISPR 2012",
+        "T_obs": 0.00290135,
+        "T_pred": 0.00216186,
+        "rmax_obs": 59315,
+        "rmax_pred": 55761,
+        "error": 3554
+      },
+      {
+        "met": "AlphaFold 2020",
+        "T_obs": 0.00164855,
+        "T_pred": 0.00255593,
+        "rmax_obs": 51485,
+        "rmax_pred": 57923,
+        "error": 6438
+      },
+      {
+        "met": "Grav waves 2016",
+        "T_obs": 0.00154439,
+        "T_pred": 0.00166909,
+        "rmax_obs": 50302,
+        "rmax_pred": 51692,
+        "error": 1390
+      },
+      {
+        "met": "Higgs 2012",
+        "T_obs": 0.00213189,
+        "T_pred": 0.00240255,
+        "rmax_obs": 55558,
+        "rmax_pred": 57167,
+        "error": 1609
+      },
+      {
+        "met": "mRNA 1990",
+        "T_obs": 0.00460273,
+        "T_pred": 0.00314276,
+        "rmax_obs": 62787,
+        "rmax_pred": 60090,
+        "error": 2697
+      },
+      {
+        "met": "Internet 1974",
+        "T_obs": 0.00183303,
+        "T_pred": 0.00064519,
+        "rmax_obs": 53257,
+        "rmax_pred": 30550,
+        "error": 22707
+      },
+      {
+        "met": "Poincare 2003",
+        "T_obs": 0.00044717,
+        "T_pred": 0.00040131,
+        "rmax_obs": 21072,
+        "rmax_pred": 18307,
+        "error": 2765
+      }
+    ],
+    "T_correlations": {
+      "seed_works": -0.1978,
+      "seed_degree": -0.3736,
+      "seed_weight": -0.3901,
+      "avg_edge_weight": -0.2802,
+      "n_neighbors": -0.2473,
+      "hub_fraction": 0.5165,
+      "avg_level": 0.2956,
+      "local_density": 0.1374,
+      "avg_internal_weight": -0.2363,
+      "median_neighbor_works": 0.6044,
+      "pre_edges": -0.0989,
+      "pre_weight": -0.1813,
+      "aiw_over_density": -0.3297,
+      "log_aiw": -0.2363,
+      "1_minus_density": -0.1374
+    },
+    "source": "Newman 2002, cond-mat/0205009"
+  },
+  "phase_3b_surface_wave": {
+    "verdict": "PASS",
+    "median_r2": 0.8167,
+    "fits": {
+      "Shannon 1948": {
+        "r2": 0.2906,
+        "A0": 25924.35,
+        "alpha": 0.2293
+      },
+      "Transistor 1947": {
+        "r2": 0.6858,
+        "A0": 24749.16,
+        "alpha": 0.2549
+      },
+      "Turing 1936": {
+        "r2": 0.2695,
+        "A0": 15061.34,
+        "alpha": 0.1107
+      },
+      "ADN 1953": {
+        "r2": 0.996,
+        "A0": 65024.08,
+        "alpha": 0.9867
+      },
+      "Godel 1931": {
+        "r2": -0.1173,
+        "A0": 4505.69,
+        "alpha": 0.01
+      },
+      "Laser 1960": {
+        "r2": 0.8167,
+        "A0": 1604.64,
+        "alpha": 0.1641
+      },
+      "CRISPR 2012": {
+        "r2": 0.9157,
+        "A0": 69219.41,
+        "alpha": 0.6075
+      },
+      "AlphaFold 2020": {
+        "r2": 0.9985,
+        "A0": 186058.19,
+        "alpha": 1.4607
+      },
+      "Grav waves 2016": {
+        "r2": 0.9979,
+        "A0": 158176.24,
+        "alpha": 1.3471
+      },
+      "Higgs 2012": {
+        "r2": 0.9981,
+        "A0": 180096.52,
+        "alpha": 1.3686
+      },
+      "mRNA 1990": {
+        "r2": 0.3716,
+        "A0": 37128.75,
+        "alpha": 0.2537
+      },
+      "Internet 1974": {
+        "r2": 0.7718,
+        "A0": 34730.27,
+        "alpha": 0.3236
+      },
+      "Poincare 2003": {
+        "r2": 0.9938,
+        "A0": 28665.7,
+        "alpha": 0.7464
+      }
+    },
+    "source": "Lamb 1932 Hydrodynamics / Lighthill 1978 Waves in Fluids"
+  },
+  "phase_3c_oscillator": {
+    "verdict": "PASS",
+    "median_r2": 0.9992,
+    "fits": {
+      "Shannon 1948": {
+        "r2": 0.9992,
+        "A": 1538.14,
+        "gamma": 3.0111,
+        "omega": 10.6706,
+        "phi": 3.1416,
+        "offset": 0.197
+      },
+      "Transistor 1947": {
+        "r2": 0.9976,
+        "A": 2468.87,
+        "gamma": 4.4734,
+        "omega": 0.1,
+        "phi": -0.1683,
+        "offset": 0.3438
+      },
+      "Turing 1936": {
+        "r2": 1.0,
+        "A": 12490.16,
+        "gamma": 4.218,
+        "omega": 0.1,
+        "phi": -0.1879,
+        "offset": 0.2711
+      },
+      "ADN 1953": {
+        "r2": 0.9743,
+        "A": 27.55,
+        "gamma": 0.9686,
+        "omega": 10.1543,
+        "phi": 3.1416,
+        "offset": 0.5314
+      },
+      "Godel 1931": {
+        "r2": 0.9798,
+        "A": 999999.99,
+        "gamma": 4.9248,
+        "omega": 1.5711,
+        "phi": 3.1416,
+        "offset": 1.1173
+      },
+      "Laser 1960": {
+        "r2": 0.9761,
+        "A": 50.5,
+        "gamma": 2.1846,
+        "omega": 0.1,
+        "phi": -0.2103,
+        "offset": 0.33
+      },
+      "CRISPR 2012": {
+        "r2": 1.0,
+        "A": 49949.91,
+        "gamma": 4.5276,
+        "omega": 2.3112,
+        "phi": -3.1416,
+        "offset": 0.0872
+      },
+      "AlphaFold 2020": {
+        "r2": 1.0,
+        "A": 9760.72,
+        "gamma": 5.0,
+        "omega": 1.0157,
+        "phi": -0.8401,
+        "offset": 0.0119
+      },
+      "Grav waves 2016": {
+        "r2": 0.9984,
+        "A": 5087.49,
+        "gamma": 2.3472,
+        "omega": 0.1,
+        "phi": 1.3748,
+        "offset": 0.3953
+      },
+      "Higgs 2012": {
+        "r2": 1.0,
+        "A": 7682.27,
+        "gamma": 4.3182,
+        "omega": 2.297,
+        "phi": -3.1416,
+        "offset": 0.0342
+      },
+      "mRNA 1990": {
+        "r2": 1.0,
+        "A": 25048.32,
+        "gamma": 4.7364,
+        "omega": 0.1,
+        "phi": -0.1146,
+        "offset": 0.0156
+      },
+      "Internet 1974": {
+        "r2": 0.9998,
+        "A": 19842.37,
+        "gamma": 2.9669,
+        "omega": 0.1,
+        "phi": 1.3567,
+        "offset": 0.4516
+      },
+      "Poincare 2003": {
+        "r2": 0.9988,
+        "A": 497.63,
+        "gamma": 2.6813,
+        "omega": 2.3419,
+        "phi": -3.1416,
+        "offset": 0.324
+      }
+    },
+    "universality": {
+      "gamma_mean": 3.566,
+      "gamma_std": 1.2279,
+      "omega_mean": 2.3817,
+      "omega_std": 3.5398,
+      "n_good_fits": 13,
+      "gamma_cv": 0.3443,
+      "omega_cv": 1.4863
+    },
+    "source": "Hawkes/ETAS branching process"
+  },
+  "phase_3d_power_law": {
+    "verdict": "PARTIAL",
+    "median_r2": 0.6117,
+    "fits": {
+      "Shannon 1948": {
+        "r2": 0.4959,
+        "a": 30504.45,
+        "b": 0.2681
+      },
+      "Transistor 1947": {
+        "r2": 0.7102,
+        "a": 26201.64,
+        "b": 0.297
+      },
+      "Turing 1936": {
+        "r2": 0.6832,
+        "a": 19804.2,
+        "b": 0.3996
+      },
+      "ADN 1953": {
+        "r2": 0.6944,
+        "a": 30226.06,
+        "b": 0.0928
+      },
+      "Godel 1931": {
+        "r2": 0.7684,
+        "a": 4953.96,
+        "b": 0.7373
+      },
+      "Laser 1960": {
+        "r2": 0.8317,
+        "a": 2031.45,
+        "b": 0.352
+      },
+      "CRISPR 2012": {
+        "r2": 0.5725,
+        "a": 45554.3,
+        "b": 0.1556
+      },
+      "AlphaFold 2020": {
+        "r2": 0.6481,
+        "a": 46137.24,
+        "b": 0.0758
+      },
+      "Grav waves 2016": {
+        "r2": 0.543,
+        "a": 45427.48,
+        "b": 0.0578
+      },
+      "Higgs 2012": {
+        "r2": 0.5767,
+        "a": 49935.0,
+        "b": 0.0639
+      },
+      "mRNA 1990": {
+        "r2": 0.5682,
+        "a": 38310.4,
+        "b": 0.3061
+      },
+      "Internet 1974": {
+        "r2": 0.5328,
+        "a": 37256.65,
+        "b": 0.1631
+      },
+      "Poincare 2003": {
+        "r2": 0.6117,
+        "a": 17139.75,
+        "b": 0.0943
+      }
+    },
+    "source": "baseline power law"
+  },
+  "phase_3e_logistic": {
+    "verdict": "PASS",
+    "median_r2": 0.9996,
+    "fits": {
+      "Shannon 1948": {
+        "r2": 1.0,
+        "K": 49591,
+        "r_growth": 4.7241,
+        "t0": 1.24,
+        "K_error_pct": 0.1
+      },
+      "Transistor 1947": {
+        "r2": 0.9822,
+        "K": 45930,
+        "r_growth": 1.6202,
+        "t0": 1.46,
+        "K_error_pct": 0.7
+      },
+      "Turing 1936": {
+        "r2": 0.9996,
+        "K": 42064,
+        "r_growth": 2.243,
+        "t0": 1.79,
+        "K_error_pct": 0.2
+      },
+      "ADN 1953": {
+        "r2": 0.9964,
+        "K": 35758,
+        "r_growth": 3.4757,
+        "t0": 0.68,
+        "K_error_pct": 0.9
+      },
+      "Godel 1931": {
+        "r2": 0.9975,
+        "K": 28961,
+        "r_growth": 1.6428,
+        "t0": 4.55,
+        "K_error_pct": 0.4
+      },
+      "Laser 1960": {
+        "r2": 0.9933,
+        "K": 4122,
+        "r_growth": 1.1634,
+        "t0": 1.77,
+        "K_error_pct": 0.2
+      },
+      "CRISPR 2012": {
+        "r2": 0.9998,
+        "K": 59153,
+        "r_growth": 5.4062,
+        "t0": 0.92,
+        "K_error_pct": 0.3
+      },
+      "AlphaFold 2020": {
+        "r2": 1.0,
+        "K": 51470,
+        "r_growth": 6.0714,
+        "t0": 0.71,
+        "K_error_pct": 0.0
+      },
+      "Grav waves 2016": {
+        "r2": 1.0,
+        "K": 50290,
+        "r_growth": 5.645,
+        "t0": 0.71,
+        "K_error_pct": 0.0
+      },
+      "Higgs 2012": {
+        "r2": 1.0,
+        "K": 55534,
+        "r_growth": 6.0216,
+        "t0": 0.73,
+        "K_error_pct": 0.0
+      },
+      "mRNA 1990": {
+        "r2": 1.0,
+        "K": 62765,
+        "r_growth": 4.1394,
+        "t0": 1.17,
+        "K_error_pct": 0.0
+      },
+      "Internet 1974": {
+        "r2": 0.9977,
+        "K": 53109,
+        "r_growth": 2.4828,
+        "t0": 1.2,
+        "K_error_pct": 0.3
+      },
+      "Poincare 2003": {
+        "r2": 0.9939,
+        "K": 20870,
+        "r_growth": 3.7474,
+        "t0": 0.82,
+        "K_error_pct": 1.0
+      }
+    },
+    "source": "logistic growth model"
+  },
+  "phase_3f_death": {
+    "verdict": "PASS",
+    "spectral_gap": 0.225983,
+    "mixing_time": 4.43,
+    "ratio": 1.8252,
+    "predicted_death": 8.1,
+    "mean_observed": 8.1,
+    "mae": 1.79,
+    "n_deaths": 13,
+    "source": "Chung 1997, Spectral Graph Theory"
+  },
+  "phase_4_correlations": {
+    "verdict": "PASS",
+    "correlations": {
+      "E_old": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.356,
+          "spearman_p": 0.2326,
+          "pearson_r": -0.2492,
+          "pearson_p": 0.4117,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.356,
+          "spearman_p": 0.2326,
+          "pearson_r": -0.3146,
+          "pearson_p": 0.2952,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.1633,
+          "spearman_p": 0.5939,
+          "pearson_r": 0.3599,
+          "pearson_p": 0.2271,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.0509,
+          "spearman_p": 0.869,
+          "pearson_r": -0.0393,
+          "pearson_p": 0.8986,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "aiw_over_density": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": -0.3297,
+          "spearman_p": 0.2713,
+          "pearson_r": -0.0945,
+          "pearson_p": 0.7588,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.3297,
+          "spearman_p": 0.2713,
+          "pearson_r": -0.2883,
+          "pearson_p": 0.3395,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.5584,
+          "spearman_p": 0.0473,
+          "pearson_r": 0.4178,
+          "pearson_p": 0.1554,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.4505,
+          "spearman_p": 0.1223,
+          "pearson_r": -0.3789,
+          "pearson_p": 0.2017,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "avg_edge_weight": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.2802,
+          "spearman_p": 0.3538,
+          "pearson_r": -0.5899,
+          "pearson_p": 0.0338,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.2802,
+          "spearman_p": 0.3538,
+          "pearson_r": -0.3871,
+          "pearson_p": 0.1913,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.3167,
+          "spearman_p": 0.2918,
+          "pearson_r": 0.3488,
+          "pearson_p": 0.2428,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.6209,
+          "spearman_p": 0.0235,
+          "pearson_r": -0.3604,
+          "pearson_p": 0.2264,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "avg_internal_weight": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": -0.2363,
+          "spearman_p": 0.4371,
+          "pearson_r": -0.1933,
+          "pearson_p": 0.5269,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.2363,
+          "spearman_p": 0.4371,
+          "pearson_r": -0.445,
+          "pearson_p": 0.1275,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.4528,
+          "spearman_p": 0.1202,
+          "pearson_r": 0.4648,
+          "pearson_p": 0.1095,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.3681,
+          "spearman_p": 0.2159,
+          "pearson_r": -0.3745,
+          "pearson_p": 0.2074,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "avg_level": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": 0.2956,
+          "spearman_p": 0.3268,
+          "pearson_r": 0.3535,
+          "pearson_p": 0.236,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": 0.2956,
+          "spearman_p": 0.3268,
+          "pearson_r": 0.7319,
+          "pearson_p": 0.0045,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": -0.3248,
+          "spearman_p": 0.2789,
+          "pearson_r": -0.3464,
+          "pearson_p": 0.2463,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": 0.5742,
+          "spearman_p": 0.0401,
+          "pearson_r": 0.7769,
+          "pearson_p": 0.0018,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "continents": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.1914,
+          "spearman_p": 0.531,
+          "pearson_r": -0.0951,
+          "pearson_p": 0.7572,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.1914,
+          "spearman_p": 0.531,
+          "pearson_r": -0.1531,
+          "pearson_p": 0.6176,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.5442,
+          "spearman_p": 0.0545,
+          "pearson_r": 0.5146,
+          "pearson_p": 0.0719,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.1165,
+          "spearman_p": 0.7046,
+          "pearson_r": -0.0881,
+          "pearson_p": 0.7748,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "hub_fraction": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": 0.5165,
+          "spearman_p": 0.0707,
+          "pearson_r": 0.4507,
+          "pearson_p": 0.1222,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": 0.5165,
+          "spearman_p": 0.0707,
+          "pearson_r": 0.6528,
+          "pearson_p": 0.0156,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": -0.7084,
+          "spearman_p": 0.0067,
+          "pearson_r": -0.5987,
+          "pearson_p": 0.0306,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": 0.6154,
+          "spearman_p": 0.0252,
+          "pearson_r": 0.5814,
+          "pearson_p": 0.0371,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "local_density": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": 0.1374,
+          "spearman_p": 0.6545,
+          "pearson_r": 0.216,
+          "pearson_p": 0.4784,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": 0.1374,
+          "spearman_p": 0.6545,
+          "pearson_r": 0.2853,
+          "pearson_p": 0.3447,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": -0.4973,
+          "spearman_p": 0.0838,
+          "pearson_r": -0.5054,
+          "pearson_p": 0.0781,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": 0.4011,
+          "spearman_p": 0.1744,
+          "pearson_r": 0.4114,
+          "pearson_p": 0.1626,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "log_aiw": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": -0.2363,
+          "spearman_p": 0.4371,
+          "pearson_r": -0.2732,
+          "pearson_p": 0.3665,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.2363,
+          "spearman_p": 0.4371,
+          "pearson_r": -0.5397,
+          "pearson_p": 0.0569,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.4528,
+          "spearman_p": 0.1202,
+          "pearson_r": 0.5046,
+          "pearson_p": 0.0786,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.3681,
+          "spearman_p": 0.2159,
+          "pearson_r": -0.3772,
+          "pearson_p": 0.2038,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "median_neighbor_works": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": 0.6044,
+          "spearman_p": 0.0287,
+          "pearson_r": 0.5602,
+          "pearson_p": 0.0465,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": 0.6044,
+          "spearman_p": 0.0287,
+          "pearson_r": 0.8369,
+          "pearson_p": 0.0004,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": -0.7889,
+          "spearman_p": 0.0013,
+          "pearson_r": -0.7071,
+          "pearson_p": 0.0069,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": 0.6154,
+          "spearman_p": 0.0252,
+          "pearson_r": 0.5498,
+          "pearson_p": 0.0516,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "n_neighbors": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.2473,
+          "spearman_p": 0.4154,
+          "pearson_r": -0.3001,
+          "pearson_p": 0.3192,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.2473,
+          "spearman_p": 0.4154,
+          "pearson_r": -0.3531,
+          "pearson_p": 0.2366,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.425,
+          "spearman_p": 0.1477,
+          "pearson_r": 0.4916,
+          "pearson_p": 0.0879,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.6044,
+          "spearman_p": 0.0287,
+          "pearson_r": -0.42,
+          "pearson_p": 0.153,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "n_seeds": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.2623,
+          "spearman_p": 0.3866,
+          "pearson_r": -0.194,
+          "pearson_p": 0.5253,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.2623,
+          "spearman_p": 0.3866,
+          "pearson_r": -0.199,
+          "pearson_p": 0.5146,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.6568,
+          "spearman_p": 0.0147,
+          "pearson_r": 0.6774,
+          "pearson_p": 0.011,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": 0.2118,
+          "spearman_p": 0.4873,
+          "pearson_r": 0.1813,
+          "pearson_p": 0.5532,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "pre_edges": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": -0.0989,
+          "spearman_p": 0.7479,
+          "pearson_r": 0.0367,
+          "pearson_p": 0.9052,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.0989,
+          "spearman_p": 0.7479,
+          "pearson_r": -0.1588,
+          "pearson_p": 0.6044,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.3,
+          "spearman_p": 0.3193,
+          "pearson_r": 0.4866,
+          "pearson_p": 0.0918,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.533,
+          "spearman_p": 0.0607,
+          "pearson_r": -0.2612,
+          "pearson_p": 0.3887,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "pre_weight": {
+        "type": "mare",
+        "R_max": {
+          "spearman_r": -0.1813,
+          "spearman_p": 0.5533,
+          "pearson_r": 0.0933,
+          "pearson_p": 0.7619,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.1813,
+          "spearman_p": 0.5533,
+          "pearson_r": -0.0648,
+          "pearson_p": 0.8335,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.4,
+          "spearman_p": 0.1756,
+          "pearson_r": 0.5473,
+          "pearson_p": 0.0529,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.5824,
+          "spearman_p": 0.0367,
+          "pearson_r": -0.1086,
+          "pearson_p": 0.724,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "seed_degree": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.3736,
+          "spearman_p": 0.2086,
+          "pearson_r": -0.2166,
+          "pearson_p": 0.4771,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.3736,
+          "spearman_p": 0.2086,
+          "pearson_r": -0.3162,
+          "pearson_p": 0.2926,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.5806,
+          "spearman_p": 0.0375,
+          "pearson_r": 0.5043,
+          "pearson_p": 0.0788,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.5934,
+          "spearman_p": 0.0325,
+          "pearson_r": -0.363,
+          "pearson_p": 0.2228,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "seed_weight": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.3901,
+          "spearman_p": 0.1876,
+          "pearson_r": -0.4527,
+          "pearson_p": 0.1203,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.3901,
+          "spearman_p": 0.1876,
+          "pearson_r": -0.3459,
+          "pearson_p": 0.247,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.4611,
+          "spearman_p": 0.1127,
+          "pearson_r": 0.452,
+          "pearson_p": 0.121,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.7033,
+          "spearman_p": 0.0073,
+          "pearson_r": -0.3254,
+          "pearson_p": 0.2779,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "seed_works": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.1978,
+          "spearman_p": 0.5171,
+          "pearson_r": -0.2722,
+          "pearson_p": 0.3683,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.1978,
+          "spearman_p": 0.5171,
+          "pearson_r": -0.2793,
+          "pearson_p": 0.3553,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.2722,
+          "spearman_p": 0.3682,
+          "pearson_r": 0.3697,
+          "pearson_p": 0.2138,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.5934,
+          "spearman_p": 0.0325,
+          "pearson_r": -0.3028,
+          "pearson_p": 0.3146,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      },
+      "strate": {
+        "type": "seed",
+        "R_max": {
+          "spearman_r": -0.3674,
+          "spearman_p": 0.2169,
+          "pearson_r": -0.2969,
+          "pearson_p": 0.3245,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "T_newman": {
+          "spearman_r": -0.3674,
+          "spearman_p": 0.2169,
+          "pearson_r": -0.388,
+          "pearson_p": 0.1902,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "death": {
+          "spearman_r": 0.1507,
+          "spearman_p": 0.6231,
+          "pearson_r": 0.3381,
+          "pearson_p": 0.2585,
+          "n": 13,
+          "significant_bonferroni": "False"
+        },
+        "mu_peak": {
+          "spearman_r": -0.0241,
+          "spearman_p": 0.9377,
+          "pearson_r": -0.0136,
+          "pearson_p": 0.9648,
+          "n": 13,
+          "significant_bonferroni": "False"
+        }
+      }
+    },
+    "hypothesis": {
+      "mare_best_rho": 0.6044,
+      "seed_best_rho": 0.5165,
+      "mare_wins": "True"
+    },
+    "bonferroni_threshold": 0.000694,
+    "n_tests": 72
+  },
+  "phase_5_hybrids": {
+    "verdict": "PARTIAL",
+    "best": "H1_Newman_only",
+    "hybrids": {
+      "H1_Newman_only": {
+        "desc": "Newman S(T), T predicted from mare",
+        "rmax_mae": 11597,
+        "gives": [
+          "R_max"
+        ],
+        "params": 2,
+        "source": "Newman 2002",
+        "aic": -40.83
+      },
+      "H2_Newman_spectral": {
+        "desc": "Newman R_max + spectral death time",
+        "rmax_mae": 11597,
+        "death_mae": 1.79,
+        "gives": [
+          "R_max",
+          "death"
+        ],
+        "params": 3,
+        "source": "Newman 2002 + Chung 1997",
+        "aic": -38.83
+      },
+      "H3_Newman_logistic": {
+        "desc": "Newman K=R_max + logistic for R(t) shape",
+        "rmax_mae": 11597,
+        "logistic_median_r2": 0.9996,
+        "gives": [
+          "R_max",
+          "R(t)"
+        ],
+        "params": 4,
+        "source": "Newman 2002 + logistic growth",
+        "aic": -36.83
+      }
+    }
+  },
+  "phase_6_laser": {
+    "verdict": "Laser = TYPE A (technical barrier). Mare trop épaisse, onde absorbée.",
+    "comparisons": {
+      "seed_works": {
+        "laser": 2845069,
+        "median_others": 105957.5,
+        "ratio": 26.851
+      },
+      "seed_degree": {
+        "laser": 22719,
+        "median_others": 7506.0,
+        "ratio": 3.0268
+      },
+      "seed_weight": {
+        "laser": 278014.57,
+        "median_others": 5722.14,
+        "ratio": 48.5858
+      },
+      "avg_edge_weight": {
+        "laser": 12.2371,
+        "median_others": 0.749,
+        "ratio": 16.3368
+      },
+      "local_density": {
+        "laser": 0.1928,
+        "median_others": 0.2347,
+        "ratio": 0.8214
+      },
+      "avg_internal_weight": {
+        "laser": 307.178,
+        "median_others": 312.5677,
+        "ratio": 0.9828
+      },
+      "median_neighbor_works": {
+        "laser": 18923.0,
+        "median_others": 20302.5,
+        "ratio": 0.9321
+      },
+      "hub_fraction": {
+        "laser": 0.193,
+        "median_others": 0.258,
+        "ratio": 0.7481
+      }
+    },
+    "loo_mae_with": 11597,
+    "loo_mae_without": 9028,
+    "improvement_pct": 22.2
+  },
+  "grand_verdict": {
+    "n_meteorites": 13,
+    "newman_works": true,
+    "death_spectral_works": true,
+    "mare_decides": "True",
+    "best_model": "H1_Newman_only",
+    "laser_explained": true
+  },
+  "sources": {
+    "newman": "Newman 2002 cond-mat/0205009",
+    "chung": "Chung 1997 Spectral Graph Theory AMS CBMS 92",
+    "lamb": "Lamb 1932 Hydrodynamics 6th ed CUP",
+    "lighthill": "Lighthill 1978 Waves in Fluids CUP",
+    "worthington": "Worthington 1908 A Study of Splashes Longmans",
+    "harris": "Harris 1963 Theory of Branching Processes Springer",
+    "kermack": "Kermack McKendrick 1927 Proc R Soc Lond A 115(772)",
+    "moreno": "Moreno Nekovee Pacheco 2004 cond-mat/0312131"
+  }
+}

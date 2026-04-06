@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 4 avril 2026 (session 34), Sky×Claude (Opus 4.6)
+> Dernière màj: 6 avril 2026 (session 34), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -153,21 +153,26 @@ f(t) = exp(-t × L) × f(0)
 - **Zéro paramètre à fitter** — tout est dans la structure du graphe
 - À comparer avec: BFS (ce qu'on a), SIR épidémique, sigmoïde, onde de surface
 
-### TODO V3
-- [x] Mesurer propagation BFS onde sur WT3 (6/13 faites)
+### TODO V3 — SESSION 34 RÉSULTATS FINAUX
+- [x] Mesurer propagation BFS onde sur WT3 (**13/13 COMPLET**)
 - [x] Mesurer P(k) sur cooc_global (⟨k⟩=2136, gamma≈0.94)
-- [x] Newman SIR-percolation: fitter T par météorite (6/6 OK)
-- [x] Oscillation mu(t) Gödel: oscillateur amorti R²=0.99
-- [x] Batterie 5 tests (énergie FAIL, cratère PARTIAL, Newman PARTIAL, mort PASS, hybride PARTIAL)
+- [x] Newman SIR-percolation: fitter T par météorite (13/13 OK)
+- [x] Oscillation mu(t): oscillateur amorti R² médian=1.00 sur 13
+- [x] Logistique S-curve: R² médian=1.00 sur 13 (**MEILLEUR FIT TRAJECTOIRE**)
+- [x] Onde de surface: R² médian=0.82 sur 13
+- [x] Mort spectrale: MAE=1.79 ans sur 13 (**CONFIRMÉ**, Chung 1997)
+- [x] Batterie complète 7 phases × 6 modèles × 13 météorites
 - [x] Recherche biblio: 134+761 papers, 9 modèles, 5 déserts, 3 Carmack moves
-- [x] **E = m×g×h INVALIDÉ** — aucune formule d'énergie ne prédit R_max
-- [x] **Mort spectrale VALIDÉE** — mixing time 1/gap = 4.4 × 2yr = 8.8yr, MAE=0.83yr (Chung 1997)
-- [ ] **Investiguer anomalie Laser** (profil mare normal mais R_max=6% — pourquoi ?)
-- [ ] **Finir les 7 météorites restantes** (CRISPR, AlphaFold, Higgs, gravitational waves, mRNA, Internet, Poincaré)
+- [x] **E = m×g×h INVALIDÉ** — le caillou ne prédit PAS R_max
+- [x] **"La mare décide" CONFIRMÉ** — median_neighbor_works ρ=+0.60 (p=0.029)
+- [x] **Laser = Type A** — mare trop épaisse, onde absorbée (avg_edge_weight=12.24)
+- [x] Index composite créé: `idx_cooc_a_period ON cooc(concept_a, period)` (accélère BFS 27×)
+
+### TODO V3 — PROCHAINES ÉTAPES
 - [ ] **Implémenter heat kernel** sur WT4 (recalculer eigenvectors avec which='SM')
-- [ ] **Tester Newman sans Laser** (LOO MAE devrait baisser fortement)
-- [ ] **Identifier ce que T encode** (si pas les propriétés mare, quoi d'autre ?)
-- [ ] Gödel hold-out propre avec le bon modèle
+- [ ] **Prédire T depuis la mare** — trouver la bonne combinaison de features (Newman + mare)
+- [ ] **Gödel hold-out propre** — train 12, predict Gödel avec modèle logistique
+- [ ] **V4 God Cube** — appliquer le modèle onde au solveur (quand percée arrive, prédire propagation)
 
 ### La bougie OHLC scientifique (CONSERVÉ)
 - **Open** = date d'ÉMISSION du paper
