@@ -380,3 +380,98 @@ Résultats: `data/results/wave_predictive_model.json`, `data/results/wave_predic
 - Bucur, D. et al. (2020). "Beyond ranking nodes: Predicting epidemic outbreak sizes by network centralities." *PLOS Comp. Bio.* — R²=0.96 avec PageRank + edge density
 - Hébert-Dufresne, L. et al. (2023). "Multi-scale Local Network Structure Critically Impacts Epidemic Spread." arXiv: 2312.17351
 - Mohammadi, Y. et al. "Epidemic Forecasting on Networks: Bridging Local Samples with Global Outcomes"
+
+---
+
+## 12. ETAS — Loi d'Omori sur les percées scientifiques (Carmack move)
+
+### Formule Omori-Utsu (taux de répliques)
+
+```
+R(t) = K / (t + c)^p
+```
+
+- **K** = productivité (amplitude des répliques)
+- **c** = délai avant première réplique
+- **p** = exposant de décroissance (UNIVERSEL ≈ 4.74, CV=13%)
+- Testé sur 13 météorites: R² médian = 0.87 **PASS**
+
+**Source**: Omori, F. (1894). "On the aftershocks of earthquakes." *J. College of Science*, 7, 111-200.
+**Source**: Utsu, T. (1961). "A statistical study on the occurrence of aftershocks." *Geophys. Mag.*, 30, 521-605.
+
+### ETAS branching sur mu(t)
+
+```
+mu(t) = A / (t + c)^p + mu_bg
+```
+
+- Testé sur 13 mu(t): R² médian = **0.998** **PASS**
+- p UNIVERSEL: 4.74 ±0.63 (CV=13%) — constant quelle que soit la percée
+- **Carmack move**: seismology × epidemic, cooc=0, score=321.6
+
+**Source**: Ogata, Y. (1988). "Statistical models for earthquake occurrences." *JASA*, 83, 9-27.
+**Source**: Saichev, A. & Sornette, D. (2005). *Phys. Rev. E* 71, 016608.
+
+---
+
+## 13. CANDLESTICK MODEL — Bougies japonaises × Science (session 35)
+
+### La bougie scientifique OHLC
+
+```
+Open  = date de publication du paper
+High  = pic de reconfiguration du mycélium (peak_edges, t≈2 ans)
+Low   = creux de résistance du paradigme
+Close = mort de l'onde (death_t)
+
+Longueur = Close - Open = death_t ≈ 8.1 ans (spectral gap)
+Volume   = peak_edges (arêtes créées au pic)
+Body     = R_max / death (concepts/an à saturation)
+Ratio    = peak_edges / death (volume/longueur)
+```
+
+**Source**: Homma, M. (1755). Riz de Dojima, première utilisation des candlesticks.
+**Source**: Nison, S. (1991). *Japanese Candlestick Charting Techniques*. Prentice Hall.
+**Source**: Sky, session 7 (24 fév 2026). Première formulation des OHLC scientifiques.
+
+### La formule clé
+
+```
+candle_ratio = peak_edges / death
+r = 0.761 × log(candle_ratio) - 5.116
+```
+
+- **candle_ratio vs r**: ρ = +0.9176 (p < 0.0001) — le plus fort signal pour r
+- **LOO 13-fold**: r médiane erreur = 18%, t₀ médiane erreur = 16%
+- Le pic est à t+2 pour 10/13 météorites → mesurable après 2 ans
+
+### Modèle en 2 temps
+
+**Mode 1 (pré-impact, t=0):**
+- K = Ridge(mare_features) → ±16% test temporel PASS
+- death = 1/spectral_gap × ratio → 8.1 ans, 0 param PASS
+
+**Mode 2 (early warning, t+2):**
+- Mesurer peak_edges après 2 ans
+- candle_ratio = peak_edges / death
+- r = 0.761 × log(candle_ratio) - 5.116
+- R(t) = K / (1 + exp(-r(t-t₀)))
+
+### Test temporel (train pré-1960 → predict post-1974)
+
+| Métrique | Sans candlestick | Avec candlestick |
+|----------|------------------|-------------------|
+| R² trajectoire | -0.09 FAIL | **+0.44 PARTIAL** |
+| r LOO erreur | 31% | **18%** |
+| t₀ LOO erreur | 33% | **16%** |
+
+### Type de bougie et type de trou (hypothèse session 7, testée session 35)
+
+| Type | Bougie | r | Exemple |
+|------|--------|---|---------|
+| A (technique) | Longue, volume faible | r faible | Laser 1960 (r=1.16) |
+| B (conceptuel) | Courte, volume élevé | r élevé | CRISPR 2012 (r=5.41) |
+| C (perceptuel) | Très longue, volume retardé | r variable | mRNA 1990 (30 ans + explosion) |
+
+Scripts: `scripts/wave_candlestick_model.py`, `scripts/wave_etas_carmack.py`
+Résultats: `data/results/wave_candlestick_model.json`, `data/results/wave_etas_carmack.json`

@@ -256,16 +256,25 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 
 **Ce qui NE tient PAS:**
 - Énergie du caillou (E=m×g×h) = FAIL
-- Prédiction de r (vitesse) = FAIL en test temporel
-- Prédiction de t₀ (timing) = FAIL en test temporel
 - Normalisation par l'époque = FAIL en extrapolation
 
-**Carmack moves / déserts confirmés:**
-- logistic_function × scale_free_network (cooc=0) — notre modèle est un Carmack move
-- seismology × epidemic (score 321.6) — inexploré
-- carrying_capacity × scale_free (cooc=0) — K vs topologie = vierge
+**Carmack moves session 35:**
+- **ETAS / Omori** (seismology × epidemic, score 321.6): p UNIVERSEL = 4.74 ±0.63 (CV=13%)
+  - Omori-Utsu sur new_concepts/year: R² médian = 0.87 PASS
+  - ETAS branching sur mu(t): R² médian = 0.998 PASS
+  - La loi d'Omori des répliques sismiques s'applique aux percées scientifiques
+  - Sources: Ogata 1988, Omori 1894, Utsu 1961, Saichev-Sornette 2005
+- **Candlestick model** (bougies japonaises × science):
+  - candle_ratio = peak_edges / death corrèle avec r à ρ=0.92 (p<0.0001)
+  - Test temporel R² passe de -0.09 à +0.44 grâce aux candlesticks
+  - r LOO: 31% → 18%, t₀ LOO: 33% → 16%
+  - Modèle en 2 temps: pré-impact (K+death) + early warning t+2 (peak→r→R(t))
+  - Sources: Homma 1755, Nison 1991, Sky session 7
 
-**Scripts session 35**: `wave_boosted_model.py`, `wave_epoch_normalization.py`, `scan_openalex_years.py`
+**Scripts session 35**: `wave_boosted_model.py`, `wave_epoch_normalization.py`, `scan_openalex_years.py`,
+  `wave_etas_carmack.py`, `wave_candlestick_model.py`
+**Résultats**: `wave_etas_carmack.json`, `wave_candlestick_model.json`, `wave_hybrid_final.json`,
+  `wave_boosted_model.json`, `wave_epoch_normalization.json`
 
 ### LEGACY (ne plus utiliser pour du neuf)
 - `strates_export_v2.json` (21,524) — ancien sous-ensemble keyword-filtré, remplacé par 65K

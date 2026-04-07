@@ -5,21 +5,34 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
-## 6 avril 2026 — Session 35
+## 6-7 avril 2026 — Session 35
 
-### V3 Test temporel honnête + normalisation époque
-- **Test temporel** train pré-1960 (6) → predict post-1974 (7):
-  - K: **15.9% PASS** — le seul qui tient
-  - r: 77% FAIL — la science moderne va plus vite
-  - t₀: 142% FAIL — même problème
-- **WT4 positions spectrales**: 66K noeuds extraits de spectral_births.json
-  - Distance spectrale des seeds calculée mais ne prédit ni r ni t₀
-- **Normalisation époque** (OpenAlex 693K papers scannés):
-  - log(papers/an) corrèle avec r à ρ=0.62 (p=0.023)
-  - MAIS test temporel PIRE: K de 16%→63% FAIL (extrapolation impossible)
-  - Gap pré-1960/post-1974 trop grand pour régression linéaire
-- **Bilan V3**: K + mort spectrale = modèle prédictif solide. r et t₀ = mesurés post-hoc.
-- **Outputs**: `wave_boosted_model.json`, `wave_epoch_normalization.json`, `openalex_papers_per_year.json`
+### V3 Carmack ETAS + Candlestick model
+
+**Carmack move: ETAS / Omori (seismology × epidemic, cooc=0, score 321.6):**
+- La loi d'Omori des répliques sismiques s'applique aux percées scientifiques
+- Omori-Utsu sur new_concepts/year: R² médian = 0.87 PASS
+- ETAS branching sur mu(t): R² médian = 0.998 PASS
+- Exposant **p UNIVERSEL = 4.74** ±0.63 (CV=13%) — constant sur 12 météorites
+- Sources: Ogata 1988, Omori 1894, Utsu 1961, Saichev-Sornette 2005
+
+**Candlestick model (bougies japonaises × science, intuition Sky session 7):**
+- candle_ratio = peak_edges / death corrèle avec r à **ρ=0.92 (p<0.0001)**
+- Test temporel R² passe de **-0.09 à +0.44** grâce aux candlesticks
+- r LOO: 31% → **18%**, t₀ LOO: 33% → **16%**
+- Modèle en 2 temps: pré-impact (K+death) + early warning t+2 (peak→r→R(t))
+- Sources: Homma 1755, Nison 1991, Sky session 7 (OHLC scientifique)
+
+**Test temporel honnête (train pré-1960 → predict post-1974):**
+- K: 20.9% PASS
+- R(t) avec candlestick: R² = 0.44 PARTIAL (avant: -0.09 FAIL)
+- CRISPR reconstruit à R²=0.88, mRNA R²=0.64
+
+**Normalisation époque (OpenAlex):**
+- 693K papers scannés, counts 1800-2025
+- log(papers/an) corrèle avec r à ρ=0.62 mais test temporel DÉGRADÉ (extrapolation impossible)
+
+**Outputs**: `wave_etas_carmack.json`, `wave_candlestick_model.json`, `wave_hybrid_final.json`
 
 ---
 
