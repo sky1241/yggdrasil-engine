@@ -1,0 +1,113 @@
+{
+  "test": "wave_hybrid_final_v1",
+  "date": "2026-04-07",
+  "model": {
+    "K": "Ridge(mare_features)",
+    "death": "1/spectral_gap × ratio = 8.8 ans",
+    "p_universal": 4.737,
+    "alpha": 21.42,
+    "gamma": 0.2079,
+    "r_formula": "r = 21.4 / death",
+    "t0_formula": "t0 = 0.208 × death"
+  },
+  "test_temporal": {
+    "train": [
+      "Shannon 1948",
+      "Transistor 1947",
+      "Turing 1936",
+      "ADN 1953",
+      "Godel 1931",
+      "Laser 1960"
+    ],
+    "test": [
+      "CRISPR 2012",
+      "AlphaFold 2020",
+      "Grav waves 2016",
+      "Higgs 2012",
+      "mRNA 1990",
+      "Internet 1974",
+      "Poincare 2003"
+    ],
+    "K_median_pct_error": 20.9,
+    "R2_median": -0.0939,
+    "results": {
+      "CRISPR 2012": {
+        "K_obs": 59153,
+        "K_pred": 60999,
+        "K_pct_err": 3.1,
+        "r_pred": 2.425,
+        "r_obs": 5.406,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": 0.5919
+      },
+      "AlphaFold 2020": {
+        "K_obs": 51470,
+        "K_pred": 40732,
+        "K_pct_err": 20.9,
+        "r_pred": 2.425,
+        "r_obs": 6.071,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": -0.2918
+      },
+      "Grav waves 2016": {
+        "K_obs": 50290,
+        "K_pred": 18952,
+        "K_pct_err": 62.3,
+        "r_pred": 2.425,
+        "r_obs": 5.645,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": -3.6114
+      },
+      "Higgs 2012": {
+        "K_obs": 55534,
+        "K_pred": 47220,
+        "K_pct_err": 15.0,
+        "r_pred": 2.425,
+        "r_obs": 6.022,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": -0.0939
+      },
+      "mRNA 1990": {
+        "K_obs": 62765,
+        "K_pred": 78987,
+        "K_pct_err": 25.8,
+        "r_pred": 2.425,
+        "r_obs": 4.139,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": 0.6514
+      },
+      "Internet 1974": {
+        "K_obs": 53109,
+        "K_pred": 71176,
+        "K_pct_err": 34.0,
+        "r_pred": 2.425,
+        "r_obs": 2.483,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": -0.1865
+      },
+      "Poincare 2003": {
+        "K_obs": 20870,
+        "K_pred": 23117,
+        "K_pct_err": 10.8,
+        "r_pred": 2.425,
+        "r_obs": 3.747,
+        "t0_pred": 1.836,
+        "death_pred": 8.8,
+        "r2_trajectory": 0.4959
+      }
+    }
+  },
+  "etas_universal_p": 4.737,
+  "sources": {
+    "logistic": "Verhulst 1838",
+    "spectral": "Chung 1997",
+    "etas": "Ogata 1988, Omori 1894",
+    "carmack": "seismology × epidemic, cooc=0, score=321.6"
+  }
+}
