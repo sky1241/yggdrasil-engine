@@ -1,0 +1,77 @@
+{
+  "test": "honest_validation_v1",
+  "date": "2026-04-07",
+  "split": {
+    "train": [
+      "Shannon 1948",
+      "Transistor 1947",
+      "Turing 1936",
+      "ADN 1953",
+      "Godel 1931",
+      "Laser 1960"
+    ],
+    "test": [
+      "CRISPR 2012",
+      "AlphaFold 2020",
+      "Grav waves 2016",
+      "Higgs 2012",
+      "mRNA 1990",
+      "Internet 1974",
+      "Poincare 2003"
+    ],
+    "n_train": 6,
+    "n_test": 7
+  },
+  "results": {
+    "K_hub_density": {
+      "median_err": 26.7,
+      "verdict": "PARTIAL"
+    },
+    "K_ridge_mare": {
+      "median_err": 20.9,
+      "verdict": "PASS"
+    },
+    "death_spectral": {
+      "mae": 2.93,
+      "verdict": "PASS"
+    },
+    "p_omori_universal": {
+      "p_train": 4.271,
+      "p_test": 4.766,
+      "mann_whitney_p": 0.1296,
+      "verdict": "PASS"
+    },
+    "r_candlestick": {
+      "median_err": 21.6,
+      "verdict": "PASS"
+    },
+    "R_t_trajectory": {
+      "median_r2": -0.1488,
+      "verdict": "FAIL"
+    }
+  },
+  "bonferroni": {
+    "n_total_tests": 20,
+    "threshold": 0.0025,
+    "hub_frac_density_K": {
+      "rho": 0.7253,
+      "p": 0.005023,
+      "significant": "False"
+    },
+    "candle_ratio_r": {
+      "rho": 0.9176,
+      "p": 1e-05,
+      "significant": "True"
+    },
+    "median_works_K": {
+      "rho": 0.6044,
+      "p": 0.028673,
+      "significant": "False"
+    }
+  },
+  "summary": {
+    "pass": 4,
+    "partial": 1,
+    "fail": 1
+  }
+}
