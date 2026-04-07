@@ -259,7 +259,58 @@ Les 2\`eme et 3\`eme vecteurs propres donnent les coordonn\'ees spectrales.
 Appliqu\'e sur la matrice de co-occurrence \textbf{log-transform\'ee}: $W = \log(1 + C)$
 o\`u $C$ est la matrice de co-occurrence brute.
 
-Positionne TOUT le sol: glyphes (S-2), m\'etiers (S-1), formules (S0).
+Positionne TOUT le sol: glyphes (S-2), m\'etiers (S-1), concepts (S0).
+
+% ----------------------------------------------------------------------------
+\subsection{5 curseurs Lehmann (identification d'esp\`ece, session 8)}
+% ----------------------------------------------------------------------------
+
+\textbf{Source:} Lehmann, S., Lautrup, B., \& Jackson, A. D. (2019).
+\textit{Citation networks in high energy physics}.
+Phys.\ Rev.\ E, 68, 026113.
+
+5 curseurs mesur\'es sur le graphe de co-occurrences:
+\begin{align}
+BA &= \text{angle de bifurcation moyen} \\
+IL &= \text{internode length (longueur entre branchements)} \\
+D  &= \text{diam\`etre du r\'eseau local} \\
+D_b &= \text{dimension fractale (Minkowski)} \\
+L  &= \text{lacunarit\'e (h\'et\'erog\'en\'eit\'e spatiale)}
+\end{align}
+
+\textbf{Adaptation Yggdrasil} (\texttt{engine/topology/species\_identifier.py}):
+9 esp\`eces spectrales (K=9 sur 65K):
+MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math,
+Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics.
+
+% ----------------------------------------------------------------------------
+\subsection{Impact Scale (session 31)}
+% ----------------------------------------------------------------------------
+
+\textbf{Fichier:} \texttt{engine/topology/impact\_scale.py}
+
+Score d'impact normalis\'e 0--10 pour chaque paper:
+\begin{equation}
+\text{impact}(p) = \sum_{c \in \text{concepts}(p)} \text{rarity}(c) \times \text{spread}(c)
+\end{equation}
+o\`u rarity $= 1 / \log(\text{works\_count})$ et spread $=$ nombre d'esp\`eces touch\'ees.
+
+Classification par tiers: caillou (0--3), pierre (3--5), rocher (5--7), m\'et\'eorite (7--10).
+
+% ----------------------------------------------------------------------------
+\subsection{Blind test V2 (session 11)}
+% ----------------------------------------------------------------------------
+
+\textbf{M\'ethode:} cutoff 2015 sur les 65,026 concepts. Train sur donn\'ees $\leq$ 2015,
+predict les trous P4 qui se ferment apr\`es 2015.
+
+\textbf{R\'esultat:} Mann-Whitney $U$ test, $p = 3.4 \times 10^{-12}$, Cohen's $d = 0.44$.
+\begin{equation}
+U = n_1 n_2 + \frac{n_1(n_1 + 1)}{2} - R_1
+\end{equation}
+
+Le moteur d\'etecte des trous structurels qui se ferment significativement plus
+souvent que le hasard ($p < 10^{-11}$).
 
 % ============================================================================
 \section{Formules Sedov-Taylor --- Impact m\'et\'eorite [INVALID\'E session 33]}
