@@ -277,13 +277,22 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - [x] formulas.tex mis à jour (Aguilar-Trigueros 2022, Camenzind 2024, Galvez 2025)
 - **BOTTLENECK = K** (Poincaré K=21K, Grav waves K=50K, les 2 outliers qui détruisent R(t))
 
-### V3 Prochaine session (37) — Améliorer K
-- [ ] Comprendre POURQUOI Poincaré K=21K (seul <29K, n'a aucun analogue dans le train set)
-- [ ] Comprendre POURQUOI Grav waves K=50K est sous-prédit (34K)
-- [ ] Tester: percolation-based K prediction (Newman 2002 S(T) = 1-G₀(u))
-- [ ] Tester: non-backtracking centrality des seeds (Lokhov 2020) comme feature K
-- [ ] Tester: Brockmann effective distance (Science 2013) comme feature
-- [ ] Pipeline opérationnel: arXiv ID → seeds → mare → K + death prediction
+### V3 Prochaine session (37) — Expansion dataset + retrain
+**BLOCAGE IDENTIFIÉ:** n=6 train est insuffisant. Le modèle plafonne, pas les features.
+**SOLUTION:** Expansion 13 → 38 météorites (19 train, 19 test).
+
+- [ ] **BFS 25 nouvelles météorites** sur WT3 cooc (pipeline wave_comprehensive_test.py)
+  - Pre-1960: X-ray 1895, Radioactivité 1896, Electron 1897, Relativité 1905,
+    Supraconductivité 1911, Insulin 1921, QM 1925, Pénicilline 1928,
+    Neutron 1932, Radar 1935, Fission 1938, Game theory 1944, NMR 1946
+  - Post-1973: Monoclonal Ab 1975, Recombinant DNA 1973, GPS 1978, STM 1981,
+    PCR 1983, Fullerène 1985, WWW 1991, Stem cell 1998, RNAi 2001,
+    Graphene 2004, Blockchain 2008, Deep learning 2012
+- [ ] Fitter logistique + mesurer mare + curseurs mycéliens pour les 25
+- [ ] Retrain Ridge/RF sur 19 train → predict 19 test
+- [ ] Vérifier si K prediction s'améliore avec plus de données
+- [ ] R(t) trajectoire sur 38 météorites
+- [ ] Pipeline opérationnel: arXiv ID → seeds → mare → K + r + death prediction
 
 #### Risques identifiés
 - L'analogie biologique est poétique mais peut ne pas ajouter de pouvoir prédictif

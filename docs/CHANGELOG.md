@@ -71,6 +71,26 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - Raison: graphe trop dense (⟨k⟩=2136), tout touche 9 espèces, closeness ≈ degré
 - K reste à 19.2% (Ridge mare+sci+topo) — pas d'amélioration trouvée
 
+**Tentative normalisation époque (K ∝ papers/an):**
+- Papers/an: train=398K, test=8.7M (ratio 22x)
+- MAIS K ne scale PAS avec papers (K borné à 65K, papers croissent exponentiellement)
+- K/papers anti-corrèle avec papers (ρ=-0.93) — log/logit n'améliore pas
+- K est un problème TOPOLOGIQUE, pas d'époque
+
+**Insight Sky: "six degrés de séparation"**
+- ⟨k⟩=2136, en 2-3 hops tout se touche → K≈65K pour tout le monde
+- K ne mesure pas "combien tu touches" mais "combien tu NE bloques PAS"
+- Laser bloque (mare épaisse), Poincaré bloque (cul-de-sac maths pures)
+- Le vrai bottleneck: n=6 train, pas le modèle
+
+**Expansion dataset: 13 → 38 météorites**
+25 nouvelles percées ajoutées (13 pre-1960, 12 post-1973):
+- Pre-1960: X-ray, Radioactivité, Electron, Relativité, Supraconductivité, Insulin,
+  QM, Pénicilline, Neutron, Radar, Fission, Game theory, NMR
+- Post-1973: Monoclonal Ab, Recombinant DNA, GPS, STM, PCR, Fullerène,
+  WWW, Stem cell, RNAi, Graphene, Blockchain, Deep learning
+Train: 6→19, Test: 7→19. BFS à lancer session 37.
+
 **Outputs:**
 - `scripts/wave_assembly_s36_fast.py`, `scripts/wave_dynamic_model.py`, `scripts/wave_mycelium_id.py`
 - `scripts/wave_K_holme.py` (tentative Holme → échec)
