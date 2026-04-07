@@ -768,4 +768,99 @@ Sedov-Taylor & $\beta(Et^2/\rho_0)^{1/5}$ & 2 & FAIL & Invalid\'e \\
 \item La d\'ecroissance suit Omori avec $p = 4.74$ (universel).
 \end{enumerate}
 
+% ============================================================================
+\section{Index centralis\'e --- Scripts, r\'esultats, donn\'ees}
+% ============================================================================
+
+\subsection{Scripts principaux}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Script} & \textbf{R\^ole} & \textbf{Session} \\
+\midrule
+\texttt{engine/core/scisci.py} & Fitness $\eta$, D-index, z-score, Q-factor & 6 \\
+\texttt{engine/core/holes.py} & D\'etection trous A/B/C, score P4 & 6 \\
+\texttt{engine/analysis/meteorites.py} & Sedov (invalid\'e), OHLC, 7 deltas, Frame & 7 \\
+\texttt{engine/topology/species\_identifier.py} & 5 curseurs Lehmann, 9 esp\`eces & 8 \\
+\texttt{engine/topology/species\_classifier.py} & Clustering spectral K=9 & 8 \\
+\texttt{engine/topology/winter\_tree\_scanner.py} & WT1: concept$\times$concept, 108M paires & 10 \\
+\texttt{engine/topology/wt2\_scanner.py} & WT2: per-paper, 832K papers & 22 \\
+\texttt{engine/topology/wt3\_bible.py} & WT3: La Bible, 78 GB, 885M cooc & 23--27 \\
+\texttt{engine/topology/wt4\_spectral.py} & WT4: Laplacien 66K n\oe uds, 75.6M ar\^etes & 28 \\
+\texttt{engine/topology/impact\_scale.py} & Impact Scale 0--10 (833K papers) & 31 \\
+\texttt{engine/analysis/scan\_carmack\_moves.py} & Score Carmack, d\'eserts cross-domaine & 30 \\
+\texttt{engine/analysis/calibrate\_sedov.py} & Calibrage Sedov (invalid\'e session 33) & 32 \\
+\texttt{scripts/godel\_holdout\_wave.py} & BFS onde 13 m\'et\'eorites & 33 \\
+\texttt{scripts/wave\_comprehensive\_test.py} & Batterie 7 phases, 6 mod\`eles, 13 m\'et. & 34 \\
+\texttt{scripts/wave\_predictive\_model.py} & R\'egression K, r, t$_0$ depuis mare & 34 \\
+\texttt{scripts/wave\_predictive\_search.py} & Nouvelles features + Carmack search & 34 \\
+\texttt{scripts/wave\_etas\_carmack.py} & Carmack ETAS/Omori sur 13 m\'et. & 35 \\
+\texttt{scripts/wave\_candlestick\_model.py} & Mod\`ele candlestick, $\rho = 0.92$ & 35 \\
+\texttt{scripts/wave\_hybrid\_final.py} & Mod\`ele hybride + test temporel & 35 \\
+\texttt{scripts/scan\_openalex\_years.py} & Scan OpenAlex papers/an (693K) & 35 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{R\'esultats JSON}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Fichier} & \textbf{Contenu} & \textbf{Taille} \\
+\midrule
+\texttt{wave\_comprehensive\_test.json} & 13 m\'et. $\times$ 7 phases $\times$ 6 mod\`eles & 43 KB \\
+\texttt{wave\_test\_plan.json} & Batterie 5 tests initiale (6 m\'et.) & 9 KB \\
+\texttt{wave\_model\_test.json} & P(k), Newman, eigenvalues, branching & 4 KB \\
+\texttt{wave\_full\_test.json} & Propri\'et\'es seeds + mare (13 m\'et.) & 6 KB \\
+\texttt{wave\_research\_v2.json} & 134 papers, 9 mod\`eles, P4 analysis & 17 KB \\
+\texttt{wave\_predictive\_model.json} & R\'egression K, r, t$_0$ + G\"odel holdout & 17 KB \\
+\texttt{wave\_predictive\_search.json} & Nouvelles features, Carmack d\'eserts & 12 KB \\
+\texttt{wave\_etas\_carmack.json} & Omori/ETAS fits 13 m\'et., p universel & -- \\
+\texttt{wave\_candlestick\_model.json} & Bougies OHLC, candle\_ratio vs $r$ & -- \\
+\texttt{wave\_hybrid\_final.json} & Mod\`ele hybride, test temporel & -- \\
+\texttt{scan\_carmack\_moves.json} & 34 moves, 23 techniques, d\'eserts & 60 KB \\
+\texttt{scan\_wave\_propagation\_research.json} & 761 papers, 12 mod\`eles & 22 KB \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Tous dans \texttt{data/results/}.
+
+\subsection{Donn\'ees sources}
+
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+\textbf{Donn\'ee} & \textbf{Chemin} & \textbf{Taille} \\
+\midrule
+WT3 La Bible & \texttt{data/wt3.db} & 78 GB \\
+WT4 Laplacien & \texttt{data/scan/wt4\_spectral.json} & 66K n\oe uds \\
+65K concepts & \texttt{data/scan/concepts\_65k.json} & 7 MB \\
+Positions spectrales & \texttt{data/scan/spectral\_births.json} & 66K pos. \\
+arXiv sources & \texttt{E:/arxiv/src/} & 1 TB \\
+OpenAlex & \texttt{E:/openalex/data/} & 692 GB \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection{Documentation}
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Document} & \textbf{R\^ole} \\
+\midrule
+\texttt{docs/reference/formulas.tex} & Ce fichier --- toutes les formules \\
+\texttt{docs/reference/wave\_physics.md} & Formules onde + r\'esultats tests \\
+\texttt{docs/SOL.md} & Source de v\'erit\'e inter-sessions \\
+\texttt{docs/CHANGELOG.md} & Historique des sessions \\
+\texttt{docs/TODO.md} & Prochaines \'etapes \\
+\texttt{data/metaprompt\_wave\_research.md} & Prompt V2 pour deep research \\
+\texttt{data/metaprompt\_predictive\_wave.md} & Prompt V3 pour pr\'ediction \\
+\bottomrule
+\end{tabular}
+\end{center}
+
 \end{document}
