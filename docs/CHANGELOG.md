@@ -542,4 +542,4 @@ Train: 6→19, Test: 7→19. BFS à lancer session 37.
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-04-07 | 64,245L Python | 6,956 fichiers | phase CANOPEE_
+_Auto-update: 2026-04-07 | 64,580L Python | 6,958 fichiers | phase CANOPEE_

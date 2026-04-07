@@ -1,0 +1,2519 @@
+{
+  "GPS 1978": {
+    "phase_1": {
+      "seeds": [
+        58871
+      ],
+      "open_year": 1978,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 0,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 2,
+          "new_concepts": 72,
+          "total_touched": 73,
+          "new_edges": 112,
+          "mu": 1.5556
+        },
+        {
+          "t": 3,
+          "new_concepts": 1134,
+          "total_touched": 1207,
+          "new_edges": 4829,
+          "mu": 4.2584
+        },
+        {
+          "t": 4,
+          "new_concepts": 2546,
+          "total_touched": 3753,
+          "new_edges": 51047,
+          "mu": 20.0499
+        },
+        {
+          "t": 5,
+          "new_concepts": 377,
+          "total_touched": 4130,
+          "new_edges": 20533,
+          "mu": 54.4642
+        },
+        {
+          "t": 6,
+          "new_concepts": 132,
+          "total_touched": 4262,
+          "new_edges": 4091,
+          "mu": 30.9924
+        },
+        {
+          "t": 7,
+          "new_concepts": 27,
+          "total_touched": 4289,
+          "new_edges": 1139,
+          "mu": 42.1852
+        },
+        {
+          "t": 8,
+          "new_concepts": 11,
+          "total_touched": 4300,
+          "new_edges": 300,
+          "mu": 27.2727
+        }
+      ],
+      "r_max": 4300,
+      "pct": 6.6,
+      "death_t": 7,
+      "peak_year": 4,
+      "peak_edges": 51047,
+      "mu_peak": 54.4642
+    },
+    "phase_2": {
+      "seed_works": 1602.0,
+      "seed_degree": 12545.0,
+      "seed_weight": 0.008333000354468822,
+      "avg_edge_weight": 2.1090825761654837,
+      "n_neighbors": 12545,
+      "hub_fraction": 0.275,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5420408163265306,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 3035.0,
+      "pre_edges": 12545,
+      "pre_weight": 26458.44091799599
+    },
+    "phase_3": {
+      "K": 4255.7,
+      "r_growth": 2.9153,
+      "t0": 3.3179,
+      "r2": 0.9995,
+      "K_error_pct": 1.0
+    },
+    "time_sec": 612.9
+  },
+  "X-ray 1895": {
+    "phase_1": {
+      "seeds": [
+        34157
+      ],
+      "open_year": 1895,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 49,
+          "total_touched": 50,
+          "new_edges": 49,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 96,
+          "total_touched": 146,
+          "new_edges": 122,
+          "mu": 1.2708
+        },
+        {
+          "t": 3,
+          "new_concepts": 208,
+          "total_touched": 354,
+          "new_edges": 437,
+          "mu": 2.101
+        },
+        {
+          "t": 4,
+          "new_concepts": 983,
+          "total_touched": 1337,
+          "new_edges": 2419,
+          "mu": 2.4608
+        },
+        {
+          "t": 5,
+          "new_concepts": 78,
+          "total_touched": 1415,
+          "new_edges": 408,
+          "mu": 5.2308
+        },
+        {
+          "t": 6,
+          "new_concepts": 210,
+          "total_touched": 1625,
+          "new_edges": 531,
+          "mu": 2.5286
+        },
+        {
+          "t": 7,
+          "new_concepts": 1277,
+          "total_touched": 2902,
+          "new_edges": 4716,
+          "mu": 3.693
+        },
+        {
+          "t": 8,
+          "new_concepts": 604,
+          "total_touched": 3506,
+          "new_edges": 5044,
+          "mu": 8.351
+        },
+        {
+          "t": 9,
+          "new_concepts": 608,
+          "total_touched": 4114,
+          "new_edges": 3911,
+          "mu": 6.4326
+        },
+        {
+          "t": 10,
+          "new_concepts": 116,
+          "total_touched": 4230,
+          "new_edges": 893,
+          "mu": 7.6983
+        },
+        {
+          "t": 11,
+          "new_concepts": 78,
+          "total_touched": 4308,
+          "new_edges": 499,
+          "mu": 6.3974
+        },
+        {
+          "t": 12,
+          "new_concepts": 26,
+          "total_touched": 4334,
+          "new_edges": 232,
+          "mu": 8.9231
+        },
+        {
+          "t": 13,
+          "new_concepts": 0,
+          "total_touched": 4334,
+          "new_edges": 4,
+          "mu": 0
+        }
+      ],
+      "r_max": 4334,
+      "pct": 6.7,
+      "death_t": 12,
+      "peak_year": 8,
+      "peak_edges": 5044,
+      "mu_peak": 8.9231
+    },
+    "phase_2": {
+      "seed_works": 3937.0,
+      "seed_degree": 8694.0,
+      "seed_weight": 0.3915239963680506,
+      "avg_edge_weight": 1.2355507014763376,
+      "n_neighbors": 8694,
+      "hub_fraction": 0.33,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5493877551020409,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2235.5,
+      "pre_edges": 8694,
+      "pre_weight": 10741.87779863528
+    },
+    "phase_3": {
+      "K": 4487.3,
+      "r_growth": 0.6778,
+      "t0": 6.2016,
+      "r2": 0.984,
+      "K_error_pct": 3.5
+    },
+    "time_sec": 111.8
+  },
+  "Radioactivity 1896": {
+    "phase_1": {
+      "seeds": [
+        15754
+      ],
+      "open_year": 1896,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 0,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 2,
+          "new_concepts": 0,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 3,
+          "new_concepts": 0,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        }
+      ],
+      "r_max": 1,
+      "pct": 0.0,
+      "death_t": 3,
+      "peak_year": 1,
+      "peak_edges": 0,
+      "mu_peak": 0
+    },
+    "phase_2": {
+      "seed_works": 434.0,
+      "seed_degree": 656.0,
+      "seed_weight": 0.0058479998260736465,
+      "avg_edge_weight": 0.13725150222769406,
+      "n_neighbors": 656,
+      "hub_fraction": 0.325,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.433469387755102,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1685.5,
+      "pre_edges": 656,
+      "pre_weight": 90.0369854613673
+    },
+    "phase_3": {
+      "K": 1.0,
+      "r_growth": 1.0,
+      "t0": 1.0,
+      "r2": 0,
+      "K_error_pct": 0
+    },
+    "time_sec": 0.1
+  },
+  "Electron 1897": {
+    "phase_1": {
+      "seeds": [
+        7363
+      ],
+      "open_year": 1897,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 0,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 2,
+          "new_concepts": 573,
+          "total_touched": 574,
+          "new_edges": 573,
+          "mu": 1.0
+        },
+        {
+          "t": 3,
+          "new_concepts": 1041,
+          "total_touched": 1615,
+          "new_edges": 2401,
+          "mu": 2.3064
+        },
+        {
+          "t": 4,
+          "new_concepts": 7088,
+          "total_touched": 8703,
+          "new_edges": 28778,
+          "mu": 4.0601
+        },
+        {
+          "t": 5,
+          "new_concepts": 20937,
+          "total_touched": 29640,
+          "new_edges": 256588,
+          "mu": 12.2552
+        },
+        {
+          "t": 6,
+          "new_concepts": 6464,
+          "total_touched": 36104,
+          "new_edges": 133536,
+          "mu": 20.6584
+        },
+        {
+          "t": 7,
+          "new_concepts": 1781,
+          "total_touched": 37885,
+          "new_edges": 37641,
+          "mu": 21.1348
+        },
+        {
+          "t": 8,
+          "new_concepts": 126,
+          "total_touched": 38011,
+          "new_edges": 2654,
+          "mu": 21.0635
+        },
+        {
+          "t": 9,
+          "new_concepts": 44,
+          "total_touched": 38055,
+          "new_edges": 785,
+          "mu": 17.8409
+        },
+        {
+          "t": 10,
+          "new_concepts": 0,
+          "total_touched": 38055,
+          "new_edges": 199,
+          "mu": 0
+        }
+      ],
+      "r_max": 38055,
+      "pct": 58.5,
+      "death_t": 9,
+      "peak_year": 5,
+      "peak_edges": 256588,
+      "mu_peak": 21.1348
+    },
+    "phase_2": {
+      "seed_works": 11967.0,
+      "seed_degree": 14125.0,
+      "seed_weight": 0.008333000354468822,
+      "avg_edge_weight": 14.81581307617748,
+      "n_neighbors": 14125,
+      "hub_fraction": 0.295,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5273469387755102,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2126.5,
+      "pre_edges": 14125,
+      "pre_weight": 209273.3597010069
+    },
+    "phase_3": {
+      "K": 37882.5,
+      "r_growth": 2.3959,
+      "t0": 4.4867,
+      "r2": 0.9995,
+      "K_error_pct": 0.5
+    },
+    "time_sec": 533.4
+  },
+  "Relativity 1905": {
+    "phase_1": {
+      "seeds": [
+        17303,
+        7415
+      ],
+      "open_year": 1905,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 2,
+          "total_touched": 2,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 184,
+          "total_touched": 186,
+          "new_edges": 216,
+          "mu": 1.1739
+        },
+        {
+          "t": 2,
+          "new_concepts": 8462,
+          "total_touched": 8648,
+          "new_edges": 24607,
+          "mu": 2.9079
+        },
+        {
+          "t": 3,
+          "new_concepts": 5385,
+          "total_touched": 14033,
+          "new_edges": 48874,
+          "mu": 9.076
+        },
+        {
+          "t": 4,
+          "new_concepts": 4633,
+          "total_touched": 18666,
+          "new_edges": 40652,
+          "mu": 8.7744
+        },
+        {
+          "t": 5,
+          "new_concepts": 1714,
+          "total_touched": 20380,
+          "new_edges": 14041,
+          "mu": 8.1919
+        },
+        {
+          "t": 6,
+          "new_concepts": 10,
+          "total_touched": 20390,
+          "new_edges": 212,
+          "mu": 21.2
+        },
+        {
+          "t": 7,
+          "new_concepts": 334,
+          "total_touched": 20724,
+          "new_edges": 1089,
+          "mu": 3.2605
+        },
+        {
+          "t": 8,
+          "new_concepts": 276,
+          "total_touched": 21000,
+          "new_edges": 1747,
+          "mu": 6.3297
+        },
+        {
+          "t": 9,
+          "new_concepts": 420,
+          "total_touched": 21420,
+          "new_edges": 2667,
+          "mu": 6.35
+        },
+        {
+          "t": 10,
+          "new_concepts": 571,
+          "total_touched": 21991,
+          "new_edges": 4527,
+          "mu": 7.9282
+        },
+        {
+          "t": 11,
+          "new_concepts": 5,
+          "total_touched": 21996,
+          "new_edges": 25,
+          "mu": 5.0
+        },
+        {
+          "t": 12,
+          "new_concepts": 0,
+          "total_touched": 21996,
+          "new_edges": 24,
+          "mu": 0
+        }
+      ],
+      "r_max": 21996,
+      "pct": 33.8,
+      "death_t": 6,
+      "peak_year": 3,
+      "peak_edges": 48874,
+      "mu_peak": 21.2
+    },
+    "phase_2": {
+      "seed_works": 2205.5,
+      "seed_degree": 3085.0,
+      "seed_weight": 0.04883400001563132,
+      "avg_edge_weight": 0.6827454591465237,
+      "n_neighbors": 4452,
+      "hub_fraction": 0.305,
+      "avg_level": 2.0,
+      "n_seeds": 2,
+      "local_density": 0.3469387755102041,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1486.0,
+      "pre_edges": 6170,
+      "pre_weight": 4212.539482934051
+    },
+    "phase_3": {
+      "K": 21293.9,
+      "r_growth": 1.4191,
+      "t0": 2.4829,
+      "r2": 0.9809,
+      "K_error_pct": 3.2
+    },
+    "time_sec": 326.4
+  },
+  "Superconductivity 1911": {
+    "phase_1": {
+      "seeds": [
+        57657
+      ],
+      "open_year": 1911,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 82,
+          "total_touched": 83,
+          "new_edges": 82,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 703,
+          "total_touched": 786,
+          "new_edges": 1571,
+          "mu": 2.2347
+        },
+        {
+          "t": 3,
+          "new_concepts": 1623,
+          "total_touched": 2409,
+          "new_edges": 9646,
+          "mu": 5.9433
+        },
+        {
+          "t": 4,
+          "new_concepts": 827,
+          "total_touched": 3236,
+          "new_edges": 8794,
+          "mu": 10.6336
+        },
+        {
+          "t": 5,
+          "new_concepts": 29,
+          "total_touched": 3265,
+          "new_edges": 292,
+          "mu": 10.069
+        },
+        {
+          "t": 6,
+          "new_concepts": 1,
+          "total_touched": 3266,
+          "new_edges": 8,
+          "mu": 8.0
+        }
+      ],
+      "r_max": 3266,
+      "pct": 5.0,
+      "death_t": 5,
+      "peak_year": 3,
+      "peak_edges": 9646,
+      "mu_peak": 10.6336
+    },
+    "phase_2": {
+      "seed_works": 1428.0,
+      "seed_degree": 8128.0,
+      "seed_weight": 0.02948700077831745,
+      "avg_edge_weight": 3.1616154144226236,
+      "n_neighbors": 8128,
+      "hub_fraction": 0.325,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.4359183673469388,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2105.5,
+      "pre_edges": 8128,
+      "pre_weight": 25697.610088427085
+    },
+    "phase_3": {
+      "K": 3295.4,
+      "r_growth": 2.23,
+      "t0": 2.5345,
+      "r2": 0.9994,
+      "K_error_pct": 0.9
+    },
+    "time_sec": 101.9
+  },
+  "Insulin 1921": {
+    "phase_1": {
+      "seeds": [
+        34056
+      ],
+      "open_year": 1921,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 27,
+          "total_touched": 28,
+          "new_edges": 27,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 569,
+          "total_touched": 597,
+          "new_edges": 843,
+          "mu": 1.4815
+        },
+        {
+          "t": 3,
+          "new_concepts": 4409,
+          "total_touched": 5006,
+          "new_edges": 15164,
+          "mu": 3.4393
+        },
+        {
+          "t": 4,
+          "new_concepts": 1232,
+          "total_touched": 6238,
+          "new_edges": 14741,
+          "mu": 11.9651
+        },
+        {
+          "t": 5,
+          "new_concepts": 1026,
+          "total_touched": 7264,
+          "new_edges": 9098,
+          "mu": 8.8674
+        },
+        {
+          "t": 6,
+          "new_concepts": 89,
+          "total_touched": 7353,
+          "new_edges": 1191,
+          "mu": 13.382
+        },
+        {
+          "t": 7,
+          "new_concepts": 42,
+          "total_touched": 7395,
+          "new_edges": 420,
+          "mu": 10.0
+        },
+        {
+          "t": 8,
+          "new_concepts": 2,
+          "total_touched": 7397,
+          "new_edges": 16,
+          "mu": 8.0
+        }
+      ],
+      "r_max": 7397,
+      "pct": 11.4,
+      "death_t": 7,
+      "peak_year": 3,
+      "peak_edges": 15164,
+      "mu_peak": 13.382
+    },
+    "phase_2": {
+      "seed_works": 6829.0,
+      "seed_degree": 14345.0,
+      "seed_weight": 0.022344999946653843,
+      "avg_edge_weight": 1.5404927848715484,
+      "n_neighbors": 14345,
+      "hub_fraction": 0.305,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.6065306122448979,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2208.0,
+      "pre_edges": 14345,
+      "pre_weight": 22098.36899898236
+    },
+    "phase_3": {
+      "K": 7201.5,
+      "r_growth": 2.7681,
+      "t0": 2.7471,
+      "r2": 0.989,
+      "K_error_pct": 2.6
+    },
+    "time_sec": 177.1
+  },
+  "QM 1925": {
+    "phase_1": {
+      "seeds": [
+        59231
+      ],
+      "open_year": 1925,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 103,
+          "total_touched": 104,
+          "new_edges": 103,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 181,
+          "total_touched": 285,
+          "new_edges": 418,
+          "mu": 2.3094
+        },
+        {
+          "t": 3,
+          "new_concepts": 808,
+          "total_touched": 1093,
+          "new_edges": 2058,
+          "mu": 2.547
+        },
+        {
+          "t": 4,
+          "new_concepts": 121,
+          "total_touched": 1214,
+          "new_edges": 733,
+          "mu": 6.0579
+        },
+        {
+          "t": 5,
+          "new_concepts": 37,
+          "total_touched": 1251,
+          "new_edges": 125,
+          "mu": 3.3784
+        },
+        {
+          "t": 6,
+          "new_concepts": 5,
+          "total_touched": 1256,
+          "new_edges": 28,
+          "mu": 5.6
+        }
+      ],
+      "r_max": 1256,
+      "pct": 1.9,
+      "death_t": 5,
+      "peak_year": 3,
+      "peak_edges": 2058,
+      "mu_peak": 6.0579
+    },
+    "phase_2": {
+      "seed_works": 1487.0,
+      "seed_degree": 10216.0,
+      "seed_weight": 0.004329000134021044,
+      "avg_edge_weight": 4.737528224358332,
+      "n_neighbors": 10216,
+      "hub_fraction": 0.355,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.4579591836734694,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1546.5,
+      "pre_edges": 10216,
+      "pre_weight": 48398.58834004472
+    },
+    "phase_3": {
+      "K": 1247.0,
+      "r_growth": 3.0091,
+      "t0": 2.382,
+      "r2": 0.9941,
+      "K_error_pct": 0.7
+    },
+    "time_sec": 46.8
+  },
+  "Penicillin 1928": {
+    "phase_1": {
+      "seeds": [
+        11674,
+        56429
+      ],
+      "open_year": 1928,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 2,
+          "total_touched": 2,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 42,
+          "total_touched": 44,
+          "new_edges": 44,
+          "mu": 1.0476
+        },
+        {
+          "t": 2,
+          "new_concepts": 464,
+          "total_touched": 508,
+          "new_edges": 649,
+          "mu": 1.3987
+        },
+        {
+          "t": 3,
+          "new_concepts": 3003,
+          "total_touched": 3511,
+          "new_edges": 6859,
+          "mu": 2.284
+        },
+        {
+          "t": 4,
+          "new_concepts": 17803,
+          "total_touched": 21314,
+          "new_edges": 124342,
+          "mu": 6.9843
+        },
+        {
+          "t": 5,
+          "new_concepts": 1439,
+          "total_touched": 22753,
+          "new_edges": 26530,
+          "mu": 18.4364
+        },
+        {
+          "t": 6,
+          "new_concepts": 371,
+          "total_touched": 23124,
+          "new_edges": 4121,
+          "mu": 11.1078
+        },
+        {
+          "t": 7,
+          "new_concepts": 214,
+          "total_touched": 23338,
+          "new_edges": 1392,
+          "mu": 6.5047
+        },
+        {
+          "t": 8,
+          "new_concepts": 521,
+          "total_touched": 23859,
+          "new_edges": 3088,
+          "mu": 5.9271
+        },
+        {
+          "t": 9,
+          "new_concepts": 824,
+          "total_touched": 24683,
+          "new_edges": 7575,
+          "mu": 9.193
+        },
+        {
+          "t": 10,
+          "new_concepts": 187,
+          "total_touched": 24870,
+          "new_edges": 1761,
+          "mu": 9.4171
+        },
+        {
+          "t": 11,
+          "new_concepts": 115,
+          "total_touched": 24985,
+          "new_edges": 968,
+          "mu": 8.4174
+        },
+        {
+          "t": 12,
+          "new_concepts": 52,
+          "total_touched": 25037,
+          "new_edges": 518,
+          "mu": 9.9615
+        },
+        {
+          "t": 13,
+          "new_concepts": 0,
+          "total_touched": 25037,
+          "new_edges": 10,
+          "mu": 0
+        }
+      ],
+      "r_max": 25037,
+      "pct": 38.5,
+      "death_t": 12,
+      "peak_year": 4,
+      "peak_edges": 124342,
+      "mu_peak": 18.4364
+    },
+    "phase_2": {
+      "seed_works": 3908.0,
+      "seed_degree": 12104.5,
+      "seed_weight": 0.0899629988707602,
+      "avg_edge_weight": 1.9660031801509776,
+      "n_neighbors": 17739,
+      "hub_fraction": 0.315,
+      "avg_level": 2.0,
+      "n_seeds": 2,
+      "local_density": 0.5608163265306122,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1695.0,
+      "pre_edges": 24209,
+      "pre_weight": 47594.97098827502
+    },
+    "phase_3": {
+      "K": 24206.8,
+      "r_growth": 3.7086,
+      "t0": 3.4725,
+      "r2": 0.9943,
+      "K_error_pct": 3.3
+    },
+    "time_sec": 404.0
+  },
+  "Neutron 1932": {
+    "phase_1": {
+      "seeds": [
+        8200
+      ],
+      "open_year": 1932,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 20,
+          "total_touched": 21,
+          "new_edges": 20,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 2535,
+          "total_touched": 2556,
+          "new_edges": 4108,
+          "mu": 1.6205
+        },
+        {
+          "t": 3,
+          "new_concepts": 6070,
+          "total_touched": 8626,
+          "new_edges": 38679,
+          "mu": 6.3722
+        },
+        {
+          "t": 4,
+          "new_concepts": 18772,
+          "total_touched": 27398,
+          "new_edges": 182226,
+          "mu": 9.7073
+        },
+        {
+          "t": 5,
+          "new_concepts": 8632,
+          "total_touched": 36030,
+          "new_edges": 271636,
+          "mu": 31.4685
+        },
+        {
+          "t": 6,
+          "new_concepts": 1138,
+          "total_touched": 37168,
+          "new_edges": 24842,
+          "mu": 21.8295
+        },
+        {
+          "t": 7,
+          "new_concepts": 262,
+          "total_touched": 37430,
+          "new_edges": 5004,
+          "mu": 19.0992
+        },
+        {
+          "t": 8,
+          "new_concepts": 34,
+          "total_touched": 37464,
+          "new_edges": 574,
+          "mu": 16.8824
+        },
+        {
+          "t": 9,
+          "new_concepts": 0,
+          "total_touched": 37464,
+          "new_edges": 1,
+          "mu": 0
+        }
+      ],
+      "r_max": 37464,
+      "pct": 57.6,
+      "death_t": 8,
+      "peak_year": 5,
+      "peak_edges": 271636,
+      "mu_peak": 31.4685
+    },
+    "phase_2": {
+      "seed_works": 8249.0,
+      "seed_degree": 10050.0,
+      "seed_weight": 0.012821000069379807,
+      "avg_edge_weight": 4.775876561956346,
+      "n_neighbors": 10050,
+      "hub_fraction": 0.315,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5575510204081633,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2330.0,
+      "pre_edges": 10050,
+      "pre_weight": 47997.559447661275
+    },
+    "phase_3": {
+      "K": 37487.9,
+      "r_growth": 2.1245,
+      "t0": 3.5393,
+      "r2": 0.9992,
+      "K_error_pct": 0.1
+    },
+    "time_sec": 568.5
+  },
+  "Radar 1935": {
+    "phase_1": {
+      "seeds": [
+        58057
+      ],
+      "open_year": 1935,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 102,
+          "total_touched": 103,
+          "new_edges": 102,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 1116,
+          "total_touched": 1219,
+          "new_edges": 3043,
+          "mu": 2.7267
+        },
+        {
+          "t": 3,
+          "new_concepts": 836,
+          "total_touched": 2055,
+          "new_edges": 4922,
+          "mu": 5.8876
+        },
+        {
+          "t": 4,
+          "new_concepts": 403,
+          "total_touched": 2458,
+          "new_edges": 3036,
+          "mu": 7.5335
+        },
+        {
+          "t": 5,
+          "new_concepts": 112,
+          "total_touched": 2570,
+          "new_edges": 761,
+          "mu": 6.7946
+        },
+        {
+          "t": 6,
+          "new_concepts": 0,
+          "total_touched": 2570,
+          "new_edges": 7,
+          "mu": 0
+        },
+        {
+          "t": 7,
+          "new_concepts": 21,
+          "total_touched": 2591,
+          "new_edges": 242,
+          "mu": 11.5238
+        }
+      ],
+      "r_max": 2591,
+      "pct": 4.0,
+      "death_t": 6,
+      "peak_year": 3,
+      "peak_edges": 4922,
+      "mu_peak": 11.5238
+    },
+    "phase_2": {
+      "seed_works": 1895.0,
+      "seed_degree": 11750.0,
+      "seed_weight": 4.0742149881552905,
+      "avg_edge_weight": 4.102267038912928,
+      "n_neighbors": 11750,
+      "hub_fraction": 0.285,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5363265306122449,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2515.0,
+      "pre_edges": 11750,
+      "pre_weight": 48201.63770722691
+    },
+    "phase_3": {
+      "K": 2555.8,
+      "r_growth": 1.9302,
+      "t0": 2.1377,
+      "r2": 0.9912,
+      "K_error_pct": 1.4
+    },
+    "time_sec": 76.5
+  },
+  "Fission 1938": {
+    "phase_1": {
+      "seeds": [
+        54149
+      ],
+      "open_year": 1938,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 0,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 2,
+          "new_concepts": 5,
+          "total_touched": 6,
+          "new_edges": 5,
+          "mu": 1.0
+        },
+        {
+          "t": 3,
+          "new_concepts": 0,
+          "total_touched": 6,
+          "new_edges": 0,
+          "mu": 0
+        }
+      ],
+      "r_max": 6,
+      "pct": 0.0,
+      "death_t": 3,
+      "peak_year": 2,
+      "peak_edges": 5,
+      "mu_peak": 1.0
+    },
+    "phase_2": {
+      "seed_works": 506.0,
+      "seed_degree": 1814.0,
+      "seed_weight": 0.050382000394165516,
+      "avg_edge_weight": 0.34509076654998067,
+      "n_neighbors": 1814,
+      "hub_fraction": 0.365,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5289795918367347,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2307.0,
+      "pre_edges": 1814,
+      "pre_weight": 625.9946505216649
+    },
+    "phase_3": {
+      "K": 6.0,
+      "r_growth": 1.0,
+      "t0": 1.0,
+      "r2": 0,
+      "K_error_pct": 0
+    },
+    "time_sec": 11.1
+  },
+  "Game theory 1944": {
+    "phase_1": {
+      "seeds": [
+        12038
+      ],
+      "open_year": 1944,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 5,
+          "total_touched": 6,
+          "new_edges": 5,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 1444,
+          "total_touched": 1450,
+          "new_edges": 1469,
+          "mu": 1.0173
+        },
+        {
+          "t": 3,
+          "new_concepts": 5870,
+          "total_touched": 7320,
+          "new_edges": 44257,
+          "mu": 7.5395
+        },
+        {
+          "t": 4,
+          "new_concepts": 8331,
+          "total_touched": 15651,
+          "new_edges": 93816,
+          "mu": 11.2611
+        },
+        {
+          "t": 5,
+          "new_concepts": 3592,
+          "total_touched": 19243,
+          "new_edges": 46558,
+          "mu": 12.9616
+        },
+        {
+          "t": 6,
+          "new_concepts": 7212,
+          "total_touched": 26455,
+          "new_edges": 95203,
+          "mu": 13.2006
+        },
+        {
+          "t": 7,
+          "new_concepts": 692,
+          "total_touched": 27147,
+          "new_edges": 13456,
+          "mu": 19.4451
+        },
+        {
+          "t": 8,
+          "new_concepts": 109,
+          "total_touched": 27256,
+          "new_edges": 1965,
+          "mu": 18.0275
+        },
+        {
+          "t": 9,
+          "new_concepts": 103,
+          "total_touched": 27359,
+          "new_edges": 1180,
+          "mu": 11.4563
+        },
+        {
+          "t": 10,
+          "new_concepts": 53,
+          "total_touched": 27412,
+          "new_edges": 901,
+          "mu": 17.0
+        },
+        {
+          "t": 11,
+          "new_concepts": 4,
+          "total_touched": 27416,
+          "new_edges": 94,
+          "mu": 23.5
+        }
+      ],
+      "r_max": 27416,
+      "pct": 42.2,
+      "death_t": 10,
+      "peak_year": 6,
+      "peak_edges": 95203,
+      "mu_peak": 23.5
+    },
+    "phase_2": {
+      "seed_works": 6486.0,
+      "seed_degree": 8806.0,
+      "seed_weight": 4.5894489753991365,
+      "avg_edge_weight": 0.8262546530573825,
+      "n_neighbors": 8806,
+      "hub_fraction": 0.32,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5444897959183673,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2177.5,
+      "pre_edges": 8806,
+      "pre_weight": 7275.998474823311
+    },
+    "phase_3": {
+      "K": 27523.9,
+      "r_growth": 1.1775,
+      "t0": 3.9293,
+      "r2": 0.9916,
+      "K_error_pct": 0.4
+    },
+    "time_sec": 623.4
+  },
+  "NMR 1946": {
+    "phase_1": {
+      "seeds": [
+        55739
+      ],
+      "open_year": 1946,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 109,
+          "total_touched": 110,
+          "new_edges": 109,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 1874,
+          "total_touched": 1984,
+          "new_edges": 4338,
+          "mu": 2.3148
+        },
+        {
+          "t": 3,
+          "new_concepts": 980,
+          "total_touched": 2964,
+          "new_edges": 10868,
+          "mu": 11.0898
+        },
+        {
+          "t": 4,
+          "new_concepts": 1468,
+          "total_touched": 4432,
+          "new_edges": 13670,
+          "mu": 9.312
+        },
+        {
+          "t": 5,
+          "new_concepts": 46,
+          "total_touched": 4478,
+          "new_edges": 764,
+          "mu": 16.6087
+        },
+        {
+          "t": 6,
+          "new_concepts": 4,
+          "total_touched": 4482,
+          "new_edges": 64,
+          "mu": 16.0
+        }
+      ],
+      "r_max": 4482,
+      "pct": 6.9,
+      "death_t": 5,
+      "peak_year": 4,
+      "peak_edges": 13670,
+      "mu_peak": 16.6087
+    },
+    "phase_2": {
+      "seed_works": 2589.0,
+      "seed_degree": 16762.0,
+      "seed_weight": 0.8716799980029464,
+      "avg_edge_weight": 3.531531651704359,
+      "n_neighbors": 16762,
+      "hub_fraction": 0.305,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.6146938775510205,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2070.5,
+      "pre_edges": 16762,
+      "pre_weight": 59195.53354586847
+    },
+    "phase_3": {
+      "K": 4560.2,
+      "r_growth": 1.5451,
+      "t0": 2.3876,
+      "r2": 0.973,
+      "K_error_pct": 1.7
+    },
+    "time_sec": 80.4
+  },
+  "Recombinant DNA 1973": {
+    "phase_1": {
+      "seeds": [
+        54910
+      ],
+      "open_year": 1973,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 24,
+          "total_touched": 25,
+          "new_edges": 24,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 1106,
+          "total_touched": 1131,
+          "new_edges": 2766,
+          "mu": 2.5009
+        },
+        {
+          "t": 3,
+          "new_concepts": 2250,
+          "total_touched": 3381,
+          "new_edges": 17388,
+          "mu": 7.728
+        },
+        {
+          "t": 4,
+          "new_concepts": 1766,
+          "total_touched": 5147,
+          "new_edges": 26804,
+          "mu": 15.1778
+        },
+        {
+          "t": 5,
+          "new_concepts": 224,
+          "total_touched": 5371,
+          "new_edges": 4871,
+          "mu": 21.7455
+        },
+        {
+          "t": 6,
+          "new_concepts": 61,
+          "total_touched": 5432,
+          "new_edges": 1232,
+          "mu": 20.1967
+        },
+        {
+          "t": 7,
+          "new_concepts": 9,
+          "total_touched": 5441,
+          "new_edges": 318,
+          "mu": 35.3333
+        }
+      ],
+      "r_max": 5441,
+      "pct": 8.4,
+      "death_t": 6,
+      "peak_year": 4,
+      "peak_edges": 26804,
+      "mu_peak": 35.3333
+    },
+    "phase_2": {
+      "seed_works": 1919.0,
+      "seed_degree": 14829.0,
+      "seed_weight": 1.9209349881857634,
+      "avg_edge_weight": 1.0340140693354707,
+      "n_neighbors": 14829,
+      "hub_fraction": 0.32,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5885714285714285,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1342.5,
+      "pre_edges": 14829,
+      "pre_weight": 15333.394634175696
+    },
+    "phase_3": {
+      "K": 5455.8,
+      "r_growth": 1.991,
+      "t0": 2.7276,
+      "r2": 0.9986,
+      "K_error_pct": 0.3
+    },
+    "time_sec": 257.4
+  },
+  "Monoclonal Ab 1975": {
+    "phase_1": {
+      "seeds": [
+        57730
+      ],
+      "open_year": 1975,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 21,
+          "total_touched": 22,
+          "new_edges": 21,
+          "mu": 1.0
+        },
+        {
+          "t": 2,
+          "new_concepts": 854,
+          "total_touched": 876,
+          "new_edges": 1525,
+          "mu": 1.7857
+        },
+        {
+          "t": 3,
+          "new_concepts": 1581,
+          "total_touched": 2457,
+          "new_edges": 9662,
+          "mu": 6.1113
+        },
+        {
+          "t": 4,
+          "new_concepts": 1636,
+          "total_touched": 4093,
+          "new_edges": 17668,
+          "mu": 10.7995
+        },
+        {
+          "t": 5,
+          "new_concepts": 606,
+          "total_touched": 4699,
+          "new_edges": 17943,
+          "mu": 29.6089
+        },
+        {
+          "t": 6,
+          "new_concepts": 223,
+          "total_touched": 4922,
+          "new_edges": 4893,
+          "mu": 21.9417
+        },
+        {
+          "t": 7,
+          "new_concepts": 73,
+          "total_touched": 4995,
+          "new_edges": 2363,
+          "mu": 32.3699
+        },
+        {
+          "t": 8,
+          "new_concepts": 6,
+          "total_touched": 5001,
+          "new_edges": 165,
+          "mu": 27.5
+        },
+        {
+          "t": 9,
+          "new_concepts": 1,
+          "total_touched": 5002,
+          "new_edges": 67,
+          "mu": 67.0
+        }
+      ],
+      "r_max": 5002,
+      "pct": 7.7,
+      "death_t": 8,
+      "peak_year": 5,
+      "peak_edges": 17943,
+      "mu_peak": 67.0
+    },
+    "phase_2": {
+      "seed_works": 1156.0,
+      "seed_degree": 13123.0,
+      "seed_weight": 0.1970569984987378,
+      "avg_edge_weight": 0.9077093336536883,
+      "n_neighbors": 13123,
+      "hub_fraction": 0.32,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.6065306122448979,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1447.5,
+      "pre_edges": 13123,
+      "pre_weight": 11911.869585537352
+    },
+    "phase_3": {
+      "K": 4978.7,
+      "r_growth": 1.5763,
+      "t0": 3.0237,
+      "r2": 0.9987,
+      "K_error_pct": 0.5
+    },
+    "time_sec": 283.5
+  },
+  "STM 1981": {
+    "phase_1": {
+      "seeds": [
+        59677
+      ],
+      "open_year": 1981,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 55,
+          "total_touched": 56,
+          "new_edges": 85,
+          "mu": 1.5455
+        },
+        {
+          "t": 2,
+          "new_concepts": 839,
+          "total_touched": 895,
+          "new_edges": 5226,
+          "mu": 6.2288
+        },
+        {
+          "t": 3,
+          "new_concepts": 2314,
+          "total_touched": 3209,
+          "new_edges": 35425,
+          "mu": 15.309
+        },
+        {
+          "t": 4,
+          "new_concepts": 581,
+          "total_touched": 3790,
+          "new_edges": 35150,
+          "mu": 60.4991
+        },
+        {
+          "t": 5,
+          "new_concepts": 92,
+          "total_touched": 3882,
+          "new_edges": 6698,
+          "mu": 72.8043
+        },
+        {
+          "t": 6,
+          "new_concepts": 10,
+          "total_touched": 3892,
+          "new_edges": 593,
+          "mu": 59.3
+        },
+        {
+          "t": 7,
+          "new_concepts": 1,
+          "total_touched": 3893,
+          "new_edges": 11,
+          "mu": 11.0
+        }
+      ],
+      "r_max": 3893,
+      "pct": 6.0,
+      "death_t": 6,
+      "peak_year": 3,
+      "peak_edges": 35425,
+      "mu_peak": 72.8043
+    },
+    "phase_2": {
+      "seed_works": 493.0,
+      "seed_degree": 4301.0,
+      "seed_weight": 0.03571400046348572,
+      "avg_edge_weight": 0.6779405101383452,
+      "n_neighbors": 4301,
+      "hub_fraction": 0.32,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.36081632653061224,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1560.0,
+      "pre_edges": 4301,
+      "pre_weight": 2915.822134105023
+    },
+    "phase_3": {
+      "K": 3878.9,
+      "r_growth": 2.7632,
+      "t0": 2.4361,
+      "r2": 0.9999,
+      "K_error_pct": 0.4
+    },
+    "time_sec": 478.6
+  },
+  "PCR 1983": {
+    "phase_1": {
+      "seeds": [
+        56237
+      ],
+      "open_year": 1983,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 271,
+          "total_touched": 272,
+          "new_edges": 345,
+          "mu": 1.2731
+        },
+        {
+          "t": 2,
+          "new_concepts": 3957,
+          "total_touched": 4229,
+          "new_edges": 49014,
+          "mu": 12.3867
+        },
+        {
+          "t": 3,
+          "new_concepts": 3114,
+          "total_touched": 7343,
+          "new_edges": 218744,
+          "mu": 70.2453
+        },
+        {
+          "t": 4,
+          "new_concepts": 307,
+          "total_touched": 7650,
+          "new_edges": 50833,
+          "mu": 165.5798
+        },
+        {
+          "t": 5,
+          "new_concepts": 31,
+          "total_touched": 7681,
+          "new_edges": 2497,
+          "mu": 80.5484
+        },
+        {
+          "t": 6,
+          "new_concepts": 21,
+          "total_touched": 7702,
+          "new_edges": 2126,
+          "mu": 101.2381
+        }
+      ],
+      "r_max": 7702,
+      "pct": 11.8,
+      "death_t": 5,
+      "peak_year": 3,
+      "peak_edges": 218744,
+      "mu_peak": 165.5798
+    },
+    "phase_2": {
+      "seed_works": 1271.0,
+      "seed_degree": 13033.0,
+      "seed_weight": 1.4479849985800683,
+      "avg_edge_weight": 1.0411655804357305,
+      "n_neighbors": 13033,
+      "hub_fraction": 0.36,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5575510204081633,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1250.0,
+      "pre_edges": 13033,
+      "pre_weight": 13569.511009818874
+    },
+    "phase_3": {
+      "K": 7655.4,
+      "r_growth": 3.2948,
+      "t0": 1.9393,
+      "r2": 0.9997,
+      "K_error_pct": 0.6
+    },
+    "time_sec": 1158.7
+  },
+  "Fullerene 1985": {
+    "phase_1": {
+      "seeds": [
+        27009
+      ],
+      "open_year": 1985,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 16,
+          "total_touched": 17,
+          "new_edges": 17,
+          "mu": 1.0625
+        },
+        {
+          "t": 2,
+          "new_concepts": 2589,
+          "total_touched": 2606,
+          "new_edges": 14210,
+          "mu": 5.4886
+        },
+        {
+          "t": 3,
+          "new_concepts": 12297,
+          "total_touched": 14903,
+          "new_edges": 348843,
+          "mu": 28.3681
+        },
+        {
+          "t": 4,
+          "new_concepts": 7347,
+          "total_touched": 22250,
+          "new_edges": 477528,
+          "mu": 64.9963
+        },
+        {
+          "t": 5,
+          "new_concepts": 5445,
+          "total_touched": 27695,
+          "new_edges": 322077,
+          "mu": 59.151
+        },
+        {
+          "t": 6,
+          "new_concepts": 1717,
+          "total_touched": 29412,
+          "new_edges": 217513,
+          "mu": 126.682
+        },
+        {
+          "t": 7,
+          "new_concepts": 191,
+          "total_touched": 29603,
+          "new_edges": 29680,
+          "mu": 155.3927
+        },
+        {
+          "t": 8,
+          "new_concepts": 45,
+          "total_touched": 29648,
+          "new_edges": 5442,
+          "mu": 120.9333
+        },
+        {
+          "t": 9,
+          "new_concepts": 4,
+          "total_touched": 29652,
+          "new_edges": 504,
+          "mu": 126.0
+        }
+      ],
+      "r_max": 29652,
+      "pct": 45.6,
+      "death_t": 8,
+      "peak_year": 4,
+      "peak_edges": 477528,
+      "mu_peak": 155.3927
+    },
+    "phase_2": {
+      "seed_works": 484.0,
+      "seed_degree": 1007.0,
+      "seed_weight": 0.010989000089466572,
+      "avg_edge_weight": 0.10059393076651546,
+      "n_neighbors": 1007,
+      "hub_fraction": 0.355,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5183673469387755,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2115.0,
+      "pre_edges": 1007,
+      "pre_weight": 101.29808828188106
+    },
+    "phase_3": {
+      "K": 29454.4,
+      "r_growth": 1.6054,
+      "t0": 3.134,
+      "r2": 0.9929,
+      "K_error_pct": 0.7
+    },
+    "time_sec": 3257.2
+  },
+  "WWW 1991": {
+    "phase_1": {
+      "seeds": [
+        5775
+      ],
+      "open_year": 1991,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 3657,
+          "total_touched": 3658,
+          "new_edges": 7991,
+          "mu": 2.1851
+        },
+        {
+          "t": 2,
+          "new_concepts": 51249,
+          "total_touched": 54907,
+          "new_edges": 2413561,
+          "mu": 47.0948
+        },
+        {
+          "t": 3,
+          "new_concepts": 2073,
+          "total_touched": 56980,
+          "new_edges": 2735030,
+          "mu": 1319.3584
+        },
+        {
+          "t": 4,
+          "new_concepts": 185,
+          "total_touched": 57165,
+          "new_edges": 67499,
+          "mu": 364.8595
+        },
+        {
+          "t": 5,
+          "new_concepts": 19,
+          "total_touched": 57184,
+          "new_edges": 7935,
+          "mu": 417.6316
+        },
+        {
+          "t": 6,
+          "new_concepts": 10,
+          "total_touched": 57194,
+          "new_edges": 1838,
+          "mu": 183.8
+        }
+      ],
+      "r_max": 57194,
+      "pct": 88.0,
+      "death_t": 5,
+      "peak_year": 3,
+      "peak_edges": 2735030,
+      "mu_peak": 1319.3584
+    },
+    "phase_2": {
+      "seed_works": 25801.0,
+      "seed_degree": 28284.0,
+      "seed_weight": 2.932378952857107,
+      "avg_edge_weight": 16.78881654533276,
+      "n_neighbors": 28284,
+      "hub_fraction": 0.31,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.6424489795918368,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2833.5,
+      "pre_edges": 28284,
+      "pre_weight": 474854.88716819184
+    },
+    "phase_3": {
+      "K": 57132.6,
+      "r_growth": 5.8874,
+      "t0": 1.4556,
+      "r2": 1.0,
+      "K_error_pct": 0.1
+    },
+    "time_sec": 3402.5
+  },
+  "Stem cell 1998": {
+    "phase_1": {
+      "seeds": [
+        43967
+      ],
+      "open_year": 1998,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 286,
+          "total_touched": 287,
+          "new_edges": 558,
+          "mu": 1.951
+        },
+        {
+          "t": 2,
+          "new_concepts": 8935,
+          "total_touched": 9222,
+          "new_edges": 81024,
+          "mu": 9.0682
+        },
+        {
+          "t": 3,
+          "new_concepts": 6146,
+          "total_touched": 15368,
+          "new_edges": 582697,
+          "mu": 94.8091
+        },
+        {
+          "t": 4,
+          "new_concepts": 633,
+          "total_touched": 16001,
+          "new_edges": 143792,
+          "mu": 227.1596
+        },
+        {
+          "t": 5,
+          "new_concepts": 165,
+          "total_touched": 16166,
+          "new_edges": 21636,
+          "mu": 131.1273
+        },
+        {
+          "t": 6,
+          "new_concepts": 49,
+          "total_touched": 16215,
+          "new_edges": 7348,
+          "mu": 149.9592
+        },
+        {
+          "t": 7,
+          "new_concepts": 6,
+          "total_touched": 16221,
+          "new_edges": 1618,
+          "mu": 269.6667
+        }
+      ],
+      "r_max": 16221,
+      "pct": 24.9,
+      "death_t": 6,
+      "peak_year": 3,
+      "peak_edges": 582697,
+      "mu_peak": 269.6667
+    },
+    "phase_2": {
+      "seed_works": 3889.0,
+      "seed_degree": 13604.0,
+      "seed_weight": 9.433501973049715,
+      "avg_edge_weight": 1.7686498558923327,
+      "n_neighbors": 13604,
+      "hub_fraction": 0.355,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.6326530612244898,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1925.5,
+      "pre_edges": 13604,
+      "pre_weight": 24060.712639559293
+    },
+    "phase_3": {
+      "K": 16062.2,
+      "r_growth": 3.6827,
+      "t0": 1.923,
+      "r2": 0.9987,
+      "K_error_pct": 1.0
+    },
+    "time_sec": 2031.1
+  },
+  "RNAi 2001": {
+    "phase_1": {
+      "seeds": [
+        10400
+      ],
+      "open_year": 2001,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 191,
+          "total_touched": 192,
+          "new_edges": 309,
+          "mu": 1.6178
+        },
+        {
+          "t": 2,
+          "new_concepts": 23022,
+          "total_touched": 23214,
+          "new_edges": 183775,
+          "mu": 7.9826
+        },
+        {
+          "t": 3,
+          "new_concepts": 29592,
+          "total_touched": 52806,
+          "new_edges": 6462408,
+          "mu": 218.3836
+        },
+        {
+          "t": 4,
+          "new_concepts": 804,
+          "total_touched": 53610,
+          "new_edges": 2285372,
+          "mu": 2842.5025
+        },
+        {
+          "t": 5,
+          "new_concepts": 136,
+          "total_touched": 53746,
+          "new_edges": 118045,
+          "mu": 867.9779
+        },
+        {
+          "t": 6,
+          "new_concepts": 50,
+          "total_touched": 53796,
+          "new_edges": 26582,
+          "mu": 531.64
+        },
+        {
+          "t": 7,
+          "new_concepts": 10,
+          "total_touched": 53806,
+          "new_edges": 8837,
+          "mu": 883.7
+        }
+      ],
+      "r_max": 53806,
+      "pct": 82.7,
+      "death_t": 6,
+      "peak_year": 3,
+      "peak_edges": 6462408,
+      "mu_peak": 2842.5025
+    },
+    "phase_2": {
+      "seed_works": 6388.0,
+      "seed_degree": 7662.0,
+      "seed_weight": 0.02185400016605854,
+      "avg_edge_weight": 0.47745226696458765,
+      "n_neighbors": 7662,
+      "hub_fraction": 0.31,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5346938775510204,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1719.0,
+      "pre_edges": 7662,
+      "pre_weight": 3658.2392694826704
+    },
+    "phase_3": {
+      "K": 53707.5,
+      "r_growth": 4.5205,
+      "t0": 2.0606,
+      "r2": 1.0,
+      "K_error_pct": 0.2
+    },
+    "time_sec": 4867.2
+  },
+  "Graphene 2004": {
+    "phase_1": {
+      "seeds": [
+        51183
+      ],
+      "open_year": 2004,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 533,
+          "total_touched": 534,
+          "new_edges": 1022,
+          "mu": 1.9174
+        },
+        {
+          "t": 2,
+          "new_concepts": 9372,
+          "total_touched": 9906,
+          "new_edges": 346524,
+          "mu": 36.9744
+        },
+        {
+          "t": 3,
+          "new_concepts": 1599,
+          "total_touched": 11505,
+          "new_edges": 913754,
+          "mu": 571.4534
+        },
+        {
+          "t": 4,
+          "new_concepts": 695,
+          "total_touched": 12200,
+          "new_edges": 86187,
+          "mu": 124.0101
+        },
+        {
+          "t": 5,
+          "new_concepts": 224,
+          "total_touched": 12424,
+          "new_edges": 41591,
+          "mu": 185.6741
+        },
+        {
+          "t": 6,
+          "new_concepts": 61,
+          "total_touched": 12485,
+          "new_edges": 14117,
+          "mu": 231.4262
+        },
+        {
+          "t": 7,
+          "new_concepts": 9,
+          "total_touched": 12494,
+          "new_edges": 3434,
+          "mu": 381.5556
+        }
+      ],
+      "r_max": 12494,
+      "pct": 19.2,
+      "death_t": 6,
+      "peak_year": 3,
+      "peak_edges": 913754,
+      "mu_peak": 571.4534
+    },
+    "phase_2": {
+      "seed_works": 2878.0,
+      "seed_degree": 11366.0,
+      "seed_weight": 0.02777799963951111,
+      "avg_edge_weight": 1.739690982799085,
+      "n_neighbors": 11366,
+      "hub_fraction": 0.33,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.48653061224489796,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 1824.0,
+      "pre_edges": 11366,
+      "pre_weight": 19773.3277104944
+    },
+    "phase_3": {
+      "K": 12232.5,
+      "r_growth": 4.4412,
+      "t0": 1.6768,
+      "r2": 0.9943,
+      "K_error_pct": 2.1
+    },
+    "time_sec": 3146.4
+  },
+  "Blockchain 2008": {
+    "phase_1": {
+      "seeds": [
+        35787
+      ],
+      "open_year": 2008,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 269,
+          "total_touched": 270,
+          "new_edges": 302,
+          "mu": 1.1227
+        },
+        {
+          "t": 2,
+          "new_concepts": 16531,
+          "total_touched": 16801,
+          "new_edges": 369892,
+          "mu": 22.3757
+        },
+        {
+          "t": 3,
+          "new_concepts": 8603,
+          "total_touched": 25404,
+          "new_edges": 2259044,
+          "mu": 262.5879
+        },
+        {
+          "t": 4,
+          "new_concepts": 1677,
+          "total_touched": 27081,
+          "new_edges": 552151,
+          "mu": 329.2493
+        },
+        {
+          "t": 5,
+          "new_concepts": 284,
+          "total_touched": 27365,
+          "new_edges": 88870,
+          "mu": 312.9225
+        },
+        {
+          "t": 6,
+          "new_concepts": 93,
+          "total_touched": 27458,
+          "new_edges": 22349,
+          "mu": 240.3118
+        },
+        {
+          "t": 7,
+          "new_concepts": 73,
+          "total_touched": 27531,
+          "new_edges": 14712,
+          "mu": 201.5342
+        },
+        {
+          "t": 8,
+          "new_concepts": 36,
+          "total_touched": 27567,
+          "new_edges": 10146,
+          "mu": 281.8333
+        },
+        {
+          "t": 9,
+          "new_concepts": 11,
+          "total_touched": 27578,
+          "new_edges": 3079,
+          "mu": 279.9091
+        }
+      ],
+      "r_max": 27578,
+      "pct": 42.4,
+      "death_t": 8,
+      "peak_year": 3,
+      "peak_edges": 2259044,
+      "mu_peak": 329.2493
+    },
+    "phase_2": {
+      "seed_works": 2409.0,
+      "seed_degree": 5451.0,
+      "seed_weight": 0.3443219857290387,
+      "avg_edge_weight": 1.323125182490082,
+      "n_neighbors": 5451,
+      "hub_fraction": 0.31,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.6155102040816327,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 3167.5,
+      "pre_edges": 5451,
+      "pre_weight": 7212.355369753437
+    },
+    "phase_3": {
+      "K": 27207.0,
+      "r_growth": 3.8568,
+      "t0": 1.8822,
+      "r2": 0.9957,
+      "K_error_pct": 1.3
+    },
+    "time_sec": 5008.8
+  },
+  "Deep learning 2012": {
+    "phase_1": {
+      "seeds": [
+        1389
+      ],
+      "open_year": 2012,
+      "wave_data": [
+        {
+          "t": 0,
+          "new_concepts": 1,
+          "total_touched": 1,
+          "new_edges": 0,
+          "mu": 0
+        },
+        {
+          "t": 1,
+          "new_concepts": 608,
+          "total_touched": 609,
+          "new_edges": 1177,
+          "mu": 1.9359
+        },
+        {
+          "t": 2,
+          "new_concepts": 52998,
+          "total_touched": 53607,
+          "new_edges": 2698421,
+          "mu": 50.9155
+        },
+        {
+          "t": 3,
+          "new_concepts": 9331,
+          "total_touched": 62938,
+          "new_edges": 27391620,
+          "mu": 2935.5503
+        },
+        {
+          "t": 4,
+          "new_concepts": 76,
+          "total_touched": 63014,
+          "new_edges": 1199850,
+          "mu": 15787.5
+        },
+        {
+          "t": 5,
+          "new_concepts": 3,
+          "total_touched": 63017,
+          "new_edges": 9262,
+          "mu": 3087.3333
+        },
+        {
+          "t": 6,
+          "new_concepts": 1,
+          "total_touched": 63018,
+          "new_edges": 139,
+          "mu": 139.0
+        }
+      ],
+      "r_max": 63018,
+      "pct": 96.9,
+      "death_t": 5,
+      "peak_year": 3,
+      "peak_edges": 27391620,
+      "mu_peak": 15787.5
+    },
+    "phase_2": {
+      "seed_works": 15259.0,
+      "seed_degree": 15720.0,
+      "seed_weight": 0.0073529998771846294,
+      "avg_edge_weight": 1.2451923917047532,
+      "n_neighbors": 15720,
+      "hub_fraction": 0.315,
+      "avg_level": 2.0,
+      "n_seeds": 1,
+      "local_density": 0.5395918367346939,
+      "avg_internal_weight": 0,
+      "median_neighbor_works": 2362.0,
+      "pre_edges": 15720,
+      "pre_weight": 19574.42439759872
+    },
+    "phase_3": {
+      "K": 63001.5,
+      "r_growth": 6.3686,
+      "t0": 1.7265,
+      "r2": 1.0,
+      "K_error_pct": 0.0
+    },
+    "time_sec": 7261.3
+  }
+}
