@@ -1,0 +1,260 @@
+{
+  "test": "mycelium_id_s36",
+  "date": "2026-04-07",
+  "sources": [
+    "Lehmann et al. 2019, Sci Rep 9:14152",
+    "Aguilar-Trigueros et al. 2022, ISME Comms 2:2",
+    "Camenzind et al. 2024, Nat Comms",
+    "Galvez & Vignolini 2025, Nature 639:172-180"
+  ],
+  "per_meteorite": {
+    "Shannon 1948": {
+      "BA": 36.59,
+      "BA_cv": 0.925,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": 0.58,
+      "D_cv": 1.628,
+      "Db": 0.645,
+      "L": 12.556,
+      "alpha": -0.4483,
+      "E_global": 0.5769,
+      "N": 278,
+      "E_sparse": 30,
+      "n_bifurcations": 1,
+      "species": [
+        4,
+        4
+      ]
+    },
+    "Transistor 1947": {
+      "BA": 88.65,
+      "BA_cv": 0.774,
+      "IL": 2.0,
+      "IL_cv": 0.0,
+      "D": 1.51,
+      "D_cv": 0.287,
+      "Db": 0.753,
+      "L": 10.535,
+      "alpha": -0.441,
+      "E_global": 0.5593,
+      "N": 244,
+      "E_sparse": 30,
+      "n_bifurcations": 2,
+      "species": [
+        0,
+        0
+      ]
+    },
+    "Turing 1936": {
+      "BA": 76.84,
+      "BA_cv": 0.686,
+      "IL": 1.33,
+      "IL_cv": 0.354,
+      "D": -0.62,
+      "D_cv": 0.844,
+      "Db": 0.677,
+      "L": 9.946,
+      "alpha": -0.4196,
+      "E_global": 0.5417,
+      "N": 273,
+      "E_sparse": 45,
+      "n_bifurcations": 6,
+      "species": [
+        4,
+        4,
+        4
+      ]
+    },
+    "ADN 1953": {
+      "BA": 77.69,
+      "BA_cv": 0.798,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": 1.79,
+      "D_cv": 0.394,
+      "Db": 0.728,
+      "L": 6.482,
+      "alpha": -0.4457,
+      "E_global": 0.5833,
+      "N": 265,
+      "E_sparse": 30,
+      "n_bifurcations": 1,
+      "species": [
+        7,
+        7
+      ]
+    },
+    "Godel 1931": {
+      "BA": 74.8,
+      "BA_cv": 0.701,
+      "IL": 1.33,
+      "IL_cv": 0.354,
+      "D": -0.6,
+      "D_cv": 0.872,
+      "Db": 0.719,
+      "L": 9.086,
+      "alpha": -0.4246,
+      "E_global": 0.5741,
+      "N": 291,
+      "E_sparse": 45,
+      "n_bifurcations": 6,
+      "species": [
+        4,
+        4,
+        4
+      ]
+    },
+    "Laser 1960": {
+      "BA": 76.92,
+      "BA_cv": 0.76,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": 0.6,
+      "D_cv": 1.79,
+      "Db": 0.75,
+      "L": 7.89,
+      "alpha": -0.4376,
+      "E_global": 0.0,
+      "N": 231,
+      "E_sparse": 30,
+      "n_bifurcations": 1,
+      "species": [
+        8,
+        8
+      ]
+    },
+    "CRISPR 2012": {
+      "BA": 81.49,
+      "BA_cv": 0.609,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": -0.3,
+      "D_cv": 2.368,
+      "Db": 0.614,
+      "L": 6.359,
+      "alpha": -0.453,
+      "E_global": 0.6429,
+      "N": 178,
+      "E_sparse": 18,
+      "n_bifurcations": 1,
+      "species": [
+        5,
+        5
+      ]
+    },
+    "AlphaFold 2020": {
+      "BA": 83.33,
+      "BA_cv": 0.491,
+      "IL": 1.0,
+      "IL_cv": 0.0,
+      "D": 0.11,
+      "D_cv": 4.308,
+      "Db": 0.664,
+      "L": 3.837,
+      "alpha": -0.442,
+      "E_global": 0.6111,
+      "N": 248,
+      "E_sparse": 30,
+      "n_bifurcations": 2,
+      "species": [
+        1,
+        0
+      ]
+    },
+    "Grav waves 2016": {
+      "BA": 43.03,
+      "BA_cv": 0.812,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": 0.82,
+      "D_cv": 0.539,
+      "Db": 0.585,
+      "L": 33.158,
+      "alpha": -0.4545,
+      "E_global": 1.0,
+      "N": 151,
+      "E_sparse": 15,
+      "n_bifurcations": 1,
+      "species": [
+        8
+      ]
+    },
+    "Higgs 2012": {
+      "BA": 32.03,
+      "BA_cv": 0.499,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": 0.96,
+      "D_cv": 0.453,
+      "Db": 0.487,
+      "L": 55.109,
+      "alpha": -0.4545,
+      "E_global": 0.6429,
+      "N": 151,
+      "E_sparse": 15,
+      "n_bifurcations": 1,
+      "species": [
+        8
+      ]
+    },
+    "mRNA 1990": {
+      "BA": 63.34,
+      "BA_cv": 0.57,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": -0.6,
+      "D_cv": 0.836,
+      "Db": 0.717,
+      "L": 7.552,
+      "alpha": -0.4516,
+      "E_global": 0.75,
+      "N": 297,
+      "E_sparse": 30,
+      "n_bifurcations": 2,
+      "species": [
+        5,
+        2
+      ]
+    },
+    "Internet 1974": {
+      "BA": 69.08,
+      "BA_cv": 0.927,
+      "IL": 1.0,
+      "IL_cv": 0.0,
+      "D": 1.48,
+      "D_cv": 0.633,
+      "Db": 0.803,
+      "L": 8.239,
+      "alpha": -0.4422,
+      "E_global": 0.75,
+      "N": 379,
+      "E_sparse": 45,
+      "n_bifurcations": 2,
+      "species": [
+        3,
+        4,
+        4
+      ]
+    },
+    "Poincare 2003": {
+      "BA": 12.2,
+      "BA_cv": 1.282,
+      "IL": 0,
+      "IL_cv": 0,
+      "D": -0.19,
+      "D_cv": 6.021,
+      "Db": 0.725,
+      "L": 20.193,
+      "alpha": -0.4483,
+      "E_global": 0.5833,
+      "N": 249,
+      "E_sparse": 27,
+      "n_bifurcations": 1,
+      "species": [
+        4,
+        4
+      ]
+    }
+  }
+}

@@ -264,26 +264,68 @@ o\`u $C$ est la matrice de co-occurrence brute.
 Positionne TOUT le sol: glyphes (S-2), m\'etiers (S-1), concepts (S0).
 
 % ----------------------------------------------------------------------------
-\subsection{5 curseurs Lehmann (identification d'esp\`ece, session 8)}
+\subsection{5+10 curseurs myc\'eliens (identification d'esp\`ece, sessions 8+36)}
 % ----------------------------------------------------------------------------
 
-\textbf{Source:} Lehmann, S., Lautrup, B., \& Jackson, A. D. (2019).
-\textit{Citation networks in high energy physics}.
-Phys.\ Rev.\ E, 68, 026113.
+\textbf{Source 1 (5 curseurs morphologiques):}
+Lehmann A, Zheng W, Soutschek K, Roy J, Giber AM, Aguilar-Trigueros CA,
+Camenzind T, Zhu Y-G, Rillig MC (2019).
+\textit{Tradeoffs in hyphal traits determine mycelium architecture in saprobic fungi}.
+Sci.\ Rep.\ 9:14152. DOI: 10.1038/s41598-019-50565-7.
+31 esp\`eces, 3 phylums (Ascomycota, Basidiomycota, Mucoromycota).
 
-5 curseurs mesur\'es sur le graphe de co-occurrences:
+\textbf{Source 2 (15 traits r\'eseau):}
+Aguilar-Trigueros CA, Boddy L, Rillig MC, Fricker MD (2022).
+\textit{Network traits predict ecological strategies in fungi}.
+ISME Comms.\ 2:2. DOI: 10.1038/s43705-021-00085-1.
+12 esp\`eces. Les traits RESEAU dominent la classification (46\% variance)
+vs morphologie seule (37\%).
+
+\textbf{Source 3 (36 traits, espace \'economique 3D):}
+Camenzind T, Lehmann A, Rillig MC et al.\ (2024).
+\textit{Towards establishing a fungal economics spectrum in soil saprobic fungi}.
+Nat.\ Comms.\ DOI: 10.1038/s41467-024-47705-7.
+28 isolats, 3 axes: dense-rapide / flexibilit\'e / acquisition carbone.
+
+\textbf{Source 4 (Glomeromycota = onde voyageuse):}
+Galvez L, Vignolini S et al.\ (2025).
+\textit{A travelling-wave strategy for plant-fungal trade}.
+Nature 639:172--180. DOI: 10.1038/s41586-025-08614-x.
+Mod\`ele BARE: $\partial n / \partial t = b(n) - a(n,\rho) + \nabla \cdot J(n)$.
+
+\textbf{5 curseurs Lehmann:}
 \begin{align}
-BA &= \text{angle de bifurcation moyen} \\
-IL &= \text{internode length (longueur entre branchements)} \\
-D  &= \text{diam\`etre du r\'eseau local} \\
-D_b &= \text{dimension fractale (Minkowski)} \\
-L  &= \text{lacunarit\'e (h\'et\'erog\'en\'eit\'e spatiale)}
+BA &= \text{angle de bifurcation moyen (26--86\textdegree)} \\
+IL &= \text{internode length (40--453 $\mu$m)} \\
+D  &= \text{diam\`etre hyphal (2.7--6.5 $\mu$m)} \\
+D_b &= \text{dimension fractale Minkowski (1.2--1.6)} \\
+L  &= \text{lacunarit\'e $\sigma^2/\mu^2$ (0.4--0.7)}
 \end{align}
+
+\textbf{10 traits r\'eseau suppl\'ementaires (Aguilar-Trigueros 2022):}
+\begin{align}
+\alpha &= \text{meshedness (fr\'equence de boucles vs arbre)} \\
+E_{\text{root}} &= \text{root efficiency (transport unidirectionnel)} \\
+E_{\text{global}} &= \text{global efficiency (Latora 2001)} \\
+E_{\text{root-tip}} &= \text{root-tip efficiency} \\
+V_{\text{MST}} &= \text{co\^ut construction vs MST} \\
+R_1 \ldots R_5 &= \text{5 mesures de robustesse (random, chunk, fungivore)}
+\end{align}
+
+\textbf{3 arch\'etypes r\'eseau (Aguilar-Trigueros 2022):}
+\begin{enumerate}
+\item Low-connectivity (Mucor): arbre, transport unidirectionnel efficace
+\item High-connectivity dense (Mortierella): anastomoses fr\'equentes, robuste
+\item High-connectivity efficient (Phanerochaete): cordons, transport optimis\'e
+\end{enumerate}
 
 \textbf{Adaptation Yggdrasil} (\texttt{engine/topology/species\_identifier.py}):
 9 esp\`eces spectrales (K=9 sur 65K):
 MatSci/Chem, Geo/Env, Medicine, Psych/Business, CS/Math,
 Bio/Botany, Humanities/PolSci, CellBio/Anatomy, Physics/Optics.
+
+\textbf{Session 36:} Identification LOCALE par m\'et\'eorite (5 curseurs + meshedness
++ global efficiency sur le sous-graphe 1-hop autour des seeds).
 
 % ----------------------------------------------------------------------------
 \subsection{Impact Scale (session 31)}

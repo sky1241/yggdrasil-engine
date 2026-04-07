@@ -1,0 +1,180 @@
+{
+  "test": "K_holme_s36",
+  "date": "2026-04-07",
+  "sources": [
+    "Holme 2020 PLOS Comp Bio",
+    "Sah 2016 Sci Rep",
+    "Watts 2002 PNAS"
+  ],
+  "holme_features": {
+    "Shannon 1948": {
+      "closeness": 0.1868560268200412,
+      "reach_1hop": 12150.5,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.538,
+      "bridge_count": 538,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 9828.5,
+      "local_density": 0.120994,
+      "main_species": 4
+    },
+    "Transistor 1947": {
+      "closeness": 0.13770645587918678,
+      "reach_1hop": 8954.5,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.715,
+      "bridge_count": 715,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 7802.0,
+      "local_density": 0.165555,
+      "main_species": 0
+    },
+    "Turing 1936": {
+      "closeness": 0.0186489506761398,
+      "reach_1hop": 1212.6666666666667,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.28263795423956933,
+      "bridge_count": 420,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 998.3333333333334,
+      "local_density": 0.263014,
+      "main_species": 4
+    },
+    "ADN 1953": {
+      "closeness": 0.3511518469535263,
+      "reach_1hop": 22834.0,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.734,
+      "bridge_count": 734,
+      "n_species_touched": 9,
+      "coreness_proxy": NaN,
+      "avg_degree": 11851.5,
+      "local_density": 0.18602,
+      "main_species": 7
+    },
+    "Godel 1931": {
+      "closeness": 0.01941787387609059,
+      "reach_1hop": 1262.6666666666667,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.34206989247311825,
+      "bridge_count": 509,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 999.0,
+      "local_density": 0.254597,
+      "main_species": 4
+    },
+    "Laser 1960": {
+      "closeness": 0.17469166179681975,
+      "reach_1hop": 11359.5,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.707,
+      "bridge_count": 707,
+      "n_species_touched": 9,
+      "coreness_proxy": NaN,
+      "avg_degree": 1857.0,
+      "local_density": 0.192786,
+      "main_species": 8
+    },
+    "CRISPR 2012": {
+      "closeness": 0.06204441300402916,
+      "reach_1hop": 4034.5,
+      "reach_2hop": 56735.46052631579,
+      "bridge_frac": 0.7096774193548387,
+      "bridge_count": 374,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 1162.5,
+      "local_density": 0.246477,
+      "main_species": 5
+    },
+    "AlphaFold 2020": {
+      "closeness": 0.05338633777258328,
+      "reach_1hop": 3471.5,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.968,
+      "bridge_count": 968,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 2322.0,
+      "local_density": 0.254862,
+      "main_species": 1
+    },
+    "Grav waves 2016": {
+      "closeness": 0.08127518223479839,
+      "reach_1hop": 5285.0,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.528,
+      "bridge_count": 264,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 3295.0,
+      "local_density": 0.290525,
+      "main_species": 8
+    },
+    "Higgs 2012": {
+      "closeness": 0.05542398425245287,
+      "reach_1hop": 3604.0,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.596,
+      "bridge_count": 298,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 2777.0,
+      "local_density": 0.222918,
+      "main_species": 8
+    },
+    "mRNA 1990": {
+      "closeness": 0.021599052686617663,
+      "reach_1hop": 1404.5,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.806,
+      "bridge_count": 806,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 799.5,
+      "local_density": 0.253034,
+      "main_species": 5
+    },
+    "Internet 1974": {
+      "closeness": 0.19208214150237343,
+      "reach_1hop": 12490.333333333334,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.40066666666666667,
+      "bridge_count": 601,
+      "n_species_touched": 9,
+      "coreness_proxy": NaN,
+      "avg_degree": 9193.0,
+      "local_density": 0.150445,
+      "main_species": 4
+    },
+    "Poincare 2003": {
+      "closeness": 0.09013317749823146,
+      "reach_1hop": 5861.0,
+      "reach_2hop": 65026.0,
+      "bridge_frac": 0.5467741935483871,
+      "bridge_count": 339,
+      "n_species_touched": 9,
+      "coreness_proxy": 1.0,
+      "avg_degree": 1725.0,
+      "local_density": 0.171928,
+      "main_species": 4
+    }
+  },
+  "best_K_model": "Ridge(mare+holme)",
+  "best_K_temporal_error": 28.0,
+  "R_t_median_r2": -0.0543,
+  "R_t_verdict": "FAIL",
+  "per_meteorite_r2": {
+    "CRISPR 2012": 0.0788,
+    "AlphaFold 2020": -1.0088,
+    "Grav waves 2016": -0.2685,
+    "Higgs 2012": 0.1093,
+    "mRNA 1990": -0.0543,
+    "Internet 1974": 0.5074,
+    "Poincare 2003": -7.2948
+  }
+}

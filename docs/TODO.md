@@ -266,6 +266,25 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - [ ] Phase F: Calibrer mycelium_full.py avec les vrais paramètres par espèce
 - [ ] Phase G: Évolution temporelle — l'espèce de chaque continent change-t-elle avec le temps ?
 
+### V3 SESSION 36 — Résultats (7 avril 2026)
+- [x] Scientométrie (fitness, D-index, z-score): aucun signal pour r → DEAD END
+- [x] Curseurs mycéliens locaux (BA, IL, D, Db, L, alpha, E_global): Db ρ=-0.80 avec r
+- [x] Ridge(mycelium) → r à 9.1% erreur test temporel
+- [x] R(t) de FAIL (-0.15) → PARTIAL (+0.41)
+- [x] Classification Lehmann: échelle incompatible, Ascomycota 13/13 → non discriminant
+- [x] Espèce S-1 des seeds: ne corrèle PAS avec r (testé)
+- [x] 4 papers arXiv extraits + 10 refs web sur epidemic speed formulas
+- [x] formulas.tex mis à jour (Aguilar-Trigueros 2022, Camenzind 2024, Galvez 2025)
+- **BOTTLENECK = K** (Poincaré K=21K, Grav waves K=50K, les 2 outliers qui détruisent R(t))
+
+### V3 Prochaine session (37) — Améliorer K
+- [ ] Comprendre POURQUOI Poincaré K=21K (seul <29K, n'a aucun analogue dans le train set)
+- [ ] Comprendre POURQUOI Grav waves K=50K est sous-prédit (34K)
+- [ ] Tester: percolation-based K prediction (Newman 2002 S(T) = 1-G₀(u))
+- [ ] Tester: non-backtracking centrality des seeds (Lokhov 2020) comme feature K
+- [ ] Tester: Brockmann effective distance (Science 2013) comme feature
+- [ ] Pipeline opérationnel: arXiv ID → seeds → mare → K + death prediction
+
 #### Risques identifiés
 - L'analogie biologique est poétique mais peut ne pas ajouter de pouvoir prédictif
 - Les 9 continents sont des groupements humains, pas naturels

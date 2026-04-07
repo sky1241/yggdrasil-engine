@@ -5,6 +5,81 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 7 avril 2026 — Session 36
+
+### V3 Assemblage dynamique + identification mycélienne locale
+
+**Diagnostic session 35 → session 36:**
+- R(t) FAIL (R²=-0.15) parce que r est le bottleneck (173-406% erreur en test temporel)
+- Quand K est fixé à TRUE: R²=+0.57 → K fonctionne, c'est r qui manque
+- candle_ratio ne peut PAS prédire r pré-impact (c'est un feature post-impact)
+
+**Phase A: Scientométrie depuis WT3 (6 proxys, 13 météorites):**
+- fitness_growth (Wang-Barabási 2013), d_index_proxy (Wu-Evans 2019), z_score_proxy (Uzzi 2013)
+- activity_1y, activity_5y, post_growth
+- RÉSULTAT: aucun proxy scientométrique ne corrèle significativement avec r ou K
+- La scientométrie n'est PAS le signal manquant
+
+**Phase B: Topologie locale depuis cooc_global + WT4 spectral:**
+- global_degree, global_weight, weight_per_edge, spectral_dist (positions 3D)
+- Topo seule prédit r à 54.4% (meilleur que mare seule 88.1%)
+
+**Phase C: Corrélation screen (38 features total):**
+- candle_ratio reste le meilleur corrélateur de r (ρ=+0.92) mais inutilisable pré-impact
+- Seul feature pré-impact > 0.5 pour r : activity_per_degree (ρ=+0.63)
+
+**Phase D: Assemblage + test temporel honnête:**
+- K: mare+sci+topo → **19.2%** (vs 20.9% session 35)
+- r: topo → **54.4%** (nouveau, n'existait pas session 35)
+- R(t): **R²=+0.44 PARTIAL** (vs -0.15 FAIL session 35)
+
+**Curseurs mycéliens LOCAUX (Lehmann 2019 + Aguilar-Trigueros 2022):**
+- 5 curseurs Lehmann (BA, IL, D, Db, L) + 2 traits réseau (meshedness alpha, global efficiency)
+- Mesurés sur le sous-graphe 1-hop (150 top-weight neighbors) de chaque météorite
+- **Db (dimension fractale locale)** corrèle avec r à **ρ=-0.80 (p=0.001)**
+- **alpha (meshedness)** corrèle avec r à **ρ=-0.74 (p=0.004)**
+- **E_global (efficiency)** corrèle avec r à **ρ=+0.69 (p=0.009)**
+- Ridge(7 curseurs mycelium) → r **9.1% erreur médiane** en test temporel (vs 54% topo)
+- LOO 13-fold: 14.6% erreur médiane (plus réaliste)
+
+**Classification espèces:**
+- Le classifieur Lehmann donne Ascomycota pour les 13 → ne discrimine PAS (échelle incompatible)
+- L'espèce S-1 des seeds ne corrèle PAS avec r (ρ<0.3 pour tout)
+- Composition de la mare en espèces: signaux faibles (CellBio/Mol → rapide, CS/Math → lent)
+
+**Recherche biblio (arXiv tars + web):**
+- 4 papers extraits des tars E: (1407.0774, 1201.0296, 1505.00768, 1404.2468)
+- Formule clé: **r = β × λ_max(A) - δ** (Wang-Chakrabarti-Faloutsos 2003)
+- Arbre de degré k: **r = (k-2)/τ** (paper 1404.2468)
+- Cure-Pigolotti 2025: **r ≈ ln(⟨k²⟩/⟨k⟩) / ⟨τ⟩**
+- Lokhov-Mézard-Zdeborová 2020: arrivée ∝ log(centralité non-backtracking)
+- τ (temps inter-événements) corrèle avec r à **ρ=-0.65 (p=0.015)**
+
+**Mise à jour formulas.tex:**
+- Section Lehmann corrigée (mauvaise citation → bonne) et étendue (5→15 traits)
+- 4 nouvelles sources ajoutées: Aguilar-Trigueros 2022, Camenzind 2024, Galvez 2025
+
+**R(t) final session 36: R²=+0.41 PARTIAL**
+- Progression: -0.15 FAIL → +0.41 PARTIAL
+- Bottleneck restant: K sur Poincaré (prédit 37K vs 21K) et Grav waves (prédit 34K vs 50K)
+- Sans ces 2 outliers: médiane R² ≈ +0.58
+
+**Tentative Holme 2020 (closeness + bridges + Random Forest):**
+- closeness proxy, bridge_frac, coreness calculés pour les 13 seeds
+- AUCUNE corrélation avec K (ρ max = 0.29)
+- RF n'aide pas avec n=6 train (overfitting)
+- Raison: graphe trop dense (⟨k⟩=2136), tout touche 9 espèces, closeness ≈ degré
+- K reste à 19.2% (Ridge mare+sci+topo) — pas d'amélioration trouvée
+
+**Outputs:**
+- `scripts/wave_assembly_s36_fast.py`, `scripts/wave_dynamic_model.py`, `scripts/wave_mycelium_id.py`
+- `scripts/wave_K_holme.py` (tentative Holme → échec)
+- `data/results/wave_assembly_s36.json`, `data/results/wave_dynamic_model_s36.json`
+- `data/results/wave_mycelium_id_s36.json`, `data/results/wave_K_holme_s36.json`
+- `data/_tmp_papers/` (8 papers extraits: 4 epidemic speed + 4 final size/percolation)
+
+---
+
 ## 6-7 avril 2026 — Session 35
 
 ### V3 Carmack ETAS + Candlestick model
@@ -447,4 +522,4 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-04-07 | 61,829L Python | 6,842 fichiers | phase CANOPEE_
+_Auto-update: 2026-04-07 | 64,245L Python | 6,956 fichiers | phase CANOPEE_

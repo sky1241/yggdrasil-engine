@@ -258,6 +258,34 @@ WT4 (FAIT)     Forme 3D unifiée     66,342 noeuds (65K concepts + mycelium), 75
 - Énergie du caillou (E=m×g×h) = FAIL
 - Normalisation par l'époque = FAIL en extrapolation
 
+### V3 SESSION 36 — ASSEMBLAGE DYNAMIQUE + MYCÉLIUM (7 avril 2026)
+
+**Diagnostic:** r était le bottleneck (173-406% erreur). K fonctionne (quand K=TRUE → R²=+0.57).
+
+**Scientométrie (fitness, D-index, z-score):** aucun signal pour r. FAIL.
+
+**Curseurs mycéliens LOCAUX (Lehmann 2019 + Aguilar-Trigueros 2022):**
+- 7 curseurs mesurés par météorite sur sous-graphe 1-hop: BA, IL, D, Db, L, alpha, E_global
+- Db (dimension fractale): **ρ=-0.80** avec r (p=0.001) ← MEILLEUR CORRÉLATEUR PRÉ-IMPACT
+- alpha (meshedness): ρ=-0.74, E_global (efficiency): ρ=+0.69
+- Ridge(7 curseurs) → r à **9.1% erreur** en test temporel, 14.6% en LOO
+
+**Formules théoriques (4 papers arXiv + 10 refs web):**
+- r = β × λ_max(A) - δ (Wang-Chakrabarti-Faloutsos 2003)
+- r ≈ ln(⟨k²⟩/⟨k⟩) / ⟨τ⟩ (Cure-Pigolotti 2025)
+- τ (temps inter-événements des seeds) corrèle avec r: ρ=-0.65 (p=0.015)
+
+**R(t) trajectoire: R²=+0.41 PARTIAL (vs -0.15 FAIL session 35)**
+- Assemblage: K(mare 19.2%) + r(mycelium 9.1%) + t₀(death)
+- 5/7 météorites test > 0 (mRNA +0.95, Higgs +0.80, CRISPR +0.44)
+- 2 outliers: **Poincaré** (K prédit 37K vs 21K) et **Grav waves** (K prédit 34K vs 50K)
+- Plafond théorique (K pred + r TRUE): R²=0.67
+
+**Ce qui reste à résoudre:**
+- K est maintenant le bottleneck (pas r)
+- Poincaré est unique (K=21K, tous les autres >28K) — aucun exemple train similaire
+- L'espèce (S-1) ne prédit PAS la dynamique — c'est la morphologie LOCALE qui compte
+
 **Carmack moves session 35:**
 - **ETAS / Omori** (seismology × epidemic, score 321.6): p UNIVERSEL = 4.74 ±0.63 (CV=13%)
   - Omori-Utsu sur new_concepts/year: R² médian = 0.87 PASS

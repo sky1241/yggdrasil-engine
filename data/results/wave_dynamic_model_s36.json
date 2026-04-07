@@ -1,0 +1,41 @@
+{
+  "test": "dynamic_model_s36",
+  "date": "2026-04-07",
+  "approach_1_ridge_timestep": {
+    "r2_frac_Ktrue": 0.3236,
+    "r2_frac_Kpred": -0.3052,
+    "per_met": {
+      "CRISPR 2012": 0.5116,
+      "AlphaFold 2020": -0.3052,
+      "Grav waves 2016": -1.8182,
+      "Higgs 2012": 0.5919,
+      "mRNA 1990": 0.7069,
+      "Internet 1974": -4.4815,
+      "Poincare 2003": -8.0748
+    }
+  },
+  "approach_2_template": {
+    "r2": -0.0069,
+    "per_met": {
+      "CRISPR 2012": 0.0264,
+      "AlphaFold 2020": -0.4462,
+      "Grav waves 2016": -0.0987,
+      "Higgs 2012": -0.0069,
+      "mRNA 1990": 0.2723,
+      "Internet 1974": 0.398,
+      "Poincare 2003": -7.8871
+    }
+  },
+  "approach_4_weighted": {
+    "r2": -0.1657,
+    "per_met": {
+      "CRISPR 2012": -0.1657,
+      "AlphaFold 2020": -0.6415,
+      "Grav waves 2016": -0.4664,
+      "Higgs 2012": 0.0008,
+      "mRNA 1990": 0.1117,
+      "Internet 1974": 0.168,
+      "Poincare 2003": -7.1144
+    }
+  }
+}
