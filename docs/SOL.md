@@ -1,5 +1,5 @@
 # SOL.md — Fichier de Synchronisation Sky↔Claude
-> Yggdrasil Engine — Versoix, 7 avril 2026
+> Yggdrasil Engine — Versoix, 8 avril 2026
 > TOUT CLAUDE LIT CE FICHIER EN PREMIER.
 
 ## VOCABULAIRE

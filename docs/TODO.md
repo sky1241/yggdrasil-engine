@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 7 avril 2026 (session 34), Sky×Claude (Opus 4.6)
+> Dernière màj: 8 avril 2026 (session 34), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
