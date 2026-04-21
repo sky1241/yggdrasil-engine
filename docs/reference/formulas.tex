@@ -780,6 +780,102 @@ carrying\_capacity $\times$ scale\_free & 0 & \`a explorer \\
 \end{center}
 
 % ============================================================================
+\section{Pr\'ediction des param\`etres de propagation --- Session 38}
+% ============================================================================
+
+\textbf{Probl\`eme:} On sait simuler l'onde (BFS, heat kernel), mais pas pr\'edire
+$K$ (port\'ee) et $r$ (vitesse) \textbf{avant} l'impact.
+Session 37: $K$ error 54\%, $r$ error 41\%, R(t) R$^2=-0.53$ (FAIL sur 36 m\'et\'eorites).
+
+\textbf{Motivation:} Recherche dans WT3 (81 papers) + litt\'erature web. 4 m\'ethodes de la
+th\'eorie des r\'eseaux qui capturent la topologie diff\'eremment de nos features manuelles.
+
+% ------ CI ------
+\subsection{Collective Influence (CI) --- Morone \& Makse (2015)}
+
+\textbf{Sources:}
+\begin{itemize}
+\item Morone, F. \& Makse, H.A. (2015). ``Influence maximization in complex networks through
+  optimal percolation.'' \textit{Nature} 524, 65--68. DOI: 10.1038/nature14604
+\item Teng, X., Pei, S. \& Makse, H.A. (2017). ``Efficient collective influence maximization
+  in cascading processes with first-order transitions.'' \textit{Sci.\ Rep.}\ 7, 45240. DOI: 10.1038/srep45240
+\end{itemize}
+
+\begin{equation}
+\text{CI}_L(i) = (k_i - 1) \times \sum_{j \in \partial \text{Ball}(i,L)} (k_j - 1)
+\end{equation}
+\begin{itemize}
+\item $k_i$ = degr\'e du n\oe ud $i$
+\item $\partial \text{Ball}(i,L)$ = fronti\`ere de la boule de rayon $L$ (n\oe uds \`a distance exactement $L$)
+\item $L$ = rayon (test\'e: 1, 2, 3)
+\end{itemize}
+
+\textbf{Script:} \texttt{scripts/wave\_collective\_influence.py} \\
+\textbf{Output:} \texttt{data/results/wave\_collective\_influence.json}
+
+% ------ Percolation ------
+\subsection{Seuil de percolation --- Radicchi (2015)}
+
+\textbf{Source:} Radicchi, F. (2015). ``Predicting percolation thresholds in networks.''
+\textit{Phys.\ Rev.\ E} 91, 010801(R). DOI: 10.1103/PhysRevE.91.010801
+
+Trois estimateurs du seuil de percolation:
+\begin{align}
+\tilde{p}_c &= \frac{\langle k \rangle}{\langle k^2 \rangle - \langle k \rangle} && \text{(moments)} \\
+\bar{p}_c &= \frac{1}{\lambda_{\max}(A)} && \text{(valeur propre adjacence)} \\
+\hat{p}_c &= \frac{1}{\lambda_{\max}(M)} && \text{(matrice non-backtracking)}
+\end{align}
+
+o\`u $M = \begin{pmatrix} A & -I \\ D-I & 0 \end{pmatrix}$ est la matrice de Hashimoto ($2|E| \times 2|E|$).
+
+\textbf{Script:} \texttt{scripts/wave\_percolation\_threshold.py} \\
+\textbf{Output:} \texttt{data/results/wave\_percolation\_threshold.json}
+
+% ------ K-shell ------
+\subsection{K-shell decomposition --- Kitsak et al.\ (2010)}
+
+\textbf{Sources:}
+\begin{itemize}
+\item Kitsak, M. et al.\ (2010). ``Identification of influential spreaders in complex networks.''
+  \textit{Nature Physics} 6, 888--893. DOI: 10.1038/nphys1746
+\item Liu, J. et al.\ (2015). ``Improving the accuracy of the k-shell method by removing
+  redundant links.'' \textit{Sci.\ Rep.}\ 5, 13172. DOI: 10.1038/srep13172
+\end{itemize}
+
+Le k-shell index (coreness) d'un n\oe ud = le plus grand $k$ tel que le n\oe ud
+appartient au $k$-core (sous-graphe maximal de degr\'e minimum $k$).
+
+\textbf{Insight:} Les superspreaders sont dans le \textbf{core}, pas en p\'eriph\'erie.
+Un hub p\'eriph\'erique a un k-shell faible malgr\'e un degr\'e \'elev\'e.
+
+\textbf{Script:} \texttt{scripts/wave\_kshell.py} \\
+\textbf{Output:} \texttt{data/results/wave\_kshell.json}
+
+% ------ Monte Carlo ------
+\subsection{Monte Carlo Random Walk}
+
+\textbf{Sources:}
+\begin{itemize}
+\item Kempe, D., Kleinberg, J. \& Tardos, \'E. (2003). ``Maximizing the spread of influence
+  through a social network.'' \textit{KDD}, 137--146. DOI: 10.1145/956750.956769
+\item Leskovec, J. et al.\ (2007). ``The dynamics of viral marketing.''
+  \textit{ACM TOIT} 7(1), 5. DOI: 10.1145/1232722.1232727
+\end{itemize}
+
+Simulation directe: $N=500$ random walks pond\'er\'es par poids cooc, $T=8$ pas (dur\'ee de vie observ\'ee).
+
+Features extraites:
+\begin{itemize}
+\item reach = n\oe uds uniques visit\'es (proxy de $K$)
+\item speed\_ratio = early reach / late reach (proxy de $r$)
+\item n\_species = esp\`eces touch\'ees (diversit\'e)
+\item return\_rate = fraction de walks revenant au seed (localit\'e)
+\end{itemize}
+
+\textbf{Script:} \texttt{scripts/wave\_montecarlo\_walk.py} \\
+\textbf{Output:} \texttt{data/results/wave\_montecarlo\_walk.json}
+
+% ============================================================================
 \section{R\'esum\'e du mod\`ele V3 final}
 % ============================================================================
 
@@ -841,6 +937,11 @@ Sedov-Taylor & $\beta(Et^2/\rho_0)^{1/5}$ & 2 & FAIL & Invalid\'e \\
 \texttt{scripts/wave\_candlestick\_model.py} & Mod\`ele candlestick, $\rho = 0.92$ & 35 \\
 \texttt{scripts/wave\_hybrid\_final.py} & Mod\`ele hybride + test temporel & 35 \\
 \texttt{scripts/scan\_openalex\_years.py} & Scan OpenAlex papers/an (693K) & 35 \\
+\texttt{scripts/wave\_retrain\_s37.py} & Retrain 36 m\'et. (overfitting confirm\'e) & 37 \\
+\texttt{scripts/wave\_collective\_influence.py} & CI Makse sur 36 m\'et. & 38 \\
+\texttt{scripts/wave\_percolation\_threshold.py} & Seuil percolation local & 38 \\
+\texttt{scripts/wave\_kshell.py} & K-shell decomposition & 38 \\
+\texttt{scripts/wave\_montecarlo\_walk.py} & Monte Carlo random walk & 38 \\
 \bottomrule
 \end{tabular}
 \end{center}

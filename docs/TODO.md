@@ -1,5 +1,5 @@
 # TODO — Yggdrasil Engine
-> Dernière màj: 8 avril 2026 (session 34), Sky×Claude (Opus 4.6)
+> Dernière màj: 21 avril 2026 (session 38), Sky×Claude (Opus 4.6)
 
 ## ARCHITECTURE DES STRATES
 ```
@@ -277,10 +277,47 @@ Chaque P4 (trou ouvert) entre deux continents a une probabilité pondérée par 
 - [x] formulas.tex mis à jour (Aguilar-Trigueros 2022, Camenzind 2024, Galvez 2025)
 - **BOTTLENECK = K** (Poincaré K=21K, Grav waves K=50K, les 2 outliers qui détruisent R(t))
 
-### V3 Prochaine session (37) — Expansion dataset + retrain
-**BLOCAGE IDENTIFIÉ:** n=6 train est insuffisant. Le modèle plafonne, pas les features.
-**SOLUTION:** Expansion 13 → 38 météorites (19 train, 19 test).
+### V3 Session 37 — Expansion dataset + retrain (FAIL)
+- [x] **BFS 25 nouvelles météorites** — 23/25 OK, 2 DEAD
+- [x] **Retrain 36 météorites** — K error 54%, r error 41%, R(t) R²=-0.53 **FAIL**
+- [x] **Diagnostic: overfitting confirmé** — plus de données = pire, pas mieux
 
+### V3 Session 38 — 4 méthodes réseau (TOUTES FAIL)
+Recherche WT3 (81 papers) + web sur la prédiction de paramètres de propagation.
+4 méthodes de la théorie des réseaux testées sur 36 météorites.
+
+**Problème fondamental identifié:** ⟨k⟩=2136 — le graphe est trop dense.
+Toutes ces méthodes sont conçues pour des réseaux sparse (⟨k⟩ ≈ 10-50).
+Le sous-graphe local top-N est uniforme, aucune discrimination possible.
+
+| Méthode | K error | r error | Verdict |
+|---------|---------|---------|---------|
+| Baseline S37 | 54% | 41% | — |
+| CI (Makse 2015) | 62.5% | 54.2% | FAIL / FAIL |
+| Percolation (Radicchi 2015) | 50.8% | 47.2% | ~neutre / FAIL |
+| K-shell (Kitsak 2010) | 63.7% | 51.5% | FAIL / FAIL |
+| Monte Carlo walk | 51.3% | 50.3% | ~neutre / FAIL |
+
+- [x] CI: CI_L sur sous-graphe local (top 300), L=1,2. Best ρ(K)=+0.35 (faible)
+- [x] Percolation: 3 estimateurs (moments, eigenvalue, non-backtracking). Quasi-constant
+- [x] K-shell: coreness = 1.0 pour presque toutes les météorites (graphe trop dense)
+- [x] Monte Carlo: 500 walks × 8 steps, 2-hop cloud. Best ρ(K)=-0.40 (faible)
+- [x] Doc: `docs/reference/propagation_methods.md`
+- [x] formulas.tex mis à jour (4 nouvelles méthodes sourcées)
+- [x] Scripts: `wave_collective_influence.py`, `wave_percolation_threshold.py`, `wave_kshell.py`, `wave_montecarlo_walk.py`
+- [x] Résultats: 4 JSON dans `data/results/`
+- [x] **Topologie temporelle** (cooc per-period): dormancy ρ(r)=+0.71 mais = proxy époque
+- [x] **Heat kernel S0** (Carmack move, 50 eigenvalues LOBPCG): reach=65K pour TOUS, FAIL
+- [x] **Modèle 2 étages**: g(year) logistique = **10.5% r seul**, 2-étages K=43.3%
+- [x] Gap spectral S0: λ₁=0.002 → diffusion quasi-instantanée
+
+### V3 RÉSULTAT SESSION 38
+**r est à ~65% un effet d'ÉPOQUE.** `g(year) = 5.13/(1+exp(-0.079*(year-2005))) + 2.15`
+La logistique centrée en 2005 (internet/open access) prédit r à 10.5% sans aucune feature.
+Les features mare/mycélium n'ajoutent rien au résidu (best ρ=0.27).
+K amélioré de 54% → 43.3% par normalisation époque.
+
+### V3 Prochaines pistes
 - [ ] **BFS 25 nouvelles météorites** sur WT3 cooc (pipeline wave_comprehensive_test.py)
   - Pre-1960: X-ray 1895, Radioactivité 1896, Electron 1897, Relativité 1905,
     Supraconductivité 1911, Insulin 1921, QM 1925, Pénicilline 1928,

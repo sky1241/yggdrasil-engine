@@ -1,0 +1,3677 @@
+{
+  "method": "temporal_topology",
+  "date": "2026-04-21",
+  "session": 38,
+  "n_meteorites": 36,
+  "params": {
+    "window_years": 15
+  },
+  "references": [
+    "Original approach — not from literature",
+    "Insight: static topology is uniform (⟨k⟩=2136), dynamics may differ"
+  ],
+  "test_temporel": {
+    "K_median_error": 213.72214448806452,
+    "r_median_error": 18.911969536198782,
+    "K_verdict": "FAIL",
+    "r_verdict": "PASS"
+  },
+  "correlations": {
+    "degree_at_impact": {
+      "rho_K": -0.19045842258916446,
+      "p_K": 0.2658615720765165,
+      "rho_r": -0.5166864921383191,
+      "p_r": 0.0012540344059926642
+    },
+    "degree_5y_before": {
+      "rho_K": -0.27522575934378213,
+      "p_K": 0.10424233750097037,
+      "rho_r": -0.47296077091115957,
+      "p_r": 0.003578886195233951
+    },
+    "degree_growth_rate": {
+      "rho_K": 0.2658237549618239,
+      "p_K": 0.11711539473580587,
+      "rho_r": -0.16633568949968747,
+      "p_r": 0.3322613096475874
+    },
+    "weight_at_impact": {
+      "rho_K": -0.20379051217040597,
+      "p_K": 0.2332021780676903,
+      "rho_r": -0.5248489959635689,
+      "p_r": 0.0010149282537776601
+    },
+    "weight_growth_rate": {
+      "rho_K": 0.3671396851437372,
+      "p_K": 0.027618833892769905,
+      "rho_r": -0.09165435952023594,
+      "p_r": 0.5949756815276849
+    },
+    "edge_birth_rate": {
+      "rho_K": -0.05113161918309365,
+      "p_K": 0.7671107083342474,
+      "rho_r": -0.16861724799310274,
+      "p_r": 0.32557737360796335
+    },
+    "acceleration": {
+      "rho_K": 0.07050812535180971,
+      "p_K": 0.6828127815973002,
+      "rho_r": -0.08000460717963646,
+      "p_r": 0.64276856517319
+    },
+    "degree_ratio_5y": {
+      "rho_K": -0.34803679480965116,
+      "p_K": 0.03752060643441253,
+      "rho_r": -0.46200560912281957,
+      "p_r": 0.0045589751351735935
+    },
+    "activity_trend_slope": {
+      "rho_K": 0.15275726586705993,
+      "p_K": 0.37377029137544127,
+      "rho_r": -0.16999141893924102,
+      "p_r": 0.3215922725738112
+    },
+    "cumulative_edges_10y": {
+      "rho_K": -0.3042359885139353,
+      "p_K": 0.07122677610764519,
+      "rho_r": -0.5663772562033133,
+      "p_r": 0.0003172054334470637
+    },
+    "cumulative_weight_10y": {
+      "rho_K": -0.34724866275211247,
+      "p_K": 0.0379841081932521,
+      "rho_r": -0.5453954638920074,
+      "p_r": 0.0005817165558688118
+    },
+    "max_yearly_edges": {
+      "rho_K": -0.12930825940903845,
+      "p_K": 0.45227205260552505,
+      "rho_r": -0.4361877201192213,
+      "p_r": 0.007827426403679786
+    },
+    "year_of_max_edges": {
+      "rho_K": -0.31035867361223723,
+      "p_K": 0.06544289518939207,
+      "rho_r": -0.37127509685930915,
+      "p_r": 0.02578760974709912
+    },
+    "pre_impact_burst": {
+      "rho_K": -0.3089241169293459,
+      "p_K": 0.06676370840290959,
+      "rho_r": -0.6065736310510514,
+      "p_r": 8.796814643472178e-05
+    },
+    "dormancy_years": {
+      "rho_K": 0.5010984794881448,
+      "p_K": 0.001851665615441099,
+      "rho_r": 0.708113818662774,
+      "p_r": 1.3583769629700307e-06
+    }
+  },
+  "per_meteorite": {
+    "X-ray 1895": {
+      "degree_at_impact": 57,
+      "degree_5y_before": 23,
+      "degree_growth_rate": 0.03314917127071827,
+      "weight_at_impact": 3.627148966304958,
+      "weight_growth_rate": -0.05807687139764452,
+      "edge_birth_rate": 2.8,
+      "acceleration": -0.9285714285714286,
+      "degree_ratio_5y": 2.4782608695652173,
+      "activity_trend_slope": -0.3264705882352941,
+      "cumulative_edges_10y": 221,
+      "cumulative_weight_10y": 10.267367954365909,
+      "max_yearly_edges": 63,
+      "year_of_max_edges": 14,
+      "pre_impact_burst": 0.49375,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1880": {
+          "n_edges": 15,
+          "total_weight": 0.6486879866570234,
+          "n_neighbors": 15
+        },
+        "1881": {
+          "n_edges": 63,
+          "total_weight": 4.291774985380471,
+          "n_neighbors": 63
+        },
+        "1882": {
+          "n_edges": 49,
+          "total_weight": 1.8324099900200963,
+          "n_neighbors": 49
+        },
+        "1883": {
+          "n_edges": 43,
+          "total_weight": 6.589187977835536,
+          "n_neighbors": 43
+        },
+        "1884": {
+          "n_edges": 2,
+          "total_weight": 0.20000000298023224,
+          "n_neighbors": 2
+        },
+        "1885": {
+          "n_edges": 39,
+          "total_weight": 2.137091990560293,
+          "n_neighbors": 39
+        },
+        "1886": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1887": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1888": {
+          "n_edges": 31,
+          "total_weight": 1.2448119977489114,
+          "n_neighbors": 31
+        },
+        "1889": {
+          "n_edges": 27,
+          "total_weight": 0.9064529966562986,
+          "n_neighbors": 27
+        },
+        "1890": {
+          "n_edges": 23,
+          "total_weight": 1.4115669904276729,
+          "n_neighbors": 23
+        },
+        "1891": {
+          "n_edges": 61,
+          "total_weight": 2.134107993915677,
+          "n_neighbors": 61
+        },
+        "1892": {
+          "n_edges": 18,
+          "total_weight": 1.324100997298956,
+          "n_neighbors": 18
+        },
+        "1893": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1894": {
+          "n_edges": 22,
+          "total_weight": 1.1092349877581,
+          "n_neighbors": 22
+        },
+        "1895": {
+          "n_edges": 57,
+          "total_weight": 3.627148966304958,
+          "n_neighbors": 57
+        }
+      }
+    },
+    "Electron 1897": {
+      "degree_at_impact": 3,
+      "degree_5y_before": 148,
+      "degree_growth_rate": -10.257847533632285,
+      "weight_at_impact": 0.10714200139045715,
+      "weight_growth_rate": -0.6635558878002696,
+      "edge_birth_rate": -60.4,
+      "acceleration": 13.5,
+      "degree_ratio_5y": 0.02027027027027027,
+      "activity_trend_slope": -6.492647058823529,
+      "cumulative_edges_10y": 3324,
+      "cumulative_weight_10y": 142.72600240213796,
+      "max_yearly_edges": 909,
+      "year_of_max_edges": 15,
+      "pre_impact_burst": 0.7776193870277975,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1882": {
+          "n_edges": 909,
+          "total_weight": 44.85810080496594,
+          "n_neighbors": 909
+        },
+        "1883": {
+          "n_edges": 357,
+          "total_weight": 19.726921839173883,
+          "n_neighbors": 357
+        },
+        "1884": {
+          "n_edges": 4,
+          "total_weight": 0.06060799956321716,
+          "n_neighbors": 4
+        },
+        "1885": {
+          "n_edges": 394,
+          "total_weight": 18.591700966004282,
+          "n_neighbors": 394
+        },
+        "1886": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1887": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1888": {
+          "n_edges": 430,
+          "total_weight": 17.79455992532894,
+          "n_neighbors": 430
+        },
+        "1889": {
+          "n_edges": 403,
+          "total_weight": 15.850438945461065,
+          "n_neighbors": 403
+        },
+        "1890": {
+          "n_edges": 307,
+          "total_weight": 12.339769940357655,
+          "n_neighbors": 307
+        },
+        "1891": {
+          "n_edges": 530,
+          "total_weight": 23.831290911883116,
+          "n_neighbors": 530
+        },
+        "1892": {
+          "n_edges": 148,
+          "total_weight": 7.206062953453511,
+          "n_neighbors": 148
+        },
+        "1893": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1894": {
+          "n_edges": 418,
+          "total_weight": 16.55066594062373,
+          "n_neighbors": 418
+        },
+        "1895": {
+          "n_edges": 722,
+          "total_weight": 32.84617387782782,
+          "n_neighbors": 722
+        },
+        "1896": {
+          "n_edges": 366,
+          "total_weight": 16.307039907202125,
+          "n_neighbors": 366
+        },
+        "1897": {
+          "n_edges": 3,
+          "total_weight": 0.10714200139045715,
+          "n_neighbors": 3
+        }
+      }
+    },
+    "Relativity 1905": {
+      "degree_at_impact": 58,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 5.075692963752666,
+      "weight_at_impact": 1.0352950058877468,
+      "weight_growth_rate": 0.15616869763074037,
+      "edge_birth_rate": 3.2,
+      "acceleration": -16.142857142857142,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 5.41764705882353,
+      "cumulative_edges_10y": 730,
+      "cumulative_weight_10y": 18.576163930352777,
+      "max_yearly_edges": 204,
+      "year_of_max_edges": 1,
+      "pre_impact_burst": 1.2720588235294117,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1890": {
+          "n_edges": 15,
+          "total_weight": 0.25455000065267086,
+          "n_neighbors": 15
+        },
+        "1891": {
+          "n_edges": 100,
+          "total_weight": 1.818077004980296,
+          "n_neighbors": 98
+        },
+        "1892": {
+          "n_edges": 23,
+          "total_weight": 0.974034994840622,
+          "n_neighbors": 17
+        },
+        "1893": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1894": {
+          "n_edges": 29,
+          "total_weight": 0.4778199978172779,
+          "n_neighbors": 29
+        },
+        "1895": {
+          "n_edges": 170,
+          "total_weight": 3.9935659896582365,
+          "n_neighbors": 159
+        },
+        "1896": {
+          "n_edges": 5,
+          "total_weight": 0.11110999621450901,
+          "n_neighbors": 5
+        },
+        "1897": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1898": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1899": {
+          "n_edges": 52,
+          "total_weight": 0.8930959971621633,
+          "n_neighbors": 45
+        },
+        "1900": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1901": {
+          "n_edges": 36,
+          "total_weight": 0.494585988111794,
+          "n_neighbors": 36
+        },
+        "1902": {
+          "n_edges": 184,
+          "total_weight": 4.319498993922025,
+          "n_neighbors": 178
+        },
+        "1903": {
+          "n_edges": 79,
+          "total_weight": 3.649643993936479,
+          "n_neighbors": 71
+        },
+        "1904": {
+          "n_edges": 204,
+          "total_weight": 5.11466297134757,
+          "n_neighbors": 195
+        },
+        "1905": {
+          "n_edges": 63,
+          "total_weight": 1.0352950058877468,
+          "n_neighbors": 58
+        }
+      }
+    },
+    "Superconductivity 1911": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 66,
+      "degree_growth_rate": -1.070567986230637,
+      "weight_at_impact": 0,
+      "weight_growth_rate": -0.22515630983208948,
+      "edge_birth_rate": -1.1333333333333333,
+      "acceleration": -2.0714285714285716,
+      "degree_ratio_5y": 0.0,
+      "activity_trend_slope": 0.6882352941176471,
+      "cumulative_edges_10y": 598,
+      "cumulative_weight_10y": 40.77454681927338,
+      "max_yearly_edges": 129,
+      "year_of_max_edges": 9,
+      "pre_impact_burst": 0.18149466192170818,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1896": {
+          "n_edges": 17,
+          "total_weight": 0.37214900087565184,
+          "n_neighbors": 17
+        },
+        "1897": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1898": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1899": {
+          "n_edges": 47,
+          "total_weight": 1.5843869829550385,
+          "n_neighbors": 47
+        },
+        "1900": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1901": {
+          "n_edges": 50,
+          "total_weight": 2.1636569993570447,
+          "n_neighbors": 50
+        },
+        "1902": {
+          "n_edges": 129,
+          "total_weight": 18.766035909298807,
+          "n_neighbors": 129
+        },
+        "1903": {
+          "n_edges": 87,
+          "total_weight": 6.5909119844436646,
+          "n_neighbors": 87
+        },
+        "1904": {
+          "n_edges": 84,
+          "total_weight": 5.549993969500065,
+          "n_neighbors": 84
+        },
+        "1905": {
+          "n_edges": 45,
+          "total_weight": 1.0151099949143827,
+          "n_neighbors": 45
+        },
+        "1906": {
+          "n_edges": 66,
+          "total_weight": 2.115303992293775,
+          "n_neighbors": 66
+        },
+        "1907": {
+          "n_edges": 53,
+          "total_weight": 1.9056139872409403,
+          "n_neighbors": 53
+        },
+        "1908": {
+          "n_edges": 33,
+          "total_weight": 0.9287579916417599,
+          "n_neighbors": 33
+        },
+        "1909": {
+          "n_edges": 5,
+          "total_weight": 0.08290699869394302,
+          "n_neighbors": 5
+        },
+        "1910": {
+          "n_edges": 46,
+          "total_weight": 1.656254991889,
+          "n_neighbors": 46
+        },
+        "1911": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Insulin 1921": {
+      "degree_at_impact": 95,
+      "degree_5y_before": 6,
+      "degree_growth_rate": -4.885000000000001,
+      "weight_at_impact": 2.8170309918932617,
+      "weight_growth_rate": -0.2138854481158778,
+      "edge_birth_rate": -5.0,
+      "acceleration": 7.928571428571429,
+      "degree_ratio_5y": 15.833333333333334,
+      "activity_trend_slope": -4.080882352941177,
+      "cumulative_edges_10y": 846,
+      "cumulative_weight_10y": 34.94310783292167,
+      "max_yearly_edges": 205,
+      "year_of_max_edges": 9,
+      "pre_impact_burst": 0.37995824634655534,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1906": {
+          "n_edges": 170,
+          "total_weight": 6.5265999785624444,
+          "n_neighbors": 170
+        },
+        "1907": {
+          "n_edges": 144,
+          "total_weight": 4.908361973240972,
+          "n_neighbors": 144
+        },
+        "1908": {
+          "n_edges": 64,
+          "total_weight": 1.8123399829491973,
+          "n_neighbors": 64
+        },
+        "1909": {
+          "n_edges": 63,
+          "total_weight": 3.725399979390204,
+          "n_neighbors": 63
+        },
+        "1910": {
+          "n_edges": 63,
+          "total_weight": 1.6316279964521527,
+          "n_neighbors": 63
+        },
+        "1911": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1912": {
+          "n_edges": 205,
+          "total_weight": 9.566163964103907,
+          "n_neighbors": 205
+        },
+        "1913": {
+          "n_edges": 75,
+          "total_weight": 3.8152549639344215,
+          "n_neighbors": 75
+        },
+        "1914": {
+          "n_edges": 176,
+          "total_weight": 7.216865993104875,
+          "n_neighbors": 176
+        },
+        "1915": {
+          "n_edges": 183,
+          "total_weight": 7.394678960787132,
+          "n_neighbors": 183
+        },
+        "1916": {
+          "n_edges": 6,
+          "total_weight": 0.1645039999857545,
+          "n_neighbors": 6
+        },
+        "1917": {
+          "n_edges": 67,
+          "total_weight": 2.2440739823505282,
+          "n_neighbors": 67
+        },
+        "1918": {
+          "n_edges": 47,
+          "total_weight": 1.6442729933187366,
+          "n_neighbors": 47
+        },
+        "1919": {
+          "n_edges": 77,
+          "total_weight": 2.672812979668379,
+          "n_neighbors": 77
+        },
+        "1920": {
+          "n_edges": 10,
+          "total_weight": 0.22447999566793442,
+          "n_neighbors": 10
+        },
+        "1921": {
+          "n_edges": 95,
+          "total_weight": 2.8170309918932617,
+          "n_neighbors": 95
+        }
+      }
+    },
+    "QM 1925": {
+      "degree_at_impact": 56,
+      "degree_5y_before": 3,
+      "degree_growth_rate": -2.8517179023508135,
+      "weight_at_impact": 2.6447689766064286,
+      "weight_growth_rate": -0.21660043176598917,
+      "edge_birth_rate": -0.8,
+      "acceleration": 0.35714285714285715,
+      "degree_ratio_5y": 18.666666666666668,
+      "activity_trend_slope": -0.7544117647058823,
+      "cumulative_edges_10y": 772,
+      "cumulative_weight_10y": 38.016694909427315,
+      "max_yearly_edges": 169,
+      "year_of_max_edges": 10,
+      "pre_impact_burst": 0.9501557632398754,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1910": {
+          "n_edges": 68,
+          "total_weight": 3.1385439834557474,
+          "n_neighbors": 68
+        },
+        "1911": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1912": {
+          "n_edges": 162,
+          "total_weight": 8.513616975164041,
+          "n_neighbors": 162
+        },
+        "1913": {
+          "n_edges": 123,
+          "total_weight": 6.449279979104176,
+          "n_neighbors": 123
+        },
+        "1914": {
+          "n_edges": 168,
+          "total_weight": 10.498492964543402,
+          "n_neighbors": 168
+        },
+        "1915": {
+          "n_edges": 169,
+          "total_weight": 10.0833749929443,
+          "n_neighbors": 169
+        },
+        "1916": {
+          "n_edges": 2,
+          "total_weight": 0.08015799894928932,
+          "n_neighbors": 2
+        },
+        "1917": {
+          "n_edges": 31,
+          "total_weight": 0.9211149998009205,
+          "n_neighbors": 31
+        },
+        "1918": {
+          "n_edges": 37,
+          "total_weight": 1.5113289952278137,
+          "n_neighbors": 37
+        },
+        "1919": {
+          "n_edges": 119,
+          "total_weight": 5.579773978563026,
+          "n_neighbors": 119
+        },
+        "1920": {
+          "n_edges": 3,
+          "total_weight": 0.4784989859908819,
+          "n_neighbors": 3
+        },
+        "1921": {
+          "n_edges": 115,
+          "total_weight": 6.044278986984864,
+          "n_neighbors": 115
+        },
+        "1922": {
+          "n_edges": 47,
+          "total_weight": 2.1658889963291585,
+          "n_neighbors": 47
+        },
+        "1923": {
+          "n_edges": 130,
+          "total_weight": 5.498341993428767,
+          "n_neighbors": 130
+        },
+        "1924": {
+          "n_edges": 119,
+          "total_weight": 5.653934981208295,
+          "n_neighbors": 119
+        },
+        "1925": {
+          "n_edges": 56,
+          "total_weight": 2.6447689766064286,
+          "n_neighbors": 56
+        }
+      }
+    },
+    "Penicillin 1928": {
+      "degree_at_impact": 144,
+      "degree_5y_before": 106,
+      "degree_growth_rate": 1.339195979899498,
+      "weight_at_impact": 7.5508369891904294,
+      "weight_growth_rate": -0.02457861551264974,
+      "edge_birth_rate": 6.133333333333334,
+      "acceleration": -1.7857142857142858,
+      "degree_ratio_5y": 1.3584905660377358,
+      "activity_trend_slope": 2.6897058823529414,
+      "cumulative_edges_10y": 752,
+      "cumulative_weight_10y": 45.90379474358633,
+      "max_yearly_edges": 203,
+      "year_of_max_edges": 2,
+      "pre_impact_burst": 1.1114058355437666,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1913": {
+          "n_edges": 63,
+          "total_weight": 3.793894966132939,
+          "n_neighbors": 59
+        },
+        "1914": {
+          "n_edges": 182,
+          "total_weight": 15.478146957000718,
+          "n_neighbors": 171
+        },
+        "1915": {
+          "n_edges": 115,
+          "total_weight": 9.622286954894662,
+          "n_neighbors": 110
+        },
+        "1916": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1917": {
+          "n_edges": 70,
+          "total_weight": 5.698891963809729,
+          "n_neighbors": 68
+        },
+        "1918": {
+          "n_edges": 53,
+          "total_weight": 2.737569955177605,
+          "n_neighbors": 47
+        },
+        "1919": {
+          "n_edges": 51,
+          "total_weight": 2.590311987325549,
+          "n_neighbors": 47
+        },
+        "1920": {
+          "n_edges": 7,
+          "total_weight": 0.527054987847805,
+          "n_neighbors": 7
+        },
+        "1921": {
+          "n_edges": 74,
+          "total_weight": 2.9936719927936792,
+          "n_neighbors": 68
+        },
+        "1922": {
+          "n_edges": 38,
+          "total_weight": 1.6200859937816858,
+          "n_neighbors": 35
+        },
+        "1923": {
+          "n_edges": 112,
+          "total_weight": 5.414290978107601,
+          "n_neighbors": 106
+        },
+        "1924": {
+          "n_edges": 78,
+          "total_weight": 4.327919981908053,
+          "n_neighbors": 73
+        },
+        "1925": {
+          "n_edges": 75,
+          "total_weight": 2.675799982622266,
+          "n_neighbors": 71
+        },
+        "1926": {
+          "n_edges": 203,
+          "total_weight": 19.381554908119142,
+          "n_neighbors": 184
+        },
+        "1927": {
+          "n_edges": 61,
+          "total_weight": 3.635533975902945,
+          "n_neighbors": 57
+        },
+        "1928": {
+          "n_edges": 155,
+          "total_weight": 7.5508369891904294,
+          "n_neighbors": 144
+        }
+      }
+    },
+    "Godel 1931": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 22,
+      "degree_growth_rate": -0.24038461538461536,
+      "weight_at_impact": 0,
+      "weight_growth_rate": -0.0020453317679661833,
+      "edge_birth_rate": -0.8666666666666667,
+      "acceleration": 0.9285714285714286,
+      "degree_ratio_5y": 0.0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 75,
+      "cumulative_weight_10y": 1.616423980332911,
+      "max_yearly_edges": 23,
+      "year_of_max_edges": 5,
+      "pre_impact_burst": 0.08163265306122448,
+      "dormancy_years": 1,
+      "yearly_profile": {
+        "1916": {
+          "n_edges": 13,
+          "total_weight": 0.24322199635207653,
+          "n_neighbors": 13
+        },
+        "1917": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1918": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1919": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1920": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1921": {
+          "n_edges": 8,
+          "total_weight": 0.24242599681019783,
+          "n_neighbors": 8
+        },
+        "1922": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1923": {
+          "n_edges": 14,
+          "total_weight": 0.25454800203442574,
+          "n_neighbors": 8
+        },
+        "1924": {
+          "n_edges": 18,
+          "total_weight": 0.1792679987847805,
+          "n_neighbors": 17
+        },
+        "1925": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1926": {
+          "n_edges": 23,
+          "total_weight": 0.7265019835904241,
+          "n_neighbors": 22
+        },
+        "1927": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1928": {
+          "n_edges": 8,
+          "total_weight": 0.10256800055503845,
+          "n_neighbors": 8
+        },
+        "1929": {
+          "n_edges": 4,
+          "total_weight": 0.11111199855804443,
+          "n_neighbors": 4
+        },
+        "1930": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1931": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Neutron 1932": {
+      "degree_at_impact": 279,
+      "degree_5y_before": 83,
+      "degree_growth_rate": 6.469117647058823,
+      "weight_at_impact": 17.470457875635475,
+      "weight_growth_rate": 0.4688721559695242,
+      "edge_birth_rate": 11.4,
+      "acceleration": 11.214285714285714,
+      "degree_ratio_5y": 3.36144578313253,
+      "activity_trend_slope": 6.469117647058823,
+      "cumulative_edges_10y": 1881,
+      "cumulative_weight_10y": 90.77541765314527,
+      "max_yearly_edges": 587,
+      "year_of_max_edges": 6,
+      "pre_impact_burst": 0.4709042076991943,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1917": {
+          "n_edges": 108,
+          "total_weight": 3.7100919941440225,
+          "n_neighbors": 108
+        },
+        "1918": {
+          "n_edges": 91,
+          "total_weight": 4.6938589522615075,
+          "n_neighbors": 91
+        },
+        "1919": {
+          "n_edges": 191,
+          "total_weight": 7.517685947241262,
+          "n_neighbors": 191
+        },
+        "1920": {
+          "n_edges": 7,
+          "total_weight": 0.10606399923563004,
+          "n_neighbors": 7
+        },
+        "1921": {
+          "n_edges": 212,
+          "total_weight": 8.151533972937614,
+          "n_neighbors": 212
+        },
+        "1922": {
+          "n_edges": 68,
+          "total_weight": 2.2243249844759703,
+          "n_neighbors": 68
+        },
+        "1923": {
+          "n_edges": 244,
+          "total_weight": 9.26845093164593,
+          "n_neighbors": 244
+        },
+        "1924": {
+          "n_edges": 205,
+          "total_weight": 7.769663958577439,
+          "n_neighbors": 205
+        },
+        "1925": {
+          "n_edges": 91,
+          "total_weight": 3.341427984647453,
+          "n_neighbors": 91
+        },
+        "1926": {
+          "n_edges": 587,
+          "total_weight": 43.54075784469023,
+          "n_neighbors": 587
+        },
+        "1927": {
+          "n_edges": 83,
+          "total_weight": 2.3720129942521453,
+          "n_neighbors": 83
+        },
+        "1928": {
+          "n_edges": 262,
+          "total_weight": 9.027683975640684,
+          "n_neighbors": 262
+        },
+        "1929": {
+          "n_edges": 94,
+          "total_weight": 2.629435980692506,
+          "n_neighbors": 94
+        },
+        "1930": {
+          "n_edges": 108,
+          "total_weight": 4.824900005478412,
+          "n_neighbors": 108
+        },
+        "1931": {
+          "n_edges": 139,
+          "total_weight": 5.776758993044496,
+          "n_neighbors": 139
+        },
+        "1932": {
+          "n_edges": 279,
+          "total_weight": 17.470457875635475,
+          "n_neighbors": 279
+        }
+      }
+    },
+    "Radar 1935": {
+      "degree_at_impact": 13,
+      "degree_5y_before": 16,
+      "degree_growth_rate": -1.2863187588152332,
+      "weight_at_impact": 0.4851559977978468,
+      "weight_growth_rate": -0.07725364838218467,
+      "edge_birth_rate": 0.8666666666666667,
+      "acceleration": -6.428571428571429,
+      "degree_ratio_5y": 0.8125,
+      "activity_trend_slope": -0.7,
+      "cumulative_edges_10y": 409,
+      "cumulative_weight_10y": 43.343532068654895,
+      "max_yearly_edges": 110,
+      "year_of_max_edges": 3,
+      "pre_impact_burst": 0.16205533596837945,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1920": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1921": {
+          "n_edges": 75,
+          "total_weight": 8.395730962976813,
+          "n_neighbors": 75
+        },
+        "1922": {
+          "n_edges": 13,
+          "total_weight": 0.6862790044397116,
+          "n_neighbors": 13
+        },
+        "1923": {
+          "n_edges": 55,
+          "total_weight": 2.7539509860798717,
+          "n_neighbors": 55
+        },
+        "1924": {
+          "n_edges": 49,
+          "total_weight": 2.482463979627937,
+          "n_neighbors": 49
+        },
+        "1925": {
+          "n_edges": 42,
+          "total_weight": 1.8775169984437525,
+          "n_neighbors": 42
+        },
+        "1926": {
+          "n_edges": 73,
+          "total_weight": 12.49066698923707,
+          "n_neighbors": 73
+        },
+        "1927": {
+          "n_edges": 13,
+          "total_weight": 0.73974599968642,
+          "n_neighbors": 13
+        },
+        "1928": {
+          "n_edges": 86,
+          "total_weight": 8.194140047766268,
+          "n_neighbors": 86
+        },
+        "1929": {
+          "n_edges": 20,
+          "total_weight": 1.2377209975384176,
+          "n_neighbors": 20
+        },
+        "1930": {
+          "n_edges": 16,
+          "total_weight": 1.708169006742537,
+          "n_neighbors": 16
+        },
+        "1931": {
+          "n_edges": 21,
+          "total_weight": 1.400995997712016,
+          "n_neighbors": 21
+        },
+        "1932": {
+          "n_edges": 110,
+          "total_weight": 14.40405802661553,
+          "n_neighbors": 110
+        },
+        "1933": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1934": {
+          "n_edges": 28,
+          "total_weight": 1.290518004912883,
+          "n_neighbors": 28
+        },
+        "1935": {
+          "n_edges": 13,
+          "total_weight": 0.4851559977978468,
+          "n_neighbors": 13
+        }
+      }
+    },
+    "Turing 1936": {
+      "degree_at_impact": 36,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 1.266181818181818,
+      "weight_at_impact": 1.2367849797010422,
+      "weight_growth_rate": 0.04636098689721389,
+      "edge_birth_rate": 2.933333333333333,
+      "acceleration": 4.285714285714286,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.5426470588235294,
+      "cumulative_edges_10y": 45,
+      "cumulative_weight_10y": 1.1552309850230813,
+      "max_yearly_edges": 52,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 4.0,
+      "dormancy_years": 3,
+      "yearly_profile": {
+        "1921": {
+          "n_edges": 8,
+          "total_weight": 0.24242599681019783,
+          "n_neighbors": 8
+        },
+        "1922": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1923": {
+          "n_edges": 14,
+          "total_weight": 0.25454800203442574,
+          "n_neighbors": 8
+        },
+        "1924": {
+          "n_edges": 12,
+          "total_weight": 0.07017599791288376,
+          "n_neighbors": 12
+        },
+        "1925": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1926": {
+          "n_edges": 16,
+          "total_weight": 0.6367549831047654,
+          "n_neighbors": 16
+        },
+        "1927": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1928": {
+          "n_edges": 16,
+          "total_weight": 0.24802400171756744,
+          "n_neighbors": 12
+        },
+        "1929": {
+          "n_edges": 4,
+          "total_weight": 0.11111199855804443,
+          "n_neighbors": 4
+        },
+        "1930": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1931": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1932": {
+          "n_edges": 9,
+          "total_weight": 0.159340001642704,
+          "n_neighbors": 9
+        },
+        "1933": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1934": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1935": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1936": {
+          "n_edges": 52,
+          "total_weight": 1.2367849797010422,
+          "n_neighbors": 36
+        }
+      }
+    },
+    "Game theory 1944": {
+      "degree_at_impact": 466,
+      "degree_5y_before": 178,
+      "degree_growth_rate": 13.126858736059482,
+      "weight_at_impact": 22.28743091598153,
+      "weight_growth_rate": 0.6210177902259509,
+      "edge_birth_rate": 30.0,
+      "acceleration": 27.071428571428573,
+      "degree_ratio_5y": 2.6179775280898876,
+      "activity_trend_slope": 11.545588235294117,
+      "cumulative_edges_10y": 816,
+      "cumulative_weight_10y": 22.049436932662502,
+      "max_yearly_edges": 466,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 1.2783505154639174,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1929": {
+          "n_edges": 16,
+          "total_weight": 0.26944300066679716,
+          "n_neighbors": 16
+        },
+        "1930": {
+          "n_edges": 55,
+          "total_weight": 1.1710139904171228,
+          "n_neighbors": 55
+        },
+        "1931": {
+          "n_edges": 15,
+          "total_weight": 0.39999798871576786,
+          "n_neighbors": 15
+        },
+        "1932": {
+          "n_edges": 173,
+          "total_weight": 4.343306001741439,
+          "n_neighbors": 173
+        },
+        "1933": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1934": {
+          "n_edges": 9,
+          "total_weight": 0.4285710006952286,
+          "n_neighbors": 9
+        },
+        "1935": {
+          "n_edges": 7,
+          "total_weight": 0.28571300208568573,
+          "n_neighbors": 7
+        },
+        "1936": {
+          "n_edges": 161,
+          "total_weight": 3.7148329988121986,
+          "n_neighbors": 161
+        },
+        "1937": {
+          "n_edges": 146,
+          "total_weight": 4.448526977561414,
+          "n_neighbors": 146
+        },
+        "1938": {
+          "n_edges": 47,
+          "total_weight": 1.2924809958785772,
+          "n_neighbors": 47
+        },
+        "1939": {
+          "n_edges": 178,
+          "total_weight": 4.23692198866047,
+          "n_neighbors": 178
+        },
+        "1940": {
+          "n_edges": 114,
+          "total_weight": 1.9950100015848875,
+          "n_neighbors": 114
+        },
+        "1941": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1942": {
+          "n_edges": 106,
+          "total_weight": 3.5568379890173674,
+          "n_neighbors": 106
+        },
+        "1943": {
+          "n_edges": 48,
+          "total_weight": 2.090541978366673,
+          "n_neighbors": 48
+        },
+        "1944": {
+          "n_edges": 466,
+          "total_weight": 22.28743091598153,
+          "n_neighbors": 466
+        }
+      }
+    },
+    "NMR 1946": {
+      "degree_at_impact": 84,
+      "degree_5y_before": 11,
+      "degree_growth_rate": 5.261764705882353,
+      "weight_at_impact": 3.3633119794540107,
+      "weight_growth_rate": 0.648457388028927,
+      "edge_birth_rate": -0.13333333333333333,
+      "acceleration": -7.357142857142857,
+      "degree_ratio_5y": 7.636363636363637,
+      "activity_trend_slope": 5.261764705882353,
+      "cumulative_edges_10y": 1214,
+      "cumulative_weight_10y": 69.24453069153242,
+      "max_yearly_edges": 268,
+      "year_of_max_edges": 2,
+      "pre_impact_burst": 1.1628440366972477,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1931": {
+          "n_edges": 86,
+          "total_weight": 3.388212971854955,
+          "n_neighbors": 86
+        },
+        "1932": {
+          "n_edges": 118,
+          "total_weight": 4.0693539823405445,
+          "n_neighbors": 118
+        },
+        "1933": {
+          "n_edges": 9,
+          "total_weight": 0.9301600009202957,
+          "n_neighbors": 9
+        },
+        "1934": {
+          "n_edges": 69,
+          "total_weight": 2.117748989723623,
+          "n_neighbors": 69
+        },
+        "1935": {
+          "n_edges": 52,
+          "total_weight": 1.8240810008719563,
+          "n_neighbors": 52
+        },
+        "1936": {
+          "n_edges": 145,
+          "total_weight": 4.6306489845737815,
+          "n_neighbors": 145
+        },
+        "1937": {
+          "n_edges": 130,
+          "total_weight": 4.063702981453389,
+          "n_neighbors": 130
+        },
+        "1938": {
+          "n_edges": 80,
+          "total_weight": 3.0133609930053353,
+          "n_neighbors": 80
+        },
+        "1939": {
+          "n_edges": 86,
+          "total_weight": 2.3786439914256334,
+          "n_neighbors": 86
+        },
+        "1940": {
+          "n_edges": 88,
+          "total_weight": 2.4575929855927825,
+          "n_neighbors": 88
+        },
+        "1941": {
+          "n_edges": 11,
+          "total_weight": 0.39152699522674084,
+          "n_neighbors": 11
+        },
+        "1942": {
+          "n_edges": 103,
+          "total_weight": 3.399971970357001,
+          "n_neighbors": 103
+        },
+        "1943": {
+          "n_edges": 148,
+          "total_weight": 12.81939794542268,
+          "n_neighbors": 148
+        },
+        "1944": {
+          "n_edges": 268,
+          "total_weight": 22.7027049518656,
+          "n_neighbors": 268
+        },
+        "1945": {
+          "n_edges": 155,
+          "total_weight": 13.386978892609477,
+          "n_neighbors": 155
+        },
+        "1946": {
+          "n_edges": 84,
+          "total_weight": 3.3633119794540107,
+          "n_neighbors": 84
+        }
+      }
+    },
+    "Transistor 1947": {
+      "degree_at_impact": 613,
+      "degree_5y_before": 420,
+      "degree_growth_rate": 15.14396887159533,
+      "weight_at_impact": 54.215519764926285,
+      "weight_growth_rate": 2.4197588327276454,
+      "edge_birth_rate": -1.4,
+      "acceleration": 67.07142857142857,
+      "degree_ratio_5y": 1.4595238095238094,
+      "activity_trend_slope": 24.597058823529412,
+      "cumulative_edges_10y": 5921,
+      "cumulative_weight_10y": 330.8333538095467,
+      "max_yearly_edges": 1538,
+      "year_of_max_edges": 3,
+      "pre_impact_burst": 0.5392502403075937,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1932": {
+          "n_edges": 736,
+          "total_weight": 29.57939889235422,
+          "n_neighbors": 621
+        },
+        "1933": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1934": {
+          "n_edges": 219,
+          "total_weight": 10.38622695300728,
+          "n_neighbors": 212
+        },
+        "1935": {
+          "n_edges": 133,
+          "total_weight": 5.922293946146965,
+          "n_neighbors": 114
+        },
+        "1936": {
+          "n_edges": 812,
+          "total_weight": 49.24254977190867,
+          "n_neighbors": 692
+        },
+        "1937": {
+          "n_edges": 777,
+          "total_weight": 32.01151685928926,
+          "n_neighbors": 681
+        },
+        "1938": {
+          "n_edges": 457,
+          "total_weight": 14.712512962054461,
+          "n_neighbors": 411
+        },
+        "1939": {
+          "n_edges": 598,
+          "total_weight": 27.84877786738798,
+          "n_neighbors": 527
+        },
+        "1940": {
+          "n_edges": 570,
+          "total_weight": 20.234563888516277,
+          "n_neighbors": 489
+        },
+        "1941": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1942": {
+          "n_edges": 495,
+          "total_weight": 19.21334897587076,
+          "n_neighbors": 420
+        },
+        "1943": {
+          "n_edges": 518,
+          "total_weight": 38.39969682600349,
+          "n_neighbors": 458
+        },
+        "1944": {
+          "n_edges": 1538,
+          "total_weight": 124.81446266360581,
+          "n_neighbors": 1290
+        },
+        "1945": {
+          "n_edges": 456,
+          "total_weight": 33.01985585922375,
+          "n_neighbors": 401
+        },
+        "1946": {
+          "n_edges": 512,
+          "total_weight": 20.57861790759489,
+          "n_neighbors": 449
+        },
+        "1947": {
+          "n_edges": 715,
+          "total_weight": 54.215519764926285,
+          "n_neighbors": 613
+        }
+      }
+    },
+    "Shannon 1948": {
+      "degree_at_impact": 472,
+      "degree_5y_before": 186,
+      "degree_growth_rate": 26.245588235294118,
+      "weight_at_impact": 14.358135932590812,
+      "weight_growth_rate": 0.9834443404041368,
+      "edge_birth_rate": 30.0,
+      "acceleration": -23.857142857142858,
+      "degree_ratio_5y": 2.5376344086021505,
+      "activity_trend_slope": 27.095588235294116,
+      "cumulative_edges_10y": 3957,
+      "cumulative_weight_10y": 149.6569162828382,
+      "max_yearly_edges": 1336,
+      "year_of_max_edges": 4,
+      "pre_impact_burst": 0.7834946510443199,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1933": {
+          "n_edges": 28,
+          "total_weight": 1.275390999391675,
+          "n_neighbors": 28
+        },
+        "1934": {
+          "n_edges": 55,
+          "total_weight": 1.6130669973790646,
+          "n_neighbors": 55
+        },
+        "1935": {
+          "n_edges": 41,
+          "total_weight": 1.5652259876951575,
+          "n_neighbors": 41
+        },
+        "1936": {
+          "n_edges": 643,
+          "total_weight": 20.589189968071878,
+          "n_neighbors": 634
+        },
+        "1937": {
+          "n_edges": 599,
+          "total_weight": 25.51044493773952,
+          "n_neighbors": 594
+        },
+        "1938": {
+          "n_edges": 218,
+          "total_weight": 7.041747990064323,
+          "n_neighbors": 214
+        },
+        "1939": {
+          "n_edges": 426,
+          "total_weight": 12.54145094146952,
+          "n_neighbors": 420
+        },
+        "1940": {
+          "n_edges": 290,
+          "total_weight": 10.47042792988941,
+          "n_neighbors": 287
+        },
+        "1941": {
+          "n_edges": 24,
+          "total_weight": 0.45921899750828743,
+          "n_neighbors": 24
+        },
+        "1942": {
+          "n_edges": 301,
+          "total_weight": 9.760166946332902,
+          "n_neighbors": 296
+        },
+        "1943": {
+          "n_edges": 187,
+          "total_weight": 8.708693918772042,
+          "n_neighbors": 186
+        },
+        "1944": {
+          "n_edges": 1336,
+          "total_weight": 64.39304077462293,
+          "n_neighbors": 1305
+        },
+        "1945": {
+          "n_edges": 115,
+          "total_weight": 5.025013964623213,
+          "n_neighbors": 114
+        },
+        "1946": {
+          "n_edges": 275,
+          "total_weight": 8.867466949857771,
+          "n_neighbors": 273
+        },
+        "1947": {
+          "n_edges": 785,
+          "total_weight": 22.38968786969781,
+          "n_neighbors": 756
+        },
+        "1948": {
+          "n_edges": 478,
+          "total_weight": 14.358135932590812,
+          "n_neighbors": 472
+        }
+      }
+    },
+    "ADN 1953": {
+      "degree_at_impact": 2895,
+      "degree_5y_before": 1193,
+      "degree_growth_rate": 69.25,
+      "weight_at_impact": 352.22183885378763,
+      "weight_growth_rate": 9.055009626237648,
+      "edge_birth_rate": 142.13333333333333,
+      "acceleration": 138.07142857142858,
+      "degree_ratio_5y": 2.426655490360436,
+      "activity_trend_slope": 73.18529411764706,
+      "cumulative_edges_10y": 17593,
+      "cumulative_weight_10y": 1432.7747185602784,
+      "max_yearly_edges": 3979,
+      "year_of_max_edges": 9,
+      "pre_impact_burst": 0.4668561567353568,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1938": {
+          "n_edges": 895,
+          "total_weight": 46.39809266990051,
+          "n_neighbors": 852
+        },
+        "1939": {
+          "n_edges": 1134,
+          "total_weight": 74.87496634665877,
+          "n_neighbors": 1100
+        },
+        "1940": {
+          "n_edges": 973,
+          "total_weight": 54.016423490829766,
+          "n_neighbors": 929
+        },
+        "1941": {
+          "n_edges": 26,
+          "total_weight": 4.524913903325796,
+          "n_neighbors": 26
+        },
+        "1942": {
+          "n_edges": 1002,
+          "total_weight": 60.06980044674128,
+          "n_neighbors": 964
+        },
+        "1943": {
+          "n_edges": 1425,
+          "total_weight": 125.93748004827648,
+          "n_neighbors": 1329
+        },
+        "1944": {
+          "n_edges": 3979,
+          "total_weight": 401.3919126109686,
+          "n_neighbors": 3767
+        },
+        "1945": {
+          "n_edges": 766,
+          "total_weight": 72.57267937529832,
+          "n_neighbors": 724
+        },
+        "1946": {
+          "n_edges": 1344,
+          "total_weight": 80.25708049326204,
+          "n_neighbors": 1290
+        },
+        "1947": {
+          "n_edges": 3490,
+          "total_weight": 208.90715423761867,
+          "n_neighbors": 3311
+        },
+        "1948": {
+          "n_edges": 1232,
+          "total_weight": 73.18964647920802,
+          "n_neighbors": 1193
+        },
+        "1949": {
+          "n_edges": 367,
+          "total_weight": 37.8606144846417,
+          "n_neighbors": 351
+        },
+        "1950": {
+          "n_edges": 3418,
+          "total_weight": 345.77880471921526,
+          "n_neighbors": 3214
+        },
+        "1951": {
+          "n_edges": 717,
+          "total_weight": 37.068799612578005,
+          "n_neighbors": 682
+        },
+        "1952": {
+          "n_edges": 855,
+          "total_weight": 49.81054649921134,
+          "n_neighbors": 811
+        },
+        "1953": {
+          "n_edges": 3027,
+          "total_weight": 352.22183885378763,
+          "n_neighbors": 2895
+        }
+      }
+    },
+    "Laser 1960": {
+      "degree_at_impact": 197,
+      "degree_5y_before": 103,
+      "degree_growth_rate": -1.5588235294117647,
+      "weight_at_impact": 8.243366971611977,
+      "weight_growth_rate": -0.036729096091927635,
+      "edge_birth_rate": 9.6,
+      "acceleration": -8.071428571428571,
+      "degree_ratio_5y": 1.912621359223301,
+      "activity_trend_slope": -1.8176470588235294,
+      "cumulative_edges_10y": 1842,
+      "cumulative_weight_10y": 132.2140603554435,
+      "max_yearly_edges": 481,
+      "year_of_max_edges": 10,
+      "pre_impact_burst": 0.36470588235294116,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1945": {
+          "n_edges": 55,
+          "total_weight": 2.0070370035246015,
+          "n_neighbors": 52
+        },
+        "1946": {
+          "n_edges": 199,
+          "total_weight": 14.429455895442516,
+          "n_neighbors": 192
+        },
+        "1947": {
+          "n_edges": 209,
+          "total_weight": 8.210497970227152,
+          "n_neighbors": 203
+        },
+        "1948": {
+          "n_edges": 205,
+          "total_weight": 8.66413292568177,
+          "n_neighbors": 197
+        },
+        "1949": {
+          "n_edges": 9,
+          "total_weight": 0.042857999447733164,
+          "n_neighbors": 9
+        },
+        "1950": {
+          "n_edges": 481,
+          "total_weight": 24.305349903181195,
+          "n_neighbors": 452
+        },
+        "1951": {
+          "n_edges": 72,
+          "total_weight": 3.52498994814232,
+          "n_neighbors": 72
+        },
+        "1952": {
+          "n_edges": 96,
+          "total_weight": 4.528740982990712,
+          "n_neighbors": 96
+        },
+        "1953": {
+          "n_edges": 360,
+          "total_weight": 39.489428823348135,
+          "n_neighbors": 352
+        },
+        "1954": {
+          "n_edges": 334,
+          "total_weight": 33.43532284977846,
+          "n_neighbors": 326
+        },
+        "1955": {
+          "n_edges": 104,
+          "total_weight": 9.562462919857353,
+          "n_neighbors": 103
+        },
+        "1956": {
+          "n_edges": 2,
+          "total_weight": 0.02115400042384863,
+          "n_neighbors": 2
+        },
+        "1957": {
+          "n_edges": 220,
+          "total_weight": 9.72028997913003,
+          "n_neighbors": 212
+        },
+        "1958": {
+          "n_edges": 5,
+          "total_weight": 0.04761999938637018,
+          "n_neighbors": 5
+        },
+        "1959": {
+          "n_edges": 168,
+          "total_weight": 7.578700949205086,
+          "n_neighbors": 160
+        },
+        "1960": {
+          "n_edges": 199,
+          "total_weight": 8.243366971611977,
+          "n_neighbors": 197
+        }
+      }
+    },
+    "Recombinant DNA 1973": {
+      "degree_at_impact": 65,
+      "degree_5y_before": 50,
+      "degree_growth_rate": 3.1029411764705883,
+      "weight_at_impact": 2.8045189920812845,
+      "weight_growth_rate": 0.17416169391945005,
+      "edge_birth_rate": 4.0,
+      "acceleration": -2.357142857142857,
+      "degree_ratio_5y": 1.3,
+      "activity_trend_slope": 3.1029411764705883,
+      "cumulative_edges_10y": 628,
+      "cumulative_weight_10y": 25.526659897062927,
+      "max_yearly_edges": 138,
+      "year_of_max_edges": 3,
+      "pre_impact_burst": 0.5741935483870968,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1958": {
+          "n_edges": 5,
+          "total_weight": 0.057189999148249626,
+          "n_neighbors": 5
+        },
+        "1959": {
+          "n_edges": 34,
+          "total_weight": 1.3894849973730743,
+          "n_neighbors": 34
+        },
+        "1960": {
+          "n_edges": 46,
+          "total_weight": 1.627636993303895,
+          "n_neighbors": 46
+        },
+        "1961": {
+          "n_edges": 35,
+          "total_weight": 0.8457189975306392,
+          "n_neighbors": 35
+        },
+        "1962": {
+          "n_edges": 15,
+          "total_weight": 0.3622579965740442,
+          "n_neighbors": 15
+        },
+        "1963": {
+          "n_edges": 51,
+          "total_weight": 1.8961319793015718,
+          "n_neighbors": 51
+        },
+        "1964": {
+          "n_edges": 102,
+          "total_weight": 3.3545709964819252,
+          "n_neighbors": 102
+        },
+        "1965": {
+          "n_edges": 52,
+          "total_weight": 2.134638980962336,
+          "n_neighbors": 52
+        },
+        "1966": {
+          "n_edges": 56,
+          "total_weight": 2.163726976606995,
+          "n_neighbors": 56
+        },
+        "1967": {
+          "n_edges": 50,
+          "total_weight": 1.4021329963579774,
+          "n_neighbors": 50
+        },
+        "1968": {
+          "n_edges": 50,
+          "total_weight": 1.533147999085486,
+          "n_neighbors": 50
+        },
+        "1969": {
+          "n_edges": 16,
+          "total_weight": 0.4423499973490834,
+          "n_neighbors": 16
+        },
+        "1970": {
+          "n_edges": 138,
+          "total_weight": 8.198578970041126,
+          "n_neighbors": 138
+        },
+        "1971": {
+          "n_edges": 44,
+          "total_weight": 1.5619310000911355,
+          "n_neighbors": 44
+        },
+        "1972": {
+          "n_edges": 69,
+          "total_weight": 2.839450000785291,
+          "n_neighbors": 69
+        },
+        "1973": {
+          "n_edges": 65,
+          "total_weight": 2.8045189920812845,
+          "n_neighbors": 65
+        }
+      }
+    },
+    "Internet 1974": {
+      "degree_at_impact": 179,
+      "degree_5y_before": 130,
+      "degree_growth_rate": 5.273529411764706,
+      "weight_at_impact": 13.0404009106569,
+      "weight_growth_rate": 0.3068530804689919,
+      "edge_birth_rate": -43.13333333333333,
+      "acceleration": -145.57142857142858,
+      "degree_ratio_5y": 1.376923076923077,
+      "activity_trend_slope": 6.304411764705883,
+      "cumulative_edges_10y": 12313,
+      "cumulative_weight_10y": 986.7879161033779,
+      "max_yearly_edges": 1687,
+      "year_of_max_edges": 7,
+      "pre_impact_burst": 0.6619160728424386,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1959": {
+          "n_edges": 845,
+          "total_weight": 76.21937954286113,
+          "n_neighbors": 782
+        },
+        "1960": {
+          "n_edges": 1497,
+          "total_weight": 121.74922434194013,
+          "n_neighbors": 1358
+        },
+        "1961": {
+          "n_edges": 234,
+          "total_weight": 18.882778918370605,
+          "n_neighbors": 220
+        },
+        "1962": {
+          "n_edges": 66,
+          "total_weight": 7.235820971429348,
+          "n_neighbors": 65
+        },
+        "1963": {
+          "n_edges": 1214,
+          "total_weight": 89.3686126046814,
+          "n_neighbors": 1095
+        },
+        "1964": {
+          "n_edges": 1577,
+          "total_weight": 133.9222493802663,
+          "n_neighbors": 1434
+        },
+        "1965": {
+          "n_edges": 1148,
+          "total_weight": 99.26756935473531,
+          "n_neighbors": 1054
+        },
+        "1966": {
+          "n_edges": 1390,
+          "total_weight": 112.83609655289911,
+          "n_neighbors": 1253
+        },
+        "1967": {
+          "n_edges": 1687,
+          "total_weight": 99.0832916428335,
+          "n_neighbors": 1420
+        },
+        "1968": {
+          "n_edges": 1668,
+          "total_weight": 131.35902140755206,
+          "n_neighbors": 1537
+        },
+        "1969": {
+          "n_edges": 135,
+          "total_weight": 11.612498014699668,
+          "n_neighbors": 130
+        },
+        "1970": {
+          "n_edges": 680,
+          "total_weight": 78.55691750627011,
+          "n_neighbors": 621
+        },
+        "1971": {
+          "n_edges": 882,
+          "total_weight": 72.79051050404087,
+          "n_neighbors": 814
+        },
+        "1972": {
+          "n_edges": 1562,
+          "total_weight": 127.08238919847645,
+          "n_neighbors": 1406
+        },
+        "1973": {
+          "n_edges": 1584,
+          "total_weight": 120.27737254160456,
+          "n_neighbors": 1440
+        },
+        "1974": {
+          "n_edges": 198,
+          "total_weight": 13.0404009106569,
+          "n_neighbors": 179
+        }
+      }
+    },
+    "Monoclonal Ab 1975": {
+      "degree_at_impact": 42,
+      "degree_5y_before": 82,
+      "degree_growth_rate": 0.5661764705882353,
+      "weight_at_impact": 1.4009119952097535,
+      "weight_growth_rate": 0.05195451299796867,
+      "edge_birth_rate": 1.6,
+      "acceleration": 0.5714285714285714,
+      "degree_ratio_5y": 0.5121951219512195,
+      "activity_trend_slope": 0.5661764705882353,
+      "cumulative_edges_10y": 279,
+      "cumulative_weight_10y": 9.455836973153055,
+      "max_yearly_edges": 82,
+      "year_of_max_edges": 5,
+      "pre_impact_burst": 0.5949367088607594,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1960": {
+          "n_edges": 18,
+          "total_weight": 0.39535999903455377,
+          "n_neighbors": 18
+        },
+        "1961": {
+          "n_edges": 27,
+          "total_weight": 0.4599509979598224,
+          "n_neighbors": 27
+        },
+        "1962": {
+          "n_edges": 26,
+          "total_weight": 0.603595002554357,
+          "n_neighbors": 26
+        },
+        "1963": {
+          "n_edges": 12,
+          "total_weight": 0.309043999761343,
+          "n_neighbors": 12
+        },
+        "1964": {
+          "n_edges": 69,
+          "total_weight": 1.6168219959363341,
+          "n_neighbors": 69
+        },
+        "1965": {
+          "n_edges": 25,
+          "total_weight": 0.6107609989121556,
+          "n_neighbors": 25
+        },
+        "1966": {
+          "n_edges": 20,
+          "total_weight": 0.5024319970980287,
+          "n_neighbors": 20
+        },
+        "1967": {
+          "n_edges": 24,
+          "total_weight": 0.42452799808233976,
+          "n_neighbors": 24
+        },
+        "1968": {
+          "n_edges": 20,
+          "total_weight": 0.5919209946878254,
+          "n_neighbors": 20
+        },
+        "1969": {
+          "n_edges": 9,
+          "total_weight": 0.22867600060999393,
+          "n_neighbors": 9
+        },
+        "1970": {
+          "n_edges": 82,
+          "total_weight": 4.351156992837787,
+          "n_neighbors": 82
+        },
+        "1971": {
+          "n_edges": 20,
+          "total_weight": 0.426878001075238,
+          "n_neighbors": 20
+        },
+        "1972": {
+          "n_edges": 27,
+          "total_weight": 0.7467529969289899,
+          "n_neighbors": 27
+        },
+        "1973": {
+          "n_edges": 27,
+          "total_weight": 0.6193419988267124,
+          "n_neighbors": 27
+        },
+        "1974": {
+          "n_edges": 25,
+          "total_weight": 0.9533889940939844,
+          "n_neighbors": 25
+        },
+        "1975": {
+          "n_edges": 42,
+          "total_weight": 1.4009119952097535,
+          "n_neighbors": 42
+        }
+      }
+    },
+    "GPS 1978": {
+      "degree_at_impact": 23,
+      "degree_5y_before": 91,
+      "degree_growth_rate": -1.0779411764705882,
+      "weight_at_impact": 1.2974700033664703,
+      "weight_growth_rate": -0.20224088464747184,
+      "edge_birth_rate": -1.5333333333333334,
+      "acceleration": -4.214285714285714,
+      "degree_ratio_5y": 0.25274725274725274,
+      "activity_trend_slope": -1.0779411764705882,
+      "cumulative_edges_10y": 444,
+      "cumulative_weight_10y": 39.046985861845315,
+      "max_yearly_edges": 91,
+      "year_of_max_edges": 5,
+      "pre_impact_burst": 0.3952569169960474,
+      "dormancy_years": 0,
+      "yearly_profile": {
+        "1963": {
+          "n_edges": 46,
+          "total_weight": 3.1185729783028364,
+          "n_neighbors": 46
+        },
+        "1964": {
+          "n_edges": 86,
+          "total_weight": 12.182956004049629,
+          "n_neighbors": 86
+        },
+        "1965": {
+          "n_edges": 30,
+          "total_weight": 3.232887969352305,
+          "n_neighbors": 30
+        },
+        "1966": {
+          "n_edges": 54,
+          "total_weight": 5.462998955976218,
+          "n_neighbors": 54
+        },
+        "1967": {
+          "n_edges": 56,
+          "total_weight": 2.358738000737503,
+          "n_neighbors": 56
+        },
+        "1968": {
+          "n_edges": 57,
+          "total_weight": 3.5174469952471554,
+          "n_neighbors": 57
+        },
+        "1969": {
+          "n_edges": 8,
+          "total_weight": 0.38836499210447073,
+          "n_neighbors": 8
+        },
+        "1970": {
+          "n_edges": 49,
+          "total_weight": 6.926272009499371,
+          "n_neighbors": 49
+        },
+        "1971": {
+          "n_edges": 27,
+          "total_weight": 2.8633739701472223,
+          "n_neighbors": 27
+        },
+        "1972": {
+          "n_edges": 52,
+          "total_weight": 4.926407970488071,
+          "n_neighbors": 52
+        },
+        "1973": {
+          "n_edges": 91,
+          "total_weight": 9.814271968789399,
+          "n_neighbors": 91
+        },
+        "1974": {
+          "n_edges": 10,
+          "total_weight": 1.0448579862713814,
+          "n_neighbors": 10
+        },
+        "1975": {
+          "n_edges": 73,
+          "total_weight": 4.764464963693172,
+          "n_neighbors": 73
+        },
+        "1976": {
+          "n_edges": 35,
+          "total_weight": 2.119138012640178,
+          "n_neighbors": 35
+        },
+        "1977": {
+          "n_edges": 42,
+          "total_weight": 2.6823869929648936,
+          "n_neighbors": 42
+        },
+        "1978": {
+          "n_edges": 23,
+          "total_weight": 1.2974700033664703,
+          "n_neighbors": 23
+        }
+      }
+    },
+    "STM 1981": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 14,
+      "degree_growth_rate": -0.7362637362637362,
+      "weight_at_impact": 0,
+      "weight_growth_rate": -0.02678634023836271,
+      "edge_birth_rate": -2.066666666666667,
+      "acceleration": 1.7142857142857142,
+      "degree_ratio_5y": 0.0,
+      "activity_trend_slope": -1.1426470588235293,
+      "cumulative_edges_10y": 125,
+      "cumulative_weight_10y": 2.890589995775372,
+      "max_yearly_edges": 31,
+      "year_of_max_edges": 15,
+      "pre_impact_burst": 0.20967741935483872,
+      "dormancy_years": 1,
+      "yearly_profile": {
+        "1966": {
+          "n_edges": 31,
+          "total_weight": 0.9807659930083901,
+          "n_neighbors": 31
+        },
+        "1967": {
+          "n_edges": 7,
+          "total_weight": 0.24543299712240696,
+          "n_neighbors": 7
+        },
+        "1968": {
+          "n_edges": 28,
+          "total_weight": 0.37095600040629506,
+          "n_neighbors": 28
+        },
+        "1969": {
+          "n_edges": 2,
+          "total_weight": 0.016666000708937645,
+          "n_neighbors": 2
+        },
+        "1970": {
+          "n_edges": 28,
+          "total_weight": 1.2055959873832762,
+          "n_neighbors": 28
+        },
+        "1971": {
+          "n_edges": 9,
+          "total_weight": 0.16294000018388033,
+          "n_neighbors": 9
+        },
+        "1972": {
+          "n_edges": 26,
+          "total_weight": 0.760357994120568,
+          "n_neighbors": 26
+        },
+        "1973": {
+          "n_edges": 15,
+          "total_weight": 0.23608400067314506,
+          "n_neighbors": 15
+        },
+        "1974": {
+          "n_edges": 9,
+          "total_weight": 0.18689300026744604,
+          "n_neighbors": 9
+        },
+        "1975": {
+          "n_edges": 18,
+          "total_weight": 0.44038600102066994,
+          "n_neighbors": 18
+        },
+        "1976": {
+          "n_edges": 14,
+          "total_weight": 0.33296499820426106,
+          "n_neighbors": 14
+        },
+        "1977": {
+          "n_edges": 13,
+          "total_weight": 0.21485000057145953,
+          "n_neighbors": 13
+        },
+        "1978": {
+          "n_edges": 8,
+          "total_weight": 0.24910999974235892,
+          "n_neighbors": 8
+        },
+        "1979": {
+          "n_edges": 13,
+          "total_weight": 0.30700400099158287,
+          "n_neighbors": 13
+        },
+        "1980": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1981": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "PCR 1983": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 28,
+      "degree_growth_rate": 1.3251748251748252,
+      "weight_at_impact": 0,
+      "weight_growth_rate": -0.017970954219426426,
+      "edge_birth_rate": -3.466666666666667,
+      "acceleration": 3.2857142857142856,
+      "degree_ratio_5y": 0.0,
+      "activity_trend_slope": -2.9191176470588234,
+      "cumulative_edges_10y": 353,
+      "cumulative_weight_10y": 16.020253950264305,
+      "max_yearly_edges": 83,
+      "year_of_max_edges": 4,
+      "pre_impact_burst": 0.0,
+      "dormancy_years": 3,
+      "yearly_profile": {
+        "1968": {
+          "n_edges": 52,
+          "total_weight": 2.0164059861563146,
+          "n_neighbors": 52
+        },
+        "1969": {
+          "n_edges": 6,
+          "total_weight": 0.2255239994265139,
+          "n_neighbors": 6
+        },
+        "1970": {
+          "n_edges": 74,
+          "total_weight": 6.90183496940881,
+          "n_neighbors": 74
+        },
+        "1971": {
+          "n_edges": 39,
+          "total_weight": 1.6076439917087555,
+          "n_neighbors": 39
+        },
+        "1972": {
+          "n_edges": 67,
+          "total_weight": 2.928881992585957,
+          "n_neighbors": 67
+        },
+        "1973": {
+          "n_edges": 57,
+          "total_weight": 3.161450999090448,
+          "n_neighbors": 57
+        },
+        "1974": {
+          "n_edges": 18,
+          "total_weight": 0.6684219930320978,
+          "n_neighbors": 18
+        },
+        "1975": {
+          "n_edges": 76,
+          "total_weight": 2.9387159985490143,
+          "n_neighbors": 76
+        },
+        "1976": {
+          "n_edges": 36,
+          "total_weight": 1.7117469906806946,
+          "n_neighbors": 36
+        },
+        "1977": {
+          "n_edges": 55,
+          "total_weight": 2.8234349857084453,
+          "n_neighbors": 55
+        },
+        "1978": {
+          "n_edges": 28,
+          "total_weight": 1.1595060001127422,
+          "n_neighbors": 28
+        },
+        "1979": {
+          "n_edges": 83,
+          "total_weight": 3.5569769830908626,
+          "n_neighbors": 83
+        },
+        "1980": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1981": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1982": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1983": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Fullerene 1985": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": -0.4666666666666667,
+      "acceleration": 0.5,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": -0.1676470588235294,
+      "cumulative_edges_10y": 9,
+      "cumulative_weight_10y": 0.04736699815839529,
+      "max_yearly_edges": 9,
+      "year_of_max_edges": 8,
+      "pre_impact_burst": 0,
+      "dormancy_years": 7,
+      "yearly_profile": {
+        "1970": {
+          "n_edges": 7,
+          "total_weight": 0.2848500031977892,
+          "n_neighbors": 7
+        },
+        "1971": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1972": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1973": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1974": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1975": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1976": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1977": {
+          "n_edges": 9,
+          "total_weight": 0.04736699815839529,
+          "n_neighbors": 9
+        },
+        "1978": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1979": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1980": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1981": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1982": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1983": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1984": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1985": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "mRNA 1990": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 2.3000000000000003,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0.11045310380868614,
+      "edge_birth_rate": -1.5333333333333334,
+      "acceleration": -1.3571428571428572,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": -3.1838235294117645,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 55,
+      "year_of_max_edges": 12,
+      "pre_impact_burst": 0,
+      "dormancy_years": 10,
+      "yearly_profile": {
+        "1975": {
+          "n_edges": 23,
+          "total_weight": 0.451140986289829,
+          "n_neighbors": 23
+        },
+        "1976": {
+          "n_edges": 42,
+          "total_weight": 1.3809119807556272,
+          "n_neighbors": 42
+        },
+        "1977": {
+          "n_edges": 53,
+          "total_weight": 1.8820039723068476,
+          "n_neighbors": 52
+        },
+        "1978": {
+          "n_edges": 55,
+          "total_weight": 1.2612649905495346,
+          "n_neighbors": 55
+        },
+        "1979": {
+          "n_edges": 28,
+          "total_weight": 1.063230000436306,
+          "n_neighbors": 28
+        },
+        "1980": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1981": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1982": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1983": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1984": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1985": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1986": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1987": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1988": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1989": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1990": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "WWW 1991": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": -24.5,
+      "weight_at_impact": 0,
+      "weight_growth_rate": -65.88536226083525,
+      "edge_birth_rate": -110.66666666666667,
+      "acceleration": -9.428571428571429,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": -112.68382352941177,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 1807,
+      "year_of_max_edges": 12,
+      "pre_impact_burst": 0,
+      "dormancy_years": 11,
+      "yearly_profile": {
+        "1976": {
+          "n_edges": 1660,
+          "total_weight": 923.5275488193147,
+          "n_neighbors": 1660
+        },
+        "1977": {
+          "n_edges": 1792,
+          "total_weight": 776.5000334028155,
+          "n_neighbors": 1792
+        },
+        "1978": {
+          "n_edges": 1106,
+          "total_weight": 606.9060717821121,
+          "n_neighbors": 1106
+        },
+        "1979": {
+          "n_edges": 1807,
+          "total_weight": 760.440995156765,
+          "n_neighbors": 1807
+        },
+        "1980": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1981": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1982": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1983": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1984": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1985": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1986": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1987": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1988": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1989": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1990": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1991": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Stem cell 1998": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1983": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1984": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1985": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1986": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1987": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1988": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1989": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1990": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1991": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1992": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1993": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1994": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1995": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1996": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "RNAi 2001": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1986": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1987": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1988": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1989": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1990": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1991": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1992": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1993": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1994": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1995": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1996": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Poincare 2003": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1988": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1989": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1990": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1991": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1992": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1993": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1994": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1995": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1996": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Graphene 2004": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1989": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1990": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1991": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1992": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1993": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1994": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1995": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1996": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2004": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Blockchain 2008": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1993": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1994": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1995": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1996": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2004": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2005": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2006": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2007": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2008": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "CRISPR 2012": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2004": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2005": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2006": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2007": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2008": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2009": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2010": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2011": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2012": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Higgs 2012": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2004": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2005": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2006": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2007": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2008": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2009": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2010": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2011": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2012": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Deep learning 2012": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "1997": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1998": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "1999": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2000": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2004": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2005": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2006": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2007": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2008": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2009": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2010": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2011": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2012": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "Grav waves 2016": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "2001": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2002": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2003": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2004": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2005": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2006": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2007": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2008": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2009": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2010": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2011": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2012": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2013": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2014": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2015": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2016": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    },
+    "AlphaFold 2020": {
+      "degree_at_impact": 0,
+      "degree_5y_before": 0,
+      "degree_growth_rate": 0,
+      "weight_at_impact": 0,
+      "weight_growth_rate": 0,
+      "edge_birth_rate": 0.0,
+      "acceleration": 0.0,
+      "degree_ratio_5y": 0,
+      "activity_trend_slope": 0.0,
+      "cumulative_edges_10y": 0,
+      "cumulative_weight_10y": 0,
+      "max_yearly_edges": 0,
+      "year_of_max_edges": 0,
+      "pre_impact_burst": 0,
+      "dormancy_years": 15,
+      "yearly_profile": {
+        "2005": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2006": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2007": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2008": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2009": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2010": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2011": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2012": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2013": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2014": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2015": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2016": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2017": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2018": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2019": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        },
+        "2020": {
+          "n_edges": 0,
+          "total_weight": 0,
+          "n_neighbors": 0
+        }
+      }
+    }
+  }
+}

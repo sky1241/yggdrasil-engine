@@ -5,6 +5,94 @@ Sky = électricien de jour, architecte de nuit. 10 mois de boulot. Pas un branle
 
 ---
 
+## 21 avril 2026 — Session 38
+
+### V3 — 4 méthodes réseau pour prédire K et r (TOUTES FAIL)
+
+**Contexte:** session 37 a confirmé l'overfitting (36 météorites, K=54%, r=41%, R(t)=-0.53).
+On a nommé le problème: on sait simuler l'onde, mais pas prédire les **paramètres du processus**
+(K=portée, r=vitesse) avant l'impact.
+
+**Recherche bibliographique via WT3:**
+- 81 papers trouvés dans WT3 (833K papers) sur cascade prediction, influence maximization,
+  percolation, k-shell, superspreaders, heat kernel
+- Filons principaux: influence maximization (21 papers), epidemic threshold (27 papers),
+  k-shell/superspreaders (6 papers), heat kernel on graphs (13 papers)
+- Motivé par vidéo Veritasium "The Strange Math That Predicts Almost Anything" (Markov chains)
+  et la beef Nekrasov vs Markov (1902-1910)
+
+**4 méthodes testées:**
+
+| Méthode | Ref | K error | r error | Verdict |
+|---------|-----|---------|---------|---------|
+| Collective Influence | Morone & Makse 2015 (Nature 524) | 62.5% | 54.2% | FAIL/FAIL |
+| Percolation Threshold | Radicchi 2015 (Phys Rev E 91) | 50.8% | 47.2% | ~neutre/FAIL |
+| K-shell decomposition | Kitsak et al. 2010 (Nature Physics 6) | 63.7% | 51.5% | FAIL/FAIL |
+| Monte Carlo Random Walk | Kempe et al. 2003 (KDD) | 51.3% | 50.3% | ~neutre/FAIL |
+
+**Problème fondamental identifié: le graphe est trop dense (⟨k⟩=2136).**
+- CI, K-shell, percolation sont conçus pour réseaux sparse (⟨k⟩ ≈ 10-50)
+- Sous-graphe local top-N → quasi-complet, uniforme, aucune discrimination
+- K-shell: relative coreness = 1.0 pour 25/36 météorites (tout le monde est dans le core)
+- Percolation: pc_moments ≈ 0.005 pour toutes (quasi-constant)
+- CI_1: ~170M pour toutes les météorites à 1 seed (saturé)
+- MC walk: species mapping cassé (IDs mismatch), features reach faibles (ρ<0.40)
+
+**Insight clé (confirmé 4 fois):**
+Le problème n'est pas dans le choix de la feature analytique — c'est que le graphe
+cooc_global est trop dense pour que TOUTE feature de réseau sparse discrimine.
+Les 2-3 hops de séparation font que tout se touche, donc toutes les topologies locales
+se ressemblent. La variance de K et r vient d'**autre chose** que la topologie statique.
+
+**Tests 5-6: topologie temporelle + heat kernel**
+
+| Méthode | Ref | K error | r error | Verdict |
+|---------|-----|---------|---------|---------|
+| Topologie temporelle (cooc per-period) | Original | 213.7% | **18.9%** | FAIL K / **PASS r** |
+| Heat kernel S0 (Carmack move) | Chung 1997 | 77.4% | 50.2% | FAIL/FAIL |
+
+**Topologie temporelle — le signal dormancy:**
+- `dormancy_years` = années consécutives à 0 activité avant impact
+- ρ(r) = +0.71 (p=1.4e-6) — le plus fort signal JAMAIS trouvé pour r
+- MAIS c'est un proxy d'époque, pas de météorite (toutes post-1990 = dormancy 15)
+
+**Heat kernel — même problème que les 4 statiques:**
+- reach@8 ≈ 65,000 pour TOUTES les météorites (= graphe entier)
+- Gap spectral λ₁ = 0.002 → diffusion quasi-instantanée, aucune discrimination
+
+**Test 7: Modèle 2 étages — LE résultat de la session**
+
+| Approche | r error | K error |
+|----------|---------|---------|
+| Baseline S37 | 41.4% | 54.0% |
+| Features seules (mare+myc) | 37.8% | — |
+| **Époque seule g(year), 0 feature** | **10.5%** | — |
+| 2 étages g(year) × Ridge | 28.5% | **43.3%** |
+
+Courbe d'époque: `g(year) = 5.13 / (1 + exp(-0.079*(year-2005))) + 2.15` (R²=0.655)
+- Logistique centrée en 2005 = transition internet/open access
+- r est à ~65% un effet d'ÉPOQUE, pas de météorite
+- Les outliers du résidu (Shannon=2.1, Pénicilline=1.7) = vraies météorites exceptionnelles
+
+**Outputs:**
+- `docs/reference/propagation_methods.md` — doc des 7 méthodes, formules, refs
+- `docs/reference/formulas.tex` — 4 nouvelles sections sourcées (CI, percolation, k-shell, MC)
+- `scripts/wave_collective_influence.py`, `wave_percolation_threshold.py`,
+  `wave_kshell.py`, `wave_montecarlo_walk.py`, `wave_temporal_topology.py`,
+  `wave_heat_kernel.py`, `wave_epoch_residual.py`
+- `data/results/wave_*.json` (7 fichiers)
+- `data/scan/s0_hk_eigenvalues.npy` — 50 plus petites eigenvalues du Laplacien S0
+
+---
+
+## 8 avril 2026 — Session 37
+
+### V3 Retrain 36 météorites — douche froide, overfitting confirmé
+- 36 météorites (17 train, 19 test), K error 54%, r error 41%, R(t) R²=-0.53 FAIL
+- Plus de données = pire résultat (overfitting sur 13 confirmé)
+
+---
+
 ## 7 avril 2026 — Session 36
 
 ### V3 Assemblage dynamique + identification mycélienne locale
@@ -542,4 +630,4 @@ Train: 6→19, Test: 7→19. BFS à lancer session 37.
 - La Carte Vivante S0: 7 pays, 489 capitales, 60 frontières
 - **Le moteur est né.**
 ---
-_Auto-update: 2026-04-08 | 65,049L Python | 6,960 fichiers | phase CANOPEE_
+_Auto-update: 2026-04-21 | 67,914L Python | 6,976 fichiers | phase CANOPEE_
