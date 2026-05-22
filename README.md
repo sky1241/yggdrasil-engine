@@ -2,18 +2,18 @@
 
 **Spectral engine for scientific cartography and prediction.**
 
-9 strates (S-2 to S6) | 65,026 concepts | ~1,500 glyphs | 108M pairs | 348M papers
+9 strates (S-2 to S6) | 65,026 concepts | 1,337 math glyphs | 108M pairs | 348M papers
 
 ---
 
 ## Signal
 
-| Test | Result | p-value |
-|------|--------|---------|
-| Blind test spectral (cutoff 2015) | Cohen's d = 5.76 | 7.0e-11 |
-| Mirror pairs (strictest control) | 19/20 wins, d = 0.925 | 6.68e-06 |
-| Recall top 0.1% (82M pairs) | 70% of breakthroughs found | -- |
-| Predictions 2025 (top 100 INTER) | 41% WTF, 20/20 web-verified | -- |
+| Test | Result | p-value | Notes |
+|------|--------|---------|-------|
+| Spectral test (cutoff 2015) | Cohen's d = 5.76 (degree-matched) | 7.0e-11 | Post-hoc validation with 3 bias corrections. Cutoff 2015 has temporal-leakage from OpenAlex retags (see SOL.md §35). |
+| Mirror pairs (strictest control) | 19/20 wins, d = 0.925 | 6.68e-06 | Strictest control: degree-decile + spectral-distance + zero-cooc + inter-species matched. 1 published failure (Topological insulators). |
+| Recall top 0.1% (82M pairs) | 70% of breakthroughs found | -- | AlphaFold / mRNA / CRISPR ranked 1-2-3 in fullspace. |
+| Predictions 2025 (top 100 INTER) | 41% "surprising" by single rater | -- | **Subjective**: hand-annotated by one author, no inter-rater reliability. Top-20 sample web-verified for existence (not novelty). |
 
 ---
 
@@ -30,7 +30,7 @@ S2  ...         active conjectures          Sigma_2
 S1  ARBRE       296 decidable concepts      Sigma_1
 S0  SOL         65,026 OpenAlex concepts    Delta_0 (100% C1)
 S-1 METIERS     19 domains x 1,337 glyphs  scientific professions
-S-2 GLYPHES     ~1,500 symbols (math + alchemical fossils)
+S-2 GLYPHES     1,337 math symbols (fossil glyphs WIP)
 ```
 
 ### Key Principles
@@ -100,7 +100,7 @@ yggdrasil-engine/
 
 | Strate | Population | Source | Status |
 |--------|-----------|--------|--------|
-| S-2 Glyphs | ~1,500 (1,337 math + 116 fossils + 10 active + 7 seeds) | arXiv + PMC + Cajori | DONE |
+| S-2 Glyphs | 1,337 math symbols shipped · fossils WIP (4 of 116 currently in repo, recovery pending) | arXiv + PMC + Cajori | math: DONE · fossils: WIP |
 | S-1 Professions | 19 domains x 1,337 glyphs | 416/416 chunks, 858K papers | DONE |
 | S0 Concepts | 65,026 | OpenAlex snapshot (692 GB) | DONE |
 | S1-S6 Tree | 296 concepts | Arithmetical hierarchy | DONE |
@@ -165,7 +165,9 @@ python server.py                  # http://localhost:5000
 ### Run experiments
 
 ```bash
-# Requires local OpenAlex snapshot on E:\openalex\data\ (692 GB)
+# Requires local OpenAlex snapshot (~692 GB). Set OPENALEX_DATA env var to its path:
+#   Linux/macOS : export OPENALEX_DATA=/path/to/openalex/data
+#   Windows     : set OPENALEX_DATA=E:\openalex\data
 python experiments/predictions_2025/step1_full_scan.py
 python experiments/predictions_2025/step2_species_full.py
 python experiments/predictions_2025/step3_p4_both.py
@@ -184,8 +186,8 @@ pytest tests/
 
 - [x] **V1** -- Static map: 21K symbols, 9 continents, 87% validation
 - [x] **V2** -- Timelapse: 1,534 frames, 65K concepts, 3D cube film
-- [x] **Predictions 2025** -- 108M pairs, P4 Uzzi, 41% WTF
-- [x] **S-2 Pipeline** -- 1,500 glyphs, spectral Laplacian, blind test d=5.76
+- [x] **Predictions 2025** -- 108M pairs scanned via P4 Uzzi; top-100 INTER hand-annotated 41% "surprising" by single rater (subjective)
+- [x] **S-2 Pipeline** -- 1,337 math glyphs, spectral Laplacian, post-hoc validation d=5.76 (degree-matched, p=7.0e-11)
 - [x] **S-1 Professions** -- 19 domains x 1,337 glyphs, 416 chunks
 - [x] **Mirror Pairs** -- Strictest control: 19/20, d=0.925, p=6.68e-06
 - [x] **WT2** -- Per-paper index (416/416, 832K papers)
