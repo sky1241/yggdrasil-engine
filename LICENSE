@@ -1,25 +1,21 @@
-Copyright (c) 2026 Sky (sky1241). All rights reserved.
+MIT License
 
-YGGDRASIL ENGINE — PROPRIETARY LICENSE
+Copyright (c) 2026 Ludovic Perrin (sky1241)
 
-1. VIEWING ONLY
-   This source code is made available for viewing and educational
-   purposes only. You may read and study the code.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-2. NO USE WITHOUT LICENSE
-   You may NOT use, copy, modify, merge, distribute, sublicense,
-   or sell this software or any portion of it without a written
-   commercial license agreement from the copyright holder.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-3. NO DERIVATIVE WORKS
-   You may NOT create derivative works based on this software.
-
-4. COMMERCIAL LICENSING
-   To obtain a commercial license, contact: sky1241 on GitHub
-   https://github.com/sky1241
-
-5. NO WARRANTY
-   This software is provided "as is", without warranty of any kind.
-
-Any unauthorized use, reproduction, or distribution of this software
-is strictly prohibited and may result in legal action.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
